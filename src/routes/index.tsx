@@ -176,29 +176,45 @@ function Backdrop({
   src,
   opacity = 0.3,
   position = "center",
+  fill = false,
 }: {
   src: string;
   opacity?: number;
   position?: string;
+  /** Cover the whole section even on narrow viewports. Only the hero wants this. */
+  fill?: boolean;
 }) {
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
-      <img
-        src={src}
-        alt=""
-        loading="lazy"
-        decoding="async"
-        className="h-full w-full object-cover"
-        style={{ opacity, objectPosition: position }}
-      />
-      <div className="absolute inset-0 bg-void/40" />
+      {/*
+        Sources are all 16:9. On wide viewports a section is broad enough that
+        object-cover crops gently. On tablet and below the same section is many
+        thousands of pixels tall, so cover scales to the HEIGHT and shows a sliver
+        of the source width — measured at a median of 10%, and 5% on § IV. So below
+        lg the backdrop stops covering and becomes a band at the top of the section,
+        showing the whole composition at its own scale before dissolving into void.
+      */}
       <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, var(--void) 0px, transparent 130px, transparent calc(100% - 130px), var(--void) 100%)",
-        }}
-      />
+        className={fill ? "absolute inset-0" : "aoh-bd absolute inset-x-0 top-0"}
+        style={{ "--bd-o": opacity } as React.CSSProperties}
+      >
+        <img
+          src={src}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          className="aoh-bd-img h-full w-full object-cover"
+          style={{ objectPosition: position }}
+        />
+        <div className="absolute inset-0 bg-void/40" />
+        <div
+          className="aoh-bd-scrim absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--void) 0px, transparent var(--bd-fade-top, 130px), transparent calc(100% - var(--bd-fade, 130px)), var(--void) 100%)",
+          }}
+        />
+      </div>
     </div>
   );
 }
@@ -1338,6 +1354,155 @@ function TheTriad() {
   );
 }
 
+/**
+ * PhaseOrgans — the Five Phases carrying their organ networks, virtues, emotions
+ * and spirits. Distinct from WuxingCycles in § XV, which draws the generating and
+ * regulating cycles; this one is the interior ecology, phase by phase.
+ * Fire sits at the top, matching the orientation used there.
+ */
+function PhaseOrgans() {
+  const [sel, setSel] = useState<number | null>(null);
+  const C = 168, R = 108;
+  const P = [
+    { z: "火", k: "Fire", ang: -90, move: "Expanding, radiating, connecting",
+      org: "Heart and Small Intestine — with Pericardium and Triple Burner in the broader schemes",
+      virt: "Presence, warmth, communication", emo: "Joy",
+      emoOK: "expansion, connection, radiant participation",
+      emoOff: "scattered stimulation that cannot settle into relationship",
+      sp: "Shen", spD: "illuminates and unifies conscious presence" },
+    { z: "土", k: "Earth", ang: -18, move: "Receiving, transforming, assimilating",
+      org: "Spleen and Stomach", virt: "Nourishment, stability, integration", emo: "Thought · concern",
+      emoOK: "assimilation, reflection, care, the digestion of experience",
+      emoOff: "circling without ever reaching assimilation",
+      sp: "Yi", spD: "concentrates, considers, and assimilates" },
+    { z: "金", k: "Metal", ang: 54, move: "Differentiating, contracting, releasing",
+      org: "Lung and Large Intestine", virt: "Discernment, rhythm, boundary", emo: "Grief",
+      emoOK: "separation, acknowledgment of finitude, release",
+      emoOff: "contraction of the field until nothing new can enter",
+      sp: "Po", spD: "binds awareness to sensation, embodiment, and mortality" },
+    { z: "水", k: "Water", ang: 126, move: "Descending, storing, conserving",
+      org: "Kidney and Bladder", virt: "Depth, endurance, renewal", emo: "Fear",
+      emoOK: "descent, caution, conservation, protection of deep reserves",
+      emoOff: "force drawn continually downward and away from action",
+      sp: "Zhi", spD: "preserves deep intention, endurance, and will" },
+    { z: "木", k: "Wood", ang: 198, move: "Arising, branching, directing",
+      org: "Liver and Gallbladder", virt: "Initiative, flexibility, vision", emo: "Anger",
+      emoOK: "mobilization, boundary defence, power to overcome obstruction",
+      emoOff: "still rising after the danger has passed",
+      sp: "Hun", spD: "projects images, possibilities, and future paths" },
+  ];
+  const pt = (a: number, r = R) => [C + r * Math.cos((a * Math.PI) / 180), C + r * Math.sin((a * Math.PI) / 180)];
+  const cur = sel === null ? null : P[sel];
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[340px]">
+        <style>{`
+          .aoh-po-ring { animation: aoh-po-turn 90s linear infinite; transform-origin: 168px 168px; }
+          @keyframes aoh-po-turn { to { transform: rotate(360deg) } }
+          .aoh-po-n { cursor: pointer; }
+          @media (prefers-reduced-motion: reduce) { .aoh-po-ring { animation: none } }
+        `}</style>
+        <svg viewBox="0 0 336 336" className="h-auto w-full" role="img" aria-labelledby="aoh-po-t">
+          <title id="aoh-po-t">
+            The Five Phases with their organ networks: Fire, Earth, Metal, Water and Wood set
+            clockwise, generating around the rim.
+          </title>
+          <circle className="aoh-po-ring" cx={C} cy={C} r={R} fill="none" stroke="var(--gold)"
+                  strokeOpacity="0.18" strokeWidth="0.8" strokeDasharray="2 9" />
+          {P.map((_, i) => {
+            const [x0, y0] = pt(P[i].ang);
+            const [x1, y1] = pt(P[(i + 1) % 5].ang);
+            const d = Math.hypot(x1 - x0, y1 - y0), ux = (x1 - x0) / d, uy = (y1 - y0) / d;
+            const on = sel === i;
+            return (
+              <line key={i} x1={x0 + ux * 30} y1={y0 + uy * 30} x2={x1 - ux * 30} y2={y1 - uy * 30}
+                stroke="var(--gold)" strokeOpacity={sel === null ? 0.4 : on ? 1 : 0.12}
+                strokeWidth={on ? 1.8 : 1} />
+            );
+          })}
+          {P.map((n, i) => {
+            const [x, y] = pt(n.ang);
+            const on = sel === i;
+            const next = sel !== null && (sel + 1) % 5 === i;
+            return (
+              <g key={n.k} className="aoh-po-n" onClick={() => setSel(on ? null : i)}
+                 role="button" tabIndex={0} aria-pressed={on} aria-label={n.k}
+                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx={x} cy={y} r="28" fill="var(--void)" />
+                <circle cx={x} cy={y} r="28" fill="none" stroke="var(--gold)"
+                        strokeOpacity={on ? 1 : next ? 0.8 : 0.5} strokeWidth={on ? 1.8 : 1} />
+                <text x={x} y={y + 6} textAnchor="middle" className="font-serif" fontSize="18"
+                      fill="var(--gold)" fillOpacity={on || sel === null ? 1 : 0.45}>{n.z}</text>
+                <text x={x} y={y + 44} textAnchor="middle" className="font-mono" fontSize="7"
+                      letterSpacing="1.4" fill="var(--muted-foreground)">{n.k.toUpperCase()}</text>
+              </g>
+            );
+          })}
+        </svg>
+        <p className="mt-2 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+          generating, clockwise
+        </p>
+      </div>
+
+      <div className="min-h-[17rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.z} · {cur.k} — {cur.move}
+            </p>
+            <div className="mt-4 space-y-px">
+              {[["Organ network", cur.org], ["Formative virtue", cur.virt],
+                [`Spirit · ${cur.sp}`, cur.spD]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[8.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <div className="border-t border-gold/50 pt-4">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  {cur.emo} — in its office
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.emoOK}</p>
+              </div>
+              <div className="border-t border-border pt-4">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  When it will not complete
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.emoOff}</p>
+              </div>
+            </div>
+            <p className="mt-5 text-[11px] leading-relaxed text-bone/60">
+              Not an emotion stored in an organ. Emotion, breath, bodily state, and interpretation
+              participate in one mutually reinforcing configuration.
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              A complete metabolism of manifestation. Water preserves latent possibility; Wood
+              initiates its emergence; Fire brings it into expression; Earth receives and
+              incorporates its consequences; Metal distils what is valuable and releases what is
+              finished; and Water receives the essence that remains, carrying it back into latency.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Which is where this meets the Crypt and the Ossuary — Metal dismantles completed
+              formations, Water receives their distilled inheritance, and Wood lets a new form arise
+              from a field already conditioned by what preceded it.
+            </p>
+            <p className="mt-4 font-serif text-lg italic leading-relaxed text-bone/85">
+              Health is not the supremacy of one phase. It is the ability to move among all five
+              without becoming trapped in any of them.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -2281,6 +2446,7 @@ function Index() {
               { id: "centers", label: "Centers" },
               { id: "treasures", label: "Treasures" },
               { id: "axis", label: "Axis" },
+              { id: "organs", label: "Organs" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2302,7 +2468,7 @@ function Index() {
 
       {/* HERO */}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
-        <Backdrop src="/bg/threshold.webp" opacity={0.3} position="center 42%" />
+        <Backdrop src="/bg/threshold.webp" opacity={0.3} position="center 42%" fill />
         <GeometryField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -2425,9 +2591,10 @@ function Index() {
               { n: "XXI", id: "centers", t: "Chakras and Centers", d: "Where currents gather, change character, and are redistributed." },
               { n: "XXII", id: "treasures", t: "Jing, Qi, Shen", d: "Vitality stored, circulating, and becoming luminous." },
               { n: "XXIII", id: "axis", t: "Head, Heart, and Hara", d: "The human axis: pattern seen, weighed, and given substance." },
-              { n: "XXIV", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXIV", id: "organs", t: "Organs, Elements, Five Phases", d: "The interior ecology: seats of transformation, and healing as formative range." },
+              { n: "XXV", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXV", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXVI", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -2546,7 +2713,8 @@ function Index() {
       </section>
 
       {/* THE SPINE */}
-      <section id="spine" className="relative border-t border-border py-32">
+      <section id="spine" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/concentrator.webp" opacity={0.16} position="center 55%" />
         <SectionGlyph delay={-25} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -2692,7 +2860,8 @@ function Index() {
       </section>
 
       {/* LAYERED CORRESPONDENCE */}
-      <section id="correspondence" className="relative border-t border-border py-32">
+      <section id="correspondence" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/web.webp" opacity={0.16} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -4805,6 +4974,7 @@ function Index() {
 
       {/* ELEMENTAL MIXING */}
       <section id="mixing" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/braided.webp" opacity={0.16} position="center 50%" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XVIII · The Dynamics of Mixing
@@ -5466,6 +5636,7 @@ function Index() {
 
       {/* CHAKRAS */}
       <section id="centers" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/terraces.webp" opacity={0.16} position="center 45%" />
         <SectionGlyph delay={-190} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -5887,6 +6058,7 @@ function Index() {
 
       {/* HEAD HEART HARA */}
       <section id="axis" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/chamber2.webp" opacity={0.18} position="center 40%" />
         <SectionGlyph delay={-210} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -6105,12 +6277,304 @@ function Index() {
       </section>
 
       {/* THE SEVEN BOOKS */}
+      <section id="organs" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-230} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXIV · Organs, Elements, and Five Phases
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The interior ecology of the <span className="italic text-gold">living vessel</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            This is where the metaphysics acquires an embodied physiology. The living vessel is not
+            a spirit inhabiting a biological machine. It is an organised ecology in which matter,
+            vitality, emotion, consciousness, memory, and environment continually enter into one
+            another. The organs are the relatively stable seats of that activity; the elements name
+            the operations performed within them; the Five Phases describe how those operations
+            change through time.
+          </p>
+
+          <div className="mt-12 max-w-3xl border-l-2 border-gold/50 pl-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              A distinction held throughout
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              The Chinese Zang-Fu organs are <span className="text-bone/90">functional networks</span>,
+              not equivalents of biomedical organs. The traditional Liver includes patterns of
+              circulation, movement, emotion, perception, and seasonal correspondence extending well
+              beyond the anatomical liver. Throughout this architecture, Liver, Heart, Spleen, Lung,
+              and Kidney are capitalised when the traditional network is meant, and lowercase when
+              the anatomical organ is. The World Health Organization likewise treats Zang-Fu and
+              Five-Phase concepts as terminology belonging to a traditional medical system rather
+              than to modern anatomical classification.
+            </p>
+          </div>
+
+          {/* ---- the organ as seat ---- */}
+          <div className="mt-24 grid gap-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Organs as physical-vital seats</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                A seat does not mean the force exists nowhere else. It means the organ is one of the
+                principal places where that force becomes functionally organised.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                The Heart may be the seat of circulation and relational integration, but relation
+                occurs throughout the organism. The Kidney may be the seat of deep reserve,
+                inheritance, and continuity, but Jing permeates the whole living vessel. The Lung may
+                be the seat of breath, rhythm, boundary, and exchange, but every cell participates in
+                exchange.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Each organ is consequently four things at once.
+              </p>
+              <div className="mt-6 grid gap-px sm:grid-cols-2">
+                {[["Vessel", "contains and stabilises a function"],
+                  ["Transducer", "converts one kind of force into another"],
+                  ["Reservoir", "gathers particular capacities"],
+                  ["Regulator", "maintains proportion among processes"]].map(([a, b]) => (
+                  <div key={a} className="border-t border-border py-4 pr-4">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{a}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                The three principles explain how this holds together. <span className="text-bone/90">Salt</span>{" "}
+                gives the organ structure, boundary, and persistence. <span className="text-bone/90">Mercury</span>{" "}
+                supplies circulation, communication, secretion, and adaptability.{" "}
+                <span className="text-bone/90">Sulfur</span> is its characteristic impulse — the
+                particular virtue it seeks to express. The four ethers describe dimensions of its
+                organisation: Warmth activates its processes, Light gives them direction and
+                differentiation, Tone coordinates their rhythm and proportion, and Life maintains
+                their participation in the organism as a whole.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Root Ether is not a further substance stored inside the organs. It is the deeper
+                condition that makes such coordination and transmission possible at all. The ethers
+                provide formative functions; the organ embodies those functions within a specialised
+                living vessel.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                This also settles what correspondence has meant all along. A planet, a metal, a
+                plant, an organ, and a symbol do not correspond because they are materially
+                identical. They correspond because different vessels can express analogous formative
+                virtues. The organ is the inward biological vessel of a pattern that may appear
+                elsewhere as colour, rhythm, mineral structure, plant behaviour, or celestial sign.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- the phases in the body ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The Five Phases in the body</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Wu Xing is better rendered as five <span className="italic">phases</span>, movements,
+              or processes than as five material elements. Wood, Fire, Earth, Metal, and Water name
+              stages in the circulation and transformation of life. Select one to see the organ
+              network, virtue, emotion, and modality of spirit it carries.
+            </p>
+            <div className="mt-12">
+              <PhaseOrgans />
+            </div>
+            <p className="mt-12 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Generation alone, though, would become unchecked proliferation — which is why the
+              regulating cycle drawn in § XV matters as much as the generating one shown here. Wood
+              penetrates Earth, Earth contains Water, Water moderates Fire, Fire transforms Metal,
+              Metal disciplines Wood. Generation provides possibility; regulation preserves
+              proportion. Generation without limitation becomes excess. Limitation without
+              generation becomes sterility.
+            </p>
+          </div>
+
+          {/* ---- what each framework answers ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">What each framework answers</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The Five Phases should not be collapsed into the tattvas or the Western elements. Each
+              framework answers a different question, and the architecture holds only because it
+              keeps asking them separately.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Root Ether", "the underlying condition of formative transmission"],
+                ["Four Ethers", "the primary functions of subtle organisation"],
+                ["Tattvas", "the qualitative or morphogenic bias of a force"],
+                ["Classical elements", "the basic operations — activation, movement, cohesion, fixation"],
+                ["Five Phases", "the stage and direction of transformation"],
+                ["Qi", "the vitality presently circulating"],
+                ["Channels", "the routes through which circulation is organised"],
+                ["Organs", "the localised transformers of living force"],
+                ["Three principles", "the grammar of impulse, mediation, and embodiment"]].map(([a, b], i) => (
+                <div key={a}
+                     className="grid grid-cols-[1.6rem_10rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_13rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A phase can therefore carry different tattvic textures. Wood does not hold one fixed
+              tattva. Wood qualified by Apas appears as slow germination, flexible adaptation,
+              patient growth; Wood qualified by Tejas becomes sudden initiative, penetrating vision,
+              explosive expansion. Fire shaped by Apas is warmth that bonds and nurtures; Fire shaped
+              by Vayu can become scattered stimulation. This is exactly what the sub-tattvas are for
+              — the phase identifies the direction of movement, the tattvic combination identifies
+              its qualitative texture.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Temperament follows the same rule. A person is not simply Wood or Water. Temperament is
+              a shifting proportion of phase tendencies, tattvic biases, etheric organisation,
+              inherited Jing, present Qi, and conscious Shen — strong Wood initiative and Earth
+              endurance with deficient Metal discrimination in one situation, and an entirely
+              different arrangement elsewhere.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The five modalities of spirit — Hun, Shen, Yi, Po, Zhi, which appear in the Huangdi
+              Neijing and are read differently across periods and lineages — strengthen the
+              Head-Heart-Hara model rather than complicating it. Consciousness is not imprisoned in
+              the Head. The Head articulates vision, the Heart gathers luminous relation, the Hara
+              anchors will and embodied continuity, and the entire organism participates in knowing.
+            </p>
+          </div>
+
+          {/* ---- emotion as movement ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Emotion, organ, breath, and force
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              An emotion is not merely an idea in the mind. It is a directional movement of living
+              force expressed at once through attention, breath, posture, visceral activity,
+              imagination, and action. None of the five is intrinsically pathological. Anger protects
+              what matters. Fear conserves life. Grief permits separation. Concern lets experience be
+              assimilated. Joy opens the person to participation. The trouble begins when a necessary
+              movement becomes excessive, deficient, frozen, displaced, or self-reinforcing.
+            </p>
+            <div className="mt-12 max-w-4xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                The loop that closes on itself
+              </p>
+              <div className="mt-5 flex flex-wrap items-stretch gap-2">
+                {["Perception", "Emotion", "Breath and posture", "Organ-channel pattern"].map((t, i) => (
+                  <div key={t} className="flex items-stretch gap-2">
+                    <div className="flex min-h-[3.5rem] flex-1 items-center border border-border px-4 py-3">
+                      <span className="text-sm leading-snug text-muted-foreground">{t}</span>
+                    </div>
+                    <span className="self-center font-mono text-sm text-gold" aria-hidden>→</span>
+                    {i === 3 && (
+                      <div className="flex min-h-[3.5rem] items-center border border-gold/50 px-4 py-3">
+                        <span className="text-sm leading-snug text-gold">New perception</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Circulated often enough, this becomes the psychic and physiological flywheel of § IX.
+                The person increasingly perceives the world through the pattern the pattern itself
+                has helped produce, and the Morphaithēr acquires a matching atmosphere — hurried,
+                constricted, agitated, heavy, brittle, or withdrawn.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Breath is the great mediator here. It stands at the threshold between voluntary and
+                involuntary life, between exterior atmosphere and interior circulation, and is
+                therefore profoundly Mercurial. It carries rhythm into emotion, redistributes warmth,
+                alters bodily tension, and joins the Head, the Heart, and the Hara in a single
+                movement.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- healing ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
+              <div className="lg:sticky lg:top-32 lg:self-start">
+                <h3 className="font-serif text-2xl leading-tight">
+                  Healing as re-patterning
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Not the removal of an undesirable force, but the restoration of a capacity: to
+                  receive, transform, circulate, differentiate, release, rest, and begin again.
+                </p>
+              </div>
+              <div>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  A healed system is not permanently calm, open, warm, or balanced. It becomes
+                  capable of moving appropriately — Water rests and replenishes, Wood begins and
+                  redirects, Fire expresses and connects, Earth assimilates and stabilises, Metal
+                  distinguishes and releases, and Water receives the distilled remainder. Healing is
+                  a recovery of <span className="text-bone/90">formative range</span>: the person
+                  regains the ability to enter a phase and then leave it once its work is done.
+                </p>
+                <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                  This has to happen across several layers at once.
+                </p>
+                <div className="mt-6 space-y-px">
+                  {[["Physical vessel", "medical treatment, nourishment, sleep, rehabilitation, a change of environment"],
+                    ["Vital field", "restored rhythm and proportion"],
+                    ["Emotional field", "an unfinished movement felt through and completed"],
+                    ["Symbolic field", "a new interpretation"],
+                    ["Relational Morphaithēr", "healthier boundaries, surroundings, and forms of participation"]].map(([a, b]) => (
+                    <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[11rem_1fr]">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
+                      <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                  The Crypt of Primordial Memory explains why healing is rarely an erasure. Earlier
+                  patterns have already shaped the vessel. What healing establishes is a new
+                  attractor — a more coherent way of organising experience, strong enough to redirect
+                  future formation. The old pathway may remain possible without remaining sovereign.
+                </p>
+                <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                  This is the proper work of Ignisophia. Wise fire does not burn indiscriminately. It
+                  supplies precisely enough warmth to mobilise what has stagnated without consuming
+                  Jing, overwhelming the Heart, or scattering Qi. The Head recognises the pattern,
+                  the Heart determines its meaning, and the Hara supplies the embodied power required
+                  to change it.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              Organs are the seats of transformation. Elements are its operations. The Five Phases
+              are its cycle. Qi is its circulating force. Breath is its rhythm. Emotion is its
+              inwardly experienced movement. <span className="italic text-gold">Healing is the
+              restoration of their right relationship within the living vessel.</span>
+            </p>
+          </div>
+
+          <div className="mt-16 mx-auto max-w-3xl border border-border p-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              On the limits of these correspondences
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              These correspondences can support philosophical reflection and contemplative practice.
+              They should not be used to diagnose physical illness. Anger does not prove liver
+              disease, nor fear kidney disease, and nothing here describes an emotion literally
+              stored in an organ. Traditional Chinese medicine treatments carry mixed evidence and
+              real safety risks — particularly unsupervised herbal products — and persistent physical
+              or psychological symptoms require appropriately qualified care.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXIV · The Series
+                § XXV · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -6203,7 +6667,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXV · Lineage
+                § XXVI · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>

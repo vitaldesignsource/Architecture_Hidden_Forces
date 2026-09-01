@@ -178,3 +178,17 @@
 .aoh-still .aolt-descent,
 .aoh-still .aolt-ignite,
 .aoh-still .aoh-ec-spark { animation-play-state: paused; }
+
+/* Backdrop: full-bleed cover on wide viewports; a band at the top of the section
+   below lg, where a tall section would otherwise crop a 16:9 source to a sliver. */
+.aoh-bd { height: 100%; }
+.aoh-bd-img { opacity: var(--bd-o, 0.3); }
+
+@media (max-width: 1023px) {
+  .aoh-bd { height: min(56vh, 26rem); }
+  /* the band shows the whole frame, so it can carry more presence; capped for legibility */
+  .aoh-bd-img { opacity: min(0.66, calc(var(--bd-o, 0.3) * 1.6)); }
+  /* the band's strongest zone sits above the heading, so it can open sooner
+     and take longer to dissolve than the desktop full-bleed treatment */
+  .aoh-bd-scrim { --bd-fade-top: 48px; --bd-fade: 200px; }
+}
