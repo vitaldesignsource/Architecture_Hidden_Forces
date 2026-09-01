@@ -6,6 +6,7 @@ import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { PrincipleCard } from "@/components/PrincipleCard";
 import { ArchitectureIndex } from "@/components/ArchitectureIndex";
+import { Lexicon } from "@/components/Lexicon";
 import {
   GeometryField,
   WuxingCycles,
@@ -139,6 +140,7 @@ function Index() {
               { id: "theurgy", label: "Theurgy" },
               { id: "daimons", label: "Daimons" },
               { id: "books", label: "Books" },
+              { id: "lexicon", label: "Lexicon" },
               { id: "tradition", label: "Tradition" },
               { id: "forceform", label: "Force & Form" },
               { id: "tides", label: "Tides" },
@@ -7935,6 +7937,26 @@ function Index() {
               </span>
             </p>
           </div>
+        </div>
+      </section>
+
+      <section id="lexicon" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-490} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § Lexicon · Where the Terms Are Defined
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The vocabulary, and its <span className="italic text-gold">home sections</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            The routes at the top of this document answer how to read through it. This answers the
+            opposite question — where something was explained. Each entry is a pointer rather than a
+            restatement: one line, and the section that does the actual work, because restating the
+            definitions here would reintroduce exactly the redundancy the cross-references exist to
+            prevent.
+          </p>
+          <Lexicon />
         </div>
       </section>
 

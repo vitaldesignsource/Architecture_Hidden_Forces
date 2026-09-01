@@ -149,6 +149,21 @@ for (const m of src.matchAll(
 }
 note("counted claims", `${claims.length} found — verify against rendered items in the browser pass`);
 
+// ----------------------------------------------------------------- lexicon
+// Every lexicon entry points at a section and claims its numeral. A glossary
+// with a dead pointer is worse than no glossary, and the pointers were written
+// by hand from memory.
+const lex = [...src.matchAll(/\{ term: "([^"]+)"[^}]*?at: "([a-z-]+)", n: "([IVXLC—]+)"/g)];
+if (lex.length) {
+  for (const [, term, at, n] of lex) {
+    const target = byId[at];
+    if (!target) fail("lexicon", `"${term}" points at #${at}, which is not a section`);
+    else if (target.numeral && target.numeral !== n)
+      fail("lexicon", `"${term}" claims § ${n} but #${at} is § ${target.numeral}`);
+  }
+  note("lexicon", `${lex.length} entries, every pointer and numeral correct`);
+}
+
 // ---------------------------------------------------------------- measure
 if (!css.includes("74ch")) fail("measure", "the line-length cap is missing from styles.css");
 
