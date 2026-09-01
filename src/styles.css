@@ -196,11 +196,14 @@
    instead, exactly as .aoh-bd-por already does, so the whole composition reads.
    max-height keeps it from dominating on very short viewports; a gentle vertical
    crop is far better than an 11% vertical strip. */
-.aoh-bd {
+.aoh-bd-host {
   left: 50%;
   right: auto;
   width: 100vw;
   margin-left: -50vw;
+}
+.aoh-bd {
+  width: 100%;
   aspect-ratio: 1920 / 1081;
   height: auto;
   max-height: 86vh;

@@ -48,7 +48,13 @@ export function Backdrop({
   }, []);
 
   return (
-    <div ref={host} className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
+    <div
+      ref={host}
+      className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${
+        portrait || fill ? "" : "aoh-bd-host"
+      }`}
+      aria-hidden
+    >
       {/*
         Sources are all 16:9. On wide viewports a section is broad enough that
         object-cover crops gently. On tablet and below the same section is many
