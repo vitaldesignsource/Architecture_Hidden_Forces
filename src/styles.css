@@ -251,3 +251,30 @@ section div:has(> div > .aoh-bd) { padding-top: 8rem; }
 @media (max-width: 1023px) {
   section div:has(> div > .aoh-bd) { padding-top: 7rem; }
 }
+
+/* Text over a backdrop.
+   Until now every contrast failure was solved by dimming the image until the
+   text passed — which cost the picture rather than protecting the letters. A
+   soft halo does the opposite: two shadows, a tight one to crisp the glyph edge
+   and a wide diffuse one to hold a pool of dark around the word. Over pure void
+   it is invisible, since the shadow colour IS the background, so it costs
+   nothing where there is no image.
+
+   Selected two levels deep because Backdrop renders its own absolute wrapper
+   between the isolating container and the band. */
+:is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por))
+  :is(p, li, span, h3, blockquote) {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 0 14px rgba(0, 0, 0, 0.55);
+}
+
+/* Display type is larger and thinner-stroked in this serif, so it wants a wider,
+   softer pool rather than a tighter one. */
+:is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por)) h2 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 22px rgba(0, 0, 0, 0.6);
+}
+
+/* Never inside a figure — SVG text sets its own fills and a shadow muddies the
+   thin strokes the diagrams are drawn with. */
+:is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por)) svg :is(text, tspan) {
+  text-shadow: none;
+}
