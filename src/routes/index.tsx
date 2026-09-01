@@ -3308,7 +3308,8 @@ function Index() {
       </section>
 
       {/* THE LAWS OF FORMATION */}
-      <section id="laws" className="relative border-t border-border py-32">
+      <section id="laws" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/nurselog.webp" opacity={0.16} position="center 55%" />
         <SectionGlyph delay={-70} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4345,6 +4346,7 @@ function Index() {
 
       {/* THE RECIPROCAL FIELD */}
       <section id="reciprocal" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/ripples.webp" opacity={0.49} position="center 60%" />
         <SectionGlyph delay={-150} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4643,6 +4645,7 @@ function Index() {
 
       {/* CELESTIAL CORRESPONDENCE */}
       <section id="celestial" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/alabaster.webp" opacity={0.49} position="center 45%" />
         <SectionGlyph delay={-170} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4891,6 +4894,7 @@ function Index() {
 
       {/* CHANNELS */}
       <section id="channels" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/delta.webp" opacity={0.16} position="center 50%" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XX · Nadis, Meridians, and Channels
@@ -5304,6 +5308,7 @@ function Index() {
 
       {/* THREE TREASURES */}
       <section id="treasures" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/germination.webp" opacity={0.22} position="center 55%" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXII · Jing, Qi, Shen
