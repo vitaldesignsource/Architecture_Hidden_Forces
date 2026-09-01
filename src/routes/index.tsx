@@ -639,7 +639,7 @@ function Index() {
               { id: "extended", label: "Powers" },
               { id: "triad", label: "Triad" },
               { id: "laws", label: "Laws" },
-              { id: "grounds", label: "Grounds" },
+              { id: "astrology", label: "Sky" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
               <a key={l.id} href={`#${l.id}`} className="transition-colors hover:text-gold">
@@ -670,6 +670,7 @@ function Index() {
               { id: "triad", label: "Triad" },
               { id: "retentive", label: "Crypt" },
               { id: "laws", label: "Laws" },
+              { id: "astrology", label: "Sky" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2065,6 +2066,216 @@ function Index() {
               not as a claim to exhaust the mystery of reality. The principle of inexhaustibility
               makes the system stronger, because it allows precision without pretending to
               totality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ASTROLOGY */}
+      <section id="astrology" className="relative border-t border-border py-32">
+        <SectionGlyph delay={-90} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XVII · Celestial Anatomy
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The clock of <span className="italic text-gold">qualitative time</span>
+          </h2>
+          <p className="mt-8 max-w-3xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            Astrology does not create the hidden forces. It maps their changing celestial
+            configuration.
+          </p>
+          <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Ordinary clocks measure time quantitatively. Astrology proposes that time also has
+            qualitative difference — that one moment favours initiation, another consolidation,
+            another dissolution. The configuration marks the character of a moment, not the
+            identity of every event within it. This is the study of{" "}
+            <span className="text-gold-dim">kairos</span> rather than{" "}
+            <span className="text-gold-dim">chronos</span>.
+          </p>
+
+          {/* Not the total cause */}
+          <div className="mt-14 border border-border p-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              One layer of the field, not the whole cause
+            </p>
+            <p className="mt-5 font-serif text-lg leading-relaxed text-bone/90">
+              Celestial timing <span className="text-gold">+</span> inherited history{" "}
+              <span className="text-gold">+</span> bodily constitution{" "}
+              <span className="text-gold">+</span> environment{" "}
+              <span className="text-gold">+</span> local Morphaithēr{" "}
+              <span className="text-gold">+</span> personal participation{" "}
+              <span className="text-gold">+</span> unpredictable contingency
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              A natal chart is closer to a set of initial conditions than to a completed destiny.
+              The seed holds developmental tendencies; soil, weather, cultivation, injury, and
+              choice all shape what the plant becomes.
+            </p>
+          </div>
+
+          {/* Components */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The components and what each does
+            </p>
+            <div className="mt-6 space-y-px">
+              {[
+                { k: "Planet", v: "The formative power or operation", q: "what is operating" },
+                { k: "Sign", v: "The qualitative manner in which it operates", q: "how it operates" },
+                { k: "House", v: "The vessel or domain in which it becomes expressed", q: "where it is embodied" },
+                { k: "Aspect", v: "The geometry relating one operation to another", q: "how it combines or conflicts" },
+                { k: "Degree", v: "The specific position within the larger pattern", q: "precisely where" },
+                { k: "Transit", v: "The changing celestial pressure upon an existing configuration", q: "what is arriving" },
+              ].map((r) => (
+                <div
+                  key={r.k}
+                  className="grid gap-1 border-b border-border py-4 sm:grid-cols-[8rem_1fr_auto] sm:items-baseline sm:gap-6"
+                >
+                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                    {r.k}
+                  </div>
+                  <div className="text-sm leading-relaxed text-muted-foreground">{r.v}</div>
+                  <div className="font-serif text-sm italic text-bone/70">{r.q}</div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              An aspect is not a third force added to two planets. It is the relationship between
+              them functioning as a formative condition — which is why the geometry connecting two
+              powers can matter as much as the powers themselves.
+            </p>
+          </div>
+
+          {/* Planets as functions */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The planets as formative functions
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { g: "☉", n: "Sun", d: "Centering, coherence, vitality, illumination — the power around which a system organizes itself." },
+                { g: "☾", n: "Moon", d: "Reception, memory, habit, embodiment, fluctuation, and the capacity to contain impressions." },
+                { g: "☿", n: "Mercury", d: "Translation, mediation, communication, movement, exchange." },
+                { g: "♀", n: "Venus", d: "Attraction, affinity, valuation, harmony, combination." },
+                { g: "♂", n: "Mars", d: "Separation, assertion, conflict, cutting, directed force." },
+                { g: "♃", n: "Jupiter", d: "Expansion, authorization, synthesis, confidence, increase." },
+                { g: "♄", n: "Saturn", d: "Boundary, duration, limitation, responsibility, crystallization, consequence." },
+                { g: "⛢ ♆ ♇", n: "The Outer Powers", d: "Slower collective processes reorganizing generations, cultures, institutions, and historical fields." },
+              ].map((x) => (
+                <div key={x.n} className="group border border-border p-4 transition-colors hover:border-gold/40">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <div className="font-serif text-lg italic text-bone">{x.n}</div>
+                    <div className="shrink-0 text-lg text-gold">{x.g}</div>
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              None is good or evil in itself. Each becomes constructive or destructive by
+              proportion, placement, relationship, and the vessel receiving it.
+            </p>
+          </div>
+
+          {/* Where it meets the rest of the architecture */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Where it meets the architecture
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {[
+                { t: "The Four Ethers", d: "Warmth activates the transit. Light reveals it. Tone arranges its relationships. Life incorporates its consequences. Not four literal substances carrying influence — a model of how a celestial pattern passes from temporal potential into embodied experience." },
+                { t: "The Tattvas", d: "Not a rigid one-to-one correspondence. Mars often expresses Tejas, but Mars in a watery sign carries an Apas modification; Saturn is often Prithivi, yet can produce Akashic separation. Astrology arranges the functions; the tattvas colour their force." },
+                { t: "The Morphaithēr", d: "The same transit produces different results in different people because it enters different formative atmospheres. A Mars transit meeting a disciplined field becomes courage and focused labour; meeting a volatile one, conflict and recklessness. The celestial quality is received according to the vessel." },
+                { t: "The Psychic Flywheel", d: "A transit may add warmth, pressure, or intensity to a pattern already carrying momentum, and push it across a threshold. Celestial timing can raise the pressure; it does not choose the centre around which that pressure revolves." },
+                { t: "The Crypt", d: "No transit acts on an empty field. A Saturn passage activates not only an abstract principle but accumulated histories of authority, fear, discipline, and ancestry. The configuration is a key; what it unlocks was deposited earlier." },
+                { t: "Nested Fields", d: "Cities, institutions, nations, and movements arise at particular times within larger cycles. Individuals participate in family fields, families in social fields, societies in historical fields — and all within celestial ones." },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Modes of reading */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Modes of reading
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {[
+                { t: "Transit", d: "The present configuration forming a meaningful relation with the natal one. It does not insert a foreign event; it activates something already in the architecture — warming a dormant tendency, straining a rigid structure, or exposing a contradiction that had stayed hidden." },
+                { t: "Progression", d: "Not a force arriving from outside but the original configuration maturing — the inner clock by which latent structures become available for embodiment. The developmental metabolism of the form." },
+                { t: "Election", d: "A beginning is a moment when a new vessel is unusually open, and the conditions present can be incorporated into its structure. Not the art of finding a perfect sky — no sky is perfect for everything — but of matching a configuration's dominant tendencies to the nature of the undertaking." },
+                { t: "Synastry", d: "Two configurations in sustained relation form a coupled field with a Morphaithēr of its own, irreducible to either person. Repeated interaction accumulates shared habits, symbols, tensions, and attractors until the relationship becomes a formative vessel with its own momentum." },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Recurrence is never exact repetition. When a cycle returns it meets a world altered
+              by everything that happened during the last one. The geometry may resemble an
+              earlier configuration; the vessel is no longer the same.
+            </p>
+          </div>
+
+          {/* Freedom */}
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              And freedom
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Freedom is not acting without conditions. It is the capacity to recognize
+              conditions, weigh their pressures, and participate consciously in what they become.
+              An unconscious Mars activation becomes impulsive conflict; a conscious one becomes
+              courage, disciplined separation, or decisive action. The function stays
+              recognizable; the level of expression changes.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone">
+              The chart describes the architecture of pressure and possibility. It does not issue
+              an unavoidable command.
+            </p>
+          </div>
+
+          {/* Definition + placement */}
+          <div className="mt-20 border-t border-border pt-12">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Defined
+            </p>
+            <p className="mt-5 max-w-4xl font-serif text-xl leading-relaxed text-bone/90 sm:text-2xl">
+              The symbolic and geometrical anatomy of qualitative time — a system for mapping how
+              celestial cycles correspond with the activation, relationship, maturation, and
+              transformation of formative tendencies within earthly fields.
+            </p>
+            <div className="mt-10 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                ["Root Ether", "supplies the common medium"],
+                ["The Fourfold Veil", "transduces influence toward embodiment"],
+                ["The tattvas", "give force qualitative direction"],
+                ["Astrology", "maps the timing and celestial geometry"],
+                ["The Morphaithēr", "describes their local mixture"],
+                ["The vessel", "determines how they are received"],
+                ["The Flywheel", "gives repeated patterns momentum"],
+                ["Participation", "helps determine their expression"],
+                ["The Crypt", "preserves the consequences after"],
+              ].map(([a, b]) => (
+                <div key={a} className="border-b border-border py-4">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    {a}
+                  </div>
+                  <div className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+              neither an isolated system nor the master key — the celestial clock and geometrical
+              calendar of a universe in formation
             </p>
           </div>
         </div>
