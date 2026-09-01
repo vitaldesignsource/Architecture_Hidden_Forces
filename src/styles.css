@@ -200,3 +200,11 @@
      and take longer to dissolve than the desktop full-bleed treatment */
   .aoh-bd-scrim { --bd-fade-top: 48px; --bd-fade: 200px; }
 }
+
+/* Portrait backdrops. The band crops a 4:5 source to 45% of its height, so tall
+   sources get a side panel whose box matches the source aspect and therefore
+   crops almost nothing. */
+.aoh-bd-por { height: min(74vh, 860px); aspect-ratio: 1122 / 1402; width: auto; }
+@media (max-width: 1023px) {
+  .aoh-bd-por { height: min(46vh, 430px); }
+}

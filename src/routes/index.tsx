@@ -178,10 +178,15 @@ function Backdrop({
   position = "center",
   fill = false,
   scrim = 0.4,
+  portrait = false,
 }: {
   src: string;
   opacity?: number;
   position?: string;
+  /** Tall sources. A 4:5 frame loses 55% of its height to the wide band, so a
+   *  portrait backdrop is a side panel matching the source aspect instead —
+   *  uncropped, faded into the void along its inner edge. */
+  portrait?: boolean;
   /** Void wash over the image. Bright sources need it to stay legible; dark,
    *  high-contrast sources are only flattened by it, so they take less. */
   scrim?: number;
@@ -212,7 +217,11 @@ function Backdrop({
         showing the whole composition at its own scale before dissolving into void.
       */}
       <div
-        className={fill ? "absolute inset-0" : "aoh-bd absolute inset-x-0 top-0"}
+        className={
+          fill ? "absolute inset-0"
+               : portrait ? "aoh-bd-por absolute top-0 right-0"
+                          : "aoh-bd absolute inset-x-0 top-0"
+        }
         style={{ "--bd-o": opacity } as React.CSSProperties}
       >
         <img
@@ -227,8 +236,9 @@ function Backdrop({
         <div
           className="aoh-bd-scrim absolute inset-0"
           style={{
-            background:
-              "linear-gradient(to bottom, var(--void) 0px, transparent var(--bd-fade-top, 130px), transparent calc(100% - var(--bd-fade, 130px)), var(--void) 100%)",
+            background: portrait
+              ? "linear-gradient(to right, var(--void) 0px, transparent 42%), linear-gradient(to bottom, transparent 60%, var(--void) 100%)"
+              : "linear-gradient(to bottom, var(--void) 0px, transparent var(--bd-fade-top, 130px), transparent calc(100% - var(--bd-fade, 130px)), var(--void) 100%)",
           }}
         />
       </div>
@@ -9493,7 +9503,8 @@ function Index() {
           </div>
 
           {/* ---- intermediary ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/filterstack.webp" opacity={0.6} position="center 50%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">Intermediary — the Mercurial category</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not a sixth substance inserted between spirit and matter. Intermediary names any
@@ -11023,7 +11034,8 @@ function Index() {
           </div>
 
           {/* ---- liberated form ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/rootsstill.webp" opacity={0.35} position="center 55%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">Force is liberated form</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               If form is constrained force, then force is form released from its present constraint.
@@ -11102,7 +11114,8 @@ function Index() {
           </div>
 
           {/* ---- how pattern holds ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/millwheel.webp" opacity={0.56} position="center 50%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">How pattern holds force</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not as a vessel holds liquid. Pattern holds force by continually returning activity
@@ -11517,7 +11530,8 @@ function Index() {
           </div>
 
           {/* ---- what a mansion is ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/shrinepath.webp" opacity={0.58} position="center 50%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">
               A station of qualitative modulation
             </h3>
@@ -11559,7 +11573,8 @@ function Index() {
           </div>
 
           {/* ---- qualitative time ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/moonflats.webp" opacity={0.6} position="center 55%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">A clock of qualitative time</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The nakshatras turn the starry field into a clock whose hand is the Moon — and the
@@ -11823,7 +11838,8 @@ function Index() {
           </div>
 
           {/* ---- grammar ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/rotunda.webp" opacity={0.39} position="center 55%" scrim={0.18} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">The Zodiac as cosmic grammar</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
