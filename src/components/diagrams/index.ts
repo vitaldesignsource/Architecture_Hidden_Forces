@@ -31,3 +31,4 @@ export { Persistence } from "./Persistence";
 export { FourfoldVeil } from "./FourfoldVeil";
 export { MorphaithericField } from "./MorphaithericField";
 export { Chon } from "./Chon";
+export { RightMeasure } from "./RightMeasure";
