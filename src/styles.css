@@ -241,3 +241,13 @@ section .leading-relaxed.max-w-2xl { max-width: min(42rem, 74ch); }
 section .leading-relaxed.max-w-3xl { max-width: min(48rem, 74ch); }
 section .leading-relaxed.max-w-4xl { max-width: min(56rem, 74ch); }
 section .leading-relaxed.max-w-5xl { max-width: min(64rem, 74ch); }
+
+/* A backdrop needs room to read as an image before the text arrives. Section-level
+   backdrops get that free from py-32 — 129px of clear image on mobile. Subsection
+   backdrops sit on pt-16 and got 59px, so the image never resolved before the
+   paragraph crossed it. Match the section rhythm wherever a band is present.
+   Portrait panels are excluded: they are side panels and want no clear zone. */
+section div:has(> div > .aoh-bd) { padding-top: 8rem; }
+@media (max-width: 1023px) {
+  section div:has(> div > .aoh-bd) { padding-top: 7rem; }
+}
