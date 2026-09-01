@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
 
@@ -484,6 +484,14 @@ function ElementalPairs() {
       <div className="mx-auto w-full max-w-[380px]">
         <style>{`
           .aoh-el .edge-hit { stroke: transparent; stroke-width: 20; cursor: pointer; fill: none; }
+          .aoh-el .edge-run { stroke-dasharray: 18 982; animation: aoh-el-move 6s linear infinite; }
+          @keyframes aoh-el-move { to { stroke-dashoffset: -1000; } }
+          .aoh-el .idle { animation: aoh-el-idle 9s ease-in-out infinite; }
+          @keyframes aoh-el-idle { 0%,100% { stroke-opacity: .22 } 50% { stroke-opacity: .44 } }
+          @media (prefers-reduced-motion: reduce) {
+            .aoh-el .edge-run { animation: none; opacity: 0 }
+            .aoh-el .idle { animation: none }
+          }
           .aoh-el .edge { transition: stroke-opacity 300ms ease, stroke-width 300ms ease; }
           .aoh-el g.el { cursor: pointer; }
         `}</style>
@@ -499,12 +507,19 @@ function ElementalPairs() {
             return (
               <g key={i}>
                 <line
-                  className="edge"
+                  className={`edge${sel === null ? " idle" : ""}`}
                   x1={x0} y1={y0} x2={x1} y2={y1}
                   stroke="var(--gold)"
                   strokeOpacity={sel === null ? 0.34 : on ? 1 : 0.09}
                   strokeWidth={on ? 2 : 1}
                 />
+                {on ? (
+                  <line
+                    className="edge-run"
+                    x1={x0} y1={y0} x2={x1} y2={y1} pathLength={1000}
+                    stroke="var(--bone)" strokeOpacity="0.95" strokeWidth="2.6" strokeLinecap="round"
+                  />
+                ) : null}
                 <line
                   className="edge-hit"
                   x1={x0} y1={y0} x2={x1} y2={y1}
@@ -678,11 +693,17 @@ function PlanetaryFamily() {
         {cur.virtue}
       </p>
 
-      <div className="mt-8 space-y-px">
+      <style>{`
+        .aoh-pf-row { animation: aoh-pf-in 620ms cubic-bezier(.16,1,.3,1) both; }
+        @keyframes aoh-pf-in { from { opacity: 0; transform: translateY(9px) } to { opacity: 1; transform: none } }
+        @media (prefers-reduced-motion: reduce) { .aoh-pf-row { animation: none } }
+      `}</style>
+      <div className="mt-8 space-y-px" key={cur.n}>
         {cur.chain.map(([level, expr, note], i) => (
           <div
             key={level}
-            className="grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-4 sm:grid-cols-[7rem_minmax(0,16rem)_1fr] sm:gap-6"
+            style={{ animationDelay: `${(i * 70).toFixed(0)}ms` }}
+            className="aoh-pf-row grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-4 sm:grid-cols-[7rem_minmax(0,16rem)_1fr] sm:gap-6"
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
               {level}
@@ -757,6 +778,13 @@ function ThreeNadis() {
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)] lg:items-center">
       <div className="mx-auto w-full max-w-[300px]">
+        <style>{`
+          .aoh-nd-flow { stroke-dasharray: 22 978; animation: aoh-nd-run 13s linear infinite; }
+          .aoh-nd-flow.rev { animation-direction: reverse; }
+          .aoh-nd-flow.mid { animation-duration: 17s; }
+          @keyframes aoh-nd-run { to { stroke-dashoffset: -1000; } }
+          @media (prefers-reduced-motion: reduce) { .aoh-nd-flow { animation: none; opacity: 0; } }
+        `}</style>
         <svg viewBox="0 0 300 620" className="h-auto w-full" role="img" aria-labelledby="aoh-nd-t">
           <title id="aoh-nd-t">
             Ida and Pingala winding about a central Sushumna, meeting the axis at six nodes.
@@ -765,15 +793,23 @@ function ThreeNadis() {
           <g style={{ opacity: dim(2) }}>
             <line x1={MID} y1={TOP} x2={MID} y2={BOT} stroke="var(--gold)"
                   strokeOpacity={sel === 2 ? 1 : 0.55} strokeWidth={sel === 2 ? 2.2 : 1.4} />
+            <line className="aoh-nd-flow mid" x1={MID} y1={BOT} x2={MID} y2={TOP} pathLength={1000}
+                  stroke="var(--bone)" strokeOpacity="0.85" strokeWidth="2.6" strokeLinecap="round" />
           </g>
           {/* Ida */}
           <polyline points={pts(-1)} fill="none" stroke="var(--bone)"
                     strokeOpacity={sel === 0 ? 0.95 : 0.42} strokeWidth={sel === 0 ? 2 : 1.2}
                     style={{ opacity: dim(0) }} />
+          <polyline className="aoh-nd-flow" points={pts(-1)} pathLength={1000} fill="none"
+                    stroke="var(--bone)" strokeOpacity="0.9" strokeWidth="2.4"
+                    strokeLinecap="round" style={{ opacity: dim(0) }} />
           {/* Pingala */}
           <polyline points={pts(1)} fill="none" stroke="var(--gold)"
                     strokeOpacity={sel === 1 ? 1 : 0.5} strokeWidth={sel === 1 ? 2 : 1.2}
                     style={{ opacity: dim(1) }} />
+          <polyline className="aoh-nd-flow rev" points={pts(1)} pathLength={1000} fill="none"
+                    stroke="var(--gold)" strokeOpacity="1" strokeWidth="2.4"
+                    strokeLinecap="round" style={{ opacity: dim(1) }} />
           {/* nodes: where both currents meet the axis */}
           {nodes.map((y, i) => (
             <g key={y}>
@@ -900,6 +936,17 @@ function CentersAxis() {
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)] lg:items-center">
       <div className="mx-auto w-full max-w-[320px]">
+        <style>{`
+          .aoh-cx-run { stroke-dasharray: 26 974; animation: aoh-cx-move 11s linear infinite; }
+          .aoh-cx-run.down { animation-direction: reverse; }
+          @keyframes aoh-cx-move { to { stroke-dashoffset: -1000; } }
+          .aoh-cx-pulse { animation: aoh-cx-breathe 7s ease-in-out infinite; transform-origin: center; }
+          @keyframes aoh-cx-breathe { 0%,100% { opacity: .25 } 50% { opacity: .7 } }
+          @media (prefers-reduced-motion: reduce) {
+            .aoh-cx-run { animation: none; opacity: 0 }
+            .aoh-cx-pulse { animation: none; opacity: .45 }
+          }
+        `}</style>
         <svg viewBox="0 0 300 660" className="h-auto w-full" role="img" aria-labelledby="aoh-cx-t">
           <title id="aoh-cx-t">
             Six centres along the central channel with the crown above them, and the two
@@ -912,6 +959,11 @@ function CentersAxis() {
           </defs>
           {/* the axis proper joins the six; the crown sits above it */}
           <line x1={MID} y1={152} x2={MID} y2={602} stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="1.2" />
+          <line
+            className={`aoh-cx-run${dir === "down" ? " down" : ""}`}
+            x1={MID} y1={602} x2={MID} y2={152} pathLength={1000}
+            stroke="var(--bone)" strokeOpacity="0.9" strokeWidth="2.4" strokeLinecap="round"
+          />
           <line x1={MID} y1={92} x2={MID} y2={142} stroke="var(--gold)" strokeOpacity="0.3"
                 strokeWidth="1" strokeDasharray="3 5" />
           {/* direction of the circuit */}
@@ -936,6 +988,12 @@ function CentersAxis() {
                         strokeOpacity={on ? 1 : c.crown ? 0.5 : 0.6} strokeWidth={on ? 1.8 : 1}
                         strokeDasharray={c.crown ? "4 4" : undefined} />
                 {on ? <circle cx={MID} cy={c.y} r={c.crown ? 30 : 27} fill="none" stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="0.8" /> : null}
+                <circle
+                  className="aoh-cx-pulse"
+                  cx={MID} cy={c.y} r={c.crown ? 30 : 27} fill="none"
+                  stroke="var(--gold)" strokeWidth="0.7"
+                  style={{ animationDelay: `-${(i * 1.1).toFixed(1)}s` }}
+                />
                 <circle cx={MID} cy={c.y} r="3.4" fill="var(--gold)" fillOpacity={on ? 1 : 0.5} />
                 <text x={MID + 34} y={c.y - 2} className="font-serif" fontSize="12"
                       fill={on ? "var(--gold)" : "var(--bone)"} fillOpacity={on ? 1 : 0.75}>{c.s}</text>
@@ -5928,40 +5986,25 @@ function Index() {
             ))}
           </div>
 
-          <div className="mx-auto mt-20 max-w-3xl text-left">
+          <div className="mx-auto mt-16 max-w-3xl text-left">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              The same arc at higher resolution
+              The same arc, read through the laws of maintenance
+            </p>
+            <p className="mt-5 font-serif text-lg leading-relaxed text-bone/85">
+              The field offers possibility; tattvic biases give it direction;{" "}
+              <span className="text-gold-dim">boundaries select what can enter</span>; the ethers
+              transduce influence between levels; measure organizes force into pattern;{" "}
+              <span className="text-gold-dim">metabolism maintains the pattern through exchange</span>;
+              repetition deepens it into formative inertia;{" "}
+              <span className="text-gold-dim">thresholds permit sudden reorganization</span>; telos
+              draws the form toward greater integration; and dissolution releases its contents while
+              the Crypt preserves the changes its existence made to the field.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              The eight movements above name the arc. Read through the laws of maintenance,
-              the same arc resolves into ten.
+              The eight movements above and these ten are one arc, not two. What the finer reading
+              adds is the maintenance the coarser one passes over — the boundary, the metabolism,
+              and the threshold.
             </p>
-            <div className="mt-8 space-y-px">
-              {[
-                "The field offers possibility.",
-                "Tattvic biases give possibility direction.",
-                "Boundaries select what can enter.",
-                "The ethers transduce influence between levels.",
-                "Measure organizes force into pattern.",
-                "Metabolism maintains the pattern through exchange.",
-                "Repetition deepens it into formative inertia.",
-                "Thresholds permit sudden reorganization.",
-                "Telos draws the form toward greater integration.",
-                "Dissolution releases its contents, while the Crypt preserves the changes its existence made to the field.",
-              ].map((line, i) => (
-                <div
-                  key={i}
-                  className="grid grid-cols-[auto_1fr] items-baseline gap-6 border-b border-border py-4"
-                >
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="font-serif text-base leading-relaxed text-bone/85 sm:text-lg">
-                    {line}
-                  </span>
-                </div>
-              ))}
-            </div>
           </div>
 
           <p className="mt-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
