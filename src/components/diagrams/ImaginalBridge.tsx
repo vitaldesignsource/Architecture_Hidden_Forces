@@ -97,7 +97,7 @@ export function ImaginalBridge() {
                     className="aoh-ib-dot absolute left-[-0.05rem] h-[3px] w-[3px] rounded-full bg-gold"
                     aria-hidden
                   />
-                  <span className="text-[11px] leading-snug text-bone/45">{conn}</span>
+                  <span className="text-[11px] leading-snug text-bone/55">{conn}</span>
                 </div>
               )}
             </div>

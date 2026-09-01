@@ -86,7 +86,14 @@ for (const e of entries) {
   else if (byId[e.id]?.numeral && /^[IVXLC]+$/.test(e.numeral) && byId[e.id].numeral !== e.numeral)
     fail("index", `"${e.id}" listed as § ${e.numeral} but its heading reads § ${byId[e.id].numeral}`);
 }
-note("index", `${entries.length} entries, all resolving`);
+// The reverse direction matters just as much: a section absent from the index is
+// invisible to every reader who navigates rather than scrolls. This check was
+// added after § XLI and § XLII mounted cleanly and the index never learned them.
+const listed = new Set(entries.map((e) => e.id));
+const unlisted = numbered.filter((s) => !listed.has(s.id));
+if (unlisted.length)
+  fail("index", `sections missing from the index: ${unlisted.map((s) => `§ ${s.numeral} (${s.id})`).join(", ")}`);
+else note("index", `${entries.length} entries, all resolving; all ${numbered.length} sections listed`);
 
 // -------------------------------------------------- prose cross-references
 const haveNumerals = new Set(numbered.map((s) => s.numeral));

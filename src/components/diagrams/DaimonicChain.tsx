@@ -82,7 +82,7 @@ export function DaimonicChain() {
                   <div key={a} className="border-b border-border py-3">
                     <div className="flex flex-wrap items-baseline gap-x-3">
                       <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
-                      <span className="font-mono text-[9px] uppercase tracking-[0.12em] text-bone/45">{c}</span>
+                      <span className="font-mono text-[9px] uppercase tracking-[0.12em] text-bone/55">{c}</span>
                     </div>
                     <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{b}</p>
                   </div>

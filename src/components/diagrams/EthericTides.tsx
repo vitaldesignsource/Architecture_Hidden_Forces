@@ -98,7 +98,7 @@ export function EthericTides() {
               </span>
               <span className="text-sm leading-relaxed text-muted-foreground">
                 {r.names[quarter(phaseAt(r.p, t))]}
-                <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.12em] text-bone/45">
+                <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.12em] text-bone/55">
                   {states[i]}
                 </span>
               </span>

@@ -93,6 +93,18 @@ const ENTRIES: Entry[] = [
     gloss: "Structure enough to hold identity, openness enough to change. Rigidity prevents adaptation; plasticity prevents consolidation." },
   { term: "Monē", script: "μονή", origin: "Greek", at: "theurgy", n: "XXX",
     gloss: "Remaining: a principle keeps its identity undiminished while producing what proceeds from it." },
+  { term: "CHON", origin: "Coined", at: "chon", n: "XLII",
+    gloss: "Carbon, hydrogen, oxygen and nitrogen — the material alphabet through which formative force writes biological form." },
+  { term: "Reservoir", origin: "Coined", at: "atmosphere", n: "XLI",
+    gloss: "Accumulated formative capacity held in a body, place, symbol or practice — retained readiness rather than stored energy." },
+  { term: "Vortex", origin: "Latin", at: "atmosphere", n: "XLI",
+    gloss: "A self-reinforcing pattern drawing new force into its own circulation." },
+  { term: "Standing pattern", origin: "Coined", at: "atmosphere", n: "XLI",
+    gloss: "A recurrence stable enough to keep its organisation while currents pass through it." },
+  { term: "Formative threshold", origin: "Coined", at: "atmosphere", n: "XLI",
+    gloss: "Where accumulated conditions turn qualitative — possibility becoming activity, activity becoming recurrence, recurrence becoming form." },
+  { term: "Scar", origin: "Coined", at: "atmosphere", n: "XLI",
+    gloss: "A persistent alteration left after an event has ended. The field holds no replica of what happened — it holds changed tendencies." },
   { term: "Morphaithēr", script: "Μορφαιθήρ", origin: "Coined", at: "morphaither", n: "V",
     gloss: "The living formative atmosphere surrounding and penetrating a being, place, rite, culture or event." },
   { term: "Nadi · Meridian · Hodos", origin: "Sanskrit", at: "channels", n: "XX",
@@ -231,7 +243,7 @@ export function Lexicon() {
                 {e.script && (
                   <span className="font-serif text-sm text-muted-foreground">{e.script}</span>
                 )}
-                <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-bone/40">
+                <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-bone/55">
                   {e.origin}
                 </span>
               </span>
