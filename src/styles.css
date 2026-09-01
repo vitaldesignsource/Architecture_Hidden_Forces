@@ -219,3 +219,25 @@
    Clip rather than hide: `hidden` would make body a scroll container and break
    every `lg:sticky` column in the file. */
 html, body { overflow-x: clip; }
+
+/* Measure. `max-w-3xl` is sized for 16px body text and yields a comfortable
+   ~75 characters there — but the same container at text-sm (14px) runs to 90-107,
+   and the widest paragraph on the page measured 122. A ch cap is font-size
+   relative, so it holds the line length steady whatever the type size.
+
+   Wrapped in :where() for zero specificity: any paragraph that sets its own
+   max-width, or is centred, keeps exactly what it was given. */
+section :where(p.leading-relaxed:not([class*="max-w"]):not([class*="text-center"])),
+section :where(span.leading-relaxed:not([class*="max-w"])) {
+  max-width: 74ch;
+}
+
+/* Where a paragraph sets its own max-w, honour it — but not past a readable
+   measure. `max-w-3xl` was chosen for 16px text; the same class at text-sm runs
+   to 87 characters. min() keeps whichever is narrower, so an author's deliberate
+   2xl stays 2xl on large type and tightens only where the type is small.
+   Two classes beat Tailwind's one, so these win without !important. */
+section .leading-relaxed.max-w-2xl { max-width: min(42rem, 74ch); }
+section .leading-relaxed.max-w-3xl { max-width: min(48rem, 74ch); }
+section .leading-relaxed.max-w-4xl { max-width: min(56rem, 74ch); }
+section .leading-relaxed.max-w-5xl { max-width: min(64rem, 74ch); }
