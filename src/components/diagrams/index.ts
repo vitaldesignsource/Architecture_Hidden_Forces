@@ -26,3 +26,4 @@ export { EtherCircuit } from "./EtherCircuit";
 export { SubTattvaMatrix } from "./SubTattvaMatrix";
 export { TreeOfLife } from "./TreeOfLife";
 export { ThreeTreasures } from "./ThreeTreasures";
+export { RightRelation } from "./RightRelation";

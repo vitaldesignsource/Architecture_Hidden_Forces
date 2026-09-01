@@ -23,6 +23,7 @@ import {
   LunarClocks,
   PhaseOrgans,
   PlanetaryFamily,
+  RightRelation,
   RiteSequence,
   SubTattvaMatrix,
   Symbolon,
@@ -147,6 +148,7 @@ function Index() {
               { id: "tides", label: "Tides" },
               { id: "mansions", label: "Mansions" },
               { id: "zodiac", label: "Zodiac" },
+              { id: "rightrelation", label: "Right Relation" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
@@ -7927,6 +7929,256 @@ function Index() {
               The grammar constrains what can be said easily.{" "}
               <span className="italic text-gold">
                 The living vessel still participates in the speaking.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="rightrelation" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-510} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXXIX · The Art of Right Relation
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Whether the path should be <span className="italic text-gold">walked</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            The architecture has said what forces are, how they acquire form, how they cross levels,
+            and how they become embodied. This asks the question none of that answers: how a living
+            being should enter these relations without falsifying the force, overwhelming the vessel,
+            confusing participation with possession, or preserving a form after its purpose has gone.
+          </p>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Right Relation is the proportionate and truthful arrangement of force, form, vessel,
+              mediator, timing, and telos through which participation becomes transformative without
+              becoming deformative or parasitic.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            Which is not harmony, agreement, or moral niceness. Some relations require union; others
+            require distance, resistance, severance, or deconsecration.{" "}
+            <span className="text-bone/90">A boundary can be as correct as an embrace.</span>{" "}
+            Rightness means the relation is truthful, proportionate, properly mediated, timely, and
+            ordered toward an intelligible end.
+          </p>
+
+          <div className="mt-16">
+            <RightRelation />
+          </div>
+
+          {/* ---- why an art ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Why it is an art</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Because the same force nourishes in one measure and destroys in another.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Fire may illuminate, consecrate, purify, inflame, or consume. Openness may permit
+                communion or invasion. Stability may preserve wisdom or imprison development.
+                Dissolution may liberate a being or destroy the coherence it needed. None of that
+                reduces to a rule, so the art consists in calibration.
+              </p>
+              <div className="mt-8 max-w-3xl">
+                {[["Measure", "how much force this vessel can actually receive"],
+                  ["Boundary", "what must remain distinct"],
+                  ["Order", "which stage must precede another"],
+                  ["Timing", "when the relation can be entered fruitfully"],
+                  ["Purpose", "what the relation is actually serving"]].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                    <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Which makes this more than correspondence. Correspondence identifies a kinship
+                between things; Right Relation decides whether, when, and how that kinship should be
+                activated. Two things may correspond truly and still be brought together wrongly.
+              </p>
+              <p className="mt-6 font-serif text-xl leading-relaxed text-bone/85">
+                Correspondence discovers the path.{" "}
+                <span className="italic text-gold">Right Relation determines whether the path should
+                be walked.</span>
+              </p>
+            </div>
+          </div>
+
+          {/* ---- participation ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Participation — methexis</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Partaking: the participant receives something of a reality without becoming identical
+              to it or exhausting it. Neither detached observation nor complete fusion — the vessel
+              opens to a force while keeping boundary enough to receive, interpret, and embody it.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              Without openness there is no participation. Without distinction there is no relation.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              And the vessel does not merely contain what enters it. It selects, translates, resists,
+              amplifies, and gives local expression to what it receives, which is why a divine name,
+              planetary virtue, or ritual power appears differently through different vessels. That
+              variation is not corruption. It is the unavoidable consequence of embodiment — the same
+              Transductive Loss § XVII names, seen from the receiving end.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              It also explains why rite cannot be purely external. Entering the operation alters the
+              practitioner&rsquo;s attention, breath, posture, imagination, memory, and field of
+              relation.{" "}
+              <span className="text-bone/90">The operator becomes one of the materials being operated
+              upon.</span>
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                Which is why the art governs access
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                One should not participate in every current one can contact. Some forces exceed the
+                vessel. Some collective fields are parasitic. Some symbols establish genuine
+                relations whose consequences the participant is unprepared to carry. So the question
+                is never only whether the gate can be opened, but what relation opening it
+                establishes, what will sustain that relation, and{" "}
+                <span className="italic">how it will be closed</span>.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- metamorphosis ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Metamorphosis, and its three counterfeits</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A passing experience is not yet metamorphosis. Intensity alone is not transformation —
+              the vessel may be excited, overwhelmed, fascinated, or temporarily expanded without
+              acquiring any new stable capacity at all. Metamorphosis is participation stabilised
+              into a new form: the received pattern metabolised deeply enough to reorganise
+              perception, desire, behaviour, embodiment, and relation.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which ties it to § XXXV. Solve loosens the distorted form, Mercury carries the released
+              material between conditions, Sulfur supplies the directing telos, and Coagula stabilises
+              the new relation through Salt — while repeated alignment builds the formative inertia
+              that lets the pattern sustain itself.
+            </p>
+            <div className="mt-10 grid gap-px lg:grid-cols-3">
+              {[["Mimicry", "copies the external appearance of a form without acquiring its capacity"],
+                ["Inflation", "identifies the personal vessel with a force greater than itself"],
+                ["Possession", "lets an entering pattern displace the existing centre rather than transform it"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-5 pr-6">
+                  <p className="font-serif text-xl text-gold">{a}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              In each, something changes and the change is not rightly integrated. A person touched
+              by a solar current does not actualise it by becoming grandiose; a person participating
+              in a martial current does not fulfil it through indiscriminate aggression. The virtue
+              has to become proportionate capacity — clarity, courage, disciplined direction,
+              protection, sacrifice.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              The test is not how extraordinary the experience felt.{" "}
+              <span className="italic text-gold">It is what the vessel can truthfully embody
+              afterward.</span>
+            </p>
+          </div>
+
+          {/* ---- fulfilment ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Fulfilled actualisation</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The completion of the movement from dynamis through energeia toward entelecheia. Not
+              maximal power — <span className="text-bone/90">power brought into its correct form</span>.
+              A relation is fulfilled when it produces the capacity for which it was entered, without
+              destroying the vessel, falsifying its object, or replacing its declared purpose with a
+              hidden one.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["A symbol", "produces genuine recognition rather than fascination with its surface"],
+                ["A rite", "becomes embodied consequence rather than ceremonial performance"],
+                ["A teaching", "produces understanding capable of new judgement"],
+                ["A tradition", "generates living recognisers rather than obedient preservers"],
+                ["A calling", "becomes responsible action rather than an identity claimed by the ego"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[8rem_1fr] sm:gap-4">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So fulfilment shows in fruit: the person can now perceive, endure, create, discern, or
+              act in a way that was previously only potential. And it is never final. Every actualised
+              form becomes the vessel of new potency — the fruit bears seed, the completed operation
+              alters Morphaithēr, enters the Crypt, contributes to tradition, and changes the
+              conditions later beings will meet.
+            </p>
+          </div>
+
+          {/* ---- the test ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The practical test</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Discernment is the faculty governing the whole sequence — whether a correspondence is
+              genuine, the vessel prepared, the mediator trustworthy, the timing right, and the
+              actual fruits a match for the declared purpose.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Truth", "Is the perceived correspondence real, or merely desired?"],
+                ["Proportion", "Can the vessel receive this force without inflation or collapse?"],
+                ["Mediation", "Is the symbol, intermediary, or rite appropriate to the relation?"],
+                ["Boundary", "What must remain distinct, and what may legitimately unite?"],
+                ["Timing", "Is this being entered during a compatible tide, and in the right sequence?"],
+                ["Telos", "What is the operation actually serving?"],
+                ["Fruit", "Does it increase appropriate capacity, coherence, and responsible action?"],
+                ["Closure", "Can the relation be concluded, released, or deconsecrated when its work is done?"]].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[1.6rem_6rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_8rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              A relation that cannot tolerate examination, correction, boundary, or closure is
+              immediately suspect.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A tradition demanding depletion to preserve itself has become parasitic. A spirit
+              rejecting discernment contradicts the mediation it claims. A rite that cannot name its
+              object has become vulnerable to the telestic inertia of § XXVII.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <div className="mx-auto max-w-3xl space-y-3">
+              {[["True correspondence", "gives the relation its path."],
+                ["Proper mediation", "gives it safe passage."],
+                ["Proportion", "gives it a viable vessel."],
+                ["Ritual", "gives it ordered embodiment."],
+                ["Metamorphosis", "gives it consequence."],
+                ["Fulfilled actualisation", "gives it fruit."]].map(([a, b]) => (
+                <p key={a} className="font-serif text-lg leading-relaxed text-bone/90">
+                  <span className="text-gold">{a}</span> {b}
+                </p>
+              ))}
+            </div>
+            <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              This is where the architecture becomes ethical without becoming moralistic, and
+              practical without becoming mechanical. The central problem was never whether forces are
+              real.
+            </p>
+            <p className="mx-auto mt-8 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              It is whether we know how to meet them —{" "}
+              <span className="italic text-gold">
+                without worshipping what should be examined, consuming what should be cultivated,
+                merging with what should remain distinct, or preserving what has already lost its
+                soul.
               </span>
             </p>
           </div>
