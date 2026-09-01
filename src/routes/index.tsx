@@ -965,6 +965,9 @@ function Index() {
               <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
                 The ethers are formative fields. The tattvas are vibratory qualities. The
                 elements are embodied conditions. They correspond, but they are not identical.
+                An ether is a medium — a functional level through which forces operate. A tattva
+                is a morphogenic bias — a qualitative tendency directing how those forces will
+                behave. One supplies the capacity; the other gives it a direction.
               </p>
             </div>
             <div className="space-y-6">
@@ -1049,8 +1052,8 @@ function Index() {
             </p>
             <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Read downward — and read the gaps. Each ether is set out with its measure: deficiency
-              on one side, excess on the other, the named virtue between. Warmth’s measure is not
-              named in this section, and is not supplied here.
+              on one side, excess on the other, the named virtue between. Warmth’s measure is given last,
+              because it is the one the system had to wait for.
             </p>
           </div>
 
@@ -1064,17 +1067,28 @@ function Index() {
                 english: "Warmth Ether",
                 verb: "quickens",
                 corr: "Tejas · Πῦρ",
-                title: "Activation",
-                fn: "The function by which possibility ceases to be merely possible. Warmth makes potential active, makes formation active, and releases power.",
-                quote: "",
+                title: "Activation · The Threshold Ether",
+                fn: "The first activated condition of Root Ether — the formative gradient through which latent possibility becomes movement, receptivity, will, and the capacity for transformation.",
+                quote: "Warmth is what allows knowledge to become participation.",
                 lines: [
-                  "Warmth is the quickening — the moment latent virtue becomes operative activity.",
-                  "It supplies force, not orientation. What Warmth releases, Light must articulate as direction.",
+                  "Before anything can change, something must first become active. A seed holds the possibility of a plant; metal can take a new shape. Neither moves until the conditions around it awaken what is latent.",
+                  "Root Ether makes formation possible; Warmth begins it. Warmth is the point at which the neutrality of the field is disturbed — an intensity, a pressure, a stirring. That difference is a gradient, and across a gradient movement becomes possible. It is the first asymmetry of formation.",
+                  "Not physical heat. Heat is measurable as temperature and is one material expression of the principle; warmth also appears as growth, desire, enthusiasm, courage, devotion, irritation, and will. Wherever something passes from dormancy into activity, warmth is present.",
+                  "Cold wax holds its form and resists reshaping. Warmed, it becomes receptive. The warmth does not decide which image will be pressed into it — it allows the wax to receive a configuration at all.",
+                  "Not elemental Fire. Fire is warmth that has acquired direction — consuming, separating, illuminating, purifying. A seed germinating underground is activation without combustion. Warmth is the capacity for ignition; Fire is that capacity assuming one mode.",
+                  "Not the tattva Tejas. An ether is a medium through which forces operate; a tattva is a morphogenic bias directing how they behave. Tejas makes warmth radiant and separating — but Apas can make it incubatory, Vayu volatile, Prithivi bound and preserved, Akasha a charged stillness awaiting activation.",
+                  "Psychically it is attention. An unnoticed impression stays weak; attention returning to it gathers associations, emotion, and significance until it can shape perception. Attention does not merely observe — it feeds the pattern it rests upon. Fear warms by vigilance, resentment by recollection, a sacred image by devotion.",
+                  "It is what carries an understood pattern into the will. Courage is not the absence of fear but sufficient warmth around another purpose; enthusiasm is an idea that has acquired enough warmth to animate the one who receives it.",
+                  "It purifies and consecrates by the same power: loosening fixed residues so they can be released, then leaving the opened vessel receptive to a new organizing pattern. Warmth alone cannot tell purification from destruction — Light must disclose the pattern, Salt must fix it.",
+                  "It is the Threshold Ether. Felt inwardly as vitality, emotion, and will; appearing outwardly as a measurable condition of bodies. It belongs to both movements — in descent it awakens possibility toward form; in return, embodied warmth opens the living vessel toward subtler activity.",
                 ],
-                deficiency: "",
-                virtue: "",
-                gloss: "",
-                excess: "",
+                deficiency:
+                  "Dormancy. Inertia, rigidity, indifference, alienation, and the inability to turn knowledge into action — the pattern understood but never embodied.",
+                virtue: "measured warmth",
+                gloss:
+                  "Balanced warmth produces vitality, receptivity, courage, and sustained transformation. Warmth becomes constructive only when properly measured.",
+                excess:
+                  "Fever. Agitation, impulsiveness, obsession, uncontrolled desire, exhaustion, emotional inflammation — the vessel activated faster than it can organize and contain what it releases.",
                 into: {
                   to: "Φῶς",
                   passage: "Activation opens possibility; articulation gives it direction.",
