@@ -673,6 +673,7 @@ function Index() {
               { id: "astrology", label: "Sky" },
               { id: "subtattva", label: "Compounds" },
               { id: "dao", label: "Dao" },
+              { id: "ignisophia", label: "Ignisophia" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -1810,7 +1811,7 @@ function Index() {
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 A divided person disperses force. One part desires what another fears; one part
                 imagines what another refuses to enact — several animals pulling a chariot in
-                opposing directions.
+                opposing directions. The chariot is made literal in § XX.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 When thought, desire, imagination, speech, and embodied action coordinate around a
@@ -2826,6 +2827,224 @@ function Index() {
             The universe is not merely built. It is continually balancing, circulating, emptying,
             filling, transforming, and returning.
           </p>
+        </div>
+      </section>
+
+      {/* IGNISOPHIA */}
+      <section id="ignisophia" className="relative border-t border-border py-32">
+        <SectionGlyph delay={-130} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XX · Ignisophia
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The chariot of the <span className="italic text-gold">Inner Sun</span>
+          </h2>
+          <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.25em] text-gold-dim">
+            ignis · fire &nbsp;+&nbsp; σοφία · wisdom
+          </p>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Fire made wise. Not passion, energy, or willpower — those can stay divided,
+            compulsive, or destructive. Ignisophia begins only when desire, understanding,
+            imagination, attention, and embodied action are organized around a single centre.
+          </p>
+          <p className="mt-8 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            When desire and understanding revolve around a unified centre, psychic force becomes
+            directed momentum — and directed momentum becomes transformation.
+          </p>
+
+          {/* The chariot */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The chariot · two wheels and a governing centre
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              They are independent faculties, and so they are not one rim. They must turn together
+              while keeping their difference — which is why the vehicle needs a centre and not
+              merely more force.
+            </p>
+            <div className="mt-6 grid gap-3 lg:grid-cols-3">
+              {[
+                { he: "הוֹד", n: "Hod", r: "The wheel of understanding", d: "Language, discrimination, planning, symbol, intelligible structure.", fail: "Hod without Netzach: understanding with little motive power." },
+                { he: "☉", n: "The Inner Sun", r: "The governing centre", d: "Not the erasure of the faculties but their proportion — joining motive power to intelligible direction.", fail: "Which is why this is a matter of coherence, not intensity. A smaller force properly centred outruns a greater one scattered among contradictory desires.", mid: true },
+                { he: "נֶצַח", n: "Netzach", r: "The wheel of desire", d: "Emotion, imagination, attraction, instinct, motive vitality.", fail: "Netzach without Hod: tremendous energy without reliable direction." },
+              ].map((x) => (
+                <div
+                  key={x.n}
+                  className={`group border p-5 transition-colors ${x.mid ? "border-gold/40 bg-clay/20" : "border-border hover:border-gold/40"}`}
+                >
+                  <div className="flex items-baseline justify-between gap-3">
+                    <div className="font-serif text-2xl text-gold">{x.he}</div>
+                    <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                      {x.r}
+                    </div>
+                  </div>
+                  <div className="mt-3 font-serif text-lg italic text-bone">{x.n}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                  <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">
+                    {x.fail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Flywheel + gyroscope */}
+          <div className="mt-16 grid gap-8 sm:grid-cols-2">
+            <div className="border border-border p-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The solar flywheel
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Every thought, desire, image, rite, and act coordinated around the same centre
+                feeds the established movement, until the pattern sustains itself because earlier
+                repetitions have altered the field the next one begins from.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                The flywheel is <em>solar</em> only when its momentum turns around the Inner Sun.
+                Without a coherent centre repetition still builds momentum — as obsession, fear,
+                addiction, or resentment. Ignisophia is not the generation of momentum but its
+                solar organization.
+              </p>
+            </div>
+            <div className="border border-border p-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The gyroscope
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                A rotating gyroscope holds orientation and resists displacement. A person whose
+                thought, desire, value, and action repeatedly revolve around a stable centre is
+                less easily overturned by every passing influence.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                This is not rigidity. A gyroscope moves while preserving orientation — dynamic
+                stability, the capacity to adapt without losing the governing centre.
+              </p>
+            </div>
+          </div>
+
+          {/* Through the ethers */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Warmth alone is not wisdom
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-4">
+              {[
+                ["Warmth", "activates", "desire, urgency, courage, devotion, readiness"],
+                ["Light", "illuminates and directs", "warmth becomes conscious understanding"],
+                ["Tone", "establishes proportion", "relationship, ratio, measured relation"],
+                ["Life", "incorporates", "the new order becomes self-maintaining"],
+              ].map(([a, b, c]) => (
+                <div key={a} className="group border border-border p-4 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-lg italic text-bone">{a}</div>
+                  <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    {b}
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/90">
+              Ignisophia is achieved when heat becomes light, light becomes harmony, and harmony
+              becomes living form.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Unordered warmth becomes agitation, impulsiveness, inflammation, exhaustion. The fire
+              must be received by the other three, or it consumes rather than transforms.
+            </p>
+          </div>
+
+          {/* Tattvas + alchemy */}
+          <div className="mt-16 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Not purely Tejasic
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Tejas supplies the fiery character, but alone it would make the fire destructive or
+                incomplete. The others keep it whole.
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  ["Akasha", "gives the fire space"],
+                  ["Vayu", "gives it movement"],
+                  ["Tejas", "gives it intensity"],
+                  ["Apas", "gives it continuity"],
+                  ["Prithivi", "gives it embodiment"],
+                ].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[6rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                    <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
+                    <span className="font-serif text-base italic text-bone/85">{b}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                And the three principles
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  ["Sulfur", "The inner combustibility — desire, appetite, identity, aspiration, the impulse to become.", "Without Sulfur, nothing ignites."],
+                  ["Mercury", "Circulates and translates that fire between thought, emotion, imagination, body, and act.", "Without Mercury, the fire cannot circulate."],
+                  ["Salt", "Establishes the vessel able to contain the operation and preserve its results.", "Without Salt, the force disperses without lasting."],
+                ].map(([a, b, c]) => (
+                  <div key={a} className="border-b border-border py-4">
+                    <div className="font-serif text-lg italic text-gold">{a}</div>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                    <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{c}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+                The same fire purifies and consecrates: it loosens distorted patterns, separates
+                mixed contents, exposes contradiction, and burns away what cannot belong to the new
+                form — then warms the emptied vessel toward a higher organizing principle.{" "}
+                <span className="text-bone/85">
+                  Purification removes what prevents alignment; consecration establishes what the
+                  purified vessel will serve.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          {/* Six faces */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The six faces · not six fires but six functions of one solar process
+            </p>
+            <div className="mt-6 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                ["Awakening", "Dormant potential receives warmth."],
+                ["Illumination", "Warmth becomes conscious understanding."],
+                ["Purification", "Incompatible structures are separated or dissolved."],
+                ["Consecration", "The vessel is oriented toward a higher centre."],
+                ["Direction", "Desire and understanding enter coordinated movement."],
+                ["Embodiment", "Directed force becomes character, action, enduring form."],
+              ].map(([a, b], i) => (
+                <div key={a} className="border-b border-border py-5">
+                  <div className="flex items-baseline gap-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-serif text-lg italic text-bone">{a}</span>
+                  </div>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The art of preventing inner fire from remaining blind
+            </p>
+            <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              Ignisophia is the wisdom by which inner warmth is illuminated, proportioned,
+              circulated, and embodied — until the divided faculties become a chariot of directed
+              transformation.
+            </p>
+          </div>
         </div>
       </section>
 
