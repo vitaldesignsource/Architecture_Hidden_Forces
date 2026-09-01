@@ -1,0 +1,150 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-void: var(--void);
+  --color-clay: var(--clay);
+  --color-bone: var(--bone);
+  --color-gold: var(--gold);
+  --color-gold-dim: var(--gold-dim);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --font-serif: "EB Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: oklch(0.08 0.005 60);
+  --foreground: oklch(0.95 0.012 80);
+  --void: oklch(0.06 0.005 60);
+  --clay: oklch(0.17 0.008 60);
+  --bone: oklch(0.95 0.012 80);
+  --gold: oklch(0.78 0.13 75);
+  --gold-dim: oklch(0.55 0.09 75);
+  --muted: oklch(0.17 0.008 60);
+  --muted-foreground: oklch(0.6 0.012 70);
+  --border: oklch(0.95 0.012 80 / 0.08);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  /* Instant jump: the treatise is >31,000px tall, so smooth-scrolling a nav
+     click across ~20,000px reads as an unresponsive link. */
+  html { scroll-behavior: auto; }
+  /* Clear the fixed nav (69px) so section headings are not hidden on arrival. */
+  section[id], [id] { scroll-margin-top: 6rem; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: oklch(0.78 0.13 75 / 0.25); }
+}
+
+/* Geometric background animations */
+@keyframes slow-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes slow-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(2%, -2%) scale(1.03); }
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.6; }
+}
+@keyframes glyph-fade {
+  0%, 100% { opacity: 0.03; }
+  50% { opacity: 0.08; }
+}
+@keyframes draw-line {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes letter-coalesce {
+  0%   { opacity: 0; filter: blur(var(--rt-blur, 18px)); transform: translateY(var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); letter-spacing: var(--rt-letter-spacing, 0.4em); color: var(--gold); text-shadow: 0 0 24px color-mix(in oklab, var(--gold) 60%, transparent); }
+  55%  { opacity: 1; filter: blur(2px); transform: translateY(-0.05em) scale(1.02) rotate(0.5deg); letter-spacing: 0.02em; }
+  100% { opacity: 1; filter: blur(0); transform: none; letter-spacing: normal; color: inherit; text-shadow: none; }
+}
+
+@keyframes letter-rise {
+  0%   { opacity: 0; filter: blur(calc(var(--rt-blur, 8px) * 0.5)); transform: translateY(var(--rt-translate-y, 0.6em)); }
+  100% { opacity: 1; filter: blur(0); transform: none; }
+}
+
+
+@keyframes shimmer-sweep {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes title-underline {
+  0%, 40% { transform: scaleX(0); opacity: 0; }
+  100%    { transform: scaleX(1); opacity: 1; }
+}
+
+.animate-slow-spin { animation: slow-spin 120s linear infinite; transform-origin: center; }
+.animate-slow-spin-reverse { animation: slow-spin-reverse 180s linear infinite; transform-origin: center; }
+.animate-drift { animation: drift 18s ease-in-out infinite; }
+.animate-breathe { animation: breathe 8s ease-in-out infinite; }
+.animate-glyph-fade { animation: glyph-fade 12s ease-in-out infinite; }
+.animate-rise { animation: rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+.reveal-title { display: inline-block; }
+.reveal-title .rt-word { display: inline-block; white-space: nowrap; }
+.reveal-title .rt-char {
+  display: inline-block;
+  opacity: 0;
+  will-change: transform, filter, opacity;
+  animation: letter-coalesce var(--rt-duration, 1.4s) cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.reveal-title.rt-variant-rise .rt-char {
+  animation-name: letter-rise;
+}
+.reveal-title.rt-variant-shimmer .rt-char {
+  animation-name: letter-rise;
+}
+.reveal-title .rt-space { display: inline-block; width: 0.28em; }
+
+.title-shimmer {
+  background: linear-gradient(
+    100deg,
+    color-mix(in oklab, var(--gold) 100%, transparent) 0%,
+    color-mix(in oklab, var(--bone) 92%, transparent) 45%,
+    color-mix(in oklab, var(--gold) 100%, transparent) 55%,
+    color-mix(in oklab, var(--gold) 100%, transparent) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer-sweep 6s ease-in-out 2.4s infinite;
+}
+
+.title-underline {
+  transform-origin: left center;
+  animation: title-underline 1.6s cubic-bezier(0.16, 1, 0.3, 1) 2s both;
+}
+
+.grain {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.06; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
