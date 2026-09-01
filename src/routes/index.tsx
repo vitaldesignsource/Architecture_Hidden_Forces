@@ -1746,6 +1746,163 @@ function Symbolon() {
   );
 }
 
+/**
+ * ForceRegisters — the six categories drawn as three different KINDS of thing,
+ * because they are not six equivalent substances. Transcendent, formative and
+ * material are ontological registers (stacked bands); psychic and collective are
+ * scales of organisation (bars cutting across every band); intermediary is a
+ * function performed between registers (the serpentine thread crossing them).
+ * Six equal boxes would state the opposite of the doctrine.
+ */
+function ForceRegisters() {
+  const [sel, setSel] = useState<string | null>(null);
+  const BANDS = [
+    { k: "Transcendent", y: 16, mode: "Attraction, participation, finality",
+      q: "Toward what does formation tend?",
+      kind: "ontological register",
+      d: "Strictly it should not be called a force at all — force implies operation inside a field of relations, and the Absolute cannot be placed in that field as its most powerful object. These orient without pushing. The Good does not shove a being toward goodness; it draws by becoming an object of participation." },
+    { k: "Formative", y: 100, mode: "Patterning, proportion, constraint",
+      q: "According to what organisation does it form?",
+      kind: "ontological register",
+      d: "Not the energy that moves a system but the pattern, boundary, proportion, gradient and attractor according to which movement takes form. A riverbed does not create the water. A scale does not create the sound." },
+    { k: "Material", y: 184, mode: "Physical interaction, resistance, embodiment",
+      q: "Through what concrete conditions does it occur?",
+      kind: "ontological register",
+      d: "Resistance, limitation, weight, delay, cost, irreversibility — not failures of spirit but the conditions through which formation acquires consequence. And matter answers back: exhaustion changes emotion, architecture changes movement, nutrition changes attention." },
+  ];
+  const BARS = [
+    { k: "Psychic", x: 322, mode: "Attention, affect, intention, imagination",
+      q: "How does it move within a conscious vessel?",
+      kind: "scale of organisation",
+      d: "Real, because it alters perception, physiology, choice, behaviour, relationship and environment — but never a disembodied substance inside the skull. Psychic force is embodied, relational, and field-dependent, which is why it cuts across every register rather than sitting in one." },
+    { k: "Collective", x: 372, mode: "Emergence, coordination, social reinforcement",
+      q: "How does it organise among many vessels?",
+      kind: "scale of organisation",
+      d: "Distributed causation. Language is produced by people, yet no single speaker controls it; money depends on recognition, yet determines what is possible for those born into it. More than any one participant's intention, without necessarily being an independently conscious being." },
+  ];
+  const THREAD = { k: "Intermediary", mode: "Translation and transduction",
+    q: "How does it cross from one domain into another?",
+    kind: "function between registers",
+    d: "Not a sixth substance inserted between spirit and matter — the Mercurial category, naming any process that receives a pattern in one form, alters it by its own constitution, and delivers it in another. Which is why it is drawn crossing the registers rather than occupying one." };
+  const ALL = [...BANDS, ...BARS, THREAD];
+  const cur = ALL.find((x) => x.k === sel) || null;
+  const on = (k: string) => sel === k;
+  const dim = (k: string) => (sel && sel !== k ? 0.25 : 1);
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[420px]">
+        <style>{`
+          .aoh-fr-t { stroke-dasharray: 5 7; animation: aoh-fr-flow 3.4s linear infinite; }
+          @keyframes aoh-fr-flow { to { stroke-dashoffset: -24 } }
+          .aoh-fr-h { cursor: pointer; }
+          @media (prefers-reduced-motion: reduce) { .aoh-fr-t { animation: none } }
+        `}</style>
+        <svg viewBox="0 0 420 292" className="h-auto w-full" role="img" aria-labelledby="aoh-fr-t2">
+          <title id="aoh-fr-t2">
+            Three stacked bands are ontological registers; two vertical bars cutting across all of
+            them are scales of organisation; a serpentine thread crossing the bands is the
+            intermediary function.
+          </title>
+
+          {BANDS.map((b) => (
+            <g key={b.k} className="aoh-fr-h" opacity={dim(b.k)} onClick={() => setSel(on(b.k) ? null : b.k)}
+               role="button" tabIndex={0} aria-pressed={on(b.k)} aria-label={b.k}
+               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on(b.k) ? null : b.k); } }}>
+              <rect x="16" y={b.y} width="280" height="58" fill="var(--void)"
+                    stroke="var(--gold)" strokeOpacity={on(b.k) ? 1 : 0.45} strokeWidth={on(b.k) ? 1.5 : 0.9} />
+              <text x="76" y={b.y + 27} className="font-serif" fontSize="15"
+                    fill={on(b.k) ? "var(--gold)" : "var(--bone)"} fillOpacity={on(b.k) ? 1 : 0.8}>{b.k}</text>
+              <text x="76" y={b.y + 44} className="font-mono" fontSize="7" letterSpacing="1.1"
+                    fill="var(--muted-foreground)">ONTOLOGICAL REGISTER</text>
+            </g>
+          ))}
+
+          {BARS.map((b) => (
+            <g key={b.k} className="aoh-fr-h" opacity={dim(b.k)} onClick={() => setSel(on(b.k) ? null : b.k)}
+               role="button" tabIndex={0} aria-pressed={on(b.k)} aria-label={b.k}
+               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on(b.k) ? null : b.k); } }}>
+              <rect x={b.x - 13} y="16" width="26" height="226" fill="var(--void)"
+                    stroke="var(--gold)" strokeOpacity={on(b.k) ? 1 : 0.4} strokeWidth={on(b.k) ? 1.5 : 0.9} />
+              {[45, 129, 213].map((cy) => (
+                <line key={cy} x1={b.x - 13} y1={cy} x2={b.x + 13} y2={cy}
+                      stroke="var(--gold)" strokeOpacity={on(b.k) ? 0.55 : 0.2} strokeWidth="0.6" />
+              ))}
+              <text x={b.x} y="129" textAnchor="middle" transform={`rotate(-90 ${b.x} 129)`}
+                    className="font-mono" fontSize="9.5" letterSpacing="2"
+                    fill={on(b.k) ? "var(--gold)" : "var(--bone)"} fillOpacity={on(b.k) ? 1 : 0.75}>
+                {b.k.toUpperCase()}
+              </text>
+            </g>
+          ))}
+
+          <g className="aoh-fr-h" opacity={dim(THREAD.k)} onClick={() => setSel(on(THREAD.k) ? null : THREAD.k)}
+             role="button" tabIndex={0} aria-pressed={on(THREAD.k)} aria-label={THREAD.k}
+             onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on(THREAD.k) ? null : THREAD.k); } }}>
+            <path className={on(THREAD.k) ? "aoh-fr-t" : "aoh-fr-t"}
+                  d="M46,8 C70,44 22,64 46,87 C70,110 22,148 46,171 C70,196 22,222 46,250"
+                  fill="none" stroke="var(--gold)" strokeOpacity={on(THREAD.k) ? 1 : 0.5}
+                  strokeWidth={on(THREAD.k) ? 1.8 : 1.1} />
+            {[87, 171].map((cy) => (
+              <circle key={cy} cx="46" cy={cy} r={on(THREAD.k) ? 4 : 3} fill="var(--void)"
+                      stroke="var(--gold)" strokeOpacity={on(THREAD.k) ? 1 : 0.55} strokeWidth="1" />
+            ))}
+            <text x="46" y="268" textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="1.2"
+                  fill={on(THREAD.k) ? "var(--gold)" : "var(--muted-foreground)"}>INTERMEDIARY</text>
+          </g>
+
+          <text x="176" y="284" textAnchor="middle" className="font-mono" fontSize="7" letterSpacing="1.2"
+                fill="var(--muted-foreground)" opacity="0.75">
+            REGISTERS STACK · SCALES CUT ACROSS · THE FUNCTION CROSSES BETWEEN
+          </text>
+        </svg>
+      </div>
+
+      <div className="min-h-[16rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.k} — {cur.kind}
+            </p>
+            <div className="mt-4 space-y-px">
+              <div className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">Causal mode</span>
+                <span className="text-sm leading-relaxed text-muted-foreground">{cur.mode}</span>
+              </div>
+              <div className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">It asks</span>
+                <span className="font-serif text-base italic leading-relaxed text-gold">{cur.q}</span>
+              </div>
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
+          </>
+        ) : (
+          <>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              A force here is any organised capacity to produce, direct, inhibit, or transform a
+              state — not necessarily a measurable physical energy. But the six categories are not
+              six equivalent substances, and drawing them as six equal boxes would say the opposite
+              of what they are.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Transcendent, formative and material name{" "}
+              <span className="text-bone/90">ontological registers</span>. Psychic and collective
+              name <span className="text-bone/90">scales of organisation</span>, which is why they
+              cut across every register instead of occupying one. Intermediary names a{" "}
+              <span className="text-bone/90">function performed between registers</span>, so it is
+              drawn crossing them.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Holding that apart is what keeps the system from turning every influence into another
+              invisible fluid.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -2692,6 +2849,7 @@ function Index() {
               { id: "organs", label: "Organs" },
               { id: "image", label: "Image" },
               { id: "symbol", label: "Symbol" },
+              { id: "taxonomy", label: "Forces" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2839,9 +2997,10 @@ function Index() {
               { n: "XXIV", id: "organs", t: "Organs, Elements, Five Phases", d: "The interior ecology: seats of transformation, and healing as formative range." },
               { n: "XXV", id: "image", t: "Image and Imagination", d: "The middle country: how force becomes appearance, and appearance carries force." },
               { n: "XXVI", id: "symbol", t: "Symbol", d: "The knot where worlds meet: the tally, and what completes it." },
-              { n: "XXVII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXVII", id: "taxonomy", t: "Taxonomy of Forces", d: "Six modes of causation — and why they are not six equivalent substances." },
+              { n: "XXVIII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXVIII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXIX", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -7561,13 +7720,393 @@ function Index() {
         </div>
       </section>
 
+      <section id="taxonomy" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-290} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXVII · Taxonomy of Forces
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Six modes of causation in the <span className="italic text-gold">living field</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            A force, here, is not necessarily a measurable physical energy. It is any organised
+            capacity to produce, direct, inhibit, or transform a state. A symbol, an emotion, a
+            gravitational interaction, a social institution, a formative pattern, and a transcendent
+            ideal may all exert force — and they do not operate in the same way.
+          </p>
+
+          <div className="mt-16">
+            <ForceRegisters />
+          </div>
+
+          {/* ---- transcendent ---- */}
+          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Transcendent — force beyond force</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Causation closer to finality than to impact. It answers: for the sake of what?
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Better understood as transcendent principles, virtues, or attractors — realities that
+                orient formation without mechanically pushing it. The Good does not shove a being
+                toward goodness; it draws by becoming an object of participation. Beauty organises
+                desire by attraction. Truth exerts force by compelling greater coherence. Unity draws
+                fragmented parts toward integration. Logos gives direction to what would otherwise
+                stay unarticulated.
+              </p>
+              <div className="mt-8 border-l-2 border-gold pl-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                  The transcendent is not Root Ether
+                </p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Root Ether is the primordial condition of transmissibility and formative
+                  possibility. It belongs to the architecture of manifestation. It is not God, the
+                  One, or the ultimate source of being. The transcendent exceeds the entire field;
+                  Root Ether is the deepest condition{" "}
+                  <span className="italic">within</span> which differentiated formation becomes
+                  possible. Keeping them apart is what stops the metaphysics from confusing the
+                  medium of manifestation with its source.
+                </p>
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                No transcendent principle is fully contained inside a symbol, deity, doctrine, or
+                vision. These are vessels of participation, each revealing something and each leaving
+                an irreducible remainder. A solar deity may participate in illumination, centrality,
+                sovereignty, and generative radiance without being identical to the Absolute. The
+                characteristic danger at this level is{" "}
+                <span className="text-bone/90">metaphysical inflation</span> — mistaking a powerful
+                psychic image, a personal preference, or a collective doctrine for an unquestionable
+                transcendent command. So a claimed transcendent force is judged by its fruits:
+                whether it produces integration, virtue, proportion, humility, and deeper
+                participation, or grandiosity, rigidity, and exemption from discernment.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- formative ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Formative — the forces that give pattern</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Formative forces do not necessarily supply the energy that moves a system. They
+              establish the pattern, boundaries, proportions, gradients, and attractors according to
+              which movement takes form. A riverbed does not create the water, but it gives the water
+              a path. A musical scale does not create sound, but it determines which relationships
+              can become harmonic.
+            </p>
+            <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              What a formative force is made of
+            </p>
+            <div className="mt-5 flex flex-wrap items-stretch gap-2">
+              {["Etheric function", "Tattvic bias", "Geometry", "Vessel", "Timing"].map((t, i) => (
+                <div key={t} className="flex items-stretch gap-2">
+                  <div className="flex min-h-[3rem] items-center border border-border px-4">
+                    <span className="text-sm text-muted-foreground">{t}</span>
+                  </div>
+                  {i < 4 && <span className="self-center font-mono text-sm text-gold" aria-hidden>+</span>}
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which is why Warmth Ether expressed through Tejas–Vayu behaves nothing like Warmth
+              Ether expressed through Tejas–Apas. The first spreads rapidly and turns volatile; the
+              second generates a cohesive warmth capable of gestation, or of relationship.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              These forces act less like blows than like attractors: they make certain configurations
+              increasingly probable, repetition deepens the channel, and formative inertia begins to
+              preserve the pattern. It is how habits, organisms, symbols, institutions, and psychic
+              complexes hold a recognisable form while their material contents change completely.
+              Distortion comes at either extreme — rigidity prevents adaptation, plasticity prevents
+              consolidation. Healthy formation requires{" "}
+              <span className="text-bone/90">metastability</span>: structure enough to hold identity,
+              openness enough to change.
+            </p>
+          </div>
+
+          {/* ---- psychic ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Psychic — within the image-bearing soul</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Attention, desire, emotion, imagination, intention, memory, expectation, belief,
+              aversion, identification, will. These are real forces because they alter perception,
+              physiology, choice, behaviour, relationship, and environment — but they are never
+              disembodied substances floating inside the skull. Along the human axis: the Head sees a
+              possibility, the Heart charges it with significance, and the Hara determines whether
+              there is force enough to embody it.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              An image concentrates diffuse psychic force into an appearance; a symbol gathers that
+              appearance into a stable relationship; repetition gives it momentum. That is the
+              flywheel of § IX, and it turns either way. A fear complex runs it negatively — an
+              ambiguous event reads as threatening, the image activates fear, fear changes breath and
+              posture, tension makes the world feel more dangerous, and the reading is confirmed.
+              Ignisophia runs the same principle integrally, coordinating understanding and desire
+              around the Inner Sun so that force stops spinning about contradictory centres.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Dispersed", "attention and desire moving in incompatible directions"],
+                ["Blocked", "an impulse that can find no viable path"],
+                ["Compulsive", "repetition that has become self-reinforcing"],
+                ["Integrated", "Head, Heart, and Hara sharing one centre"],
+                ["Consecrated", "power ordered toward a value greater than immediate appetite"]].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[1.6rem_7rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_9rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ---- collective ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Collective — distributed causation</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Language, custom, law, money, reputation, institutional authority, shared myth,
+              fashion, ideology, markets, rites, group emotion, cultural memory. A collective force
+              emerges from individual participation and then exerts pressure on the individuals
+              sustaining it. Language is produced and transmitted by people, yet no single speaker
+              controls it. Money depends on collective recognition, yet it determines concrete
+              possibilities for those born into it. Institutions are made of human actions, yet their
+              procedures outlast generations of participants. It is more than any one participant&rsquo;s
+              intention without necessarily being an independently conscious being.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The Morphaithēr becomes collective when many people repeatedly contribute attention,
+              emotion, symbol, architecture, language, and behaviour to the same formative
+              atmosphere. A courtroom, a temple, a school, a marketplace, a rally, and a family home
+              each hold a distinctive one, generated through arrangement, expectation, memory,
+              status, speech, sound, clothing, posture, and repeated action.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold/50 pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                On the word egregore
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                Usable here as a personification of a highly organised collective pattern, without
+                automatically implying a literally independent invisible entity. It can name a
+                collective attractor that has acquired enough symbolic coherence and formative
+                inertia to recruit attention, preserve itself, and resist disruption. Such a
+                structure appears agent-like precisely because it shapes the behaviour of its
+                participants toward its own continuation.
+              </p>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Collective force builds momentum the same way: a symbol activates shared emotion,
+              shared emotion produces coordinated action, coordinated action strengthens identity,
+              strengthened identity returns attention to the symbol. That cycle yields solidarity,
+              tradition, and mutual care — and also polarisation, scapegoating, panic, bureaucracy,
+              and ideological possession. A collective force is integral when it strengthens the
+              persons and relationships composing it, and parasitic when preserving the pattern
+              requires their continual depletion, deception, or diminishment.
+            </p>
+          </div>
+
+          {/* ---- material ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Material — embodied constraint</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Matter is not an inert illusion waiting to obey spiritual intention.
+              </p>
+            </div>
+            <div>
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  Where analogy is not identity
+                </p>
+                <div className="mt-4 space-y-px">
+                  {[["Warmth Ether", "is not merely physical heat"],
+                    ["Light Ether", "is not simply electromagnetic radiation"],
+                    ["Tone Ether", "is not reducible to acoustic vibration"],
+                    ["Life Ether", "is not another name for biochemistry"]].map(([a, b]) => (
+                    <div key={a} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-3 border-b border-border py-2.5">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                      <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-4 text-[13px] leading-relaxed text-bone/60">
+                  The metaphysical terms describe proposed functions of organisation; the physical
+                  sciences describe measurable processes. Analogies may exist between them. Analogy
+                  is not identity.
+                </p>
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Matter contributes resistance, limitation, weight, delay, cost, and irreversibility.
+                These are not failures of spirit. They are the conditions through which formation
+                acquires consequence — and Salt is their direct alchemical expression. A force that
+                cannot pass through the conditions of Salt cannot become materially established. No
+                amount of symbolic intensity abolishes the capacities and limits of the vessel;
+                intention may reorganise action, but action still negotiates time, physiology,
+                resources, environment, and physical law.
+              </p>
+              <p className="mt-6 font-serif text-xl italic leading-relaxed text-bone/85">
+                This is the cost of form. To become actual is to accept limitation.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                And formation sends information back upward. Exhaustion changes emotion. Architecture
+                changes movement. Nutrition affects attention. Technology changes collective
+                organisation. A ritual space alters posture and perception through acoustics,
+                lighting, temperature, geometry. Causation does not travel only from spirit toward
+                matter. <span className="text-bone/90">Matter answers back</span> — the body is a
+                participant in the whole formative circuit, not its final passive recipient.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- intermediary ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Intermediary — the Mercurial category</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Not a sixth substance inserted between spirit and matter. Intermediary names any
+              process that receives a pattern in one form, modifies it according to its own
+              constitution, and delivers it in another — which means every intermediary adds
+              something, excludes something, and produces loss.
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {[["Breath", "emotion into bodily rhythm, and rhythm back into psychic state"],
+                ["Imagination", "diffuse modulation into image"],
+                ["Symbol", "image into communicable structure"],
+                ["Language", "private perception into collective meaning"],
+                ["Ritual", "symbolic structure into embodied sequence"],
+                ["Channels", "circulating vitality through the living vessel"],
+                ["Institutions", "collective values into procedures"],
+                ["Celestial timing", "macrocosmic pattern into a framework for participation"],
+                ["Art", "formative relationships into perceptible arrangements"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Qi and prana belong here insofar as they describe living vitality in circulation, which
+              lets the whole vocabulary be related without being collapsed: Root Ether is the
+              condition of transmission, the four ethers are formative functions, Qi or prana is the
+              living current, a channel is the organised pathway, and a centre or organ is the
+              transformative node.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                The Law of Transductive Loss
+              </p>
+              <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
+                Every mediator preserves part of a pattern, transforms part of it, and leaves part
+                behind.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                A dream translates emotion into imagery and distorts chronology. Language translates
+                experience into concepts and excludes what cannot easily be named. Ritual gives
+                symbols a body and may become mechanical. Institutions translate values into rules
+                and can preserve the rule long after losing the value. Intermediaries are therefore
+                both necessary and dangerous: without them the levels stay disconnected, and mistaken
+                for the source they become idols, dogmas, and bottlenecks.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- the braid ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The six in a single event</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A rite shows all six cooperating at once, which is the clearest demonstration that none
+              of them is the explanation.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Transcendent", "the principle the rite is oriented toward — unity, wisdom, healing, justice, illumination, the divine"],
+                ["Formative", "its geometry, sequence, proportion, symbolism, timing, and governing pattern"],
+                ["Psychic", "the participants' attention, emotion, imagination, memory, desire, intention"],
+                ["Collective", "shared language, synchronised action, tradition, authority, communal participation"],
+                ["Material", "bodies, architecture, fire, sound, breath, light, objects, temperature, movement"],
+                ["Intermediary", "the words, symbols, images, gestures, music, incense and actions carrying the pattern across the rest"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              No single force explains the event. The rite is a braid of forces occupying different
+              scales and operating through different causal modes.
+            </p>
+          </div>
+
+          {/* ---- force profile ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">A force profile</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              To keep the taxonomy rigorous rather than decorative, any proposed force should be
+              describable through the same twelve questions.
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {[["Source", "From what domain does it arise?"],
+                ["Vector", "What change does it tend to produce?"],
+                ["Pattern", "What organisation directs it?"],
+                ["Quality", "What tattvic or elemental character does it carry?"],
+                ["Medium", "Through what does it travel?"],
+                ["Pathway", "Along what channel or relationship does it move?"],
+                ["Vessel", "What receives and translates it?"],
+                ["Timing", "During what phase or condition does it operate?"],
+                ["Scale", "Material, biological, psychic, collective, celestial, metaphysical?"],
+                ["Resistance", "What boundaries, impedance, or counterforces limit it?"],
+                ["Cost", "What does its embodiment consume or exclude?"],
+                ["Status", "Is the claim empirical, traditional, symbolic, metaphysical, or speculative?"]].map(([a, b], i) => (
+                <div key={a} className={`grid grid-cols-[1.6rem_5.5rem_1fr] items-baseline gap-3 border-b py-3 ${
+                  i === 11 ? "border-gold/50" : "border-border"}`}>
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className={`font-mono text-[10px] uppercase tracking-[0.12em] ${
+                    i === 11 ? "text-gold" : "text-gold"}`}>{a}</span>
+                  <span className={`text-sm leading-relaxed ${i === 11 ? "text-bone/85" : "text-muted-foreground"}`}>
+                    {b}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              That last question is the one doing the most work. A measured physical force, a
+              traditional occult attribution, a useful psychological symbol, and a speculative
+              metaphysical principle may all coexist in this system — provided none of them is
+              presented as the same kind of knowledge as the others.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              The Law of Force and Vessel
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-2xl leading-relaxed text-bone/90">
+              No force without a vector. No vector without a medium. No medium without a vessel. No
+              vessel without resistance.{" "}
+              <span className="italic text-gold">No manifestation without consequence.</span>
+            </p>
+            <div className="mt-12 grid gap-x-10 gap-y-px sm:grid-cols-2 lg:grid-cols-3">
+              {[["Transcendent", "orient"], ["Formative", "organise"], ["Psychic", "interpret and intend"],
+                ["Collective", "coordinate and amplify"], ["Material", "embody and constrain"],
+                ["Intermediary", "translate among them"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
+                  <span className="ml-3 text-sm text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-12 text-center font-serif text-xl italic leading-relaxed text-bone/85">
+              Actual events arise where all six become braided into one living process.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXVII · The Series
+                § XXVIII · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -7660,7 +8199,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXVIII · Lineage
+                § XXIX · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
