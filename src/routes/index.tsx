@@ -8789,7 +8789,8 @@ function Index() {
           </div>
 
           {/* ---- gathered reality ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/caldera.webp" opacity={0.44} position="center 50%" scrim={0.24} />
             <h3 className="font-serif text-2xl leading-tight">The symbol as gathered reality</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A powerful symbol gathers a constellation into a bounded form — a visible or audible
@@ -9293,7 +9294,8 @@ function Index() {
           </div>
 
           {/* ---- transcendent ---- */}
-          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/cavepool.webp" opacity={0.56} position="center 50%" scrim={0.18} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Transcendent — force beyond force</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -9339,7 +9341,8 @@ function Index() {
           </div>
 
           {/* ---- formative ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/travertine.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait />
             <h3 className="font-serif text-2xl leading-tight">Formative — the forces that give pattern</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Formative forces do not necessarily supply the energy that moves a system. They
@@ -9458,7 +9461,8 @@ function Index() {
           </div>
 
           {/* ---- material ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/waterfallgorge.webp" opacity={0.4} position="center 50%" scrim={0.22} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Material — embodied constraint</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -9932,7 +9936,8 @@ function Index() {
           </div>
 
           {/* ---- descent and return ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/stairs.webp" opacity={0.56} position="center 50%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">Descent and return</h3>
             <div className="mt-8 grid gap-10 lg:grid-cols-2">
               <div>
@@ -10048,7 +10053,8 @@ function Index() {
           </p>
 
           {/* ---- theurgic engineering ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/gorgewheel.webp" opacity={0.52} position="center 50%" scrim={0.2} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">What engineering means here</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -10173,7 +10179,8 @@ function Index() {
           </div>
 
           {/* ---- temple ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/reedslamp.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait />
             <h3 className="font-serif text-2xl leading-tight">The temple as an engineered field</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A late-antique temple was not a building containing religious objects. It was a
@@ -10451,7 +10458,8 @@ function Index() {
           </div>
 
           {/* ---- fate ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/foldedcliff.webp" opacity={0.5} position="center 50%" scrim={0.2} portrait />
             <h3 className="font-serif text-2xl leading-tight">Fate as the order of embodied causation</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Fate — <span className="italic">heimarmenē</span> — is not an arbitrary supernatural
@@ -11274,7 +11282,8 @@ function Index() {
           </div>
 
           {/* ---- rhythmos ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/tidepool.webp" opacity={0.42} position="center 45%" scrim={0.26} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Rhythmos</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -11502,7 +11511,8 @@ function Index() {
           </div>
 
           {/* ---- moon as mediator ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/seainlet.webp" opacity={0.5} position="center 50%" scrim={0.2} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">The Moon as formative mediator</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
