@@ -212,8 +212,21 @@ function TreeOfLife() {
   const R_NODE = 20;
   const R_HALO = 34;
 
-  const SERIF = "'EB Garamond', Georgia, 'Times New Roman', serif";
-  const MONO = "ui-monospace, SFMono-Regular, Menlo, monospace";
+  // Flash-arrival time per sefirah, in seconds. Derived from cumulative arc length
+  // along the flash polyline (total 1401.36u) inverted through the animation's own
+  // cubic-bezier(0.65,0,0.35,1), scaled to the 8.8s draw (the 55% keyframe).
+  // Previously these were index-linear (0.5 + i*0.85), which made six of ten vessels
+  // ignite BEFORE the light reached them — up to 1.21s early at Binah.
+  const IGNITE_AT = [0.0, 2.42, 3.41, 4.06, 4.5, 4.78, 5.11, 5.86, 6.71, 8.8];
+
+  // Must match the stacks Tailwind emits for font-serif/font-mono, or the tree's
+  // Hebrew resolves to a different face than the byte-identical Hebrew in the
+  // cards beside it. (var(--font-serif) does NOT work here: @theme inline inlines
+  // into utility classes and never emits the custom property, so it silently
+  // falls back to the inherited sans stack.)
+  const SERIF = '"EB Garamond", ui-serif, Georgia, serif';
+  const MONO =
+    'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 
   type Sefirah = {
     id: string;
@@ -247,7 +260,11 @@ function TreeOfLife() {
   ];
 
   const find = (id: string) => nodes.find((n) => n.id === id)!;
-  const daat = { x: MID, y: 204 };
+  // Da'at sits in the Abyss on the middle pillar. y=182, not the geometric
+  // midpoint 205: the flash's Binah->Chesed segment crosses x=150 at y=205, so
+  // at 205 a 5px animated glow bisected the ring (clearance 0.86u). Perpendicular
+  // clearance needs > 18.5u (r16 + half the 5px glow); y=182 gives 19.88u.
+  const daat = { x: MID, y: 182 };
 
   // The lightning flash — the order of emanation, Keter down to Malchut.
   const flash = nodes.map((n) => `${n.x},${n.y}`).join(" ");
@@ -307,10 +324,18 @@ function TreeOfLife() {
       >
         <title id="aolt-title">עֵץ הַחַיִּים — the Kabbalistic Tree of Life</title>
         <desc id="aolt-desc">
-          Ten sefirot on three pillars — Severity on the left, Equilibrium in the centre, Mercy
-          on the right — joined by the twenty-two paths. Da&apos;at appears hollow on the middle
-          pillar as a non-sefirah, and the lightning flash of descent traces the order of
-          emanation from Keter down to Malchut.
+          The Kabbalistic Tree of Life. Ten sefirot on three pillars, joined by the
+          twenty-two paths. The Pillar of Severity on the left carries Binah
+          (Understanding), Gevurah (Severity) and Hod (Glory). The Pillar of Mercy on the
+          right carries Chochmah (Wisdom), Chesed (Mercy) and Netzach (Victory). The middle
+          Pillar of Equilibrium carries Keter (Crown), Tiferet (Beauty), Yesod (Foundation)
+          and Malchut (Kingdom). Above the Crown, three arcs figure the veils of negative
+          existence — Ain, Ain Soph, Ain Soph Aur. A dashed horizontal marks the Abyss,
+          which separates the supernal triad from the seven below it. On the middle pillar
+          within the Abyss, Da&apos;at (Knowledge) is drawn hollow and unconnected by any
+          path, because it is not a sefirah. The lightning flash traces the order of
+          emanation from Keter down to Malchut, and each vessel kindles as the light
+          reaches it.
         </desc>
 
         <defs>
@@ -335,16 +360,20 @@ function TreeOfLife() {
           </linearGradient>
         </defs>
 
-        {/* Ein Sof — the light above the Crown */}
-        <ellipse cx={MID} cy="30" rx="98" ry="64" fill="url(#aolt-crown)" />
+        {/* The light beyond the veils. cy must be >= ry or the falloff is cut by the
+            top of the viewBox, leaving a hard horizontal edge on flat black.
+            (Ein Sof itself is named among the three veils below, not here.) */}
+        <ellipse cx={MID} cy="54" rx="96" ry="54" fill="url(#aolt-crown)" />
 
         {/* Three veils of negative existence */}
-        <g fill="none" stroke="var(--gold)" strokeWidth="0.5" strokeLinecap="round">
+        {/* Ain, Ain Soph, Ain Soph Aur — graded outward, the outer more hidden.
+            0.9 not 0.5: at 340px, 0.5u = 0.57 CSS px and antialiasing halves it. */}
+        <g fill="none" stroke="var(--gold)" strokeWidth="0.9" strokeLinecap="round">
           {[42, 52, 62].map((r, i) => (
             <path
               key={r}
               d={veil(r)}
-              strokeOpacity="0.55"
+              strokeOpacity={[0.62, 0.44, 0.28][i]}
               strokeDasharray={i === 0 ? undefined : "3 5"}
               className="animate-breathe"
               style={{ animationDelay: `-${i * 2.6}s` }}
@@ -359,9 +388,9 @@ function TreeOfLife() {
           x2="282"
           y2={daat.y}
           stroke="var(--gold-dim)"
-          strokeOpacity="0.22"
-          strokeWidth="0.5"
-          strokeDasharray="1 6"
+          strokeOpacity="0.45"
+          strokeWidth="0.9"
+          strokeDasharray="2 5"
         />
 
         {/* The twenty-two paths */}
@@ -465,7 +494,7 @@ function TreeOfLife() {
 
         {/* The ten sefirot */}
         {nodes.map((n, i) => {
-          const ignite = `${(0.5 + i * 0.85).toFixed(2)}s`;
+          const ignite = `${IGNITE_AT[i]}s`;
           return (
             <g className="aolt-node" key={n.id}>
               <title>{`${n.rn} · ${n.tr} · ${n.en}`}</title>
