@@ -25,3 +25,4 @@ export { ZodiacGrid } from "./ZodiacGrid";
 export { EtherCircuit } from "./EtherCircuit";
 export { SubTattvaMatrix } from "./SubTattvaMatrix";
 export { TreeOfLife } from "./TreeOfLife";
+export { ThreeTreasures } from "./ThreeTreasures";

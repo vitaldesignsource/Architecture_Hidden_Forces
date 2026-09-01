@@ -8,30 +8,31 @@ import { PrincipleCard } from "@/components/PrincipleCard";
 import { ArchitectureIndex } from "@/components/ArchitectureIndex";
 import { Lexicon } from "@/components/Lexicon";
 import {
-  GeometryField,
-  WuxingCycles,
-  KabbalahFigure,
-  ElementalPairs,
-  PlanetaryFamily,
-  ThreeNadis,
+  Carriers,
   CentersAxis,
+  DaimonicChain,
+  ElementalPairs,
+  EtherCircuit,
+  EthericTides,
+  ForceAndForm,
+  ForceRegisters,
+  GeometryField,
+  Hypostases,
+  ImaginalBridge,
+  KabbalahFigure,
+  LunarClocks,
+  PhaseOrgans,
+  PlanetaryFamily,
+  RiteSequence,
+  SubTattvaMatrix,
+  Symbolon,
   TheChariot,
   TheTriad,
-  PhaseOrgans,
-  ImaginalBridge,
-  Symbolon,
-  ForceRegisters,
+  ThreeNadis,
+  ThreeTreasures,
   VerticalChain,
-  Hypostases,
-  DaimonicChain,
-  RiteSequence,
-  Carriers,
-  ForceAndForm,
-  EthericTides,
-  LunarClocks,
+  WuxingCycles,
   ZodiacGrid,
-  EtherCircuit,
-  SubTattvaMatrix,
 } from "@/components/diagrams";
 
 export const Route = createFileRoute("/")({
@@ -3491,19 +3492,8 @@ function Index() {
             organization — and not a ladder on which the lower is discarded.
           </p>
 
-          {/* mutual dependence */}
-          <div className="mt-12 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              ["Jing supports Qi", "without a reservoir there is nothing to draw on"],
-              ["Qi nourishes Shen", "without circulation, awareness has no supply"],
-              ["Shen directs Qi", "without orientation, circulation has no purpose"],
-              ["Qi protects Jing", "and redistributes what the reservoir holds"],
-            ].map(([a, b]) => (
-              <div key={a} className="border-b border-border py-5">
-                <div className="font-serif text-base italic text-gold">{a}</div>
-                <div className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</div>
-              </div>
-            ))}
+          <div className="mt-16">
+            <ThreeTreasures />
           </div>
           <p className="mt-5 max-w-3xl text-sm leading-relaxed text-bone/80">
             Jing without Qi is stored but inert. Qi without Jing draws on a reservoir that is not
