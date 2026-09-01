@@ -296,7 +296,7 @@ function Index() {
 
       {/* THE FIVE TERMS */}
       <section id="terms" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/rimstone.webp" opacity={0.85} position="center 50%" scrim={0.05} />
+        <Backdrop src="/bg/whirlpool.webp" opacity={0.7} position="center 55%" scrim={0.2} />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -4562,7 +4562,8 @@ function Index() {
           </p>
 
           {/* ---- symbolon ---- */}
-          <div className="mt-24">
+          <div className="relative isolate mt-24">
+            <Backdrop src="/bg/tally.webp" opacity={0.7} position="center 45%" scrim={0.2} />
             <h3 className="font-serif text-2xl leading-tight">Symbol as symbolon</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The Greek <span className="italic">symbolon</span> meant a token, tally, credential, or
@@ -4989,7 +4990,8 @@ function Index() {
           </div>
 
           {/* ---- habit and rite ---- */}
-          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/ablutionstack.webp" opacity={0.7} position="center 50%" scrim={0.18} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Repetition is not the criterion</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -5034,7 +5036,8 @@ function Index() {
           </div>
 
           {/* ---- consecration ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/gongcorridor.webp" opacity={0.7} position="center 50%" scrim={0.2} portrait />
             <h3 className="font-serif text-2xl leading-tight">Consecration and its release</h3>
             <div className="mt-8 max-w-3xl border-l-2 border-gold pl-6">
               <p className="font-serif text-xl leading-relaxed text-bone/90">
@@ -5833,7 +5836,8 @@ function Index() {
           </div>
 
           {/* ---- laws ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/mirrorcascade.webp" opacity={0.72} position="center 50%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">Laws of vertical mediation</h3>
             <div className="mt-10 max-w-4xl">
               {[["No mediator is the Source", "Every member receives and transmits something greater than its own particular expression."],
@@ -6128,7 +6132,8 @@ function Index() {
           </div>
 
           {/* ---- law of the vessel ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/lighthouse.webp" opacity={0.7} position="center 55%" scrim={0.22} />
             <div className="border-l-2 border-gold pl-6">
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
                 The Law of the Vessel
@@ -6698,7 +6703,8 @@ function Index() {
           </p>
 
           {/* ---- fidelity ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/bellfoundry.webp" opacity={0.64} position="center 55%" scrim={0.2} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">What fidelity actually requires</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -6740,7 +6746,8 @@ function Index() {
           </div>
 
           {/* ---- initiation ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/olivetree.webp" opacity={0.52} position="center 50%" scrim={0.24} portrait />
             <h3 className="font-serif text-2xl leading-tight">What initiation is for</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Once tradition is defined as transmitting a capacity rather than a content, initiation
@@ -7219,7 +7226,8 @@ function Index() {
           </div>
 
           {/* ---- planetary and ritual ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/belltower.webp" opacity={0.7} position="center 50%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">Windows of affinity, and rites that make their own</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Planetary tides are not simplistic rays compelling events or personalities. They are
