@@ -2058,6 +2058,158 @@ function VerticalChain() {
   );
 }
 
+/**
+ * Hypostases — the three Plotinian levels with the Proclan rhythm around them.
+ * The core never changes size or brightness while the pulses leave it, because
+ * that is the whole counter-intuitive claim of procession: the higher principle
+ * causes through intelligible abundance, not material subtraction. Selecting a
+ * hypostasis also names what it must NOT be identified with, which is the part
+ * of the mapping most easily lost.
+ */
+function Hypostases() {
+  const [sel, setSel] = useState<number | null>(null);
+  const [mv, setMv] = useState<number>(1);
+  const C = 170;
+  const H = [
+    { k: "The One", r: 34,
+      is: "Beyond being, form, number, and even ordinary thought — not one object among others, but the inexhaustible source from which determinate reality becomes possible.",
+      not: "Root Ether",
+      why: "The One is beyond every ether, force, field, substance, symbol, and distinction. Root Ether belongs to manifestation: it is the primordial condition through which forces, patterns, and qualities become transmissible." },
+    { k: "Nous", r: 76,
+      is: "Intellect. The realm of intelligible Being — the living unity of Forms, archetypes, and perfect relations.",
+      not: "Light Ether",
+      why: "Nous resembles the intelligible dimension of pattern and is not the same thing as it. The Greek hierarchy supplies an ontological architecture; the ethers describe formative operations occurring within manifested existence." },
+    { k: "Soul", r: 118,
+      is: "Psychē. The mediator through which intelligible order becomes movement, life, temporality, and the visible cosmos.",
+      not: "Morphaithēr, or Life Ether",
+      why: "Soul resembles the living mediator through which intelligible principles become cosmic and embodied activity — and it is more comprehensive than either of them." },
+  ];
+  const M = [
+    { k: "Monē", g: "Remaining in the source",
+      d: "A principle retains its identity. The One loses nothing by producing Nous, and Nous is not divided into fragments when Soul proceeds from it. Higher principles remain undiminished because they cause through intelligible abundance rather than material subtraction — a candle lighting another candle, imperfectly but usefully: the first flame does not become smaller." },
+    { k: "Proodos", g: "Proceeding into expression",
+      d: "Not a temporal event in which the One existed alone and later created the universe, and not a physical substance leaking downward. It is an eternal relation of dependence: every lesser unity exists because it participates in a more encompassing unity." },
+    { k: "Epistrophē", g: "Returning toward the source",
+      d: "Not necessarily spatial ascent, and not a rejection of matter. It is the recovery of unity, intelligibility, and orientation within multiplicity — a being returns by realising the principle it derives from and organising its life accordingly." },
+  ];
+  const cur = sel === null ? null : H[sel];
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[360px]">
+        <style>{`
+          .aoh-hy-p { transform-origin: 170px 170px; animation: aoh-hy-out 5s ease-out infinite; }
+          .aoh-hy-p2 { animation-delay: 1.66s } .aoh-hy-p3 { animation-delay: 3.33s }
+          @keyframes aoh-hy-out { from { transform: scale(.2); opacity:.75 } to { transform: scale(1); opacity:0 } }
+          .aoh-hy-r { transform-origin: 170px 170px; animation: aoh-hy-in 5s ease-in infinite; }
+          .aoh-hy-r2 { animation-delay: 2.5s }
+          @keyframes aoh-hy-in { from { transform: scale(1); opacity:0 } 25%,60% { opacity:.7 } to { transform: scale(.22); opacity:0 } }
+          .aoh-hy-core { animation: aoh-hy-steady 5s ease-in-out infinite; transform-origin: 170px 170px; }
+          @keyframes aoh-hy-steady { 0%,100% { opacity:.92 } 50% { opacity:1 } }
+          @media (prefers-reduced-motion: reduce) {
+            .aoh-hy-p,.aoh-hy-r,.aoh-hy-core { animation: none } .aoh-hy-p,.aoh-hy-r { opacity:.3 }
+          }
+        `}</style>
+        <svg viewBox="0 0 340 352" className="h-auto w-full" role="img" aria-labelledby="aoh-hy-t">
+          <title id="aoh-hy-t">
+            Three nested levels — the One at the centre, Nous, and Soul — with pulses proceeding
+            outward and arcs returning inward while the core stays constant.
+          </title>
+
+          <circle cx={C} cy={C} r="150" fill="none" stroke="var(--gold)" strokeDasharray="1 7"
+                  strokeOpacity="0.22" strokeWidth="0.8" />
+
+          {mv !== 2 && [1, 2, 3].map((i) => (
+            <circle key={i} className={`aoh-hy-p ${i === 2 ? "aoh-hy-p2" : i === 3 ? "aoh-hy-p3" : ""}`}
+                    cx={C} cy={C} r="150" fill="none" stroke="var(--gold)"
+                    strokeWidth={mv === 1 ? 1.4 : 0.8} strokeOpacity={mv === 1 ? 1 : 0.4} />
+          ))}
+          {mv !== 1 && [1, 2].map((i) => (
+            <circle key={i} className={`aoh-hy-r ${i === 2 ? "aoh-hy-r2" : ""}`}
+                    cx={C} cy={C} r="150" fill="none" stroke="var(--bone)"
+                    strokeDasharray="3 9" strokeWidth={mv === 2 ? 1.4 : 0.8}
+                    strokeOpacity={mv === 2 ? 0.9 : 0.35} />
+          ))}
+
+          {H.slice().reverse().map((h) => {
+            const i = H.indexOf(h);
+            const on = sel === i;
+            return (
+              <g key={h.k} style={{ cursor: "pointer" }} onClick={() => setSel(on ? null : i)}
+                 role="button" tabIndex={0} aria-pressed={on} aria-label={h.k}
+                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx={C} cy={C} r={h.r} fill="var(--void)" fillOpacity={i === 0 ? 1 : 0.55}
+                        stroke="var(--gold)" strokeOpacity={on ? 1 : sel === null ? 0.6 : 0.25}
+                        strokeWidth={on ? 2 : 1.1} />
+                <text x={C} y={C - h.r + 15} textAnchor="middle" className="font-mono"
+                      fontSize="8" letterSpacing="1.5"
+                      fill={on ? "var(--gold)" : "var(--muted-foreground)"}
+                      opacity={sel === null || on ? 1 : 0.35}>
+                  {h.k.toUpperCase()}
+                </text>
+              </g>
+            );
+          })}
+          <circle className="aoh-hy-core" cx={C} cy={C} r="13" fill="var(--gold)" />
+
+          <text x={C} y="342" textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="1.5"
+                fill="var(--muted-foreground)">
+            THE CORE NEVER DIMINISHES
+          </text>
+        </svg>
+
+        <div className="mt-3 flex justify-center gap-2">
+          {M.map((m, i) => (
+            <button key={m.k} onClick={() => setMv(i)} aria-pressed={mv === i}
+              className={`border px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors ${
+                mv === i ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
+              {m.k}
+            </button>
+          ))}
+        </div>
+        <p className="mt-3 text-center text-[11px] leading-relaxed text-bone/55">
+          {M[mv].g}
+        </p>
+      </div>
+
+      <div className="min-h-[17rem]">
+        <div className="flex flex-wrap gap-2">
+          {H.map((h, i) => (
+            <button key={h.k} onClick={() => setSel(sel === i ? null : i)} aria-pressed={sel === i}
+              className={`border px-3 py-1.5 text-xs transition-colors ${
+                sel === i ? "border-gold text-gold"
+                          : "border-border text-muted-foreground hover:border-gold/60 hover:text-bone/80"}`}>
+              {h.k}
+            </button>
+          ))}
+        </div>
+        {cur ? (
+          <>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">{cur.is}</p>
+            <div className="mt-6 border-l-2 border-bone/40 pl-5">
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/70">
+                Not to be identified with — {cur.not}
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cur.why}</p>
+            </div>
+          </>
+        ) : (
+          <>
+            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {M[mv].k} — {M[mv].g}
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{M[mv].d}</p>
+            <p className="mt-5 text-sm leading-relaxed text-bone/60">
+              Procession without return produces dispersion. Return without procession becomes
+              sterile transcendence. The complete rhythm is source, expression, integration.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -3006,6 +3158,7 @@ function Index() {
               { id: "symbol", label: "Symbol" },
               { id: "taxonomy", label: "Forces" },
               { id: "mediation", label: "Mediation" },
+              { id: "theurgy", label: "Theurgy" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -3155,9 +3308,10 @@ function Index() {
               { n: "XXVI", id: "symbol", t: "Symbol", d: "The knot where worlds meet: the tally, and what completes it." },
               { n: "XXVII", id: "taxonomy", t: "Taxonomy of Forces", d: "Six modes of causation — and why they are not six equivalent substances." },
               { n: "XXVIII", id: "mediation", t: "Vertical Chains of Mediation", d: "How unity enters multiplicity without disappearing — and returns without erasing it." },
-              { n: "XXIX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXIX", id: "theurgy", t: "Greek Metaphysics and Theurgy", d: "Procession, return, and the disciplined construction of conditions for participation." },
+              { n: "XXX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXX", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXXI", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -8611,13 +8765,347 @@ function Index() {
         </div>
       </section>
 
+      <section id="theurgy" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-330} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXIX · Greek Metaphysics and Theurgic Engineering
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Plotinus and the architecture of <span className="italic text-gold">reality</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Greek metaphysics gives this architecture its clearest account of how unity becomes
+            multiplicity without ceasing to be unity. Plotinus describes reality proceeding through
+            three hypostases — the One, Intellect, and Soul — so that existence is a continuous but
+            graduated participation in an originating unity. Mapping it in requires more care than
+            anything else in this system, because the resemblances are close enough to be misleading.
+          </p>
+
+          <div className="mt-16">
+            <Hypostases />
+          </div>
+
+          <p className="mt-16 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            The distinction to hold throughout:{" "}
+            <span className="text-bone/90">the Greek hierarchy supplies an ontological architecture,
+            while the ethers describe formative operations occurring within manifested existence.</span>{" "}
+            They are answers to different questions, and collapsing them would put the medium of
+            manifestation in the place of its source — the same error § XXVIII guards against when it
+            separates the transcendent from Root Ether.
+          </p>
+
+          {/* ---- theurgic engineering ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">What engineering means here</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                And, first, what it does not mean — including that it is not Plotinus&rsquo;s phrase.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Theurgic engineering is not Plotinus&rsquo;s own term, nor a perfect description of his
+                method. Plotinus emphasises contemplation, ethical purification, intellectual
+                awakening, and interior union; the ritual science usually called theurgy becomes
+                explicit later, in the Chaldean Oracles, in Iamblichus, and in Proclus. What Plotinus
+                supplies is the metaphysical architecture that makes that later practice
+                intelligible. Iamblichus adds a ritual technology of divine symbols, sacred
+                materials, invocations, and consecrations. Proclus develops the synthesis in which
+                metaphysical causation and hieratic practice mirror one another.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                So engineering does not mean controlling gods as though they were mechanical forces.
+                It means the disciplined arrangement of mediators so that a person, an image, or a
+                ritual environment becomes appropriately receptive to a higher order.
+              </p>
+              <p className="mt-6 font-serif text-xl italic leading-relaxed text-bone/85">
+                Theurgy constructs conditions of participation. It does not manufacture the divine
+                source.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                A temple, a rite, or a statue works — within the traditional account — because
+                reality is already connected vertically. The theurgist does not invent the
+                connection. The theurgist gathers materials, sounds, symbols, timings, gestures, and
+                states of consciousness that already belong to a shared chain of correspondence.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- daimon ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The daim&#333;n as an assigned current</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The Greek <span className="italic">daim&#333;n</span> is not the later Christian demon.
+              It can be understood as an intermediary presence, a distributor of destiny, a guardian,
+              an activating intelligence, or the personalised mediation of a higher order. And
+              Plotinus&rsquo;s treatment in Ennead III.4 is subtler than the idea that each person is
+              arbitrarily assigned a supernatural companion:{" "}
+              <span className="text-bone/90">the guardian corresponds to the level immediately above
+              the person&rsquo;s dominant mode of life.</span> What governs us reflects where
+              consciousness has established itself — which makes the daim&#333;n at once a guidance
+              and a summons beyond one&rsquo;s present condition.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Here it can be read as an assigned current: the personalised vector where vocation,
+              temperament, inherited pattern, circumstance, and higher possibility converge. Assigned
+              not because some external authority picked it arbitrarily, but because embodiment
+              places each person within a particular field of relationships and possibilities.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Metaphysically", "an intermediary intelligence belonging to a vertical chain"],
+                ["Psychically", "a persistent organising image, vocation, or inner directive"],
+                ["Astrologically", "the natal configuration and the celestial currents available to a life"],
+                ["Ethically", "the demand to become more coherent than one's immediate appetites"],
+                ["Imaginally", "a figure appearing in dream, vision, myth, or guidance"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              It should not be equated automatically with every inner voice or spontaneous impulse.{" "}
+              <span className="text-bone/90">Psychic fragmentation can imitate guidance.</span> A
+              genuine daimonic current is judged by the coherence it produces — whether it
+              strengthens truthful perception, responsibility, integration, and the alignment of
+              Head, Heart, and Hara.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              Not merely a protector: a formative tension between what a person presently is and the
+              pattern toward which they are being drawn.
+            </p>
+          </div>
+
+          {/* ---- names, numbers, logoi ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Names, numbers, and logoi</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              In the Iamblichean understanding, sacred names are traditional vocal forms that
+              participate in divine chains, and their importance does not rest entirely on a
+              practitioner grasping their semantic meaning. Their sounds, rhythms, inherited uses,
+              and correspondences make them ritual symbola or synthēmata — tokens by which
+              consciousness is aligned with a divine order. Which is the decisive point:{" "}
+              <span className="text-bone/90">invocation adapts the human recipient rather than
+              coercing the gods.</span>
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Number, in the Pythagorean and Platonic traditions, is not quantity but proportion,
+              differentiation, rhythm, intelligible architecture. One indicates unity; two introduces
+              polarity; three permits mediation and relation; four establishes structured
+              manifestation. Number is the grammar through which unity unfolds without becoming
+              unintelligible multiplicity. And a <span className="italic">logos</span> does not
+              describe a thing after it exists — it is the intelligible articulation that lets a
+              particular kind of thing develop and stay recognisable.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Logos", "intelligible articulation, or ordering reason"],
+                ["Logoi", "particular formative principles, or seed-patterns"],
+                ["Number", "abstract ratio and architecture"],
+                ["Divine name", "vocal-symbolic participation in a divine quality"],
+                ["Symbolon", "a form whose relational fit gathers separated levels"],
+                ["Synthēma", "an operative token or key within a vertical chain"],
+                ["Sacred image", "a visible vessel of patterned presence"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
+                  <span className="font-serif text-lg italic text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Light Ether makes the pattern intelligible and directionally coherent, Tone gives it
+              proportion and resonance, Warmth activates it, Life integrates it into a sustained
+              whole. But the logos is not identical with any one ether. It is the intelligible
+              pattern that the ethers progressively carry into living expression.
+            </p>
+          </div>
+
+          {/* ---- temple ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The temple as an engineered field</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A late-antique temple was not a building containing religious objects. It was a
+              spatially ordered field, in which orientation, geometry, thresholds, light, acoustics,
+              materials, images, incense, movement, and ritual timing combined into a particular
+              ecology of perception and participation. In this vocabulary, a consecrated temple is{" "}
+              <span className="text-bone/90">an intentionally cultivated Morphaithēr</span>.
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {[["The entrance", "separates ordinary space from sacred space"],
+                ["Procession", "reorganises bodily attention"],
+                ["The central axis", "establishes direction"],
+                ["The inner sanctuary", "concentrates presence"],
+                ["Repeated rites", "create formative memory, making the temple more responsive to what is enacted in it"],
+                ["Correspondence", "gathers stones, metals, colours, plants, hymns, numbers, myths, and hours into one chain"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A solar temple gathers solar materials — not because everything yellow is
+              automatically solar, but because carefully selected members of a celestial chain are
+              held to participate in a shared virtue. Proclus describes hieratic practice exactly so,
+              as the gathering of plants, stones, animals, and scents according to the sympathies
+              distributed through the cosmos. The temple is{" "}
+              <span className="text-bone/90">engineered sympatheia</span>.
+            </p>
+          </div>
+
+          {/* ---- statues and ensoulment ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Statues, ensoulment, and telestic art</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A sacred statue is neither a mere representation nor a body claimed to exhaust the god.
+              It is a selected vessel establishing a focused point of participation: its matter gives
+              stability, its proportions embody number, its image communicates a divine logos, its
+              inscriptions establish vocal and symbolic links, its placement positions it within an
+              architectural field, and consecration gathers all of it into one operative vessel.
+            </p>
+            <div className="mt-10 grid gap-px md:grid-cols-3">
+              {[["Sulfur", "divine quality, intention, identity, activating fire"],
+                ["Mercury", "names, hymns, incense, movement, mediation, ritual circulation"],
+                ["Salt", "statue, temple, material offering, stabilised vessel"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-5 pr-6">
+                  <p className="font-serif text-xl text-gold">{a}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              The statue is Salt made receptive to Sulfur through Mercury.
+            </p>
+            <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                What ensoulment is not
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                Not the trapping of an entire god inside a material object. Iamblichus insists
+                repeatedly that divine beings remain transcendent and undivided, and that a divine
+                presence is not confined by the place or material receiving it.{" "}
+                <span className="text-bone/90">The receptive vessel changes through participation;
+                the god does not become materially imprisoned.</span> Ensoulment here means the
+                installation and stabilisation of an organised presence within a suitable vessel —
+                readable theologically as divine participation, metaphysically as the descent of a
+                formative logos, imaginally as a stable symbolic intelligence, psychologically as an
+                enduring focus of collective consciousness, or socially as the accumulated identity
+                of a worshipping community. These need not be carelessly collapsed into one another.
+              </p>
+            </div>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              The sequence of telestic art
+            </p>
+            <div className="mt-6 max-w-4xl">
+              {["Suitable matter is selected according to correspondence",
+                "The vessel is shaped according to number, image, and proportion",
+                "Names and symbols connect it with a vertical chain",
+                "Ritual activation awakens the symbolic and psychic field",
+                "Repeated participation stabilises the presence",
+                "Ongoing ritual maintains the vessel's coherence"].map((t, i) => (
+                <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Read through the ethers it is the same process from another angle: Warmth awakens and
+              activates, Light gives the presence a recognisable image and direction, Tone
+              establishes resonance through chant, number, rhythm and name, and Life integrates these
+              into an apparently continuous sacred presence.
+            </p>
+          </div>
+
+          {/* ---- law of the vessel ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <div className="border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                The Law of the Vessel
+              </p>
+              <p className="mt-4 max-w-3xl font-serif text-2xl leading-relaxed text-bone/90">
+                A vessel receives according to its form, capacity, purity, and correspondence.
+              </p>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+                A badly organised vessel distorts what passes through it; a coherent one transmits
+                with greater fidelity. This holds equally for statues, temples, symbols, rituals,
+                institutions, and human beings. And no vessel exhausts its source — the solar statue
+                is not the Sun, the divine name is not the totality of the god, the temple is not the
+                celestial realm. Each is a finite point of participation in something more extensive
+                than itself.
+              </p>
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-bone/80">
+                Which gives theurgic engineering its central discipline: construct the vessel
+                precisely, activate it responsibly, and never confuse the vessel with the
+                transcendent reality it mediates.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- living temple ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The human being as a living temple</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The deepest application is anthropological. The human being is also temple, statue, and
+              field of ensoulment.
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {[["The body", "the material sanctuary"],
+                ["Breath and circulation", "the ritual movements"],
+                ["The centres", "altars and gates"],
+                ["The imagination", "the sacred images"],
+                ["Speech", "the names and invocations"],
+                ["The organs", "receivers of elemental and planetary quality"],
+                ["The daimōn", "the vertical current"],
+                ["The Inner Sun", "the integrating centre"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[10rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So theurgy culminates not in constructing external objects but in making the human
+              vessel capable of receiving and expressing a higher order — and the three great figures
+              become three aspects of one process rather than three competing methods.
+            </p>
+            <div className="mt-10 grid gap-px md:grid-cols-3">
+              {[["Plotinus", "the interior return of consciousness"],
+                ["Iamblichus", "the ritual alignment of the embodied vessel"],
+                ["Proclus", "the vertical chains connecting intelligible principles to material forms"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-5 pr-6">
+                  <p className="font-serif text-lg text-gold">{a}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              The One remains beyond manifestation. Being unfolds through intelligible pattern.
+              Pattern proceeds through living mediators. Symbols gather its dispersed
+              correspondences. The vessel is prepared through number, name, matter, and rite.
+              Presence becomes locally available without being locally confined. The awakened vessel
+              then turns back toward its source.
+            </p>
+            <p className="mx-auto mt-10 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              The precise construction of conditions through which{" "}
+              <span className="italic text-gold">
+                procession can become presence, and presence can become return.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXIX · The Series
+                § XXX · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -8710,7 +9198,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXX · Lineage
+                § XXXI · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
