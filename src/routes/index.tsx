@@ -854,6 +854,148 @@ function ThreeNadis() {
   );
 }
 
+/**
+ * CentersAxis — six centres on the axis and the crown above them, which is the
+ * traditional arrangement rather than seven identical wheels in a series. The
+ * ascent/descent toggle is not decoration: the doctrine holds that a complete
+ * theurgy requires both directions, so the figure has to be readable both ways.
+ */
+function CentersAxis() {
+  const [sel, setSel] = useState<number | null>(null);
+  const [dir, setDir] = useState<"up" | "down">("up");
+  const MID = 150;
+  const C = [
+    { k: "Crown", s: "सहस्रार", tr: "Sahasrāra", y: 62, crown: true,
+      q: "Can the individual participate in an order greater than itself without losing the capacity for embodiment?",
+      op: "Spiritual participation", tat: "Akasha", eth: "Root Ether resonance", al: "Opening beyond fixation",
+      n: "A gate of participation, not a tank of infinite energy. It has an affinity with Root Ether — both concern an openness prior to particular form — but they are not identical: Root Ether is the primordial medium, the crown is this vessel's opening toward it." },
+    { k: "Brow", s: "आज्ञा", tr: "Ājñā", y: 152,
+      q: "Can the form perceive its situation and orient itself toward an intelligible pattern?",
+      op: "Vision and direction", tat: "Akasha–Tejas", eth: "Light Ether", al: "Clarified Mercury",
+      n: "It does not merely see hidden things; it organizes what is seen into meaning. And an image can be distorted or false, so vision requires error correction — tested against relationship, consequence, and the governing centre." },
+    { k: "Throat", s: "विशुद्ध", tr: "Viśuddha", y: 242,
+      q: "Can the inner pattern be translated into a communicable form?",
+      op: "Purification and expression", tat: "Akasha–Vayu", eth: "Tone Ether", al: "Mercury",
+      n: "A centre of symbolic causation: speech promises, commands, names, blesses, consecrates. But expression is not automatically truthful — confused emotion becomes accusation, inflated vision becomes proclamation. Not the ability to speak, but to give an inner reality an appropriate outer form." },
+    { k: "Heart", s: "अनाहत", tr: "Anāhata", y: 332,
+      q: "Can this form participate in another without either consuming it or disappearing into it?",
+      op: "Relation and circulation", tat: "Vayu–Apas", eth: "Tone and Life", al: "Mercury balancing Sulfur",
+      n: "Not only pleasant feeling — it must also process loss, obligation, and vulnerability. Power entering the heart becomes accountable to relationship; vision becomes compassion rather than abstraction. The heart is where force learns reciprocity." },
+    { k: "Solar plexus", s: "मणिपूर", tr: "Maṇipūra", y: 422,
+      q: "Can this form transform what it receives into its own activity?",
+      op: "Assimilation and power", tat: "Tejas", eth: "Warmth Ether", al: "Sulfur",
+      n: "Digestion is the clearest image: receive the foreign, break it apart, separate usable from unusable, convert it to one's own substance. It supplies much of Ignisophia's heat but is not the Inner Sun — the furnace generates heat, the Sun governs its use." },
+    { k: "Sacral", s: "स्वाधिष्ठान", tr: "Svādhiṣṭhāna", y: 512,
+      q: "Can this form produce, combine, and become more than it presently is?",
+      op: "Generation and cohesion", tat: "Apas", eth: "Life and Tone", al: "Mercury within Salt",
+      n: "Not reducible to sexuality — that is one expression of a wider generative power that also produces art, attachment, fantasy, and new relationship. This is the centre of generative surplus: two people produce a relationship with a Morphaithēr of its own." },
+    { k: "Root", s: "मूलाधार", tr: "Mūlādhāra", y: 602,
+      q: "Can this form remain present?",
+      op: "Embodiment and boundary", tat: "Prithivi", eth: "Life Ether", al: "Salt",
+      n: "The personal entrance into the Crypt: ancestry, family pattern, bodily memory, survival response and deep habit all enter through root organization. The past is not merely recalled but embodied as posture, expectation, rhythm, and instinct." },
+  ];
+  const cur = sel === null ? null : C[sel];
+  const order = dir === "up" ? [...C].reverse() : C;
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[320px]">
+        <svg viewBox="0 0 300 660" className="h-auto w-full" role="img" aria-labelledby="aoh-cx-t">
+          <title id="aoh-cx-t">
+            Six centres along the central channel with the crown above them, and the two
+            directions of the circuit: ascent as refinement, descent as embodiment.
+          </title>
+          <defs>
+            <marker id="aoh-cx-a" markerWidth="7" markerHeight="7" refX="4.6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 z" fill="var(--gold)" fillOpacity="0.8" />
+            </marker>
+          </defs>
+          {/* the axis proper joins the six; the crown sits above it */}
+          <line x1={MID} y1={152} x2={MID} y2={602} stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="1.2" />
+          <line x1={MID} y1={92} x2={MID} y2={142} stroke="var(--gold)" strokeOpacity="0.3"
+                strokeWidth="1" strokeDasharray="3 5" />
+          {/* direction of the circuit */}
+          <line
+            x1={MID - 44} y1={dir === "up" ? 580 : 180} x2={MID - 44} y2={dir === "up" ? 180 : 580}
+            stroke="var(--gold)" strokeOpacity="0.5" strokeWidth="1" markerEnd="url(#aoh-cx-a)"
+          />
+          <text x={MID - 50} y={dir === "up" ? 372 : 372} textAnchor="end" className="font-mono"
+                fontSize="7" letterSpacing="1.4" fill="var(--muted-foreground)">
+            {dir === "up" ? "REFINE" : "EMBODY"}
+          </text>
+
+          {C.map((c, i) => {
+            const on = sel === i;
+            return (
+              <g key={c.k} style={{ cursor: "pointer" }}
+                 onClick={() => setSel(on ? null : i)}
+                 role="button" tabIndex={0} aria-pressed={on} aria-label={c.k}
+                 onKeyDown={(ev) => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx={MID} cy={c.y} r={c.crown ? 22 : 19} fill="var(--void)" />
+                <circle cx={MID} cy={c.y} r={c.crown ? 22 : 19} fill="none" stroke="var(--gold)"
+                        strokeOpacity={on ? 1 : c.crown ? 0.5 : 0.6} strokeWidth={on ? 1.8 : 1}
+                        strokeDasharray={c.crown ? "4 4" : undefined} />
+                {on ? <circle cx={MID} cy={c.y} r={c.crown ? 30 : 27} fill="none" stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="0.8" /> : null}
+                <circle cx={MID} cy={c.y} r="3.4" fill="var(--gold)" fillOpacity={on ? 1 : 0.5} />
+                <text x={MID + 34} y={c.y - 2} className="font-serif" fontSize="12"
+                      fill={on ? "var(--gold)" : "var(--bone)"} fillOpacity={on ? 1 : 0.75}>{c.s}</text>
+                <text x={MID + 34} y={c.y + 11} className="font-mono" fontSize="6.8" letterSpacing="1.2"
+                      fill="var(--muted-foreground)">{c.k.toUpperCase()}</text>
+              </g>
+            );
+          })}
+          <text x={MID} y={636} textAnchor="middle" className="font-mono" fontSize="7"
+                letterSpacing="1.8" fill="var(--muted-foreground)">SIX ON THE AXIS · CROWN ABOVE</text>
+        </svg>
+        <div className="mt-3 flex justify-center gap-5 font-mono text-[9px] uppercase tracking-[0.18em]">
+          {(["up", "down"] as const).map((d) => (
+            <button key={d} type="button" onClick={() => setDir(d)} aria-pressed={dir === d}
+              className={`transition-colors ${dir === d ? "text-gold" : "text-muted-foreground hover:text-gold"}`}>
+              {d === "up" ? "Ascent · refinement" : "Descent · embodiment"}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="min-h-[16rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.s} · {cur.tr} — {cur.op}
+            </p>
+            <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone">{cur.q}</p>
+            <div className="mt-5 grid grid-cols-3 gap-3 border-y border-border py-4 text-[11px] leading-snug">
+              <div><div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Tattva</div><div className="mt-1 text-bone/85">{cur.tat}</div></div>
+              <div><div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Ether</div><div className="mt-1 text-bone/85">{cur.eth}</div></div>
+              <div><div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Alchemy</div><div className="mt-1 text-bone/85">{cur.al}</div></div>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.n}</p>
+          </>
+        ) : (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {dir === "up" ? "Ascent · refinement" : "Descent · embodiment"}
+            </p>
+            <div className="mt-4 space-y-px">
+              {order.map((c) => (
+                <div key={c.k} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-4 border-b border-border py-2.5">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">{c.k}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{c.op}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-bone/80">
+              Ascent without descent gives revelation without embodiment; descent without ascent
+              gives activity without orientation.{" "}
+              <span className="text-gold-dim">A complete theurgy requires both.</span>
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -1796,6 +1938,9 @@ function Index() {
               { id: "mixing", label: "Mixing" },
               { id: "celestial", label: "Celestial" },
               { id: "channels", label: "Channels" },
+              { id: "centers", label: "Centers" },
+              { id: "treasures", label: "Treasures" },
+              { id: "axis", label: "Axis" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -1936,10 +2081,13 @@ function Index() {
               { n: "XVII", id: "reciprocal", t: "The Reciprocal Field", d: "How field and form make each other; what a form gives back." },
               { n: "XVIII", id: "mixing", t: "The Dynamics of Mixing", d: "The elements as verbs, and the six ways any two of them meet." },
               { n: "XIX", id: "celestial", t: "Celestial Correspondence", d: "One virtue through unlike vessels — Agrippa downward, Paracelsus up." },
-              { n: "XX", id: "channels", t: "Nadis, Meridians, and Channels", d: "Force requires a path — and the seven ways circulation fails." },
-              { n: "XXI", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XX", id: "channels", t: "Nadis, Meridians, and Channels", d: "Force requires a path — and the eight ways circulation fails." },
+              { n: "XXI", id: "centers", t: "Chakras and Centers", d: "Where currents gather, change character, and are redistributed." },
+              { n: "XXII", id: "treasures", t: "Jing, Qi, Shen", d: "Vitality stored, circulating, and becoming luminous." },
+              { n: "XXIII", id: "axis", t: "Head, Heart, and Hara", d: "The human axis: pattern seen, weighed, and given substance." },
+              { n: "XXIV", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXV", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -4963,13 +5111,652 @@ function Index() {
         </div>
       </section>
 
+      {/* CHAKRAS */}
+      <section id="centers" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-190} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXI · Chakras and Centers
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Where currents <span className="italic text-gold">gather</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Channels explain where currents travel; centres explain where they gather, intersect,
+            change character, and are redistributed. A chakra is not a reservoir filled with
+            spiritual energy but a centre of transduction — a place where bodily, vital, emotional,
+            imaginal, and spiritual processes become temporarily organized around a shared axis.
+          </p>
+
+          {/* the historical caveat, stated up front */}
+          <div className="mt-10 max-w-3xl border-l border-border pl-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              On the map being used
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-bone/70">
+              Indian and Buddhist traditions hold several chakra systems, with different numbers,
+              locations, and purposes. The familiar arrangement is properly six centres along the
+              central channel, with Sahasrāra above them as a thousand-petalled crown. The modern
+              seven-chakra model was strongly shaped by the transmission of the Ṣaṭ-Cakra-Nirūpaṇa
+              through Avalon's <em>The Serpent Power</em>; rainbow colours, endocrine
+              correspondences, and many psychological meanings were standardized later. What
+              follows uses that model as a particular working map, not as the only one.
+            </p>
+          </div>
+
+          {/* five functions */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What a centre does
+            </p>
+            <div className="mt-6 grid gap-px sm:grid-cols-5">
+              {["Reception","Concentration","Transduction","Regulation","Redistribution"].map((f) => (
+                <div key={f} className="border-b border-border py-4 font-serif text-base italic text-bone/85">
+                  {f}
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              A centre does not create the force passing through it. It organizes what it receives.
+              And it is not a point — not a small glowing object at one anatomical spot, but a
+              localized field with a centre, a circumference, an internal geometry, and a network
+              of connections. Its bodily location anchors it; its activity reaches through emotion,
+              attention, imagination, posture, relationship, and symbol.
+            </p>
+          </div>
+
+          <div className="mt-16">
+            <CentersAxis />
+          </div>
+
+          {/* attractors + not a ladder */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Centres as formative attractors
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Each centre draws experience into a characteristic mode of organization, gathering
+                unlike events into a recurring pattern. Which is why the same event acquires
+                different meanings according to the centre that organizes it.
+              </p>
+              <div className="mt-5 space-y-px">
+                {[
+                  ["Through the solar centre", "an argument becomes a contest of power"],
+                  ["Through the heart", "a rupture of relationship"],
+                  ["Through the throat", "a failure of expression"],
+                  ["Through the root", "a threat to security"],
+                ].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[11rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The axis is not a ladder of worth
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The lower centres are not spiritual mistakes to be escaped. The root supplies the
+                stability through which any higher realization becomes embodied; the sacral supplies
+                generative force; the solar supplies transformative power; the heart makes
+                relationship; the throat gives expression; the brow gives vision; the crown opens
+                the system toward what exceeds it.
+              </p>
+              <p className="mt-4 font-serif text-lg italic leading-relaxed text-bone/90">
+                Higher centres depend on lower centres for embodiment. Lower centres depend on
+                higher centres for orientation.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                The aim is circulation and integration, not abandonment of the body. And an
+                activated crown is not itself wisdom: unity, luminosity, and vastness must still be
+                interpreted by the brow, spoken by the throat, humanized by the heart, energized by
+                the solar centre, and embodied through the root — or spiritual intensity becomes
+                dissociation, grandiosity, or escape from ordinary responsibility.
+              </p>
+            </div>
+          </div>
+
+          {/* four images */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Four ways to read one centre
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { t: "Vessel", d: "It receives and holds activity long enough for transformation to occur. A centre without sufficient containment cannot metabolize what it receives." },
+                { t: "Wheel", d: "Cakra means wheel: circulation, rhythm, rotation, centre against circumference. If the wheel will not turn, activity stagnates; if it spins without an axis, force disperses; if it turns faster than the vessel allows, it makes turbulence." },
+                { t: "Gate", d: "It regulates passage between domains — body and environment, self and other, inner and outer meaning, the individual and the transpersonal. A gate must open and close: permanent closure isolates, permanent openness floods." },
+                { t: "Transformer", d: "It changes the mode of what passes through. Bodily impulse becomes emotion, emotion becomes image, image becomes language, language becomes act. The centre does not pass force onward — it translates it." },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* correspondences with their caveat */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Every centre is a tattvic chord
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The traditional attribution gives each centre a dominant bias, but no living centre
+                holds only one tattva. The root needs Akasha for interior space, Vayu for exchange,
+                Tejas for metabolic activation, Apas for continuity, and Prithivi for embodiment.
+                The throat needs Prithivi to give words stable form, Apas for emotional continuity,
+                Tejas for force, Vayu to carry them, and Akasha to make sound possible at all.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                The traditional element names the governing tone, not the whole composition.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Planetary resonance, not rulership
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Saturn resonates with the root through boundary, endurance, and consequence; Moon
+                and Venus with the sacral through receptivity and generation; Mars and Sun with the
+                solar plexus through activation and will; Venus and Sun with the heart through
+                harmony and circulation; Mercury strongly with the throat; Mercury, Moon and Jupiter
+                with the brow; solar and Jovian symbolism with the crown.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                These are overlapping functional affinities, not exclusive rulerships — and the
+                seven centres should not be forced into identity with seven planets, seven metals,
+                or the ten sefirot. Each of those systems has a different internal architecture.
+                The correspondences given in the figure are a functional synthesis for this system,
+                not a claim that Indian texts used Western alchemical or etheric terms.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              One axial organism
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Not seven isolated wheels stacked in a column. Sushumna is the central route; Ida and
+              Pingala supply the alternating polar currents; the centres are nodes of transduction
+              along the axis; the Inner Sun gives the whole its orientation; the Psychic Flywheel
+              supplies accumulated momentum; the Morphaithēr is the surrounding atmosphere. The root
+              anchors the chariot to embodiment while the crown opens it toward a greater order.
+            </p>
+            <p className="mt-8 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              A chakra is a localized centre through which living currents are received, organized,
+              transformed, and redistributed according to the needs and possibilities of the whole
+              vessel.
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              So the purpose of development is not to maximize each centre independently, but to
+              bring embodiment, generation, power, relationship, expression, vision, and spirit into
+              one coherent circulation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* THREE TREASURES */}
+      <section id="treasures" className="relative isolate border-t border-border py-32">
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXII · Jing, Qi, Shen
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Stored, <span className="italic text-gold">circulating</span>, luminous
+          </h2>
+          <p className="mt-8 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            Jing is vitality concentrated. Qi is vitality circulating. Shen is vitality becoming
+            luminous, conscious, and directive.
+          </p>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Not three invisible substances but three interdependent conditions of living
+            organization — and not a ladder on which the lower is discarded.
+          </p>
+
+          {/* mutual dependence */}
+          <div className="mt-12 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Jing supports Qi", "without a reservoir there is nothing to draw on"],
+              ["Qi nourishes Shen", "without circulation, awareness has no supply"],
+              ["Shen directs Qi", "without orientation, circulation has no purpose"],
+              ["Qi protects Jing", "and redistributes what the reservoir holds"],
+            ].map(([a, b]) => (
+              <div key={a} className="border-b border-border py-5">
+                <div className="font-serif text-base italic text-gold">{a}</div>
+                <div className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-bone/80">
+            Jing without Qi is stored but inert. Qi without Jing draws on a reservoir that is not
+            there. Shen without Qi cannot reach the organism it means to direct. Qi without Shen
+            circulates without orientation. Shen without Jing may be brilliant and ungrounded.
+          </p>
+
+          {/* the three */}
+          <div className="mt-20 grid gap-3 lg:grid-cols-3">
+            {[
+              { z: "精", k: "Jing", t: "Essence · stored", q: "What has this living form stored that allows it to continue and generate?",
+                d: "Foundational vitality, inheritance, generative capacity — the concentrated resources through which growth, repair, reproduction, and continuity become possible. Not reducible to sexual fluid, though reproduction is one of its expressions.",
+                i: "Like the latent organization in a seed: physically small, developmentally immense. Embodied potential held in reserve — activity not presently circulating, preserved in a condition from which future activity can arise.",
+                n: "Jing is the personal embodiment of the Crypt: the past condensed into present capacity. The Crypt preserves what the world inherited; Jing is the portion of that inheritance concentrated in one vessel." },
+              { z: "氣", k: "Qi", t: "Breath · circulating", q: "How does the living form move its capacity through itself and into relationship with the world?",
+                d: "Formative vitality in circulation — the movement by which stored potential becomes distributed, exchanged, and expressed. Not another name for ether: ether is the medium, Qi the movement, tattva the quality of movement, channel the route, centre where it is reorganized.",
+                i: "Warmth activates it by creating gradients of pressure and readiness; Tone gives it cadence. Which is why abundant activity can still be disordered — the problem is often not insufficient Qi but turbulence, irregular distribution, or missing rhythm.",
+                n: "Repeated circulation deepens a pathway, and the deepened pathway directs later circulation. Qi is therefore central to the Flywheel: the flywheel stores momentum, Qi distributes it through the vessel." },
+              { z: "神", k: "Shen", t: "Spirit · luminous", q: "What knows, illuminates, and directs the living activity?",
+                d: "The luminous and directive organization of the living field — not the quantity of energy a person holds but the clarity with which the system perceives, orients, integrates, and participates.",
+                i: "It shows as presence. Someone may be physically active yet absent, or physically still yet intensely present. Luminosity here means not brightness but that experience becomes intelligible. Qi moves; Shen knows and directs the movement.",
+                n: "Not to be confused with ego — a powerful ego can accompany scattered Shen. The ego claims centrality; Shen manifests presence. Something like Sulfur made transparent to Light." },
+            ].map((x) => (
+              <div key={x.k} className="group border border-border p-6 transition-colors hover:border-gold/40">
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-serif text-3xl text-gold">{x.z}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{x.t}</span>
+                </div>
+                <div className="mt-3 font-serif text-xl italic text-bone">{x.k}</div>
+                <p className="mt-4 font-serif text-base italic leading-relaxed text-bone/85">{x.q}</p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{x.i}</p>
+                <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">{x.n}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* the matrix */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Functional correspondences
+            </p>
+            <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+              <table className="w-full min-w-[44rem] border-collapse text-left">
+                <thead>
+                  <tr>
+                    {["", "Primary function", "Tattvic", "Etheric", "Alchemical"].map((h) => (
+                      <th key={h} className="border-b border-border px-3 pb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Jing", "Storage, inheritance, generation", "Prithivi–Apas", "Life and Tone", "Salt"],
+                    ["Qi", "Circulation, exchange, activation", "Vayu–Tejas", "Warmth and Tone", "Mercury"],
+                    ["Shen", "Illumination, presence, direction", "Akasha–Tejas", "Light and Life", "Purified Sulfur · the Inner Sun"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      <th className="border-b border-border px-3 py-4 text-left align-top font-serif text-lg italic text-gold">{r[0]}</th>
+                      {r.slice(1).map((c, i) => (
+                        <td key={i} className="border-b border-border px-3 py-4 align-top text-sm leading-relaxed text-muted-foreground">{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 max-w-3xl text-[11px] leading-relaxed text-muted-foreground">
+              Functional correspondences developed for this system — not a claim that Daoist authors
+              used Western alchemical or etheric terminology.
+            </p>
+          </div>
+
+          {/* refinement */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Refinement is not purification of the dense
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The word can sound as though embodiment were dirty and spirit clean. That would
+                weaken the system. Refinement means a change in organization, availability, and
+                coherence — not a literal conversion of one measurable substance into another.
+              </p>
+              <div className="mt-6 space-y-4">
+                <div className="border-l border-gold/40 pl-5">
+                  <p className="font-serif italic text-bone">Jing into Qi</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Stored capacity mobilized into circulation: a seed germinates, reserve becomes
+                    movement, latent ability becomes practised capacity. The operation is not
+                    expenditure but <span className="text-gold-dim">controlled mobilization</span> —
+                    Warmth must wake the essence, Mercury circulate it, Salt prevent its loss.
+                  </p>
+                </div>
+                <div className="border-l border-gold/40 pl-5">
+                  <p className="font-serif italic text-bone">Qi into Shen</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Circulation acquiring enough coherence to carry luminous awareness. Refinement
+                    does not increase the quantity of activity; it organizes activity around a
+                    centre. Breath becomes attention, movement becomes presence, emotion becomes
+                    understanding, repetition becomes character.
+                  </p>
+                </div>
+                <div className="border-l border-gold/40 pl-5">
+                  <p className="font-serif italic text-bone">Shen toward emptiness</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    The work does not end in an empowered spiritual personality. Shen releases its
+                    fixation on itself and becomes transparent to the greater field — retaining the
+                    ability to act without claiming to be the source of what passes through it. Not
+                    annihilation of consciousness, but freedom from confusing the vessel with the
+                    inexhaustible origin.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                Jing is not rejected but made available; Qi is not escaped but coordinated; Shen is
+                not inflated but clarified; emptiness does not erase the body but returns the whole
+                process to its ground.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Both directions are required
+              </p>
+              <div className="mt-6 border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Ascending</p>
+                <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
+                  Jing <span className="text-gold">→</span> Qi <span className="text-gold">→</span>{" "}
+                  Shen <span className="text-gold">→</span> emptiness
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Stored capacity becomes activity; activity becomes awareness; awareness becomes
+                  transparent to its source.
+                </p>
+              </div>
+              <div className="mt-3 border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Descending</p>
+                <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
+                  orientation <span className="text-gold">→</span> Shen{" "}
+                  <span className="text-gold">→</span> Qi <span className="text-gold">→</span> Jing{" "}
+                  <span className="text-gold">→</span> embodied form
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Spirit gives vision; vision directs circulation; circulation reorganizes essence;
+                  essence becomes embodied character and act.
+                </p>
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-bone/80">
+                And this is where inner alchemy meets Ignisophia. The living field is the cauldron;
+                Warmth supplies the furnace; breath, rhythm and attention regulate the fire-time.{" "}
+                <span className="text-gold-dim">
+                  Ignisophia is not the maximization of Qi or the burning of Jing to produce
+                  intensity
+                </span>{" "}
+                — it is the wisdom by which Jing is preserved, Qi circulated, and Shen clarified
+                around the Inner Sun. Too weak a fire and the contents stay inert; too strong and
+                the vessel consumes its reserves.
+              </p>
+            </div>
+          </div>
+
+          {/* how they meet the sky */}
+          <div className="mt-20 grid gap-3 sm:grid-cols-2">
+            <div className="group border border-border p-6 transition-colors hover:border-gold/40">
+              <div className="font-serif text-lg italic text-bone">In the Morphaithēr</div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Jing gives the field depth, continuity, and stored capacity; Qi gives it movement,
+                temperature, and exchange; Shen gives it luminosity and recognizable presence. A
+                field may hold strong Jing with stagnant Qi, abundant Qi with scattered Shen, or
+                luminous Shen with too little Jing to embody what it has seen.
+              </p>
+            </div>
+            <div className="group border border-border p-6 transition-colors hover:border-gold/40">
+              <div className="font-serif text-lg italic text-bone">Under a transit</div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                A planetary influence does not simply cause an event. It meets a vessel with a
+                particular capacity, circulation, and level of conscious organization.
+                <span className="mt-3 block text-bone/85">
+                  The sky supplies timing and pattern. Jing supplies capacity. Qi supplies movement.
+                  Shen supplies participation.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Most distilled
+            </p>
+            <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              Jing is the world stored within the living vessel. Qi is the world moving through the
+              living vessel. Shen is the world becoming luminous and self-aware within the living
+              vessel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* HEAD HEART HARA */}
+      <section id="axis" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-210} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXIII · Head, Heart, and Hara
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The human axis of <span className="italic text-gold">transformation</span>
+          </h2>
+          <p className="mt-8 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            The Head must see clearly, the Heart must consent truthfully, and the Hara must make
+            the truth inhabitable.
+          </p>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Not anatomical regions, and not reducible to intellect, emotion, and instinct. Three
+            modes of organization — which is what explains how something can be intellectually
+            understood yet emotionally unaccepted, sincerely desired yet poorly directed, or
+            powerfully enacted without wisdom.
+          </p>
+
+          <div className="mt-16 grid gap-3 lg:grid-cols-3">
+            {[
+              { k: "Head", pr: "Logos", q: "What is the pattern?",
+                d: "The centre through which experience becomes intelligible — distinguishing, comparing, imagining, naming. Logos here is not language alone but the ordering intelligence by which scattered impressions become a meaningful configuration.",
+                e: "Light Ether lets the pattern appear; Tone Ether lets its parts be related as proportion, sequence, and language.",
+                t: "Akasha opens the interior space where meaning can appear; Vayu moves among perspectives and makes comparison possible; Tejas illuminates and penetrates confusion.",
+                a: "Strongly Mercurial — translating between worlds and converting experience into signs. But it needs Salt, since thought without stable definition stays indefinite, and Sulfur, since thought without intention has no living centre.",
+                x: "Abstraction without embodiment. It may mistake a representation for the reality, or build a perfectly consistent structure on premises that are false or disconnected from life. Intellectual coherence alone is not sufficient." },
+              { k: "Heart", pr: "Sympatheia", q: "What is my right relationship to it?",
+                d: "Where separate things become significant to one another. Not merely the producer of emotion — it determines participation: what matters, what is loved, what is refused, what is mourned, what one is willing to serve.",
+                e: "Life Ether gathers diverse processes into a whole; Tone Ether sets proportion and reciprocal responsiveness. It integrates through circulation.",
+                t: "Through the Heart, correspondence stops being an abstract chart and becomes felt relationship — planet, plant, organ, colour, memory and symbol resonating because each participates in overlapping patterns of formative life.",
+                a: "It mediates between Sulfur and Mercury — interior identity and devotion on one side, circulation and exchange on the other — while Salt gives it fidelity, the ability to sustain a relation through time rather than merely feel it.",
+                x: "Sentimentality that confuses intensity with truth; excessive permeability that loses its boundaries; or armouring that preserves itself by refusing participation. Health is selective permeability governed by love and discernment." },
+              { k: "Hara", pr: "Presence", q: "Can this become real through me?",
+                d: "The body's gathered centre of gravity and available power — the organizing region of lower-body integration: breath, balance, generative force, digestion, instinct, posture, grounded intention.",
+                e: "Life Ether keeps the organism whole; Warmth Ether mobilizes it toward action. Without warmth the Hara stays dormant; with warmth poorly contained, its reserves scatter rather than strengthen.",
+                t: "Prithivi gives grounding, boundary, weight, endurance; Apas gives cohesion, receptivity, and generative depth; Tejas supplies the fire by which stored potential becomes action.",
+                a: "A pronounced Salt character, fixing force within a viable vessel — but that Salt must contain Sulfur, the interior fire of purpose, and stay open to Mercury, the breath by which power moves. Closely tied to Jing: the Hara is both reservoir and cauldron.",
+                x: "Its development shows quietly — stability without rigidity, readiness without agitation, strength that needs no display. It lets a person stay present under pressure because consciousness has descended into the body rather than retreating upward into thought." },
+            ].map((c) => (
+              <div key={c.k} className="group border border-border p-6 transition-colors hover:border-gold/40">
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-serif text-2xl italic text-gold">{c.k}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{c.pr}</span>
+                </div>
+                <p className="mt-3 font-serif text-lg italic leading-relaxed text-bone/90">“{c.q}”</p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.e}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.t}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.a}</p>
+                <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">{c.x}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* gift and distortion */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Gift and distortion
+            </p>
+            <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+              <table className="w-full min-w-[42rem] border-collapse text-left">
+                <thead>
+                  <tr>
+                    {["", "Primary question", "Gift", "Possible distortion"].map((h) => (
+                      <th key={h} className="border-b border-border px-3 pb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Head", "What is true or intelligible?", "Vision and orientation", "Abstraction, fixation, rationalization"],
+                    ["Heart", "What is worthy of relationship?", "Value, sympathy, and virtue", "Sentimentality, enmeshment, emotional closure"],
+                    ["Hara", "What can be embodied and sustained?", "Presence, power, and endurance", "Impulsiveness, inertia, domination"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      <th className="border-b border-border px-3 py-4 text-left align-top font-serif text-lg italic text-gold">{r[0]}</th>
+                      {r.slice(1).map((c, i) => (
+                        <td key={i} className="border-b border-border px-3 py-4 align-top text-sm leading-relaxed text-muted-foreground">{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* what each partial alignment produces */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What each partial alignment produces
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                ["Head without Heart", "intelligence becomes cold manipulation"],
+                ["Heart without Head", "compassion loses discrimination"],
+                ["Hara without either", "power becomes blind compulsion"],
+                ["Head and Heart", "beautiful ideals that never become embodied"],
+                ["Heart and Hara", "passionate action without sufficient understanding"],
+                ["Head and Hara", "efficient execution without moral participation"],
+              ].map(([a, b]) => (
+                <div key={a} className="border border-border p-4">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{a}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* full alignment as circulation */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Full alignment, in five movements
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  "The Head receives or recognizes a pattern.",
+                  "The Heart tests that pattern through value and relationship.",
+                  "The Hara determines whether it can be truthfully embodied.",
+                  "Action produces consequences that return upward as new experience.",
+                  "The three centres revise themselves through that feedback.",
+                ].map((x, i) => (
+                  <div key={x} className="grid grid-cols-[auto_1fr] items-baseline gap-4 border-b border-border py-4">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{x}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                Not a hierarchy in which the Head commands and the body obeys. The Hara reports
+                bodily truth upward; the Heart reveals relational consequences the intellect
+                overlooked; the Head gives language to what the lower centres already know
+                implicitly.{" "}
+                <span className="text-gold-dim">
+                  Alignment is a circulation, not a chain of command.
+                </span>
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Descent and return on a human scale
+              </p>
+              <div className="mt-6 border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Descending</p>
+                <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
+                  Pattern <span className="text-gold">→</span> Value{" "}
+                  <span className="text-gold">→</span> Embodiment
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  The Head perceives a possibility, the Heart gives it significance and direction,
+                  the Hara supplies substance and endurance.
+                </p>
+              </div>
+              <div className="mt-3 border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Returning</p>
+                <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
+                  Experience <span className="text-gold">→</span> Meaning{" "}
+                  <span className="text-gold">→</span> Wisdom
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  The Hara receives the actual consequences, the Heart finds their relational
+                  meaning, the Head renders that meaning intelligible. What was merely undergone
+                  becomes wisdom.
+                </p>
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+                Which maps onto the Three Treasures — the Hara concentrating Jing, the Heart
+                circulating Qi, the Head clarifying Shen — though the correspondence should not be
+                made absolute. Jing, Qi, and Shen operate throughout the organism; the triad names
+                concentrations of function, not sealed compartments.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                It also settles where the Inner Sun belongs.{" "}
+                <span className="text-gold-dim">
+                  It is most naturally enthroned in the Heart, because the Heart mediates above and
+                  below
+                </span>{" "}
+                — its wise fire illuminating the Head without inflating it, and warming the Hara
+                without consuming its reserves.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The complete axis
+            </p>
+            <div className="mt-5 space-y-px">
+              {[
+                ["Head", "the pattern is seen"],
+                ["Heart", "the pattern is loved, weighed, and related"],
+                ["Hara", "the pattern is given substance"],
+                ["The aligned person", "the pattern becomes a way of being"],
+              ].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                  <span className={`font-mono text-[10px] uppercase tracking-[0.2em] ${i === 3 ? "text-gold" : "text-gold-dim"}`}>{a}</span>
+                  <span className={`font-serif text-lg italic ${i === 3 ? "text-bone" : "text-bone/80"}`}>{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Which makes development more than an ascent away from embodiment. Ascent without
+              return may produce vision but not transformation; the mature movement rises toward
+              clarity and then descends again as conduct, craft, speech, relationship, and presence.
+            </p>
+            <p className="mt-6 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              The axis is complete when Shen illuminates, Qi connects, and Jing sustains — when
+              Logos gives direction, sympatheia establishes right relationship, and the Hara gives
+              the whole configuration a living body.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* THE SEVEN BOOKS */}
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXI · The Series
+                § XXIV · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -5062,7 +5849,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXII · Lineage
+                § XXV · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
