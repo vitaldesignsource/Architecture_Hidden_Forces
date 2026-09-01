@@ -728,6 +728,132 @@ function PlanetaryFamily() {
   );
 }
 
+/**
+ * ThreeNadis — Ida and Pingala crossing a central Sushumna.
+ * The curves are generated so their zero-crossings land exactly on the nodes,
+ * which is the whole point of the figure: the nodes are where the two polar
+ * currents meet the axis, not decoration placed along it.
+ */
+function ThreeNadis() {
+  const [sel, setSel] = useState<number | null>(null);
+  const MID = 150, TOP = 78, BOT = 542, AMP = 54, HALF = 80;
+  const nodes = [102, 182, 262, 342, 422, 502];
+  const pts = (sign: number) => {
+    const out: string[] = [];
+    for (let y = TOP; y <= BOT; y += 3) {
+      const x = MID + sign * AMP * Math.sin(((y - nodes[0]) * Math.PI) / HALF);
+      out.push(`${x.toFixed(1)},${y}`);
+    }
+    return out.join(" ");
+  };
+  const ch = [
+    { k: "Ida", z: "इडा", t: "The lunar current", d: "Cools, receives, stores, reflects, nourishes, remembers — it returns activity toward interiority. Affinities with Apas, the Moon, yin, gestation, imagination, memory.", n: "Not merely watery or passive. It can carry every tattva; its tendency is to internalize whatever it carries. Tejas through Ida becomes inward digestion, contemplative illumination, banked warmth.", l: "the path of interiorization" },
+    { k: "Pingala", z: "पिङ्गला", t: "The solar current", d: "Warms, activates, differentiates, expresses, mobilizes — it carries force toward action. Affinities with Tejas, the Sun, yang, will, metabolism, alertness.", n: "Not simply good energy. Unregulated solar activity becomes agitation, overexertion, inflammation, continual externalization. Apas through Pingala becomes outward nurture; Prithivi becomes labour and defence.", l: "the path of exteriorization" },
+    { k: "Sushumna", z: "सुषुम्ना", t: "The central axis", d: "Not a third current placed between two others but a different condition of organization. Ida and Pingala ordinarily alternate and regulate one another; Sushumna becomes operative when their opposition is balanced enough for activity to reorganize around an axis.", n: "An emergent centrality. It does not destroy the lunar and solar currents — it gathers their complementary powers into a higher order. Ida receives, Pingala expresses, Sushumna integrates.", l: "the capacity to hold polarity without fragmentation" },
+  ];
+  const cur = sel === null ? null : ch[sel];
+  const dim = (i: number) => (sel === null ? 1 : sel === i ? 1 : 0.16);
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[300px]">
+        <svg viewBox="0 0 300 620" className="h-auto w-full" role="img" aria-labelledby="aoh-nd-t">
+          <title id="aoh-nd-t">
+            Ida and Pingala winding about a central Sushumna, meeting the axis at six nodes.
+          </title>
+          {/* Sushumna */}
+          <g style={{ opacity: dim(2) }}>
+            <line x1={MID} y1={TOP} x2={MID} y2={BOT} stroke="var(--gold)"
+                  strokeOpacity={sel === 2 ? 1 : 0.55} strokeWidth={sel === 2 ? 2.2 : 1.4} />
+          </g>
+          {/* Ida */}
+          <polyline points={pts(-1)} fill="none" stroke="var(--bone)"
+                    strokeOpacity={sel === 0 ? 0.95 : 0.42} strokeWidth={sel === 0 ? 2 : 1.2}
+                    style={{ opacity: dim(0) }} />
+          {/* Pingala */}
+          <polyline points={pts(1)} fill="none" stroke="var(--gold)"
+                    strokeOpacity={sel === 1 ? 1 : 0.5} strokeWidth={sel === 1 ? 2 : 1.2}
+                    style={{ opacity: dim(1) }} />
+          {/* nodes: where both currents meet the axis */}
+          {nodes.map((y, i) => (
+            <g key={y}>
+              <circle cx={MID} cy={y} r="13" fill="var(--void)" stroke="var(--gold)"
+                      strokeOpacity="0.5" strokeWidth="0.9" />
+              <circle cx={MID} cy={y} r="3" fill="var(--gold)" fillOpacity="0.55" />
+              <text x={MID + 26} y={y + 3} className="font-mono" fontSize="7"
+                    letterSpacing="1.2" fill="var(--muted-foreground)">
+                {["I", "II", "III", "IV", "V", "VI"][i]}
+              </text>
+            </g>
+          ))}
+          {/* hit areas */}
+          {[0, 1, 2].map((i) => (
+            <polyline
+              key={i}
+              points={i === 2 ? `${MID},${TOP} ${MID},${BOT}` : pts(i === 0 ? -1 : 1)}
+              fill="none"
+              stroke="transparent"
+              strokeWidth="26"
+              style={{ cursor: "pointer" }}
+              onClick={() => setSel(sel === i ? null : i)}
+              role="button"
+              tabIndex={0}
+              aria-label={ch[i].k}
+              onKeyDown={(ev) => {
+                if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); setSel(sel === i ? null : i); }
+              }}
+            />
+          ))}
+          <text x={MID} y={568} textAnchor="middle" className="font-mono" fontSize="7.5"
+                letterSpacing="2" fill="var(--muted-foreground)">SIX NODES</text>
+        </svg>
+        <div className="mt-3 flex flex-wrap justify-center gap-4 font-mono text-[9px] uppercase tracking-[0.18em]">
+          {ch.map((c, i) => (
+            <button key={c.k} type="button" onClick={() => setSel(sel === i ? null : i)}
+              aria-pressed={sel === i}
+              className={`transition-colors ${sel === i ? "text-gold" : "text-muted-foreground hover:text-gold"}`}>
+              {c.k}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="min-h-[14rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.z} · {cur.k} — {cur.t}
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/80">{cur.n}</p>
+            <p className="mt-5 border-t border-border pt-4 font-serif text-lg italic text-gold/90">
+              {cur.l}
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              A nadi is not the current. It is{" "}
+              <span className="text-gold-dim">the path that conditions the current</span> — a
+              relatively stable pathway of low formative resistance through which pranic activity
+              repeatedly circulates.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              More riverbed than water. The channel stays relatively stable while its contents
+              change: the same pathway may carry a Vayu current on one day and a Tejas current on
+              another.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/80">
+              The Solar Flywheel supplies momentum, Sushumna supplies axial direction, and the
+              Inner Sun supplies governing purpose. Choose a channel.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -1669,6 +1795,7 @@ function Index() {
               { id: "reciprocal", label: "Reciprocal" },
               { id: "mixing", label: "Mixing" },
               { id: "celestial", label: "Celestial" },
+              { id: "channels", label: "Channels" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -1809,9 +1936,10 @@ function Index() {
               { n: "XVII", id: "reciprocal", t: "The Reciprocal Field", d: "How field and form make each other; what a form gives back." },
               { n: "XVIII", id: "mixing", t: "The Dynamics of Mixing", d: "The elements as verbs, and the six ways any two of them meet." },
               { n: "XIX", id: "celestial", t: "Celestial Correspondence", d: "One virtue through unlike vessels — Agrippa downward, Paracelsus up." },
-              { n: "XX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XX", id: "channels", t: "Nadis, Meridians, and Channels", d: "Force requires a path — and the seven ways circulation fails." },
+              { n: "XXI", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXI", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -4613,13 +4741,235 @@ function Index() {
         </div>
       </section>
 
+      {/* CHANNELS */}
+      <section id="channels" className="relative isolate border-t border-border py-32">
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XX · Nadis, Meridians, and Channels
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Force requires a <span className="italic text-gold">path</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            A field cannot produce an organized body if its currents move everywhere at equal
+            intensity in every direction at once. Activity must be directed toward particular
+            organs, centres, and functions — otherwise activation is only undifferentiated
+            pressure. Nadis and meridians are maps of organized circulation: not invisible
+            anatomical tubes but functional channels.
+          </p>
+
+          {/* the distinction stack */}
+          <div className="mt-14 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Ether", "permits transmission"],
+              ["Prana", "supplies living movement"],
+              ["Tattva", "gives the movement quality"],
+              ["Nadi", "gives it direction"],
+            ].map(([a, b]) => (
+              <div key={a} className="border-b border-border py-5">
+                <div className="font-serif text-xl italic text-gold">{a}</div>
+                <div className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-bone/80">
+            Prana and ether are not interchangeable words. Ether is the medium and the set of
+            functions by which formative activity can be transmitted; prana is vital activity
+            within a living vessel; a nadi is the organized route that activity follows.
+          </p>
+
+          <div className="mt-16">
+            <ThreeNadis />
+          </div>
+
+          {/* repetition carves */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Channels are carved by repetition
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Partly inherited, partly made. A current repeatedly passing one way lowers the
+                resistance along it; the route becomes easier to activate, so later currents are
+                likelier to follow it. Breath, posture, attention, emotion, habit, ritual, and
+                trauma all cut channels.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                This is the channel-forming counterpart of the Psychic Flywheel.{" "}
+                <span className="text-gold-dim">
+                  The flywheel stores momentum; the channel decides where that momentum travels.
+                </span>
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                And a channel is not a pipe. A pipe exists apart from what flows through it; a
+                living channel is partly produced and maintained by its own current. Vessels adapt
+                to demand, neural paths alter with use, habits make their own repetition easier.
+                Current follows channel, and repeated current deepens channel.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Meridians carry organ-force
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                An organ is not only a mass of matter but a process within an organism. The heart
+                is a structure, and also circulation, rhythm, pressure regulation, interoception,
+                and the coordination of a whole body. Organ-force is the total pattern by which an
+                organ system participates in the living whole; the meridian is how that pattern is
+                distributed and regulated.
+              </p>
+              <div className="mt-5 space-y-px">
+                {[
+                  ["Tattvas", "qualitative composition"],
+                  ["Five Phases", "transformative position"],
+                  ["Meridians", "functional circulation"],
+                  ["Organs", "living centres of transformation"],
+                ].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                Nadis and meridians should not be declared identical — different traditions,
+                different maps, different practices. Their functional resemblance still matters:
+                both read the body as organized circulation rather than a collection of parts.
+              </p>
+            </div>
+          </div>
+
+          {/* hodoi */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              ὁδοί · the ways of living energy
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              A path exists because passage has become organized. Some are inherited through
+              structure, some carved by use, some strengthened by attention, some lost to neglect
+              or injury.{" "}
+              <span className="text-bone/85">A hodos is both a route and a history of routing.</span>
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+              {[
+                ["Structural", "bodily pathways, postural alignment, organized physical relation"],
+                ["Rhythmic", "breath, sleep, movement, repetition, biological cycle"],
+                ["Attentional", "what consciousness habitually notices and amplifies"],
+                ["Symbolic", "images, words, memories, emotions, ritual actions"],
+                ["Relational", "established between people, groups, places, institutions"],
+              ].map(([a, b]) => (
+                <div key={a} className="group border border-border p-4 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-base italic text-bone">{a}</div>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-bone/80">
+              A rite activates all five at once: posture aligns the structural, breath sets the
+              rhythmic, concentration directs the attentional, symbol carries the meaning, and
+              shared participation entrains the relational. Channels branch, converge, narrow, and
+              pass through nodes — a node redistributes, a gate regulates entry, a crossing lets
+              one current influence another, a reservoir stores, a boundary keeps apart what should
+              not yet mix.
+            </p>
+          </div>
+
+          {/* the ethers within a channel */}
+          <div className="mt-20 border border-border p-6 sm:p-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              A channel can be open at one level and disordered at another
+            </p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-4">
+              {[
+                ["Warmth", "initiates pressure and movement — whether the channel is active, dormant, overheated, or barely animated"],
+                ["Light", "gives orientation, so the current can order around an image or direction"],
+                ["Tone", "sets rhythm, ratio, and coordination among currents"],
+                ["Life", "integrates the channel into the self-maintaining whole"],
+              ].map(([a, b]) => (
+                <div key={a}>
+                  <div className="font-serif text-lg italic text-bone">{a}</div>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 font-serif text-xl italic text-gold/90">
+              Activity may move through a channel while lacking rhythm, orientation, or
+              integration. “Flowing” does not automatically mean healthy.
+            </p>
+          </div>
+
+          {/* disturbances */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Eight ways circulation fails
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { t: "Blockage", d: "A region of increased formative impedance. The current may be barred, diverted, or accumulate behind the obstruction — not always stillness, often constrained, repetitive, or turbulent movement.", n: "A blockage may be protective. Ask not how do we open this, but: why did the system close this route, and what must be prepared before it can safely reopen?" },
+                { t: "Stagnation", d: "Activity present but neither circulating nor transforming. A feeling repeatedly undergone without being understood; an institution hoarding resources it never uses; a form intact after its living purpose has gone.", n: "Not absence of energy — energy deprived of passage. Mercury restores the mediation and exchange that resolve it." },
+                { t: "Excess", d: "Intensity beyond the channel's regulatory capacity: heat, pressure, agitation, turbulence, damage. But excess is relational — what overwhelms one vessel is proportionate in another with greater capacity.", n: "The answer is not always suppression. It may be containment, cooling, redistribution, grounding, or widening the channel." },
+                { t: "Deficiency", d: "Too little activity to perform the function, or a vessel unable to sustain the current — from weak activation, poor nourishment, leakage, exhaustion, or demand elsewhere.", n: "Not always solved by adding force. If the vessel cannot retain what it receives, more input is simply lost. Sometimes the channel must be repaired before the current is strengthened." },
+                { t: "Leakage", d: "Boundaries fail to contain or direct. Attention escapes its object; feeling disperses through compulsive expression; a rite cannot hold the atmosphere it generated; an insight loses its momentum before embodiment.", n: "A failure of Salt and of selective permeability. The channel is open but does not deliver." },
+                { t: "Counterflow", d: "Activity travelling against the direction the larger organization requires. Thought undermines intention; desire opposes judgement; a peripheral concern captures the resources of the centre; a defence continues after the danger has passed.", n: "Movement alone is insufficient — the current must be correctly oriented. Light gives direction; the Inner Sun gives the governing centre." },
+                { t: "Turbulence", d: "Several currents colliding without stable coordination. Abundant force, much of it consumed by friction: conflicting desires, irregular rhythms, overstimulation, unintegrated symbolic material.", n: "Neither blockage nor simple excess but disordered interaction. Tone must restore rhythm and proportion before the activity can cohere." },
+                { t: "Diversion", d: "When one route closes the organism may cut another. Compensation can preserve function while burdening regions never meant to carry the load — a conflict displaced into work, fantasy, bodily tension, or relationship; an institution routing its unresolved problems through procedure or scapegoating.", n: "Do not simply destroy the compensating channel. It may be what is keeping the larger vessel working. Understand the original obstruction and what it served." },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                  <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">{x.n}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl border-l border-border pl-6 text-sm leading-relaxed text-bone/70">
+              These are metaphysical categories, not diagnoses, and should not be used as
+              self-diagnosed medical conditions. The evidence for traditional channel theories
+              varies; acupuncture shows benefit for some pain conditions, which does not establish
+              meridians as literal anatomical structures.
+            </p>
+          </div>
+
+          {/* proportioned circulation */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Flow is not maximum movement
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              A living system must open and close, receive and release, act and rest. Some channels
+              should be quiet while others work; some forces should stay apart until the vessel can
+              combine them. Health is proportioned circulation:
+            </p>
+            <div className="mt-6 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
+              {["The right current","Through the appropriate channel","In the correct direction","At a sustainable intensity","For the proper duration","In coordination with the whole"].map((x) => (
+                <div key={x} className="border-b border-border py-4 font-serif text-base italic text-bone/85">
+                  {x}
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 font-serif text-xl italic text-gold/90">
+              Balance is not static equality. It is regulated alternation.
+            </p>
+          </div>
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The doctrine of the channels
+            </p>
+            <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              Life does not depend merely upon possessing force, but upon giving force an
+              appropriate path, rhythm, direction, and vessel.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* THE SEVEN BOOKS */}
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XX · The Series
+                § XXI · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -4712,7 +5062,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXI · Lineage
+                § XXII · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
