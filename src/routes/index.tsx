@@ -4663,6 +4663,14 @@ function Index() {
                 is a morphogenic bias — a qualitative tendency directing how those forces will
                 behave. One supplies the capacity; the other gives it a direction.
               </p>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            The correspondence below runs fourfold because it is keyed to the four ethers. The
+            tattvas are five. <span className="text-bone/90">Akasha takes no column here</span> — not
+            because it is missing, but because it is the open condition within which the other four
+            relate at all, and so does not sit beside them as a fifth term. The same asymmetry
+            returns in § XXXVIII, where Akasha again declines a column rather than producing extra
+            signs.
+          </p>
             </div>
             <div className="space-y-6">
               {[
