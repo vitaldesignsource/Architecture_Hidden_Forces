@@ -1882,17 +1882,14 @@ function Index() {
           <div className="hidden shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] lg:flex xl:gap-6 xl:tracking-[0.25em]">
             {[
               { id: "index", label: "Index" },
-              { id: "terms", label: "Terms" },
               { id: "spine", label: "Spine" },
               { id: "descent", label: "Descent" },
               { id: "fourfold", label: "Ethers" },
-              { id: "morphaither", label: "Morphaithēr" },
               { id: "return", label: "Return" },
               { id: "kabbalah", label: "Kabbalah" },
-              { id: "extended", label: "Powers" },
-              { id: "triad", label: "Triad" },
               { id: "laws", label: "Laws" },
               { id: "astrology", label: "Sky" },
+              { id: "channels", label: "Channels" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
               <a
@@ -1918,6 +1915,7 @@ function Index() {
         <div className="border-t border-border/50 lg:hidden">
           <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
             {[
+              { id: "index", label: "Index" },
               { id: "terms", label: "Terms" },
               { id: "spine", label: "Spine" },
               { id: "descent", label: "Descent" },
