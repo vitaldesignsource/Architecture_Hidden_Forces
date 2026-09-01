@@ -2210,6 +2210,120 @@ function Hypostases() {
   );
 }
 
+/**
+ * DaimonicChain — the descent from divine virtue to embodied consequence, with
+ * the feedback the document insists on: consequence returns to CHARACTER, not to
+ * the source. So the loop closes partway up the chain rather than reversing the
+ * whole of it, which is what separates a governing attractor from a puppet master.
+ */
+function DaimonicChain() {
+  const [sel, setSel] = useState<number | null>(null);
+  const N = [
+    { k: "Divine virtue", d: "A relatively universal and undivided causation — a virtue held whole, before any distribution." },
+    { k: "Celestial order", d: "The patterned sky at embodiment. A natal chart maps these conditions, and is the celestial trace of what daimonic mediation administers — not the daimōn itself." },
+    { k: "Daimonic mediation", d: "The distributor of particularity. If a divine power is a sun, daimons are not rays broken off it but differentiated administrations of its illumination — and mediation is never neutral: every mediator conditions what it transmits." },
+    { k: "Personal pattern", d: "The allotment: body, ancestry, historical placement, celestial configuration, natural capacity, limitation, circumstantial tendency. Fate provides the instrument; it does not determine the music." },
+    { k: "Character", d: "Not a moral label but a structure of reception — it decides which currents enter easily, which are distorted, which are refused, and which are magnified.", layers: true },
+    { k: "Choice", d: "Conditioned, and not thereby determined. The manner in which an allotment is inhabited is not fixed in advance." },
+    { k: "Embodied consequence", d: "Where the current reaches Prithivi and becomes commitment, habit, craft, and material result. A calling that never arrives here remains an atmosphere of possibility — it may inspire endlessly without producing a life." },
+  ];
+  const LAYERS = [
+    ["Given character", "Body, temperament, ancestry, natal and environmental conditions", "received rather than chosen"],
+    ["Acquired character", "Habits, attachments, defences, skills, repeated choices", "conditioned but changeable"],
+    ["Daimonic character", "Vocation, higher orientation, formative potential, governing pattern", "discovered and consciously embodied"],
+  ];
+  const Y = (i: number) => 34 + i * 58;
+  const cur = sel === null ? null : N[sel];
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,330px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[330px]">
+        <style>{`
+          .aoh-dc-spine { stroke-dasharray: 4 9; animation: aoh-dc-down 3.6s linear infinite; }
+          @keyframes aoh-dc-down { to { stroke-dashoffset: -26 } }
+          .aoh-dc-loop { stroke-dasharray: 3 8; animation: aoh-dc-up 3.6s linear infinite; }
+          @keyframes aoh-dc-up { to { stroke-dashoffset: 22 } }
+          .aoh-dc-n { cursor: pointer; }
+          @media (prefers-reduced-motion: reduce) { .aoh-dc-spine,.aoh-dc-loop { animation: none } }
+        `}</style>
+        <svg viewBox="0 0 330 430" className="h-auto w-full" role="img" aria-labelledby="aoh-dc-t">
+          <title id="aoh-dc-t">
+            A descending chain of seven stages from divine virtue to embodied consequence, with a
+            return arc carrying consequence back to character rather than to the source.
+          </title>
+
+          <line className="aoh-dc-spine" x1="52" y1={Y(0)} x2="52" y2={Y(6)}
+                stroke="var(--gold)" strokeOpacity="0.5" strokeWidth="1.1" />
+
+          {/* the loop closes at character, four stages down — not at the top */}
+          <path className="aoh-dc-loop" d={`M52,${Y(6)} C12,${Y(6) - 6} 12,${Y(4) + 8} 52,${Y(4)}`}
+                fill="none" stroke="var(--bone)" strokeOpacity="0.55" strokeWidth="1.1" />
+          <text x="6" y={(Y(4) + Y(6)) / 2} className="font-mono" fontSize="6.5" letterSpacing="0.8"
+                fill="var(--muted-foreground)" transform={`rotate(-90 6 ${(Y(4) + Y(6)) / 2})`}
+                textAnchor="middle">FEEDS BACK</text>
+
+          {N.map((n, i) => {
+            const on = sel === i;
+            return (
+              <g key={n.k} className="aoh-dc-n" onClick={() => setSel(on ? null : i)}
+                 role="button" tabIndex={0} aria-pressed={on} aria-label={n.k}
+                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx="52" cy={Y(i)} r={on ? 8 : 5.5} fill="var(--void)" stroke="var(--gold)"
+                        strokeOpacity={on ? 1 : sel === null ? 0.65 : 0.28} strokeWidth={on ? 2 : 1.1} />
+                <text x="72" y={Y(i) + 4} className="font-serif" fontSize="13.5"
+                      fill={on ? "var(--gold)" : "var(--bone)"}
+                      fillOpacity={on ? 1 : sel === null ? 0.82 : 0.3}>{n.k}</text>
+              </g>
+            );
+          })}
+          <text x="72" y={Y(6) + 26} className="font-mono" fontSize="7" letterSpacing="1.2"
+                fill="var(--muted-foreground)">RETURNS TO CHARACTER — NOT TO THE SOURCE</text>
+        </svg>
+      </div>
+
+      <div className="min-h-[17rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
+            {cur.layers && (
+              <div className="mt-6 space-y-px">
+                {LAYERS.map(([a, b, c]) => (
+                  <div key={a} className="border-b border-border py-3">
+                    <div className="flex flex-wrap items-baseline gap-x-3">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
+                      <span className="font-mono text-[9px] uppercase tracking-[0.12em] text-bone/45">{c}</span>
+                    </div>
+                    <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </>
+        ) : (
+          <>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              The chain is not a one-way command. Consequences feed back into character, character
+              changes perception, and perception alters receptivity to the daimonic current — so
+              repeated choices either clarify the mediation or obscure it.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Which is why the return arc closes at character rather than running back to the source.
+              The daimōn is not a puppet master working the personality.{" "}
+              <span className="text-bone/90">It is closer to a governing attractor</span> — a living
+              vertical current continually calling a person&rsquo;s dispersed forces toward a more
+              coherent configuration.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/60">
+              Select any stage. Character opens into its three layers.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -3159,6 +3273,7 @@ function Index() {
               { id: "taxonomy", label: "Forces" },
               { id: "mediation", label: "Mediation" },
               { id: "theurgy", label: "Theurgy" },
+              { id: "daimons", label: "Daimons" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -3309,9 +3424,10 @@ function Index() {
               { n: "XXVII", id: "taxonomy", t: "Taxonomy of Forces", d: "Six modes of causation — and why they are not six equivalent substances." },
               { n: "XXVIII", id: "mediation", t: "Vertical Chains of Mediation", d: "How unity enters multiplicity without disappearing — and returns without erasing it." },
               { n: "XXIX", id: "theurgy", t: "Greek Metaphysics and Theurgy", d: "Procession, return, and the disciplined construction of conditions for participation." },
-              { n: "XXX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXX", id: "daimons", t: "Daimons and Mediating Orders", d: "Where universal powers become individual paths — fate, character, and the personal daimōn." },
+              { n: "XXXI", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXXI", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXXII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -9099,13 +9215,357 @@ function Index() {
         </div>
       </section>
 
+      <section id="daimons" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-350} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXX · Daimons, Interfaces, and Mediating Orders
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Iamblichus and the <span className="italic text-gold">populated cosmos</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            For Iamblichus the distance between transcendent gods and embodied human beings is not
+            an empty metaphysical gulf. Reality is populated by successive orders of mediation, each
+            receiving what stands above it, expressing that influence according to its own nature,
+            and communicating it downward. Which is not a catalogue of supernatural creatures — it is
+            an account of how causation crosses ontological boundaries. A universal divine power
+            cannot enter a particular body in the same manner it exists universally. It has to be
+            distributed, translated, localised, accommodated.
+          </p>
+
+          <div className="mt-16">
+            <DaimonicChain />
+          </div>
+
+          {/* ---- interface ---- */}
+          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">On the word interface</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Useful, and only if handled carefully.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                An interface lets realities operating at different scales, or in different languages,
+                enter a functional relationship. A keyboard does not contain the computer, yet it
+                allows a human intention to enter the machine. An eye does not contain the visible
+                world, yet it converts light into forms a nervous system can receive. A daimonic
+                order mediates between universal divine causation and particular natural, psychic, or
+                embodied life in something like that way.
+              </p>
+              <div className="mt-8 border-l-2 border-gold pl-6">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  Iamblichus, though, would not reduce daimons to impersonal mechanisms. They are
+                  living orders with characteristic essences, powers, and activities.{" "}
+                  <span className="text-bone/90">Interface describes what they do within the
+                  architecture. It does not exhaust what they are.</span>
+                </p>
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Mediation is needed because direct contact between radically different levels would
+                otherwise be unintelligible. How does an eternal archetype influence a temporal
+                organism? How does a planetary principle become an individual temperament? How does
+                divine providence pass into nature without becoming identical to natural necessity?
+                How does an intelligible logos become emotion, image, behaviour, and bodily form? The
+                intermediary order is the middle through which the universal becomes particular{" "}
+                <span className="italic">without being reduced to the particular</span>.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- the orders ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The orders are not interchangeable</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Iamblichus distinguishes gods, angels, daimons, heroes, and souls by their essences,
+              powers, and characteristic activities. Daimons are bound up with the generative and
+              demiurgic powers of the gods: they supervise processes within the cosmos, administer
+              generated individuals, and take part in the bond between souls and bodies. Heroes carry
+              a more vital, soul-leading function.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Gods", "universal, unified causation", "transcendent sources of divine virtue"],
+                ["Archangels", "governance of comprehensive orders", "great regulating fields or offices"],
+                ["Angels", "more differentiated transmission", "directed messengers and mediating currents"],
+                ["Daimons", "cosmic distribution and administration", "interfaces between universal forces and particular lives"],
+                ["Heroes", "elevation and guidance of souls", "ancestral or exemplary soul-leading powers"],
+                ["Archons", "governance of cosmic or material domains", "regulators of large environmental orders"],
+                ["Souls", "particular centres of life and experience", "living vessels capable of ascent, choice, transformation"]].map(([a, b, c]) => (
+                <div key={a} className="grid grid-cols-[7rem_1fr] gap-4 border-b border-border py-3 sm:grid-cols-[8rem_14rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-bone/75">{b}</span>
+                  <span className="col-start-1 text-sm leading-relaxed text-muted-foreground sm:col-start-3">{c}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              This is not a standardised hierarchy shared by every Platonist; it belongs to
+              Iamblichus&rsquo;s own theurgical metaphysics. Its value here is the principle it
+              carries — different kinds of mediation are required at different ontological
+              thresholds. A celestial intelligence mediates differently from a place-spirit, a
+              personal daimōn differently from an archangelic order, a symbol differently from a
+              living being.{" "}
+              <span className="text-bone/90">Calling all of them energy would erase exactly the
+              distinctions that make the architecture useful.</span>
+            </p>
+          </div>
+
+          {/* ---- fate ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Fate as the order of embodied causation</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Fate — <span className="italic">heimarmenē</span> — is not an arbitrary supernatural
+              decree. It is the ordered network of causes operating within nature and generation,
+              governing the relations through which embodied things arise, interact, change, and
+              perish. The body inherits biology. The psyche enters a temperament. A life begins at a
+              particular time and place, with social, ancestral, climatic, celestial, and material
+              conditions converging around it. Iamblichus identifies the sphere of fate with nature
+              as the immanent causal order — while holding that the soul has a freer and more
+              independent life through which it may cease to be entirely governed by lower cosmic
+              influence.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Fate", "causation experienced from within the order of nature"],
+                ["Providence", "the higher intelligible coordination of the whole"],
+                ["The daimōn", "mediates between a particular life and that larger order"],
+                ["Theurgy", "aligns the soul with causes higher than those that ordinarily bind it"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So fate is real without being ultimate. It operates most powerfully wherever a being is
+              identified exclusively with its bodily, passionate, environmental, and reactive
+              condition — the more unconscious the vessel, the more mechanically it reproduces the
+              forces passing through it.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              The goal is not to destroy fate. Fate is part of cosmic order. The goal is to cease
+              experiencing it only as blind compulsion.
+            </p>
+            <div className="mt-12 max-w-3xl border-l-2 border-gold/50 pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                Fate is not fatalism
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                Fatalism says choices are meaningless because every event is already fixed. This is
+                subtler. A person receives an allotment — body, ancestry, historical placement,
+                celestial configuration, capacities, limits, circumstantial tendencies — but the
+                manner in which that allotment is inhabited is not predetermined. An instrument has a
+                given range, resonance, and construction, and those impose real limits without
+                determining the music that will be played.{" "}
+                <span className="text-bone/90">Fate provides the instrument. Character develops
+                through the way it is played.</span> The personal daimōn holds the relation between
+                the instrument, its allotted range, and the higher composition it is capable of
+                serving.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- personal daimon ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The personal daim&#333;n</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              In Book IX of <span className="italic">On the Mysteries</span> the personal daimōn is
+              bound up with the cosmic order surrounding an individual&rsquo;s embodiment — and it is
+              not simply an astrological planet extracted from a natal chart. Iamblichus resists
+              Porphyry&rsquo;s attempt to locate it by calculation alone: the visible celestial
+              arrangement reveals only part of the causal chain, and the daimōn&rsquo;s higher
+              principle is not exhausted by its astronomical signature. It presides over the embodied
+              life as a unified administration, gathering the various influences around a person and
+              relating them to the whole soul-body composite — an integrating governance rather than
+              a separate guardian for every faculty.
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {["A distributor of the person's cosmic allotment",
+                "A mediator between soul and embodiment",
+                "A coordinator of the forces entering the individual life",
+                "A guide of thought and action toward intelligible principles",
+                "A representative of the person's place within a greater divine chain"].map((t, i) => (
+                <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Iamblichus even describes the daimōn as supplying principles for thought and directing
+              the life until, through theurgy, a god becomes the soul&rsquo;s more immediate overseer.
+              At that point it does not become evil or useless. It withdraws, yields its
+              administrative precedence, or serves beneath the more universal direction.{" "}
+              <span className="text-bone/90">The personal mediator leads the soul toward a source more
+              universal than itself.</span>
+            </p>
+            <div className="mt-12 max-w-3xl border border-border p-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                The chart is not the daim&#333;n
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                A natal chart maps the celestial conditions through which a life enters manifestation
+                — elemental distribution, planetary tension, dominant function, developmental
+                challenge, available virtue. But it is closer to the celestial{" "}
+                <span className="italic">trace</span> of conditions administered through daimonic
+                mediation, and the daimōn belongs to a deeper vertical chain than the visible
+                configuration alone. Astrology can help identify the language through which the
+                daimōn may communicate. It should not claim to contain or fully calculate it.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- morphaither and alchemy ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">How the current becomes perceptible</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The daimōn does not operate through abstract thought alone. Its mediation enters the
+              formative atmosphere around a person, where it may appear as recurring symbols, dreams,
+              attractions, encounters, bodily intuitions, creative compulsions, moral conflicts, or
+              persistent vocational themes.{" "}
+              <span className="text-bone/90">These are not automatically supernatural messages.</span>{" "}
+              They are the media through which a deeper organising pattern might become perceptible.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Warmth Ether", "activates urgency, courage, attraction, and vocational fire"],
+                ["Light Ether", "gives direction, image, insight, intelligible orientation"],
+                ["Tone Ether", "coordinates events, symbols, relationships, names, meaningful rhythms"],
+                ["Life Ether", "integrates the current into character, body, practice, sustained development"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/65">
+              The daimōn is not made from these ethers. Its influence is translated through their
+              functions as it enters embodied life.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The tattvas qualify it further — Akasha supplies openness to reception, Vayu moves it
+              through thought, breath, and encounter, Tejas gives it revelatory intensity, Apas
+              allows psychic assimilation and relational depth, and Prithivi turns it into
+              commitment, habit, craft, and material consequence.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              A calling that never reaches Prithivi remains an atmosphere of possibility. It may
+              inspire endlessly without producing a life.
+            </p>
+
+            <p className="mt-16 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              And its three ways of going wrong
+            </p>
+            <div className="mt-6 grid gap-px lg:grid-cols-3">
+              {[["Sulfur", "the distinctive fire of the calling — the insistence that this life is meant to express something particular",
+                 "Overwhelming Salt", "the person becomes inflated by a sense of destiny"],
+                ["Mercury", "the mediator carrying that fire through dream, symbol, idea, relationship, coincidence, language, circumstance",
+                 "Without discrimination", "every coincidence becomes a message and every fantasy is mistaken for guidance"],
+                ["Salt", "the embodied character able to contain the current through discipline, work, rite, and lasting form",
+                 "Grown rigid", "the personality refuses every transformative demand"]].map(([a, b, c, d]) => (
+                <div key={a} className="border-t border-border py-5 pr-6">
+                  <p className="font-serif text-xl text-gold">{a}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                  <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-bone/50">{c}</p>
+                  <p className="mt-2 text-[13px] leading-relaxed text-bone/60">{d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Healthy mediation therefore wants a strong vessel, mobile interpretation, and a fire
+              proportionate to the person&rsquo;s actual capacity.
+            </p>
+          </div>
+
+          {/* ---- discernment ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Daimonic calling, or psychic projection?
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The idea becomes dangerous the moment every desire is treated as a command from a
+              higher being. Iamblichus is himself deeply concerned to distinguish divine, angelic,
+              daimonic, archontic, and psychic manifestations, judging them by the kinds of effect
+              they produce — because not every impressive experience comes from the same level of
+              reality.
+            </p>
+            <div className="mt-10 max-w-3xl space-y-2.5">
+              {["Does it become more coherent over time?",
+                "Does it survive sober reflection?",
+                "Does it deepen responsibility rather than excuse impulsiveness?",
+                "Does it integrate Head, Heart, and Hara?",
+                "Does it produce genuine capability, or only fantasies of exceptional status?",
+                "Does it respect ethical reality and the autonomy of others?"].map((q, i) => (
+                <p key={q} className="flex gap-3 text-base leading-relaxed text-muted-foreground">
+                  <span className="font-mono text-[10px] text-gold-dim">{i + 1}</span>
+                  {q}
+                </p>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A distorted psychic complex demands admiration, certainty, urgency, and exemption from
+              ordinary accountability. A healthy daimonic current may be powerful, and it tends to
+              require maturation, discipline, sacrifice, and greater truthfulness.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              The daimōn does not merely tell a person that they are special. It makes increasingly
+              exact demands about what they must become capable of carrying.
+            </p>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Ignisophia is not identical to the daimōn, but it supplies the inner solar organisation
+              through which such a current can be received without fragmentation. The daimōn provides
+              the vertical current; Ignisophia organises the human response — Hod giving
+              interpretation and discrimination, Netzach desire and devotion, the Hara embodied
+              steadiness, the Heart the measure of relation and virtue, the Head the recognition of
+              pattern. When these revolve around a unified Inner Sun the current is not simply seized
+              upon.{" "}
+              <span className="text-bone/90">The person becomes a collaborator in mediation rather
+              than a passive instrument.</span>
+            </p>
+          </div>
+
+          {/* ---- deeper purpose ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The paradox of the office</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The personal daimōn stands at the threshold between particular destiny and universal
+              participation. It administers a life as a particular life — and its highest purpose is
+              not to imprison the soul inside that particularity. One may have to become fully
+              faithful to a daimonic pattern before becoming capable of passing beyond identification
+              with it. The particular vocation is the road toward the universal.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              Which makes it both guardian of the allotted pattern and{" "}
+              <span className="italic text-gold">custodian of the passage beyond merely allotted
+              existence</span> — fulfilling its office most completely when the soul becomes capable
+              of receiving direction from a higher principle than itself.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              Fate provides the field of conditions. Character becomes the vessel formed within that
+              field. The personal daimōn mediates between the allotted configuration and the higher
+              order it can learn to embody. Theurgy does not erase the individual pattern; it raises
+              that pattern into conscious participation with its source.
+            </p>
+            <p className="mx-auto mt-10 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              Living bridges of particularisation —{" "}
+              <span className="italic text-gold">
+                they stand where universal powers become individual paths.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXX · The Series
+                § XXXI · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -9198,7 +9658,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXXI · Lineage
+                § XXXII · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
