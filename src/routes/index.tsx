@@ -9094,6 +9094,7 @@ function Index() {
       </section>
 
       <section id="ritual" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/gateway2.webp" opacity={0.72} position="center 50%" scrim={0.15} />
         <SectionGlyph delay={-370} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -10775,6 +10776,7 @@ function Index() {
 
       {/* LINEAGE */}
       <section id="tradition" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/scribe.webp" opacity={0.72} position="center 45%" scrim={0.15} />
         <SectionGlyph delay={-390} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -10946,6 +10948,7 @@ function Index() {
 
       {/* THE UNIFIED FORMULA */}
       <section id="forceform" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/arch.webp" opacity={0.7} position="center 55%" scrim={0.24} />
         <SectionGlyph delay={-410} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -10979,7 +10982,8 @@ function Index() {
           </div>
 
           {/* ---- frozen force ---- */}
-          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/pine.webp" opacity={0.5} position="center 45%" scrim={0.26} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Form is frozen force</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -11079,7 +11083,8 @@ function Index() {
           </div>
 
           {/* ---- the descent ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/sculptor.webp" opacity={0.72} position="center 50%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">The descent into determination</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not a fall into inferiority. A descent into determination — where Morphaithēr is the
@@ -11193,6 +11198,7 @@ function Index() {
       </section>
 
       <section id="tides" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/bowl.webp" opacity={0.72} position="center 55%" scrim={0.26} />
         <SectionGlyph delay={-430} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -11290,7 +11296,8 @@ function Index() {
           </div>
 
           {/* ---- vocabulary ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/hydraulic.webp" opacity={0.72} position="center 50%" scrim={0.2} />
             <h3 className="font-serif text-2xl leading-tight">
               Not every change is a tide
             </h3>
@@ -11380,7 +11387,8 @@ function Index() {
           </div>
 
           {/* ---- bodily tides ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/breath.webp" opacity={0.72} position="center 45%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">The body as receiver and generator</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The living body does not merely endure changes in the field. It interprets, transforms,
@@ -11432,6 +11440,7 @@ function Index() {
       </section>
 
       <section id="mansions" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/observatory.webp" opacity={0.72} position="center 45%" scrim={0.26} />
         <SectionGlyph delay={-450} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -11714,6 +11723,7 @@ function Index() {
       </section>
 
       <section id="zodiac" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/saltflat.webp" opacity={0.72} position="center 50%" scrim={0.24} />
         <SectionGlyph delay={-470} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
