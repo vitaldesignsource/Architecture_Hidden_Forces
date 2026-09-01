@@ -27,3 +27,4 @@ export { SubTattvaMatrix } from "./SubTattvaMatrix";
 export { TreeOfLife } from "./TreeOfLife";
 export { ThreeTreasures } from "./ThreeTreasures";
 export { RightRelation } from "./RightRelation";
+export { Persistence } from "./Persistence";

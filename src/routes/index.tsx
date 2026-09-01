@@ -21,6 +21,7 @@ import {
   ImaginalBridge,
   KabbalahFigure,
   LunarClocks,
+  Persistence,
   PhaseOrgans,
   PlanetaryFamily,
   RightRelation,
@@ -149,6 +150,7 @@ function Index() {
               { id: "mansions", label: "Mansions" },
               { id: "zodiac", label: "Zodiac" },
               { id: "rightrelation", label: "Right Relation" },
+              { id: "mortality", label: "Death" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
@@ -8179,6 +8181,309 @@ function Index() {
                 without worshipping what should be examined, consuming what should be cultivated,
                 merging with what should remain distinct, or preserving what has already lost its
                 soul.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mortality" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-530} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XL · Death, Suffering, and the Cost of Form
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Whether the architecture stays truthful when <span className="italic text-gold">form fails</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Form makes existence possible by limiting possibility — and the same limitation that
+              gives a being identity is what makes it vulnerable to loss.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            To take form is to become finite; to become finite is to acquire boundaries; and whatever
+            has boundaries can be wounded, deprived, divided, or destroyed. None of which makes
+            suffering good or every death purposeful. A system must resist explaining tragedy too
+            neatly, or metaphysics becomes a way of escaping grief, excusing injustice, and imposing
+            meaning on people whose suffering should first be relieved.
+          </p>
+
+          {/* ---- what persists ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">What persists</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A living being is a pattern capable of continually gathering its materials into one
+              process — breathing, circulating, repairing, remembering, distinguishing itself from
+              its surroundings. Death is the point at which that pattern can no longer hold them as a
+              single living unity.{" "}
+              <span className="text-bone/90">Life is force continually renewing form; death is where
+              the form can no longer renew the relations that make it one.</span>
+            </p>
+            <div className="mt-14">
+              <Persistence />
+            </div>
+          </div>
+
+          {/* ---- circulation, and the loss it does not cancel ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Two truths held together</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Neither of which is allowed to dissolve the other.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                At the scale of ecosystems, death releases matter and space back into circulation.
+                Without decomposition, nutrients stay bound inside completed forms; without
+                succession, the living occupy conditions the unborn require. Death prevents form from
+                becoming permanent accumulation, which makes it part of how life continues rather
+                than simply its opposite.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                And that function cancels nothing. The forest may be nourished by decomposition while
+                a family still loses someone irreplaceable.{" "}
+                <span className="text-bone/90">A universal function does not abolish personal
+                value.</span>
+              </p>
+              <p className="mt-8 font-serif text-xl leading-relaxed text-bone/85">
+                Death belongs to the circulation of life,{" "}
+                <span className="italic text-gold">and every particular death may still be an
+                irreducible loss.</span>
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Seasonal decline, lunar waning, alchemical dissolution and ritual death can all
+                symbolise that circulation. None of them proves personal resurrection, and none makes
+                bereavement equivalent to symbolic transformation. Metaphorical death may illuminate
+                literal death. It must never trivialise it.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- suffering ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Suffering as a relational event</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Suffering occurs where a being&rsquo;s capacities, attachments, boundaries, needs or
+              meanings are placed under conditions they cannot readily reconcile. It is not one
+              substance and has no single cause — within the terms of § XXXIX it may indicate any of
+              these:
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {["A violated boundary",
+                "Too much force, or too little",
+                "A mismatch between vessel and environment",
+                "The rupture of a sustaining relation",
+                "Resistance met during real growth",
+                "The loss of a form central to identity",
+                "A parasitic collective or institution",
+                "Material contingency, with no symbolic purpose at all",
+                "Deliberate cruelty or injustice"].map((t, i) => (
+                <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                Which is why suffering cannot be read automatically as punishment, karma, initiation,
+                or evidence that someone needed the experience.{" "}
+                <span className="text-bone/90">Such interpretations may protect the worldview of the
+                observer at the expense of the sufferer.</span>
+              </p>
+              <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone/85">
+                Pain is data, but it is not an infallible oracle.
+              </p>
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              It runs both ways. Suffering does not prove distortion — grief may arise precisely
+              because a relationship was real, discipline may be hard because a genuine capacity is
+              forming, truth-telling may produce conflict because an unjust arrangement is being
+              disturbed. And its absence proves nothing either: numbness hides injury, privilege
+              shields one participant while another carries the cost, and a parasitic institution can
+              flourish on suffering it exports elsewhere.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              So the question is never merely whether this hurts.{" "}
+              <span className="italic text-gold">
+                It is what is producing the suffering, what it is serving, who bears its cost, and
+                what form is emerging through it.
+              </span>
+            </p>
+          </div>
+
+          {/* ---- metamorphosis, and its limit ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Suffering can enter metamorphosis. It is not metamorphosis.
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Trauma does not automatically produce wisdom and loss does not automatically deepen the
+              soul. Pressure may transform, and it may equally crush, fragment, or deform — the
+              difference lying in the severity of the injury, the resources of the vessel, the
+              presence of support, and whether integration is possible at all. For suffering to
+              become transformative it has to be metabolised: named truthfully, given containment,
+              connected to meaning without being romanticised, and slowly incorporated into a renewed
+              form of life.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Mortificatio", "confronts the death or failure of an existing form"],
+                ["Putrefactio", "lets that form break down rather than be artificially preserved"],
+                ["Separatio", "distinguishes what must be kept from what must be released"],
+                ["Purificatio", "removes false meanings, shame, and parasitic attachments"],
+                ["Coagulatio", "gives the surviving life a new structure"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[9rem_1fr] sm:gap-4">
+                  <span className="font-serif text-lg italic text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              And even a successful transformation does not make the original harm good. Meaning
+              created after suffering does not travel backward to justify its cause.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              Meaning may be a fruit of suffering.{" "}
+              <span className="italic text-gold">It is not automatically its explanation.</span>
+            </p>
+          </div>
+
+          {/* ---- the remainder ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <div className="max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                The Unfulfilled Remainder
+              </p>
+              <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
+                The unrealised dynamis left behind when a vessel is broken, or time runs out.
+              </p>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Not every potency reaches actualisation. Some people die before their capacities
+              unfold. Some relationships end before reconciliation. Some works stay unfinished, and
+              some injuries permanently restrict what might otherwise have been possible. There is no
+              intellectual honesty in calling every interruption a hidden fulfilment.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The remainder may pass into others as responsibility, grief, inspiration, warning, or
+              unfinished work. A child carries forward what a parent could not complete; a tradition
+              preserves an abandoned vision; a community becomes obligated by a life unjustly
+              interrupted. But continuation is not retroactive completion.{" "}
+              <span className="text-bone/90">Some losses remain losses</span> — and the architecture
+              becomes more humane by admitting tragic remainder than by forcing every event into a
+              closed teleology.
+            </p>
+          </div>
+
+          {/* ---- grief ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Grief as continued relation</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Grief is not a failure to release the dead. It is the living system reorganising itself
+              after the disappearance of a relationship that helped constitute it. Identity is partly
+              relational — child, parent, partner, friend, teacher, rival, witness — so the survivor
+              loses not only the other person but a particular way of being themselves in relation to
+              that person.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The bond cannot continue in its former mode and cannot simply be erased, so it has to
+              be transformed: into memory, inheritance, internal dialogue, symbolic presence,
+              ancestral relation. Distortion appears at either extreme — erasing the dead as though
+              the relation meant nothing, or refusing every transformation as though it could remain
+              materially unchanged.
+            </p>
+            <p className="mt-8 max-w-3xl font-serif text-2xl leading-relaxed text-bone/90">
+              Grief is the labour by which love changes form{" "}
+              <span className="italic text-gold">without pretending that nothing was lost.</span>
+            </p>
+          </div>
+
+          {/* ---- rites ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The geometry of passage</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Death rites are the clearest case of a rite as a diagram enacted through time, and
+              their order is not arbitrary — each stage prepares a different relation.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-2">
+              {["Separation", "Cleansing", "Lamentation", "Naming", "Procession", "Disposal",
+                "Remembrance", "Reintegration", "Closure"].map((t, i) => (
+                <div key={t} className="flex items-center gap-2">
+                  <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{t}</span>
+                  {i < 8 && <span className="font-mono text-xs text-gold" aria-hidden>→</span>}
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The body is separated from ordinary circulation. The deceased is recognised as no
+              longer holding the same office. Grief is given sound, gesture, place and witnesses.
+              Responsibilities are redistributed, the community acknowledges that its structure has
+              changed, and the participants return to ordinary life without pretending ordinary life
+              is unchanged. Funerary rite is therefore{" "}
+              <span className="text-bone/90">consecration and deconsecration at once</span> — it
+              consecrates the significance of the life while releasing the bodily and social
+              relations that cannot continue.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Tradition preserves these rites because grief itself disrupts the capacity to invent an
+              adequate sequence. At the moment when people do not know what to do, inherited form
+              carries them. And such a tradition can still become mechanical or oppressive — if it
+              suppresses grief, dictates certainty about the afterlife, or puts institutional
+              conformity above the actual needs of mourners.
+            </p>
+          </div>
+
+          {/* ---- the order of response ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Right relation to suffering</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Right Relation does not command acceptance. Its first obligation is usually to reduce
+              preventable harm. Where suffering is caused by injury, address the injury; by abuse,
+              establish safety and boundary; by injustice, seek correction; by illness, pursue care;
+              and where it arises from grief, permit grief rather than treating it as pathology or
+              spiritual failure. Only once the reality of the suffering has been respected do
+              questions of transformation and meaning belong.
+            </p>
+            <div className="mt-12 mx-auto max-w-2xl space-y-3">
+              {[["Protection", "before interpretation."],
+                ["Truth", "before transcendence."],
+                ["Grief", "before reconstruction."],
+                ["Integration", "before claims of transformation."]].map(([a, b]) => (
+                <p key={a} className="font-serif text-2xl leading-relaxed text-bone/90">
+                  <span className="text-gold">{a}</span> {b}
+                </p>
+              ))}
+            </div>
+            <p className="mt-12 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Some suffering must be endured because it cannot yet be removed. Some must be resisted.
+              Some must be mourned. Some can eventually be transformed. The wisdom is in telling them
+              apart.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <div className="mx-auto max-w-3xl space-y-3">
+              {[["Life", "is the temporary achievement of relation."],
+                ["Suffering", "is what becomes possible wherever relation can be injured."],
+                ["Death", "is the dissolution of a living unity."],
+                ["Grief", "is the transformation of the bond that remains."],
+                ["Right Relation", "is the art of responding without denial, exploitation, or false consolation."]].map(([a, b]) => (
+                <p key={a} className="font-serif text-lg leading-relaxed text-bone/90">
+                  <span className="text-gold">{a}</span> {b}
+                </p>
+              ))}
+            </div>
+            <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              A metaphysics worthy of life must not only explain radiance, ascent, power and fulfilled
+              actualisation.
+            </p>
+            <p className="mx-auto mt-8 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              It must make room for interruption, vulnerability, unfinishedness and loss —{" "}
+              <span className="italic text-gold">
+                without declaring them unreal, and without pretending they are always secretly good.
               </span>
             </p>
           </div>

@@ -54,6 +54,7 @@ export function ArchitectureIndex() {
               { n: "XXXVII", id: "mansions", t: "Lunar Mansions and Nakshatras", d: "Two clocks that never coincide — the starry diagram read as a procession." },
               { n: "XXXVIII", id: "zodiac", t: "Zodiacal Patterning", d: "Four media, three phases — a generated grammar rather than twelve personalities." },
               { n: "XXXIX", id: "rightrelation", t: "The Art of Right Relation", d: "Whether the path should be walked — the ethics the rest of the architecture assumed." },
+    { n: "XL", id: "mortality", t: "Death, Suffering, and the Cost of Form", d: "Whether the architecture stays truthful when form fails." },
     { n: "—", id: "lexicon", t: "Lexicon", d: "Every term the architecture defines, and the section that defines it." },
     { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
