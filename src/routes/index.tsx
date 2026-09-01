@@ -785,7 +785,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § 00·i · The Five Terms
+                § I · The Five Terms
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 What the words <span className="italic text-gold">mean</span>
@@ -834,7 +834,7 @@ function Index() {
         <SectionGlyph delay={-25} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § 00·ii · The Doctrinal Spine
+            § II · The Doctrinal Spine
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Eighteen <span className="italic text-gold">commitments</span>
@@ -862,7 +862,7 @@ function Index() {
               { n: "XII", t: "Repetition Generates Momentum", d: "Coherent repetition produces momentum; momentum alters perception; altered behavior reinforces the pattern. This is the Psychic Flywheel." },
               { n: "XIII", t: "Alchemy Is the Grammar of Transformation", d: "Sulfur initiates, Mercury circulates and joins, Salt embodies and limits. Three recurrent necessities of transformation — not three occult chemicals." },
               { n: "XIV", t: "Dissolution and Reconstitution", d: "The old configuration must be loosened, its forces understood, its viable contents recombined around a more coherent center. Solve without coagula disperses; coagula without solve imprisons." },
-              { n: "XV", t: "Coherence Exceeds Intensity", d: "A weaker force organized around a stable center accomplishes more than a stronger force internally divided. Contradiction produces friction and dissipation. But coherence alone is not goodness — a tumor is organized, an obsession is coherent. See § XVI: integral coherence preserves its relations with the greater systems it belongs to; parasitic coherence survives by consuming its host." },
+              { n: "XV", t: "Coherence Exceeds Intensity", d: "A weaker force organized around a stable center accomplishes more than a stronger force internally divided. Contradiction produces friction and dissipation. But coherence alone is not goodness — a tumor is organized, an obsession is coherent. See § XII: integral coherence preserves its relations with the greater systems it belongs to; parasitic coherence survives by consuming its host." },
               { n: "XVI", t: "Theurgy Is Alignment, Not Domination", d: "The highest operation is not forcing the cosmos to obey an isolated personality, but reorganizing the person into a vessel able to participate in a greater order." },
               { n: "XVII", t: "Symbols Are Maps of Functions", d: "Kabbalah, tattva doctrine, alchemy, and geometry describe reality from different angles. They integrate where their functions genuinely correspond — complementary instruments, not interchangeable labels." },
               { n: "XVIII", t: "The Ground Is Not One of Its Terms", d: "A ground never appears as a member of the series it grounds. To count it among them is to make the undifferentiated already differentiated, and the category collapses. Root Ether is not a fifth ether; Akasha is not a fifth zodiacal element; the Dao is not Root Ether. One guard, wherever a source would otherwise be flattened into an item of what it sources." },
@@ -980,7 +980,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § IX · Layered Correspondence
+                § III · Layered Correspondence
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Aithēr <span className="italic text-gold">→</span> Tattva{" "}
@@ -1029,7 +1029,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § X · The Fourfold Field
+                § IV · The Fourfold Field
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Θερμότης <span className="italic text-gold">→</span> Φῶς{" "}
@@ -1043,7 +1043,7 @@ function Index() {
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Four functions, one formative circulation. The ethers are not separate substances
                 and not successive stages. Every living process carries all four; at any moment
-                one predominates. Their tattvic and elemental correspondences stand in § IX — what
+                one predominates. Their tattvic and elemental correspondences stand in § III — what
                 follows is their operation.
               </p>
             </div>
@@ -1227,7 +1227,7 @@ function Index() {
                       </p>
                       <div className="mt-6 h-px w-12 bg-gold/40 transition-all duration-700 group-hover:w-24" />
                       <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                        § IX · {e.corr}
+                        § III · {e.corr}
                       </p>
                     </div>
                     <div className="min-w-0">
@@ -1420,7 +1420,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XI · The Morphaithēr
+                § V · The Morphaithēr
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Μορφαιθήρ
@@ -1508,7 +1508,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-              § XII · A Worked Example
+              § VI · A Worked Example
             </p>
             <h2 className="mt-6 font-serif text-4xl leading-tight">
               The seed as <span className="italic text-gold">metaphysical event</span>
@@ -1547,7 +1547,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XIII · Kabbalah
+                § VII · Kabbalah
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 The sacred grammar of <span className="italic text-gold">emanation</span>
@@ -1689,7 +1689,7 @@ function Index() {
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
               <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
-                § XIV · The Hidden Powers
+                § VIII · The Hidden Powers
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-6xl">
                 The extended <span className="italic text-gold">architecture</span>
@@ -1758,7 +1758,7 @@ function Index() {
       <section id="flywheel" className="relative border-t border-border py-32">
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XIV·i · The Psychic Flywheel
+            § IX · The Psychic Flywheel
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Repetition becomes <span className="italic text-gold">momentum</span>
@@ -1811,7 +1811,7 @@ function Index() {
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 A divided person disperses force. One part desires what another fears; one part
                 imagines what another refuses to enact — several animals pulling a chariot in
-                opposing directions. The chariot is made literal in § XX.
+                opposing directions. The chariot is made literal in § XVI.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 When thought, desire, imagination, speech, and embodied action coordinate around a
@@ -1832,7 +1832,7 @@ function Index() {
         <SectionGlyph delay={-45} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XV·i · The Alchemical Triad
+            § X · The Alchemical Triad
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Something that <span className="italic text-gold">acts</span>, something that{" "}
@@ -1900,7 +1900,7 @@ function Index() {
       <section id="retentive" className="relative border-t border-border py-32">
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XV·ii · The Retentive Depth
+            § XI · The Retentive Depth
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             The world <span className="italic text-gold">inherits itself</span>
@@ -1954,7 +1954,7 @@ function Index() {
         <SectionGlyph delay={-70} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XVI · The Laws of Formation
+            § XII · The Laws of Formation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             How forms <span className="italic text-gold">receive</span>, endure, distort, and{" "}
@@ -2068,7 +2068,7 @@ function Index() {
         <SectionGlyph delay={-90} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XVII · Celestial Anatomy
+            § XIII · Celestial Anatomy
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             The clock of <span className="italic text-gold">qualitative time</span>
@@ -2277,7 +2277,7 @@ function Index() {
       <section id="subtattva" className="relative border-t border-border py-32">
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XVIII · The Compound Qualities
+            § XIV · The Compound Qualities
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Every letter spoken through{" "}
@@ -2373,7 +2373,7 @@ function Index() {
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Root Ether is not counted as a fifth ether here — the common source, not one
-                more term. § 00·ii XVIII, applied to the ethers.
+                more term. § II XVIII, applied to the ethers.
               </p>
               <p className="mt-6 border-l border-gold/40 pl-6 font-serif text-lg italic leading-relaxed text-bone/90">
                 Root Ether → four differentiated ethers × twenty-five tattvic configurations.
@@ -2450,7 +2450,7 @@ function Index() {
                   Akasha is the field in which the zodiacal qualities enter relation — visible
                   through the chart's total geometry, the intervals between planets, the opening
                   of possibility. Not absent from the zodiac: the containing field that lets the
-                  zodiacal forms communicate. § 00·ii XVIII again, applied to the elements.
+                  zodiacal forms communicate. § II XVIII again, applied to the elements.
                 </p>
               </div>
               <div className="border border-border p-6">
@@ -2546,7 +2546,7 @@ function Index() {
         <SectionGlyph delay={-110} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XIX · The Dynamics of Return
+            § XV · The Dynamics of Return
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             道 · How the forces <span className="italic text-gold">move</span>
@@ -2574,7 +2574,7 @@ function Index() {
               Keeping them apart protects Root Ether from being inflated into an absolute
               God-substance, while preserving the apophatic depth beyond it. Wuji likewise names
               the <em>absence of polarity</em>; Root Ether names the continuity through which
-              polarity can arise. § 00·ii XVIII a third time — now guarding the whole architecture rather
+              polarity can arise. § II XVIII a third time — now guarding the whole architecture rather
               than a series inside it.
             </p>
           </div>
@@ -2835,7 +2835,7 @@ function Index() {
         <SectionGlyph delay={-130} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XX · Ignisophia
+            § XVI · Ignisophia
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             The chariot of the <span className="italic text-gold">Inner Sun</span>
@@ -3054,7 +3054,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XV · The Series
+                § XVII · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -3146,7 +3146,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XVI · Lineage
+                § XVIII · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
