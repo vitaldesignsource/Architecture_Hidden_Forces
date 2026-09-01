@@ -12,12 +12,29 @@
  * sampling, so it lives in the browser pass. What this catches is the class of
  * error that survives a typecheck and a build and still ships broken.
  */
-import { readFileSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const src = readFileSync(join(root, "src/routes/index.tsx"), "utf8");
+
+/**
+ * Read ALL source, not one file. The first version of this script read only
+ * src/routes/index.tsx, and when the components were split out it went on
+ * reporting "clean" while one check silently inspected nothing — the index
+ * count fell from 44 entries to 0 and the run still passed. A check that can
+ * quietly stop checking is worse than no check.
+ */
+function collect(dir, acc = []) {
+  for (const e of readdirSync(dir)) {
+    const full = join(dir, e);
+    if (statSync(full).isDirectory()) collect(full, acc);
+    else if (/\.(tsx?|jsx?)$/.test(e)) acc.push(full);
+  }
+  return acc;
+}
+const files = collect(join(root, "src"));
+const src = files.map((f) => readFileSync(f, "utf8")).join("\n");
 const css = readFileSync(join(root, "src/styles.css"), "utf8");
 
 const problems = [];
@@ -138,6 +155,7 @@ if (!css.includes("74ch")) fail("measure", "the line-length cap is missing from 
 // ----------------------------------------------------------------- report
 const w = (s) => process.stdout.write(s + "\n");
 w("");
+w(`  scanned ${files.length} source files\n`);
 for (const n of notes) w(`  ok    ${n}`);
 if (problems.length) {
   w("");
