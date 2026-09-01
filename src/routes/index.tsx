@@ -165,6 +165,44 @@ function GeometryField() {
   );
 }
 
+/**
+ * Backdrop — a photographic ground behind a section.
+ * The palette is near-black (--void is oklch 0.06), so the image carries as
+ * atmosphere rather than picture: dimmed, scrimmed, and faded at top and bottom
+ * so the section borders still read as rules rather than as photo edges.
+ * Self-contained (-z-10 + its own overflow clip), so no section class changes.
+ */
+function Backdrop({
+  src,
+  opacity = 0.3,
+  position = "center",
+}: {
+  src: string;
+  opacity?: number;
+  position?: string;
+}) {
+  return (
+    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
+      <img
+        src={src}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        className="h-full w-full object-cover"
+        style={{ opacity, objectPosition: position }}
+      />
+      <div className="absolute inset-0 bg-void/40" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--void) 0px, transparent 130px, transparent calc(100% - 130px), var(--void) 100%)",
+        }}
+      />
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -979,6 +1017,7 @@ function Index() {
 
       {/* HERO */}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
+        <Backdrop src="/bg/threshold.webp" opacity={0.3} position="center 42%" />
         <GeometryField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -1253,7 +1292,8 @@ function Index() {
       </section>
 
       {/* DESCENT */}
-      <section id="descent" className="relative border-t border-border py-32">
+      <section id="descent" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/cascade.webp" opacity={0.22} position="center 40%" />
         <SectionGlyph delay={-30} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -1782,7 +1822,8 @@ function Index() {
       </section>
 
       {/* MORPHAITHER */}
-      <section id="morphaither" className="relative border-t border-border py-32">
+      <section id="morphaither" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/tide.webp" opacity={0.2} position="center 55%" />
         <SectionGlyph delay={-15} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
@@ -1872,7 +1913,8 @@ function Index() {
       </section>
 
       {/* SEED EXAMPLE */}
-      <section id="seed" className="relative border-t border-border py-32">
+      <section id="seed" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/roots.webp" opacity={0.16} position="center 45%" />
         <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -1909,7 +1951,8 @@ function Index() {
       </section>
 
       {/* KABBALAH */}
-      <section id="kabbalah" className="relative border-t border-border py-32">
+      <section id="kabbalah" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/chamber.webp" opacity={0.45} position="center 35%" />
         <SectionGlyph />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
@@ -2123,7 +2166,8 @@ function Index() {
       </section>
 
       {/* THE PSYCHIC FLYWHEEL */}
-      <section id="flywheel" className="relative border-t border-border py-32">
+      <section id="flywheel" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/flywheel.webp" opacity={0.5} position="center 45%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § IX · The Psychic Flywheel
@@ -2196,7 +2240,8 @@ function Index() {
       </section>
 
       {/* THE ALCHEMICAL TRIAD */}
-      <section id="triad" className="relative border-t border-border py-32">
+      <section id="triad" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/alembic.webp" opacity={0.38} position="center 50%" />
         <SectionGlyph delay={-45} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -2265,7 +2310,8 @@ function Index() {
       </section>
 
       {/* THE RETENTIVE DEPTH */}
-      <section id="retentive" className="relative border-t border-border py-32">
+      <section id="retentive" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/strata.webp" opacity={0.45} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XI · The Retentive Depth
@@ -2432,7 +2478,8 @@ function Index() {
       </section>
 
       {/* ASTROLOGY */}
-      <section id="astrology" className="relative border-t border-border py-32">
+      <section id="astrology" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/startrails.webp" opacity={0.32} position="center 35%" />
         <SectionGlyph delay={-90} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -2861,7 +2908,8 @@ function Index() {
       </section>
 
       {/* DAOIST DYNAMICS */}
-      <section id="dao" className="relative border-t border-border py-32">
+      <section id="dao" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/aperture.webp" opacity={0.42} position="center 45%" />
         <SectionGlyph delay={-110} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -3150,7 +3198,8 @@ function Index() {
       </section>
 
       {/* IGNISOPHIA */}
-      <section id="ignisophia" className="relative border-t border-border py-32">
+      <section id="ignisophia" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/furnace.webp" opacity={0.26} position="center 60%" />
         <SectionGlyph delay={-130} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -3415,7 +3464,8 @@ function Index() {
       </section>
 
       {/* GROUNDS */}
-      <section id="grounds" className="relative border-t border-border py-32">
+      <section id="grounds" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/masons.webp" opacity={0.25} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § Grounds · Why the Structure Holds
