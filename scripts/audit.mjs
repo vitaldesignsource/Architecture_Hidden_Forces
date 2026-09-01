@@ -107,6 +107,28 @@ const dangling = [...refs].filter((r) => !haveNumerals.has(r));
 if (dangling.length) fail("cross-references", `point at non-existent sections: ${dangling.join(", ")}`);
 else note("cross-references", `${refs.size} distinct targets, all exist`);
 
+// ------------------------------------------------- full-bleed containing block
+// A band is full-bleed via `left:50%; width:100vw; margin-left:-50vw`, which
+// centres it on its POSITIONED ANCESTOR. Put one inside a `max-w-*` wrapper and
+// it centres on that box instead of the viewport: eight bands shipped 175px off,
+// with bare void down one edge. Portrait panels and `fill` backdrops opt out of
+// the trick, so only plain bands are constrained.
+const offCentre = [];
+let bandsChecked = 0;
+for (const m of src.matchAll(/<div className="([^"]*\bisolate\b[^"]*)">\s*\n\s*<Backdrop\b([\s\S]*?)\/>/g)) {
+  const [, wrapper, props] = m;
+  if (/\bportrait\b|\bfill\b/.test(props)) continue;
+  bandsChecked++;
+  const cap = wrapper.match(/\bmax-w-[\w[\].]+/);
+  if (cap) {
+    const who = props.match(/src="\/bg\/([a-z0-9]+)\.webp"/);
+    offCentre.push(`${who ? who[1] : "a band"} in ${cap[0]}`);
+  }
+}
+if (offCentre.length)
+  fail("full-bleed", `centres on its wrapper, not the viewport: ${offCentre.join(", ")}`);
+else note("full-bleed", `${bandsChecked} wrapped bands, all with a full-width containing block`);
+
 // --------------------------------------------------------------- backdrops
 // A Backdrop uses -z-10, which escapes to the root stacking context unless its
 // container isolates. This failed four separate times and hid a backdrop each

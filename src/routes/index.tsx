@@ -8563,30 +8563,32 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/springterrace.webp" opacity={0.24} position="center 45%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              How form emerges, and returns
-            </p>
-            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.1em] text-gold">
-              FIELD → BIAS → VECTOR → RESONANCE → RECURRENCE → THRESHOLD → FORM
-            </p>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              A force arises within a field already conditioned by previous forms. Tattvic biases
-              give it qualitative tendencies. Correspondences provide routes of resonance. Vessels
-              introduce resistance and limitation. Repetition deepens some pathways while others
-              dissipate. Feedback returns the result of activity into the conditions that produced
-              it. At sufficient coherence the pattern crosses a threshold and stabilises.
-            </p>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              But the sequence does not end there. The completed form alters the field that produced
-              it — creating new boundaries, redirecting currents, consuming resources, generating
-              memory, changing what can form next.
-            </p>
-            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
-              Morphaithēr gives birth to form, and form returns as a new condition within Morphaithēr.
-              This is the mechanism through which the world inherits itself.
-            </p>
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                How form emerges, and returns
+              </p>
+              <p className="mt-8 font-mono text-xs leading-loose tracking-[0.1em] text-gold">
+                FIELD → BIAS → VECTOR → RESONANCE → RECURRENCE → THRESHOLD → FORM
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                A force arises within a field already conditioned by previous forms. Tattvic biases
+                give it qualitative tendencies. Correspondences provide routes of resonance. Vessels
+                introduce resistance and limitation. Repetition deepens some pathways while others
+                dissipate. Feedback returns the result of activity into the conditions that produced
+                it. At sufficient coherence the pattern crosses a threshold and stabilises.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                But the sequence does not end there. The completed form alters the field that produced
+                it — creating new boundaries, redirecting currents, consuming resources, generating
+                memory, changing what can form next.
+              </p>
+              <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+                Morphaithēr gives birth to form, and form returns as a new condition within Morphaithēr.
+                This is the mechanism through which the world inherits itself.
+              </p>
+            </div>
           </div>
 
           <div className="mt-24 max-w-3xl">
@@ -8619,34 +8621,36 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/nightterrace.webp" opacity={0.4} position="center 65%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              Tradition as long-duration Morphaithēr
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              A living tradition transmits not only information but a field of recognition. Its
-              texts, rites, gestures, stories, offices, architecture, prohibitions and exemplars
-              repeatedly regenerate a particular formative atmosphere. New participants do not enter
-              a neutral archive — they enter a field already shaped by previous acts of
-              participation, and initiation recalibrates the entrant so the inherited atmosphere can
-              be perceived and carried.
-            </p>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              A dead tradition preserves symbols without reliably regenerating the field that made
-              them meaningful. A parasitic tradition still generates a powerful field, but that field
-              primarily consumes its participants to perpetuate itself. Which gives § XXXIII&rsquo;s
-              distinction a collective test:
-            </p>
-            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
-              A living tradition uses inherited form to generate capacity. A parasitic tradition uses
-              living capacity to preserve inherited form.
-            </p>
-            <p className="mt-6 text-sm leading-relaxed text-bone/60">
-              The same persistence explains both sacred continuity and the telestic inertia of § XXVII.
-              A reservoir can survive its original purpose: a rite may go on feeding an accumulated
-              current long after it has lost contact with its declared object.
-            </p>
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Tradition as long-duration Morphaithēr
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                A living tradition transmits not only information but a field of recognition. Its
+                texts, rites, gestures, stories, offices, architecture, prohibitions and exemplars
+                repeatedly regenerate a particular formative atmosphere. New participants do not enter
+                a neutral archive — they enter a field already shaped by previous acts of
+                participation, and initiation recalibrates the entrant so the inherited atmosphere can
+                be perceived and carried.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                A dead tradition preserves symbols without reliably regenerating the field that made
+                them meaningful. A parasitic tradition still generates a powerful field, but that field
+                primarily consumes its participants to perpetuate itself. Which gives § XXXIII&rsquo;s
+                distinction a collective test:
+              </p>
+              <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+                A living tradition uses inherited form to generate capacity. A parasitic tradition uses
+                living capacity to preserve inherited form.
+              </p>
+              <p className="mt-6 text-sm leading-relaxed text-bone/60">
+                The same persistence explains both sacred continuity and the telestic inertia of § XXVII.
+                A reservoir can survive its original purpose: a rite may go on feeding an accumulated
+                current long after it has lost contact with its declared object.
+              </p>
+            </div>
           </div>
 
           <div className="mt-24 max-w-3xl">
@@ -8671,40 +8675,42 @@ function Index() {
             </div>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/basalthall.webp" opacity={0.32} position="center 50%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              Necessary safeguards
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              For this to remain rigorous it cannot become the explanation for everything. A concept
-              that explains every possible outcome ultimately explains nothing.
-            </p>
-            <ol className="mt-8 space-y-4">
-              {[
-                "Identify the level being discussed: material, biological, psychic, collective, ritual or metaphysical.",
-                "Preserve ordinary causal explanations rather than replacing them.",
-                "Distinguish observable effects from symbolic interpretations.",
-                "State whether current, reservoir or imprint is being used literally or analogically.",
-                "Require repeated patterns before attributing a condition to a hidden formative field.",
-                "Allow the model to be corrected when it fails to predict or clarify anything.",
-              ].map((r, i) => (
-                <li key={r} className="grid grid-cols-[2rem_1fr] gap-4">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="text-base leading-relaxed text-muted-foreground">{r}</span>
-                </li>
-              ))}
-            </ol>
-            <p className="mt-10 font-serif text-xl leading-relaxed text-bone/85">
-              It should name the organisation of relations — not serve as a vague invisible substance
-              inserted wherever knowledge is incomplete.
-            </p>
-            <p className="mt-6 text-sm leading-relaxed text-bone/60">
-              The same restraint applies where it touches suffering. Morphaithēr can describe the
-              total formative condition surrounding an injury, an illness, an abuse or an injustice.
-              It does not make suffering secretly necessary, and it must never become a way to blame
-              the sufferer or to substitute an invisible cause for a visible one.
-            </p>
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Necessary safeguards
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                For this to remain rigorous it cannot become the explanation for everything. A concept
+                that explains every possible outcome ultimately explains nothing.
+              </p>
+              <ol className="mt-8 space-y-4">
+                {[
+                  "Identify the level being discussed: material, biological, psychic, collective, ritual or metaphysical.",
+                  "Preserve ordinary causal explanations rather than replacing them.",
+                  "Distinguish observable effects from symbolic interpretations.",
+                  "State whether current, reservoir or imprint is being used literally or analogically.",
+                  "Require repeated patterns before attributing a condition to a hidden formative field.",
+                  "Allow the model to be corrected when it fails to predict or clarify anything.",
+                ].map((r, i) => (
+                  <li key={r} className="grid grid-cols-[2rem_1fr] gap-4">
+                    <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="text-base leading-relaxed text-muted-foreground">{r}</span>
+                  </li>
+                ))}
+              </ol>
+              <p className="mt-10 font-serif text-xl leading-relaxed text-bone/85">
+                It should name the organisation of relations — not serve as a vague invisible substance
+                inserted wherever knowledge is incomplete.
+              </p>
+              <p className="mt-6 text-sm leading-relaxed text-bone/60">
+                The same restraint applies where it touches suffering. Morphaithēr can describe the
+                total formative condition surrounding an injury, an illness, an abuse or an injustice.
+                It does not make suffering secretly necessary, and it must never become a way to blame
+                the sufferer or to substitute an invisible cause for a visible one.
+              </p>
+            </div>
           </div>
 
           <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
@@ -8817,37 +8823,41 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/riftoak.webp" opacity={0.26} position="center 40%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              What death does not take
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              While life persists, CHON is held within an organised circulation: molecules
-              incorporated, transformed, expelled and replaced while the organism maintains its
-              pattern. Death annihilates none of it. It ends the organism&rsquo;s power to hold these
-              elements within a unified, self-renewing operation. The living synthesis gives way to
-              decomposition, redistribution and entrance into other cycles — material continuity
-              remaining while organismic unity dissolves, which is precisely the first kind of
-              persistence § XL distinguishes from the rest.
-            </p>
-            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
-              Life is not the possession of CHON. Life is the sustained power to organise, exchange
-              and renew it according to an immanent pattern.
-            </p>
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                What death does not take
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                While life persists, CHON is held within an organised circulation: molecules
+                incorporated, transformed, expelled and replaced while the organism maintains its
+                pattern. Death annihilates none of it. It ends the organism&rsquo;s power to hold these
+                elements within a unified, self-renewing operation. The living synthesis gives way to
+                decomposition, redistribution and entrance into other cycles — material continuity
+                remaining while organismic unity dissolves, which is precisely the first kind of
+                persistence § XL distinguishes from the rest.
+              </p>
+              <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+                Life is not the possession of CHON. Life is the sustained power to organise, exchange
+                and renew it according to an immanent pattern.
+              </p>
+            </div>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/kilnvault.webp" opacity={0.38} position="center 45%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              The lowest biological octave
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              Lowest not because it is unimportant, but because it is the point of greatest
-              condensation. Here pattern must become molecule, relation must become bond, rhythm must
-              become metabolism, memory must become reproducible structure, and force must become the
-              activity of an actual body.
-            </p>
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The lowest biological octave
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Lowest not because it is unimportant, but because it is the point of greatest
+                condensation. Here pattern must become molecule, relation must become bond, rhythm must
+                become metabolism, memory must become reproducible structure, and force must become the
+                activity of an actual body.
+              </p>
+            </div>
           </div>
 
           <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
@@ -8943,40 +8953,42 @@ function Index() {
             <FourfoldVeil />
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/cisterntower.webp" opacity={0.3} position="center 35%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              How an error becomes an institution
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              Because each membrane hands its work to the next, a small error near the top acquires a
-              body on the way down. This is the mechanism, and it is worth stating plainly enough to
-              be recognised in the wild.
-            </p>
-            <div className="mt-8 space-y-px">
-              {[
-                ["A pattern is quickened before it has been rightly understood", "Warmth"],
-                ["Articulation exaggerates one feature and leaves the rest unlit", "Light"],
-                ["The exaggeration is bound into the ordering, and now belongs", "Tone"],
-                ["Living reproduction transmits the whole arrangement, distortion included", "Life"],
-                ["Material institutions fix it, and tradition passes on the structure as though it were the pattern", "Beyond the Veil"],
-              ].map(([step, layer]) => (
-                <div key={step} className="grid grid-cols-[1fr_7rem] items-baseline gap-4 border-b border-border py-3">
-                  <span className="text-sm leading-relaxed text-muted-foreground">{step}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold-dim">{layer}</span>
-                </div>
-              ))}
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                How an error becomes an institution
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Because each membrane hands its work to the next, a small error near the top acquires a
+                body on the way down. This is the mechanism, and it is worth stating plainly enough to
+                be recognised in the wild.
+              </p>
+              <div className="mt-8 space-y-px">
+                {[
+                  ["A pattern is quickened before it has been rightly understood", "Warmth"],
+                  ["Articulation exaggerates one feature and leaves the rest unlit", "Light"],
+                  ["The exaggeration is bound into the ordering, and now belongs", "Tone"],
+                  ["Living reproduction transmits the whole arrangement, distortion included", "Life"],
+                  ["Material institutions fix it, and tradition passes on the structure as though it were the pattern", "Beyond the Veil"],
+                ].map(([step, layer]) => (
+                  <div key={step} className="grid grid-cols-[1fr_7rem] items-baseline gap-4 border-b border-border py-3">
+                    <span className="text-sm leading-relaxed text-muted-foreground">{step}</span>
+                    <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold-dim">{layer}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 font-serif text-xl leading-relaxed text-bone/85">
+                This is how a subtle interpretive error can become an institution centuries later.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                But the movement runs the other way too. Material failure exposes a weakness in a
+                living process; the organism adapts; new perception revises what is understood; and the
+                correction is what gets transmitted.{" "}
+                <span className="text-bone/90">The Veil carries both degradation and learning</span> —
+                which is the whole reason § IV insists it is a circuit and not a descent.
+              </p>
             </div>
-            <p className="mt-8 font-serif text-xl leading-relaxed text-bone/85">
-              This is how a subtle interpretive error can become an institution centuries later.
-            </p>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              But the movement runs the other way too. Material failure exposes a weakness in a
-              living process; the organism adapts; new perception revises what is understood; and the
-              correction is what gets transmitted.{" "}
-              <span className="text-bone/90">The Veil carries both degradation and learning</span> —
-              which is the whole reason § IV insists it is a circuit and not a descent.
-            </p>
           </div>
 
           <div className="mt-24">
@@ -9011,44 +9023,46 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/keystone.webp" opacity={0.32} position="center 50%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              Three levels, distinguished
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              The four ethers and the five tattvas must not be mapped one to one. They answer
-              different questions: the ethers describe where mediation is occurring, the tattvas how
-              that mediation is qualitatively configured. Tone may commonly emphasise Prithivi and
-              Apas, and still require Vayu for exchange and Tejas for transformation. None is composed
-              of a single tattva.
-            </p>
-            <div className="mt-8 space-y-px">
-              {[
-                ["The Fourfold Veil", "the structure of etheric mediation", "anatomy"],
-                ["The Tattvas", "the qualitative biases configuring each membrane", "qualities"],
-                ["Morphaithēr", "the changing atmosphere produced by their interaction", "weather"],
-              ].map(([n, f, tag]) => (
-                <div key={n} className="grid grid-cols-[9rem_1fr_5rem] items-baseline gap-4 border-b border-border py-4">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
-                  <span className="text-sm leading-relaxed text-muted-foreground">{f}</span>
-                  <span className="font-serif text-sm italic text-bone/60">{tag}</span>
-                </div>
-              ))}
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Three levels, distinguished
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                The four ethers and the five tattvas must not be mapped one to one. They answer
+                different questions: the ethers describe where mediation is occurring, the tattvas how
+                that mediation is qualitatively configured. Tone may commonly emphasise Prithivi and
+                Apas, and still require Vayu for exchange and Tejas for transformation. None is composed
+                of a single tattva.
+              </p>
+              <div className="mt-8 space-y-px">
+                {[
+                  ["The Fourfold Veil", "the structure of etheric mediation", "anatomy"],
+                  ["The Tattvas", "the qualitative biases configuring each membrane", "qualities"],
+                  ["Morphaithēr", "the changing atmosphere produced by their interaction", "weather"],
+                ].map(([n, f, tag]) => (
+                  <div key={n} className="grid grid-cols-[9rem_1fr_5rem] items-baseline gap-4 border-b border-border py-4">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{f}</span>
+                    <span className="font-serif text-sm italic text-bone/60">{tag}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-10 text-base leading-relaxed text-muted-foreground">
+                This also settles where Root Ether belongs. It is not a fifth specialised membrane
+                standing beside the other four — an addition invented to force agreement with a
+                fivefold tattvic scheme. It is the undifferentiated capacity of etheric mediation,
+                prior to specialisation, and the Veil is what that capacity becomes when it
+                differentiates.
+              </p>
+              <p className="mt-6 font-mono text-xs leading-loose tracking-[0.1em] text-gold-dim">
+                AKASHA → ROOT ETHER → WARMTH → LIGHT → TONE → LIFE → CHON
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/60">
+                The five tattvas qualify every level. They do not require five corresponding ethers.
+              </p>
             </div>
-            <p className="mt-10 text-base leading-relaxed text-muted-foreground">
-              This also settles where Root Ether belongs. It is not a fifth specialised membrane
-              standing beside the other four — an addition invented to force agreement with a
-              fivefold tattvic scheme. It is the undifferentiated capacity of etheric mediation,
-              prior to specialisation, and the Veil is what that capacity becomes when it
-              differentiates.
-            </p>
-            <p className="mt-6 font-mono text-xs leading-loose tracking-[0.1em] text-gold-dim">
-              AKASHA → ROOT ETHER → WARMTH → LIGHT → TONE → LIFE → CHON
-            </p>
-            <p className="mt-4 text-sm leading-relaxed text-bone/60">
-              The five tattvas qualify every level. They do not require five corresponding ethers.
-            </p>
           </div>
 
           <div className="mt-24 max-w-3xl">
@@ -9268,28 +9282,30 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative isolate mt-24 max-w-3xl">
+          <div className="relative isolate mt-24">
             <Backdrop src="/bg/reservoirs.webp" opacity={0.28} position="center 45%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              The relational flywheel
-            </p>
-            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              Morphaithēr is not a neutral atmosphere. It is shaped continually by the history of
-              relations occurring within it — repeated cooperation makes certain forms easier to
-              generate, repeated fear builds anticipatory structures, repeated ritual thickens
-              symbolic association, and repeated exploitation can make a parasitic arrangement look
-              like the normal state of things.
-            </p>
-            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
-              Right relation generates a field that favours further right relation. Distortion
-              generates a field that reproduces distortion.
-            </p>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              So each healthy act contributes not only an immediate outcome but a field in which
-              similar acts become more possible — and transformation has to address atmosphere as
-              well as behaviour. Changing an isolated action may not hold if the surrounding
-              Morphaithēr keeps pulling its participants back into the old configuration.
-            </p>
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The relational flywheel
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Morphaithēr is not a neutral atmosphere. It is shaped continually by the history of
+                relations occurring within it — repeated cooperation makes certain forms easier to
+                generate, repeated fear builds anticipatory structures, repeated ritual thickens
+                symbolic association, and repeated exploitation can make a parasitic arrangement look
+                like the normal state of things.
+              </p>
+              <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+                Right relation generates a field that favours further right relation. Distortion
+                generates a field that reproduces distortion.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                So each healthy act contributes not only an immediate outcome but a field in which
+                similar acts become more possible — and transformation has to address atmosphere as
+                well as behaviour. Changing an isolated action may not hold if the surrounding
+                Morphaithēr keeps pulling its participants back into the old configuration.
+              </p>
+            </div>
           </div>
 
           <div className="mt-24 max-w-3xl">
