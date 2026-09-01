@@ -2399,7 +2399,8 @@ function Index() {
       </section>
 
       {/* THE FOURFOLD FIELD */}
-      <section id="fourfold" className="relative border-t border-border py-32">
+      <section id="fourfold" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/gateway.webp" opacity={0.16} position="center 50%" />
         <SectionGlyph delay={-40} />
         <div className="relative mx-auto max-w-6xl px-6">
           {/* Header */}
