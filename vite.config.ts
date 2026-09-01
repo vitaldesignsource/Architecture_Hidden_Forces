@@ -13,4 +13,5 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(import.meta.dirname, "./src") },
   },
+  server: process.env.PORT ? { port: Number(process.env.PORT), strictPort: true } : {},
 });
