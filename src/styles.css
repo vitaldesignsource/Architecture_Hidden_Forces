@@ -156,3 +156,16 @@
    type. Hidden in both engines. */
 .aoh-navstrip { scrollbar-width: none; -ms-overflow-style: none; }
 .aoh-navstrip::-webkit-scrollbar { display: none; }
+
+/* Sections settle in as they are reached. .aoh-reveal is applied by script,
+   never in markup, so a failed observer leaves the page visible. */
+.aoh-reveal { opacity: 0; transform: translateY(14px); }
+.aoh-reveal.is-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 900ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .aoh-reveal { opacity: 1; transform: none; }
+}

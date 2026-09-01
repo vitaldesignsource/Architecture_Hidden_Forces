@@ -203,6 +203,198 @@ function Backdrop({
   );
 }
 
+/**
+ * WuxingCycles — the Five Phases as the two diagrams they actually are.
+ * Generating runs clockwise round the rim; regulating cuts across as a pentagram,
+ * each phase checking the one two steps on. Fire sits at the top, as in the
+ * traditional arrangement where south is up.
+ */
+function WuxingCycles() {
+  const [sel, setSel] = useState<number | null>(null);
+  const C = 190,
+    R = 122;
+  // clockwise from the top: generating order is the rim itself
+  const ph = [
+    { z: "火", n: "Fire", ang: -90, d: "Expands and reaches expression.", gen: "yields ash, and ash becomes earth", reg: "melts metal" },
+    { z: "土", n: "Earth", ang: -18, d: "Centers, receives, assimilates.", gen: "bears metal in its veins", reg: "dams water" },
+    { z: "金", n: "Metal", ang: 54, d: "Contracts, differentiates, defines.", gen: "carries water, condensing it", reg: "cuts wood" },
+    { z: "水", n: "Water", ang: 126, d: "Descends, stores, dissolves, prepares renewal.", gen: "nourishes wood", reg: "quenches fire" },
+    { z: "木", n: "Wood", ang: 198, d: "Initiates growth and outward emergence.", gen: "feeds fire", reg: "depletes earth, its roots breaking soil" },
+  ];
+  const pt = (a: number, r = R) => [
+    C + r * Math.cos((a * Math.PI) / 180),
+    C + r * Math.sin((a * Math.PI) / 180),
+  ];
+  const short = (i: number, j: number, inset = 30) => {
+    const [x0, y0] = pt(ph[i].ang);
+    const [x1, y1] = pt(ph[j].ang);
+    const dx = x1 - x0, dy = y1 - y0, L = Math.hypot(dx, dy);
+    const ux = dx / L, uy = dy / L;
+    return [x0 + ux * inset, y0 + uy * inset, x1 - ux * inset, y1 - uy * inset];
+  };
+  const cur = sel === null ? null : ph[sel];
+  const genOf = (i: number) => (i + 1) % 5;
+  const regOf = (i: number) => (i + 2) % 5;
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[400px]">
+        <style>{`
+          .aoh-wx g.node { cursor: pointer; }
+          .aoh-wx .rim, .aoh-wx .chord { transition: stroke-opacity 350ms ease; }
+          .aoh-wx circle.disc { transition: stroke-opacity 350ms ease, fill-opacity 350ms ease; }
+        `}</style>
+        <svg viewBox="0 0 380 380" className="aoh-wx h-auto w-full" role="img" aria-labelledby="aoh-wx-t">
+          <title id="aoh-wx-t">
+            The Five Phases. Generating runs clockwise around the rim — wood feeds fire, fire
+            yields earth, earth bears metal, metal carries water, water nourishes wood. Regulating
+            crosses the interior as a pentagram, each phase checking the one two steps ahead.
+          </title>
+          <defs>
+            <marker id="aoh-wx-g" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 z" fill="var(--gold)" fillOpacity="0.8" />
+            </marker>
+            <marker id="aoh-wx-r" markerWidth="6" markerHeight="6" refX="4.4" refY="2.6" orient="auto">
+              <path d="M0,0 L5.2,2.6 L0,5.2 z" fill="var(--muted-foreground)" fillOpacity="0.85" />
+            </marker>
+          </defs>
+
+          {/* regulating — the pentagram across the interior */}
+          {ph.map((_, i) => {
+            const j = regOf(i);
+            const [x0, y0, x1, y1] = short(i, j, 32);
+            const lit = sel === i;
+            return (
+              <line
+                key={`r${i}`}
+                className="chord"
+                x1={x0} y1={y0} x2={x1} y2={y1}
+                stroke="var(--muted-foreground)"
+                strokeOpacity={sel === null ? 0.3 : lit ? 0.95 : 0.08}
+                strokeWidth={lit ? 1.4 : 0.8}
+                strokeDasharray="3 4"
+                markerEnd="url(#aoh-wx-r)"
+              />
+            );
+          })}
+
+          {/* generating — the rim */}
+          {ph.map((_, i) => {
+            const j = genOf(i);
+            const [x0, y0, x1, y1] = short(i, j, 31);
+            const lit = sel === i;
+            return (
+              <line
+                key={`g${i}`}
+                className="rim"
+                x1={x0} y1={y0} x2={x1} y2={y1}
+                stroke="var(--gold)"
+                strokeOpacity={sel === null ? 0.5 : lit ? 1 : 0.14}
+                strokeWidth={lit ? 1.8 : 1.1}
+                markerEnd="url(#aoh-wx-g)"
+              />
+            );
+          })}
+
+          {ph.map((e, i) => {
+            const [x, y] = pt(e.ang);
+            const on = sel === i;
+            const isGen = sel !== null && genOf(sel) === i;
+            const isReg = sel !== null && regOf(sel) === i;
+            return (
+              <g
+                key={e.n}
+                className="node"
+                onClick={() => setSel(on ? null : i)}
+                role="button"
+                tabIndex={0}
+                aria-pressed={on}
+                aria-label={`${e.n} phase`}
+                onKeyDown={(ev) => {
+                  if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); setSel(on ? null : i); }
+                }}
+              >
+                <circle
+                  className="disc"
+                  cx={x} cy={y} r="29"
+                  fill="var(--void)"
+                  fillOpacity={on ? 1 : 0.92}
+                  stroke={on || isGen ? "var(--gold)" : "var(--muted-foreground)"}
+                  strokeOpacity={on ? 1 : isGen ? 0.8 : isReg ? 0.55 : 0.4}
+                  strokeWidth={on ? 1.5 : 1}
+                  strokeDasharray={isReg ? "3 3" : undefined}
+                />
+                <text x={x} y={y + 3} textAnchor="middle" className="font-serif" fontSize="19"
+                      fill={on || isGen ? "var(--gold)" : "var(--bone)"} fillOpacity={on ? 1 : 0.78}>
+                  {e.z}
+                </text>
+                <text x={x} y={y + 45} textAnchor="middle" className="font-mono" fontSize="8"
+                      letterSpacing="1.6" fill="var(--muted-foreground)">
+                  {e.n.toUpperCase()}
+                </text>
+              </g>
+            );
+          })}
+        </svg>
+        <div className="mt-3 flex items-center justify-center gap-6 font-mono text-[9px] uppercase tracking-[0.18em]">
+          <span className="flex items-center gap-2 text-gold-dim">
+            <span className="inline-block h-px w-6 bg-gold/70" /> generating
+          </span>
+          <span className="flex items-center gap-2 text-muted-foreground">
+            <span className="inline-block h-px w-6 border-t border-dashed border-muted-foreground" /> regulating
+          </span>
+        </div>
+      </div>
+
+      <div className="min-h-[13rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.z} · {cur.n}
+            </p>
+            <p className="mt-3 font-serif text-2xl italic leading-tight text-bone">{cur.d}</p>
+            <div className="mt-6 space-y-4">
+              <div className="border-l border-gold/50 pl-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Generates {ph[genOf(sel!)].n}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {cur.n} {cur.gen}.
+                </p>
+              </div>
+              <div className="border-l border-dashed border-muted-foreground/60 pl-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Regulates {ph[regOf(sel!)].n}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {cur.n} {cur.reg}.
+                </p>
+              </div>
+            </div>
+            <p className="mt-6 text-[11px] leading-relaxed text-bone/60">
+              Regulation is not hostility. It is how no phase becomes absolute.
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Two cycles, one figure. Around the rim each phase{" "}
+              <span className="text-gold-dim">prepares</span> the next: growth fuels expression,
+              expression yields what can be assimilated, assimilation yields defined structure,
+              contraction returns substance to storage, storage nourishes new growth.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Across the interior each phase <span className="text-bone/80">checks</span> the one
+              two steps ahead — the pentagram that keeps any single movement from running away
+              with the whole. Choose a phase to see both of its offices.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -940,7 +1132,78 @@ function TreeOfLife() {
   );
 }
 
+/**
+ * useActiveSection — which section the reader is actually in.
+ * A thin detector band near the top of the viewport; whichever observed section
+ * occupies it wins, resolved in document order so overlaps are deterministic.
+ */
+function useActiveSection() {
+  const [active, setActive] = useState("");
+  useEffect(() => {
+    const els = Array.from(document.querySelectorAll<HTMLElement>("section[id], header[id]"));
+    if (!els.length || typeof IntersectionObserver === "undefined") return;
+    const order = new Map(els.map((el, i) => [el.id, i]));
+    const inBand = new Set<string>();
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) inBand.add(e.target.id);
+          else inBand.delete(e.target.id);
+        }
+        let best = "";
+        let bestIdx = Infinity;
+        inBand.forEach((id) => {
+          const i = order.get(id) ?? Infinity;
+          if (i < bestIdx) { bestIdx = i; best = id; }
+        });
+        if (best) setActive(best);
+      },
+      { rootMargin: "-18% 0px -76% 0px", threshold: 0 },
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+  return active;
+}
+
+/**
+ * useReveal — sections settle in as they are reached.
+ * The hiding class is added BY SCRIPT, never in the markup, so if the observer
+ * never runs the page is simply visible rather than blank. Anything already on
+ * screen at load is left alone, and a timeout un-hides anything stranded.
+ */
+function useReveal() {
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const targets = Array.from(
+      document.querySelectorAll<HTMLElement>("section[id] > div"),
+    ).filter((el) => el.getBoundingClientRect().top > window.innerHeight * 0.9);
+    if (!targets.length) return;
+    targets.forEach((el) => el.classList.add("aoh-reveal"));
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        }
+      },
+      { rootMargin: "0px 0px -12% 0px", threshold: 0.04 },
+    );
+    targets.forEach((el) => io.observe(el));
+    const t = window.setTimeout(() => {
+      document.querySelectorAll(".aoh-reveal:not(.is-in)").forEach((el) => el.classList.add("is-in"));
+    }, 6000);
+    return () => { io.disconnect(); window.clearTimeout(t); };
+  }, []);
+}
+
 function Index() {
+  const active = useActiveSection();
+  useReveal();
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       {/* NAV */}
@@ -967,7 +1230,14 @@ function Index() {
               { id: "astrology", label: "Sky" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
-              <a key={l.id} href={`#${l.id}`} className="transition-colors hover:text-gold">
+              <a
+                key={l.id}
+                href={`#${l.id}`}
+                aria-current={active === l.id ? "true" : undefined}
+                className={`transition-colors hover:text-gold ${
+                  active === l.id ? "text-gold" : ""
+                }`}
+              >
                 {l.label}
               </a>
             ))}
@@ -1006,7 +1276,10 @@ function Index() {
               <a
                 key={l.id}
                 href={`#${l.id}`}
-                className="whitespace-nowrap py-1 transition-colors hover:text-gold"
+                aria-current={active === l.id ? "true" : undefined}
+                className={`whitespace-nowrap py-1 transition-colors hover:text-gold ${
+                  active === l.id ? "text-gold" : ""
+                }`}
               >
                 {l.label}
               </a>
@@ -1070,6 +1343,35 @@ function Index() {
           </div>
         </div>
       </header>
+
+      {/* STATUS OF THE WORK */}
+      <section className="relative border-t border-border py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
+            <p className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
+              Ἐν προόδῳ
+              <span className="mt-2 block text-gold-dim">On the status of this work</span>
+            </p>
+            <div className="max-w-3xl">
+              <p className="font-serif text-xl leading-relaxed text-bone/90 sm:text-2xl">
+                A continuously evolving metaphysics — assembled rather than received.
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                This is a work of <span className="text-gold-dim">compilation</span>: Greek,
+                Kabbalistic, tattvic, alchemical, and Daoist material read together on the claim
+                that these languages describe one structure from different angles. It is equally a
+                work of <span className="text-gold-dim">experiment</span>. Sections are added,
+                corrected, and re-proportioned as the system clarifies; a term is renamed when a
+                better one is found; and what is not yet named is marked as such rather than
+                filled in.
+              </p>
+              <p className="mt-5 font-serif text-lg italic leading-relaxed text-bone/75">
+                No vessel exhausts the field — this one included.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* INDEX */}
       <section id="index" className="relative border-t border-border py-24">
@@ -3054,24 +3356,7 @@ function Index() {
               a force; the Five Phases describe the{" "}
               <span className="text-gold-dim">stage of transformation</span> it is passing through.
             </p>
-            <div className="mt-6 grid gap-3 sm:grid-cols-5">
-              {[
-                { n: "木", t: "Wood", d: "Initiates growth and outward emergence.", ex: "the idea germinates" },
-                { n: "火", t: "Fire", d: "Expands and reaches expression.", ex: "it becomes visible and communicative" },
-                { n: "土", t: "Earth", d: "Centers, receives, assimilates.", ex: "it is organized into a workable centre" },
-                { n: "金", t: "Metal", d: "Contracts, differentiates, defines.", ex: "it is edited and stripped" },
-                { n: "水", t: "Water", d: "Descends, stores, dissolves, prepares renewal.", ex: "it rests and seeds the next cycle" },
-              ].map((x) => (
-                <div key={x.t} className="group border border-border p-4 transition-colors hover:border-gold/40">
-                  <div className="font-serif text-2xl text-gold">{x.n}</div>
-                  <div className="mt-2 font-serif text-base italic text-bone">{x.t}</div>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
-                  <p className="mt-3 border-t border-border pt-2 text-sm italic leading-relaxed text-bone/60">
-                    {x.ex}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <WuxingCycles />
             <div className="mt-8 grid gap-8 sm:grid-cols-2">
               <div className="border border-border p-6">
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
