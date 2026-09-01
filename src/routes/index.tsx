@@ -604,6 +604,130 @@ function ElementalPairs() {
   );
 }
 
+/**
+ * PlanetaryFamily — one virtue recurring through unlike vessels.
+ * Only the three planets this doctrine develops in full are given chains. The
+ * other four carry their § XIII function and are marked as awaiting their
+ * correspondences rather than being supplied with invented ones.
+ */
+function PlanetaryFamily() {
+  const [sel, setSel] = useState(0);
+  const fam = [
+    {
+      g: "☉", n: "Sun", virtue: "Centralization, vitality, illumination, radiance, authority — the organization of a system around a governing centre.",
+      why: "centrality, radiance, incorruptibility, distribution, sovereign organization",
+      chain: [
+        ["Celestial", "The Sun", "the virtue at the celestial level"],
+        ["Mineral", "Gold", "fixed into incorruptible mineral durability"],
+        ["Living", "Solar plants", "embodied through living growth toward light"],
+        ["Bodily", "The heart", "the centre a body organizes around and distributes from"],
+        ["Imaginal", "The circle · the crown · kingship", "concentrated into an intelligible image"],
+      ],
+    },
+    {
+      g: "♄", n: "Saturn", virtue: "Contraction, boundary, duration, weight, consequence, age, crystallization — the preservation of form through limitation.",
+      why: "density, endurance, restriction, severance, the slow work of time",
+      chain: [
+        ["Celestial", "Saturn", "the virtue at the celestial level"],
+        ["Mineral", "Lead · stone", "density and weight made mineral"],
+        ["Living", "Roots", "the downward, holding, slow-growing part"],
+        ["Bodily", "The bones", "what endures, defines, and outlasts the soft"],
+        ["Imaginal", "The sickle · the hourglass · enclosed places", "severance and measured time as image"],
+      ],
+    },
+    {
+      g: "♂", n: "Mars", virtue: "Heat, assertion, incision, division, conflict, protection — directed force.",
+      why: "the capacity to cut, defend, inflame, penetrate, or act decisively",
+      chain: [
+        ["Celestial", "Mars", "the virtue at the celestial level"],
+        ["Mineral", "Iron", "hardness that takes and holds an edge"],
+        ["Living", "Thorns · pungent plants", "growth that defends and inflames"],
+        ["Bodily", "Muscular exertion · blood", "the body's capacity for force and defence"],
+        ["Imaginal", "Blades · martial symbols", "decisive division as image"],
+      ],
+    },
+  ];
+  const pending = [
+    ["☾", "Moon", "reception, memory, habit, embodiment, fluctuation"],
+    ["☿", "Mercury", "translation, mediation, communication, exchange"],
+    ["♀", "Venus", "attraction, affinity, valuation, harmony, combination"],
+    ["♃", "Jupiter", "expansion, authorization, synthesis, increase"],
+  ];
+  const cur = fam[sel];
+
+  return (
+    <div>
+      <div className="flex flex-wrap gap-3">
+        {fam.map((f, i) => (
+          <button
+            key={f.n}
+            type="button"
+            onClick={() => setSel(i)}
+            aria-pressed={sel === i}
+            className={`flex items-baseline gap-3 border px-5 py-3 transition-colors ${
+              sel === i ? "border-gold bg-clay/30 text-gold" : "border-border text-muted-foreground hover:border-gold/40"
+            }`}
+          >
+            <span className="font-serif text-xl">{f.g}</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em]">{f.n}</span>
+          </button>
+        ))}
+      </div>
+
+      <p className="mt-8 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/90">
+        {cur.virtue}
+      </p>
+
+      <div className="mt-8 space-y-px">
+        {cur.chain.map(([level, expr, note], i) => (
+          <div
+            key={level}
+            className="grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-4 sm:grid-cols-[7rem_minmax(0,16rem)_1fr] sm:gap-6"
+          >
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+              {level}
+            </span>
+            <span className={`font-serif text-lg ${i === 0 ? "text-gold" : "text-bone/90"}`}>
+              {expr}
+            </span>
+            <span className="col-span-2 text-sm leading-relaxed text-muted-foreground sm:col-span-1">
+              {note}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+        These belong to one family through{" "}
+        <span className="text-gold-dim">{cur.why}</span> — not because they are secretly the same
+        object. Ritual is their deliberate convergence: the sixth term, gathering the others into
+        one operation.
+      </p>
+
+      <div className="mt-10 border-t border-border pt-6">
+        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+          Awaiting their chains
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {pending.map(([g, n, f]) => (
+            <div key={n} className="border border-dashed border-border/70 p-4">
+              <div className="flex items-baseline justify-between">
+                <span className="font-serif text-lg italic text-bone/70">{n}</span>
+                <span className="text-lg text-gold-dim">{g}</span>
+              </div>
+              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{f}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-4 max-w-2xl text-[11px] leading-relaxed text-muted-foreground">
+          Their celestial functions are given in § XIII. Their metals, plants, organs, and images
+          are not yet set down, and are left open rather than filled in.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -1544,6 +1668,7 @@ function Index() {
               { id: "ignisophia", label: "Ignisophia" },
               { id: "reciprocal", label: "Reciprocal" },
               { id: "mixing", label: "Mixing" },
+              { id: "celestial", label: "Celestial" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -1683,9 +1808,10 @@ function Index() {
               { n: "XVI", id: "ignisophia", t: "Ignisophia", d: "Fire made wise — the chariot of the Inner Sun." },
               { n: "XVII", id: "reciprocal", t: "The Reciprocal Field", d: "How field and form make each other; what a form gives back." },
               { n: "XVIII", id: "mixing", t: "The Dynamics of Mixing", d: "The elements as verbs, and the six ways any two of them meet." },
-              { n: "XIX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XIX", id: "celestial", t: "Celestial Correspondence", d: "One virtue through unlike vessels — Agrippa downward, Paracelsus up." },
+              { n: "XX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XX", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXI", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -4239,13 +4365,261 @@ function Index() {
         </div>
       </section>
 
+      {/* CELESTIAL CORRESPONDENCE */}
+      <section id="celestial" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-170} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XIX · Celestial Correspondence
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            One virtue through <span className="italic text-gold">unlike vessels</span>
+          </h2>
+          <p className="mt-8 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            Correspondence is the recurrence of a formative relationship through unlike vessels.
+          </p>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The claim is not that a planet, a plant, and an organ are secretly the same object. It
+            is that a similar formative virtue can be translated across different levels of
+            existence — and that each level translates it according to its own nature.
+          </p>
+
+          <div className="mt-16">
+            <PlanetaryFamily />
+          </div>
+
+          {/* what makes a correspondence strong */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                What makes a correspondence strong
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Not arbitrary lists, but not perfectly universal either — different cultures order
+                them differently. Their firmest ground is functional:
+              </p>
+              <div className="mt-5 space-y-px">
+                {[
+                  "What does the thing do?",
+                  "How does it grow or move?",
+                  "What does it attract, resist, separate, or preserve?",
+                  "What kind of atmosphere does it produce?",
+                  "What role does it occupy in its larger system?",
+                  "What geometry or symbolic pattern does it embody?",
+                ].map((q) => (
+                  <p key={q} className="border-b border-border py-3 font-serif text-base italic text-bone/85">
+                    {q}
+                  </p>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                The more functional relations converge, the stronger the correspondence.{" "}
+                <span className="text-gold-dim">
+                  A yellow flower is not solar merely because the Sun appears golden.
+                </span>
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Virtue means efficacy, not goodness
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Here <em>virtue</em> is the characteristic power through which a thing expresses
+                its nature — not moral worth.
+              </p>
+              <div className="mt-5 space-y-4">
+                <div className="border-l border-border pl-5">
+                  <p className="font-serif italic text-bone">Mars is not simply violence.</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    It is the capacity to separate, cut, defend, initiate, compete, and act
+                    decisively.
+                  </p>
+                </div>
+                <div className="border-l border-border pl-5">
+                  <p className="font-serif italic text-bone">Saturn is not simply misfortune.</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    It is boundary, endurance, maturity, definition, consequence, and preservation
+                    through limitation.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                Every planetary virtue holds constructive and destructive expressions. The
+                condition of the vessel decides which become actual.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                A planetary virtue is also not a pure tattva. Mars commonly runs through Tejas, but
+                may take Vayu as speed, Prithivi as endurance, Apas as protective attachment. The
+                tattvas say what composes the expression; the planet says how it has been organized
+                into a recognizable function.
+              </p>
+            </div>
+          </div>
+
+          {/* the two methods */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Two methods, one circuit
+            </p>
+            <div className="mt-6 grid gap-3 lg:grid-cols-2">
+              <div className="group border border-border p-6 transition-colors hover:border-gold/40">
+                <div className="font-serif text-xl italic text-bone">Agrippa · downward</div>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  A vertical chain: intellectual principle → celestial virtue → elemental
+                  configuration → natural body → sensible signature. The higher is not pushed down
+                  like one object striking another; it is successively translated until it is
+                  embodied.
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                  Which is the Fourfold Veil exactly: Warmth activates the planetary tendency,
+                  Light gives it image and intelligibility, Tone arranges its affinities and
+                  proportions, Life incorporates it into a developing form, and matter fixes the
+                  expression.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 font-serif italic text-gold/85">
+                  What earthly things belong to this celestial order?
+                </p>
+              </div>
+              <div className="group border border-border p-6 transition-colors hover:border-gold/40">
+                <div className="font-serif text-xl italic text-bone">Paracelsus · upward</div>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Begin instead with the formed thing and read it. The signature is not a
+                  decorative mark laid on the surface — it is the outward trace of inward
+                  formation, shaped by the forces and history that brought the thing into being.
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                  A signature is therefore <em>coagulated formative history</em>: a record of how a
+                  thing negotiated light, gravity, water, soil, competition, climate, and ancestry.
+                  Which connects Paracelsus straight to the Crypt — every vessel inherits prior
+                  patterns and gives them new material expression.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 font-serif italic text-gold/85">
+                  What hidden order is disclosed by this earthly thing?
+                </p>
+              </div>
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Agrippa follows the virtue down; Paracelsus reads the form back up. Together they
+              close the circuit of descent and interpretation.
+            </p>
+          </div>
+
+          {/* reading a signature */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              A signature is read through the whole life of a thing
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              The doctrine is often flattened to a crude rule — that a plant resembling an organ
+              must heal it. No single resemblance suffices. A genuine reading gathers:
+            </p>
+            <div className="mt-6 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
+              {["Shape and geometry","Colour and luminosity","Taste and odour","Habitat and climate","Season and planetary timing","Direction of growth","Texture and density","Relations with other organisms","Resistance or susceptibility","Method of reproduction","Observable effects","Transformations produced"].map((f) => (
+                <div key={f} className="border-b border-border py-3 text-sm leading-relaxed text-muted-foreground">
+                  {f}
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl border-l border-border pl-6 text-sm leading-relaxed text-bone/70">
+              Historically attributed medicinal signatures should not substitute for modern
+              evidence of safety or efficacy.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-lg italic leading-relaxed text-bone/85">
+              Celestial pattern <span className="text-gold">+</span> tattvic composition{" "}
+              <span className="text-gold">+</span> etheric transduction{" "}
+              <span className="text-gold">+</span> local field{" "}
+              <span className="text-gold">+</span> living vessel{" "}
+              <span className="text-gold">=</span> the manifested signature
+            </p>
+            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Which is why a signature discloses both what descended and what received it.
+            </p>
+          </div>
+
+          {/* reception */}
+          <div className="mt-20 grid gap-3 sm:grid-cols-3">
+            {[
+              { t: "Reception is active", d: "A vessel does not absorb celestial force; it selects, translates, metabolizes, and sometimes resists. Selective permeability decides what enters, impedance how hard the passage is, the ethers transduce it, the tattvas qualify it, the gunas condition it, and existing flywheels decide what already has momentum.", n: "Even resistance produces an outcome — a force barred from its intended channel is displaced, distorted, internalized, or expressed elsewhere." },
+              { t: "Influence modulates", d: "A planet emphasizes, activates, restricts, or reorganizes tendencies already present. It may open a threshold or press on a weak boundary. It contributes timing and qualitative direction without producing the whole event.", n: "Which is what protects the system from fatalism. A Martian season becomes conflict in one person, surgery in another, athletic exertion, defensive courage, or decisive work in others. The family stays recognizable; the channel decides the expression." },
+              { t: "And it must pass through alchemy", d: "Sulfur is the planetary impulse; Mercury carries and translates it through the organism; Salt receives, limits, and fixes it into actual expression.", n: "If Mercury cannot circulate it, it stays isolated or distorted. If Salt cannot hold it, there is intensity without lasting form. If Salt is too rigid, pressure accumulates until the vessel cracks or reorganizes suddenly." },
+            ].map((x) => (
+              <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">{x.n}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* mirror */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                A patterned mirror, not a machine
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The sky is a mirror, but not a flat one returning exact copies. It shows large-scale
+                geometries, rhythms, returns, conjunctions, and cycles that correspond with
+                formative processes at other levels. Saturn overhead does not look like a human
+                experience of limitation — yet its contracting, boundary-forming, slowly maturing
+                character can be reflected through one.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                The heavens need not be imagined firing invisible commands into passive bodies, nor
+                astrology reduced to stories projected onto neutral lights. The stronger position is
+                participatory: heaven and earth express related patterns because both arise within
+                one ordered cosmos.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Every vessel curves the reflection
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                A mirror alters what it returns according to its shape, surface, angle, and
+                material — and so does a living vessel. The planetary virtue stays recognizable,
+                but no two embodiments are identical.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                Which is why the symbols are multivalent. Mars does not signify one inevitable
+                event. It signifies a formative family whose actual expression depends on vessel,
+                context, scale, and surrounding relation. The reflection is real, and never
+                mechanically exact.
+              </p>
+            </div>
+          </div>
+
+          {/* the discipline */}
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Correspondence is not identity
+            </p>
+            <p className="mt-5 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone">
+              The Sun is not the heart. Mars is not iron. Venus is not a rose. Saturn is not lead.
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              They correspond because related formative functions are expressed through different
+              domains. A valid correspondence preserves a meaningful structure while leaving the
+              differences between levels intact — the planet celestial, the metal mineral, the
+              plant living, the organ bodily, the symbol imaginal, and the ritual their deliberate
+              convergence.
+            </p>
+            <p className="mt-8 max-w-4xl font-serif text-xl leading-relaxed text-bone/90">
+              Celestial correspondence is the recurrence of a formative virtue across levels of
+              existence — translated by the medium, qualified by the tattvas, embodied by the
+              vessel, and revealed through the signature of the resulting form.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* THE SEVEN BOOKS */}
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XIX · The Series
+                § XX · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -4338,7 +4712,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XX · Lineage
+                § XXI · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
