@@ -672,6 +672,7 @@ function Index() {
               { id: "laws", label: "Laws" },
               { id: "astrology", label: "Sky" },
               { id: "subtattva", label: "Compounds" },
+              { id: "dao", label: "Dao" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2547,6 +2548,294 @@ function Index() {
           <p className="mt-20 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
             The primary tattvas give five letters. The sub-tattvas show how every letter can be
             spoken through every other — a qualitative alphabet of compound formation.
+          </p>
+        </div>
+      </section>
+
+      {/* DAOIST DYNAMICS */}
+      <section id="dao" className="relative border-t border-border py-32">
+        <SectionGlyph delay={-110} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XIX · The Dynamics of Return
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            道 · How the forces <span className="italic text-gold">move</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Astrology says when a configuration is emphasized. The tattvas say what qualities
+            compose it. The ethers say how it becomes embodied. What remained missing was a
+            philosophy of circulation, polarity, timing, and noncoercive change — how a force
+            moves, alternates, generates its opposite, reaches excess, and returns.
+          </p>
+
+          {/* The Dao is not Root Ether */}
+          <div className="mt-14 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The Dao is not Root Ether
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Root Ether is the first formative medium <em>within</em> the architecture — the
+              field through which relation, transmission, and embodiment become possible. The Dao
+              is not a substance, field, energy, or item in the universe at all. It is the
+              inexhaustible Way through which all processes arise, and it belongs beyond the
+              architecture rather than at the top of it.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-bone/80">
+              Keeping them apart protects Root Ether from being inflated into an absolute
+              God-substance, while preserving the apophatic depth beyond it. Wuji likewise names
+              the <em>absence of polarity</em>; Root Ether names the continuity through which
+              polarity can arise and become formative. They answer different questions.
+            </p>
+          </div>
+
+          {/* 42 */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              道生一 · From the Way to the ten thousand things
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-5">
+              {[
+                { n: "道", t: "The Dao", d: "The inexhaustible Way, beyond complete definition." },
+                { n: "一", t: "The One", d: "Primordial continuity; undivided possibility." },
+                { n: "二", t: "The Two", d: "The first polarity — yin and yang." },
+                { n: "三", t: "The Three", d: "Polarity joined by the circulating relation between its poles." },
+                { n: "萬", t: "Ten Thousand", d: "The innumerable forms produced through differentiated relationship." },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-4 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-2xl text-gold">{x.n}</div>
+                  <div className="mt-2 font-serif text-base italic text-bone">{x.t}</div>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              The Three carries the weight. Two poles alone produce separation or deadlock; the
+              third — the mediating breath between them — is what makes polarity generative. It is
+              not another object set beside the first two but the living relation through which
+              they become capable of producing something beyond themselves.{" "}
+              <span className="text-gold-dim">This is precisely Mercury's office</span> between
+              Sulfur and Salt.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-bone/80">
+              Taiji is the moment that gradient becomes polarized movement — and Warmth Ether can
+              be read as the etheric carrier of that first Taijic activation.
+            </p>
+          </div>
+
+          {/* Yin/yang as modes, and qi */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                陰陽 · Not two more tattvas
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Yin and yang are relational modes that qualify every tattva, sub-tattva, ether,
+                planet, and process. Neither is good or evil; neither exists absolutely alone.
+                Something may be yin relative to one condition and yang relative to another.
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  ["Yang Tejas", "Outwardly radiant, separating, expressive, rapidly heating, combustible."],
+                  ["Yin Tejas", "Banked heat — inward digestion, gestational warmth, smouldering intensity, hidden transformative pressure."],
+                  ["Yang Apas", "Overflowing current, emotional expression, outward nourishment."],
+                  ["Yin Apas", "Interior gestation, retention, absorption, deep attachment."],
+                ].map(([a, b]) => (
+                  <div key={a} className="border-b border-border py-4">
+                    <div className="font-serif italic text-gold">{a}</div>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                Applied to the twenty-five, this stops the compounds becoming static personality
+                labels. An Apas–Tejas configuration is yang when passion is expressed outward, yin
+                when the same heat is held as gestation or silent pressure. Every compound quality
+                can expand, contract, emerge, withdraw, or return.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                氣 · Qi is not another name for ether
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  ["Ether", "the medium"],
+                  ["Qi", "the movement through it"],
+                  ["Tattva", "the quality of that movement"],
+                  ["Form", "the temporary organization it produces"],
+                ].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-4">
+                    <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
+                    <span className="font-serif text-lg italic text-bone/90">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+                Warmth activates qi; Light gives it orientation; Tone arranges it into ratios and
+                rhythms; Life integrates it into a self-maintaining whole. The Morphaithēr is then
+                readable as a local ecology of currents — and Daoist language lets it be diagnosed,
+                not merely described.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                A field may hold abundant activity yet circulate poorly. It may be intensely warm
+                and unable to convert warmth into light. Strong Prithivi may preserve stability
+                while preventing adaptation; excess Vayu may produce continual movement without
+                coherence.
+              </p>
+            </div>
+          </div>
+
+          {/* Five Phases */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              五行 · The Five Phases are not the five tattvas
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              They must not be mapped onto one another merely because both systems have five
+              terms. The tattvas describe the <span className="text-gold-dim">composition</span> of
+              a force; the Five Phases describe the{" "}
+              <span className="text-gold-dim">stage of transformation</span> it is passing through.
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-5">
+              {[
+                { n: "木", t: "Wood", d: "Initiates growth and outward emergence.", ex: "the idea germinates" },
+                { n: "火", t: "Fire", d: "Expands and reaches expression.", ex: "it becomes visible and communicative" },
+                { n: "土", t: "Earth", d: "Centers, receives, assimilates.", ex: "it is organized into a workable centre" },
+                { n: "金", t: "Metal", d: "Contracts, differentiates, defines.", ex: "it is edited and stripped" },
+                { n: "水", t: "Water", d: "Descends, stores, dissolves, prepares renewal.", ex: "it rests and seeds the next cycle" },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-4 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-2xl text-gold">{x.n}</div>
+                  <div className="mt-2 font-serif text-base italic text-bone">{x.t}</div>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                  <p className="mt-3 border-t border-border pt-2 text-sm italic leading-relaxed text-bone/60">
+                    {x.ex}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 grid gap-8 sm:grid-cols-2">
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  The generating cycle
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Each phase prepares the next. Growth fuels expression; expression yields what can
+                  be assimilated; assimilation yields defined structure; contraction returns
+                  substance to storage; storage nourishes new growth.
+                </p>
+              </div>
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  The regulating cycle
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Each movement limits another so no phase becomes absolute. Regulation is not
+                  hostility but the system's way of holding proportion — which is why constraint can
+                  preserve life rather than merely oppose it, and how integral coherence differs
+                  from parasitic.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Emptiness, wu wei, ziran, de */}
+          <div className="mt-20 grid gap-3 sm:grid-cols-2">
+            {[
+              { t: "Emptiness · 虛", d: "A vessel is thrown from clay, but its usefulness is the space within. Salt gives the vessel its boundary and Prithivi its durability — Akasha gives it interior capacity. A vessel without walls cannot contain; one without opening cannot receive.", q: "Boundary creates identity, but emptiness creates usefulness." },
+              { t: "Wu wei · 無為", d: "Not inaction. Action that cooperates with the actual configuration of the field: studying its gradients, timings, channels, and thresholds, then intervening where a small action can redirect a larger movement. Ignore the field and impose form by will, and enormous force is wasted.", q: "The art of minimum coercion and maximum alignment." },
+              { t: "Ziran · 自然", d: "Self-so-ness. A limit on externally imposed formation: sometimes the task is not to determine the finished form in advance but to establish conditions and let the inherent telos emerge. A gardener cannot make a seed grow by pulling it.", q: "Self-expression once unnecessary obstruction is removed." },
+              { t: "De · 德", d: "Not moral obedience but realized coherence — the efficacy a being holds when its inner organization accords with its own nature and its place in the larger field. A tree shows De by growing according to its nature while participating in soil, season, and ecosystem.", q: "Power arising from right relationship rather than domination." },
+            ].map((x) => (
+              <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                <p className="mt-4 border-t border-border pt-3 font-serif italic text-gold/90">{x.q}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Reversal */}
+          <div className="mt-16 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              反 · The Law of Reversal
+            </p>
+            <p className="mt-5 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone">
+              A force carried beyond its proportion begins to generate the conditions of its own
+              transformation into another state.
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Excessive heat consumes its fuel and produces exhaustion. Extreme rigidity turns
+              brittle. Unlimited expansion disperses the centre that sustained it. Total
+              contraction generates the pressure for release. Not that every event flips into its
+              opposite — that no expressed tendency stands outside the field's larger
+              compensations.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-bone/80">
+              Water is the image of this intelligence: it yields without becoming powerless, enters
+              low places, conforms to the vessel, circulates around obstacles, and gradually
+              reshapes what looks harder than itself. Not Apas alone — Apas supplies cohesion and
+              receptivity; Daoist water shows those qualities becoming a strategy of action.
+              Mercury moving through an Apas-dominant field under the discipline of wu wei.
+            </p>
+          </div>
+
+          {/* Internal alchemy */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              內丹 · The furnace and the cauldron
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              {[
+                { n: "精 · Jing", t: "Essence", d: "Stored and embodied potential. Resonates with Salt, Prithivi, inheritance, the bodily reservoir." },
+                { n: "氣 · Qi", t: "Breath", d: "Mobilized, circulating formative activity. Resonates with Mercury, Vayu, Warmth Ether." },
+                { n: "神 · Shen", t: "Spirit", d: "Luminous awareness, intelligibility, governing presence. Resonates with Light Ether and the Inner Sun." },
+              ].map((x) => (
+                <div key={x.n} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-xl text-gold">{x.n}</div>
+                  <div className="mt-2 font-serif text-lg italic text-bone">{x.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Correspondences, not translations — the Daoist terms keep their own historical
+              meaning rather than becoming new names for Western principles. The refinement of
+              dense potential into circulation, and circulation into luminous awareness, closes by
+              returning toward emptiness, which is what stops luminous consciousness hardening into
+              one more ego-form.
+            </p>
+            <div className="mt-8 grid gap-8 sm:grid-cols-2">
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  Furnace and cauldron
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  The furnace is the regulated production of warmth; the cauldron the vessel that
+                  contains transformation. A furnace without a cauldron disperses heat; a cauldron
+                  without a furnace stays inert. Too much fire burns the contents, too little fails
+                  to transform them. Warmth is not valuable for being intense — it must be timed,
+                  contained, circulated, and proportioned to its material.
+                </p>
+              </div>
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  Fire and Water
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Fire without Water rises, scatters, consumes. Water without Fire sinks, congeals,
+                  lies dormant. The aim is never Fire's victory but a vessel in which rising warmth
+                  and descending receptivity continually renew one another — the Inner Sun not as a
+                  solitary blaze but as the central regulator of ascending and descending currents.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p className="mt-20 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            The universe is not merely built. It is continually balancing, circulating, emptying,
+            filling, transforming, and returning.
           </p>
         </div>
       </section>
