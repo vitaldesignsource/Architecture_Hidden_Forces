@@ -3949,7 +3949,8 @@ function Index() {
           </div>
 
           {/* ---- the organ as seat ---- */}
-          <div className="mt-24 grid gap-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-24 grid gap-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/leafbowl.webp" opacity={0.56} position="center 55%" scrim={0.18} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Organs as physical-vital seats</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -4129,7 +4130,8 @@ function Index() {
           </div>
 
           {/* ---- healing ---- */}
-          <div className="mt-28 border-t border-border pt-16">
+          <div className="relative isolate mt-28 border-t border-border pt-16">
+            <Backdrop src="/bg/burnslope.webp" opacity={0.5} position="center 50%" scrim={0.22} portrait />
             <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
               <div className="lg:sticky lg:top-32 lg:self-start">
                 <h3 className="font-serif text-2xl leading-tight">
@@ -4207,6 +4209,7 @@ function Index() {
       </section>
 
       <section id="image" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/obscura2.webp" opacity={0.7} position="center 45%" scrim={0.18} />
         <SectionGlyph delay={-250} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -6556,7 +6559,7 @@ function Index() {
       </section>
 
       <section id="books" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
+        <Backdrop src="/bg/crosssection.webp" opacity={0.72} position="center 50%" scrim={0.16} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
