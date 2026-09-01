@@ -3379,7 +3379,8 @@ function Index() {
       </section>
 
       {/* INDEX */}
-      <section id="index" className="relative border-t border-border py-24">
+      <section id="index" className="relative isolate border-t border-border py-24">
+        <Backdrop src="/bg/summit.webp" opacity={0.42} position="center 40%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             Πίναξ · The Architecture in Order
@@ -3462,7 +3463,8 @@ function Index() {
       </section>
 
       {/* OPENING DOCTRINE */}
-      <section id="doctrine" className="relative border-t border-border py-32">
+      <section id="doctrine" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/archer.webp" opacity={0.72} position="center 45%" scrim={0.3} />
         <SectionGlyph />
         <div className="relative mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <aside className="lg:sticky lg:top-32 lg:self-start">
@@ -7728,6 +7730,7 @@ function Index() {
       </section>
 
       <section id="symbol" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/murmuration.webp" opacity={0.63} position="center 40%" scrim={0.3} />
         <SectionGlyph delay={-270} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -7958,8 +7961,9 @@ function Index() {
             </div>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Both may be powerful.{" "}
-              <span className="text-bone/90">Power alone does not distinguish them</span> — which is
-              why the decisive question is never simply whether the symbol works:
+              <span className="text-bone/90">Power alone does not distinguish them</span> — the
+              distinction is the one drawn in § XII, here applied to symbols. Which is why the
+              decisive question is never simply whether the symbol works:
             </p>
             <p className="mt-8 max-w-3xl border-l-2 border-gold pl-6 font-serif text-2xl italic leading-relaxed text-bone/90">
               What kind of world does the symbol teach its participants to inhabit?
@@ -8072,7 +8076,8 @@ function Index() {
                 no consciousness exhausts the Field from which meaning arises.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                The remainder is not a defect. It is what keeps the symbol alive — a perfectly
+                The same law as § XVII&rsquo;s, taken to three levels at once. And the remainder is
+                not a defect: it is what keeps the symbol alive — a perfectly
                 exhausted symbol stops generating understanding and becomes a technical code. The
                 danger begins when the interpreter forgets the remainder and takes the map for the
                 territory. The solar symbol may disclose something essential about centrality without
@@ -8148,6 +8153,7 @@ function Index() {
       </section>
 
       <section id="taxonomy" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/fieldlines.webp" opacity={0.62} position="center 60%" scrim={0.15} />
         <SectionGlyph delay={-290} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -8326,9 +8332,9 @@ function Index() {
               shared emotion produces coordinated action, coordinated action strengthens identity,
               strengthened identity returns attention to the symbol. That cycle yields solidarity,
               tradition, and mutual care — and also polarisation, scapegoating, panic, bureaucracy,
-              and ideological possession. A collective force is integral when it strengthens the
-              persons and relationships composing it, and parasitic when preserving the pattern
-              requires their continual depletion, deception, or diminishment.
+              and ideological possession. By the measure of § XII, a collective force is integral
+              when it strengthens the persons and relationships composing it, and parasitic when
+              preserving the pattern requires their continual depletion, deception, or diminishment.
             </p>
           </div>
 
@@ -8419,11 +8425,17 @@ function Index() {
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
-                The Law of Transductive Loss
+                Transductive Loss, at the level of mediation
               </p>
               <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
                 Every mediator preserves part of a pattern, transforms part of it, and leaves part
                 behind.
+              </p>
+              <p className="mt-3 text-[11px] leading-relaxed text-bone/55">
+                Not a new law. § XVII already states it twice — as Transductive Loss, where each
+                translation gives up something particular, and as the Law of Remainder, where what
+                was given up persists as residue. This is the same principle where the transducer is
+                an intermediary rather than a form.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 A dream translates emotion into imagery and distorts chronology. Language translates
@@ -8528,6 +8540,7 @@ function Index() {
       </section>
 
       <section id="mediation" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/filters.webp" opacity={0.74} position="center 50%" scrim={0.12} />
         <SectionGlyph delay={-310} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -8676,7 +8689,9 @@ function Index() {
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A claimed archangelic communication that produces obsession, flattery, fragmentation,
               or exemption from moral discernment contradicts the integrative rank it claims.{" "}
-              <span className="text-bone/90">Intensity is not evidence of altitude.</span> In
+              <span className="text-bone/90">Intensity is not evidence of altitude</span> — the
+              same test § XXV applies to visions, where intensity is not proof of metaphysical rank.
+              In
               Pseudo-Dionysius even the highest celestial beings do not hold divine light as private
               property; they receive according to capacity and transmit to those below. Hierarchy is
               a structure of reception, transformation, and generous transmission — not celestial
@@ -8882,6 +8897,7 @@ function Index() {
       </section>
 
       <section id="theurgy" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/sanctum.webp" opacity={0.58} position="center 50%" scrim={0.22} />
         <SectionGlyph delay={-330} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -9070,7 +9086,8 @@ function Index() {
           </div>
 
           {/* ---- statues and ensoulment ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/statue.webp" opacity={0.66} position="center 45%" scrim={0.16} />
             <h3 className="font-serif text-2xl leading-tight">Statues, ensoulment, and telestic art</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A sacred statue is neither a mere representation nor a body claimed to exhaust the god.
@@ -9216,6 +9233,7 @@ function Index() {
       </section>
 
       <section id="daimons" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/mangrove.webp" opacity={0.56} position="center 45%" scrim={0.34} />
         <SectionGlyph delay={-350} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -9425,7 +9443,9 @@ function Index() {
               attractions, encounters, bodily intuitions, creative compulsions, moral conflicts, or
               persistent vocational themes.{" "}
               <span className="text-bone/90">These are not automatically supernatural messages.</span>{" "}
-              They are the media through which a deeper organising pattern might become perceptible.
+              They are the media through which a deeper organising pattern might become perceptible —
+              and § XXV&rsquo;s three attentions apply unchanged: see the sign, see through it, and
+              see what it is doing in the one who receives it.
             </p>
             <div className="mt-10 max-w-4xl">
               {[["Warmth Ether", "activates urgency, courage, attraction, and vocational fire"],
@@ -9525,7 +9545,8 @@ function Index() {
           </div>
 
           {/* ---- deeper purpose ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/walker.webp" opacity={0.54} position="center 42%" scrim={0.26} />
             <h3 className="font-serif text-2xl leading-tight">The paradox of the office</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The personal daimōn stands at the threshold between particular destiny and universal
@@ -9653,7 +9674,8 @@ function Index() {
       </section>
 
       {/* LINEAGE */}
-      <section id="lineage" className="relative border-t border-border py-32">
+      <section id="lineage" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/fold.webp" opacity={0.54} position="center 50%" scrim={0.28} />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -9763,6 +9785,7 @@ function Index() {
 
       {/* FINAL FORMULA */}
       <section id="formula" className="relative isolate overflow-hidden border-t border-border py-40">
+        <Backdrop src="/bg/crystal.webp" opacity={0.6} position="center 62%" scrim={0.15} />
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <svg
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-slow-spin opacity-[0.18]"
