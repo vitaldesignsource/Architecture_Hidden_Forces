@@ -188,7 +188,13 @@
 
 /* Backdrop: full-bleed cover on wide viewports; a band at the top of the section
    below lg, where a tall section would otherwise crop a 16:9 source to a sliver. */
-.aoh-bd { height: 100%; }
+.aoh-bd {
+  height: 100%;
+  left: 50%;
+  right: auto;
+  width: 100vw;
+  margin-left: -50vw;
+}
 .aoh-bd-img { opacity: var(--bd-o, 0.3); }
 
 @media (max-width: 1023px) {
@@ -208,3 +214,8 @@
 @media (max-width: 1023px) {
   .aoh-bd-por { height: min(46vh, 430px); }
 }
+
+/* The band is full-bleed via 100vw, which overshoots by the scrollbar width.
+   Clip rather than hide: `hidden` would make body a scroll container and break
+   every `lg:sticky` column in the file. */
+html, body { overflow-x: clip; }
