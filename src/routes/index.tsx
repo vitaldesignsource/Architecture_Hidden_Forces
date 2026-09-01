@@ -177,10 +177,14 @@ function Backdrop({
   opacity = 0.3,
   position = "center",
   fill = false,
+  scrim = 0.4,
 }: {
   src: string;
   opacity?: number;
   position?: string;
+  /** Void wash over the image. Bright sources need it to stay legible; dark,
+   *  high-contrast sources are only flattened by it, so they take less. */
+  scrim?: number;
   /** Cover the whole section even on narrow viewports. Only the hero wants this. */
   fill?: boolean;
 }) {
@@ -206,7 +210,7 @@ function Backdrop({
           className="aoh-bd-img h-full w-full object-cover"
           style={{ objectPosition: position }}
         />
-        <div className="absolute inset-0 bg-void/40" />
+        <div className="absolute inset-0 bg-void" style={{ opacity: scrim }} />
         <div
           className="aoh-bd-scrim absolute inset-0"
           style={{
@@ -2773,7 +2777,8 @@ function Index() {
       </section>
 
       {/* THE FIVE TERMS */}
-      <section id="terms" className="relative border-t border-border py-32">
+      <section id="terms" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/rimstone.webp" opacity={0.85} position="center 50%" scrim={0.05} />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -3482,7 +3487,8 @@ function Index() {
       </section>
 
       {/* RETURN */}
-      <section id="return" className="relative border-t border-border py-32">
+      <section id="return" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/blowhole.webp" opacity={0.29} position="center 45%" scrim={0.3} />
         <SectionGlyph delay={-60} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -3658,7 +3664,8 @@ function Index() {
       </section>
 
       {/* EXTENDED — hidden powers */}
-      <section id="extended" className="relative border-t border-border py-32">
+      <section id="extended" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/mycelium.webp" opacity={0.67} position="center 55%" scrim={0.2} />
         <SectionGlyph delay={-45} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -4258,7 +4265,8 @@ function Index() {
       </section>
 
       {/* SUB-TATTVAS */}
-      <section id="subtattva" className="relative border-t border-border py-32">
+      <section id="subtattva" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/scrims.webp" opacity={0.28} position="center 50%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XIV · The Compound Qualities
@@ -6388,6 +6396,7 @@ function Index() {
 
       {/* THE SEVEN BOOKS */}
       <section id="organs" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/sprout.webp" opacity={0.61} position="center 55%" />
         <SectionGlyph delay={-230} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -6703,7 +6712,8 @@ function Index() {
             embodiment.
           </p>
 
-          <div className="mt-20">
+          <div className="relative isolate mt-20">
+            <Backdrop src="/bg/darkroom.webp" opacity={0.65} position="center 60%" scrim={0.05} />
             <h3 className="font-serif text-2xl leading-tight">The imaginal bridge</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Corbin used <span className="italic">imaginal</span> to distinguish an intermediary
@@ -6741,7 +6751,8 @@ function Index() {
           </div>
 
           {/* ---- image as first legible configuration ---- */}
-          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+          <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <Backdrop src="/bg/obscura.webp" opacity={0.85} position="center 45%" scrim={0.05} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">
                 The soul&rsquo;s first reception of hidden form
@@ -6796,7 +6807,8 @@ function Index() {
           </div>
 
           {/* ---- eikon / phantasia ---- */}
-          <div className="mt-28 border-t border-border pt-16">
+          <div className="relative isolate mt-28 border-t border-border pt-16">
+            <Backdrop src="/bg/mirror.webp" opacity={0.74} position="center 50%" />
             <h3 className="font-serif text-2xl leading-tight">
               Eik&#333;n, phantasia, and inner appearance
             </h3>
@@ -6872,7 +6884,8 @@ function Index() {
           </div>
 
           {/* ---- four modes ---- */}
-          <div className="mt-28 border-t border-border pt-16">
+          <div className="relative isolate mt-28 border-t border-border pt-16">
+            <Backdrop src="/bg/dreamer.webp" opacity={0.85} position="center 40%" scrim={0.05} />
             <h3 className="font-serif text-2xl leading-tight">
               Dream, vision, memory, symbolic perception
             </h3>
@@ -6908,7 +6921,8 @@ function Index() {
           </div>
 
           {/* ---- cartography ---- */}
-          <div className="mt-28 border-t border-border pt-16">
+          <div className="relative isolate mt-28 border-t border-border pt-16">
+            <Backdrop src="/bg/cartography.webp" opacity={0.61} position="center 65%" scrim={0.05} />
             <h3 className="font-serif text-2xl leading-tight">
               Sacred art, diagrams, and esoteric cartography
             </h3>
@@ -6994,7 +7008,8 @@ function Index() {
         </div>
       </section>
 
-      <section id="books" className="relative border-t border-border py-32">
+      <section id="books" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
@@ -7128,7 +7143,8 @@ function Index() {
       </section>
 
       {/* THE UNIFIED FORMULA */}
-      <section id="unified" className="relative border-t border-border py-32">
+      <section id="unified" className="relative isolate border-t border-border py-32">
+        <Backdrop src="/bg/crater.webp" opacity={0.56} position="center 50%" scrim={0.05} />
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             The Unified Formula
