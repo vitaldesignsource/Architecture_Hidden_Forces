@@ -39,6 +39,9 @@
   html { scroll-behavior: auto; }
   /* Clear the fixed nav (69px) so section headings are not hidden on arrival. */
   section[id], [id] { scroll-margin-top: 6rem; }
+  /* Below lg the nav carries a second row (the scrollable strip), so targets
+     need deeper clearance or headings land under it. */
+  @media (max-width: 1023px) { section[id], [id] { scroll-margin-top: 9rem; } }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -148,3 +151,8 @@
   position: absolute; inset: 0; pointer-events: none; opacity: 0.06; mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
+
+/* Mobile nav strip: scrollable, but the scrollbar itself would sit across the
+   type. Hidden in both engines. */
+.aoh-navstrip { scrollbar-width: none; -ms-overflow-style: none; }
+.aoh-navstrip::-webkit-scrollbar { display: none; }

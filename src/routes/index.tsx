@@ -478,10 +478,10 @@ function TreeOfLife() {
           </text>
           <text
             x={daat.x}
-            y={daat.y + 41}
+            y={daat.y + 45}
             textAnchor="middle"
             fontFamily={MONO}
-            fontSize="6"
+            fontSize="8"
             letterSpacing="1.3"
             fill="var(--muted-foreground)"
             fillOpacity="0.75"
@@ -562,7 +562,7 @@ function TreeOfLife() {
                 y={n.y + 3}
                 textAnchor="middle"
                 fontFamily={MONO}
-                fontSize="8"
+                fontSize="9.5"
                 letterSpacing="0.6"
                 fill="var(--gold-dim)"
               >
@@ -583,10 +583,10 @@ function TreeOfLife() {
               </text>
               <text
                 x={n.x}
-                y={n.y + 43}
+                y={n.y + 47}
                 textAnchor="middle"
                 fontFamily={MONO}
-                fontSize="6.6"
+                fontSize="9"
                 letterSpacing="1.3"
                 fill="var(--muted-foreground)"
                 stroke="var(--void)"
@@ -601,7 +601,7 @@ function TreeOfLife() {
         {/* The three pillars */}
         <g
           fontFamily={MONO}
-          fontSize="6.2"
+          fontSize="9"
           letterSpacing="1.4"
           textAnchor="middle"
           fill="var(--gold-dim)"
@@ -647,21 +647,41 @@ function Index() {
               </a>
             ))}
           </div>
-          <div className="hidden shrink-0 gap-6 font-mono text-[10px] uppercase tracking-[0.25em] sm:flex lg:hidden">
+          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
+            XVIII
+          </div>
+        </div>
+
+        {/* Below lg the full bar cannot fit, and a 37,000px treatise is unusable
+            without navigation. A scrollable strip keeps every section reachable
+            without forcing the page itself to scroll horizontally. */}
+        <div className="border-t border-border/50 lg:hidden">
+          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
             {[
+              { id: "terms", label: "Terms" },
               { id: "spine", label: "Spine" },
               { id: "descent", label: "Descent" },
+              { id: "fourfold", label: "Ethers" },
+              { id: "morphaither", label: "Morphaithēr" },
+              { id: "return", label: "Return" },
               { id: "kabbalah", label: "Kabbalah" },
+              { id: "extended", label: "Powers" },
+              { id: "flywheel", label: "Flywheel" },
+              { id: "triad", label: "Triad" },
+              { id: "retentive", label: "Crypt" },
               { id: "laws", label: "Laws" },
+              { id: "books", label: "Books" },
+              { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
-              <a key={l.id} href={`#${l.id}`} className="transition-colors hover:text-gold">
+              <a
+                key={l.id}
+                href={`#${l.id}`}
+                className="whitespace-nowrap py-1 transition-colors hover:text-gold"
+              >
                 {l.label}
               </a>
             ))}
-          </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim sm:hidden">
-            XVIII
           </div>
         </div>
       </nav>
