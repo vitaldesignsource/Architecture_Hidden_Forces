@@ -2670,6 +2670,8 @@ function ArchitectureIndex() {
               { n: "XXXIV", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "XXXV", id: "forceform", t: "The Law of Force and Form", d: "Form is force given memory. The founding proposition, given its reasons." },
               { n: "XXXVI", id: "tides", t: "Etheric Tides", d: "When the field is receptive — rhythm, superposition, and the timing of formation." },
+              { n: "XXXVII", id: "mansions", t: "Lunar Mansions and Nakshatras", d: "Two clocks that never coincide — the starry diagram read as a procession." },
+              { n: "XXXVIII", id: "zodiac", t: "Zodiacal Patterning", d: "Four media, three phases — a generated grammar rather than twelve personalities." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
   ];
@@ -3094,6 +3096,232 @@ function EthericTides() {
           an outcome. A tide alters what is easier or harder to begin, sustain, and stabilise. It is
           closer to a change in atmospheric pressure than to a command.
         </p>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * LunarClocks — the two cycles the section opens on, run against each other.
+ * Sidereal return is 27.3 days, synodic 29.5, so the Moon comes back to the same
+ * star before it comes back to the same phase. They drift, which is exactly why
+ * any phase can occupy any mansion. The drift is computed, not asserted.
+ */
+function LunarClocks() {
+  const [day, setDay] = useState(0);
+  const SID = 27.32, SYN = 29.53, N = 27;
+  const C = 180, R = 132;
+  const sid = (day / SID) % 1;
+  const syn = (day / SYN) % 1;
+  const mansion = Math.floor(sid * N);
+  const ang = (i: number) => (-90 + (i / N) * 360) * (Math.PI / 180);
+  const pt = (a: number, r: number) => [C + r * Math.cos(a), C + r * Math.sin(a)];
+  const [mx, my] = pt((-90 + sid * 360) * (Math.PI / 180), R);
+  const [sx, sy] = pt(-Math.PI / 2, R);
+
+  const PHASE = syn < 0.03 || syn > 0.97 ? "New"
+    : syn < 0.22 ? "Waxing crescent" : syn < 0.28 ? "First quarter"
+    : syn < 0.47 ? "Waxing gibbous" : syn < 0.53 ? "Full"
+    : syn < 0.72 ? "Waning gibbous" : syn < 0.78 ? "Last quarter" : "Waning crescent";
+  const movement = syn < 0.5 ? "gathering, amplification" : "separation, release";
+
+  // lit region of the disc
+  const a = 2 * Math.PI * syn, r = 21;
+  const rx = Math.abs(Math.cos(a)) * r;
+  const outer = syn < 0.5 ? 1 : 0;
+  const inner = Math.cos(a) > 0 ? 0 : 1;
+  const moon = `M${C},${C - r} A${r},${r} 0 0 ${outer} ${C},${C + r} A${rx},${r} 0 0 ${inner} ${C},${C - r} Z`;
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[360px]">
+        <svg viewBox="0 0 360 372" className="h-auto w-full" role="img" aria-labelledby="aoh-lc-t">
+          <title id="aoh-lc-t">
+            A ring of twenty-seven stations with the Moon travelling it at sidereal rate, and a
+            phase disc at the centre driven by the slower synodic cycle.
+          </title>
+          <circle cx={C} cy={C} r={R} fill="none" stroke="var(--gold)" strokeOpacity="0.28" strokeWidth="0.8" />
+          {Array.from({ length: N }, (_, i) => {
+            const on = i === mansion;
+            const [x1, y1] = pt(ang(i), R - (on ? 12 : 6));
+            const [x2, y2] = pt(ang(i), R + (on ? 8 : 4));
+            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="var(--gold)"
+                         strokeOpacity={on ? 1 : 0.35} strokeWidth={on ? 2 : 0.8} />;
+          })}
+          {/* where it began, so the sidereal return is visible */}
+          <circle cx={sx} cy={sy} r="4" fill="none" stroke="var(--bone)" strokeOpacity="0.5"
+                  strokeDasharray="2 2" strokeWidth="1" />
+          <circle cx={mx} cy={my} r="6.5" fill="var(--gold)" />
+
+          <circle cx={C} cy={C} r={r} fill="none" stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="0.9" />
+          <path d={moon} fill="var(--gold)" fillOpacity="0.92" />
+
+          <text x={C} y={C + 58} textAnchor="middle" className="font-mono" fontSize="8"
+                letterSpacing="1.4" fill="var(--gold)">MANSION {mansion + 1} / {N}</text>
+          <text x={C} y={C + 72} textAnchor="middle" className="font-mono" fontSize="7"
+                letterSpacing="1.1" fill="var(--muted-foreground)">{PHASE.toUpperCase()}</text>
+          <text x={C} y="352" textAnchor="middle" className="font-mono" fontSize="6.8"
+                letterSpacing="1.2" fill="var(--muted-foreground)">
+            DAY {day.toFixed(1)} — SIDEREAL 27.32d · SYNODIC 29.53d
+          </text>
+          <text x={C} y="366" textAnchor="middle" className="font-mono" fontSize="6.4"
+                letterSpacing="1" fill="var(--gold)" opacity={day >= SID ? 0.95 : 0.3}>
+            {day >= SID ? "SAME STAR — DIFFERENT PHASE" : "DASHED MARK IS WHERE IT BEGAN"}
+          </text>
+        </svg>
+        <input type="range" min={0} max={60} step={0.1} value={day} aria-label="Days elapsed"
+               onChange={(e) => setDay(parseFloat(e.target.value))}
+               className="mt-3 w-full accent-[var(--gold)]" />
+      </div>
+
+      <div className="min-h-[15rem]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          Two clocks, running independently
+        </p>
+        <div className="mt-4 space-y-px">
+          {[["Sidereal", `Mansion ${mansion + 1} of ${N}`, "the Moon against the starry field — 27.32 days"],
+            ["Synodic", PHASE, "the Moon against the Sun — 29.53 days"],
+            ["This phase favours", movement, "which the mansion then refines into a kind"]].map(([a2, b, c]) => (
+            <div key={a2} className="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
+              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a2}</span>
+              <span className="text-sm leading-relaxed text-muted-foreground">
+                <span className="text-bone/90">{b}</span> — {c}
+              </span>
+            </div>
+          ))}
+        </div>
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+          {day < SID
+            ? "Move forward past day 27.3. The Moon returns to the dashed mark — the same station against the stars — while the phase has not yet come back to where it started."
+            : "The Moon has returned to its station and the phase has not. Which is the whole point: these interlock without coinciding, so a waxing, full, or waning Moon can occupy any mansion whatever."}
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-bone/60">
+          Lunar phase describes the Moon&rsquo;s relation to the Sun. Lunar mansion describes its
+          position against the starry field. Neither reduces to the other.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * ZodiacGrid — the twelve as a complete four-by-three, not a list of twelve
+ * things. Elements are the medium formation occurs through; modalities are the
+ * phase of activity. Every cell is one element in one phase, which is why there
+ * are exactly twelve and not some other number.
+ */
+function ZodiacGrid() {
+  const [sel, setSel] = useState<string | null>(null);
+  const MOD = [
+    { k: "Cardinal", d: "Initiates, selects a direction, crosses a threshold. Force entering a new vector." },
+    { k: "Fixed", d: "Concentrates, sustains, accumulates, preserves. Force becoming stable form." },
+    { k: "Mutable", d: "Adapts, translates, redistributes, releases. Form loosening into renewed potency." },
+  ];
+  const EL = [
+    { k: "Fire", d: "Excitation, radiation, appetite, intention, the generation of direction. Force becoming vector." },
+    { k: "Earth", d: "Resistance, density, incorporation, measurement, fixation. What lets force acquire boundary, duration, and visible structure." },
+    { k: "Air", d: "Differentiation, relation, exchange, proportion, communication. What lets forces be compared, connected, and organised into networks." },
+    { k: "Water", d: "Cohesion, receptivity, memory, gestation, internal transformation. What lets impressions be received, retained, and carried beneath visible boundaries." },
+  ];
+  const SIGNS: Record<string, { n: string; g: string; m: string }> = {
+    "Fire|Cardinal": { n: "Aries", g: "♈", m: "Ignition, emergence, direct projection" },
+    "Fire|Fixed": { n: "Leo", g: "♌", m: "Centralisation, radiance, creative declaration" },
+    "Fire|Mutable": { n: "Sagittarius", g: "♐", m: "Propagation, orientation, synthesis, the projection of meaning" },
+    "Earth|Cardinal": { n: "Capricorn", g: "♑", m: "Structuration, limitation, hierarchy, durable achievement" },
+    "Earth|Fixed": { n: "Taurus", g: "♉", m: "Consolidation, incorporation, material retention" },
+    "Earth|Mutable": { n: "Virgo", g: "♍", m: "Discrimination, refinement, adjustment" },
+    "Air|Cardinal": { n: "Libra", g: "♎", m: "Equilibration, reciprocity, relational measurement" },
+    "Air|Fixed": { n: "Aquarius", g: "♒", m: "Systemisation, distribution, networked reconfiguration" },
+    "Air|Mutable": { n: "Gemini", g: "♊", m: "Differentiation, duplication, exchange" },
+    "Water|Cardinal": { n: "Cancer", g: "♋", m: "Enclosure, nourishment, memory, protection" },
+    "Water|Fixed": { n: "Scorpio", g: "♏", m: "Concentration, binding, penetration, metamorphosis" },
+    "Water|Mutable": { n: "Pisces", g: "♓", m: "Permeation, dissolution, recombination, return" },
+  };
+  const cell = sel && sel.includes("|") ? SIGNS[sel] : null;
+  const el = sel && !sel.includes("|") ? EL.find((e) => e.k === sel) : null;
+  const mo = sel && !sel.includes("|") ? MOD.find((m) => m.k === sel) : null;
+  const lit = (k: string) => !sel || sel === k || (sel.includes("|") && sel.split("|").includes(k)) ||
+    (!sel.includes("|") && k.includes("|") && k.split("|").includes(sel));
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,20rem)] lg:items-start">
+      <div>
+        <div className="grid grid-cols-[4.5rem_repeat(3,1fr)] gap-px sm:grid-cols-[6rem_repeat(3,1fr)]">
+          <div />
+          {MOD.map((m) => (
+            <button key={m.k} onClick={() => setSel(sel === m.k ? null : m.k)} aria-pressed={sel === m.k}
+              className={`border-b py-2 text-left font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+                sel === m.k ? "border-gold text-gold" : "border-border text-gold-dim hover:text-gold"}`}>
+              {m.k}
+            </button>
+          ))}
+          {EL.map((e) => (
+            <div key={e.k} className="contents">
+              <button onClick={() => setSel(sel === e.k ? null : e.k)} aria-pressed={sel === e.k}
+                className={`border-r py-4 pr-3 text-left font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+                  sel === e.k ? "border-gold text-gold" : "border-border text-gold-dim hover:text-gold"}`}>
+                {e.k}
+              </button>
+              {MOD.map((m) => {
+                const key = `${e.k}|${m.k}`;
+                const sg = SIGNS[key];
+                const on = sel === key;
+                return (
+                  <button key={key} onClick={() => setSel(on ? null : key)} aria-pressed={on}
+                    aria-label={`${sg.n}, ${e.k} ${m.k}`}
+                    className={`border-b border-border px-2 py-4 text-left transition-all ${
+                      on ? "border-gold" : "hover:border-gold/40"} ${lit(key) ? "opacity-100" : "opacity-25"}`}>
+                    <span className={`block font-serif text-2xl leading-none ${on ? "text-gold" : "text-bone/85"}`}>
+                      {sg.g}
+                    </span>
+                    <span className={`mt-1.5 block font-serif text-sm ${on ? "text-gold" : "text-bone/70"}`}>
+                      {sg.n}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+        <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+          Four media × three phases · exactly twelve, and no remainder
+        </p>
+      </div>
+
+      <div className="min-h-[13rem] lg:border-l lg:border-border lg:pl-8">
+        {cell ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {sel?.split("|")[0]} × {sel?.split("|")[1]}
+            </p>
+            <p className="mt-3 font-serif text-3xl text-gold">{cell.g} {cell.n}</p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cell.m}</p>
+            <p className="mt-5 text-sm leading-relaxed text-bone/60">
+              A sign is not itself a force. It is an operator applied to force — the manner in which
+              force accepts form.
+            </p>
+          </>
+        ) : el || mo ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {el ? "Element · the medium" : "Modality · the phase"}
+            </p>
+            <p className="mt-3 font-serif text-2xl text-gold">{(el || mo)!.k}</p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{(el || mo)!.d}</p>
+          </>
+        ) : (
+          <>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              The Zodiac does not supply twelve separate forces. It supplies twelve ways force can be
+              directed, stabilised, related, transformed, and released — and they are not an
+              arbitrary list. Four media, three phases, and the grid closes.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/60">
+              Every element can begin, endure, and change. Every modality can work through radiation,
+              embodiment, relation, or cohesion. Select a cell, or a heading.
+            </p>
+          </>
+        )}
       </div>
     </div>
   );
@@ -4054,6 +4282,8 @@ function Index() {
               { id: "tradition", label: "Tradition" },
               { id: "forceform", label: "Force & Form" },
               { id: "tides", label: "Tides" },
+              { id: "mansions", label: "Mansions" },
+              { id: "zodiac", label: "Zodiac" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
@@ -11196,6 +11426,611 @@ function Index() {
               Life persists because it can receive a tide without being dissolved by it, change phase
               without losing identity, and turn recurring force into{" "}
               <span className="italic text-gold">memory, growth, and renewed formation.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mansions" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-450} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXXVII · Lunar Mansions and Nakshatras
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The starry diagram read as a <span className="italic text-gold">procession</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § XXXVI established that the formative field changes through time. The mansions give
+            those changes a stellar map — drawing together Etheric Tides, the cartography of § XXV,
+            correspondence, and the rite of § XXVII. And the whole thing rests on a distinction that
+            is astronomical before it is symbolic.
+          </p>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Lunar phase describes the Moon&rsquo;s relation to the Sun. Lunar mansion describes its
+              position against the starry field.
+            </p>
+          </div>
+
+          <div className="mt-16">
+            <LunarClocks />
+          </div>
+
+          <div className="mt-16 max-w-3xl border border-border p-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              And a second distinction, of category
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Lunar mansion is the broad category; the nakshatras are the specifically Indian
+              tradition of lunar stations — later Indian astronomy commonly dividing the ecliptic
+              into twenty-seven equal sectors of 13°20′, though twenty-eight-star traditions also
+              exist. Arabic, Chinese, and Indian systems address a similar astronomical structure
+              without assigning it identical symbols, virtues, or operations.{" "}
+              <span className="text-bone/90">They should be compared, and not silently fused.</span>
+            </p>
+          </div>
+
+          {/* ---- moon as mediator ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">The Moon as formative mediator</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Not the source of what the mansions carry. Its mobile mediator.
+              </p>
+            </div>
+            <div>
+              <p className="font-serif text-xl leading-relaxed text-bone/90">
+                The stars establish the diagram.{" "}
+                <span className="italic text-gold">The Moon turns the diagram into a procession.</span>
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                The relatively fixed stars supply a stable celestial diagram; the Moon travels it,
+                bringing each region into changing relation with the Earth, the Sun, the local
+                horizon, and the living observer. It converts a spatial map into a temporal sequence
+                — a moving aperture in the Fourfold Veil, which does not absorb a substance and pour
+                it downward but establishes a temporary relation through which the qualities of a
+                station may become more accessible or resonant within Morphaithēr.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Which makes this transduction rather than transmission. A stellar pattern passes
+                through lunar mediation, etheric strata, atmospheric conditions, symbolic tradition,
+                bodily receptivity, and ritual intention, and is translated at every stage. The
+                terrestrial expression will be <span className="italic">analogous</span> to the
+                celestial pattern, never identical with it.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                In the ladder of § XXVI, the Moon behaves almost as a{" "}
+                <span className="text-bone/90">moving synthema</span> — a key that successively
+                addresses different regions of the celestial grammar.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- what a mansion is ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              A station of qualitative modulation
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Not a celestial building holding a quantity of occult energy. A defined region of the
+              lunar path, interpreted through a particular traditional grammar — and every mansion
+              has at least four layers.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {["Its astronomical location, or stellar reference",
+                "Its inherited symbols, deities, stories, and classifications",
+                "The formative associations accumulated through centuries of observation and ritual use",
+                "Its present activation through a particular Moon, phase, place, practitioner, and operation"].map((t, i) => (
+                <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The distinction earns its keep because a mansion&rsquo;s virtue may not come from one
+              source. Part may belong to the observed celestial pattern. Part may arise from the
+              symbolic grammar through which a tradition learned to recognise it. And part may have
+              been reinforced by centuries of collective attention, building a formative current
+              around the station&rsquo;s name, image, and rites.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              A mansion can possess both a celestial substrate and a traditional body.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              When the Moon enters such a station its qualities become one component of the current
+              etheric weather. They do not replace the solar, planetary, seasonal, bodily, or ritual
+              tides; they join them, and the moment is a composite rather than the expression of any
+              isolated influence.{" "}
+              <span className="text-bone/90">The mansion does not compel events. It alters the
+              field&rsquo;s affordances</span> — what kinds of formation meet sympathy, resistance,
+              amplification, or instability.
+            </p>
+          </div>
+
+          {/* ---- qualitative time ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">A clock of qualitative time</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The nakshatras turn the starry field into a clock whose hand is the Moon — and the
+              question it answers is not the usual one.
+            </p>
+            <div className="mt-8 grid gap-10 md:grid-cols-2">
+              <div className="border-t border-border pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  A mechanical clock
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  tells us how much time has passed.
+                </p>
+              </div>
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Nakshatra timing
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  asks what kind of formative condition is presently passing.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So these are not smaller zodiac signs. The twelve signs are one division of the
+              heavens; the nakshatras are another, built on the Moon&rsquo;s comparatively rapid
+              movement against the stars, with their own deities, symbols, classifications, and
+              śaktis forming a distinct interpretive grammar. A station&rsquo;s{" "}
+              <span className="italic">śakti</span> can be read here as its characteristic{" "}
+              <span className="italic">dynamis</span> — which connects it directly to § XXXV, since a
+              capacity is precisely what awaits actualisation.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A station&rsquo;s symbol does not merely describe its power; it teaches how to
+              recognise that power across different manifestations. A hand, a root, a blade, a
+              vessel, a road, an animal, a throne, a flame — none indicates one literal event, but a
+              family of operations joined by an underlying formative rule. The starry field becomes a
+              kind of primordial memory, preserving recurring modes of generation, nourishment,
+              severance, concealment, movement, union, dissolution, and return, which the Moon
+              activates sequentially by passing through them.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                All of which stays governed by § XXV&rsquo;s rules for maps. A nakshatra diagram is a
+                map made by a specific tradition; an Arabic mansion diagram is another. Their
+                similarities invite comparison, and their differences must not be erased.
+              </p>
+              <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone/85">
+                Shared sky does not guarantee identical symbolic grammar.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- four stages ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Mansion, virtue, symbol, operation
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Four successive stages of actualisation — where{" "}
+              <span className="text-bone/90">virtue does not mean moral goodness</span> but operative
+              capacity: what a station is understood to support, intensify, separate, stabilise,
+              reveal, conceal, nourish, or transform.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Mansion", "the celestial station, or formative location"],
+                ["Virtue", "its characteristic capacity — its dynamis"],
+                ["Symbol", "the interface through which that capacity is recognised and addressed"],
+                ["Operation", "the embodied actualisation, its energeia"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[9rem_1fr]">
+                  <span className="font-serif text-lg italic text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The symbol is the mediating grammar between virtue and operation — as symbolon
+              establishing recognition between the celestial pattern and its terrestrial analogues,
+              and as synthema becoming the operative key through which the relation is deliberately
+              addressed. The operation then passes through rite: the mansion gives location, the
+              lunar transit gives timing, the symbol gives address, the materials give
+              correspondence, and the living vessel gives embodiment.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              <span className="text-bone/90">No single element is sufficient.</span> Correct timing
+              cannot compensate for a confused intention. An accurate symbol cannot animate an
+              unprepared vessel. A powerful inherited rite can still suffer Transductive Loss or fall
+              into the telestic inertia of § XXVII. The operation succeeds or fails through the total
+              relation — and consecration establishes a temporary bond between the operative vessel
+              and the mansion&rsquo;s virtue, which deconsecration must afterward release, so that
+              nothing stays indefinitely identified with a current invoked for a limited purpose.
+            </p>
+          </div>
+
+          {/* ---- election ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Timing as phase engineering</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Lunar timing does not replace action. It alters the degree of resistance or assistance
+              surrounding it — and a complete election has to read three clocks at once.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["The synodic clock", "the Moon's phase, and its relation to the Sun — the operation's larger movement"],
+                ["The sidereal clock", "the mansion occupied — which refines that movement into a kind"],
+                ["The local clock", "planetary, seasonal, bodily, environmental, and ritual conditions — whether the vessel can carry it"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[10rem_1fr] sm:gap-4">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which forecloses the simplistic rules. A waxing Moon is not automatically favourable to
+              everything that grows — some formations should not be enlarged. A waning Moon is not
+              inherently destructive; it may support pruning, purification, withdrawal, healing
+              through removal, or the dismantling of something obsolete. Growth itself means more
+              than increase: germination, expansion, differentiation, pruning, fruition, decay, and
+              return, which is why nakshatra timing was historically embedded in agricultural
+              calendars rather than kept as abstract astrology.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A long transformative work may therefore cross several stations — one supporting
+              severance from an old pattern, another latency and purification, another the formation
+              of a new centre, another the stabilising of the result. Transformation becomes a
+              journey through differentiated temporal conditions rather than one isolated magical
+              moment.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                So the practitioner does not command the celestial field. They choose when and how to
+                enter its circulation. And the body remains decisive: if the mansion looks favourable
+                while the practitioner is exhausted, ill-prepared, emotionally disordered, or unable
+                to hold attention, then the celestial and bodily tides are simply out of phase.
+              </p>
+              <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone/85">
+                Cosmic timing without bodily timing is incomplete.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <div className="mx-auto max-w-2xl space-y-3">
+              {[["The mansion", "is celestial Form."],
+                ["Its virtue", "is latent Force."],
+                ["The Moon", "places that force into Time."],
+                ["The symbol", "makes it recognisable."],
+                ["Ritual", "makes it operative."],
+                ["The living vessel", "gives it terrestrial form."]].map(([a, b]) => (
+                <p key={a} className="font-serif text-xl leading-relaxed text-bone/90">
+                  <span className="text-gold">{a}</span> {b}
+                </p>
+              ))}
+            </div>
+            <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+              Which is why these are not decorative additions to astrology. They explain how the
+              starry diagram is read sequentially, how celestial pattern becomes qualitative time,
+              and how a rite enters the moving field at a deliberately chosen point.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="zodiac" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-470} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXXVIII · Zodiacal Patterning
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            A syntax of <span className="italic text-gold">becoming</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § XXXVI gave the field its rise and recession; § XXXVII gave the finer lunar-stellar
+            timing. This gives the major modes through which force becomes organised — which places
+            it above the tattvas in scale. The tattvas are morphogenic qualities within Morphaithēr;
+            the Zodiac is a higher-order syntax combining qualities into recurring modes of
+            formation.
+          </p>
+
+          {/* ---- which map ---- */}
+          <div className="mt-16 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              Which map, declared before anything else
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              The tropical zodiac begins at the March equinox and divides the ecliptic into twelve
+              equal sectors — a solar-terrestrial grammar of equinoxes, solstices, and the annual
+              cycle. The sidereal zodiac also holds twelve equal signs while maintaining a chosen
+              alignment with the stellar background, and different traditions choose different
+              offsets. The astronomical constellations are neither: irregularly sized stellar
+              regions, with the ecliptic even passing through Ophiuchus, though there is no
+              thirteenth sign in the classical twelvefold grammar. Axial precession shifts the
+              equinoctial points against the stars over roughly 26,000 years, which is why tropical
+              and sidereal no longer coincide.
+            </p>
+          </div>
+          <div className="mt-10 max-w-4xl">
+            {[["Tropical signs", "solar-terrestrial and equinoctial patterning"],
+              ["Sidereal signs", "twelvefold orientation relative to the starry field"],
+              ["Nakshatras", "finer lunar-stellar timing — § XXXVII"],
+              ["Fixed stars", "particular stellar signatures"]].map(([a, b]) => (
+              <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[10rem_1fr] sm:gap-4">
+                <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            Both maps may be used, so long as their functions stay distinct — because using both
+            without labelling them is simply double counting. Which is § XXV&rsquo;s first rule:{" "}
+            <span className="text-bone/90">every diagram must declare its coordinate system.</span>
+          </p>
+          <div className="mt-8 max-w-3xl border border-border p-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              And a hemispheric problem
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              The March equinox is spring in the Northern Hemisphere and autumn in the Southern. A
+              global system should therefore define the tropical signs through equinoctial and
+              solstitial geometry, rather than assuming Northern Hemisphere seasonal imagery is
+              universally embodied.
+            </p>
+          </div>
+
+          {/* ---- the derivation ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Twelve, and why exactly twelve</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The signs are not a list. They are generated — four elements describing the medium
+              formation occurs through, three modalities describing the phase of activity that medium
+              is in. And the elements here are not the physical substances, but formal categories
+              abstracted from their behaviour.
+            </p>
+            <div className="mt-12">
+              <ZodiacGrid />
+            </div>
+            <p className="mt-12 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Nor should they be equated mechanically with the tattvas. Zodiacal elements are a
+              fourfold classification at one scale of the map; tattvas are subtler morphogenic biases
+              within Morphaithēr. They correspond; they are not interchangeable. And Akasha is not{" "}
+              <span className="italic">missing</span> from this scheme — it can be read as the field
+              that lets the four elemental modes relate at all, the open condition within which the
+              twelvefold grammar appears, rather than a fifth column producing extra signs.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The modalities also reproduce the telestic sequence of § XXVII: cardinal opens the
+              operation, fixed gathers and holds it, mutable distributes the result and prepares the
+              next cycle. The three alchemical principles intersect this without collapsing into it —
+              Sulfur resembling direction and appetite, Mercury mediation and transduction, Salt
+              fixation — while every sign and element contains all three in different proportion.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              These modes are morally neutral. Concentration produces devotion or obsession.
+              Dissolution brings liberation or the loss of coherence. Stabilisation preserves what is
+              valuable or prevents what is necessary.{" "}
+              <span className="text-bone/90">No sign is inherently elevated, primitive, beneficent,
+              or destructive</span> — and read in sequence, the whole circle is a cycle of the law in
+              § XXXV.
+            </p>
+          </div>
+
+          {/* ---- grammar ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">The Zodiac as cosmic grammar</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                A grammar does not determine the sentence. It establishes the relations through which
+                sentences can be formed.
+              </p>
+            </div>
+            <div>
+              <div className="space-y-px">
+                {[["Planet", "operative faculty, or verb"],
+                  ["Sign", "mode, or manner of operation"],
+                  ["House", "field, circumstance, or location"],
+                  ["Aspect", "relational syntax between faculties"],
+                  ["Fixed star", "proper signature, name, or accent"],
+                  ["Phase and mansion", "tense, cadence, and timing"],
+                  ["Living vessel", "the speaker through whom the grammar is embodied"]].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
+                    <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Mars does not stop signifying division, assertion, heat, or directed effort when it
+                changes sign. What changes is how those powers are organised — the sign supplying
+                manner, rhythm, and constraint, the house identifying where it enters situated
+                experience, the aspects describing what assists, resists, redirects, or complicates
+                it.
+              </p>
+              <p className="mt-6 font-serif text-xl italic leading-relaxed text-bone/85">
+                The Zodiac is not a dictionary of events. It is a syntax of becoming.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Its circular order matters too. Each sign arises from the limitations and excesses of
+                the one before, develops a particular solution, and eventually produces the
+                conditions requiring the next — which makes the twelve not compartments but a{" "}
+                <span className="italic">periodos</span>, a circuit of differentiation,
+                stabilisation, crisis, and return.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- fixed stars ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Fixed stars and deep signatures</h3>
+            <p className="mt-4 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              If signs are common nouns and verbs, fixed stars are proper names.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A sign describes a thirty-degree mode available anywhere in its sector. A fixed star
+              occupies one position and carries a far more concentrated body of astronomical, mythic,
+              historical, and ritual association — which is precisely why its meaning should not be
+              spread indiscriminately across a whole sign. And <span className="italic">fixed</span>{" "}
+              is relative: the stars have their own motion, and merely appear stationary beside the
+              planets across ordinary human timescales. That relative stability is what lets star
+              traditions accumulate over centuries, giving them{" "}
+              <span className="text-bone/90">deep signatures</span> of several layers.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {["The actual astronomical star",
+                "Its position, and its relation to ecliptic, horizon, and planets",
+                "Its inherited names, myths, images, and testimonies",
+                "The collective current created by repeated cultural and ritual attention",
+                "Its particular activation within a chart or operation"].map((t, i) => (
+                <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-4 border-b border-border py-3">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              These must not be confused with one another. A myth attached to a star is not the
+              star&rsquo;s radiation — though the myth may well become the symbolic interface through
+              which a tradition recognises and works with its perceived virtue.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                And the method must be named
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                A tradition may count close zodiacal conjunctions, rising and setting relationships,
+                culmination, heliacal phenomena, or parans. Whichever is adopted has to be declared —
+                otherwise fixed stars become an uncontrolled source of meanings, added whenever
+                convenient. In relation to the Crypt they are anchors of long-duration symbolic
+                memory: cultures separated by generations return to nearly the same markers, while
+                what passes through them still undergoes Transductive Loss, reinterpretation, and
+                accretion.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- houses ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Houses as fields of embodiment</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The Zodiac is a universal celestial circle. Houses localise it to a particular place
+              and time, and the four angles establish the local cross.
+            </p>
+            <div className="mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {[["Ascendant", "emergence into visibility and embodied presence"],
+                ["Descendant", "encounter, polarity, the field of the other"],
+                ["Midheaven", "culmination, elevation, public visibility"],
+                ["Imum Coeli", "root, foundation, ancestry, interior depth"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              What was universal becomes oriented — by horizon and meridian, above and below, east
+              and west, rising, culminating, setting, hidden. Which is why they can be called fields
+              of embodiment: they show where an abstract planetary-sign pattern meets material
+              circumstance, relationship, work, body, inheritance, community, danger, obligation, or
+              practice.
+            </p>
+            <p className="mt-8 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              A sign is a mode of force.{" "}
+              <span className="italic text-gold">A house is a field of manifestation.</span>
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So the first house is not simply Aries, nor the second Taurus. The natural-zodiac
+              analogy is sometimes suggestive, and treating signs and houses as identical destroys a
+              layer of the grammar: Aries signifies a mode of emergence wherever it appears, while
+              the first house signifies the local field of emergence regardless of which sign
+              occupies it. House systems are another cartographic choice — whole-sign, equal,
+              quadrant — and every interpretation must state which it uses. Results from several
+              should not be blended without saying why.
+            </p>
+            <div className="mt-10 grid gap-px md:grid-cols-3">
+              {[["Angular", "emergence, action, visibility"],
+                ["Succedent", "accumulation, support, stabilisation"],
+                ["Cadent", "distribution, transition, displacement"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-4 pr-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold">{a}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+              A cycle resembling the sign modalities without being identical to them.
+            </p>
+          </div>
+
+          {/* ---- aspects ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Aspects as lines of force</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which requires no literal invisible beams travelling between planets. An aspect
+              describes a relational condition: how two operative powers are placed to combine,
+              polarise, obstruct, reinforce, or redirect one another.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Conjunction · 0°", "concentration, fusion, co-presence"],
+                ["Opposition · 180°", "polarity, encounter, projection across an axis"],
+                ["Square · 90°", "friction, forced articulation, structural tension"],
+                ["Trine · 120°", "affinity, circulation, effortless reinforcement"],
+                ["Sextile · 60°", "exchange, coordination, available cooperation"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[11rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              None of which reduces to good and bad. A trine may let a destructive pattern circulate
+              without resistance; a square may generate exactly the pressure that differentiation,
+              skill, or transformation requires.{" "}
+              <span className="text-bone/90">Ease preserves what already flows; tension demands that
+              a new structure be produced</span> — which ties aspects straight back to § XXXV. Orbs
+              give the bandwidth within which a relation is treated as operative; applying and
+              separating give its temporal phase, whether it gathers toward exactness or releases
+              from it.
+            </p>
+            <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                Which makes a chart a topology
+              </p>
+              <div className="mt-4 space-y-2">
+                {[["Planets", "are nodes"], ["Signs", "are modes applied to the nodes"],
+                  ["Houses", "are fields containing the nodes"], ["Aspects", "are the edges connecting them"],
+                  ["Aspect patterns", "are circuits formed by several edges"]].map(([a, b]) => (
+                  <p key={a} className="text-sm leading-relaxed text-muted-foreground">
+                    <span className="text-bone/90">{a}</span> {b}.
+                  </p>
+                ))}
+              </div>
+              <p className="mt-5 font-serif text-xl italic leading-relaxed text-bone/85">
+                A horoscope is not a collection of isolated placements. It is a relational topology.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <div className="mx-auto max-w-3xl space-y-3">
+              {[["Planet", "indicates the operative power."],
+                ["Sign", "determines its mode."],
+                ["House", "provides its field of embodiment."],
+                ["Aspect", "establishes its relations."],
+                ["Fixed stars", "add particular signatures."],
+                ["The tides", "determine its temporal activation."],
+                ["The living vessel", "determines how the pattern is received, resisted, and transformed."]].map(([a, b]) => (
+                <p key={a} className="font-serif text-lg leading-relaxed text-bone/90">
+                  <span className="text-gold">{a}</span> {b}
+                </p>
+              ))}
+            </div>
+            <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              None of which is fatalism. A chart is a frozen diagram of a moving field — a map of
+              formative biases, capacities, tensions, and pathways present at one threshold in time.
+              It does not contain the completed life.
+            </p>
+            <p className="mx-auto mt-8 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              The grammar constrains what can be said easily.{" "}
+              <span className="italic text-gold">
+                The living vessel still participates in the speaking.
+              </span>
             </p>
           </div>
         </div>
