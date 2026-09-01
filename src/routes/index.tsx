@@ -671,6 +671,7 @@ function Index() {
               { id: "retentive", label: "Crypt" },
               { id: "laws", label: "Laws" },
               { id: "astrology", label: "Sky" },
+              { id: "subtattva", label: "Compounds" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2278,6 +2279,275 @@ function Index() {
               calendar of a universe in formation
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* SUB-TATTVAS */}
+      <section id="subtattva" className="relative border-t border-border py-32">
+        <div className="mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XVIII · The Compound Qualities
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Every letter spoken through{" "}
+            <span className="italic text-gold">every other</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Almost nothing exists as a pure expression of one tendency. Fire can spread, flow,
+            stabilize, or stay latent. Water can turn volatile, heated, spacious, or solid. Each
+            primary tattva contains all five within itself — twenty-five compound expressions,
+            relational patterns rather than twenty-five occult substances.
+          </p>
+
+          {/* Order matters */}
+          <div className="mt-12 grid gap-3 sm:grid-cols-2">
+            {[
+              { t: "Apas–Tejas", d: "Apas dominant, Tejas modifying from within. Something primarily cohesive or fluid carrying an intensifying current — passionate attachment, fermentation, heated emotion, a relationship under transformation." },
+              { t: "Tejas–Apas", d: "The reverse. Something primarily fiery whose intensity is moderated, contained, and nourished — incubatory warmth, healing heat, controlled passion, fire held in a fluid medium." },
+            ].map((x) => (
+              <div key={x.t} className="border border-gold/25 p-5">
+                <div className="font-serif text-xl italic text-gold">{x.t}</div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 font-serif text-lg italic text-bone/85">
+            The order matters. These are not mixtures whose sides are interchangeable.
+          </p>
+
+          {/* The 25 */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The twenty-five · dominant down, modifier across
+            </p>
+            <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+              <table className="w-full min-w-[52rem] border-collapse text-left">
+                <thead>
+                  <tr>
+                    <th className="border-b border-border pb-3 pr-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gold" />
+                    {["Akasha", "Vayu", "Tejas", "Apas", "Prithivi"].map((h) => (
+                      <th
+                        key={h}
+                        className="border-b border-border px-3 pb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold"
+                      >
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Akasha", "Pure openness and resonance", "Communicating or vibrating space", "Luminous, activated possibility", "Receptive or gestational space", "Bounded or structured space"],
+                    ["Vayu", "Diffusion through an open field", "Pure movement and variability", "Accelerated, sharp, heated motion", "Circulation, currents, flowing exchange", "Controlled, patterned, mechanical movement"],
+                    ["Tejas", "Radiant potential and revelation", "Spreading heat and rapid excitation", "Concentrated ignition and transformation", "Incubatory, digestive, cohesive warmth", "Fixed heat — forging, tempering, crystallization"],
+                    ["Apas", "Open receptivity and subtle continuity", "Oscillation, waves, mobile currents", "Fermentation, passion, heated cohesion", "Deep blending, gestation, union", "Condensation, coagulation, organic density"],
+                    ["Prithivi", "Porous, resonant, meaning-bearing form", "Flexible structure, embodied movement", "Activated matter, pressure, tempered form", "Nourishing, plastic, organic embodiment", "Maximum fixation, density, boundary, endurance"],
+                  ].map((row) => (
+                    <tr key={row[0]}>
+                      <th className="whitespace-nowrap border-b border-border py-4 pr-4 align-top font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                        {row[0]}
+                      </th>
+                      {row.slice(1).map((cell, i) => (
+                        <td
+                          key={i}
+                          className={`border-b border-border px-3 py-4 align-top text-sm leading-relaxed ${
+                            i === ["Akasha", "Vayu", "Tejas", "Apas", "Prithivi"].indexOf(row[0])
+                              ? "text-bone/90"
+                              : "text-muted-foreground"
+                          }`}
+                        >
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              the diagonal is each tendency in its most direct form
+            </p>
+          </div>
+
+          {/* The arithmetic */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Why Root Ether is not multiplied
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The sub-tattvas do not sit beside the ethers as twenty-five further layers. They
+                configure how each ether operates — so each of the four can be expressed in
+                twenty-five ways.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Root Ether must not be counted as a fifth ether in that multiplication. To
+                multiply Root Ether by the twenty-five is to make the supposedly undifferentiated
+                root already differentiated. It is the common source, not one more term.
+              </p>
+              <p className="mt-6 border-l border-gold/40 pl-6 font-serif text-lg italic leading-relaxed text-bone/90">
+                Root Ether → four differentiated ethers × twenty-five tattvic configurations.
+              </p>
+            </div>
+            <div className="space-y-px">
+              {[
+                { l: "4 ethers × 25 sub-tattvas", r: "100 operative modes" },
+                { l: "× 3 gunic conditions", r: "300 qualified expressions" },
+              ].map((x) => (
+                <div key={x.l} className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-b border-border py-5">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                    {x.l}
+                  </span>
+                  <span className="font-serif text-xl italic text-gold">{x.r}</span>
+                </div>
+              ))}
+              <p className="pt-5 text-sm leading-relaxed text-muted-foreground">
+                Not three hundred separate substances — three hundred possible analytical
+                descriptions. The system gains resolution; it does not fill the invisible world
+                with hundreds of independent fluids.
+              </p>
+              <div className="mt-6 space-y-3">
+                {[
+                  { g: "Sattvic", d: "Tejas–Vayu as rapid insight, intellectual brilliance, decisive clarity." },
+                  { g: "Rajasic", d: "Tejas–Vayu as agitation, heated argument, uncontrolled acceleration." },
+                  { g: "Tamasic", d: "Tejas–Vayu as frustrated motion, blocked anger, energy trapped in a destructive circuit." },
+                ].map((x) => (
+                  <div key={x.g} className="border border-border p-4">
+                    <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                      {x.g}
+                    </div>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* In the sky */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Read into the chart
+            </p>
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              Sign supplies the dominant tattva by its element; planet supplies the interior
+              modifier. Functional correspondences, not identities: Sun and Mars to Tejas, Moon
+              and Venus to Apas, Mercury to Vayu, Jupiter to Akasha, Saturn to Prithivi.
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { p: "Mars in Cancer", c: "Apas–Tejas", d: "A watery, protective, cohesive field carrying a fiery and separating force." },
+                { p: "Moon in Aries", c: "Tejas–Apas", d: "A fiery field inwardly modified by feeling, attachment, and memory." },
+                { p: "Mercury in Taurus", c: "Prithivi–Vayu", d: "Stable structure containing movement, language, and exchange." },
+                { p: "Saturn in Aquarius", c: "Vayu–Prithivi", d: "An airy, conceptual field containing limitation and durability." },
+                { p: "Jupiter in Scorpio", c: "Apas–Akasha", d: "Emotional depth and penetration opened toward meaning and hidden possibility." },
+              ].map((x) => (
+                <div key={x.p} className="group border border-border p-4 transition-colors hover:border-gold/40">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    {x.p}
+                  </div>
+                  <div className="mt-2 font-serif text-lg italic text-gold">{x.c}</div>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 grid gap-8 lg:grid-cols-2">
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  Akasha is not a fifth zodiacal element
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  It needs no separate group of signs to make the numbers align. Within astrology
+                  Akasha is the field in which the zodiacal qualities enter relation — visible
+                  through the chart's total geometry, the intervals between planets, the opening
+                  of possibility. Not absent from the zodiac: the containing field that lets the
+                  zodiacal forms communicate. The parallel to Root Ether is exact.
+                </p>
+              </div>
+              <div className="border border-border p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  A chart is a chord, not a note
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  One note may dominate, another create tension, another hold rhythm, another
+                  stay quiet until a transit wakes it. A strongly Tejasic chart may still carry
+                  Apas–Prithivi loyalty, Vayu–Tejas sharpness, and Akasha–Apas receptivity. The
+                  point is never to label someone a fire type, but to read the composition and
+                  proportion of a formative field. A transit does not replace that chord — it
+                  modulates it, as heat added to a fixed substance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Reservoirs + the fear example */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                What places accumulate
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                A Morphaithēr is never one uniform tattvic substance. A room may hold
+                Prithivi–Prithivi in its architecture, Apas–Prithivi in its history of attachment,
+                Vayu–Akasha in its circulation of ideas, and Tejas–Vayu in an argument occurring
+                inside it. Repetition makes a quality easier to reactivate.
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  ["Library", "Vayu–Akasha", "inquiry, communication, openness to knowledge"],
+                  ["Kitchen", "Apas–Prithivi", "nourishment, continuity, bodily care, gathering"],
+                  ["Courtroom", "Prithivi–Vayu", "structured speech, codified relation, judgment"],
+                  ["Battlefield", "Tejas–Prithivi", "violence fixed into landscape, ruin, memory"],
+                ].map(([a, b, c]) => (
+                  <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-4">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                      {a}
+                    </span>
+                    <span>
+                      <span className="font-serif italic text-gold">{b}</span>
+                      <span className="block text-sm leading-relaxed text-muted-foreground">{c}</span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                How a fear is built
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The flywheel read as sub-tattvic development — possibility, circulation,
+                activation, cohesion, fixation.
+              </p>
+              <div className="mt-6 space-y-px">
+                {[
+                  ["Akasha–Vayu", "An open field of uncertain possibility and diffuse mental movement."],
+                  ["Vayu–Tejas", "Thought accelerates; the nervous system takes alarm."],
+                  ["Tejas–Apas", "Alarm attaches to emotion, memory, and protective instinct."],
+                  ["Apas–Prithivi", "The response coagulates into a stable expectation."],
+                  ["Prithivi–Prithivi", "Fixed into posture, avoidance, behaviour, identity."],
+                ].map(([a, b], i) => (
+                  <div key={a} className="grid grid-cols-[auto_1fr] items-baseline gap-4 border-b border-border py-4">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span>
+                      <span className="font-serif italic text-gold">{a}</span>
+                      <span className="block text-sm leading-relaxed text-muted-foreground">{b}</span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-bone/80">
+                Transformation reverses the fixation: Warmth loosens it, Light makes it visible,
+                Tone establishes new relations, Life integrates a healthier form.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-20 max-w-4xl border-l border-gold/40 pl-8 font-serif text-2xl italic leading-relaxed text-bone">
+            The primary tattvas give five letters. The sub-tattvas show how every letter can be
+            spoken through every other — a qualitative alphabet of compound formation.
+          </p>
         </div>
       </section>
 
