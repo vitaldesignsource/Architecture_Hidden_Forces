@@ -169,3 +169,16 @@
 @media (prefers-reduced-motion: reduce) {
   .aoh-reveal { opacity: 1; transform: none; }
 }
+
+/* Ambient motion is paused while its section is off screen. Decorative only —
+   never rise/letter-coalesce/title-underline, which use `both` fill and would
+   strand their elements invisible if paused before they ran. */
+.aoh-still .animate-slow-spin,
+.aoh-still .animate-slow-spin-reverse,
+.aoh-still .animate-drift,
+.aoh-still .animate-breathe,
+.aoh-still .animate-glyph-fade,
+.aoh-still .aolt-path,
+.aoh-still .aolt-descent,
+.aoh-still .aolt-ignite,
+.aoh-still .aoh-ec-spark { animation-play-state: paused; }

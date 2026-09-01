@@ -395,6 +395,65 @@ function WuxingCycles() {
   );
 }
 
+/**
+ * KabbalahFigure — the Tree and the ten cards, sharing one selection.
+ * Selecting a vessel on the Tree rings it and lights its card; selecting a card
+ * does the same in reverse. The Tree still works with no props, so it degrades
+ * to the static figure if ever rendered alone.
+ */
+function KabbalahFigure() {
+  const [active, setActive] = useState<string | null>(null);
+  return (
+    <div className="mt-24 grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
+                <TreeOfLife active={active} onSelect={(tr) => setActive((a) => (a === tr ? null : tr))} />
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                    עֵץ הַחַיִּים · The Ten Sefirot
+                  </p>
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                    {[
+                      { n: "I", he: "כֶּתֶר", en: "Keter", g: "Crown", d: "First emergence." },
+                      { n: "II", he: "חָכְמָה", en: "Chochmah", g: "Wisdom", d: "The seed-flash." },
+                      { n: "III", he: "בִּינָה", en: "Binah", g: "Understanding", d: "Womb of structure." },
+                      { n: "IV", he: "חֶסֶד", en: "Chesed", g: "Mercy", d: "The outpouring force." },
+                      { n: "V", he: "גְּבוּרָה", en: "Gevurah", g: "Severity", d: "The limiting force." },
+                      { n: "VI", he: "תִּפְאֶרֶת", en: "Tiferet", g: "Beauty", d: "Harmonizing center." },
+                      { n: "VII", he: "נֶצַח", en: "Netzach", g: "Victory", d: "Emotional channel." },
+                      { n: "VIII", he: "הוֹד", en: "Hod", g: "Glory", d: "Intellectual channel." },
+                      { n: "IX", he: "יְסוֹד", en: "Yesod", g: "Foundation", d: "The subtle base." },
+                      { n: "X", he: "מַלְכוּת", en: "Malchut", g: "Kingdom", d: "Embodied form." },
+                    ].map((s) => (
+                      <button
+                        type="button"
+                        key={s.en}
+                        onClick={() =>
+                          setActive((a) => (a === s.en.toUpperCase() ? null : s.en.toUpperCase()))
+                        }
+                        aria-pressed={active === s.en.toUpperCase()}
+                        className={`group border p-4 text-left transition-colors ${
+                          active === s.en.toUpperCase()
+                            ? "border-gold bg-clay/30"
+                            : "border-border hover:border-gold/40"
+                        }`}
+                      >
+                        <div className="flex items-baseline justify-between gap-3">
+                          <div className="font-serif text-2xl text-gold">{s.he}</div>
+                          <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                            {s.n}
+                          </div>
+                        </div>
+                        <div className="mt-2 font-serif text-lg italic text-bone">
+                          {s.en} <span className="text-muted-foreground">· {s.g}</span>
+                        </div>
+                        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -720,7 +779,13 @@ function SubTattvaMatrix() {
   );
 }
 
-function TreeOfLife() {
+function TreeOfLife({
+  active = null,
+  onSelect,
+}: {
+  active?: string | null;
+  onSelect?: (tr: string) => void;
+} = {}) {
   // Portrait canvas, 300 × 660. Pillar of Mercy on the right AS DEPICTED.
   const MID = 150;
   const RIGHT = 248; // Pillar of Mercy    — Chochmah · Chesed · Netzach
@@ -816,6 +881,9 @@ function TreeOfLife() {
 .aolt-path    { animation: aolt-pulse 16s ease-in-out infinite; }
 .aolt-ignite  { animation: aolt-ignite 16s ease-in-out infinite; }
 .aolt-node    { transition: opacity 700ms ease; }
+.aolt-sel     { transition: stroke-opacity 350ms ease; }
+.aolt-node.is-sel .aolt-sel { stroke-opacity: 0.9; }
+.aolt-svg:hover .aolt-node.is-sel { opacity: 1; }
 @media (hover: hover) and (pointer: fine) {
   .aolt-svg:hover .aolt-node { opacity: 0.45; }
   .aolt-svg .aolt-node:hover { opacity: 1; }
@@ -1012,8 +1080,36 @@ function TreeOfLife() {
         {nodes.map((n, i) => {
           const ignite = `${IGNITE_AT[i]}s`;
           return (
-            <g className="aolt-node" key={n.id}>
+            <g
+              className={`aolt-node${active === n.tr ? " is-sel" : ""}`}
+              key={n.id}
+              onClick={onSelect ? () => onSelect(n.tr) : undefined}
+              role={onSelect ? "button" : undefined}
+              tabIndex={onSelect ? 0 : undefined}
+              aria-pressed={onSelect ? active === n.tr : undefined}
+              onKeyDown={
+                onSelect
+                  ? (ev) => {
+                      if (ev.key === "Enter" || ev.key === " ") {
+                        ev.preventDefault();
+                        onSelect(n.tr);
+                      }
+                    }
+                  : undefined
+              }
+              style={onSelect ? { cursor: "pointer" } : undefined}
+            >
               <title>{`${n.rn} · ${n.tr} · ${n.en}`}</title>
+              <circle
+                className="aolt-sel"
+                cx={n.x}
+                cy={n.y}
+                r={R_NODE + 9}
+                fill="none"
+                stroke="var(--gold)"
+                strokeWidth="1"
+                strokeOpacity="0"
+              />
               <circle
                 cx={n.x}
                 cy={n.y}
@@ -1200,9 +1296,36 @@ function useReveal() {
   }, []);
 }
 
+/**
+ * usePauseOffscreen — ambient motion costs nothing when nobody is looking at it.
+ * Only DECORATIVE animations are paused. Content-revealing ones (rise,
+ * letter-coalesce, the title underline) are deliberately excluded: pausing an
+ * animation with `both` fill before it runs would strand its element invisible,
+ * which is the failure mode this file has already been bitten by twice.
+ */
+function usePauseOffscreen() {
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") return;
+    const els = Array.from(document.querySelectorAll<HTMLElement>("section[id], header[id]"));
+    if (!els.length) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) e.target.classList.toggle("aoh-still", !e.isIntersecting);
+      },
+      { rootMargin: "250px 0px 250px 0px" },
+    );
+    els.forEach((el) => io.observe(el));
+    return () => {
+      io.disconnect();
+      els.forEach((el) => el.classList.remove("aoh-still"));
+    };
+  }, []);
+}
+
 function Index() {
   const active = useActiveSection();
   useReveal();
+  usePauseOffscreen();
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
@@ -2293,44 +2416,7 @@ function Index() {
           </div>
 
           {/* Tree of Life */}
-          <div className="mt-24 grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
-            <TreeOfLife />
-            <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-                עֵץ הַחַיִּים · The Ten Sefirot
-              </p>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {[
-                  { n: "I", he: "כֶּתֶר", en: "Keter", g: "Crown", d: "First emergence." },
-                  { n: "II", he: "חָכְמָה", en: "Chochmah", g: "Wisdom", d: "The seed-flash." },
-                  { n: "III", he: "בִּינָה", en: "Binah", g: "Understanding", d: "Womb of structure." },
-                  { n: "IV", he: "חֶסֶד", en: "Chesed", g: "Mercy", d: "The outpouring force." },
-                  { n: "V", he: "גְּבוּרָה", en: "Gevurah", g: "Severity", d: "The limiting force." },
-                  { n: "VI", he: "תִּפְאֶרֶת", en: "Tiferet", g: "Beauty", d: "Harmonizing center." },
-                  { n: "VII", he: "נֶצַח", en: "Netzach", g: "Victory", d: "Emotional channel." },
-                  { n: "VIII", he: "הוֹד", en: "Hod", g: "Glory", d: "Intellectual channel." },
-                  { n: "IX", he: "יְסוֹד", en: "Yesod", g: "Foundation", d: "The subtle base." },
-                  { n: "X", he: "מַלְכוּת", en: "Malchut", g: "Kingdom", d: "Embodied form." },
-                ].map((s) => (
-                  <div
-                    key={s.en}
-                    className="group border border-border p-4 transition-colors hover:border-gold/40"
-                  >
-                    <div className="flex items-baseline justify-between gap-3">
-                      <div className="font-serif text-2xl text-gold">{s.he}</div>
-                      <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
-                        {s.n}
-                      </div>
-                    </div>
-                    <div className="mt-2 font-serif text-lg italic text-bone">
-                      {s.en} <span className="text-muted-foreground">· {s.g}</span>
-                    </div>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <KabbalahFigure />
 
           {/* Four Worlds */}
           <div className="mt-24">
