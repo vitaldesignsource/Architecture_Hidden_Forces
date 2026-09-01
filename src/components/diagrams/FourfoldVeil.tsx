@@ -20,36 +20,40 @@ export function FourfoldVeil() {
 
   const ETHERS = [
     {
-      k: "Reflecting", r: 148, q: "What pattern is to be expressed?", verb: "Reflect",
-      sub: "The veil of pattern, image, and memory",
-      d: "The interface between thought-pattern and etheric activity — receiving formative patterns, preserving impressions, supplying the templates lower strata attempt to express, returning experience as memory.",
-      pol: ["Impression — receiving and retaining a pattern", "Projection — returning it into thought, perception, or action"],
-      fails: ["Projection mistaken for revelation", "Inherited images mistaken for universal truths", "False memory", "Symbolic inflation", "A representation preserved after its object has gone"],
-      note: "A reflection preserves a relation while changing its mode. A face in water is recognisable and may still be reversed, blurred, or broken by movement — which is why this is a field of representations, not an infallible cosmic record.",
+      k: "Warmth", gk: "Θερμότης", r: 148, verb: "quickens",
+      q: "What awakens the pattern into activity?",
+      sub: "The membrane of activation",
+      d: "The first asymmetry of formation. Before anything can change, something must become active — and across that difference, movement becomes possible. Psychically it is attention, which does not merely observe but feeds the pattern it rests upon.",
+      pol: ["Radiation — expression, excitation, outward activation", "Reception — sensation, attraction, inward registration"],
+      fails: ["Dormancy", "Fever", "Overstimulation", "Numbness", "Uncontrolled emotional contagion", "Amplification beyond what the vessel can contain"],
+      note: "Which is why ritual flame, colour, sound, rhythm and breath are not decoration. They regulate activation. A pattern without warmth stays dormant; warmth without a pattern becomes agitation; a false pattern given great warmth becomes obsession, panic, or collective possession.",
     },
     {
-      k: "Light", r: 116, q: "How is the pattern activated and made perceptible?", verb: "Illuminate",
-      sub: "The veil of activation, circulation, and perception",
-      d: "Excitation, visibility, circulation, sensory presence. Reflecting gives the pattern an image; Light gives the image intensity and movement. Not electromagnetic radiation — the wider principle by which something becomes active and capable of holding attention.",
-      pol: ["Radiation — expression, excitation, outward activation", "Reception — sensation, perception, inward registration"],
-      fails: ["Overstimulation", "Numbness", "Uncontrolled emotional contagion", "Perception dissociated from embodiment", "Amplification beyond what the vessel can contain"],
-      note: "An idea can sit in the Reflecting Ether as a possibility and become compelling only once attention, feeling, or desire illuminates it. Which is why ritual light, colour, sound, rhythm, and breath are not decoration. They regulate activation.",
+      k: "Light", gk: "Φῶς", r: 116, verb: "articulates",
+      q: "How is the pattern differentiated and made perceptible?",
+      sub: "The membrane of articulation",
+      d: "Activation opens possibility; articulation gives it direction. What was a stirring acquires edges, orientation, and the distinctions by which it can be recognised rather than merely undergone.",
+      pol: ["Disclosure — what becomes visible, oriented, distinguishable", "Registration — sensation, perception, the inward account taken"],
+      fails: ["Sensory distortion", "Perception dissociated from embodiment", "Analogy mistaken for kinship", "An image without force, become empty symbolism", "Illumination that overwhelms rather than reveals"],
+      note: "Discernment is most necessary here, at the higher part of the Veil rather than the lower — because projection, fantasy, inherited conditioning and genuine perception all arrive through the same medium and wear the same clothes.",
     },
     {
-      k: "Life", r: 84, q: "How does the activity become self-renewing organisation?", verb: "Vitalise",
-      sub: "The veil of growth, repair, and continuity",
-      d: "The principle by which activity becomes recursive — nourishing, repairing, reproducing, continuing itself. Not energy. A flame is active without being alive; an organism uses its activity to preserve the conditions of its own continuation.",
-      pol: ["Generation — producing, gestating, repairing, organising", "Transmission — carrying continuity outward through reproduction, teaching, inheritance"],
-      fails: ["Uncontrolled growth", "Depletion", "Failure of repair", "Developmental arrest", "Parasitic reproduction", "Life-process preserved without telos"],
-      note: "It holds memory as developmental tendency rather than image. A seed contains no miniature tree — it contains an organised capacity to generate one. Which is why traditions and institutions can exhibit a life-etheric function: recruiting, reproducing, repairing, generating successors.",
-    },
-    {
-      k: "Chemical", r: 52, q: "What material is incorporated, fixed, exchanged, or released?", verb: "Incorporate",
-      sub: "The veil of selection, incorporation, and release",
-      d: "The threshold where living organisation selects, binds, exchanges, and releases physical material. Life supplies the organising demand; Chemical selects the matter through which that demand can be embodied.",
+      k: "Tone", gk: "Τόνος", r: 84, verb: "relates",
+      q: "By what affinity are parts selected, bound, and ordered into a whole?",
+      sub: "The membrane of affinity",
+      d: "Ordered relation — ratio, interval, sequence, proportion. The power by which separate parts are coordinated into something meaning more than their sum, and by which a form selects what belongs to it and refuses what does not.",
       pol: ["Incorporation — attraction, assimilation, binding, fixation", "Release — separation, elimination, return to circulation"],
       fails: ["Accumulation", "Indiscriminate assimilation", "Inability to release", "Rigid fixation", "Rejection of necessary material", "Material support continued for a form whose purpose has ended"],
-      note: "Assimilation and excretion are equally necessary. A form that cannot assimilate cannot build itself; a form that cannot release becomes saturated with its own residue. This holds symbolically too — the mind, the tradition, the rite that must finally be dismantled.",
+      note: "Assimilation and release are equally necessary. A form that cannot assimilate cannot build itself; a form that cannot release becomes saturated with its own residue — the mind that will not let an obsolete impression go, the tradition that will not relinquish an exhausted office, the rite never deconsecrated.",
+    },
+    {
+      k: "Life", gk: "Ζωή", r: 52, verb: "integrates",
+      q: "How does the activity become self-renewing organisation?",
+      sub: "The membrane of integration",
+      d: "The principle by which activity becomes recursive — nourishing, repairing, reproducing, continuing itself. A flame is active without being alive; an organism uses its activity to preserve the conditions of its own continuation.",
+      pol: ["Generation — producing, gestating, repairing, organising", "Transmission — carrying continuity outward through reproduction, teaching, inheritance"],
+      fails: ["Uncontrolled growth", "Depletion", "Failure of repair", "Developmental arrest", "Parasitic reproduction", "Life-process preserved without telos"],
+      note: "It holds memory as developmental tendency rather than as image. A seed contains no miniature tree — it contains an organised capacity to generate one. Which is why a tradition or institution shows a life function once it begins recruiting, reproducing, repairing, and generating successors.",
     },
   ];
 
@@ -69,8 +73,8 @@ export function FourfoldVeil() {
         <svg viewBox="0 0 340 356" className={`h-auto w-full ${descending ? "" : "aoh-fv-up"}`}
              role="img" aria-labelledby="aoh-fv-t">
           <title id="aoh-fv-t">
-            Four nested rings — Reflecting enclosing Light, enclosing Life, enclosing Chemical,
-            enclosing dense form at the centre — with a channel carrying movement through all four.
+            Four nested rings — Warmth enclosing Light, enclosing Tone, enclosing Life,
+            enclosing CHON at the centre — with a channel carrying movement through all four.
           </title>
 
           {ETHERS.map((e) => {
@@ -89,6 +93,11 @@ export function FourfoldVeil() {
                       opacity={on ? 1 : sel ? 0.4 : 0.9}>
                   {e.k.toUpperCase()}
                 </text>
+                <text x={C} y={C - e.r + 26} textAnchor="middle" className="font-serif"
+                      fontSize="8" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
+                      opacity={on ? 0.9 : sel ? 0.3 : 0.6}>
+                  {e.gk}
+                </text>
               </g>
             );
           })}
@@ -97,9 +106,9 @@ export function FourfoldVeil() {
           <circle cx={C} cy={C} r="22" fill="var(--void)" stroke="var(--bone)"
                   strokeOpacity="0.5" strokeWidth="1.1" />
           <text x={C} y={C - 1} textAnchor="middle" className="font-mono" fontSize="6.2"
-                letterSpacing="0.8" fill="var(--bone)" opacity="0.8">DENSE</text>
+                letterSpacing="0.8" fill="var(--bone)" opacity="0.8">CHON</text>
           <text x={C} y={C + 8} textAnchor="middle" className="font-mono" fontSize="6.2"
-                letterSpacing="0.8" fill="var(--bone)" opacity="0.8">FORM</text>
+                letterSpacing="0.8" fill="var(--bone)" opacity="0.8">MATTER</text>
 
           {/* the channel — one passage crossing every membrane, both ways */}
           <line className="aoh-fv-ch" x1={C} y1={C - 146} x2={C} y2={C - 24}
@@ -128,7 +137,7 @@ export function FourfoldVeil() {
         {cur ? (
           <>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
-              {cur.verb} · {cur.sub}
+              {cur.gk} · {cur.verb} · {cur.sub}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">{cur.q}</p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
@@ -155,13 +164,13 @@ export function FourfoldVeil() {
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">
               {descending
-                ? "Pattern → activation → living organisation → material embodiment"
-                : "Material event → living response → perception → memory"}
+                ? "Activation → articulation → affinity → integration → living matter"
+                : "Material event → living response → perception → renewed activation"}
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               {descending
-                ? "A pattern is retained, then activated and made dynamic, then becomes a self-organising process, which finally selects and incorporates matter into an actual vessel."
-                : "A material event alters the body. The organism responds. Sensation communicates the change. The event becomes image and memory — and that memory modifies the pattern through which the next event will be received."}
+                ? "A latent pattern is quickened into movement, given edges and direction, ordered by affinity into a coherent whole, and finally integrated into something that maintains and renews itself in matter."
+                : "A material event alters the body. The organism responds. Sensation communicates the change. The event becomes image and memory — and that memory alters what the next warmth will quicken."}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Which is why this is not a one-way ladder but{" "}

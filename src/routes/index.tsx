@@ -37,6 +37,7 @@ import {
   ZodiacGrid,
   MorphaithericField,
   Chon,
+  FourfoldVeil,
 } from "@/components/diagrams";
 
 export const Route = createFileRoute("/")({
@@ -8494,6 +8495,9 @@ function Index() {
 
       <section id="atmosphere" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-560} />
+        <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
+          <Backdrop src="/bg/earthcolonnade.webp" opacity={0.26} position="center 45%" fill />
+        </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLI · Morphaithēr
@@ -8558,7 +8562,8 @@ function Index() {
             </p>
           </div>
 
-          <div className="mt-24 max-w-3xl">
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/springterrace.webp" opacity={0.24} position="center 45%" />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               How form emerges, and returns
             </p>
@@ -8613,7 +8618,8 @@ function Index() {
             </p>
           </div>
 
-          <div className="mt-24 max-w-3xl">
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/nightterrace.webp" opacity={0.4} position="center 65%" />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Tradition as long-duration Morphaithēr
             </p>
@@ -8664,7 +8670,8 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-24 max-w-3xl">
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/basalthall.webp" opacity={0.32} position="center 50%" />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Necessary safeguards
             </p>
@@ -8721,6 +8728,9 @@ function Index() {
 
       <section id="chon" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-575} />
+        <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
+          <Backdrop src="/bg/saplinglog.webp" opacity={0.36} position="center 55%" fill />
+        </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLII · CHON
@@ -8806,7 +8816,8 @@ function Index() {
             </p>
           </div>
 
-          <div className="mt-24 max-w-3xl">
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/riftoak.webp" opacity={0.26} position="center 40%" />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What death does not take
             </p>
@@ -8825,7 +8836,8 @@ function Index() {
             </p>
           </div>
 
-          <div className="mt-24 max-w-3xl">
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/kilnvault.webp" opacity={0.38} position="center 45%" />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The lowest biological octave
             </p>
@@ -8846,6 +8858,243 @@ function Index() {
             <p>Morphaithēr coordinates.</p>
             <p className="text-gold">CHON embodies.</p>
           </div>
+        </div>
+      </section>
+
+      <section id="transduction" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-590} />
+        <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
+          <Backdrop src="/bg/seacave.webp" opacity={0.24} position="center 50%" fill />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XLIII · The Fourfold Veil
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            What the passage costs, and how it{" "}
+            <span className="italic text-gold">corrects itself</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              The nested interface through which pattern is quickened, articulated, ordered and
+              integrated — and through which embodied events return as sensation, memory and
+              formative consequence.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § IV sets out the four at length, each with its measure and the interval that carries it
+            into the next. What follows is not a second enumeration but the theory of transduction
+            itself: why the same field that permits embodiment also guarantees that no embodiment is
+            complete.
+          </p>
+
+          <div className="relative isolate mt-20">
+            <Backdrop src="/bg/icevent.webp" opacity={0.14} position="center 45%" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Why it is called a veil
+            </p>
+            <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_1fr]">
+              <div>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  A veil does more than conceal. It also makes contact possible. Direct sunlight can
+                  be too intense to look upon; passed through cloud, water, glass or fabric, its
+                  presence becomes perceptible in a moderated form. A higher pattern likewise cannot
+                  enter dense embodiment without accepting successive limitations.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  Each membrane performs three acts. It receives something from the condition above
+                  it. It translates that influence into terms available below. And through the act of
+                  translation it loses part of the original.
+                </p>
+                <p className="mt-6 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+                  The Veil makes manifestation possible by preventing manifestation from being
+                  complete.
+                </p>
+              </div>
+              <div>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  Which makes this the home of the Transductive Loss named in § XVII. Every passage
+                  gains concreteness while sacrificing range: a latent pattern becomes an activated
+                  current, then an articulated one, then an ordered relation, then a self-renewing
+                  body — and at each membrane some possibilities are selected and the rest excluded.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  A form is not defective merely because it is partial.{" "}
+                  <span className="text-bone/90">Limitation is the price of actuality.</span>{" "}
+                  Distortion begins only where the loss grows severe enough to replace the original
+                  telos.
+                </p>
+                <p className="mt-6 text-sm leading-relaxed text-bone/60">
+                  The fourfold division of the etheric region is inherited, and two lineages
+                  transmit it differently. The architecture operates with Warmth, Light, Tone and
+                  Life. The Rosicrucian formulation associated with Max Heindel names Chemical,
+                  Life, Light and Reflecting instead — agreeing at the middle, differing at both
+                  ends. Its Reflecting Ether, which carries image and memory, corresponds here not
+                  to a membrane of the Veil but to the near surface of the Crypt of § XI: the Crypt
+                  retains consequence, and that surface is where retained consequence becomes
+                  imaginally accessible.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-24">
+            <FourfoldVeil />
+          </div>
+
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/cisterntower.webp" opacity={0.3} position="center 35%" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              How an error becomes an institution
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Because each membrane hands its work to the next, a small error near the top acquires a
+              body on the way down. This is the mechanism, and it is worth stating plainly enough to
+              be recognised in the wild.
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["A pattern is quickened before it has been rightly understood", "Warmth"],
+                ["Articulation exaggerates one feature and leaves the rest unlit", "Light"],
+                ["The exaggeration is bound into the ordering, and now belongs", "Tone"],
+                ["Living reproduction transmits the whole arrangement, distortion included", "Life"],
+                ["Material institutions fix it, and tradition passes on the structure as though it were the pattern", "Beyond the Veil"],
+              ].map(([step, layer]) => (
+                <div key={step} className="grid grid-cols-[1fr_7rem] items-baseline gap-4 border-b border-border py-3">
+                  <span className="text-sm leading-relaxed text-muted-foreground">{step}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold-dim">{layer}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 font-serif text-xl leading-relaxed text-bone/85">
+              This is how a subtle interpretive error can become an institution centuries later.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              But the movement runs the other way too. Material failure exposes a weakness in a
+              living process; the organism adapts; new perception revises what is understood; and the
+              correction is what gets transmitted.{" "}
+              <span className="text-bone/90">The Veil carries both degradation and learning</span> —
+              which is the whole reason § IV insists it is a circuit and not a descent.
+            </p>
+          </div>
+
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Which direction repair takes
+            </p>
+            <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_1fr]">
+              <div className="border-l-2 border-gold/40 pl-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Downward</p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Begin with meaning, image or intention, and work to embody a corrected pattern.
+                </p>
+              </div>
+              <div className="border-l-2 border-bone/30 pl-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/80">Upward</p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Begin with sleep, nourishment, safety, environment, movement or bodily regulation,
+                  and let improved conditions change sensation and thought.
+                </p>
+              </div>
+            </div>
+            <p className="mx-auto mt-10 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              Neither direction is universally superior. Sometimes the pattern must change before the
+              body can follow. Sometimes the body must become safe before the pattern can change.
+            </p>
+            <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              What does not work is reaching only one membrane. A new belief that never alters
+              attention, bodily regulation, action or environment stays a belief. Behaviour imposed
+              without altered meaning stays mechanical. Metamorphosis holds only when the revised
+              relation can pass through the whole Veil and become self-sustaining — and none of this
+              is a substitute for medical or psychological care.
+            </p>
+          </div>
+
+          <div className="relative isolate mt-24 max-w-3xl">
+            <Backdrop src="/bg/keystone.webp" opacity={0.32} position="center 50%" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Three levels, distinguished
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The four ethers and the five tattvas must not be mapped one to one. They answer
+              different questions: the ethers describe where mediation is occurring, the tattvas how
+              that mediation is qualitatively configured. Tone may commonly emphasise Prithivi and
+              Apas, and still require Vayu for exchange and Tejas for transformation. None is composed
+              of a single tattva.
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["The Fourfold Veil", "the structure of etheric mediation", "anatomy"],
+                ["The Tattvas", "the qualitative biases configuring each membrane", "qualities"],
+                ["Morphaithēr", "the changing atmosphere produced by their interaction", "weather"],
+              ].map(([n, f, tag]) => (
+                <div key={n} className="grid grid-cols-[9rem_1fr_5rem] items-baseline gap-4 border-b border-border py-4">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{f}</span>
+                  <span className="font-serif text-sm italic text-bone/60">{tag}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 text-base leading-relaxed text-muted-foreground">
+              This also settles where Root Ether belongs. It is not a fifth specialised membrane
+              standing beside the other four — an addition invented to force agreement with a
+              fivefold tattvic scheme. It is the undifferentiated capacity of etheric mediation,
+              prior to specialisation, and the Veil is what that capacity becomes when it
+              differentiates.
+            </p>
+            <p className="mt-6 font-mono text-xs leading-loose tracking-[0.1em] text-gold-dim">
+              AKASHA → ROOT ETHER → WARMTH → LIGHT → TONE → LIFE → CHON
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/60">
+              The five tattvas qualify every level. They do not require five corresponding ethers.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Necessary safeguards
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              This is an esoteric and metaphysical model, not an established structure in physics,
+              chemistry, biology or neuroscience. Its usefulness depends entirely on whether it
+              clarifies relations without displacing more specific explanations.
+            </p>
+            <ol className="mt-8 space-y-4">
+              {[
+                "Tone must not substitute for chemistry or medicine where a material account is available.",
+                "Life must not become a vague explanation for every biological process.",
+                "Light must not confuse metaphysical illumination with electromagnetic radiation.",
+                "Warmth must not make every intensity significant, nor every image or intuition infallible.",
+                "An event attributed to a higher membrane should still be examined for psychological, social and material causes.",
+                "Correspondences across the four are hypotheses requiring discernment, not automatic proof.",
+              ].map((r, i) => (
+                <li key={r} className="grid grid-cols-[2rem_1fr] gap-4">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-base leading-relaxed text-muted-foreground">{r}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-10 font-serif text-xl leading-relaxed text-bone/85">
+              The architecture becomes stronger when each ether names a function rather than an
+              invisible substance introduced wherever ordinary explanation becomes difficult.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <div className="mx-auto mt-12 max-w-3xl space-y-3 text-center font-serif text-xl italic leading-relaxed text-bone/85">
+            <p>Warmth holds what may become.</p>
+            <p>Light gives it edges.</p>
+            <p>Tone binds it to what belongs with it.</p>
+            <p>Life teaches it to renew itself.</p>
+          </div>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+            Not four increasingly dense substances but a single process seen through four
+            indispensable functions — which is why every embodied thing is{" "}
+            <span className="italic text-gold">
+              at once a revelation of its source and a veil drawn across it
+            </span>
+            .
+          </p>
         </div>
       </section>
 

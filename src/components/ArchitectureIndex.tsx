@@ -57,6 +57,7 @@ export function ArchitectureIndex() {
     { n: "XL", id: "mortality", t: "Death, Suffering, and the Cost of Form", d: "Whether the architecture stays truthful when form fails." },
     { n: "XLI", id: "atmosphere", t: "Morphaithēr", d: "The middle condition between pure possibility and completed form — an ecology, not a fluid." },
     { n: "XLII", id: "chon", t: "CHON", d: "Carbon, hydrogen, oxygen, nitrogen — where invisible order becomes materially accountable." },
+    { n: "XLIII", id: "transduction", t: "The Fourfold Veil", d: "What the passage through the four costs, and how it corrects itself." },
     { n: "—", id: "lexicon", t: "Lexicon", d: "Every term the architecture defines, and the section that defines it." },
     { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
