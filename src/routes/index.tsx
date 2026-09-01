@@ -1903,6 +1903,161 @@ function ForceRegisters() {
   );
 }
 
+/**
+ * VerticalChain — the chain drawn radially, because the doctrine states its own
+ * geometry: the Name is the governing centre, the Archangel the circumference of
+ * an ordered field, Angels the differentiated rays between them, Spirits those
+ * rays in local operation. "Vertical" never meant floors stacked in space, so a
+ * ladder would import the wrong picture. Descent runs outward, return inward.
+ */
+function VerticalChain() {
+  const [sel, setSel] = useState<string | null>(null);
+  const [up, setUp] = useState(false);
+  const C = 170;
+  const RAYS = [-90, -30, 30, 90, 150, 210];
+  const L = [
+    { k: "Divine Name", kind: "participable virtue",
+      q: "A verbal-symbolic vessel through which a divine relationship becomes intelligible and participable — not an exhaustive label attached to God.",
+      d: "It stands at the boundary between apophatic transcendence and articulated Logos, which makes it a symbolon: it joins the unnameable to a form that can be spoken, remembered, contemplated, enacted. A sacred name is a gate, not the whole country beyond it." },
+    { k: "Archangel", kind: "office of mediation",
+      q: "The coordinating centre of an entire chain — archē means beginning, rule, governing principle, chief office.",
+      d: "Not simply a more powerful Angel. Where the Name establishes the central virtue, the Archangel establishes its field-wide administration, holding many subordinate expressions inside one intelligible purpose. Its proper function is integration." },
+    { k: "Intelligence", kind: "mode of operation",
+      q: "The pattern-holding pole: ratio, direction, law, geometry, intelligible purpose.",
+      d: "It asks what the intelligible organisation of a sphere is, where Spirit asks how that organisation becomes dynamically active here. Number and geometry suit it as symbols precisely because they preserve relationships without depending on any particular material embodiment." },
+    { k: "Angel", kind: "office of mediation",
+      q: "A differentiated ray of a more encompassing virtue. Angelos means messenger — an office, not a species.",
+      d: "The Archangel is architectonic; the Angel is ministerial. And no Angel merely transports an unchanged packet: mediation is always translation, adapted to the capacity, language, symbols, and circumstances of whoever receives it. Wings say mobility between levels, not anatomy." },
+    { k: "Spirit", kind: "mode of operation",
+      q: "The dynamic, locally operative expression of a more intelligible pattern.",
+      d: "The Intelligence holds the grammar; the Spirit performs an utterance. Strongly Mercurial — it circulates, animates, crosses boundaries, takes imaginal form. Its nearness to embodiment makes it responsive to local conditions and, by the same token, susceptible to turbulence, fixation, and admixture." },
+    { k: "The vessel", kind: "embodiment",
+      q: "Image, symbol, ritual, psyche, and material vessel — where the chain becomes actual.",
+      d: "Every manifestation is also a transduction. Even were a spirit ontologically independent, its appearance is still shaped by the operator's condition, the symbolic vocabulary available, the surrounding Morphaithēr, collective expectation, bodily state, and the material environment." },
+  ];
+  const cur = L.find((x) => x.k === sel) || null;
+  const on = (k: string) => sel === k;
+  const dim = (k: string) => (sel && sel !== k ? 0.22 : 1);
+  const pt = (a: number, r: number) => [C + r * Math.cos((a * Math.PI) / 180), C + r * Math.sin((a * Math.PI) / 180)];
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[380px]">
+        <style>{`
+          .aoh-vc-ray { stroke-dasharray: 4 11; animation: aoh-vc-out 3.2s linear infinite; }
+          .aoh-vc-up .aoh-vc-ray { animation-direction: reverse; }
+          @keyframes aoh-vc-out { to { stroke-dashoffset: -30 } }
+          .aoh-vc-h { cursor: pointer; }
+          @media (prefers-reduced-motion: reduce) { .aoh-vc-ray { animation: none } }
+        `}</style>
+        <svg viewBox="0 0 340 340" className={`h-auto w-full ${up ? "aoh-vc-up" : ""}`}
+             role="img" aria-labelledby="aoh-vc-t">
+          <title id="aoh-vc-t">
+            A radial chain: the Divine Name at the centre, the archangelic field as a
+            circumference, the Intelligence as a ring of proportion, angelic rays crossing outward
+            to spirits in local operation, and an outer boundary of vessels.
+          </title>
+
+          <g className="aoh-vc-h" opacity={dim("The vessel")} onClick={() => setSel(on("The vessel") ? null : "The vessel")}
+             role="button" tabIndex={0} aria-pressed={on("The vessel")} aria-label="The vessel">
+            <circle cx={C} cy={C} r="152" fill="none" stroke="var(--gold)" strokeDasharray="1 6"
+                    strokeOpacity={on("The vessel") ? 0.9 : 0.28} strokeWidth={on("The vessel") ? 1.4 : 0.9} />
+          </g>
+
+          <g className="aoh-vc-h" opacity={dim("Angel")} onClick={() => setSel(on("Angel") ? null : "Angel")}
+             role="button" tabIndex={0} aria-pressed={on("Angel")} aria-label="Angel">
+            {RAYS.map((a) => {
+              const [x1, y1] = pt(a, 54), [x2, y2] = pt(a, 126);
+              return <line key={a} className="aoh-vc-ray" x1={x1} y1={y1} x2={x2} y2={y2}
+                           stroke="var(--gold)" strokeOpacity={on("Angel") ? 1 : 0.55}
+                           strokeWidth={on("Angel") ? 2 : 1.2} />;
+            })}
+          </g>
+
+          <g className="aoh-vc-h" opacity={dim("Intelligence")} onClick={() => setSel(on("Intelligence") ? null : "Intelligence")}
+             role="button" tabIndex={0} aria-pressed={on("Intelligence")} aria-label="Intelligence">
+            <circle cx={C} cy={C} r="90" fill="none" stroke="var(--gold)" strokeDasharray="7 5"
+                    strokeOpacity={on("Intelligence") ? 1 : 0.4} strokeWidth={on("Intelligence") ? 1.6 : 0.9} />
+          </g>
+
+          <g className="aoh-vc-h" opacity={dim("Archangel")} onClick={() => setSel(on("Archangel") ? null : "Archangel")}
+             role="button" tabIndex={0} aria-pressed={on("Archangel")} aria-label="Archangel">
+            <circle cx={C} cy={C} r="54" fill="none" stroke="var(--gold)"
+                    strokeOpacity={on("Archangel") ? 1 : 0.6} strokeWidth={on("Archangel") ? 2 : 1.2} />
+          </g>
+
+          <g className="aoh-vc-h" opacity={dim("Spirit")} onClick={() => setSel(on("Spirit") ? null : "Spirit")}
+             role="button" tabIndex={0} aria-pressed={on("Spirit")} aria-label="Spirit">
+            {RAYS.map((a) => {
+              const [x, y] = pt(a, 126);
+              return <circle key={a} cx={x} cy={y} r={on("Spirit") ? 7 : 5} fill="var(--void)"
+                             stroke="var(--gold)" strokeOpacity={on("Spirit") ? 1 : 0.6} strokeWidth="1.2" />;
+            })}
+          </g>
+
+          <g className="aoh-vc-h" opacity={dim("Divine Name")} onClick={() => setSel(on("Divine Name") ? null : "Divine Name")}
+             role="button" tabIndex={0} aria-pressed={on("Divine Name")} aria-label="Divine Name">
+            <circle cx={C} cy={C} r="26" fill="var(--void)" stroke="var(--gold)"
+                    strokeOpacity={on("Divine Name") ? 1 : 0.5} strokeWidth="1" />
+            <circle cx={C} cy={C} r={on("Divine Name") ? 12 : 9} fill="var(--gold)"
+                    fillOpacity={on("Divine Name") ? 1 : 0.7} />
+          </g>
+
+          <text x={C} y="330" textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="1.6"
+                fill="var(--muted-foreground)">
+            {up ? "RETURN · INWARD, TOWARD SILENCE" : "DESCENT · OUTWARD, TOWARD EMBODIMENT"}
+          </text>
+        </svg>
+
+        <div className="mt-3 flex justify-center">
+          <button onClick={() => setUp((v) => !v)}
+            className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
+            reverse the chain ⇄
+          </button>
+        </div>
+      </div>
+
+      <div className="min-h-[16rem]">
+        <div className="flex flex-wrap gap-2">
+          {L.map((x) => (
+            <button key={x.k} onClick={() => setSel(on(x.k) ? null : x.k)} aria-pressed={on(x.k)}
+              className={`border px-3 py-1.5 text-xs transition-colors ${
+                on(x.k) ? "border-gold text-gold"
+                        : "border-border text-muted-foreground hover:border-gold/60 hover:text-bone/80"}`}>
+              {x.k}
+            </button>
+          ))}
+        </div>
+        {cur ? (
+          <>
+            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.k} — {cur.kind}
+            </p>
+            <p className="mt-4 font-serif text-lg leading-relaxed text-bone/85">{cur.q}</p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
+          </>
+        ) : (
+          <>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Vertical does not mean these occupy physical floors above the earth. It marks degrees
+              of universality and participation — unitive, intelligible, differentiated, operative,
+              embodied. The higher member holds a virtue more universally; the lower translates it
+              into a more specialised function, adding definition while introducing limitation,
+              interpretation, and the possibility of distortion.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Which is why it is drawn as a centre and its circumference rather than a stair. And it
+              runs both ways: descent is how virtue becomes actual, return is how embodied experience
+              is consciously reintegrated with its source.{" "}
+              <span className="text-bone/90">Descent is not degradation.</span>
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -2850,6 +3005,7 @@ function Index() {
               { id: "image", label: "Image" },
               { id: "symbol", label: "Symbol" },
               { id: "taxonomy", label: "Forces" },
+              { id: "mediation", label: "Mediation" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2998,9 +3154,10 @@ function Index() {
               { n: "XXV", id: "image", t: "Image and Imagination", d: "The middle country: how force becomes appearance, and appearance carries force." },
               { n: "XXVI", id: "symbol", t: "Symbol", d: "The knot where worlds meet: the tally, and what completes it." },
               { n: "XXVII", id: "taxonomy", t: "Taxonomy of Forces", d: "Six modes of causation — and why they are not six equivalent substances." },
-              { n: "XXVIII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXVIII", id: "mediation", t: "Vertical Chains of Mediation", d: "How unity enters multiplicity without disappearing — and returns without erasing it." },
+              { n: "XXIX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXIX", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXX", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -8100,13 +8257,367 @@ function Index() {
         </div>
       </section>
 
+      <section id="mediation" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-310} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXVIII · Vertical Chains of Mediation
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The descent of virtue and the <span className="italic text-gold">return of consciousness</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            A vertical chain of mediation describes how a relatively universal principle becomes
+            progressively more particular, active, and embodied. Vertical does not mean these beings
+            occupy physical floors above the earth; it marks degrees of universality and
+            participation — unitive, intelligible, differentiated, operative, embodied. Each mediator
+            adds definition, and each introduces limitation, interpretation, and possible distortion.
+          </p>
+
+          <div className="mt-16">
+            <VerticalChain />
+          </div>
+
+          {/* ---- the terms are not one hierarchy ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              These terms are not one agreed hierarchy
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Pseudo-Dionysius places Archangels and Angels in the <span className="italic">lowest</span>{" "}
+              of three celestial triads, beneath Seraphim, Cherubim, Thrones, Dominions, Powers,
+              Virtues, and Principalities. Maimonides can read angels as separate intelligences or as
+              governors of the celestial spheres. Agrippa fuses Christian angelology, Renaissance
+              Platonism, celestial magic, and a Christianised Kabbalah. So this architecture uses the
+              terms functionally rather than pretending to a settled chart.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Divine Name", "a participable mode of transcendent virtue"],
+                ["Archangel", "a governing office over an entire field or order"],
+                ["Angel", "a differentiated office of mediation or message"],
+                ["Intelligence", "the noetic and pattern-governing pole of a sphere"],
+                ["Spirit", "the dynamic, operative, or locally present pole"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[11rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which sets two axes rather than one ladder.{" "}
+              <span className="text-bone/90">Archangel and Angel name offices of mediation; Intelligence
+              and Spirit name modes of operation.</span> Historical systems overlap them constantly,
+              and an Archangel can perfectly well be understood as a governing intelligence while a
+              planetary Intelligence fulfils something like an archangelic office. The point of the
+              distinction is not to file every historical name into one chart, but to know which
+              question is being asked.
+            </p>
+          </div>
+
+          {/* ---- divine names ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">The Name as participable virtue</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                If the divine source could be wholly contained in a word, it would no longer be
+                transcendent.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                A Divine Name is not an exhaustive label attached to God. It is a verbal-symbolic
+                vessel through which a particular divine relationship becomes intelligible and
+                participable — gathering unity, mercy, judgement, wisdom, protection, generation, or
+                illumination, and giving consciousness a point of approach without reducing the
+                source to that approach. It is a symbolon in the sense of § XXVI, joining the
+                unnameable to a form that can be spoken, remembered, contemplated, and enacted; and
+                within a tradition a particular Name may serve as a synthema, an operative key.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Light Ether gives the Name intelligibility. Tone gives it sound, rhythm, number,
+                pronunciation, and relational order. Warmth supplies devotion, intention, reverence.
+                Life integrates it into prayer, identity, tradition, and sustained practice. Which
+                means its power cannot be reduced to phonetics — sound matters, and so do meaning,
+                lineage, intention, moral preparation, and the condition of the vessel. A Name
+                stripped from its theology and treated as a mechanical password has been severed from
+                most of the Morphaithēr that gave it coherence.
+              </p>
+              <div className="mt-8 border-l-2 border-gold pl-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                  The danger of magical nominalism
+                </p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Believing that accurate syllables automatically compel the transcendent. A Divine
+                  Name is an invitation to participation, not a mechanism for controlling the
+                  Absolute.
+                </p>
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                And every Name reveals a face while leaving the divine excess untouched. Wisdom does
+                not exhaust divinity. Mercy does not eliminate judgement. Unity does not abolish
+                multiplicity.
+              </p>
+              <p className="mt-6 font-serif text-xl italic leading-relaxed text-bone/85">
+                A sacred name is a gate, not the whole country beyond it.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- archangels ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The Archangel as field-regent</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Not simply a more powerful Angel. <span className="italic">Archē</span> indicates
+              beginning, rule, governing principle, chief office — so an Archangel is the
+              coordinating centre of an entire chain, gathering a formative virtue at the scale of a
+              sphere, order, sephirah, planetary current, people, or collective work, and
+              distributing its governing pattern into more particular functions. If the Divine Name
+              establishes the central virtue, the Archangel establishes its field-wide
+              administration.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              An Archangel can be read through several registers at once — as a real personal
+              celestial being, an archetypal or noetic intelligence, the personification of a
+              governing function, an imaginal form through which a field-wide order becomes
+              perceptible, or an office represented differently across traditions. These should not
+              be silently collapsed, and they need not be treated as mutually exclusive. A personal
+              being may fulfil a formative office; an archetypal function may present itself through
+              personality. The discipline is to{" "}
+              <span className="text-bone/90">label the register being used</span> rather than claim
+              premature certainty — which is the same demand the force profile of § XXVII makes of
+              every claim it admits.
+            </p>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              What archangelic mediation should display
+            </p>
+            <div className="mt-6 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {["Greater universality",
+                "Greater internal coherence",
+                "Less dependence upon private appetite",
+                "Capacity to coordinate multiple functions",
+                "Preservation of proportion among parts",
+                "Orientation toward a virtue beyond the mediator itself"].map((t, i) => (
+                <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A claimed archangelic communication that produces obsession, flattery, fragmentation,
+              or exemption from moral discernment contradicts the integrative rank it claims.{" "}
+              <span className="text-bone/90">Intensity is not evidence of altitude.</span> In
+              Pseudo-Dionysius even the highest celestial beings do not hold divine light as private
+              property; they receive according to capacity and transmit to those below. Hierarchy is
+              a structure of reception, transformation, and generous transmission — not celestial
+              status-seeking.
+            </p>
+          </div>
+
+          {/* ---- angels ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The Angel as differentiated messenger</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              <span className="italic">Angelos</span> means messenger: an office of mediation rather
+              than a biological species. Where an Archangel holds a whole field, an Angel carries one
+              articulation of it — communicating, protecting, directing, warning, measuring,
+              accompanying.{" "}
+              <span className="text-bone/90">The Archangel is architectonic; the Angel is
+              ministerial.</span> If an archangelic solar order contains illumination, centrality,
+              healing, sovereignty, revelation, warmth, and integration, a particular angelic
+              mediation may carry only one of these into a particular situation.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              And no Angel merely transports an unchanged packet. Mediation is always translation,
+              adapted to the capacity, language, symbols, and circumstances of the receiver — which
+              is why angelic appearances in visionary literature are so heavily symbolic. Wings
+              express mobility between levels. Radiance expresses intelligibility or intensity. Many
+              eyes express comprehensive awareness. A sword expresses discrimination, protection, or
+              judgement. None of these should automatically be read as anatomy.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold/50 pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                The angelic test
+              </p>
+              <div className="mt-4 space-y-2.5">
+                {["Does it possess internal coherence?",
+                  "Does it accord with the virtue of the order it claims to represent?",
+                  "Does it increase responsible agency rather than dependency?",
+                  "Can its symbolic form be distinguished from its possible underlying meaning?"].map((q, i) => (
+                  <p key={q} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                    <span className="font-mono text-[10px] text-gold-dim">{i + 1}</span>
+                    {q}
+                  </p>
+                ))}
+              </div>
+              <p className="mt-5 text-base leading-relaxed text-bone/80">
+                A messenger that demands worship of itself has interrupted the vertical chain. A
+                genuine mediator directs participation beyond itself, toward the source and the
+                virtue it serves.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- intelligence and spirit ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Intelligence and Spirit</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              An Intelligence is not merely a clever spirit. In classical, medieval, and Renaissance
+              cosmology it is an incorporeal or noetic principle bound to the order and motion of a
+              celestial sphere — the pattern-holding pole of a field, maintaining ratio, direction,
+              law, geometry, and intelligible purpose. It acts by preserving the governing pattern
+              according to which operations become coordinated, not by emotional intensity or local
+              movement.
+            </p>
+            <div className="mt-10 grid gap-10 md:grid-cols-2">
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Intelligence asks
+                </p>
+                <p className="mt-3 font-serif text-lg italic leading-relaxed text-bone/85">
+                  What is the intelligible organisation of this sphere?
+                </p>
+              </div>
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Spirit asks
+                </p>
+                <p className="mt-3 font-serif text-lg italic leading-relaxed text-bone/85">
+                  How does that organisation become dynamically active here?
+                </p>
+              </div>
+            </div>
+            <div className="mt-12 grid gap-px md:grid-cols-3">
+              {[["grammar", "an utterance"], ["the musical proportion", "the vibrating current"],
+                ["the geometry", "movement through its paths"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-4 pr-6">
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    The Intelligence holds <span className="text-bone/90">{a}</span>.
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    The Spirit performs <span className="text-bone/90">{b}</span>.
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Spirit is the broadest and most ambiguous term in the chain — breath, wind, vitality,
+              consciousness, a divine presence, an angel, a daemon, a deceased person, an elemental
+              agency, a planetary being, a local intelligence. It should therefore never stand alone
+              where precision matters. Planetary, elemental, local, ancestral, personal, egregoric,
+              vital, ritual, divine: these are not to be presumed to share an origin, a function, or
+              an ontological status.
+            </p>
+            <div className="mt-10 max-w-3xl border border-border p-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                On Agrippa&rsquo;s planetary tables
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                The tables distinguish Divine Names, planetary Intelligences, and planetary Spirits —
+                for the Sun, the Intelligence Nachiel and the Spirit Sorath. This should not be taken
+                to mean every Intelligence is good and every Spirit evil; Spirit is far broader than
+                that across traditions. In this vocabulary the Intelligence is the ordering and
+                noetic pole and the Spirit the dynamic and potentially more volatile one. A current
+                severed from governing intelligence may become disordered; an intelligence without
+                operative spirit stays unembodied. Their relation is form and movement, not good
+                against evil. The tables can be kept as a metaphysical and symbolic model without
+                claiming that numerical figures exert scientifically established physical forces.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- descent and return ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Descent and return</h3>
+            <div className="mt-8 grid gap-10 lg:grid-cols-2">
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">Descent</p>
+                <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-2">
+                  {["Source", "Name", "Pattern", "Message", "Operation", "Embodiment"].map((t, i) => (
+                    <div key={t} className="flex items-center gap-2">
+                      <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{t}</span>
+                      {i < 5 && <span className="font-mono text-xs text-gold" aria-hidden>→</span>}
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                  A unitive virtue becomes nameable, intelligible, differentiated, operational,
+                  symbolic, psychic, material.
+                </p>
+              </div>
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">Return</p>
+                <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-2">
+                  {["Embodiment", "Participation", "Meaning", "Understanding", "Unity", "Silence"].map((t, i) => (
+                    <div key={t} className="flex items-center gap-2">
+                      <span className={`border px-2.5 py-1.5 text-[13px] ${
+                        i === 5 ? "border-gold/60 text-gold" : "border-border text-muted-foreground"}`}>{t}</span>
+                      {i < 5 && <span className="font-mono text-xs text-gold" aria-hidden>→</span>}
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                  The vessel awakens a spirit of participation; that movement clarifies into meaning;
+                  meaning gathers into pattern; pattern is restored to its governing unity; and the
+                  Name opens consciousness toward what exceeds every name.
+                </p>
+              </div>
+            </div>
+            <p className="mt-10 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              Descent is not degradation — it is how virtue becomes actual. Return is not a rejection
+              of embodiment —{" "}
+              <span className="italic text-gold">
+                it is how embodied experience becomes consciously reintegrated with its source.
+              </span>
+            </p>
+          </div>
+
+          {/* ---- laws ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Laws of vertical mediation</h3>
+            <div className="mt-10 max-w-4xl">
+              {[["No mediator is the Source", "Every member receives and transmits something greater than its own particular expression."],
+                ["Every descent requires translation", "A universal virtue cannot enter a particular vessel without acquiring limitation and form."],
+                ["Every translation produces remainder", "No name, Angel, image, or rite exhausts the level above it."],
+                ["Rank is measured by integration, not spectacle", "Greater intensity, radiance, terror, or complexity does not prove greater altitude."],
+                ["Every chain requires a vessel", "Even the most elevated pattern must become image, word, relationship, or action to enter human participation."],
+                ["Every vessel can distort", "Personal desire, collective expectation, fear, language, and tradition all shape how mediation is received."],
+                ["Every valid ascent returns as embodiment", "If an alleged ascent produces no deeper truthfulness, responsibility, virtue, or integration, the chain has not been completed."]].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-4 sm:grid-cols-[2rem_17rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-gold">{a}</span>
+                  <span className="col-start-2 text-sm leading-relaxed text-muted-foreground sm:col-start-3">{b}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              The Divine Name makes virtue approachable. The Archangel gathers it into an ordered
+              field. The Intelligence holds its pattern. The Angel differentiates its message. The
+              Spirit brings it into operation. The living vessel gives it a world in which to become
+              actual.
+            </p>
+            <p className="mx-auto mt-10 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              The purpose of the chain is not to populate the invisible world with ever more
+              elaborate ranks. It is to explain{" "}
+              <span className="italic text-gold">
+                how unity can enter multiplicity without disappearing, and how multiplicity can
+                return toward unity without being erased.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXVIII · The Series
+                § XXIX · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -8199,7 +8710,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXIX · Lineage
+                § XXX · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
