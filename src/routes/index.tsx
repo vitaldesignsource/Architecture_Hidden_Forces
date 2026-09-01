@@ -1615,6 +1615,137 @@ function ImaginalBridge() {
   );
 }
 
+/**
+ * Symbolon — the tally. One half is the visible form; the other is whichever
+ * level it fits; consciousness is the third party that recognises the fit.
+ * Both halves are the same disc under complementary clips, so the break is
+ * necessarily exact: they can only fit each other.
+ */
+function Symbolon() {
+  const [sel, setSel] = useState<number | null>(null);
+  const JAG = "L177,22 L163,44 L179,66 L164,88 L177,110 L162,132 L176,154 L165,176 L170,210";
+  const L = [
+    { k: "The physical Sun", d: "The astronomical body — one centre, and everything else held in orbit around it." },
+    { k: "Centre and circumference", d: "The bare geometry: a continuous boundary organised around a single point." },
+    { k: "Gold", d: "The alchemical virtue — the metal that will not tarnish, incorruptible under trial." },
+    { k: "The Heart", d: "The integrating function of § XXIV: relation gathered, warmed, and redistributed." },
+    { k: "The Inner Sun", d: "Ignisophia's centre — wise fire, warming what is stagnant without consuming it." },
+    { k: "Illumination", d: "The principle itself: that by which anything whatever becomes visible." },
+    { k: "Sovereign inflation", d: "And the danger. The same centrality, mistaken for the whole of the field.", warn: true },
+  ];
+  const fitted = sel !== null;
+  const cur = fitted ? L[sel] : null;
+
+  return (
+    <div className="grid gap-12 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[360px]">
+        <style>{`
+          .aoh-sy-r { transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1); }
+          .aoh-sy-seam { transition: opacity 500ms ease 380ms; }
+          .aoh-sy-seam.on { animation: aoh-sy-glow 2.8s ease-in-out 900ms infinite; }
+          @keyframes aoh-sy-glow { 0%,100% { opacity: .35 } 50% { opacity: .9 } }
+          @media (prefers-reduced-motion: reduce) {
+            .aoh-sy-r { transition: none } .aoh-sy-seam.on { animation: none; opacity: .7 }
+          }
+        `}</style>
+        <svg viewBox="0 0 340 232" className="h-auto w-full" role="img" aria-labelledby="aoh-sy-t">
+          <title id="aoh-sy-t">
+            A broken disc in two halves. The left carries the visible form; the right carries the
+            level it fits. Choosing a level closes the break.
+          </title>
+          <defs>
+            <clipPath id="aoh-sy-L">
+              <path d={`M0,0 L170,0 ${JAG} L0,210 Z`} />
+            </clipPath>
+            <clipPath id="aoh-sy-R">
+              <path d={`M170,0 ${JAG} L340,210 L340,0 Z`} />
+            </clipPath>
+            <clipPath id="aoh-sy-disc">
+              <circle cx="170" cy="100" r="78" />
+            </clipPath>
+          </defs>
+
+          <g clipPath="url(#aoh-sy-L)">
+            <circle cx="170" cy="100" r="78" fill="var(--void)" stroke="var(--gold)"
+                    strokeOpacity={fitted ? 0.95 : 0.55} strokeWidth="1.1" />
+            <circle cx="170" cy="100" r="62" fill="none" stroke="var(--gold)" strokeOpacity="0.2" strokeWidth="0.6" />
+            <circle cx="170" cy="100" r="7" fill="var(--gold)" fillOpacity={fitted ? 0.9 : 0.5} />
+          </g>
+
+          <g className="aoh-sy-r" transform={`translate(${fitted ? 0 : 30},0)`}>
+            <g clipPath="url(#aoh-sy-R)">
+              <circle cx="170" cy="100" r="78" fill="var(--void)" stroke="var(--gold)"
+                      strokeOpacity={fitted ? 0.95 : 0.3} strokeWidth="1.1" />
+              <circle cx="170" cy="100" r="62" fill="none" stroke="var(--gold)"
+                      strokeOpacity={fitted ? 0.2 : 0.08} strokeWidth="0.6" />
+              {[0, 1, 2, 3, 4].map((i) => {
+                const a = (-58 + i * 29) * (Math.PI / 180);
+                return (
+                  <line key={i} x1={170 + 20 * Math.cos(a)} y1={100 + 20 * Math.sin(a)}
+                        x2={170 + 70 * Math.cos(a)} y2={100 + 70 * Math.sin(a)}
+                        stroke="var(--gold)" strokeOpacity={fitted ? 0.5 : 0.14} strokeWidth="0.7" />
+                );
+              })}
+            </g>
+          </g>
+
+          <path className={`aoh-sy-seam ${fitted ? "on" : ""}`} d={`M170,0 ${JAG}`} fill="none"
+                stroke="var(--gold)" strokeWidth="1.4" opacity={fitted ? 0.6 : 0}
+                clipPath="url(#aoh-sy-disc)" />
+
+          <text x="86" y="203" textAnchor="middle" className="font-mono" fontSize="7.5"
+                letterSpacing="1.5" fill="var(--muted-foreground)">VISIBLE FORM</text>
+          <text x="254" y="203" textAnchor="middle" className="font-mono" fontSize="7.5"
+                letterSpacing="1.5" fill={fitted ? "var(--gold)" : "var(--muted-foreground)"}>
+            {fitted ? "FITS" : "THE LEVEL IT FITS"}
+          </text>
+          <text x="170" y="226" textAnchor="middle" className="font-mono" fontSize="7.5"
+                letterSpacing="1.5" fill="var(--gold-dim)" opacity={fitted ? 1 : 0.35}>
+            CONSCIOUSNESS RECOGNISES THE FIT
+          </text>
+        </svg>
+      </div>
+
+      <div className="min-h-[15rem]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          One half, seven locks — the solar symbolon
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {L.map((x, i) => (
+            <button key={x.k} onClick={() => setSel(sel === i ? null : i)} aria-pressed={sel === i}
+              className={`border px-3 py-1.5 text-left text-xs leading-snug transition-colors ${
+                sel === i
+                  ? x.warn ? "border-bone/60 text-bone" : "border-gold text-gold"
+                  : "border-border text-muted-foreground hover:border-gold/60 hover:text-bone/80"
+              }`}>
+              {x.k}
+            </button>
+          ))}
+        </div>
+        {cur ? (
+          <div className="mt-6 border-l-2 border-gold/50 pl-5">
+            <p className="text-base leading-relaxed text-muted-foreground">{cur.d}</p>
+            {cur.warn && (
+              <p className="mt-3 text-[11px] leading-relaxed text-bone/55">
+                Listed with the rest deliberately. A symbol that fits a distortion as readily as a
+                virtue is not thereby a false symbol — it is a symbol whose remainder has been
+                forgotten.
+              </p>
+            )}
+          </div>
+        ) : (
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            The Greek <span className="italic">symbolon</span> was a token broken in two, each party
+            keeping a half. Brought back together, the fit authenticated the bond — no half meant
+            anything alone. Which makes it an exact figure for what a symbol is: not a container of
+            meaning, but the half of a relation that becomes legible only on being matched.
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -2560,6 +2691,7 @@ function Index() {
               { id: "axis", label: "Axis" },
               { id: "organs", label: "Organs" },
               { id: "image", label: "Image" },
+              { id: "symbol", label: "Symbol" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2706,9 +2838,10 @@ function Index() {
               { n: "XXIII", id: "axis", t: "Head, Heart, and Hara", d: "The human axis: pattern seen, weighed, and given substance." },
               { n: "XXIV", id: "organs", t: "Organs, Elements, Five Phases", d: "The interior ecology: seats of transformation, and healing as formative range." },
               { n: "XXV", id: "image", t: "Image and Imagination", d: "The middle country: how force becomes appearance, and appearance carries force." },
-              { n: "XXVI", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXVI", id: "symbol", t: "Symbol", d: "The knot where worlds meet: the tally, and what completes it." },
+              { n: "XXVII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXVII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXVIII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -7008,13 +7141,433 @@ function Index() {
         </div>
       </section>
 
+      <section id="symbol" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-270} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXVI · Symbol
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The knot where <span className="italic text-gold">worlds meet</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § XXV placed image between hidden modulation and conscious appearance. Symbol begins
+            where an image, word, number, gesture, object, or geometry becomes stable enough to
+            gather several levels of reality into one recognisable relationship. Not every image is a
+            symbol, and not every symbol is visual — a sound, a name, a posture, a rite, a mythic
+            figure, an architectural orientation, or a recurring event may all become symbolic when
+            they bind a visible form to a larger pattern.
+          </p>
+          <p className="mt-8 font-serif text-3xl leading-tight text-bone/90">
+            An image appears. <span className="italic text-gold">A symbol joins.</span>
+          </p>
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            So a symbol is not a substitute for something absent. It is a relational vessel through
+            which different orders become present to one another without becoming identical —
+            a conjunction without a collapse.
+          </p>
+
+          {/* ---- symbolon ---- */}
+          <div className="mt-24">
+            <h3 className="font-serif text-2xl leading-tight">Symbol as symbolon</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The Greek <span className="italic">symbolon</span> meant a token, tally, credential, or
+              sign of recognition — and specifically one of two corresponding pieces held by
+              different parties, which authenticated an agreement when brought together and fitted.
+              Which gives a precise metaphysical image: a symbol does not hold its whole meaning in
+              isolation. Its significance appears in the fitting. The visible form is one half. The
+              hidden pattern is the corresponding half.{" "}
+              <span className="text-bone/90">Consciousness is the party capable of recognising that
+              they fit.</span>
+            </p>
+            <div className="mt-12">
+              <Symbolon />
+            </div>
+            <p className="mt-12 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              None of which makes a symbol a puzzle with one secret answer. The two-piece image has
+              to be extended into more than two dimensions: a developed symbol may fit several
+              realities at once — psychological, elemental, celestial, historical, ethical,
+              biological, theological. These meanings are not identical, but they hold enough
+              structural resemblance to participate in one symbolic field. A symbol is better
+              imagined as a multifaceted key: different faces enter different locks, and all of them
+              belong to a single organised form.
+            </p>
+          </div>
+
+          {/* ---- sign, symbolon, synthema ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Sign, symbolon, synthema</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Three words that are routinely used interchangeably, and are not interchangeable
+                here.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                A sign directs attention toward a referent: smoke to fire, an arrow to a direction, a
+                word to a thing. A symbol can do that too, but it also gathers, participates, and
+                transforms, and its meaning exceeds any single definition.{" "}
+                <span className="text-bone/90">The sign tells us where to look; the symbol alters the
+                way in which looking occurs.</span> The distinction is not absolute — a sign
+                accumulates symbolic depth through history and use, and a symbol can be flattened
+                back into a sign. A crown may indicate a king, symbolise sovereignty, embody social
+                authority, represent the solar centre, or become an image of spiritual attainment,
+                depending entirely on which relationships are live around it.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                In late Platonic and theurgic usage <span className="italic">symbola</span> and{" "}
+                <span className="italic">synthemata</span> overlap heavily, both naming material,
+                verbal, or ritual tokens that connect visible things to divine principles — Iamblichus
+                describes symbolic forms as making invisible formative principles perceptible through
+                visible configuration. Rather than force a rigid distinction onto the historical
+                texts, this architecture adopts an internal convention and holds to it:
+              </p>
+              <div className="mt-8 space-y-px">
+                {[["Symbolon", "the connective relationship through which realities fit together"],
+                  ["Synthema", "the particular mark, word, material, gesture, or configuration serving as an operative key within that relationship"],
+                  ["Symbola", "the multiple correspondential forms gathered into a system"],
+                  ["Synthemata", "the operative signs through which that system is ritually or contemplatively engaged"]].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[9rem_1fr]">
+                    <span className="font-serif text-lg italic text-gold">{a}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                So the Sun is a great symbolon, joining several levels of centrality and
+                illumination, while a particular solar seal, divine name, gesture, metal, incense, or
+                ritual hour functions as a synthema within a solar operation.{" "}
+                <span className="text-bone/90">The symbolon describes the bond; the synthema provides
+                an access point.</span>
+              </p>
+            </div>
+          </div>
+
+          {/* ---- gathered reality ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The symbol as gathered reality</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A powerful symbol gathers a constellation into a bounded form — a visible or audible
+              configuration, a history of use, an emotional atmosphere, a philosophical meaning, a
+              mythic narrative, an organ correspondence, a celestial virtue, an elemental operation,
+              a ritual function, a communal memory, a personal encounter. It does not mix them
+              indiscriminately. It holds them as a chord holds several distinct notes, which is why
+              Tone Ether matters so much to symbolism: Tone establishes the proportion that lets
+              multiplicity become harmony rather than confusion.
+            </p>
+            <div className="mt-12 grid gap-10 md:grid-cols-2">
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Centre</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Its governing formative virtue. Lose it and interpretation becomes arbitrary.
+                </p>
+              </div>
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Circumference
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  The range of forms through which that virtue can appear. Reduce it to one
+                  permissible definition and the symbol becomes a code.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The circle may signify wholeness, continuity, protection, recurrence, enclosure,
+              celestial motion, perfection, or limitation — and that is not an arbitrary list. Every
+              item follows from its governing structure: a continuous boundary organised around a
+              centre.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              A living symbol holds a stable centre and an expanding circumference.
+            </p>
+
+            <p className="mt-16 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              What a symbol needs in order to live — and its three deaths
+            </p>
+            <div className="mt-6 grid gap-px lg:grid-cols-3">
+              {[["Salt", "an identifiable body — line, word, emblem, implement, geometry. What makes it repeatable and transmissible.",
+                 "Inert", "Salt without Mercury or Sulfur: recognisable, and lifeless."],
+                ["Mercury", "interpretive mobility. Movement between mind and body, myth and philosophy, dream and rite, one culture and another — new meaning without loss of identity.",
+                 "Incoherent", "Mercury without Salt: endlessly shifting, with no stable centre."],
+                ["Sulfur", "the central virtue, fascination, intention, living fire. What makes the symbol matter at all.",
+                 "Coercive", "unregulated Sulfur: charged with intensity, and resistant to interpretation, proportion, and correction."]].map(([a, b, c, d]) => (
+                <div key={a} className="border-t border-border py-5 pr-6">
+                  <p className="font-serif text-xl text-gold">{a}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                  <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-bone/50">
+                    {c}
+                  </p>
+                  <p className="mt-2 text-[13px] leading-relaxed text-bone/60">{d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A complete symbol needs all three at once: stable form, interpretive circulation, and
+              living centrality. The ethers then carry it — Warmth gives it charge and the power to
+              mobilise attention, Light reveals its pattern, Tone harmonises its correspondences
+              across levels, Life integrates it into memory, identity, and tradition. Root Ether is
+              not a further meaning encoded inside it but the condition that lets distinct levels
+              enter relationship at all, and it is never exhausted by any symbol. The tattvas decide
+              how it is experienced: open enough to resonate, mobile enough to travel, luminous enough
+              to be recognised, cohesive enough to gather, stable enough to endure.
+            </p>
+          </div>
+
+          {/* ---- force, pattern, symbol, consciousness ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Force, pattern, symbol, consciousness
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Four terms with four distinct places. Force is a capacity, tendency, pressure, or power
+              of transformation. Pattern is the relational organisation that gives force direction
+              and proportion. Symbol is the perceptible condensation through which that pattern can
+              be encountered. Consciousness is the receptive centre able to recognise, interpret, and
+              embody it. Their relation is a circle:
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2">
+              {["Force", "Pattern", "Symbol", "Consciousness", "Action", "Altered field"].map((t, i) => (
+                <div key={t} className="flex items-center gap-3">
+                  <span className={`border px-3 py-2 text-sm ${
+                    i === 5 ? "border-gold/60 text-gold" : "border-border text-muted-foreground"}`}>
+                    {t}
+                  </span>
+                  <span className="font-mono text-sm text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A symbol is not a battery holding a fixed quantity of occult force. Its potency is
+              relational — dependent on its construction, the condition of the recipient, the
+              surrounding context, the history of use, the quality of attention, the timing, and the
+              action that follows. So the same symbol produces different effects in different
+              vessels. A serpent may evoke healing, danger, renewal, wisdom, sexuality, mortality, or
+              deception; that variation does not prove the symbol means everything, only that
+              different vessels activate different portions of its relational field. And the same
+              force takes different symbols: transformation appears as fire, as death and rebirth, as
+              a shedding serpent, a broken vessel, a spiral, a blackened sun, a passage through a
+              gate. The images differ; the pattern stays recognisable.
+            </p>
+            <div className="mt-12 grid gap-10 md:grid-cols-2">
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Integral coherence
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Coordinates many parts of the person while preserving discernment, ethical
+                  proportion, and agency.
+                </p>
+              </div>
+              <div className="border-t border-border pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Parasitic coherence
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Organises the field around fear, compulsion, ideological closure, grandiosity, or
+                  dependency.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Both may be powerful.{" "}
+              <span className="text-bone/90">Power alone does not distinguish them</span> — which is
+              why the decisive question is never simply whether the symbol works:
+            </p>
+            <p className="mt-8 max-w-3xl border-l-2 border-gold pl-6 font-serif text-2xl italic leading-relaxed text-bone/90">
+              What kind of world does the symbol teach its participants to inhabit?
+            </p>
+          </div>
+
+          {/* ---- organising perception ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">How symbols organise perception</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Symbols do not only receive meaning after perception. They help determine what will be
+              perceived. A symbol establishes a field of salience — marking some details as
+              important, binding them to memory and expectation, and setting them inside a larger
+              pattern. Once the symbolism of the labyrinth is known, an intricate path starts to
+              appear as initiation rather than confusion. Once the solar pattern is interiorised,
+              crowns and centres and gold and radiance and kingship and hearts begin to gather around
+              a shared formative intuition.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Select", "Every symbol opens attention to some relationships while obscuring others — symbolic selective permeability."],
+                ["Group", "Seemingly unrelated experiences are gathered under a common pattern."],
+                ["Scale", "The same relationship becomes visible in a body, a household, a temple, a planet, a myth, a metaphysical process."],
+                ["Charge", "Emotion and value attach to otherwise neutral perceptions."],
+                ["Orient", "Centres, directions, thresholds, boundaries, goals, adversaries, paths, and possible actions are established."]].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[1.6rem_6rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_8rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A symbol is therefore both lens and compass: it affects what appears, and how the
+              person moves through what appears. Reception travels the whole human axis. The Head
+              distinguishes structure, correspondence, and possible readings. The Heart determines
+              relational and ethical meaning. The Hara decides whether the symbol can become presence,
+              conduct, and sustained action. Left in the Head it stays an intellectual curiosity;
+              taking the Heart without the Head it yields sentimentality, devotion without
+              discernment, emotional possession; firing the Hara without either it produces impulsive
+              or coercive action. A symbol becomes transformative only when vision, value, and
+              embodiment align around it.
+            </p>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              Symbolic literacy — three attentions at once
+            </p>
+            <div className="mt-6 grid gap-px md:grid-cols-3">
+              {[["Seeing the symbol", "as an actual object or image."],
+                ["Seeing through it", "toward the pattern it mediates."],
+                ["Seeing what it does", "within the observer. This third is the one routinely neglected."]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-4 pr-5">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A person may produce sophisticated interpretations while failing to notice that the
+              symbol is inflaming fear, feeding vanity, or narrowing perception. So the mature
+              interpreter asks what the symbol reveals and what it conceals; what emotional
+              temperature it produces; which actions it makes more imaginable; whether it preserves
+              the distinctions between levels; whether it can tolerate alternative readings; whether
+              it deepens agency and virtue or demands submission; and whether its claimed meaning
+              suits the scale being examined. The goal is not to escape symbols — consciousness
+              cannot operate without them. The goal is to keep one symbol from masquerading as the
+              whole Field.
+            </p>
+          </div>
+
+          {/* ---- transmission ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              How symbols transmit hidden structure
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              By preserving relationships across a change of medium. A centre surrounded by a
+              circumference can appear as the solar glyph, an eye, a mandala, a ritual circle, a city
+              built around its temple, a monarch amid a court, or the Inner Sun coordinating the
+              flywheel. The material changes; the relation between centre and surrounding field does
+              not. That preserved relation is the symbol&rsquo;s{" "}
+              <span className="text-bone/90">formative invariant</span> — and it is why geometry is so
+              powerful in esoteric cartography, since geometry carries relational structure while
+              staying free of the accidental detail of any single embodiment.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Geometry", "centre, boundary, axis, polarity, symmetry, proportion"],
+                ["Number", "repetition, division, sequence, relational order"],
+                ["Colour and material", "qualitative and elemental temperament"],
+                ["Myth", "structure carried through time, relationships turned into characters and events"],
+                ["Ritual", "structure carried through embodied sequence"],
+                ["Architecture", "structure carried through spatial movement"],
+                ["Music and sacred speech", "rhythm, resonance, and Tone Ether"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[13rem_1fr]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which makes a symbol a kind of morphogenic seed. It does not hold a completed
+              interpretation in miniature; it holds generative constraints that unfold differently
+              according to vessel, environment, and conditions of growth. And no transmission is ever
+              complete.
+            </p>
+            <div className="mt-10 border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                The Law of Symbolic Remainder
+              </p>
+              <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
+                No symbol exhausts the force it mediates, no interpretation exhausts the symbol, and
+                no consciousness exhausts the Field from which meaning arises.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                The remainder is not a defect. It is what keeps the symbol alive — a perfectly
+                exhausted symbol stops generating understanding and becomes a technical code. The
+                danger begins when the interpreter forgets the remainder and takes the map for the
+                territory. The solar symbol may disclose something essential about centrality without
+                proving every centred structure solar in the same way; the serpent may disclose
+                transformation without reducing every serpent to one definition.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- the ladder ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Symbol, diagram, ritual, tradition
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              With the convention in place, the relations among these can be stated exactly.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["A symbolon", "joins different levels through a recognisable correspondence"],
+                ["A synthema", "provides a particular operative key within that relationship"],
+                ["A diagram", "organises multiple symbola into a visible grammar"],
+                ["A ritual", "activates that grammar through time, movement, material, and attention"],
+                ["A tradition", "preserves the memory required to recognise and transmit the pattern"],
+                ["A living vessel", "receives, interprets, and re-embodies it"],
+                ["The Morphaithēr", "is the formative atmosphere altered by their combined participation"]].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-3 sm:grid-cols-[2rem_10rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-sm leading-relaxed text-gold">{a}</span>
+                  <span className="col-start-2 text-sm leading-relaxed text-muted-foreground sm:col-start-3">
+                    {b}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So a sacred diagram is a constellation of symbola: its lines show relationships, its
+              nodes stabilise principles, its colours supply qualitative differentiation, its centre
+              establishes an attractor, and its boundaries determine what belongs to the field it
+              represents. A ritual moves through that diagram even when no chart is present — the
+              body becomes its geometry, the sequence its path, the words its Tone, the intention its
+              Sulfur.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              And a symbol that has accumulated sustained attention, memory, emotion, and use can
+              carry something of its atmosphere into new settings — a{" "}
+              <span className="text-bone/90">portable Morphaithēr</span>. Not because an atmosphere is
+              mechanically trapped inside it, but because the symbol can rapidly reassemble a
+              recognisable ecology of perception and participation. A household emblem gathers family
+              memory. An icon gathers prayer, doctrine, architecture, gesture, community. A planetary
+              seal gathers timing, mythology, metal, colour, number, intention. A publisher&rsquo;s
+              mark gathers an entire intellectual identity into one visible form. The symbol
+              transmits hidden structure by teaching each new vessel how to reconstruct the
+              relationships it carries.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              Root Ether makes relation possible. The four ethers animate its transmission. The
+              tattvas give it qualitative texture. Pattern gives it proportion. The symbol gives it a
+              recognisable vessel. Consciousness recognises the fit. Action returns the pattern to
+              the world.
+            </p>
+            <p className="mx-auto mt-10 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              The symbol is completed in the act of fitting —{" "}
+              <span className="italic text-gold">
+                hidden structure to visible form, visible form to consciousness, and consciousness to
+                life.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/regrowth.webp" opacity={0.23} position="center 55%" scrim={0.1} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXVI · The Series
+                § XXVII · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -7107,7 +7660,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXVII · Lineage
+                § XXVIII · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
