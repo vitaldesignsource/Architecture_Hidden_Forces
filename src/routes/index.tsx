@@ -2668,6 +2668,7 @@ function ArchitectureIndex() {
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
               { n: "XXXIII", id: "tradition", t: "Tradition", d: "The long memory of form — what survives when every carrier changes." },
               { n: "XXXIV", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXXV", id: "forceform", t: "The Law of Force and Form", d: "Form is force given memory. The founding proposition, given its reasons." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
   ];
@@ -2859,6 +2860,124 @@ function ArchitectureIndex() {
         })}
       </div>
     </>
+  );
+}
+
+/**
+ * ForceAndForm — the descent from potency into visible structure, with the
+ * threshold of visibility crossed only at the final step. Everything before it
+ * has already happened invisibly, which is the claim: the visible body is the
+ * last witness of a process long underway, not its beginning. The return arc
+ * closes potency -> form -> new potency, since actuality does not exhaust potency.
+ */
+function ForceAndForm() {
+  const [sel, setSel] = useState<number | null>(null);
+  const S = [
+    { k: "Potency", d: "Structured possibility — not an unlimited cloud of everything imaginable. A seed holds the potency of a particular plant; an instrument, a range set by its material and construction." },
+    { k: "Bias", d: "An asymmetry appears: an attraction, a tension, a need, an intention, an environmental pressure, a morphogenic lean. The tattvas belong here — they do not manufacture the form, they predispose force toward a mode of expression." },
+    { k: "Vector", d: "The asymmetry gives the potency a direction. What could have gone many ways now leans one way." },
+    { k: "Activity", d: "The vector meets a medium, and the medium answers with both resistance and affordance. Neither alone would produce anything." },
+    { k: "Recurrence", d: "Repetition deepens the pathway. Feedback reinforces some movements and suppresses others, and the difference between them begins to matter." },
+    { k: "Stabilisation", d: "Activity becomes steady enough to hold a recognisable relation. This is where Salt does its work — fixing what has been achieved into something durable." },
+    { k: "Visible form", d: "The late result of an invisible history. By the time a form can be seen, touched, named, or measured, every selection above it has already been made." },
+  ];
+  const Y = (i: number) => 244 - i * 33;
+  const X = (i: number) => 52 + i * 40;
+  const cur = sel === null ? null : S[sel];
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[380px]">
+        <style>{`
+          .aoh-ff-r { stroke-dasharray: 4 8; animation: aoh-ff-turn 4s linear infinite; }
+          @keyframes aoh-ff-turn { to { stroke-dashoffset: -24 } }
+          .aoh-ff-n { cursor: pointer; }
+          @media (prefers-reduced-motion: reduce) { .aoh-ff-r { animation: none } }
+        `}</style>
+        <svg viewBox="0 0 380 300" className="h-auto w-full" role="img" aria-labelledby="aoh-ff-t">
+          <title id="aoh-ff-t">
+            Seven ascending steps from potency to visible form, with a threshold of visibility
+            crossed only at the last, and a return arc carrying structure back into new potency.
+          </title>
+
+          {/* threshold of visibility — only the final step rises above it */}
+          <line x1="14" y1={Y(6) + 17} x2="366" y2={Y(6) + 17} stroke="var(--gold)"
+                strokeOpacity="0.45" strokeDasharray="6 5" strokeWidth="1" />
+          <text x="14" y={Y(6) + 11} className="font-mono" fontSize="6.6" letterSpacing="1.1"
+                fill="var(--gold)" fillOpacity="0.8">THRESHOLD OF VISIBILITY</text>
+          <text x="366" y={Y(6) + 29} textAnchor="end" className="font-mono" fontSize="6.2"
+                letterSpacing="0.9" fill="var(--muted-foreground)">EVERYTHING BELOW HAS ALREADY HAPPENED</text>
+
+          {S.map((_, i) => i < 6 && (
+            <line key={i} x1={X(i)} y1={Y(i)} x2={X(i + 1)} y2={Y(i + 1)}
+                  stroke="var(--gold)" strokeOpacity={sel === null ? 0.45 : 0.18} strokeWidth="1" />
+          ))}
+
+          {/* actuality does not exhaust potency: structure becomes the vessel of new potency */}
+          <path className="aoh-ff-r" d={`M${X(6)},${Y(6) - 16} C${X(6) + 20},${Y(6) - 60} 40,${Y(0) - 90} ${X(0)},${Y(0) - 16}`}
+                fill="none" stroke="var(--bone)" strokeOpacity="0.45" strokeWidth="1" />
+          <text x="196" y="26" textAnchor="middle" className="font-mono" fontSize="6.4"
+                letterSpacing="1" fill="var(--muted-foreground)">STRUCTURE BECOMES THE VESSEL OF NEW POTENCY</text>
+
+          {S.map((st, i) => {
+            const on = sel === i;
+            const vis = i === 6;
+            return (
+              <g key={st.k} className="aoh-ff-n" onClick={() => setSel(on ? null : i)}
+                 role="button" tabIndex={0} aria-pressed={on} aria-label={st.k}
+                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx={X(i)} cy={Y(i)} r={on ? 9 : 6} fill={vis ? "var(--gold)" : "var(--void)"}
+                        fillOpacity={vis ? (on ? 1 : 0.85) : 1}
+                        stroke="var(--gold)" strokeOpacity={on ? 1 : sel === null ? 0.7 : 0.3}
+                        strokeWidth={on ? 2 : 1.1} />
+                <text x={X(i)} y={Y(i) - 15} textAnchor="middle" className="font-mono" fontSize="6.6"
+                      letterSpacing="0.7"
+                      fill={on ? "var(--gold)" : vis ? "var(--gold)" : "var(--muted-foreground)"}
+                      opacity={sel === null || on || vis ? 1 : 0.35}>
+                  {st.k.toUpperCase()}
+                </text>
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+
+      <div className="min-h-[15rem]">
+        {cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {String((sel as number) + 1).padStart(2, "0")} · {cur.k}
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
+            {sel === 6 && (
+              <p className="mt-4 border-l-2 border-gold/50 pl-5 text-sm leading-relaxed text-bone/75">
+                Which is why visibility should never be confused with beginning. What appears
+                suddenly at the visible level may have been assembling gradually in subtler
+                conditions for a very long time.
+              </p>
+            )}
+          </>
+        ) : (
+          <>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              The descent from potency into activity is not a fall into inferiority. It is a descent
+              into <span className="text-bone/90">determination</span> — and to become actual is to
+              surrender alternative possibilities in exchange for concrete existence.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Six of these seven steps happen below the threshold. Only the last can be seen, touched,
+              named, or measured, which makes visible structure the final witness of a formative
+              process rather than its origin.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/60">
+              And the arc returning overhead is the part easiest to miss: actuality does not exhaust
+              potency. A realised form generates new capacities, and becomes the ground of further
+              possibility.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
   );
 }
 
@@ -3815,6 +3934,7 @@ function Index() {
               { id: "daimons", label: "Daimons" },
               { id: "books", label: "Books" },
               { id: "tradition", label: "Tradition" },
+              { id: "forceform", label: "Force & Form" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
@@ -10476,6 +10596,253 @@ function Index() {
       </section>
 
       {/* THE UNIFIED FORMULA */}
+      <section id="forceform" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-410} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXXV · The Law of Force and Form
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The moment force acquires <span className="italic text-gold">memory</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Force becomes form by entering constraint; form becomes force when constraint is
+              loosened, broken, or redirected. Every form is force given memory, and every force is
+              form in transition.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § 00 states this in a line — form is frozen force, force is liberated form — and the
+            whole architecture has been unfolding it ever since. This is that proposition given its
+            reasons. Force and form are not two substances but reciprocal conditions inside a single
+            formative process: force is the capacity to produce difference, form the organisation
+            that preserves, directs, and repeats it. Force without form disperses into
+            indeterminacy. Form without force becomes an abstraction, a residue, an empty shell.
+          </p>
+          <div className="mt-8 max-w-3xl border border-border p-5">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              An ontological principle, not a claim that physical energy and form are quantitatively
+              interchangeable. Force here includes formative, psychic, collective, biological, and
+              material powers; form means the organisation through which any of them become
+              determinate.
+            </p>
+          </div>
+
+          {/* ---- frozen force ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Form is frozen force</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Which does not mean activity has stopped. It means activity has been constrained into
+                recurrence.
+              </p>
+            </div>
+            <div>
+              <div className="grid gap-x-10 gap-y-px sm:grid-cols-2">
+                {[["A crystal", "molecular force disciplined into a lattice"],
+                  ["An arch", "gravitational pressure captured within geometry"],
+                  ["An organism", "metabolism organised into a self-maintaining body"],
+                  ["A habit", "repeated psychic activity hardened into an automatic pathway"],
+                  ["An institution", "collective action fixed into roles, procedures, expectations"]].map(([a, b]) => (
+                  <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-3 border-b border-border py-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 font-serif text-xl italic leading-relaxed text-bone/85">
+                Form is not the opposite of motion. It is motion trained into persistence.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Every form carries both the history of the forces that produced it and the tensions
+                presently holding it. A mountain retains pressure and erosion. A body records
+                inheritance, nourishment, injury, adaptation. A rite preserves earlier acts of
+                attention; a tradition bears the compressed history of innumerable acts of
+                transmission. Frozen means only that the range of possible movement has narrowed —
+                force that might have gone many ways has accepted a boundary, a rhythm, a geometry.
+                And that limitation is precisely what lets it acquire identity.
+              </p>
+              <p className="mt-6 font-serif text-xl italic leading-relaxed text-bone/85">
+                Form is force made recursive.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- liberated form ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Force is liberated form</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              If form is constrained force, then force is form released from its present constraint.
+              When a structure dissolves, what was bound inside it becomes available for
+              redistribution. The wood of a fallen house becomes fuel, soil, shelter, material. A
+              broken institution releases people, knowledge, resentment, wealth, and authority into
+              new arrangements. A dissolved complex may release attention and desire that had been
+              spent maintaining it.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                But liberation does not erase what preceded it
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                Released force carries inherited bias. Water leaving a channel keeps its direction
+                for a time. A person leaving an institution may go on reproducing its assumptions. A
+                deconsecrated object may retain associative inertia — which is exactly why § XXVII
+                insists the release be performed rather than assumed. Dissolution never returns
+                anything to perfect neutrality; the freed force enters its next formation already
+                marked by what it passed through.
+              </p>
+            </div>
+            <p className="mt-10 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              Force is not absolutely formless. It is form exceeding, escaping, or passing between
+              its present configurations.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              This is the rhythm named by <span className="italic">solve et coagula</span>.
+              Coagulation fixes force into a vessel; dissolution releases what was fixed so that it
+              can be purified, redistributed, and formed again.
+            </p>
+          </div>
+
+          {/* ---- dynamis and energeia ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Dynamis and energeia</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              <span className="italic">Dynamis</span> is capacity, potency, the power to become or
+              act. <span className="italic">Energeia</span> is not energy in the modern physical
+              sense at all — it is actuality, being-at-work, the active realisation of a capacity.
+              Keeping those apart matters here as much as keeping Warmth Ether apart from heat.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              And potency is not an unlimited cloud of every imaginable possibility. It is{" "}
+              <span className="text-bone/90">structured possibility</span>. A seed holds the potency
+              of a particular kind of plant, not of anything whatever. An instrument holds a range
+              set by its material and construction. A person holds capacities conditioned by body,
+              character, knowledge, environment, and opportunity. Form is therefore already latent
+              inside potency as a range of possible actualisations, and energeia occurs when
+              conditions select, activate, and sustain one of them.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Yet actuality does not exhaust potency. A realised form generates new capacities — the
+              tree produces branches, fruit, shelter, decay, and further seed. Actuality becomes the
+              ground of further potency, which makes the movement cyclical rather than terminal.
+            </p>
+          </div>
+
+          {/* ---- the descent ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The descent into determination</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Not a fall into inferiority. A descent into determination — where Morphaithēr is the
+              atmosphere the biases interact within, Sulfur supplies direction and appetite, Mercury
+              enables movement and transduction, and Salt fixes the achieved relation into something
+              durable.
+            </p>
+            <div className="mt-12">
+              <ForceAndForm />
+            </div>
+            <p className="mt-12 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              Every descent into form is both gain and sacrifice. The possible gains presence,
+              efficacy, and visibility. It surrenders the freedom to remain otherwise.
+            </p>
+          </div>
+
+          {/* ---- how pattern holds ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">How pattern holds force</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Not as a vessel holds liquid. Pattern holds force by continually returning activity
+              into a repeatable relation — through boundary, rhythm, proportion, resonance,
+              circulation, hierarchy, and feedback. A vortex persists because moving water is
+              repeatedly returned to the same rotation. A flame persists because combustion keeps
+              recreating the conditions of combustion. An organism persists because its processes
+              repair the boundaries that make those processes possible. A complex persists because
+              perception, emotion, interpretation, and behaviour keep confirming one another.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Pattern holds best when the result of an activity helps reproduce the conditions that
+              caused it — which is the basis of formative inertia in § XII, and of the flywheel in
+              § IX. Past a certain momentum the pattern begins recruiting new force into itself.
+            </p>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              And every pattern has a holding capacity
+            </p>
+            <div className="mt-6 grid gap-px lg:grid-cols-3">
+              {[["Too weak", "the incoming force cannot sustain the pattern, and it lapses"],
+                ["Too strong", "the pattern ruptures"],
+                ["Unable to adapt", "force escapes through distortion, symptom, conflict, or collapse"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-5 pr-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold">{a}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So durable form requires neither absolute rigidity nor total openness, but a{" "}
+              <span className="text-bone/90">regulated permeability</span> — the metastability of
+              § XII stated as a condition of holding rather than of surviving.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl leading-relaxed text-bone/85">
+              A living pattern holds force by guiding it.{" "}
+              <span className="italic text-gold">A dead pattern attempts to hold force by preventing
+              change.</span>
+            </p>
+          </div>
+
+          {/* ---- what it resolves ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              What the law settles about rite and tradition
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Visible structure is born when recurrence crosses a threshold of persistence — when a
+              pattern begins surviving fluctuations long enough to impress itself on matter,
+              behaviour, perception, or collective life. And nothing so produced is ever finished.
+              Even the most solid structure is metastable: it persists because supporting relations
+              continue to hold. A body must metabolise, an institution must recruit participation, a
+              memory must be reactivated, a rite must receive attention. When the maintaining force
+              ceases, the form begins returning its components to wider circulation.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which gives § XXVII and § XXXIII their definitions in the terms of this law rather than
+              their own.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Ritual", "a form deliberately constructed to gather, transform, and direct force through a sequence"],
+                ["Tradition", "a form constructed to preserve formative capacity across generations"],
+                ["A mechanical rite", "form that has lost contact with its original force"],
+                ["A parasitic tradition", "form that extracts new force from its participants merely to continue its own existence"]].map(([a, b], i) => (
+                <div key={a} className={`grid grid-cols-[10rem_1fr] items-baseline gap-4 border-b py-3 sm:grid-cols-[13rem_1fr] ${
+                  i > 1 ? "border-border" : "border-gold/30"}`}>
+                  <span className={`font-mono text-[11px] uppercase tracking-[0.12em] ${i > 1 ? "text-bone/60" : "text-gold"}`}>{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              Reduced to three propositions
+            </p>
+            <div className="mt-8 space-y-4">
+              {["Force becomes intelligible through form.",
+                "Form remains living through force.",
+                "Transformation occurs when force exceeds, dissolves, or reorganises its present form."].map((t, i) => (
+                <p key={t} className="flex gap-5 font-serif text-2xl leading-relaxed text-bone/90">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  {t}
+                </p>
+              ))}
+            </div>
+            <p className="mx-auto mt-14 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              The birth of structure is not the defeat of force.{" "}
+              <span className="italic text-gold">It is the moment force acquires memory.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="unified" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/crater.webp" opacity={0.56} position="center 50%" scrim={0.05} />
         <div className="mx-auto max-w-5xl px-6 text-center">
