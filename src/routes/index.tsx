@@ -2669,6 +2669,7 @@ function ArchitectureIndex() {
               { n: "XXXIII", id: "tradition", t: "Tradition", d: "The long memory of form — what survives when every carrier changes." },
               { n: "XXXIV", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "XXXV", id: "forceform", t: "The Law of Force and Form", d: "Form is force given memory. The founding proposition, given its reasons." },
+              { n: "XXXVI", id: "tides", t: "Etheric Tides", d: "When the field is receptive — rhythm, superposition, and the timing of formation." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
   ];
@@ -2976,6 +2977,123 @@ function ForceAndForm() {
             </p>
           </>
         )}
+      </div>
+    </div>
+  );
+}
+
+/**
+ * EthericTides — three nested cycles at different periods, read at one instant.
+ * The point is superposition: no single cycle gives the condition of a moment,
+ * and the composite is what the field actually offers. Move the reading line to
+ * see the same three rhythms reinforce, oppose, or complicate one another.
+ */
+function EthericTides() {
+  const [t, setT] = useState(0.18);
+  const X0 = 34, X1 = 372, W = X1 - X0;
+  const ROWS = [
+    { k: "Daily", p: 5.5, y: 62, note: "light and dark, waking and withdrawal",
+      names: ["Dawn — emergence and orientation", "Noon — definition and outward expression",
+              "Dusk — transition and release", "Night — withdrawal, recombination, gestation"] },
+    { k: "Lunar", p: 2, y: 132, note: "concealment, accumulation, visibility, recession",
+      names: ["Waxing — gathering", "Full — manifestation and exposure",
+              "Waning — separation and return", "Dark — latency and reconfiguration"] },
+    { k: "Seasonal", p: 0.75, y: 202, note: "the solar cycle embodied by an ecosystem",
+      names: ["Emergence — germination", "Fruition — expansion and yield",
+              "Decline — separation and storing", "Dormancy — latency"] },
+  ];
+  const AMP = 26;
+  const phaseAt = (p: number, u: number) => (u * p) % 1;
+  const yAt = (r: { p: number; y: number }, u: number) =>
+    r.y - AMP * Math.sin(2 * Math.PI * phaseAt(r.p, u));
+  const quarter = (f: number) => Math.min(3, Math.floor(f * 4));
+  // rising on the first half of the swing, receding on the second
+  const dir = (f: number) => (f < 0.25 ? "rising" : f < 0.5 ? "cresting" : f < 0.75 ? "receding" : "trough");
+
+  const path = (r: { p: number; y: number }) => {
+    let d = "";
+    for (let i = 0; i <= 220; i++) {
+      const u = i / 220;
+      d += `${i === 0 ? "M" : "L"}${(X0 + u * W).toFixed(1)},${yAt(r, u).toFixed(1)}`;
+    }
+    return d;
+  };
+  const states = ROWS.map((r) => dir(phaseAt(r.p, t)));
+  const rising = states.filter((x) => x === "rising" || x === "cresting").length;
+  const composite =
+    rising === 3 ? "All three gathering. The field offers least resistance to accumulation and impression."
+    : rising === 0 ? "All three receding or latent. Favourable to release, rest, concealment, and reconfiguration."
+    : rising === 2 ? "Two gathering against one receding. A workable but partial sympathy."
+    : "One gathering against two receding. Effort here runs against the larger movement.";
+
+  const move = (clientX: number, el: SVGSVGElement) => {
+    const b = el.getBoundingClientRect();
+    const u = ((clientX - b.left) / b.width) * (400 / 400);
+    setT(Math.max(0, Math.min(1, (u * 400 - X0) / W)));
+  };
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[420px]">
+        <svg viewBox="0 0 400 250" className="h-auto w-full" style={{ cursor: "ew-resize" }}
+             role="img" aria-labelledby="aoh-et-t"
+             onClick={(e) => move(e.clientX, e.currentTarget)}
+             onMouseMove={(e) => { if (e.buttons === 1) move(e.clientX, e.currentTarget); }}>
+          <title id="aoh-et-t">
+            Three cycles of different period — daily, lunar, seasonal — drawn together, with a
+            movable line reading all three at one instant.
+          </title>
+          {ROWS.map((r) => (
+            <g key={r.k}>
+              <line x1={X0} y1={r.y} x2={X1} y2={r.y} stroke="var(--gold)" strokeOpacity="0.14" strokeWidth="0.7" />
+              <path d={path(r)} fill="none" stroke="var(--gold)" strokeOpacity="0.6" strokeWidth="1.1" />
+              <text x={X0} y={r.y - AMP - 9} className="font-mono" fontSize="7" letterSpacing="1.3"
+                    fill="var(--muted-foreground)">{r.k.toUpperCase()}</text>
+            </g>
+          ))}
+          <line x1={X0 + t * W} y1="24" x2={X0 + t * W} y2="236" stroke="var(--gold)"
+                strokeOpacity="0.9" strokeWidth="1.2" />
+          {ROWS.map((r) => (
+            <circle key={r.k} cx={X0 + t * W} cy={yAt(r, t)} r="4.5" fill="var(--gold)" />
+          ))}
+          <text x="200" y="245" textAnchor="middle" className="font-mono" fontSize="6.6"
+                letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.85">
+            DRAG OR CLICK TO READ ANOTHER MOMENT
+          </text>
+        </svg>
+        <input
+          type="range" min={0} max={1} step={0.002} value={t} aria-label="Position in time"
+          onChange={(e) => setT(parseFloat(e.target.value))}
+          className="mt-3 w-full accent-[var(--gold)]"
+        />
+      </div>
+
+      <div className="min-h-[15rem]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          The composite at this instant
+        </p>
+        <div className="mt-4 space-y-px">
+          {ROWS.map((r, i) => (
+            <div key={r.k} className="grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
+              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">
+                {r.k}
+              </span>
+              <span className="text-sm leading-relaxed text-muted-foreground">
+                {r.names[quarter(phaseAt(r.p, t))]}
+                <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.12em] text-bone/45">
+                  {states[i]}
+                </span>
+              </span>
+            </div>
+          ))}
+        </div>
+        <p className="mt-6 font-serif text-lg leading-relaxed text-bone/85">{composite}</p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          No single cycle gives the condition of a moment. Each instant holds a composite — a
+          temporary tattvic chord sounded by several simultaneous rhythms — and none of it guarantees
+          an outcome. A tide alters what is easier or harder to begin, sustain, and stabilise. It is
+          closer to a change in atmospheric pressure than to a command.
+        </p>
       </div>
     </div>
   );
@@ -3935,6 +4053,7 @@ function Index() {
               { id: "books", label: "Books" },
               { id: "tradition", label: "Tradition" },
               { id: "forceform", label: "Force & Form" },
+              { id: "tides", label: "Tides" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
@@ -10838,6 +10957,245 @@ function Index() {
             <p className="mx-auto mt-14 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
               The birth of structure is not the defeat of force.{" "}
               <span className="italic text-gold">It is the moment force acquires memory.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tides" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-430} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXXVI · Etheric Tides
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Form is a standing achievement within <span className="italic text-gold">moving conditions</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              An Etheric Tide is a recurrent alteration in the receptivity, conductivity, coherence,
+              and dominant formative biases of Morphaithēr.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § XXXV gives the law by which force becomes form. It does not say{" "}
+            <span className="italic">when</span>. This is the missing account of temporal variation:
+            Morphaithēr names the living formative atmosphere, the tattvas name its qualitative
+            biases, and tides describe how those qualities change through time. The field cannot be
+            treated as equally receptive, coherent, or active at every moment.
+          </p>
+          <div className="mt-8 max-w-3xl border border-border p-5">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              A tide does not mechanically cause an event. It alters the conditions under which
+              events become easier or harder to initiate, sustain, or stabilise — closer to a change
+              in atmospheric pressure than to a command. It influences formation without eliminating
+              agency, resistance, material circumstance, or competing forces.
+            </p>
+          </div>
+
+          {/* ---- superposition ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Nested orders, read at one instant</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              These are not unrelated influences but nested temporal orders, always running at once,
+              their phases reinforcing or complicating one another. A waxing phase at dawn in a
+              season of emergence guarantees nothing — and it is a different formative atmosphere
+              from a waning phase at midnight in a season of decline.
+            </p>
+            <div className="mt-12">
+              <EthericTides />
+            </div>
+            <p className="mt-12 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Two cautions belong with that. The lunar cycle must not become a universal explanation
+              for every psychological fluctuation — it is one rhythmic layer among many, and its
+              relevance has to be established by correspondence and repeated observation rather than
+              assumed. And since the daily and seasonal cycles{" "}
+              <span className="italic">already are</span> solar-terrestrial relations, the solar tide
+              proper is reserved here for the qualitative solar current and for longer changes in
+              intensity and orientation, rather than counted three times over.
+            </p>
+          </div>
+
+          {/* ---- rhythmos ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Rhythmos</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                More than a regular beat. Patterned flow — the way movement acquires proportion,
+                interval, emphasis, and return.
+              </p>
+            </div>
+            <div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                A tide passes through recognisable phases, and each carries different formative
+                capacity. The rising phase favours accumulation and organisation. The crest maximises
+                expression and visibility. The receding phase favours separation, distribution, and
+                integration. The trough allows latency, dissolution, and reconfiguration.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-2">
+                {["Emergence", "Increase", "Crest", "Recession", "Trough", "Return"].map((x, i) => (
+                  <div key={x} className="flex items-center gap-2">
+                    <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{x}</span>
+                    <span className="font-mono text-xs text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                None of which should be labelled good or bad. A crest amplifies disorder as readily
+                as strength; a trough may weaken an operation, and may equally permit rest, release,
+                concealment, or renewal.{" "}
+                <span className="text-bone/90">What matters is the relation between the phase and
+                the intended work.</span>
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Which is what this adds to § XXXV. Coagulation and dissolution are not only spatial
+                transformations — they have timing. There are moments of thickening and moments of
+                loosening, moments when a pattern can be impressed and moments when an existing
+                pattern is more easily broken.
+              </p>
+              <p className="mt-6 font-serif text-xl italic leading-relaxed text-bone/85">
+                Rhythmos is the form taken by force in time.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- vocabulary ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Not every change is a tide
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The metaphor becomes useless if it absorbs every kind of movement, so the vocabulary
+              is kept distinct.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Wave · kyma", "A disturbance propagating through a medium, carrying pattern from one region to another without the medium travelling with it. A spoken name, an emotional shock, a rite, a collective panic, a sudden revelation."],
+                ["Cycle · periodos", "A completed circuit of alteration and return — though the returning condition is never identical, because the field retains something from the passage. Better imagined as a spiral than a closed circle."],
+                ["Circulation", "Redistribution through differentiated vessels, where what passes is transformed at each stage. Blood is altered throughout its circuit; so is a formative current crossing body, psyche, symbol, rite, and collective life."],
+                ["Tide", "A recurrent modulation produced by one or more cycles."],
+                ["Current", "A relatively sustained directional movement."],
+                ["Etheric weather", "The temporary local condition produced when tides, currents, waves, bodies, places, and events interact."]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              Which sorts the scale of things
+            </p>
+            <div className="mt-6 grid gap-x-10 gap-y-px sm:grid-cols-2">
+              {[["A single rite", "produces a wave"],
+                ["A rite regularly repeated", "establishes a tide"],
+                ["A consecrated institution", "maintains a current"],
+                ["All of it, meeting bodily and celestial cycles", "produces local etheric weather"]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[1fr] items-baseline gap-1 border-b border-border py-3 sm:grid-cols-[13rem_1fr] sm:gap-3">
+                  <span className="text-sm leading-relaxed text-bone/80">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              A stable form is not something untouched by the tide. It is something able to keep its
+              organisation while force passes through it.
+            </p>
+          </div>
+
+          {/* ---- planetary and ritual ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Windows of affinity, and rites that make their own</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Planetary tides are not simplistic rays compelling events or personalities. They are
+              large-scale periodic orders whose movements can correspond with recurring qualities of
+              formation — opening a <span className="text-bone/90">window of affinity</span> that may
+              strengthen resonance between an operation and a particular class of images, materials,
+              desires, intelligences, or activities. But affinity is not certainty, and the planetary
+              condition still meets the participants, the location, the bodily state, the symbolic
+              accuracy, the material preparation, and every other tide running at the time.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which is what makes electional timing intelligible rather than magical. Election does
+              not manufacture a result. It seeks a phase in which the larger field offers less
+              resistance, or greater sympathy, to the intended formation.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              And ritual runs in both directions. A rite receives an existing tide, and it also
+              generates a local one: breath, rhythm, chant, gesture, procession, light, scent,
+              repetition, and collective attention progressively alter the condition of the space,
+              producing the rite&rsquo;s own rising phase, crest, distribution, and closure. The
+              § XXVII sequence supplies temporal order, the diagram supplies spatial order,
+              consecration establishes the operative relation, and repetition entrains body, place,
+              symbol, and attention into a shared phase.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              The ritual body becomes an oscillator.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Repeated across months, years, or centuries, a rite can build formative inertia — a
+              reservoir, or the collective flywheel of § IX, which later participants enter rather
+              than create. It is why certain places and rites appear to carry an inherited momentum.
+              And it explains the failure case with new precision: a mechanical rite may go on
+              generating a tide after losing its original object, the accumulated movement then
+              serving institutional continuity, group identity, authority, anxiety, or an egregore.
+            </p>
+            <div className="mt-8 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-serif text-xl leading-relaxed text-bone/90">
+                Telestic inertia is{" "}
+                <span className="italic text-gold">rhythm continuing after purpose has departed.</span>
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                § XXVII named the condition; this says what is actually still moving in it.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- bodily tides ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">The body as receiver and generator</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The living body does not merely endure changes in the field. It interprets, transforms,
+              and retransmits them.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              {[["Breath", "The most immediate bridge between voluntary and involuntary life. Inhalation gathers, suspension holds, exhalation releases, and the empty pause permits renewal — which is why ritual breath can bring the vessel into phase with an intended operation."],
+                ["Pulse", "Concentration and distribution. Contraction gathers and propels; relaxation permits filling and return. Continuity produced through alternation rather than uninterrupted exertion."],
+                ["Sleep", "A daily withdrawal from outward formation. Not an absence of activity but a change in its direction and mode, as restoration, memory integration, and imaginal work come forward."],
+                ["Growth", "A slower formative wave — not constant expansion but a succession of accumulation, differentiation, consolidation, and rest."],
+                ["Healing", "Not a straight ascent from disorder to health but a passage through protection, breakdown, repair, remodelling, exertion, and rest. Metaphysically: the recovery of coherent circulation and adaptive rhythm."]].map(([a, b]) => (
+                <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-4 sm:grid-cols-[7rem_1fr] sm:gap-4">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/65">
+              That last complements biological and medical explanation. It does not replace it — the
+              same limit § XXIV sets on the Five Phases.
+            </p>
+            <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                Which makes the body the testing ground
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                A supposed tide should produce some coherent difference in receptivity, attention,
+                activity, symbolic experience, or material behaviour{" "}
+                <span className="text-bone/90">before</span> elaborate invisible explanations are
+                built around it. Records and repeated observation are what distinguish a genuine
+                rhythm from expectation, coincidence, or projection — and this is the one claim in
+                the section that anyone can check.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              The formative universe is not merely structured. It is{" "}
+              <span className="text-bone/90">rhythmically</span> structured.
+            </p>
+            <p className="mx-auto mt-10 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              Life persists because it can receive a tide without being dissolved by it, change phase
+              without losing identity, and turn recurring force into{" "}
+              <span className="italic text-gold">memory, growth, and renewed formation.</span>
             </p>
           </div>
         </div>
