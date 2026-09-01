@@ -836,7 +836,7 @@ function Index() {
             § 00·ii · The Doctrinal Spine
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
-            Seventeen <span className="italic text-gold">commitments</span>
+            Eighteen <span className="italic text-gold">commitments</span>
           </h2>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
             What follows is not a summary of the system but its load-bearing structure — the
@@ -864,6 +864,7 @@ function Index() {
               { n: "XV", t: "Coherence Exceeds Intensity", d: "A weaker force organized around a stable center accomplishes more than a stronger force internally divided. Contradiction produces friction and dissipation. But coherence alone is not goodness — a tumor is organized, an obsession is coherent. See § XVI: integral coherence preserves its relations with the greater systems it belongs to; parasitic coherence survives by consuming its host." },
               { n: "XVI", t: "Theurgy Is Alignment, Not Domination", d: "The highest operation is not forcing the cosmos to obey an isolated personality, but reorganizing the person into a vessel able to participate in a greater order." },
               { n: "XVII", t: "Symbols Are Maps of Functions", d: "Kabbalah, tattva doctrine, alchemy, and geometry describe reality from different angles. They integrate where their functions genuinely correspond — complementary instruments, not interchangeable labels." },
+              { n: "XVIII", t: "The Ground Is Not One of Its Terms", d: "A ground never appears as a member of the series it grounds. To count it among them is to make the undifferentiated already differentiated, and the category collapses. Root Ether is not a fifth ether; Akasha is not a fifth zodiacal element; the Dao is not Root Ether. One guard, wherever a source would otherwise be flattened into an item of what it sources." },
             ].map((k) => (
               <div
                 key={k.n}
@@ -1066,7 +1067,7 @@ function Index() {
           </div>
 
           {/* Reading key */}
-          <div className="mt-28 border-t border-border pt-12">
+          <div className="mt-20 border-t border-border pt-10">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
               Κύκλος · The Living Circuit
             </p>
@@ -1075,8 +1076,7 @@ function Index() {
             </p>
             <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Read downward — and read the gaps. Each ether is set out with its measure: deficiency
-              on one side, excess on the other, the named virtue between. Warmth’s measure is given last,
-              because it is the one the system had to wait for.
+              on one side, excess on the other, the named virtue between.
             </p>
           </div>
 
@@ -1212,13 +1212,13 @@ function Index() {
               },
             ].map((e, i) => (
               <div key={e.english}>
-                <article className="group border border-border p-6 transition-colors hover:border-gold/40 sm:p-10">
-                  <div className="grid gap-8 lg:grid-cols-[minmax(0,220px)_minmax(0,1fr)] lg:gap-12">
+                <article className="group border border-border p-5 transition-colors hover:border-gold/40 sm:p-7">
+                  <div className="grid gap-6 lg:grid-cols-[minmax(0,200px)_minmax(0,1fr)] lg:gap-10">
                     <div>
                       <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                         {e.n} · {e.english}
                       </p>
-                      <h3 className="mt-4 font-serif text-4xl leading-none text-bone sm:text-5xl">
+                      <h3 className="mt-3 font-serif text-3xl leading-none text-bone sm:text-4xl">
                         {e.greek}
                       </h3>
                       <p className="mt-3 font-serif text-lg italic text-gold/80">
@@ -1233,15 +1233,15 @@ function Index() {
                       <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                         {e.title}
                       </p>
-                      <p className="mt-5 font-serif text-lg leading-relaxed text-bone/85 sm:text-xl">
+                      <p className="mt-4 font-serif text-base leading-relaxed text-bone/85 sm:text-lg">
                         {e.fn}
                       </p>
                       {e.quote ? (
-                        <p className="mt-6 border-l border-gold/40 pl-6 font-serif text-lg italic leading-relaxed text-bone/90">
+                        <p className="mt-5 border-l border-gold/40 pl-5 font-serif text-base italic leading-relaxed text-bone/90 sm:text-lg">
                           “{e.quote}”
                         </p>
                       ) : null}
-                      <div className="mt-6 space-y-3">
+                      <div className="mt-5 space-y-2">
                         {e.lines.map((l) => (
                           <p key={l} className="text-sm leading-relaxed text-muted-foreground">
                             {l}
@@ -1253,7 +1253,7 @@ function Index() {
 
                   {/* Measure — deviation on either side of the named virtue */}
                   {e.virtue ? (
-                    <div className="mt-10 grid gap-6 sm:grid-cols-3 sm:gap-8">
+                    <div className="mt-8 grid gap-5 sm:grid-cols-3 sm:gap-6">
                       <div className="border-t border-border pt-5">
                         <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                           Ἔλλειψις · Deficiency
@@ -1280,28 +1280,17 @@ function Index() {
                         </p>
                       </div>
                     </div>
-                  ) : (
-                    <div className="mt-10 border-t border-dashed border-gold/30 pt-5">
-                      <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
-                        Μεσότης · Virtue — forthcoming
-                      </p>
-                      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                        This section does not name Warmth’s virtue, nor its excess or deficiency.
-                        That measure belongs to the treatment of Warmth itself. The slot is held
-                        open rather than filled.
-                      </p>
-                    </div>
-                  )}
+                  ) : null}
                 </article>
 
                 {i < 3 ? (
-                  <div className="flex flex-col items-center px-2 py-10 text-center">
-                    <span className="h-10 w-px bg-gradient-to-b from-transparent to-gold/50" />
+                  <div className="flex flex-col items-center px-2 py-7 text-center">
+                    <span className="h-7 w-px bg-gradient-to-b from-transparent to-gold/50" />
                     <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                       Διάστημα {["I", "II", "III"][i]} · {e.greek}{" "}
                       <span className="text-gold">→</span> {e.into.to}
                     </p>
-                    <p className="mt-4 max-w-xl font-serif text-lg italic leading-relaxed text-bone/85">
+                    <p className="mt-3 max-w-xl font-serif text-base italic leading-relaxed text-bone/85 sm:text-lg">
                       {e.into.passage}
                     </p>
                     <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
@@ -2382,9 +2371,8 @@ function Index() {
                 twenty-five ways.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Root Ether must not be counted as a fifth ether in that multiplication. To
-                multiply Root Ether by the twenty-five is to make the supposedly undifferentiated
-                root already differentiated. It is the common source, not one more term.
+                Root Ether is not counted as a fifth ether here — the common source, not one
+                more term. § 00·ii XVIII, applied to the ethers.
               </p>
               <p className="mt-6 border-l border-gold/40 pl-6 font-serif text-lg italic leading-relaxed text-bone/90">
                 Root Ether → four differentiated ethers × twenty-five tattvic configurations.
@@ -2461,7 +2449,7 @@ function Index() {
                   Akasha is the field in which the zodiacal qualities enter relation — visible
                   through the chart's total geometry, the intervals between planets, the opening
                   of possibility. Not absent from the zodiac: the containing field that lets the
-                  zodiacal forms communicate. The parallel to Root Ether is exact.
+                  zodiacal forms communicate. § 00·ii XVIII again, applied to the elements.
                 </p>
               </div>
               <div className="border border-border p-6">
@@ -2585,7 +2573,8 @@ function Index() {
               Keeping them apart protects Root Ether from being inflated into an absolute
               God-substance, while preserving the apophatic depth beyond it. Wuji likewise names
               the <em>absence of polarity</em>; Root Ether names the continuity through which
-              polarity can arise and become formative. They answer different questions.
+              polarity can arise. § 00·ii XVIII a third time — now guarding the whole architecture rather
+              than a series inside it.
             </p>
           </div>
 
