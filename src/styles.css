@@ -278,3 +278,32 @@ section div:has(> div > .aoh-bd) { padding-top: 8rem; }
 :is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por)) svg :is(text, tspan) {
   text-shadow: none;
 }
+
+/* Keyboard focus.
+   Every interactive control — 103 buttons and 81 figure nodes — was reachable by
+   tab and showed nothing at all, so a keyboard user moved through the whole
+   architecture blind. :focus-visible rather than :focus, so a mouse click does
+   not leave a ring behind. */
+:where(a, button, [role="button"], input, summary):focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* A <g> has no box of its own, so an outline round it can be loose or absent
+   depending on engine. Lift the shapes it contains as well, which is what the
+   eye actually follows. */
+svg g[role="button"]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+svg g[role="button"]:focus-visible :is(circle, rect, path, line, ellipse) {
+  stroke: var(--gold);
+  stroke-opacity: 1;
+}
+
+/* The range inputs carry their own thumb, which needs the ring too. */
+input[type="range"]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
