@@ -629,6 +629,7 @@ function Index() {
           </a>
           <div className="hidden shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] lg:flex xl:gap-6 xl:tracking-[0.25em]">
             {[
+              { id: "index", label: "Index" },
               { id: "terms", label: "Terms" },
               { id: "spine", label: "Spine" },
               { id: "descent", label: "Descent" },
@@ -744,6 +745,75 @@ function Index() {
           </div>
         </div>
       </header>
+
+      {/* INDEX */}
+      <section id="index" className="relative border-t border-border py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            Πίναξ · The Architecture in Order
+          </p>
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Twenty sections and two movements. The descent runs from Source to Form; the return
+            reads form back toward essence. What lies between is the apparatus by which that
+            passage is described.
+          </p>
+
+          <div className="mt-12 grid gap-x-12 gap-y-px lg:grid-cols-2">
+            {[
+              { n: "00", id: "doctrine", t: "Central Doctrine", d: "Form is frozen force. Force is liberated form." },
+              { n: "I", id: "terms", t: "The Five Terms", d: "Matter, Form, Force, Field, Centre — what the words mean." },
+              { n: "II", id: "spine", t: "The Doctrinal Spine", d: "Eighteen commitments the rest of the architecture depends upon." },
+              { n: "", id: "descent", t: "The Descent into Form", d: "ΠΡΌΟΔΟΣ · thirteen principles, Source through Matter.", movement: true },
+              { n: "III", id: "correspondence", t: "Layered Correspondence", d: "Aithēr → Tattva → Stoicheion → Morphē. They correspond; they are not identical." },
+              { n: "IV", id: "fourfold", t: "The Fourfold Field", d: "Warmth, Light, Tone, Life — the four ethers and the measure of each." },
+              { n: "V", id: "morphaither", t: "The Morphaithēr", d: "The living formative atmosphere. It inclines what arises; it does not compel it." },
+              { n: "", id: "return", t: "The Return through Reading", d: "ἘΠΙΣΤΡΟΦΉ · five principles, Trace through Transformation.", movement: true },
+              { n: "VI", id: "seed", t: "A Worked Example", d: "The seed taken as a complete metaphysical event." },
+              { n: "VII", id: "kabbalah", t: "Kabbalah", d: "Ein Sof, the Tree, the ten sefirot, the Four Worlds, the formative letters." },
+              { n: "VIII", id: "extended", t: "The Hidden Powers", d: "Eleven principles of the extended architecture, Polarity through Black Aether." },
+              { n: "IX", id: "flywheel", t: "The Psychic Flywheel", d: "Repetition into momentum; reservoirs as attractors; the Inner Sun." },
+              { n: "X", id: "triad", t: "The Alchemical Triad", d: "Sulfur, Mercury, Salt — and solve without coagula." },
+              { n: "XI", id: "retentive", t: "The Retentive Depth", d: "The Crypt and the Ossuary: how the world inherits itself." },
+              { n: "XII", id: "laws", t: "The Laws of Formation", d: "How forms receive influence, endure, distort, cross thresholds, and return." },
+              { n: "XIII", id: "astrology", t: "Celestial Anatomy", d: "Astrology as the clock of qualitative time — kairos, not chronos." },
+              { n: "XIV", id: "subtattva", t: "The Compound Qualities", d: "The twenty-five sub-tattvas; every letter spoken through every other." },
+              { n: "XV", id: "dao", t: "The Dynamics of Return", d: "Circulation, polarity, emptiness, wu wei, and the law of reversal." },
+              { n: "XVI", id: "ignisophia", t: "Ignisophia", d: "Fire made wise — the chariot of the Inner Sun." },
+              { n: "XVII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
+              { n: "XVIII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
+              { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
+            ].map((x) => (
+              <a
+                key={x.id}
+                href={`#${x.id}`}
+                className="group grid grid-cols-[3.25rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40"
+              >
+                <span
+                  className={`font-mono text-[10px] uppercase tracking-[0.2em] ${
+                    x.movement ? "text-gold/40" : "text-gold-dim"
+                  }`}
+                >
+                  {x.movement ? "·" : `§ ${x.n}`}
+                </span>
+                <span className="min-w-0">
+                  <span
+                    className={`block font-serif text-lg transition-colors group-hover:text-gold ${
+                      x.movement ? "italic text-bone/80" : "text-bone"
+                    }`}
+                  >
+                    {x.t}
+                  </span>
+                  <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
+                    {x.d}
+                  </span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* OPENING DOCTRINE */}
       <section id="doctrine" className="relative border-t border-border py-32">
@@ -975,7 +1045,7 @@ function Index() {
       </section>
 
       {/* LAYERED CORRESPONDENCE */}
-      <section className="relative border-t border-border py-32">
+      <section id="correspondence" className="relative border-t border-border py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -1504,7 +1574,7 @@ function Index() {
       </section>
 
       {/* SEED EXAMPLE */}
-      <section className="relative border-t border-border py-32">
+      <section id="seed" className="relative border-t border-border py-32">
         <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -3141,7 +3211,7 @@ function Index() {
       </section>
 
       {/* LINEAGE */}
-      <section className="relative border-t border-border py-32">
+      <section id="lineage" className="relative border-t border-border py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
