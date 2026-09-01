@@ -4564,6 +4564,22 @@ function Index() {
             a conjunction without a collapse.
           </p>
 
+          {/* ---- the axiom, held between the two images ---- */}
+          <div className="my-32">
+            <div className="mx-auto h-px w-24 bg-gold/50" />
+            <p className="mx-auto mt-14 max-w-3xl text-center font-serif text-3xl leading-tight text-bone/90 sm:text-4xl">
+              A symbol is a broken thing.
+            </p>
+            <p className="mx-auto mt-6 max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/85 sm:text-3xl">
+              That is not its defect —{" "}
+              <span className="italic text-gold">it is how it works.</span>
+            </p>
+            <p className="mx-auto mt-10 max-w-xl text-center text-base leading-relaxed text-muted-foreground">
+              Meaning is held in neither half. It occurs in the fitting.
+            </p>
+            <div className="mx-auto mt-14 h-px w-24 bg-gold/50" />
+          </div>
+
           {/* ---- symbolon ---- */}
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/tally.webp" opacity={0.7} position="center 45%" scrim={0.2} />
