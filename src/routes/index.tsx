@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
 
@@ -188,8 +188,21 @@ function Backdrop({
   /** Cover the whole section even on narrow viewports. Only the hero wants this. */
   fill?: boolean;
 }) {
+  // `-z-10` escapes to the root stacking context unless the containing section
+  // isolates. Relying on an author to remember `isolate` has failed four times in
+  // this file — every recurrence made a backdrop silently invisible. So the
+  // component guarantees it instead of trusting the call site. The classes stay on
+  // the sections too, which keeps the guarantee free of any first-paint flash.
+  const host = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const parent = host.current?.parentElement;
+    if (parent && getComputedStyle(parent).isolation !== "isolate") {
+      parent.style.isolation = "isolate";
+    }
+  }, []);
+
   return (
-    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
+    <div ref={host} className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
       {/*
         Sources are all 16:9. On wide viewports a section is broad enough that
         object-cover crops gently. On tablet and below the same section is many
@@ -2324,6 +2337,288 @@ function DaimonicChain() {
   );
 }
 
+/**
+ * RiteSequence — the bounded enactment. Five stages inside a threshold, each
+ * feeding the object at the centre. Switching to displaced object changes NOTHING
+ * about the sequence, which is the whole claim: the form survives because
+ * something is still being fed by it, even when that something is no longer what
+ * the participants name.
+ */
+function RiteSequence() {
+  const [displaced, setDisplaced] = useState(false);
+  const [sel, setSel] = useState<number | null>(null);
+  const ST = [
+    { k: "Purification", d: "prepares what invocation addresses" },
+    { k: "Invocation", d: "establishes what offering joins" },
+    { k: "Offering", d: "joins what participation receives" },
+    { k: "Participation", d: "receives what sealing preserves" },
+    { k: "Sealing", d: "preserves what the passage produced" },
+  ];
+  const SUB = ["institutional continuity", "collective identity", "authority",
+               "anxiety management", "the preservation of an egregore"];
+  const X = (i: number) => 42 + i * 74;
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[400px]">
+        <style>{`
+          .aoh-rt-f { stroke-dasharray: 3 7; animation: aoh-rt-feed 2.9s linear infinite; }
+          @keyframes aoh-rt-feed { to { stroke-dashoffset: -20 } }
+          .aoh-rt-n { cursor: pointer; }
+          @media (prefers-reduced-motion: reduce) { .aoh-rt-f { animation: none } }
+        `}</style>
+        <svg viewBox="0 0 400 270" className="h-auto w-full" role="img" aria-labelledby="aoh-rt-t">
+          <title id="aoh-rt-t">
+            Five ordered stages inside a threshold, each feeding a single object at the centre. The
+            sequence is unchanged when the object is displaced.
+          </title>
+
+          {/* the threshold — a bounded world, with a gate on the left where it is crossed */}
+          <path d="M28,26 L28,14 M28,42 L28,150 L372,150 L372,14 L28,14"
+                fill="none" stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="1" />
+          <text x="24" y="37" textAnchor="end" className="font-mono" fontSize="6.5"
+                letterSpacing="0.8" fill="var(--muted-foreground)"
+                transform="rotate(-90 24 37)">THRESHOLD</text>
+
+          {ST.map((st, i) => {
+            const on = sel === i;
+            return (
+              <g key={st.k} className="aoh-rt-n" onClick={() => setSel(on ? null : i)}
+                 role="button" tabIndex={0} aria-pressed={on} aria-label={st.k}
+                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx={X(i)} cy="58" r={on ? 15 : 12} fill="var(--void)" stroke="var(--gold)"
+                        strokeOpacity={on ? 1 : 0.6} strokeWidth={on ? 1.8 : 1} />
+                <text x={X(i)} y="62" textAnchor="middle" className="font-mono" fontSize="9"
+                      fill="var(--gold)" fillOpacity={on ? 1 : 0.75}>{i + 1}</text>
+                <text x={X(i)} y="92" textAnchor="middle" className="font-mono" fontSize="6.4"
+                      letterSpacing="0.7" fill={on ? "var(--gold)" : "var(--muted-foreground)"}>
+                  {st.k.toUpperCase()}
+                </text>
+                {i < 4 && (
+                  <line x1={X(i) + 14} y1="58" x2={X(i + 1) - 14} y2="58" stroke="var(--gold)"
+                        strokeOpacity="0.45" strokeWidth="1" />
+                )}
+                {/* every stage feeds the object */}
+                <line className="aoh-rt-f" x1={X(i)} y1="104" x2="200" y2="196"
+                      stroke={displaced ? "var(--bone)" : "var(--gold)"}
+                      strokeOpacity={displaced ? 0.5 : 0.45} strokeWidth="0.9" />
+              </g>
+            );
+          })}
+
+          <ellipse cx="200" cy="212" rx="96" ry="26" fill="var(--void)"
+                   stroke={displaced ? "var(--bone)" : "var(--gold)"}
+                   strokeOpacity={displaced ? 0.75 : 0.9}
+                   strokeDasharray={displaced ? "5 4" : "none"} strokeWidth="1.4" />
+          <text x="200" y="209" textAnchor="middle" className="font-mono" fontSize="7"
+                letterSpacing="1.3" fill={displaced ? "var(--bone)" : "var(--gold)"}>
+            {displaced ? "OPERATIVE OBJECT" : "DECLARED OBJECT"}
+          </text>
+          <text x="200" y="223" textAnchor="middle" className="font-mono" fontSize="6.2"
+                letterSpacing="0.9" fill="var(--muted-foreground)">
+            {displaced ? "NO LONGER WHAT IS NAMED" : "WHAT THE PARTICIPANTS NAME"}
+          </text>
+          <text x="200" y="258" textAnchor="middle" className="font-mono" fontSize="6.6"
+                letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.8">
+            THE SEQUENCE IS IDENTICAL IN BOTH STATES
+          </text>
+        </svg>
+
+        <div className="mt-3 flex justify-center">
+          <button onClick={() => setDisplaced((v) => !v)}
+            className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
+            {displaced ? "restore the declared object" : "displace the object"}
+          </button>
+        </div>
+      </div>
+
+      <div className="min-h-[15rem]">
+        {sel !== null ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {String(sel + 1).padStart(2, "0")} · {ST[sel].k}
+            </p>
+            <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">
+              {ST[sel].k} {ST[sel].d}.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Sequence creates dependency — which is why order here is neither decorative nor
+              universally fixed. It expresses the causal grammar of this particular operation, and
+              altering it may weaken the rite, reverse its movement, or produce a different operation
+              altogether.
+            </p>
+          </>
+        ) : displaced ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+              Telestic inertia
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              A rite that loses its declared object does not thereby become objectless. Its operative
+              object may simply change, silently, while every gesture stays in place. What it comes
+              to serve instead:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {SUB.map((x) => (
+                <span key={x} className="border border-border px-2.5 py-1 text-xs text-bone/70">{x}</span>
+              ))}
+            </div>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              The form survives because something is still being fed by it — even though that
+              something is no longer what the participants name.
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              The threshold establishes a temporary world of operation. Crossing it changes what
+              gestures, words, materials, and persons are permitted to mean and to do — and inside
+              that boundary the five stages are not a list but a dependency: each prepares the
+              conditions the next requires.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/60">
+              Select a stage for its dependency. Or displace the object, and watch the sequence
+              refuse to change.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Carriers — tradition as a redundant constellation. Every carrier can be lost,
+ * and the pattern stays triangulable well past the loss of any single one, which
+ * is the claim: no carrier contains the whole, and convergence is what survives
+ * Transductive Loss. Strike enough of them out and recognition degrades by
+ * degrees rather than switching off.
+ */
+function Carriers() {
+  const C = ["Texts", "Gestures", "Rhythms", "Prohibitions", "Stories",
+             "Exemplars", "Offices", "Material forms", "Interpretive habits", "Embodied practice"];
+  const [lost, setLost] = useState<number[]>([]);
+  const [mode, setMode] = useState(0);
+  const MODES = [
+    { k: "Living", d: "Transmits formative capacity. It still produces recognition, transformation, competent practitioners, and meaningful adaptations." },
+    { k: "Preserved", d: "Retains morphology, but no longer reliably reproduces the capacity that gave the morphology its meaning." },
+    { k: "Parasitic", d: "Remains fully operational, while its operative end has shifted toward preserving the collective form by consuming the vitality, freedom, or resources of its participants." },
+  ];
+  const held = C.length - lost.length;
+  const state = held >= 8 ? "RECOGNISED" : held >= 5 ? "TRIANGULABLE" : held >= 3 ? "ATTENUATED" : held >= 1 ? "MORPHOLOGY ONLY" : "UNRECOVERABLE";
+  const CX = 170, CY = 168;
+  const pt = (i: number, r: number) => {
+    const a = (-90 + i * 36) * (Math.PI / 180);
+    return [CX + r * Math.cos(a), CY + r * Math.sin(a)];
+  };
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[360px]">
+        <svg viewBox="0 0 340 360" className="h-auto w-full" role="img" aria-labelledby="aoh-cr-t">
+          <title id="aoh-cr-t">
+            Ten carriers arranged around a central pattern, each connected to it. Carriers can be
+            struck out; the pattern degrades by degrees rather than failing at once.
+          </title>
+          {C.map((_, i) => {
+            const [x, y] = pt(i, 118);
+            const gone = lost.includes(i);
+            return (
+              <line key={i} x1={CX} y1={CY} x2={x} y2={y} stroke="var(--gold)"
+                    strokeOpacity={gone ? 0.07 : 0.4}
+                    strokeDasharray={gone ? "2 6" : "none"} strokeWidth="0.9" />
+            );
+          })}
+          <circle cx={CX} cy={CY} r="42" fill="var(--void)" stroke="var(--gold)"
+                  strokeOpacity={held >= 5 ? 0.9 : held >= 3 ? 0.45 : 0.2}
+                  strokeWidth={held >= 5 ? 1.6 : 1}
+                  strokeDasharray={held >= 5 ? "none" : "4 5"} />
+          <text x={CX} y={CY - 4} textAnchor="middle" className="font-mono" fontSize="7"
+                letterSpacing="1" fill="var(--muted-foreground)">PATTERN</text>
+          <text x={CX} y={CY + 9} textAnchor="middle" className="font-mono" fontSize="6.6"
+                letterSpacing="0.9"
+                fill={held >= 5 ? "var(--gold)" : "var(--bone)"} fillOpacity={held >= 5 ? 1 : 0.6}>
+            {state}
+          </text>
+          <text x={CX} y={CY + 24} textAnchor="middle" className="font-mono" fontSize="6.2"
+                fill="var(--muted-foreground)">{held} / {C.length} HELD</text>
+
+          {C.map((c, i) => {
+            const [x, y] = pt(i, 118);
+            const gone = lost.includes(i);
+            const right = x > CX + 4, mid = Math.abs(x - CX) <= 4;
+            return (
+              <g key={c} style={{ cursor: "pointer" }}
+                 onClick={() => setLost((l) => l.includes(i) ? l.filter((v) => v !== i) : [...l, i])}
+                 role="button" tabIndex={0} aria-pressed={gone} aria-label={`${c}${gone ? " (lost)" : ""}`}
+                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setLost((l) => l.includes(i) ? l.filter((v) => v !== i) : [...l, i]); } }}>
+                <circle cx={x} cy={y} r="6" fill="var(--void)" stroke="var(--gold)"
+                        strokeOpacity={gone ? 0.2 : 0.85} strokeWidth="1" />
+                {gone && (
+                  <>
+                    <line x1={x - 4} y1={y - 4} x2={x + 4} y2={y + 4} stroke="var(--bone)" strokeOpacity="0.5" strokeWidth="0.9" />
+                    <line x1={x - 4} y1={y + 4} x2={x + 4} y2={y - 4} stroke="var(--bone)" strokeOpacity="0.5" strokeWidth="0.9" />
+                  </>
+                )}
+                <text x={mid ? x : right ? x + 11 : x - 11} y={mid ? (y < CY ? y - 12 : y + 17) : y + 3}
+                      textAnchor={mid ? "middle" : right ? "start" : "end"}
+                      className="font-mono" fontSize="6.6" letterSpacing="0.5"
+                      fill={gone ? "var(--muted-foreground)" : "var(--bone)"}
+                      opacity={gone ? 0.4 : 0.9}>{c.toUpperCase()}</text>
+              </g>
+            );
+          })}
+          <text x={CX} y="348" textAnchor="middle" className="font-mono" fontSize="6.6"
+                letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.8">
+            STRIKE OUT CARRIERS — NO ONE OF THEM HOLDS THE WHOLE
+          </text>
+        </svg>
+        {lost.length > 0 && (
+          <div className="mt-3 flex justify-center">
+            <button onClick={() => setLost([])}
+              className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
+              restore all carriers
+            </button>
+          </div>
+        )}
+      </div>
+
+      <div className="min-h-[15rem]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          Three states a tradition can be in
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {MODES.map((m, i) => (
+            <button key={m.k} onClick={() => setMode(i)} aria-pressed={mode === i}
+              className={`border px-3 py-1.5 text-xs transition-colors ${
+                mode === i ? (i === 2 ? "border-bone/60 text-bone" : "border-gold text-gold")
+                           : "border-border text-muted-foreground hover:border-gold/60"}`}>
+              {m.k}
+            </button>
+          ))}
+        </div>
+        <p className="mt-5 text-base leading-relaxed text-muted-foreground">{MODES[mode].d}</p>
+        {mode === 2 && (
+          <p className="mt-4 text-sm leading-relaxed text-bone/65">
+            Which means a parasitic tradition is not simply dead. It is a living collective mechanism
+            organised around the survival of an emptied or displaced telos — § XXVIII&rsquo;s
+            institutions preserving the rule long after losing the value.
+          </p>
+        )}
+        <p className="mt-8 text-sm leading-relaxed text-bone/60">
+          {lost.length === 0
+            ? "Every carrier is intact. Strike some out to see how much can be lost before recognition fails."
+            : held >= 5
+              ? `${lost.length} lost, and the pattern is still triangulable from what converges on it.`
+              : held >= 1
+                ? `${lost.length} lost. What remains carries shape without reliably carrying the capacity to read it.`
+                : "Nothing converges. Words and forms may survive in an archive; the perception that reads them does not."}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -3270,11 +3565,13 @@ function Index() {
               { id: "organs", label: "Organs" },
               { id: "image", label: "Image" },
               { id: "symbol", label: "Symbol" },
+              { id: "ritual", label: "Ritual" },
               { id: "taxonomy", label: "Forces" },
               { id: "mediation", label: "Mediation" },
               { id: "theurgy", label: "Theurgy" },
               { id: "daimons", label: "Daimons" },
               { id: "books", label: "Books" },
+              { id: "tradition", label: "Tradition" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
@@ -3422,13 +3719,15 @@ function Index() {
               { n: "XXIV", id: "organs", t: "Organs, Elements, Five Phases", d: "The interior ecology: seats of transformation, and healing as formative range." },
               { n: "XXV", id: "image", t: "Image and Imagination", d: "The middle country: how force becomes appearance, and appearance carries force." },
               { n: "XXVI", id: "symbol", t: "Symbol", d: "The knot where worlds meet: the tally, and what completes it." },
-              { n: "XXVII", id: "taxonomy", t: "Taxonomy of Forces", d: "Six modes of causation — and why they are not six equivalent substances." },
-              { n: "XXVIII", id: "mediation", t: "Vertical Chains of Mediation", d: "How unity enters multiplicity without disappearing — and returns without erasing it." },
-              { n: "XXIX", id: "theurgy", t: "Greek Metaphysics and Theurgy", d: "Procession, return, and the disciplined construction of conditions for participation." },
-              { n: "XXX", id: "daimons", t: "Daimons and Mediating Orders", d: "Where universal powers become individual paths — fate, character, and the personal daimōn." },
-              { n: "XXXI", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXVII", id: "ritual", t: "Ritual", d: "The geometry of consecrated time — threshold, sequence, and the object that silently changes." },
+              { n: "XXVIII", id: "taxonomy", t: "Taxonomy of Forces", d: "Six modes of causation — and why they are not six equivalent substances." },
+              { n: "XXIX", id: "mediation", t: "Vertical Chains of Mediation", d: "How unity enters multiplicity without disappearing — and returns without erasing it." },
+              { n: "XXX", id: "theurgy", t: "Greek Metaphysics and Theurgy", d: "Procession, return, and the disciplined construction of conditions for participation." },
+              { n: "XXXI", id: "daimons", t: "Daimons and Mediating Orders", d: "Where universal powers become individual paths — fate, character, and the personal daimōn." },
+              { n: "XXXII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXXII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXXIII", id: "tradition", t: "Tradition", d: "The long memory of form — what survives when every carrier changes." },
+              { n: "XXXIV", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -8096,13 +8395,13 @@ function Index() {
               With the convention in place, the relations among these can be stated exactly.
             </p>
             <div className="mt-10 max-w-4xl">
-              {[["A symbolon", "joins different levels through a recognisable correspondence"],
-                ["A synthema", "provides a particular operative key within that relationship"],
-                ["A diagram", "organises multiple symbola into a visible grammar"],
-                ["A ritual", "activates that grammar through time, movement, material, and attention"],
-                ["A tradition", "preserves the memory required to recognise and transmit the pattern"],
-                ["A living vessel", "receives, interprets, and re-embodies it"],
-                ["The Morphaithēr", "is the formative atmosphere altered by their combined participation"]].map(([a, b], i) => (
+              {[["Symbolon", "establishes a bond of recognition between divided orders"],
+                ["Synthema", "acts as an operative signature, token, or key"],
+                ["Diagram", "arranges relations in space"],
+                ["Ritual", "unfolds those relations through time — § XXVII"],
+                ["Living vessel", "embodies and metabolises the operation"],
+                ["Morphaithēr", "provides the formative atmosphere through which it moves"],
+                ["Tradition", "preserves the capacity to recognise and regenerate it across generations — § XXXIII"]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-3 sm:grid-cols-[2rem_10rem_1fr]">
                   <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-gold">{a}</span>
@@ -8118,7 +8417,11 @@ function Index() {
               establishes an attractor, and its boundaries determine what belongs to the field it
               represents. A ritual moves through that diagram even when no chart is present — the
               body becomes its geometry, the sequence its path, the words its Tone, the intention its
-              Sulfur.
+              Sulfur — though that Sulfur is not reducible to the officiant&rsquo;s conscious
+              wishes. It may be carried by the rite&rsquo;s inherited structure, its office, its
+              traditional interpretation, or its actual operative object. Otherwise an inherited rite
+              performed faithfully but imperfectly understood would have no directing principle at
+              all.
             </p>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
               And a symbol that has accumulated sustained attention, memory, emotion, and use can
@@ -8152,12 +8455,171 @@ function Index() {
         </div>
       </section>
 
+      <section id="ritual" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-370} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXVII · Ritual
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The geometry of <span className="italic text-gold">consecrated time</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Ritual is a bounded and ordered enactment through which a symbolic pattern is made
+              operative in time, matter, attention, and the living body.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § XXVI left the ladder at the point where a diagram arranges relations in space. Ritual
+            is where those relations unfold through time — and it is the rung the architecture has
+            been leaning on all along without ever defining.
+          </p>
+
+          <div className="mt-16">
+            <RiteSequence />
+          </div>
+
+          {/* ---- habit and rite ---- */}
+          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">Repetition is not the criterion</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Both a habit and a rite are repeated embodied sequences. The difference is not
+                frequency.
+              </p>
+            </div>
+            <div>
+              <div className="grid gap-10 md:grid-cols-2">
+                <div className="border-t border-border pt-5">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                    Habit
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    Repeats in order to conserve behaviour, economising attention until the action
+                    becomes automatic.
+                  </p>
+                </div>
+                <div className="border-t border-gold/50 pt-5">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Rite</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    Orders action in relation to a threshold, an object, and a transformation —
+                    gathering attention, differentiating the moment from ordinary time, and directing
+                    the participant through a deliberate passage.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-8 font-serif text-xl italic leading-relaxed text-bone/85">
+                A rite may be performed only once. Repetition therefore cannot be its essence.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Which also settles what the threshold is for. It establishes a temporary world of
+                operation, and crossing it changes what gestures, words, materials, and persons are
+                permitted to mean and to do. Inside that boundary the sequence is not a list but a
+                dependency: purification prepares what invocation addresses, invocation establishes
+                what offering joins, participation receives what sealing preserves. Order expresses
+                the causal grammar of the particular operation — neither decorative nor universally
+                fixed, and alterable only at the cost of weakening the rite, reversing its movement,
+                or producing a different operation entirely.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- consecration ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">Consecration and its release</h3>
+            <div className="mt-8 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-serif text-xl leading-relaxed text-bone/90">
+                Consecration withdraws a vessel from unrestricted use and binds it to a particular
+                name, pattern, office, or end.
+              </p>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Defined that way — relationally, rather than as a vague making-sacred — it immediately
+              requires a counterpart. If consecration establishes a bond, something must be able to
+              conclude it.
+            </p>
+            <div className="mt-10 grid gap-10 md:grid-cols-2">
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Deconsecration
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  The deliberate release of the bond, and the return of the vessel to ordinary
+                  circulation. It concludes the relation properly.
+                </p>
+              </div>
+              <div className="border-t border-border pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Desecration
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  The violation of a relation still standing. Not the same act, and not the same
+                  outcome.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The distinction earns its place because vessels, places, and gestures retain formative
+              inertia — § XII&rsquo;s term — after the work they were bound to has ended. A bond left
+              unreleased does not simply lapse. It goes on operating without an operator.
+            </p>
+          </div>
+
+          {/* ---- telestic inertia ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">When the object silently changes</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              This is the characteristic failure, and it is subtler than a rite going hollow. A rite
+              that loses its declared object does not thereby become objectless. Its{" "}
+              <span className="text-bone/90">operative</span> object may simply change — toward
+              institutional continuity, collective identity, authority, the management of anxiety, or
+              the preservation of an egregore in the sense § XXVIII gives it. The form survives
+              because something is still being fed by it, even though that something is no longer
+              what the participants name.
+            </p>
+            <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                Telestic inertia
+              </p>
+              <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
+                The continuation of an operative sequence after its original telos has disappeared,
+                been forgotten, or been replaced.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                A sharper term than calling such a rite merely mechanical. Mechanical suggests
+                something has stopped; telestic inertia names the fact that it has not stopped at all,
+                and that the question worth asking is not whether the rite still works but{" "}
+                <span className="italic">what it now works upon</span>.
+              </p>
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which is why the intention supplying a rite&rsquo;s Sulfur cannot be reduced to the
+              officiant&rsquo;s conscious wishes. It may be carried in the inherited structure, the
+              office, the traditional interpretation, or the actual operative object — otherwise an
+              inherited rite performed faithfully but imperfectly understood would possess no
+              directing principle at all, which is plainly false. It is also why the discernment
+              §&nbsp;XXV asks of images belongs here unchanged: see the rite, see through it to the
+              pattern, and see what it is doing to those who enact it.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              Ritual transmits pattern through ordered time{" "}
+              <span className="italic text-gold">within an enactment</span> — where § XXXIII
+              transmits it through historical time, across generations.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="taxonomy" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/fieldlines.webp" opacity={0.62} position="center 60%" scrim={0.15} />
         <SectionGlyph delay={-290} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XXVII · Taxonomy of Forces
+            § XXVIII · Taxonomy of Forces
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Six modes of causation in the <span className="italic text-gold">living field</span>
@@ -8544,7 +9006,7 @@ function Index() {
         <SectionGlyph delay={-310} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XXVIII · Vertical Chains of Mediation
+            § XXIX · Vertical Chains of Mediation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             The descent of virtue and the <span className="italic text-gold">return of consciousness</span>
@@ -8667,7 +9129,7 @@ function Index() {
               being may fulfil a formative office; an archetypal function may present itself through
               personality. The discipline is to{" "}
               <span className="text-bone/90">label the register being used</span> rather than claim
-              premature certainty — which is the same demand the force profile of § XXVII makes of
+              premature certainty — which is the same demand the force profile of § XXVIII makes of
               every claim it admits.
             </p>
             <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
@@ -8901,7 +9363,7 @@ function Index() {
         <SectionGlyph delay={-330} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XXIX · Greek Metaphysics and Theurgic Engineering
+            § XXX · Greek Metaphysics and Theurgic Engineering
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Plotinus and the architecture of <span className="italic text-gold">reality</span>
@@ -8923,7 +9385,7 @@ function Index() {
             <span className="text-bone/90">the Greek hierarchy supplies an ontological architecture,
             while the ethers describe formative operations occurring within manifested existence.</span>{" "}
             They are answers to different questions, and collapsing them would put the medium of
-            manifestation in the place of its source — the same error § XXVIII guards against when it
+            manifestation in the place of its source — the same error § XXIX guards against when it
             separates the transcendent from Root Ether.
           </p>
 
@@ -9237,7 +9699,7 @@ function Index() {
         <SectionGlyph delay={-350} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XXX · Daimons, Interfaces, and Mediating Orders
+            § XXXI · Daimons, Interfaces, and Mediating Orders
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Iamblichus and the <span className="italic text-gold">populated cosmos</span>
@@ -9586,7 +10048,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXXI · The Series
+                § XXXII · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -9674,13 +10136,142 @@ function Index() {
       </section>
 
       {/* LINEAGE */}
+      <section id="tradition" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-390} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXXIII · Tradition
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The long memory of <span className="italic text-gold">form</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Tradition is a distributed, transgenerational vessel through which a pattern preserves
+              sufficient identity to be recognised, enacted, and regenerated despite inevitable
+              changes of carrier.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            § XXVII closed the rite in ordered time, within a single enactment. Tradition is the same
+            problem across historical time, between generations — and it makes one addition that
+            decides everything else.
+          </p>
+          <p className="mt-8 max-w-3xl font-serif text-2xl leading-relaxed text-bone/90">
+            Tradition does not merely transmit a pattern.{" "}
+            <span className="italic text-gold">It transmits the capacity to recognise the pattern.</span>
+          </p>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            An archive preserves words, diagrams, and instructions perfectly well. What it cannot do
+            is produce the perception required to interpret them. A tradition carries a grammar{" "}
+            <span className="italic">and</span> the formation of readers capable of reading it — which
+            is why the thing transmitted is never a single well-kept object.
+          </p>
+
+          <div className="mt-16">
+            <Carriers />
+          </div>
+
+          <p className="mt-16 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            What is handed on is a redundant constellation: texts, gestures, rhythms, prohibitions,
+            stories, exemplars, offices, material forms, interpretive habits, embodied practices. No
+            single carrier contains the whole. Their convergence is what lets later participants
+            triangulate the generative pattern despite the Transductive Loss § XVII describes — and
+            it is why the loss of any one carrier is survivable while the loss of convergence is not.
+          </p>
+
+          {/* ---- fidelity ---- */}
+          <div className="mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">What fidelity actually requires</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Not what it is usually taken to require.
+              </p>
+            </div>
+            <div>
+              <div className="border-l-2 border-gold pl-6">
+                <p className="font-serif text-xl leading-relaxed text-bone/90">
+                  Faithful transmission preserves the generative constraints of a form — not
+                  necessarily every historical appearance it has taken.
+                </p>
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Which inverts the usual assumption. A tradition that reproduces its surfaces exactly
+                while losing their formative function may be{" "}
+                <span className="text-bone/90">less</span> faithful than one that changes its
+                expression in order to preserve the operation underneath. Every transmission is some
+                degree of transformation; there is no option that avoids this. The only real question
+                is which of four things the transformation does.
+              </p>
+              <div className="mt-8 grid gap-px sm:grid-cols-2">
+                {[["Preserves", "the generative constraint survives intact"],
+                  ["Clarifies", "the constraint is made more legible than it was"],
+                  ["Distorts", "the constraint survives, deformed"],
+                  ["Replaces", "a different constraint now occupies the form"]].map(([a, b]) => (
+                  <div key={a} className="border-t border-border py-4 pr-5">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Note that the fourth is exactly § XXVII&rsquo;s telestic inertia, running at the scale
+                of generations rather than of a single rite. The form persists; the constraint inside
+                it has been swapped.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- initiation ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">What initiation is for</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Once tradition is defined as transmitting a capacity rather than a content, initiation
+              stops being a matter of clearance. It is not permission to possess information. It
+              prepares the receiver to participate in a field of recognition — coordinating
+              perception, body, obligation, vocabulary, and communal acknowledgement so that what is
+              transmitted can be received as something other than external data.
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              This is deliberately not a claim that outsiders perceive nothing. Someone outside a
+              tradition may study it, imitate it, and perceive genuine aspects of it. What initiation
+              additionally addresses is embodied calibration, reciprocal recognition, responsibility,
+              and authorised function.
+            </p>
+            <p className="mt-6 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              It does not create truth. It may create the vessel capable of bearing a particular form
+              of it.
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which is § XXIX&rsquo;s Law of the Vessel again — that a vessel receives according to its
+              form, capacity, purity, and correspondence — stated where the vessel being prepared is a
+              person entering a lineage.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+              Ritual transmits pattern through ordered time within an enactment. Tradition transmits
+              pattern through historical time across generations. Together they close the ladder:
+              ritual explains how form becomes passage, and tradition explains how passage becomes
+              inheritance.
+            </p>
+            <p className="mx-auto mt-10 max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              What follows in § XXXIV is not this. That is the{" "}
+              <span className="italic text-gold">bibliography of sources</span>; this was the
+              metaphysics of their survival.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="lineage" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/fold.webp" opacity={0.54} position="center 50%" scrim={0.28} />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXXII · Lineage
+                § XXXIV · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
