@@ -1891,6 +1891,120 @@ function Index() {
         </div>
       </section>
 
+      {/* THE LAWS OF FORMATION */}
+      <section id="laws" className="relative border-t border-border py-32">
+        <SectionGlyph delay={-70} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XVI · The Laws of Formation
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            How forms <span className="italic text-gold">receive</span>, endure, distort, and{" "}
+            <span className="italic text-gold">return</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The preceding sections describe how forms arise. These describe what happens
+            afterward — how a form takes in influence, holds itself together, goes wrong,
+            crosses a threshold, and gives its contents back to the field.
+          </p>
+
+          {[
+            {
+              group: "Boundary and Exchange",
+              items: [
+                { t: "Selective Permeability", d: "Every enduring form requires a boundary, but no living boundary can be absolutely closed. Complete openness dissolves; complete closure starves. Identity exists through regulated exchange — a vessel is not a container but a gatekeeping intelligence.", note: "Salt establishes the boundary; Mercury governs what crosses; Sulfur supplies the pressure." },
+                { t: "Transduction", d: "Influence rarely passes between levels without changing its mode of expression. A principle becomes an image, the image an emotion, the emotion a posture, the posture an act. A subtle pattern does not travel intact like a package — it is re-expressed by each medium it passes through.", note: "Which is why higher influence is so often distorted: the fault may lie in the vessel's translation, not the source." },
+                { t: "Formative Metabolism", d: "Every sustained form must receive, transform, retain, and release. A mind metabolizes perception and memory; a culture metabolizes events into law and story; a ritual space metabolizes what is repeatedly enacted within it.", note: "A fear complex has intake, transformation, self-maintenance, and output. It behaves like an organism because structurally it is one." },
+              ],
+            },
+            {
+              group: "Endurance and Change",
+              items: [
+                { t: "Metastable Form", d: "Forms are not simply stable or unstable. Many endure for long periods while remaining open to reorganization — held in place by feedback that continually restores the familiar arrangement, yet displaceable by sufficient disruption.", note: "Form is not static substance. It is an actively maintained settlement among competing forces." },
+                { t: "Accumulation and Threshold", d: "Change accumulates gradually and appears suddenly. Water warms and then boils; tension builds along a fault; a practice seems inert for months and then reorganizes perception — not because the last act was extraordinary, but because the structure had reached readiness.", note: "Transformation is discontinuous in appearance, continuous in preparation." },
+                { t: "Formative Inertia", d: "Water flowing repeatedly over land cuts a channel, and later water follows it though the original water is gone. Habits, institutions, traumas, and buildings cut comparable channels.", note: "Memory is not only retained content. It is inherited curvature in the field of becoming." },
+                { t: "Irreversibility", d: "Dissolution does not restore what existed before. Ashes hold a book's matter but not its organization; a reconciled relationship is not one that was never damaged. Solve is not a clean reversal of coagula.", note: "Possibility becomes actuality; actuality leaves consequences; consequences modify what is possible next." },
+              ],
+            },
+            {
+              group: "Structure and Relation",
+              items: [
+                { t: "The Ontological Gradient", d: "Between pure possibility and completed actuality lie degrees: abstract possibility, qualitative tendency, latent disposition, emerging configuration, actualized event, stabilized form, residual influence after dissolution.", note: "This is what \u201csubtle\u201d means — not a faint object hidden in space, but direction and structure without full embodiment." },
+                { t: "Nested Fields, Relative Centers", d: "Every form is a whole to its parts and a part within a greater whole. No center is wholly isolated; none is merely illusory. Each holds autonomy in proportion to its capacity to maintain organization.", note: "Causation runs both ways: parts sustain wholes, wholes constrain parts. Neither level suffices alone." },
+                { t: "Resonance as Selection", d: "Resonance is not a universal solvent for every resemblance. Its coherent function is selective amplification — it does not create the pattern, it strengthens what the vessel can already receive. Genuine operation requires structural compatibility, a channel of coupling, sufficient duration, and receptivity.", note: "This is what keeps correspondence from becoming arbitrary." },
+              ],
+            },
+            {
+              group: "Cost and Shadow",
+              items: [
+                { t: "The Cost of Form", d: "To actualize one form is to exclude others. Carved stone can no longer become every figure it might have been; a word gains precision by surrendering meanings. Every act of formation entails sacrifice.", note: "Not tragic — without exclusion nothing definite could appear. But it explains why manifestation leaves remainder." },
+                { t: "The Shadow of Selection", d: "Because every form selects, every formation casts a shadow: whatever the established order cannot presently hold. It is not automatically evil. A disciplined identity may exclude spontaneity; a peaceful community may suppress rather than reconcile conflict.", note: "The excluded does not vanish. It gathers at the boundary and returns through dream, symptom, compulsion, or disruption." },
+              ],
+            },
+            {
+              group: "Measure and Aim",
+              items: [
+                { t: "Integral and Parasitic Coherence", d: "Coherence alone is not goodness. A tumor is organized. An obsession is coherent. A destructive ideology coordinates thousands around a stable center. Local coherence organizes a limited structure at its host's expense; integral coherence strengthens the form while preserving its viable relations with the greater systems it belongs to.", note: "A healthy form shows selective permeability, adaptability, generativity, proportion, and the capacity to receive correction." },
+                { t: "Proportional Integration", d: "No quality perfects a form by being maximized. Too much stability is rigidity; too much Mercury, dispersion; too much Sulfur, inflammation; too much openness, dissolution. No tattva is superior — each is constructive or destructive by proportion, placement, and timing.", note: "The perfected vessel is not one holding only higher qualities, but one where differentiated powers hold their proper measures." },
+                { t: "Telos as Attractor", d: "Purpose need not mean predetermination. A seed contains no miniature tree, yet its development is not directionless — present activity is organized in relation to a possible mature form. The future does not reach backward; an apprehended possibility shapes present selection.", note: "Theurgy becomes the deliberate installation of a higher attractor within the human field." },
+              ],
+            },
+            {
+              group: "Operation",
+              items: [
+                { t: "Symbolic Causation", d: "A symbol is neither decoration nor supernatural machine. It reorganizes perception by compressing many relations into one apprehensible form — a flag coordinating emotion, a ring altering the meaning of behavior, a sacred image reordering attention, posture, memory, and intention at once.", note: "Ritual is engineered symbolic causation. Its power depends on the depth of integration among its factors, not on correct recitation." },
+                { t: "Temporal Architecture", d: "Formation depends not only on which forces act but when and in what order. The same intervention heals at one stage and disrupts at another. Every form has rhythms, phases, windows of receptivity, moments of crisis, intervals of consolidation.", note: "This grounds kairos — the qualitative fitness of a moment. Timing is part of structure." },
+              ],
+            },
+          ].map((cluster) => (
+            <div key={cluster.group} className="mt-16">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                {cluster.group}
+              </p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {cluster.items.map((x) => (
+                  <div
+                    key={x.t}
+                    className="group border border-border p-5 transition-colors hover:border-gold/40"
+                  >
+                    <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                    <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">
+                      {x.note}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          {/* The safeguard */}
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The Safeguard · No Vessel Exhausts the Field
+            </p>
+            <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              No form, symbol, doctrine, institution, or consciousness can completely contain
+              the field from which it arises.
+            </p>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Every vessel reveals something through its particular structure while excluding
+              something else — and this applies to metaphysical systems. Root Ether is not the
+              Absolute; it is the first intelligible medium within the architecture. The tattvas
+              do not exhaust all possible qualities; they supply a grammar of formative
+              tendencies. The ethers do not divide reality into compartments; they name
+              distinguishable functions within a continuous process.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-bone/80">
+              This architecture presents itself as a disciplined symbolic anatomy of formation,
+              not as a claim to exhaust the mystery of reality. The principle of inexhaustibility
+              makes the system stronger, because it allows precision without pretending to
+              totality.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* THE SEVEN BOOKS */}
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
