@@ -179,6 +179,7 @@ function Backdrop({
   fill = false,
   scrim = 0.4,
   portrait = false,
+  edgeFade = 13,
 }: {
   src: string;
   opacity?: number;
@@ -187,6 +188,10 @@ function Backdrop({
    *  portrait backdrop is a side panel matching the source aspect instead —
    *  uncropped, faded into the void along its inner edge. */
   portrait?: boolean;
+  /** How far the left and right edges dissolve into the void, as a percentage of
+   *  width. Without it a full-bleed band ends in a hard vertical cut wherever the
+   *  source has content at its frame edge. 0 keeps the edges sharp. */
+  edgeFade?: number;
   /** Void wash over the image. Bright sources need it to stay legible; dark,
    *  high-contrast sources are only flattened by it, so they take less. */
   scrim?: number;
@@ -237,8 +242,14 @@ function Backdrop({
           className="aoh-bd-scrim absolute inset-0"
           style={{
             background: portrait
-              ? "linear-gradient(to right, var(--void) 0px, transparent 42%), linear-gradient(to bottom, transparent 60%, var(--void) 100%)"
-              : "linear-gradient(to bottom, var(--void) 0px, transparent var(--bd-fade-top, 130px), transparent calc(100% - var(--bd-fade, 130px)), var(--void) 100%)",
+              ? "linear-gradient(to right, var(--void) 0px, transparent 42%), linear-gradient(to bottom, transparent 4%, transparent 60%, var(--void) 100%)"
+              : [
+                  edgeFade > 0 &&
+                    `linear-gradient(to right, var(--void) 0%, transparent ${edgeFade}%, transparent ${100 - edgeFade}%, var(--void) 100%)`,
+                  "linear-gradient(to bottom, var(--void) 0px, transparent var(--bd-fade-top, 130px), transparent calc(100% - var(--bd-fade, 130px)), var(--void) 100%)",
+                ]
+                  .filter(Boolean)
+                  .join(", "),
           }}
         />
       </div>
@@ -9516,7 +9527,7 @@ function Index() {
 
           {/* ---- intermediary ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/filterstack.webp" opacity={0.6} position="center 50%" scrim={0.16} portrait />
+            <Backdrop src="/bg/filterstack.webp" opacity={0.47} position="center 50%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">Intermediary — the Mercurial category</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not a sixth substance inserted between spirit and matter. Intermediary names any
@@ -12081,7 +12092,7 @@ function Index() {
       </section>
 
       <section id="unified" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/crater.webp" opacity={0.56} position="center 50%" scrim={0.05} />
+        <Backdrop src="/bg/crater.webp" opacity={0.5} position="center 50%" scrim={0.05} />
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             The Unified Formula
@@ -12149,7 +12160,7 @@ function Index() {
 
       {/* FINAL FORMULA */}
       <section id="formula" className="relative isolate overflow-hidden border-t border-border py-40">
-        <Backdrop src="/bg/crystal.webp" opacity={0.6} position="center 62%" scrim={0.15} />
+        <Backdrop src="/bg/crystal.webp" opacity={0.56} position="center 62%" scrim={0.15} />
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <svg
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-slow-spin opacity-[0.18]"
