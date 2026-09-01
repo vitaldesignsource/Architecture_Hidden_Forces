@@ -1503,6 +1503,114 @@ function PhaseOrgans() {
   );
 }
 
+/**
+ * ImaginalBridge — the six stages between an unrepresented force and an
+ * embodied response. The bridge runs both ways, so the flow markers and the
+ * transition text reverse with direction rather than being redrawn.
+ */
+function ImaginalBridge() {
+  const [up, setUp] = useState(false);
+  const [open, setOpen] = useState<number | null>(2);
+
+  const S = [
+    { k: "Hidden force", f: "An initially unrepresented tendency or modulation",
+      m: "Not yet anything the soul can picture. It has direction, but no appearance." },
+    { k: "Felt atmosphere", f: "Its affective, rhythmic, or bodily reception",
+      m: "Warmth, pressure, attraction, unease, rhythm, a pull toward or away. The body registers it before the mind can name it." },
+    { k: "Image", f: "Its first legible inward configuration",
+      m: "Landscape, colour, face, animal, geometry, sound, movement, a dramatic situation. Not the first event — a contraction or a shift of attention may precede it — but the first point at which the modulation begins to appear as something." },
+    { k: "Symbol", f: "An image stabilised across meanings and contexts",
+      m: "The image holds still long enough to be recognised again, by others and in other settings. Salt has begun its work." },
+    { k: "Diagram or ritual form", f: "A communicable and repeatable symbolic vessel",
+      m: "Compressed relational reasoning: hierarchy, polarity, sequence, recursion, circulation made external and repeatable." },
+    { k: "Embodiment", f: "The reorganisation of attention, conduct, and environment",
+      m: "And because conduct alters the vessel and its Morphaithēr, it alters which images the vessel will be capable of receiving next. The bridge closes into a circuit." },
+  ];
+  const DOWN = [
+    "received as warmth, pressure, rhythm, unease",
+    "atmosphere finds its first legible configuration",
+    "the image stabilises across meanings and contexts",
+    "the symbol takes communicable, repeatable form",
+    "form reorganises attention, conduct, and environment",
+  ];
+  const UP = [
+    "feeling orients awareness toward a more encompassing pattern",
+    "the image stirs feeling",
+    "the symbol awakens an image",
+    "a physical form awakens the symbol it carries",
+    "conduct returns to the form that shaped it",
+  ];
+
+  return (
+    <div>
+      <style>{`
+        .aoh-ib-dot { animation: aoh-ib-fall 2.6s linear infinite; }
+        .aoh-ib-up .aoh-ib-dot { animation-direction: reverse; }
+        @keyframes aoh-ib-fall { from { top: 0; opacity: 0 } 15%,85% { opacity: 1 } to { top: 100%; opacity: 0 } }
+        @media (prefers-reduced-motion: reduce) { .aoh-ib-dot { animation: none; top: 50%; } }
+      `}</style>
+
+      <div className="flex items-center justify-between gap-4 border-b border-border pb-4">
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          {up ? "Ascent · symbol toward pattern" : "Descent · force toward action"}
+        </p>
+        <button
+          onClick={() => setUp((v) => !v)}
+          className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold"
+        >
+          reverse ↑↓
+        </button>
+      </div>
+
+      <div className={`mt-6 ${up ? "aoh-ib-up" : ""} ${up ? "flex flex-col-reverse" : ""}`}>
+        {S.map((st, i) => {
+          const on = open === i;
+          const conn = up ? UP[i - 1] : DOWN[i];
+          return (
+            <div key={st.k} className={up ? "flex flex-col-reverse" : ""}>
+              <div>
+                <button
+                  onClick={() => setOpen(on ? null : i)}
+                  aria-expanded={on}
+                  className={`flex w-full items-baseline gap-4 border-l-2 py-3 pl-4 text-left transition-colors ${
+                    on ? "border-gold" : "border-border hover:border-gold/50"
+                  }`}
+                >
+                  <span className="font-mono text-[10px] text-gold-dim">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className={`font-serif text-lg ${on ? "text-gold" : "text-bone/85"}`}>
+                    {st.k}
+                  </span>
+                  <span className="ml-auto hidden text-right text-xs leading-snug text-muted-foreground sm:block sm:max-w-[19rem]">
+                    {st.f}
+                  </span>
+                </button>
+                {on && (
+                  <p className="aoh-pop border-l-2 border-gold/30 py-2 pl-[3.4rem] pr-4 text-sm leading-relaxed text-muted-foreground">
+                    <span className="sm:hidden">{st.f}. </span>
+                    {st.m}
+                  </p>
+                )}
+              </div>
+              {conn !== undefined && (
+                <div className="relative ml-[0.4rem] flex items-center gap-3 py-1 pl-[3rem]">
+                  <span className="absolute left-[0.1rem] top-0 h-full w-px bg-border" aria-hidden />
+                  <span
+                    className="aoh-ib-dot absolute left-[-0.05rem] h-[3px] w-[3px] rounded-full bg-gold"
+                    aria-hidden
+                  />
+                  <span className="text-[11px] leading-snug text-bone/45">{conn}</span>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -2447,6 +2555,7 @@ function Index() {
               { id: "treasures", label: "Treasures" },
               { id: "axis", label: "Axis" },
               { id: "organs", label: "Organs" },
+              { id: "image", label: "Image" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -2592,9 +2701,10 @@ function Index() {
               { n: "XXII", id: "treasures", t: "Jing, Qi, Shen", d: "Vitality stored, circulating, and becoming luminous." },
               { n: "XXIII", id: "axis", t: "Head, Heart, and Hara", d: "The human axis: pattern seen, weighed, and given substance." },
               { n: "XXIV", id: "organs", t: "Organs, Elements, Five Phases", d: "The interior ecology: seats of transformation, and healing as formative range." },
-              { n: "XXV", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XXV", id: "image", t: "Image and Imagination", d: "The middle country: how force becomes appearance, and appearance carries force." },
+              { n: "XXVI", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XXVI", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XXVII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -6569,12 +6679,327 @@ function Index() {
         </div>
       </section>
 
+      <section id="image" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-250} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XXV · Image and Imagination
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The interior chamber of <span className="italic text-gold">form</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Image and imagination occupy the middle country of this system. They stand between
+            forces not yet clearly representable and symbols that have acquired stable, communicable
+            form. A hidden force does not ordinarily enter consciousness naked — it is received
+            through the particular constitution of the living vessel, felt first as warmth, pressure,
+            attraction, unease, rhythm, atmosphere, or directional impulse. Imagination then gives
+            that modulation an inward appearance.
+          </p>
+          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Which makes imagination neither a passive screen nor a sovereign creator. It is a
+            <span className="text-bone/90"> Mercurial organ of transduction</span>, translating
+            between field and psyche, sensation and meaning, memory and possibility, spirit and
+            embodiment.
+          </p>
+
+          <div className="mt-20">
+            <h3 className="font-serif text-2xl leading-tight">The imaginal bridge</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Corbin used <span className="italic">imaginal</span> to distinguish an intermediary
+              order of meaningful form from anything dismissed as merely imaginary. This system can
+              adopt the term while keeping its epistemic restraint: the imaginal is the domain where
+              forces become appearances and appearances become capable of carrying force. It can be
+              treated as experientially real without assuming that every imaginal figure possesses an
+              independently existing personality. And the bridge runs both ways.
+            </p>
+            <div className="mt-10 max-w-4xl">
+              <ImaginalBridge />
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              This is symbolic causation. A symbol acts by organising attention, memory, emotion,
+              expectation, bodily posture, interpersonal behaviour, and the surrounding Morphaithēr.
+              Its action does not require imagining it as a battery containing some measurable occult
+              substance. Warmth charges the symbol; Light gives it intelligible form; Tone coordinates
+              its correspondences; Life integrates it into an enduring pattern of participation.
+              Sulfur supplies its central intention, Mercury carries it between media and levels, and
+              Salt gives it a stable image, material, name, proportion, or ritual form.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Which makes symbols powerful but not automatically beneficial. Repeated images become
+              attractors around which thought, emotion, and behaviour organise, contributing momentum
+              to the flywheel of § IX. A solar image can gather courage, clarity, and purpose. It can
+              equally become an image of superiority and self-inflation if the Heart and the Hara do
+              not correct it. Ignisophia is itself an imaginal machine in exactly this sense — the
+              Chariot, the wheels, the axis, the gyroscope, and the Inner Sun are not literal
+              mechanisms but coordinated images that make otherwise invisible relationships
+              perceptible.
+            </p>
+            <p className="mt-8 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/85">
+              The image is successful when it enables the pattern to be inhabited.
+            </p>
+          </div>
+
+          {/* ---- image as first legible configuration ---- */}
+          <div className="mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <h3 className="font-serif text-2xl leading-tight">
+                The soul&rsquo;s first reception of hidden form
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                The soul, functionally: the image-bearing, affective, mediating dimension of the
+                living vessel. Spirit supplies luminous orientation, the body supplies substance and
+                limitation, and the soul receives, translates, remembers, desires, and imagines
+                between them.
+              </p>
+            </div>
+            <div>
+              <p className="font-serif text-2xl leading-relaxed text-bone/90">
+                The soul does not photograph hidden form.{" "}
+                <span className="italic text-gold">It gives hidden form a vessel.</span>
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                That distinction prevents two opposite errors — treating every image as arbitrary
+                fantasy, and treating every vivid image as infallible disclosure of another world. An
+                image may be meaningful without being literal. It may faithfully preserve the
+                relationships inside a pattern while radically changing its visible appearance.
+              </p>
+              <div className="mt-8 border-l-2 border-gold/50 pl-6">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  A dream of a flooded house need not predict a flood. It may still preserve the
+                  actual topology of an experience: containment has failed, a boundary has been
+                  crossed, something formerly held outside is entering an interior chamber. The image
+                  is structurally truthful without being a factual report.
+                </p>
+              </div>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                The four ethers describe how modulation becomes image. Warmth gives it intensity,
+                urgency, and emotional charge. Light gives it contour, contrast, direction, and
+                intelligibility. Tone arranges its internal proportions, repetitions, and sequences.
+                Life joins it to memory, identity, purpose, and the organism as a whole.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                The tattvas give it atmosphere: Akasha as openness, depth, silence, encompassing
+                void; Vayu as movement, branching paths, flight, fragmentation; Tejas as brilliance,
+                sharp edges, revelation, conflict; Apas as reflection, fluidity, merging, gestation;
+                Prithivi as weight, architecture, stone, boundary, durable form. And the sub-tattvas
+                explain the subtler differences — Tejas modified by Apas appears as fire beneath
+                water, or transformation occurring inside an emotional vessel, while Apas modified by
+                Tejas appears as water heating, receptivity acquiring a penetrating intensity. The
+                same symbolic materials carry different vectors depending on dominance and sequence.
+              </p>
+              <p className="mt-8 font-serif text-xl italic leading-relaxed text-bone/85">
+                An image is a temporary psychic coagulum — fluid meaning held still long enough to be
+                encountered.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- eikon / phantasia ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Eik&#333;n, phantasia, and inner appearance
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              An <span className="italic">eik&#333;n</span> is neither identical to its source nor
+              wholly disconnected from it. It reveals through resemblance — and because every
+              resemblance is selective, it also conceals. A sacred image of the Sun is not the
+              astronomical Sun, nor the planetary virtue of Sol, nor the Inner Sun, nor divine
+              intelligence itself. Yet it may gather all of them into a single visible vessel. The
+              image participates in a pattern without exhausting it.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              <span className="italic">Phantasia</span> is the activity through which something
+              becomes inwardly apparent; a <span className="italic">phantasma</span> is a particular
+              appearance presented through it. Aristotle distinguishes imagination from both sensation
+              and discursive judgement while making it indispensable to thought — in{" "}
+              <span className="italic">De Anima</span> III, the soul does not think without an image.
+              That gives imagination a precise position here:
+            </p>
+            <div className="mt-8 grid gap-px sm:grid-cols-5">
+              {[["Sensation", "supplies contact"], ["Phantasia", "gives contact an inward appearance"],
+                ["Logos", "interprets and articulates it"], ["Desire", "assigns attraction or aversion"],
+                ["The Hara", "prepares an embodied response"]].map(([a, b]) => (
+                <div key={a} className="border-t border-border py-4 pr-4">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              So inner appearance is already an interpretation. Memory, expectation, temperament,
+              bodily state, culture, desire, and the surrounding Morphaithēr all take part in
+              determining what form the appearance takes. Plato&rsquo;s{" "}
+              <span className="italic">Sophist</span> separates images that preserve the proportions
+              of their models from appearances that distort those proportions to satisfy a particular
+              point of view — which becomes, here, the distinction between the eikonic and the
+              phantasmatic.
+            </p>
+            <div className="mt-10 grid gap-8 md:grid-cols-2">
+              <div className="border-t border-gold/50 pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Eikonic</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Preserves the important relationships inside the pattern, even when its visual
+                  content is entirely symbolic.
+                </p>
+              </div>
+              <div className="border-t border-border pt-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Phantasmatic
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Alters the pattern to serve fear, desire, vanity, ideology, or the expectations of
+                  the observer.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              This does not make phantasia deceptive. Phantasia is the necessary organ of appearance;
+              the question is only whether the appearance preserves the proportions of what it
+              mediates. And that fidelity is not photographic resemblance but{" "}
+              <span className="text-bone/90">relational fidelity</span> — does the image accurately
+              express hierarchy, pressure, movement, conflict, attraction, distance, repetition,
+              transformation? A serpent, a tower, an ocean, or a crown may be visually unlike the
+              underlying condition while faithfully presenting its internal relationships.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Discernment is therefore threefold, as in § XXIII. The Head examines coherence and
+              alternative interpretations. The Heart asks what relationships and values the image
+              encourages. The Hara registers its embodied consequences. A compelling image that
+              produces grandiosity, compulsive fear, dissociation, or loss of proportion should not
+              be trusted merely because it is vivid.
+            </p>
+          </div>
+
+          {/* ---- four modes ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Dream, vision, memory, symbolic perception
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Four ways the image-bearing soul encounters patterns beyond ordinary literal awareness.
+            </p>
+            <div className="mt-12 space-y-12">
+              {[
+                { t: "Dream, as nocturnal alchemy",
+                  b: "Dream loosens the dominance of immediate sensory reality, so memory, bodily sensation, unresolved emotion, anticipation, and imagination can combine more freely. It becomes an interior laboratory in which fixed identities are dissolved, displaced, recombined, personified, and tested. Its images may rise from recent sensation, bodily state, unfinished psychological process, creative anticipation, shared archetypal pattern, or what this system leaves open as genuinely transpersonal encounter.",
+                  p: "These should not be forced into a single explanation. A dream can be psychologically generated and spiritually meaningful at once. Its origin may stay uncertain while its formative consequences are perfectly clear." },
+                { t: "Vision, as concentrated inner appearance",
+                  b: "An image or imaginal sequence with unusual autonomy, coherence, clarity, or presence — arising in contemplation, ritual, illness, exhaustion, hypnagogia, prayer, or altered consciousness. But intensity is not proof of metaphysical rank. A vision is evaluated by its proportions and its fruits: does it clarify or confuse, increase responsible agency or demand unquestioning submission, deepen virtue or inflate identity, survive critical examination without requiring the destruction of every alternative reading?",
+                  p: "A psychologically generated vision can convey profound truth, and a seemingly transcendent one can still be misunderstood by its recipient. Reception and interpretation are separate operations." },
+                { t: "Memory, as reconstituted form",
+                  b: "The Crypt of Primordial Memory holds no perfect interior photographs. It retains formative consequences, pathways, associations, emotional contours, dispositions. Memory is the present vessel's reconstruction of what the past has made possible — so an old memory-image may change without becoming meaningless. The event is not necessarily changing; the present organisation of the vessel is changing what can be perceived within it.",
+                  p: "Healing can reveal dimensions of an earlier experience that the former self lacked the capacity to receive. Memory is not merely retrospective — what is remembered, how it is pictured, and where it sits in the person's symbolic world all shape what can happen next." },
+                { t: "Symbolic perception, as disciplined correspondence",
+                  b: "An event can hold more than one level of meaning. A door is a physical object, a social boundary, a psychological threshold, a ritual gate, and an image of transition. But symbolic perception must not decay into indiscriminate pattern projection: the existence of correspondence does not mean everything confirms whatever reading the observer prefers. A strong interpretation clarifies multiple details rather than resting on one accidental resemblance, stays open to correction, increases proportion and agency rather than fear and self-importance, can be considered on bodily, biographical, relational, cultural, and metaphysical levels, and produces coherent consequences without demanding certainty.",
+                  p: "A true symbol opens meaning while preserving mystery. A delusive interpretation closes meaning by insisting it has explained everything." },
+              ].map((m) => (
+                <div key={m.t} className="grid gap-6 lg:grid-cols-[1fr_2fr]">
+                  <p className="font-serif text-xl leading-tight text-bone/90">{m.t}</p>
+                  <div>
+                    <p className="text-base leading-relaxed text-muted-foreground">{m.b}</p>
+                    <p className="mt-4 border-l-2 border-gold/40 pl-5 text-base leading-relaxed text-bone/75">
+                      {m.p}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ---- cartography ---- */}
+          <div className="mt-28 border-t border-border pt-16">
+            <h3 className="font-serif text-2xl leading-tight">
+              Sacred art, diagrams, and esoteric cartography
+            </h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Sacred art is not simply art depicting religious subjects. It is art built as an
+              organised vessel of attention, in which proportion, orientation, material, colour,
+              rhythm, gesture, number, and placement collaborate to produce a particular mode of
+              encounter. A single sacred image may work at once as an eik&#333;n revealing a higher
+              pattern through likeness, a gate that changes the observer&rsquo;s mode of attention, a
+              mnemonic vessel preserving doctrine, a field-organiser inside a ritual Morphaithēr, a
+              contemplative mirror, and a symbolic body through which a community participates in
+              shared meaning.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A diagram does something related but distinct. It does not portray how metaphysical
+              realities look; it shows how principles relate, externalising hierarchy, polarity,
+              sequence, recursion, circulation, correspondence, and transformation. An esoteric
+              diagram is better understood as{" "}
+              <span className="text-bone/90">compressed relational reasoning</span> than as a picture
+              of invisible geography. The Tree of Life is not a photograph of the cosmos. A chakra
+              chart is not an anatomical scan. A planetary seal is not a visible piece of a planet. A
+              tattvic glyph is not the tattva. Each selects particular relationships and makes them
+              available for contemplation and operation — which is exactly what every diagram on this
+              page is doing, and exactly what none of them should be mistaken for.
+            </p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              These layers must therefore be held together without being collapsed. Five tattvas are
+              not five phases merely because both systems contain five members. Seven planets are not
+              automatically seven chakras. Four ethers are not renamed classical elements.
+              <span className="text-bone/90"> Correspondence must preserve difference as well as
+              resemblance.</span> Talismanic traditions understood something similar in practice:
+              Agrippa treats celestial figures and characters as stellar virtues appearing through
+              plants, stones, animals, and the human microcosm — no single component producing the
+              effect. Image, material, timing, operator, intention, ritual environment, and receptive
+              vessel form a temporary ecology. The talisman is less a container filled with celestial
+              energy than a coordinated point of convergence.
+            </p>
+
+            <p className="mt-14 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              Five rules for any map in this architecture
+            </p>
+            <div className="mt-6 max-w-4xl">
+              {[["Every map declares its scale",
+                 "A psychological map must not silently become a cosmological claim."],
+                ["Lines must have meanings",
+                 "A line may indicate emanation, opposition, circulation, analogy, sequence, or governance. These are not interchangeable."],
+                ["Direction and order are preserved",
+                 "Apas–Tejas is not Tejas–Apas, just as ascent is not descent."],
+                ["No correspondence erases the vessel",
+                 "The same force is translated differently by a planet, a plant, an organ, an image, a person, or a rite."],
+                ["No map exhausts the field",
+                 "Every successful diagram reveals a pattern by excluding other possible views."]].map(([a, b], i) => (
+                <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-4 sm:grid-cols-[2rem_14rem_1fr]">
+                  <span className="font-mono text-[10px] text-gold-dim">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-sm leading-relaxed text-gold sm:text-[13px]">{a}</span>
+                  <span className="col-start-2 text-sm leading-relaxed text-muted-foreground sm:col-start-3">
+                    {b}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Sacred art and esoteric diagrams are forms of selective permeability. They admit
+              particular relationships into perception while filtering others out. Their boundaries
+              are what make contemplation possible — and their boundaries must never be mistaken for
+              the boundary of reality itself. The deepest function of esoteric art is not to decorate
+              a system or prove its doctrines. It is to make hidden relationships available to
+              perception, contemplation, memory, and embodiment.
+            </p>
+          </div>
+
+          <div className="mt-24 border-t border-gold/30 pt-12">
+            <p className="mx-auto max-w-2xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+              Force becomes image. Image becomes symbol. Symbol becomes orientation. Orientation
+              becomes action. Action reshapes the living vessel —{" "}
+              <span className="italic text-gold">
+                and the transformed vessel becomes capable of receiving new images.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXV · The Series
+                § XXVI · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -6667,7 +7092,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XXVI · Lineage
+                § XXVII · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
