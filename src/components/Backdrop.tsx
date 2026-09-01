@@ -59,7 +59,7 @@ export function Backdrop({
       */}
       <div
         className={
-          fill ? "absolute inset-0"
+          fill ? "aoh-bd-fill absolute inset-0"
                : portrait ? "aoh-bd-por absolute top-0 right-0"
                           : "aoh-bd absolute inset-x-0 top-0"
         }
@@ -74,20 +74,14 @@ export function Backdrop({
           style={{ objectPosition: position }}
         />
         <div className="absolute inset-0 bg-void" style={{ opacity: scrim }} />
-        <div
-          className="aoh-bd-scrim absolute inset-0"
-          style={{
-            background: portrait
-              ? "linear-gradient(to right, var(--void) 0px, transparent 42%), linear-gradient(to bottom, transparent 4%, transparent 60%, var(--void) 100%)"
-              : [
-                  edgeFade > 0 &&
-                    `linear-gradient(to right, var(--void) 0%, transparent ${edgeFade}%, transparent ${100 - edgeFade}%, var(--void) 100%)`,
-                  "linear-gradient(to bottom, var(--void) 0px, transparent var(--bd-fade-top, 130px), transparent calc(100% - var(--bd-fade, 130px)), var(--void) 100%)",
-                ]
-                  .filter(Boolean)
-                  .join(", "),
-          }}
-        />
+        {edgeFade > 0 && !portrait && !fill && (
+          <div
+            className="aoh-bd-scrim absolute inset-0"
+            style={{
+              background: `linear-gradient(to right, var(--void) 0%, transparent ${edgeFade}%, transparent ${100 - edgeFade}%, var(--void) 100%)`,
+            }}
+          />
+        )}
       </div>
     </div>
   );

@@ -188,17 +188,64 @@
 
 /* Backdrop: full-bleed cover on wide viewports; a band at the top of the section
    below lg, where a tall section would otherwise crop a 16:9 source to a sliver. */
+/* A band took `height: 100%` on the assumption that a wide viewport makes a
+   section broad enough for object-cover to crop gently. Measured at 1800px, that
+   is false: sections run 6000-8900px tall, so cover scales to the HEIGHT and 31
+   of 96 backdrops showed under half their width — 16 under a quarter, the worst
+   at 11%, magnified ~9x into abstract texture. Give the box the source's aspect
+   instead, exactly as .aoh-bd-por already does, so the whole composition reads.
+   max-height keeps it from dominating on very short viewports; a gentle vertical
+   crop is far better than an 11% vertical strip. */
 .aoh-bd {
-  height: 100%;
   left: 50%;
   right: auto;
   width: 100vw;
   margin-left: -50vw;
+  aspect-ratio: 1920 / 1081;
+  height: auto;
+  max-height: 86vh;
 }
-.aoh-bd-img { opacity: var(--bd-o, 0.3); }
+/* Edge dissolution. The old approach painted void gradients OVER the image, which
+   meant every edge had to be remembered separately — and the portrait variant only
+   ever covered left and bottom, so all 20 side panels ended in a hard cut along
+   their top and right. A mask fades the image itself on all four sides at once, so
+   no edge can be forgotten, and it dissolves into whatever is behind rather than
+   depending on the backing colour being exactly --void.
+
+   Two crossed gradients intersected: one horizontal, one vertical. The insets are
+   per-variant because a full-bleed band, a side panel, and a covering fill each
+   meet the page differently. */
+.aoh-bd-img {
+  opacity: var(--bd-o, 0.3);
+  -webkit-mask-image: var(--bd-mask-x), var(--bd-mask-y);
+          mask-image: var(--bd-mask-x), var(--bd-mask-y);
+  -webkit-mask-composite: source-in;
+          mask-composite: intersect;
+}
+
+/* A band spans the viewport, so its side edges only need enough to avoid a hard
+   vertical cut wherever the source has content at its frame edge. */
+.aoh-bd {
+  --bd-mask-x: linear-gradient(to right, transparent 0%, #000 11%, #000 89%, transparent 100%);
+  --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 16%, #000 74%, transparent 100%);
+}
+
+/* A side panel faces the text column on its left, so that edge gets a long
+   dissolve; the right edge stops at the content column and needs its own. */
+.aoh-bd-por {
+  --bd-mask-x: linear-gradient(to right, transparent 0%, #000 40%, #000 91%, transparent 100%);
+  --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 13%, #000 67%, transparent 100%);
+}
+
+/* A fill covers its box exactly, so its bottom is usually a cut in open page —
+   the longest fade of the three. */
+.aoh-bd-fill {
+  --bd-mask-x: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 9%, #000 62%, transparent 100%);
+}
 
 @media (max-width: 1023px) {
-  .aoh-bd { height: min(56vh, 26rem); }
+  .aoh-bd { max-height: min(56vh, 26rem); }
   /* the band shows the whole frame, so it can carry more presence; capped for legibility */
   /* never below the desktop value — the cap alone would dim a high base */
   .aoh-bd-img { opacity: max(var(--bd-o, 0.3), min(0.72, calc(var(--bd-o, 0.3) * 1.6))); }
