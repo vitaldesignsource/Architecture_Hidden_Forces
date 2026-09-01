@@ -454,6 +454,156 @@ function KabbalahFigure() {
   );
 }
 
+/**
+ * ElementalPairs — the six minglings as the six edges of a complete graph on four
+ * elements. The two diagonals cross at Akasha, which is doctrinally exact: it is
+ * the interval in which the others meet, not a fifth thing mixing with them.
+ */
+function ElementalPairs() {
+  const [sel, setSel] = useState<number | null>(null);
+  const [akasha, setAkasha] = useState(false);
+  const N = [
+    { k: "Fire", z: "Πῦρ", x: 92, y: 92, verb: "heats, separates, transforms" },
+    { k: "Air", z: "Ἀήρ", x: 268, y: 92, verb: "moves, exchanges, communicates" },
+    { k: "Water", z: "Ὕδωρ", x: 92, y: 268, verb: "joins, dissolves, receives" },
+    { k: "Earth", z: "Γῆ", x: 268, y: 268, verb: "contains, fixes, embodies" },
+  ];
+  const E = [
+    { a: 0, b: 1, t: "Fire · Air", third: "rising current", d: "Naturally amplifying. Air gives Fire movement, oxygen, and reach; Fire warms Air and lifts it. Together: rapid transformation, communication, contagion.", bal: "Inspired intelligence, articulate courage, rapid learning, creative momentum.", exc: "Agitation, argument, racing thought, inflammatory speech, uncontrolled escalation.", note: "Air feeds a fire — but strong or cold movement scatters a weak flame. The relation depends on rhythm." },
+    { a: 0, b: 2, t: "Fire · Water", third: "steam", d: "The central polarity. Fire separates, rises, intensifies, reveals distinction; Water joins, descends, moderates, restores continuity.", bal: "Cooking, incubation, digestion, fermentation, tempering, circulation.", exc: "Either quenched inert, or the vessel boiled dry.", note: "Fire must not simply defeat Water. Fire warms Water so it circulates; Water contains Fire so it does not consume the vessel." },
+    { a: 0, b: 3, t: "Fire · Earth", third: "ceramic, metal, ash, glass", d: "Fire activates what Earth has fixed — hardening clay, forging metal, releasing what was stored, parting pure material from residue.", bal: "Discipline, craftsmanship, endurance, will made durable — Tejas–Prithivi, the fire of the forge.", exc: "Brittleness, harshness, domination, exhaustion; structures built by relentless pressure.", note: "Earth gives Fire fuel, resistance, and something to act upon. Fire gives Earth transformation." },
+    { a: 1, b: 2, t: "Air · Water", third: "mist, foam, wave", d: "Thought and feeling. Air differentiates and names; Water joins and undergoes. Air lets emotion be spoken; Water gives thought depth, attachment, and memory.", bal: "Emotional intelligence, imagination, poetry, empathy, meaningful speech.", exc: "Mood-driven thought, rumination, volatility, ideas that never take stable form.", note: "Air moves across and through Water — waves, currents, evaporation, exchange between surface and atmosphere." },
+    { a: 1, b: 3, t: "Air · Earth", third: "instrument, channel, script", d: "Air loosens, aerates, erodes, transports, penetrates; Earth gives Air channels, boundaries, and instruments through which movement becomes useful.", bal: "Practical intelligence — movement governed by structure. Writing, machinery, architecture, nervous systems, lungs, roads.", exc: "Earth traps Air into stagnation, or Air scatters Earth to dust: rigid thinking on one side, ungrounded abstraction on the other.", note: "The pairing that produces every tool and every notation." },
+    { a: 2, b: 3, t: "Water · Earth", third: "clay, soil", d: "Water softens Earth into something fertile and mouldable; Earth gives Water a basin, shoreline, or body in which to be retained.", bal: "Dependable care, emotional endurance, organic development, stable relationship.", exc: "Heaviness, stagnation, enmeshment; forms that preserve a past which has stopped nourishing.", note: "Together: soil, nourishment, embodiment, memory, biological continuity." },
+  ];
+  const P = (i: number) => [N[i].x, N[i].y];
+  const cur = sel === null ? null : E[sel];
+
+  return (
+    <div className="grid gap-10 lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] lg:items-center">
+      <div className="mx-auto w-full max-w-[380px]">
+        <style>{`
+          .aoh-el .edge-hit { stroke: transparent; stroke-width: 20; cursor: pointer; fill: none; }
+          .aoh-el .edge { transition: stroke-opacity 300ms ease, stroke-width 300ms ease; }
+          .aoh-el g.el { cursor: pointer; }
+        `}</style>
+        <svg viewBox="0 0 360 360" className="aoh-el h-auto w-full" role="img" aria-labelledby="aoh-el-t">
+          <title id="aoh-el-t">
+            Four elements at the corners and the six minglings between them. The two diagonals
+            cross at Akasha, the interval in which the others meet.
+          </title>
+          {E.map((e, i) => {
+            const [x0, y0] = P(e.a);
+            const [x1, y1] = P(e.b);
+            const on = sel === i;
+            return (
+              <g key={i}>
+                <line
+                  className="edge"
+                  x1={x0} y1={y0} x2={x1} y2={y1}
+                  stroke="var(--gold)"
+                  strokeOpacity={sel === null ? 0.34 : on ? 1 : 0.09}
+                  strokeWidth={on ? 2 : 1}
+                />
+                <line
+                  className="edge-hit"
+                  x1={x0} y1={y0} x2={x1} y2={y1}
+                  onClick={() => { setSel(on ? null : i); setAkasha(false); }}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${N[e.a].k} with ${N[e.b].k}`}
+                  onKeyDown={(ev) => {
+                    if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); setSel(on ? null : i); setAkasha(false); }
+                  }}
+                />
+              </g>
+            );
+          })}
+
+          {/* Akasha — the crossing, not a fifth mixer */}
+          <g className="el" onClick={() => { setAkasha((v) => !v); setSel(null); }} role="button" tabIndex={0}
+             aria-label="Akasha, the interval"
+             onKeyDown={(ev) => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); setAkasha((v) => !v); setSel(null); } }}>
+            <circle cx="180" cy="180" r="26" fill="var(--void)" stroke="var(--gold)"
+                    strokeOpacity={akasha ? 0.95 : 0.35} strokeDasharray="3 4" strokeWidth={akasha ? 1.4 : 1} />
+            <text x="180" y="185" textAnchor="middle" className="font-serif" fontSize="15"
+                  fill="var(--gold)" fillOpacity={akasha ? 1 : 0.6}>Ἀ</text>
+          </g>
+
+          {N.map((n, i) => {
+            const lit = cur ? cur.a === i || cur.b === i : false;
+            return (
+              <g key={n.k}>
+                <circle cx={n.x} cy={n.y} r="34" fill="var(--void)" />
+                <circle cx={n.x} cy={n.y} r="34" fill="none" stroke="var(--gold)"
+                        strokeOpacity={lit ? 1 : sel === null ? 0.55 : 0.2} strokeWidth={lit ? 1.5 : 1} />
+                <text x={n.x} y={n.y - 2} textAnchor="middle" className="font-serif" fontSize="16"
+                      fill="var(--gold)" fillOpacity={lit || sel === null ? 1 : 0.35}>{n.z}</text>
+                <text x={n.x} y={n.y + 13} textAnchor="middle" className="font-mono" fontSize="7"
+                      letterSpacing="1.4" fill="var(--muted-foreground)">{n.k.toUpperCase()}</text>
+              </g>
+            );
+          })}
+        </svg>
+        <p className="mt-3 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+          choose an edge · six minglings
+        </p>
+      </div>
+
+      <div className="min-h-[15rem]">
+        {akasha ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">Ἀκάσα · the interval</p>
+            <p className="mt-3 font-serif text-2xl italic leading-tight text-bone">
+              Akasha does not mix. It is the space of the operation.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              It supplies the openness and capacity in which mixing can occur at all — which is why
+              the diagonals cross here. Within Fire it gives revelation; within Air, diffusion
+              across distance; within Water, deep receptivity; within Earth, porosity and the empty
+              room inside a structure.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-bone/80">
+              Without it, forms would have no interior capacity and no relational distance —
+              everything compacted, with nowhere for circulation or transformation to happen.
+            </p>
+          </>
+        ) : cur ? (
+          <>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              {cur.t} &nbsp;·&nbsp; emergent third: <span className="text-gold">{cur.third}</span>
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <div className="border-t border-gold/50 pt-4">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">In proportion</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.bal}</p>
+              </div>
+              <div className="border-t border-border pt-4">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Out of it</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.exc}</p>
+              </div>
+            </div>
+            <p className="mt-5 font-serif italic leading-relaxed text-bone/75">{cur.note}</p>
+          </>
+        ) : (
+          <>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Four elements, and the six ways any two of them can meet. Each mingling produces a{" "}
+              <span className="text-gold-dim">third condition</span> reducible to neither
+              participant — steam, clay, glass, mist. Relation is capable of producing realities
+              contained in neither of its terms.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Choose an edge. Or the ring at the centre, where the diagonals cross.
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function SectionGlyph({ delay = 0 }: { delay?: number }) {
   return (
     <svg
@@ -1392,6 +1542,8 @@ function Index() {
               { id: "subtattva", label: "Compounds" },
               { id: "dao", label: "Dao" },
               { id: "ignisophia", label: "Ignisophia" },
+              { id: "reciprocal", label: "Reciprocal" },
+              { id: "mixing", label: "Mixing" },
               { id: "books", label: "Books" },
               { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
@@ -1529,9 +1681,11 @@ function Index() {
               { n: "XIV", id: "subtattva", t: "The Compound Qualities", d: "The twenty-five sub-tattvas; every letter spoken through every other." },
               { n: "XV", id: "dao", t: "The Dynamics of Return", d: "Circulation, polarity, emptiness, wu wei, and the law of reversal." },
               { n: "XVI", id: "ignisophia", t: "Ignisophia", d: "Fire made wise — the chariot of the Inner Sun." },
-              { n: "XVII", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
+              { n: "XVII", id: "reciprocal", t: "The Reciprocal Field", d: "How field and form make each other; what a form gives back." },
+              { n: "XVIII", id: "mixing", t: "The Dynamics of Mixing", d: "The elements as verbs, and the six ways any two of them meet." },
+              { n: "XIX", id: "books", t: "The Series", d: "Seven books, one arc: Principle → Field → Pattern → Transformation." },
               { n: "—", id: "grounds", t: "Grounds", d: "Why the structure holds. Stated as argument rather than doctrine." },
-              { n: "XVIII", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
+              { n: "XX", id: "lineage", t: "Lineage", d: "The traditions the architecture reads from." },
               { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
               { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
             ].map((x) => (
@@ -3787,13 +3941,311 @@ function Index() {
         </div>
       </section>
 
+      {/* THE RECIPROCAL FIELD */}
+      <section id="reciprocal" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-150} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XVII · The Reciprocal Field
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            How field and form <span className="italic text-gold">make each other</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The field is not a passive background and form is not a finished object. They
+            continually create, limit, interpret, and transform one another — and what a form
+            gives back changes what the next form can be.
+          </p>
+
+          {[
+            {
+              group: "Passage and its costs",
+              items: [
+                { t: "Manifestation as Filtering", d: "Not every possibility can embody through every vessel. An ear receives only certain frequencies; a language expresses some distinctions more readily than others; a personality notices what its established concerns can admit. A formative bottleneck stands between the field and any expression of it.", note: "Manifestation is not force descending into matter. It is possibility surviving a succession of filters." },
+                { t: "Formative Impedance", d: "A vessel may resist an influence without blocking it, and the resistance changes how it appears. A genuine intuition met by no adequate language becomes an incomplete image, a confused emotion, a tension in the body. An institution meeting pressure for change converts it into procedure.", note: "Selective permeability regulates what enters. Impedance determines how hard the passage is — and too little leaves the vessel defenceless, too much prevents necessary change." },
+                { t: "Transductive Loss", d: "A principle rendered as image loses abstraction; the image rendered as language loses immediacy; language rendered as act loses ambiguity; the act fixed in matter acquires limits the conception never had.", note: "Not a failure of embodiment. Every translation sacrifices some possibilities in order to make others actual — which is why the Fourfold Veil is not perfectly transparent." },
+                { t: "The Law of Remainder", d: "Because transduction is never perfect, every formation leaves something over: possibilities excluded, force that did not enter the structure, content unresolved, residue produced by the operation itself. It may dissipate, return to Root Ether, gather in the Morphaithēr, enter the Crypt, or seed another formation.", note: "No form says everything its originating force could have said. Symptoms, ritual atmospheres, cultural tensions, and unfinished work are all read here." },
+              ],
+            },
+            {
+              group: "What a form gives back",
+              items: [
+                { t: "Actualization Opens Possibility", d: "Formation does not merely select from a fixed stock. Before language there could be no written law; before the eye, no visible image in the experienced sense; before the instrument, not that music. Every successful formation alters what can arise after it.", note: "So the Crypt holds more than consequences. It holds the possibilities that completed forms made available." },
+                { t: "Generative Surplus", d: "A form produces more than the intentions that made it contained. A word develops meanings its coiner never imagined; a city produces professions, conflicts, and cultures its founders never planned. Once established, a form enters relations and generates what nobody specified.", note: "The universe is not only repeating primordial patterns. It is capable of genuine novelty." },
+                { t: "Every Operation Changes the Operator", d: "The craftsman shapes material and is shaped by the discipline; repeated rite reorganizes the ritualist; teaching alters the teacher's own understanding. There is no purely one-directional formative operation.", note: "Whatever repeatedly passes through a vessel alters that vessel's capacity for future reception. The operator's Morphaithēr enters the operation; the operation enters the operator's Crypt." },
+              ],
+            },
+            {
+              group: "Absence, equilibrium, dormancy",
+              items: [
+                { t: "Absence Can Be Formative", d: "A doorway directs movement because the wall forbids passage elsewhere. Silence changes the meaning of music. The empty centre of a wheel permits rotation. A missing parent, a lost tradition, an unanswered question can organize a whole life.", note: "Akasha is not mere nothingness but opening, interval, and capacity. Salt builds the wall; Akasha makes the doorway." },
+                { t: "Forces Cancel Without Vanishing", d: "An apparently inert system may hold powerful opposition in equilibrium. Someone who seems unmotivated may carry two equally strong contradictory desires; a rigid complex may lock intense Tejas against equally intense Prithivi. Stillness is not proof that no force is present.", note: "Transformation sometimes requires more energy — and sometimes only a change of angle. This is central to Ignisophia: the Inner Sun does not always add force, it gives force already present a common direction." },
+                { t: "Latent Form", d: "A pattern may stop being visibly active without being destroyed. A dormant seed is not growing yet keeps an organization capable of renewed development; a forgotten skill returns faster than it was first learned; a complex stays quiet until a compatible event wakes it.", note: "Between actuality and pure possibility. The Crypt holds many such — not dead replicas, but dormant organizations awaiting compatible conditions." },
+              ],
+            },
+            {
+              group: "How patterns take hold",
+              items: [
+                { t: "Resonance Is Not Entrainment", d: "Resonance amplifies what is already compatible, and can act at once. Entrainment is gradual: repeated exposure brings separate rhythms into common timing — ritual rhythm, repeated prayer, institutional schedules, family habit, planetary cycle.", note: "Resonance awakens compatibility. Entrainment establishes shared timing — which is how a Morphaithēr becomes collective without anyone beginning in the same state." },
+                { t: "The Present Reconstructs Memory", d: "A later experience can transform the meaning of an earlier one. A painful memory may become wisdom, identity, resentment, or compassion according to the form it is later integrated into. The event does not change; its position in the living architecture does.", note: "The Crypt is not a static archive. The past conditions the future, and the future decides which dimensions of the past become newly operative." },
+                { t: "Bifurcation", d: "At certain thresholds a small difference directs a system toward substantially different futures. Before the threshold the field stays pliable; after it, one path stabilizes and the alternatives grow costly. Initiations, vows, decisions, traumas, births, deaths, encounters.", note: "Astrology may mark when pressure is heightened. It cannot determine which path is taken — at a bifurcation, agency, circumstance, momentum, and contingency all meet." },
+              ],
+            },
+            {
+              group: "Staying coherent",
+              items: [
+                { t: "Formative Immunity", d: "Every self-maintaining form needs some way to tell what belongs from what threatens its coherence. A mind evaluates which impressions to admit; a tradition distinguishes faithful development from distortion; a consecrated space regulates what may enter.", note: "Deficient immunity produces invasion and loss of identity. Excessive immunity rejects nourishment, novelty, and correction. Health is intelligent discrimination, not total openness or total defence." },
+                { t: "Error Correction", d: "Coherence is not kept by avoiding disturbance but by detecting and correcting deviation. It requires a reference pattern, a way of sensing departure from it, a channel of feedback, enough flexibility to respond, and a means of fixing the correction.", note: "In Ignisophia the Inner Sun is the reference; Hod detects the discrepancy, Netzach supplies motive force, Mercury carries the correction, and Salt settles it into lasting behaviour." },
+                { t: "Consolidation", d: "A transformation is not finished when the old form dissolves or the insight arrives. After activation the vessel may need stillness; after illumination, understanding must become habit; after a rite, one must live inside the new pattern long enough for it to maintain itself.", note: "Warmth awakens, Light reveals, Tone rearranges, Life integrates — and Salt preserves. Without the last step a powerful experience stays episodic." },
+                { t: "Refractory Time", d: "Some operations cannot be repeated at once without weakening or reversing. A field needs time to metabolize after intensity; a rite repeated compulsively loses its meaning; a muscle cannot stay contracted; a psyche cannot hold visionary intensity without exhausting its vessel.", note: "Temporal architecture therefore includes intervals in which restraint, rest, or apparent inactivity is the correct operation — where wu wei means recognizing that the field is already transforming." },
+              ],
+            },
+            {
+              group: "Shapes of coherence",
+              items: [
+                { t: "Degrees of Agency", d: "Agency is not all-or-nothing. A simple pattern reacts; a more complex one regulates itself; a further one remembers, anticipates, selects among alternatives, and revises its own behaviour. It rises as boundary, memory, feedback, selective reception, coordination, and anticipation integrate.", note: "This makes consciousness a developed mode of formative participation rather than an inexplicable addition to dead matter — and explains why habits, complexes, and institutions can act quasi-agentively." },
+                { t: "Distributed Centers", d: "Not every coherent form has one commanding centre. Ecosystems, communities, and networks hold together through several interacting centres — order by coordination among partly autonomous participants rather than command from one point.", note: "Solar coherence organizes around a governing centre; ecological coherence arises among many. Neither is superior in general. The right architecture depends on the vessel." },
+                { t: "Center and Circumference", d: "The centre integrates; the circumference exchanges. A centre out of contact with its boundary cannot answer its environment; a boundary out of contact with its centre lets external pressure fragment the form.", note: "A living geometry: the centre gives orientation, the circumference negotiates participation, and the radii carry word between them." },
+                { t: "Multiple Embodiment", d: "A pattern is not identical to the material carrying it. The same melody plays on different instruments; the same proportion is drawn in ink, cut in stone, or held in mind; the same story survives translation.", note: "The vessel contributes something real to the expression without wholly creating the pattern it carries." },
+                { t: "Convergent Formation", d: "And the reverse: similar forms arise from unlike histories. Two people reach courage through discipline, crisis, devotion, or love; two cultures independently arrive at a shared symbol for unrelated reasons; two rites produce comparable states by different sensory means.", note: "So correspondence is not proof of common origin or identical hidden cause. Different pathways can meet comparable constraints — a principle that disciplines the whole system." },
+              ],
+            },
+          ].map((cluster) => (
+            <div key={cluster.group} className="mt-16">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                {cluster.group}
+              </p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {cluster.items.map((x) => (
+                  <div
+                    key={x.t}
+                    className="group border border-border p-5 transition-colors hover:border-gold/40"
+                  >
+                    <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                    <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">
+                      {x.note}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The recursion
+            </p>
+            <p className="mt-5 font-serif text-3xl leading-tight text-bone sm:text-4xl">
+              Field <span className="text-gold">→</span> Form{" "}
+              <span className="text-gold">→</span> Modified Field{" "}
+              <span className="text-gold">→</span> New Form
+            </p>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              The world does not move from field to form once. It continually returns its
+              achievements, failures, residues, and novelties to the hidden ground from which the
+              next world must arise.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ELEMENTAL MIXING */}
+      <section id="mixing" className="relative isolate border-t border-border py-32">
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XVIII · The Dynamics of Mixing
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The elements are <span className="italic text-gold">verbs</span>
+          </h2>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Not four invisible substances but four kinds of work. Fire is the act of heating,
+            separating, transforming; Air of moving, exchanging, communicating; Water of blending,
+            receiving, joining; Earth of containing, defining, fixing. A living form needs all
+            four — it must activate, circulate, cohere, and hold a boundary.
+          </p>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-bone/80">
+            A tattva is the morphogenic bias before embodiment; the element is that bias become
+            operative. Tejas is the tendency toward ignition; elemental Fire is that tendency
+            actually at work in a particular vessel.{" "}
+            <span className="text-gold-dim">
+              The tattva is the direction; the element is the direction in operation.
+            </span>
+          </p>
+
+          <div className="mt-16">
+            <ElementalPairs />
+          </div>
+
+          {/* how they can be related */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Mixing is not always homogenization
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Two qualities can interact without dissolving into a uniform result. The system
+              becomes far richer when it asks not only which elements are present but how they are
+              related.
+            </p>
+            <div className="mt-6 grid gap-px sm:grid-cols-2 lg:grid-cols-5">
+              {[
+                ["Solution", "one quality distributed through another"],
+                ["Suspension", "coexisting without integrating"],
+                ["Layering", "occupying different regions of the vessel"],
+                ["Emulsion", "incompatibles held by a mediator"],
+                ["Reaction", "producing a new condition"],
+                ["Alloying", "a durable composite of distinct qualities"],
+                ["Catalysis", "accelerating without being consumed"],
+                ["Precipitation", "the dispersed becoming fixed"],
+                ["Volatilization", "the fixed becoming mobile"],
+                ["Coagulation", "the fluid acquiring stable form"],
+              ].map(([a, b]) => (
+                <div key={a} className="border-b border-border py-4">
+                  <div className="font-serif text-base italic text-bone">{a}</div>
+                  <div className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* what governs the result */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What governs the result
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { t: "Dominance", d: "Water containing Fire is not Fire containing Water. The first becomes warm, fermentative, gestational — cohesion dominant, heat working inside it. The second is moderated, incubatory, capable of sustained rather than explosive change.", n: "Apas–Tejas and Tejas–Apas. Combinations are directional." },
+                { t: "Proportion", d: "A little Fire in Water warms it; more brings it to boil; more again disperses it as vapour. A little Water regulates a fire; more extinguishes it.", n: "No elemental relation has one fixed meaning. Its result depends on dominance, measure, vessel, timing, and the state of the forces present." },
+                { t: "Sequence", d: "An idea first stabilized in Earth and then warmed by Fire develops differently from an impulse first ignited and only later forced into structure — disciplined transformation against premature fixation or frustrated passion.", n: "Mixing is temporal as well as qualitative. The order of operations enters the final form." },
+                { t: "The vessel", d: "Fire and Water in a strong vessel generate pressure and work; in an open one most of it escapes as steam; in a fragile one the pressure ruptures it. Intense feeling inside a disciplined character becomes art, devotion, or sustained labour; the same intensity in an unprepared vessel becomes impulse or collapse.", n: "Salt and Prithivi decide whether the operation can be contained long enough for a new form to appear." },
+                { t: "Warmth", d: "A cold rigid form resists combination. As warmth rises, boundaries grow permeable and separated qualities become able to interact — but too little leaves the mixture inert, and too much destroys distinctions before they can be reorganized.", n: "Warmth is not another ingredient. It governs the rate at which a relationship becomes transformative." },
+                { t: "Mercury", d: "Some elements will not combine unaided and need a mediator able to pass between them — an emulsifying principle. Imagination mediates between abstract thought and feeling; language between private experience and public act; ritual between intelligible principle and the body.", n: "Mercury opens a channel by which unlike elements can meet without immediately destroying one another." },
+              ].map((x) => (
+                <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                  <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                  <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">{x.n}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* shoreline + failures */}
+          <div className="mt-20 grid gap-12 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The elemental shoreline
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Most change happens not at the centre of either element but at the interface where
+                they meet. Fire transforms the surface of Earth; Air crossing Water raises waves;
+                Water entering Earth makes clay; heat crossing into Water makes currents and vapour.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-bone/80">
+                The same holds inwardly — between thought and feeling, desire and restraint, self
+                and environment, intention and habit. The interface is not merely where conflict
+                occurs. It is where new form becomes possible.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                Two ways mixing fails
+              </p>
+              <div className="mt-5 space-y-4">
+                <div className="border-l border-border pl-5">
+                  <p className="font-serif italic text-bone">Stratification</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Elements share a vessel without communicating: one thinks a thing, desires
+                    another, says a third, embodies none. Air above, Water below, Fire flaring
+                    intermittently, Earth preserving the division. Mercury must circulate between
+                    the layers; warmth must make them receptive; the Inner Sun must supply a common
+                    centre.
+                  </p>
+                </div>
+                <div className="border-l border-border pl-5">
+                  <p className="font-serif italic text-bone">Overmixing</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Dissolve every distinction and the system loses the specialized functions life
+                    requires. Thought should speak with feeling without becoming it; desire should
+                    inform judgement without replacing it; boundaries should stay permeable without
+                    disappearing.
+                  </p>
+                  <p className="mt-2 text-sm italic leading-relaxed text-gold/80">
+                    The aim is not homogeneity but articulated unity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* metabolism, conversion, weather */}
+          <div className="mt-20 grid gap-3 sm:grid-cols-3">
+            {[
+              { t: "Elemental metabolism", d: "A vessel takes in Earth as structure, Water as nourishment and relationship, Air as breath and information, Fire as activation, Akasha as interior capacity — and must release what is spent. Fire leaves ash, Water sediment, Air scattered noise, Earth accumulated rigidity.", n: "Purification is elemental excretion: removing what can no longer join the circulation." },
+              { t: "Elemental conversion", d: "Water heated becomes Air-like as vapour; Air compressed and cooled yields Water; Earth broken becomes Vayu-like dust; Fire spent becomes Earth-like ash. An attachment may begin watery, turn to fiery conflict, circulate as airy thought, and settle into earthy habit.", n: "Elemental identities are not permanent substances but dominant behaviours under changing conditions." },
+              { t: "The Morphaithēr as weather", d: "A field carries many elemental currents at once — some circulating like wind, some condensing, some accumulating as pressure, some igniting, some hardening, some suspended as unrealized possibility.", n: "A person, place, or rite has an elemental climate, not a fixed elemental identity. The task is not to invoke Fire but to know what Fire will do in the weather already there." },
+            ].map((x) => (
+              <div key={x.t} className="group border border-border p-5 transition-colors hover:border-gold/40">
+                <div className="font-serif text-lg italic text-bone">{x.t}</div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
+                <p className="mt-4 border-t border-border pt-3 text-sm italic leading-relaxed text-bone/70">{x.n}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* the cycle */}
+          <div className="mt-20">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              A complete act of transformation
+            </p>
+            <div className="mt-6 grid gap-px sm:grid-cols-5">
+              {[
+                ["Ἀκάσα", "Akasha", "opens a space in which another possibility can be imagined"],
+                ["Ἀήρ", "Air", "circulates it through thought, language, and image"],
+                ["Πῦρ", "Fire", "gives it urgency and transformative pressure"],
+                ["Ὕδωρ", "Water", "joins it to emotion, memory, relationship, identity"],
+                ["Γῆ", "Earth", "embodies it as behaviour, habit, institution, form"],
+              ].map(([z, k, d]) => (
+                <div key={k} className="border-b border-border py-4">
+                  <div className="font-serif text-xl text-gold">{z}</div>
+                  <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{k}</div>
+                  <div className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/80">
+              And the new Earth becomes the ground for another opening of Akasha. Space →
+              movement → activation → cohesion → embodiment, and again.
+            </p>
+          </div>
+
+          <div className="mt-20 border-l border-gold/40 pl-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The central law
+            </p>
+            <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
+              An element never expresses only what it is in isolation. Its behaviour emerges from
+              proportion, sequence, polarity, vessel, temperature, timing, and its relation to
+              every other element present.
+            </p>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              The element supplies an operation. The mixture decides what that operation becomes.
+              The vessel decides whether it can endure. The Inner Sun decides whether its forces
+              can be gathered into a coherent work.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* THE SEVEN BOOKS */}
       <section id="books" className="relative border-t border-border py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XVII · The Series
+                § XIX · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Seven books, <span className="italic text-gold">one arc</span>
@@ -3886,7 +4338,7 @@ function Index() {
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
-                § XVIII · Lineage
+                § XX · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 Gathered, but <span className="italic text-gold">not repeated</span>
