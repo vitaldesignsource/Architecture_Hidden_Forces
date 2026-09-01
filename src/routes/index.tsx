@@ -598,8 +598,9 @@ function Index() {
               The Architecture of Hidden Forces
             </div>
           </a>
-          <div className="hidden shrink-0 items-center gap-5 font-mono text-[10px] uppercase tracking-[0.25em] lg:flex xl:gap-7">
+          <div className="hidden shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] lg:flex xl:gap-6 xl:tracking-[0.25em]">
             {[
+              { id: "terms", label: "Terms" },
               { id: "spine", label: "Spine" },
               { id: "descent", label: "Descent" },
               { id: "fourfold", label: "Ethers" },
@@ -608,7 +609,8 @@ function Index() {
               { id: "kabbalah", label: "Kabbalah" },
               { id: "extended", label: "Powers" },
               { id: "triad", label: "Triad" },
-              { id: "books", label: "Books" },
+              { id: "laws", label: "Laws" },
+              { id: "grounds", label: "Grounds" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
               <a key={l.id} href={`#${l.id}`} className="transition-colors hover:text-gold">
@@ -620,8 +622,8 @@ function Index() {
             {[
               { id: "spine", label: "Spine" },
               { id: "descent", label: "Descent" },
-              { id: "return", label: "Return" },
               { id: "kabbalah", label: "Kabbalah" },
+              { id: "laws", label: "Laws" },
               { id: "formula", label: "Formula" },
             ].map((l) => (
               <a key={l.id} href={`#${l.id}`} className="transition-colors hover:text-gold">
@@ -807,7 +809,7 @@ function Index() {
               { n: "XII", t: "Repetition Generates Momentum", d: "Coherent repetition produces momentum; momentum alters perception; altered behavior reinforces the pattern. This is the Psychic Flywheel." },
               { n: "XIII", t: "Alchemy Is the Grammar of Transformation", d: "Sulfur initiates, Mercury circulates and joins, Salt embodies and limits. Three recurrent necessities of transformation — not three occult chemicals." },
               { n: "XIV", t: "Dissolution and Reconstitution", d: "The old configuration must be loosened, its forces understood, its viable contents recombined around a more coherent center. Solve without coagula disperses; coagula without solve imprisons." },
-              { n: "XV", t: "Coherence Exceeds Intensity", d: "A weaker force organized around a stable center accomplishes more than a stronger force internally divided. Contradiction produces friction and dissipation." },
+              { n: "XV", t: "Coherence Exceeds Intensity", d: "A weaker force organized around a stable center accomplishes more than a stronger force internally divided. Contradiction produces friction and dissipation. But coherence alone is not goodness — a tumor is organized, an obsession is coherent. See § XVI: integral coherence preserves its relations with the greater systems it belongs to; parasitic coherence survives by consuming its host." },
               { n: "XVI", t: "Theurgy Is Alignment, Not Domination", d: "The highest operation is not forcing the cosmos to obey an isolated personality, but reorganizing the person into a vessel able to participate in a greater order." },
               { n: "XVII", t: "Symbols Are Maps of Functions", d: "Kabbalah, tattva doctrine, alchemy, and geometry describe reality from different angles. They integrate where their functions genuinely correspond — complementary instruments, not interchangeable labels." },
             ].map((k) => (
@@ -2176,6 +2178,42 @@ function Index() {
                 </span>
               </div>
             ))}
+          </div>
+
+          <div className="mx-auto mt-20 max-w-3xl text-left">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The same arc at higher resolution
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              The eight movements above name the arc. Read through the laws of maintenance,
+              the same arc resolves into ten.
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                "The field offers possibility.",
+                "Tattvic biases give possibility direction.",
+                "Boundaries select what can enter.",
+                "The ethers transduce influence between levels.",
+                "Measure organizes force into pattern.",
+                "Metabolism maintains the pattern through exchange.",
+                "Repetition deepens it into formative inertia.",
+                "Thresholds permit sudden reorganization.",
+                "Telos draws the form toward greater integration.",
+                "Dissolution releases its contents, while the Crypt preserves the changes its existence made to the field.",
+              ].map((line, i) => (
+                <div
+                  key={i}
+                  className="grid grid-cols-[auto_1fr] items-baseline gap-6 border-b border-border py-4"
+                >
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="font-serif text-base leading-relaxed text-bone/85 sm:text-lg">
+                    {line}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <p className="mt-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
