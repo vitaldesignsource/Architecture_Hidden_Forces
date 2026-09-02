@@ -241,8 +241,8 @@
    so only the right side needs a fade. */
 .aoh-bd-por-l {
   height: 100%;
-  width: min(64%, 56rem);
-  --bd-mask-x: linear-gradient(to right, #000 0%, #000 55%, transparent 100%);
+  width: min(54%, 46rem);
+  --bd-mask-x: linear-gradient(to right, #000 0%, #000 42%, transparent 100%);
   --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 7%, #000 88%, transparent 100%);
 }
 @media (max-width: 1023px) {
