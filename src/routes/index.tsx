@@ -6625,9 +6625,9 @@ function Index() {
           <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             The preceding sections state the architecture. This one argues for it. None of what
             follows proves the whole structure; each shows that its central logic is neither
-            arbitrary nor internally incoherent. Reality is composed not primarily of isolated
-            things, but of processes, relations, constraints, and recurring organizations that
-            temporarily appear as things.
+            arbitrary nor internally incoherent — that the process-relational reading § II commits
+            to is a defensible account of what there is, rather than a preference declared in
+            advance.
           </p>
 
           <div className="mt-14 grid gap-3 sm:grid-cols-2">
