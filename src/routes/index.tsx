@@ -9530,7 +9530,8 @@ function Index() {
               The body, and what this does not mean
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              The body is the immediate field in which spiritual claims are tested. A person may
+              The body is the immediate field in which spiritual claims are tested — § XLV&rsquo;s
+              accountability, met one person at a time. A person may
               profess tranquility while sustaining chronic hostility, or speak of transcendence while
               neglecting sleep and basic responsibility, or claim authority while unable to tolerate
               correction.
@@ -10230,6 +10231,11 @@ function Index() {
               Spirit animates. Essence determines. Soul mediates. Body embodies.
             </p>
           </div>
+          <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+            § L amends this. It inserts a fifth office between soul and body — the etheric,
+            which vitalises and organises — and the formula is left standing here as it was
+            first stated rather than retrofitted.
+          </p>
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
             Not three objects placed beside one another but three principal registers of one living
             act of manifestation. Spirit supplies the animating current; essence the distinctive law
@@ -10263,7 +10269,8 @@ function Index() {
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
               The vessel does not merely transmit what passes through it —{" "}
               <span className="text-bone/90">it metabolises</span>. Pain can become cruelty, wisdom,
-              art, compassion or paralysis depending on how it is received. Desire can be dissipated,
+              art, compassion or paralysis depending on how it is received — the transformation
+              § LI follows into desire, image and complex. Desire can be dissipated,
               repressed, compulsively enacted, or transmuted into sustained work. The quality of the
               vessel decides the fate of the force passing through it.
             </p>
@@ -10315,7 +10322,8 @@ function Index() {
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               It remembers, though not as a literal record of specific events.{" "}
-              <span className="text-bone/90">It remembers through readiness.</span> Fear contracts
+              <span className="text-bone/90">It remembers through readiness</span>, which is
+              § L&rsquo;s pattern acting as process rather than a record kept. Fear contracts
               the breath. Vigilance becomes posture. Craft becomes muscular intelligence. Prayer
               establishes rhythms of stillness. Love and danger alike shape how the organism
               anticipates contact.
