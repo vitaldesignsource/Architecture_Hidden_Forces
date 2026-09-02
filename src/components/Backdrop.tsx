@@ -51,7 +51,7 @@ export function Backdrop({
     <div
       ref={host}
       className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${
-        portrait || fill ? "" : "aoh-bd-host"
+        fill ? "" : "aoh-bd-host"
       }`}
       aria-hidden
     >

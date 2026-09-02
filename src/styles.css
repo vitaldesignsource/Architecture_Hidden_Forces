@@ -236,8 +236,8 @@
 /* A side panel faces the text column on its left, so that edge gets a long
    dissolve; the right edge stops at the content column and needs its own. */
 .aoh-bd-por {
-  --bd-mask-x: linear-gradient(to right, transparent 0%, #000 40%, #000 91%, transparent 100%);
-  --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 13%, #000 67%, transparent 100%);
+  --bd-mask-x: linear-gradient(to right, transparent 0%, #000 36%, #000 88%, transparent 100%);
+  --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 17%, #000 73%, transparent 100%);
 }
 
 /* A fill covers its box exactly, so its bottom is usually a cut in open page —
@@ -260,9 +260,14 @@
 /* Portrait backdrops. The band crops a 4:5 source to 45% of its height, so tall
    sources get a side panel whose box matches the source aspect and therefore
    crops almost nothing. */
-.aoh-bd-por { height: min(74vh, 860px); aspect-ratio: 1122 / 1402; width: auto; }
+.aoh-bd-por {
+  height: 100%;
+  max-height: min(74vh, 860px);
+  aspect-ratio: 1122 / 1402;
+  width: auto;
+}
 @media (max-width: 1023px) {
-  .aoh-bd-por { height: min(46vh, 430px); }
+  .aoh-bd-por { max-height: min(46vh, 430px); }
 }
 
 /* The band is full-bleed via 100vw, which overshoots by the scrollbar width.
