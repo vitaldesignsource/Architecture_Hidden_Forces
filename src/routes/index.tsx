@@ -52,6 +52,7 @@ import {
   TheInterval,
   TheRecursion,
   TheAxis,
+  OneLayerOfSeven,
 } from "@/components/diagrams";
 
 /**
@@ -1620,6 +1621,10 @@ function Index() {
           </div>
 
           {/* Components */}
+          <div className="mt-20">
+            <OneLayerOfSeven />
+          </div>
+
           <div className="mt-16">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The components and what each does

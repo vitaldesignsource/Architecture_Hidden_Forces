@@ -44,3 +44,4 @@ export { FiveArchitecturesOfFear } from "./FiveArchitecturesOfFear";
 export { TheInterval } from "./TheInterval";
 export { TheRecursion } from "./TheRecursion";
 export { TheAxis } from "./TheAxis";
+export { OneLayerOfSeven } from "./OneLayerOfSeven";
