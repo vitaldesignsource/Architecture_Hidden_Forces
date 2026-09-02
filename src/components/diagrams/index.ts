@@ -41,3 +41,4 @@ export { HekaAndMaat } from "./HekaAndMaat";
 export { FourOffices } from "./FourOffices";
 export { EthericTideScales } from "./EthericTideScales";
 export { FiveArchitecturesOfFear } from "./FiveArchitecturesOfFear";
+export { TheInterval } from "./TheInterval";

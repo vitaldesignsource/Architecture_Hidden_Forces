@@ -66,6 +66,7 @@ export const ENTRIES = [
   { n: "XLIX", id: "microcosm", t: "Spirit, Soul, and Body", d: "Spirit animates, essence determines, soul mediates, body embodies — and how each oversteps." },
   { n: "L", id: "etheric", t: "The Etheric Body", d: "The vital-formative field — pattern acting as process, and why vitality is rhythmic rather than quantitative." },
   { n: "LI", id: "astral", t: "The Astral and Psychic Layers", d: "Desire, image and sensation — and why naming an emotion is often insufficient." },
+  { n: "LII", id: "soul", t: "Soul and Interior Life", d: "The metaxy — where force becomes meaning, and the intervals discernment depends on." },
   { n: "—", id: "lexicon", t: "Lexicon", d: "Every term the architecture defines, and the section that defines it." },
   { n: "", id: "unified", t: "The Unified Formula", d: "The whole arc in eight movements, and again in ten.", movement: true },
             { n: "", id: "formula", t: "The Final Formula", d: "The twenty-one step return to Source.", movement: true },
