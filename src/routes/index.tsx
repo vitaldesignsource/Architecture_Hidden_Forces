@@ -5010,7 +5010,7 @@ function Index() {
 
           {/* ---- habit and rite ---- */}
           <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/ablutionstack.webp" opacity={0.7} position="center 50%" scrim={0.18} portrait />
+            <Backdrop src="/bg/ablutionstack.webp" opacity={0.5} position="center 40%" scrim={0.24} portrait anchor="left" />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Repetition is not the criterion</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
