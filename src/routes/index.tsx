@@ -50,6 +50,7 @@ import {
   EthericTideScales,
   FiveArchitecturesOfFear,
   TheInterval,
+  TheRecursion,
 } from "@/components/diagrams";
 
 /**
@@ -2591,6 +2592,10 @@ function Index() {
               </div>
             </div>
           ))}
+
+          <div className="mt-24">
+            <TheRecursion />
+          </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
