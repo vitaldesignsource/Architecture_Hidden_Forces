@@ -42,6 +42,7 @@ import {
   FalseSpiritualization,
   SophianicFaces,
   SolveCoagula,
+  SophianicChalice,
 } from "@/components/diagrams";
 
 export const Route = createFileRoute("/")({
@@ -9630,6 +9631,10 @@ function Index() {
               Tejas, connective as Apas, enduring as Pṛthivī. She can open, move, sever, unite, and
               establish. Her wisdom is knowing which is needed, and in what proportion.
             </p>
+          </div>
+
+          <div className="mt-24">
+            <SophianicChalice />
           </div>
 
           <div className="mt-24 max-w-3xl">

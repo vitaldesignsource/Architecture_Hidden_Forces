@@ -35,3 +35,4 @@ export { RightMeasure } from "./RightMeasure";
 export { FalseSpiritualization } from "./FalseSpiritualization";
 export { SophianicFaces } from "./SophianicFaces";
 export { SolveCoagula } from "./SolveCoagula";
+export { SophianicChalice } from "./SophianicChalice";
