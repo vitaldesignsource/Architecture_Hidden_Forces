@@ -1418,7 +1418,8 @@ function Index() {
             The world <span className="italic text-gold">inherits itself</span>
           </h2>
 
-          <div className="mt-12 grid gap-16 lg:grid-cols-2">
+          <div className="relative isolate mt-12 grid gap-16 lg:grid-cols-2">
+            <Backdrop src="/bg/peatcliff.webp" opacity={0.26} position="center 55%" scrim={0.22} />
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Κρύπτη · The Crypt of Primordial Memory
@@ -1550,7 +1551,8 @@ function Index() {
           ))}
 
           {/* The safeguard */}
-          <div className="mt-20 border-l border-gold/40 pl-8">
+          <div className="relative isolate mt-20 border-l border-gold/40 pl-8">
+            <Backdrop src="/bg/reedbeds.webp" opacity={0.3} position="center 50%" scrim={0.22} />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Safeguard · No Vessel Exhausts the Field
             </p>
@@ -2603,7 +2605,8 @@ function Index() {
             <TheRecursion />
           </div>
 
-          <div className="mt-20 border-l border-gold/40 pl-8">
+          <div className="relative isolate mt-20 border-l border-gold/40 pl-8">
+            <Backdrop src="/bg/rimstone.webp" opacity={0.34} position="center 50%" scrim={0.22} />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The recursion
             </p>
@@ -3219,7 +3222,8 @@ function Index() {
           </div>
 
           {/* disturbances */}
-          <div className="mt-20">
+          <div className="relative isolate mt-20">
+            <Backdrop src="/bg/beaverdam.webp" opacity={0.16} position="center 55%" scrim={0.22} />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Eight ways circulation fails
             </p>
@@ -6790,7 +6794,8 @@ function Index() {
             </p>
           </div>
 
-          <div className="mt-24 border-t border-gold/30 pt-12">
+          <div className="relative isolate mt-24 border-t border-gold/30 pt-12">
+            <Backdrop src="/bg/bristlecone.webp" opacity={0.3} position="center 40%" scrim={0.22} portrait />
             <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
               Ritual transmits pattern through ordered time within an enactment. Tradition transmits
               pattern through historical time across generations. Together they close the ladder:
@@ -10008,6 +10013,7 @@ function Index() {
 
       <section id="heka" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-665} />
+        <Backdrop src="/bg/aqueduct.webp" opacity={0.21} position="center 45%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVIII · Heka
@@ -10223,6 +10229,7 @@ function Index() {
 
       <section id="microcosm" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-680} />
+        <Backdrop src="/bg/seastack.webp" opacity={0.16} position="center 45%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLIX · Spirit, Soul, and Body
@@ -10380,6 +10387,7 @@ function Index() {
 
       <section id="etheric" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-695} />
+        <Backdrop src="/bg/basincascade.webp" opacity={0.34} position="center 45%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § L · The Etheric Body
@@ -10508,6 +10516,7 @@ function Index() {
 
       <section id="astral" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-710} />
+        <Backdrop src="/bg/cliffpool.webp" opacity={0.16} position="center 40%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § LI · The Astral and Psychic Layers
@@ -10789,6 +10798,7 @@ function Index() {
 
       <section id="soul" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-725} />
+        <Backdrop src="/bg/cavestream.webp" opacity={0.28} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § LII · Soul and Interior Life
