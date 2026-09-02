@@ -150,8 +150,12 @@ else {
   const navReach = Math.max(
     ...navIds.map((id) => (byId[id]?.numeral ? roman(byId[id].numeral) : 0))
   );
-  if (deepest - navReach > 2)
-    fail("nav", `stops at § ${navReach} while the work runs to § ${deepest} — the last ${deepest - navReach} sections have no waypoint`);
+  // Completeness is the Contents panel's job now, and the index check above
+  // already guarantees every section appears in the shared ENTRIES it renders.
+  // What is still worth catching is the header fossilising — a menu whose last
+  // waypoint sits in the first half of a work that has since doubled.
+  if (navReach < deepest * 0.6)
+    fail("nav", `last waypoint is § ${navReach} of ${deepest} — the header has stopped tracking the work`);
   else note("nav", `${navIds.length} waypoints, all resolving, reaching § ${navReach} of ${deepest}`);
 }
 

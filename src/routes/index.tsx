@@ -7,6 +7,7 @@ import { SectionGlyph } from "@/components/SectionGlyph";
 import { PrincipleCard } from "@/components/PrincipleCard";
 import { ArchitectureIndex } from "@/components/ArchitectureIndex";
 import { Lexicon } from "@/components/Lexicon";
+import { ContentsPanel } from "@/components/ContentsPanel";
 import {
   Carriers,
   CentersAxis,
@@ -56,22 +57,18 @@ import {
  * kind of thing — a movement or a domain the work spends several sections in —
  * which the old list was not: "Descent" and "Return" are movements of the whole,
  * while "Kabbalah" and "Channels" were single sections sitting at the same level.
- * Everything finer than this is the Index's job, and it does it better with its
- * reading paths.
+ * Seven beats of the arc. Everything finer belongs in the Contents panel, which
+ * carries all fifty-four entries and can be opened from anywhere — the header only
+ * has to say where you are in the shape.
  */
 const NAV = [
-  { id: "index", label: "Index" },
   { id: "spine", label: "Spine" },
   { id: "fourfold", label: "Ethers" },
   { id: "descent", label: "Descent" },
   { id: "centers", label: "Body" },
   { id: "symbol", label: "Symbol" },
-  { id: "ritual", label: "Ritual" },
   { id: "astrology", label: "Sky" },
   { id: "rightrelation", label: "Relation" },
-  { id: "sophia", label: "Sophia" },
-  { id: "lexicon", label: "Lexicon" },
-  { id: "formula", label: "Return" },
 ];
 
 export const Route = createFileRoute("/")({
@@ -111,7 +108,8 @@ function Index() {
               The Architecture of Hidden Forces
             </div>
           </a>
-          <div className="hidden shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] lg:flex xl:gap-6 xl:tracking-[0.25em]">
+          <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+            <div className="hidden items-center gap-4 lg:flex xl:gap-6">
             {NAV.map((l) => (
               <a
                 key={l.id}
@@ -124,6 +122,8 @@ function Index() {
                 {l.label}
               </a>
             ))}
+            </div>
+            <ContentsPanel active={active} />
           </div>
           <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
             XVIII
