@@ -206,7 +206,7 @@
   width: 100%;
   aspect-ratio: 1920 / 1081;
   height: auto;
-  max-height: 86vh;
+  max-height: min(86vh, 100%);
 }
 /* Edge dissolution. The old approach painted void gradients OVER the image, which
    meant every edge had to be remembered separately — and the portrait variant only

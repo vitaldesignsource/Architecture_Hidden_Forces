@@ -5809,7 +5809,7 @@ function Index() {
 
           {/* ---- descent and return ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/stairs.webp" opacity={0.56} position="center 50%" scrim={0.18} />
+            <Backdrop src="/bg/stairs.webp" opacity={0.46} position="center 5%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">Descent and return</h3>
             <div className="mt-8 grid gap-10 lg:grid-cols-2">
               <div>
@@ -6548,7 +6548,7 @@ function Index() {
 
           {/* ---- deeper purpose ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/walker.webp" opacity={0.54} position="center 42%" scrim={0.26} />
+            <Backdrop src="/bg/walker.webp" opacity={0.45} position="center 88%" scrim={0.26} />
             <h3 className="font-serif text-2xl leading-tight">The paradox of the office</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The personal daimōn stands at the threshold between particular destiny and universal
