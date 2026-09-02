@@ -32,3 +32,6 @@ export { FourfoldVeil } from "./FourfoldVeil";
 export { MorphaithericField } from "./MorphaithericField";
 export { Chon } from "./Chon";
 export { RightMeasure } from "./RightMeasure";
+export { FalseSpiritualization } from "./FalseSpiritualization";
+export { SophianicFaces } from "./SophianicFaces";
+export { SolveCoagula } from "./SolveCoagula";

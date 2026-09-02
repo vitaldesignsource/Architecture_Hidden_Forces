@@ -39,6 +39,9 @@ import {
   Chon,
   FourfoldVeil,
   RightMeasure,
+  FalseSpiritualization,
+  SophianicFaces,
+  SolveCoagula,
 } from "@/components/diagrams";
 
 export const Route = createFileRoute("/")({
@@ -7959,6 +7962,7 @@ function Index() {
 
       <section id="rightrelation" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-510} />
+        <Backdrop src="/bg/gorgestair.webp" opacity={0.22} position="center 40%" scrim={0.26} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXIX · The Art of Right Relation
@@ -8143,7 +8147,8 @@ function Index() {
           </div>
 
           {/* ---- the test ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/cliffroad.webp" opacity={0.28} position="center 55%" scrim={0.22} />
             <h3 className="font-serif text-2xl leading-tight">The practical test</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Discernment is the faculty governing the whole sequence — whether a correspondence is
@@ -8209,6 +8214,7 @@ function Index() {
 
       <section id="mortality" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-530} />
+        <Backdrop src="/bg/ruinedarch.webp" opacity={0.32} position="center 45%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XL · Death, Suffering, and the Cost of Form
@@ -8231,7 +8237,8 @@ function Index() {
           </p>
 
           {/* ---- what persists ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <Backdrop src="/bg/splittrunk.webp" opacity={0.3} position="center 40%" scrim={0.24} portrait />
             <h3 className="font-serif text-2xl leading-tight">What persists</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A living being is a pattern capable of continually gathering its materials into one
@@ -9424,8 +9431,577 @@ function Index() {
         </div>
       </section>
 
+      <section id="matter" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-620} />
+        <Backdrop src="/bg/apothecary.webp" opacity={0.42} position="center 45%" scrim={0.22} portrait anchor="left" />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XLV · Spiritualising Matter
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Not the escape from matter but its formation into an{" "}
+            <span className="italic text-gold">adequate vessel</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Matter is not a cosmic mistake from which spirit must be rescued. It is the deepest
+              point at which invisible potency becomes definite, resistant, measurable, and capable
+              of producing consequences.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Spirit without embodiment stays unexpressed possibility. Matter without formative
+            integration tends toward dispersal and inertia. Manifestation requires their
+            participation in one another —{" "}
+            <span className="text-bone/90">
+              spirit gives matter orientation, and matter gives spirit consequence.
+            </span>
+          </p>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Where the claim is tested
+            </p>
+            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+              SOURCE → SPIRIT → ESSENCE → VIRTUE → FORCE → SEEDFORM → FOURFOLD VEIL → FORM → MATTER
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              At every stage the range of possibilities narrows while actuality increases. A
+              universal virtue could take innumerable expressions; a material act selects one and
+              makes it consequential. Compassion must eventually become food, protection, medicine,
+              patience, shelter. Justice must become a boundary, a decision, a restored relationship,
+              a functioning institution. Wisdom must become conduct.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Which is why the descent is not a fall. It is what universality accepts in order to
+              become particular — and it is where profession meets cost. It is easy to hold love
+              abstractly; it is harder to organise time, resources and relationships around it.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              Matter is where spirit becomes accountable for what it claims to be.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Transparent, not invisible
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Spiritualised matter does not become immaterial. It becomes transparent in the
+              philosophical sense: its organisation reveals rather than conceals the virtue operating
+              through it. A hand is spiritualised when it heals, creates, protects, or does skilled
+              work. Speech, when sound carries truth without unnecessary distortion. A building, when
+              its geometry, materials and purpose support the life it was made for.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              And this needs no flawlessness. Every vessel introduces some transductive loss; no
+              receiving form reproduces its source completely. A spiritualised vessel is one that
+              minimises <span className="italic">unnecessary</span> distortion and carries as much of
+              the originating virtue as its nature can bear.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              Not absolute purity. Increasing adequacy between an inner principle and its outward
+              expression.
+            </p>
+          </div>
+
+          <div className="mt-24">
+            <FalseSpiritualization />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Sustained participation, not declaration
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Matter is educated by repeated participation in a field. Cells differentiate by
+              location and relationship. Bodies change through nourishment, labour, sleep, injury,
+              healing. Nervous systems are shaped by repeated experience. Places acquire atmospheres
+              from what is done in them; tools come to reflect the habits of those who use them.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              So a consecrated object must go on being treated according to its consecration. A
+              disciplined body must go on being nourished. A sacred place must go on hosting
+              activities consistent with its purpose. Otherwise the orientation weakens{" "}
+              <span className="text-bone/90">while the external appearance remains</span> — which is
+              the fifth counterfeit exactly.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              This also releases the work from temples. Craftsmanship gives intelligence durable
+              form. Agriculture enters disciplined relation with soil, season and time. Good work
+              makes virtue materially legible: patience becomes a finished surface, foresight becomes
+              a structure that survives weather, care becomes a repaired object, justice becomes
+              honest measurement and work performed according to its promises.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The body, and what this does not mean
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The body is the immediate field in which spiritual claims are tested. A person may
+              profess tranquility while sustaining chronic hostility, or speak of transcendence while
+              neglecting sleep and basic responsibility, or claim authority while unable to tolerate
+              correction.
+            </p>
+            <p className="mt-6 border-l-2 border-bone/40 pl-5 text-base leading-relaxed text-bone/80">
+              This does not make illness, disability or bodily limitation a spiritual failure. Bodies
+              are finite, vulnerable, inherited, and shaped by conditions outside anyone&rsquo;s
+              control. Spiritualisation is not physical perfection. It is the most truthful and
+              responsible relationship possible with the body actually given.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Nor is suffering to be romanticised. Some develops capacity, some communicates injury,
+              some arises through exploitation, and some simply diminishes life — and § XLIV&rsquo;s
+              law is what tells them apart. Matter is not spiritualised by enduring unlimited harm.
+              The most spiritual response to preventable suffering may be to stop the condition
+              producing it.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              What spiritualisation asks is narrower and more bearable: that suffering not be left
+              entirely mute. It may become knowledge, a firmer boundary, compassion, solidarity, or
+              changed action — recognised truthfully, and neither worshipped nor wasted.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <p className="mx-auto mt-12 max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+            To spiritualise matter is not to make matter cease being material. It is to form matter
+            so truthfully that its visible organisation becomes an{" "}
+            <span className="italic text-gold">adequate bearer of invisible virtue</span>.
+          </p>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+            The Great Work is completed neither above the world nor outside it, but wherever the
+            invisible becomes responsibly, beautifully, and livingly actual.
+          </p>
+        </div>
+      </section>
+
+      <section id="sophia" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-635} />
+        <Backdrop src="/bg/oldgrowth.webp" opacity={0.3} position="center 50%" scrim={0.22} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XLVI · Sophia and the Divine Feminine
+          </p>
+          <h2 className="mt-6 font-serif text-4xl leading-tight">Σοφία</h2>
+          <p className="mt-4 font-serif text-lg italic text-gold-dim">
+            The intelligence through which power learns how to serve life
+          </p>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Knowledge can identify the parts of a system. Sophia understands how those parts must
+              be related if the whole is to live.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Knowledge can discover a force. Sophia determines whether it should be invoked, through
+            which intermediary it should pass, what vessel can receive it, and what its embodiment
+            will produce. She is therefore the wisdom of right relation — and she knows that neither
+            power, purity, antiquity, intensity nor celestial origin is sufficient to make an
+            operation good.
+          </p>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Receptivity is not passivity
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The Divine Feminine names the capacities of reception, gestation, mediation,
+              formation, nourishment, concealment, revelation, embodiment, relation, regeneration
+              and return. None of these is passive. The womb is receptive, and its receptivity is
+              intensely active: it selects, nourishes, differentiates, protects, transforms, and
+              finally releases.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              What receives determines what the received force can become. She is not empty space
+              awaiting command — she is the intelligent depth that transforms what enters her.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Which is why she cannot be confined to one alchemical principle. She is Salt as the
+              vessel that holds a transformation, Mercury as translation between worlds, and{" "}
+              <span className="text-bone/90">Sulfur as well</span> — the inner flame of sovereignty,
+              eros, refusal, and self-directed becoming. An incomplete symbolism calls the masculine
+              active and the feminine passive. Every act of formation requires both.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              The tattvas say the same thing: she is spacious as Ākāśa, mobile as Vāyu, fierce as
+              Tejas, connective as Apas, enduring as Pṛthivī. She can open, move, sever, unite, and
+              establish. Her wisdom is knowing which is needed, and in what proportion.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The Veil as gestation
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Read through § XLIII, the Fourfold Veil is a formative womb — and the womb neither
+              creates without receiving nor receives without transforming.
+            </p>
+            <div className="mt-8 space-y-2 border-l-2 border-gold/40 pl-6 font-serif text-xl leading-relaxed text-bone/85">
+              <p>Warmth conceives.</p>
+              <p>Light differentiates.</p>
+              <p>Tone organises.</p>
+              <p>Life integrates.</p>
+              <p className="text-gold">Matter gives birth.</p>
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The veil both conceals and reveals, and what is gestating must be protected from
+              premature exposure.{" "}
+              <span className="text-bone/90">
+                Concealment is therefore not always ignorance or deception
+              </span>{" "}
+              — it can be the mercy that lets an unfinished form develop without being overwhelmed.
+              Sophia knows when a mystery requires concealment and when concealment has become
+              imprisonment; when revelation nourishes and when it arrives before the vessel is ready.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Morphaithēr is her field. The Latin root of <span className="italic">matrix</span> is{" "}
+              <span className="italic">mater</span> — and a matrix is not a container but a formative
+              environment that gives relationships position, proportion, and developmental
+              possibility.
+            </p>
+          </div>
+
+          <div className="mt-24">
+            <SophianicFaces />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The wound
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The Divine Feminine cannot be developed as an abstract cosmic principle while ignoring
+              the historical treatment of women, bodies, sexuality, birth, labour, emotion and
+              nature. A metaphysics that praises a celestial feminine while devaluing actual women
+              would reproduce the very split Sophia is meant to heal.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              The wound appears wherever receptivity is mistaken for weakness, care is exploited as
+              an unlimited resource, bodies are treated as property, intuition is severed from
+              intellect, emotion is dismissed as irrational, and nature is treated as inert matter
+              awaiting domination.
+            </p>
+            <p className="mt-6 border-l-2 border-bone/40 pl-5 text-base leading-relaxed text-bone/80">
+              It appears too when women are required to embody gentleness, beauty, fertility or
+              nurturance while being denied anger, sovereignty, intellectual authority, erotic
+              self-possession, or the right to refuse.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              So a Sophianic architecture protects complexity. She includes care and boundary, union
+              and differentiation, mercy and judgement, gestation and severance. And nature — one of
+              her primary revelations — is not to be romanticised as uniformly gentle. She is the
+              garden and the wilderness, the womb and the tomb, milk and venom. The maternal depth of
+              nature does not preserve every individual form forever. It preserves the greater
+              circulation of life.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Not against the masculine
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              These are symbolic polarities, not rigid assignments, and every living person expresses
+              both. The masculine may symbolise direction, distinction, projection and focused
+              transmission; the feminine reception, relation, gestation and integration. Each can
+              become distorted, and each requires the other.
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["Direction without receptivity", "becomes imposition"],
+                ["Receptivity without direction", "becomes diffusion"],
+                ["Articulation without integration", "fragments the whole"],
+                ["Integration without differentiation", "dissolves meaningful distinction"],
+              ].map(([a, b]) => (
+                <div key={a} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[17rem_1fr]">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              She does not abolish polarity. She prevents polarity from becoming domination.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              The same restraint governs correspondence with Shekhinah, Binah, Isis and other
+              figures of sacred wisdom. They are related but not identical lenses — indwelling
+              presence, formative understanding, magical sovereignty and restoration are not one
+              thing under different names. Sophia can be a meeting place without becoming an erasure
+              of difference.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The Sophianic test
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Any force, teaching, ritual, institution or system can be put to it. She does not ask
+              whether something appears light or dark — she asks what it serves, what it produces,
+              and what kind of participation it requires.
+            </p>
+            <ol className="mt-8 space-y-3">
+              {[
+                "Does it unite knowledge with responsibility?",
+                "Does it honour the vessel rather than merely extracting its energy?",
+                "Does it preserve boundaries while allowing meaningful participation?",
+                "Does it make matter more capable of carrying virtue?",
+                "Does it increase discernment, agency, compassion, and truthful relationship?",
+                "Can it adapt its forms without betraying its purpose?",
+                "Can it mourn what must die, and release what can no longer live?",
+              ].map((q, i) => (
+                <li key={q} className="grid grid-cols-[2rem_1fr] gap-4">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-base leading-relaxed text-muted-foreground">{q}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              A teaching may be metaphysically impressive and fail the test through the relationships
+              it produces. A humble practice may pass it because it makes life more coherent,
+              truthful, and capable of renewal.{" "}
+              <span className="text-bone/90">
+                The test is finally whether wisdom has survived embodiment.
+              </span>
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Her discernment is not suspicion. Suspicion assumes hidden corruption; discernment
+              tests relationships. A genuine insight can pass through a distorted messenger, and a
+              flawed person can still carry something valuable — while charisma does not prove truth,
+              intensity does not prove depth, and suffering does not prove initiation.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <p className="mx-auto mt-12 max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+            Sophia is the wisdom by which spirit enters matter without despising it, matter receives
+            spirit without being destroyed by it, and both are transformed through right relation
+            into <span className="italic text-gold">a living expression of the whole</span>.
+          </p>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+            She is what prevents the architecture from becoming a catalogue of powers without wisdom,
+            correspondences without discernment, or ritual technologies without ethical purpose.
+          </p>
+        </div>
+      </section>
+
+      <section id="transformation" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-650} />
+        <Backdrop src="/bg/regrowth.webp" opacity={0.3} position="center 50%" scrim={0.22} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XLVII · Transformation
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Μεταμόρφωσις <span className="italic text-gold">·</span> Μεταστοιχείωσις
+          </h2>
+          <p className="mt-4 font-serif text-lg italic text-gold-dim">
+            Not that things change, but that the governing pattern is reorganised
+          </p>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Everything material changes continually. Most change does not penetrate deeply enough
+              to alter the governing pattern of a being.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            True transformation occurs when the relation among force, pattern, form and vessel is
+            reorganised so profoundly that a new mode of existence becomes possible — not a change in
+            appearance or behaviour, but the emergence of a new formative order.
+          </p>
+          <p className="mt-8 max-w-3xl font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+            EXISTING FORM → DISSOLUTION OF FIXATION → LIBERATION OF FORCE → RE-PATTERNING → RENEWED
+            EMBODIMENT
+          </p>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Three depths, told apart
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["Change", "alters a condition", "Clothing, temperature, mood, circumstance. Often temporary, reversible, or externally imposed."],
+                ["Mutation", "alters a pattern", "A variation that affects future development — genetic, psychic, or cultural. It introduces novelty, and novelty is not fulfilment."],
+                ["Transformation", "reorganises the relationship among pattern, force, form and purpose", "It changes not only what a being does but what kinds of action have become possible."],
+              ].map(([a, b, c]) => (
+                <div key={a} className="grid gap-1 border-b border-border py-4 sm:grid-cols-[8rem_1fr]">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span>
+                    <span className="font-serif text-base italic text-bone/80">{b}</span>
+                    <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{c}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              And it is recognised by persistence across circumstance. If courage appears only while
+              a person feels inspired, the transformation is incomplete. When courage becomes
+              available under fear, uncertainty, resistance and consequence, it has begun to enter
+              the structure of the person.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Which is also how the imitations are caught. A change in language may conceal an
+              unchanged motive; an institution may adopt new symbols while keeping the same
+              distribution of power. Apparent transformation rearranges the surface —{" "}
+              <span className="text-bone/80">the form changes because the underlying force has found
+              a new costume.</span>
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The formative thread
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Metamorphosis needs a paradoxical relation between continuity and discontinuity.
+              Something must stay continuous enough for the change to belong to one being; something
+              must alter deeply enough for a genuinely new mode to emerge. A caterpillar&rsquo;s
+              structure is largely dissolved and reorganised, and the butterfly is still not an
+              unrelated creature.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              Metamorphosis preserves the virtue while altering the form through which the virtue
+              becomes active.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              If nothing continuous remains there has been replacement; if nothing fundamental
+              changes there has been modification. What persists is the{" "}
+              <span className="text-bone/90">formative thread</span> — the relation among essence,
+              virtue and seedform that survives changes in material composition and outward
+              organisation. Metamorphosis is that thread withdrawing from one configuration and
+              becoming active through another.
+            </p>
+          </div>
+
+          <div className="mt-24">
+            <SolveCoagula />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What receives the liberated force
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Form is condensed relationship — force held within pattern, boundary and proportion.
+              Labour has become architecture; repetition has become habit; attention has become
+              symbolic density; collective participation has become institution. To release force
+              from form is to loosen the relations keeping it in one established manner.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              But liberation is not automatically beneficial. Revolutions often overthrow a visible
+              structure while unconsciously preserving its formative logic; a person may abandon one
+              dependency and transfer the same need into another relationship. Which makes one
+              question decisive.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              What pattern will receive the liberated force? Without an answer, dissolution may
+              strengthen the very pattern it intended to overcome.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              So § XLIV governs solve. Not every force should be released indiscriminately — some are
+              destructive precisely because a boundary is containing them, and some identities must
+              be opened gradually because sudden dissolution would overwhelm the vessel. Defences,
+              ritual boundaries and cultural structures are often imperfect and still stabilising.
+              § XLVI&rsquo;s wisdom asks not only whether a form has become restrictive, but what it
+              is holding, why it arose, and what must be prepared before it is opened.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What &ldquo;higher&rdquo; means here
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Not more prestigious, abstract, disembodied or socially powerful. A form is higher when
+              it embodies its governing virtue with greater coherence, inclusiveness, freedom and
+              capacity for right relation — holding more complexity without fragmenting, preserving
+              distinction without requiring domination.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              Higher form is not distance from matter. It is greater adequacy between matter and
+              virtue.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Which is why transformation rarely annihilates the lower force. The attention to
+              danger, readiness and protective energy inside fear is not destroyed — it is released
+              from compulsive reaction and reorganised into discernment. Aggression may become
+              protective strength, desire may become devotion or disciplined aspiration, grief may
+              become memory and renewed participation.{" "}
+              <span className="text-bone/90">
+                Transformation reveals the undeveloped virtue imprisoned within the distorted form.
+              </span>
+            </p>
+            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+              NEW POSSIBILITY → SYMBOLIC IMAGE → EMOTIONAL INVESTMENT → REPEATED ACTION → FORMATIVE
+              INERTIA → EMBODIED CHARACTER
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              A seedform gives liberated force a centre to reorganise around, which is why symbols
+              carry such weight in transitional periods. But it must eventually enter rhythm, habit,
+              body and environment — otherwise the old pattern keeps control of material life while
+              the new one remains an admired idea. And the field matters as much as the vessel: a
+              new form struggles to hold where the surrounding Morphaithēr keeps reproducing the old.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Metastoicheiōsis · trans-elementation
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              A deeper operation than altering outward form: the elemental powers composing a being
+              change in proportion, hierarchy, function or quality. It does not mean one chemical
+              element literally becoming another. It means the elemental economy is reordered so a
+              different mode of life becomes possible.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              A person governed by excessive Tejas expresses intensity as anger, consumption, or
+              restless ambition. Trans-elementation does not extinguish the fire. It changes fire&rsquo;s
+              relation to water, air, earth and space — so that it becomes illumination rather than
+              combustion, courage rather than aggression, digestion rather than destruction. An
+              excess of Pṛthivī appears as rigidity and over-identification with established form;
+              opened by Ākāśa, moved by Vāyu, refined by Tejas and softened by Apas, its stability is
+              preserved while its function rises from obstruction into dependable embodiment.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              The higher state is not less elemental. It is more harmoniously elemental.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              § XLII makes the same point materially. Carbon, hydrogen, oxygen and nitrogen are
+              present in living and dead matter alike; what differs is their organisation,
+              circulation, and participation in a self-renewing system.{" "}
+              <span className="text-bone/90">
+                Transformation does not always require new substance. It may require a new order of
+                participation.
+              </span>
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <div className="mx-auto mt-12 max-w-3xl space-y-3 text-center font-serif text-xl italic leading-relaxed text-bone/85">
+            <p>Metamorphōsis changes the form.</p>
+            <p>Solve liberates the bound force.</p>
+            <p>Coagula gives that force a new vessel.</p>
+            <p>Metastoicheiōsis reorders the elemental relations.</p>
+          </div>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+            Fulfilled transformation makes the new form{" "}
+            <span className="italic text-gold">
+              a more truthful embodiment of its governing virtue
+            </span>{" "}
+            — which is why the question is never whether the form changed, but what force now governs
+            it, what virtue it embodies, and what relationships it produces.
+          </p>
+        </div>
+      </section>
+
       <section id="lexicon" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-490} />
+        <Backdrop src="/bg/cabinet.webp" opacity={0.4} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § Lexicon · Where the Terms Are Defined

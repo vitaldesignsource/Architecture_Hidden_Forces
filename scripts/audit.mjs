@@ -190,6 +190,14 @@ if (lex.length) {
     else if (target.numeral && target.numeral !== n)
       fail("lexicon", `"${term}" claims § ${n} but #${at} is § ${target.numeral}`);
   }
+// A term defined twice sends readers to two different sections for the same
+// word, and the pointer check passes both because each resolves on its own.
+// "Solve et coagula" shipped twice before this existed.
+  const termNames = lex.map((m) => m[1]);
+  const dupTerms = termNames.filter((t, i) => termNames.indexOf(t) !== i);
+  if (dupTerms.length)
+    fail("lexicon", `defined more than once: ${[...new Set(dupTerms)].join(", ")}`);
+
   note("lexicon", `${lex.length} entries, every pointer and numeral correct`);
 }
 
