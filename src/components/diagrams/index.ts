@@ -36,3 +36,4 @@ export { FalseSpiritualization } from "./FalseSpiritualization";
 export { SophianicFaces } from "./SophianicFaces";
 export { SolveCoagula } from "./SolveCoagula";
 export { SophianicChalice } from "./SophianicChalice";
+export { WheelOfTranselementation } from "./WheelOfTranselementation";

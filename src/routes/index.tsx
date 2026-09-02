@@ -43,6 +43,7 @@ import {
   SophianicFaces,
   SolveCoagula,
   SophianicChalice,
+  WheelOfTranselementation,
 } from "@/components/diagrams";
 
 export const Route = createFileRoute("/")({
@@ -9963,7 +9964,14 @@ function Index() {
               element literally becoming another. It means the elemental economy is reordered so a
               different mode of life becomes possible.
             </p>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+          </div>
+
+          <div className="mt-16">
+            <WheelOfTranselementation />
+          </div>
+
+          <div className="mt-16 max-w-3xl">
+            <p className="text-base leading-relaxed text-muted-foreground">
               A person governed by excessive Tejas expresses intensity as anger, consumption, or
               restless ambition. Trans-elementation does not extinguish the fire. It changes fire&rsquo;s
               relation to water, air, earth and space — so that it becomes illumination rather than
