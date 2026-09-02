@@ -45,6 +45,10 @@ import {
   SolveCoagula,
   SophianicChalice,
   WheelOfTranselementation,
+  HekaAndMaat,
+  FourOffices,
+  EthericTideScales,
+  FiveArchitecturesOfFear,
 } from "@/components/diagrams";
 
 /**
@@ -9981,6 +9985,714 @@ function Index() {
             </span>{" "}
             — which is why the question is never whether the form changed, but what force now governs
             it, what virtue it embodies, and what relationships it produces.
+          </p>
+        </div>
+      </section>
+
+      <section id="heka" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-665} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XLVIII · Heka
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            How significance becomes{" "}
+            <span className="italic text-gold">causally consequential</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Heka is not merely hidden force. It is hidden force made operative through an adequate
+              chain of mediation.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            The Egyptian word is usually translated &ldquo;magic&rdquo;, which misleads — it suggests
+            superstition, stage illusion, or an attempt to violate the order of nature. Heka was
+            closer to an operative power woven into the structure of existence: the capacity through
+            which names, images, words, substances and ritual actions become effective. It was held
+            to be natural and primordial, and it ran through protection, healing, temple work,
+            funerary preparation and ordinary life alike.
+          </p>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            So it is not another rung between Spirit and Matter. It is a mode of efficacy running
+            through the whole chain. Force may exist without becoming effective in a particular
+            vessel. A symbol may hold meaning without activating participation. A rite may keep its
+            form after losing its object. A name may be correctly pronounced and empty in relation.{" "}
+            <span className="text-bone/90">
+              Heka is present when the chain becomes functionally joined.
+            </span>
+          </p>
+
+          <div className="mt-24">
+            <HekaAndMaat />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The shape of an operation
+            </p>
+            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+              VIRTUE → MYTHIC PATTERN → NAME AND IMAGE → SPOKEN FORMULA → EMBODIED ACTION →
+              MATERIAL VESSEL → TRANSFORMED CONDITION
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Each stage translates the one before it, and because no translation is perfect, each
+              introduces the possibility of the transductive loss named in § XVII. The image may
+              inadequately represent the myth. The words may fail to awaken the image. The
+              practitioner&rsquo;s intention may be divided. The material may be inappropriate. The
+              recipient may resist. The surrounding field may disperse it. Heka is strong where the
+              levels reinforce one another and weak where they contradict.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Which is why an amulet&rsquo;s power was never held to sit in one property. It could
+              arise from the conjunction of shape, decoration, inscription, colour, material, spoken
+              words and the actions performed with it — a coordinated assembly rather than an
+              isolated charge. Read through § X, the material is its Salt, the intended virtue its
+              Sulfur, the words and images its Mercury; the wearer is the living vessel, and the
+              sacred world that makes the images legible is the tradition.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Sia, Hu, and Heka
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["Sia", "perceives the pattern", "Perception differentiates and recognises — the Light function."],
+                ["Hu", "articulates the pattern", "The recognised pattern given ordered, authoritative speech — the Tone function."],
+                ["Heka", "makes the articulated pattern operative", "The transductive efficacy by which what is perceived and said becomes an actual alteration."],
+              ].map(([a, b, c]) => (
+                <div key={a} className="grid gap-1 border-b border-border py-4 sm:grid-cols-[6rem_1fr]">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span>
+                    <span className="font-serif text-base italic text-bone/80">{b}</span>
+                    <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{c}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-sm leading-relaxed text-bone/60">
+              A functional correspondence, not a claim that the Egyptian terms are the
+              architecture&rsquo;s ethers. What it registers is that Egyptian thought did not divide
+              knowledge, speech and efficacy as sharply as modern thought does.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The Veil gives the same operation its four stages. Warmth empowers the intention —
+              without it a rite may be technically correct and inwardly inert. Light gives it an
+              image, a name and a direction. Tone gives it command and sequence, which is why
+              incantation was never merely explanatory: recitation laid names, events and identities
+              into an ordered verbal act, a path the force could move along. Life installs the
+              pattern in a vessel so it persists past the moment of utterance.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The name, and what it is not
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              A divine name is a verbal synthema — an address that gathers myth, attribute,
+              function, image, cult and authority into one concentrated sound-form. Speaking it
+              activates those associations in the practitioner, the tradition and the field.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              The name does not control the divine as a password controls a machine. It establishes a
+              defined relationship within an inherited sacred grammar.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Myth works the same way, as a large-scale seedform. A sufferer could be identified with
+              a deity who had suffered and been restored; a present danger placed inside the
+              structure of a mythic victory. The practitioner did not merely recall the myth — the
+              event was inserted into its pattern, which carries formative inertia because
+              generations of rite and attention had deepened its channels.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Ritual identification is methexis under boundary: the participant takes a position
+              within the drama, the body becomes the image, speech becomes utterance. Without
+              preparation and closure it becomes inflation, projection, or the appropriation of an
+              authority no one conferred — which is why § XLVI governs it.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What cannot simply be copied
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              No divine power, intention or symbolic meaning passes into material expression
+              unaltered. A formula loses dimensions of the pattern it carries. An image reveals some
+              attributes and conceals others. Translation shifts the associations of sacred names.
+              Historical distance weakens the field that made an operation legible at all.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              So Egyptian rites cannot be lifted out of their world and assumed to function
+              identically. Their forms belonged to a particular temple, language, priesthood and
+              social order.{" "}
+              <span className="text-bone/90">
+                A modern system may learn from their architecture — the coordination of name, image,
+                material, myth, speech, body and field — without claiming to have recovered the
+                operation itself.
+              </span>{" "}
+              That restraint is itself an application of right relation to tradition.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The same restraint applies to healing. Protective speech, names, amulets and practical
+              treatment could belong to one operation because the Egyptian account did not sharply
+              divide material from symbolic causation. This is not a replacement for medicine. Heka
+              does not become greater by ignoring matter — it becomes effective by finding the
+              material relations through which transformation can actually occur.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Six questions, not one
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Because an operation can fail by succeeding at the wrong level, &ldquo;did it
+              work?&rdquo; is not sufficient. The architecture needs several standards at once, which
+              is what separates efficacy from fulfilled operation.
+            </p>
+            <ol className="mt-8 space-y-3">
+              {[
+                "Did the operation produce an effect at all?",
+                "Did the effect reach the level it was intended for?",
+                "Did it endure beyond the moment of the rite?",
+                "Did it preserve the virtue that originated it?",
+                "Did it strengthen the vessel, or diminish it?",
+                "Did it contribute to right relation in the surrounding field?",
+              ].map((q, i) => (
+                <li key={q} className="grid grid-cols-[2rem_1fr] gap-4">
+                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-base leading-relaxed text-muted-foreground">{q}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-10 text-base leading-relaxed text-muted-foreground">
+              Which makes heka a kind of engineering — not because it reduces gods to mechanisms, but
+              because it recognises that mediation has structure. A poorly built bridge does not
+              carry a load because its builder was sincere, and a poorly built rite does not mediate
+              a force because its participant felt devotion. Channels, proportions, materials,
+              sequence and destination all matter.{" "}
+              <span className="text-bone/90">
+                And it must stay Sophianic: the sacred is not a machine, the gods are not switches,
+                and living participants are not components.
+              </span>
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <div className="mx-auto mt-12 max-w-3xl space-y-2 text-center font-serif text-lg italic leading-relaxed text-bone/85">
+            <p>Sia perceives the pattern.</p>
+            <p>Sophia discerns its right relation.</p>
+            <p>Hu articulates it.</p>
+            <p className="text-gold">Heka activates it.</p>
+            <p>The Fourfold Veil translates it.</p>
+            <p>Morphaithēr carries it.</p>
+            <p>The living vessel embodies it.</p>
+            <p>Ma&rsquo;at judges whether the resulting form belongs to the harmony of the whole.</p>
+          </div>
+          <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
+            An invisible force becomes operative not through intention alone but through the
+            intelligent coordination of{" "}
+            <span className="italic text-gold">
+              name, image, word, matter, body, memory, authority, and field
+            </span>
+            .
+          </p>
+        </div>
+      </section>
+
+      <section id="microcosm" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-680} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § XLIX · Spirit, Soul, and Body
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            Neither a mind in a machine nor a spirit{" "}
+            <span className="italic text-gold">imprisoned in matter</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Spirit animates. Essence determines. Soul mediates. Body embodies.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Not three objects placed beside one another but three principal registers of one living
+            act of manifestation. Spirit supplies the animating current; essence the distinctive law
+            by which that current becomes <span className="italic">this</span> being; soul receives,
+            interprets and organises it; body gives it location, resistance and consequence. A human
+            life is the ongoing labour of establishing right relation among them.
+          </p>
+
+          <div className="mt-24">
+            <FourOffices />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What microcosm means here
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Not that the person is a miniature copy of the universe, but that the same relations
+              governing manifestation are repeated within a human life. The movement from invisible
+              force into visible form, from unity into differentiation, from possibility into
+              actuality — and the return from manifestation toward conscious participation — can all
+              be met inside one person.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Which means the human being stands at an intersection: vertically open to what exceeds
+              the personality, horizontally entangled with nature, ancestry, culture and history. And
+              it means no act is only one thing. A thought modifies attention; attention affects
+              emotion; emotion alters breath and posture; action enters the world and returns as
+              consequence.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The vessel does not merely transmit what passes through it —{" "}
+              <span className="text-bone/90">it metabolises</span>. Pain can become cruelty, wisdom,
+              art, compassion or paralysis depending on how it is received. Desire can be dissipated,
+              repressed, compulsively enacted, or transmuted into sustained work. The quality of the
+              vessel decides the fate of the force passing through it.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Intensity does not establish origin
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Not every psychic movement is pneumatic. A powerful image may come from fear, trauma,
+              suggestion, collective contagion, wishful thinking, or genuine encounter — and the
+              force with which it arrives tells you nothing about which. The soul has to learn the
+              difference between what merely excites it and what actually orders it.
+            </p>
+            <div className="mt-8 grid gap-8 lg:grid-cols-2">
+              <div className="border-l-2 border-gold/40 pl-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                  Authentic influence
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Deepens coherence, ethical responsibility, clarity, and right relation.
+                </p>
+              </div>
+              <div className="border-l-2 border-bone/30 pl-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/80">
+                  Counterfeit illumination
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Produces inflation, compulsion, fragmentation — and exemption from accountability.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 text-sm leading-relaxed text-bone/60">
+              That last one is the tell. A genuine deepening does not arrive with a licence attached.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Why the body is not merely physical
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Saying so denies no biology. It says the physical description, however necessary, does
+              not exhaust what a body is. A body is also lived, inherited, relational, symbolic and
+              ecological — matter organised into presence. It carries ancestry as structure and
+              disposition, history as scar, posture, skill and adaptation, relationship because
+              bodies develop through contact and protection and neglect.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              It remembers, though not as a literal record of specific events.{" "}
+              <span className="text-bone/90">It remembers through readiness.</span> Fear contracts
+              the breath. Vigilance becomes posture. Craft becomes muscular intelligence. Prayer
+              establishes rhythms of stillness. Love and danger alike shape how the organism
+              anticipates contact.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              Density is not spiritual inferiority. Density gives force endurance — a thought may
+              vanish in seconds; a thought made habit can structure decades.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              So the body is both revelation and concealment. It discloses the invisible through
+              gesture, voice, movement and health, and it never fully discloses the depths animating
+              it: the person before us is materially present and never reducible to what can be
+              measured. Hunger, fatigue, illness, pleasure, ageing, sexuality, labour and death are
+              not interruptions of spiritual life. They are among the conditions through which
+              spiritual truth has to become real.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Practice as architectural work
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Attention repairs pathways. Discernment separates mixed currents. Discipline
+              strengthens weakened structures. Contemplation opens vertical receptivity. Ethical
+              action brings the lower chambers into conformity with the higher. Ritual gives
+              invisible relations a controlled symbolic body. Physical care maintains the instrument
+              through which every other operation must proceed.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              The purpose is not to destroy the lower in favour of the higher. A sanctuary without
+              foundations cannot support its altar.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+            The completed human being is not the one who abandons the body, silences the soul, or
+            dissolves individuality into an abstract spirit. It is the one in whom each level fulfils
+            its proper office.
+          </p>
+          <p className="mx-auto mt-10 max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+            A finite architecture capable of consciously receiving the greater order, transforming it
+            through a unique centre, and{" "}
+            <span className="italic text-gold">giving it truthful form within the world</span>.
+          </p>
+        </div>
+      </section>
+
+      <section id="etheric" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-695} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § L · The Etheric Body
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The pattern that must be{" "}
+            <span className="italic text-gold">continually performed</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Not another material body hidden inside the visible one, nor a cloud of undifferentiated
+              energy around it. The living organisation by which matter is gathered into biological
+              unity and maintained through continual change.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            This amends § XLIX. Four offices become five, and the new one sits between soul and body:
+            spirit animates, essence determines, soul mediates,{" "}
+            <span className="text-bone/90">the etheric body vitalises and organises</span>, and the
+            physical body embodies. It is the lower formative bridge of the living vessel — more
+            subtle than anatomy, more immediately bound to organic life than thought or identity.
+          </p>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Vital, and formative
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              <span className="italic">Vital</span> names what distinguishes living organisation from
+              inert arrangement: nourishment, assimilation, circulation, growth, repair, adaptation.{" "}
+              <span className="italic">Formative</span> names the fact that vitality is never
+              shapeless — life does not merely energise matter, it organises matter according to
+              proportion, boundary and developmental tendency.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              So this is not a quantity of energy a person has. A body can be highly stimulated
+              without being deeply vital; excessive stimulation produces agitation, sleeplessness and
+              eventual exhaustion. Vitality is better recognised by whether the organism can receive,
+              distribute, spend and replenish force{" "}
+              <span className="text-bone/90">without losing internal coherence</span>.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              It also names a genuine question rather than an extra substance. Genetics, metabolism,
+              cellular signalling and nervous regulation describe the mechanisms of a living body.
+              The etheric concept asks something else: why those mechanisms act as coordinated
+              expressions of one whole rather than as unrelated chemical events. § XLII supplies the
+              material alphabet; this is nearer to the living syntax by which that alphabet is
+              arranged, exchanged, and repeatedly reconstituted as an organism.
+            </p>
+          </div>
+
+          <div className="mt-24">
+            <EthericTideScales />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Depletion is not an empty tank
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Fatigue is not always vitality&rsquo;s enemy. It is often the living architecture
+              announcing that expenditure has outrun renewal, drawing the organism away from outward
+              action toward restoration. Heard, it protects the vessel. Chronically overridden, the
+              protective withdrawal can deepen into something more disorganised.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              The problem is not always absence of force. It may be force trapped in defensive
+              mobilisation, or scattered across too many unfinished demands.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Which is why a person can feel exhausted and restless at once, and why restoration is
+              not primarily a matter of adding stimulation. It means re-establishing rhythm and right
+              relation — sleep, nourishment, movement, quiet, natural light, emotional safety,
+              meaningful contact, and relief from unbroken demand.
+            </p>
+            <p className="mt-8 border-l-2 border-bone/40 pl-5 text-base leading-relaxed text-bone/80">
+              Medical care remains essential wherever fatigue or any other symptom may have a
+              physiological or psychological cause. This is a metaphysical interpretation of
+              vitality, and it must never be used to dismiss diagnosis or treatment. Nor is illness
+              evidence of spiritual inferiority. Bodies inherit different conditions and different
+              capacities; etheric strength is not a measure of moral worth. A person may be
+              spiritually lucid and ethically profound while physically ill.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Pattern acting as process
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              A blueprint can stay unchanged while the structure it describes deteriorates. This is
+              different, because it participates in building and maintaining the structure itself. It
+              keeps identity the way a flame or a whirlpool or a melody does — not by holding the
+              same material, but by sustaining an organised continuity through change.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              So it is neither fixed nor infinitely plastic. Completely fixed, growth and adaptation
+              would be impossible; infinitely plastic, there would be no identity to continue. Living
+              form exists in the tension between fidelity and responsiveness: it must remain itself
+              while incorporating what it was not before.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              And the soul can influence this field, because emotion, attention and habit alter
+              rhythm and conduct — but it is not created by thought. Positive thinking does not
+              abolish biological limits, and imagination alone does not command organic life. The
+              relation runs both ways and is mediated in both directions.
+            </p>
+            <p className="mt-8 text-sm leading-relaxed text-bone/60">
+              Regeneration shows the same principle at its clearest. The organism does not consciously
+              recall an ideal blueprint, yet its processes stay oriented toward a characteristic
+              organisation — healing as the effort of living form to remember itself through matter.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+            The first great victory of form over dispersion: it gathers matter without freezing it,
+            organises movement without eliminating freedom, and preserves identity through exchange.
+          </p>
+          <p className="mx-auto mt-10 max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+            The body lives because form is not merely placed upon matter.{" "}
+            <span className="italic text-gold">Form is continuously enacted through it.</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="astral" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-710} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § LI · The Astral and Psychic Layers
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            How life acquires an{" "}
+            <span className="italic text-gold">inwardly experienced world</span>
+          </h2>
+          <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              The etheric body maintains the organism. The astral body gives the organism an inward
+              world — conditions not merely registered but felt as pleasant or painful, desirable or
+              threatening, beautiful or repellent.
+            </p>
+          </div>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            It is not the whole soul. It is one mobile, image-bearing region within a larger psychic
+            architecture that also holds reason, conscience, self-reflection and deliberate will. The
+            astral body supplies much of the soul&rsquo;s immediate imagery and motive force —{" "}
+            <span className="text-bone/90">
+              and does not by itself determine what is true, ethical, or spiritually authoritative.
+            </span>
+          </p>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Desire, image, sensation
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              A field of felt vectors. Desire draws toward; aversion pushes away — and aversion is
+              itself a negative desire, the impulse to increase distance from an unwanted condition.
+              Astral motion is not movement through space but the interior movement of a being toward
+              participation or withdrawal.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Desire supplies pressure; image supplies the vessel. A vague longing becomes operative
+              once it acquires a face, scene, memory or symbol — and when desire enters an image, the
+              image becomes magnetised, organising attention and expectation around itself. Which is
+              why repeatedly imagined possibilities gain power even when nothing is present:{" "}
+              <span className="text-bone/90">
+                the astral body responds not only to actual objects but to represented ones.
+              </span>
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              And it stands before interpretation rather than after it. Something feels welcoming,
+              threatening, fascinating or strangely familiar; thought may correct that later, but the
+              polarity arrives before the explanation.
+            </p>
+          </div>
+
+          <div className="mt-24">
+            <FiveArchitecturesOfFear />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Quality and dynamic state
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The tattvas give an astral formation its qualitative character. The gunas give it a
+              dynamic condition — and they are two axes, not one. Tamas is inertia, containment and
+              the capacity to hold a form; rajas is propulsion, friction and restless
+              differentiation; sattva is clarity, proportion and transparency. None is a moral label.
+              Disorder is one dominating beyond its measure, or arriving at the wrong time.
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["Tejas", "lucid discrimination", "ambition, anger", "smouldering resentment"],
+                ["Apas", "compassion", "emotional hunger", "stagnant grief"],
+                ["Pṛthivī", "embodied reliability", "accumulation, control", "immobility, refusal"],
+                ["Vāyu", "intellectual flexibility", "anxious proliferation", "confused circulation"],
+                ["Ākāśa", "contemplative openness", "fascination with the unlimited", "vacant withdrawal"],
+              ].map(([t, s, r, m]) => (
+                <div key={t} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[6rem_1fr_1fr_1fr]">
+                  <span className="font-serif text-base text-gold">{t}</span>
+                  <span className="text-sm leading-relaxed text-bone/80">{s}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{r}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{m}</span>
+                </div>
+              ))}
+              <div className="grid gap-1 pt-2 sm:grid-cols-[6rem_1fr_1fr_1fr]">
+                <span />
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">under sattva</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">under rajas</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">under tamas</span>
+              </div>
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Which gives a more precise question than any single label allows.{" "}
+              <span className="text-bone/90">
+                What quality is shaping this force, in what dynamic condition does that quality
+                presently exist, and what relation must change for it to become coherent?
+              </span>{" "}
+              Transformation does not require eliminating tamas and rajas — tamas may need waking by
+              rajas, excessive rajas may need containing by tamas. A living psyche must be able to
+              stabilise, to move, and to clarify.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              And sattva is not the destination if it becomes an identity. One can grow attached to
+              feeling serene, elevated, or spiritually exceptional. It is the clearest condition of
+              the medium; spirit exceeds the conditions of the medium.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Memory, complex, and the returning configuration
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Memory is not a neutral archive holding perfect replicas. It is a living reconstruction
+              — both a trace of what occurred and a present act of psychic formation. And astral
+              memory is especially affective: it preserves not only events but their felt
+              orientations, safe or unsafe, empowering or humiliating.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              So a present situation can wake that pattern before the person recognises the
+              similarity. The astral body answers the returning configuration; the reflective mind
+              looks afterwards for a reason. A complex is that constellation grown stable — memory,
+              emotion, bodily readiness, image and desire held together tightly enough to organise
+              perception around itself.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              The person does not merely remember fear. The architecture of fear begins to perceive
+              through them.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Phantasia, and what appearance does not prove
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              <span className="italic">Phantasia</span> does not mean fantasy in the dismissive
+              sense. It is the faculty by which something becomes inwardly present — perception
+              leaving an image, memory becoming visible again, invisible meaning taking a form
+              consciousness can reach. An inner image is rarely a neutral picture: it carries
+              atmosphere, orientation and pressure. It is form containing force.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              But the astral field can clothe personal desire in sacred imagery, give fear the voice
+              of prophecy, and return cultural material as apparently autonomous revelation.
+            </p>
+            <div className="mt-8 space-y-2 border-l-2 border-bone/30 pl-6 font-serif text-lg leading-relaxed text-bone/80">
+              <p>Vividness proves intensity, not truth.</p>
+              <p>Beauty proves formal power, not spiritual authority.</p>
+              <p>Repetition proves a pattern is established, not that its reading is correct.</p>
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              So discernment asks what preceded the image, what desire or fear it serves, whether it
+              produces clarity or compulsion, whether its meaning survives the intensity subsiding,
+              whether it encourages responsibility or exemption, and whether anything corroborates it
+              where it makes a factual claim.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              The aim is not to mistrust imagination but to free it from unconscious possession. An
+              image can be contemplated without being obeyed, honoured without being literalised,
+              explored without being declared objective. That interval between appearance and assent
+              is one of the chief freedoms of a developed soul.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The theatre, and who is shaping it
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Memory supplies the scenery, desire the direction, emotion the atmosphere; the tattvas
+              colour the stage and the gunas decide whether the performance is lucid, turbulent or
+              obscured. Complexes appear as recurring characters and habitual expectations as
+              scripts. Consciousness is not always the director — a scene is usually already underway
+              when awareness arrives.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Ritual works through this theatre deliberately, giving an idea an imaginal body that
+              engages emotion, memory and action at once. Which is exactly why symbolic engineering
+              is dangerous. Advertising, propaganda, political spectacle and social contagion all
+              demonstrate that the theatre is continuously being shaped by someone —{" "}
+              <span className="text-bone/90">
+                and whoever holds a community&rsquo;s dominant images influences where its force will
+                move.
+              </span>
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The work is not to close the theatre but to purify its conditions. Solve loosens the
+              automatic bond among image, emotion and reaction, separating what had been fused —
+              sensation from interpretation, memory from present fact, desire from command, symbol
+              from literal assertion. Coagula reorganises the released force around a truer pattern
+              and embodies it in conduct.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Spirit may enter the theatre, and spirit is not the costumes it wears there. Gods,
+              angels, ancestors, stars and radiant figures may be profound mediating forms, and no
+              astral appearance exhausts what it symbolises. The soul&rsquo;s danger is worshipping
+              the clothing and losing the current it was meant to reveal.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <p className="mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
+            A disordered astral body is a theatre in which every actor claims to be the king, every
+            emotion rewrites the script, and every striking image declares itself a revelation. An
+            ordered one is not empty or colourless.
+          </p>
+          <p className="mx-auto mt-10 max-w-3xl text-center font-serif text-2xl leading-relaxed text-bone/90">
+            Vivid without being tyrannical, receptive without being credulous,{" "}
+            <span className="italic text-gold">
+              imaginative without abandoning discernment
+            </span>
+            .
           </p>
         </div>
       </section>

@@ -37,3 +37,7 @@ export { SophianicFaces } from "./SophianicFaces";
 export { SolveCoagula } from "./SolveCoagula";
 export { SophianicChalice } from "./SophianicChalice";
 export { WheelOfTranselementation } from "./WheelOfTranselementation";
+export { HekaAndMaat } from "./HekaAndMaat";
+export { FourOffices } from "./FourOffices";
+export { EthericTideScales } from "./EthericTideScales";
+export { FiveArchitecturesOfFear } from "./FiveArchitecturesOfFear";
