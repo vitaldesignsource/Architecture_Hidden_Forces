@@ -46,6 +46,34 @@ import {
   WheelOfTranselementation,
 } from "@/components/diagrams";
 
+/**
+ * The header and the mobile strip were two hand-maintained lists, and they drifted:
+ * twelve sections had no entry in either, including every section from § XLI on —
+ * the whole ethical capstone was unreachable from the menu. One array now feeds
+ * both, so they cannot disagree again.
+ *
+ * These are waypoints through the arc, not a table of contents. Each is the same
+ * kind of thing — a movement or a domain the work spends several sections in —
+ * which the old list was not: "Descent" and "Return" are movements of the whole,
+ * while "Kabbalah" and "Channels" were single sections sitting at the same level.
+ * Everything finer than this is the Index's job, and it does it better with its
+ * reading paths.
+ */
+const NAV = [
+  { id: "index", label: "Index" },
+  { id: "spine", label: "Spine" },
+  { id: "fourfold", label: "Ethers" },
+  { id: "descent", label: "Descent" },
+  { id: "centers", label: "Body" },
+  { id: "symbol", label: "Symbol" },
+  { id: "ritual", label: "Ritual" },
+  { id: "astrology", label: "Sky" },
+  { id: "rightrelation", label: "Relation" },
+  { id: "sophia", label: "Sophia" },
+  { id: "lexicon", label: "Lexicon" },
+  { id: "formula", label: "Return" },
+];
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -84,18 +112,7 @@ function Index() {
             </div>
           </a>
           <div className="hidden shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] lg:flex xl:gap-6 xl:tracking-[0.25em]">
-            {[
-              { id: "index", label: "Index" },
-              { id: "spine", label: "Spine" },
-              { id: "descent", label: "Descent" },
-              { id: "fourfold", label: "Ethers" },
-              { id: "return", label: "Return" },
-              { id: "kabbalah", label: "Kabbalah" },
-              { id: "laws", label: "Laws" },
-              { id: "astrology", label: "Sky" },
-              { id: "channels", label: "Channels" },
-              { id: "formula", label: "Formula" },
-            ].map((l) => (
+            {NAV.map((l) => (
               <a
                 key={l.id}
                 href={`#${l.id}`}
@@ -113,56 +130,12 @@ function Index() {
           </div>
         </div>
 
-        {/* Below lg the full bar cannot fit, and a 37,000px treatise is unusable
-            without navigation. A scrollable strip keeps every section reachable
-            without forcing the page itself to scroll horizontally. */}
+        {/* Below lg the full bar cannot fit. The strip carries the same waypoints
+            rather than a longer list: 43 entries in a horizontal scroller was not
+            navigation, it was an unsorted index competing with the real one. */}
         <div className="border-t border-border/50 lg:hidden">
           <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
-            {[
-              { id: "index", label: "Index" },
-              { id: "terms", label: "Terms" },
-              { id: "spine", label: "Spine" },
-              { id: "descent", label: "Descent" },
-              { id: "fourfold", label: "Ethers" },
-              { id: "morphaither", label: "Morphaithēr" },
-              { id: "return", label: "Return" },
-              { id: "kabbalah", label: "Kabbalah" },
-              { id: "extended", label: "Powers" },
-              { id: "flywheel", label: "Flywheel" },
-              { id: "triad", label: "Triad" },
-              { id: "retentive", label: "Crypt" },
-              { id: "laws", label: "Laws" },
-              { id: "astrology", label: "Sky" },
-              { id: "subtattva", label: "Compounds" },
-              { id: "dao", label: "Dao" },
-              { id: "ignisophia", label: "Ignisophia" },
-              { id: "reciprocal", label: "Reciprocal" },
-              { id: "mixing", label: "Mixing" },
-              { id: "celestial", label: "Celestial" },
-              { id: "channels", label: "Channels" },
-              { id: "centers", label: "Centers" },
-              { id: "treasures", label: "Treasures" },
-              { id: "axis", label: "Axis" },
-              { id: "organs", label: "Organs" },
-              { id: "image", label: "Image" },
-              { id: "symbol", label: "Symbol" },
-              { id: "ritual", label: "Ritual" },
-              { id: "taxonomy", label: "Forces" },
-              { id: "mediation", label: "Mediation" },
-              { id: "theurgy", label: "Theurgy" },
-              { id: "daimons", label: "Daimons" },
-              { id: "books", label: "Books" },
-              { id: "lexicon", label: "Lexicon" },
-              { id: "tradition", label: "Tradition" },
-              { id: "forceform", label: "Force & Form" },
-              { id: "tides", label: "Tides" },
-              { id: "mansions", label: "Mansions" },
-              { id: "zodiac", label: "Zodiac" },
-              { id: "rightrelation", label: "Right Relation" },
-              { id: "mortality", label: "Death" },
-              { id: "grounds", label: "Grounds" },
-              { id: "formula", label: "Formula" },
-            ].map((l) => (
+            {NAV.map((l) => (
               <a
                 key={l.id}
                 href={`#${l.id}`}

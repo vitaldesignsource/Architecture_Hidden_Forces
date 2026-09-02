@@ -129,6 +129,32 @@ if (offCentre.length)
   fail("full-bleed", `centres on its wrapper, not the viewport: ${offCentre.join(", ")}`);
 else note("full-bleed", `${bandsChecked} wrapped bands, all with a full-width containing block`);
 
+// ---------------------------------------------------------------------- nav
+// The menu is a fossil unless something watches it. Its two lists drifted until
+// twelve sections had no entry and every section from § XLI on was unreachable
+// from it. Requiring an entry per section is wrong — the menu is waypoints, not a
+// contents page — so instead: every target must exist, and the menu must still
+// reach the end of the work.
+const navIds = [...src.matchAll(/\{ id: "([a-z-]+)", label: "[^"]*" \}/g)].map((m) => m[1]);
+const navDead = navIds.filter((id) => !byId[id]);
+if (navDead.length) fail("nav", `points at sections that do not exist: ${navDead.join(", ")}`);
+else {
+  const roman = (r) => {
+    const V = { I: 1, V: 5, X: 10, L: 50, C: 100 };
+    let t = 0;
+    for (let i = 0; i < r.length; i++) t += V[r[i + 1]] > V[r[i]] ? -V[r[i]] : V[r[i]];
+    return t;
+  };
+  const numbered2 = numbered.map((s) => roman(s.numeral));
+  const deepest = Math.max(...numbered2);
+  const navReach = Math.max(
+    ...navIds.map((id) => (byId[id]?.numeral ? roman(byId[id].numeral) : 0))
+  );
+  if (deepest - navReach > 2)
+    fail("nav", `stops at § ${navReach} while the work runs to § ${deepest} — the last ${deepest - navReach} sections have no waypoint`);
+  else note("nav", `${navIds.length} waypoints, all resolving, reaching § ${navReach} of ${deepest}`);
+}
+
 // --------------------------------------------------------------- backdrops
 // A Backdrop uses -z-10, which escapes to the root stacking context unless its
 // container isolates. This failed four separate times and hid a backdrop each
