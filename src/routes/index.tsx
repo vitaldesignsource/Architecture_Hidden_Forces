@@ -10532,6 +10532,17 @@ function Index() {
               threatening, fascinating or strangely familiar; thought may correct that later, but the
               polarity arrives before the explanation.
             </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              And the influence runs upward as well as down. Fear alters breath, posture and
+              muscular readiness; shame contracts expression and joy expands it. But exhaustion,
+              hunger, illness, hormonal change, sensory overload and broken sleep colour emotion and
+              imagination just as strongly.{" "}
+              <span className="text-bone/90">
+                The astral body does not float above the organism.
+              </span>{" "}
+              It is interpenetrated by the etheric rhythms of § L and continually receives
+              impressions from the physical body — the two form one reciprocal circuit.
+            </p>
           </div>
 
           <div className="mt-24">
@@ -10613,6 +10624,54 @@ function Index() {
 
           <div className="mt-24 max-w-3xl">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Emotion, dream, imagination
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Emotion is the movement of the whole field around a perceived value — grief registers
+              loss, anger answers obstruction or violation, fear anticipates danger, joy accompanies
+              connection. It is neither infallible revelation nor meaningless disturbance. It is
+              information already interpreted through a person&rsquo;s history and present
+              organisation.
+            </p>
+            <p className="mt-8 border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+              Which is why the same event moves two people differently. Emotion reveals the relation
+              between the event and the receiving architecture. It does not disclose the event alone.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Dream arises when ordinary sensory governance loosens and memory, bodily condition,
+              unfinished feeling and symbolic pattern can combine more freely. It is one of the
+              primary theatres in which psychic material becomes visible to itself — and{" "}
+              <span className="text-bone/90">not every dream is a message.</span> Many appear to
+              metabolise experience, regulate emotion, or reorganise memory. Some carry unusually
+              coherent or transpersonal symbols. Vividness cannot tell them apart: an intense dream
+              may matter greatly and be neither predictive nor transmitted from anywhere.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              And imagination works in more than one mode.
+            </p>
+            <div className="mt-6 space-y-px">
+              {[
+                ["Reproductive", "recalls and recombines what has already been experienced"],
+                ["Projective", "constructs possible futures"],
+                ["Creative", "discovers combinations not previously recognised"],
+                ["Contemplative", "becomes receptive to symbolic relations the discursive mind cannot easily generate"],
+              ].map(([a, b]) => (
+                <div key={a} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[9rem_1fr]">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-sm leading-relaxed text-bone/60">
+              It can reveal, distort, rehearse, compensate, liberate or deceive, and which it does
+              depends on the condition of the soul and the discipline of attention. A purified
+              imagination is not one emptied of images. It is one able to receive an image without
+              immediately confusing it with a fact, a command, or an objective revelation.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Phantasia, and what appearance does not prove
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10621,6 +10680,13 @@ function Index() {
               leaving an image, memory becoming visible again, invisible meaning taking a form
               consciousness can reach. An inner image is rarely a neutral picture: it carries
               atmosphere, orientation and pressure. It is form containing force.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              A sign points toward a relatively determinate meaning. A symbol exceeds any single
+              definition — it gathers several levels of relation and keeps generating meaning as
+              consciousness returns to it, which is why symbols are the natural vessels of this
+              region: they can hold bodily sensation, personal memory, collective inheritance and
+              metaphysical intuition in one appearance.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               But the astral field can clothe personal desire in sacred imagery, give fear the voice
