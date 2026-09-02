@@ -235,6 +235,20 @@
 
 /* A side panel faces the text column on its left, so that edge gets a long
    dissolve; the right edge stops at the content column and needs its own. */
+/* A left-anchored panel runs the full height of its block and dissolves
+   rightward across the text rather than sitting beside it — opaque behind the
+   heading, thinning as it crosses the list. It bleeds off the left screen edge,
+   so only the right side needs a fade. */
+.aoh-bd-por-l {
+  height: 100%;
+  width: min(64%, 56rem);
+  --bd-mask-x: linear-gradient(to right, #000 0%, #000 55%, transparent 100%);
+  --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 7%, #000 88%, transparent 100%);
+}
+@media (max-width: 1023px) {
+  .aoh-bd-por-l { width: 100%; --bd-mask-x: linear-gradient(to right, #000 0%, #000 60%, transparent 100%); }
+}
+
 .aoh-bd-por {
   --bd-mask-x: linear-gradient(to right, transparent 0%, #000 36%, #000 88%, transparent 100%);
   --bd-mask-y: linear-gradient(to bottom, transparent 0%, #000 17%, #000 73%, transparent 100%);

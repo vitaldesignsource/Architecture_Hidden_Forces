@@ -15,6 +15,7 @@ export function Backdrop({
   fill = false,
   scrim = 0.4,
   portrait = false,
+  anchor = "right",
   edgeFade = 13,
 }: {
   src: string;
@@ -24,6 +25,10 @@ export function Backdrop({
    *  portrait backdrop is a side panel matching the source aspect instead —
    *  uncropped, faded into the void along its inner edge. */
   portrait?: boolean;
+  /** Which edge a portrait panel is pinned to. A left-anchored panel spans the
+   *  full height of its block and fades out rightward across the text, rather
+   *  than sitting beside it. */
+  anchor?: "left" | "right";
   /** How far the left and right edges dissolve into the void, as a percentage of
    *  width. Without it a full-bleed band ends in a hard vertical cut wherever the
    *  source has content at its frame edge. 0 keeps the edges sharp. */
@@ -66,7 +71,10 @@ export function Backdrop({
       <div
         className={
           fill ? "aoh-bd-fill absolute inset-0"
-               : portrait ? "aoh-bd-por absolute top-0 right-0"
+               : portrait
+                 ? anchor === "left"
+                   ? "aoh-bd-por-l absolute top-0 left-0"
+                   : "aoh-bd-por absolute top-0 right-0"
                           : "aoh-bd absolute inset-x-0 top-0"
         }
         style={{ "--bd-o": opacity } as React.CSSProperties}

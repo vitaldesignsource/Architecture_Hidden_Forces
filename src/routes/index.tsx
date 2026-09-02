@@ -6583,7 +6583,7 @@ function Index() {
       </section>
 
       <section id="books" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/crosssection.webp" opacity={0.72} position="center 50%" scrim={0.16} portrait />
+        <Backdrop src="/bg/crosssection.webp" opacity={0.62} position="center 45%" scrim={0.2} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
