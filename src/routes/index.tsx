@@ -51,6 +51,7 @@ import {
   FiveArchitecturesOfFear,
   TheInterval,
   TheRecursion,
+  TheAxis,
 } from "@/components/diagrams";
 
 /**
@@ -3875,6 +3876,10 @@ function Index() {
                 without consuming its reserves.
               </p>
             </div>
+          </div>
+
+          <div className="mt-24">
+            <TheAxis />
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
