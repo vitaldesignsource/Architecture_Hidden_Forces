@@ -698,7 +698,7 @@ function Phos() {
       {/* § V — SHADOW */}
       <section id="shadow" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-455} />
-        <Backdrop src="/bg/eclipsecave.webp" opacity={0.48} position="center 30%" scrim={0.18} portrait anchor="left" />
+        <Backdrop src="/bg/eclipse.webp" opacity={0.48} position="center 40%" scrim={0.18} anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § V · Shadow

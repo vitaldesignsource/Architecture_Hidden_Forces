@@ -8,7 +8,8 @@ operation: [Formation, Revelation]
 related: [x-14, v-10, x-18, x-15, x-17]
 summary: Not synonymous with unreality — a real formative power, productive and receptive, through which spiritual influence becomes inwardly visible; an intermediary, not the final judge of truth.
 epigraph: "A disciplined imagination does not become empty. It becomes transparent."
-backdrop: scrims
+backdrop: moonrotunda
+position: center 45%
 ---
 
 Imagination is the soul's image-producing and image-receiving medium. It can recombine sensory memories, embody abstract relations, anticipate possible futures, clothe spiritual intuitions in symbolic form, and give psychic realities an appearance through which consciousness can encounter them.

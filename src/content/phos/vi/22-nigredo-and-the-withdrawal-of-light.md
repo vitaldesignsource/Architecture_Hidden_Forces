@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Alchemical]
 operation: [Dissolution, Solve]
 related: [vi-21, vi-24, ii-22, xiii-21, xiii-22]
 summary: The condition in which transformation becomes unavoidable — its darkness may be fertile, but fertility is not guaranteed.
-backdrop: kilnvault
+backdrop: eclipse
+position: center 40%
 ---
 
 *Nigredo*, the blackening, is the alchemical condition of dissolution, decomposition, confusion, and the breakdown of a former order.

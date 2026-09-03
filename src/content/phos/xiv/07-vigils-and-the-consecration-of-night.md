@@ -9,8 +9,8 @@ symbol: [Lamp]
 related: [xiv-6, xi-22, xi-16, vi-9, xiv-3, xi-25]
 summary: Awareness preserved through the hours given to sleep — a small maintained light placed within darkness rather than against it; night deepens receptivity and also distorts, so a truthful vigil balances openness with discernment.
 epigraph: "The lamp does not abolish night but creates an illuminated centre from which darkness can be encountered without total absorption."
-backdrop: lamplines
-position: center 60%
+backdrop: moonrotunda
+position: center 45%
 ---
 
 A vigil is the disciplined preservation of awareness during a time normally given to sleep. By remaining awake through darkness, the participant transforms night from an unconscious interval into a consciously inhabited field.

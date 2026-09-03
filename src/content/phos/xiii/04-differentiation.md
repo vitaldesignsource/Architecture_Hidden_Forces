@@ -9,7 +9,8 @@ symbol: [Prism]
 related: [i-13, iii-13, vii-26, ii-9, xii-5, xiii-19]
 summary: Unified light revealing distinct qualities, powers, and directions — the One Light becoming many participations without division at its source; fragmentation is what differentiation becomes when the parts forget the whole.
 epigraph: "Healthy differentiation produces articulate multiplicity; disordered differentiation produces competing fragments."
-backdrop: prismtable
+backdrop: greatcrystal
+position: center 45%
 ---
 
 Differentiation is the operation by which unified light reveals distinct qualities, colours, powers, functions, and directions. The prism supplies a physical analogy: apparently unified light discloses an ordered spectrum when it passes through a differentiating medium. The colours are neither completely separate substances nor meaningless illusions. They are distinguishable expressions of a deeper luminous unity.

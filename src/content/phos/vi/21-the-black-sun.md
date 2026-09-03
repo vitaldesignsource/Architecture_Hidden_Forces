@@ -7,7 +7,8 @@ symbol: [Black Sun]
 quality: [Black or Dark Luminosity]
 related: [vi-22, vi-23, xvii-28, ii-22, vii-9]
 summary: Solar power concealed within darkness, used here in its alchemical and metaphysical sense and distinguished from modern political appropriations.
-backdrop: crater
+backdrop: eclipse
+position: center 40%
 ---
 
 The Black Sun is a symbol with several historical meanings. Within this system it is used specifically in its alchemical and metaphysical sense and should be distinguished from modern political appropriations.

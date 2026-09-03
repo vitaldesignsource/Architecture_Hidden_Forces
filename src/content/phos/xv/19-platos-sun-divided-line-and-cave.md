@@ -11,7 +11,7 @@ text: [Republic]
 related: [i-15, xiii-8, vi-19, v-28, x-22, xiii-31]
 summary: Three connected images — the sun as offspring of the Good, the four modes of the Line, and the prisoners who take shadows for the world; illumination as a turning of the soul that must transform the receiver; the return to the cave as obligation; brightness relative to the capacity of vision.
 epigraph: "A higher light may initially appear as darkness or dazzlement, while a lower artificial light may seem absolute to those who have never turned toward another source."
-backdrop: eclipsecave
+backdrop: cavedunes
 position: center 45%
 ---
 

@@ -7,7 +7,8 @@ plane: [Physical]
 related: [vi-1, v-17, ix-7, xvi-17, v-28]
 summary: Darkness relative to the receiver — what is invisible cannot be declared nonexistent, but invisibility does not prove a hidden presence either.
 epigraph: "Darkness establishes uncertainty, not confirmation."
-backdrop: cavepool
+backdrop: cavedunes
+position: center 45%
 ---
 
 Sensible darkness occurs when the human visual system receives too little visible light to distinguish forms adequately.

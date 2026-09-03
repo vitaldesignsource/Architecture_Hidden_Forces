@@ -10,8 +10,8 @@ symbol: [Black Sun]
 related: [vi-21, vi-23, xv-75, xiii-22, xvii-20, vi-5]
 summary: The source of light represented as dark - eclipse, midnight sun, solar descent, sol niger, or an illumination so interior that it appears as darkness; associated with nigredo without being equated with evil, and explicitly distinguished from the modern political emblem that borrows the name.
 epigraph: "Genuine hidden illumination prepares a more truthful dawn; counterfeit darkness only consumes."
-backdrop: eclipsecave
-position: center 45%
+backdrop: eclipse
+position: center 40%
 ---
 
 The black sun is a paradox: the source of light represented as dark. It may signify eclipsed power, the sun at midnight, solar descent into the underworld, hidden fire, the alchemical *sol niger*, or an illumination so interior or transcendent that it appears as darkness to ordinary sight.

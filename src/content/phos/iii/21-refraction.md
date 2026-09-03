@@ -5,7 +5,8 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-5, xix-6, viii-16, iii-19, i-19]
 summary: The necessary geometry of translation — refraction is not automatically distortion, and the task is to tell faithful bending from deviation.
-backdrop: cavepool
+backdrop: icetunnel
+position: center 50%
 ---
 
 Refraction is the bending of light as it passes between media in which it propagates differently. The light continues, but its direction changes.

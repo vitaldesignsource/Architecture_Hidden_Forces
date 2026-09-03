@@ -6,8 +6,8 @@ tradition: [Architecture of Hidden Forces, Egyptian, Greek]
 operation: [Dissolution, Return]
 related: [ii-27, ii-28, vi-24, vii-29, xv-6]
 summary: A chamber of regeneration only when death is followed by reorganisation — otherwise it remains an archive of unresolved descent.
-backdrop: cavesunset
-position: center 45%
+backdrop: icetunnel
+position: center 50%
 ---
 
 The Underworld is not simply a place of punishment. Across many symbolic systems it is the region of ancestors, buried memory, dissolved forms, hidden wealth, seeds, roots, death, and possible renewal.
