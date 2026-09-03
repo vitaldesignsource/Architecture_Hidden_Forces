@@ -1,4 +1,6 @@
+import { Fragment, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import toc from "@/lib/phos/toc.json";
 import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import { Backdrop } from "@/components/Backdrop";
@@ -49,6 +51,58 @@ const NAV = [
   { id: "colour", label: "Colour" },
   { id: "reading", label: "Reading" },
 ];
+
+// Every pointer from this volume into the Portal resolves through the outline
+// registry, so a title can never drift from the entry it names.
+const PORTAL = new Map(
+  toc.divisions.flatMap((d) => d.entries.map((e) => [e.id, { ...e, division: d.id, numeral: d.numeral || "Portal" }])),
+);
+function ref(id: string) {
+  const r = PORTAL.get(id);
+  if (!r) throw new Error(`phos: "${id}" is not a registered entry`);
+  return r;
+}
+function EntryLink({ id, children, className }: { id: string; children?: ReactNode; className?: string }) {
+  const r = ref(id);
+  return (
+    <Link to="/phos/$division/$entry" params={{ division: r.division, entry: r.slug }} className={className} title={r.title}>
+      {children ?? r.title}
+    </Link>
+  );
+}
+function LawTag({ id }: { id: string }) {
+  const r = ref(id);
+  return (
+    <EntryLink
+      id={id}
+      className="ml-3 inline-block whitespace-nowrap align-middle font-mono text-[9px] not-italic uppercase tracking-[0.25em] text-gold/50 transition-colors hover:text-gold"
+    >
+      {r.numeral} · {r.title.replace(/^The Law of /, "")}
+    </EntryLink>
+  );
+}
+
+function PortalPointers({ ids }: { ids: string[] }) {
+  return (
+    <div data-portal-pointers className="mt-12 max-w-3xl border-t border-border pt-6">
+      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Portal</p>
+      <p className="mt-3 text-sm leading-relaxed text-bone/70">
+        {ids.map((id, i) => {
+          const r = ref(id);
+          return (
+            <Fragment key={id}>
+              {i > 0 && <span className="mx-2 text-bone/30">·</span>}
+              <EntryLink id={id} className="underline-offset-4 hover:text-gold hover:underline">
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{r.numeral} {r.n}</span>{" "}
+                {r.title}
+              </EntryLink>
+            </Fragment>
+          );
+        })}
+      </p>
+    </div>
+  );
+}
 
 const ENTRIES = [
   { n: "I", id: "registers", t: "Three Registers of Light", d: "Lux, lumen, splendor — light in its source, on its way, and arrived." },
@@ -403,6 +457,7 @@ function Phos() {
               what it mediates.
             </p>
           </div>
+          <PortalPointers ids={["i-3", "i-6", "v-27", "xxi-3"]} />
         </div>
       </section>
 
@@ -470,6 +525,7 @@ function Phos() {
               — proodos outward and epistrophē back. This volume is that arc with the lamp left in.
             </p>
           </div>
+          <PortalPointers ids={["i-11", "i-15", "xix-3", "xv-28"]} />
         </div>
       </section>
 
@@ -553,6 +609,7 @@ function Phos() {
               , the visible as the invisible brought to rest.
             </p>
           </div>
+          <PortalPointers ids={["xv-83", "xv-84", "xix-5", "xvi-4"]} />
         </div>
       </section>
 
@@ -634,6 +691,7 @@ function Phos() {
               which is the whole method of § XI.
             </p>
           </div>
+          <PortalPointers ids={["xv-21", "iii-8", "xix-1", "iv-5"]} />
         </div>
       </section>
 
@@ -718,6 +776,7 @@ function Phos() {
               recognises only full light and full dark has mistaken a limiting case for the rule.
             </p>
           </div>
+          <PortalPointers ids={["vi-27", "vi-9", "xix-10", "vi-26"]} />
         </div>
       </section>
 
@@ -791,6 +850,7 @@ function Phos() {
               receive again.
             </p>
           </div>
+          <PortalPointers ids={["v-28", "v-29", "xix-9", "xix-11", "xiii-27"]} />
         </div>
       </section>
 
@@ -856,6 +916,7 @@ function Phos() {
               establish the correctness of its interpretation.
             </p>
           </div>
+          <PortalPointers ids={["xv-80", "xv-81", "xii-20", "xv-55"]} />
         </div>
       </section>
 
@@ -920,6 +981,7 @@ function Phos() {
               , with the interval each one carries into the next.
             </p>
           </div>
+          <PortalPointers ids={["xv-90", "iv-15", "xvi-6", "xix-6"]} />
         </div>
       </section>
 
@@ -1000,6 +1062,7 @@ function Phos() {
               .
             </p>
           </div>
+          <PortalPointers ids={["xv-19", "xvi-2", "iii-17", "xix-2"]} />
         </div>
       </section>
 
@@ -1106,6 +1169,7 @@ function Phos() {
             </Link>
             .
           </p>
+          <PortalPointers ids={["xii-22", "xx-10", "xix-19", "iv-1"]} />
         </div>
       </section>
 
@@ -1209,6 +1273,7 @@ function Phos() {
               .
             </p>
           </div>
+          <PortalPointers ids={["xx-1", "xx-11", "xix-16", "xix-18"]} />
         </div>
       </section>
 
@@ -1281,6 +1346,7 @@ function Phos() {
             <span className="italic text-gold">a vessel that returns what it was given</span>, and
             to know your own measure before you ask for more.
           </p>
+          <PortalPointers ids={["xiii-31", "xix-14", "xviii-21", "xix-20"]} />
         </div>
       </section>
 
@@ -1296,7 +1362,7 @@ function Phos() {
             The vocabulary, and its <span className="italic text-gold">home sections</span>
           </h2>
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-            One line each, and a pointer to the section that does the work. The first
+            One line each, a pointer to the section that does the work, and where the Portal has an entry that treats the word, a pointer there too. The first
             volume&rsquo;s terms are not repeated here; its own{" "}
             <Link to="/" hash="lexicon" className="text-gold-dim underline-offset-4 hover:text-gold hover:underline">
               Lexicon
@@ -1306,33 +1372,32 @@ function Phos() {
           </p>
           <div className="mt-10 grid gap-x-12 gap-y-px lg:grid-cols-2">
             {[
-              { term: "Lux", script: "Πηγή", at: "registers", n: "I", gloss: "Light in its source — self-possessed, undivided, and by itself never seen." },
-              { term: "Lumen", script: "Διαφανές", at: "registers", n: "I", gloss: "Light in transit through what is transparent, and invisible while in transit." },
-              { term: "Splendor", script: "Χρῶμα", at: "registers", n: "I", gloss: "Light received by a bounded body and given back — as sheen, or as colour." },
-              { term: "Bonum diffusivum sui", at: "diffusion", n: "II", gloss: "The Good is self-diffusing: giving is what it is, not something it decides, and the giving costs it nothing." },
-              { term: "Multiplication of species", at: "deluce", n: "III", gloss: "Grosseteste’s term for the instantaneous self-propagation by which a point of light generates a sphere — and thereby the first body." },
-              { term: "Rarefaction", at: "deluce", n: "III", gloss: "Densest at the point, thinnest at the rim. Distance from the source is a difference of degree, never of substance." },
-              { term: "Diaphanes", script: "διαφανές", at: "medium", n: "IV", gloss: "The transparent — not a material but a capacity: to be crossed without keeping what crosses." },
-              { term: "Turbidity", at: "medium", n: "IV", gloss: "A medium that colours what it carries and takes the colour for its own. The characteristic failure of every intermediary." },
-              { term: "Umbra and penumbra", at: "shadow", n: "V", gloss: "Full shade and its graded margin. Most real shadows have the margin, and most real understanding lives in it." },
+              { term: "Lux", script: "Πηγή", at: "registers", n: "I", portal: "xxi-3", gloss: "Light in its source — self-possessed, undivided, and by itself never seen." },
+              { term: "Lumen", script: "Διαφανές", at: "registers", n: "I", portal: "xxi-3", gloss: "Light in transit through what is transparent, and invisible while in transit." },
+              { term: "Splendor", script: "Χρῶμα", at: "registers", n: "I", portal: "xxi-3", gloss: "Light received by a bounded body and given back — as sheen, or as colour." },
+              { term: "Bonum diffusivum sui", at: "diffusion", n: "II", portal: "i-15", gloss: "The Good is self-diffusing: giving is what it is, not something it decides, and the giving costs it nothing." },
+              { term: "Multiplication of species", at: "deluce", n: "III", portal: "xv-84", gloss: "Grosseteste’s term for the instantaneous self-propagation by which a point of light generates a sphere — and thereby the first body." },
+              { term: "Rarefaction", at: "deluce", n: "III", portal: "xv-83", gloss: "Densest at the point, thinnest at the rim. Distance from the source is a difference of degree, never of substance." },
+              { term: "Diaphanes", script: "διαφανές", at: "medium", n: "IV", portal: "xv-21", gloss: "The transparent — not a material but a capacity: to be crossed without keeping what crosses." },
+              { term: "Turbidity", at: "medium", n: "IV", portal: "xv-90", gloss: "A medium that colours what it carries and takes the colour for its own. The characteristic failure of every intermediary." },
+              { term: "Umbra and penumbra", at: "shadow", n: "V", portal: "vi-27", gloss: "Full shade and its graded margin. Most real shadows have the margin, and most real understanding lives in it." },
               { term: "Or Yashar", at: "vessel", n: "VI", gloss: "The straight light, descending from the source. It cannot be measured, because measurement happens at the far end." },
-              { term: "Or Chozer", at: "vessel", n: "VI", gloss: "The returning light — the vessel’s own act, and the only part of the exchange that can be measured." },
+              { term: "Or Chozer", at: "vessel", n: "VI", portal: "xviii-21", gloss: "The returning light — the vessel’s own act, and the only part of the exchange that can be measured." },
               { term: "Tzimtzum", at: "vessel", n: "VI", gloss: "The contraction that clears a space in which something not-itself can exist. The first gift is the room." },
-              { term: "Shevirat ha-kelim", at: "vessel", n: "VI", gloss: "The breaking of the vessels: light past the measure is not returned but scattered, with sparks caught in the shards." },
-              { term: "Ishrāq", at: "ladder", n: "VII", gloss: "Illumination as the single substance of being — degrees differing in intensity, never in kind." },
+              { term: "Shevirat ha-kelim", at: "vessel", n: "VI", portal: "xix-11", gloss: "The breaking of the vessels: light past the measure is not returned but scattered, with sparks caught in the shards." },
+              { term: "Ishrāq", at: "ladder", n: "VII", portal: "xxi-10", gloss: "Illumination as the single substance of being — degrees differing in intensity, never in kind." },
               { term: "Barzakh", at: "ladder", n: "VII", gloss: "The isthmus: body, dark in itself, and what a light must stand on to be somewhere rather than everywhere." },
-              { term: "Knowledge by presence", at: "ladder", n: "VII", gloss: "A light knows itself without an image standing between. A narrow claim about self-awareness, routinely borrowed as a warrant for far wider ones." },
-              { term: "Urphänomen", at: "colour", n: "VIII", gloss: "The primal phenomenon: light through turbidity warms, darkness through lit turbidity cools, and colour belongs to the boundary." },
+              { term: "Knowledge by presence", at: "ladder", n: "VII", portal: "xv-80", gloss: "A light knows itself without an image standing between. A narrow claim about self-awareness, routinely borrowed as a warrant for far wider ones." },
+              { term: "Urphänomen", at: "colour", n: "VIII", portal: "xv-90", gloss: "The primal phenomenon: light through turbidity warms, darkness through lit turbidity cools, and colour belongs to the boundary." },
               { term: "The sunlike eye", at: "eye", n: "IX", gloss: "An organ receives only what it is constituted to receive — which makes the organ part of the evidence, and therefore checkable." },
-              { term: "Glare", at: "counterfeits", n: "X", gloss: "Intensity that prevents sight rather than enabling it, and is experienced as overwhelming light." },
-              { term: "Glamour", at: "counterfeits", n: "X", gloss: "A surface loved as a source. Splendor mistaken for lux — the commonest counterfeit, and the most sincere." },
-            ].map((e) => (
-              <a
+              { term: "Glare", at: "counterfeits", n: "X", portal: "v-29", gloss: "Intensity that prevents sight rather than enabling it, and is experienced as overwhelming light." },
+              { term: "Glamour", at: "counterfeits", n: "X", portal: "xii-22", gloss: "A surface loved as a source. Splendor mistaken for lux — the commonest counterfeit, and the most sincere." },
+            ].map((e: { term: string; script?: string; at: string; n: string; gloss: string; portal?: string }) => (
+              <div
                 key={e.term}
-                href={`#${e.at}`}
                 className="group grid grid-cols-[1fr_auto] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40"
               >
-                <span className="min-w-0">
+                <a href={`#${e.at}`} className="min-w-0">
                   <span className="block font-serif text-lg text-bone transition-colors group-hover:text-gold">
                     {e.term}
                     {e.script && <span className="ml-2 text-base text-gold-dim">{e.script}</span>}
@@ -1340,11 +1405,16 @@ function Phos() {
                   <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
                     {e.gloss}
                   </span>
+                </a>
+                <span className="flex shrink-0 flex-col items-end gap-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                  <a href={`#${e.at}`}>§ {e.n}</a>
+                  {e.portal && (
+                    <EntryLink id={e.portal} className="text-gold/50 transition-colors hover:text-gold">
+                      Portal · {ref(e.portal).numeral} {ref(e.portal).n}
+                    </EntryLink>
+                  )}
                 </span>
-                <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
-                  § {e.n}
-                </span>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -1371,9 +1441,11 @@ function Phos() {
             makes, and browsable by tradition, quality, plane, operation, symbol, text, and period.
           </p>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
-            It is being written entry by entry, and says so. What is not yet written is listed as
-            forthcoming rather than filled in — the rule the Architecture set for itself on its first
-            page, kept.
+            It was written entry by entry, and said so as it went: what was not yet written was
+            listed as forthcoming rather than filled in — the rule the Architecture set for itself on
+            its first page, kept. Every entry is now written. Each of the twelve sections above closes
+            on the entries that carry its argument further, and the Formula below names, line by line,
+            the laws it compresses.
           </p>
           <Link
             to="/phos/portal"
@@ -1427,20 +1499,55 @@ function Phos() {
             ΦΩΣ · The Luminous Formula
           </p>
           <div className="mt-12 space-y-4 font-serif text-lg italic leading-relaxed text-bone/85 sm:text-xl md:text-2xl">
-            <p>The Source gives, because giving is what it is.</p>
-            <p>What is given is not the Source, and the Source is not diminished.</p>
-            <p>The giving extends, and extension is the first body.</p>
-            <p>What extends must cross a medium.</p>
-            <p>The medium keeps part, alters part, and loses part.</p>
-            <p>What arrives meets a body, and the body casts a shadow.</p>
-            <p>The shadow is not absence — it is the body&rsquo;s report of its own shape.</p>
-            <p>The body holds what its measure allows.</p>
-            <p>Past the measure the vessel breaks, and the light scatters into the shards.</p>
-            <p>Within the measure the vessel returns, and the return is what can be known.</p>
-            <p>At the boundary between what is returned and what is not, colour arises.</p>
-            <p>
+            <p data-formula-line>
+              The Source gives, because giving is what it is.
+              <LawTag id="xix-3" />
+            </p>
+            <p data-formula-line>
+              What is given is not the Source, and the Source is not diminished.
+              <LawTag id="xix-3" />
+            </p>
+            <p data-formula-line>
+              The giving extends, and extension is the first body.
+              <LawTag id="xix-5" />
+            </p>
+            <p data-formula-line>
+              What extends must cross a medium.
+              <LawTag id="xix-1" />
+            </p>
+            <p data-formula-line>
+              The medium keeps part, alters part, and loses part.
+              <LawTag id="xix-7" />
+            </p>
+            <p data-formula-line>
+              What arrives meets a body, and the body casts a shadow.
+              <LawTag id="xix-10" />
+            </p>
+            <p data-formula-line>
+              The shadow is not absence — it is the body&rsquo;s report of its own shape.
+              <LawTag id="xix-10" />
+            </p>
+            <p data-formula-line>
+              The body holds what its measure allows.
+              <LawTag id="xix-9" />
+            </p>
+            <p data-formula-line>
+              Past the measure the vessel breaks, and the light scatters into the shards.
+              <LawTag id="xix-8" />
+              <LawTag id="xix-11" />
+            </p>
+            <p data-formula-line>
+              Within the measure the vessel returns, and the return is what can be known.
+              <LawTag id="xix-14" />
+            </p>
+            <p data-formula-line>
+              At the boundary between what is returned and what is not, colour arises.
+              <LawTag id="xix-6" />
+            </p>
+            <p data-formula-line>
               And the eye, being of the same nature, receives it —{" "}
               <span className="not-italic text-gold">and owes what it received</span>.
+              <LawTag id="xix-15" />
             </p>
           </div>
 

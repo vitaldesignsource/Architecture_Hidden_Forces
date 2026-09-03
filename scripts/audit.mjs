@@ -424,6 +424,23 @@ if (lex.length) {
   );
 }
 
+// ------------------------------------------------------------- portal refs
+// A route or component that names an entry id in a string literal ("xix-3")
+// is pointing a reader into the Portal, and a mistyped id lands them on the
+// "not in the outline" page. Every such literal must be a registered entry.
+{
+  const toc = JSON.parse(readFileSync(join(root, "src/lib/phos/toc.json"), "utf8"));
+  const ids = new Set(toc.divisions.flatMap((d) => d.entries.map((e) => e.id)));
+  const prefixes = toc.divisions.map((d) => d.id).join("|");
+  const re = new RegExp(`"((?:${prefixes})-\\d+)"`, "g");
+  let refs = 0;
+  const dead = [];
+  for (const s of sources)
+    for (const m of s.text.matchAll(re)) { refs++; if (!ids.has(m[1])) dead.push(`${s.file}: "${m[1]}"`); }
+  if (dead.length) fail("portal refs", `not registered entries: ${dead.join(", ")}`);
+  note("portal refs", `${refs} entry ids named in source, all registered`);
+}
+
 // ---------------------------------------------------------------- measure
 if (!css.includes("74ch")) fail("measure", "the line-length cap is missing from styles.css");
 
