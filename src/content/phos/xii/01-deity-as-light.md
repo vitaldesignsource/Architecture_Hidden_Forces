@@ -7,7 +7,8 @@ operation: [Illumination]
 related: [v-3, v-4, i-11, i-12, xii-2, i-13]
 summary: The divine as the source of manifestation and intelligibility — real ontological illumination, not electromagnetic radiation and not figurative language; and a source that exceeds even its own light.
 epigraph: "Its radiance is given without the exhaustion of its origin."
-backdrop: lightdoor
+backdrop: deitydoor
+position: center 50%
 ---
 
 Deity is called Light because the divine is the source of manifestation, intelligibility, life, order, and spiritual vision. Divine light does not merely reveal realities already existing independently of it. It grants their capacity to exist, become intelligible, and participate in goodness.

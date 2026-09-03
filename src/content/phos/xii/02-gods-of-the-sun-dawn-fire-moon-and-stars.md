@@ -7,7 +7,8 @@ symbol: [Solar Disc, Star, Flame]
 related: [vii-2, vii-11, vii-1, viii-3, xii-16, vii-15]
 summary: Divine powers encountered through the most commanding luminosities — not primitive astronomy but deities acting through visible vessels they exceed; names may address distinct gods or local faces of one current.
 epigraph: "A divine power is not an abstract energy available without relation."
-backdrop: nightterrace
+backdrop: skygods
+position: center 40%
 ---
 
 Cultures have encountered divine powers through the most commanding forms of celestial and elemental luminosity. Solar gods disclose sovereignty, visibility, generation, justice, measure, and the victorious return of light. Dawn deities reveal awakening, passage, renewal, beauty, and the opening of worlds. Fire gods preside over sacrifice, transformation, communication, purification, domestic continuity, and divine presence. Lunar deities govern reflection, reception, fertility, memory, dream, change, concealment, and return. Stellar gods reveal orientation, destiny, immortality, ancestral presence, and the ordered multiplicity of heaven.

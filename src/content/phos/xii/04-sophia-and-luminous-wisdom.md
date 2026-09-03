@@ -7,7 +7,8 @@ operation: [Formation, Inspiration]
 related: [xii-18, ii-22, xii-5, i-9, ii-23]
 summary: Wisdom as living presence — mirror of divine intention, womb of intelligibility, guide of return — distinguished in its biblical and Gnostic forms; joined to fire, it becomes Ignisophia.
 epigraph: "Sophia receives and orders; fire tests and transfigures."
-backdrop: alembic
+backdrop: sophia
+position: center 30%
 ---
 
 Sophia is luminous wisdom: not knowledge accumulated as information, but divine intelligence capable of receiving, ordering, gestating, and bringing forth form. She is wisdom as living presence, feminine hypostasis, mirror of divine intention, womb of intelligibility, and guide of return.

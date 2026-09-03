@@ -8,7 +8,8 @@ operation: [Manifestation]
 related: [i-4, i-5, i-2, xii-17, xii-1]
 summary: The Orphic First-Appearing — the power through which concealed generation breaks into manifestation, emerging from the cosmic egg; not a solar deity but the act by which manifestation itself first shines forth.
 epigraph: "Phanes represents the more primordial act by which manifestation itself first shines forth."
-backdrop: sprout
+backdrop: phanes
+position: center 45%
 ---
 
 Phanes is the Orphic First-Appearing, the luminous power through which concealed generation breaks into manifestation. His name is related to appearing, shining, and bringing into visibility. He is also called Protogonos, the First-Born, and is associated in Orphic material with other names and powers, including Erikepaios and primordial Eros.

@@ -1,6 +1,6 @@
 ---
-backdrop: belltower
-position: center 40%
+backdrop: hallrays
+position: center 50%
 ---
 
 Light does not appear only as an impersonal field. It may also manifest through centres of intelligence, will, presence, and power. Gods, angels, daimons, heroes, ancestors, saints, archons, and souls are not interchangeable names for the same vague spiritual energy. They belong to differentiated orders, possess different relations to source and form, and mediate distinct kinds of influence.
