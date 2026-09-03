@@ -6645,7 +6645,7 @@ function Index() {
 
       {/* GROUNDS */}
       <section id="grounds" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/masons.webp" opacity={0.25} position="center 50%" />
+        <Backdrop src="/bg/pavilion.webp" opacity={0.25} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § Grounds · Why the Structure Holds

@@ -8,7 +8,8 @@ operation: [Healing]
 related: [ix-20, ix-21, xiii-7, xiii-19, xiii-14, ix-19]
 summary: The restoration of right relation within and among the levels of a being — illness neither reduced to spiritual failure nor stripped of spiritual dimension; healing may mean recovery, adaptation, reconciliation, or coherence within an enduring condition.
 epigraph: "Because influence can travel in several directions, healing must not assume that one level explains every condition."
-backdrop: springterrace
+backdrop: oasis
+position: center 55%
 ---
 
 Healing is the restoration of right relation within and among the levels of a living being. Illness may arise from physical injury, infection, inherited condition, environmental exposure, psychological disturbance, relational trauma, spiritual disorder, etheric disruption, or several causes acting together. It should neither be reduced to spiritual failure nor stripped of every possible spiritual dimension.

@@ -8,7 +8,8 @@ operation: [Dissolution, Liberation]
 related: [ix-24, ix-22, ii-28, ii-27, vi-25]
 summary: The real loosening and separation of the etheric body from a vessel that can no longer hold right relation with it — not photons escaping a corpse, but vitality released according to the laws of its own plane.
 epigraph: "Force is liberated from one form and made available to further transformation."
-backdrop: burnslope
+backdrop: glasshouse
+position: center 45%
 ---
 
 At biological death, the physical organism loses the integrated regulation through which its tissues functioned as one living whole. Circulation and respiration cease, electrochemical gradients collapse, and the coordinated activity of organs dissolves. Material components remain temporarily present, but the embodied unity that made them one organism no longer operates through them in the same manner.

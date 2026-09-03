@@ -11,8 +11,8 @@ text: [Celestial Hierarchy, Mystical Theology]
 related: [v-24, v-27, iii-2, ii-7, xiv-16, xv-54]
 summary: The superessential source proceeding without division, received differently according to capacity - hierarchy as purification, illumination, and perfection rather than domination; three angelic triads; dissimilar symbols that announce their own insufficiency; and the dazzling darkness beyond every divine name.
 epigraph: "True hierarchy is measured by transparent mediation."
-backdrop: gorgestair
-position: center 45%
+backdrop: gatesteps
+position: center 50%
 ---
 
 The writer known as Pseudo-Dionysius composed his works around the late fifth or early sixth century under the identity of Dionysius the Areopagite, Paul's Athenian convert. His synthesis of Christianity, scripture, liturgy, angelology, and late Neoplatonic philosophy became enormously influential in Eastern and Western Christianity.

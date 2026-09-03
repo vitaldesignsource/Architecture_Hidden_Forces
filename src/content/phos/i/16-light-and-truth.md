@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 quality: [Truthfulness, Clarity]
 related: [xix-17, vi-11, vi-27, vi-19, xviii-15, i-8]
 summary: Illumination alone does not guarantee truth; the enemy of truth is not darkness but distortion — a partial appearance presented as complete.
-backdrop: tidepool
+backdrop: pavilion
+position: center 50%
 ---
 
 Truth is related to light because truth involves disclosure. Something concealed becomes knowable, and what seemed fragmented is brought into clearer relation.

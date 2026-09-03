@@ -4,7 +4,8 @@ labels: [Architecture of Hidden Forces Doctrine]
 tradition: [Architecture of Hidden Forces]
 related: [portal-10, portal-7, xxi-15, xvii-1, iv-55]
 summary: Seven routes in — foundations, qualities, traditions, operations, bodies and worlds, primary texts, symbols — and why every entry cross-connects.
-backdrop: walker
+backdrop: gatesteps
+position: center 50%
 ---
 
 The Luminous Architecture can be entered through several routes.

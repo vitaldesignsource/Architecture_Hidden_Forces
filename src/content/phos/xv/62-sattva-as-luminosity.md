@@ -10,8 +10,8 @@ symbol: [Mirror]
 related: [ii-11, ii-9, vi-13, v-28, iii-17, xv-61]
 summary: Sattva, rajas, and tamas as fundamental tendencies rather than personality types - luminosity as the clarity of the reflecting medium rather than the light or the witness; even sattva capable of binding through attachment to purity and knowledge.
 epigraph: "Sattva is not identical with Light itself. It is the quality through which a field becomes receptive to light."
-backdrop: cliffpool
-position: center 45%
+backdrop: oasis
+position: center 55%
 ---
 
 In Sāṃkhya philosophy, manifest Nature or Prakṛti consists of three *guṇas*: *sattva*, *rajas*, and *tamas*. These are not merely personality categories. They are fundamental tendencies operating throughout mind and nature.

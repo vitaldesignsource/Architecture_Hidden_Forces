@@ -9,7 +9,8 @@ operation: [Coagula, Transfiguration, Vivification]
 related: [xiii-23, xv-51, xv-6, xiii-20, xv-56, ix-13]
 summary: Light returning to or recreating form after death, distinguished from mere survival - solar descent and dawn, seed and germination, Christian victory over death, and Egyptian reassembly and justification resembling one another without proving identity.
 epigraph: "If the exact disorder simply reappears, there has been repetition rather than rebirth."
-backdrop: regrowth
+backdrop: glasshouse
+position: center 45%
 ---
 
 Resurrection is light returning to or recreating form after death. It differs from simple survival. Survival means that something continues; resurrection means that life reconstitutes embodiment or appears in a transformed body.

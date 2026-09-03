@@ -5,7 +5,8 @@ confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic, Christian]
 related: [v-2, v-25, xv-55, v-30, ii-17]
 summary: Hierarchy meaning sacred or causal order, not domination — a distorted hierarchy turns metaphysical order into social superiority.
-backdrop: gorgestair
+backdrop: gatesteps
+position: center 50%
 ---
 
 Vertical hierarchies describe differences in causal depth and scope. They trace light from superessential mystery and fontal source through noetic, archetypal, formative, psychic, vital, and sensible orders.

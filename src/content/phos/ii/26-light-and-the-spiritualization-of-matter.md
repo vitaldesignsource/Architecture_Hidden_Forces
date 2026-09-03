@@ -8,7 +8,8 @@ operation: [Transfiguration, Consecration]
 related: [xiii-23, xix-13, ii-17, xiv-24, xx-18]
 summary: Not the rejection of matter but its growing capacity to carry life, intelligence, and meaning — boundary perfected as a vessel of communication.
 epigraph: "The highest form is not the form that disappears, but the form that carries more light without losing integrity."
-backdrop: sculptor
+backdrop: blackspire
+position: center 50%
 ---
 
 The spiritualisation of matter is not the rejection, evaporation, or humiliation of the material world. It is the process through which matter becomes increasingly capable of carrying life, intelligence, meaning, and conscious participation.

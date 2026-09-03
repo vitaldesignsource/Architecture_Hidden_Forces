@@ -7,7 +7,8 @@ quality: [Vitality, Living Light]
 plane: [Vital, Etheric]
 related: [ix-1, ii-18, ix-20, iv-22, ix-17]
 summary: Recognised through what it sustains — biology expresses vital light without constituting it; the etheric body is real, and vital light helps the organism continue becoming itself.
-backdrop: oldgrowth
+backdrop: oasis
+position: center 55%
 ---
 
 Vitality is the degree to which light supports animation, renewal, responsiveness, growth, and self-maintaining organisation.

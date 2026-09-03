@@ -7,7 +7,8 @@ quality: [Truthfulness]
 related: [i-16, xix-17, iv-6, iv-4, xi-26, i-8]
 summary: No other quality guarantees it — a false system may possess every appearance of luminous order; the most truthful light reveals the conditions of its own appearing.
 epigraph: "The most truthful light reveals not only the object but also the conditions under which the object has appeared."
-backdrop: tally
+backdrop: pavilion
+position: center 50%
 ---
 
 Truthfulness is the degree to which light faithfully discloses its source, object, context, and limitations.

@@ -10,8 +10,8 @@ symbol: [Crypt]
 related: [xiii-12, xiv-24, xiii-30, ii-28, xx-17, ii-25]
 summary: Consecration giving light a vessel, and imprisonment beginning when the vessel claims ownership - purpose, limits, maintenance, and a lawful means of release determined before a form is established, and the form revisited to ask whether it still transmits or merely retains.
 epigraph: "A mature practitioner does not seek to possess illumination."
-backdrop: reservoirs
-position: center 45%
+backdrop: blackspire
+position: center 50%
 ---
 
 Consecration gives light a vessel. Imprisonment begins when the vessel claims ownership of the light and refuses its further development. Every sacred form must therefore remain both stable enough to carry force and permeable enough to release it when its work is complete.

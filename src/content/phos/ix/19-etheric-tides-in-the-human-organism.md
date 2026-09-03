@@ -9,7 +9,8 @@ operation: [Withdrawal, Return]
 related: [ix-3, ix-4, ix-10, ix-18, ix-20]
 summary: Real periodic movements of formative vitality — expressed through, but not constituted by, circadian, respiratory, and hormonal rhythms; a living tide must be capable of return.
 epigraph: "Continuous maximum activation is not health. A living tide must be capable of return."
-backdrop: tide
+backdrop: oasis
+position: center 55%
 ---
 
 Etheric tides are real periodic movements of formative vitality within and around the organism. They involve expansion and contraction, concentration and distribution, reception and release, outward engagement and inward restoration.
