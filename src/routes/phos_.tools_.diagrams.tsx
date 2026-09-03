@@ -121,16 +121,22 @@ function Projection({ teaching, figures }: { teaching: string; figures: Figure[]
         <div className="flex flex-wrap gap-2">
           {figures.map((x, n) => (
             <button key={x.k} onClick={() => setI(n)} aria-pressed={n === i}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
-                n === i ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
-              {x.rel}
+              title={`${x.k} — ${x.rel}`}
+              className={`border px-3 py-1.5 text-left transition-colors ${
+                n === i ? "border-gold" : "border-border hover:border-gold/60"}`}>
+              <span className={`block font-serif text-sm ${n === i ? "text-gold" : "text-bone/80"}`}>{x.k}</span>
+              <span className="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+                {x.rel}
+              </span>
             </button>
           ))}
         </div>
       </div>
       <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
         Drawn {figures.length === 2 ? "twice" : `${figures.length} ways`} ·{" "}
-        {figures.map((x) => x.rel).join(", ")}
+        {[...new Set(figures.map((x) => x.rel))].join(", ")}
+        {figures.length > new Set(figures.map((x) => x.rel)).size &&
+          " — more than one figure asserting the same kind of relation, and differing in what they place where"}
       </p>
       <div className="mt-8"><FigureFrame f={cur} compact /></div>
     </div>
