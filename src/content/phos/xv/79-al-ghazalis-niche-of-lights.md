@@ -11,7 +11,8 @@ text: [Mishkāt al-Anwār]
 related: [xv-77, v-24, x-13, x-4, vi-14, xi-25]
 summary: Mishkāt al-Anwār's ascending series - sensible light, imagination, intellect, reflection, and prophetic spirit, each illuminating the level beneath while receiving from above; the parable read as a map of the faculties; and the veils of darkness, of mixed light, and of light itself.
 epigraph: "Partial light absolutised becomes a veil."
-backdrop: sanctum
+backdrop: nichejar
+position: center 60%
 ---
 
 Abū Ḥāmid al-Ghazālī's *Mishkāt al-Anwār*, or The Niche of Lights, is one of the most profound Islamic interpretations of the Qur'anic Light Verse. Al-Ghazālī begins with sensible light but progressively moves inward. Ordinary light makes visible objects perceptible to the eye. Yet the eye possesses limitations: it cannot see itself, cannot see what lies behind an obstruction, can be overwhelmed by excessive brightness, and may misjudge distance, movement, size, and position.

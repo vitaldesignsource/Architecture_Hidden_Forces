@@ -9,7 +9,8 @@ operation: [Integration, Awakening]
 related: [v-28, i-7, ii-25, xix-8, xx-14, xii-14]
 summary: Contact may occur before comprehension, but stable participation in an order of light requires an answering organ - and since brilliance of experience and depth of capacity are not identical, the law describes a developmental responsibility rather than a caste: one must become capable of carrying what one asks to receive.
 epigraph: "A being can consciously participate only in those orders of light for which it has developed a corresponding capacity."
-backdrop: bowl
+backdrop: nichejar
+position: center 60%
 ---
 
 Contact may occur before comprehension, but stable participation requires an answering organ. Intellectual light requires disciplined understanding. Moral light requires the ability to act beyond immediate impulse. Imaginal light requires a trained faculty of symbolic perception. Etheric light requires sensitivity to vitality, rhythm, and formative movement. Theurgic light requires ritual exactitude, reverence, protection, ethical preparation, and knowledge of mediation.

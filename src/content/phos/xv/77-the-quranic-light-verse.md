@@ -11,8 +11,8 @@ text: [Qur’an]
 related: [iii-17, v-28, i-13, ii-5, xiv-18, xv-79]
 summary: Āyat al-Nūr - niche, lamp, glass like a brilliant star, and oil from an olive neither of the east nor of the west, almost luminous before fire touches it; nūr ʿalā nūr, light upon light; a nearly complete grammar of transmission and a law of preparation.
 epigraph: "A vessel can receive only according to its condition."
-backdrop: reedslamp
-position: center 45%
+backdrop: nichejar
+position: center 60%
 ---
 
 The central scriptural foundation is [Qur'an 24:35](https://quran.com/24/35), traditionally called *Āyat al-Nūr*, the Verse of Light. It opens with the declaration that God is the Light of the heavens and the earth. It then presents a carefully nested image: a niche containing a lamp, the lamp enclosed within glass, the glass shining like a brilliant star, and the lamp kindled from the oil of a blessed olive tree belonging neither exclusively to the east nor to the west. The oil is described as almost luminous even before fire touches it. The vision culminates in *nūr ʿalā nūr* - "light upon light" - and in the affirmation that God guides to His light whom He wills.

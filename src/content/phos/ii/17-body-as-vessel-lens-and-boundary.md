@@ -7,7 +7,8 @@ plane: [Physical]
 related: [ii-14, iii-16, iii-12, ix-8, ii-26]
 summary: Neither incidental container nor prison — the architecture through which luminosity becomes bearable, relational, and effective.
 epigraph: "Form is spirit made bearable through successive degrees of mediation."
-backdrop: statue
+backdrop: nichejar
+position: center 60%
 ---
 
 A body is not an incidental container. It is an organised living whole and the concrete site at which forces become situated, limited, and capable of action.

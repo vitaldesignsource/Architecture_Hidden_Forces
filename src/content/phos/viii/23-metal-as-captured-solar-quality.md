@@ -7,7 +7,8 @@ symbol: [Gold]
 quality: [Golden Light, Gleam]
 related: [xiv-11, xiv-12, iv-57, vii-16, xvii-27]
 summary: Gold becomes solar not because it contains literal sunlight, but because its colour, durability, and rarity make it an exceptional vessel of solar quality — a real participation, not an assigned symbol.
-backdrop: bellfoundry
+backdrop: goldvein
+position: center 50%
 ---
 
 Metals possess distinctive relationships with light, heat, electricity, magnetism, oxidation, and conductivity because of their physical structures and electronic properties. Their brilliance arises largely from how their electrons interact with incident light.

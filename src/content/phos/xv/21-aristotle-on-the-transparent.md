@@ -11,7 +11,8 @@ text: [De Anima]
 related: [ii-5, iii-8, i-7, ii-2, vi-3, xv-22]
 summary: Against rays from the eye — the transparent, to diaphanes, as a capacity of air, water, and certain bodies; light as the actuality of the transparent as transparent, darkness as its privation; colour moving the actualised medium, which moves the organ; mediation as a necessary condition of vision, and a predecessor to Morphaithēr.
 epigraph: "Light is then not simply placed within the field; it is the field's awakened condition."
-backdrop: crystalgrove
+backdrop: crystalcanyon
+position: center 50%
 ---
 
 Aristotle rejects the view that vision requires fire or rays to travel outward from the eye. If the eye emitted sufficient light to see, he argues, it should be able to see in darkness. He instead places the transparent medium — *to diaphanes* — at the centre of vision.

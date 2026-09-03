@@ -10,7 +10,8 @@ symbol: [Solar Disc]
 related: [xvi-22, xiv-6, vii-8, vii-9, ii-27, xvi-18]
 summary: Light measuring time and carrying it - calendars built from day, phase, and stellar rising; a finite speed making every visible object a message from a moment ago; qualitative hours grounded in real changes of spectrum, temperature, hormone, and behaviour.
 epigraph: "The same sun becomes dawn-light, noonday light, declining light, and the hidden midnight sun."
-backdrop: observatory
+backdrop: startemple
+position: center 45%
 ---
 
 Light measures time and carries it. Day and night, lunar phases, seasons, solstices, equinoxes, and stellar risings supplied humanity's earliest calendars. Living organisms internalised these cycles through [[xvi-22|circadian and seasonal rhythms]].

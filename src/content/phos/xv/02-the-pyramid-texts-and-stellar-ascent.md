@@ -11,7 +11,8 @@ text: [Pyramid Texts]
 related: [vii-14, vii-15, xii-15, xiv-20, xv-3, xii-10]
 summary: The earliest surviving corpus, first in the pyramid of Unas — the dead king joining the imperishable stars, travelling with Re, becoming Osiris, by utterances that were themselves technologies of transformation; ascent as entrance into cosmic operation, not escape.
 epigraph: "The king rises so that he may join the powers maintaining the world."
-backdrop: startrails
+backdrop: startemple
+position: center 45%
 ---
 
 The Pyramid Texts first survive extensively in the pyramid of King Unas near the end of the Fifth Dynasty, around the twenty-fourth century BCE. They were subsequently inscribed in the pyramids of later kings and some queens. They are not one continuous book but a collection of ritual utterances concerning protection, resurrection, nourishment, ascension, divine identification, and the deceased ruler's entrance into the company of the gods.

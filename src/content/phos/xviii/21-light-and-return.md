@@ -10,7 +10,8 @@ symbol: [Spiral]
 related: [xiii-31, iii-31, v-23, xv-28, xv-76, ii-26]
 summary: Light proceeding from a source and awakening the desire to return - epistrophē, Hermetic rebirth, ascent through the spheres, Daoist return to the root, and Sufi remembrance as distinct paths; return as restored conscious participation rather than the abolition of individuality.
 epigraph: "The returning light is the same in source but enriched in realised relation."
-backdrop: delta
+backdrop: cavesunset
+position: center 45%
 ---
 
 Light proceeds from a source and awakens the desire to return. Return does not necessarily mean reversing creation or abolishing individuality. It means restoring conscious participation in the origin from which the differentiated being has never been absolutely severed.

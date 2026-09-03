@@ -10,7 +10,8 @@ symbol: [Gold]
 related: [xiv-11, viii-23, xiii-23, xv-85, xvii-26, ii-26]
 summary: A metal that resists corrosion, holds brilliance, and can be beaten into leaf - the flesh of the gods in Egypt, the heavenly ground of icons, and both perfected metal and completed work in alchemy; light successfully coagulated into matter.
 epigraph: "Outer brilliance can imitate achieved radiance without possessing its internal coherence."
-backdrop: alabaster
+backdrop: goldvein
+position: center 50%
 ---
 
 Gold resists corrosion, retains brilliance, can be hammered into extremely thin leaf, and reflects warm solar light. These qualities made it a widespread symbol of divinity, royalty, immortality, perfected matter, and incorruptible consciousness.

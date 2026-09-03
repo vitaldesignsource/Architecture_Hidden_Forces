@@ -1592,7 +1592,7 @@ function Index() {
 
       {/* ASTROLOGY */}
       <section id="astrology" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/startrails.webp" opacity={0.32} position="center 35%" />
+        <Backdrop src="/bg/startemple.webp" opacity={0.32} position="center 45%" />
         <SectionGlyph delay={-90} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">

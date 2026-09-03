@@ -8,7 +8,8 @@ operation: [Return]
 related: [i-12, x-20, iii-2, xiii-1, xiii-3, portal-7]
 summary: The completion of procession — epistrophē, the manifested being reoriented toward the principle that sustains it; individuality is not erased and manifestation is not a mistake, since light returns with its possibilities actualised through participation.
 epigraph: "Procession gives light. Manifestation gives it form. Experience differentiates its possibilities. Transformation liberates what has become captive. Return restores coherence."
-backdrop: summit
+backdrop: cavesunset
+position: center 45%
 ---
 
 Return is the completion of procession. Light proceeds from its source, differentiates through orders, enters media, becomes bound within forms, produces experience, and eventually turns back toward its origin. This return is *epistrophē*: the reorientation of the manifested being toward the principle that continually sustains it.

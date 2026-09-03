@@ -6,7 +6,8 @@ tradition: [Egyptian, Architecture of Hidden Forces]
 symbol: [Solar Barque]
 related: [xv-5, xv-6, vii-29, ii-22, iii-16]
 summary: Solar power does not cross the cosmos as disembodied abstraction — the barque gives movement a vessel, and is a cosmic image of Ignisophia.
-backdrop: seainlet
+backdrop: cavesunset
+position: center 45%
 ---
 
 The Solar Barque is the vessel carrying the solar deity through the ordered cycle of day, night, death, and regeneration. It is especially prominent in ancient Egyptian solar theology, where the king or justified dead could join the divine entourage associated with Ra's celestial and netherworld journey — see [Smarthistory on Egyptian deities](https://smarthistory.org/egyptian-deities/).

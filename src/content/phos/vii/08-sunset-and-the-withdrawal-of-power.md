@@ -7,7 +7,8 @@ operation: [Withdrawal]
 related: [vii-9, vii-29, xiii-29, vii-7, xiv-6]
 summary: A source may remain active even when the receiver no longer stands within its direct light — withdrawal as a mode of procession.
 epigraph: "Light leaves the visible world so that another phase of its work may begin."
-backdrop: cliffroad
+backdrop: cavesunset
+position: center 45%
 ---
 
 Sunset is the visible withdrawal of solar illumination from the local field. The Sun has not ceased to radiate; Earth's rotation has carried the observer beyond direct exposure.

@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Aristotelian]
 quality: [Transparency]
 related: [ii-11, iii-8, xv-21, iv-3, iii-9]
 summary: Relative openness rather than the absence of mediation — the finest vessel remains present while faithfully serving what it carries.
-backdrop: scrims
+backdrop: crystalcanyon
+position: center 50%
 ---
 
 Transparency is the capacity of a medium to permit light to pass through it. It belongs primarily to the intermediary rather than the source.

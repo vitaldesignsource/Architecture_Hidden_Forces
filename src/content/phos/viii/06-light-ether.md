@@ -8,7 +8,8 @@ operation: [Differentiation]
 related: [ii-7, v-7, viii-5, viii-7, xv-94]
 summary: The formative power of differentiation — not to be equated with electromagnetic radiation, though sensible light is its clearest analogue.
 epigraph: "Light differentiates."
-backdrop: aperture
+backdrop: crystalcanyon
+position: center 50%
 ---
 
 Light Ether is the formative power of differentiation, orientation, and spatial articulation. It should not be equated directly with electromagnetic radiation, even though sensible light is its clearest physical analogue.
