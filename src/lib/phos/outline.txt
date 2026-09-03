@@ -1,0 +1,720 @@
+# The Encyclopaedia of Light, Radiance, Illumination, and Darkness within The Architecture of Hidden Forces
+#
+# This file is the human-editable source of the table of contents. `npm run toc`
+# regenerates src/lib/phos/toc.json from it, and the audit fails if the two
+# disagree — so edit here, regenerate, and commit both.
+#
+#   "# Division N — Title"   opens a division (the Portal Entrance has no numeral)
+#   "## Group"               opens a group of entries inside a division
+#   "> note"                 a one-line note on the division
+#   "12. Title"              an entry, numbered within its division
+
+# Portal Entrance
+1. Entering the Luminous Architecture
+2. Why Light Occupies a Central Place in the System
+3. What Do We Mean by “Light”?
+4. Physical, Vital, Psychic, Noetic, and Divine Light
+5. Light as Substance, Condition, Activity, Symbol, and Experience
+6. The Difference Between Light, Fire, Radiance, and Illumination
+7. The Great Map of Luminous Descent and Return
+8. How to Navigate the Encyclopaedia
+9. Historical Doctrine, Scientific Evidence, and Metaphysical Interpretation
+10. Key to the Portal’s Evidence Labels
+
+# Division I — The First Principles of Light
+1. Light Before the Luminaries
+2. Primordial and Unmanifest Light
+3. Aphanic Light: That Which Illuminates Without Appearing
+4. Light as the First Disclosure of Being
+5. Light and the Passage from Hiddenness into Manifestation
+6. Light as Presence
+7. Light as Actualization
+8. Light as Revelation
+9. Light as Intelligibility
+10. Light as the Visibility of Force
+11. Radiance Without Depletion
+12. The Source That Remains While Its Light Proceeds
+13. The One Light and Its Many Participations
+14. Light, Being, Life, Intelligence, and Form
+15. Light and the Good
+16. Light and Truth
+17. Light and Beauty
+18. Light and Consciousness
+19. Light as Metaphor and Light as Ontological Reality
+20. Where the Metaphor of Light Reaches Its Limit
+
+# Division II — Light within the Architecture of Hidden Forces
+1. The Place of Light within the Entire System
+2. Field Before Form: Light as Form-Revealing Activity
+3. Light and the CHON Architecture
+4. Light Passing Through Morphaithēr
+5. Morphaithēr as a Living Luminous Atmosphere
+6. The Fourfold Veil as a Structure of Transmission
+7. The Four Ethers as Modes of Luminous Mediation
+8. Tattvas as Morphogenic Biases of Light
+9. Tattvic Coloration and the Differentiation of Force
+10. Gunas as Conditions of Luminosity, Motion, and Obscuration
+11. Sattva and Luminous Transparency
+12. Rajas and Agitated Radiance
+13. Tamas and the Occlusion or Condensation of Light
+14. Light within Spirit, Soul, and Body
+15. Spirit as Fontal Light
+16. Soul as Receptive and Interpretive Light
+17. Body as Vessel, Lens, and Boundary
+18. Light and the Etheric Body
+19. Light and the Astral Body
+20. Light and the Psychic Layers
+21. Light as the Place Where Force Becomes Meaning
+22. Ignisophia and the Chariot of the Inner Sun
+23. The Six Faces of Ignisophia
+24. The Psychic Flywheel as a Reservoir of Directed Radiance
+25. Light and the Law of Right Relation
+26. Light and the Spiritualization of Matter
+27. Light in the Crypt of Primordial Memory
+28. Residual Light in the Ossuary of Living Forms
+29. Heka, Logos, and the Luminous Power of Speech
+30. The Native Doctrine of Light within the System
+
+# Division III — The Anatomy of Illumination
+1. The Luminous Source
+2. Emission and Procession
+3. Radiance
+4. Ray
+5. Beam
+6. Field
+7. Atmosphere
+8. Medium
+9. Veil
+10. Threshold
+11. Aperture
+12. Lens
+13. Prism
+14. Mirror
+15. Image
+16. Vessel
+17. Receiver
+18. Witness
+19. Transmission
+20. Reflection
+21. Refraction
+22. Diffusion
+23. Scattering
+24. Absorption
+25. Polarization
+26. Interference
+27. Resonance
+28. Attunement
+29. Transduction: When Light Becomes Another Kind of Activity
+30. Luminous Imprinting
+31. Recollection and Return
+
+# Division IV — The Encyclopaedia of Luminous Qualities
+## Fundamental qualities
+1. Intensity
+2. Magnitude
+3. Clarity
+4. Purity
+5. Transparency
+6. Coherence
+7. Unity
+8. Divisibility
+9. Stability
+10. Duration
+11. Directionality
+12. Density
+13. Subtlety
+14. Temperature
+15. Color
+16. Texture
+17. Rhythm
+18. Pulsation
+19. Velocity
+20. Penetration
+21. Diffusiveness
+22. Generativity
+23. Vitality
+24. Intelligence
+25. Affect
+26. Truthfulness
+## Forms of luminous appearance
+27. Glow
+28. Gleam
+29. Glimmer
+30. Shimmer
+31. Radiance
+32. Brilliance
+33. Splendor
+34. Luminosity
+35. Incandescence
+36. Phosphorescence
+37. Fluorescence
+38. Iridescence
+39. Scintillation
+40. Coruscation
+41. Flash
+42. Lightning
+43. Halo
+44. Corona
+45. Aureole
+46. Mandorla
+47. Pillar of Light
+48. Sphere of Light
+49. Veiled Light
+50. Diffuse Light
+51. Shadowless Light
+52. Cold Light
+53. Living Light
+54. Liquid Light
+55. Crystalline Light
+56. Fiery Light
+57. Golden Light
+58. White Light
+59. Black or Dark Luminosity
+
+# Division V — Gradations and Orders of Light
+1. Why Light Cannot Be Arranged by Brightness Alone
+2. The Luminous Ladder and the Luminous Web
+3. Unmanifest or Fontal Light
+4. Superessential Light
+5. Noetic Light
+6. Archetypal Light
+7. Formative Light
+8. Theurgic Light
+9. Angelic and Daimonic Light
+10. Psychic and Imaginal Light
+11. Dream Light
+12. Astral Light
+13. Etheric and Vital Light
+14. Elemental Light
+15. Solar and Stellar Light
+16. Biological Light
+17. Sensible and Optical Light
+18. Reflected Light
+19. Residual Light
+20. Captive Light
+21. Counterfeit Light
+22. The Descent from Unity into Multiplicity
+23. The Return from Fragmentation into Coherence
+24. Vertical Hierarchies of Light
+25. Horizontal Varieties of Light
+26. Interpenetrating Luminous Orders
+27. The Same Light Received at Different Levels
+28. The Capacity of the Receiver
+29. Saturation, Excess, and Luminous Overload
+30. When Higher Light Appears Through Lower Forms
+
+# Division VI — Darkness, Shadow, and Obscuration
+1. Is Darkness a Thing?
+2. Darkness as the Absence of Sensible Light
+3. Darkness as Privation
+4. Primordial Darkness
+5. Generative Darkness
+6. Luminous Darkness
+7. Apophatic Darkness Beyond Knowledge
+8. Darkness as Concealment
+9. Darkness as Latency
+10. Darkness as Womb
+11. Shadow as the Consequence of Interruption
+12. Opacity and Resistance
+13. Turbidity and Mixture
+14. Obscuration by Form
+15. Absorption and the Retention of Light
+16. The Shadow Cast by Psychic Structure
+17. Tattvic Distortion
+18. Astral Glamour and Counterfeit Illumination
+19. Dazzlement: When Excess Light Prevents Vision
+20. Spiritual Blindness
+21. The Black Sun
+22. Nigredo and the Withdrawal of Light
+23. The Midnight Sun
+24. The Night-Sea Journey
+25. The Underworld as a Chamber of Regeneration
+26. Evil, Darkness, and Why They Must Not Be Equated
+27. Shadow as Necessary Contrast
+28. Reintegrating the Shadow into the Luminous Whole
+
+# Division VII — Cosmic and Celestial Light
+1. The First Dawn
+2. Light in Creation Narratives
+3. Light Before the Sun
+4. Solar Light
+5. The Many Faces of the Sun
+6. The Inner Sun and the Outer Sun
+7. Noon, Zenith, and Full Manifestation
+8. Sunset and the Withdrawal of Power
+9. Midnight and Hidden Solar Activity
+10. Dawn and Regeneration
+11. Lunar Light
+12. Reflection, Reception, and the Moon
+13. Stellar Light
+14. Circumpolar Stars and Immortality
+15. The Stars of the Dead
+16. Planetary Rays
+17. The Seven Planetary Spheres
+18. Zodiacal Light
+19. The Twenty-Eight Lunar Mansions
+20. The Thirty-Six Decans
+21. Seasonal Light
+22. Solstices and Equinoxes
+23. Eclipses
+24. Comets, Meteors, and Portentous Light
+25. Lightning and Sudden Revelation
+26. Rainbow and Differentiated Unity
+27. Aurora and the Luminous Heavens
+28. The Solar Barque
+29. The Sun’s Descent through the Underworld
+30. Cosmic Death and the Reconstitution of Light
+
+# Division VIII — Elemental, Etheric, and Tattvic Light
+1. Light and Fire
+2. Why Fire and Light Are Related but Not Identical
+3. Celestial Fire and Terrestrial Fire
+4. Aether as a Luminous Medium
+5. Warmth Ether
+6. Light Ether
+7. Chemical or Tone Ether
+8. Life Ether
+9. The Four Ethers as the Fourfold Veil
+10. Ākāśa and Luminous Spaciousness
+11. Vāyu and the Movement of Light
+12. Tejas and Fiery Radiance
+13. Apas and Liquid Reflection
+14. Pṛthivī and the Fixation of Light in Form
+15. Tattvic Atmospheres
+16. Tattvic Refraction
+17. Tattvic Reservoirs
+18. Tattvic Resonance
+19. Tattvic Secretion and Saturation
+20. Elemental Coloration
+21. Light in Earth, Water, Air, Fire, and Aether
+22. Crystal as Condensed Transparency
+23. Metal as Captured Solar Quality
+24. Water as Mirror and Memory
+25. Smoke, Mist, Cloud, and Veiled Radiance
+26. Morphaithēr as the Total Field of Elemental Coloration
+
+# Division IX — Light, Life, and the Living Organism
+1. Light as a Condition of Life
+2. Photosynthesis and the Conversion of Light into Form
+3. Circadian Rhythms
+4. Sleep, Waking, and the Solar Cycle
+5. Light and Hormonal Regulation
+6. Light and the Nervous System
+7. Light and the Eye
+8. Skin as a Luminous Boundary
+9. Warmth, Metabolism, and Vital Fire
+10. Breath, Pulse, and Etheric Rhythm
+11. Light and Growth
+12. Germination and the Search for Light
+13. Embryonic Formation
+14. The Womb as Protected Darkness
+15. Biological Luminescence
+16. Bioluminescent Organisms
+17. Biophotons: Evidence, Claims, and Limitations
+18. The Etheric Body as a Vital-Formative Field
+19. Etheric Tides in the Human Organism
+20. Health as Luminous Coherence
+21. Illness as Disordered Relation rather than Mere Darkness
+22. Aging and the Withdrawal of Formative Light
+23. Death and the Release of Organized Vitality
+24. Residual Luminous Imprints after the Dissolution of Form
+25. Ecology as an Economy of Solar Transformation
+
+# Division X — Light, Soul, and Consciousness
+1. Consciousness as Illumination
+2. The Witness and the Illuminated Field
+3. The Light of the Self
+4. Nous and Noetic Light
+5. Psychē as Receiver and Mediator
+6. Soul as an Interior Field of Experience
+7. Memory as Retained Illumination
+8. Attention as a Directed Ray
+9. Intention as Luminous Orientation
+10. Thought as Form within Mental Light
+11. Desire as the Motion of Psychic Light
+12. Emotion as Luminous Coloration
+13. Imagination as an Image-Producing Medium
+14. Phantasia and Inner Appearance
+15. Dream Light
+16. Hypnagogic Light
+17. Symbolic Light
+18. The Astral Body as the Theater of Luminous Images
+19. Identity as a Persistent Pattern of Illumination
+20. The Soul Between Spirit and Form
+21. The Soul as the Place Where Light Becomes Meaning
+22. Self-Knowledge as the Turning of Light upon Its Source
+
+# Division XI — Visionary Light and the Phenomenology of Illumination
+1. External, Internal, and Nonlocal-Seeming Light
+2. Meditative Light
+3. Yogic Luminous Signs
+4. Buddhist Nimitta
+5. Limited and Immeasurable Light
+6. Light Without Forms
+7. Forms Without Light
+8. Crystalline, Lunar, Solar, and Lightning-Like Visions
+9. The Aura
+10. Halos and Fields around Living Beings
+11. Theophany
+12. Epiphany
+13. Transfiguration
+14. Visionary Fire
+15. Pillars, Spheres, and Oceans of Light
+16. Luminous Beings
+17. Luminous Landscapes
+18. Light in Dreams and Near-Death Narratives
+19. Entoptic Phenomena
+20. Afterimages and Retinal Light
+21. Migraine Aura and Neurological Luminosity
+22. Sleep Deprivation and Altered Perception
+23. Hallucination, Imagination, and Spiritual Experience
+24. Psychic Projection and Authentic Encounter
+25. Discernment by Coherence, Stability, and Consequence
+26. Why Brilliance Is Not Proof of Divinity
+27. A Protocol for Recording Luminous Experiences
+
+# Division XII — Luminous Beings and Mediating Orders
+1. Deity as Light
+2. Gods of the Sun, Dawn, Fire, Moon, and Stars
+3. Phanes and the First Appearance
+4. Sophia and Luminous Wisdom
+5. The Four Gnostic Luminaries
+6. Seraphim, Cherubim, and Thrones
+7. Dominions, Powers, and Authorities
+8. Principalities, Archangels, and Angels
+9. Daimons as Differentiated Currents
+10. Heroes and Ancestral Lights
+11. Archons and Mixed Illumination
+12. Souls and Mutable Psychic Light
+13. The Personal Daimon as Assigned Current
+14. Saints, Sages, and Transfigured Persons
+15. Stellar Ancestors
+16. The Solar King
+17. The Luminous Child
+18. The Divine Feminine as Mirror, Womb, and Radiant Wisdom
+19. Names, Numbers, and Logoi
+20. How a Being Reveals Its Order through the Quality of Its Light
+21. The Iamblichean Taxonomy of Manifestations
+22. False Lights, Masks, and Imitative Forms
+
+# Division XIII — The Operations of Light
+1. Illumination
+2. Revelation
+3. Manifestation
+4. Differentiation
+5. Formation
+6. Animation
+7. Vivification
+8. Orientation
+9. Communication
+10. Recognition
+11. Purification
+12. Consecration
+13. Healing
+14. Protection
+15. Exposure
+16. Judgment
+17. Awakening
+18. Inspiration
+19. Integration
+20. Transfiguration
+21. Dissolution
+22. Solve: Releasing Light from Form
+23. Coagula: Re-embodying Light in a Higher Form
+24. Metamorphōsis
+25. Metastoicheiōsis or Trans-elementation
+26. Capturing and Binding Light
+27. Liberating Captive Light
+28. Luminous Imprinting and Memory
+29. The Withdrawal of Light from Failed Architecture
+30. Whether the Architecture Remains Truthful When Form Fails
+31. Return to the Source
+
+# Division XIV — Ritual and Theurgic Technologies of Light
+1. Light as a Ritual Agent
+2. Sacred Fire
+3. Temple Lamps
+4. Candles, Wicks, Oils, and Fuels
+5. Solar Orientation of Temples
+6. Dawn, Noon, Sunset, and Midnight Rites
+7. Vigils and the Consecration of Night
+8. Mirrors as Ritual Interfaces
+9. Crystals as Luminous Vessels
+10. Water as Reflective Medium
+11. Gold and Solar Incorruptibility
+12. Silver and Lunar Reception
+13. Incense, Smoke, and Visible Mediation
+14. Pigments and Sacred Colors
+15. Statues and Ensoulment
+16. Icons, Halos, and Mandorlas
+17. Stained Glass and Colored Transmission
+18. Divine Names as Luminous Forms
+19. Mantra, Logos, and Vibratory Illumination
+20. Egyptian Heka and the Activation of Light through Speech
+21. Theurgy and Divine Illumination
+22. Invocation, Evocation, and the Quality of Manifested Light
+23. Protective Circles and Luminous Boundaries
+24. Consecration as the Establishment of Right Relation
+25. Ethical and Psychological Safeguards
+
+# Division XV — A Global History of Light
+## Ancient Egypt
+1. Solar Theology before the Pyramid Texts
+2. The Pyramid Texts and Stellar Ascent
+3. The Coffin Texts
+4. The Great Hymn to Aten
+5. The Litany of Re and the Seventy-Five Forms
+6. The Amduat and Twelve Transformations of the Sun
+7. The Book of Gates
+8. The Book of Caverns
+9. The Book of the Heavenly Cow
+10. Akh, Radiance, and the Transfigured Dead
+## Mesopotamia and Iran
+11. Utu-Shamash as the All-Seeing Light
+12. Light, Justice, and Divine Vision
+13. The Gāthās and the Contrast of Light and Darkness
+14. Avestan Fire
+15. Star, Moon, Sun, and Endless Light
+16. The Bundahišn and the Architecture of the Luminaries
+## Greece and Rome
+17. Empedocles and the Fire of the Eye
+18. Democritus on Color and Emanation
+19. Plato’s Sun, Divided Line, and Cave
+20. Plato’s Timaeus on Vision and Color
+21. Aristotle on the Transparent
+22. On Colours and the Mixture of Light and Darkness
+23. Euclid’s Optics
+24. Ptolemy on Reflection and Refraction
+25. Stoic and Roman Theories of Vision
+## Orphism, Theurgy, and Neoplatonism
+26. Phanes and Primordial Appearance
+27. The Chaldean Oracles and Intelligible Fire
+28. Plotinus and Emanative Radiance
+29. Porphyry and Intellectual Illumination
+30. Iamblichus and the Hierarchy of Luminous Manifestations
+31. Proclus and the Chains of Divine Light
+## Hermetic, Gnostic, Manichaean, and Mandaean Traditions
+32. Poimandres: Light, Mind, and Dark Nature
+33. The Eighth and Ninth Spheres
+34. The Hermetic Rebirth
+35. The Apocryphon of John and the Four Luminaries
+36. Pistis Sophia and the Theft of Light-Power
+37. The Books of Jeu and the Treasuries of Light
+38. The Manichaean Light-Realm
+39. The Five Living Elements of Light
+40. Captive Light and Cosmic Purification
+41. The Mandaean World of Light
+## Israelite, Jewish, and Christian Traditions
+42. Genesis and Light before the Luminaries
+43. The Pillar of Fire
+44. Ezekiel’s Throne-Vision
+45. Psalms of Divine Radiance
+46. Daniel and the Ancient of Days
+47. First Enoch and the Heavenly Luminaries
+48. The Dead Sea Scrolls and the Sons of Light
+49. Primordial and Hidden Light in Rabbinic Tradition
+50. The Gospel of John
+51. The Transfiguration
+52. Paul and the Transformation into Glory
+53. The Odes of Solomon
+54. Gregory of Nyssa and Luminous Darkness
+55. Pseudo-Dionysius and Hierarchical Illumination
+56. Syriac Christianity and the Robe of Light
+## India and Buddhism
+57. Agni, Sūrya, and Uṣas in the Ṛgveda
+58. The Upanishadic Light of the Self
+59. The Gāyatrī and Solar Intelligence
+60. The Bhagavad Gītā and the Light of Lights
+61. Tejas and the Indian Elemental Systems
+62. Sattva as Luminosity
+63. Yogic Signs of Light
+64. The Early Buddhist Luminous Mind
+65. The Upakkilesa Sutta and Meditative Light
+66. Light Kasiṇa and the Development of the Luminous Sign
+67. Mahāyāna Radiance
+68. Buddha-Nature and Luminosity
+69. Tantric and Tibetan Clear Light
+## China and Daoism
+70. The Mohist Science of Light and Shadow
+71. Light in the Dao De Jing
+72. The “Light of Heaven” in the Zhuangzi
+73. The Neiye and Inner Radiance
+74. Yin, Yang, Sun, and Moon
+75. The Cantong Qi and Alchemical Light
+76. The Later Secret of the Golden Flower
+## Islamic and Illuminationist Traditions
+77. The Qur’anic Light Verse
+78. Ibn al-Haytham and the Science of Optics
+79. Al-Ghazālī’s Niche of Lights
+80. Suhrawardī and the Light of Lights
+81. Hierarchies of Victorial and Governing Lights
+82. Illumination in Islamic Mysticism
+## Medieval, Renaissance, and Modern Esotericism
+83. Robert Grosseteste’s On Light
+84. Medieval Optics and Perspectiva
+85. Ficino and Solar Platonism
+86. Paracelsus and the Lumen Naturae
+87. Jacob Böhme and the Birth of Light from Darkness
+88. Robert Fludd’s Luminous Cosmology
+89. Newton: Optics, Alchemy, and Divine Order
+90. Goethe’s Theory of Colors
+91. Éliphas Lévi and Astral Light
+92. The Golden Dawn and the Limitless Light
+93. Theosophical Planes and Rays
+94. Rudolf Steiner and the Four Ethers
+
+# Division XVI — The Science of Light
+1. Ancient Optical Theories
+2. The Transition from Visual Rays to Incoming Light
+3. Ibn al-Haytham and Experimental Optics
+4. Geometrical Optics
+5. Reflection and Refraction
+6. Dispersion and the Spectrum
+7. Wave Theories of Light
+8. Electromagnetism
+9. Photons and Quantum Light
+10. Wave-Particle Duality
+11. Polarization
+12. Interference and Diffraction
+13. Coherence and Lasers
+14. Color Temperature
+15. Photometry and the Measurement of Light
+16. Human Color Vision
+17. Ultraviolet and Infrared Radiation
+18. Light in Astronomy
+19. Light, Space, and Relativity
+20. Photosynthesis
+21. Bioluminescence
+22. Circadian Biology
+23. Biophotons and Ultraweak Photon Emission
+24. Neuroscience of Inner Light
+25. What Modern Physics Does—and Does Not—Say about Metaphysical Light
+26. Responsible Correspondence between Science and Esotericism
+
+# Division XVII — Symbols, Images, and Luminous Geometry
+1. The Point of Light
+2. Ray and Line
+3. Circle and Solar Disc
+4. Sphere of Radiance
+5. Triangle and Descending Fire
+6. Vesica and the Birth of Light
+7. Spiral and Luminous Procession
+8. Prism and Differentiation
+9. Rainbow and Reunified Multiplicity
+10. Eye and Vision
+11. Lamp and Inner Guidance
+12. Torch and Transmission
+13. Flame and Transformation
+14. Lightning Bolt and Sudden Power
+15. Crown and Solar Authority
+16. Halo and Sanctified Presence
+17. Mandorla and the Transfigured Body
+18. Star and Immortality
+19. Winged Solar Disc
+20. Solar Barque
+21. Lotus and the Emergence of Light
+22. Menorah and Ordered Illumination
+23. Cross of Light
+24. Radiant Heart
+25. Mirror and Self-Knowledge
+26. Crystal and Transparent Form
+27. Gold and Incorruptible Radiance
+28. Black Sun and Hidden Illumination
+29. Cave, Crypt, and Luminous Emergence
+30. Temple Architecture as a Machine of Light
+
+# Division XVIII — Comparative Mysteries of Light
+1. Light and Fire
+2. Light and Aether
+3. Light and Breath
+4. Light and Sound
+5. Light and Word
+6. Light and Number
+7. Light and Geometry
+8. Light and Time
+9. Light and Memory
+10. Light and Life
+11. Light and Desire
+12. Light and Love
+13. Light and Wisdom
+14. Light and Authority
+15. Light and Justice
+16. Light and Death
+17. Light and Immortality
+18. Light and Resurrection
+19. Light and Initiation
+20. Light and Transformation
+21. Light and Return
+22. True Correspondences and False Equivalences
+
+# Division XIX — The Laws of Luminous Architecture
+> The original contribution of the system.
+1. The Law of Luminous Mediation
+2. The Law of Differential Reception
+3. The Law of Undiminished Procession
+4. The Law of Coherent Radiance
+5. The Law of Formative Illumination
+6. The Law of Tattvic Refraction
+7. The Law of Veiled Transmission
+8. The Law of Luminous Saturation
+9. The Law of Corresponding Capacity
+10. The Law of Necessary Shadow
+11. The Law of Captive Light
+12. The Law of Luminous Memory
+13. The Law of Consecrated Form
+14. The Law of Solar Return
+15. The Law of Reciprocal Illumination
+16. The Law of Right Relation
+17. The Law of Truthful Architecture
+18. Whether the Path Should Be Walked
+19. Whether the Light Serves Life or Merely Magnifies Power
+20. Whether the Architecture Remains Truthful When Form Fails
+
+# Division XX — Practice, Observation, and Discernment
+1. Keeping a Luminous Phenomenology Journal
+2. Observing Dawn, Noon, Sunset, and Midnight
+3. Candle and Flame Contemplation
+4. Color Contemplation
+5. Light and Breath
+6. Light and Stillness
+7. Dream-Light Recording
+8. Tracking Tattvic Coloration
+9. Comparing Visionary Qualities
+10. Distinguishing Radiance from Excitement
+11. Testing Luminous Experiences by Their Consequences
+12. Ethical Discernment
+13. Psychological and Neurological Discernment
+14. Avoiding Inflation and Claims of Spiritual Rank
+15. When to Suspend Practice
+16. Building a Personal Lexicon of Light
+17. Rituals of Illumination and Return
+18. Consecrating Form without Imprisoning Force
+
+# Division XXI — The Luminous Reference Library
+1. Multilingual Lexicon of Light
+2. Greek Terms: Phōs, Augē, Aktis, Ellampsis, Lamprotēs, Pyr
+3. Latin Terms: Lux, Lumen, Radius, Claritas, Splendor, Ignis
+4. Egyptian Solar and Luminous Vocabulary
+5. Hebrew and Aramaic Vocabulary of Light
+6. Syriac and Coptic Terms
+7. Sanskrit Terms: Jyotis, Tejas, Prakāśa, Prabhā
+8. Pāli and Buddhist Hybrid Sanskrit Terms
+9. Avestan and Middle Persian Terms
+10. Arabic and Persian Vocabulary of Illumination
+11. Tibetan Clear-Light Terminology
+12. Classical Chinese Vocabulary
+13. Chronology of Luminous Thought
+14. Civilizations and Traditions Map
+15. Catalogue of Primary Texts
+16. Key Passages in Translation
+17. Annotated Bibliography
+18. Historical Figures Directory
+19. Atlas of Luminous Symbols
+20. Diagram Library
+21. Comparative Correspondence Tables
+22. Index of Qualities
+23. Index of Operations
+24. Index of Beings
+25. Index of Colors
+26. Index of Ritual Implements
+27. General Concordance

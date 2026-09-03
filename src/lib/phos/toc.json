@@ -1,0 +1,4774 @@
+{
+  "divisions": [
+    {
+      "id": "portal",
+      "numeral": "",
+      "order": 0,
+      "title": "Portal Entrance",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "portal-1",
+          "slug": "entering-the-luminous-architecture",
+          "title": "Entering the Luminous Architecture",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "portal-2",
+          "slug": "why-light-occupies-a-central-place-in-the-system",
+          "title": "Why Light Occupies a Central Place in the System",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "portal-3",
+          "slug": "what-do-we-mean-by-light",
+          "title": "What Do We Mean by “Light”?",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "portal-4",
+          "slug": "physical-vital-psychic-noetic-and-divine-light",
+          "title": "Physical, Vital, Psychic, Noetic, and Divine Light",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "portal-5",
+          "slug": "light-as-substance-condition-activity-symbol-and-experience",
+          "title": "Light as Substance, Condition, Activity, Symbol, and Experience",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "portal-6",
+          "slug": "the-difference-between-light-fire-radiance-and-illumination",
+          "title": "The Difference Between Light, Fire, Radiance, and Illumination",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "portal-7",
+          "slug": "the-great-map-of-luminous-descent-and-return",
+          "title": "The Great Map of Luminous Descent and Return",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "portal-8",
+          "slug": "how-to-navigate-the-encyclopaedia",
+          "title": "How to Navigate the Encyclopaedia",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "portal-9",
+          "slug": "historical-doctrine-scientific-evidence-and-metaphysical-interpretation",
+          "title": "Historical Doctrine, Scientific Evidence, and Metaphysical Interpretation",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "portal-10",
+          "slug": "key-to-the-portals-evidence-labels",
+          "title": "Key to the Portal’s Evidence Labels",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "i",
+      "numeral": "I",
+      "order": 1,
+      "title": "The First Principles of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "i-1",
+          "slug": "light-before-the-luminaries",
+          "title": "Light Before the Luminaries",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "i-2",
+          "slug": "primordial-and-unmanifest-light",
+          "title": "Primordial and Unmanifest Light",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "i-3",
+          "slug": "aphanic-light-that-which-illuminates-without-appearing",
+          "title": "Aphanic Light: That Which Illuminates Without Appearing",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "i-4",
+          "slug": "light-as-the-first-disclosure-of-being",
+          "title": "Light as the First Disclosure of Being",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "i-5",
+          "slug": "light-and-the-passage-from-hiddenness-into-manifestation",
+          "title": "Light and the Passage from Hiddenness into Manifestation",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "i-6",
+          "slug": "light-as-presence",
+          "title": "Light as Presence",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "i-7",
+          "slug": "light-as-actualization",
+          "title": "Light as Actualization",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "i-8",
+          "slug": "light-as-revelation",
+          "title": "Light as Revelation",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "i-9",
+          "slug": "light-as-intelligibility",
+          "title": "Light as Intelligibility",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "i-10",
+          "slug": "light-as-the-visibility-of-force",
+          "title": "Light as the Visibility of Force",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "i-11",
+          "slug": "radiance-without-depletion",
+          "title": "Radiance Without Depletion",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "i-12",
+          "slug": "the-source-that-remains-while-its-light-proceeds",
+          "title": "The Source That Remains While Its Light Proceeds",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "i-13",
+          "slug": "the-one-light-and-its-many-participations",
+          "title": "The One Light and Its Many Participations",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "i-14",
+          "slug": "light-being-life-intelligence-and-form",
+          "title": "Light, Being, Life, Intelligence, and Form",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "i-15",
+          "slug": "light-and-the-good",
+          "title": "Light and the Good",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "i-16",
+          "slug": "light-and-truth",
+          "title": "Light and Truth",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "i-17",
+          "slug": "light-and-beauty",
+          "title": "Light and Beauty",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "i-18",
+          "slug": "light-and-consciousness",
+          "title": "Light and Consciousness",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "i-19",
+          "slug": "light-as-metaphor-and-light-as-ontological-reality",
+          "title": "Light as Metaphor and Light as Ontological Reality",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "i-20",
+          "slug": "where-the-metaphor-of-light-reaches-its-limit",
+          "title": "Where the Metaphor of Light Reaches Its Limit",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "ii",
+      "numeral": "II",
+      "order": 2,
+      "title": "Light within the Architecture of Hidden Forces",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "ii-1",
+          "slug": "the-place-of-light-within-the-entire-system",
+          "title": "The Place of Light within the Entire System",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "ii-2",
+          "slug": "field-before-form-light-as-form-revealing-activity",
+          "title": "Field Before Form: Light as Form-Revealing Activity",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "ii-3",
+          "slug": "light-and-the-chon-architecture",
+          "title": "Light and the CHON Architecture",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "ii-4",
+          "slug": "light-passing-through-morphaither",
+          "title": "Light Passing Through Morphaithēr",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "ii-5",
+          "slug": "morphaither-as-a-living-luminous-atmosphere",
+          "title": "Morphaithēr as a Living Luminous Atmosphere",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "ii-6",
+          "slug": "the-fourfold-veil-as-a-structure-of-transmission",
+          "title": "The Fourfold Veil as a Structure of Transmission",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "ii-7",
+          "slug": "the-four-ethers-as-modes-of-luminous-mediation",
+          "title": "The Four Ethers as Modes of Luminous Mediation",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "ii-8",
+          "slug": "tattvas-as-morphogenic-biases-of-light",
+          "title": "Tattvas as Morphogenic Biases of Light",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "ii-9",
+          "slug": "tattvic-coloration-and-the-differentiation-of-force",
+          "title": "Tattvic Coloration and the Differentiation of Force",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "ii-10",
+          "slug": "gunas-as-conditions-of-luminosity-motion-and-obscuration",
+          "title": "Gunas as Conditions of Luminosity, Motion, and Obscuration",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "ii-11",
+          "slug": "sattva-and-luminous-transparency",
+          "title": "Sattva and Luminous Transparency",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "ii-12",
+          "slug": "rajas-and-agitated-radiance",
+          "title": "Rajas and Agitated Radiance",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "ii-13",
+          "slug": "tamas-and-the-occlusion-or-condensation-of-light",
+          "title": "Tamas and the Occlusion or Condensation of Light",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "ii-14",
+          "slug": "light-within-spirit-soul-and-body",
+          "title": "Light within Spirit, Soul, and Body",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "ii-15",
+          "slug": "spirit-as-fontal-light",
+          "title": "Spirit as Fontal Light",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "ii-16",
+          "slug": "soul-as-receptive-and-interpretive-light",
+          "title": "Soul as Receptive and Interpretive Light",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "ii-17",
+          "slug": "body-as-vessel-lens-and-boundary",
+          "title": "Body as Vessel, Lens, and Boundary",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "ii-18",
+          "slug": "light-and-the-etheric-body",
+          "title": "Light and the Etheric Body",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "ii-19",
+          "slug": "light-and-the-astral-body",
+          "title": "Light and the Astral Body",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "ii-20",
+          "slug": "light-and-the-psychic-layers",
+          "title": "Light and the Psychic Layers",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "ii-21",
+          "slug": "light-as-the-place-where-force-becomes-meaning",
+          "title": "Light as the Place Where Force Becomes Meaning",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "ii-22",
+          "slug": "ignisophia-and-the-chariot-of-the-inner-sun",
+          "title": "Ignisophia and the Chariot of the Inner Sun",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "ii-23",
+          "slug": "the-six-faces-of-ignisophia",
+          "title": "The Six Faces of Ignisophia",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "ii-24",
+          "slug": "the-psychic-flywheel-as-a-reservoir-of-directed-radiance",
+          "title": "The Psychic Flywheel as a Reservoir of Directed Radiance",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "ii-25",
+          "slug": "light-and-the-law-of-right-relation",
+          "title": "Light and the Law of Right Relation",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "ii-26",
+          "slug": "light-and-the-spiritualization-of-matter",
+          "title": "Light and the Spiritualization of Matter",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "ii-27",
+          "slug": "light-in-the-crypt-of-primordial-memory",
+          "title": "Light in the Crypt of Primordial Memory",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "ii-28",
+          "slug": "residual-light-in-the-ossuary-of-living-forms",
+          "title": "Residual Light in the Ossuary of Living Forms",
+          "group": null
+        },
+        {
+          "n": 29,
+          "id": "ii-29",
+          "slug": "heka-logos-and-the-luminous-power-of-speech",
+          "title": "Heka, Logos, and the Luminous Power of Speech",
+          "group": null
+        },
+        {
+          "n": 30,
+          "id": "ii-30",
+          "slug": "the-native-doctrine-of-light-within-the-system",
+          "title": "The Native Doctrine of Light within the System",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "iii",
+      "numeral": "III",
+      "order": 3,
+      "title": "The Anatomy of Illumination",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "iii-1",
+          "slug": "the-luminous-source",
+          "title": "The Luminous Source",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "iii-2",
+          "slug": "emission-and-procession",
+          "title": "Emission and Procession",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "iii-3",
+          "slug": "radiance",
+          "title": "Radiance",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "iii-4",
+          "slug": "ray",
+          "title": "Ray",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "iii-5",
+          "slug": "beam",
+          "title": "Beam",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "iii-6",
+          "slug": "field",
+          "title": "Field",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "iii-7",
+          "slug": "atmosphere",
+          "title": "Atmosphere",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "iii-8",
+          "slug": "medium",
+          "title": "Medium",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "iii-9",
+          "slug": "veil",
+          "title": "Veil",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "iii-10",
+          "slug": "threshold",
+          "title": "Threshold",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "iii-11",
+          "slug": "aperture",
+          "title": "Aperture",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "iii-12",
+          "slug": "lens",
+          "title": "Lens",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "iii-13",
+          "slug": "prism",
+          "title": "Prism",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "iii-14",
+          "slug": "mirror",
+          "title": "Mirror",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "iii-15",
+          "slug": "image",
+          "title": "Image",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "iii-16",
+          "slug": "vessel",
+          "title": "Vessel",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "iii-17",
+          "slug": "receiver",
+          "title": "Receiver",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "iii-18",
+          "slug": "witness",
+          "title": "Witness",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "iii-19",
+          "slug": "transmission",
+          "title": "Transmission",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "iii-20",
+          "slug": "reflection",
+          "title": "Reflection",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "iii-21",
+          "slug": "refraction",
+          "title": "Refraction",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "iii-22",
+          "slug": "diffusion",
+          "title": "Diffusion",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "iii-23",
+          "slug": "scattering",
+          "title": "Scattering",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "iii-24",
+          "slug": "absorption",
+          "title": "Absorption",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "iii-25",
+          "slug": "polarization",
+          "title": "Polarization",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "iii-26",
+          "slug": "interference",
+          "title": "Interference",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "iii-27",
+          "slug": "resonance",
+          "title": "Resonance",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "iii-28",
+          "slug": "attunement",
+          "title": "Attunement",
+          "group": null
+        },
+        {
+          "n": 29,
+          "id": "iii-29",
+          "slug": "transduction-when-light-becomes-another-kind-of-activity",
+          "title": "Transduction: When Light Becomes Another Kind of Activity",
+          "group": null
+        },
+        {
+          "n": 30,
+          "id": "iii-30",
+          "slug": "luminous-imprinting",
+          "title": "Luminous Imprinting",
+          "group": null
+        },
+        {
+          "n": 31,
+          "id": "iii-31",
+          "slug": "recollection-and-return",
+          "title": "Recollection and Return",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "iv",
+      "numeral": "IV",
+      "order": 4,
+      "title": "The Encyclopaedia of Luminous Qualities",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "iv-1",
+          "slug": "intensity",
+          "title": "Intensity",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 2,
+          "id": "iv-2",
+          "slug": "magnitude",
+          "title": "Magnitude",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 3,
+          "id": "iv-3",
+          "slug": "clarity",
+          "title": "Clarity",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 4,
+          "id": "iv-4",
+          "slug": "purity",
+          "title": "Purity",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 5,
+          "id": "iv-5",
+          "slug": "transparency",
+          "title": "Transparency",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 6,
+          "id": "iv-6",
+          "slug": "coherence",
+          "title": "Coherence",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 7,
+          "id": "iv-7",
+          "slug": "unity",
+          "title": "Unity",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 8,
+          "id": "iv-8",
+          "slug": "divisibility",
+          "title": "Divisibility",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 9,
+          "id": "iv-9",
+          "slug": "stability",
+          "title": "Stability",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 10,
+          "id": "iv-10",
+          "slug": "duration",
+          "title": "Duration",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 11,
+          "id": "iv-11",
+          "slug": "directionality",
+          "title": "Directionality",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 12,
+          "id": "iv-12",
+          "slug": "density",
+          "title": "Density",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 13,
+          "id": "iv-13",
+          "slug": "subtlety",
+          "title": "Subtlety",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 14,
+          "id": "iv-14",
+          "slug": "temperature",
+          "title": "Temperature",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 15,
+          "id": "iv-15",
+          "slug": "color",
+          "title": "Color",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 16,
+          "id": "iv-16",
+          "slug": "texture",
+          "title": "Texture",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 17,
+          "id": "iv-17",
+          "slug": "rhythm",
+          "title": "Rhythm",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 18,
+          "id": "iv-18",
+          "slug": "pulsation",
+          "title": "Pulsation",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 19,
+          "id": "iv-19",
+          "slug": "velocity",
+          "title": "Velocity",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 20,
+          "id": "iv-20",
+          "slug": "penetration",
+          "title": "Penetration",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 21,
+          "id": "iv-21",
+          "slug": "diffusiveness",
+          "title": "Diffusiveness",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 22,
+          "id": "iv-22",
+          "slug": "generativity",
+          "title": "Generativity",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 23,
+          "id": "iv-23",
+          "slug": "vitality",
+          "title": "Vitality",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 24,
+          "id": "iv-24",
+          "slug": "intelligence",
+          "title": "Intelligence",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 25,
+          "id": "iv-25",
+          "slug": "affect",
+          "title": "Affect",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 26,
+          "id": "iv-26",
+          "slug": "truthfulness",
+          "title": "Truthfulness",
+          "group": "Fundamental qualities"
+        },
+        {
+          "n": 27,
+          "id": "iv-27",
+          "slug": "glow",
+          "title": "Glow",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 28,
+          "id": "iv-28",
+          "slug": "gleam",
+          "title": "Gleam",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 29,
+          "id": "iv-29",
+          "slug": "glimmer",
+          "title": "Glimmer",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 30,
+          "id": "iv-30",
+          "slug": "shimmer",
+          "title": "Shimmer",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 31,
+          "id": "iv-31",
+          "slug": "radiance",
+          "title": "Radiance",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 32,
+          "id": "iv-32",
+          "slug": "brilliance",
+          "title": "Brilliance",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 33,
+          "id": "iv-33",
+          "slug": "splendor",
+          "title": "Splendor",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 34,
+          "id": "iv-34",
+          "slug": "luminosity",
+          "title": "Luminosity",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 35,
+          "id": "iv-35",
+          "slug": "incandescence",
+          "title": "Incandescence",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 36,
+          "id": "iv-36",
+          "slug": "phosphorescence",
+          "title": "Phosphorescence",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 37,
+          "id": "iv-37",
+          "slug": "fluorescence",
+          "title": "Fluorescence",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 38,
+          "id": "iv-38",
+          "slug": "iridescence",
+          "title": "Iridescence",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 39,
+          "id": "iv-39",
+          "slug": "scintillation",
+          "title": "Scintillation",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 40,
+          "id": "iv-40",
+          "slug": "coruscation",
+          "title": "Coruscation",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 41,
+          "id": "iv-41",
+          "slug": "flash",
+          "title": "Flash",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 42,
+          "id": "iv-42",
+          "slug": "lightning",
+          "title": "Lightning",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 43,
+          "id": "iv-43",
+          "slug": "halo",
+          "title": "Halo",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 44,
+          "id": "iv-44",
+          "slug": "corona",
+          "title": "Corona",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 45,
+          "id": "iv-45",
+          "slug": "aureole",
+          "title": "Aureole",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 46,
+          "id": "iv-46",
+          "slug": "mandorla",
+          "title": "Mandorla",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 47,
+          "id": "iv-47",
+          "slug": "pillar-of-light",
+          "title": "Pillar of Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 48,
+          "id": "iv-48",
+          "slug": "sphere-of-light",
+          "title": "Sphere of Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 49,
+          "id": "iv-49",
+          "slug": "veiled-light",
+          "title": "Veiled Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 50,
+          "id": "iv-50",
+          "slug": "diffuse-light",
+          "title": "Diffuse Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 51,
+          "id": "iv-51",
+          "slug": "shadowless-light",
+          "title": "Shadowless Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 52,
+          "id": "iv-52",
+          "slug": "cold-light",
+          "title": "Cold Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 53,
+          "id": "iv-53",
+          "slug": "living-light",
+          "title": "Living Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 54,
+          "id": "iv-54",
+          "slug": "liquid-light",
+          "title": "Liquid Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 55,
+          "id": "iv-55",
+          "slug": "crystalline-light",
+          "title": "Crystalline Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 56,
+          "id": "iv-56",
+          "slug": "fiery-light",
+          "title": "Fiery Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 57,
+          "id": "iv-57",
+          "slug": "golden-light",
+          "title": "Golden Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 58,
+          "id": "iv-58",
+          "slug": "white-light",
+          "title": "White Light",
+          "group": "Forms of luminous appearance"
+        },
+        {
+          "n": 59,
+          "id": "iv-59",
+          "slug": "black-or-dark-luminosity",
+          "title": "Black or Dark Luminosity",
+          "group": "Forms of luminous appearance"
+        }
+      ]
+    },
+    {
+      "id": "v",
+      "numeral": "V",
+      "order": 5,
+      "title": "Gradations and Orders of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "v-1",
+          "slug": "why-light-cannot-be-arranged-by-brightness-alone",
+          "title": "Why Light Cannot Be Arranged by Brightness Alone",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "v-2",
+          "slug": "the-luminous-ladder-and-the-luminous-web",
+          "title": "The Luminous Ladder and the Luminous Web",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "v-3",
+          "slug": "unmanifest-or-fontal-light",
+          "title": "Unmanifest or Fontal Light",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "v-4",
+          "slug": "superessential-light",
+          "title": "Superessential Light",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "v-5",
+          "slug": "noetic-light",
+          "title": "Noetic Light",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "v-6",
+          "slug": "archetypal-light",
+          "title": "Archetypal Light",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "v-7",
+          "slug": "formative-light",
+          "title": "Formative Light",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "v-8",
+          "slug": "theurgic-light",
+          "title": "Theurgic Light",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "v-9",
+          "slug": "angelic-and-daimonic-light",
+          "title": "Angelic and Daimonic Light",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "v-10",
+          "slug": "psychic-and-imaginal-light",
+          "title": "Psychic and Imaginal Light",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "v-11",
+          "slug": "dream-light",
+          "title": "Dream Light",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "v-12",
+          "slug": "astral-light",
+          "title": "Astral Light",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "v-13",
+          "slug": "etheric-and-vital-light",
+          "title": "Etheric and Vital Light",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "v-14",
+          "slug": "elemental-light",
+          "title": "Elemental Light",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "v-15",
+          "slug": "solar-and-stellar-light",
+          "title": "Solar and Stellar Light",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "v-16",
+          "slug": "biological-light",
+          "title": "Biological Light",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "v-17",
+          "slug": "sensible-and-optical-light",
+          "title": "Sensible and Optical Light",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "v-18",
+          "slug": "reflected-light",
+          "title": "Reflected Light",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "v-19",
+          "slug": "residual-light",
+          "title": "Residual Light",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "v-20",
+          "slug": "captive-light",
+          "title": "Captive Light",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "v-21",
+          "slug": "counterfeit-light",
+          "title": "Counterfeit Light",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "v-22",
+          "slug": "the-descent-from-unity-into-multiplicity",
+          "title": "The Descent from Unity into Multiplicity",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "v-23",
+          "slug": "the-return-from-fragmentation-into-coherence",
+          "title": "The Return from Fragmentation into Coherence",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "v-24",
+          "slug": "vertical-hierarchies-of-light",
+          "title": "Vertical Hierarchies of Light",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "v-25",
+          "slug": "horizontal-varieties-of-light",
+          "title": "Horizontal Varieties of Light",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "v-26",
+          "slug": "interpenetrating-luminous-orders",
+          "title": "Interpenetrating Luminous Orders",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "v-27",
+          "slug": "the-same-light-received-at-different-levels",
+          "title": "The Same Light Received at Different Levels",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "v-28",
+          "slug": "the-capacity-of-the-receiver",
+          "title": "The Capacity of the Receiver",
+          "group": null
+        },
+        {
+          "n": 29,
+          "id": "v-29",
+          "slug": "saturation-excess-and-luminous-overload",
+          "title": "Saturation, Excess, and Luminous Overload",
+          "group": null
+        },
+        {
+          "n": 30,
+          "id": "v-30",
+          "slug": "when-higher-light-appears-through-lower-forms",
+          "title": "When Higher Light Appears Through Lower Forms",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "vi",
+      "numeral": "VI",
+      "order": 6,
+      "title": "Darkness, Shadow, and Obscuration",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "vi-1",
+          "slug": "is-darkness-a-thing",
+          "title": "Is Darkness a Thing?",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "vi-2",
+          "slug": "darkness-as-the-absence-of-sensible-light",
+          "title": "Darkness as the Absence of Sensible Light",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "vi-3",
+          "slug": "darkness-as-privation",
+          "title": "Darkness as Privation",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "vi-4",
+          "slug": "primordial-darkness",
+          "title": "Primordial Darkness",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "vi-5",
+          "slug": "generative-darkness",
+          "title": "Generative Darkness",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "vi-6",
+          "slug": "luminous-darkness",
+          "title": "Luminous Darkness",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "vi-7",
+          "slug": "apophatic-darkness-beyond-knowledge",
+          "title": "Apophatic Darkness Beyond Knowledge",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "vi-8",
+          "slug": "darkness-as-concealment",
+          "title": "Darkness as Concealment",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "vi-9",
+          "slug": "darkness-as-latency",
+          "title": "Darkness as Latency",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "vi-10",
+          "slug": "darkness-as-womb",
+          "title": "Darkness as Womb",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "vi-11",
+          "slug": "shadow-as-the-consequence-of-interruption",
+          "title": "Shadow as the Consequence of Interruption",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "vi-12",
+          "slug": "opacity-and-resistance",
+          "title": "Opacity and Resistance",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "vi-13",
+          "slug": "turbidity-and-mixture",
+          "title": "Turbidity and Mixture",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "vi-14",
+          "slug": "obscuration-by-form",
+          "title": "Obscuration by Form",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "vi-15",
+          "slug": "absorption-and-the-retention-of-light",
+          "title": "Absorption and the Retention of Light",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "vi-16",
+          "slug": "the-shadow-cast-by-psychic-structure",
+          "title": "The Shadow Cast by Psychic Structure",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "vi-17",
+          "slug": "tattvic-distortion",
+          "title": "Tattvic Distortion",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "vi-18",
+          "slug": "astral-glamour-and-counterfeit-illumination",
+          "title": "Astral Glamour and Counterfeit Illumination",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "vi-19",
+          "slug": "dazzlement-when-excess-light-prevents-vision",
+          "title": "Dazzlement: When Excess Light Prevents Vision",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "vi-20",
+          "slug": "spiritual-blindness",
+          "title": "Spiritual Blindness",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "vi-21",
+          "slug": "the-black-sun",
+          "title": "The Black Sun",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "vi-22",
+          "slug": "nigredo-and-the-withdrawal-of-light",
+          "title": "Nigredo and the Withdrawal of Light",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "vi-23",
+          "slug": "the-midnight-sun",
+          "title": "The Midnight Sun",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "vi-24",
+          "slug": "the-night-sea-journey",
+          "title": "The Night-Sea Journey",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "vi-25",
+          "slug": "the-underworld-as-a-chamber-of-regeneration",
+          "title": "The Underworld as a Chamber of Regeneration",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "vi-26",
+          "slug": "evil-darkness-and-why-they-must-not-be-equated",
+          "title": "Evil, Darkness, and Why They Must Not Be Equated",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "vi-27",
+          "slug": "shadow-as-necessary-contrast",
+          "title": "Shadow as Necessary Contrast",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "vi-28",
+          "slug": "reintegrating-the-shadow-into-the-luminous-whole",
+          "title": "Reintegrating the Shadow into the Luminous Whole",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "vii",
+      "numeral": "VII",
+      "order": 7,
+      "title": "Cosmic and Celestial Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "vii-1",
+          "slug": "the-first-dawn",
+          "title": "The First Dawn",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "vii-2",
+          "slug": "light-in-creation-narratives",
+          "title": "Light in Creation Narratives",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "vii-3",
+          "slug": "light-before-the-sun",
+          "title": "Light Before the Sun",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "vii-4",
+          "slug": "solar-light",
+          "title": "Solar Light",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "vii-5",
+          "slug": "the-many-faces-of-the-sun",
+          "title": "The Many Faces of the Sun",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "vii-6",
+          "slug": "the-inner-sun-and-the-outer-sun",
+          "title": "The Inner Sun and the Outer Sun",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "vii-7",
+          "slug": "noon-zenith-and-full-manifestation",
+          "title": "Noon, Zenith, and Full Manifestation",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "vii-8",
+          "slug": "sunset-and-the-withdrawal-of-power",
+          "title": "Sunset and the Withdrawal of Power",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "vii-9",
+          "slug": "midnight-and-hidden-solar-activity",
+          "title": "Midnight and Hidden Solar Activity",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "vii-10",
+          "slug": "dawn-and-regeneration",
+          "title": "Dawn and Regeneration",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "vii-11",
+          "slug": "lunar-light",
+          "title": "Lunar Light",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "vii-12",
+          "slug": "reflection-reception-and-the-moon",
+          "title": "Reflection, Reception, and the Moon",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "vii-13",
+          "slug": "stellar-light",
+          "title": "Stellar Light",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "vii-14",
+          "slug": "circumpolar-stars-and-immortality",
+          "title": "Circumpolar Stars and Immortality",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "vii-15",
+          "slug": "the-stars-of-the-dead",
+          "title": "The Stars of the Dead",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "vii-16",
+          "slug": "planetary-rays",
+          "title": "Planetary Rays",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "vii-17",
+          "slug": "the-seven-planetary-spheres",
+          "title": "The Seven Planetary Spheres",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "vii-18",
+          "slug": "zodiacal-light",
+          "title": "Zodiacal Light",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "vii-19",
+          "slug": "the-twenty-eight-lunar-mansions",
+          "title": "The Twenty-Eight Lunar Mansions",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "vii-20",
+          "slug": "the-thirty-six-decans",
+          "title": "The Thirty-Six Decans",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "vii-21",
+          "slug": "seasonal-light",
+          "title": "Seasonal Light",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "vii-22",
+          "slug": "solstices-and-equinoxes",
+          "title": "Solstices and Equinoxes",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "vii-23",
+          "slug": "eclipses",
+          "title": "Eclipses",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "vii-24",
+          "slug": "comets-meteors-and-portentous-light",
+          "title": "Comets, Meteors, and Portentous Light",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "vii-25",
+          "slug": "lightning-and-sudden-revelation",
+          "title": "Lightning and Sudden Revelation",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "vii-26",
+          "slug": "rainbow-and-differentiated-unity",
+          "title": "Rainbow and Differentiated Unity",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "vii-27",
+          "slug": "aurora-and-the-luminous-heavens",
+          "title": "Aurora and the Luminous Heavens",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "vii-28",
+          "slug": "the-solar-barque",
+          "title": "The Solar Barque",
+          "group": null
+        },
+        {
+          "n": 29,
+          "id": "vii-29",
+          "slug": "the-suns-descent-through-the-underworld",
+          "title": "The Sun’s Descent through the Underworld",
+          "group": null
+        },
+        {
+          "n": 30,
+          "id": "vii-30",
+          "slug": "cosmic-death-and-the-reconstitution-of-light",
+          "title": "Cosmic Death and the Reconstitution of Light",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "viii",
+      "numeral": "VIII",
+      "order": 8,
+      "title": "Elemental, Etheric, and Tattvic Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "viii-1",
+          "slug": "light-and-fire",
+          "title": "Light and Fire",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "viii-2",
+          "slug": "why-fire-and-light-are-related-but-not-identical",
+          "title": "Why Fire and Light Are Related but Not Identical",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "viii-3",
+          "slug": "celestial-fire-and-terrestrial-fire",
+          "title": "Celestial Fire and Terrestrial Fire",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "viii-4",
+          "slug": "aether-as-a-luminous-medium",
+          "title": "Aether as a Luminous Medium",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "viii-5",
+          "slug": "warmth-ether",
+          "title": "Warmth Ether",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "viii-6",
+          "slug": "light-ether",
+          "title": "Light Ether",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "viii-7",
+          "slug": "chemical-or-tone-ether",
+          "title": "Chemical or Tone Ether",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "viii-8",
+          "slug": "life-ether",
+          "title": "Life Ether",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "viii-9",
+          "slug": "the-four-ethers-as-the-fourfold-veil",
+          "title": "The Four Ethers as the Fourfold Veil",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "viii-10",
+          "slug": "akasa-and-luminous-spaciousness",
+          "title": "Ākāśa and Luminous Spaciousness",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "viii-11",
+          "slug": "vayu-and-the-movement-of-light",
+          "title": "Vāyu and the Movement of Light",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "viii-12",
+          "slug": "tejas-and-fiery-radiance",
+          "title": "Tejas and Fiery Radiance",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "viii-13",
+          "slug": "apas-and-liquid-reflection",
+          "title": "Apas and Liquid Reflection",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "viii-14",
+          "slug": "prthivi-and-the-fixation-of-light-in-form",
+          "title": "Pṛthivī and the Fixation of Light in Form",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "viii-15",
+          "slug": "tattvic-atmospheres",
+          "title": "Tattvic Atmospheres",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "viii-16",
+          "slug": "tattvic-refraction",
+          "title": "Tattvic Refraction",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "viii-17",
+          "slug": "tattvic-reservoirs",
+          "title": "Tattvic Reservoirs",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "viii-18",
+          "slug": "tattvic-resonance",
+          "title": "Tattvic Resonance",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "viii-19",
+          "slug": "tattvic-secretion-and-saturation",
+          "title": "Tattvic Secretion and Saturation",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "viii-20",
+          "slug": "elemental-coloration",
+          "title": "Elemental Coloration",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "viii-21",
+          "slug": "light-in-earth-water-air-fire-and-aether",
+          "title": "Light in Earth, Water, Air, Fire, and Aether",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "viii-22",
+          "slug": "crystal-as-condensed-transparency",
+          "title": "Crystal as Condensed Transparency",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "viii-23",
+          "slug": "metal-as-captured-solar-quality",
+          "title": "Metal as Captured Solar Quality",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "viii-24",
+          "slug": "water-as-mirror-and-memory",
+          "title": "Water as Mirror and Memory",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "viii-25",
+          "slug": "smoke-mist-cloud-and-veiled-radiance",
+          "title": "Smoke, Mist, Cloud, and Veiled Radiance",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "viii-26",
+          "slug": "morphaither-as-the-total-field-of-elemental-coloration",
+          "title": "Morphaithēr as the Total Field of Elemental Coloration",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "ix",
+      "numeral": "IX",
+      "order": 9,
+      "title": "Light, Life, and the Living Organism",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "ix-1",
+          "slug": "light-as-a-condition-of-life",
+          "title": "Light as a Condition of Life",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "ix-2",
+          "slug": "photosynthesis-and-the-conversion-of-light-into-form",
+          "title": "Photosynthesis and the Conversion of Light into Form",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "ix-3",
+          "slug": "circadian-rhythms",
+          "title": "Circadian Rhythms",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "ix-4",
+          "slug": "sleep-waking-and-the-solar-cycle",
+          "title": "Sleep, Waking, and the Solar Cycle",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "ix-5",
+          "slug": "light-and-hormonal-regulation",
+          "title": "Light and Hormonal Regulation",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "ix-6",
+          "slug": "light-and-the-nervous-system",
+          "title": "Light and the Nervous System",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "ix-7",
+          "slug": "light-and-the-eye",
+          "title": "Light and the Eye",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "ix-8",
+          "slug": "skin-as-a-luminous-boundary",
+          "title": "Skin as a Luminous Boundary",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "ix-9",
+          "slug": "warmth-metabolism-and-vital-fire",
+          "title": "Warmth, Metabolism, and Vital Fire",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "ix-10",
+          "slug": "breath-pulse-and-etheric-rhythm",
+          "title": "Breath, Pulse, and Etheric Rhythm",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "ix-11",
+          "slug": "light-and-growth",
+          "title": "Light and Growth",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "ix-12",
+          "slug": "germination-and-the-search-for-light",
+          "title": "Germination and the Search for Light",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "ix-13",
+          "slug": "embryonic-formation",
+          "title": "Embryonic Formation",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "ix-14",
+          "slug": "the-womb-as-protected-darkness",
+          "title": "The Womb as Protected Darkness",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "ix-15",
+          "slug": "biological-luminescence",
+          "title": "Biological Luminescence",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "ix-16",
+          "slug": "bioluminescent-organisms",
+          "title": "Bioluminescent Organisms",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "ix-17",
+          "slug": "biophotons-evidence-claims-and-limitations",
+          "title": "Biophotons: Evidence, Claims, and Limitations",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "ix-18",
+          "slug": "the-etheric-body-as-a-vital-formative-field",
+          "title": "The Etheric Body as a Vital-Formative Field",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "ix-19",
+          "slug": "etheric-tides-in-the-human-organism",
+          "title": "Etheric Tides in the Human Organism",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "ix-20",
+          "slug": "health-as-luminous-coherence",
+          "title": "Health as Luminous Coherence",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "ix-21",
+          "slug": "illness-as-disordered-relation-rather-than-mere-darkness",
+          "title": "Illness as Disordered Relation rather than Mere Darkness",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "ix-22",
+          "slug": "aging-and-the-withdrawal-of-formative-light",
+          "title": "Aging and the Withdrawal of Formative Light",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "ix-23",
+          "slug": "death-and-the-release-of-organized-vitality",
+          "title": "Death and the Release of Organized Vitality",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "ix-24",
+          "slug": "residual-luminous-imprints-after-the-dissolution-of-form",
+          "title": "Residual Luminous Imprints after the Dissolution of Form",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "ix-25",
+          "slug": "ecology-as-an-economy-of-solar-transformation",
+          "title": "Ecology as an Economy of Solar Transformation",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "numeral": "X",
+      "order": 10,
+      "title": "Light, Soul, and Consciousness",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "x-1",
+          "slug": "consciousness-as-illumination",
+          "title": "Consciousness as Illumination",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "x-2",
+          "slug": "the-witness-and-the-illuminated-field",
+          "title": "The Witness and the Illuminated Field",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "x-3",
+          "slug": "the-light-of-the-self",
+          "title": "The Light of the Self",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "x-4",
+          "slug": "nous-and-noetic-light",
+          "title": "Nous and Noetic Light",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "x-5",
+          "slug": "psyche-as-receiver-and-mediator",
+          "title": "Psychē as Receiver and Mediator",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "x-6",
+          "slug": "soul-as-an-interior-field-of-experience",
+          "title": "Soul as an Interior Field of Experience",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "x-7",
+          "slug": "memory-as-retained-illumination",
+          "title": "Memory as Retained Illumination",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "x-8",
+          "slug": "attention-as-a-directed-ray",
+          "title": "Attention as a Directed Ray",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "x-9",
+          "slug": "intention-as-luminous-orientation",
+          "title": "Intention as Luminous Orientation",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "x-10",
+          "slug": "thought-as-form-within-mental-light",
+          "title": "Thought as Form within Mental Light",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "x-11",
+          "slug": "desire-as-the-motion-of-psychic-light",
+          "title": "Desire as the Motion of Psychic Light",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "x-12",
+          "slug": "emotion-as-luminous-coloration",
+          "title": "Emotion as Luminous Coloration",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "x-13",
+          "slug": "imagination-as-an-image-producing-medium",
+          "title": "Imagination as an Image-Producing Medium",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "x-14",
+          "slug": "phantasia-and-inner-appearance",
+          "title": "Phantasia and Inner Appearance",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "x-15",
+          "slug": "dream-light",
+          "title": "Dream Light",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "x-16",
+          "slug": "hypnagogic-light",
+          "title": "Hypnagogic Light",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "x-17",
+          "slug": "symbolic-light",
+          "title": "Symbolic Light",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "x-18",
+          "slug": "the-astral-body-as-the-theater-of-luminous-images",
+          "title": "The Astral Body as the Theater of Luminous Images",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "x-19",
+          "slug": "identity-as-a-persistent-pattern-of-illumination",
+          "title": "Identity as a Persistent Pattern of Illumination",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "x-20",
+          "slug": "the-soul-between-spirit-and-form",
+          "title": "The Soul Between Spirit and Form",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "x-21",
+          "slug": "the-soul-as-the-place-where-light-becomes-meaning",
+          "title": "The Soul as the Place Where Light Becomes Meaning",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "x-22",
+          "slug": "self-knowledge-as-the-turning-of-light-upon-its-source",
+          "title": "Self-Knowledge as the Turning of Light upon Its Source",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xi",
+      "numeral": "XI",
+      "order": 11,
+      "title": "Visionary Light and the Phenomenology of Illumination",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xi-1",
+          "slug": "external-internal-and-nonlocal-seeming-light",
+          "title": "External, Internal, and Nonlocal-Seeming Light",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xi-2",
+          "slug": "meditative-light",
+          "title": "Meditative Light",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xi-3",
+          "slug": "yogic-luminous-signs",
+          "title": "Yogic Luminous Signs",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xi-4",
+          "slug": "buddhist-nimitta",
+          "title": "Buddhist Nimitta",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xi-5",
+          "slug": "limited-and-immeasurable-light",
+          "title": "Limited and Immeasurable Light",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xi-6",
+          "slug": "light-without-forms",
+          "title": "Light Without Forms",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xi-7",
+          "slug": "forms-without-light",
+          "title": "Forms Without Light",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xi-8",
+          "slug": "crystalline-lunar-solar-and-lightning-like-visions",
+          "title": "Crystalline, Lunar, Solar, and Lightning-Like Visions",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xi-9",
+          "slug": "the-aura",
+          "title": "The Aura",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xi-10",
+          "slug": "halos-and-fields-around-living-beings",
+          "title": "Halos and Fields around Living Beings",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xi-11",
+          "slug": "theophany",
+          "title": "Theophany",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xi-12",
+          "slug": "epiphany",
+          "title": "Epiphany",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xi-13",
+          "slug": "transfiguration",
+          "title": "Transfiguration",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xi-14",
+          "slug": "visionary-fire",
+          "title": "Visionary Fire",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xi-15",
+          "slug": "pillars-spheres-and-oceans-of-light",
+          "title": "Pillars, Spheres, and Oceans of Light",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xi-16",
+          "slug": "luminous-beings",
+          "title": "Luminous Beings",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xi-17",
+          "slug": "luminous-landscapes",
+          "title": "Luminous Landscapes",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xi-18",
+          "slug": "light-in-dreams-and-near-death-narratives",
+          "title": "Light in Dreams and Near-Death Narratives",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xi-19",
+          "slug": "entoptic-phenomena",
+          "title": "Entoptic Phenomena",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xi-20",
+          "slug": "afterimages-and-retinal-light",
+          "title": "Afterimages and Retinal Light",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xi-21",
+          "slug": "migraine-aura-and-neurological-luminosity",
+          "title": "Migraine Aura and Neurological Luminosity",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xi-22",
+          "slug": "sleep-deprivation-and-altered-perception",
+          "title": "Sleep Deprivation and Altered Perception",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "xi-23",
+          "slug": "hallucination-imagination-and-spiritual-experience",
+          "title": "Hallucination, Imagination, and Spiritual Experience",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "xi-24",
+          "slug": "psychic-projection-and-authentic-encounter",
+          "title": "Psychic Projection and Authentic Encounter",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "xi-25",
+          "slug": "discernment-by-coherence-stability-and-consequence",
+          "title": "Discernment by Coherence, Stability, and Consequence",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "xi-26",
+          "slug": "why-brilliance-is-not-proof-of-divinity",
+          "title": "Why Brilliance Is Not Proof of Divinity",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "xi-27",
+          "slug": "a-protocol-for-recording-luminous-experiences",
+          "title": "A Protocol for Recording Luminous Experiences",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xii",
+      "numeral": "XII",
+      "order": 12,
+      "title": "Luminous Beings and Mediating Orders",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xii-1",
+          "slug": "deity-as-light",
+          "title": "Deity as Light",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xii-2",
+          "slug": "gods-of-the-sun-dawn-fire-moon-and-stars",
+          "title": "Gods of the Sun, Dawn, Fire, Moon, and Stars",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xii-3",
+          "slug": "phanes-and-the-first-appearance",
+          "title": "Phanes and the First Appearance",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xii-4",
+          "slug": "sophia-and-luminous-wisdom",
+          "title": "Sophia and Luminous Wisdom",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xii-5",
+          "slug": "the-four-gnostic-luminaries",
+          "title": "The Four Gnostic Luminaries",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xii-6",
+          "slug": "seraphim-cherubim-and-thrones",
+          "title": "Seraphim, Cherubim, and Thrones",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xii-7",
+          "slug": "dominions-powers-and-authorities",
+          "title": "Dominions, Powers, and Authorities",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xii-8",
+          "slug": "principalities-archangels-and-angels",
+          "title": "Principalities, Archangels, and Angels",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xii-9",
+          "slug": "daimons-as-differentiated-currents",
+          "title": "Daimons as Differentiated Currents",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xii-10",
+          "slug": "heroes-and-ancestral-lights",
+          "title": "Heroes and Ancestral Lights",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xii-11",
+          "slug": "archons-and-mixed-illumination",
+          "title": "Archons and Mixed Illumination",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xii-12",
+          "slug": "souls-and-mutable-psychic-light",
+          "title": "Souls and Mutable Psychic Light",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xii-13",
+          "slug": "the-personal-daimon-as-assigned-current",
+          "title": "The Personal Daimon as Assigned Current",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xii-14",
+          "slug": "saints-sages-and-transfigured-persons",
+          "title": "Saints, Sages, and Transfigured Persons",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xii-15",
+          "slug": "stellar-ancestors",
+          "title": "Stellar Ancestors",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xii-16",
+          "slug": "the-solar-king",
+          "title": "The Solar King",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xii-17",
+          "slug": "the-luminous-child",
+          "title": "The Luminous Child",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xii-18",
+          "slug": "the-divine-feminine-as-mirror-womb-and-radiant-wisdom",
+          "title": "The Divine Feminine as Mirror, Womb, and Radiant Wisdom",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xii-19",
+          "slug": "names-numbers-and-logoi",
+          "title": "Names, Numbers, and Logoi",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xii-20",
+          "slug": "how-a-being-reveals-its-order-through-the-quality-of-its-light",
+          "title": "How a Being Reveals Its Order through the Quality of Its Light",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xii-21",
+          "slug": "the-iamblichean-taxonomy-of-manifestations",
+          "title": "The Iamblichean Taxonomy of Manifestations",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xii-22",
+          "slug": "false-lights-masks-and-imitative-forms",
+          "title": "False Lights, Masks, and Imitative Forms",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xiii",
+      "numeral": "XIII",
+      "order": 13,
+      "title": "The Operations of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xiii-1",
+          "slug": "illumination",
+          "title": "Illumination",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xiii-2",
+          "slug": "revelation",
+          "title": "Revelation",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xiii-3",
+          "slug": "manifestation",
+          "title": "Manifestation",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xiii-4",
+          "slug": "differentiation",
+          "title": "Differentiation",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xiii-5",
+          "slug": "formation",
+          "title": "Formation",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xiii-6",
+          "slug": "animation",
+          "title": "Animation",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xiii-7",
+          "slug": "vivification",
+          "title": "Vivification",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xiii-8",
+          "slug": "orientation",
+          "title": "Orientation",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xiii-9",
+          "slug": "communication",
+          "title": "Communication",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xiii-10",
+          "slug": "recognition",
+          "title": "Recognition",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xiii-11",
+          "slug": "purification",
+          "title": "Purification",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xiii-12",
+          "slug": "consecration",
+          "title": "Consecration",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xiii-13",
+          "slug": "healing",
+          "title": "Healing",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xiii-14",
+          "slug": "protection",
+          "title": "Protection",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xiii-15",
+          "slug": "exposure",
+          "title": "Exposure",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xiii-16",
+          "slug": "judgment",
+          "title": "Judgment",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xiii-17",
+          "slug": "awakening",
+          "title": "Awakening",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xiii-18",
+          "slug": "inspiration",
+          "title": "Inspiration",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xiii-19",
+          "slug": "integration",
+          "title": "Integration",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xiii-20",
+          "slug": "transfiguration",
+          "title": "Transfiguration",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xiii-21",
+          "slug": "dissolution",
+          "title": "Dissolution",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xiii-22",
+          "slug": "solve-releasing-light-from-form",
+          "title": "Solve: Releasing Light from Form",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "xiii-23",
+          "slug": "coagula-re-embodying-light-in-a-higher-form",
+          "title": "Coagula: Re-embodying Light in a Higher Form",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "xiii-24",
+          "slug": "metamorphosis",
+          "title": "Metamorphōsis",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "xiii-25",
+          "slug": "metastoicheiosis-or-trans-elementation",
+          "title": "Metastoicheiōsis or Trans-elementation",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "xiii-26",
+          "slug": "capturing-and-binding-light",
+          "title": "Capturing and Binding Light",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "xiii-27",
+          "slug": "liberating-captive-light",
+          "title": "Liberating Captive Light",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "xiii-28",
+          "slug": "luminous-imprinting-and-memory",
+          "title": "Luminous Imprinting and Memory",
+          "group": null
+        },
+        {
+          "n": 29,
+          "id": "xiii-29",
+          "slug": "the-withdrawal-of-light-from-failed-architecture",
+          "title": "The Withdrawal of Light from Failed Architecture",
+          "group": null
+        },
+        {
+          "n": 30,
+          "id": "xiii-30",
+          "slug": "whether-the-architecture-remains-truthful-when-form-fails",
+          "title": "Whether the Architecture Remains Truthful When Form Fails",
+          "group": null
+        },
+        {
+          "n": 31,
+          "id": "xiii-31",
+          "slug": "return-to-the-source",
+          "title": "Return to the Source",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xiv",
+      "numeral": "XIV",
+      "order": 14,
+      "title": "Ritual and Theurgic Technologies of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xiv-1",
+          "slug": "light-as-a-ritual-agent",
+          "title": "Light as a Ritual Agent",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xiv-2",
+          "slug": "sacred-fire",
+          "title": "Sacred Fire",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xiv-3",
+          "slug": "temple-lamps",
+          "title": "Temple Lamps",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xiv-4",
+          "slug": "candles-wicks-oils-and-fuels",
+          "title": "Candles, Wicks, Oils, and Fuels",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xiv-5",
+          "slug": "solar-orientation-of-temples",
+          "title": "Solar Orientation of Temples",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xiv-6",
+          "slug": "dawn-noon-sunset-and-midnight-rites",
+          "title": "Dawn, Noon, Sunset, and Midnight Rites",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xiv-7",
+          "slug": "vigils-and-the-consecration-of-night",
+          "title": "Vigils and the Consecration of Night",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xiv-8",
+          "slug": "mirrors-as-ritual-interfaces",
+          "title": "Mirrors as Ritual Interfaces",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xiv-9",
+          "slug": "crystals-as-luminous-vessels",
+          "title": "Crystals as Luminous Vessels",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xiv-10",
+          "slug": "water-as-reflective-medium",
+          "title": "Water as Reflective Medium",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xiv-11",
+          "slug": "gold-and-solar-incorruptibility",
+          "title": "Gold and Solar Incorruptibility",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xiv-12",
+          "slug": "silver-and-lunar-reception",
+          "title": "Silver and Lunar Reception",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xiv-13",
+          "slug": "incense-smoke-and-visible-mediation",
+          "title": "Incense, Smoke, and Visible Mediation",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xiv-14",
+          "slug": "pigments-and-sacred-colors",
+          "title": "Pigments and Sacred Colors",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xiv-15",
+          "slug": "statues-and-ensoulment",
+          "title": "Statues and Ensoulment",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xiv-16",
+          "slug": "icons-halos-and-mandorlas",
+          "title": "Icons, Halos, and Mandorlas",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xiv-17",
+          "slug": "stained-glass-and-colored-transmission",
+          "title": "Stained Glass and Colored Transmission",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xiv-18",
+          "slug": "divine-names-as-luminous-forms",
+          "title": "Divine Names as Luminous Forms",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xiv-19",
+          "slug": "mantra-logos-and-vibratory-illumination",
+          "title": "Mantra, Logos, and Vibratory Illumination",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xiv-20",
+          "slug": "egyptian-heka-and-the-activation-of-light-through-speech",
+          "title": "Egyptian Heka and the Activation of Light through Speech",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xiv-21",
+          "slug": "theurgy-and-divine-illumination",
+          "title": "Theurgy and Divine Illumination",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xiv-22",
+          "slug": "invocation-evocation-and-the-quality-of-manifested-light",
+          "title": "Invocation, Evocation, and the Quality of Manifested Light",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "xiv-23",
+          "slug": "protective-circles-and-luminous-boundaries",
+          "title": "Protective Circles and Luminous Boundaries",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "xiv-24",
+          "slug": "consecration-as-the-establishment-of-right-relation",
+          "title": "Consecration as the Establishment of Right Relation",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "xiv-25",
+          "slug": "ethical-and-psychological-safeguards",
+          "title": "Ethical and Psychological Safeguards",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xv",
+      "numeral": "XV",
+      "order": 15,
+      "title": "A Global History of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xv-1",
+          "slug": "solar-theology-before-the-pyramid-texts",
+          "title": "Solar Theology before the Pyramid Texts",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 2,
+          "id": "xv-2",
+          "slug": "the-pyramid-texts-and-stellar-ascent",
+          "title": "The Pyramid Texts and Stellar Ascent",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 3,
+          "id": "xv-3",
+          "slug": "the-coffin-texts",
+          "title": "The Coffin Texts",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 4,
+          "id": "xv-4",
+          "slug": "the-great-hymn-to-aten",
+          "title": "The Great Hymn to Aten",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 5,
+          "id": "xv-5",
+          "slug": "the-litany-of-re-and-the-seventy-five-forms",
+          "title": "The Litany of Re and the Seventy-Five Forms",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 6,
+          "id": "xv-6",
+          "slug": "the-amduat-and-twelve-transformations-of-the-sun",
+          "title": "The Amduat and Twelve Transformations of the Sun",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 7,
+          "id": "xv-7",
+          "slug": "the-book-of-gates",
+          "title": "The Book of Gates",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 8,
+          "id": "xv-8",
+          "slug": "the-book-of-caverns",
+          "title": "The Book of Caverns",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 9,
+          "id": "xv-9",
+          "slug": "the-book-of-the-heavenly-cow",
+          "title": "The Book of the Heavenly Cow",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 10,
+          "id": "xv-10",
+          "slug": "akh-radiance-and-the-transfigured-dead",
+          "title": "Akh, Radiance, and the Transfigured Dead",
+          "group": "Ancient Egypt"
+        },
+        {
+          "n": 11,
+          "id": "xv-11",
+          "slug": "utu-shamash-as-the-all-seeing-light",
+          "title": "Utu-Shamash as the All-Seeing Light",
+          "group": "Mesopotamia and Iran"
+        },
+        {
+          "n": 12,
+          "id": "xv-12",
+          "slug": "light-justice-and-divine-vision",
+          "title": "Light, Justice, and Divine Vision",
+          "group": "Mesopotamia and Iran"
+        },
+        {
+          "n": 13,
+          "id": "xv-13",
+          "slug": "the-gathas-and-the-contrast-of-light-and-darkness",
+          "title": "The Gāthās and the Contrast of Light and Darkness",
+          "group": "Mesopotamia and Iran"
+        },
+        {
+          "n": 14,
+          "id": "xv-14",
+          "slug": "avestan-fire",
+          "title": "Avestan Fire",
+          "group": "Mesopotamia and Iran"
+        },
+        {
+          "n": 15,
+          "id": "xv-15",
+          "slug": "star-moon-sun-and-endless-light",
+          "title": "Star, Moon, Sun, and Endless Light",
+          "group": "Mesopotamia and Iran"
+        },
+        {
+          "n": 16,
+          "id": "xv-16",
+          "slug": "the-bundahisn-and-the-architecture-of-the-luminaries",
+          "title": "The Bundahišn and the Architecture of the Luminaries",
+          "group": "Mesopotamia and Iran"
+        },
+        {
+          "n": 17,
+          "id": "xv-17",
+          "slug": "empedocles-and-the-fire-of-the-eye",
+          "title": "Empedocles and the Fire of the Eye",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 18,
+          "id": "xv-18",
+          "slug": "democritus-on-color-and-emanation",
+          "title": "Democritus on Color and Emanation",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 19,
+          "id": "xv-19",
+          "slug": "platos-sun-divided-line-and-cave",
+          "title": "Plato’s Sun, Divided Line, and Cave",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 20,
+          "id": "xv-20",
+          "slug": "platos-timaeus-on-vision-and-color",
+          "title": "Plato’s Timaeus on Vision and Color",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 21,
+          "id": "xv-21",
+          "slug": "aristotle-on-the-transparent",
+          "title": "Aristotle on the Transparent",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 22,
+          "id": "xv-22",
+          "slug": "on-colours-and-the-mixture-of-light-and-darkness",
+          "title": "On Colours and the Mixture of Light and Darkness",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 23,
+          "id": "xv-23",
+          "slug": "euclids-optics",
+          "title": "Euclid’s Optics",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 24,
+          "id": "xv-24",
+          "slug": "ptolemy-on-reflection-and-refraction",
+          "title": "Ptolemy on Reflection and Refraction",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 25,
+          "id": "xv-25",
+          "slug": "stoic-and-roman-theories-of-vision",
+          "title": "Stoic and Roman Theories of Vision",
+          "group": "Greece and Rome"
+        },
+        {
+          "n": 26,
+          "id": "xv-26",
+          "slug": "phanes-and-primordial-appearance",
+          "title": "Phanes and Primordial Appearance",
+          "group": "Orphism, Theurgy, and Neoplatonism"
+        },
+        {
+          "n": 27,
+          "id": "xv-27",
+          "slug": "the-chaldean-oracles-and-intelligible-fire",
+          "title": "The Chaldean Oracles and Intelligible Fire",
+          "group": "Orphism, Theurgy, and Neoplatonism"
+        },
+        {
+          "n": 28,
+          "id": "xv-28",
+          "slug": "plotinus-and-emanative-radiance",
+          "title": "Plotinus and Emanative Radiance",
+          "group": "Orphism, Theurgy, and Neoplatonism"
+        },
+        {
+          "n": 29,
+          "id": "xv-29",
+          "slug": "porphyry-and-intellectual-illumination",
+          "title": "Porphyry and Intellectual Illumination",
+          "group": "Orphism, Theurgy, and Neoplatonism"
+        },
+        {
+          "n": 30,
+          "id": "xv-30",
+          "slug": "iamblichus-and-the-hierarchy-of-luminous-manifestations",
+          "title": "Iamblichus and the Hierarchy of Luminous Manifestations",
+          "group": "Orphism, Theurgy, and Neoplatonism"
+        },
+        {
+          "n": 31,
+          "id": "xv-31",
+          "slug": "proclus-and-the-chains-of-divine-light",
+          "title": "Proclus and the Chains of Divine Light",
+          "group": "Orphism, Theurgy, and Neoplatonism"
+        },
+        {
+          "n": 32,
+          "id": "xv-32",
+          "slug": "poimandres-light-mind-and-dark-nature",
+          "title": "Poimandres: Light, Mind, and Dark Nature",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 33,
+          "id": "xv-33",
+          "slug": "the-eighth-and-ninth-spheres",
+          "title": "The Eighth and Ninth Spheres",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 34,
+          "id": "xv-34",
+          "slug": "the-hermetic-rebirth",
+          "title": "The Hermetic Rebirth",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 35,
+          "id": "xv-35",
+          "slug": "the-apocryphon-of-john-and-the-four-luminaries",
+          "title": "The Apocryphon of John and the Four Luminaries",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 36,
+          "id": "xv-36",
+          "slug": "pistis-sophia-and-the-theft-of-light-power",
+          "title": "Pistis Sophia and the Theft of Light-Power",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 37,
+          "id": "xv-37",
+          "slug": "the-books-of-jeu-and-the-treasuries-of-light",
+          "title": "The Books of Jeu and the Treasuries of Light",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 38,
+          "id": "xv-38",
+          "slug": "the-manichaean-light-realm",
+          "title": "The Manichaean Light-Realm",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 39,
+          "id": "xv-39",
+          "slug": "the-five-living-elements-of-light",
+          "title": "The Five Living Elements of Light",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 40,
+          "id": "xv-40",
+          "slug": "captive-light-and-cosmic-purification",
+          "title": "Captive Light and Cosmic Purification",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 41,
+          "id": "xv-41",
+          "slug": "the-mandaean-world-of-light",
+          "title": "The Mandaean World of Light",
+          "group": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+        },
+        {
+          "n": 42,
+          "id": "xv-42",
+          "slug": "genesis-and-light-before-the-luminaries",
+          "title": "Genesis and Light before the Luminaries",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 43,
+          "id": "xv-43",
+          "slug": "the-pillar-of-fire",
+          "title": "The Pillar of Fire",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 44,
+          "id": "xv-44",
+          "slug": "ezekiels-throne-vision",
+          "title": "Ezekiel’s Throne-Vision",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 45,
+          "id": "xv-45",
+          "slug": "psalms-of-divine-radiance",
+          "title": "Psalms of Divine Radiance",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 46,
+          "id": "xv-46",
+          "slug": "daniel-and-the-ancient-of-days",
+          "title": "Daniel and the Ancient of Days",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 47,
+          "id": "xv-47",
+          "slug": "first-enoch-and-the-heavenly-luminaries",
+          "title": "First Enoch and the Heavenly Luminaries",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 48,
+          "id": "xv-48",
+          "slug": "the-dead-sea-scrolls-and-the-sons-of-light",
+          "title": "The Dead Sea Scrolls and the Sons of Light",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 49,
+          "id": "xv-49",
+          "slug": "primordial-and-hidden-light-in-rabbinic-tradition",
+          "title": "Primordial and Hidden Light in Rabbinic Tradition",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 50,
+          "id": "xv-50",
+          "slug": "the-gospel-of-john",
+          "title": "The Gospel of John",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 51,
+          "id": "xv-51",
+          "slug": "the-transfiguration",
+          "title": "The Transfiguration",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 52,
+          "id": "xv-52",
+          "slug": "paul-and-the-transformation-into-glory",
+          "title": "Paul and the Transformation into Glory",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 53,
+          "id": "xv-53",
+          "slug": "the-odes-of-solomon",
+          "title": "The Odes of Solomon",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 54,
+          "id": "xv-54",
+          "slug": "gregory-of-nyssa-and-luminous-darkness",
+          "title": "Gregory of Nyssa and Luminous Darkness",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 55,
+          "id": "xv-55",
+          "slug": "pseudo-dionysius-and-hierarchical-illumination",
+          "title": "Pseudo-Dionysius and Hierarchical Illumination",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 56,
+          "id": "xv-56",
+          "slug": "syriac-christianity-and-the-robe-of-light",
+          "title": "Syriac Christianity and the Robe of Light",
+          "group": "Israelite, Jewish, and Christian Traditions"
+        },
+        {
+          "n": 57,
+          "id": "xv-57",
+          "slug": "agni-surya-and-usas-in-the-rgveda",
+          "title": "Agni, Sūrya, and Uṣas in the Ṛgveda",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 58,
+          "id": "xv-58",
+          "slug": "the-upanishadic-light-of-the-self",
+          "title": "The Upanishadic Light of the Self",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 59,
+          "id": "xv-59",
+          "slug": "the-gayatri-and-solar-intelligence",
+          "title": "The Gāyatrī and Solar Intelligence",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 60,
+          "id": "xv-60",
+          "slug": "the-bhagavad-gita-and-the-light-of-lights",
+          "title": "The Bhagavad Gītā and the Light of Lights",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 61,
+          "id": "xv-61",
+          "slug": "tejas-and-the-indian-elemental-systems",
+          "title": "Tejas and the Indian Elemental Systems",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 62,
+          "id": "xv-62",
+          "slug": "sattva-as-luminosity",
+          "title": "Sattva as Luminosity",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 63,
+          "id": "xv-63",
+          "slug": "yogic-signs-of-light",
+          "title": "Yogic Signs of Light",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 64,
+          "id": "xv-64",
+          "slug": "the-early-buddhist-luminous-mind",
+          "title": "The Early Buddhist Luminous Mind",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 65,
+          "id": "xv-65",
+          "slug": "the-upakkilesa-sutta-and-meditative-light",
+          "title": "The Upakkilesa Sutta and Meditative Light",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 66,
+          "id": "xv-66",
+          "slug": "light-kasina-and-the-development-of-the-luminous-sign",
+          "title": "Light Kasiṇa and the Development of the Luminous Sign",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 67,
+          "id": "xv-67",
+          "slug": "mahayana-radiance",
+          "title": "Mahāyāna Radiance",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 68,
+          "id": "xv-68",
+          "slug": "buddha-nature-and-luminosity",
+          "title": "Buddha-Nature and Luminosity",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 69,
+          "id": "xv-69",
+          "slug": "tantric-and-tibetan-clear-light",
+          "title": "Tantric and Tibetan Clear Light",
+          "group": "India and Buddhism"
+        },
+        {
+          "n": 70,
+          "id": "xv-70",
+          "slug": "the-mohist-science-of-light-and-shadow",
+          "title": "The Mohist Science of Light and Shadow",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 71,
+          "id": "xv-71",
+          "slug": "light-in-the-dao-de-jing",
+          "title": "Light in the Dao De Jing",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 72,
+          "id": "xv-72",
+          "slug": "the-light-of-heaven-in-the-zhuangzi",
+          "title": "The “Light of Heaven” in the Zhuangzi",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 73,
+          "id": "xv-73",
+          "slug": "the-neiye-and-inner-radiance",
+          "title": "The Neiye and Inner Radiance",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 74,
+          "id": "xv-74",
+          "slug": "yin-yang-sun-and-moon",
+          "title": "Yin, Yang, Sun, and Moon",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 75,
+          "id": "xv-75",
+          "slug": "the-cantong-qi-and-alchemical-light",
+          "title": "The Cantong Qi and Alchemical Light",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 76,
+          "id": "xv-76",
+          "slug": "the-later-secret-of-the-golden-flower",
+          "title": "The Later Secret of the Golden Flower",
+          "group": "China and Daoism"
+        },
+        {
+          "n": 77,
+          "id": "xv-77",
+          "slug": "the-quranic-light-verse",
+          "title": "The Qur’anic Light Verse",
+          "group": "Islamic and Illuminationist Traditions"
+        },
+        {
+          "n": 78,
+          "id": "xv-78",
+          "slug": "ibn-al-haytham-and-the-science-of-optics",
+          "title": "Ibn al-Haytham and the Science of Optics",
+          "group": "Islamic and Illuminationist Traditions"
+        },
+        {
+          "n": 79,
+          "id": "xv-79",
+          "slug": "al-ghazalis-niche-of-lights",
+          "title": "Al-Ghazālī’s Niche of Lights",
+          "group": "Islamic and Illuminationist Traditions"
+        },
+        {
+          "n": 80,
+          "id": "xv-80",
+          "slug": "suhrawardi-and-the-light-of-lights",
+          "title": "Suhrawardī and the Light of Lights",
+          "group": "Islamic and Illuminationist Traditions"
+        },
+        {
+          "n": 81,
+          "id": "xv-81",
+          "slug": "hierarchies-of-victorial-and-governing-lights",
+          "title": "Hierarchies of Victorial and Governing Lights",
+          "group": "Islamic and Illuminationist Traditions"
+        },
+        {
+          "n": 82,
+          "id": "xv-82",
+          "slug": "illumination-in-islamic-mysticism",
+          "title": "Illumination in Islamic Mysticism",
+          "group": "Islamic and Illuminationist Traditions"
+        },
+        {
+          "n": 83,
+          "id": "xv-83",
+          "slug": "robert-grossetestes-on-light",
+          "title": "Robert Grosseteste’s On Light",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 84,
+          "id": "xv-84",
+          "slug": "medieval-optics-and-perspectiva",
+          "title": "Medieval Optics and Perspectiva",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 85,
+          "id": "xv-85",
+          "slug": "ficino-and-solar-platonism",
+          "title": "Ficino and Solar Platonism",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 86,
+          "id": "xv-86",
+          "slug": "paracelsus-and-the-lumen-naturae",
+          "title": "Paracelsus and the Lumen Naturae",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 87,
+          "id": "xv-87",
+          "slug": "jacob-bohme-and-the-birth-of-light-from-darkness",
+          "title": "Jacob Böhme and the Birth of Light from Darkness",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 88,
+          "id": "xv-88",
+          "slug": "robert-fludds-luminous-cosmology",
+          "title": "Robert Fludd’s Luminous Cosmology",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 89,
+          "id": "xv-89",
+          "slug": "newton-optics-alchemy-and-divine-order",
+          "title": "Newton: Optics, Alchemy, and Divine Order",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 90,
+          "id": "xv-90",
+          "slug": "goethes-theory-of-colors",
+          "title": "Goethe’s Theory of Colors",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 91,
+          "id": "xv-91",
+          "slug": "eliphas-levi-and-astral-light",
+          "title": "Éliphas Lévi and Astral Light",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 92,
+          "id": "xv-92",
+          "slug": "the-golden-dawn-and-the-limitless-light",
+          "title": "The Golden Dawn and the Limitless Light",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 93,
+          "id": "xv-93",
+          "slug": "theosophical-planes-and-rays",
+          "title": "Theosophical Planes and Rays",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        },
+        {
+          "n": 94,
+          "id": "xv-94",
+          "slug": "rudolf-steiner-and-the-four-ethers",
+          "title": "Rudolf Steiner and the Four Ethers",
+          "group": "Medieval, Renaissance, and Modern Esotericism"
+        }
+      ]
+    },
+    {
+      "id": "xvi",
+      "numeral": "XVI",
+      "order": 16,
+      "title": "The Science of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xvi-1",
+          "slug": "ancient-optical-theories",
+          "title": "Ancient Optical Theories",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xvi-2",
+          "slug": "the-transition-from-visual-rays-to-incoming-light",
+          "title": "The Transition from Visual Rays to Incoming Light",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xvi-3",
+          "slug": "ibn-al-haytham-and-experimental-optics",
+          "title": "Ibn al-Haytham and Experimental Optics",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xvi-4",
+          "slug": "geometrical-optics",
+          "title": "Geometrical Optics",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xvi-5",
+          "slug": "reflection-and-refraction",
+          "title": "Reflection and Refraction",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xvi-6",
+          "slug": "dispersion-and-the-spectrum",
+          "title": "Dispersion and the Spectrum",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xvi-7",
+          "slug": "wave-theories-of-light",
+          "title": "Wave Theories of Light",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xvi-8",
+          "slug": "electromagnetism",
+          "title": "Electromagnetism",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xvi-9",
+          "slug": "photons-and-quantum-light",
+          "title": "Photons and Quantum Light",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xvi-10",
+          "slug": "wave-particle-duality",
+          "title": "Wave-Particle Duality",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xvi-11",
+          "slug": "polarization",
+          "title": "Polarization",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xvi-12",
+          "slug": "interference-and-diffraction",
+          "title": "Interference and Diffraction",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xvi-13",
+          "slug": "coherence-and-lasers",
+          "title": "Coherence and Lasers",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xvi-14",
+          "slug": "color-temperature",
+          "title": "Color Temperature",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xvi-15",
+          "slug": "photometry-and-the-measurement-of-light",
+          "title": "Photometry and the Measurement of Light",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xvi-16",
+          "slug": "human-color-vision",
+          "title": "Human Color Vision",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xvi-17",
+          "slug": "ultraviolet-and-infrared-radiation",
+          "title": "Ultraviolet and Infrared Radiation",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xvi-18",
+          "slug": "light-in-astronomy",
+          "title": "Light in Astronomy",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xvi-19",
+          "slug": "light-space-and-relativity",
+          "title": "Light, Space, and Relativity",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xvi-20",
+          "slug": "photosynthesis",
+          "title": "Photosynthesis",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xvi-21",
+          "slug": "bioluminescence",
+          "title": "Bioluminescence",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xvi-22",
+          "slug": "circadian-biology",
+          "title": "Circadian Biology",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "xvi-23",
+          "slug": "biophotons-and-ultraweak-photon-emission",
+          "title": "Biophotons and Ultraweak Photon Emission",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "xvi-24",
+          "slug": "neuroscience-of-inner-light",
+          "title": "Neuroscience of Inner Light",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "xvi-25",
+          "slug": "what-modern-physics-does-and-does-not-say-about-metaphysical-light",
+          "title": "What Modern Physics Does—and Does Not—Say about Metaphysical Light",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "xvi-26",
+          "slug": "responsible-correspondence-between-science-and-esotericism",
+          "title": "Responsible Correspondence between Science and Esotericism",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xvii",
+      "numeral": "XVII",
+      "order": 17,
+      "title": "Symbols, Images, and Luminous Geometry",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xvii-1",
+          "slug": "the-point-of-light",
+          "title": "The Point of Light",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xvii-2",
+          "slug": "ray-and-line",
+          "title": "Ray and Line",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xvii-3",
+          "slug": "circle-and-solar-disc",
+          "title": "Circle and Solar Disc",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xvii-4",
+          "slug": "sphere-of-radiance",
+          "title": "Sphere of Radiance",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xvii-5",
+          "slug": "triangle-and-descending-fire",
+          "title": "Triangle and Descending Fire",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xvii-6",
+          "slug": "vesica-and-the-birth-of-light",
+          "title": "Vesica and the Birth of Light",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xvii-7",
+          "slug": "spiral-and-luminous-procession",
+          "title": "Spiral and Luminous Procession",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xvii-8",
+          "slug": "prism-and-differentiation",
+          "title": "Prism and Differentiation",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xvii-9",
+          "slug": "rainbow-and-reunified-multiplicity",
+          "title": "Rainbow and Reunified Multiplicity",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xvii-10",
+          "slug": "eye-and-vision",
+          "title": "Eye and Vision",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xvii-11",
+          "slug": "lamp-and-inner-guidance",
+          "title": "Lamp and Inner Guidance",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xvii-12",
+          "slug": "torch-and-transmission",
+          "title": "Torch and Transmission",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xvii-13",
+          "slug": "flame-and-transformation",
+          "title": "Flame and Transformation",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xvii-14",
+          "slug": "lightning-bolt-and-sudden-power",
+          "title": "Lightning Bolt and Sudden Power",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xvii-15",
+          "slug": "crown-and-solar-authority",
+          "title": "Crown and Solar Authority",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xvii-16",
+          "slug": "halo-and-sanctified-presence",
+          "title": "Halo and Sanctified Presence",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xvii-17",
+          "slug": "mandorla-and-the-transfigured-body",
+          "title": "Mandorla and the Transfigured Body",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xvii-18",
+          "slug": "star-and-immortality",
+          "title": "Star and Immortality",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xvii-19",
+          "slug": "winged-solar-disc",
+          "title": "Winged Solar Disc",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xvii-20",
+          "slug": "solar-barque",
+          "title": "Solar Barque",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xvii-21",
+          "slug": "lotus-and-the-emergence-of-light",
+          "title": "Lotus and the Emergence of Light",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xvii-22",
+          "slug": "menorah-and-ordered-illumination",
+          "title": "Menorah and Ordered Illumination",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "xvii-23",
+          "slug": "cross-of-light",
+          "title": "Cross of Light",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "xvii-24",
+          "slug": "radiant-heart",
+          "title": "Radiant Heart",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "xvii-25",
+          "slug": "mirror-and-self-knowledge",
+          "title": "Mirror and Self-Knowledge",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "xvii-26",
+          "slug": "crystal-and-transparent-form",
+          "title": "Crystal and Transparent Form",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "xvii-27",
+          "slug": "gold-and-incorruptible-radiance",
+          "title": "Gold and Incorruptible Radiance",
+          "group": null
+        },
+        {
+          "n": 28,
+          "id": "xvii-28",
+          "slug": "black-sun-and-hidden-illumination",
+          "title": "Black Sun and Hidden Illumination",
+          "group": null
+        },
+        {
+          "n": 29,
+          "id": "xvii-29",
+          "slug": "cave-crypt-and-luminous-emergence",
+          "title": "Cave, Crypt, and Luminous Emergence",
+          "group": null
+        },
+        {
+          "n": 30,
+          "id": "xvii-30",
+          "slug": "temple-architecture-as-a-machine-of-light",
+          "title": "Temple Architecture as a Machine of Light",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xviii",
+      "numeral": "XVIII",
+      "order": 18,
+      "title": "Comparative Mysteries of Light",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xviii-1",
+          "slug": "light-and-fire",
+          "title": "Light and Fire",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xviii-2",
+          "slug": "light-and-aether",
+          "title": "Light and Aether",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xviii-3",
+          "slug": "light-and-breath",
+          "title": "Light and Breath",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xviii-4",
+          "slug": "light-and-sound",
+          "title": "Light and Sound",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xviii-5",
+          "slug": "light-and-word",
+          "title": "Light and Word",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xviii-6",
+          "slug": "light-and-number",
+          "title": "Light and Number",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xviii-7",
+          "slug": "light-and-geometry",
+          "title": "Light and Geometry",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xviii-8",
+          "slug": "light-and-time",
+          "title": "Light and Time",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xviii-9",
+          "slug": "light-and-memory",
+          "title": "Light and Memory",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xviii-10",
+          "slug": "light-and-life",
+          "title": "Light and Life",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xviii-11",
+          "slug": "light-and-desire",
+          "title": "Light and Desire",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xviii-12",
+          "slug": "light-and-love",
+          "title": "Light and Love",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xviii-13",
+          "slug": "light-and-wisdom",
+          "title": "Light and Wisdom",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xviii-14",
+          "slug": "light-and-authority",
+          "title": "Light and Authority",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xviii-15",
+          "slug": "light-and-justice",
+          "title": "Light and Justice",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xviii-16",
+          "slug": "light-and-death",
+          "title": "Light and Death",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xviii-17",
+          "slug": "light-and-immortality",
+          "title": "Light and Immortality",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xviii-18",
+          "slug": "light-and-resurrection",
+          "title": "Light and Resurrection",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xviii-19",
+          "slug": "light-and-initiation",
+          "title": "Light and Initiation",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xviii-20",
+          "slug": "light-and-transformation",
+          "title": "Light and Transformation",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xviii-21",
+          "slug": "light-and-return",
+          "title": "Light and Return",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xviii-22",
+          "slug": "true-correspondences-and-false-equivalences",
+          "title": "True Correspondences and False Equivalences",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xix",
+      "numeral": "XIX",
+      "order": 19,
+      "title": "The Laws of Luminous Architecture",
+      "note": "The original contribution of the system.",
+      "entries": [
+        {
+          "n": 1,
+          "id": "xix-1",
+          "slug": "the-law-of-luminous-mediation",
+          "title": "The Law of Luminous Mediation",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xix-2",
+          "slug": "the-law-of-differential-reception",
+          "title": "The Law of Differential Reception",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xix-3",
+          "slug": "the-law-of-undiminished-procession",
+          "title": "The Law of Undiminished Procession",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xix-4",
+          "slug": "the-law-of-coherent-radiance",
+          "title": "The Law of Coherent Radiance",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xix-5",
+          "slug": "the-law-of-formative-illumination",
+          "title": "The Law of Formative Illumination",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xix-6",
+          "slug": "the-law-of-tattvic-refraction",
+          "title": "The Law of Tattvic Refraction",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xix-7",
+          "slug": "the-law-of-veiled-transmission",
+          "title": "The Law of Veiled Transmission",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xix-8",
+          "slug": "the-law-of-luminous-saturation",
+          "title": "The Law of Luminous Saturation",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xix-9",
+          "slug": "the-law-of-corresponding-capacity",
+          "title": "The Law of Corresponding Capacity",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xix-10",
+          "slug": "the-law-of-necessary-shadow",
+          "title": "The Law of Necessary Shadow",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xix-11",
+          "slug": "the-law-of-captive-light",
+          "title": "The Law of Captive Light",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xix-12",
+          "slug": "the-law-of-luminous-memory",
+          "title": "The Law of Luminous Memory",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xix-13",
+          "slug": "the-law-of-consecrated-form",
+          "title": "The Law of Consecrated Form",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xix-14",
+          "slug": "the-law-of-solar-return",
+          "title": "The Law of Solar Return",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xix-15",
+          "slug": "the-law-of-reciprocal-illumination",
+          "title": "The Law of Reciprocal Illumination",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xix-16",
+          "slug": "the-law-of-right-relation",
+          "title": "The Law of Right Relation",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xix-17",
+          "slug": "the-law-of-truthful-architecture",
+          "title": "The Law of Truthful Architecture",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xix-18",
+          "slug": "whether-the-path-should-be-walked",
+          "title": "Whether the Path Should Be Walked",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xix-19",
+          "slug": "whether-the-light-serves-life-or-merely-magnifies-power",
+          "title": "Whether the Light Serves Life or Merely Magnifies Power",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xix-20",
+          "slug": "whether-the-architecture-remains-truthful-when-form-fails",
+          "title": "Whether the Architecture Remains Truthful When Form Fails",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xx",
+      "numeral": "XX",
+      "order": 20,
+      "title": "Practice, Observation, and Discernment",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xx-1",
+          "slug": "keeping-a-luminous-phenomenology-journal",
+          "title": "Keeping a Luminous Phenomenology Journal",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xx-2",
+          "slug": "observing-dawn-noon-sunset-and-midnight",
+          "title": "Observing Dawn, Noon, Sunset, and Midnight",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xx-3",
+          "slug": "candle-and-flame-contemplation",
+          "title": "Candle and Flame Contemplation",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xx-4",
+          "slug": "color-contemplation",
+          "title": "Color Contemplation",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xx-5",
+          "slug": "light-and-breath",
+          "title": "Light and Breath",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xx-6",
+          "slug": "light-and-stillness",
+          "title": "Light and Stillness",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xx-7",
+          "slug": "dream-light-recording",
+          "title": "Dream-Light Recording",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xx-8",
+          "slug": "tracking-tattvic-coloration",
+          "title": "Tracking Tattvic Coloration",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xx-9",
+          "slug": "comparing-visionary-qualities",
+          "title": "Comparing Visionary Qualities",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xx-10",
+          "slug": "distinguishing-radiance-from-excitement",
+          "title": "Distinguishing Radiance from Excitement",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xx-11",
+          "slug": "testing-luminous-experiences-by-their-consequences",
+          "title": "Testing Luminous Experiences by Their Consequences",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xx-12",
+          "slug": "ethical-discernment",
+          "title": "Ethical Discernment",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xx-13",
+          "slug": "psychological-and-neurological-discernment",
+          "title": "Psychological and Neurological Discernment",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xx-14",
+          "slug": "avoiding-inflation-and-claims-of-spiritual-rank",
+          "title": "Avoiding Inflation and Claims of Spiritual Rank",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xx-15",
+          "slug": "when-to-suspend-practice",
+          "title": "When to Suspend Practice",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xx-16",
+          "slug": "building-a-personal-lexicon-of-light",
+          "title": "Building a Personal Lexicon of Light",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xx-17",
+          "slug": "rituals-of-illumination-and-return",
+          "title": "Rituals of Illumination and Return",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xx-18",
+          "slug": "consecrating-form-without-imprisoning-force",
+          "title": "Consecrating Form without Imprisoning Force",
+          "group": null
+        }
+      ]
+    },
+    {
+      "id": "xxi",
+      "numeral": "XXI",
+      "order": 21,
+      "title": "The Luminous Reference Library",
+      "note": null,
+      "entries": [
+        {
+          "n": 1,
+          "id": "xxi-1",
+          "slug": "multilingual-lexicon-of-light",
+          "title": "Multilingual Lexicon of Light",
+          "group": null
+        },
+        {
+          "n": 2,
+          "id": "xxi-2",
+          "slug": "greek-terms-phos-auge-aktis-ellampsis-lamprotes-pyr",
+          "title": "Greek Terms: Phōs, Augē, Aktis, Ellampsis, Lamprotēs, Pyr",
+          "group": null
+        },
+        {
+          "n": 3,
+          "id": "xxi-3",
+          "slug": "latin-terms-lux-lumen-radius-claritas-splendor-ignis",
+          "title": "Latin Terms: Lux, Lumen, Radius, Claritas, Splendor, Ignis",
+          "group": null
+        },
+        {
+          "n": 4,
+          "id": "xxi-4",
+          "slug": "egyptian-solar-and-luminous-vocabulary",
+          "title": "Egyptian Solar and Luminous Vocabulary",
+          "group": null
+        },
+        {
+          "n": 5,
+          "id": "xxi-5",
+          "slug": "hebrew-and-aramaic-vocabulary-of-light",
+          "title": "Hebrew and Aramaic Vocabulary of Light",
+          "group": null
+        },
+        {
+          "n": 6,
+          "id": "xxi-6",
+          "slug": "syriac-and-coptic-terms",
+          "title": "Syriac and Coptic Terms",
+          "group": null
+        },
+        {
+          "n": 7,
+          "id": "xxi-7",
+          "slug": "sanskrit-terms-jyotis-tejas-prakasa-prabha",
+          "title": "Sanskrit Terms: Jyotis, Tejas, Prakāśa, Prabhā",
+          "group": null
+        },
+        {
+          "n": 8,
+          "id": "xxi-8",
+          "slug": "pali-and-buddhist-hybrid-sanskrit-terms",
+          "title": "Pāli and Buddhist Hybrid Sanskrit Terms",
+          "group": null
+        },
+        {
+          "n": 9,
+          "id": "xxi-9",
+          "slug": "avestan-and-middle-persian-terms",
+          "title": "Avestan and Middle Persian Terms",
+          "group": null
+        },
+        {
+          "n": 10,
+          "id": "xxi-10",
+          "slug": "arabic-and-persian-vocabulary-of-illumination",
+          "title": "Arabic and Persian Vocabulary of Illumination",
+          "group": null
+        },
+        {
+          "n": 11,
+          "id": "xxi-11",
+          "slug": "tibetan-clear-light-terminology",
+          "title": "Tibetan Clear-Light Terminology",
+          "group": null
+        },
+        {
+          "n": 12,
+          "id": "xxi-12",
+          "slug": "classical-chinese-vocabulary",
+          "title": "Classical Chinese Vocabulary",
+          "group": null
+        },
+        {
+          "n": 13,
+          "id": "xxi-13",
+          "slug": "chronology-of-luminous-thought",
+          "title": "Chronology of Luminous Thought",
+          "group": null
+        },
+        {
+          "n": 14,
+          "id": "xxi-14",
+          "slug": "civilizations-and-traditions-map",
+          "title": "Civilizations and Traditions Map",
+          "group": null
+        },
+        {
+          "n": 15,
+          "id": "xxi-15",
+          "slug": "catalogue-of-primary-texts",
+          "title": "Catalogue of Primary Texts",
+          "group": null
+        },
+        {
+          "n": 16,
+          "id": "xxi-16",
+          "slug": "key-passages-in-translation",
+          "title": "Key Passages in Translation",
+          "group": null
+        },
+        {
+          "n": 17,
+          "id": "xxi-17",
+          "slug": "annotated-bibliography",
+          "title": "Annotated Bibliography",
+          "group": null
+        },
+        {
+          "n": 18,
+          "id": "xxi-18",
+          "slug": "historical-figures-directory",
+          "title": "Historical Figures Directory",
+          "group": null
+        },
+        {
+          "n": 19,
+          "id": "xxi-19",
+          "slug": "atlas-of-luminous-symbols",
+          "title": "Atlas of Luminous Symbols",
+          "group": null
+        },
+        {
+          "n": 20,
+          "id": "xxi-20",
+          "slug": "diagram-library",
+          "title": "Diagram Library",
+          "group": null
+        },
+        {
+          "n": 21,
+          "id": "xxi-21",
+          "slug": "comparative-correspondence-tables",
+          "title": "Comparative Correspondence Tables",
+          "group": null
+        },
+        {
+          "n": 22,
+          "id": "xxi-22",
+          "slug": "index-of-qualities",
+          "title": "Index of Qualities",
+          "group": null
+        },
+        {
+          "n": 23,
+          "id": "xxi-23",
+          "slug": "index-of-operations",
+          "title": "Index of Operations",
+          "group": null
+        },
+        {
+          "n": 24,
+          "id": "xxi-24",
+          "slug": "index-of-beings",
+          "title": "Index of Beings",
+          "group": null
+        },
+        {
+          "n": 25,
+          "id": "xxi-25",
+          "slug": "index-of-colors",
+          "title": "Index of Colors",
+          "group": null
+        },
+        {
+          "n": 26,
+          "id": "xxi-26",
+          "slug": "index-of-ritual-implements",
+          "title": "Index of Ritual Implements",
+          "group": null
+        },
+        {
+          "n": 27,
+          "id": "xxi-27",
+          "slug": "general-concordance",
+          "title": "General Concordance",
+          "group": null
+        }
+      ]
+    }
+  ],
+  "total": 653
+}

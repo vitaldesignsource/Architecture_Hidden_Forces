@@ -10,7 +10,8 @@
     "build": "vite build",
     "start": "vite preview --host 0.0.0.0 --port ${PORT:-4173}",
     "preview": "vite preview",
-    "audit": "node scripts/audit.mjs"
+    "audit": "node scripts/audit.mjs",
+    "toc": "node scripts/phos-toc.mjs"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.132.0",

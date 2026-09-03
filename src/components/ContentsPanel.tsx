@@ -96,7 +96,9 @@ export function ContentsPanel({
     if (!open) return;
     const raf = requestAnimationFrame(() => {
       const scroller = panel.current?.querySelector<HTMLElement>("[data-scroll]");
-      const here = panel.current?.querySelector<HTMLElement>('[aria-current="true"]');
+      // Anchor rows carry aria-current="true"; a router Link on its own page
+      // writes aria-current="page" over whatever it was given. Either marks here.
+      const here = panel.current?.querySelector<HTMLElement>("[aria-current]");
       if (!scroller || !here || scroller.clientHeight === 0) return;
       const delta = here.getBoundingClientRect().top - scroller.getBoundingClientRect().top;
       scroller.scrollTop += delta - scroller.clientHeight / 2 + here.offsetHeight / 2;
@@ -170,22 +172,41 @@ export function ContentsPanel({
                   <div className="mt-3 space-y-px">
                     {g.rows.map((e) => {
                       const here = active === e.id;
-                      return (
-                        <a
-                          key={e.id}
-                          href={`#${e.id}`}
-                          onClick={follow}
-                          aria-current={here ? "true" : undefined}
-                          className={`grid grid-cols-[2.9rem_1fr] gap-3 border-l-2 py-2 pl-3 transition-colors ${
-                            here ? "border-gold bg-gold/5" : "border-transparent hover:border-gold/40"
-                          }`}
-                        >
+                      const className = `grid grid-cols-[2.9rem_1fr] gap-3 border-l-2 py-2 pl-3 transition-colors ${
+                        here ? "border-gold bg-gold/5" : "border-transparent hover:border-gold/40"
+                      }`;
+                      const inner = (
+                        <>
                           <span className={`font-mono text-[10px] ${here ? "text-gold" : "text-gold-dim"}`}>
                             {e.movement ? "—" : e.n}
                           </span>
                           <span className={`text-sm leading-snug ${here ? "text-gold" : "text-bone/80"}`}>
                             {e.t}
                           </span>
+                        </>
+                      );
+                      // An encyclopaedia row is a page, not a place on this page.
+                      if (e.route?.entry) {
+                        return (
+                          <Link key={e.id} to="/phos/$division/$entry"
+                                params={{ division: e.route.division, entry: e.route.entry }}
+                                onClick={follow} aria-current={here ? "true" : undefined} className={className}>
+                            {inner}
+                          </Link>
+                        );
+                      }
+                      if (e.route) {
+                        return (
+                          <Link key={e.id} to="/phos/$division" params={{ division: e.route.division }}
+                                onClick={follow} aria-current={here ? "true" : undefined} className={className}>
+                            {inner}
+                          </Link>
+                        );
+                      }
+                      return (
+                        <a key={e.id} href={`#${e.id}`} onClick={follow}
+                           aria-current={here ? "true" : undefined} className={className}>
+                          {inner}
                         </a>
                       );
                     })}

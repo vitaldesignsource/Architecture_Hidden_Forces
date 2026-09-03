@@ -23,6 +23,8 @@
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildToc, render, OUTLINE, TOC } from "./phos-toc.mjs";
+import { parseEntry, validateMeta } from "./lib/frontmatter.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -58,9 +60,14 @@ const ROMAN = { I: 1, V: 5, X: 10, L: 50, C: 100 };
 const toArabic = (r) =>
   [...r].reduce((t, c, i) => t + (ROMAN[c] < (ROMAN[r[i + 1]] ?? 0) ? -ROMAN[c] : ROMAN[c]), 0);
 
+// A route id keeps the "_" that un-nests a file from its parent (phos_.portal
+// is /phos/portal, not a child of /phos); the path a Link uses does not.
 const routes = sources
   .filter((s) => s.file.startsWith(join("src", "routes") + sep))
-  .map((s) => ({ ...s, path: s.text.match(/createFileRoute\("([^"]+)"\)/)?.[1] ?? null }))
+  .map((s) => ({
+    ...s,
+    path: s.text.match(/createFileRoute\("([^"]+)"\)/)?.[1]?.replace(/_(?=\/|$)/g, "") ?? null,
+  }))
   .filter((r) => r.path);
 const shared = sources.filter((s) => !routes.some((r) => r.file === s.file));
 if (!routes.length) fail("volumes", "no createFileRoute() found under src/routes — nothing was audited");
@@ -321,6 +328,75 @@ if (lex.length) {
     fail("lexicon", `defined more than once: ${[...new Set(dupTerms)].join(", ")}`);
 
   note("lexicon", `${lex.length} entries, every pointer and numeral correct`);
+}
+
+// ----------------------------------------------------------- encyclopaedia
+// The Portal registers 653 entries in toc.json before any is written, and each
+// written one is a markdown file that must land on exactly one of them. Every
+// way that can go wrong is cheap to check and expensive to discover in the
+// browser: a file in the wrong division, a slug that matches nothing, a title
+// retyped differently from the outline, an entry with no evidence label, a
+// facet value outside the vocabulary, a related id or [[ref]] that resolves to
+// nothing, a backdrop that is not on disk. The outline is the source of truth;
+// toc.json must be exactly what `npm run toc` would write from it.
+{
+  const schema = JSON.parse(readFileSync(join(root, "src/lib/phos/schema.json"), "utf8"));
+  const { toc, problems: outline } = buildToc(readFileSync(OUTLINE, "utf8"));
+  for (const p of outline) fail("outline", p);
+  if (render(toc) !== readFileSync(TOC, "utf8"))
+    fail("toc", "src/lib/phos/toc.json is not what outline.txt generates — run `npm run toc`");
+
+  const ids = new Set(toc.divisions.flatMap((d) => d.entries.map((e) => e.id)));
+  const contentDir = join(root, "src/content/phos");
+  const md = [];
+  const walk = (dir) => {
+    for (const e of readdirSync(dir)) {
+      const full = join(dir, e);
+      if (statSync(full).isDirectory()) walk(full);
+      else if (e.endsWith(".md")) md.push(full);
+    }
+  };
+  if (existsSync(contentDir)) walk(contentDir);
+
+  const seen = new Map();
+  let written = 0;
+  const perDivision = {};
+  for (const f of md) {
+    const rel = relative(contentDir, f).split(sep).join("/");
+    const base = rel.split("/").pop();
+    const raw = readFileSync(f, "utf8");
+    const { meta, body } = parseEntry(raw, schema);
+
+    for (const m of body.matchAll(/\[\[([a-z]+-\d+)(?:\|[^\]]*)?\]\]/g))
+      if (!ids.has(m[1])) fail("encyclopaedia", `${rel}: [[${m[1]}]] is not a registered entry`);
+    if (meta.backdrop && !onDisk.has(meta.backdrop))
+      fail("encyclopaedia", `${rel}: backdrop "${meta.backdrop}" is not in public/bg`);
+
+    if (base === "README.md" || base === "_template.md") continue;
+    if (base === "_intro.md") {
+      if (!toc.divisions.some((d) => d.id === rel.split("/")[0]))
+        fail("encyclopaedia", `${rel}: an introduction for a division that does not exist`);
+      continue;
+    }
+    const at = rel.match(/^([a-z]+)\/(?:\d+-)?([a-z0-9-]+)\.md$/);
+    if (!at) { fail("encyclopaedia", `${rel}: not at <division>/<NN->slug.md`); continue; }
+    const [, division, slug] = at;
+    const key = `${division}/${slug}`;
+    if (seen.has(key)) fail("encyclopaedia", `${rel} and ${seen.get(key)} are both ${key}`);
+    seen.set(key, rel);
+    for (const p of validateMeta(meta, { schema, toc, at: rel, division, slug })) fail("encyclopaedia", p);
+    const n = rel.match(/\/(\d+)-/)?.[1];
+    const reg = toc.divisions.find((d) => d.id === division)?.entries.find((e) => e.slug === slug);
+    if (n && reg && Number(n) !== reg.n) fail("encyclopaedia", `${rel}: numbered ${Number(n)} but the outline has it as ${reg.n}`);
+    written++;
+    perDivision[division] = (perDivision[division] ?? 0) + 1;
+  }
+  const begun = toc.divisions.filter((d) => perDivision[d.id]);
+  note(
+    "encyclopaedia",
+    `${toc.divisions.length} divisions, ${toc.total} entries registered; ${written} written` +
+      (begun.length ? ` — ${begun.map((d) => `${d.numeral || "Portal"} ${perDivision[d.id]}/${d.entries.length}`).join(", ")}` : ""),
+  );
 }
 
 // ---------------------------------------------------------------- measure

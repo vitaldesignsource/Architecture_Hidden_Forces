@@ -64,6 +64,7 @@ const ENTRIES = [
   { n: "XI", id: "reading", t: "The Discipline of Reading Light", d: "Seven questions to put to any luminous experience, before it is believed." },
   { n: "XII", id: "restoration", t: "The Returning Light", d: "The circuit closed: what illumination is for, and why it is not the end of the work." },
   { n: "—", id: "luxlexicon", t: "Lexicon of Light", d: "Every term this volume defines, and the section that defines it." },
+  { n: "—", id: "encyclopaedia", t: "The Portal", d: "The encyclopaedia of light this volume opens onto — twenty-one divisions, browsable by facet." },
   { n: "", id: "luminous", t: "The Luminous Formula", d: "The volume in twelve lines.", movement: true },
 ];
 
@@ -127,6 +128,12 @@ function Phos() {
                   {l.label}
                 </a>
               ))}
+              <Link
+                to="/phos/portal"
+                className="whitespace-nowrap border-l border-border pl-4 text-gold-dim transition-colors hover:text-gold xl:pl-6"
+              >
+                Portal ↗
+              </Link>
             </div>
             <Link
               to="/"
@@ -162,6 +169,9 @@ function Phos() {
                 {l.label}
               </a>
             ))}
+            <Link to="/phos/portal" className="whitespace-nowrap py-1 text-gold-dim transition-colors hover:text-gold">
+              Portal ↗
+            </Link>
             <Link
               to="/"
               className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold"
@@ -1337,6 +1347,40 @@ function Phos() {
               </a>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* THE PORTAL */}
+      <section id="encyclopaedia" className="relative isolate border-t border-border py-32">
+        <SectionGlyph delay={-612} />
+        <Backdrop src="/bg/gateway2.webp" opacity={0.34} position="center 50%" scrim={0.2} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            § The Portal · Beyond This Volume
+          </p>
+          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+            The encyclopaedia this volume <span className="italic text-gold">opens onto</span>
+          </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Twelve sections can state a doctrine of light. They cannot hold what the doctrine has to
+            answer to. The Portal does: twenty-one divisions — first principles, the anatomy of an
+            illumination, fifty-nine luminous qualities, the orders of light and of darkness, the sky,
+            the elements, the organism, the soul, visionary phenomena, the mediating orders, the
+            operations, the rites, a global history, the science, the symbols, the laws, the
+            practices, and a reference library — with every entry labelled by the kind of claim it
+            makes, and browsable by tradition, quality, plane, operation, symbol, text, and period.
+          </p>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            It is being written entry by entry, and says so. What is not yet written is listed as
+            forthcoming rather than filled in — the rule the Architecture set for itself on its first
+            page, kept.
+          </p>
+          <Link
+            to="/phos/portal"
+            className="mt-10 inline-block border border-gold/60 px-5 py-3 font-mono text-[10px] uppercase tracking-[0.25em] text-gold transition-colors hover:bg-gold/10"
+          >
+            Enter the Portal →
+          </Link>
         </div>
       </section>
 

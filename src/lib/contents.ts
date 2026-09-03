@@ -9,7 +9,16 @@
  * `movement: true` marks the passages between sections — Descent, Return,
  * Grounds — which are part of the arc but carry no numeral.
  */
-export type Entry = { n: string; id: string; t: string; d: string; movement?: boolean };
+/** A row of a contents list. Most rows are in-page anchors; a row with `route`
+ *  is a page of the encyclopaedia, and the panel renders it as a router link. */
+export type Entry = {
+  n: string;
+  id: string;
+  t: string;
+  d: string;
+  movement?: boolean;
+  route?: { division: string; entry?: string };
+};
 
 export const ENTRIES: Entry[] = [
 
@@ -180,5 +189,10 @@ export const VOLUMES = [
     to: "/phos",
     t: "Phōs: The Luminous Architecture",
     d: "A companion volume — the same architecture read by its own light.",
+  },
+  {
+    to: "/phos/portal",
+    t: "The Portal",
+    d: "The encyclopaedia of light — twenty-one divisions, browsable by tradition, quality, plane, operation, symbol, text, and period.",
   },
 ] as const;

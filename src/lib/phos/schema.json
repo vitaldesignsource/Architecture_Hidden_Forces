@@ -1,0 +1,55 @@
+{
+  "labels": [
+    { "key": "primary-text", "name": "Primary Text",
+      "gloss": "A passage from a source, quoted or closely paraphrased, with its provenance given." },
+    { "key": "historical-doctrine", "name": "Historical Doctrine",
+      "gloss": "What a tradition, school, or author taught — stated as theirs, not as ours." },
+    { "key": "scientific-finding", "name": "Scientific Finding",
+      "gloss": "A result of measurement or experiment, with the limits of what it establishes." },
+    { "key": "phenomenological-report", "name": "Phenomenological Report",
+      "gloss": "Experience described as experienced, before any claim about its cause." },
+    { "key": "ahf-doctrine", "name": "Architecture of Hidden Forces Doctrine",
+      "gloss": "A position the system itself holds and is prepared to defend." },
+    { "key": "comparative-interpretation", "name": "Comparative Interpretation",
+      "gloss": "A reading that sets two or more sources beside each other and says what the comparison shows." },
+    { "key": "speculative-synthesis", "name": "Speculative Synthesis",
+      "gloss": "A proposal that goes past the evidence, marked so it can be tested rather than believed." }
+  ],
+
+  "movement": [
+    { "k": "Source", "gloss": "Where light is what it is before it is given." },
+    { "k": "Procession", "gloss": "The giving — light leaving the source without leaving it poorer." },
+    { "k": "Mediation", "gloss": "What it crosses, and what the crossing costs." },
+    { "k": "Coloration", "gloss": "The boundary at which difference becomes quality." },
+    { "k": "Embodiment", "gloss": "Light held in a form, at the form’s measure." },
+    { "k": "Perception", "gloss": "A receiver of the same nature as what it receives." },
+    { "k": "Transformation", "gloss": "What light does to what holds it, and what holding does to the light." },
+    { "k": "Return", "gloss": "The seer, not the light, turned back toward the source." }
+  ],
+
+  "facets": [
+    { "key": "tradition", "name": "Tradition", "controlled": true,
+      "values": ["Egyptian", "Mesopotamian", "Iranian", "Greek", "Roman", "Orphic", "Platonic", "Aristotelian", "Stoic", "Neoplatonic", "Theurgic", "Hermetic", "Gnostic", "Manichaean", "Mandaean", "Israelite", "Jewish", "Kabbalistic", "Christian", "Syriac", "Islamic", "Illuminationist", "Vedic", "Upanishadic", "Yogic", "Buddhist", "Tantric", "Tibetan", "Daoist", "Chinese", "Medieval Latin", "Renaissance", "Alchemical", "Modern Esoteric", "Scientific", "Architecture of Hidden Forces"] },
+    { "key": "quality", "name": "Quality", "controlled": true,
+      "values": ["Intensity", "Magnitude", "Clarity", "Purity", "Transparency", "Coherence", "Unity", "Divisibility", "Stability", "Duration", "Directionality", "Density", "Subtlety", "Temperature", "Color", "Texture", "Rhythm", "Pulsation", "Velocity", "Penetration", "Diffusiveness", "Generativity", "Vitality", "Intelligence", "Affect", "Truthfulness", "Glow", "Gleam", "Glimmer", "Shimmer", "Radiance", "Brilliance", "Splendor", "Luminosity", "Incandescence", "Phosphorescence", "Fluorescence", "Iridescence", "Scintillation", "Coruscation", "Flash", "Lightning", "Halo", "Corona", "Aureole", "Mandorla", "Pillar of Light", "Sphere of Light", "Veiled Light", "Diffuse Light", "Shadowless Light", "Cold Light", "Living Light", "Liquid Light", "Crystalline Light", "Fiery Light", "Golden Light", "White Light", "Black or Dark Luminosity"] },
+    { "key": "plane", "name": "Plane", "controlled": true,
+      "values": ["Divine", "Superessential", "Noetic", "Archetypal", "Formative", "Theurgic", "Angelic", "Daimonic", "Psychic", "Imaginal", "Astral", "Etheric", "Vital", "Elemental", "Physical"] },
+    { "key": "operation", "name": "Operation", "controlled": true,
+      "values": ["Illumination", "Revelation", "Manifestation", "Differentiation", "Formation", "Animation", "Vivification", "Orientation", "Communication", "Recognition", "Purification", "Consecration", "Healing", "Protection", "Exposure", "Judgment", "Awakening", "Inspiration", "Integration", "Transfiguration", "Dissolution", "Solve", "Coagula", "Metamorphōsis", "Metastoicheiōsis", "Binding", "Liberation", "Imprinting", "Withdrawal", "Return"] },
+    { "key": "symbol", "name": "Symbol", "controlled": true,
+      "values": ["Point", "Ray", "Circle", "Solar Disc", "Sphere", "Triangle", "Vesica", "Spiral", "Prism", "Rainbow", "Eye", "Lamp", "Torch", "Flame", "Lightning Bolt", "Crown", "Halo", "Mandorla", "Star", "Winged Solar Disc", "Solar Barque", "Lotus", "Menorah", "Cross of Light", "Radiant Heart", "Mirror", "Crystal", "Gold", "Black Sun", "Cave", "Crypt", "Temple"] },
+    { "key": "text", "name": "Text", "controlled": false, "values": [] },
+    { "key": "period", "name": "Period", "controlled": true,
+      "values": ["Prehistoric", "Ancient", "Late Antique", "Medieval", "Renaissance", "Early Modern", "Modern", "Contemporary"] }
+  ],
+
+  "tools": [
+    { "k": "Identify a Light", "d": "Select qualities — stable, golden, diffuse, pulsing, visionary, warm, shadowed — and receive comparative historical references." },
+    { "k": "The Luminous Scale", "d": "Explore light by ontological level, purity, coherence, stability, medium, and operation." },
+    { "k": "Compare Traditions", "d": "Egyptian, Platonic, Hermetic, Indian, Buddhist, Christian, and other teachings set side by side." },
+    { "k": "Trace a Concept", "d": "Follow inner sun, captured light, luminous mind, or divine ray through history." },
+    { "k": "Primary Text Reader", "d": "Key passages with commentary and links to related doctrines." },
+    { "k": "Luminous Anatomy", "d": "Spirit, soul, astral field, etheric body, organism, and material environment, moved through in order." },
+    { "k": "Symbol Atlas", "d": "Halo, solar disc, lamp, prism, star, lightning bolt, black sun — each with its meanings." }
+  ]
+}
