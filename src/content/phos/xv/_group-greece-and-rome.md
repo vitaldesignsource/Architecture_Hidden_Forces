@@ -1,0 +1,5 @@
+Greek and Roman thinkers transformed the study of light by separating several questions that earlier traditions frequently held together. They asked what light is, how vision occurs, why colours appear, how rays behave geometrically, how mirrors produce images, and how the illumination of visible objects might correspond to the illumination of the mind.
+
+These questions produced competing theories. Some thinkers proposed that the eye sends out a fiery or pneumatic power. Others argued that objects continually release images or material effluences. Aristotle placed the transparent medium between object and perceiver, while Euclid and Ptolemy developed increasingly mathematical analyses of visual rays, reflection, and refraction.
+
+The resulting history is not a simple progression from superstition to science. Ancient optics joined observation, geometry, physiology, psychology, cosmology, and metaphysics. Even theories that proved physically incorrect often identified genuine structural features of perception: vision requires a receiver, an illuminated object, a transparent medium, an orientation, and an active synthesis within the perceiving being.
