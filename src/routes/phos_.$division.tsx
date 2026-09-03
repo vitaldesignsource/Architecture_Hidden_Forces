@@ -7,7 +7,7 @@ import { LabelChips } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import type { Entry as Row } from "@/lib/contents";
-import { division, entriesOf, loadIntro, loadCoda, neighbourDivisions, progress, divisionLabel } from "@/lib/phos/entries";
+import { division, entriesOf, loadIntro, loadCoda, loadGroupIntros, neighbourDivisions, progress, divisionLabel, valueSlug } from "@/lib/phos/entries";
 
 /**
  * A division of the encyclopaedia: its entries in order, grouped where the
@@ -19,8 +19,8 @@ export const Route = createFileRoute("/phos_/$division")({
   loader: async ({ params }) => {
     const d = division(params.division);
     if (!d || d.id === "portal") throw notFound();
-    const [intro, coda] = await Promise.all([loadIntro(d.id), loadCoda(d.id)]);
-    return { intro, coda };
+    const [intro, coda, groupIntros] = await Promise.all([loadIntro(d.id), loadCoda(d.id), loadGroupIntros(d.id)]);
+    return { intro, coda, groupIntros };
   },
   head: ({ params }) => {
     const d = division(params.division);
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/phos_/$division")({
 
 function DivisionPage() {
   const { division: id } = Route.useParams();
-  const { intro, coda } = Route.useLoaderData();
+  const { intro, coda, groupIntros } = Route.useLoaderData();
   useScrollTop(id);
   const d = division(id)!;
   const entries = entriesOf(d.id);
@@ -75,6 +75,9 @@ function DivisionPage() {
             <div key={g ?? "all"} className={g ? "mt-14 first:mt-0" : ""}>
               {g && (
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">{g}</p>
+              )}
+              {g && groupIntros[valueSlug(g)] && (
+                <EntryBody body={groupIntros[valueSlug(g)]} className="mt-4 max-w-3xl" />
               )}
               <div className="mt-4 space-y-px">
                 {entries.filter((e) => e.group === g).map((e) => (

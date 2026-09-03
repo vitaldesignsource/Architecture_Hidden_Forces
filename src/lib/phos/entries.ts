@@ -66,6 +66,13 @@ const CODA_BODY = import.meta.glob<string>("/src/content/phos/*/_coda.md", {
   query: "?body",
   import: "default",
 });
+/** A group within a division may open with `_group-<slug>.md` — a preface set
+ *  under the group's heading on the division page, before its entries. The
+ *  slug is the group's name under the same rule as facet values. */
+const GROUP_BODY = import.meta.glob<string>("/src/content/phos/*/_group-*.md", {
+  query: "?body",
+  import: "default",
+});
 
 /** "/src/content/phos/xv/83-robert-grossetestes-on-light.md" → { division, slug } */
 function locate(path: string) {
@@ -113,6 +120,18 @@ export async function loadIntro(divisionId: string): Promise<{ meta: EntryMeta; 
 export async function loadCoda(divisionId: string): Promise<string | null> {
   const load = CODA_BODY[`/src/content/phos/${divisionId}/_coda.md`];
   return load ? await load() : null;
+}
+export async function loadGroupIntros(divisionId: string): Promise<Record<string, string>> {
+  const prefix = `/src/content/phos/${divisionId}/_group-`;
+  const out: Record<string, string> = {};
+  await Promise.all(
+    Object.entries(GROUP_BODY)
+      .filter(([k]) => k.startsWith(prefix))
+      .map(async ([k, load]) => {
+        out[k.slice(prefix.length, -".md".length)] = await load();
+      }),
+  );
+  return out;
 }
 export const introMeta = (divisionId: string): EntryMeta | null =>
   INTRO_META[`/src/content/phos/${divisionId}/_intro.md`] ?? null;

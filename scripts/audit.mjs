@@ -373,6 +373,9 @@ if (lex.length) {
   };
   if (existsSync(contentDir)) walk(contentDir);
 
+  const slugOf = (v) =>
+    v.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\u2019'"\u201c\u201d]/g, "").replace(/&/g, " and ")
+      .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   const seen = new Map();
   let written = 0;
   const perDivision = {};
@@ -388,9 +391,16 @@ if (lex.length) {
       fail("encyclopaedia", `${rel}: backdrop "${meta.backdrop}" is not in public/bg`);
 
     if (base === "README.md" || base === "_template.md") continue;
-    if (base === "_intro.md" || base === "_coda.md") {
-      if (!toc.divisions.some((d) => d.id === rel.split("/")[0]))
-        fail("encyclopaedia", `${rel}: a division file for a division that does not exist`);
+    if (base === "_intro.md" || base === "_coda.md" || /^_group-[a-z0-9-]+\.md$/.test(base)) {
+      const div = toc.divisions.find((d) => d.id === rel.split("/")[0]);
+      if (!div) fail("encyclopaedia", `${rel}: a division file for a division that does not exist`);
+      else if (base.startsWith("_group-")) {
+        // A group preface must name a group the outline gives that division.
+        const gslug = base.slice("_group-".length, -".md".length);
+        const groups = [...new Set(div.entries.map((e) => e.group).filter(Boolean))];
+        if (!groups.some((g) => slugOf(g) === gslug))
+          fail("encyclopaedia", `${rel}: no group "${gslug}" in ${div.id} — groups are ${groups.map(slugOf).join(", ") || "none"}`);
+      }
       continue;
     }
     const at = rel.match(/^([a-z]+)\/(?:\d+-)?([a-z0-9-]+)\.md$/);
