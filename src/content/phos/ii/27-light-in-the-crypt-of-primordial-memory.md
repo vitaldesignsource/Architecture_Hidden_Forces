@@ -7,8 +7,8 @@ operation: [Imprinting]
 related: [ii-28, xix-12, xiii-28, iii-30, ix-24]
 summary: Not a celestial archive but an altered topology of possibility — light in the Crypt is residual intelligibility, and memory is inherited curvature.
 epigraph: "Memory is inherited curvature. The past bends the paths available to the present."
-backdrop: seedroots
-position: center 45%
+backdrop: crystalgrove
+position: center 55%
 ---
 
 The Crypt of Primordial Memory is the retentive depth through which existence inherits the formative consequences of what has occurred.
