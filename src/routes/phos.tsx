@@ -923,7 +923,7 @@ function Phos() {
       {/* § VIII — COLOUR */}
       <section id="colour" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-820} />
-        <Backdrop src="/bg/crystalgrove.webp" opacity={0.36} position="center 60%" scrim={0.2} />
+        <Backdrop src="/bg/spectralvalley.webp" opacity={0.36} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § VIII · The Boundary Where Colour Arises

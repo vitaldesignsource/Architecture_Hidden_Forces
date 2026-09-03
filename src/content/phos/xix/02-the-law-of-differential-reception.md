@@ -9,8 +9,8 @@ operation: [Recognition, Differentiation]
 related: [v-27, v-28, iii-17, i-7, xx-9, xii-20]
 summary: One radiance may produce clarity in one being, terror in another, inflation in a third, and quiet transformation in a fourth, the difference lying in the structure that receives it - so the proper question is not whether a light appeared, but what received it, through which level, under what conditions, and with what consequences.
 epigraph: "The same light is received differently according to the nature, condition, and capacity of the receiver."
-backdrop: filterstack
-position: center 45%
+backdrop: rainvessels
+position: center 55%
 ---
 
 One radiance may produce clarity in one being, terror in another, inflation in a third, and quiet transformation in a fourth. The difference does not necessarily reside in the source. It may arise from the structure through which the light is received. A transparent medium transmits; a turbulent medium scatters; a wounded medium may distort; an unprepared medium may be overwhelmed.

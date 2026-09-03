@@ -7,7 +7,8 @@ quality: [Color]
 operation: [Differentiation]
 related: [ii-8, viii-20, viii-16, xix-6, xx-8, vi-17]
 summary: Coloration concerns the behaviour and formative tendency of a current, not its sensory appearance — and character begins in the proportion among tattvas, not the presence of one.
-backdrop: delta
+backdrop: spectralvalley
+position: center 50%
 ---
 
 Force in complete abstraction has not yet acquired a definite mode of expression. As it enters Morphaithēr, tattvic coloration biases it toward particular movements, relations, textures, and possible forms.

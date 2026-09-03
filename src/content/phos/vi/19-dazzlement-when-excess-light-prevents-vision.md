@@ -7,7 +7,8 @@ quality: [Intensity, Brilliance]
 related: [v-29, ii-6, iii-11, v-4, xi-26, iv-32]
 summary: The dazzled receiver may become certain precisely when perception is least reliable — greater light requires greater mediation, not merely greater openness.
 epigraph: "Sometimes the proper response to luminosity is to narrow the aperture."
-backdrop: crater
+backdrop: saltshelter
+position: center 50%
 ---
 
 Dazzlement occurs when illumination exceeds the receiver's capacity to preserve distinction. The field becomes saturated, detail disappears, and vision fails because there is too much light rather than too little.

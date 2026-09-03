@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 quality: [Brilliance]
 related: [iv-1, vi-19, xi-26, iv-33, iv-6]
 summary: The force of appearance — which reveals fine detail when proportionate and produces glare when not; its value depends on what it discloses.
-backdrop: crater
+backdrop: saltshelter
+position: center 50%
 ---
 
 Brilliance is luminosity distinguished by exceptional intensity, clarity, vividness, or optical force. It commands perception and may temporarily subordinate everything around it.

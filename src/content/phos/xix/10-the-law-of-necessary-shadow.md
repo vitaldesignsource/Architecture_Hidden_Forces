@@ -11,8 +11,8 @@ symbol: [Cave]
 related: [vi-27, vi-9, vi-10, vi-26, xvii-29, xii-22]
 summary: Every finite manifestation of light generates boundaries, exclusions, and shadows, because a formed being cannot express every possibility at once - shadow is not automatically evil, and becomes pathological only when denied, projected, exploited, or rendered permanently unconscious.
 epigraph: "The mature path does not abolish shadow."
-backdrop: eclipsecave
-position: center 45%
+backdrop: olivegrove
+position: center 60%
 ---
 
 Shadow arises because a formed being cannot express every possibility simultaneously. To become one thing is to leave other possibilities unmanifest. A particular ray illuminates one direction more strongly than another. A structure that protects also limits. A symbol that reveals one relation may conceal others.

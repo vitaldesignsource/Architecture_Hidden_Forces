@@ -10,7 +10,8 @@ symbol: [Lotus]
 related: [xv-68, xii-17, vi-10, ii-27, xvii-6, xv-67]
 summary: A flower rising from mud and water to open toward sunlight - in Egypt the first emergence from the primordial waters and the solar child's birth, in India a throne of deities and an image of awakening unstained by its medium; root, stem, surface, and flower none of which can be omitted.
 epigraph: "The lotus does not reject the dark substrate."
-backdrop: leafbowl
+backdrop: rainvessels
+position: center 55%
 ---
 
 The lotus or water lily rises from mud and water, opens toward sunlight, and closes again according to species and environmental rhythm. It naturally became a symbol of emergence, purity, creation, awakening, and regeneration.

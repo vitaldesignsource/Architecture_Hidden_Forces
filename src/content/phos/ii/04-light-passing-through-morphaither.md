@@ -8,7 +8,8 @@ operation: [Formation]
 quality: [Color]
 related: [ii-5, viii-26, viii-15, iii-8, i-13]
 summary: Light never enters manifestation unmediated; in Morphaithēr it becomes situated, one in source and many in expression — the medium gives transmission a world.
-backdrop: filterstack
+backdrop: spectralvalley
+position: center 50%
 ---
 
 Light never enters manifestation without mediation. Even physical light changes as it passes through atmosphere, water, glass, tissue, dust, or crystal. Its direction, intensity, distribution, and apparent colour are conditioned by the medium.

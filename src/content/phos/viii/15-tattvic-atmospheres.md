@@ -7,7 +7,8 @@ plane: [Formative]
 related: [iii-7, ii-5, ii-10, viii-17, viii-26]
 summary: The local weather of Morphaithēr — tattva describes direction, guna describes condition.
 epigraph: "A tattvic atmosphere is the local weather of Morphaithēr."
-backdrop: nightterrace
+backdrop: spectralvalley
+position: center 50%
 ---
 
 A tattvic atmosphere is a field in which one or more morphogenic biases have become environmentally dominant.

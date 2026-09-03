@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Veiled Light, Diffuse Light]
 related: [iv-49, iii-23, xiv-13, iii-9, x-13]
 summary: The medium hides the source but makes the path of light visible — obscuration becoming revelatory.
-backdrop: reedslamp
+backdrop: mistgorge
+position: center 45%
 ---
 
 Smoke, mist, and cloud make the atmosphere visible by scattering and absorbing light. They reveal beams that would otherwise pass through clear air without becoming perceptible from the side.

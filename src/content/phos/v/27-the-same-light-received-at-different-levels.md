@@ -7,7 +7,8 @@ operation: [Recognition]
 related: [v-26, v-28, iii-29, xix-2, ii-21]
 summary: Six transductions of one encounter rather than six different lights — light reveals the receiver even as it reveals the source.
 epigraph: "Light reveals the receiver even as it reveals the source."
-backdrop: filterstack
+backdrop: rainvessels
+position: center 55%
 ---
 
 One luminous current may produce different effects according to the level at which it is received.

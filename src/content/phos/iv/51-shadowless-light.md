@@ -7,7 +7,8 @@ quality: [Shadowless Light]
 related: [vi-11, vi-27, iv-50, i-20, i-16]
 summary: Nothing standing outside the luminous field — yet without shadow, depth and distinction may become difficult to perceive.
 epigraph: "True illumination does not necessarily eliminate every shadow. It makes the relationship among source, object, boundary, and obscurity intelligible."
-backdrop: saltflat
+backdrop: saltshelter
+position: center 50%
 ---
 
 Shadowless light is illumination so evenly distributed that strong directional shadows nearly disappear. Perfectly shadowless physical illumination is difficult because form and occlusion continue to produce differences, but highly diffuse light can greatly reduce visible shadow.

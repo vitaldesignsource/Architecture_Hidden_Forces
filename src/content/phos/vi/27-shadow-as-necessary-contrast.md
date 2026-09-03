@@ -5,7 +5,8 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-11, iv-51, xix-10, i-16, vi-8]
 summary: A life without shadow would lack privacy, incubation, ambiguity, mourning, and silence — light and shadow together reveal the architecture of form.
-backdrop: gorgestair
+backdrop: olivegrove
+position: center 60%
 ---
 
 Without contrast, many forms cannot be perceived. Shadow reveals contour, depth, position, distance, surface, and the direction of illumination.

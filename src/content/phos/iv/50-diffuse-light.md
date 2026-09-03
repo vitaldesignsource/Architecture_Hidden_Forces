@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Diffuse Light, Diffusiveness]
 related: [iv-21, iii-22, iv-51, iii-7, iv-20]
 summary: Illumination from many directions that reveals overall form gently — excellent for inclusion and atmosphere, insufficient for precise discrimination.
-backdrop: mangrove
+backdrop: mistgorge
+position: center 45%
 ---
 
 Diffuse light arrives from many directions rather than one sharply defined source. It softens shadows, reduces contrast, and establishes broad, even illumination.
