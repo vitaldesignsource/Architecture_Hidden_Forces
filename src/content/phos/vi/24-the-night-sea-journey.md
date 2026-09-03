@@ -7,7 +7,7 @@ operation: [Dissolution, Return]
 related: [vii-29, vii-28, vi-25, vi-22, vi-23]
 summary: Descent beneath the visible world — valuable not because it is painful but by whether the traveller returns with increased capacity for relation.
 epigraph: "Descent without return remains captivity."
-backdrop: cavesunset
+backdrop: eclipsecave
 position: center 45%
 ---
 
