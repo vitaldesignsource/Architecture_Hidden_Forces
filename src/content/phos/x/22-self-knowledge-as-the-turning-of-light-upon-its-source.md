@@ -9,7 +9,8 @@ symbol: [Solar Disc]
 related: [x-2, x-3, x-19, ii-22, ii-23, x-20]
 summary: Illumination turned back toward the one who sees — not introspection alone but the recognition of the knower through participation; within Ignisophia, the Charioteer awakening before the Inner Sun.
 epigraph: "To see oneself truthfully is to change the relations through which one lives."
-backdrop: summit
+backdrop: cavepillar
+position: center 45%
 ---
 
 Ordinary consciousness directs its light toward objects: bodies, sensations, images, memories, desires, thoughts, persons, and worlds. Self-knowledge begins when this illumination turns back toward the one who sees.

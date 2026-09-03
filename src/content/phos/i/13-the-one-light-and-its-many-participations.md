@@ -7,7 +7,8 @@ operation: [Differentiation]
 quality: [Unity, Divisibility]
 related: [xix-2, xix-1, v-27, v-28, iii-8, xiii-4, i-11]
 summary: Difference of appearance need not mean difference of source; unity is generative, plurality is real, and neither abolishes discernment.
-backdrop: mirrorcascade
+backdrop: sunpillar
+position: center 32%
 ---
 
 If one light enters many vessels, it does not appear identically through each. Clear glass transmits it, water bends it, a mirror redirects it, pigment absorbs and returns selected portions, mist diffuses it, and a living eye converts it into perception.

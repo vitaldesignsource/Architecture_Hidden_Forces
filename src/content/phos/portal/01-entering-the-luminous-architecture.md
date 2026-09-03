@@ -7,7 +7,8 @@ related: [portal-2, portal-7, i-1, i-3, i-4]
 summary: Light reveals other things while disclosing itself only through the act of revelation — which is why its study belongs in the Architecture.
 epigraph: "Light is not merely what appears. Light is the relation through which appearance becomes possible."
 attribution: The threshold statement
-backdrop: threshold
+backdrop: greatdoors
+position: center 55%
 ---
 
 Light is among the most familiar realities and yet among the most difficult to understand. It surrounds nearly every act of seeing, establishes the visible character of the world, governs the rhythms of living organisms, and furnishes humanity with one of its oldest symbols for consciousness, truth, divinity, knowledge, beauty, and awakening. We live within light, orient ourselves by light, and describe understanding as illumination — yet light itself continually escapes the forms through which it becomes known.

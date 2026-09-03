@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific, Israelite]
 quality: [Pillar of Light]
 related: [xv-43, iii-5, xi-15, iv-48, ii-18]
 summary: Radiance given vertical direction — an axis between heaven and earth, which should remain a symbolic geometry unless a physical mechanism is being described.
-backdrop: earthcolonnade
+backdrop: sunpillar
+position: center 32%
 ---
 
 A pillar of light is a vertical luminous formation connecting lower and higher regions. Physical light pillars may arise when light reflects from plate-shaped ice crystals suspended in the atmosphere. Beams made visible by mist, smoke, or dust can also appear pillar-like.

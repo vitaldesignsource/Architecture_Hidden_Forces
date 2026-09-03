@@ -10,8 +10,8 @@ symbol: [Prism]
 related: [ii-8, ii-9, viii-16, vi-17, iii-21, xx-8]
 summary: As a prism differentiates white light into colours, tattvic conditions differentiate force into space, movement, radiance, cohesion, and solidity, so that one spiritual impulse may appear as revelation through tejas, devotion through apas, inspiration through vāyu, institution through pṛthivī, or archetype through ākāśa - and luminous architecture depends upon elemental proportion rather than allegiance to one current.
 epigraph: "Every manifested light is refracted by the elemental and tattvic atmosphere through which it passes."
-backdrop: elementchamber
-position: center 50%
+backdrop: worldprism
+position: center 45%
 ---
 
 A prism differentiates white light into spectral colours. In subtle reality, tattvic conditions differentiate force into characteristic tendencies of space, movement, radiance, cohesion, and solidity. Ākāśa opens luminous spaciousness; vāyu sets light into motion; tejas sharpens, heats, and intensifies; apas reflects, joins, and carries; pṛthivī fixes luminous activity within enduring form.

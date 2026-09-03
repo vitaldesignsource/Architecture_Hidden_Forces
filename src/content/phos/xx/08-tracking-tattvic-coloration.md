@@ -9,7 +9,8 @@ operation: [Differentiation, Recognition]
 related: [ii-8, ii-9, viii-15, viii-16, xx-4, viii-26]
 summary: The quality of space, movement, heat, cohesion, and density rather than five predetermined colours - ākāśic spaciousness, vāyavic mobility, taijasic brilliance, āpasic fluidity, and pārthivic weight, usually in combination, tested by repetition rather than by a single striking event.
 epigraph: "Correspondence should be assessed through repetition rather than assumed from a single striking event."
-backdrop: elementchamber
+backdrop: marblestill
+position: center 62%
 ---
 
 Tattvic tracking studies how the living atmosphere becomes coloured by particular morphogenic biases. The practitioner is not merely looking for five predetermined colours. The inquiry concerns the quality of space, movement, heat, cohesion, density, rhythm, imagination, emotion, and formative tendency.

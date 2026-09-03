@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Tantric, Modern Esoteric]
 plane: [Formative]
 related: [viii-10, viii-11, viii-12, viii-13, viii-14, ii-9, xix-6]
 summary: Not additional ethers but inclinations within formative activity — tattvas give luminosity a formative preference, not a visible colour.
-backdrop: braided
+backdrop: marblestill
+position: center 62%
 ---
 
 The tattvas are not additional ethers. They are morphogenic biases within formative activity. They incline a current toward particular types of expression without absolutely determining its final form.

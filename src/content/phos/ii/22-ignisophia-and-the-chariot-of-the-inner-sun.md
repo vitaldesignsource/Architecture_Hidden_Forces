@@ -7,7 +7,8 @@ operation: [Transfiguration, Purification]
 symbol: [Solar Disc]
 related: [ii-23, ii-24, vii-6, viii-1, xviii-1, xiii-20]
 summary: The system's architecture of consciously directed transformative fire — wisdom joined to fire, with Tiphereth as solar axis, Hod and Netzach as wheels, and the Black Pearl as receptive centre.
-backdrop: kilnvault
+backdrop: cavepillar
+position: center 45%
 ---
 
 *Ignisophia: The Chariot of the Inner Sun* is the system's architecture of consciously directed transformative fire.

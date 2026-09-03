@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 quality: [Color, Texture]
 related: [ii-9, viii-21, iv-15, v-14, viii-15]
 summary: Coloration involves texture, motion, temperature, and rhythm as much as hue — it describes how luminosity behaves, not merely how it looks.
-backdrop: delta
+backdrop: marblestill
+position: center 62%
 ---
 
 Elemental coloration is the qualitative appearance acquired when light becomes associated with earth, water, air, fire, or aether.
