@@ -7,7 +7,8 @@ symbol: [Star]
 related: [vii-14, vii-15, xii-10, ix-23, vii-13]
 summary: The dead placed among the stars — not bodies become astronomical objects but a real relation among soul, celestial order, ancestry, and immortality, of which the visible pattern is the earthly disclosure.
 epigraph: "Symbolic suitability does not exclude spiritual reality."
-backdrop: startrails
+backdrop: stellarancestors
+position: center 40%
 ---
 
 Many traditions place ancestors, perfected souls, heroes, kings, or the blessed among the stars. Stars offer a visible image of enduring identity: countless distinct lights held within a single ordered heaven.
