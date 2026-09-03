@@ -4,22 +4,24 @@ labels: [Primary Text, Historical Doctrine, Architecture of Hidden Forces Doctri
 confidence: [Established]
 tradition: [Mandaean, Architecture of Hidden Forces]
 period: [Late Antique, Contemporary]
-plane: [Divine, Vital, Etheric, Physical]
-operation: [Vivification, Purification, Return]
+plane: [Divine, Angelic, Psychic, Etheric, Vital]
+operation: [Purification, Vivification, Return]
+symbol: [Mirror]
 text: [Ginza Rba, Qolasta]
-related: [ix-1, viii-24, xiv-10, ii-18, xiii-31, i-14]
-summary: A living religion, not a specimen — Hayyi Rabbi, the Great Life; the uthras, Manda d-Hayyi as the Knowledge of Life, Hibil Ziwa; the soul in Tibil; yardna, flowing water as the counterpart of celestial living water; maṣbuta as recurring renewal; the masiqta and the Left Ginza; white garments; light as living relation that flows, washes, gathers, and returns.
-epigraph: "Water in Mandaeism is luminous without ceasing to be water."
-backdrop: cascade
+related: [viii-24, xiv-10, ix-18, xi-16, xiii-31, ii-5]
+summary: A living tradition with its priesthood, Mandaic literature, and diaspora — Hayyi Rabbi the Great Life, the uthras, Manda d-Hayyi as the Knowledge of Life; the soul from the World of Light placed in Tibil; yardna, the living water in which the heavenly world reflects itself; maṣbuta and masiqta; light as cool, flowing, and life-bearing.
+epigraph: "Light is not possessed privately."
+backdrop: basincascade
+position: center 45%
 ---
 
-Mandaeism is a living religious tradition with ancient roots, a priesthood, an extensive Mandaic literature, and communities historically centred in southern Iraq and southwestern Iran, now also dispersed throughout a global diaspora. Its sacred writings include the *Ginza Rba* or Great Treasure, the *Book of John*, the *Qolasta* prayer collection, and numerous ritual, priestly, cosmological, and esoteric texts.
+Mandaeism is a living religious tradition with ancient roots, a priesthood, an extensive Mandaic literature, and communities historically centred in southern Iraq and southwestern Iran, now also dispersed throughout a global diaspora. Its sacred writings include the Ginza Rba or Great Treasure, the Book of John, the Qolasta prayer collection, and numerous ritual, priestly, cosmological, and esoteric texts.
 
 Although scholars frequently discuss Mandaeism in relation to Gnosticism, the tradition should not be treated only as a surviving specimen of a category constructed by outsiders. It possesses its own living language, ritual lineage, religious authorities, historical memory, and understanding of itself. Its doctrines must therefore be approached as components of an active religion.
 
-## The Great Life and the uthras
+## Great Life and the uthras
 
-At the summit of Mandaean existence is Hayyi Rabbi, the Great Life or Great Living God. The highest divine reality is characterised not simply as static being but as [[i-14|Life]] — limitless, luminous, generative, and enduring. The World of Light is the realm of this Great Life and of the uthras, luminous beings who praise, serve, reveal, protect, and mediate its powers.
+At the summit of Mandaean existence is Hayyi Rabbi, the Great Life or Great Living God. The highest divine reality is characterised not simply as static being but as Life — limitless, luminous, generative, and enduring. The World of Light is the realm of this Great Life and of the *uthras*, [[xi-16|luminous beings]] who praise, serve, reveal, protect, and mediate its powers.
 
 Among the most important mediating figures is Manda d-Hayyi, the Knowledge or Gnosis of Life. This name reveals the close relationship between knowledge and living divinity. Saving knowledge is not information about a distant god. It is a luminous power proceeding from Life and awakening the soul to its origin.
 
@@ -33,24 +35,26 @@ The Mandaean World of Light is inseparable from living water. Flowing water, cal
 
 This is why repeated baptism, or *maṣbuta*, holds such importance. It is not only a single initiation performed once in a lifetime. It is a recurring renewal of relationship with the World of Light. Immersion, prayer, anointing, bread, water, the ritual handshake of *kušṭa*, white garments, and priestly actions restore the participant's connection with Life.
 
-Water in Mandaeism is luminous without ceasing to be water. Light is therefore not confined to fire, sun, stars, or incorporeal height. It can be cool, flowing, receptive, cleansing, and life-bearing. The Mandaean vision corrects any luminous theology that becomes excessively solar, fiery, vertical, or disembodied; [[viii-24|water as mirror and memory]] and [[xiv-10|water as reflective medium]] are here one living thing.
+[[viii-24|Water]] in Mandaeism is luminous without ceasing to be water. Light is therefore not confined to fire, sun, stars, or incorporeal height. It can be cool, flowing, receptive, cleansing, and life-bearing. The Mandaean vision corrects any luminous theology that becomes excessively solar, fiery, vertical, or disembodied.
 
-[Encyclopaedia Iranica](https://www.iranicaonline.org/articles/mandaeans-2-religion/) emphasises the Mandaeans' frequent ritual use of running water for baptism and purification, their distinctive priesthood, and their rich literature in the Mandaic language.
+[The Encyclopaedia Iranica](https://www.iranicaonline.org/articles/mandaeans-2-religion/) emphasises the Mandaeans' frequent ritual use of running water for baptism and purification, their distinctive priesthood, and their rich literature in the Mandaic language, noting that running water is the form by which the heavenly world reflects itself on earth.
 
-## The soul's return
+## The ascent of the soul
 
 Death initiates another stage in the soul's return. The *masiqta* rites assist the departed soul in separation, purification, ascent, and incorporation into the World of Light. The journey passes through stations and confronts obstructing powers, but the soul is not expected to travel unaided. Ritual action performed by the living joins the work of the uthras and strengthens the path of return.
 
-The Ginza Rba is divided into Right and Left collections. The Right Ginza contains major theological, cosmological, ethical, and anthropogenic materials, while the Left Ginza is particularly concerned with death and the soul's ascent. Mandaean descriptions characterise this return as the central concern of the Left Ginza; [the Mandaean Associations Union's introduction to the community](https://www.mandaeanunion.com/history-english/item/496-a-brief-note-on-the-mandaeans) presents the tradition in its own terms.
+The Ginza Rba is divided into Right and Left collections. The Right Ginza contains major theological, cosmological, ethical, and anthropogenic materials, while the Left Ginza is particularly concerned with death and the soul's ascent. [Mandaean descriptions](https://www.mandaeanunion.org/en/component/k2/item/1383-ginza-rebba) characterise this return as the central concern of the Left Ginza.
 
 White ritual garments express the luminous body into which the participant is being restored. They do not merely symbolise moral innocence. They make visible an alignment with the World of Light. The body, garment, water, name, priest, prayer, and celestial beings form a single ritual architecture.
 
 Mandaeism consequently offers one of the clearest models of light as living relation. The light is not possessed privately. It flows from Great Life through uthras, knowledge, water, ritual, ethical action, community, and soul. Each level receives and transmits according to its function.
 
-Within the Architecture of Hidden Forces, the heavenly yardna can be compared to a current moving through Morphaithēr: a river of living formative power whose earthly waters become real points of participation. The analogy should not replace the Mandaean meaning. It reveals a structural kinship in which a higher reality becomes materially accessible without being reduced to matter.
+Within the Architecture of Hidden Forces, the heavenly yardna can be compared to a current moving through [[ii-5|Morphaithēr]]: a river of living formative power whose earthly waters become real points of participation. The analogy should not replace the Mandaean meaning. It reveals a structural kinship in which a higher reality becomes materially accessible without being reduced to matter.
 
-The Mandaean tradition also deepens the meaning of [[ii-18|the etheric body]]. If life is prior to and formative of the physical organism, then living water is more than chemical fluid. It is an embodied carrier of vitality, relation, memory, and renewal. Ritual water can touch the physical body while operating through psychic, etheric, communal, and spiritual orders simultaneously.
+The Mandaean tradition also deepens the meaning of the [[ix-18|etheric body]]. If life is prior to and formative of the physical organism, then living water is more than chemical fluid. It is an embodied carrier of vitality, relation, memory, and renewal. Ritual water can touch the physical body while operating through psychic, etheric, communal, and spiritual orders simultaneously.
 
-The World of Light is therefore not only the place from which the soul came or the destination reached after death. It is a present order that can be approached through knowledge, truthfulness, flowing water, ritual purification, and right relationship with Life. Its radiance is vertical because it descends from beyond the world, but it is also circulatory: it flows, washes, nourishes, gathers, and [[xiii-31|returns]].
+The World of Light is therefore not only the place from which the soul came or the destination reached after death. It is a present order that can be approached through knowledge, truthfulness, flowing water, ritual purification, and right relationship with Life. Its radiance is vertical because it descends from beyond the world, but it is also circulatory: it flows, washes, nourishes, gathers, and returns.
 
-:: In the Architecture: [§ L · The Etheric Body](/#etheric) and [§ XXXVI · Etheric Tides](/#tides).
+Across these Hermetic, Gnostic, Manichaean, and Mandaean traditions, light assumes four great forms. It is Mind ordering Nature, Fullness articulated through Luminaries, Power that can be stolen and restored, and Life flowing from its inexhaustible world. Together they establish that illumination is never brightness alone. It is origin, intelligence, vitality, agency, orientation, purification, and the restoration of every scattered power to its truthful relation with the Source.
+
+:: In the Architecture: [§ L · The Etheric Body](/#etheric) and [§ XXVII · Ritual](/#ritual).

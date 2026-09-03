@@ -1,28 +1,29 @@
 ---
 title: The Eighth and Ninth Spheres
 labels: [Primary Text, Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Probable]
 tradition: [Hermetic, Architecture of Hidden Forces]
 period: [Late Antique]
-plane: [Divine, Noetic, Astral, Psychic]
-operation: [Orientation, Return, Integration]
+plane: [Divine, Noetic, Psychic, Astral]
+operation: [Awakening, Return, Integration]
 symbol: [Sphere]
 text: [Discourse on the Eighth and Ninth]
-related: [xv-32, xv-34, vii-17, v-24, xiv-19, xiii-31]
-summary: The Nag Hammadi Discourse on the Eighth and Ninth — beyond the seven planetary heavens, the Ogdoad where the powers sing and the Ennead where description gives way to sacred sound; instruction as an operation upon the whole person; approaching light against becoming luminous; ascent that integrates the spheres rather than denying them.
+related: [xv-32, xv-34, vii-17, v-24, x-1, xiv-22]
+summary: A Hermetic initiatory dialogue from Nag Hammadi — the Ogdoad beyond the seven planetary heavens, where the initiate hears the powers singing, and the Ennead as a deepening of participation rather than another storey; prayer, silence, and sacred sound as operations upon the whole person.
 epigraph: "The soul discovers that its capacity to perceive the higher world is itself an activity of that world within it."
-backdrop: stairs
+backdrop: rotunda
+position: center 40%
 ---
 
-The *Discourse on the Eighth and Ninth*, preserved in Coptic among the Nag Hammadi writings, is a Hermetic initiatory dialogue between a spiritual father and a disciple described as his son. The title is modern, based upon language within the surviving text; the original Greek title has been lost. Scholarly analysis places it among the Hermetic works of Roman Egypt and increasingly recognises that its visionary and ecstatic episodes may reflect actual initiatory practice, as [a recent essay from the Harvard Center for the Study of World Religions](https://cswr.hds.harvard.edu/news/2025/11/17/eighth-reveals-ninth) sets out.
+*The Discourse on the Eighth and Ninth*, preserved in Coptic among the Nag Hammadi writings, is a Hermetic initiatory dialogue between a spiritual father and a disciple described as his son. The title is modern, based upon language within the surviving text; the original Greek title has been lost. [Scholarly analysis](https://www.cambridge.org/core/books/abs/hermetic-spirituality-and-the-historical-imagination/hermetic-spirituality-and-the-historical-imagination/603417E7BD197B26F4B5B2735E580EE9) places it among the Hermetic works of Roman Egypt and increasingly recognises that its visionary and ecstatic episodes may reflect actual initiatory practice.
 
 The first seven spheres are the familiar planetary heavens, representing not only astronomical regions but the cosmic conditions of fate, generation, temperament, and differentiated existence. The Eighth or Ogdoad lies beyond this sevenfold administration. It is a supra-planetary order in which the initiate encounters a community of powers praising the divine. The Ninth or Ennead represents a still more comprehensive approach to the divine source.
 
-## An operation upon the whole person
+## Instruction as operation
 
-The initiate is not simply given a verbal description of these regions. He is guided through prayer, concentrated attention, sacred utterance, silence, and the vocalisation of sounds that exceed ordinary discursive language. The master and disciple embrace, pray together, and enter a state in which the disciple begins to see and hear what was previously inaccessible. The instruction becomes an operation upon the whole person.
+The initiate is not simply given a verbal description of these regions. He is guided through prayer, concentrated attention, sacred utterance, silence, and the vocalisation of sounds that exceed ordinary discursive language. The master and disciple embrace, pray together, and enter a state in which the disciple begins to see and hear what was previously inaccessible. [The surviving text](https://hermetic.com/texts/eighth) shows that the instruction becomes an operation upon the whole person.
 
-In the Eighth, the disciple hears the powers singing. This cosmic hymn is not merely music occurring in a distant heaven. It is the sound of beings existing in right relation with the divine order. To hear it is to become capable of participating in their praise. The disciple's own voice joins a greater liturgy, and personal consciousness becomes incorporated into a field of intelligible harmony — [[xiv-19|vibratory illumination]] in its oldest form.
+In the Eighth, the disciple hears the powers singing. This cosmic hymn is not merely music occurring in a distant heaven. It is the sound of beings existing in right relation with the divine order. To hear it is to become capable of participating in their praise. The disciple's own voice joins a greater liturgy, and personal consciousness becomes incorporated into a field of intelligible harmony.
 
 The Ninth is not simply another spatial floor above the Eighth. It indicates a deepening of participation in divine unity. The higher the ascent, the less adequate ordinary description becomes. Language gives way to sacred sound, contemplation, gratitude, and transformed identity. The initiate is not sightseeing among celestial objects; he is being remade into a consciousness capable of dwelling within a higher order.
 
