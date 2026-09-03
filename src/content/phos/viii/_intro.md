@@ -1,6 +1,6 @@
 ---
-backdrop: caldera
-position: center 45%
+backdrop: elementchamber
+position: center 50%
 ---
 
 Elemental, etheric, and tattvic lights describe three interrelated but distinct aspects of manifestation. The **ethers** are formative functions through which force becomes transmissible and capable of organisation. The **tattvas** are morphogenic biases that incline formative activity toward particular modes of expression. The **elements** are the more embodied conditions through which those tendencies become materially, psychically, and symbolically perceptible.

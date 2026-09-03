@@ -67,7 +67,7 @@ function Portal() {
 
       {/* ENTRANCE */}
       <header id="top" className="relative isolate overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
-        <Backdrop src="/bg/gateway2.webp" opacity={0.3} position="center 45%" fill />
+        <Backdrop src="/bg/gorgedawn.webp" opacity={0.34} position="center 45%" fill />
         <LumenField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">

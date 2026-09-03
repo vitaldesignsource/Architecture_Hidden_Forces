@@ -1,6 +1,6 @@
 ---
-backdrop: regrowth
-position: center 55%
+backdrop: leaflight
+position: center 50%
 ---
 
 Life does not merely exist beneath light. Across most of Earth's biosphere, living form arises within an economy established by solar radiation. Light is captured, converted into chemical potential, fixed into organic structure, circulated through food webs, translated into biological rhythm, and released again as heat, movement, growth, reproduction, consciousness, decomposition, and renewed formation.

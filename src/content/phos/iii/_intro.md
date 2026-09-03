@@ -1,6 +1,6 @@
 ---
-backdrop: concentrator
-position: center 45%
+backdrop: lenshall
+position: center 50%
 ---
 
 Illumination is not a single action. Between a luminous source and an illuminated consciousness lies an entire anatomy: emission, direction, atmosphere, mediation, selection, transformation, reception, memory, and return.

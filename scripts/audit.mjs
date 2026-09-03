@@ -266,6 +266,21 @@ for (const m of src.matchAll(/className="([^"]*)">\s*\n\s*<Backdrop/g)) {
 }
 
 const referenced = new Set([...src.matchAll(/\/bg\/([a-z0-9-]+)\.webp/g)].map((m) => m[1]));
+// Encyclopaedia front matter mounts backdrops too (`backdrop: name` in an entry,
+// intro, or coda), so those count as referenced — otherwise every image used
+// only by the Portal is reported here as unmounted.
+{
+  const walk = (dir) =>
+    readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
+      e.isDirectory() ? walk(join(dir, e.name)) : e.name.endsWith(".md") ? [join(dir, e.name)] : [],
+    );
+  const contentDir = join(root, "src/content/phos");
+  if (existsSync(contentDir))
+    for (const f of walk(contentDir)) {
+      if (/(?:^|\/)(?:README|_template)\.md$/.test(f)) continue;
+      for (const m of readFileSync(f, "utf8").matchAll(/^backdrop:\s*([a-z][a-z0-9-]*)\s*$/gm)) referenced.add(m[1]);
+    }
+}
 const bgDir = join(root, "public/bg");
 const onDisk = existsSync(bgDir)
   ? new Set(readdirSync(bgDir).filter((f) => f.endsWith(".webp")).map((f) => f.slice(0, -5)))
