@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { ENTRIES, PATHS } from "@/lib/contents";
+import { Link } from "@tanstack/react-router";
+import { ENTRIES, PATHS, VOLUMES, type Entry } from "@/lib/contents";
 
 /**
  * ContentsPanel — the whole contents, reachable from anywhere.
@@ -14,8 +15,46 @@ import { ENTRIES, PATHS } from "@/lib/contents";
  * copies of a 54-row list would drift exactly as the two nav lists did — grouped
  * by movement so the shape is visible, with the current section marked so it
  * answers "where am I" as well as "take me there".
+ *
+ * Since Phōs there are two volumes. The panel is the same component on both:
+ * each page hands it its own entries, groups and reading paths, and says which
+ * volume it is, so the Volumes block at the foot can mark the one the reader is
+ * on and link to the other. The defaults are the Architecture’s, so the original
+ * call site did not change.
  */
-export function ContentsPanel({ active }: { active: string | null }) {
+
+/** Groups are keyed to the first entry in each, so a new section falls into the
+ *  right one without this table being touched. */
+const ARCH_GROUPS = [
+  { at: "doctrine", k: "First principles" },
+  { at: "descent", k: "The field" },
+  { at: "kabbalah", k: "The powers" },
+  { at: "laws", k: "Laws, sky, and qualities" },
+  { at: "channels", k: "The living vessel" },
+  { at: "image", k: "Symbol and rite" },
+  { at: "taxonomy", k: "Mediation" },
+  { at: "books", k: "Tradition and time" },
+  { at: "rightrelation", k: "Relation and return" },
+  { at: "lexicon", k: "Apparatus" },
+];
+
+export function ContentsPanel({
+  active,
+  entries = ENTRIES,
+  groups = ARCH_GROUPS,
+  paths = PATHS,
+  indexHref = "#index",
+  volume = "/",
+}: {
+  active: string | null;
+  entries?: readonly Entry[];
+  groups?: readonly { at: string; k: string }[];
+  paths?: readonly (typeof PATHS)[number][];
+  /** Where the page’s own index lives, for the "Routes through it" block. */
+  indexHref?: string;
+  /** The path of the page this panel is on — marked in the Volumes block. */
+  volume?: string;
+}) {
   const [open, setOpen] = useState(false);
   const panel = useRef<HTMLDivElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
@@ -69,26 +108,13 @@ export function ContentsPanel({ active }: { active: string | null }) {
   const close = () => { setOpen(false); trigger.current?.focus(); };
   const follow = () => setOpen(false);
 
-  // Groups are keyed to the first entry in each, so a new section falls into the
-  // right one without this table being touched.
-  const GROUPS = [
-    { at: "doctrine", k: "First principles" },
-    { at: "descent", k: "The field" },
-    { at: "kabbalah", k: "The powers" },
-    { at: "laws", k: "Laws, sky, and qualities" },
-    { at: "channels", k: "The living vessel" },
-    { at: "image", k: "Symbol and rite" },
-    { at: "taxonomy", k: "Mediation" },
-    { at: "books", k: "Tradition and time" },
-    { at: "rightrelation", k: "Relation and return" },
-    { at: "lexicon", k: "Apparatus" },
-  ];
-  const grouped: { k: string; rows: typeof ENTRIES }[] = [];
-  for (const e of ENTRIES) {
-    const g = GROUPS.find((x) => x.at === e.id);
+  const grouped: { k: string; rows: Entry[] }[] = [];
+  for (const e of entries) {
+    const g = groups.find((x) => x.at === e.id);
     if (g || !grouped.length) grouped.push({ k: g ? g.k : "Opening", rows: [] });
     grouped[grouped.length - 1].rows.push(e);
   }
+  const numbered = entries.filter((e) => e.n && e.n !== "—" && e.n !== "00").length;
 
   return (
     <>
@@ -105,7 +131,7 @@ export function ContentsPanel({ active }: { active: string | null }) {
       {/*
         The panel must not render inside <nav>. That element carries
         backdrop-blur, and backdrop-filter establishes a containing block for
-        fixed-position descendants — so `inset-y-0` resolved against the nav's own
+        fixed-position descendants — so `inset-y-0` resolved against the nav’s own
         69px box instead of the viewport, and the panel opened as a sliver. A
         portal puts it on <body>, where fixed means what it says.
       */}
@@ -167,32 +193,64 @@ export function ContentsPanel({ active }: { active: string | null }) {
                 </div>
               ))}
 
-              <div className="border-t border-border pt-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
-                  Routes through it
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Forty-seven sections in sequence is a catalogue. Each route names a defensible
-                  order and a reason for every step — they live in full at the{" "}
-                  <a href="#index" onClick={follow} className="text-gold underline-offset-4 hover:underline">
-                    Index
-                  </a>
-                  .
-                </p>
-                <div className="mt-4 space-y-px">
-                  {PATHS.map((p) => (
-                    <a
-                      key={p.k}
-                      href="#index"
-                      onClick={follow}
-                      className="block border-b border-border py-3 transition-colors hover:border-gold/40"
-                    >
-                      <span className="font-serif text-base text-bone/85">{p.k}</span>
-                      <span className="mt-0.5 block font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-                        {p.n}
-                      </span>
+              {paths.length > 0 && (
+                <div className="border-t border-border pt-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                    Routes through it
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {numbered} sections in sequence is a catalogue. Each route names a defensible
+                    order and a reason for every step — they live in full at the{" "}
+                    <a href={indexHref} onClick={follow} className="text-gold underline-offset-4 hover:underline">
+                      Index
                     </a>
-                  ))}
+                    .
+                  </p>
+                  <div className="mt-4 space-y-px">
+                    {paths.map((p) => (
+                      <a
+                        key={p.k}
+                        href={indexHref}
+                        onClick={follow}
+                        className="block border-b border-border py-3 transition-colors hover:border-gold/40"
+                      >
+                        <span className="font-serif text-base text-bone/85">{p.k}</span>
+                        <span className="mt-0.5 block font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
+                          {p.n}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* The other volume is one page away, and this is the one place a
+                  reader can be sure of finding it from anywhere in either. */}
+              <div className="mt-8 border-t border-border pt-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  Volumes
+                </p>
+                <div className="mt-3 space-y-px">
+                  {VOLUMES.map((v) =>
+                    v.to === volume ? (
+                      <div key={v.to} aria-current="page" className="border-l-2 border-gold bg-gold/5 py-3 pl-3">
+                        <span className="block font-serif text-base text-gold">{v.t}</span>
+                        <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">
+                          {v.d} <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">· you are here</span>
+                        </span>
+                      </div>
+                    ) : (
+                      <Link
+                        key={v.to}
+                        to={v.to}
+                        onClick={follow}
+                        className="block border-l-2 border-transparent py-3 pl-3 transition-colors hover:border-gold/40"
+                      >
+                        <span className="block font-serif text-base text-bone/85">{v.t}</span>
+                        <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">{v.d}</span>
+                      </Link>
+                    ),
+                  )}
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
 import { all, descent, ret } from "@/lib/principles";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
@@ -131,6 +131,12 @@ function Index() {
               </a>
             ))}
             </div>
+            <Link
+              to="/phos"
+              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
+            >
+              Phōs <span className="text-gold/60">↗</span>
+            </Link>
             <ContentsPanel active={active} />
           </div>
           <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
@@ -155,6 +161,12 @@ function Index() {
                 {l.label}
               </a>
             ))}
+            <Link
+              to="/phos"
+              className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold"
+            >
+              Phōs ↗
+            </Link>
           </div>
         </div>
       </nav>

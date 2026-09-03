@@ -1,7 +1,7 @@
 /**
  * The contents of the work, defined once.
  *
- * § Index renders these as a page; the header's Contents panel renders them as a
+ * § Index renders these as a page; the header’s Contents panel renders them as a
  * slide-over reachable from anywhere. They were local to the Index component
  * until the panel needed them, and two copies of a 47-entry list would have
  * drifted exactly as the two nav lists did.
@@ -9,7 +9,9 @@
  * `movement: true` marks the passages between sections — Descent, Return,
  * Grounds — which are part of the arc but carry no numeral.
  */
-export const ENTRIES = [
+export type Entry = { n: string; id: string; t: string; d: string; movement?: boolean };
+
+export const ENTRIES: Entry[] = [
 
             { n: "00", id: "doctrine", t: "Central Doctrine", d: "Form is frozen force. Force is liberated form." },
             { n: "I", id: "terms", t: "The Five Terms", d: "Matter, Form, Force, Field, Centre — what the words mean." },
@@ -147,7 +149,7 @@ export const PATHS: { k: string; n: string; blurb: string; why: Record<string, s
     k: "What the architecture refuses",
     n: "The guardrails",
     blurb:
-      "The system's own limits, stated by the system. This is the path that shows where it stops itself — and it is the one worth reading if you want to judge whether the rest is serious.",
+      "The system’s own limits, stated by the system. This is the path that shows where it stops itself — and it is the one worth reading if you want to judge whether the rest is serious.",
     why: {
       spine: "Coherence alone is not goodness. A tumour is organised.",
       laws: "The cost of form, the shadow of selection, integral against parasitic.",
@@ -161,3 +163,22 @@ export const PATHS: { k: string; n: string; blurb: string; why: Record<string, s
     },
   },
 ];
+
+/**
+ * The volumes of the site. The Architecture was a single page until Phōs; the
+ * Contents panel lists both so a reader on either can reach the other, and
+ * marks the one they are on. Paths are literal so the panel can compare them
+ * against the `volume` prop each page passes.
+ */
+export const VOLUMES = [
+  {
+    to: "/",
+    t: "The Architecture of Hidden Forces",
+    d: "The principal treatise — how hidden forces become visible forms, in fifty-two sections.",
+  },
+  {
+    to: "/phos",
+    t: "Phōs: The Luminous Architecture",
+    d: "A companion volume — the same architecture read by its own light.",
+  },
+] as const;

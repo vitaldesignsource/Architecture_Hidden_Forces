@@ -45,3 +45,10 @@ export { TheInterval } from "./TheInterval";
 export { TheRecursion } from "./TheRecursion";
 export { TheAxis } from "./TheAxis";
 export { OneLayerOfSeven } from "./OneLayerOfSeven";
+/* Phōs — the companion volume's figures. */
+export { LumenField } from "./LumenField";
+export { ThreeLights } from "./ThreeLights";
+export { LuxSphere } from "./LuxSphere";
+export { VesselAndMeasure } from "./VesselAndMeasure";
+export { LadderOfLights } from "./LadderOfLights";
+export { BoundaryColour } from "./BoundaryColour";

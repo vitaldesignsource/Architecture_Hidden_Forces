@@ -11,9 +11,17 @@
  * Contrast is deliberately NOT checked here: it needs real layout and canvas
  * sampling, so it lives in the browser pass. What this catches is the class of
  * error that survives a typecheck and a build and still ships broken.
+ *
+ * Since Phōs the site has two volumes, each a route under src/routes with its
+ * own numbering. Everything that is a property of one page — its section ids,
+ * its numbering, its header waypoints, its in-page anchors, the "§ N" references
+ * in its prose — is checked per route. Everything shared — index entries,
+ * lexicon pointers, backdrops — is checked against the union, and section ids
+ * are required to be unique across the whole site, so a hash can only ever mean
+ * one place.
  */
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
-import { join, dirname } from "node:path";
+import { join, dirname, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -34,7 +42,8 @@ function collect(dir, acc = []) {
   return acc;
 }
 const files = collect(join(root, "src"));
-const src = files.map((f) => readFileSync(f, "utf8")).join("\n");
+const sources = files.map((f) => ({ file: relative(root, f), text: readFileSync(f, "utf8") }));
+const src = sources.map((s) => s.text).join("\n");
 const css = readFileSync(join(root, "src/styles.css"), "utf8");
 
 const problems = [];
@@ -42,44 +51,68 @@ const notes = [];
 const fail = (check, msg) => problems.push(`${check}: ${msg}`);
 const note = (check, msg) => notes.push(`${check}: ${msg}`);
 
-// ---------------------------------------------------------------- numbering
+// ----------------------------------------------------------------- volumes
+// A route is a page is a volume. Anything under src/routes that registers a
+// path is one; the generated tree and the root layout are not.
 const ROMAN = { I: 1, V: 5, X: 10, L: 50, C: 100 };
 const toArabic = (r) =>
   [...r].reduce((t, c, i) => t + (ROMAN[c] < (ROMAN[r[i + 1]] ?? 0) ? -ROMAN[c] : ROMAN[c]), 0);
 
-const sections = [...src.matchAll(/<section id="([a-z-]+)"/g)].map((m) => ({
-  id: m[1],
-  at: m.index,
-}));
-sections.forEach((s, i) => {
-  s.end = sections[i + 1]?.at ?? src.length;
-  const h = src.slice(s.at, s.end).match(/§ ([IVXLC]+) · /);
-  s.numeral = h?.[1] ?? null;
-});
+const routes = sources
+  .filter((s) => s.file.startsWith(join("src", "routes") + sep))
+  .map((s) => ({ ...s, path: s.text.match(/createFileRoute\("([^"]+)"\)/)?.[1] ?? null }))
+  .filter((r) => r.path);
+const shared = sources.filter((s) => !routes.some((r) => r.file === s.file));
+if (!routes.length) fail("volumes", "no createFileRoute() found under src/routes — nothing was audited");
 
-const dupes = sections.map((s) => s.id).filter((id, i, a) => a.indexOf(id) !== i);
-if (dupes.length) fail("section ids", `duplicated: ${[...new Set(dupes)].join(", ")}`);
+// ---------------------------------------------------------------- numbering
+for (const r of routes) {
+  r.sections = [...r.text.matchAll(/<section id="([a-z-]+)"/g)].map((m) => ({
+    id: m[1],
+    at: m.index,
+    route: r.path,
+  }));
+  r.sections.forEach((s, i) => {
+    s.end = r.sections[i + 1]?.at ?? r.text.length;
+    s.numeral = r.text.slice(s.at, s.end).match(/§ ([IVXLC]+) · /)?.[1] ?? null;
+  });
+  r.numbered = r.sections.filter((s) => s.numeral);
 
-const numbered = sections.filter((s) => s.numeral);
-const seq = numbered.map((s) => toArabic(s.numeral));
-const expected = seq.map((_, i) => i + 1);
-if (JSON.stringify(seq) !== JSON.stringify(expected)) {
+  const dupes = r.sections.map((s) => s.id).filter((id, i, a) => a.indexOf(id) !== i);
+  if (dupes.length) fail("section ids", `${r.path}: duplicated: ${[...new Set(dupes)].join(", ")}`);
+
+  const seq = r.numbered.map((s) => toArabic(s.numeral));
   const firstBad = seq.findIndex((v, i) => v !== i + 1);
-  fail(
-    "numbering",
-    `not strictly ascending from I — first break at ${numbered[firstBad]?.id} ` +
-      `(§ ${numbered[firstBad]?.numeral}, expected ${expected[firstBad]})`,
-  );
-} else {
-  note("numbering", `I–${numbered.at(-1).numeral}, ${numbered.length} sections, strictly ascending`);
+  if (firstBad !== -1) {
+    fail(
+      "numbering",
+      `${r.path}: not strictly ascending from I — first break at ${r.numbered[firstBad].id} ` +
+        `(§ ${r.numbered[firstBad].numeral}, expected ${firstBad + 1})`,
+    );
+  } else if (r.numbered.length) {
+    note("numbering", `${r.path}: I–${r.numbered.at(-1).numeral}, ${r.numbered.length} sections, strictly ascending`);
+  }
 }
 
+const sections = routes.flatMap((r) => r.sections);
+const numbered = sections.filter((s) => s.numeral);
+const byId = {};
+for (const s of sections) {
+  if (byId[s.id] && byId[s.id].route !== s.route)
+    fail("section ids", `"${s.id}" is a section of both ${byId[s.id].route} and ${s.route} — a hash must mean one place`);
+  byId[s.id] ??= s;
+}
+const byPath = Object.fromEntries(routes.map((r) => [r.path, r]));
+note("volumes", routes.map((r) => `${r.path} (${r.numbered.length} numbered, ${r.sections.length} sections)`).join(" · "));
+
 // ------------------------------------------------------------------- index
+// Entries are wherever a page keeps them — the Architecture's in lib/contents,
+// Phōs's in its own route — and each resolves against the union, since ids are
+// unique across the site.
 const entries = [...src.matchAll(/\{ n: "([IVXLC]*|—|00)", id: "([a-z-]+)"/g)].map((m) => ({
   numeral: m[1],
   id: m[2],
 }));
-const byId = Object.fromEntries(sections.map((s) => [s.id, s]));
 
 for (const e of entries) {
   if (e.id !== "top" && !byId[e.id]) fail("index", `entry "${e.id}" has no matching section`);
@@ -92,20 +125,77 @@ for (const e of entries) {
 const listed = new Set(entries.map((e) => e.id));
 const unlisted = numbered.filter((s) => !listed.has(s.id));
 if (unlisted.length)
-  fail("index", `sections missing from the index: ${unlisted.map((s) => `§ ${s.numeral} (${s.id})`).join(", ")}`);
-else note("index", `${entries.length} entries, all resolving; all ${numbered.length} sections listed`);
+  fail("index", `sections missing from an index: ${unlisted.map((s) => `${s.route} § ${s.numeral} (${s.id})`).join(", ")}`);
+else note("index", `${entries.length} entries, all resolving; all ${numbered.length} numbered sections listed`);
 
 // -------------------------------------------------- prose cross-references
-const haveNumerals = new Set(numbered.map((s) => s.numeral));
-const refs = new Set();
-for (const m of src.matchAll(/§(?:&nbsp;| )([IVXLC]+)\b/g)) {
-  const before = src.slice(Math.max(0, m.index - 90), m.index);
-  if (before.includes("tracking-[0.3em] text-gold")) continue; // the heading eyebrow itself
-  refs.add(m[1]);
+// A "§ N" is a promise that section N exists on the page it is written on. In a
+// route that is strict: N must be one of that route's numerals. A reference to
+// the OTHER volume has to be a <Link to="/…" hash="…"> so a reader can follow it,
+// and those link bodies are blanked before scanning, so a "§ IV" pointing across
+// is never mistaken for a local one — it is checked by its hash below instead.
+// Shared components serve either page, so a "§ N" there resolves against the
+// union. That is weaker, and the note says so.
+const stripCrossLinks = (r) =>
+  r.text.replace(/<Link\b([^>]*)>([\s\S]*?)<\/Link>/g, (all, attrs, body) => {
+    const to = attrs.match(/\bto="([^"]+)"/)?.[1];
+    return to && to !== r.path ? `<Link${attrs}>${" ".repeat(body.length)}</Link>` : all;
+  });
+const scanRefs = (text) => {
+  const refs = new Set();
+  // A no-break space is the normal separator in prose here — "§ XI" must not
+  // wrap across a line — so it counts exactly as a plain one.
+  for (const m of text.matchAll(/§(?:&nbsp;|[ \u00A0])([IVXLC]+)\b/g)) {
+    const before = text.slice(Math.max(0, m.index - 90), m.index);
+    if (before.includes("tracking-[0.3em] text-gold")) continue; // the heading eyebrow itself
+    refs.add(m[1]);
+  }
+  return refs;
+};
+let refTargets = 0;
+for (const r of routes) {
+  const have = new Set(r.numbered.map((s) => s.numeral));
+  const refs = scanRefs(stripCrossLinks(r));
+  const dangling = [...refs].filter((n) => !have.has(n));
+  if (dangling.length)
+    fail(
+      "cross-references",
+      `${r.path}: point at sections it does not have: ${dangling.join(", ")} — ` +
+        `a reference to the other volume must be a <Link to hash>`,
+    );
+  refTargets += refs.size;
 }
-const dangling = [...refs].filter((r) => !haveNumerals.has(r));
-if (dangling.length) fail("cross-references", `point at non-existent sections: ${dangling.join(", ")}`);
-else note("cross-references", `${refs.size} distinct targets, all exist`);
+{
+  const have = new Set(numbered.map((s) => s.numeral));
+  const refs = scanRefs(shared.map((s) => s.text).join("\n"));
+  const dangling = [...refs].filter((n) => !have.has(n));
+  if (dangling.length) fail("cross-references", `shared components point at non-existent sections: ${dangling.join(", ")}`);
+  refTargets += refs.size;
+}
+note("cross-references", `${refTargets} targets, strict per route, union for shared components — all exist`);
+
+// -------------------------------------------------------------- hash links
+// Every literal hash — <Link to="/x" hash="y">, or href="#y" — is a promise
+// that #y exists on the page it lands on. A Link with `to` lands on that route;
+// anything else lands on the page it is written in, or, in a shared component,
+// on whichever page renders it.
+let hashes = 0;
+const checkAnchors = (text, homePath, where) => {
+  for (const m of text.matchAll(/<(?:Link|a)\b([^>]*)>/g)) {
+    const attrs = m[1];
+    const hash = attrs.match(/\bhash="([a-z-]+)"/)?.[1] ?? attrs.match(/\bhref="#([a-z-]+)"/)?.[1];
+    if (!hash) continue;
+    hashes++;
+    if (hash === "top") continue;
+    const to = attrs.match(/\bto="([^"]+)"/)?.[1] ?? homePath;
+    if (to && !byPath[to]) { fail("hash links", `${where}: to="${to}" is not a route`); continue; }
+    const ok = to ? byPath[to].sections.some((s) => s.id === hash) : !!byId[hash];
+    if (!ok) fail("hash links", `${where}: #${hash} is not a section${to ? ` of ${to}` : " anywhere"}`);
+  }
+};
+for (const r of routes) checkAnchors(r.text, r.path, r.path);
+for (const s of shared) checkAnchors(s.text, null, s.file);
+note("hash links", `${hashes} literal anchors, all landing on a section`);
 
 // ------------------------------------------------- full-bleed containing block
 // A band is full-bleed via `left:50%; width:100vw; margin-left:-50vw`, which
@@ -133,30 +223,29 @@ else note("full-bleed", `${bandsChecked} wrapped bands, all with a full-width co
 // The menu is a fossil unless something watches it. Its two lists drifted until
 // twelve sections had no entry and every section from § XLI on was unreachable
 // from it. Requiring an entry per section is wrong — the menu is waypoints, not a
-// contents page — so instead: every target must exist, and the menu must still
-// reach the end of the work.
-const navIds = [...src.matchAll(/\{ id: "([a-z-]+)", label: "[^"]*" \}/g)].map((m) => m[1]);
-const navDead = navIds.filter((id) => !byId[id]);
-if (navDead.length) fail("nav", `points at sections that do not exist: ${navDead.join(", ")}`);
-else {
-  const roman = (r) => {
-    const V = { I: 1, V: 5, X: 10, L: 50, C: 100 };
-    let t = 0;
-    for (let i = 0; i < r.length; i++) t += V[r[i + 1]] > V[r[i]] ? -V[r[i]] : V[r[i]];
-    return t;
-  };
-  const numbered2 = numbered.map((s) => roman(s.numeral));
-  const deepest = Math.max(...numbered2);
-  const navReach = Math.max(
-    ...navIds.map((id) => (byId[id]?.numeral ? roman(byId[id].numeral) : 0))
+// contents page — so instead: every target must exist on its own page, and the
+// menu must still reach the end of the work. Completeness is the Contents
+// panel's job, and the index check above already guarantees every section
+// appears in the shared entries it renders.
+for (const r of routes) {
+  const navIds = [...r.text.matchAll(/\{ id: "([a-z-]+)", label: "[^"]*" \}/g)].map((m) => m[1]);
+  if (!navIds.length) {
+    if (r.numbered.length) fail("nav", `${r.path}: a numbered volume with no header waypoints`);
+    continue;
+  }
+  const local = new Set(r.sections.map((s) => s.id));
+  const dead = navIds.filter((id) => !local.has(id));
+  if (dead.length) { fail("nav", `${r.path}: points at sections it does not have: ${dead.join(", ")}`); continue; }
+  const deepest = Math.max(...r.numbered.map((s) => toArabic(s.numeral)));
+  const reach = Math.max(
+    ...navIds.map((id) => {
+      const s = r.sections.find((x) => x.id === id);
+      return s?.numeral ? toArabic(s.numeral) : 0;
+    }),
   );
-  // Completeness is the Contents panel's job now, and the index check above
-  // already guarantees every section appears in the shared ENTRIES it renders.
-  // What is still worth catching is the header fossilising — a menu whose last
-  // waypoint sits in the first half of a work that has since doubled.
-  if (navReach < deepest * 0.6)
-    fail("nav", `last waypoint is § ${navReach} of ${deepest} — the header has stopped tracking the work`);
-  else note("nav", `${navIds.length} waypoints, all resolving, reaching § ${navReach} of ${deepest}`);
+  if (reach < deepest * 0.6)
+    fail("nav", `${r.path}: last waypoint is § ${reach} of ${deepest} — the header has stopped tracking the work`);
+  else note("nav", `${r.path}: ${navIds.length} waypoints, all resolving, reaching § ${reach} of ${deepest}`);
 }
 
 // --------------------------------------------------------------- backdrops
@@ -200,12 +289,15 @@ const WORDS = {
   seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20,
 };
 const claims = [];
-for (const m of src.matchAll(
-  /\b(three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\s+(commitments|principles|rungs|movements|rules|stations|carriers|attentions|questions)\b/gi,
-)) {
-  const host = sections.find((s) => m.index >= s.at && m.index < s.end);
-  claims.push({ n: WORDS[m[1].toLowerCase()], noun: m[2], section: host?.id ?? "—" });
+const CLAIM =
+  /\b(three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\s+(commitments|principles|rungs|movements|rules|stations|carriers|attentions|questions|counterfeits|consents|propositions)\b/gi;
+for (const r of routes) {
+  for (const m of r.text.matchAll(CLAIM)) {
+    const host = r.sections.find((s) => m.index >= s.at && m.index < s.end);
+    claims.push({ n: WORDS[m[1].toLowerCase()], noun: m[2], section: host?.id ?? "—" });
+  }
 }
+for (const s of shared) for (const m of s.text.matchAll(CLAIM)) claims.push({ n: WORDS[m[1].toLowerCase()], noun: m[2], section: s.file });
 note("counted claims", `${claims.length} found — verify against rendered items in the browser pass`);
 
 // ----------------------------------------------------------------- lexicon
@@ -220,9 +312,9 @@ if (lex.length) {
     else if (target.numeral && target.numeral !== n)
       fail("lexicon", `"${term}" claims § ${n} but #${at} is § ${target.numeral}`);
   }
-// A term defined twice sends readers to two different sections for the same
-// word, and the pointer check passes both because each resolves on its own.
-// "Solve et coagula" shipped twice before this existed.
+  // A term defined twice sends readers to two different sections for the same
+  // word, and the pointer check passes both because each resolves on its own.
+  // "Solve et coagula" shipped twice before this existed.
   const termNames = lex.map((m) => m[1]);
   const dupTerms = termNames.filter((t, i) => termNames.indexOf(t) !== i);
   if (dupTerms.length)

@@ -184,7 +184,8 @@
 .aoh-still .aolt-path,
 .aoh-still .aolt-descent,
 .aoh-still .aolt-ignite,
-.aoh-still .aoh-ec-spark { animation-play-state: paused; }
+.aoh-still .aoh-ec-spark,
+.aoh-still .aoh-lux-pulse { animation-play-state: paused; }
 
 /* Backdrop: full-bleed cover on wide viewports; a band at the top of the section
    below lg, where a tall section would otherwise crop a 16:9 source to a sliver. */
