@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 related: [v-24, v-25, v-26, vii-13, iii-27]
 summary: The ladder explains derivation, the web explains ecology — and neither image is sufficient alone.
 epigraph: "A ladder woven into a web: vertically derived, horizontally related, and recursively active."
-backdrop: web
+backdrop: dewweb
+position: center 45%
 ---
 
 The **Luminous Ladder** describes vertical procession. Light descends from universality toward particularity, passing from source into intelligibility, archetype, formation, psychic experience, vitality, and sensible appearance.

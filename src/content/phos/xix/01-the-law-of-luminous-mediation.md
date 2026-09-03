@@ -9,7 +9,8 @@ operation: [Manifestation, Communication]
 related: [ii-30, iii-8, iii-19, i-13, ii-7, ii-5]
 summary: No light enters manifestation without a medium, relation, boundary, or receptive field - and since no mediator transmits with perfect neutrality, the study of light must include the study of its channels, and a revelation cannot be judged by the brilliance of its claimed origin alone.
 epigraph: "No light enters manifestation without mediation."
-backdrop: aperture
+backdrop: beacon
+position: center 45%
 ---
 
 Fontal light may be undivided in its source, but its appearance within a world requires a medium, relation, boundary, or receptive field. Between the unmanifest source and a particular visible form stand numerous mediations: noetic orders, spiritual beings, psychic structures, the astral field, the etheric body, the Fourfold Veil, tattvic atmospheres, biological organs, cultural symbols, and material conditions.

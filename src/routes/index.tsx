@@ -1023,7 +1023,7 @@ function Index() {
 
       {/* RETURN */}
       <section id="return" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/blowhole.webp" opacity={0.29} position="center 45%" scrim={0.3} />
+        <Backdrop src="/bg/birdspiral.webp" opacity={0.29} position="center 45%" scrim={0.3} />
         <SectionGlyph delay={-60} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -2523,7 +2523,7 @@ function Index() {
 
       {/* THE RECIPROCAL FIELD */}
       <section id="reciprocal" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/ripples.webp" opacity={0.49} position="center 60%" />
+        <Backdrop src="/bg/dewweb.webp" opacity={0.49} position="center 45%" />
         <SectionGlyph delay={-150} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">

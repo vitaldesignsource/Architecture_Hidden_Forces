@@ -10,7 +10,7 @@ symbol: [Torch]
 related: [xvii-11, xiii-28, xv-92, ii-29, v-8]
 summary: Portable fire carrying illumination from place to place - initiation, succession, and the movement of living knowledge; one torch igniting another without diminishing itself, and the danger of a flame passed while its purpose is forgotten.
 epigraph: "The bearer does not own the flame."
-backdrop: shrinepath
+backdrop: beacon
 position: center 45%
 ---
 

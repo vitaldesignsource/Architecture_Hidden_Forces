@@ -8,7 +8,8 @@ operation: [Integration]
 related: [ix-2, ix-1, viii-26, ii-5, ix-24]
 summary: An ordered household of solar transformation with an etheric dimension — shared formative atmospheres in which no organism possesses light entirely for itself.
 epigraph: "Life is sustained by participation, and participation is governed by right relation."
-backdrop: mangrove
+backdrop: coralnursery
+position: center 50%
 ---
 
 An ecosystem is an ordered household of transformation. Solar energy is captured by primary producers, stored in chemical bonds, transferred through feeding relations, used in metabolism, and progressively dissipated as heat. Matter circulates through air, water, soil, organism, waste, death, decomposition, and renewed assimilation.

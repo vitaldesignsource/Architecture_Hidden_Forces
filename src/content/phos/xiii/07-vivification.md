@@ -8,7 +8,8 @@ operation: [Vivification]
 related: [xiii-6, ix-19, ix-20, viii-8, iv-23, xiii-13]
 summary: The strengthening and renewal of life already present — restoring circulation through sunlight, sleep, breath, affection, communion — and not to be confused with stimulation, which consumes what vivification replenishes.
 epigraph: "Genuine vivification leaves the organism more coherent, resilient, receptive, and capable of sustaining life after the immediate experience has passed."
-backdrop: regrowth
+backdrop: coralnursery
+position: center 50%
 ---
 
 Vivification is the strengthening, renewal, or intensification of life. Animation establishes the presence of a living principle; vivification replenishes the organism's capacity to express it. A person may remain alive while suffering exhaustion, fragmentation, loss of meaning, etheric depletion, psychic contraction, or diminished connection with the sources of vitality.

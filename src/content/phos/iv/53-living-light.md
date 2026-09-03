@@ -7,7 +7,8 @@ quality: [Living Light, Vitality]
 plane: [Vital]
 related: [ix-15, ix-16, iv-23, ii-18, iv-52]
 summary: Light appearing through an organism's active participation — a real formative quality upon the vital plane, not a claim that every living being visibly glows.
-backdrop: mycelium
+backdrop: coralnursery
+position: center 50%
 ---
 
 Living light has a literal physical expression in bioluminescence: light produced by chemical processes within organisms. Fireflies, marine organisms, fungi, and other living forms generate illumination through specific biological mechanisms.
