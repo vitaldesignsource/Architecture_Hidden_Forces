@@ -8,7 +8,8 @@ symbol: [Flame, Eye]
 related: [xii-7, xii-8, xii-5, v-9, xii-21]
 summary: The highest Dionysian triad — burning love, many-eyed knowledge, and the stable seat that bears presence without appropriating it; real intelligences whose traditional symbols reveal functions without exhausting natures.
 epigraph: "Wings, eyes, wheels, fire, and thrones are forms through which consciousness apprehends orders whose complete being exceeds ordinary physical appearance."
-backdrop: furnace
+backdrop: seraph
+position: center 35%
 ---
 
 The highest triad in the Dionysian celestial hierarchy consists of Seraphim, Cherubim, and Thrones. These orders stand closest to divine illumination, not through physical distance but through immediacy of participation.

@@ -8,7 +8,8 @@ operation: [Communication, Protection, Inspiration]
 related: [xii-7, xii-9, v-9, xi-16, xii-13]
 summary: The third triad brings illumination to peoples, places, persons, and events — the descent through the orders is not a decline into unreality but mediation that lets higher light act specifically without destroying the vessel it reaches.
 epigraph: "Their nearness does not make them insignificant."
-backdrop: cisterntower
+backdrop: cityangels
+position: center 38%
 ---
 
 The third celestial triad brings divine illumination nearer to collective and individual worlds. Principalities, Archangels, and Angels mediate spiritual order into nations, peoples, communities, places, historical movements, persons, and particular events.

@@ -8,7 +8,8 @@ operation: [Differentiation]
 related: [xii-4, xii-6, i-13, xii-1, v-6]
 summary: Harmozel, Oroiael, Daveithe, and Eleleth in the Apocryphon of John — living orders through which divine qualities become differentiated and inhabited, each a presence inseparable from the realm it governs.
 epigraph: "Truth, memory, love, peace, form, and wisdom are not accidental psychological states. They possess archetypal and aeonic foundations."
-backdrop: filterstack
+backdrop: luminaries
+position: center 45%
 ---
 
 In Sethian Gnostic texts, particularly the *Apocryphon of John*, four Luminaries — Harmozel, Oroiael, Daveithe, and Eleleth — appear as great aeonic beings or luminous realms associated with Autogenes, the Self-Generated divine power. They structure the heavenly order beneath the supreme Invisible Spirit and Barbelo.

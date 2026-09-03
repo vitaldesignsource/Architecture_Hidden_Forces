@@ -8,7 +8,8 @@ operation: [Orientation, Protection]
 related: [xii-6, xii-8, xii-11, xii-21, xii-1]
 summary: The middle Dionysian triad — lordship without tyranny, constancy under resistance, and the lawful distribution of power; direction, effective capacity, and lawful relation so that divine force does not descend as undifferentiated intensity.
 epigraph: "Dominion gives direction, Power gives effective capacity, and Authority gives lawful relation."
-backdrop: sluicegates
+backdrop: dominion
+position: center 45%
 ---
 
 The middle Dionysian triad consists, in one common translation, of Dominions, Powers, and Authorities. Terminology varies among translations, but the underlying functions concern divine governance, capacity, order, and the disciplined transmission of power.
