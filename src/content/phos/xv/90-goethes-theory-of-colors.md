@@ -34,4 +34,6 @@ This is especially important for the recognition of symbolic perception. Measure
 
 Within the Architecture of Hidden Forces, Goethe's turbid medium resembles [[ii-9|tattvic coloration]]. Light does not appear in isolation but through a meeting with atmosphere, density, boundary, and receptive consciousness. Colour is the visible testimony of a relation. Morphaithēr is precisely the kind of living field in which one force may assume different colours according to the medium through which it manifests.
 
+::figure Boundary Colour
+
 :: In the Architecture: [§ XLI · Morphaithēr](/#atmosphere) and [§ IV · The Fourfold Field](/#fourfold).

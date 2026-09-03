@@ -19,4 +19,6 @@ Psychically, solve may release energy held in trauma, obsession, fixed identity,
 
 True solve is precise. It does not celebrate destruction for its own sake. The purpose is to liberate the light while preventing its dispersal into chaos. The form is opened so that its governing force may be recognised, purified, and made available for transformation.
 
+::figure Solve Coagula
+
 :: In the Architecture: [§ XLVII · Transformation](/#transformation) and [§ X · The Alchemical Triad](/#triad).

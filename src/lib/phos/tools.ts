@@ -11,11 +11,12 @@ import { DIVISIONS, ENTRIES, entryById, facetValues, valueSlug, type Division, t
  */
 
 /** Which of the seven planned instruments are live, and where. */
-export const TOOL_ROUTES: Record<string, "/phos/tools/symbols" | "/phos/tools/traditions" | "/phos/tools/trace" | "/phos/tools/anatomy"> = {
+export const TOOL_ROUTES: Record<string, "/phos/tools/symbols" | "/phos/tools/traditions" | "/phos/tools/trace" | "/phos/tools/anatomy" | "/phos/tools/diagrams"> = {
   "Symbol Atlas": "/phos/tools/symbols",
   "Compare Traditions": "/phos/tools/traditions",
   "Trace a Concept": "/phos/tools/trace",
   "Luminous Anatomy": "/phos/tools/anatomy",
+  "Diagram Library": "/phos/tools/diagrams",
 };
 
 /** Written entries grouped by the division they sit in, empty divisions dropped. */

@@ -28,4 +28,6 @@ Is the source what it claims to be? What force is actually being transmitted? Wh
 
 Light becomes good, truthful, and transformative through right relation — not through brightness alone.
 
+::figure Right Relation
+
 :: In the Architecture: [§ XLIV · The Law of Right Relation](/#relation).

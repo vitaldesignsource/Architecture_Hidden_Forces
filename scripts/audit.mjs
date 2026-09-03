@@ -454,6 +454,26 @@ if (lex.length) {
   );
 }
 
+// ---------------------------------------------------------------- figures
+// `::figure <Name>` sets a drawn figure into an entry. The name must be one the
+// Diagram Library registers, or the entry renders a silent gap where a figure
+// was meant. The registry is TypeScript, so read the names out of it directly.
+{
+  const reg = readFileSync(join(root, "src/lib/phos/figures.ts"), "utf8");
+  const names = new Set([...reg.matchAll(/^\s*\{ k: "([^"]+)"/gm)].map((m) => m[1].toLowerCase()));
+  let used = 0;
+  const bad = [];
+  for (const f of collectMd(join(root, "src/content/phos"))) {
+    const rel = relative(join(root, "src/content/phos"), f);
+    for (const m of readFileSync(f, "utf8").matchAll(/^::figure\s+(.+)$/gm)) {
+      used++;
+      if (!names.has(m[1].trim().toLowerCase())) bad.push(`${rel}: "${m[1].trim()}"`);
+    }
+  }
+  if (bad.length) fail("figures", `not in the Diagram Library: ${bad.join(", ")}`);
+  note("figures", `${names.size} registered, ${used} set into entries`);
+}
+
 // ------------------------------------------------------------- portal refs
 // A route or component that names an entry id in a string literal ("xix-3")
 // is pointing a reader into the Portal, and a mistyped id lands them on the

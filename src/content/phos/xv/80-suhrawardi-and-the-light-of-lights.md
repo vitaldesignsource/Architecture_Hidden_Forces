@@ -36,4 +36,6 @@ Within the Architecture of Hidden Forces, the Light of Lights closely resembles 
 
 Suhrawardī also confirms that light can be treated ontologically. It need not remain "merely a metaphor". His light denotes self-manifestation, consciousness, power, presence, and causal superiority. Sensible light is one visible expression of a more universal luminous principle.
 
+::figure Ladder of Lights
+
 :: In the Architecture: [§ I · The Five Terms](/#terms) and [§ LI · The Astral and Psychic Layers](/#astral).

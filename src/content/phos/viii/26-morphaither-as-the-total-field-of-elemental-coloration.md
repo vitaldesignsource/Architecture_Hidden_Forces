@@ -23,4 +23,6 @@ Morphaithēr is therefore luminous because it makes the differentiation of force
 
 > Morphaithēr is the living atmosphere in which light acquires quality, force acquires direction, and possible form approaches embodiment.
 
+::figure Morphaitheric Field
+
 :: In the Architecture: [§ V · The Morphaithēr](/#morphaither) and [§ XLI · Morphaithēr](/#atmosphere).

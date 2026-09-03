@@ -28,4 +28,6 @@ Even resistance may illuminate. A boundary reveals the direction and pressure of
 
 This law has ethical consequences. No being should be treated as passive matter for another's spiritual project. Even guidance must remain attentive to what the guided being reveals. Illumination that refuses reciprocity becomes domination. Authentic radiance awakens the other's own centre rather than demanding permanent dependence upon an external source.
 
+::figure Carriers
+
 :: In the Architecture: [§ XVII · The Reciprocal Field](/#reciprocal) and [§ XXV · Image and Imagination](/#image).

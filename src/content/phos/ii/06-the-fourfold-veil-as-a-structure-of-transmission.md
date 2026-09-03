@@ -25,4 +25,6 @@ The Veil is therefore both a transmitter and a regulator. It does not merely all
 
 The term *veil* is appropriate because mediation both reveals and conceals. It allows the source to become present while preventing finite forms from being overwhelmed by the totality of what proceeds from it.
 
+::figure Fourfold Veil
+
 :: In the Architecture: [§ XLIII · The Fourfold Veil](/#transduction).

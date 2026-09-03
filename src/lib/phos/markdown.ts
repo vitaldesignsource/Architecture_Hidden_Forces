@@ -36,7 +36,8 @@ export type Block =
   | { t: "quote"; lines: Inline[][]; cite: Inline[] | null }
   | { t: "ul"; items: Inline[][] }
   | { t: "ol"; items: Inline[][]; start: number }
-  | { t: "rule" };
+  | { t: "rule" }
+  | { t: "figure"; name: string };
 
 const INLINE =
   /(`[^`\n]+`)|(\[\[([a-z]+-\d+)(?:\|([^\]]+))?\]\])|(\[([^\]\n]+)\]\(([^)\s]+)\))|(\*\*([^*\n](?:[^\n]*?[^*\n])?)\*\*)|(\*([^*\s](?:[^*\n]*?[^*\s])?)\*)|(_([^_\s](?:[^_\n]*?[^_\s])?)_)/;
@@ -75,6 +76,11 @@ export function parseMarkdown(body: string): Block[] {
     if (!trimmed) { i++; continue; }
 
     if (/^---+$/.test(trimmed)) { blocks.push({ t: "rule" }); i++; continue; }
+
+    // `::figure <Name>` — a drawn figure from the Diagram Library, set into the
+    // entry. Distinct from the `:: ` aside by having no space after the colons.
+    const fig = trimmed.match(/^::figure\s+(.+)$/);
+    if (fig) { blocks.push({ t: "figure", name: fig[1].trim() }); i++; continue; }
 
     if (trimmed.startsWith("### ")) { blocks.push({ t: "h3", c: parseInline(trimmed.slice(4)) }); i++; continue; }
     if (trimmed.startsWith("## ")) { blocks.push({ t: "h2", c: parseInline(trimmed.slice(3)) }); i++; continue; }
@@ -115,7 +121,7 @@ export function parseMarkdown(body: string): Block[] {
     i++;
     while (i < lines.length) {
       const t = lines[i].trim();
-      if (!t || /^(---+|##? |### |>|[-*]\s+|\d+\.\s+|:: )/.test(t)) break;
+      if (!t || /^(---+|##? |### |>|[-*]\s+|\d+\.\s+|:: |::figure )/.test(t)) break;
       buf.push(t);
       i++;
     }

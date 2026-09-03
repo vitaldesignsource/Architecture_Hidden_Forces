@@ -30,4 +30,6 @@ Their condensed formula:
 
 These four functions can recur within a single process. A living form is continually reawakened, redifferentiated, reordered, and reintegrated. The Veil is not crossed once; it is maintained through rhythmic participation.
 
+::figure Ether Circuit
+
 :: In the Architecture: [§ IV · The Fourfold Field](/#fourfold).

@@ -1,4 +1,6 @@
 import { Link } from "@tanstack/react-router";
+import { figure } from "@/lib/phos/figures";
+import { FigureFrame } from "@/components/phos/FigureFrame";
 import type { ReactNode } from "react";
 import { parseMarkdown, type Block, type Inline } from "@/lib/phos/markdown";
 import { entryById } from "@/lib/phos/entries";
@@ -96,6 +98,12 @@ function BlockView({ b, lead }: { b: Block; lead: boolean }) {
       );
     case "rule":
       return <div className="my-12 h-px w-24 bg-gold/40" />;
+    case "figure": {
+      const f = figure(b.name);
+      // A named figure that does not exist is a writing error, and the audit
+      // fails on it; in the page it simply draws nothing rather than throwing.
+      return f ? <FigureFrame f={f} /> : null;
+    }
   }
 }
 

@@ -16,3 +16,5 @@ The term is borrowed from optical refraction, and the borrowing is the analogy: 
 A principle entering an Ākāśic field may become contemplative and spacious. In Vāyu it becomes communicative and mobile. In Tejas it becomes transformative. In Apas it becomes relational and affective. In Pṛthivī it becomes structured and embodied.
 
 The originating light may remain related to one source while its manifested path changes through the medium.
+
+::figure Sub-Tattva Matrix

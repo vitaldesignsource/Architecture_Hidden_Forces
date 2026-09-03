@@ -23,4 +23,6 @@ The Black Pearl of Becoming receives and condenses the wisdom refined through th
 
 Ignisophia is therefore solar without being merely radiant. It is a fire given intelligence, a light given direction, and a chariot capable of carrying transformation into embodiment.
 
+::figure The Chariot
+
 :: In the Architecture: [§ XVI · Ignisophia](/#ignisophia).

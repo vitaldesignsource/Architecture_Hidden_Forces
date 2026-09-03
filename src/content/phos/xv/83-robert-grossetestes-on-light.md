@@ -32,4 +32,6 @@ Within the Architecture of Hidden Forces, Grosseteste offers an extraordinary pr
 
 Morphaithēr can similarly be understood as more than a passive medium. It is a living atmosphere in which radiance acquires spatial, qualitative, and morphogenic determination. Light reveals form because, at a deeper level, formative light participates in producing the conditions under which form exists.
 
+::figure Lux Sphere
+
 :: In the Architecture: [§ V · The Morphaithēr](/#morphaither) and [§ XII · The Laws of Formation](/#laws).

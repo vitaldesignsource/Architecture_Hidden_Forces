@@ -32,4 +32,6 @@ CHON supplies the material letters. Tone supplies relational grammar. Life compo
 
 Light makes this composition perceptible, but it is the full architecture of force, mediation, chemical relation, inheritance, and living organisation that produces the body.
 
+::figure CHON
+
 :: In the Architecture: [§ XLII · CHON](/#chon).

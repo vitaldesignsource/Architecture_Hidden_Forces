@@ -27,4 +27,6 @@ Multiple diagrams may be needed for the same teaching. A ladder reveals gradatio
 
 No single geometry should be mistaken for the reality itself. Where one figure would harden into a claim, two figures of different shape restore the teaching to what it was: a set of relations that no single projection exhausts.
 
+::figure Fourfold Veil
+
 :: In the Architecture: [§ XLIII · The Fourfold Veil](/#transduction) and [§ XLII · CHON](/#chon).
