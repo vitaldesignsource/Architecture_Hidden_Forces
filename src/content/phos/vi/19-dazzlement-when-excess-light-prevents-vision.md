@@ -1,6 +1,7 @@
 ---
 title: "Dazzlement: When Excess Light Prevents Vision"
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Intensity, Brilliance]
 related: [v-29, ii-6, iii-11, v-4, xi-26, iv-32]

@@ -1,6 +1,7 @@
 ---
 title: Attunement
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Purification, Orientation]
 related: [iii-27, xx-5, xx-6, xiv-25, xx-12]

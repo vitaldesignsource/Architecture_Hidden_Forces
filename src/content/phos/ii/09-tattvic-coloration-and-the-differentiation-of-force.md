@@ -1,6 +1,7 @@
 ---
 title: Tattvic Coloration and the Differentiation of Force
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Color]
 operation: [Differentiation]

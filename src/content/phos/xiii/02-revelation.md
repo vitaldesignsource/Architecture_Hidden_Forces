@@ -1,6 +1,7 @@
 ---
 title: Revelation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Noetic, Psychic]
 operation: [Revelation]

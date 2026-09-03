@@ -15,6 +15,8 @@ backdrop: concentrator
 
 Quantum theory revealed that light exchanges energy in discrete quantities. Max Planck introduced energy quanta in his treatment of thermal radiation, and Albert Einstein used the quantum concept to explain the photoelectric effect. The energy of a photon is
 
+Einstein's proposal that light is absorbed in quanta, and the photoelectric effect that demanded it, are described in [Britannica's article on the photoelectric effect](https://www.britannica.com/science/photoelectric-effect).
+
 > E = hf
 
 where E is energy, h is Planck's constant, and f is frequency. Its momentum can be expressed as

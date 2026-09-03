@@ -1,7 +1,7 @@
 ---
 title: Crystal and Transparent Form
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Formative, Elemental, Physical]

@@ -1,6 +1,7 @@
 ---
 title: Hallucination, Imagination, and Spiritual Experience
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 plane: [Psychic, Imaginal, Physical]
 related: [x-13, x-14, xi-24, xi-21, portal-9]

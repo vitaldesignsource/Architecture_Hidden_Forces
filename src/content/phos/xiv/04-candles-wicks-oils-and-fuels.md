@@ -1,6 +1,7 @@
 ---
 title: Candles, Wicks, Oils, and Fuels
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Theurgic, Psychic]
 symbol: [Torch]

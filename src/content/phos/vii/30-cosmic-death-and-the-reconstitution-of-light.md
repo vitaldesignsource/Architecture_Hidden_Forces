@@ -11,6 +11,8 @@ backdrop: crater
 
 Cosmic death is not absolute disappearance. Stars exhaust fuels, transform, shed material, collapse, or leave remnants according to their mass and developmental history. Their matter may enter new cosmic relationships from which later stars, planets, and living forms emerge.
 
+The physical fates of stars, from white dwarf to supernova remnant, are described in NASA's [background on the life cycles of stars](https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/background-lifecycles.html).
+
 Myth expresses this through the dying and reborn Sun, the dismembered god, the extinguished fire, the hidden seed, and the luminary travelling beneath the world.
 
 Within The Architecture of Hidden Forces, cosmic death is the liberation of force from an exhausted form. The former vessel can no longer sustain its organisation, but its material and formative consequences return to the larger field.

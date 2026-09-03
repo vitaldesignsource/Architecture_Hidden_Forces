@@ -1,6 +1,7 @@
 ---
 title: Recollection and Return
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic, Platonic]
 operation: [Return, Recognition]
 related: [i-12, xiii-31, v-23, portal-7, x-22, ii-30]

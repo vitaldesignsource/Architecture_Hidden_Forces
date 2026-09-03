@@ -1,6 +1,7 @@
 ---
 title: Discernment by Coherence, Stability, and Consequence
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Noetic]
 operation: [Recognition]

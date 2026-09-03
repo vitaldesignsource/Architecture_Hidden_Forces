@@ -1,6 +1,7 @@
 ---
 title: Desire as the Motion of Psychic Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Astral, Psychic]
 operation: [Animation]

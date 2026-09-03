@@ -1,6 +1,7 @@
 ---
 title: The Same Light Received at Different Levels
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Recognition]
 related: [v-26, v-28, iii-29, xix-2, ii-21]

@@ -1,6 +1,7 @@
 ---
 title: Residual Light in the Ossuary of Living Forms
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Dissolution, Imprinting]
 related: [ii-27, ix-23, ix-24, v-19, xiii-29]

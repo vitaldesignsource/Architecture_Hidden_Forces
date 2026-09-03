@@ -1,6 +1,7 @@
 ---
 title: Veil
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [ii-6, ii-7, iii-8, i-5, xix-7]
 summary: A selective medium that protects the receiving form by reducing, distributing, translating, or sequencing what passes through it.

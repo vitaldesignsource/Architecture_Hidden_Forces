@@ -1,6 +1,7 @@
 ---
 title: Integration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Etheric, Physical, Divine]
 operation: [Integration]

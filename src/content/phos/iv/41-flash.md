@@ -1,6 +1,7 @@
 ---
 title: Flash
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Flash]
 related: [iv-42, iv-10, xi-25, iii-31, xi-26]

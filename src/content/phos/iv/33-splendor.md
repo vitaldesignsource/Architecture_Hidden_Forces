@@ -1,6 +1,7 @@
 ---
 title: Splendor
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Splendor]
 related: [i-17, iv-32, iv-2, xii-16, vi-18]

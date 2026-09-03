@@ -1,6 +1,7 @@
 ---
 title: Evil, Darkness, and Why They Must Not Be Equated
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [ii-25, xix-16, vi-4, vi-5, v-21, i-20]
 summary: Evil is a radical deformation of right relation — and it can surround itself with brilliance, purity, and claims of divine authority.

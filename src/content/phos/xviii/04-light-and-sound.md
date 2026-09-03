@@ -1,7 +1,7 @@
 ---
 title: Light and Sound
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Formative, Etheric, Physical]

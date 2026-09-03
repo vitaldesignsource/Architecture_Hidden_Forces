@@ -1,6 +1,7 @@
 ---
 title: Stability
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Stability]
 related: [iv-10, xi-25, iv-6, ii-13, xx-11]

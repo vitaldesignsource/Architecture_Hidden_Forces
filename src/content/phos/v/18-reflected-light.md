@@ -1,6 +1,7 @@
 ---
 title: Reflected Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [iii-20, iii-14, vii-12, iii-19, v-21]
 summary: Derivative does not mean false — most education and tradition depend upon reflection; error begins when the reflector claims to be the source.

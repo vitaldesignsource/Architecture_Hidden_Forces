@@ -1,6 +1,7 @@
 ---
 title: Saints, Sages, and Transfigured Persons
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Etheric, Astral, Physical]
 operation: [Transfiguration, Consecration]

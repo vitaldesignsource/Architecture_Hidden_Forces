@@ -1,6 +1,7 @@
 ---
 title: Tejas and Fiery Radiance
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 quality: [Fiery Light, Radiance]
 related: [ii-8, ii-22, iv-56, xv-61, vi-17, viii-13]

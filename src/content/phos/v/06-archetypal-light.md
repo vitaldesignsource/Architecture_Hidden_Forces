@@ -1,6 +1,7 @@
 ---
 title: Archetypal Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Platonic]
 plane: [Archetypal]
 related: [v-5, v-7, x-17, iii-15, xii-19]

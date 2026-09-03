@@ -1,6 +1,7 @@
 ---
 title: Protective Circles and Luminous Boundaries
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Theurgic, Psychic, Etheric]
 operation: [Protection]

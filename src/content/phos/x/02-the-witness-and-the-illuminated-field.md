@@ -1,6 +1,7 @@
 ---
 title: The Witness and the Illuminated Field
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Noetic]
 operation: [Recognition]

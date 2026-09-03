@@ -1,6 +1,7 @@
 ---
 title: Light Ether
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Modern Esoteric]
 plane: [Etheric, Formative]
 operation: [Differentiation]

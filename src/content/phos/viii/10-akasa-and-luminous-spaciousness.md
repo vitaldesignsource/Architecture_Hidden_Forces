@@ -1,6 +1,7 @@
 ---
 title: Ākāśa and Luminous Spaciousness
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 plane: [Formative]
 related: [ii-8, viii-4, viii-11, vi-17, iii-6]

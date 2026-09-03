@@ -1,6 +1,7 @@
 ---
 title: Obscuration by Form
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [i-5, iii-15, ii-17, vi-11, i-13]
 summary: Manifestation always involves selection — the danger arises when a form mistakes itself for the totality of what it mediates.

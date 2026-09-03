@@ -1,7 +1,7 @@
 ---
 title: Cave, Crypt, and Luminous Emergence
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Platonic, Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Psychic, Imaginal, Physical]

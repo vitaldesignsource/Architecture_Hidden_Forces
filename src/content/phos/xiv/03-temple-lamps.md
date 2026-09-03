@@ -1,6 +1,7 @@
 ---
 title: Temple Lamps
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Israelite, Egyptian]
 plane: [Theurgic, Physical, Psychic]
 operation: [Illumination]

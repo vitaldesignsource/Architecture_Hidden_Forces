@@ -15,6 +15,8 @@ backdrop: masons
 
 Geometrical optics treats light as rays travelling along paths. A ray is an idealised line showing the direction in which optical energy propagates. This approximation works especially well when the relevant objects - mirrors, lenses, apertures, obstacles - are much larger than the light's wavelength.
 
+The ray model and its rules are set out in [Britannica's article on geometrical optics](https://www.britannica.com/science/geometrical-optics).
+
 Ray optics explains image formation through a few powerful rules. In a uniform medium, rays travel in straight lines. At reflective surfaces they change direction according to the law of reflection. At boundaries between media they refract according to the relationship between angle and refractive index. Lenses and curved mirrors redirect many rays so that they converge toward or diverge from characteristic points.
 
 ## What a ray is and is not

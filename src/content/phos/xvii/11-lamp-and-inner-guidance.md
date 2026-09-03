@@ -1,7 +1,7 @@
 ---
 title: Lamp and Inner Guidance
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Islamic, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Psychic, Etheric, Physical]

@@ -1,7 +1,7 @@
 ---
 title: Light and Immortality
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Astral, Psychic]

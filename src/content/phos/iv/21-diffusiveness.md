@@ -1,6 +1,7 @@
 ---
 title: Diffusiveness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Diffusiveness, Diffuse Light]
 related: [iii-22, iv-20, iii-7, iv-50, iii-6]

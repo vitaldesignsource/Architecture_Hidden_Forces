@@ -1,6 +1,7 @@
 ---
 title: Interpenetrating Luminous Orders
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [v-27, vii-10, v-25, i-19, iii-29]
 summary: One event operating across physical, biological, psychic, symbolic, and noetic registers at once — interpenetration allows unity without category confusion.

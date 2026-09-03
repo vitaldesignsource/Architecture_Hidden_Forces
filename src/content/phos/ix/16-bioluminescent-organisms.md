@@ -13,6 +13,8 @@ backdrop: seainlet
 
 Bioluminescence appears among bacteria, fungi, protists, insects, worms, crustaceans, molluscs, fish, and numerous other organisms, especially within marine environments. Different lineages employ different luciferins, luciferases, photoproteins, symbiotic bacteria, and luminous organs. Biological light-production appears to have evolved repeatedly rather than descending from one universal luminous organ.
 
+The prevalence of bioluminescence among deep-sea organisms and its uses are described by [NOAA Ocean Exploration](https://oceanexplorer.noaa.gov/lesson/bioluminescence-adaptation-for-survival/).
+
 Its functions are diverse. Fireflies employ patterned flashes in courtship and recognition. Some marine organisms use counterillumination to reduce their silhouettes against light descending from the surface. Others attract prey, confuse predators, summon assistance, illuminate surroundings, warn attackers, or coordinate collective behaviour.
 
 ## Constellations of the deep

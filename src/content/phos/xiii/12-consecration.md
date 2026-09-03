@@ -1,6 +1,7 @@
 ---
 title: Consecration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian, Theurgic]
 plane: [Theurgic, Divine, Physical]
 operation: [Consecration]

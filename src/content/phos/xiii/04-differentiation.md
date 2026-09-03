@@ -1,6 +1,7 @@
 ---
 title: Differentiation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Archetypal, Formative]
 operation: [Differentiation]

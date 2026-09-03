@@ -1,6 +1,7 @@
 ---
 title: Incense, Smoke, and Visible Mediation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Elemental, Physical, Psychic]
 operation: [Communication]

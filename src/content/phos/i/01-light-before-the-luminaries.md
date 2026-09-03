@@ -1,6 +1,7 @@
 ---
 title: Light Before the Luminaries
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 operation: [Manifestation]

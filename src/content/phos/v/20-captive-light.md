@@ -1,6 +1,7 @@
 ---
 title: Captive Light
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Manichaean, Gnostic]
 operation: [Binding, Liberation]
 related: [xv-40, xiii-26, xiii-27, xix-11, vi-9]

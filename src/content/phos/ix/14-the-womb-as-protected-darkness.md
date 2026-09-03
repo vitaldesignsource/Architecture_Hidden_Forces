@@ -1,6 +1,6 @@
 ---
 title: The Womb as Protected Darkness
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 plane: [Physical, Etheric]

@@ -14,6 +14,8 @@ position: center 55%
 
 The skin is the body's most extensive visible boundary and one of its principal interfaces with solar radiation. Ultraviolet radiation can initiate vitamin D synthesis, influence pigmentation, damage DNA, contribute to photoageing, and increase cancer risk. Visible and infrared wavelengths interact with tissue according to wavelength, intensity, duration, depth of penetration, and biological condition.
 
+The dependence of cutaneous vitamin D synthesis on the narrow ultraviolet-B band, and the damage the same band causes, are reviewed in [Physical Determinants of Vitamin D Photosynthesis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7839826/).
+
 The skin therefore receives light as a differentiated spectrum rather than a single undivided power. It protects, admits, absorbs, reflects, senses, regulates temperature, participates in immunity, and continually repairs itself. It is neither a sealed wall nor an unrestricted opening.
 
 ## The subtler boundary

@@ -1,6 +1,7 @@
 ---
 title: Pṛthivī and the Fixation of Light in Form
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 quality: [Density, Stability]
 related: [ii-8, ii-13, viii-22, vi-12, vi-17, iii-16]

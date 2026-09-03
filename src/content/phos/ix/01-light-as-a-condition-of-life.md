@@ -13,6 +13,8 @@ backdrop: leafbowl
 
 Light is simultaneously energy, information, orientation, and temporal instruction. Photosynthetic organisms receive solar radiation directly and transform its energy into chemical potential. Other organisms live upon the forms produced by that conversion. Even nocturnal animals and organisms dwelling beneath the soil may participate in an economy whose energy was first gathered in the illuminated world.
 
+The transformation of light into chemical energy on which the visible biosphere rests is described in [Britannica's article on photosynthesis](https://www.britannica.com/science/photosynthesis).
+
 Not every organism depends directly upon sunlight. Chemosynthetic communities demonstrate that life can draw energy from chemical gradients in environments beyond the Sun's immediate reach. Nevertheless, the visible biosphere remains overwhelmingly solar in its energetic foundation, atmospheric history, climatic structure, and temporal organisation.
 
 ## The deeper condition

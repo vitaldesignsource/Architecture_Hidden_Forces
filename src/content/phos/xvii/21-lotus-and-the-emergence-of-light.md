@@ -1,7 +1,7 @@
 ---
 title: Lotus and the Emergence of Light
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Vedic, Buddhist, Architecture of Hidden Forces]
 period: [Ancient]
 plane: [Formative, Vital, Psychic]

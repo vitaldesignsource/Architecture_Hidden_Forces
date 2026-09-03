@@ -1,6 +1,7 @@
 ---
 title: Primordial Darkness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 related: [i-2, ii-2, v-3, vi-5, vi-26]

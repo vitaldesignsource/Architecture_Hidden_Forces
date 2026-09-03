@@ -1,7 +1,7 @@
 ---
 title: Temple Architecture as a Machine of Light
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Roman, Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Theurgic, Formative, Physical]

@@ -1,7 +1,7 @@
 ---
 title: Winged Solar Disc
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Mesopotamian, Iranian, Architecture of Hidden Forces]
 period: [Ancient]
 plane: [Divine, Archetypal, Astral]

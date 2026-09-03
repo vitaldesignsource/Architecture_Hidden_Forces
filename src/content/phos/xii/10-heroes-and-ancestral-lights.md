@@ -1,6 +1,7 @@
 ---
 title: Heroes and Ancestral Lights
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek]
 plane: [Daimonic, Psychic, Astral]
 related: [xii-15, ix-24, ii-28, vii-15, xii-9]

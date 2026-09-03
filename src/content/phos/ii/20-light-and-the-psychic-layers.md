@@ -1,6 +1,7 @@
 ---
 title: Light and the Psychic Layers
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [x-7, x-19, ii-19, vi-16, xx-15, i-20]

@@ -1,6 +1,7 @@
 ---
 title: Luminous Imprinting and Memory
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Etheric, Psychic, Formative]
 operation: [Imprinting]

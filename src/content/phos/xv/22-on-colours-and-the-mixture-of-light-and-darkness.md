@@ -1,7 +1,7 @@
 ---
 title: On Colours and the Mixture of Light and Darkness
 labels: [Primary Text, Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Contested]
 tradition: [Aristotelian, Greek, Architecture of Hidden Forces]
 period: [Ancient]
 plane: [Elemental, Vital, Physical]

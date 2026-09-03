@@ -1,6 +1,6 @@
 ---
 title: Why Fire and Light Are Related but Not Identical
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [viii-1, iv-52, iv-35, viii-3, i-8]

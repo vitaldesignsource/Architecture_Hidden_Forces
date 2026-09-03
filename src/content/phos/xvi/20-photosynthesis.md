@@ -15,6 +15,8 @@ backdrop: leaflight
 
 Photosynthesis converts light energy into organised chemical potential. In plants, algae, and cyanobacteria, pigments absorb photons and transfer excitation into reaction centres. Charge separation initiates electron-transfer chains that help produce ATP and reducing power such as NADPH.
 
+The light reactions, in which absorbed photons drive the electron transport that makes ATP and NADPH, are described in [Britannica's account of photosynthesis](https://www.britannica.com/science/photosynthesis/The-light-reactions).
+
 In oxygenic photosynthesis, water supplies electrons and oxygen is released. The chemical energy produced by the light-dependent reactions is then used to incorporate carbon dioxide into organic molecules. Light becomes growth not by turning directly into matter but by driving an organised sequence of energy transfers and chemical transformations.
 
 The organism receives only certain wavelengths efficiently. Antenna pigments expand the range of absorption and funnel excitation toward reaction centres. Excess energy must be dissipated safely; otherwise light can generate reactive oxygen species and damage the photosynthetic apparatus. Life therefore requires not only reception but regulation.

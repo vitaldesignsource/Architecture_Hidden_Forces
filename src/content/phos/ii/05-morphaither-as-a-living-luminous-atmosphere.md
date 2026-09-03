@@ -1,6 +1,7 @@
 ---
 title: Morphaithēr as a Living Luminous Atmosphere
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 related: [ii-4, ii-6, ii-8, ii-10, viii-26, iii-7]

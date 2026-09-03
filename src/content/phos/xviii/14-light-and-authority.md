@@ -1,7 +1,7 @@
 ---
 title: Light and Authority
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Theurgic, Psychic]

@@ -1,7 +1,7 @@
 ---
 title: Vesica and the Birth of Light
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Archetypal, Formative, Imaginal]

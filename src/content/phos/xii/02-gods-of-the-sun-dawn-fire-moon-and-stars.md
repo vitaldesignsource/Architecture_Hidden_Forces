@@ -1,6 +1,7 @@
 ---
 title: Gods of the Sun, Dawn, Fire, Moon, and Stars
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine, Comparative Parallel]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian, Greek, Vedic]
 plane: [Divine, Archetypal, Physical]
 symbol: [Solar Disc, Star, Flame]

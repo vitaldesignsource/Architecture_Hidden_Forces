@@ -1,6 +1,7 @@
 ---
 title: Elemental Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Elemental]
 related: [viii-20, viii-21, ii-8, ii-9, viii-10]

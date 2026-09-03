@@ -1,6 +1,7 @@
 ---
 title: Daimons as Differentiated Currents
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek, Neoplatonic]
 plane: [Daimonic, Psychic, Elemental]
 operation: [Differentiation]

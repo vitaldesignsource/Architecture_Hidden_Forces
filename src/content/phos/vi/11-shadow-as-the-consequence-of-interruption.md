@@ -1,6 +1,6 @@
 ---
 title: Shadow as the Consequence of Interruption
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vi-27, i-5, xv-70, vi-14, iv-51]

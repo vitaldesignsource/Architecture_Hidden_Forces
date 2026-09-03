@@ -1,7 +1,7 @@
 ---
 title: Torch and Transmission
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Psychic, Theurgic, Physical]

@@ -1,6 +1,7 @@
 ---
 title: Vertical Hierarchies of Light
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic, Christian]
 related: [v-2, v-25, xv-55, v-30, ii-17]
 summary: Hierarchy meaning sacred or causal order, not domination — a distorted hierarchy turns metaphysical order into social superiority.

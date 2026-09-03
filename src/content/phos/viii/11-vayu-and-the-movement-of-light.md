@@ -1,6 +1,7 @@
 ---
 title: Vāyu and the Movement of Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 related: [ii-8, viii-10, viii-12, vi-17, iv-11]
 summary: Mobility given to luminosity — Tone must give that mobility rhythm, and Life must integrate its movements into a continuing whole.

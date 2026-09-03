@@ -1,6 +1,7 @@
 ---
 title: Exposure
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Physical, Divine]
 operation: [Exposure]

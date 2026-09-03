@@ -1,6 +1,7 @@
 ---
 title: Apas and Liquid Reflection
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 quality: [Liquid Light]
 related: [ii-8, iv-54, viii-24, viii-12, vi-17]

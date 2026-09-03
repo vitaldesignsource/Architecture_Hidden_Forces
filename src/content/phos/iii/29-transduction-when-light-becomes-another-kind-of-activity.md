@@ -1,6 +1,6 @@
 ---
 title: "Transduction: When Light Becomes Another Kind of Activity"
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established, Probable]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [ii-3, ii-21, ii-22, ix-2, ix-6, iii-24]

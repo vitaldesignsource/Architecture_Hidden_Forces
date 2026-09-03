@@ -1,6 +1,7 @@
 ---
 title: Light as the Place Where Force Becomes Meaning
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [x-21, i-10, ii-16, ii-18, ii-19, ii-20]

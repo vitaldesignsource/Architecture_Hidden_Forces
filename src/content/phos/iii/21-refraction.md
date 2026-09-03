@@ -1,6 +1,6 @@
 ---
 title: Refraction
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-5, xix-6, viii-16, iii-19, i-19]

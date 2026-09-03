@@ -1,6 +1,7 @@
 ---
 title: Beam
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Coherence, Directionality, Penetration]
 related: [iii-4, iii-22, xvi-13, xiv-22, x-8]

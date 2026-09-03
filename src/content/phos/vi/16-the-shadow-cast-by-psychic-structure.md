@@ -1,6 +1,7 @@
 ---
 title: The Shadow Cast by Psychic Structure
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [vi-28, ii-16, ii-20, xi-24, x-19]

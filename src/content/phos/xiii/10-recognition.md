@@ -1,6 +1,7 @@
 ---
 title: Recognition
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Platonic]
 plane: [Noetic, Psychic]
 operation: [Recognition]

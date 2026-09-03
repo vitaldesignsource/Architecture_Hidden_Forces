@@ -1,6 +1,7 @@
 ---
 title: Tattvas as Morphogenic Biases of Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Modern Esoteric]
 plane: [Formative]
 related: [viii-10, viii-11, viii-12, viii-13, viii-14, ii-9, xix-6]

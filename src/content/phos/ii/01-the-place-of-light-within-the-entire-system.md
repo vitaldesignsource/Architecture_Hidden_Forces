@@ -1,6 +1,7 @@
 ---
 title: The Place of Light within the Entire System
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 operation: [Differentiation, Manifestation]

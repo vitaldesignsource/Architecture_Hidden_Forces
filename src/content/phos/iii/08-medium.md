@@ -1,6 +1,7 @@
 ---
 title: Medium
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Aristotelian]
 related: [xv-21, xix-7, iii-9, ii-4, i-13, xix-1]
 summary: No medium is perfectly neutral; ether is the formative middle between force and form — not completed form but formability.

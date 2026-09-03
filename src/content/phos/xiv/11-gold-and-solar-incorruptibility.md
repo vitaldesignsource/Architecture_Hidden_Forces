@@ -1,6 +1,7 @@
 ---
 title: Gold and Solar Incorruptibility
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical, Egyptian]
 plane: [Physical, Archetypal, Theurgic]
 quality: [Golden Light]

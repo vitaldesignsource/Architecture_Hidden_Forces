@@ -1,6 +1,7 @@
 ---
 title: Return to the Source
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 plane: [Divine, Noetic, Psychic]
 operation: [Return]

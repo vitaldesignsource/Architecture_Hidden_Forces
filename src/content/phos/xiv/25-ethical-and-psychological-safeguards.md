@@ -1,6 +1,7 @@
 ---
 title: Ethical and Psychological Safeguards
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Physical, Theurgic]
 operation: [Protection, Judgment]

@@ -1,7 +1,7 @@
 ---
 title: Index of Colors
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Contemporary]
 plane: [Astral, Imaginal, Etheric, Physical]

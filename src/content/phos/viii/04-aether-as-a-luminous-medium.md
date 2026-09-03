@@ -1,6 +1,7 @@
 ---
 title: Aether as a Luminous Medium
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek]
 plane: [Etheric, Formative]
 related: [iii-8, viii-9, viii-10, xvi-7, ii-6]

@@ -1,7 +1,7 @@
 ---
 title: Light and Initiation
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Theurgic, Modern Esoteric, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Theurgic, Psychic, Etheric]

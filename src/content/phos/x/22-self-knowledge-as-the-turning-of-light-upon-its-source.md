@@ -1,6 +1,7 @@
 ---
 title: Self-Knowledge as the Turning of Light upon Its Source
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Noetic, Psychic]
 operation: [Return, Recognition, Transfiguration]

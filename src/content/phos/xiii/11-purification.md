@@ -1,6 +1,7 @@
 ---
 title: Purification
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 plane: [Psychic, Etheric, Divine, Elemental]
 operation: [Purification]

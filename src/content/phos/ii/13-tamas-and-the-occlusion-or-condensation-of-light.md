@@ -1,6 +1,7 @@
 ---
 title: Tamas and the Occlusion or Condensation of Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Density, Stability]
 related: [ii-10, vi-12, vi-14, vi-15, vi-5, xiii-29]

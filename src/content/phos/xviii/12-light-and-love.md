@@ -1,7 +1,7 @@
 ---
 title: Light and Love
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Neoplatonic, Christian, Islamic, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Psychic, Noetic]

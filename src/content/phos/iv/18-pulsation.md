@@ -1,6 +1,7 @@
 ---
 title: Pulsation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Pulsation]
 related: [iv-17, ix-10, ix-19, xiv-19, ii-24]

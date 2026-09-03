@@ -1,6 +1,7 @@
 ---
 title: The One Light and Its Many Participations
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Differentiation]
 quality: [Unity, Divisibility]

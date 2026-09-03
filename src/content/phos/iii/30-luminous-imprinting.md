@@ -1,6 +1,7 @@
 ---
 title: Luminous Imprinting
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Imprinting]
 related: [ii-27, ii-28, xix-12, xiii-28, xx-1, iii-31]

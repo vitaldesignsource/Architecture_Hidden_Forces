@@ -1,7 +1,7 @@
 ---
 title: Light and Transformation
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Alchemical, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Formative, Psychic, Elemental]

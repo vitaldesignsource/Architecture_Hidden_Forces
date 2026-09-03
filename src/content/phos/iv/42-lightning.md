@@ -12,6 +12,8 @@ backdrop: fieldlines
 
 Lightning is a massive electrical discharge occurring within clouds, between clouds, or between cloud and ground. It produces intense light, heat, electromagnetic disturbance, rapid expansion of air, and thunder.
 
+The physical discharge, from charge separated within a cloud to a channel through the air, is described in [Britannica's article on lightning](https://www.britannica.com/science/lightning-meteorology).
+
 Lightning is directional but branching, momentary but immense. It connects separated regions through a path of sudden ionisation.
 
 Across symbolic traditions, lightning often represents divine power, revelation, judgment, inspiration, sovereignty, or the abrupt descent of force into manifestation.

@@ -1,6 +1,7 @@
 ---
 title: Limited and Immeasurable Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Buddhist]
 plane: [Psychic, Noetic]
 related: [xi-6, xi-15, xi-4, iv-2, v-3]

@@ -14,6 +14,8 @@ backdrop: furnace
 
 Metabolism is the coordinated network of chemical transformations through which organisms acquire, store, release, and redirect energy. In endothermic animals, metabolism contributes to the maintenance of body temperature. In plants and ectothermic organisms, environmental warmth strongly conditions the rates and possibilities of biochemical activity.
 
+Metabolism as the sum of the chemical transformations that supply an organism's energy is defined in [Britannica's article on metabolism](https://www.britannica.com/science/metabolism).
+
 Warmth and metabolism are related but not identical. Physical heat is partly a consequence of energetic transformation, while metabolism includes constructive and destructive reactions whose energy may become movement, transport, repair, secretion, synthesis, electrical activity, or stored chemical potential.
 
 ## The fire that does not consume its vessel

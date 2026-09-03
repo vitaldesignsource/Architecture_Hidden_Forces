@@ -1,6 +1,7 @@
 ---
 title: Light and the Etheric Body
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Vital]
 related: [ix-18, ix-19, ii-7, v-13, ix-20]

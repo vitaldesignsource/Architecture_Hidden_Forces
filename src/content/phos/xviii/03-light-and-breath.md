@@ -1,7 +1,7 @@
 ---
 title: Light and Breath
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Greek, Israelite, Vedic, Daoist, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Vital, Etheric, Psychic]

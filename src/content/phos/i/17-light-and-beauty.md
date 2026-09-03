@@ -1,6 +1,7 @@
 ---
 title: Light and Beauty
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Splendor, Radiance]
 related: [vi-18, xvii-3, xviii-13, i-15]

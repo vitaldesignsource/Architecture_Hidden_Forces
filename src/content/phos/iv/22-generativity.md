@@ -1,6 +1,7 @@
 ---
 title: Generativity
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Generativity]
 related: [ix-1, i-7, v-21, xi-26, iv-23]

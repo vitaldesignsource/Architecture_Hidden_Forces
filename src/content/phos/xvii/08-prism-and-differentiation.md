@@ -1,7 +1,7 @@
 ---
 title: Prism and Differentiation
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Scientific, Architecture of Hidden Forces]
 period: [Early Modern, Modern]
 plane: [Archetypal, Formative, Physical]

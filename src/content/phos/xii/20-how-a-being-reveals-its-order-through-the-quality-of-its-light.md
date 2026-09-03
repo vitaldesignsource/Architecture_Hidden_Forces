@@ -1,6 +1,7 @@
 ---
 title: How a Being Reveals Its Order through the Quality of Its Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Angelic, Daimonic, Psychic]
 operation: [Recognition]

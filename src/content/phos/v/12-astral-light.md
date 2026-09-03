@@ -1,6 +1,7 @@
 ---
 title: Astral Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Modern Esoteric]
 plane: [Astral]
 related: [ii-19, xv-91, x-18, vi-18, v-11]

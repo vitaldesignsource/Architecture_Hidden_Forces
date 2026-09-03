@@ -1,6 +1,7 @@
 ---
 title: Radiance Without Depletion
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Manifestation]
 related: [i-12, xix-3, xv-28, xiii-2, i-13]

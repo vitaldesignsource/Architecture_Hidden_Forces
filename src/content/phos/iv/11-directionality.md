@@ -1,6 +1,7 @@
 ---
 title: Directionality
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Directionality]
 related: [iii-4, iii-5, iv-21, x-9, iii-11]

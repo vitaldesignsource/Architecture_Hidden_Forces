@@ -1,7 +1,7 @@
 ---
 title: Rainbow and Reunified Multiplicity
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Modern]
 plane: [Archetypal, Physical, Psychic]

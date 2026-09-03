@@ -1,6 +1,7 @@
 ---
 title: The Psychic Flywheel as a Reservoir of Directed Radiance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Psychic]
 related: [ii-22, x-7, x-8, x-19, xiii-28, ii-27]

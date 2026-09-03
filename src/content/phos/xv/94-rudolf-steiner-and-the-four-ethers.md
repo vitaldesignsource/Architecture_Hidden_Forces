@@ -1,7 +1,7 @@
 ---
 title: Rudolf Steiner and the Four Ethers
 labels: [Primary Text, Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Contested]
 tradition: [Modern Esoteric, Scientific, Architecture of Hidden Forces]
 period: [Modern]
 plane: [Etheric, Vital, Formative, Physical]

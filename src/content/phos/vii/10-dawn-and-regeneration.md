@@ -1,6 +1,7 @@
 ---
 title: Dawn and Regeneration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Awakening]
 related: [vii-1, xx-2, vi-5, iii-10, v-29]

@@ -1,6 +1,6 @@
 ---
 title: Celestial Fire and Terrestrial Fire
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence, Comparative Parallel]
+labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vii-4, xiv-2, viii-1, xv-14, xv-27]

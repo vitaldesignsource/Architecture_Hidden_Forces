@@ -1,6 +1,7 @@
 ---
 title: Hypnagogic Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Imaginal, Astral, Physical]
 related: [x-15, x-14, ix-4, v-10, x-13]

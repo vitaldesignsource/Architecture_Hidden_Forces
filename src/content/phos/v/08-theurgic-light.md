@@ -1,6 +1,7 @@
 ---
 title: Theurgic Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Theurgic, Neoplatonic]
 plane: [Theurgic]
 operation: [Consecration, Illumination]

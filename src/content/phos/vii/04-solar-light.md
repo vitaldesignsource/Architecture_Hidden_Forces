@@ -11,6 +11,8 @@ backdrop: summit
 
 Solar light is the dominant external source of energy and illumination for terrestrial life. It establishes day, supports photosynthesis, influences climate and weather, regulates biological rhythms, and makes ordinary visual perception possible across the daytime world.
 
+The Sun's physical constitution, a main-sequence star fusing hydrogen into helium at fifteen million degrees in its core, is summarised in [NASA's Sun facts](https://science.nasa.gov/sun/facts/).
+
 The Sun is therefore more than one light among others in human experience. It is the organising luminary of the terrestrial field. Its apparent movement provides orientation, temporal measure, seasonal pattern, and the fundamental contrast between day and night.
 
 Within the metaphysical architecture, solar light represents centralised radiance: a source remaining one while extending itself toward innumerable receivers. It becomes the natural image of sovereignty, intelligibility, vitality, generosity, and the power to organise a world around a luminous centre.

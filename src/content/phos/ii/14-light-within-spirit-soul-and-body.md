@@ -1,6 +1,7 @@
 ---
 title: Light within Spirit, Soul, and Body
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Psychic, Physical]
 related: [ii-15, ii-16, ii-17, i-14, x-20]

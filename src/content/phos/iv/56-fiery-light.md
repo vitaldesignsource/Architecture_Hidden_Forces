@@ -1,6 +1,7 @@
 ---
 title: Fiery Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Fiery Light]
 symbol: [Flame]

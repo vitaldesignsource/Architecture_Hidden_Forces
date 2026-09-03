@@ -1,6 +1,7 @@
 ---
 title: Capturing and Binding Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Etheric, Psychic, Theurgic]
 operation: [Binding]

@@ -1,6 +1,7 @@
 ---
 title: Why Brilliance Is Not Proof of Divinity
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Astral, Divine]
 related: [xi-25, xi-11, xi-16, portal-4, vi-18]

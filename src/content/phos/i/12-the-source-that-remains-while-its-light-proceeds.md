@@ -1,6 +1,7 @@
 ---
 title: The Source That Remains While Its Light Proceeds
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Established]
 tradition: [Neoplatonic, Architecture of Hidden Forces]
 plane: [Divine]
 operation: [Manifestation, Return]

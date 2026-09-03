@@ -1,6 +1,7 @@
 ---
 title: Radiance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Radiance]
 related: [iii-3, i-11, iii-1, iv-32, v-21]

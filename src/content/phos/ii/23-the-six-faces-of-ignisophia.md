@@ -1,6 +1,7 @@
 ---
 title: The Six Faces of Ignisophia
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Purification, Awakening]
 related: [ii-22, xx-10, xx-12, xiii-11, xiii-17, xviii-11]

@@ -1,6 +1,7 @@
 ---
 title: "Aphanic Light: That Which Illuminates Without Appearing"
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [i-18, x-2, i-6, i-9, i-12]
 summary: A technical term for the light known by hidden efficacy rather than hidden brightness — the condition of appearance that stays behind appearance.

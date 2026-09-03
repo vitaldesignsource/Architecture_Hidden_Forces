@@ -1,6 +1,7 @@
 ---
 title: Mantra, Logos, and Vibratory Illumination
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Vedic, Tantric, Greek]
 plane: [Theurgic, Psychic, Noetic]
 operation: [Communication]

@@ -1,6 +1,7 @@
 ---
 title: Atmosphere
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative, Psychic]
 related: [iii-6, ii-5, viii-25, vii-27, x-6]

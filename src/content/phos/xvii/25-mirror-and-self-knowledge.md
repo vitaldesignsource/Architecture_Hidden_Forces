@@ -1,7 +1,7 @@
 ---
 title: Mirror and Self-Knowledge
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Psychic, Imaginal, Noetic]

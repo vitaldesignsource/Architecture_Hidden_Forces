@@ -1,6 +1,7 @@
 ---
 title: "Field Before Form: Light as Form-Revealing Activity"
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Differentiation, Formation]
 related: [i-2, i-5, i-7, ii-4, portal-2]

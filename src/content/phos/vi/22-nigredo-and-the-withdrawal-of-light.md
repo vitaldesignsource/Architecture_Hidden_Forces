@@ -1,6 +1,7 @@
 ---
 title: Nigredo and the Withdrawal of Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 operation: [Dissolution, Solve]
 related: [vi-21, vi-24, ii-22, xiii-21, xiii-22]

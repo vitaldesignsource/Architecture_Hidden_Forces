@@ -1,6 +1,7 @@
 ---
 title: Illumination
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Psychic, Noetic, Divine]
 operation: [Illumination]

@@ -1,7 +1,7 @@
 ---
 title: Triangle and Descending Fire
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Alchemical, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Archetypal, Formative, Elemental]

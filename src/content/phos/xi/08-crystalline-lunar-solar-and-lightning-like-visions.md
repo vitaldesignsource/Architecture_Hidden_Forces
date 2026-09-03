@@ -1,6 +1,7 @@
 ---
 title: Crystalline, Lunar, Solar, and Lightning-Like Visions
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Astral, Noetic]
 quality: [Crystalline Light]

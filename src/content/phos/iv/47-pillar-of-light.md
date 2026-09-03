@@ -1,6 +1,6 @@
 ---
 title: Pillar of Light
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence, Comparative Parallel]
+labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
 confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Scientific, Israelite]
 quality: [Pillar of Light]

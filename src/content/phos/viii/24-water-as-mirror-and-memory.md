@@ -1,7 +1,7 @@
 ---
 title: Water as Mirror and Memory
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
-confidence: [Established]
+labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Mirror]
 quality: [Liquid Light]

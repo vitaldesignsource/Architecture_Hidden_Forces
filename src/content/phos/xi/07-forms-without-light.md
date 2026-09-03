@@ -1,6 +1,7 @@
 ---
 title: Forms Without Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral, Imaginal]
 related: [xi-6, x-15, x-14, ii-19, xi-16]

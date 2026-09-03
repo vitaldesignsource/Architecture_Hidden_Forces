@@ -1,6 +1,7 @@
 ---
 title: Field
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 related: [ii-2, ii-4, iii-7, ii-5]

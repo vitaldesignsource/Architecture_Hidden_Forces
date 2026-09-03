@@ -1,6 +1,7 @@
 ---
 title: The Four Ethers as the Fourfold Veil
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Formative]
 related: [ii-6, ii-7, iii-9, viii-5, viii-8, v-29]

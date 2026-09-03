@@ -1,6 +1,7 @@
 ---
 title: Luminous Beings
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Angelic, Daimonic, Astral]
 related: [v-9, xi-24, xi-11, xi-26, xiii-1]

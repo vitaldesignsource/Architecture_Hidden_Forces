@@ -1,6 +1,7 @@
 ---
 title: The Black Sun
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 symbol: [Black Sun]
 quality: [Black or Dark Luminosity]

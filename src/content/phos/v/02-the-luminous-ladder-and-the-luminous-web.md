@@ -1,6 +1,7 @@
 ---
 title: The Luminous Ladder and the Luminous Web
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [v-24, v-25, v-26, vii-13, iii-27]
 summary: The ladder explains derivation, the web explains ecology — and neither image is sufficient alone.

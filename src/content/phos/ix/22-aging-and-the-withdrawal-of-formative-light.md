@@ -13,6 +13,8 @@ backdrop: bristlecone
 
 Biological ageing involves accumulating molecular damage, altered cellular communication, changing gene regulation, metabolic shifts, declining regenerative capacity, immune transformation, and reduced resilience across interacting systems. These physical processes describe genuine aspects of ageing.
 
+The cellular and molecular hallmarks of ageing, from genomic instability to altered intercellular communication, are reviewed [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC10359950/).
+
 Within the etheric constitution, ageing also involves the gradual withdrawal, redistribution, or reduced embodiment of formative light. The etheric body may no longer impress its organising pattern upon physical matter with the same immediacy, flexibility, or regenerative power. Restoration becomes slower, disturbances leave deeper traces, and the vessel becomes less capable of fully receiving the formative current.
 
 ## Withdrawal is not diminishment

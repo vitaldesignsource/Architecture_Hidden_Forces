@@ -1,6 +1,7 @@
 ---
 title: Horizontal Varieties of Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [v-2, v-24, v-26, iii-27, xviii-22]
 summary: Differences among lights within the same order — not every difference should be interpreted vertically.

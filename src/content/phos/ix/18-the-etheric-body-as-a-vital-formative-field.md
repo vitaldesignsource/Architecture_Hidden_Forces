@@ -1,6 +1,7 @@
 ---
 title: The Etheric Body as a Vital-Formative Field
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Vital, Formative]
 operation: [Vivification, Formation, Integration]

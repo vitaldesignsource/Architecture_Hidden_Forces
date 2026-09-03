@@ -1,6 +1,7 @@
 ---
 title: Thought as Form within Mental Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Noetic, Astral]
 operation: [Formation]

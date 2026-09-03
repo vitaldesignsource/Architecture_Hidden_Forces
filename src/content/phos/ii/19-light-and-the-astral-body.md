@@ -1,6 +1,7 @@
 ---
 title: Light and the Astral Body
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral, Psychic]
 related: [x-18, v-12, ii-10, xi-26, vi-18, ii-20]

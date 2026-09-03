@@ -1,6 +1,7 @@
 ---
 title: Light and Truth
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Truthfulness, Clarity]
 related: [xix-17, vi-11, vi-27, vi-19, xviii-15, i-8]

@@ -1,6 +1,7 @@
 ---
 title: Warmth Ether
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Modern Esoteric]
 plane: [Etheric]
 quality: [Temperature]

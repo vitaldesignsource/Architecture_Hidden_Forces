@@ -11,6 +11,8 @@ backdrop: fieldlines
 
 Lightning is a rapid electrical discharge producing intense light, heat, electromagnetic effects, and thunder. It joins heaven and earth through a branching path of sudden transduction.
 
+The discharge itself is described in [Britannica's article on lightning](https://www.britannica.com/science/lightning-meteorology).
+
 Symbolically, lightning represents revelation arriving without gradual preparation. It illuminates the entire field for an instant while simultaneously threatening rupture.
 
 The lightning-flash resembles noetic insight in its immediacy, but suddenness does not guarantee completeness. What is revealed in one flash must later be examined under steadier light.

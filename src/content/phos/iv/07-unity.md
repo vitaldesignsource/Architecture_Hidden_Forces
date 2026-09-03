@@ -1,6 +1,7 @@
 ---
 title: Unity
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Unity]
 related: [i-13, iv-8, v-23, iv-6, xvii-9]

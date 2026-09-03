@@ -15,6 +15,8 @@ position: center 45%
 
 Circadian rhythms are endogenous biological cycles organised around approximately twenty-four hours. They persist even under constant conditions, but light and darkness continually entrain them to the larger planetary day. In humans, specialised retinal pathways communicate environmental illumination to the central circadian clock, which helps coordinate sleep, wakefulness, temperature, alertness, metabolism, hormonal timing, and peripheral cellular rhythms.
 
+The light-responsiveness of the suprachiasmatic nucleus, the master clock that light entrains through the eye, is reviewed in [a study in Frontiers in Neuroscience](https://pmc.ncbi.nlm.nih.gov/articles/PMC6793532/).
+
 Light is therefore not merely an image-bearing phenomenon. It is a temporal command. Its effects depend upon wavelength, intensity, duration, timing, prior exposure, and the condition of the receiver. Morning light and late-night light may act differently because they enter different phases of the organism's internal cycle. This is a direct biological demonstration of the Law of Right Relation:
 
 > No force can be judged solely by its nature; it must also be judged by the relations through which it becomes active.

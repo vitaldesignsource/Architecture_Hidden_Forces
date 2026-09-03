@@ -10,6 +10,8 @@ backdrop: terraces
 
 Seasonal light changes through Earth's axial tilt, orbit, latitude, weather, and atmospheric conditions. Day length, solar altitude, colour, intensity, and the angle at which light reaches the land vary across the year.
 
+The physical cause, the tilt of the Earth's axis changing the angle and duration of sunlight through the year, is explained in [Britannica's account of the seasons](https://www.britannica.com/science/Why-Do-We-Have-Seasons).
+
 These changes reorganise biological and cultural life. Growth, migration, dormancy, reproduction, agriculture, architecture, labour, ceremony, and mood all respond to seasonal luminosity.
 
 Seasonal light is therefore formative time. It does not merely reveal the landscape; it participates in determining what the landscape can become during a particular phase.

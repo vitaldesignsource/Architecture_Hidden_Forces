@@ -1,6 +1,6 @@
 ---
 title: Absorption and the Retention of Light
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 operation: [Integration, Imprinting]

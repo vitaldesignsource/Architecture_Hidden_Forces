@@ -1,7 +1,7 @@
 ---
 title: Atlas of Luminous Symbols
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Contemporary]
 plane: [Imaginal, Archetypal, Physical]

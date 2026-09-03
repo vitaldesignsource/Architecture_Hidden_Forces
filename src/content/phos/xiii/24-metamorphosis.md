@@ -1,6 +1,7 @@
 ---
 title: Metamorphōsis
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative, Etheric, Psychic]
 operation: [Metamorphōsis]

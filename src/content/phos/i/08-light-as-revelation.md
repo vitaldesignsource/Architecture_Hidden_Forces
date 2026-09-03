@@ -1,6 +1,7 @@
 ---
 title: Light as Revelation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Revelation, Exposure]
 related: [xiii-2, xi-26, xi-25, portal-9, i-16]

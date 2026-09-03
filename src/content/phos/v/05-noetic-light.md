@@ -1,6 +1,7 @@
 ---
 title: Noetic Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 plane: [Noetic]
 related: [i-9, x-4, iv-24, v-6, xv-19]

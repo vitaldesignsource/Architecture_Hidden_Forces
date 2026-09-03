@@ -1,6 +1,7 @@
 ---
 title: Transparency
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Aristotelian]
 quality: [Transparency]
 related: [ii-11, iii-8, xv-21, iv-3, iii-9]

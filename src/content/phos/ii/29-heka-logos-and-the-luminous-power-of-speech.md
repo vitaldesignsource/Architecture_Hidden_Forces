@@ -1,6 +1,7 @@
 ---
 title: Heka, Logos, and the Luminous Power of Speech
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Egyptian, Greek]
 operation: [Communication, Consecration]
 related: [xiv-20, xiv-19, xiv-18, xviii-5, xii-19, xv-10]

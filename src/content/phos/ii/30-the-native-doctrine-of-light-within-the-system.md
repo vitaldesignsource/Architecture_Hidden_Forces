@@ -1,6 +1,7 @@
 ---
 title: The Native Doctrine of Light within the System
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Return]
 related: [portal-7, xix-1, ii-1, i-3, ii-7, ii-25]

@@ -1,6 +1,7 @@
 ---
 title: The Underworld as a Chamber of Regeneration
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Egyptian, Greek]
 operation: [Dissolution, Return]
 related: [ii-27, ii-28, vi-24, vii-29, xv-6]

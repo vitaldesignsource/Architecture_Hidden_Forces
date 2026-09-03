@@ -1,7 +1,7 @@
 ---
 title: Eye and Vision
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Early Modern]
 plane: [Psychic, Noetic, Physical]

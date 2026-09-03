@@ -1,6 +1,7 @@
 ---
 title: Resonance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [iii-28, viii-18, viii-7, xi-25, xx-9, ii-7]
 summary: Resonance indicates correspondence between current and receiver — it is not proof of truth, since a false idea may resonate with an existing fear.

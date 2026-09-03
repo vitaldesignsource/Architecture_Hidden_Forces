@@ -1,6 +1,7 @@
 ---
 title: Visionary Fire
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Astral, Etheric, Psychic]
 operation: [Purification, Transfiguration]

@@ -1,6 +1,7 @@
 ---
 title: Reintegrating the Shadow into the Luminous Whole
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Integration, Transfiguration]
 related: [vi-16, xiii-19, ii-7, vi-27, xx-12]

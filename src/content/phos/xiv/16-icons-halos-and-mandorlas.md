@@ -1,6 +1,7 @@
 ---
 title: Icons, Halos, and Mandorlas
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Christian]
 plane: [Theurgic, Divine, Psychic, Physical]
 operation: [Transfiguration]

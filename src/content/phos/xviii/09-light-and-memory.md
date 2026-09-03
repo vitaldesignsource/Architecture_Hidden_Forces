@@ -1,7 +1,7 @@
 ---
 title: Light and Memory
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Modern Esoteric, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Psychic, Astral, Etheric]

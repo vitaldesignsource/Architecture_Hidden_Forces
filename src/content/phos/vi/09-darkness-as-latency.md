@@ -1,6 +1,7 @@
 ---
 title: Darkness as Latency
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [v-20, i-7, vi-5, vi-10, iii-30]
 summary: Unactivated possibility rather than suppression — the latent becomes luminous when possibility acquires timing, relation, and form.

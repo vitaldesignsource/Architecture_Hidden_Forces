@@ -1,6 +1,6 @@
 ---
 title: Biological Light
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 plane: [Vital, Physical]

@@ -1,6 +1,7 @@
 ---
 title: Darkness as Privation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-4, vi-26, vi-20, xix-19, vi-8]
 summary: The absence of something that ought to be present — privative darkness follows loss or obstruction, where primordial darkness precedes disclosure.

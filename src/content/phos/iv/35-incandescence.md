@@ -11,6 +11,8 @@ backdrop: furnace
 
 Incandescence is light emitted because matter has been heated to a sufficiently high temperature. Heated metal, molten material, flame-heated particles, and the filament of a traditional lamp become incandescent.
 
+[Britannica's article on incandescence](https://www.britannica.com/science/incandescence) gives the physical account: light emitted by matter heated until part of its thermal energy leaves as photons.
+
 Incandescence visibly joins heat and light. Matter becomes luminous through thermal excitation, making it an important image for transformation through fire.
 
 Within alchemical and metaphysical symbolism, incandescence represents form brought to such intensity that its interior activity becomes externally visible. What was dark and solid enters a radiant condition.

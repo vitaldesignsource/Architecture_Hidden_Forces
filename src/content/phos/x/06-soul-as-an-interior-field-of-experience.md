@@ -1,6 +1,7 @@
 ---
 title: Soul as an Interior Field of Experience
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Astral]
 related: [x-5, x-2, x-7, x-18, ii-21]

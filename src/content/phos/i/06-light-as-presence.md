@@ -1,6 +1,7 @@
 ---
 title: Light as Presence
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Manifestation]
 related: [i-7, i-8, i-3, x-8]

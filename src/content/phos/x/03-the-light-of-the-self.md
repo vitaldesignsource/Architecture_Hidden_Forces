@@ -1,6 +1,7 @@
 ---
 title: The Light of the Self
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Noetic, Psychic]
 related: [x-2, x-19, x-22, i-3, x-1]

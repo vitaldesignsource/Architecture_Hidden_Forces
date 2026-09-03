@@ -1,6 +1,7 @@
 ---
 title: Texture
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Texture, Shimmer, Crystalline Light]
 related: [iii-23, iii-26, iv-30, iv-55, xi-8]

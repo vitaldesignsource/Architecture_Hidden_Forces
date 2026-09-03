@@ -1,6 +1,7 @@
 ---
 title: Golden Light
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Alchemical]
 quality: [Golden Light]
 symbol: [Gold]

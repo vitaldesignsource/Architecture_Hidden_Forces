@@ -33,6 +33,8 @@ Claims may also carry a degree-of-confidence marker:
 - **Speculative** — proposed as a possibility rather than a demonstrated conclusion.
 - **Symbolic** — a claim made upon the symbolic or correspondential level, where perception discloses quality, meaning, participation, and formative pattern; it is not to be converted directly into a physical claim, nor dismissed as unreal because it is not one.
 
+Every entry beyond the Portal carries at least one of these degrees. Native doctrine of the Architecture is marked Established, as settled within the system's own field; reported experience and comparative parallels are marked Probable unless attested further; the remaining degrees appear only where a claim's standing actually differs. The Portal's own entries, being the key, carry none.
+
 These labels are not interruptions of the mystery. They are part of the portal's ethical structure. They allow the reader to know when the ground is historical, scientific, experiential, metaphysical, comparative, or newly imagined.
 
 ## The seven levels of a claim

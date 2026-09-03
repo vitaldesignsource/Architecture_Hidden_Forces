@@ -1,6 +1,7 @@
 ---
 title: Light as Actualization
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Formation, Animation]
 quality: [Color]

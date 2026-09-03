@@ -1,6 +1,7 @@
 ---
 title: Veiled Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Veiled Light]
 related: [iii-9, ii-6, i-20, iv-50, vi-8]

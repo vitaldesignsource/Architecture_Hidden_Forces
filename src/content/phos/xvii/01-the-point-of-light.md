@@ -1,7 +1,7 @@
 ---
 title: The Point of Light
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Kabbalistic, Neoplatonic, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Superessential, Archetypal]

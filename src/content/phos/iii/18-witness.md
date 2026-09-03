@@ -1,6 +1,7 @@
 ---
 title: Witness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Noetic, Psychic]
 related: [x-2, i-18, iii-17, xx-1, xi-25]

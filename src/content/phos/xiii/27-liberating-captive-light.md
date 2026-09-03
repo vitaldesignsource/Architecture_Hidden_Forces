@@ -1,6 +1,7 @@
 ---
 title: Liberating Captive Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 plane: [Psychic, Etheric, Physical]
 operation: [Liberation]

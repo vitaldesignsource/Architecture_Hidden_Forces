@@ -1,6 +1,7 @@
 ---
 title: Lens
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [ii-16, ii-17, iii-14, x-13, xx-13]

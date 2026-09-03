@@ -1,7 +1,7 @@
 ---
 title: Light and Aether
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Greek, Vedic, Modern Esoteric, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Formative, Etheric, Astral]

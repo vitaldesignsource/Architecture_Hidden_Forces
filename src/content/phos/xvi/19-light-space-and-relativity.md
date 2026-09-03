@@ -16,6 +16,8 @@ position: center 45%
 
 Einstein's special relativity begins from the invariance of the speed of light in vacuum for inertial observers. Space and time are not independent absolute containers; they form spacetime, and measurements of duration and distance depend upon relative motion.
 
+The constancy of the speed of light and its consequences for space and time are set out in [Britannica's article on special relativity](https://www.britannica.com/science/special-relativity).
+
 The constant c is not merely the speed of visible light. It is built into the causal structure of spacetime and applies to massless excitations and the propagation of information under ordinary relativistic conditions. Massive objects can approach but not reach c because the required energy increases without limit.
 
 Relativity alters intuitions about simultaneity. Two spatially separated events judged simultaneous by one observer may not be simultaneous for another moving relative to the first. Time dilation and length contraction are not optical illusions but measured consequences of spacetime geometry.

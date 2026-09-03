@@ -1,6 +1,7 @@
 ---
 title: The Solar King
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Archetypal, Psychic]
 symbol: [Crown, Solar Disc]

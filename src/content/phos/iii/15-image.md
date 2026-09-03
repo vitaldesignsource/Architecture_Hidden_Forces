@@ -1,6 +1,7 @@
 ---
 title: Image
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Imaginal, Astral]
 related: [x-13, x-14, ii-19, xi-25, i-8]

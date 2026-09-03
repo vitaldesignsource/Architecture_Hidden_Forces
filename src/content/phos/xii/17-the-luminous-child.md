@@ -1,6 +1,7 @@
 ---
 title: The Luminous Child
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Egyptian, Christian, Orphic]
 plane: [Archetypal, Psychic]
 operation: [Manifestation, Awakening]

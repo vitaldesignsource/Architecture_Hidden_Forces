@@ -1,6 +1,7 @@
 ---
 title: The Astral Body as the Theater of Luminous Images
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral, Psychic]
 operation: [Manifestation]

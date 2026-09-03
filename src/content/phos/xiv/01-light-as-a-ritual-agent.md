@@ -1,6 +1,7 @@
 ---
 title: Light as a Ritual Agent
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Theurgic, Physical, Psychic]
 operation: [Consecration, Illumination]

@@ -1,7 +1,7 @@
 ---
 title: Crown and Solar Authority
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Divine, Archetypal, Psychic]

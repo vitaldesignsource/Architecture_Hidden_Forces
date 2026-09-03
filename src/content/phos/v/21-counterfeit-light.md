@@ -1,6 +1,7 @@
 ---
 title: Counterfeit Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-18, xii-22, xi-26, iv-26, xx-14, i-17]
 summary: What makes it counterfeit is not ugliness but misrepresentation — it may be brilliant, beautiful, and internally coherent.

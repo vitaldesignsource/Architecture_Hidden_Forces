@@ -1,6 +1,7 @@
 ---
 title: Metastoicheiōsis or Trans-elementation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 plane: [Elemental, Formative, Etheric]
 operation: [Metastoicheiōsis]

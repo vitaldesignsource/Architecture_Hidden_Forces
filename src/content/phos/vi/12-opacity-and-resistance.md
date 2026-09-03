@@ -1,6 +1,7 @@
 ---
 title: Opacity and Resistance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Density]
 related: [ii-13, iv-5, vi-16, iv-12, vi-14]

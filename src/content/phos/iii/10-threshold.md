@@ -1,6 +1,7 @@
 ---
 title: Threshold
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Awakening, Dissolution]
 related: [vii-10, xiii-17, ix-23, xiv-6, iii-9]

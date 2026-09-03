@@ -1,6 +1,7 @@
 ---
 title: Vigils and the Consecration of Night
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Physical, Theurgic]
 operation: [Awakening, Consecration]

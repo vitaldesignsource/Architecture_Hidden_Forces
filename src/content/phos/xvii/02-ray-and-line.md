@@ -1,7 +1,7 @@
 ---
 title: Ray and Line
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Archetypal, Formative, Astral]

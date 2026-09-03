@@ -1,7 +1,7 @@
 ---
 title: Light and Fire
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Vedic, Iranian, Alchemical, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Elemental, Formative, Psychic]

@@ -1,6 +1,6 @@
 ---
 title: Light in Earth, Water, Air, Fire, and Aether
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek, Scientific]
 plane: [Elemental]

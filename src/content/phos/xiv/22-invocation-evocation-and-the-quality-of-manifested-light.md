@@ -1,6 +1,7 @@
 ---
 title: Invocation, Evocation, and the Quality of Manifested Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Theurgic, Psychic, Astral, Angelic]
 operation: [Manifestation]

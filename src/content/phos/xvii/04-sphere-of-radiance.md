@@ -1,7 +1,7 @@
 ---
 title: Sphere of Radiance
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Archetypal, Astral, Etheric]

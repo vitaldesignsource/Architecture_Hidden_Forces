@@ -14,6 +14,8 @@ backdrop: sleeper
 
 Psychological and neurological understanding should be treated as allies of spiritual discernment. Recognising the bodily or psychological conditions surrounding an experience does not make the experience meaningless. It clarifies the instruments through which the event became conscious.
 
+The National Institute of Mental Health's guide to [understanding psychosis](https://www.nimh.nih.gov/health/publications/understanding-psychosis) describes the warning signs and the value of early treatment; it is the kind of resource to reach for without waiting.
+
 [[xvi-24|Migraine aura, retinal afterimages, pressure on the eyes, fever, sensory deprivation, sleep transitions]], trauma responses, medication effects, seizures, and sleep deprivation can all produce luminous phenomena. These should be understood on their own terms. At the same time, identifying a neurological correlate does not settle every question concerning symbolic meaning or spiritual participation.
 
 ## Sacred imagery and psychological material

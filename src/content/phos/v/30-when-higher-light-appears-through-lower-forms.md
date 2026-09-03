@@ -1,6 +1,7 @@
 ---
 title: When Higher Light Appears Through Lower Forms
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Manifestation, Integration]
 related: [ii-26, v-24, ii-17, xx-18, iii-16]

@@ -1,6 +1,7 @@
 ---
 title: Superessential Light
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic, Christian]
 plane: [Superessential]
 related: [xv-55, xv-54, vi-7, i-20, v-3]

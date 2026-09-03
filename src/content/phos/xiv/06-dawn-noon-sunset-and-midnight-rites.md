@@ -1,6 +1,7 @@
 ---
 title: Dawn, Noon, Sunset, and Midnight Rites
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Psychic, Theurgic]
 operation: [Orientation, Awakening]

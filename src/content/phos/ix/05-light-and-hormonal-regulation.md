@@ -14,6 +14,8 @@ backdrop: hydraulic
 
 Light influences hormonal physiology through photoreceptive, neural, circadian, behavioural, and metabolic pathways. Melatonin offers the clearest example: it is ordinarily secreted during biological night, while appropriately timed illumination can suppress its production or shift its rhythm. Cortisol, reproductive hormones, growth-related processes, insulin regulation, appetite, and stress physiology interact with circadian timing, sleep, feeding, and environmental light.
 
+The suppression of pineal melatonin by light, especially in the blue range, is reviewed in [a survey of melatonin as a pineal hormone](https://pmc.ncbi.nlm.nih.gov/articles/PMC10118741/).
+
 The effects of light cannot be judged by brightness alone. Timing, spectrum, duration, intensity, prior adaptation, age, health, and individual constitution all influence the result. More illumination is not automatically more beneficial. The same light that supports alertness during the day may disturb restoration when introduced into biological night.
 
 ## Transduction into chemistry

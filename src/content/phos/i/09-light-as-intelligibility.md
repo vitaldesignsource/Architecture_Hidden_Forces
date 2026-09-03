@@ -1,6 +1,7 @@
 ---
 title: Light as Intelligibility
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Noetic]
 operation: [Illumination, Integration]

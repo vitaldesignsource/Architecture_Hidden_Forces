@@ -1,6 +1,7 @@
 ---
 title: Solar Orientation of Temples
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian]
 plane: [Physical, Archetypal, Theurgic]
 operation: [Orientation]

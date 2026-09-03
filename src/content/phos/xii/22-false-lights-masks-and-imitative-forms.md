@@ -1,6 +1,7 @@
 ---
 title: False Lights, Masks, and Imitative Forms
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral, Psychic, Daimonic]
 operation: [Exposure, Judgment]

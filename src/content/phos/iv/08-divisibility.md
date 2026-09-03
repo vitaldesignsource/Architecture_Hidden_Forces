@@ -1,6 +1,7 @@
 ---
 title: Divisibility
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Divisibility]
 related: [iv-7, iii-13, i-13, v-22, i-11]

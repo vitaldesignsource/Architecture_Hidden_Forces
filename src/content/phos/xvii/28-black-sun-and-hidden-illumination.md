@@ -1,7 +1,7 @@
 ---
 title: Black Sun and Hidden Illumination
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Alchemical, Architecture of Hidden Forces]
 period: [Medieval, Renaissance, Modern]
 plane: [Divine, Psychic, Elemental]

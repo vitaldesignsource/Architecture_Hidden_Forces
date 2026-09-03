@@ -1,6 +1,7 @@
 ---
 title: The Four Ethers as Modes of Luminous Mediation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Formative]
 operation: [Animation, Differentiation, Formation, Integration]

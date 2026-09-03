@@ -1,6 +1,7 @@
 ---
 title: Penetration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Penetration]
 related: [ii-25, iv-6, ii-20, xx-15, iv-13]

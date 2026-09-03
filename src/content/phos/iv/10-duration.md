@@ -1,6 +1,7 @@
 ---
 title: Duration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Duration]
 related: [iv-9, iv-17, xviii-8, iv-41, iii-30]

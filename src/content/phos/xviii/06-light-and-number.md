@@ -1,7 +1,7 @@
 ---
 title: Light and Number
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Greek, Kabbalistic, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Archetypal, Formative, Astral]

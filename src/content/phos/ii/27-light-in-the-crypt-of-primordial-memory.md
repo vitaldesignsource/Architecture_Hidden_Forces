@@ -1,6 +1,7 @@
 ---
 title: Light in the Crypt of Primordial Memory
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Imprinting]
 related: [ii-28, xix-12, xiii-28, iii-30, ix-24]

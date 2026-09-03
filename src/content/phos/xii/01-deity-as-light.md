@@ -1,6 +1,7 @@
 ---
 title: Deity as Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 plane: [Divine, Superessential]
 operation: [Illumination]

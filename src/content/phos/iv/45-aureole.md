@@ -1,6 +1,7 @@
 ---
 title: Aureole
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Christian]
 quality: [Aureole]
 related: [iv-43, iv-46, xi-10, xiii-20, iii-3]

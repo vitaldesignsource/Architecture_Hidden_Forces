@@ -1,6 +1,7 @@
 ---
 title: The Soul Between Spirit and Form
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Platonic]
 plane: [Psychic, Noetic, Physical]
 operation: [Return, Integration]

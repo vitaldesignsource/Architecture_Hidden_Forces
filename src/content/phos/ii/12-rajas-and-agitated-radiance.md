@@ -1,6 +1,7 @@
 ---
 title: Rajas and Agitated Radiance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Intensity, Brilliance, Pulsation]
 related: [ii-10, ii-13, xx-10, xi-26, vi-19, iv-1]

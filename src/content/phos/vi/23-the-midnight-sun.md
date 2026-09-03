@@ -1,6 +1,6 @@
 ---
 title: The Midnight Sun
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Solar Disc]

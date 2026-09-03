@@ -1,6 +1,6 @@
 ---
 title: Turbidity and Mixture
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [iii-23, xv-90, iv-4, iv-3, vi-18]

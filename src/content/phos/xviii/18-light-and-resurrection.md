@@ -1,7 +1,7 @@
 ---
 title: Light and Resurrection
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Egyptian, Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Etheric, Physical]

@@ -1,6 +1,7 @@
 ---
 title: Intention as Luminous Orientation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Psychic, Etheric]
 operation: [Orientation]

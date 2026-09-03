@@ -1,6 +1,7 @@
 ---
 title: Psychic Projection and Authentic Encounter
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Astral, Angelic, Daimonic]
 related: [xi-16, xi-25, xi-26, x-13, v-9]

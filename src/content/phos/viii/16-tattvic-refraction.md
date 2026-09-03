@@ -1,6 +1,7 @@
 ---
 title: Tattvic Refraction
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [iii-21, xix-6, ii-9, viii-15, i-13]
 summary: The term is borrowed from optics; the dynamic is real — a luminous current genuinely changes expression when it enters a differently biased field.

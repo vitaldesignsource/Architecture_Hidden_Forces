@@ -1,6 +1,7 @@
 ---
 title: Health as Luminous Coherence
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Etheric, Astral, Psychic]
 quality: [Coherence]

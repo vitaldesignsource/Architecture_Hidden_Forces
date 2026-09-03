@@ -1,6 +1,7 @@
 ---
 title: Tattvic Distortion
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [ii-8, ii-9, xix-6, xx-8, ii-10]
 summary: The problem is not the tattva but disproportion — restoration requires renewed relation among openness, movement, transformation, cohesion, and stability.

@@ -1,6 +1,7 @@
 ---
 title: Luminous Darkness
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Christian]
 quality: [Black or Dark Luminosity]
 related: [iv-59, vi-7, xv-54, v-3, vi-19]

@@ -1,6 +1,7 @@
 ---
 title: Etheric Tides in the Human Organism
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Vital]
 quality: [Rhythm]

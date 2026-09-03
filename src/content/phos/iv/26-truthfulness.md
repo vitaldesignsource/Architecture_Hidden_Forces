@@ -1,6 +1,7 @@
 ---
 title: Truthfulness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Truthfulness]
 related: [i-16, xix-17, iv-6, iv-4, xi-26, i-8]

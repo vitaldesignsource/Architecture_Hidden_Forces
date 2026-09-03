@@ -1,6 +1,7 @@
 ---
 title: Magnitude
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Magnitude]
 related: [iv-1, iv-10, iii-6, iv-22]

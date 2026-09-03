@@ -1,6 +1,7 @@
 ---
 title: Intelligence
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Intelligence]
 plane: [Noetic]

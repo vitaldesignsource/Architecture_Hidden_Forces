@@ -1,7 +1,7 @@
 ---
 title: Flame and Transformation
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Alchemical, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Elemental, Vital, Psychic]

@@ -1,6 +1,7 @@
 ---
 title: Sophia and Luminous Wisdom
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine, Comparative Parallel]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Jewish, Gnostic]
 plane: [Divine, Noetic, Formative]
 operation: [Formation, Inspiration]

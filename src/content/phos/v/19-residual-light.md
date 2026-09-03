@@ -1,6 +1,7 @@
 ---
 title: Residual Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Imprinting]
 related: [ii-27, ii-28, iii-30, iv-36, xi-20]

@@ -1,6 +1,7 @@
 ---
 title: Epiphany
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Noetic, Psychic]
 operation: [Revelation, Recognition]

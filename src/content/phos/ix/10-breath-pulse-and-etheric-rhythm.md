@@ -1,6 +1,6 @@
 ---
 title: Breath, Pulse, and Etheric Rhythm
-labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Scientific, Architecture of Hidden Forces]
 plane: [Physical, Etheric]

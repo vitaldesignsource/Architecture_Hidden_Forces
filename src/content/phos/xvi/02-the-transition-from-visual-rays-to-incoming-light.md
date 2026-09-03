@@ -16,6 +16,8 @@ position: center 68%
 
 The transition from extramission to intromission was not a single discovery made at one moment. It unfolded through Greek, Hellenistic, Arabic, and Latin investigations. Extramission theories had explained why sight appears directed: we look toward something, concentrate upon it, and visually explore it. Their weakness was physical. If something must travel outward from the eye, how can distant stars be seen immediately? Why does vision fail in darkness? Why can intense external light injure the eye?
 
+A. Mark Smith's [From Sight to Light](https://press.uchicago.edu/ucp/books/book/chicago/F/bo18692225.html) traces this passage from a science of sight to a science of light, with Kepler's theory of the retinal image as its hinge.
+
 Intromission theories held that the visible object affects the eye. Yet they faced another problem: if every point of an object sends influence in every direction, why does the eye receive an orderly image rather than an indistinguishable mixture?
 
 ## Resolution and separation

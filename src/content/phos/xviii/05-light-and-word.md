@@ -1,7 +1,7 @@
 ---
 title: Light and Word
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Israelite, Egyptian, Christian, Islamic, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Noetic, Formative]

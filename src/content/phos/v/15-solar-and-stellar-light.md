@@ -1,6 +1,6 @@
 ---
 title: Solar and Stellar Light
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence, Comparative Parallel]
+labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Solar Disc, Star]

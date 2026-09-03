@@ -1,6 +1,7 @@
 ---
 title: External, Internal, and Nonlocal-Seeming Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Psychic, Astral]
 related: [xi-19, xi-6, xi-15, portal-3, x-13]

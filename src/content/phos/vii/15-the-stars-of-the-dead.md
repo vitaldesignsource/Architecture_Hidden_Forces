@@ -1,6 +1,7 @@
 ---
 title: The Stars of the Dead
 labels: [Historical Doctrine, Comparative Parallel]
+confidence: [Established]
 tradition: [Egyptian]
 symbol: [Star]
 related: [vii-14, xii-15, ii-28, xv-10, v-19]

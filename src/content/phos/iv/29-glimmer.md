@@ -1,6 +1,7 @@
 ---
 title: Glimmer
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Glimmer]
 related: [iv-13, iv-28, x-8, iii-18]

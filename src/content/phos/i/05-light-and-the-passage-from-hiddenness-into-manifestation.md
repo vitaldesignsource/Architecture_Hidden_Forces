@@ -1,6 +1,7 @@
 ---
 title: Light and the Passage from Hiddenness into Manifestation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Manifestation, Formation]
 related: [ii-4, ii-9, ii-18, portal-7, xix-7, i-13]

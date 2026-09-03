@@ -1,6 +1,6 @@
 ---
 title: Polarization
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-11, iii-11, xx-12, vi-16, xi-25]

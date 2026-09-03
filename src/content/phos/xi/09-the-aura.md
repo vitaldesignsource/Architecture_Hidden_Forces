@@ -1,6 +1,7 @@
 ---
 title: The Aura
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Modern Esoteric]
 plane: [Etheric, Astral, Psychic]
 related: [ix-18, ii-18, ii-19, xi-10, xi-20]

@@ -1,6 +1,7 @@
 ---
 title: Light and the Law of Right Relation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek]
 related: [xix-16, xix-9, xix-2, ii-26, xx-11, xiv-24]
 summary: No force is judged by its nature alone but by the relations through which it becomes active — five terms to examine in every luminous act.

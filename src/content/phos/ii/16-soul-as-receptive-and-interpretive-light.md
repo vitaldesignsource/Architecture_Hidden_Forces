@@ -1,6 +1,7 @@
 ---
 title: Soul as Receptive and Interpretive Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek]
 plane: [Psychic]
 related: [ii-14, ii-21, x-5, x-6, vi-18, i-18]

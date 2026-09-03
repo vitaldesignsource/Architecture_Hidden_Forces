@@ -1,6 +1,7 @@
 ---
 title: Vessel
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [ii-17, v-28, v-29, ii-26, xiv-24, xx-18]
 summary: Anything able to receive, contain, organise, and express force — and the purpose of a vessel is not to contain light but to make illumination inhabitable.

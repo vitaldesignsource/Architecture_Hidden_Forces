@@ -1,6 +1,7 @@
 ---
 title: Light Without Forms
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Noetic, Divine, Psychic]
 related: [xi-7, xi-5, v-3, v-4, i-2]

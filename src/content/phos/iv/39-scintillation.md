@@ -11,6 +11,8 @@ backdrop: startrails
 
 Scintillation is rapid fluctuation in apparent brightness, often experienced as twinkling or momentary flashes. Atmospheric turbulence causes stars to scintillate by continually altering the path of their light.
 
+The astronomical sense, twinkling produced by turbulence in the upper air, is described in [Britannica's article on scintillation](https://www.britannica.com/science/scintillation-astronomy).
+
 The term is also used scientifically for brief flashes produced in certain materials when struck by energetic particles or radiation.
 
 Scintillation reveals a luminous source through discontinuous intensification. The light appears to spark at the boundary of perception.

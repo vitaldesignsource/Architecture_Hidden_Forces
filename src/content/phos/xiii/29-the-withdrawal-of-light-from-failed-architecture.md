@@ -1,6 +1,7 @@
 ---
 title: The Withdrawal of Light from Failed Architecture
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Psychic, Etheric]
 operation: [Withdrawal]

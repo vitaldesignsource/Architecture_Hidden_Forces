@@ -1,6 +1,7 @@
 ---
 title: Receiver
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [xix-2, v-28, iii-18, ii-16, i-13]
 summary: Reception is active — every receiver selects, converts, limits, and interprets, so no account of illumination is complete until its capacities are examined.

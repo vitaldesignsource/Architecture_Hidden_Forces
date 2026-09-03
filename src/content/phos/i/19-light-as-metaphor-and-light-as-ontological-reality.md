@@ -1,6 +1,7 @@
 ---
 title: Light as Metaphor and Light as Ontological Reality
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [portal-3, portal-5, xviii-22, xvi-25, xvi-26, i-20]
 summary: Four legitimate registers of luminous language — physical, phenomenological, symbolic, ontological — and the rule never to slide unconsciously between them.

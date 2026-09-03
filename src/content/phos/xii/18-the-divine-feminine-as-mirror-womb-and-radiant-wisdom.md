@@ -1,6 +1,7 @@
 ---
 title: The Divine Feminine as Mirror, Womb, and Radiant Wisdom
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Egyptian, Jewish, Gnostic]
 plane: [Divine, Formative]
 symbol: [Mirror]

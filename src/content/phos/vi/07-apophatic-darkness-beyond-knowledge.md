@@ -1,6 +1,7 @@
 ---
 title: Apophatic Darkness Beyond Knowledge
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Christian, Neoplatonic]
 plane: [Superessential]
 related: [xv-54, xv-55, v-4, i-20, vi-6]

@@ -1,6 +1,7 @@
 ---
 title: Residual Luminous Imprints after the Dissolution of Form
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Astral, Psychic, Formative]
 operation: [Imprinting]

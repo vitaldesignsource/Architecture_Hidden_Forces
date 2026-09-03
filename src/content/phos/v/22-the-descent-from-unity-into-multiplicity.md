@@ -1,6 +1,7 @@
 ---
 title: The Descent from Unity into Multiplicity
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Manifestation, Differentiation]
 related: [v-23, i-12, portal-7, iv-8, i-5]

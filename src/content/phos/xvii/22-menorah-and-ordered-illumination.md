@@ -1,7 +1,7 @@
 ---
 title: Menorah and Ordered Illumination
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Jewish, Architecture of Hidden Forces]
 period: [Ancient]
 plane: [Divine, Archetypal, Physical]

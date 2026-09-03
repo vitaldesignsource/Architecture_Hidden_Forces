@@ -1,6 +1,7 @@
 ---
 title: Spiritual Blindness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-3, xx-14, vi-18, i-8, xix-19]
 summary: It can occur in full brightness — a person may speak constantly of illumination while unable to perceive the consequences of their actions.

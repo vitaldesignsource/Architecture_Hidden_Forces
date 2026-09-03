@@ -1,6 +1,7 @@
 ---
 title: Why Light Cannot Be Arranged by Brightness Alone
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Intensity, Brilliance]
 related: [iv-1, iv-26, vi-19, v-2, xi-26]

@@ -1,6 +1,7 @@
 ---
 title: Shadowless Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Shadowless Light]
 related: [vi-11, vi-27, iv-50, i-20, i-16]

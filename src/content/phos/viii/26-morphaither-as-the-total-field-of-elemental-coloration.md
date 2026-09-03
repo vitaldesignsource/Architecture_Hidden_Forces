@@ -1,6 +1,7 @@
 ---
 title: Morphaithēr as the Total Field of Elemental Coloration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 related: [ii-4, ii-5, viii-9, ii-8, ii-10, viii-15]

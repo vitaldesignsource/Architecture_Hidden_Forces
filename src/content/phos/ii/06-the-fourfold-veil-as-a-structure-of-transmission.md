@@ -1,6 +1,7 @@
 ---
 title: The Fourfold Veil as a Structure of Transmission
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative, Etheric]
 operation: [Formation]

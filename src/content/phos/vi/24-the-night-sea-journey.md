@@ -1,6 +1,7 @@
 ---
 title: The Night-Sea Journey
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Egyptian]
 operation: [Dissolution, Return]
 related: [vii-29, vii-28, vi-25, vi-22, vi-23]

@@ -1,6 +1,7 @@
 ---
 title: Psychē as Receiver and Mediator
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek]
 plane: [Psychic]
 operation: [Integration, Communication]

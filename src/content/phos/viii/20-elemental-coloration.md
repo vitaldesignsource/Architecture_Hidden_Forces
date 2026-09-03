@@ -1,6 +1,7 @@
 ---
 title: Elemental Coloration
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Color, Texture]
 related: [ii-9, viii-21, iv-15, v-14, viii-15]

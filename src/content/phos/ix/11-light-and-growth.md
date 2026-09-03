@@ -13,6 +13,8 @@ backdrop: saplinglog
 
 Growth requires more than an increase in mass. It demands assimilation, differentiation, proportion, regulation, repair, and the preservation of identity through change. In photosynthetic organisms, light supplies energy and acts as information governing germination, leaf development, orientation, flowering, and seasonal activity. In animals, light influences growth through circadian timing, hormonal regulation, behaviour, nutrition, metabolism, and ecological conditions.
 
+The regulation of plant development by light through the phytochrome photoreceptors is reviewed in [Regulation of Photomorphogenic Development by Plant Phytochromes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6941077/).
+
 Yet neither physical nor formative light acts beneficially through intensity alone. Too little illumination can prevent development; too much can damage the receptive structure. Growth depends upon right proportion among the force, the vessel, and the stage of formation.
 
 ## Development, not mere increase

@@ -1,6 +1,7 @@
 ---
 title: Silver and Lunar Reception
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 plane: [Physical, Psychic, Archetypal]
 operation: [Recognition]

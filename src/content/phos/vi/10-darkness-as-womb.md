@@ -1,6 +1,7 @@
 ---
 title: Darkness as Womb
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-5, ix-14, ii-6, ii-5, xii-18]
 summary: Enclosed but not empty, hidden but intensely active — darkness becomes womb when enclosure serves becoming.

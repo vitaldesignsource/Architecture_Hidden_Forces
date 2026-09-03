@@ -1,6 +1,6 @@
 ---
 title: Is Darkness a Thing?
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vi-2, vi-3, vi-4, vi-26, iv-59]

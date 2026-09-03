@@ -12,6 +12,8 @@ backdrop: cavestream
 
 Phosphorescence is a form of photoluminescence in which a material continues emitting light after the original source of excitation has been removed. Energy becomes temporarily retained within the material and is released gradually.
 
+The physics of afterglow, in which energy stored in a metastable state leaves as light long after the exciting radiation is gone, is set out in [Britannica's article on luminescence](https://www.britannica.com/science/luminescence).
+
 Its defining quality is persistence. The source withdraws, but the illuminated substance continues to glow.
 
 ## A model for luminous memory

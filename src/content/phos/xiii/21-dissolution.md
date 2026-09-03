@@ -1,6 +1,7 @@
 ---
 title: Dissolution
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 plane: [Physical, Etheric, Psychic]
 operation: [Dissolution]

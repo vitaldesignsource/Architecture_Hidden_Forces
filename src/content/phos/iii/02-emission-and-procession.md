@@ -1,6 +1,7 @@
 ---
 title: Emission and Procession
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Manifestation]
 related: [i-12, i-11, ii-6, ii-4, xv-28]

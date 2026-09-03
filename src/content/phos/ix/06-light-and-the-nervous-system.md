@@ -13,6 +13,8 @@ backdrop: fieldlines
 
 The nervous system receives light principally through the eye. Retinal photoreceptors translate photons into electrochemical activity, and neural pathways distribute this information toward visual, circadian, pupillary, emotional, and behavioural centres. Light can consequently affect attention, alertness, mood, sleep, orientation, and autonomic physiology without always appearing as a consciously perceived image.
 
+The retina's third class of photoreceptor, the melanopsin-containing ganglion cells that carry light to the circadian and pupillary systems, is reviewed [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC6651433/).
+
 Neural activity is physically mediated through electrical potentials, neurotransmitters, receptors, cells, and organised networks. Yet these mechanisms do not exhaust the living act of perception. The nervous system is embodied within the etheric field, animated by spirit, affected by astral and psychic conditions, and interpreted through the soul.
 
 ## Intermediary, not origin

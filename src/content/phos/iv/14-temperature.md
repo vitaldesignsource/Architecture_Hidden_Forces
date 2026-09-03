@@ -1,6 +1,6 @@
 ---
 title: Temperature
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Temperature, Cold Light]

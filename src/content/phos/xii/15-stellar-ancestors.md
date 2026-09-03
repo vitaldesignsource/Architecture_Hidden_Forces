@@ -1,6 +1,7 @@
 ---
 title: Stellar Ancestors
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Egyptian]
 plane: [Archetypal, Psychic, Physical]
 symbol: [Star]

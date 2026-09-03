@@ -14,6 +14,8 @@ backdrop: tidepool
 
 Biological luminescence is the production of visible light by living organisms through chemical processes. It differs from reflected light, fluorescence, phosphorescence, incandescence, and ultraweak metabolic photon emission. In bioluminescent systems, chemical activity generates electronically excited molecules whose return to a lower-energy state releases photons.
 
+The chemistry, the oxidation of a luciferin by its luciferase, is described in [Britannica's article on bioluminescence](https://www.britannica.com/science/bioluminescence).
+
 Bioluminescence is genuine living light upon the physical plane. It is not merely light falling upon an organism from outside; it is radiance produced through the organism's own embodied activity. Chemical force is transduced into visible appearance.
 
 ## What the glow signifies

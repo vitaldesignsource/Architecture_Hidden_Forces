@@ -13,6 +13,8 @@ backdrop: fold
 
 Embryonic development is an extraordinary process in which cells divide, migrate, communicate, fold, specialise, and form tissues and organs. Genes participate in this process, but development is not the execution of a simple linear blueprint. Chemical gradients, electrical conditions, mechanical forces, cellular signalling, timing, spatial position, and reciprocal interactions among tissues all contribute to morphogenesis.
 
+The physical course of early development is set out in [Gilbert's Developmental Biology](https://www.ncbi.nlm.nih.gov/books/NBK10104/), on the NCBI Bookshelf.
+
 These physical mechanisms are real, but they do not exhaust embryonic formation. Within the Architecture of Hidden Forces, the embryo develops within an individualised etheric field that carries and actualises the formative pattern of the organism. The etheric body does not appear only after anatomy is completed. It participates in the generation, differentiation, coordination, and integration of anatomy from the beginning of embodied development.
 
 ## Light within the dark

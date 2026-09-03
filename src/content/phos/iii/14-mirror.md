@@ -1,6 +1,7 @@
 ---
 title: Mirror
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 symbol: [Mirror]
 related: [xvii-25, xiv-8, iii-20, x-22, viii-24]

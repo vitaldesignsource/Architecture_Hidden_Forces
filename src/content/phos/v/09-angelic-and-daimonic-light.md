@@ -1,6 +1,7 @@
 ---
 title: Angelic and Daimonic Light
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Angelic, Daimonic]
 related: [xii-8, xii-9, xii-13, xii-20, xii-22]

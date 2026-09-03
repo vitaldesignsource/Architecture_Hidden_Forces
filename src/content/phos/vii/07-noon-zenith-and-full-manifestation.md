@@ -1,6 +1,7 @@
 ---
 title: Noon, Zenith, and Full Manifestation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vii-8, iv-51, xx-2, xiv-6, vi-19]
 summary: Maximum visibility that can also flatten depth — the hour of accountability, and the point at which manifested power begins its decline.

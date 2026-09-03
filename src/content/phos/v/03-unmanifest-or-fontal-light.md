@@ -1,6 +1,7 @@
 ---
 title: Unmanifest or Fontal Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 related: [i-2, i-3, ii-15, v-4, ii-2]

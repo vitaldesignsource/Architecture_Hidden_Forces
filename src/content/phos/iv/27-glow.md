@@ -1,6 +1,7 @@
 ---
 title: Glow
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Glow]
 related: [iv-28, iv-31, iii-16, iv-12]

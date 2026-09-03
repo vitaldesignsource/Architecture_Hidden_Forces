@@ -1,6 +1,7 @@
 ---
 title: Where the Metaphor of Light Reaches Its Limit
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 operation: [Withdrawal]
 related: [vi-7, vi-5, vi-10, vi-19, vi-26, xv-54, xv-55, i-19]

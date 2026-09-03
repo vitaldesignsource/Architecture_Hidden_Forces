@@ -1,6 +1,7 @@
 ---
 title: Mandorla
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Christian]
 quality: [Mandorla]
 symbol: [Mandorla, Vesica]

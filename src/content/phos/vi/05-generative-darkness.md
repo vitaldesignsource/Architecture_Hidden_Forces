@@ -1,6 +1,7 @@
 ---
 title: Generative Darkness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-10, ix-14, ix-12, vi-9, i-20]
 summary: Obscurity actively serving formation — preparation for a light that can be received without destroying what is still becoming.

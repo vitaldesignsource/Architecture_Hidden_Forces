@@ -1,6 +1,7 @@
 ---
 title: Halos and Fields around Living Beings
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Astral, Psychic]
 related: [xi-9, xi-13, xi-20, iv-47, xiv-7]

@@ -12,6 +12,8 @@ backdrop: braided
 
 An afterimage persists after the original visual stimulus has been removed. It may preserve aspects of the original colour or appear in complementary colours as photoreceptors and visual pathways recover from adaptation. Bright sources can leave powerful temporary forms within the field of sight.
 
+The retinal and cortical contributions to colour afterimages are examined in [a study of their neural locus](https://pubmed.ncbi.nlm.nih.gov/22264612/).
+
 Phosphenes are appearances of light produced without ordinary light entering the eye. Mechanical pressure, retinal traction, electrical or magnetic stimulation, and spontaneous visual-system activity may generate flashes, sparks, stars, or moving patterns. These are physiological luminous experiences, not imaginary ones.
 
 ## Both at once

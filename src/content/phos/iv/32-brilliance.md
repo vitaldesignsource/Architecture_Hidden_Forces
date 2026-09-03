@@ -1,6 +1,7 @@
 ---
 title: Brilliance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Brilliance]
 related: [iv-1, vi-19, xi-26, iv-33, iv-6]

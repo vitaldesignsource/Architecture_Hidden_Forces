@@ -1,6 +1,7 @@
 ---
 title: Clarity
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Clarity]
 related: [ii-11, iv-5, i-9, iv-26, i-16]

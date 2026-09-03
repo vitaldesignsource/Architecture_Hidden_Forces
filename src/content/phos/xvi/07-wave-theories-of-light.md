@@ -15,6 +15,8 @@ backdrop: ripples
 
 Wave theories emerged because ray models could not fully explain interference, diffraction, and polarisation. Christiaan Huygens proposed that every point on a wavefront can be treated as the source of secondary wavelets. The later wavefront is formed from their collective envelope.
 
+Young's demonstration of interference, the decisive evidence for the wave account, is described in [Britannica's treatment of the double-slit experiment](https://www.britannica.com/science/light/Youngs-double-slit-experiment).
+
 Thomas Young's interference experiments showed that overlapping light can produce alternating bright and dark bands. Augustin-Jean Fresnel developed a mathematical wave theory that successfully explained diffraction and many previously puzzling optical phenomena.
 
 ## Wavelength, frequency, phase

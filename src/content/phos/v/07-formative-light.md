@@ -1,6 +1,7 @@
 ---
 title: Formative Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 operation: [Formation, Differentiation]

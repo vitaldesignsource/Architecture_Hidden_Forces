@@ -1,6 +1,7 @@
 ---
 title: Liquid Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Liquid Light]
 related: [viii-13, viii-24, iv-55, iv-30, xiv-10]

@@ -1,7 +1,7 @@
 ---
 title: Star and Immortality
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Mesopotamian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Divine, Astral, Psychic]

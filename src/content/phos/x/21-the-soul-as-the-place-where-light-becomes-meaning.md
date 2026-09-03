@@ -1,6 +1,7 @@
 ---
 title: The Soul as the Place Where Light Becomes Meaning
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 operation: [Recognition, Integration]

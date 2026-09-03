@@ -1,6 +1,7 @@
 ---
 title: Pigments and Sacred Colors
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian]
 plane: [Physical, Psychic, Elemental]
 quality: [Color]

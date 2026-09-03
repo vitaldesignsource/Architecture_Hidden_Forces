@@ -1,6 +1,7 @@
 ---
 title: Light and the Good
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Platonic]
 related: [xv-19, xix-16, xix-19, xviii-13, i-16, i-17]
 summary: Light participates in goodness when it enters right relation — its goodness lies in fecundity, proportion, and truthfulness, not in brightness.

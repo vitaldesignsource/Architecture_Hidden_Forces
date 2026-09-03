@@ -1,6 +1,7 @@
 ---
 title: Psychic and Imaginal Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Imaginal]
 related: [ii-19, ii-20, x-13, x-14, xi-23, iii-15]

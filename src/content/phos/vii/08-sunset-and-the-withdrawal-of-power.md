@@ -1,6 +1,7 @@
 ---
 title: Sunset and the Withdrawal of Power
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Withdrawal]
 related: [vii-9, vii-29, xiii-29, vii-7, xiv-6]

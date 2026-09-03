@@ -1,6 +1,7 @@
 ---
 title: Subtlety
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Subtlety]
 related: [iv-1, iv-12, xx-10, xi-26, iv-20]

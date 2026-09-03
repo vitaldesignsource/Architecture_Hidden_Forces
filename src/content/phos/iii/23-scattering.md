@@ -1,6 +1,6 @@
 ---
 title: Scattering
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [iii-22, vi-13, xvi-5, vii-27, i-10]

@@ -1,6 +1,7 @@
 ---
 title: Archons and Mixed Illumination
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine, Comparative Parallel]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Gnostic, Neoplatonic]
 plane: [Archetypal, Daimonic, Astral]
 operation: [Binding]

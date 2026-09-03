@@ -1,6 +1,7 @@
 ---
 title: Imagination as an Image-Producing Medium
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Imaginal, Astral, Psychic]
 operation: [Formation, Revelation]

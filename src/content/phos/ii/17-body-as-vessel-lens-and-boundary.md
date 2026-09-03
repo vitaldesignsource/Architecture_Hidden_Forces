@@ -1,6 +1,7 @@
 ---
 title: Body as Vessel, Lens, and Boundary
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical]
 related: [ii-14, iii-16, iii-12, ix-8, ii-26]

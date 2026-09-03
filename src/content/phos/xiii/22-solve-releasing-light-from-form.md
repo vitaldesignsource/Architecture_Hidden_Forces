@@ -1,6 +1,7 @@
 ---
 title: "Solve: Releasing Light from Form"
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Alchemical]
 plane: [Psychic, Etheric, Theurgic]
 operation: [Solve]

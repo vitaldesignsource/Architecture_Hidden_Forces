@@ -1,6 +1,7 @@
 ---
 title: Light and the Spiritualization of Matter
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical]
 operation: [Transfiguration, Consecration]

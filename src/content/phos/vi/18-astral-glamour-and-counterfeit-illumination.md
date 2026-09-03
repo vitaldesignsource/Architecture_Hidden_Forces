@@ -1,6 +1,7 @@
 ---
 title: Astral Glamour and Counterfeit Illumination
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral]
 related: [v-21, xi-26, xii-22, xx-14, i-17, ii-19]

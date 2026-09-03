@@ -15,6 +15,8 @@ backdrop: scrims
 
 Interference occurs when wave amplitudes overlap. In constructive interference, compatible phases reinforce and produce greater intensity. In destructive interference, opposed phases reduce or cancel the resulting amplitude. The energy has not simply vanished; it is redistributed through the total interference field.
 
+Both phenomena are treated in [Britannica's account of Young's double-slit experiment](https://www.britannica.com/science/light/Youngs-double-slit-experiment).
+
 Diffraction is the spreading and restructuring of waves as they pass through apertures or around obstacles. It becomes especially important when the aperture or obstacle is comparable in size to the wavelength. A narrow opening does not transmit a perfectly narrow geometrical ray; it produces a spreading pattern.
 
 This places a fundamental limit on focusing and image resolution. An aperture that seems capable of isolating a finer ray eventually produces greater diffraction. Perfect localisation cannot be achieved simply by narrowing the opening indefinitely.

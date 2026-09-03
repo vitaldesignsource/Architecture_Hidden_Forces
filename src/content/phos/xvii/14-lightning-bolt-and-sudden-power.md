@@ -1,7 +1,7 @@
 ---
 title: Lightning Bolt and Sudden Power
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Divine, Astral, Physical]

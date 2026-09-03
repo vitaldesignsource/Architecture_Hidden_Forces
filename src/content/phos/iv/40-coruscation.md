@@ -1,6 +1,7 @@
 ---
 title: Coruscation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Coruscation]
 related: [iv-39, iv-30, vi-19, iii-23, iv-32]

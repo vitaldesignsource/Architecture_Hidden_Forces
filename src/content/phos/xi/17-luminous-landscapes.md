@@ -1,6 +1,7 @@
 ---
 title: Luminous Landscapes
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable, Symbolic]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral, Psychic, Imaginal]
 related: [x-15, xi-18, x-18, xi-7, xi-16]

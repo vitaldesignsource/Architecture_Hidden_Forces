@@ -1,6 +1,7 @@
 ---
 title: Purity
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Purity]
 related: [iv-7, iv-8, xiii-11, iv-26, ii-11]

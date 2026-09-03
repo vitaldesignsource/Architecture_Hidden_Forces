@@ -1,7 +1,7 @@
 ---
 title: Cross of Light
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Divine, Archetypal, Physical]

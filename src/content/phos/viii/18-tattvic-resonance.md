@@ -1,6 +1,7 @@
 ---
 title: Tattvic Resonance
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [iii-27, ii-25, viii-17, xi-25, iii-28]
 summary: Resonance reveals compatibility, not benefit — a destructive pattern may resonate powerfully with an existing wound.

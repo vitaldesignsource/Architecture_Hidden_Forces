@@ -1,7 +1,7 @@
 ---
 title: "Biophotons: Evidence, Claims, and Limitations"
-labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine]
-confidence: [Established, Contested]
+labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine, Speculative Extension]
+confidence: [Established, Contested, Speculative]
 tradition: [Scientific, Architecture of Hidden Forces]
 plane: [Physical, Etheric]
 related: [ix-18, ix-15, ii-18, v-13, portal-4]

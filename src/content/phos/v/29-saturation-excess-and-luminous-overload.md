@@ -1,6 +1,7 @@
 ---
 title: Saturation, Excess, and Luminous Overload
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Intensity]
 related: [v-28, vi-19, xix-8, xx-15, iii-9, iv-1]

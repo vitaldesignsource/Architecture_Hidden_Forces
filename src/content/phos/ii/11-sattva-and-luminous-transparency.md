@@ -1,6 +1,7 @@
 ---
 title: Sattva and Luminous Transparency
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Transparency, Clarity, Purity]
 related: [ii-10, xv-62, iii-8, xx-6, iv-5]

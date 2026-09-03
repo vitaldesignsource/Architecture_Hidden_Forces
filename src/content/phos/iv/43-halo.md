@@ -1,7 +1,7 @@
 ---
 title: Halo
 labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence, Historical Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Scientific, Christian]
 quality: [Halo]
 symbol: [Halo]
@@ -11,6 +11,8 @@ backdrop: sanctum
 ---
 
 A halo is a ring or region of light appearing around a source, object, or head. Physical halos around the Sun or Moon commonly arise through the refraction and reflection of light by ice crystals in the atmosphere.
+
+The commonest physical halo, the ring at twenty-two degrees produced by hexagonal ice crystals, is explained at [Atmospheric Optics](https://atoptics.co.uk/blog/22-degree-halo-22-halo-22-circular-halo/).
 
 In sacred art, the halo indicates sanctity, spiritual distinction, illumination, or participation in a transcendent source. It usually surrounds the head and therefore emphasises noetic or spiritual luminosity.
 

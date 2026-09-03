@@ -1,6 +1,7 @@
 ---
 title: A Protocol for Recording Luminous Experiences
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Psychic]
 operation: [Recognition]

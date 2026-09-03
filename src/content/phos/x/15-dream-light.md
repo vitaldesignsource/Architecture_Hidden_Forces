@@ -1,6 +1,7 @@
 ---
 title: Dream Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Astral, Imaginal, Psychic]
 related: [x-16, v-10, ii-19, x-18, x-13]

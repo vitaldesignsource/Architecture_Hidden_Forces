@@ -1,6 +1,7 @@
 ---
 title: The Return from Fragmentation into Coherence
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Return, Integration]
 related: [v-22, iii-31, xiii-31, i-12, iv-7]

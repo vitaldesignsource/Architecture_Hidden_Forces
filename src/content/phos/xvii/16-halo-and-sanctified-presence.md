@@ -1,7 +1,7 @@
 ---
 title: Halo and Sanctified Presence
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Christian, Buddhist, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Psychic, Etheric, Astral]

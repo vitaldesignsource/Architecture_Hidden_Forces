@@ -1,6 +1,7 @@
 ---
 title: Gunas as Conditions of Luminosity, Motion, and Obscuration
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Transparency, Clarity]
 related: [ii-11, ii-12, ii-13, xv-62, ii-8]

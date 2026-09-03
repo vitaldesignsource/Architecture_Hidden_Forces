@@ -1,7 +1,7 @@
 ---
 title: Light and Justice
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Mesopotamian, Architecture of Hidden Forces]
 period: [Ancient, Medieval]
 plane: [Divine, Psychic, Physical]

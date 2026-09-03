@@ -1,6 +1,7 @@
 ---
 title: Illness as Disordered Relation rather than Mere Darkness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Etheric, Astral, Psychic]
 operation: [Healing]

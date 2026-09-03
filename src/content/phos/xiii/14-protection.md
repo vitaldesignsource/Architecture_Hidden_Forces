@@ -1,6 +1,7 @@
 ---
 title: Protection
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Psychic, Etheric, Divine]
 operation: [Protection]

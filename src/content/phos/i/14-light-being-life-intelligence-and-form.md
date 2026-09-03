@@ -1,6 +1,7 @@
 ---
 title: Light, Being, Life, Intelligence, and Form
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine, Noetic, Vital, Formative]
 related: [ii-14, ii-2, x-1, xiii-5, i-4]

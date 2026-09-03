@@ -1,7 +1,7 @@
 ---
 title: Mandorla and the Transfigured Body
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Christian, Architecture of Hidden Forces]
 period: [Medieval]
 plane: [Divine, Psychic, Etheric, Physical]

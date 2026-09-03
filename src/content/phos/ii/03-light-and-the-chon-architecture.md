@@ -1,6 +1,7 @@
 ---
 title: Light and the CHON Architecture
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Physical, Vital]
 operation: [Formation]

@@ -11,6 +11,8 @@ backdrop: waterfallgorge
 
 A rainbow arises when light enters water droplets and undergoes refraction, internal reflection, and dispersion. The visible spectrum is continuous even though cultures and visual systems divide it into named colours.
 
+The optics, refraction and dispersion on entering the drop, internal reflection, and refraction again on leaving, are set out in [Britannica's account of what causes a rainbow](https://www.britannica.com/science/What-Causes-a-Rainbow).
+
 The rainbow is therefore an exemplary image of differentiated unity. White light enters a medium and reveals chromatic multiplicity concealed within its apparent unity.
 
 The colours do not represent broken or corrupted light. They are articulated possibilities made visible through mediation.

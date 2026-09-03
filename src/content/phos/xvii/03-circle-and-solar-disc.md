@@ -1,7 +1,7 @@
 ---
 title: Circle and Solar Disc
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Architecture of Hidden Forces]
 period: [Ancient]
 plane: [Divine, Archetypal, Physical]

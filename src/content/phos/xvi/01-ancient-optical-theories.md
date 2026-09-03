@@ -15,6 +15,8 @@ backdrop: ruinedarch
 
 Ancient optical theories arose from a deceptively difficult question: when we see something, what crosses the distance between the observer and the object? Different schools proposed visual rays proceeding from the eye, images or effluences entering the eye from objects, alterations occurring within a transparent medium, or combinations of internal and external light.
 
+The fullest modern history of these theories is A. Mark Smith's [From Sight to Light](https://press.uchicago.edu/ucp/books/book/chicago/F/bo18692225.html).
+
 [[xv-17|Empedocles]] compared the eye to a lantern whose internal fire passes outward through transparent membranes. [[xv-18|Democritus and the atomists]] proposed that objects continually release fine images or likenesses that affect the senses. [[xv-20|Plato]] described a visual fire proceeding from the eye and joining with daylight to establish a continuous body of vision. [[xv-23|Euclid]] did not primarily investigate the physical substance of light; his *Optics* treated vision geometrically through straight visual rays. This allowed him to analyse apparent size, position, angle, and perspective whether or not the rays were understood as literal emissions.
 
 [[xv-21|Aristotle]] rejected the idea that a material ray must leave the eye. For him, light is the actualisation of the transparent as transparent. Colour acts through an illuminated medium upon the eye. This is neither modern electromagnetism nor a simple particle theory. It is a relational account in which illumination makes the transparent medium capable of transmitting colour.

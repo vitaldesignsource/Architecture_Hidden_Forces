@@ -1,7 +1,7 @@
 ---
 title: Sphere of Light
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
-confidence: [Established]
+labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Sphere of Light]
 symbol: [Sphere]

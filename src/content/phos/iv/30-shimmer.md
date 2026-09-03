@@ -1,6 +1,7 @@
 ---
 title: Shimmer
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Shimmer]
 related: [iv-16, iv-39, iv-41, iii-15]

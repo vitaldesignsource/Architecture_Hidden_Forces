@@ -1,7 +1,7 @@
 ---
 title: Light and Life
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Scientific, Architecture of Hidden Forces]
 period: [Modern, Contemporary]
 plane: [Vital, Etheric, Physical]

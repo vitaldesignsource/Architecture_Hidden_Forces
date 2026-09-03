@@ -1,6 +1,7 @@
 ---
 title: Tattvic Atmospheres
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 related: [iii-7, ii-5, ii-10, viii-17, viii-26]

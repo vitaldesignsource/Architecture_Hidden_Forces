@@ -1,6 +1,7 @@
 ---
 title: Light as the Visibility of Force
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 operation: [Manifestation, Differentiation]
 related: [ii-2, xiii-3, xix-5, ii-21]

@@ -1,6 +1,7 @@
 ---
 title: Gleam
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Gleam]
 related: [iii-14, iii-20, iv-27, iv-29]

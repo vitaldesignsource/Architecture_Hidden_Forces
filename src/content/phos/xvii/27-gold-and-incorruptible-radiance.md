@@ -1,7 +1,7 @@
 ---
 title: Gold and Incorruptible Radiance
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Egyptian, Alchemical, Christian, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Renaissance]
 plane: [Formative, Elemental, Physical]

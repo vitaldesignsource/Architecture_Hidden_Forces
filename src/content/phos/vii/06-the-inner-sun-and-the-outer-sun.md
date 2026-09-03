@@ -1,6 +1,7 @@
 ---
 title: The Inner Sun and the Outer Sun
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Kabbalistic]
 symbol: [Solar Disc]
 related: [ii-22, ii-23, vii-4, ii-24, xviii-22]

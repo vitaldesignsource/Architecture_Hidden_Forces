@@ -1,6 +1,7 @@
 ---
 title: Black or Dark Luminosity
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
+confidence: [Probable, Symbolic]
 tradition: [Architecture of Hidden Forces]
 quality: [Black or Dark Luminosity]
 symbol: [Black Sun]

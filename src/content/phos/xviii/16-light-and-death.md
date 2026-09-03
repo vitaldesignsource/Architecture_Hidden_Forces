@@ -1,7 +1,7 @@
 ---
 title: Light and Death
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Egyptian, Christian, Tibetan, Manichaean, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Psychic, Etheric, Astral]

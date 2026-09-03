@@ -1,7 +1,7 @@
 ---
 title: Light and Return
 labels: [Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Probable]
 tradition: [Neoplatonic, Hermetic, Daoist, Islamic, Architecture of Hidden Forces]
 period: [Ancient, Medieval, Modern]
 plane: [Divine, Noetic, Psychic]

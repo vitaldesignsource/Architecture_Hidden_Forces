@@ -1,6 +1,7 @@
 ---
 title: The Many Faces of the Sun
 labels: [Historical Doctrine, Comparative Parallel]
+confidence: [Established]
 tradition: [Egyptian, Greek, Vedic, Mesopotamian]
 symbol: [Solar Disc]
 related: [xii-2, xv-5, vii-4, xviii-22, xii-16]

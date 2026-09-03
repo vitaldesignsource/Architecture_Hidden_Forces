@@ -1,6 +1,7 @@
 ---
 title: Transfiguration
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Christian]
 plane: [Divine, Etheric, Astral, Physical]
 operation: [Transfiguration]

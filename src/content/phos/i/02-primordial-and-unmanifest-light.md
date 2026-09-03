@@ -1,6 +1,7 @@
 ---
 title: Primordial and Unmanifest Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 related: [ii-2, vi-4, vi-5, v-3, i-1]

@@ -1,6 +1,7 @@
 ---
 title: Consecration as the Establishment of Right Relation
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Theurgic, Divine, Physical]
 operation: [Consecration]

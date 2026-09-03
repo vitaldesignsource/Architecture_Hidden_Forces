@@ -1,6 +1,7 @@
 ---
 title: Egyptian Heka and the Activation of Light through Speech
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian]
 plane: [Theurgic, Divine, Psychic]
 operation: [Communication, Consecration]

@@ -1,6 +1,7 @@
 ---
 title: Light and Consciousness
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Noetic]
 related: [i-3, x-1, x-2, x-8, x-13, x-21, xx-10]

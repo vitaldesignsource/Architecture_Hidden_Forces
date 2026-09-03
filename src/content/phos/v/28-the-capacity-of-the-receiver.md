@@ -1,6 +1,7 @@
 ---
 title: The Capacity of the Receiver
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [xix-9, xix-2, iii-17, iii-16, v-29, iii-11]
 summary: Development enlarges capacity not by eliminating limits but by refining aperture, lens, boundary, and integration.

@@ -1,6 +1,7 @@
 ---
 title: Pillars, Spheres, and Oceans of Light
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Astral, Noetic]
 related: [iv-47, xi-5, xi-6, xi-1, iii-4]

@@ -1,6 +1,6 @@
 ---
 title: Interference
-labels: [Architecture of Hidden Forces Doctrine, Scientific Evidence]
+labels: [Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-12, iii-27, ii-24, xx-11, ii-12]

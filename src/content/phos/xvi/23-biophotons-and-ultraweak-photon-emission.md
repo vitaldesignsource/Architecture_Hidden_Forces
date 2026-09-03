@@ -1,7 +1,7 @@
 ---
 title: Biophotons and Ultraweak Photon Emission
-labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine]
-confidence: [Established, Contested]
+labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine, Speculative Extension]
+confidence: [Established, Contested, Speculative]
 tradition: [Scientific, Architecture of Hidden Forces]
 period: [Contemporary]
 plane: [Physical, Vital, Etheric]

@@ -1,6 +1,7 @@
 ---
 title: Aperture
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [x-8, i-18, xx-15, iii-25, xx-12]

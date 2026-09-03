@@ -1,6 +1,7 @@
 ---
 title: Spirit as Fontal Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Greek]
 plane: [Divine]
 related: [ii-14, v-3, x-4, i-11, portal-4]

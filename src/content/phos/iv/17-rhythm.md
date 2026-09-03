@@ -1,6 +1,7 @@
 ---
 title: Rhythm
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 quality: [Rhythm]
 related: [ix-3, ix-19, vii-21, ii-7, iv-18, iv-10]

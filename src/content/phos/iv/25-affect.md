@@ -1,6 +1,7 @@
 ---
 title: Affect
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
+confidence: [Probable]
 tradition: [Architecture of Hidden Forces]
 quality: [Affect]
 plane: [Psychic]

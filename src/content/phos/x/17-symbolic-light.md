@@ -1,6 +1,7 @@
 ---
 title: Symbolic Light
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian, Greek]
 plane: [Psychic, Noetic, Archetypal]
 operation: [Revelation, Communication]

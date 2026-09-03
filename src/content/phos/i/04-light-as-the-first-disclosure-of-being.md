@@ -1,6 +1,7 @@
 ---
 title: Light as the First Disclosure of Being
 labels: [Architecture of Hidden Forces Doctrine]
+confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 operation: [Manifestation, Revelation]

@@ -1,7 +1,7 @@
 ---
 title: Radiant Heart
 labels: [Historical Doctrine, Comparative Parallel, Architecture of Hidden Forces Doctrine]
-confidence: [Established]
+confidence: [Established, Symbolic]
 tradition: [Christian, Islamic, Architecture of Hidden Forces]
 period: [Medieval, Early Modern]
 plane: [Psychic, Vital, Divine]
