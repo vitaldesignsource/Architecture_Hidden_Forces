@@ -9,7 +9,8 @@ operation: [Orientation]
 related: [ix-4, ix-5, ix-10, ix-19, ii-7]
 summary: Endogenous cycles entrained by light — a temporal command judged by the relations through which it acts, and one bodily expression of the etheric tide it neither creates nor exhausts.
 epigraph: "The organism is not continuously noon; it survives by passing through dawn, zenith, sunset, and night."
-backdrop: nightterrace
+backdrop: sleepdawn
+position: center 45%
 ---
 
 Circadian rhythms are endogenous biological cycles organised around approximately twenty-four hours. They persist even under constant conditions, but light and darkness continually entrain them to the larger planetary day. In humans, specialised retinal pathways communicate environmental illumination to the central circadian clock, which helps coordinate sleep, wakefulness, temperature, alertness, metabolism, hormonal timing, and peripheral cellular rhythms.

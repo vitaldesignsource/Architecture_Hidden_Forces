@@ -9,7 +9,8 @@ operation: [Formation, Coagula]
 related: [ix-1, ix-11, ix-12, ix-25, iv-53]
 summary: Radiance becoming embodied structure — light's energy lets matter be rearranged into forms that store potential; CHON supplies the letters, Tone the grammar, Life the composition.
 epigraph: "CHON supplies the letters; Tone supplies the grammar; Life composes the organism."
-backdrop: sprout
+backdrop: leafbeam
+position: center 45%
 ---
 
 Photosynthesis is the great terrestrial demonstration of radiance becoming embodied structure. Photosynthetic organisms absorb photons through pigments and use that energy to drive electron transfer, establish electrochemical gradients, and produce energy-bearing molecules. Through carbon fixation, carbon dioxide is incorporated into organic compounds. Light does not literally become matter; its energy enables matter to be rearranged into forms capable of storing chemical potential.

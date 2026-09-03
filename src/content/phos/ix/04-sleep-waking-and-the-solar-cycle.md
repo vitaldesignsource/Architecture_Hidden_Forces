@@ -8,7 +8,8 @@ operation: [Withdrawal, Return]
 related: [ix-3, ix-5, ix-19, vi-25, vi-9]
 summary: Waking turns consciousness and vitality outward; sleep withdraws into another mode of participation — biological state, etheric tide, psychic transition, and image of procession and return.
 epigraph: "Dawn calls the organism toward manifestation. Noon sustains expenditure. Evening begins recollection. Night returns life toward hidden maintenance."
-backdrop: moonflats
+backdrop: sleeper
+position: center 50%
 ---
 
 Sleep and waking arise through the interaction of circadian timing, homeostatic sleep pressure, nervous activity, metabolism, behaviour, and environmental conditions. The solar cycle strongly influences this pattern without mechanically determining every individual's schedule. Darkness ordinarily allows nocturnal physiology to emerge, while morning illumination helps prepare the organism for outward activity.

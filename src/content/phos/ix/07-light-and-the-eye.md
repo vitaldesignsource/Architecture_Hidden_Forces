@@ -9,7 +9,8 @@ operation: [Revelation]
 related: [ix-6, ix-8, iii-10, iii-13]
 summary: Aperture, lens, chamber, photosensitive surface, living threshold — vision arises through relation, revelation requires limitation, and ordinary sight is not the measure of all knowing.
 epigraph: "Revelation requires limitation."
-backdrop: aperture
+backdrop: eyesun
+position: center 68%
 ---
 
 The eye is aperture, lens, chamber, photosensitive surface, living threshold, and organ of revelation. The cornea and lens focus incoming light; the iris regulates the aperture; the retina converts changing patterns of illumination into neural activity. Rods support vision under low-light conditions, cones enable colour and high-acuity vision, and melanopsin-containing retinal ganglion cells participate in non-image-forming responses such as circadian entrainment and the pupillary reflex — see [this review of intrinsically photosensitive retinal ganglion cells](https://pmc.ncbi.nlm.nih.gov/articles/PMC5436192/).

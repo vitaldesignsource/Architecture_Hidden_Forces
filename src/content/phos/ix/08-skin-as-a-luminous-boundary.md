@@ -8,7 +8,8 @@ operation: [Protection]
 related: [ix-18, ix-19, ii-17, iii-10]
 summary: A differentiated interface with the spectrum that protects, admits, and repairs — corresponding to, but not identical with, the etheric boundary that extends through and beyond it.
 epigraph: "The preservation of distinction without the refusal of participation."
-backdrop: threshold
+backdrop: handlight
+position: center 55%
 ---
 
 The skin is the body's most extensive visible boundary and one of its principal interfaces with solar radiation. Ultraviolet radiation can initiate vitamin D synthesis, influence pigmentation, damage DNA, contribute to photoageing, and increase cancer risk. Visible and infrared wavelengths interact with tissue according to wavelength, intensity, duration, depth of penetration, and biological condition.
