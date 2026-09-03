@@ -10,6 +10,7 @@ import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSecti
 import {
   DIVISIONS, TOTAL, LABELS, CONFIDENCE, FACETS, MOVEMENT, TOOLS, entriesOf, progress, divisionLabel,
 } from "@/lib/phos/entries";
+import { TOOL_ROUTES } from "@/lib/phos/tools";
 
 /**
  * The Portal — the entrance to the encyclopaedia of light.
@@ -29,7 +30,7 @@ const SECTIONS = [
   { n: "", id: "divisions", t: "The twenty-one divisions", d: "Where everything is, and how much of it is written." },
   { n: "", id: "browse", t: "Browse by facet", d: "Tradition, quality, plane, operation, symbol, text, period." },
   { n: "", id: "labels", t: "Evidence labels", d: "The seven kinds of claim an entry can make." },
-  { n: "", id: "instruments", t: "Instruments", d: "Seven tools the facets will one day drive." },
+  { n: "", id: "instruments", t: "Instruments", d: "Seven tools the facets drive — four of them live." },
 ];
 const GROUPS = [{ at: "movement", k: "The Portal" }];
 
@@ -269,23 +270,32 @@ function Portal() {
       <section id="instruments" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/observatory.webp" opacity={0.3} position="center 40%" scrim={0.25} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · In Preparation</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · Four of Seven Live</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             What the facets will <span className="italic text-gold">drive</span>
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
             An encyclopaedia is a long collection of articles until it can be asked questions. These
-            seven instruments are views over the same facets every entry carries, and they come online
-            as the entries that feed them are written.
+            seven instruments are views over the same facets every entry carries. Four are live; the
+            other three come online as the entries that feed them are written.
           </p>
           <div className="mt-12 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
-            {TOOLS.map((t) => (
-              <div key={t.k} className="border border-border p-5 opacity-80">
-                <p className="font-serif text-xl text-bone">{t.k}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">forthcoming</p>
-              </div>
-            ))}
+            {TOOLS.map((t) => {
+              const to = TOOL_ROUTES[t.k];
+              return to ? (
+                <Link key={t.k} to={to} className="group border border-gold/40 p-5 transition-colors hover:border-gold hover:bg-gold/5">
+                  <p className="font-serif text-xl text-bone transition-colors group-hover:text-gold">{t.k}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
+                  <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">open →</p>
+                </Link>
+              ) : (
+                <div key={t.k} className="border border-border p-5 opacity-80">
+                  <p className="font-serif text-xl text-bone">{t.k}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
+                  <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">forthcoming</p>
+                </div>
+              );
+            })}
           </div>
           <p className="mt-12 max-w-3xl border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
             The deepest thing the instruments will show is that light is not higher when brighter. Its

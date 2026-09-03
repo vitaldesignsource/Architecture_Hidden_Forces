@@ -14,7 +14,12 @@ import { Route as PhosRouteImport } from './routes/phos'
 import { Route as PhosDivisionRouteImport } from './routes/phos_.$division'
 import { Route as PhosBrowseRouteImport } from './routes/phos_.browse'
 import { Route as PhosPortalRouteImport } from './routes/phos_.portal'
+import { Route as PhosToolsRouteImport } from './routes/phos_.tools'
 import { Route as PhosDivisionEntryRouteImport } from './routes/phos_.$division_.$entry'
+import { Route as PhosToolsAnatomyRouteImport } from './routes/phos_.tools_.anatomy'
+import { Route as PhosToolsSymbolsRouteImport } from './routes/phos_.tools_.symbols'
+import { Route as PhosToolsTraceRouteImport } from './routes/phos_.tools_.trace'
+import { Route as PhosToolsTraditionsRouteImport } from './routes/phos_.tools_.traditions'
 import { Route as PhosBrowseFacetValueRouteImport } from './routes/phos_.browse_.$facet.$value'
 
 const IndexRoute = IndexRouteImport.update({
@@ -42,9 +47,34 @@ const PhosPortalRoute = PhosPortalRouteImport.update({
   path: '/phos/portal',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PhosToolsRoute = PhosToolsRouteImport.update({
+  id: '/phos_/tools',
+  path: '/phos/tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PhosDivisionEntryRoute = PhosDivisionEntryRouteImport.update({
   id: '/phos_/$division_/$entry',
   path: '/phos/$division/$entry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhosToolsAnatomyRoute = PhosToolsAnatomyRouteImport.update({
+  id: '/phos_/tools_/anatomy',
+  path: '/phos/tools/anatomy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhosToolsSymbolsRoute = PhosToolsSymbolsRouteImport.update({
+  id: '/phos_/tools_/symbols',
+  path: '/phos/tools/symbols',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhosToolsTraceRoute = PhosToolsTraceRouteImport.update({
+  id: '/phos_/tools_/trace',
+  path: '/phos/tools/trace',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhosToolsTraditionsRoute = PhosToolsTraditionsRouteImport.update({
+  id: '/phos_/tools_/traditions',
+  path: '/phos/tools/traditions',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PhosBrowseFacetValueRoute = PhosBrowseFacetValueRouteImport.update({
@@ -59,7 +89,12 @@ export interface FileRoutesByFullPath {
   '/phos/$division': typeof PhosDivisionRoute
   '/phos/browse': typeof PhosBrowseRoute
   '/phos/portal': typeof PhosPortalRoute
+  '/phos/tools': typeof PhosToolsRoute
   '/phos/$division/$entry': typeof PhosDivisionEntryRoute
+  '/phos/tools/anatomy': typeof PhosToolsAnatomyRoute
+  '/phos/tools/symbols': typeof PhosToolsSymbolsRoute
+  '/phos/tools/trace': typeof PhosToolsTraceRoute
+  '/phos/tools/traditions': typeof PhosToolsTraditionsRoute
   '/phos/browse/$facet/$value': typeof PhosBrowseFacetValueRoute
 }
 export interface FileRoutesByTo {
@@ -68,7 +103,12 @@ export interface FileRoutesByTo {
   '/phos/$division': typeof PhosDivisionRoute
   '/phos/browse': typeof PhosBrowseRoute
   '/phos/portal': typeof PhosPortalRoute
+  '/phos/tools': typeof PhosToolsRoute
   '/phos/$division/$entry': typeof PhosDivisionEntryRoute
+  '/phos/tools/anatomy': typeof PhosToolsAnatomyRoute
+  '/phos/tools/symbols': typeof PhosToolsSymbolsRoute
+  '/phos/tools/trace': typeof PhosToolsTraceRoute
+  '/phos/tools/traditions': typeof PhosToolsTraditionsRoute
   '/phos/browse/$facet/$value': typeof PhosBrowseFacetValueRoute
 }
 export interface FileRoutesById {
@@ -78,7 +118,12 @@ export interface FileRoutesById {
   '/phos_/$division': typeof PhosDivisionRoute
   '/phos_/browse': typeof PhosBrowseRoute
   '/phos_/portal': typeof PhosPortalRoute
+  '/phos_/tools': typeof PhosToolsRoute
   '/phos_/$division_/$entry': typeof PhosDivisionEntryRoute
+  '/phos_/tools_/anatomy': typeof PhosToolsAnatomyRoute
+  '/phos_/tools_/symbols': typeof PhosToolsSymbolsRoute
+  '/phos_/tools_/trace': typeof PhosToolsTraceRoute
+  '/phos_/tools_/traditions': typeof PhosToolsTraditionsRoute
   '/phos_/browse_/$facet/$value': typeof PhosBrowseFacetValueRoute
 }
 export interface FileRouteTypes {
@@ -89,7 +134,12 @@ export interface FileRouteTypes {
     | '/phos/$division'
     | '/phos/browse'
     | '/phos/portal'
+    | '/phos/tools'
     | '/phos/$division/$entry'
+    | '/phos/tools/anatomy'
+    | '/phos/tools/symbols'
+    | '/phos/tools/trace'
+    | '/phos/tools/traditions'
     | '/phos/browse/$facet/$value'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -98,7 +148,12 @@ export interface FileRouteTypes {
     | '/phos/$division'
     | '/phos/browse'
     | '/phos/portal'
+    | '/phos/tools'
     | '/phos/$division/$entry'
+    | '/phos/tools/anatomy'
+    | '/phos/tools/symbols'
+    | '/phos/tools/trace'
+    | '/phos/tools/traditions'
     | '/phos/browse/$facet/$value'
   id:
     | '__root__'
@@ -107,7 +162,12 @@ export interface FileRouteTypes {
     | '/phos_/$division'
     | '/phos_/browse'
     | '/phos_/portal'
+    | '/phos_/tools'
     | '/phos_/$division_/$entry'
+    | '/phos_/tools_/anatomy'
+    | '/phos_/tools_/symbols'
+    | '/phos_/tools_/trace'
+    | '/phos_/tools_/traditions'
     | '/phos_/browse_/$facet/$value'
   fileRoutesById: FileRoutesById
 }
@@ -117,7 +177,12 @@ export interface RootRouteChildren {
   PhosDivisionRoute: typeof PhosDivisionRoute
   PhosBrowseRoute: typeof PhosBrowseRoute
   PhosPortalRoute: typeof PhosPortalRoute
+  PhosToolsRoute: typeof PhosToolsRoute
   PhosDivisionEntryRoute: typeof PhosDivisionEntryRoute
+  PhosToolsAnatomyRoute: typeof PhosToolsAnatomyRoute
+  PhosToolsSymbolsRoute: typeof PhosToolsSymbolsRoute
+  PhosToolsTraceRoute: typeof PhosToolsTraceRoute
+  PhosToolsTraditionsRoute: typeof PhosToolsTraditionsRoute
   PhosBrowseFacetValueRoute: typeof PhosBrowseFacetValueRoute
 }
 
@@ -158,11 +223,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhosPortalRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/phos_/tools': {
+      id: '/phos_/tools'
+      path: '/phos/tools'
+      fullPath: '/phos/tools'
+      preLoaderRoute: typeof PhosToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/phos_/$division_/$entry': {
       id: '/phos_/$division_/$entry'
       path: '/phos/$division/$entry'
       fullPath: '/phos/$division/$entry'
       preLoaderRoute: typeof PhosDivisionEntryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/phos_/tools_/anatomy': {
+      id: '/phos_/tools_/anatomy'
+      path: '/phos/tools/anatomy'
+      fullPath: '/phos/tools/anatomy'
+      preLoaderRoute: typeof PhosToolsAnatomyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/phos_/tools_/symbols': {
+      id: '/phos_/tools_/symbols'
+      path: '/phos/tools/symbols'
+      fullPath: '/phos/tools/symbols'
+      preLoaderRoute: typeof PhosToolsSymbolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/phos_/tools_/trace': {
+      id: '/phos_/tools_/trace'
+      path: '/phos/tools/trace'
+      fullPath: '/phos/tools/trace'
+      preLoaderRoute: typeof PhosToolsTraceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/phos_/tools_/traditions': {
+      id: '/phos_/tools_/traditions'
+      path: '/phos/tools/traditions'
+      fullPath: '/phos/tools/traditions'
+      preLoaderRoute: typeof PhosToolsTraditionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/phos_/browse_/$facet/$value': {
@@ -181,7 +281,12 @@ const rootRouteChildren: RootRouteChildren = {
   PhosDivisionRoute: PhosDivisionRoute,
   PhosBrowseRoute: PhosBrowseRoute,
   PhosPortalRoute: PhosPortalRoute,
+  PhosToolsRoute: PhosToolsRoute,
   PhosDivisionEntryRoute: PhosDivisionEntryRoute,
+  PhosToolsAnatomyRoute: PhosToolsAnatomyRoute,
+  PhosToolsSymbolsRoute: PhosToolsSymbolsRoute,
+  PhosToolsTraceRoute: PhosToolsTraceRoute,
+  PhosToolsTraditionsRoute: PhosToolsTraditionsRoute,
   PhosBrowseFacetValueRoute: PhosBrowseFacetValueRoute,
 }
 export const routeTree = rootRouteImport

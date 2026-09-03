@@ -21,6 +21,9 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
       <Link to="/phos/browse" className="whitespace-nowrap transition-colors hover:text-gold" activeProps={{ className: "text-gold" }}>
         Browse
       </Link>
+      <Link to="/phos/tools" className="whitespace-nowrap transition-colors hover:text-gold" activeProps={{ className: "text-gold" }}>
+        Instruments
+      </Link>
       <Link to="/phos" className="whitespace-nowrap transition-colors hover:text-gold">
         The Volume
       </Link>
