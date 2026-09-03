@@ -7,7 +7,7 @@ import { LabelChips, FacetLines } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import type { Entry as Row } from "@/lib/contents";
-import { entry, entriesOf, entryById, introMeta, loadBody, neighbours, divisionLabel } from "@/lib/phos/entries";
+import { entry, entriesOf, entryById, introMeta, loadBody, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";
 
 /**
  * One entry of the encyclopaedia. Registered but unwritten entries have a page
@@ -49,6 +49,10 @@ function EntryPage() {
   const intro = introMeta(d.id);
   const bd = meta?.backdrop || intro?.backdrop || null;
   const related = (meta?.related ?? []).map(entryById).filter((x): x is NonNullable<typeof x> => !!x);
+  // The other direction of the same graph: entries that name this one, less
+  // those already listed above, so nothing appears twice.
+  const shown = new Set(related.map((r) => r.id));
+  const cited = citedBy(e.id).filter((c) => !shown.has(c.id));
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
@@ -127,6 +131,32 @@ function EntryPage() {
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Related entries</p>
                 <div className="mt-4 grid gap-x-12 gap-y-px lg:grid-cols-2">
                   {related.map((r) => (
+                    <Link
+                      key={r.id}
+                      to="/phos/$division/$entry"
+                      params={{ division: r.division.id, entry: r.slug }}
+                      className={`group grid grid-cols-[6rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40 ${r.written ? "" : "opacity-60"}`}
+                    >
+                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                        {r.division.numeral || "Portal"} · {String(r.n).padStart(2, "0")}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block font-serif text-lg text-bone transition-colors group-hover:text-gold">{r.title}</span>
+                        <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
+                          {r.written ? r.meta?.summary : "forthcoming"}
+                        </span>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {cited.length > 0 && (
+              <div className="mt-16 border-t border-border pt-8">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Cited by</p>
+                <div className="mt-4 grid gap-x-12 gap-y-px lg:grid-cols-2">
+                  {cited.map((r) => (
                     <Link
                       key={r.id}
                       to="/phos/$division/$entry"

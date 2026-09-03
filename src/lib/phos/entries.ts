@@ -48,6 +48,10 @@ const META = import.meta.glob<EntryMeta>(
   ["/src/content/phos/**/*.md", "!**/README.md", "!**/_*.md"],
   { query: "?frontmatter", import: "default", eager: true },
 );
+const LINKS = import.meta.glob<string[]>(
+  ["/src/content/phos/**/*.md", "!**/README.md", "!**/_*.md"],
+  { query: "?links", import: "default", eager: true },
+);
 const BODY = import.meta.glob<string>(
   ["/src/content/phos/**/*.md", "!**/README.md", "!**/_*.md"],
   { query: "?body", import: "default" },
@@ -101,6 +105,29 @@ export const ENTRIES: PhosEntry[] = DIVISIONS.flatMap((division) =>
   }),
 );
 const byId = new Map(ENTRIES.map((e) => [e.id, e]));
+
+/**
+ * Who cites whom. An entry points outward through its `related` list and
+ * through the [[id]] cross-references in its body; the inbound side is the
+ * same graph read backwards, so a reader arriving at an entry can also see
+ * every entry that leads to it. Built once from the eager metadata.
+ */
+const OUTBOUND = new Map<string, Set<string>>();
+for (const e of ENTRIES) {
+  if (!e.meta || !e.path) continue;
+  OUTBOUND.set(e.id, new Set([...e.meta.related, ...(LINKS[e.path] ?? [])].filter((id) => id !== e.id)));
+}
+const INBOUND = new Map<string, PhosEntry[]>();
+for (const [from, targets] of OUTBOUND)
+  for (const to of targets) {
+    const src = byId.get(from);
+    if (src) (INBOUND.get(to) ?? INBOUND.set(to, []).get(to)!).push(src);
+  }
+for (const list of INBOUND.values()) list.sort((a, b) => a.division.order - b.division.order || a.n - b.n);
+/** Entries whose `related` list or body cites `id`. */
+export const citedBy = (id: string): PhosEntry[] => INBOUND.get(id) ?? [];
+/** Ids an entry reaches, from its `related` list and its body together. */
+export const citesFrom = (id: string): Set<string> => OUTBOUND.get(id) ?? new Set();
 
 export const division = (id: string) => DIVISIONS.find((d) => d.id === id) ?? null;
 export const entriesOf = (divisionId: string) => ENTRIES.filter((e) => e.division.id === divisionId);

@@ -43,6 +43,14 @@ function collect(dir, acc = []) {
   }
   return acc;
 }
+function collectMd(dir, acc = []) {
+  for (const e of readdirSync(dir)) {
+    const full = join(dir, e);
+    if (statSync(full).isDirectory()) collectMd(full, acc);
+    else if (e.endsWith(".md")) acc.push(full);
+  }
+  return acc;
+}
 const files = collect(join(root, "src"));
 const sources = files.map((f) => ({ file: relative(root, f), text: readFileSync(f, "utf8") }));
 const src = sources.map((s) => s.text).join("\n");
@@ -415,6 +423,28 @@ if (lex.length) {
     if (n && reg && Number(n) !== reg.n) fail("encyclopaedia", `${rel}: numbered ${Number(n)} but the outline has it as ${reg.n}`);
     written++;
     perDivision[division] = (perDivision[division] ?? 0) + 1;
+  }
+  // The citation graph, read both ways. Every written entry must be reachable
+  // from somewhere: an entry no other entry names, whose own links are the only
+  // way in or out, is an island the Portal cannot surface except by browsing.
+  {
+    const files = collectMd(join(root, "src/content/phos"));
+    const out = new Map();
+    for (const f of files) {
+      const rel = relative(join(root, "src/content/phos"), f);
+      const at = rel.match(/^([a-z]+)\/(\d+)-/);
+      if (!at) continue;
+      const raw = readFileSync(f, "utf8");
+      const { meta, body } = parseEntry(raw, schema);
+      const links = [...body.matchAll(/\[\[([a-z]+-\d+)/g)].map((m) => m[1]);
+      out.set(`${at[1]}-${Number(at[2])}`, new Set([...meta.related, ...links]));
+    }
+    const inbound = new Map();
+    for (const [from, tos] of out) for (const to of tos) if (to !== from) inbound.set(to, (inbound.get(to) ?? 0) + 1);
+    const alone = [...out.keys()].filter((id) => !inbound.get(id));
+    const islands = alone.filter((id) => out.get(id).size === 0);
+    if (islands.length) fail("backlinks", `written but unreachable and pointing nowhere: ${islands.join(", ")}`);
+    note("backlinks", `${[...out.values()].reduce((n, s) => n + s.size, 0)} citations across ${out.size} entries; ${alone.length} entr${alone.length === 1 ? "y" : "ies"} cited by none${alone.length ? ` (${alone.slice(0, 8).join(", ")}${alone.length > 8 ? ", …" : ""})` : ""}`);
   }
   const begun = toc.divisions.filter((d) => perDivision[d.id]);
   note(

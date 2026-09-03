@@ -55,8 +55,10 @@ Front matter, line by line:
   with a fixed vocabulary, in `src/lib/phos/schema.json`. A value outside it
   fails the audit; add it to the schema if it is meant.
 - `text` — a free facet: the primary texts the entry reads.
-- `related` — ids of other entries. Shown at the foot, in either direction of
-  the reader's choosing.
+- `related` — ids of other entries. Shown at the foot as "Related entries";
+  every entry also lists, as "Cited by", the entries whose `related` list or
+  body cross-references name it, so a link written once is visible from both
+  ends.
 - `summary` — one line, shown wherever the entry is listed.
 - `epigraph`, `attribution` — set above the body, optional.
 - `backdrop` — a bare name from `public/bg` (`crystal`, not `/bg/crystal.webp`);

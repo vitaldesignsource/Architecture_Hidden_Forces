@@ -18,7 +18,7 @@ function Tools() {
     <ToolFrame
       eyebrow="Portal"
       title={<>Seven ways to ask the encyclopaedia a <span className="italic text-gold">question</span></>}
-      lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Four are live; three come online as the entries that feed them are written."
+      lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Four are live; three wait on the facets that would feed them — qualities and texts — being carried by enough entries to answer with."
       backdrop="observatory"
       position="center 40%"
     >
