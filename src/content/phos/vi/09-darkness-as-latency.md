@@ -5,7 +5,8 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [v-20, i-7, vi-5, vi-10, iii-30]
 summary: Unactivated possibility rather than suppression — the latent becomes luminous when possibility acquires timing, relation, and form.
-backdrop: saplinglog
+backdrop: seedroots
+position: center 45%
 ---
 
 Latency is the condition in which a capacity exists without being actively expressed.

@@ -10,7 +10,8 @@ symbol: [Prism]
 related: [ii-8, ii-9, xvi-6, i-13, xvii-9, xv-89]
 summary: White light entering and differentiated colours emerging - a structure of mediation in which a higher unity appears as a spectrum of qualities, and a warning against confusing an authentic ray with the whole of its source.
 epigraph: "A single colour can be authentic without being complete."
-backdrop: prismtable
+backdrop: pendantprism
+position: center 42%
 ---
 
 The prism symbolises the disclosure of multiplicity within apparently unified light. White light enters; differentiated colours emerge. The prism does not simply invent these distinctions, but neither is it irrelevant to their appearance. Its material and geometry provide the conditions under which they become visible.

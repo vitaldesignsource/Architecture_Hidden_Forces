@@ -10,7 +10,8 @@ symbol: [Crystal]
 related: [xiv-9, ii-26, xvii-27, viii-14, xvi-11, xv-16]
 summary: Matter joined to ordered transparency - a lattice giving definite structure while optical properties permit transmission, refraction, rotation, and spectral differentiation; transparency as highly ordered embodiment rather than formlessness, and always selective.
 epigraph: "True transparency requires more than brightness - it requires structural correspondence."
-backdrop: crystalgrove
+backdrop: pendantprism
+position: center 42%
 ---
 
 Crystal joins matter with ordered transparency. Its internal lattice gives it definite structure, while its optical properties permit transmission, refraction, reflection, polarisation, or spectral differentiation.

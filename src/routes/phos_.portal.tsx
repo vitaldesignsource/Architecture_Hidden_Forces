@@ -125,7 +125,7 @@ function Portal() {
 
       {/* PORTAL ENTRANCE */}
       <section id="entrance" className="relative isolate border-t border-border py-24">
-        <Backdrop src="/bg/threshold.webp" opacity={0.22} position="center 50%" scrim={0.3} />
+        <Backdrop src="/bg/gatelight.webp" opacity={0.22} position="center 55%" scrim={0.3} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Portal Entrance</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">

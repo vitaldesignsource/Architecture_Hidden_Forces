@@ -7,7 +7,8 @@ plane: [Divine]
 operation: [Manifestation, Revelation]
 related: [i-5, i-14, i-6, xviii-22]
 summary: The ontological movement from being-in-itself toward being-present-to-another — the primordial generosity by which the concealed becomes communicable.
-backdrop: aperture
+backdrop: gatelight
+position: center 55%
 ---
 
 Being in complete hiddenness may be real, yet it has not entered relationship. Nothing has encountered it, distinguished it, received it, or spoken of it. Light represents the first movement by which being becomes available without ceasing to remain grounded in itself.

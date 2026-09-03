@@ -8,7 +8,8 @@ operation: [Revelation]
 related: [xiii-1, xi-11, xi-12, xi-25, xi-26, x-14]
 summary: Illumination carrying disclosure from beyond the receiver's ordinary range — always mediated, never proven by brilliance; genuine revelation makes the receiver more capable of truth, counterfeit more certain and less correctable.
 epigraph: "Genuine revelation makes the receiver more capable of truth. Counterfeit revelation often makes the receiver more certain while making them less capable of correction."
-backdrop: gateway2
+backdrop: gatelight
+position: center 55%
 ---
 
 Revelation is illumination carrying meaningful disclosure from beyond the ordinary range of the receiver. It is not merely the accumulation of information. In revelation, a hidden reality communicates something of its own nature. The experience may arrive through a dream, vision, symbol, sacred text, sudden intuition, divine presence, synchronistic event, or direct act of spiritual intelligence.

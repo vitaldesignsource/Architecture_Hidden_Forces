@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Rainbow, Prism]
 related: [iii-13, iv-58, ii-9, xvii-9, xvi-6]
 summary: The colours are not broken light but articulated possibilities made visible through mediation — a model for tattvic coloration.
-backdrop: waterfallgorge
+backdrop: pendantprism
+position: center 42%
 ---
 
 A rainbow arises when light enters water droplets and undergoes refraction, internal reflection, and dispersion. The visible spectrum is continuous even though cultures and visual systems divide it into named colours.

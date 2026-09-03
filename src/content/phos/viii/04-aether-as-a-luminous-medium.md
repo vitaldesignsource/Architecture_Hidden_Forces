@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Greek]
 plane: [Etheric, Formative]
 related: [iii-8, viii-9, viii-10, xvi-7, ii-6]
 summary: Formability rather than completed form — and distinct from the discarded mechanical luminiferous ether the system is not reintroducing.
-backdrop: scrims
+backdrop: etherveils
+position: center 45%
 ---
 
 Aether is the formative middle between force and form. It is not completed form but **formability**: the capacity through which influence becomes transmissible and acquires orientation, continuity, proportion, and relation.

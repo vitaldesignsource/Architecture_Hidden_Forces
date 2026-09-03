@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 operation: [Manifestation, Formation]
 related: [ii-4, ii-9, ii-18, portal-7, xix-7, i-13]
 summary: Manifestation is always selective — at every stage something is revealed and something remains concealed, and limitation is what makes a particular thing distinguishable.
-backdrop: scrims
+backdrop: gatelight
+position: center 55%
 ---
 
 Light mediates between concealment and appearance. It does not simply abolish hiddenness. It draws determinate aspects from an inexhaustible depth and gives them conditions under which they may appear.

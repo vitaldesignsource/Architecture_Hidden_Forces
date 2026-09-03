@@ -10,7 +10,8 @@ operation: [Formation, Illumination, Vivification]
 related: [i-10, ii-2, ii-18, xiii-5, ix-17, ii-14]
 summary: Optical light makes objects visible; formative light organises relations, awakens latent patterns, guides development, and calls a potential structure toward actuality - encountered in the etheric body as an organising presence, without physical mechanisms being ignored or reduced to a single invisible cause.
 epigraph: "Light does not merely reveal form; at certain levels, it participates in forming what it reveals."
-backdrop: germination
+backdrop: seedroots
+position: center 45%
 ---
 
 Optical light makes material objects visible to the senses. Formative light operates more deeply. It organises relations, awakens latent patterns, guides development, and calls a potential structure toward actuality. Its illumination is simultaneously disclosure and formation — the activity [[ii-2|field before form]] describes at the root of the system.

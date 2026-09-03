@@ -10,8 +10,8 @@ symbol: [Rainbow]
 related: [vii-26, xvi-6, xiii-23, xvii-8, iv-15, v-27]
 summary: Sunlight, droplets, observer, and angle entering a precise relation - an event belonging to neither sun nor rain alone, completed from where the observer stands, and differing slightly for every eye; the spectrum held within one continuous arc.
 epigraph: "The rainbow is an image of successful coagula: what was separated becomes a higher unity without being homogenised."
-backdrop: waterfallgorge
-position: center 45%
+backdrop: pendantprism
+position: center 42%
 ---
 
 The rainbow is differentiated unity made visible within a natural atmosphere. Sunlight, water droplets, observer, angle, reflection, refraction, and dispersion must enter a precise relationship before the bow appears.
