@@ -9,7 +9,8 @@ operation: [Judgment, Protection, Recognition]
 related: [ii-25, xii-22, xiv-23, xi-25, xx-11, xiii-30]
 summary: Ethics as an organ of perception rather than an external restriction - asking who benefits, who bears the cost, whether consent is respected, and whether authority can be questioned; the desire to help itself capable of becoming invasive.
 epigraph: "Power without ethical formation magnifies the unresolved structure of its bearer."
-backdrop: arch
+backdrop: lightroad
+position: center 50%
 ---
 
 Ethics is not an external restriction imposed upon spiritual perception. It is one of the organs by which the quality of light is recognised. A presence that appears brilliant but cultivates cruelty, domination, deception, reckless obedience, or contempt for the vulnerable reveals disorder in its operation or reception.

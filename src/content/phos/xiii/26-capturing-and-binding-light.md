@@ -8,7 +8,8 @@ operation: [Binding]
 related: [ix-2, viii-23, xiii-12, xiii-27, v-20, xii-11]
 summary: All embodiment involves luminous capture — plants binding sunlight, symbols binding meaning, consecrated forms binding currents; binding serves manifestation when it keeps the relation among source, vessel, purpose, and recipient alive, and becomes a prison when it severs light from its circulation.
 epigraph: "The question is whether the binding serves manifestation or imprisonment."
-backdrop: cisterntower
+backdrop: crackedvessel
+position: center 50%
 ---
 
 All embodiment involves some form of luminous capture. Plants bind solar energy into living tissue. The eye receives and retains luminous information. Memory preserves moments of illumination. Symbols bind meaning into image, while temples, ritual objects, crystals, metals, relics, and consecrated substances may become vessels for particular currents.

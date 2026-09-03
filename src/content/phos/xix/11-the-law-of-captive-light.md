@@ -9,7 +9,8 @@ operation: [Binding, Liberation, Solve, Coagula]
 related: [v-20, xiii-26, xiii-27, ii-27, ii-28, xiii-22]
 summary: Living force bound within a form that no longer permits its circulation, expression, transformation, or return - in traumatic memory, compulsive desire, a dead institution, an exhausted symbol, or matter organised through violence - is freed not by destroying the container but by solve and coagula together, since liberation without reformation scatters and reformation without liberation merely gives captivity a new appearance.
 epigraph: "Captive light is freed when force can once again participate in living circulation without being compelled to preserve the structure of its imprisonment."
-backdrop: beaverdam
+backdrop: crackedvessel
+position: center 50%
 ---
 
 Captive light may exist within traumatic memory, compulsive desire, a dead institution, an inherited psychic structure, an exhausted symbol, or matter organised through violence. The light has not vanished. Its power remains enclosed, fragmented, appropriated, or forced to sustain an architecture opposed to its original purpose — the condition [[v-20|the gradation named captive light]] locates among the orders of light.

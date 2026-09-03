@@ -10,8 +10,8 @@ symbol: [Lamp]
 related: [xiv-1, xiv-22, xiv-24, xiii-31, xx-18, xiii-12]
 summary: Every opening containing the principle of return - presence established, intention clarified, source acknowledged, the lamp kindled, the purpose stated precisely; then gathering what was received, releasing excess without hostility, extinguishing consciously, eating, recording, and reentering ordinary activity.
 epigraph: "Without return, illumination remains suspended above life; with return, the light becomes formative."
-backdrop: shrinepath
-position: center 45%
+backdrop: ritualcircle
+position: center 55%
 ---
 
 Every ritual opening should contain the principle of return. To invoke light without establishing a way to integrate and close the encounter leaves the architecture incomplete.

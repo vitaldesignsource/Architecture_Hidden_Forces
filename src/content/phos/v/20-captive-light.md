@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Manichaean, Gnostic]
 operation: [Binding, Liberation]
 related: [xv-40, xiii-26, xiii-27, xix-11, vi-9]
 summary: Potential held within matter, memory, or institution — captivity may protect light during gestation, so liberation must be discerning.
-backdrop: peatcliff
+backdrop: crackedvessel
+position: center 50%
 ---
 
 Captive Light is luminosity bound, enclosed, latent, or prevented from free expression within a form.

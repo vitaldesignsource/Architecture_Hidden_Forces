@@ -8,7 +8,8 @@ operation: [Orientation]
 related: [x-8, x-9, ix-12, xiii-19, vii-6, xiii-31]
 summary: Light establishing direction — the plant to the sun, attention to what it values; a person's true orientation is shown by where their energy repeatedly flows, and right orientation places the higher and the lower in correct relation rather than abandoning either.
 epigraph: "Light does not merely reveal a world — it creates centres of attraction within it."
-backdrop: shrinepath
+backdrop: lightroad
+position: center 50%
 ---
 
 Orientation is the operation through which light establishes direction. The plant turns toward the sun; the eye turns toward brightness; attention moves toward what consciousness experiences as valuable, dangerous, beautiful, desirable, or true. Light does not merely reveal a world — it creates centres of attraction within it.

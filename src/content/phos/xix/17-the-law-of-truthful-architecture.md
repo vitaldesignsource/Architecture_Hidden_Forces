@@ -10,7 +10,8 @@ operation: [Exposure, Revelation, Integration]
 related: [i-16, iv-26, xiii-29, xix-16, xix-20, xii-22]
 summary: An architecture is truthful when its visible form, hidden operation, proclaimed purpose, and actual consequences correspond - not perfection, but the capacity to reveal its own condition, acknowledge failure, and receive correction - and falsity becomes structural when contradiction must be concealed to preserve authority.
 epigraph: "The invisible does not excuse visible harm. The visible does not exhaust the invisible."
-backdrop: lighthouse
+backdrop: ruinstream
+position: center 45%
 ---
 
 Truthful architecture does not require perfection. It requires the capacity to reveal its own condition, acknowledge failure, receive correction, and reorganise itself around what is true. A person, doctrine, ritual system, temple, or institution may contain contradictions without becoming wholly false. Falsity becomes structural when contradiction must be concealed to preserve authority.

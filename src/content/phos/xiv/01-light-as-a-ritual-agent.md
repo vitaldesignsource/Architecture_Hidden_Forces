@@ -9,7 +9,8 @@ symbol: [Lamp]
 related: [xiv-2, xiv-3, xiv-24, xiii-12, x-17, xiv-6]
 summary: Light performing a designated sacred function — revealing, purifying, guiding, marking presence — through the union of natural property and ritual intention; position, colour, and duration all take part, so ritual light is never decoration.
 epigraph: "The symbolism is powerful because it develops from what fire and light actually do."
-backdrop: lampshaft
+backdrop: ritualcircle
+position: center 55%
 ---
 
 Light becomes a ritual agent when it does more than permit visibility and begins to perform a designated sacred function. It may reveal an image, mark the presence of a deity, purify a boundary, awaken a symbol, guide attention, establish sacred time, expose what is hidden, or carry an offering toward an invisible order.

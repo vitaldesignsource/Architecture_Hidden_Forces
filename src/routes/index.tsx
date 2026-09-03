@@ -4997,7 +4997,7 @@ function Index() {
       </section>
 
       <section id="ritual" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/gateway2.webp" opacity={0.72} position="center 50%" scrim={0.15} />
+        <Backdrop src="/bg/ritualcircle.webp" opacity={0.72} position="center 55%" scrim={0.15} />
         <SectionGlyph delay={-370} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -8226,7 +8226,7 @@ function Index() {
 
       <section id="mortality" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-530} />
-        <Backdrop src="/bg/ruinedarch.webp" opacity={0.32} position="center 45%" scrim={0.24} />
+        <Backdrop src="/bg/ruinstream.webp" opacity={0.32} position="center 45%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XL · Death, Suffering, and the Cost of Form

@@ -783,7 +783,7 @@ function Phos() {
       {/* § VI — VESSEL */}
       <section id="vessel" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-580} />
-        <Backdrop src="/bg/prismtable.webp" opacity={0.34} position="center 55%" scrim={0.22} />
+        <Backdrop src="/bg/crackedvessel.webp" opacity={0.34} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § VI · The Vessel and the Measure

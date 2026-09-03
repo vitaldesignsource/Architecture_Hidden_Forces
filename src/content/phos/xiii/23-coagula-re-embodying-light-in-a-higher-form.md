@@ -8,7 +8,8 @@ operation: [Coagula]
 related: [xiii-22, xiii-5, xiii-19, xiii-24, xiii-30, ii-1]
 summary: Liberated light gathered into a new vessel — higher not by grandeur but by how truthfully it transmits its governing force; insight becomes discipline, revelation becomes practice, and the new form must hold light beyond moments of intensity.
 epigraph: "A form that holds light only during moments of intensity has not yet achieved stable coagulation."
-backdrop: travertine
+backdrop: ruinstream
+position: center 45%
 ---
 
 Coagula gathers liberated light into a new vessel. If solve breaks an obsolete relation, coagula establishes a more adequate one. The operation is complete only when transformation becomes embodied.

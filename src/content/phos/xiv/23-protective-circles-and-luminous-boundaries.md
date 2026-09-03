@@ -9,7 +9,8 @@ symbol: [Circle]
 related: [xiii-14, ix-8, xiv-24, xiv-22, x-2, xi-9]
 summary: A differentiated field joining geometry to intention, consecration, names, and disciplined consciousness — a selective membrane rather than an inert wall; the most effective circle joins external form with internal sovereignty.
 epigraph: "An elaborate external boundary cannot compensate indefinitely for a deeply incoherent centre."
-backdrop: rotunda
+backdrop: ritualcircle
+position: center 55%
 ---
 
 The ritual circle establishes a differentiated field. It marks the place within which particular relations, identities, and operations will be maintained. Its power lies not in geometry alone but in the joining of geometry, intention, consecration, names, orientation, and disciplined consciousness.
