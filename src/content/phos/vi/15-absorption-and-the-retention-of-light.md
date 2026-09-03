@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific]
 operation: [Integration, Imprinting]
 related: [iii-24, iv-36, ii-24, v-19, ii-27]
 summary: What disappears from sight has not necessarily ceased to act — darkness after absorption may conceal active transformation.
-backdrop: peatcliff
+backdrop: icefissure
+position: center 50%
 ---
 
 Absorption occurs when light enters a material and is converted into another form of activity rather than being immediately reflected or transmitted.

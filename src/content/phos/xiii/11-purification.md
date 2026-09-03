@@ -8,7 +8,8 @@ operation: [Purification]
 related: [ii-22, xi-14, xiii-12, xiii-22, viii-1, vi-27]
 summary: Light separating the coherent from the mixed, distorted, or parasitic — not an assault on matter or personality but the restoration of a thing to its governing principle; painful because identification forms around what obscures the light.
 epigraph: "What feels like the destruction of the self may sometimes be the removal of what prevented the self from appearing truthfully."
-backdrop: furnace
+backdrop: basinblade
+position: center 55%
 ---
 
 Purification is the operation through which light separates what is coherent from what has become mixed, distorted, parasitic, or incompatible. It is not an assault upon matter, emotion, personality, or embodiment. The purpose of purification is to restore a thing to its proper relation with its governing principle.

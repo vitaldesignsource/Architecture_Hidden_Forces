@@ -8,7 +8,8 @@ operation: [Recognition]
 related: [vii-11, vii-12, xiv-11, xiv-8, xiv-10, v-18]
 summary: Cool, receptive, relational brilliance — the faithful reception and redistribution of light where gold radiates from a centre; the tarnish that obscures without destroying, and the purification that restores the power to receive and reflect.
 epigraph: "Reception requires maintenance."
-backdrop: moonflats
+backdrop: moonfall
+position: center 45%
 ---
 
 Silver belongs to the lunar register because its brilliance is cool, receptive, reflective, and responsive to surrounding conditions. Where gold suggests a light radiating from a centred source, silver suggests the faithful reception and redistribution of light.

@@ -7,7 +7,8 @@ plane: [Superessential]
 related: [xv-55, xv-54, vi-7, i-20, v-3]
 summary: Not one more layer above the others but what exceeds the ladder by exceeding its categories — the apophatic summit of luminous language.
 epigraph: "The point at which light reveals the inadequacy of every image of light."
-backdrop: moonflats
+backdrop: moonfall
+position: center 45%
 ---
 
 Superessential Light names that which exceeds being as finite consciousness can conceive it. It is not one more luminous layer located above the others. It exceeds the entire ladder by exceeding every category used to construct it.

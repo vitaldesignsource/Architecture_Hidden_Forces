@@ -5,7 +5,8 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vi-27, i-5, xv-70, vi-14, iv-51]
 summary: Not a substance projected by the object but a region receiving less light — evidence that light has encountered form.
-backdrop: gorgestair
+backdrop: shafthall
+position: center 50%
 ---
 
 A shadow forms when light is interrupted by an object or boundary. It is not a substance projected by the object but a region receiving less illumination because the object stands in the path of the light.

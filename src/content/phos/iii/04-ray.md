@@ -7,7 +7,8 @@ quality: [Directionality]
 symbol: [Ray]
 related: [iii-3, iii-5, xvi-4, xvii-2, x-8]
 summary: Light as a directed relation between source and destination — the first geometry of luminous purpose.
-backdrop: blowhole
+backdrop: basinblade
+position: center 55%
 ---
 
 A ray is light understood as a directed relation between source and destination. In geometrical optics it is an idealised line representing the path along which light propagates. Metaphysically, it represents orientation: luminosity given a path.

@@ -616,7 +616,7 @@ function Phos() {
       {/* § IV — MEDIUM */}
       <section id="medium" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-330} />
-        <Backdrop src="/bg/veils.webp" opacity={0.34} position="center 40%" scrim={0.24} portrait />
+        <Backdrop src="/bg/shafthall.webp" opacity={0.34} position="center 50%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § IV · The Diaphanous

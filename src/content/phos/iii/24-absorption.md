@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific]
 operation: [Integration]
 related: [vi-15, iii-29, iii-16, xiii-19, ii-13]
 summary: Interiorisation — the difference between possession and transformation lies in what the vessel does with what it absorbs.
-backdrop: peatcliff
+backdrop: icefissure
+position: center 50%
 ---
 
 Absorption occurs when a medium takes in light rather than returning or transmitting it. The absorbed energy may be converted into heat, chemical activity, electrical change, or another form.

@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Platonic]
 plane: [Archetypal]
 related: [v-5, v-7, x-17, iii-15, xii-19]
 summary: The grammar of form rather than the finished object — and no single image exhausts the archetype from which it proceeds.
-backdrop: masons
+backdrop: basinblade
+position: center 55%
 ---
 
 Archetypal Light is noetic luminosity differentiated into formative patterns, logoi, or intelligible possibilities. It stands between universal intelligence and particular manifestation.

@@ -5,7 +5,8 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vii-12, v-18, vii-19, ix-3, ii-16]
 summary: Relational light — the Moon changes visibly through phases while remaining whole; what changes is the portion presented to the observer.
-backdrop: moonflats
+backdrop: moonfall
+position: center 45%
 ---
 
 The Moon is not ordinarily a self-luminous source in the way the Sun and stars are. Its visible brightness is primarily reflected sunlight, modified by the geometry among Sun, Earth, Moon, and observer — see [NASA's astronomy glossary](https://science.nasa.gov/universe/glossary/).

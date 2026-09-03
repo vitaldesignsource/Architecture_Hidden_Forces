@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 quality: [Purity]
 related: [iv-7, iv-8, xiii-11, iv-26, ii-11]
 summary: Freedom from admixture, which allows a current's identity to be recognised — but purity is one quality among many, not a final judgment.
-backdrop: alabaster
+backdrop: basinblade
+position: center 55%
 ---
 
 Purity is the degree to which a luminous current remains free from admixture with other currents. Physically, purity may refer to a narrow spectral composition or freedom from unwanted contamination. Metaphysically, it concerns simplicity of intention, continuity of source, and freedom from conflicting motives.
