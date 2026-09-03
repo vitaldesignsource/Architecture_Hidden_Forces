@@ -1,21 +1,36 @@
 import { Link } from "@tanstack/react-router";
-import { FACETS, labelDef, valueSlug } from "@/lib/phos/entries";
+import { CONFIDENCE, FACETS, labelDef, valueSlug } from "@/lib/phos/entries";
 
 /**
  * The evidence labels an entry carries, as chips. Every entry has at least one,
  * so a reader always knows what kind of claim they are reading before they
  * read it — which is the whole point of the labels.
  */
-export function LabelChips({ labels, size = "sm" }: { labels: string[]; size?: "sm" | "xs" }) {
-  if (!labels.length) return null;
-  const cls = size === "xs"
-    ? "border border-gold/30 px-1.5 py-0.5 font-mono text-[8px] uppercase tracking-[0.14em] text-gold-dim"
-    : "border border-gold/40 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.16em] text-gold-dim";
+export function LabelChips({
+  labels,
+  confidence = [],
+  size = "sm",
+}: {
+  labels: string[];
+  /** The degree-of-confidence markers, set in bone rather than gold so a
+   *  reader can tell the kind of claim from how firmly it is held. */
+  confidence?: string[];
+  size?: "sm" | "xs";
+}) {
+  if (!labels.length && !confidence.length) return null;
+  const base = size === "xs"
+    ? "px-1.5 py-0.5 font-mono text-[8px] uppercase tracking-[0.14em]"
+    : "px-2 py-1 font-mono text-[9px] uppercase tracking-[0.16em]";
   return (
     <span className="inline-flex flex-wrap gap-1.5">
       {labels.map((l) => (
-        <span key={l} className={cls} title={labelDef(l)?.gloss}>
+        <span key={l} className={`${base} border border-gold/40 text-gold-dim`} title={labelDef(l)?.gloss}>
           {l}
+        </span>
+      ))}
+      {confidence.map((c) => (
+        <span key={c} className={`${base} border border-bone/25 text-bone/60`} title={CONFIDENCE.find((x) => x.name === c)?.gloss}>
+          {c}
         </span>
       ))}
     </span>

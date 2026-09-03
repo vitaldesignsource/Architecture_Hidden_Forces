@@ -31,6 +31,7 @@ export type EntryMeta = {
   backdrop: string;
   position: string;
   labels: string[];
+  confidence: string[];
   related: string[];
   facets: Record<string, string[]>;
   hasFrontMatter: boolean;
@@ -57,6 +58,11 @@ const INTRO_META = import.meta.glob<EntryMeta>("/src/content/phos/*/_intro.md", 
   eager: true,
 });
 const INTRO_BODY = import.meta.glob<string>("/src/content/phos/*/_intro.md", {
+  query: "?body",
+  import: "default",
+});
+
+const CODA_BODY = import.meta.glob<string>("/src/content/phos/*/_coda.md", {
   query: "?body",
   import: "default",
 });
@@ -103,6 +109,11 @@ export async function loadIntro(divisionId: string): Promise<{ meta: EntryMeta; 
   if (!meta || !load) return null;
   return { meta, body: await load() };
 }
+/** A division may close with `_coda.md` — a summary, axioms, what it established. */
+export async function loadCoda(divisionId: string): Promise<string | null> {
+  const load = CODA_BODY[`/src/content/phos/${divisionId}/_coda.md`];
+  return load ? await load() : null;
+}
 export const introMeta = (divisionId: string): EntryMeta | null =>
   INTRO_META[`/src/content/phos/${divisionId}/_intro.md`] ?? null;
 
@@ -123,6 +134,7 @@ export function neighbourDivisions(d: Division) {
 }
 
 export const LABELS = schema.labels;
+export const CONFIDENCE = schema.confidence;
 export const FACETS = schema.facets;
 export const MOVEMENT = schema.movement;
 export const TOOLS = schema.tools;

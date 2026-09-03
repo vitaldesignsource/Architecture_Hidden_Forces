@@ -45,8 +45,12 @@ Front matter, line by line:
 - `title` — must match the outline exactly. The audit checks it.
 - `labels` — one or more of the seven evidence labels. Required. The names in
   full, or their keys: `primary-text`, `historical-doctrine`,
-  `scientific-finding`, `phenomenological-report`, `ahf-doctrine`,
-  `comparative-interpretation`, `speculative-synthesis`.
+  `scientific-evidence`, `phenomenological-report`, `ahf-doctrine`,
+  `comparative-parallel`, `speculative-extension`. (The outline's earlier
+  wordings — Scientific Finding, Comparative Interpretation, Speculative
+  Synthesis — are accepted and normalised.)
+- `confidence` — optional degree-of-confidence markers: `Established`,
+  `Probable`, `Contested`, `Speculative`, `Symbolic`.
 - `tradition`, `quality`, `plane`, `operation`, `symbol`, `period` — facets
   with a fixed vocabulary, in `src/lib/phos/schema.json`. A value outside it
   fails the audit; add it to the schema if it is meant.
@@ -92,11 +96,15 @@ reference to an unwritten entry still links: its page says it is forthcoming.
 No HTML, tables, or images. A figure that matters is a component, as it is
 everywhere else on the site.
 
-## A division's introduction
+## A division's introduction and coda
 
 `src/content/phos/<division>/_intro.md` — optional. Its body opens the
 division's page; its `backdrop` and `position` become the division's, and the
 default for every entry in it. It needs no labels.
+
+`src/content/phos/<division>/_coda.md` — optional. Its body closes the
+division's page, after the list of entries: a summary, the axioms the division
+established, what it hands on to the next.
 
 ## Checking
 

@@ -78,7 +78,7 @@ function EntryPage() {
             <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-tight sm:text-5xl">{e.title}</h1>
             {meta && (
               <div className="mt-6">
-                <LabelChips labels={meta.labels} />
+                <LabelChips labels={meta.labels} confidence={meta.confidence} />
               </div>
             )}
             {meta?.epigraph && (

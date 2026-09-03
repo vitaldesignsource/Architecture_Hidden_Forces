@@ -7,7 +7,7 @@ import { LabelChips } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import type { Entry as Row } from "@/lib/contents";
-import { division, entriesOf, loadIntro, neighbourDivisions, progress, divisionLabel } from "@/lib/phos/entries";
+import { division, entriesOf, loadIntro, loadCoda, neighbourDivisions, progress, divisionLabel } from "@/lib/phos/entries";
 
 /**
  * A division of the encyclopaedia: its entries in order, grouped where the
@@ -19,7 +19,8 @@ export const Route = createFileRoute("/phos_/$division")({
   loader: async ({ params }) => {
     const d = division(params.division);
     if (!d || d.id === "portal") throw notFound();
-    return { intro: await loadIntro(d.id) };
+    const [intro, coda] = await Promise.all([loadIntro(d.id), loadCoda(d.id)]);
+    return { intro, coda };
   },
   head: ({ params }) => {
     const d = division(params.division);
@@ -31,7 +32,7 @@ export const Route = createFileRoute("/phos_/$division")({
 
 function DivisionPage() {
   const { division: id } = Route.useParams();
-  const { intro } = Route.useLoaderData();
+  const { intro, coda } = Route.useLoaderData();
   useScrollTop(id);
   const d = division(id)!;
   const entries = entriesOf(d.id);
@@ -106,6 +107,12 @@ function DivisionPage() {
               </div>
             </div>
           ))}
+
+          {coda && (
+            <div className="mt-20 border-t border-border pt-4">
+              <EntryBody body={coda} />
+            </div>
+          )}
 
           <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
             {prev && prev.id !== "portal" ? (

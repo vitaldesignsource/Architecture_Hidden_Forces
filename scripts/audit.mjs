@@ -373,9 +373,9 @@ if (lex.length) {
       fail("encyclopaedia", `${rel}: backdrop "${meta.backdrop}" is not in public/bg`);
 
     if (base === "README.md" || base === "_template.md") continue;
-    if (base === "_intro.md") {
+    if (base === "_intro.md" || base === "_coda.md") {
       if (!toc.divisions.some((d) => d.id === rel.split("/")[0]))
-        fail("encyclopaedia", `${rel}: an introduction for a division that does not exist`);
+        fail("encyclopaedia", `${rel}: a division file for a division that does not exist`);
       continue;
     }
     const at = rel.match(/^([a-z]+)\/(?:\d+-)?([a-z0-9-]+)\.md$/);

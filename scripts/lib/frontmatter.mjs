@@ -25,7 +25,7 @@
  */
 
 const LIST_KEYS = new Set([
-  "labels", "tradition", "quality", "plane", "operation", "symbol", "text", "period", "related",
+  "labels", "confidence", "tradition", "quality", "plane", "operation", "symbol", "text", "period", "related",
 ]);
 
 const unquote = (s) => {
@@ -73,9 +73,17 @@ export function parseHead(head) {
  * full name or their key and come back as names; every facet is an array.
  */
 export function normalizeMeta(meta, schema) {
-  const byKey = new Map(schema.labels.map((l) => [l.key, l.name]));
-  const byName = new Map(schema.labels.map((l) => [l.name.toLowerCase(), l.name]));
-  const labels = (meta.labels ?? []).map((l) => byKey.get(l) ?? byName.get(String(l).toLowerCase()) ?? l);
+  // A label may be written as its key, its name, or one of the names the
+  // outline first used for it; all come back as the canonical name.
+  const lookup = new Map();
+  for (const l of schema.labels) {
+    lookup.set(l.key, l.name);
+    lookup.set(l.name.toLowerCase(), l.name);
+    for (const a of l.aliases ?? []) lookup.set(String(a).toLowerCase(), l.name);
+  }
+  const labels = (meta.labels ?? []).map((l) => lookup.get(String(l).toLowerCase()) ?? l);
+  const conf = new Map((schema.confidence ?? []).flatMap((c) => [[c.key, c.name], [c.name.toLowerCase(), c.name]]));
+  const confidence = (meta.confidence ?? []).map((c) => conf.get(String(c).toLowerCase()) ?? c);
   const out = {
     title: meta.title ?? "",
     summary: meta.summary ?? "",
@@ -84,6 +92,7 @@ export function normalizeMeta(meta, schema) {
     backdrop: meta.backdrop ?? "",
     position: meta.position ?? "center 50%",
     labels,
+    confidence,
     related: meta.related ?? [],
     facets: {},
   };
@@ -118,6 +127,8 @@ export function validateMeta(meta, { schema, toc, at, division, slug }) {
   const names = new Set(schema.labels.map((l) => l.name));
   if (!meta.labels.length) problems.push(`${at}: no evidence label — every entry carries at least one`);
   for (const l of meta.labels) if (!names.has(l)) problems.push(`${at}: "${l}" is not one of the seven evidence labels`);
+  const degrees = new Set((schema.confidence ?? []).map((c) => c.name));
+  for (const c of meta.confidence ?? []) if (!degrees.has(c)) problems.push(`${at}: "${c}" is not a degree of confidence`);
 
   for (const f of schema.facets) {
     if (!f.controlled) continue;

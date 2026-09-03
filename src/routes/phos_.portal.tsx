@@ -8,7 +8,7 @@ import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHead
 import { LabelChips } from "@/components/phos/Labels";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import {
-  DIVISIONS, TOTAL, LABELS, FACETS, MOVEMENT, TOOLS, entriesOf, progress, divisionLabel,
+  DIVISIONS, TOTAL, LABELS, CONFIDENCE, FACETS, MOVEMENT, TOOLS, entriesOf, progress, divisionLabel,
 } from "@/lib/phos/entries";
 
 /**
@@ -135,6 +135,15 @@ function Portal() {
             arranged, and how to tell a historical doctrine from a scientific finding from a position
             the system itself holds.
           </p>
+          <blockquote className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
+            <p className="font-serif text-2xl leading-relaxed text-bone/90">
+              Light is not merely what appears. Light is the relation through which appearance
+              becomes possible.
+            </p>
+            <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+              — The threshold statement
+            </footer>
+          </blockquote>
           <EntryRows entries={entrance} />
         </div>
       </section>
@@ -233,6 +242,26 @@ function Portal() {
               </div>
             ))}
           </div>
+
+          <p className="mt-14 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            And a degree of confidence
+          </p>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            A claim may also say how firmly it is held. The markers are set in bone rather than gold,
+            so the kind of a claim and the confidence in it are never confused for each other.
+          </p>
+          <div className="mt-6 grid gap-px sm:grid-cols-2 lg:grid-cols-5">
+            {CONFIDENCE.map((c) => (
+              <div key={c.key} className="border border-border p-4">
+                <LabelChips labels={[]} confidence={[c.name]} />
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.gloss}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-10 max-w-3xl border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
+            These labels are not interruptions of the mystery. They are part of the portal’s ethical
+            structure.
+          </p>
         </div>
       </section>
 
