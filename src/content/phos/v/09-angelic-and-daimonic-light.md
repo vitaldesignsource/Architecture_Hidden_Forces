@@ -12,7 +12,7 @@ Angelic and daimonic lights belong to intermediary orders described differently 
 
 Angelic light generally represents transmission of higher order, intelligence, message, governance, protection, praise, or alignment. Daimonic light concerns mediation between divine, cosmic, natural, local, ancestral, psychic, and human orders. Daimonic does not inherently mean evil; its meaning depends upon the tradition and the particular intermediary function involved.
 
-Within The Architecture of Hidden Forces, such beings may be understood as personal intelligences, symbolic personifications, or patterned concentrations of mediating power, depending upon the evidence and interpretive framework being used.
+Within The Architecture of Hidden Forces, the intermediary orders are real. Angelic and daimonic beings are real mediating intelligences within the vertical chains through which fontal light descends and returns. Traditions differ upon their mode of being — personal intelligence, patterned concentration of mediating power, or both — and the system does not force these accounts into one; but it does not reduce the beings themselves to symbolic personifications of human faculties.
 
 Their light is intermediary rather than fontal. Its authenticity must be evaluated through source, function, relation, and consequence.
 

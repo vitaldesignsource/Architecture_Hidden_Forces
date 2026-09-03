@@ -16,6 +16,6 @@ This light is highly mobile and plastic. It takes form rapidly around fear, long
 
 Astral Light is not identical to physical starlight, despite the historical associations of the term. Nor should every inward vision be placed automatically within an objective astral geography.
 
-Within the system, astral luminosity is a real mode of psychic experience whose origin and interpretation remain questions for discernment.
+Within the system, astral luminosity is the real light of a real subtle vehicle — the astral body, which images and moves — and not merely a mode of psychic experience. What remains a question for discernment is the origin and interpretation of any particular astral image, not the reality of the plane upon which it appears.
 
 :: In the Architecture: [§ LI · The Astral and Psychic Layers](/#astral).

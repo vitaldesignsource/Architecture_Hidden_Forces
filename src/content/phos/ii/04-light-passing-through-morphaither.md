@@ -12,7 +12,7 @@ backdrop: filterstack
 
 Light never enters manifestation without mediation. Even physical light changes as it passes through atmosphere, water, glass, tissue, dust, or crystal. Its direction, intensity, distribution, and apparent colour are conditioned by the medium.
 
-Within the metaphysical system, Morphaithēr names the living formative atmosphere through which forces acquire qualitative direction. It is not a second universe or a hidden material substance. It is the dynamic, retentive field in which relations are carried, patterns recur, tattvic tendencies combine, and forms become possible through bodies, places, symbols, and time.
+Within the metaphysical system, Morphaithēr is the living formative atmosphere through which forces acquire qualitative direction. It is not a second universe or a hidden material substance. It is the real dynamic, retentive field in which relations are carried, patterns recur, tattvic tendencies combine, and forms become possible through bodies, places, symbols, and time. That it is not a separate substance must never be read as meaning that it is not independently real: it is a real plane of formative mediation, prior to the physical forms that embody its patterns.
 
 ## Becoming situated
 

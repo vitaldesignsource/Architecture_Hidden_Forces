@@ -11,7 +11,7 @@ backdrop: kilnvault
 
 *Ignisophia: The Chariot of the Inner Sun* is the system's architecture of consciously directed transformative fire.
 
-Ignisophia is not ordinary combustion and not emotional excitement disguised as spiritual power. It is wisdom joined to fire: illumination made capable of purification, movement, decision, and transformation.
+Ignisophia is not ordinary combustion and not emotional excitement disguised as spiritual power. It is wisdom joined to fire: illumination made capable of purification, movement, decision, and transformation. It is a real operative fire upon the psychic and spiritual planes, not a figure for enthusiasm.
 
 ## The chariot
 

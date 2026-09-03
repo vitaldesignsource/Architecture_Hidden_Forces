@@ -21,6 +21,6 @@ The portal must distinguish four legitimate but different uses of luminous langu
 
 A metaphor can be meaningful without being physically literal. When understanding is called illumination, the mind is not necessarily filled with photons. The metaphor points toward a structural correspondence: something formerly obscure becomes internally visible.
 
-An ontological claim goes further. It proposes that manifestation requires a real principle of disclosure through which being becomes available to relation. This light should not be imagined as a supernatural luminous substance unless evidence specifically justifies such a claim.
+An ontological claim goes further. It proposes that manifestation requires a real principle of disclosure through which being becomes available to relation. The system affirms this claim. Ontological light is real illumination prior to and exceeding sensible visibility; physical light is one embodied manifestation of a more comprehensive luminous principle. Such light is not a physical substance among the substances it discloses, and it should not be pictured as a luminous fluid hidden behind the world — but its not being physical is the reason it cannot be found by physical instruments, not evidence that it is a figure of speech.
 
 The strength of the system depends upon never sliding unconsciously from one register into another. Correspondence permits translation, but correspondence is not identity.

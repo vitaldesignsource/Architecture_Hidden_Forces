@@ -10,7 +10,7 @@ backdrop: flywheel
 
 The Psychic Flywheel describes the way repeated thought, desire, imagination, feeling, and action accumulate formative momentum.
 
-It is not a literal wheel inside the subtle body and not a reservoir of physical photons. It is a psycho-formative mechanism: a patterned readiness through which previously organised force makes similar future movements easier.
+It is not a literal wheel inside the subtle body and not a reservoir of physical photons. It is a real psycho-formative mechanism, operating within the astral and etheric organisation of the vessel and within Morphaithēr: a patterned readiness through which previously organised force makes similar future movements easier.
 
 ## Two wheels, one axis
 

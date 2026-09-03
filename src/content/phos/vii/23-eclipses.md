@@ -14,4 +14,4 @@ Eclipses are predictable alignments rather than evidence that the Sun or Moon ha
 
 An eclipse therefore represents interruption, inversion, exposure, temporary occlusion, and the revelation made possible by concealment.
 
-The metaphysical meaning belongs to symbolic interpretation; it should not replace the astronomical mechanism.
+The metaphysical meaning belongs to symbolic perception, which is a legitimate mode of knowing beside measurement rather than beneath it. It should not replace the astronomical mechanism, and the mechanism should not be used to dismiss it.

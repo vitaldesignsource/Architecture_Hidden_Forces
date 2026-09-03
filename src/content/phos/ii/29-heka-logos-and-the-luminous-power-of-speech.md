@@ -10,9 +10,9 @@ backdrop: gongcorridor
 
 Heka and Logos belong to different historical and cultural metaphysical worlds. They should not be treated as interchangeable words. Yet they can be compared as two sophisticated accounts of effective expression.
 
-Heka may be approached as an ontological current of efficacy through which divine, symbolic, spoken, and embodied acts participate in the ordering of reality. Its rightful operation is inseparable from Ma'at — truth, balance, justice, and right order.
+Heka is a real ontological current of efficacy through which divine, symbolic, spoken, and embodied acts participate in the ordering of reality. Its rightful operation is inseparable from Ma'at — truth, balance, justice, and right order.
 
-Logos carries the meanings of word, reason, ratio, articulation, and ordering intelligibility. It is not speech alone but speech joined to intelligible structure.
+Logos carries the meanings of word, reason, ratio, articulation, and ordering intelligibility. It is not speech alone but speech joined to intelligible structure, and as a metaphysical principle it is a real ordering power, not a grammatical abstraction.
 
 ## When speech is luminous
 

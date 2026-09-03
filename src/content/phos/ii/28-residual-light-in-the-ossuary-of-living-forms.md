@@ -14,9 +14,9 @@ Death dissolves the form's ability to operate as one embodied whole. Matter retu
 
 ## What residual light is, and is not
 
-Residual light consists of the formative traces, effects, memories, structures, and altered possibilities left by the vanished form. These may persist biologically, psychologically, culturally, symbolically, materially, or within the retentive depth of Morphaithēr.
+Residual light is real. It consists of the formative traces, effects, memories, structures, and altered possibilities left by the vanished form. These may persist biologically, psychologically, culturally, symbolically, materially, or within the retentive depth of Morphaithēr — and the last of these is not a figure for the others. The field itself is altered.
 
-Residual light should not automatically be interpreted as a surviving conscious entity. A trace is not necessarily a person, and an inherited influence is not necessarily a perfect recording.
+Residual light should not automatically be interpreted as a surviving conscious entity. A trace is not necessarily a person, and an inherited influence is not necessarily a perfect recording. Nor does this caution deny that spirit and soul have their own continuation beyond the dissolved vessel: the Ossuary concerns the trace, not the traveller.
 
 The Ossuary preserves the anatomy of completed formation. The Crypt preserves the altered field produced by its passage.
 

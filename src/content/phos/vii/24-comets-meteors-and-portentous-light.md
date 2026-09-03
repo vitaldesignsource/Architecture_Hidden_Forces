@@ -13,6 +13,6 @@ Comets are icy and dusty bodies whose approach to the Sun can produce a luminous
 
 Their irregular or sudden appearance made them powerful portents in many historical cultures. Unlike the regular motions of familiar luminaries, they seemed to interrupt celestial order.
 
-Within the system, portentous light is not automatically prophetic. It is light whose rarity and disruption provoke interpretation. The event reveals as much about the receiving culture as it does about the sky.
+Within the system, portentous light is not automatically prophetic. It is light whose rarity and disruption provoke interpretation. The event reveals as much about the receiving culture as it does about the sky — which does not make the reading of it idle. Mesopotamian omen astrology, which recorded celestial appearances and their terrestrial correlates across centuries, was a real investigation of the relation between heaven and earth, and the system regards the question it asked as a genuine one.
 
 A portent is a celestial appearance placed within a human architecture of meaning.

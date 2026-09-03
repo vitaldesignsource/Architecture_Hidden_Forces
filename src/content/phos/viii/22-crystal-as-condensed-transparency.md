@@ -17,6 +17,6 @@ Symbolically, crystal is **condensed transparency**: material order capable of r
 
 The crystal joins Pṛthivī and Ākāśa. It possesses density and boundary while preserving internal pathways through which luminosity can pass. Tejas appears in its brilliance, Apas in its reflective qualities, and Vāyu in the movement of refracted light.
 
-These symbolic correspondences do not prove that crystals store undefined spiritual energies. Their metaphysical value arises from the visible marriage of structure and transmission.
+These correspondences are real relations of participation, not decorative assignments; they do not, however, warrant the claim that crystals store undefined spiritual energies. Their metaphysical value arises from the visible marriage of structure and transmission.
 
 Crystal is matter made optically articulate.

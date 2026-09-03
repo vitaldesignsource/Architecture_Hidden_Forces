@@ -4,15 +4,15 @@ labels: [Architecture of Hidden Forces Doctrine]
 tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Noetic]
 related: [i-3, x-1, x-2, x-8, x-13, x-21, xx-10]
-summary: Consciousness resembles Aphanic Light — it illuminates without appearing as one more object — and its discipline is a kind of interior optics.
+summary: Consciousness is a real instance of Aphanic Light — it illuminates without appearing as one more object — and its discipline is a kind of interior optics.
 backdrop: dreamer
 ---
 
 Consciousness is frequently described through luminous language because it makes experience present. Sensation, thought, memory, emotion, and image enter awareness as objects within an interior field.
 
-Consciousness resembles [[i-3|Aphanic Light]] because it illuminates without necessarily appearing as one more object among what it reveals. When attention turns toward consciousness itself, it frequently encounters not a fixed thing but the open capacity within which things become present.
+Consciousness participates in [[i-3|Aphanic Light]] because it illuminates without necessarily appearing as one more object among what it reveals. When attention turns toward consciousness itself, it frequently encounters not a fixed thing but the open capacity within which things become present.
 
-This remains a phenomenological and metaphysical analogy, not a claim that awareness is identical with physical photons.
+This is not an analogy only. Consciousness is a real instance of aphanic illumination — a disclosure belonging to the noetic and psychic planes, ontologically prior to the neural processes through which it becomes embodied. What is denied is only identity with physical photons. The light of awareness is not the light of the spectrum, yet both are real illumination, and neither is a figure of speech for the other.
 
 ## The interior architecture
 

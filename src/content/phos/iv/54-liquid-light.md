@@ -8,7 +8,7 @@ summary: Illumination in a state of flowing relation, corresponding to Apas — 
 backdrop: basincascade
 ---
 
-Liquid light describes luminosity that appears flowing, continuous, reflective, enveloping, or capable of filling a vessel. It is usually a phenomenological or poetic category rather than a claim that light has become an ordinary liquid.
+Liquid light describes luminosity that appears flowing, continuous, reflective, enveloping, or capable of filling a vessel. It is not a claim that light has become an ordinary liquid. It is a real mode of luminous appearance upon the phenomenological, astral, and formative planes, where illumination genuinely takes on the behaviour of flow.
 
 Water creates liquid appearances through reflection, refraction, caustics, wave motion, and the continual redistribution of brightness across surfaces.
 

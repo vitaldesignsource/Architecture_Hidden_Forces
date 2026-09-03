@@ -15,6 +15,6 @@ A dark surface may absorb substantial visible light and convert part of the rece
 
 Metaphysically, absorption represents interiorisation. The vessel receives illumination and holds it beneath outward visibility. This may lead to integration, delayed expression, transformation, or overload.
 
-[[iv-36|Phosphorescence]] provides an image of retained light gradually released after the external source has withdrawn. [[ii-24|The Psychic Flywheel]] provides a psycho-formative analogy: repeated luminous acts accumulate organised readiness.
+[[iv-36|Phosphorescence]] provides an image of retained light gradually released after the external source has withdrawn. [[ii-24|The Psychic Flywheel]] provides a psycho-formative instance of the same law: repeated luminous acts accumulate organised readiness.
 
 Darkness after absorption may therefore conceal active transformation.
