@@ -7,7 +7,8 @@ operation: [Transfiguration, Consecration]
 related: [xi-13, xi-10, ix-20, xii-16, xi-14]
 summary: Human beings whose members have become coherent around a higher principle — luminosity as personal opacity made transparent; sanctity is not the destruction of form but its consecration.
 epigraph: "Sanctity is not the destruction of form but its consecration."
-backdrop: ablutionstack
+backdrop: sage
+position: center 62%
 ---
 
 Saints and sages are human beings whose physical, etheric, astral, psychic, and spiritual members have become unusually coherent around a higher principle. Their luminosity arises not from public reputation alone but from the degree to which personal opacity has become transparent to spiritual light.

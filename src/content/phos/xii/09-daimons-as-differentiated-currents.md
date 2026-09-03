@@ -7,7 +7,8 @@ operation: [Differentiation]
 related: [v-9, xii-13, xii-10, xii-11, xi-16]
 summary: Not automatically evil demons but intermediary beings giving a general force a specific path — living vectors of mediation that work through temperament and circumstance without being reducible to them.
 epigraph: "A daimon must be approached according to the deity, order, office, and field from which it proceeds."
-backdrop: cascade
+backdrop: daimons
+position: center 45%
 ---
 
 The Greek *daimōn* should not be automatically translated as an evil demon. Daimons are intermediary beings and differentiated currents operating between gods and human life, intelligible principles and nature, destiny and character, place and event.

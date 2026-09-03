@@ -6,7 +6,8 @@ plane: [Daimonic, Psychic, Astral]
 related: [xii-15, ix-24, ii-28, vii-15, xii-9]
 summary: Human lives that acquired enduring daimonic or ancestral power — real deceased presences bound to tomb, city, and lineage; honouring ancestors means conscious relation, not indiscriminate submission.
 epigraph: "Death does not instantly perfect the soul."
-backdrop: riftoak
+backdrop: ancestors
+position: center 30%
 ---
 
 Heroes occupy a threshold between human mortality and greater-than-human presence. Through extraordinary action, sacrifice, suffering, initiation, lineage, or post-mortem transformation, a human life may acquire enduring daimonic or ancestral power.
