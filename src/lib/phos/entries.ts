@@ -73,6 +73,11 @@ const GROUP_BODY = import.meta.glob<string>("/src/content/phos/*/_group-*.md", {
   query: "?body",
   import: "default",
 });
+/** …and may close with `_coda-<slug>.md`, set after the group's last entry. */
+const GROUP_CODA_BODY = import.meta.glob<string>("/src/content/phos/*/_coda-*.md", {
+  query: "?body",
+  import: "default",
+});
 
 /** "/src/content/phos/xv/83-robert-grossetestes-on-light.md" → { division, slug } */
 function locate(path: string) {
@@ -121,11 +126,10 @@ export async function loadCoda(divisionId: string): Promise<string | null> {
   const load = CODA_BODY[`/src/content/phos/${divisionId}/_coda.md`];
   return load ? await load() : null;
 }
-export async function loadGroupIntros(divisionId: string): Promise<Record<string, string>> {
-  const prefix = `/src/content/phos/${divisionId}/_group-`;
+async function loadGroupFiles(files: Record<string, () => Promise<string>>, prefix: string) {
   const out: Record<string, string> = {};
   await Promise.all(
-    Object.entries(GROUP_BODY)
+    Object.entries(files)
       .filter(([k]) => k.startsWith(prefix))
       .map(async ([k, load]) => {
         out[k.slice(prefix.length, -".md".length)] = await load();
@@ -133,6 +137,11 @@ export async function loadGroupIntros(divisionId: string): Promise<Record<string
   );
   return out;
 }
+/** Group prefaces and codas for a division, keyed by group slug. */
+export const loadGroupIntros = (divisionId: string) =>
+  loadGroupFiles(GROUP_BODY, `/src/content/phos/${divisionId}/_group-`);
+export const loadGroupCodas = (divisionId: string) =>
+  loadGroupFiles(GROUP_CODA_BODY, `/src/content/phos/${divisionId}/_coda-`);
 export const introMeta = (divisionId: string): EntryMeta | null =>
   INTRO_META[`/src/content/phos/${divisionId}/_intro.md`] ?? null;
 

@@ -391,12 +391,12 @@ if (lex.length) {
       fail("encyclopaedia", `${rel}: backdrop "${meta.backdrop}" is not in public/bg`);
 
     if (base === "README.md" || base === "_template.md") continue;
-    if (base === "_intro.md" || base === "_coda.md" || /^_group-[a-z0-9-]+\.md$/.test(base)) {
+    if (base === "_intro.md" || base === "_coda.md" || /^_(group|coda)-[a-z0-9-]+\.md$/.test(base)) {
       const div = toc.divisions.find((d) => d.id === rel.split("/")[0]);
       if (!div) fail("encyclopaedia", `${rel}: a division file for a division that does not exist`);
-      else if (base.startsWith("_group-")) {
-        // A group preface must name a group the outline gives that division.
-        const gslug = base.slice("_group-".length, -".md".length);
+      else if (/^_(group|coda)-/.test(base)) {
+        // A group preface or coda must name a group the outline gives that division.
+        const gslug = base.replace(/^_(group|coda)-/, "").slice(0, -".md".length);
         const groups = [...new Set(div.entries.map((e) => e.group).filter(Boolean))];
         if (!groups.some((g) => slugOf(g) === gslug))
           fail("encyclopaedia", `${rel}: no group "${gslug}" in ${div.id} — groups are ${groups.map(slugOf).join(", ") || "none"}`);
