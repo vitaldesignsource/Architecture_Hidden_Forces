@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 quality: [Intensity]
 related: [v-28, vi-19, xix-8, xx-15, iii-9, iv-1]
 summary: Higher intensity is not always a gift — the remedy is not more exposure but greater capacity and better mediation.
-backdrop: crater
+backdrop: wellfall
+position: center 55%
 ---
 
 Saturation occurs when a receiver can no longer register meaningful increases in illumination. Distinctions collapse, the field becomes overwhelmed, and additional light ceases to reveal.

@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Mirror]
 related: [iii-14, xvi-5, x-22, v-18, xi-24]
 summary: The beginning of self-reference — which can deepen knowledge or close a loop in which prior expectations are mistaken for new revelation.
-backdrop: cliffpool
+backdrop: stillpool
+position: center 50%
 ---
 
 Reflection occurs when light encounters a boundary and returns into the field from which it came or enters another direction.

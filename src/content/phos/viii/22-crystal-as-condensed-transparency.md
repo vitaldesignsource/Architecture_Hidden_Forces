@@ -8,7 +8,8 @@ quality: [Crystalline Light, Transparency]
 related: [iv-55, xiv-9, xvii-26, viii-14, viii-10]
 summary: Matter made optically articulate — its metaphysical value arises from the visible marriage of structure and transmission, not from stored spiritual energies.
 epigraph: "Crystal is matter made optically articulate."
-backdrop: crystal
+backdrop: quartzstream
+position: center 50%
 ---
 
 A crystal is matter organised through a repeating internal structure. Its optical properties may include transparency, reflection, refraction, dispersion, polarisation, absorption, and birefringence, depending upon its composition and form.

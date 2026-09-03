@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Transparency, Clarity, Purity]
 related: [ii-10, xv-62, iii-8, xx-6, iv-5]
 summary: The condition in which a medium transmits with minimal distortion — transparency without erasure, and never a passive purity that retreats from the world.
-backdrop: cavepool
+backdrop: stillpool
+position: center 50%
 ---
 
 Sattva is the condition in which a medium becomes sufficiently clear, coherent, and proportionate to transmit light with minimal distortion.

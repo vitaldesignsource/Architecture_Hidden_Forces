@@ -10,7 +10,8 @@ symbol: [Lotus]
 related: [ix-2, ii-26, ix-25, xvi-21, xvi-23, xiii-23]
 summary: Photons absorbed by pigments, excitation funnelled to reaction centres, charge separation driving electron transfer and the production of ATP and reducing power - light becoming growth not by turning into matter but by driving an organised sequence, with excess energy that must be safely dissipated.
 epigraph: "The plant does not passively absorb all light. Its structure determines what can be received and how it is transformed."
-backdrop: leaflight
+backdrop: leafroots
+position: center 50%
 ---
 
 Photosynthesis converts light energy into organised chemical potential. In plants, algae, and cyanobacteria, pigments absorb photons and transfer excitation into reaction centres. Charge separation initiates electron-transfer chains that help produce ATP and reducing power such as NADPH.

@@ -8,7 +8,8 @@ operation: [Vivification, Differentiation]
 related: [ix-2, ix-25, i-7, v-13, ii-18]
 summary: Energy, information, orientation, and temporal instruction — and beneath the solar economy, the formative light that makes organised vitality possible; radiance becomes life only through reception.
 epigraph: "Life is not simply exposure to power; it is the capacity to receive power, qualify it, incorporate it, and transform it into a sustained living order."
-backdrop: leafbowl
+backdrop: leafroots
+position: center 50%
 ---
 
 Light is simultaneously energy, information, orientation, and temporal instruction. Photosynthetic organisms receive solar radiation directly and transform its energy into chemical potential. Other organisms live upon the forms produced by that conversion. Even nocturnal animals and organisms dwelling beneath the soil may participate in an economy whose energy was first gathered in the illuminated world.

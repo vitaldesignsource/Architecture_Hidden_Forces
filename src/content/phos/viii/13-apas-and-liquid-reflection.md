@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 quality: [Liquid Light]
 related: [ii-8, iv-54, viii-24, viii-12, vi-17]
 summary: Light made liquid — reflective, connective, receptive, and capable of carrying what it receives.
-backdrop: basincascade
+backdrop: quartzstream
+position: center 50%
 ---
 
 Apas is the tattvic bias toward cohesion, fluidity, circulation, adaptation, reflection, nourishment, and continuity.

@@ -8,7 +8,8 @@ operation: [Purification]
 related: [viii-11, xiv-8, xii-18, ix-14, xiv-12, vii-12]
 summary: Still, a mirror; moving, a living fragmentation of the image; deep, a concealment — water as medium of both revelation and mystery, and a bowl of water before a flame or moon as a small but complete ritual architecture.
 epigraph: "Disturbing the water demonstrates how psychic agitation alters reception without necessarily changing the source."
-backdrop: basincascade
+backdrop: stillpool
+position: center 50%
 ---
 
 Water receives, reflects, refracts, transmits, and distorts light. When still, it becomes a mirror; when moving, it breaks a stable image into living fragments. When deep, it conceals what it contains. Water is therefore simultaneously a medium of revelation and mystery.

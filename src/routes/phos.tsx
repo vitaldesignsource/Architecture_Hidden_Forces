@@ -464,7 +464,7 @@ function Phos() {
       {/* § II — DIFFUSION */}
       <section id="diffusion" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-96} />
-        <Backdrop src="/bg/ruinsdawn.webp" opacity={0.34} position="center 45%" scrim={0.28} />
+        <Backdrop src="/bg/lamplines.webp" opacity={0.34} position="center 60%" scrim={0.28} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § II · The Self-Diffusion of the Good

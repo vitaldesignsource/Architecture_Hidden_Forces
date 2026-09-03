@@ -8,7 +8,8 @@ operation: [Communication]
 related: [xii-19, ii-29, x-17, xiii-2, xiii-10, i-14]
 summary: Light carrying distinction, image, rhythm, and meaning from one order to another — logoi as luminous principles of communication; every communication shaped by its medium, so discernment asks what speaks, through what, and what the receiver added.
 epigraph: "What is communicating, through what medium is it passing, and what has the receiver added to what was received?"
-backdrop: belltower
+backdrop: lamplines
+position: center 60%
 ---
 
 Light communicates by carrying distinction, image, rhythm, proportion, presence, and meaning from one order or being to another. In sensible experience, reflected light communicates the appearance of the world to the eye. Within psychic life, luminous images communicate memories, desires, fears, and symbolic structures. At noetic and spiritual levels, light may communicate an intelligible pattern before it has been translated into language.

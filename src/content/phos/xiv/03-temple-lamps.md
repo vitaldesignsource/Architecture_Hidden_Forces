@@ -9,7 +9,8 @@ symbol: [Lamp, Menorah]
 related: [xiv-1, xiv-4, xiv-7, iv-13, ii-17, xiv-24]
 summary: A localised image of enduring presence — vessel, fuel, wick, and flame as a miniature architecture of body, soul, and spirit; tending the lamp is itself the discipline of keeping a living relation between source and form.
 epigraph: "A continuously maintained lamp can become the temporal centre of a sanctuary."
-backdrop: reedslamp
+backdrop: lamplines
+position: center 60%
 ---
 
 The temple lamp is a localised image of enduring presence. Unlike the sudden flash of lightning or the consuming intensity of an open fire, a lamp creates sustained luminosity. It establishes continuity between successive acts of worship and may signify that a sacred relationship remains active even when no public ritual is occurring.

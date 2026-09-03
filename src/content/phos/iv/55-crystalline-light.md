@@ -7,7 +7,8 @@ quality: [Crystalline Light]
 symbol: [Crystal]
 related: [viii-22, xvii-26, xiv-9, iv-3, iv-54, xi-8]
 summary: Clarity joined to structure — its danger is rigidity, since perfect structure can become lifeless if it no longer permits reinterpretation.
-backdrop: crystal
+backdrop: quartzstream
+position: center 50%
 ---
 
 Crystalline light is luminosity appearing ordered, faceted, precise, refracted, transparent, or internally geometric.

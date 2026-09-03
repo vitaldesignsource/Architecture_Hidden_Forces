@@ -10,7 +10,8 @@ operation: [Illumination, Integration]
 related: [v-29, xx-15, xiv-25, xix-9, xx-13, ii-24]
 summary: More light is not always better: intensity exceeding the capacity of nervous system, soul, astral body, etheric organisation, or symbolic understanding produces dazzlement, exhaustion, dissociation, or compulsive interpretation - which places responsibility on teachers, since forcing intensity on an unprepared person and calling the destabilisation purification is dangerous.
 epigraph: "Every receiver has a threshold beyond which additional light ceases to clarify and begins to overwhelm."
-backdrop: saltflat
+backdrop: wellfall
+position: center 55%
 ---
 
 More light is not always better. Eyes adapted to darkness can be blinded by sudden brilliance. Inwardly, an intensity exceeding the capacity of the nervous system, soul, astral body, etheric organisation, or symbolic understanding may produce dazzlement, exhaustion, dissociation, confusion, compulsive interpretation, or psychic disorganisation — the condition [[v-29|saturation, excess, and luminous overload]] describes among the gradations.

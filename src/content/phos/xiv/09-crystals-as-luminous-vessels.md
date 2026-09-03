@@ -9,7 +9,8 @@ symbol: [Crystal]
 related: [viii-22, iv-55, viii-14, xiv-24, xiv-8, xiii-26]
 summary: Density joined to transparency and internal order — a focal point, lens, repository, or vessel of consecrated relation; no claim that a mineral species mechanically produces fixed spiritual results, since a crystal alters how light becomes present rather than simply containing it.
 epigraph: "A crystal does not simply contain light; it alters the manner in which light becomes present."
-backdrop: crystal
+backdrop: quartzstream
+position: center 50%
 ---
 
 Crystals join material density with transparency, internal order, refraction, reflection, and the separation of light into colours. Their patterned structure makes them natural images of force stabilised without becoming entirely opaque.

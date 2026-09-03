@@ -7,7 +7,8 @@ operation: [Manifestation]
 related: [i-12, xix-3, xv-28, xiii-2, i-13]
 summary: Material giving divides; metaphysical radiance communicates without division — the source made participable, not a severed piece of itself.
 epigraph: "The source remains abundant because its radiance is not a severed piece of itself."
-backdrop: summit
+backdrop: lamplines
+position: center 60%
 ---
 
 Ordinary material giving involves division. What is transferred is no longer wholly possessed by the giver. Metaphysical radiance proposes another model: a source may communicate something of itself without ceasing to remain whole.

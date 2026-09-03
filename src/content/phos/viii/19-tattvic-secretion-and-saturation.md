@@ -5,7 +5,8 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [viii-17, viii-15, v-29, vi-17, ii-13]
 summary: Secretion reveals what a vessel can radiate; saturation reveals where capacity has become fixation.
-backdrop: apothecary
+backdrop: wellfall
+position: center 55%
 ---
 
 **Tattvic secretion** describes the way a vessel expresses the formative qualities it has absorbed, cultivated, or metabolised. The word is borrowed from biology; the process it names is a real formative dynamic within Morphaithēr, and it may be described through the analogy without being reduced to it.

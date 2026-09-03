@@ -10,8 +10,8 @@ symbol: [Lamp]
 related: [xv-77, xiv-2, ii-22, xvii-12, xvii-13, x-9]
 summary: Light housed within an intentional vessel - fuel stored, wick drawing it upward, flame transforming it, glass protecting and directing, keeper maintaining the conditions; limited light still sufficient to reveal the next step.
 epigraph: "A lamp without fuel becomes an empty relic; fuel without ignition remains unrealised potential."
-backdrop: lampshaft
-position: center 45%
+backdrop: lamplines
+position: center 60%
 ---
 
 The lamp is light housed within an intentional vessel. Unlike the sun, it is local, tended, and dependent upon fuel. Its smallness is part of its meaning: limited light can still provide orientation within immense darkness.

@@ -7,7 +7,8 @@ symbol: [Mirror]
 quality: [Liquid Light]
 related: [viii-13, xiv-10, iii-14, ii-27, iv-54]
 summary: Water's memory is architectural — continuity, transport, and trace — and is not the contested claim that water retains therapeutic information.
-backdrop: cliffpool
+backdrop: stillpool
+position: center 50%
 ---
 
 Water reflects light at its surface, refracts it through its depth, absorbs different wavelengths, carries dissolved substances, changes state, and circulates through organisms and environments.
