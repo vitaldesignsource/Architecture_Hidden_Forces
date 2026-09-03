@@ -149,6 +149,12 @@ function SmartLink({ href, children }: { href: string; children: ReactNode }) {
   if (d) return <Link to="/phos/$division" params={{ division: d[1] }} className={cls}>{children}</Link>;
   if (href === "/phos") return <Link to="/phos" className={cls}>{children}</Link>;
   if (href === "/") return <Link to="/" className={cls}>{children}</Link>;
+  // A section of either treatise: "/#relation" is § XLIV of the Architecture,
+  // "/phos#vessel" is § VI of the volume. The hash rides the router link so the
+  // page arrives already scrolled to the section.
+  const t = href.match(/^\/(phos)?#([a-z-]+)$/);
+  if (t && t[1]) return <Link to="/phos" hash={t[2]} className={cls}>{children}</Link>;
+  if (t) return <Link to="/" hash={t[2]} className={cls}>{children}</Link>;
   if (href.startsWith("/") || href.startsWith("#")) return <a href={href} className={cls}>{children}</a>;
   return <a href={href} target="_blank" rel="noreferrer" className={cls}>{children}</a>;
 }
