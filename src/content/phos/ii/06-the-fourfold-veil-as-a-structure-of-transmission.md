@@ -7,7 +7,8 @@ plane: [Formative, Etheric]
 operation: [Formation]
 related: [ii-7, viii-9, iii-9, xix-7, ii-5]
 summary: The woven structure through which force becomes receivable without becoming fixed — a transmitter and a regulator, revealing and concealing at once.
-backdrop: filters
+backdrop: fourveils
+position: center 42%
 ---
 
 Between undifferentiated possibility and embodied form stands the Fourfold Veil. It is the woven structure through which force becomes receivable without becoming immediately fixed.

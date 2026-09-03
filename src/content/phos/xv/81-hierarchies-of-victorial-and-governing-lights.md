@@ -11,7 +11,8 @@ text: [Ḥikmat al-Ishrāq]
 related: [xv-80, xii-9, v-9, xii-19, xii-20, x-18]
 summary: Al-anwār al-qāhira and al-anwār al-mudabbira - dominating lights in longitudinal and latitudinal orders, the lords of species as living luminous principles rather than inert templates, and the Isfahbad-light that governs a body while receiving from above.
 epigraph: "A governing light becomes tyrannical when it closes the channel above itself."
-backdrop: dominion
+backdrop: spherehall
+position: center 32%
 ---
 
 Suhrawardī's luminous cosmos is populated by differentiated orders rather than an undivided field of brightness. Two especially important categories are the "victorial" or "dominating lights" - *al-anwār al-qāhira* - and the "governing lights" - *al-anwār al-mudabbira*.

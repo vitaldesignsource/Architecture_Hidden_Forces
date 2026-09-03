@@ -10,7 +10,8 @@ symbol: [Temple]
 related: [ii-26, xiv-24, xiii-12, xx-18, xvii-30, xiv-5]
 summary: A form becomes consecrated when intention, material, symbol, place, time, action, speech, and invoked presence are brought into correspondence with a purpose exceeding their separate functions - matter is not discarded but spiritualised - and consecration is maintained only through truthful use, since a sacred office can be desecrated by corruption and a ritual object emptied by neglect.
 epigraph: "Form remains consecrated only while its living relations continue to serve the purpose for which it was set apart."
-backdrop: sanctum
+backdrop: oculus
+position: center 55%
 ---
 
 Consecration is not the arbitrary assignment of holiness to an object. It is the establishment of correspondence among intention, material, symbol, place, time, action, speech, and invoked presence. Through such alignment, an ordinary vessel becomes capable of holding and transmitting a particular order of light — [[xiv-24|consecration as the establishment of right relation]] gives the ritual form of this.

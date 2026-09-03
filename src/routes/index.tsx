@@ -8910,7 +8910,7 @@ function Index() {
       <section id="transduction" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-590} />
         <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
-          <Backdrop src="/bg/seacave.webp" opacity={0.24} position="center 50%" fill />
+          <Backdrop src="/bg/fourveils.webp" opacity={0.24} position="center 42%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">

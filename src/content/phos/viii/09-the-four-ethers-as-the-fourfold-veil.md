@@ -6,7 +6,8 @@ tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Formative]
 related: [ii-6, ii-7, iii-9, viii-5, viii-8, v-29]
 summary: Not layers stacked above matter — their operations interpenetrate and recur, and the Veil makes communication possible rather than obstructing it.
-backdrop: filters
+backdrop: fourveils
+position: center 42%
 ---
 
 The Four Ethers form the **Fourfold Veil** between undifferentiated possibility and embodied manifestation.

@@ -857,7 +857,7 @@ function Phos() {
       {/* § VII — LADDER */}
       <section id="ladder" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-700} />
-        <Backdrop src="/bg/spiralstair.webp" opacity={0.36} position="center 50%" scrim={0.22} portrait />
+        <Backdrop src="/bg/spherehall.webp" opacity={0.36} position="center 32%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § VII · The Ladder of Lights
