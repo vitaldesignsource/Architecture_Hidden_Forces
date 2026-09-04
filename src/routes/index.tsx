@@ -188,7 +188,7 @@ function Index() {
               </span>
               <span className="mx-auto mt-6 block h-px w-24 origin-left bg-gold/70 title-underline" />
             </h1>
-            <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mx-auto mt-10 max-w-2xl font-serif text-lg leading-relaxed text-bone/90 sm:text-xl md:text-2xl" data-hero-lede>
               A complete metaphysics with Greek philosophical correspondences — the architecture
               by which hidden forces become visible forms, and by which visible forms reveal
               hidden forces.

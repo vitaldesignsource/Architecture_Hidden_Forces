@@ -83,10 +83,18 @@ function Portal() {
               </span>
               <span className="mx-auto mt-6 block h-px w-24 origin-left bg-gold/70 title-underline" />
             </h1>
-            <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Light, radiance, illumination, and darkness within The Architecture of Hidden Forces —
-              read by tradition, quality, plane, operation, symbol, text, or period, with every entry
-              labelled by the kind of claim it makes.
+            <p className="mx-auto mt-10 max-w-3xl font-serif text-lg leading-relaxed text-bone/90 sm:text-xl md:text-2xl" data-hero-lede>
+              <span className="italic text-bone">Light, radiance, illumination, and darkness</span> within{" "}
+              <Link to="/" className="text-gold/90 underline decoration-gold/35 underline-offset-4 transition-colors hover:text-gold hover:decoration-gold">The Architecture of Hidden Forces</Link>,
+              with every entry labelled by <span className="italic text-gold">the kind of claim it makes</span>.
+            </p>
+            <p className="mx-auto mt-6 max-w-3xl font-mono text-[10px] uppercase leading-loose tracking-[0.3em] text-gold-dim text-balance">
+              <span className="whitespace-nowrap text-bone/55">read by ·</span>{" "}
+              {["tradition", "quality", "plane", "operation", "symbol", "text", "period"].map((f, i, a) => (
+                <span key={f}>
+                  <Link to="/phos/browse" hash={f} className="whitespace-nowrap transition-colors hover:text-gold">{f}{i < a.length - 1 ? " ·" : ""}</Link>{" "}
+                </span>
+              ))}
             </p>
             <p className="mx-auto mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               {all.written} of {TOTAL} entries written · {begun} of {DIVISIONS.length} divisions begun

@@ -81,7 +81,15 @@
 @keyframes letter-coalesce {
   0%   { opacity: 0; filter: blur(var(--rt-blur, 18px)); transform: translateY(var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); letter-spacing: var(--rt-letter-spacing, 0.4em); color: var(--gold); text-shadow: 0 0 24px color-mix(in oklab, var(--gold) 60%, transparent); }
   55%  { opacity: 1; filter: blur(2px); transform: translateY(-0.05em) scale(1.02) rotate(0.5deg); letter-spacing: 0.02em; }
-  100% { opacity: 1; filter: blur(0); transform: none; letter-spacing: normal; color: inherit; text-shadow: none; }
+  100% { opacity: 1; filter: blur(0); transform: none; letter-spacing: normal; color: inherit; }
+}
+
+/* The same arrival for the glinting letters, whose colour the glint owns:
+   coalesce without the colour, shadow and filter frames. */
+@keyframes letter-coalesce-clip {
+  0%   { opacity: 0; transform: translateY(var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); letter-spacing: var(--rt-letter-spacing, 0.4em); }
+  55%  { opacity: 1; transform: translateY(-0.05em) scale(1.02) rotate(0.5deg); letter-spacing: 0.02em; }
+  100% { opacity: 1; transform: none; letter-spacing: normal; }
 }
 
 @keyframes letter-rise {
@@ -123,19 +131,29 @@
 }
 .reveal-title .rt-space { display: inline-block; width: 0.28em; }
 
-.title-shimmer {
-  background: linear-gradient(
-    100deg,
-    color-mix(in oklab, var(--gold) 100%, transparent) 0%,
-    color-mix(in oklab, var(--bone) 92%, transparent) 45%,
-    color-mix(in oklab, var(--gold) 100%, transparent) 55%,
-    color-mix(in oklab, var(--gold) 100%, transparent) 100%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shimmer-sweep 6s ease-in-out 2.4s infinite;
+/* The shimmer is a glint of bone passing through gold, set on each letter
+   with the letters' own stagger, so it reads as one sweep along the word. It
+   is a colour animation and nothing more: an earlier version clipped a moving
+   gradient to the text, which every letter's own compositing defeated (the
+   words vanished once they had risen), and which stacked the effects WebKit
+   is least reliable with. A colour keeps the letters ordinary text, so the
+   halo a heading wears over a backdrop applies to them as to any other. */
+.reveal-title.title-shimmer .rt-char {
+  color: var(--gold);
+  animation-name: letter-coalesce-clip, title-glint;
+  animation-duration: var(--rt-duration, 1.4s), 7s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1), ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: both, none;
+}
+@keyframes title-glint {
+  0%, 44%, 56%, 100% { color: var(--gold); }
+  50% { color: color-mix(in oklab, var(--bone) 92%, var(--gold)); }
+}
+/* Off screen the glint stops; the arrival, which fills both ways, never does. */
+.aoh-still .reveal-title.title-shimmer .rt-char { animation-play-state: running, paused; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal-title.title-shimmer .rt-char { animation: none; opacity: 1; color: var(--gold); }
 }
 
 .title-underline {
@@ -194,17 +212,34 @@
 .aoh-formula { --ray-p: 1; }
 .aoh-formula-beam,
 .aoh-formula-tip { position: absolute; left: 50%; pointer-events: none; }
+/* The beam opens from a point, as the giving does: a cone from the apex,
+   widest at wherever the tip has reached, and soft at the top rather than a
+   bar laid across the first line. The horizontal mask is a lens, brightest on
+   its axis; the vertical one fades the apex in. */
 .aoh-formula-beam {
   top: 0;
-  width: min(64%, 30rem);
+  width: min(72%, 34rem);
   height: calc(var(--ray-p) * 100%);
   transform: translateX(-50%);
   background: linear-gradient(to bottom,
-    oklch(0.78 0.13 75 / 0.3),
-    oklch(0.78 0.13 75 / 0.12) 45%,
-    oklch(0.78 0.13 75 / 0.2));
-  -webkit-mask-image: linear-gradient(to right, transparent, black 32%, black 68%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 32%, black 68%, transparent);
+    oklch(0.78 0.13 75 / 0.34),
+    oklch(0.78 0.13 75 / 0.14) 45%,
+    oklch(0.78 0.13 75 / 0.22));
+  /* a cone from the apex, cut by a conic mask so it keeps one angle as it
+     lengthens, as light from a point does, with feathered edges; it dissolves
+     into the tip rather than ending on a line */
+  -webkit-mask-image:
+    conic-gradient(from 166deg at 50% 0, transparent 0deg, black 8deg, black 20deg, transparent 28deg),
+    linear-gradient(to right, transparent, oklch(0 0 0 / 0.55) 30%, black 50%, oklch(0 0 0 / 0.55) 70%, transparent),
+    linear-gradient(to bottom, transparent, black 7rem),
+    linear-gradient(to top, transparent, black 8rem);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    conic-gradient(from 166deg at 50% 0, transparent 0deg, black 8deg, black 20deg, transparent 28deg),
+    linear-gradient(to right, transparent, oklch(0 0 0 / 0.55) 30%, black 50%, oklch(0 0 0 / 0.55) 70%, transparent),
+    linear-gradient(to bottom, transparent, black 7rem),
+    linear-gradient(to top, transparent, black 8rem);
+  mask-composite: intersect;
 }
 .aoh-formula-tip {
   top: calc(var(--ray-p) * 100%);
@@ -366,6 +401,8 @@
   /* the band shows the whole frame, so it can carry more presence; capped for legibility */
   /* never below the desktop value — the cap alone would dim a high base */
   .aoh-bd-img { opacity: max(var(--bd-o, 0.3), min(0.72, calc(var(--bd-o, 0.3) * 1.6))); }
+  /* a fill covers the words themselves, so it takes a milder lift than the band */
+  .aoh-bd-fill .aoh-bd-img { opacity: max(var(--bd-o, 0.3), min(0.5, calc(var(--bd-o, 0.3) * 1.25))); }
   /* the band's strongest zone sits above the heading, so it can open sooner
      and take longer to dissolve than the desktop full-bleed treatment */
   .aoh-bd-scrim { --bd-fade-top: 48px; --bd-fade: 200px; }
@@ -431,20 +468,20 @@ section div:has(> div > .aoh-bd) { padding-top: 8rem; }
 
    Selected two levels deep because Backdrop renders its own absolute wrapper
    between the isolating container and the band. */
-:is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por))
-  :is(p, li, span, h3, blockquote) {
+:is(section, div, header):has(> div > :is(.aoh-bd, .aoh-bd-por, .aoh-bd-fill), > div > div > .aoh-bd-fill)
+  :is(p, li, span, h3, blockquote, footer, dt, dd, figcaption) {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 0 14px rgba(0, 0, 0, 0.55);
 }
 
 /* Display type is larger and thinner-stroked in this serif, so it wants a wider,
    softer pool rather than a tighter one. */
-:is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por)) h2 {
+:is(section, div, header):has(> div > :is(.aoh-bd, .aoh-bd-por, .aoh-bd-fill), > div > div > .aoh-bd-fill) :is(h1, h2) {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 22px rgba(0, 0, 0, 0.6);
 }
 
 /* Never inside a figure — SVG text sets its own fills and a shadow muddies the
    thin strokes the diagrams are drawn with. */
-:is(section, div):has(> div > :is(.aoh-bd, .aoh-bd-por)) svg :is(text, tspan) {
+:is(section, div, header):has(> div > :is(.aoh-bd, .aoh-bd-por, .aoh-bd-fill), > div > div > .aoh-bd-fill) svg :is(text, tspan) {
   text-shadow: none;
 }
 

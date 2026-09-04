@@ -256,14 +256,14 @@ function Phos() {
               </span>
               <span className="mx-auto mt-6 block h-px w-24 origin-left bg-gold/70 title-underline" />
             </h1>
-            <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mx-auto mt-10 max-w-2xl font-serif text-lg leading-relaxed text-bone/90 sm:text-xl md:text-2xl" data-hero-lede>
               A companion volume to{" "}
-              <Link to="/" className="text-gold-dim underline-offset-4 hover:text-gold hover:underline">
+              <Link to="/" className="text-gold/90 underline decoration-gold/35 underline-offset-4 transition-colors hover:text-gold hover:decoration-gold">
                 The Architecture of Hidden Forces
               </Link>
-              . The same structure, read by its own light — what it means that the first thing every
-              tradition reaches for, when it wants to say how the invisible becomes visible, is a
-              lamp.
+              . The same structure, <span className="italic">read by its own light</span> — what it means
+              that the first thing every tradition reaches for, when it wants to say how the invisible
+              becomes visible, <span className="italic text-gold">is a lamp</span>.
             </p>
 
             <div className="mx-auto mt-16 h-px w-16 bg-gold/50" />
