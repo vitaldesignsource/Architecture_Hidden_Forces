@@ -22,6 +22,7 @@ export { ForceAndForm } from "./ForceAndForm";
 export { EthericTides } from "./EthericTides";
 export { LunarClocks } from "./LunarClocks";
 export { ZodiacGrid } from "./ZodiacGrid";
+export { ZodiacWheel } from "./ZodiacWheel";
 export { EtherCircuit } from "./EtherCircuit";
 export { SubTattvaMatrix } from "./SubTattvaMatrix";
 export { TreeOfLife } from "./TreeOfLife";

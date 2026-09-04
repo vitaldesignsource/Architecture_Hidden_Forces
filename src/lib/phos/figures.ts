@@ -207,6 +207,9 @@ export const FIGURES: Figure[] = [
     not: "No single carrier contains the tradition, so no single loss ends it." },
 
   // ── celestial ───────────────────────────────────────────────────────────
+  { k: "Zodiac Wheel", C: drawing("ZodiacWheel"), rel: "spatial", teaching: "The celestial pattern",
+    d: "The twelve in circular order, with the triangles of element and the crosses of modality drawn as consequences of the ordering.",
+    not: "The triangles and crosses are not additional doctrine. They are what four and three produce on one ring." },
   { k: "Zodiac Grid", C: drawing("ZodiacGrid"), rel: "spatial", teaching: "The celestial pattern",
     d: "The twelve as a complete four-by-three of element and modality.",
     not: "Not a list of twelve things. Every cell is one element in one phase." },

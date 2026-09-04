@@ -546,3 +546,15 @@ input[type="range"]:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .aoh-cp, .aoh-cp-veil { animation: none; }
 }
+
+/* The zodiacal wheel is drawn in a 692-unit box. On a phone that box is scaled
+   to about half size, which would take the sign names below five real pixels,
+   so the lettering is enlarged in user units at small widths rather than the
+   figure being cropped. */
+@media (max-width: 639px) {
+  .zw-name { font-size: 15px; letter-spacing: 0.9px; }
+  .zw-mark { font-size: 12px; letter-spacing: 1px; }
+  .zw-eyebrow { font-size: 13px; letter-spacing: 2.2px; }
+  .zw-count { font-size: 34px; }
+  .zw-sub { font-size: 12.5px; }
+}

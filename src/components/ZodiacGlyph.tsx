@@ -11,7 +11,7 @@
  * on one optical weight beside each other in a grid.
  */
 
-const PATHS: Record<string, string> = {
+export const ZODIAC_PATHS: Record<string, string> = {
   // stem, and two horns curling outward
   Aries:
     "M12 20.5V11 M12 11c0-4.5-2-6.5-4-5.5S5 9.5 6.5 11.5 M12 11c0-4.5 2-6.5 4-5.5s3 4 1.5 6",
@@ -56,7 +56,7 @@ const PATHS: Record<string, string> = {
 };
 
 export function ZodiacGlyph({ sign, className = "" }: { sign: string; className?: string }) {
-  const d = PATHS[sign];
+  const d = ZODIAC_PATHS[sign];
   if (!d) return null;
   return (
     <svg

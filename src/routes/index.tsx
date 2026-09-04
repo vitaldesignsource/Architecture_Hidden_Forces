@@ -36,6 +36,7 @@ import {
   VerticalChain,
   WuxingCycles,
   ZodiacGrid,
+  ZodiacWheel,
   MorphaithericField,
   Chon,
   FourfoldVeil,
@@ -7724,6 +7725,14 @@ function Index() {
               formation occurs through, three modalities describing the phase of activity that medium
               is in. And the elements here are not the physical substances, but formal categories
               abstracted from their behaviour.
+            </p>
+            <div className="mt-14">
+              <ZodiacWheel />
+            </div>
+            <p className="mt-16 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              The same twelve, laid flat: the wheel shows the order they stand in, the grid shows the
+              generation that produces them. Read down a column and the phase is constant while the
+              medium changes; read across a row and the medium holds while the phase turns.
             </p>
             <div className="mt-12">
               <ZodiacGrid />
