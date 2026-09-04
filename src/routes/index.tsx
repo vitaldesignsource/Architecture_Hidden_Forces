@@ -60,6 +60,7 @@ import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
 import { PetalRosette } from "@/components/PetalRosette";
 import { SealBlock } from "@/components/SealBlock";
+import { MeanderBand } from "@/components/MeanderBand";
 import { Term, TermRegister, type TermData } from "@/components/Term";
 import { CrossMark } from "@/components/CrossMark";
 import {
@@ -100,6 +101,19 @@ const NAV = [
  *  it; Greek is polytonic; the Coptic is the form the Nag Hammadi codices use. */
 /** The Hebrew § VII borrows, with the pointing convention the section states:
  *  biblical words pointed, later technical terms unpointed. */
+/** The Greek § XXX works in. Polytonic, with the accentuation checked by rule. */
+const THEURGY_TERMS: TermData[] = [
+  { script: "greek", orig: "θεουργία", tr: "theourgía", gloss: "god-work: not persuading a god to act but acting with one. Iamblichus' answer to Porphyry turns on the difference between a prayer that asks and a rite that participates." },
+  { script: "greek", orig: "σύνθημα", tr: "sýnthēma · pl. synthḗmata", gloss: "a token, a password, a thing agreed on in advance — the stone, plant, scent or name a rite uses because the god sowed it there. It works by being recognised, not by resembling." },
+  { script: "greek", orig: "σύμβολον", tr: "sýmbolon", gloss: "the half of a broken tally that fits its other half. What makes a symbol operative here is not that it depicts but that it belongs to something." },
+  { script: "greek", orig: "σειρά", tr: "seirá", gloss: "a chain: the series that runs from a god down through intelligences, souls, animals, plants and stones — the vertical relation § XXIX is built on." },
+  { script: "greek", orig: "ἐπιτηδειότης", tr: "epitēdeiótēs", gloss: "fitness, aptitude for receiving. The Neoplatonic answer to why the same influence does not do the same thing in every vessel: reception is a property of the receiver." },
+  { script: "greek", orig: "μέθεξις", tr: "méthexis", gloss: "participation — having a share in something without being it, and without exhausting what is shared." },
+  { script: "greek", orig: "ὄχημα", tr: "óchēma", gloss: "vehicle: the subtle body the soul rides in, taken up in the later Platonists and inherited by everything this volume says about the etheric and astral." },
+  { script: "greek", orig: "ἄγαλμα", tr: "ágalma · pl. agálmata", gloss: "a statue, but originally a delight or an ornament given to a god — the word behind the ensouled image, and behind the rites that opened its mouth." },
+  { script: "greek", orig: "ἀναγωγή", tr: "anagōgḗ", gloss: "the leading-up: the soul's movement back toward its source, and the name for what a rite is for." },
+];
+
 const KABBALAH_TERMS: TermData[] = [
   { script: "hebrew", orig: "אֵין סוֹף", tr: "ʾein sof", gloss: "without end. Not a name of God but a refusal of one: the boundless, before anything can be predicated of it." },
   { script: "hebrew", orig: "צמצום", tr: "tzimtzum", gloss: "contraction, withdrawal. The first act is a making-room: the infinite withdraws so that something finite can stand where it was.", note: "Luria's term, sixteenth century. Whether the withdrawal is literal or figurative was disputed almost immediately, and the dispute is the whole later argument in miniature." },
@@ -6051,6 +6065,7 @@ function Index() {
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXX · Greek Metaphysics and Theurgic Engineering
           </p>
+          <MeanderBand className="mt-8 max-w-3xl" />
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Plotinus and the architecture of <span className="italic text-gold">reality</span>
           </h2>
@@ -6074,6 +6089,27 @@ function Index() {
             manifestation in the place of its source — the same error § XXIX guards against when it
             separates the transcendent from Root Ether.
           </p>
+
+          {/* the working vocabulary, in Greek */}
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Τὰ ὀνόματα · the words this section works with
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Nine words carry the theurgic argument, and most of them are ordinary Greek put to
+              technical use — a token, a fitness, a chain, a vehicle. Reading them in Greek keeps
+              them from hardening into jargon: what a synthēma names is a password or a token of
+              recognition, and it does its work by being recognised.
+            </p>
+            <div className="mt-8 max-w-4xl">
+              <TermRegister terms={THEURGY_TERMS} />
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+              Accents and inflections here follow the rules; none of these forms was collated
+              against a printed lexicon, and the register says so rather than implying an authority
+              it does not have.
+            </p>
+          </div>
 
           {/* ---- theurgic engineering ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
