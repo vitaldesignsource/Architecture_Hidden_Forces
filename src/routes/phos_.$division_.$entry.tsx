@@ -10,8 +10,10 @@ import { Missing } from "@/components/phos/Missing";
 import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
 
 import { ATLAS_DIVISIONS } from "@/lib/phos/atlas-gate";
+import { REGISTERED_ENTRIES } from "@/lib/phos/beings-gate";
 
 const WhereAndWhen = lazy(() => import("@/components/phos/WhereAndWhen").then((m) => ({ default: m.WhereAndWhen })));
+const NamedInRegister = lazy(() => import("@/components/phos/NamedInRegister").then((m) => ({ default: m.NamedInRegister })));
 import type { Entry as Row } from "@/lib/contents";
 import { entry, entriesOf, entryById, introMeta, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";
 
@@ -202,6 +204,12 @@ function EntryPage() {
                   ))}
                 </div>
               </div>
+            )}
+
+            {REGISTERED_ENTRIES.has(e.id) && (
+              <Suspense fallback={null}>
+                <NamedInRegister id={e.id} />
+              </Suspense>
             )}
 
             <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">

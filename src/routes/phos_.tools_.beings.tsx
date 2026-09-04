@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
@@ -33,16 +33,40 @@ const TRADITION_ORDER = [
 ];
 
 export const Route = createFileRoute("/phos_/tools_/beings")({
+  // ?being=<id> opens that row and scrolls to it, so an entry in the Portal can
+  // point at one being rather than at the register as a whole.
+  validateSearch: (search: Record<string, unknown>): { being?: string } =>
+    typeof search.being === "string" && search.being ? { being: search.being } : {},
   head: () => ({ meta: [{ title: "The Register of Beings — Instruments — Phōs" }] }),
   component: Register,
 });
 
 function Register() {
+  const { being } = Route.useSearch();
   const [tradition, setTradition] = useState<string | null>(null);
   const [cls, setCls] = useState<ClassKey | null>(null);
   const [plane, setPlane] = useState<Plane | null>(null);
   const [q, setQ] = useState("");
-  const [open, setOpen] = useState<string | null>(null);
+  const [open, setOpen] = useState<string | null>(being ?? null);
+  const asked = useRef<string | null>(null);
+
+  // A being asked for by name is opened and brought into view — once, so that
+  // closing the row again does not fight the URL.
+  useEffect(() => {
+    if (!being || asked.current === being) return;
+    asked.current = being;
+    if (!BEINGS.some((b) => b.id === being)) return;
+    setOpen(being);
+    setTradition(null);
+    setCls(null);
+    setPlane(null);
+    setQ("");
+    // After the frame in which the tool frame puts the page back at the top,
+    // and instantly: a deep link should arrive at its row, not travel to it.
+    requestAnimationFrame(() =>
+      document.getElementById(`being-${being}`)?.scrollIntoView({ block: "center" }),
+    );
+  }, [being]);
 
   const traditions = useMemo(() => [...new Set(BEINGS.map((b) => b.tradition))].sort(), []);
   const rows = useMemo(() => {
@@ -185,7 +209,13 @@ function Register() {
       <ToolBand>
         <div className="border-t border-border">
           {rows.map((b) => (
-            <Row key={b.id} b={b} open={open === b.id} onToggle={() => setOpen(open === b.id ? null : b.id)} />
+            <Row
+              key={b.id}
+              b={b}
+              open={open === b.id}
+              asked={being === b.id}
+              onToggle={() => setOpen(open === b.id ? null : b.id)}
+            />
           ))}
           {!rows.length && (
             <p className="py-10 text-sm text-muted-foreground">
@@ -314,9 +344,12 @@ function Register() {
   );
 }
 
-function Row({ b, open, onToggle }: { b: Being; open: boolean; onToggle: () => void }) {
+function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boolean; onToggle: () => void }) {
   return (
-    <div className="border-b border-border">
+    <div
+      id={`being-${b.id}`}
+      className={`border-b border-border ${asked ? "border-l-2 border-l-gold pl-4 sm:pl-5" : ""}`}
+    >
       <button
         onClick={onToggle}
         aria-expanded={open}

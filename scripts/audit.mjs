@@ -547,6 +547,26 @@ if (lex.length) {
   note("atlas", `${atlas.spans.length} spans over ${Object.keys(atlas.places).length} places in ${atlas.lanes.length} lanes, on the ${geo.projection} sheet`);
 }
 
+// ----------------------------------------------------------------- register
+{
+  const src = readFileSync(join(root, "src/lib/phos/beings.ts"), "utf8");
+  const toc = JSON.parse(readFileSync(join(root, "src/lib/phos/toc.json"), "utf8"));
+  const ids = new Set(toc.divisions.flatMap((d) => d.entries.map((e) => e.id)));
+  const cited = new Set();
+  for (const m of src.matchAll(/entries:\s*\[([^\]]*)\]/g))
+    for (const q of m[1].matchAll(/"([^"]+)"/g)) cited.add(q[1]);
+  const unknown = [...cited].filter((id) => !ids.has(id));
+  if (unknown.length) fail("register", `beings filed against entries that do not exist: ${unknown.join(", ")}`);
+  const gate = readFileSync(join(root, "src/lib/phos/beings-gate.ts"), "utf8").match(/REGISTERED_ENTRIES = new Set\(\[([^\]]*)\]\)/);
+  const gated = new Set(gate ? [...gate[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]) : []);
+  const missing = [...cited].filter((id) => !gated.has(id));
+  if (missing.length) fail("register", `entries whose beings would never show (not in beings-gate.ts): ${missing.join(", ")}`);
+  const stale = [...gated].filter((id) => !cited.has(id));
+  if (stale.length) fail("register", `beings-gate.ts would fetch the register for entries no being names: ${stale.join(", ")}`);
+  const beings = (src.match(/^    id: "/gm) ?? []).length;
+  note("register", `${cited.size} entries carry beings from a register of ${beings}`);
+}
+
 // ---------------------------------------------------------------- measure
 if (!css.includes("74ch")) fail("measure", "the line-length cap is missing from styles.css");
 
