@@ -59,6 +59,7 @@ import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "
 import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
 import { PetalRosette } from "@/components/PetalRosette";
+import { SealBlock } from "@/components/SealBlock";
 import { Term, TermRegister, type TermData } from "@/components/Term";
 import { CrossMark } from "@/components/CrossMark";
 import {
@@ -3631,6 +3632,19 @@ function Index() {
             Not three invisible substances but three interdependent conditions of living
             organization — and not a ladder on which the lower is discarded.
           </p>
+
+          <div className="mt-14 flex flex-wrap items-center gap-x-10 gap-y-6">
+            <SealBlock chars="精氣神" size={104} className="text-gold" label="jīng qì shén — essence, breath, spirit" />
+            <div>
+              <p className="font-serif text-2xl text-bone/90" lang="zh-Hant">精氣神</p>
+              <p className="mt-2 font-serif text-base italic text-gold-dim">jīng · qì · shén</p>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+                Together they are the <span lang="zh-Hant">三寶</span>, sānbǎo, the three treasures.
+                The characters are set here in the traditional forms and in the shape of a seal —
+                a borrowed convention, not a reproduction of anyone&rsquo;s seal.
+              </p>
+            </div>
+          </div>
 
           <div className="mt-16">
             <ThreeTreasures />
