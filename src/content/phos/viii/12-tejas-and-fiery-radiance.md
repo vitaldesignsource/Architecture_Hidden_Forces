@@ -11,6 +11,8 @@ backdrop: burnslope
 
 Tejas is the tattvic bias toward radiance, heat, distinction, metabolism, intensity, digestion, and transformation.
 
+::figure The Tattva Tejas
+
 Tejas-light exposes boundaries and accelerates change. It illuminates by increasing contrast and transforms by releasing energy from established forms.
 
 Within the body, Tejas may be symbolically associated with metabolism, heat, digestion, and active differentiation. Within the psyche, it appears as courage, discernment, passion, anger, ambition, and the power to cut through confusion.

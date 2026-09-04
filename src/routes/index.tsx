@@ -54,6 +54,8 @@ import {
   TheAxis,
   OneLayerOfSeven,
 } from "@/components/diagrams";
+import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
+import { PassageGeometry } from "@/components/PassageGeometry";
 
 /**
  * The header and the mobile strip were two hand-maintained lists, and they drifted:
@@ -2796,7 +2798,8 @@ function Index() {
                 ["Γῆ", "Earth", "embodies it as behaviour, habit, institution, form"],
               ].map(([z, k, d]) => (
                 <div key={k} className="border-b border-border py-4">
-                  <div className="font-serif text-xl text-gold">{z}</div>
+                  <ElementSign k={(k === "Akasha" ? "Ether" : k) as ElementKey} size={26} className="text-gold/80" title={`${k} — ${k === "Akasha" ? "the egg of Ākāśa" : "its alchemical sign"}`} />
+                  <div className="mt-3 font-serif text-xl text-gold">{z}</div>
                   <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{k}</div>
                   <div className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</div>
                 </div>
@@ -6500,7 +6503,10 @@ function Index() {
                 ["Salt", "the embodied character able to contain the current through discipline, work, rite, and lasting form",
                  "Grown rigid", "the personality refuses every transformative demand"]].map(([a, b, c, d]) => (
                 <div key={a} className="border-t border-border py-5 pr-6">
-                  <p className="font-serif text-xl text-gold">{a}</p>
+                  <div className="flex items-center gap-3">
+                    <PrincipleSign k={a as PrincipleKey} size={28} className="shrink-0 text-gold/80" />
+                    <p className="font-serif text-xl text-gold">{a}</p>
+                  </div>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
                   <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-bone/50">{c}</p>
                   <p className="mt-2 text-[13px] leading-relaxed text-bone/60">{d}</p>
@@ -8441,7 +8447,8 @@ function Index() {
           </div>
 
           {/* ---- rites ---- */}
-          <div className="mt-24 border-t border-border pt-16">
+          <div className="relative isolate mt-24 border-t border-border pt-16">
+            <PassageGeometry />
             <h3 className="font-serif text-2xl leading-tight">The geometry of passage</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Death rites are the clearest case of a rite as a diagram enacted through time, and

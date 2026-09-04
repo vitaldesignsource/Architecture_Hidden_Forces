@@ -30,6 +30,14 @@
   --muted: oklch(0.17 0.008 60);
   --muted-foreground: oklch(0.6 0.012 70);
   --border: oklch(0.95 0.012 80 / 0.08);
+  /* The tattvas' own colours, after Prasad and the Golden Dawn cards, chosen
+     for this ground: the cards were coloured paper on white, and their black
+     Ākāśa cannot show on black, so it is the indigo the black stood beside. */
+  --tattva-akasa: #3b2a80;
+  --tattva-vayu: #3e8fd9;
+  --tattva-tejas: #d8412f;
+  --tattva-apas: #c9cdd2;
+  --tattva-prithivi: #f2c230;
 }
 
 @layer base {
@@ -203,7 +211,21 @@
 .aoh-still .aolt-descent,
 .aoh-still .aolt-ignite,
 .aoh-still .aoh-ec-spark,
-.aoh-still .aoh-lux-pulse { animation-play-state: paused; }
+.aoh-still .aoh-lux-pulse,
+.aoh-still .aoh-passage-run { animation-play-state: paused; }
+
+/* The geometry of passage: one light travels the spiral, in and out again. */
+.aoh-passage-run {
+  stroke-dasharray: 14 986;
+  stroke-dashoffset: 1000;
+  animation: aoh-passage 36s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+  filter: drop-shadow(0 0 4px oklch(0.78 0.13 75 / 0.8));
+}
+@keyframes aoh-passage { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .aoh-passage-run { animation: none; stroke-dashoffset: 500; }
+  .aoh-passage.animate-drift, .aoh-passage .animate-slow-spin-reverse { animation: none; }
+}
 
 /* The Luminous Formula, lit by a ray that descends the column as it is read.
    --ray-p is how far down the column the tip has come (0..1). It defaults to 1

@@ -12,6 +12,8 @@ position: center 50%
 
 Apas is the tattvic bias toward cohesion, fluidity, circulation, adaptation, reflection, nourishment, and continuity.
 
+::figure The Tattva Apas
+
 Apasic light flows around boundaries rather than immediately breaking them. It fills vessels, carries dissolved contents, reflects surrounding forms, and adapts its appearance to movement and environment.
 
 Within the psyche, Apas corresponds to feeling, empathy, memory, attachment, receptivity, and the capacity to join experiences into continuity. Within living systems, it appears through circulation, transport, hydration, and adaptable cohesion.

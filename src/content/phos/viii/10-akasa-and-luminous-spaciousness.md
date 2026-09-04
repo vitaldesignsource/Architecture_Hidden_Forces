@@ -11,6 +11,8 @@ backdrop: saltflat
 
 Ākāśa is the tattvic bias toward spaciousness, continuity, resonance, receptivity, and the possibility of relation.
 
+::figure The Tattva Ākāśa
+
 It should not be equated automatically with Root Ether. Root Ether is prequalitative receptivity itself. Ākāśa is already a specific qualitative inclination toward openness, interval, and resonant space.
 
 Ākāśic light does not primarily illuminate objects. It reveals the field in which objects can enter relation. It discloses distance, interval, silence, and the continuity through which transmission becomes possible.

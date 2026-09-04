@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AlchemicalMark, TattvaOutline, type ElementKey } from "./ElementGlyphs";
 
 /**
  * WheelOfTranselementation — the elements reorder; the centre does not move.
@@ -17,38 +18,6 @@ import { useState } from "react";
  * The centre holds the seedform. Its stillness through every turn is the
  * section's claim about the formative thread, made operable rather than stated.
  */
-/**
- * The elemental glyphs, drawn rather than set from a font. Outward of each
- * name, the tattva form the Sanskrit name belongs to: the egg of Ākāśa, the
- * circle of Vāyu, the triangle of Tejas, the crescent of Apas, the square of
- * Pṛthivī. Inward, the classical alchemical mark of the four elements that
- * have one: fire and water as the two triangles, air and earth as the same
- * triangles barred. Ether has no alchemical mark and keeps only its form.
- */
-function TattvaForm({ k, x, y, s, fill, op }: { k: string; x: number; y: number; s: number; fill: string; op: number }) {
-  const common = { fill: "none", stroke: fill, strokeOpacity: op, strokeWidth: 1.1, strokeLinejoin: "round" as const };
-  switch (k) {
-    case "Ether": return <path d={`M${x} ${y - s * 0.62} C${x + s * 0.5} ${y - s * 0.62} ${x + s * 0.52} ${y + s * 0.6} ${x} ${y + s * 0.6} C${x - s * 0.52} ${y + s * 0.6} ${x - s * 0.5} ${y - s * 0.62} ${x} ${y - s * 0.62} Z`} {...common} />;
-    case "Air": return <circle cx={x} cy={y} r={s * 0.5} {...common} />;
-    case "Fire": return <path d={`M${x} ${y - s * 0.56} L${x + s * 0.56} ${y + s * 0.42} L${x - s * 0.56} ${y + s * 0.42} Z`} {...common} />;
-    case "Water": return <path d={`M${x - s * 0.55} ${y - s * 0.2} A${s * 0.58} ${s * 0.58} 0 1 0 ${x + s * 0.55} ${y - s * 0.2} A${s * 0.44} ${s * 0.44} 0 1 1 ${x - s * 0.55} ${y - s * 0.2} Z`} {...common} />;
-    case "Earth": return <rect x={x - s * 0.48} y={y - s * 0.48} width={s * 0.96} height={s * 0.96} {...common} />;
-    default: return null;
-  }
-}
-function AlchemicalMark({ k, x, y, s, fill, op }: { k: string; x: number; y: number; s: number; fill: string; op: number }) {
-  const common = { fill: "none", stroke: fill, strokeOpacity: op, strokeWidth: 0.9, strokeLinejoin: "round" as const };
-  const up = `M${x} ${y - s * 0.5} L${x + s * 0.5} ${y + s * 0.4} L${x - s * 0.5} ${y + s * 0.4} Z`;
-  const down = `M${x} ${y + s * 0.5} L${x + s * 0.5} ${y - s * 0.4} L${x - s * 0.5} ${y - s * 0.4} Z`;
-  switch (k) {
-    case "Fire": return <path d={up} {...common} />;
-    case "Air": return <g><path d={up} {...common} /><line x1={x - s * 0.62} x2={x + s * 0.62} y1={y + s * 0.08} y2={y + s * 0.08} {...common} /></g>;
-    case "Water": return <path d={down} {...common} />;
-    case "Earth": return <g><path d={down} {...common} /><line x1={x - s * 0.62} x2={x + s * 0.62} y1={y - s * 0.08} y2={y - s * 0.08} {...common} /></g>;
-    default: return null;
-  }
-}
-
 export function WheelOfTranselementation() {
   const [turn, setTurn] = useState(0);
   const [sel, setSel] = useState<string | null>(null);
@@ -131,8 +100,8 @@ export function WheelOfTranselementation() {
                       opacity={sel && !on ? 0.3 : 0.75}>
                   {e.gk}
                 </text>
-                <TattvaForm k={e.k} x={fx} y={fy} s={11} fill={ink} op={inkOp} />
-                <AlchemicalMark k={e.k} x={mx} y={my} s={7.5} fill={ink} op={inkOp * 0.85} />
+                <TattvaOutline k={e.k as ElementKey} x={fx} y={fy} s={11} fill={ink} op={inkOp} />
+                <AlchemicalMark k={e.k as ElementKey} x={mx} y={my} s={7.5} fill={ink} op={inkOp * 0.85} />
               </g>
             );
           })}

@@ -12,6 +12,8 @@ position: center 50%
 
 Pṛthivī is the tattvic bias toward stability, density, resistance, boundary, endurance, and material embodiment.
 
+::figure The Tattva Pṛthivī
+
 Pṛthivī fixes luminous relation into form. It gives patterns weight, location, persistence, and the capacity to resist immediate dissolution.
 
 Within the body, it corresponds symbolically to structure, tissue, mineral composition, boundary, and physical durability. Within the psyche, it appears as consistency, memory, commitment, patience, and the power to remain.

@@ -10,6 +10,8 @@ backdrop: murmuration
 
 Vāyu is the tattvic bias toward motion, exchange, circulation, communication, variation, and responsiveness.
 
+::figure The Tattva Vāyu
+
 Vāyavic light appears as movement through a field: rays crossing distance, reflections shifting, atmospheric currents becoming visible, or information passing rapidly among receptive points.
 
 Within the organism, Vāyu corresponds symbolically to circulation, respiration, signalling, and movement. Within the psyche, it appears as association, curiosity, mental activity, change, and the movement of images.
