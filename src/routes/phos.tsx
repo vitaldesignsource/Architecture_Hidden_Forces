@@ -1,12 +1,14 @@
 import { Fragment, useRef, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import toc from "@/lib/phos/toc.json";
+import { ZODIAC } from "@/lib/phos/colour";
 import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import { useFormulaRay } from "@/hooks/useFormulaRay";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { ContentsPanel } from "@/components/ContentsPanel";
+import { CrossMark } from "@/components/CrossMark";
 import {
   BoundaryColour,
   LadderOfLights,
@@ -189,14 +191,14 @@ function Phos() {
                 to="/phos/portal"
                 className="whitespace-nowrap border-l border-border pl-4 text-gold-dim transition-colors hover:text-gold xl:pl-6"
               >
-                Portal ↗
+                Portal <CrossMark className="text-gold/70" />
               </Link>
             </div>
             <Link
               to="/"
               className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
             >
-              The Architecture <span className="text-gold/60">↗</span>
+              The Architecture <CrossMark className="text-gold/70" />
             </Link>
             <ContentsPanel
               active={active}
@@ -227,13 +229,13 @@ function Phos() {
               </a>
             ))}
             <Link to="/phos/portal" className="whitespace-nowrap py-1 text-gold-dim transition-colors hover:text-gold">
-              Portal ↗
+              Portal <CrossMark className="text-gold/70" />
             </Link>
             <Link
               to="/"
               className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold"
             >
-              Architecture ↗
+              Architecture <CrossMark className="text-gold/70" />
             </Link>
           </div>
         </div>
@@ -984,6 +986,41 @@ function Phos() {
               , with the interval each one carries into the next.
             </p>
           </div>
+          {/* the instrument this section opens onto */}
+          <Link
+            to="/phos/tools/flashing"
+            className="group mt-24 block overflow-hidden border border-gold/40 transition-colors hover:border-gold"
+          >
+            <span className="flex h-3 w-full" aria-hidden>
+              {ZODIAC.map((z) => (
+                <span key={z.sign} className="flex-1 transition-[flex] duration-500" style={{ background: z.hex }} />
+              ))}
+            </span>
+            <span className="block bg-void/40 p-7 transition-colors group-hover:bg-gold/5 sm:p-9">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+                Instrument · Flashing Colours
+              </span>
+              <span className="mt-4 block max-w-2xl font-serif text-3xl leading-tight text-bone transition-colors group-hover:text-gold">
+                The colour that will not hold still
+              </span>
+              <span className="mt-4 block max-w-2xl text-base leading-relaxed text-muted-foreground">
+                The Golden Dawn took the same edge Goethe described and put it to work: four scales
+                of colour for the four worlds, implements painted in one colour and lettered in its
+                complement, tablets whose every square stands against its own opposite. The
+                instrument sets out the tables, lets the pairs be tested against near misses, and
+                separates what the eye is doing from what the tradition claims it means.
+              </span>
+              <span className="mt-6 block font-mono text-[9px] uppercase tracking-[0.2em] text-gold">
+                Open the demonstration &rarr;
+              </span>
+            </span>
+            <span className="flex h-3 w-full" aria-hidden>
+              {ZODIAC.map((z, i) => (
+                <span key={z.sign} className="flex-1" style={{ background: ZODIAC[(i + 6) % 12].hex }} />
+              ))}
+            </span>
+          </Link>
+
           <PortalPointers ids={["xv-90", "iv-15", "xvi-6", "xix-6"]} />
         </div>
       </section>

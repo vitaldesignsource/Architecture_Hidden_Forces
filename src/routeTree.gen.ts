@@ -20,6 +20,7 @@ import { Route as PhosToolsAnatomyRouteImport } from './routes/phos_.tools_.anat
 import { Route as PhosToolsAtlasRouteImport } from './routes/phos_.tools_.atlas'
 import { Route as PhosToolsConstellationRouteImport } from './routes/phos_.tools_.constellation'
 import { Route as PhosToolsDiagramsRouteImport } from './routes/phos_.tools_.diagrams'
+import { Route as PhosToolsFlashingRouteImport } from './routes/phos_.tools_.flashing'
 import { Route as PhosToolsSymbolsRouteImport } from './routes/phos_.tools_.symbols'
 import { Route as PhosToolsTraceRouteImport } from './routes/phos_.tools_.trace'
 import { Route as PhosToolsTraditionsRouteImport } from './routes/phos_.tools_.traditions'
@@ -80,6 +81,11 @@ const PhosToolsDiagramsRoute = PhosToolsDiagramsRouteImport.update({
   path: '/phos/tools/diagrams',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PhosToolsFlashingRoute = PhosToolsFlashingRouteImport.update({
+  id: '/phos_/tools_/flashing',
+  path: '/phos/tools/flashing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PhosToolsSymbolsRoute = PhosToolsSymbolsRouteImport.update({
   id: '/phos_/tools_/symbols',
   path: '/phos/tools/symbols',
@@ -113,6 +119,7 @@ export interface FileRoutesByFullPath {
   '/phos/tools/atlas': typeof PhosToolsAtlasRoute
   '/phos/tools/constellation': typeof PhosToolsConstellationRoute
   '/phos/tools/diagrams': typeof PhosToolsDiagramsRoute
+  '/phos/tools/flashing': typeof PhosToolsFlashingRoute
   '/phos/tools/symbols': typeof PhosToolsSymbolsRoute
   '/phos/tools/trace': typeof PhosToolsTraceRoute
   '/phos/tools/traditions': typeof PhosToolsTraditionsRoute
@@ -130,6 +137,7 @@ export interface FileRoutesByTo {
   '/phos/tools/atlas': typeof PhosToolsAtlasRoute
   '/phos/tools/constellation': typeof PhosToolsConstellationRoute
   '/phos/tools/diagrams': typeof PhosToolsDiagramsRoute
+  '/phos/tools/flashing': typeof PhosToolsFlashingRoute
   '/phos/tools/symbols': typeof PhosToolsSymbolsRoute
   '/phos/tools/trace': typeof PhosToolsTraceRoute
   '/phos/tools/traditions': typeof PhosToolsTraditionsRoute
@@ -148,6 +156,7 @@ export interface FileRoutesById {
   '/phos_/tools_/atlas': typeof PhosToolsAtlasRoute
   '/phos_/tools_/constellation': typeof PhosToolsConstellationRoute
   '/phos_/tools_/diagrams': typeof PhosToolsDiagramsRoute
+  '/phos_/tools_/flashing': typeof PhosToolsFlashingRoute
   '/phos_/tools_/symbols': typeof PhosToolsSymbolsRoute
   '/phos_/tools_/trace': typeof PhosToolsTraceRoute
   '/phos_/tools_/traditions': typeof PhosToolsTraditionsRoute
@@ -167,6 +176,7 @@ export interface FileRouteTypes {
     | '/phos/tools/atlas'
     | '/phos/tools/constellation'
     | '/phos/tools/diagrams'
+    | '/phos/tools/flashing'
     | '/phos/tools/symbols'
     | '/phos/tools/trace'
     | '/phos/tools/traditions'
@@ -184,6 +194,7 @@ export interface FileRouteTypes {
     | '/phos/tools/atlas'
     | '/phos/tools/constellation'
     | '/phos/tools/diagrams'
+    | '/phos/tools/flashing'
     | '/phos/tools/symbols'
     | '/phos/tools/trace'
     | '/phos/tools/traditions'
@@ -201,6 +212,7 @@ export interface FileRouteTypes {
     | '/phos_/tools_/atlas'
     | '/phos_/tools_/constellation'
     | '/phos_/tools_/diagrams'
+    | '/phos_/tools_/flashing'
     | '/phos_/tools_/symbols'
     | '/phos_/tools_/trace'
     | '/phos_/tools_/traditions'
@@ -219,6 +231,7 @@ export interface RootRouteChildren {
   PhosToolsAtlasRoute: typeof PhosToolsAtlasRoute
   PhosToolsConstellationRoute: typeof PhosToolsConstellationRoute
   PhosToolsDiagramsRoute: typeof PhosToolsDiagramsRoute
+  PhosToolsFlashingRoute: typeof PhosToolsFlashingRoute
   PhosToolsSymbolsRoute: typeof PhosToolsSymbolsRoute
   PhosToolsTraceRoute: typeof PhosToolsTraceRoute
   PhosToolsTraditionsRoute: typeof PhosToolsTraditionsRoute
@@ -304,6 +317,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhosToolsDiagramsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/phos_/tools_/flashing': {
+      id: '/phos_/tools_/flashing'
+      path: '/phos/tools/flashing'
+      fullPath: '/phos/tools/flashing'
+      preLoaderRoute: typeof PhosToolsFlashingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/phos_/tools_/symbols': {
       id: '/phos_/tools_/symbols'
       path: '/phos/tools/symbols'
@@ -347,6 +367,7 @@ const rootRouteChildren: RootRouteChildren = {
   PhosToolsAtlasRoute: PhosToolsAtlasRoute,
   PhosToolsConstellationRoute: PhosToolsConstellationRoute,
   PhosToolsDiagramsRoute: PhosToolsDiagramsRoute,
+  PhosToolsFlashingRoute: PhosToolsFlashingRoute,
   PhosToolsSymbolsRoute: PhosToolsSymbolsRoute,
   PhosToolsTraceRoute: PhosToolsTraceRoute,
   PhosToolsTraditionsRoute: PhosToolsTraditionsRoute,

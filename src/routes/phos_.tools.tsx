@@ -43,6 +43,33 @@ function Tools() {
             );
           })}
         </div>
+        <div className="mt-14 border-t border-border pt-10">
+          <Eyebrow>Beside the ten · a demonstration</Eyebrow>
+          <Link
+            to="/phos/tools/flashing"
+            className="group mt-6 block border border-gold/40 p-6 transition-colors hover:border-gold hover:bg-gold/5 sm:p-8"
+          >
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+              <span className="flex h-14 w-28 shrink-0 overflow-hidden border border-bone/15" aria-hidden>
+                {["#d0201f", "#0f9d58", "#1f4fb5", "#ef7d18", "#f2c230", "#7b3fa0"].map((c) => (
+                  <span key={c} className="flex-1" style={{ background: c }} />
+                ))}
+              </span>
+              <span>
+                <span className="block font-serif text-2xl text-bone transition-colors group-hover:text-gold">
+                  Flashing Colours
+                </span>
+                <span className="mt-2 block max-w-xl text-sm leading-relaxed text-muted-foreground">
+                  The Golden Dawn&rsquo;s four colour scales, the complementary pairs they painted
+                  their implements in, and the demonstrations that show what the eye is actually
+                  doing at the edge between them.
+                </span>
+              </span>
+            </div>
+            <p className="mt-5 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+          </Link>
+        </div>
+
         <p className="mt-12 max-w-3xl border-l-2 border-gold/40 pl-5 font-serif text-xl leading-relaxed text-bone/85">
           The deepest thing the instruments show is that light is not higher when brighter. Its signature is
           its unity, purity, coherence, stability, medium, purpose, formative effect, and truthfulness.

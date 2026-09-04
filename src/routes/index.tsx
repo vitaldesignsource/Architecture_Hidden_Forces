@@ -57,6 +57,7 @@ import {
 } from "@/components/diagrams";
 import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
 import { PassageGeometry } from "@/components/PassageGeometry";
+import { CrossMark } from "@/components/CrossMark";
 import {
   KhekerFrieze,
   SkyBand,
@@ -147,7 +148,7 @@ function Index() {
               to="/phos"
               className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
             >
-              Phōs <span className="text-gold/60">↗</span>
+              Phōs <CrossMark className="text-gold/70" />
             </Link>
             <ContentsPanel active={active} />
           </div>
@@ -177,7 +178,7 @@ function Index() {
               to="/phos"
               className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold"
             >
-              Phōs ↗
+              Phōs <CrossMark className="text-gold/70" />
             </Link>
           </div>
         </div>
