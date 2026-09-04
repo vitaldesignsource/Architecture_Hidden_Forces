@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { ContentsPanel } from "@/components/ContentsPanel";
@@ -6,6 +6,7 @@ import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHead
 import { LabelChips } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
+import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
 import type { Entry as Row } from "@/lib/contents";
 import { division, entriesOf, loadIntro, loadCoda, loadGroupCodas, loadGroupIntros, neighbourDivisions, progress, divisionLabel, valueSlug } from "@/lib/phos/entries";
 
@@ -40,6 +41,13 @@ function DivisionPage() {
   const entries = entriesOf(d.id);
   const p = progress(d.id);
   const { prev, next } = neighbourDivisions(d);
+  const navigate = useNavigate();
+  useStepKeys({
+    prev: () => prev && prev.id !== "portal"
+      ? navigate({ to: "/phos/$division", params: { division: prev.id } })
+      : navigate({ to: "/phos/portal" }),
+    next: next ? () => navigate({ to: "/phos/$division", params: { division: next.id } }) : null,
+  });
   const rows: Row[] = entries.map((e) => ({
     n: String(e.n), id: e.id, t: e.title, d: e.meta?.summary ?? "", route: { division: d.id, entry: e.slug },
   }));
@@ -124,23 +132,24 @@ function DivisionPage() {
 
           <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
             {prev && prev.id !== "portal" ? (
-              <Link to="/phos/$division" params={{ division: prev.id }} className="group">
+              <Link to="/phos/$division" params={{ division: prev.id }} className="group" aria-keyshortcuts="ArrowLeft [">
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(prev)}</span>
                 <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{prev.title}</span>
               </Link>
             ) : (
-              <Link to="/phos/portal" className="group">
+              <Link to="/phos/portal" className="group" aria-keyshortcuts="ArrowLeft [">
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← The Portal</span>
                 <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">The Encyclopaedia of Light</span>
               </Link>
             )}
             {next && (
-              <Link to="/phos/$division" params={{ division: next.id }} className="group sm:text-right">
+              <Link to="/phos/$division" params={{ division: next.id }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(next)} →</span>
                 <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{next.title}</span>
               </Link>
             )}
           </div>
+          <KeyHint between="divisions" />
         </div>
       </section>
 

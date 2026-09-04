@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { ContentsPanel } from "@/components/ContentsPanel";
@@ -6,6 +6,7 @@ import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHead
 import { LabelChips, FacetLines } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
+import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
 import type { Entry as Row } from "@/lib/contents";
 import { entry, entriesOf, entryById, introMeta, loadBody, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";
 
@@ -37,6 +38,17 @@ function EntryPage() {
   const d = e.division;
   const siblings = entriesOf(d.id);
   const { prev, next } = neighbours(e);
+  // The keys go exactly where the links beneath the entry go: to the neighbouring
+  // entry, or at either end of the division, to the division itself.
+  const navigate = useNavigate();
+  useStepKeys({
+    prev: () => prev
+      ? navigate({ to: "/phos/$division/$entry", params: { division: d.id, entry: prev.slug } })
+      : navigate({ to: "/phos/$division", params: { division: d.id } }),
+    next: () => next
+      ? navigate({ to: "/phos/$division/$entry", params: { division: d.id, entry: next.slug } })
+      : navigate({ to: "/phos/$division", params: { division: d.id } }),
+  });
   const rows: Row[] = siblings.map((s) => ({
     n: String(s.n), id: s.id, t: s.title, d: s.meta?.summary ?? "", route: { division: d.id, entry: s.slug },
   }));
@@ -180,28 +192,29 @@ function EntryPage() {
 
             <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
               {prev ? (
-                <Link to="/phos/$division/$entry" params={{ division: d.id, entry: prev.slug }} className="group">
+                <Link to="/phos/$division/$entry" params={{ division: d.id, entry: prev.slug }} className="group" aria-keyshortcuts="ArrowLeft [">
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {String(prev.n).padStart(2, "0")}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{prev.title}</span>
                 </Link>
               ) : (
-                <Link to="/phos/$division" params={{ division: d.id }} className="group">
+                <Link to="/phos/$division" params={{ division: d.id }} className="group" aria-keyshortcuts="ArrowLeft [">
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(d)}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{d.title}</span>
                 </Link>
               )}
               {next ? (
-                <Link to="/phos/$division/$entry" params={{ division: d.id, entry: next.slug }} className="group sm:text-right">
+                <Link to="/phos/$division/$entry" params={{ division: d.id, entry: next.slug }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{String(next.n).padStart(2, "0")} →</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{next.title}</span>
                 </Link>
               ) : (
-                <Link to="/phos/$division" params={{ division: d.id }} className="group sm:text-right">
+                <Link to="/phos/$division" params={{ division: d.id }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(d)} →</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">Back to the division</span>
                 </Link>
               )}
             </div>
+            <KeyHint between="entries" />
           </div>
         </section>
       </article>
