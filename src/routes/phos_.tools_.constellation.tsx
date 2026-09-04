@@ -58,7 +58,7 @@ function Constellation() {
   }, []);
   const allPath = useMemo(() => EDGES.map(([a, b]) => seg(NODES[a], NODES[b])).join(""), []);
   const maxIn = useMemo(() => Math.max(...NODES.map((n) => n.in)), []);
-  const bright = (n: Node) => 0.3 + 0.7 * Math.min(1, Math.log2(1 + n.in) / Math.log2(1 + maxIn));
+  const bright = (n: Node) => 0.38 + 0.62 * Math.min(1, Math.log2(1 + n.in) / Math.log2(1 + maxIn));
   const radius = (n: Node) => 1.3 + Math.log2(1 + n.in) * 0.7;
   const twinkleAt = useMemo(() => [...NODES].sort((a, b) => b.in - a.in)[14]?.in ?? 0, []);
   const centroids = useMemo(() => {
@@ -161,7 +161,7 @@ function Constellation() {
             <rect x="0" y="0" width={W} height={W} fill="url(#aoh-sky-g)" />
 
             {/* every line, once */}
-            <path d={allPath} fill="none" stroke="var(--gold)" strokeOpacity={hov === null ? 0.075 : 0.035} strokeWidth={0.55 * fs + 0.25} />
+            <path d={allPath} fill="none" stroke="var(--gold)" strokeOpacity={hov === null ? 0.11 : 0.04} strokeWidth={0.55 * fs + 0.25} />
             {/* the hovered star's lines */}
             {hovPath && <path d={hovPath} fill="none" stroke="var(--gold)" strokeOpacity="0.85" strokeWidth={0.9 * fs + 0.35} />}
 
@@ -170,7 +170,7 @@ function Constellation() {
               const dv = DIVISIONS.find((x) => x.id === c.id); if (!dv) return null;
               const on = div === c.id;
               return (
-                <text key={c.id} x={c.x} y={c.y} textAnchor="middle" className="font-mono" fontSize={8.5 * fs + 1.2} letterSpacing={1.2 * fs}
+                <text key={c.id} x={c.x} y={c.y} textAnchor="middle" className="font-mono" fontSize={13 * fs + 1.5} letterSpacing={2 * fs}
                       fill="var(--gold)" fillOpacity={on ? 0.95 : div ? 0.12 : 0.42} style={{ cursor: "pointer", paintOrder: "stroke" }} stroke="var(--void)" strokeWidth={3 * fs}
                       onClick={(e) => { e.stopPropagation(); setDiv(on ? null : c.id); }}>
                   {dv.numeral || "PORTAL"}
