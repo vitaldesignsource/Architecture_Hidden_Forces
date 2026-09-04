@@ -477,6 +477,32 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
               Its own tradition calls it
             </p>
             <p className="mt-2 text-sm leading-relaxed text-bone/85">{b.kind}</p>
+            {b.kin?.length ? (
+              <div className="mt-6 border-l border-gold/25 pl-4">
+                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                  Where it stands in that tradition
+                </p>
+                <ul className="mt-2 space-y-1.5">
+                  {b.kin.map((k) => {
+                    const other = BEINGS.find((x) => x.id === k.to);
+                    if (!other) return null;
+                    return (
+                      <li key={k.to} className="text-sm leading-relaxed text-muted-foreground">
+                        <Link
+                          to="/phos/tools/beings"
+                          search={{ being: other.id }}
+                          className="font-serif text-bone/90 underline-offset-4 transition-colors hover:text-gold hover:underline"
+                        >
+                          {other.name}
+                        </Link>
+                        <span className="mx-2 text-bone/30">—</span>
+                        {k.as}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ) : null}
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{b.context}</p>
             {b.light && (
               <p className="mt-4 border-l-2 border-gold/40 pl-4 text-sm leading-relaxed text-bone/80">

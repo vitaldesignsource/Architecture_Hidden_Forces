@@ -584,7 +584,33 @@ if (lex.length) {
   }
   if (named.size)
     fail("register", `ids pointed at a being that is not in the register: ${[...named].map(([k, f]) => `${k} (${f})`).slice(0, 5).join(", ")}`);
-  note("register", `${cited.size} entries carry beings from a register of ${known.size}`);
+  // Kin is the register's one internal graph, and it is bounded on purpose: a
+  // relation may only run inside a tradition. Drawing one between traditions
+  // would assert exactly the identification the register exists to refuse.
+  const objs = reg.split(/\n  \{\n/).slice(1).map((o) => o.split(/\n  \},?/)[0]);
+  const tradition = new Map();
+  for (const o of objs) {
+    const id = (o.match(/^    id: "([^"]+)"/m) ?? [])[1];
+    const t = (o.match(/^    tradition: "([^"]+)"/m) ?? [])[1];
+    if (id) tradition.set(id, t);
+  }
+  const kinBad = [];
+  let edges = 0;
+  for (const o of objs) {
+    const id = (o.match(/^    id: "([^"]+)"/m) ?? [])[1];
+    const block = o.match(/kin: \[([\s\S]*?)\n    \]/);
+    if (!block) continue;
+    for (const m of block[1].matchAll(/\{ to: "([^"]+)"/g)) {
+      edges++;
+      const to = m[1];
+      if (!tradition.has(to)) kinBad.push(`${id} → ${to} (no such being)`);
+      else if (to === id) kinBad.push(`${id} → itself`);
+      else if (tradition.get(to) !== tradition.get(id))
+        kinBad.push(`${id} → ${to} (${tradition.get(id)} → ${tradition.get(to)}, across traditions)`);
+    }
+  }
+  if (kinBad.length) fail("register", `kin: ${kinBad.slice(0, 5).join("; ")}`);
+  note("register", `${cited.size} entries carry beings from a register of ${known.size}, and ${edges} kin relations run inside a tradition`);
 }
 
 // ---------------------------------------------------------------- measure

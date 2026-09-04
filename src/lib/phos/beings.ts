@@ -76,6 +76,14 @@ export type Being = {
   confidence: Confidence;
   /** Portal entries that treat it */
   entries?: string[];
+  /**
+   * Where this being stands in its OWN tradition: parentage, rank, the god it
+   * is brought in against, the name it is two phases of. Same tradition only —
+   * the register's whole rule is that a seraph and a yazata are not one being,
+   * and a relation drawn between traditions would say they were. Each phrase
+   * paraphrases a sentence in this entry's own text and adds no new claim.
+   */
+  kin?: { to: string; as: string }[];
 };
 
 /** Each tradition's own vocabulary for kinds of being — the sources' own cut. */
@@ -130,6 +138,9 @@ export const BEINGS: Being[] = [
     confidence: "firm",
     light: "Central. Utu is not a god who has light — he is the daylight, and the texts treat seeing and judging as one act. He rises between twin mountains with rays (šarūru) standing out from his shoulders, a fixed iconographic sign of him on Akkadian seals. His epithets run on nūru “light”: he is “light of the great gods”, “light of heaven and earth”, and darkness in his hymns is the place where injustice can still hide. This is the clearest ancient case of illumination as a moral and forensic power rather than a merely physical one.",
     entries: ["xv-11"],
+    kin: [
+      { to: "inanna-istar", as: "with him and Nanna/Sîn in the astral triad" },
+    ],
   },
   {
     id: "inanna-istar",
@@ -144,6 +155,9 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Inana/Ištar (goddess)”; ETCSL 1.4.1, “Inana’s Descent to the Nether World”; ETCSL 4.07.2, “Ninmešara” (Enḫeduanna); Harris, “Inanna-Ishtar as Paradox,” History of Religions 30 (1991); Black & Green (1992) s.v. “Inana”.",
     confidence: "firm",
     light: "Strong but astral rather than solar. She is the evening and morning star, and her hymns call her the light that appears at the horizon; her characteristic emblem is the eight-pointed star or rosette. Her radiance is explicitly the terrible kind: Enḫeduanna’s Ninmešara describes her melam covering the land, and her approach is described in the vocabulary of overwhelming brilliance and fear rather than of gentle illumination.",
+    kin: [
+      { to: "ereskigal", as: "her sister, who kills her in the Descent and hangs the corpse on a hook" },
+    ],
   },
   {
     id: "enki-ea",
@@ -158,6 +172,10 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Enki/Ea (god)”; ETCSL 1.3.1, “Enki and the World Order”; ETCSL 1.3.3, “Inana and Enki”; Atra-ḫasīs (Lambert & Millard 1969); Espak, The God Enki in Sumerian Royal Ideology and Mythology (2010).",
     confidence: "firm",
     light: "Weak and indirect — this should be stated plainly rather than manufactured. Enki is a god of water and of hidden depth, not of radiance, and his sphere is what is below and concealed. What connects him to a doctrine of light is derivative: he is the source of the apkallu who bring the arts up out of the apsû, and the giver of the me. The “eye of Ea” language in some incantations is about seeing and knowing, not shining.",
+    kin: [
+      { to: "enlil", as: "with him and An in the ruling triad" },
+      { to: "marduk", as: "his son, whose elevation over him in Enūma eliš is Babylon's theology, not an old datum" },
+    ],
   },
   {
     id: "enlil",
@@ -172,6 +190,9 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Enlil (god)”; ETCSL 4.05.1, “Enlil in the E-kur (Enlil A)”; Such-Gutiérrez, Untersuchungen zum Pantheon von Nippur (2003); Wang, The Metamorphosis of Enlil in Early Mesopotamia (2011).",
     confidence: "firm",
     light: "Present but as awe rather than illumination. The Sumerian hymns repeatedly assign him melam — a crushing radiance that makes the gods unable to look at him — and the vocabulary is one of unbearable brightness that terrifies rather than reveals. He is not an astral or solar god and has no light-body of his own; the radiance is an attribute of his rank.",
+    kin: [
+      { to: "marduk", as: "the god whose elevation displaced him at the head of the pantheon" },
+    ],
   },
   {
     id: "an-anu",
@@ -186,6 +207,11 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “An/Anu (god)”; ePSD2 s.v. an; CAD A/2 s.v. Anu; Black & Green (1992) s.v. “Anu”; Beaulieu, The Pantheon of Uruk during the Neo-Babylonian Period (2003).",
     confidence: "firm",
     light: "Indirect. An is the sky as a structure — the luminous vault within which the light-bodies move — rather than a source of light. He is the father of the astral gods and of Ištar in one tradition, but no text makes him a radiant or shining deity in his own right, and it would be a fabrication to give him a light-office.",
+    kin: [
+      { to: "inanna-istar", as: "shares his principal cult at Uruk, in the E-anna" },
+      { to: "enlil", as: "the god he delegates to, holding the highest rank and acting rarely" },
+      { to: "marduk", as: "the later delegate of the same remote authority" },
+    ],
   },
   {
     id: "nanna-suen-sin",
@@ -200,6 +226,11 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Nanna/Suen/Sin (god)”; ETCSL 4.13.a, “A hymn to Nanna”; Enūma Anu Enlil, lunar tablets; Hall, A Study of the Sumerian Moon-God Nanna/Suen (1985); Beaulieu, The Reign of Nabonidus (1989).",
     confidence: "firm",
     light: "Direct and important, and of a different order from Utu’s. Sîn is the lamp of the night; his light does not expose but measures, and lunar visibility — first crescent, full disc, eclipse — is the primary Mesopotamian instrument of time and of omen-reading. Eclipse is his light withdrawn and is read as a threat to the king. The pairing of his measured, waxing-and-waning light against Šamaš’s constant daylight is one of the sharpest light-distinctions the tradition draws.",
+    kin: [
+      { to: "utu-samas", as: "his son — in Mesopotamia the moon is the elder" },
+      { to: "inanna-istar", as: "his daughter, in the standard genealogy" },
+      { to: "marduk", as: "the god of Babylon that Nabonidus's promotion of Sîn of Ḫarrān was set against" },
+    ],
   },
   {
     id: "marduk",
@@ -214,6 +245,9 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Marduk (god)”; Enūma eliš I 90–100, VI–VII (Lambert, Babylonian Creation Myths, 2013); Sommerfeld, Der Aufstieg Marduks (1982); Black & Green (1992) s.v. “Marduk”.",
     confidence: "firm",
     light: "Substantial, and largely constructed. Enūma eliš gives him four eyes and four ears and has him “clothed with the halo of ten gods”, an explicit melammu statement; his name is analysed as “calf of the sun”, and in the first millennium theological texts assimilate him to solar language. This is a deliberate accumulation of radiance appropriate to his new rank rather than an inherited solar identity, and an editor should present it as such.",
+    kin: [
+      { to: "melammu", as: "what Enūma eliš clothes him in — the halo of ten gods" },
+    ],
   },
   {
     id: "nergal",
@@ -228,6 +262,9 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Nergal (god)”; Nergal and Ereškigal (Amarna and Sultantepe recensions; Foster, Before the Muses); Erra and Išum (Foster); Black & Green (1992) s.v. “Nergal”.",
     confidence: "firm",
     light: "Present, and inverted — worth stating carefully. Nergal is associated with the destructive heat of high summer and the noon sun, and in astral scholarship with Mars. His is the aspect of solar power that kills rather than reveals: scorching, fever, drought. He rules a realm defined by the absence of light while being himself associated with a burning one, and that tension is native to the sources, not a modern reading.",
+    kin: [
+      { to: "ereskigal", as: "with whom he rules the netherworld" },
+    ],
   },
   {
     id: "ereskigal",
@@ -242,6 +279,10 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Ereškigal (goddess)”; ETCSL 1.4.1, “Inana’s Descent”; Ištar’s Descent (Akkadian; Foster, Before the Muses); Katz, The Image of the Netherworld in the Sumerian Sources (2003).",
     confidence: "firm",
     light: "Defined by its absence, and this is doctrinally important. Her house is described as the place “where dust is their bread and clay their food”, where the dead are clothed like birds in feathers and see no light. The Mesopotamian netherworld is not a place of torment but a place of darkness and thirst, and Ereškigal is the power of that lightlessness. She is the tradition’s clearest statement that the withdrawal of light, not fire, is what death is.",
+    kin: [
+      { to: "inanna-istar", as: "the intruding sister she kills" },
+      { to: "nergal", as: "who is forced into a marriage that shares her throne" },
+    ],
   },
   {
     id: "ningiszida",
@@ -270,6 +311,9 @@ export const BEINGS: Being[] = [
     sources: "Heeßel, Pazuzu: Archäologische und philologische Studien zu einem altorientalischen Dämon (2002); Wiggermann, “The Four Winds and the Origins of Pazuzu,” in Das geistige Erfassen der Welt (2007); Louvre MNB 467; Black & Green (1992) s.v. “Pazuzu”.",
     confidence: "firm",
     light: "None. There is no radiance, illumination or astral role attached to Pazuzu in any source; his sphere is wind, threshold and averted harm. Any luminous Pazuzu belongs to modern reception, not to the texts.",
+    kin: [
+      { to: "lamastu", as: "the demon he is brought in against" },
+    ],
   },
   {
     id: "lamastu",
@@ -313,6 +357,10 @@ export const BEINGS: Being[] = [
     sources: "ETCSL 1.3.3, “Inana and Enki”; ETCSL 1.3.1, “Enki and the World Order”; Farber-Flügge, Der Mythos “Inanna und Enki” unter besonderer Berücksichtigung der Liste der me (1973); ePSD2 s.v. me [ME]; CAD P s.v. parṣu.",
     confidence: "firm",
     light: "Not a light concept, and it matters to say so. The me are structural and ordering, not luminous; the tradition keeps its light-vocabulary (melam, šarūru, nūru) separate from its ordinance-vocabulary. A treatise on light should place the me beside radiance as its complement — form and pattern against brightness — rather than assimilating one to the other.",
+    kin: [
+      { to: "inanna-istar", as: "who carries them off to Uruk on the Boat of Heaven" },
+      { to: "enki-ea", as: "who holds them at Eridu and gives them away" },
+    ],
   },
   {
     id: "melammu",
@@ -327,6 +375,9 @@ export const BEINGS: Being[] = [
     sources: "Oppenheim, “Akkadian pul(u)ḫ(t)u and melammu,” JAOS 63 (1943) 31–34; Cassin, La splendeur divine (1968); CAD M/2 s.v. melammu; Aster, The Unbeatable Light: Melammu and Its Biblical Parallels (AOAT 384, 2012); Enūma eliš IV; Gilgameš V (Ḫumbaba’s auras).",
     confidence: "firm",
     light: "This is the tradition’s core light-concept and the one an architecture of light should build on. Melammu is not illumination — it does not help anyone see. It is radiance as authority and as danger: brightness that overwhelms the eye, compels submission, and cannot be looked at. Where Utu’s light reveals and judges, melammu simply overpowers. The distinction between light-that-shows and light-that-subdues is native to Akkadian and is the most useful thing Mesopotamia contributes to a comparative treatment of radiance.",
+    kin: [
+      { to: "marduk", as: "clothed in it from ten gods, as Enūma eliš has it" },
+    ],
   },
   {
     id: "ra",
@@ -341,6 +392,11 @@ export const BEINGS: Being[] = [
     sources: "Pyramid Texts; Amduat and Book of Gates (Hornung, The Ancient Egyptian Books of the Afterlife, 1999); Der ägyptische Mythos von der Himmelskuh (Hornung, 1982); Jan Assmann, Egyptian Solar Religion in the New Kingdom (1995); sign value N5 = ra in JSesh signs_description.xml",
     confidence: "firm",
     light: "He is not a god who has light as an attribute; his body is the visible daylight, and the eye that sees is figured as his. The horizon (ꜣḫt) is where he becomes effective, and the daily defeat of Apep is the condition under which the light returns at all.",
+    kin: [
+      { to: "isis", as: "who extracts his hidden name from him by poison" },
+      { to: "heka", as: "the power that rides the barque with Sia and Hu" },
+      { to: "apep", as: "the serpent whose daily defeat is the condition of the light returning" },
+    ],
   },
   {
     id: "thoth",
@@ -370,6 +426,9 @@ export const BEINGS: Being[] = [
     confidence: "firm",
     light: "Her ba is identified with Sopdet, the star Sirius, whose heliacal rising after seventy days of invisibility opened the Egyptian year and heralded the flood — a light that returns on a reckonable schedule, which is why the star and the goddess were read together.",
     entries: ["xii-18"],
+    kin: [
+      { to: "osiris", as: "whom she reassembles, and by whom she conceives Horus" },
+    ],
   },
   {
     id: "osiris",
@@ -399,6 +458,9 @@ export const BEINGS: Being[] = [
     sources: "Old Kingdom offering formulae; Book of the Dead 125; sign values E15/E16 = inpw and C6 = inpw from JSesh signs_description.xml (CC-BY); Gardiner, Egyptian Grammar, Sign List E16",
     confidence: "firm",
     light: "No solar or luminous role of his own, and it would be a distortion to invent one. His neighbouring claim on the site's subject is the Opening of the Mouth, the rite that restores the senses to the mummy — sight among them — so that the dead can see, eat and be addressed.",
+    kin: [
+      { to: "osiris", as: "who displaces him at the centre of the mortuary system" },
+    ],
   },
   {
     id: "sekhmet",
@@ -414,6 +476,9 @@ export const BEINGS: Being[] = [
     confidence: "probable",
     light: "She is solar light at its lethal end — the Eye detached from the face that governs it, heat rather than illumination. The uraeus on the sun's brow is the same idea in miniature: the burning that protects.",
     entries: ["xv-9"],
+    kin: [
+      { to: "hathor", as: "the same goddess in her other phase, in the Heavenly Cow" },
+    ],
   },
   {
     id: "hathor",
@@ -429,6 +494,9 @@ export const BEINGS: Being[] = [
     confidence: "firm",
     light: "Her standing epithet is nbwt, 'the Golden One', and gold in Egypt is the flesh of the gods and the colour of the sun's own body; she carries the disc between her horns. The returning Distant Goddess, appeased and brought home, is the light coming back into relation with the one who sent it.",
     entries: ["xv-9"],
+    kin: [
+      { to: "sekhmet", as: "two phases of one story — the tradition itself moves between the names" },
+    ],
   },
   {
     id: "maat",
@@ -443,6 +511,9 @@ export const BEINGS: Being[] = [
     sources: "Coffin Texts 1130; Jan Assmann, Maʼat: Gerechtigkeit und Unsterblichkeit im Alten Ägypten (1990); the site's own src/lib/hieroglyphs.ts",
     confidence: "firm",
     light: "Daughter of Re, and the criterion under which his light is legitimate rather than merely powerful: light without measure, in this system, is Sekhmet unstopped.",
+    kin: [
+      { to: "sekhmet", as: "light without measure, which is what she is the criterion against" },
+    ],
   },
   {
     id: "heka",
@@ -488,6 +559,9 @@ export const BEINGS: Being[] = [
     confidence: "firm",
     light: "Where the site treats light and word together, this is the god that stands at that joint: the utterance is the act by which what was perceived becomes visible.",
     entries: ["ii-29"],
+    kin: [
+      { to: "heka", as: "one power seen from two sides, where the registers substitute it" },
+    ],
   },
   {
     id: "apep",
@@ -516,6 +590,9 @@ export const BEINGS: Being[] = [
     sources: "The Hermopolitan cosmogony as summarised in the standard handbooks; Hornung, Conceptions of God in Ancient Egypt (1982), on multiple cosmogonies held together; Kurt Sethe, Amun und die acht Urgötter von Hermopolis (1929)",
     confidence: "probable",
     light: "This is the Egyptian doctrine of what precedes light. The Ogdoad name the water, the endlessness, the darkness and the hidden, and the sun emerges out of them — on a mound, or from a lotus, or from an egg, depending on the text. Kek and Kauket in particular give darkness a personal name, which is a strong claim: the dark here is a condition with a face, not merely an absence.",
+    kin: [
+      { to: "thoth", as: "the god whose city, Ḫmnw, is their cult centre" },
+    ],
   },
   {
     id: "the-akh",
@@ -531,6 +608,9 @@ export const BEINGS: Being[] = [
     confidence: "firm",
     light: "This is the strongest light-word in the Egyptian anthropology. Jiří Janák argues the root is bound to jꜣḫw, 'light, radiance, glow', and Jansen-Winkeln reads the original notion as the sun's efficacy at the horizon, where the light is visible while its source is hidden — so 'effective' and 'luminous' are not two meanings but one. The ꜣḫt, horizon, is the same root. Being made effective and being made to shine are the same operation.",
     entries: ["xv-10"],
+    kin: [
+      { to: "maat", as: "the judgement a dead person passes to become one" },
+    ],
   },
   {
     id: "helios",
@@ -571,6 +651,9 @@ export const BEINGS: Being[] = [
     light: "The torches. She is the torch-bearer of the night approach, and by the Hellenistic period a moon goddess. Her light is carried, local and threshold light — a light you hold at a door — rather than a cosmic emission. That is precisely what distinguishes the cult Hekate from the Chaldean one, whose fire is cosmogonic.",
     sources: "LSJ s.vv. Ἑκάτη, ἐνόδιος (lsj.gr); Hesiod, Theogony 411–52; S. I. Johnston, Hekate Soteira (1990)",
     confidence: "firm",
+    kin: [
+      { to: "hekate-of-the-chaldean-oracles", as: "the same name in the Oracles, whose fire is cosmogonic rather than cultic" },
+    ],
   },
   {
     id: "hekate-of-the-chaldean-oracles",
@@ -586,6 +669,9 @@ export const BEINGS: Being[] = [
     sources: "Chaldean Oracles, ed. É. des Places (1971); R. Majercik, The Chaldean Oracles: Text, Translation and Commentary (1989); S. I. Johnston, Hekate Soteira (1990); J. Dillon (1990), S. Ronan (1992), L. Brisson, R. M. van den Berg; LSJ s.v. ζωογόνος (lsj.gr); en.wikipedia \"Chaldean Hekate\" for the survey ",
     confidence: "contested",
     entries: ["xv-27"],
+    kin: [
+      { to: "hekate", as: "the cult goddess this figure must not be collapsed into" },
+    ],
   },
   {
     id: "eros",
@@ -614,6 +700,9 @@ export const BEINGS: Being[] = [
     light: "Privative and generative at once, which is the interesting part. She is the absence of light, yet in Hesiod she bears Aither, the bright upper air, and Hemera, Day: brightness is born out of her rather than set against her. The Orphic oracular cave makes darkness the condition of true seeing rather than its failure — an inversion the later Christian apophatic tradition of the divine dark inherits by another route.",
     sources: "LSJ s.vv. νύξ, Νύξ (lsj.gr); Hesiod, Theogony 123ff., 211ff.; Orphic fragments (Kern; Bernabé); Derveni Papyrus",
     confidence: "probable",
+    kin: [
+      { to: "the-moirai", as: "her children in Hesiod, with Sleep, Death, Nemesis and Old Age" },
+    ],
   },
   {
     id: "the-moirai",
@@ -672,6 +761,9 @@ export const BEINGS: Being[] = [
     sources: "LSJ s.vv. συνοχή, συνοχικός, συνέχω (lsj.gr); Perseus word-study gloss of συνοχεύς; Proclus, Platonic Theology; Damascius; R. Majercik, The Chaldean Oracles (1989); N. Spanu, Proclus and the Chaldean Oracles (2021)",
     confidence: "probable",
     entries: ["xv-27"],
+    kin: [
+      { to: "the-iynges", as: "whose transmission they hold together" },
+    ],
   },
   {
     id: "the-teletarchai",
@@ -687,6 +779,10 @@ export const BEINGS: Being[] = [
     sources: "LSJ s.vv. τελετάρχης, τελεταρχικός (lsj.gr); Damascius, De principiis 96; Proclus; R. Majercik, The Chaldean Oracles (1989); N. Spanu, Proclus and the Chaldean Oracles (2021)",
     confidence: "firm",
     entries: ["xv-27"],
+    kin: [
+      { to: "the-iynges", as: "first of the Chaldean triad they complete" },
+      { to: "the-synocheis", as: "second of the triad they complete" },
+    ],
   },
   {
     id: "agathos-daimon",
@@ -745,6 +841,9 @@ export const BEINGS: Being[] = [
     sources: "LSJ s.vv. ψυχή, ὄχημα, θεουργία (lsj.gr); Plotinus, Enneads V.1; Iamblichus, De mysteriis; J. F. Finamore on the vehicle of the soul; M. Griffin, \"Proclus on Place as the Luminous Vehicle of the Soul\"",
     confidence: "firm",
     entries: ["x-5"],
+    kin: [
+      { to: "nous", as: "what illuminates it — the soul receives, it does not emit" },
+    ],
   },
   {
     id: "the-angel-of-the-lord",
@@ -908,6 +1007,10 @@ export const BEINGS: Being[] = [
     light: "None of his own. In Kabbalah his side is defined by having no light — Cordovero's הַהַנְהָגָה הַחִיצוֹנִית, the external governance, the shells that receive nothing. His only luminous attribute in Pirqei de-Rabbi Eliezer is arithmetic: twelve wings, against the ḥayyot's four and the seraphim's six.",
     sources: "Pirqei de-Rabbi Eliezer 13 (pointed Sefaria export text, verified verbatim); Cordovero, Derishot be-Inyanei ha-Malʾakhim; Zohar and 3 Enoch (reported); pointed Hebrew corpus (projectbenyehuda) for the סַמָּאֵל variant",
     confidence: "contested",
+    kin: [
+      { to: "ha-satan", as: "the accuser's office, which he takes over" },
+      { to: "lilith", as: "his consort at the head of the Other Side" },
+    ],
   },
   {
     id: "lilith",
@@ -960,6 +1063,9 @@ export const BEINGS: Being[] = [
     light: "None, and pointedly so. His name is the word for the silence into which the dead go down; he is the exact counter-figure to the ḥayyot of fire and the radiance of the Shekhinah.",
     sources: "WLC/OSHB Ps.xml 94:17, 115:17; b. Berakhot 18b (Vilna text, disacorns/talmud-bavli-text); Zohar (reported)",
     confidence: "probable",
+    kin: [
+      { to: "the-shekhinah", as: "the radiance he is the exact counter-figure to" },
+    ],
   },
   {
     id: "ahura-mazda",
@@ -988,6 +1094,10 @@ export const BEINGS: Being[] = [
     light: "No independent luminous office. The moral vocabulary attached to him is one of clear thinking rather than radiance; the light imagery within the heptad belongs to Aṣ̌a Vahišta through fire.",
     sources: "Yasna 43, 44, 47; Enc. Iranica, 'BAHMAN' and 'AMƎŠA SPƎNTA'; Narten, Die Aməša Spəṇtas im Avesta.",
     confidence: "firm",
+    kin: [
+      { to: "ahura-mazda", as: "the Wise Lord, approached through him" },
+      { to: "asa-vahista", as: "the one of the heptad who carries the light, through fire" },
+    ],
   },
   {
     id: "asa-vahista",
@@ -1001,6 +1111,9 @@ export const BEINGS: Being[] = [
     light: "The most light-bearing member of the heptad, by way of his creation: fire, Ātar 𐬁𐬙𐬀𐬭 (letters AA · TE · A · RE), described as 'burning and unburning fire', addressed as mazišta yazata, 'greatest yazata', and treated as the visible presence of Ahura Mazdā and his aṣ̌a. This is the link that makes the fire of the living fire-temples a matter of truth rather than of heat.",
     sources: "Ašəm Vohū; Yašt 3; Yasna 43, 47; Enc. Iranica, 'AŠA' and 'ĀTAŠ'; Boyce, Zoroastrians.",
     confidence: "firm",
+    kin: [
+      { to: "ahura-mazda", as: "whose creation, fire, is his" },
+    ],
   },
   {
     id: "xsara-vairiia",
@@ -1015,6 +1128,9 @@ export const BEINGS: Being[] = [
     light: "No direct luminous office in the Avesta. The Middle Persian Bundahišn's picture of the sky as a shell of shining metal or crystal is a later cosmological elaboration under his patronage, not an Avestan statement, and should not be cited as one.",
     sources: "Yasna 51; Enc. Iranica, 'AMƎŠA SPƎNTA'; Bundahišn (for the later metal/sky association); Narten (1982).",
     confidence: "firm",
+    kin: [
+      { to: "ahura-mazda", as: "whose kingdom is the power he is" },
+    ],
   },
   {
     id: "spnta-armaiti",
@@ -1029,6 +1145,9 @@ export const BEINGS: Being[] = [
     light: "No luminous office; her element is earth. Do not import the Gnostic Sophia here — the occasional modern pairing of Ārmaiti with Sophia is an analogy invented by comparativists, not a link the sources make.",
     sources: "Yasna 44, 47; Enc. Iranica, 'SPANDARMAD'; Boyce, HZ I; Narten (1982).",
     confidence: "firm",
+    kin: [
+      { to: "ahura-mazda", as: "her father" },
+    ],
   },
   {
     id: "hauruuatat",
@@ -1043,6 +1162,9 @@ export const BEINGS: Being[] = [
     light: "None. Water, not light.",
     sources: "Yasna 34.11, 45, 47; Enc. Iranica, 'HORDĀD' and 'AMƎŠA SPƎNTA'; Narten (1982).",
     confidence: "firm",
+    kin: [
+      { to: "amrtat", as: "named with him as a pair from the Gāthās onward" },
+    ],
   },
   {
     id: "amrtat",
@@ -1056,6 +1178,9 @@ export const BEINGS: Being[] = [
     light: "None directly. In later tradition the pair Hauruuatāt/Amərətāt underlies the water and plant offerings of the Yasna rather than any luminous imagery.",
     sources: "Yasna 34.11, 45, 47; Enc. Iranica, 'AMURDĀD'; Narten (1982).",
     confidence: "firm",
+    kin: [
+      { to: "hauruuatat", as: "the other half of the pair, in the water and plant offerings" },
+    ],
   },
   {
     id: "spnta-mainiiu",
@@ -1069,6 +1194,10 @@ export const BEINGS: Being[] = [
     light: "spəṇta is not a light-word: 'bounteous, furthering, strengthening' is the sense. The Middle Persian Spenāg Mēnōg is ranged with the luminous mēnōg (spiritual) world against Ahriman's darkness, but that light-versus-dark spatial framing is Sasanian and must not be read back into the Gāthās.",
     sources: "Yasna 30.3–5, 45.2, 47; Haug, Essays on the Sacred Language, Writings and Religion of the Parsis (1862); Enc. Iranica, 'AHRIMAN' and 'GATHAS'; Kellens & Pirart, Les textes vieil-avestiques.",
     confidence: "contested",
+    kin: [
+      { to: "ahura-mazda", as: "who creates by him" },
+      { to: "ara-mainiiu", as: "the destructive mentality he stands against — the spatial light-and-dark framing is Sasanian" },
+    ],
   },
   {
     id: "mira",
@@ -1083,6 +1212,9 @@ export const BEINGS: Being[] = [
     light: "In the Avesta he is emphatically not the sun. Yt 10.13 has him rise over Mount Harā ahead of the immortal swift-horsed sun, the first to reach the light — a herald of dawn, not the disc. His later identification with the sun is a Hellenistic and Middle Iranian development, fossilised in the New Persian noun mehr 'sun'. This makes him a precise case study in how a light-association accrues to a god who did not start with one.",
     sources: "Yašt 10; Yasna 1.11, 3.13; Enc. Iranica, 'MITHRA'; Gershevitch, The Avestan Hymn to Mithra (1959); Boyce, HZ I–II.",
     confidence: "firm",
+    kin: [
+      { to: "sraosa", as: "with him and Rašnu at the Bridge" },
+    ],
   },
   {
     id: "sraosa",
@@ -1123,6 +1255,9 @@ export const BEINGS: Being[] = [
     light: "The youth of fifteen is described as shining-faced and the raptor form in terms of glare and speed, but he is not a light-divinity as such. He is tightly bound to xᵛarənah, the Glory, which the Zamyād Yašt has fleeing in the shape of exactly such a raptor.",
     sources: "Yašt 14 (Bahrām Yašt); Enc. Iranica, 'BAHRĀM' and 'INDRA'; Benveniste & Renou, Vṛtra et Vṛθragna (1934).",
     confidence: "firm",
+    kin: [
+      { to: "xvarnah", as: "the Glory the Zamyād Yašt has fleeing in the shape of his raptor" },
+    ],
   },
   {
     id: "xvarnah",
@@ -1178,6 +1313,9 @@ export const BEINGS: Being[] = [
     light: "None in any Avestan text, and none in the Middle Persian reports either. Modern esoteric and Traditionalist writing that makes Zurvan a primordial light, an Iranian Ain Soph or a pleromatic first principle has no ancient basis whatever and should be labelled as modern if it is used at all.",
     sources: "Vīdēvdād 19.9 (zruuan- akarana-); Eudemus of Rhodes in Damascius, De principiis; Enc. Iranica, 'ZURVAN' and 'ZURVANISM' (de Jong); Zaehner, Zurvan (1955); Shaked, Dualism in Transformation (1994).",
     confidence: "contested",
+    kin: [
+      { to: "ara-mainiiu", as: "begotten as a twin with Ohrmazd in the Zurvanite cosmogony" },
+    ],
   },
   {
     id: "seraphim",
@@ -1207,6 +1345,9 @@ export const BEINGS: Being[] = [
     sources: "Ps.-Dionysius, De caelesti hierarchia 7.1 (PG 3); Genesis 3:24, Ezekiel 10:1 LXX; Exodus 25:18–22.",
     confidence: "firm",
     entries: ["xii-6"],
+    kin: [
+      { to: "seraphim", as: "the burning rank, to their knowing" },
+    ],
   },
   {
     id: "thrones",
@@ -1221,6 +1362,10 @@ export const BEINGS: Being[] = [
     sources: "Colossians 1:16 (SBLGNT, MorphGNT edition); Ps.-Dionysius, De caelesti hierarchia 6.2, 7.1 (PG 3).",
     confidence: "firm",
     entries: ["xii-6"],
+    kin: [
+      { to: "seraphim", as: "what they burn with, the Thrones hold" },
+      { to: "cherubim", as: "what they know, the Thrones hold" },
+    ],
   },
   {
     id: "dominions",
@@ -1292,6 +1437,10 @@ export const BEINGS: Being[] = [
     sources: "1 Thessalonians 4:16, Jude 9 (SBLGNT); Ps.-Dionysius, De caelesti hierarchia 9 (PG 3); 1 Enoch 20 for the named seven.",
     confidence: "firm",
     entries: ["xii-8"],
+    kin: [
+      { to: "principalities", as: "the rank above them" },
+      { to: "angels", as: "the rank below them" },
+    ],
   },
   {
     id: "angels",
@@ -1320,6 +1469,9 @@ export const BEINGS: Being[] = [
     sources: "John 1:1, 1:9, 1:14 (SBLGNT, MorphGNT edition); Irenaeus, Adv. haer. 1.29.1–2 (Greek fragment, First1KGreek); Nag Hammadi Coptic corpus (Gospel of Truth NHC I,3; Ap. John NHC II,1).",
     confidence: "firm",
     entries: ["ii-29", "xii-19"],
+    kin: [
+      { to: "autogenes", as: "whom, in Sethian terms, he is the anointing of" },
+    ],
   },
   {
     id: "sophia",
@@ -1334,6 +1486,10 @@ export const BEINGS: Being[] = [
     sources: "Irenaeus, Adv. haer. 1.2, 1.29.4, 1.30.2–3 (Greek fragments, First1KGreek); Hippolytus, Refutatio 6.30–31; Ap. John NHC II,1 and III,1; Hypostasis of the Archons NHC II,4; On the Origin of the World NHC II,5.",
     confidence: "firm",
     entries: ["xii-4", "xv-36"],
+    kin: [
+      { to: "yaldabaoth", as: "her offspring, who holds the light-power she loses" },
+      { to: "achamoth", as: "her lower reflex, outside the Pleroma" },
+    ],
   },
   {
     id: "barbelo",
@@ -1376,6 +1532,9 @@ export const BEINGS: Being[] = [
     sources: "Ap. John NHC II,1 and III,1; Gospel of the Egyptians NHC III,2 and IV,2; Zostrianos NHC VIII,1; Three Steles of Seth NHC VII,5; Irenaeus, Adv. haer. 1.29.2 (Greek fragment, First1KGreek).",
     confidence: "firm",
     entries: ["xii-5", "xv-35"],
+    kin: [
+      { to: "barbelo", as: "who brings him forth with the Spirit" },
+    ],
   },
   {
     id: "achamoth",
@@ -1391,6 +1550,10 @@ export const BEINGS: Being[] = [
     sources: "Irenaeus, Adv. haer. 1.4.5–1.5.6 (Greek fragments preserved via Epiphanius, Pan. 31; First1KGreek); Hippolytus, Refutatio 6.30–34; Gospel of Philip NHC II,3 60.10–15; First Apocalypse of James NHC V,3; Hebrew: Proverbs 9:1 (OSHB / Westminster Leningrad Codex).",
     confidence: "firm",
     entries: ["xv-36"],
+    kin: [
+      { to: "sophia", as: "the aeon whose offspring she is" },
+      { to: "the-demiurge", as: "made from her converted passions" },
+    ],
   },
   {
     id: "the-demiurge",
@@ -1405,6 +1568,10 @@ export const BEINGS: Being[] = [
     sources: "Tripartite Tractate NHC I,5; A Valentinian Exposition NHC XI,2; Irenaeus, Adv. haer. 1.5; Hippolytus, Refutatio 6.32–34; Plato, Timaeus 28a for the term's origin.",
     confidence: "firm",
     entries: ["xii-11"],
+    kin: [
+      { to: "christ-the-logos", as: "the Logos who acts through him, unknown to him" },
+      { to: "achamoth", as: "his mother, in the Ogdoad above his Hebdomad" },
+    ],
   },
   {
     id: "the-ogdoad-and-the-hebdomad",
@@ -1419,6 +1586,11 @@ export const BEINGS: Being[] = [
     light: "The ladder image is astronomical: seven planetary spheres of darkening rule, then the eighth of fixed light, and the soul's ascent is a passage upward through them, shedding at each what that ruler gave it.",
     sources: "Ap. John NHC II,1 and III,1; Gospel of the Egyptians NHC III,2 and IV,2; Discourse on the Eighth and Ninth NHC VI,6; A Valentinian Exposition NHC XI,2; Irenaeus, Adv. haer. 1.5.2–3; Hippolytus, Refutatio 6.31–34; Origen, Contra Celsum 6.31.",
     confidence: "firm",
+    kin: [
+      { to: "yaldabaoth", as: "whose seven planetary rulers the Hebdomad is" },
+      { to: "achamoth", as: "who dwells in the Ogdoad" },
+      { to: "the-demiurge", as: "who sits below her in the Hebdomad" },
+    ],
   },
   {
     id: "the-father-of-greatness",
@@ -1501,6 +1673,9 @@ export const BEINGS: Being[] = [
     sources: "Halāyudha, Abhidhānaratnamālā 1.1.1.35–37; Amarakośa 1.1 (Āditya synonyms)",
     confidence: "firm",
     entries: ["xv-57"],
+    kin: [
+      { to: "varuna", as: "with Mitra, whose eye he is called" },
+    ],
   },
   {
     id: "savitr",
@@ -1514,6 +1689,9 @@ export const BEINGS: Being[] = [
     light: "The activity of solar light rather than its body. Savitṛ is golden-handed and golden-tongued and his work is impulsion; the Vedic poets maintain a real distinction between the sun as luminary (Sūrya) and the sun as impeller (Savitṛ), which is worth preserving rather than harmonising.",
     sources: "Halāyudha, Abhidhānaratnamālā 1.1.1.35; Hiraṇyakeśi Gṛhyasūtra (Gāyatrī at upanayana); Ṛgveda 3.62.10",
     confidence: "firm",
+    kin: [
+      { to: "surya", as: "the sun as luminary, which the poets keep distinct from the sun as impeller" },
+    ],
   },
   {
     id: "usas",
@@ -1580,6 +1758,9 @@ export const BEINGS: Being[] = [
     light: "RV 6.64.6 and 7.77.5 address Uṣas as उषो देवि, the earliest surviving use of देवी for a luminous goddess. In later Śākta metaphysics the Goddess is चित्शक्ति cit-śakti, the light and power of consciousness itself.",
     sources: "Amarakośa 1.1.45–47; Ṛgveda 6.64.6, 7.77.5 (GRETIL Devanagari)",
     confidence: "firm",
+    kin: [
+      { to: "usas", as: "addressed as उषो देवि in the Rigveda — the earliest use of the word for a luminous goddess" },
+    ],
   },
   {
     id: "durga",
@@ -1594,6 +1775,9 @@ export const BEINGS: Being[] = [
     light: "In the Devīmāhātmya she is constituted from the massed तेजस् tejas — fiery radiance — of the assembled gods. This is one of the tradition's most explicit statements that a divine body can be made of light, and is directly usable in a register about luminous beings.",
     sources: "Amarakośa 1.1.46; Devīmāhātmya (Mārkaṇḍeya Purāṇa) — cited from the standard text, not fetched here",
     confidence: "firm",
+    kin: [
+      { to: "devi", as: "the one Goddess, of whom she is a form" },
+    ],
   },
   {
     id: "kali",
@@ -1608,6 +1792,10 @@ export const BEINGS: Being[] = [
     light: "A goddess of darkness rather than light: कālī is 'the black one', night-coloured in iconography. But Śākta and Krama theology treat that blackness as the ground out of which illumination arises and into which it returns, not as mere privation — a genuinely different account of darkness from the Western privative one, and worth stating carefully rather than assimilating.",
     sources: "Amarakośa 1.1.45; Devīmāhātmya; Kālikā Purāṇa — the latter two cited from standard texts, not fetched here",
     confidence: "firm",
+    kin: [
+      { to: "devi", as: "the Goddess, of whom she is a form" },
+      { to: "durga", as: "from whose brow she springs in wrath" },
+    ],
   },
   {
     id: "ganesa",
@@ -1621,6 +1809,9 @@ export const BEINGS: Being[] = [
     light: "Little connection with light; his attributes are the broken tusk, noose and goad, and the modaka. Any luminous role assigned to him in modern correspondence-tables is imported, not traditional.",
     sources: "Amarakośa 1.1.47; Ṛgveda 2.23.1 and Hiraṇyakeśi Gṛhyasūtra (for the gaṇapati verse — see cautions)",
     confidence: "firm",
+    kin: [
+      { to: "siva", as: "whose troops he is lord of" },
+    ],
   },
   {
     id: "brahma",
@@ -1647,6 +1838,9 @@ export const BEINGS: Being[] = [
     light: "In Śaiva metaphysics the Sadāśiva level is where प्रकाश prakāśa (the light of consciousness) and विमर्श vimarśa (its self-recognition) stand in balance — the point at which light becomes self-aware rather than merely illuminating. This is the most philosophically loaded 'light' claim in the whole Indian group.",
     sources: "Śaiva Siddhānta ritual MSS: samayadīkṣādhivāsanavidhi M00564, viśeṣāntyeṣṭi I00048, parārthapūjā I00058 (Muktabodha digitisations); Taittirīya Āraṇyaka for the Pañcabrahma mantras",
     confidence: "firm",
+    kin: [
+      { to: "siva", as: "whose five-faced form he is, where manifestation begins" },
+    ],
   },
   {
     id: "isana",
@@ -1660,6 +1854,9 @@ export const BEINGS: Being[] = [
     light: "The north-east is the auspicious quarter, and in Śaiva dhyāna the Īśāna face is described as crystal-white — the most transparent and least coloured of the five faces, corresponding to the subtlest of the elements it governs.",
     sources: "Amarakośa 1.1.36–37; Śaiva Siddhānta MSS (viśeṣāntyeṣṭi I00048, parārthapūjā I00058, vāmādimūrdhānta installation sequence)",
     confidence: "firm",
+    kin: [
+      { to: "siva", as: "whose ruling aspect he is" },
+    ],
   },
   {
     id: "dakini",
@@ -1688,6 +1885,11 @@ export const BEINGS: Being[] = [
     sources: "84000 glossary entity-43916, entity-28430; CC-CEDICT 釋迦牟尼, 釋迦牟尼佛, 釋迦佛",
     confidence: "firm",
     entries: ["xv-68"],
+    kin: [
+      { to: "amitabha", as: "to whom radiance belongs as an identity, and not to him" },
+      { to: "vairocana", as: "to whom radiance belongs as an identity, and not to him" },
+      { to: "maitreya", as: "the next buddha of this era, who follows him" },
+    ],
   },
   {
     id: "amitabha",
@@ -1731,6 +1933,9 @@ export const BEINGS: Being[] = [
     light: "None.",
     sources: "84000 glossary entity-34667, entity-19059, entity-41981, entity-14429; CC-CEDICT 彌勒, 彌勒佛, 彌勒菩薩",
     confidence: "firm",
+    kin: [
+      { to: "sakyamuni", as: "the buddha of this era, whom he follows" },
+    ],
   },
   {
     id: "avalokitesvara",
@@ -1787,6 +1992,9 @@ export const BEINGS: Being[] = [
     light: "In the Nyingma sense, decisively: Kuntuzangpo personifies the ground's own self-luminous awareness (rig pa), the light that was never lit because it was never out. In the Mahāyāna bodhisattva sense, none.",
     sources: "84000 glossary entity-20986, entity-2993, entity-26865; CC-CEDICT 普賢菩薩",
     confidence: "contested",
+    kin: [
+      { to: "manjusri", as: "his counterpart in the standard Mahāyāna pairing" },
+    ],
   },
   {
     id: "tara",
@@ -1801,6 +2009,9 @@ export const BEINGS: Being[] = [
     light: "White Tārā carries moonlight and longevity associations in Tibetan practice. But the etymology usually offered — tārā as \"star\" — is a homonym, not the derivation the tradition uses: the Tibetan translation སྒྲོལ་མ། sgrol ma (\"she who delivers across\") assumes the root √tṝ, \"to cross over\", which Rangjung Yeshe spells out as \"She who Takes (beings) Across (the Ocean of Samsara)\". The star reading is a widespread later association and should be flagged as such.",
     sources: "84000 glossary entity-36756; Rangjung Yeshe s.v. sgrol ma",
     confidence: "contested",
+    kin: [
+      { to: "avalokitesvara", as: "beside whom she is the protectress, in Tibetan and Newar systematisation" },
+    ],
   },
   {
     id: "vajrapani",
@@ -1829,6 +2040,10 @@ export const BEINGS: Being[] = [
     light: "None.",
     sources: "84000 glossary entity-2360, entity-42478 (Yamāri)",
     confidence: "firm",
+    kin: [
+      { to: "manjusri", as: "whose wrathful form he is" },
+      { to: "yama", as: "death itself, which he ends" },
+    ],
   },
   {
     id: "vajrayogini",
@@ -1884,6 +2099,9 @@ export const BEINGS: Being[] = [
     light: "None.",
     sources: "84000 glossary entity-43007, entity-35329 (Antaka), entity-43881 (Namuci)",
     confidence: "contested",
+    kin: [
+      { to: "sakyamuni", as: "whom he assailed beneath the Bodhi tree" },
+    ],
   },
   {
     id: "palden-lhamo",
@@ -1898,6 +2116,9 @@ export const BEINGS: Being[] = [
     light: "None.",
     sources: "84000 glossary s.v. dpal ldan lha mo (Śrī / Lakṣmī entry); Rangjung Yeshe s.v. dpal ldan lha mo",
     confidence: "contested",
+    kin: [
+      { to: "mahakala", as: "an identification made after the fact — 'a female Mahākāla'" },
+    ],
   },
   {
     id: "yuanshi-tianzun-celestial-worthy-of-primordial-beginning",
@@ -1926,6 +2147,9 @@ export const BEINGS: Being[] = [
     light: "Chiefly through the name. 靈 líng ('numinous') is glossed in the Shuowen as 巫以玉事神 'the wu-shaman serves the spirits with jade', and the variant graph is written with 巫. His realm, the Yuyu Heaven, belongs to the Shangqing 上清 'Highest Clarity' order — the 清 qīng of all three realms means clear, limpid, translucent, so the Three Purities are named for clarity rather than for brightness as such.",
     sources: "Yunji qiqian KR5d0055 (Three Treasure Lords and Three Caverns); Duren jing KR5a0001; Shuowen jiezi KR1j0018 for 靈. Negative evidence for 靈寶天尊 from exhaustive grep of the sampled corpus.",
     confidence: "contested",
+    kin: [
+      { to: "yuanshi-tianzun-celestial-worthy-of-primordial-beginning", as: "from whom he transmits the revelation downward" },
+    ],
   },
   {
     id: "daode-tianzun-celestial-worthy-of-the-way-and-its-virtue",
@@ -2010,6 +2234,9 @@ export const BEINGS: Being[] = [
     light: "Fire and hearth: he belongs to the Fire phase in the Yueling scheme, alongside the Red Thearch and Zhurong. His is the domesticated fire, the flame that is watched rather than the flame that shines.",
     sources: "Liji 禮記 Yueling and Jifa, Kanripo KR1d0052; Shuowen jiezi KR1j0018 (竈 entry, with the variant 𡧌 noted as 竈或不省); CC-CEDICT for modern forms.",
     confidence: "firm",
+    kin: [
+      { to: "siming-director-of-destinies", as: "the office he holds, reporting the household at New Year" },
+    ],
   },
   {
     id: "leigong-the-duke-of-thunder",
@@ -2052,6 +2279,9 @@ export const BEINGS: Being[] = [
     light: "Named into two of them: 汁光紀 contains 光 guāng 'light', and 靈威仰 opens with 靈 líng 'numinous'. Otherwise the light is calendrical — each Thearch is received at the moment its season's light begins.",
     sources: "Liji zhushu 禮記注疏 (Zheng Xuan's commentary with Kong Yingda's subcommentary), Kanripo KR1d0053, quoting Chunqiu wei Wenyao gou 春秋緯文耀鉤; Shiji KR2a0001 for the Han altar arrangement.",
     confidence: "probable",
+    kin: [
+      { to: "taiyi-the-great-one", as: "whose subordinates they are in the Han cult of the Shiji" },
+    ],
   },
   {
     id: "the-seven-star-lords-of-the-northern-dipper",
@@ -2108,6 +2338,9 @@ export const BEINGS: Being[] = [
     light: "None inherent, though as a star name it belongs to the astral register. Its instrument is the written ledger, not illumination.",
     sources: "Liji 禮記 KR1d0052; Chuci zhangju KR4a0002; Baopuzi neipian 微旨 KR5f0019; Taiping jing chao 太平經鈔 KR5e0001; Shuowen jiezi KR1j0018; Lunheng KR3j0080.",
     confidence: "firm",
+    kin: [
+      { to: "zaoshen-the-stove-god", as: "who holds the title and makes the annual report" },
+    ],
   },
   {
     id: "chenghuang-the-city-god",
@@ -2122,6 +2355,9 @@ export const BEINGS: Being[] = [
     light: "None. His attributes are judicial — registers, the abacus, the tablet — and his temples are courtrooms, deliberately dim.",
     sources: "Yunji qiqian KR5d0055; Duren jing KR5a0001 (社令城隍); CC-CEDICT. The Ming ranking edict is standard in the scholarship on late imperial local cult.",
     confidence: "probable",
+    kin: [
+      { to: "siming-director-of-destinies", as: "the complement to him — the two purest offices in the pantheon" },
+    ],
   },
   {
     id: "jibril",
@@ -2137,6 +2373,10 @@ export const BEINGS: Being[] = [
     sources: "Qurʾān 2:97, 2:98, 66:4 (Tanzil Ḥafṣ text + independent Uthmānī cross-check; 3 occurrences, exhaustively verified); Ṣaḥīḥ Muslim; Musnad Aḥmad; EI² art. 'Djabrāʾīl'.",
     confidence: "firm",
     entries: ["v-9"],
+    kin: [
+      { to: "mikal", as: "paired with him at Q 2:97–98" },
+      { to: "al-ruh-al-amin", as: "the title the Qurʾān gives him" },
+    ],
   },
   {
     id: "mikal",
@@ -2152,6 +2392,10 @@ export const BEINGS: Being[] = [
     sources: "Qurʾān 2:98 (sole occurrence, verified in two digital editions); Ṣaḥīḥ Muslim, Ṣalāt al-musāfirīn; Musnad Aḥmad (38 hadith attestations of مِيكَائِيل verified); EI² art. 'Mīkāl'.",
     confidence: "firm",
     entries: ["v-9"],
+    kin: [
+      { to: "jibril", as: "the archangel he is paired with" },
+      { to: "israfil", as: "named with them in the supplication O God, Lord of Jibrīl, Mīkāʾīl and Isrāfīl" },
+    ],
   },
   {
     id: "israfil",
@@ -2219,6 +2463,9 @@ export const BEINGS: Being[] = [
     light: "None; his domain is fire. Note a structurally telling absence: the Qurʾān names the keeper of Hell but never names a keeper of Paradise. That gap is precisely what the later figure of Riḍwān was made to fill.",
     sources: "Qurʾān 43:77 (sole occurrence, verified); 39:71; 40:49; 66:6; 74:30-31; EI² art. 'Mālik'.",
     confidence: "firm",
+    kin: [
+      { to: "ridwan", as: "the later figure made to fill the gap opposite him" },
+    ],
   },
   {
     id: "ridwan",
@@ -2273,6 +2520,9 @@ export const BEINGS: Being[] = [
     light: "This is the tradition's principal junction between spirit and illumination: revelation descends and the heart is its receptacle. Later Ishrāqī and Sufi writers develop al-rūḥ into the luminous intermediary between the divine and the human — but that elaboration is philosophical and must not be read back into the Qurʾanic text, which says only that the Spirit 'came down with it'.",
     sources: "Qurʾān 26:193 (verified); 2:87; 16:102; 17:85; 70:4; 78:38; 97:4.",
     confidence: "contested",
+    kin: [
+      { to: "jibril", as: "whom the exegetical consensus identifies him as" },
+    ],
   },
   {
     id: "al-zabaniya",
