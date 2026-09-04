@@ -1,0 +1,2086 @@
+{
+"lanes": [
+"Ancient Egypt",
+"Mesopotamia and Iran",
+"Greece and Rome",
+"Orphism, Theurgy, and Neoplatonism",
+"Hermetic, Gnostic, Manichaean, and Mandaean Traditions",
+"Israelite, Jewish, and Christian Traditions",
+"India and Buddhism",
+"China and Daoism",
+"Islamic and Illuminationist Traditions",
+"Medieval, Renaissance, and Modern Esotericism",
+"The Science of Light"
+],
+"places": {
+"heliopolis": {
+"name": "Heliopolis (Iunu)",
+"lat": 30.13,
+"lon": 31.3
+},
+"saqqara": {
+"name": "Saqqara",
+"lat": 29.87,
+"lon": 31.22
+},
+"thebes": {
+"name": "Thebes (Luxor)",
+"lat": 25.72,
+"lon": 32.61
+},
+"abydos": {
+"name": "Abydos",
+"lat": 26.18,
+"lon": 31.92
+},
+"amarna": {
+"name": "Akhetaten (Amarna)",
+"lat": 27.65,
+"lon": 30.9
+},
+"deir-el-bersha": {
+"name": "Deir el-Bersha",
+"lat": 27.74,
+"lon": 30.9
+},
+"asyut": {
+"name": "Lycopolis (Asyut)",
+"lat": 27.18,
+"lon": 31.18
+},
+"alexandria": {
+"name": "Alexandria",
+"lat": 31.2,
+"lon": 29.92
+},
+"nag-hammadi": {
+"name": "Nag Hammadi",
+"lat": 26.05,
+"lon": 32.24
+},
+"medinet-madi": {
+"name": "Medinet Madi (Fayyum)",
+"lat": 29.2,
+"lon": 30.64
+},
+"cairo": {
+"name": "Cairo",
+"lat": 30.04,
+"lon": 31.24
+},
+"sippar": {
+"name": "Sippar",
+"lat": 33.06,
+"lon": 44.25
+},
+"larsa": {
+"name": "Larsa",
+"lat": 31.29,
+"lon": 45.85
+},
+"babylon": {
+"name": "Babylon",
+"lat": 32.54,
+"lon": 44.42
+},
+"nippur": {
+"name": "Nippur (the Chebar canal)",
+"lat": 32.13,
+"lon": 45.23
+},
+"ctesiphon": {
+"name": "Seleucia-Ctesiphon",
+"lat": 33.09,
+"lon": 44.58
+},
+"khuzestan": {
+"name": "Khūzistān (the Mandaean marshes)",
+"lat": 31.32,
+"lon": 48.67
+},
+"balkh": {
+"name": "Bactria (Balkh)",
+"lat": 36.76,
+"lon": 66.9
+},
+"istakhr": {
+"name": "Iṣṭakhr, Pārs",
+"lat": 29.98,
+"lon": 52.9
+},
+"tus": {
+"name": "Ṭūs",
+"lat": 36.49,
+"lon": 59.55
+},
+"baghdad": {
+"name": "Baghdad",
+"lat": 33.34,
+"lon": 44.4
+},
+"basra": {
+"name": "Basra",
+"lat": 30.51,
+"lon": 47.81
+},
+"suhraward": {
+"name": "Suhraward",
+"lat": 36.4,
+"lon": 47.9
+},
+"isfahan": {
+"name": "Isfahan",
+"lat": 32.65,
+"lon": 51.67
+},
+"shiraz": {
+"name": "Shiraz",
+"lat": 29.59,
+"lon": 52.58
+},
+"dunhuang": {
+"name": "Dunhuang",
+"lat": 40.14,
+"lon": 94.66
+},
+"jerusalem": {
+"name": "Jerusalem",
+"lat": 31.78,
+"lon": 35.23
+},
+"qumran": {
+"name": "Qumran",
+"lat": 31.74,
+"lon": 35.46
+},
+"tiberias": {
+"name": "Tiberias (Galilee)",
+"lat": 32.79,
+"lon": 35.53
+},
+"tabor": {
+"name": "Mount Tabor",
+"lat": 32.69,
+"lon": 35.39
+},
+"sinai": {
+"name": "Mount Sinai (Jebel Musa)",
+"lat": 28.54,
+"lon": 33.98
+},
+"tyre": {
+"name": "Tyre",
+"lat": 33.27,
+"lon": 35.2
+},
+"damascus": {
+"name": "Damascus",
+"lat": 33.51,
+"lon": 36.29
+},
+"aleppo": {
+"name": "Aleppo",
+"lat": 36.2,
+"lon": 37.16
+},
+"antioch": {
+"name": "Syria (Antioch)",
+"lat": 36.2,
+"lon": 36.16
+},
+"apamea": {
+"name": "Apamea",
+"lat": 35.42,
+"lon": 36.4
+},
+"chalcis": {
+"name": "Chalcis ad Belum",
+"lat": 35.99,
+"lon": 37.05
+},
+"edessa": {
+"name": "Edessa (Urfa)",
+"lat": 37.16,
+"lon": 38.79
+},
+"nisibis": {
+"name": "Nisibis",
+"lat": 37.07,
+"lon": 41.21
+},
+"nyssa": {
+"name": "Nyssa, Cappadocia",
+"lat": 38.9,
+"lon": 34.0
+},
+"ephesus": {
+"name": "Ephesus",
+"lat": 37.94,
+"lon": 27.34
+},
+"pergamon": {
+"name": "Pergamon",
+"lat": 39.13,
+"lon": 27.18
+},
+"constantinople": {
+"name": "Constantinople",
+"lat": 41.01,
+"lon": 28.98
+},
+"konya": {
+"name": "Konya",
+"lat": 37.87,
+"lon": 32.49
+},
+"medina": {
+"name": "Medina",
+"lat": 24.47,
+"lon": 39.61
+},
+"athens": {
+"name": "Athens",
+"lat": 37.98,
+"lon": 23.73
+},
+"corinth": {
+"name": "Corinth",
+"lat": 37.91,
+"lon": 22.88
+},
+"derveni": {
+"name": "Derveni, near Thessalonica",
+"lat": 40.64,
+"lon": 22.94
+},
+"abdera": {
+"name": "Abdera",
+"lat": 40.95,
+"lon": 24.98
+},
+"akragas": {
+"name": "Akragas (Agrigento)",
+"lat": 37.31,
+"lon": 13.58
+},
+"lilybaeum": {
+"name": "Lilybaeum, Sicily",
+"lat": 37.8,
+"lon": 12.44
+},
+"rome": {
+"name": "Rome",
+"lat": 41.9,
+"lon": 12.5
+},
+"punjab": {
+"name": "Sapta Sindhu (the Punjab)",
+"lat": 31.5,
+"lon": 73.5
+},
+"mithila": {
+"name": "Videha (Mithila)",
+"lat": 26.6,
+"lon": 85.9
+},
+"varanasi": {
+"name": "Kāśī (Varanasi)",
+"lat": 25.32,
+"lon": 83.01
+},
+"kurukshetra": {
+"name": "Kurukṣetra",
+"lat": 29.97,
+"lon": 76.83
+},
+"taxila": {
+"name": "Takṣaśilā (Taxila)",
+"lat": 33.74,
+"lon": 72.79
+},
+"rajgir": {
+"name": "Rājagṛha (Rajgir), Magadha",
+"lat": 25.03,
+"lon": 85.42
+},
+"savatthi": {
+"name": "Sāvatthī (Śrāvastī)",
+"lat": 27.51,
+"lon": 82.05
+},
+"kosambi": {
+"name": "Kosambī",
+"lat": 25.34,
+"lon": 81.39
+},
+"anuradhapura": {
+"name": "Anurādhapura",
+"lat": 8.34,
+"lon": 80.39
+},
+"gandhara": {
+"name": "Gandhāra (Peshawar)",
+"lat": 34.01,
+"lon": 71.58
+},
+"nalanda": {
+"name": "Nālandā",
+"lat": 25.14,
+"lon": 85.44
+},
+"lhasa": {
+"name": "Lhasa",
+"lat": 29.65,
+"lon": 91.13
+},
+"adyar": {
+"name": "Adyar (Madras)",
+"lat": 13.01,
+"lon": 80.26
+},
+"linzi": {
+"name": "Linzi (Qi)",
+"lat": 36.83,
+"lon": 118.32
+},
+"tengzhou": {
+"name": "Lu (Tengzhou)",
+"lat": 35.08,
+"lon": 117.16
+},
+"guodian": {
+"name": "Guodian (Jingmen), Chu",
+"lat": 31.03,
+"lon": 112.2
+},
+"shangqiu": {
+"name": "Meng, in Song (Shangqiu)",
+"lat": 34.41,
+"lon": 115.66
+},
+"shouchun": {
+"name": "Shouchun (Huainan)",
+"lat": 32.55,
+"lon": 116.79
+},
+"shaoxing": {
+"name": "Kuaiji (Shaoxing)",
+"lat": 30.0,
+"lon": 120.58
+},
+"luoyang": {
+"name": "Luoyang",
+"lat": 34.62,
+"lon": 112.45
+},
+"nanchang": {
+"name": "Jiangxi (Nanchang)",
+"lat": 28.68,
+"lon": 115.86
+},
+"oxford": {
+"name": "Oxford",
+"lat": 51.75,
+"lon": -1.26
+},
+"lincoln": {
+"name": "Lincoln",
+"lat": 53.23,
+"lon": -0.54
+},
+"london": {
+"name": "London",
+"lat": 51.51,
+"lon": -0.13
+},
+"cambridge": {
+"name": "Cambridge",
+"lat": 52.21,
+"lon": 0.12
+},
+"woolsthorpe": {
+"name": "Woolsthorpe",
+"lat": 52.81,
+"lon": -0.62
+},
+"leeds": {
+"name": "Leeds",
+"lat": 53.8,
+"lon": -1.55
+},
+"slough": {
+"name": "Slough",
+"lat": 51.51,
+"lon": -0.59
+},
+"paris": {
+"name": "Paris",
+"lat": 48.86,
+"lon": 2.35
+},
+"lyon": {
+"name": "Lyon",
+"lat": 45.76,
+"lon": 4.84
+},
+"toulouse": {
+"name": "Toulouse",
+"lat": 43.6,
+"lon": 1.44
+},
+"leiden": {
+"name": "Leiden",
+"lat": 52.16,
+"lon": 4.49
+},
+"the-hague": {
+"name": "The Hague",
+"lat": 52.08,
+"lon": 4.31
+},
+"viterbo": {
+"name": "Viterbo",
+"lat": 42.42,
+"lon": 12.1
+},
+"florence": {
+"name": "Florence",
+"lat": 43.77,
+"lon": 11.26
+},
+"bologna": {
+"name": "Bologna",
+"lat": 44.49,
+"lon": 11.34
+},
+"einsiedeln": {
+"name": "Einsiedeln",
+"lat": 47.13,
+"lon": 8.75
+},
+"basel": {
+"name": "Basel",
+"lat": 47.56,
+"lon": 7.59
+},
+"bern": {
+"name": "Bern",
+"lat": 46.95,
+"lon": 7.45
+},
+"dornach": {
+"name": "Dornach",
+"lat": 47.48,
+"lon": 7.62
+},
+"gorlitz": {
+"name": "Görlitz",
+"lat": 51.15,
+"lon": 14.99
+},
+"weimar": {
+"name": "Weimar",
+"lat": 50.98,
+"lon": 11.33
+},
+"jena": {
+"name": "Jena",
+"lat": 50.93,
+"lon": 11.59
+},
+"berlin": {
+"name": "Berlin",
+"lat": 52.52,
+"lon": 13.4
+},
+"munich": {
+"name": "Munich",
+"lat": 48.14,
+"lon": 11.58
+},
+"augsburg": {
+"name": "Augsburg",
+"lat": 48.37,
+"lon": 10.9
+},
+"heidelberg": {
+"name": "Heidelberg",
+"lat": 49.4,
+"lon": 8.67
+},
+"marburg": {
+"name": "Marburg",
+"lat": 50.81,
+"lon": 8.77
+},
+"karlsruhe": {
+"name": "Karlsruhe",
+"lat": 49.01,
+"lon": 8.4
+},
+"prague": {
+"name": "Prague",
+"lat": 50.08,
+"lon": 14.44
+},
+"copenhagen": {
+"name": "Copenhagen",
+"lat": 55.68,
+"lon": 12.57
+},
+"moscow": {
+"name": "Moscow",
+"lat": 55.76,
+"lon": 37.62
+}
+},
+"spans": [
+{
+"id": "xv-1",
+"label": "Heliopolitan solar theology",
+"kind": "tradition",
+"from": -2700,
+"to": -2400,
+"places": [
+"heliopolis"
+],
+"approx": true,
+"note": "The solar cult of the Old Kingdom, before the earliest inscribed Pyramid Texts.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-2",
+"label": "Pyramid Texts",
+"kind": "text",
+"from": -2400,
+"to": -2300,
+"places": [
+"saqqara"
+],
+"approx": true,
+"note": "Inscribed in the pyramid of Unas and his Sixth Dynasty successors at Saqqara.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-3",
+"label": "Coffin Texts",
+"kind": "text",
+"from": -2100,
+"to": -1650,
+"places": [
+"deir-el-bersha",
+"asyut"
+],
+"approx": true,
+"note": "Middle Kingdom coffins, above all from Deir el-Bersha and Asyut.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-4",
+"label": "Great Hymn to the Aten",
+"kind": "text",
+"from": -1353,
+"to": -1336,
+"places": [
+"amarna"
+],
+"approx": true,
+"note": "Akhenaten’s reign; the hymn is inscribed in the tomb of Ay at Akhetaten.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-5",
+"label": "Litany of Re",
+"kind": "text",
+"from": -1479,
+"to": -1425,
+"places": [
+"thebes"
+],
+"approx": true,
+"note": "Earliest copies in the tombs of Useramun and Thutmose III in the Valley of the Kings.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-6",
+"label": "Amduat",
+"kind": "text",
+"from": -1500,
+"to": -1425,
+"places": [
+"thebes"
+],
+"approx": true,
+"note": "The earliest complete version is in the tomb of Thutmose III; the composition is somewhat older.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-7",
+"label": "Book of Gates",
+"kind": "text",
+"from": -1319,
+"to": -1279,
+"places": [
+"thebes"
+],
+"approx": true,
+"note": "First in the tomb of Horemheb; complete on the alabaster sarcophagus of Seti I.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-8",
+"label": "Book of Caverns",
+"kind": "text",
+"from": -1213,
+"to": -1137,
+"places": [
+"abydos",
+"thebes"
+],
+"approx": true,
+"note": "From the Osireion at Abydos under Merenptah to the full version in the tomb of Ramesses VI.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-9",
+"label": "Book of the Heavenly Cow",
+"kind": "text",
+"from": -1323,
+"to": -1155,
+"places": [
+"thebes"
+],
+"approx": true,
+"note": "First on the outermost shrine of Tutankhamun; fully in the tombs of Seti I and Ramesses II, III, and VI.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-10",
+"label": "Akh and the transfigured dead",
+"kind": "tradition",
+"from": -2400,
+"to": -300,
+"places": [
+"saqqara",
+"thebes"
+],
+"approx": true,
+"note": "From the Pyramid Texts through the funerary literature of the Late Period.",
+"lane": "Ancient Egypt"
+},
+{
+"id": "xv-11",
+"label": "Utu-Shamash, the all-seeing",
+"kind": "tradition",
+"from": -2100,
+"to": -650,
+"places": [
+"sippar",
+"larsa"
+],
+"approx": true,
+"note": "From the Ur III hymns to Utu to the Neo-Assyrian copies of the Great Hymn to Šamaš; Sippar and Larsa were his cult cities.",
+"lane": "Mesopotamia and Iran"
+},
+{
+"id": "xv-12",
+"label": "Light, justice, and divine vision",
+"kind": "tradition",
+"from": -1755,
+"to": -650,
+"places": [
+"babylon",
+"sippar"
+],
+"approx": true,
+"note": "The stele of Hammurabi (c. 1755 BCE) shows Šamaš conferring the measures of justice; the Great Hymn makes the sun the judge who sees all.",
+"lane": "Mesopotamia and Iran"
+},
+{
+"id": "xv-13",
+"label": "The Gāthās",
+"kind": "text",
+"from": -1200,
+"to": -1000,
+"places": [
+"balkh"
+],
+"approx": true,
+"note": "Usually placed c. 1200–1000 BCE, with proposals from c. 1500 down to c. 600; their homeland is the eastern Iranian world, for which Bactria stands.",
+"lane": "Mesopotamia and Iran"
+},
+{
+"id": "xv-14",
+"label": "Avestan fire",
+"kind": "text",
+"from": -900,
+"to": -400,
+"places": [
+"balkh",
+"istakhr"
+],
+"approx": true,
+"note": "The Younger Avesta’s fire liturgies (Ātaš Niyāyišn, Yasna 62); the fire temples of Pārs are the later institution.",
+"lane": "Mesopotamia and Iran"
+},
+{
+"id": "xv-15",
+"label": "Star, moon, sun, and Endless Light",
+"kind": "text",
+"from": -900,
+"to": -400,
+"places": [
+"balkh"
+],
+"approx": true,
+"note": "The ascent by stations of the Younger Avesta (Hādōxt Nask, Vidēvdād 19).",
+"lane": "Mesopotamia and Iran"
+},
+{
+"id": "xv-16",
+"label": "Bundahišn",
+"kind": "text",
+"from": 800,
+"to": 900,
+"places": [
+"istakhr"
+],
+"approx": true,
+"note": "Pahlavi compilation of the ninth century from Sasanian materials, revised into the twelfth.",
+"lane": "Mesopotamia and Iran"
+},
+{
+"id": "xv-17",
+"label": "Empedocles",
+"kind": "life",
+"from": -494,
+"to": -434,
+"places": [
+"akragas"
+],
+"approx": true,
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-18",
+"label": "Democritus",
+"kind": "life",
+"from": -460,
+"to": -370,
+"places": [
+"abdera"
+],
+"approx": true,
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-19",
+"label": "Plato · Republic VI–VII",
+"kind": "text",
+"from": -380,
+"to": -370,
+"places": [
+"athens"
+],
+"approx": true,
+"note": "Sun, Divided Line, and Cave; Plato lived c. 428–348 BCE.",
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-20",
+"label": "Plato · Timaeus",
+"kind": "text",
+"from": -360,
+"to": -355,
+"places": [
+"athens"
+],
+"approx": true,
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-21",
+"label": "Aristotle · De anima II.7",
+"kind": "text",
+"from": -350,
+"to": -335,
+"places": [
+"athens"
+],
+"approx": true,
+"note": "The doctrine of the transparent (diaphanes); Aristotle lived 384–322 BCE.",
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-22",
+"label": "On Colours",
+"kind": "text",
+"from": -320,
+"to": -250,
+"places": [
+"athens"
+],
+"approx": true,
+"note": "Peripatetic, perhaps by Theophrastus or Strato, transmitted under Aristotle’s name.",
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-23",
+"label": "Euclid · Optics",
+"kind": "text",
+"from": -300,
+"to": -280,
+"places": [
+"alexandria"
+],
+"approx": true,
+"note": "Euclid flourished at Alexandria c. 300 BCE.",
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-24",
+"label": "Ptolemy · Optics",
+"kind": "text",
+"from": 160,
+"to": 170,
+"places": [
+"alexandria"
+],
+"approx": true,
+"note": "Ptolemy lived c. 100–170 CE.",
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-25",
+"label": "Stoic and Roman theories of vision",
+"kind": "tradition",
+"from": -300,
+"to": 200,
+"places": [
+"athens",
+"rome",
+"pergamon"
+],
+"approx": true,
+"note": "Chrysippus (c. 279–206 BCE) to Galen (129–c. 216 CE); Lucretius (c. 99–55 BCE) for the Epicurean films.",
+"lane": "Greece and Rome"
+},
+{
+"id": "xv-26",
+"label": "Phanes and the Orphic theogonies",
+"kind": "tradition",
+"from": -500,
+"to": 200,
+"places": [
+"derveni",
+"athens"
+],
+"approx": true,
+"note": "From the theogony read by the Derveni papyrus (poem c. 500 BCE, papyrus c. 340) to the Rhapsodies of the early centuries CE.",
+"lane": "Orphism, Theurgy, and Neoplatonism"
+},
+{
+"id": "xv-27",
+"label": "Chaldean Oracles",
+"kind": "text",
+"from": 150,
+"to": 200,
+"places": [
+"rome"
+],
+"approx": true,
+"note": "The two Julians, father and son, under Marcus Aurelius; the oracles’ own geography is unknown, and Rome stands for the court they served.",
+"lane": "Orphism, Theurgy, and Neoplatonism"
+},
+{
+"id": "xv-28",
+"label": "Plotinus",
+"kind": "life",
+"from": 204,
+"to": 270,
+"places": [
+"asyut",
+"alexandria",
+"rome"
+],
+"approx": true,
+"lane": "Orphism, Theurgy, and Neoplatonism"
+},
+{
+"id": "xv-29",
+"label": "Porphyry",
+"kind": "life",
+"from": 234,
+"to": 305,
+"places": [
+"tyre",
+"rome",
+"lilybaeum"
+],
+"approx": true,
+"lane": "Orphism, Theurgy, and Neoplatonism"
+},
+{
+"id": "xv-30",
+"label": "Iamblichus",
+"kind": "life",
+"from": 245,
+"to": 325,
+"places": [
+"chalcis",
+"apamea"
+],
+"approx": true,
+"lane": "Orphism, Theurgy, and Neoplatonism"
+},
+{
+"id": "xv-31",
+"label": "Proclus",
+"kind": "life",
+"from": 412,
+"to": 485,
+"places": [
+"constantinople",
+"alexandria",
+"athens"
+],
+"lane": "Orphism, Theurgy, and Neoplatonism"
+},
+{
+"id": "xv-32",
+"label": "Poimandres (Corpus Hermeticum I)",
+"kind": "text",
+"from": 100,
+"to": 300,
+"places": [
+"alexandria"
+],
+"approx": true,
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-33",
+"label": "The Eighth and the Ninth",
+"kind": "text",
+"from": 150,
+"to": 300,
+"places": [
+"alexandria",
+"nag-hammadi"
+],
+"approx": true,
+"note": "Composed in Greek in Roman Egypt; the Coptic copy was buried near Nag Hammadi c. 350.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-34",
+"label": "The Hermetic rebirth (CH XIII)",
+"kind": "text",
+"from": 100,
+"to": 300,
+"places": [
+"alexandria"
+],
+"approx": true,
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-35",
+"label": "Apocryphon of John",
+"kind": "text",
+"from": 120,
+"to": 180,
+"places": [
+"alexandria",
+"nag-hammadi"
+],
+"approx": true,
+"note": "Known to Irenaeus by c. 180.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-36",
+"label": "Pistis Sophia",
+"kind": "text",
+"from": 250,
+"to": 350,
+"places": [
+"alexandria"
+],
+"approx": true,
+"note": "Coptic; the Askew Codex.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-37",
+"label": "Books of Jeu",
+"kind": "text",
+"from": 200,
+"to": 300,
+"places": [
+"thebes"
+],
+"approx": true,
+"note": "Coptic; the Bruce Codex, from Upper Egypt.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-38",
+"label": "Mani",
+"kind": "life",
+"from": 216,
+"to": 277,
+"places": [
+"ctesiphon"
+],
+"approx": true,
+"note": "Mani preached from Seleucia-Ctesiphon and died in the prison of Bahram I.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-39",
+"label": "The Kephalaia of the Teacher",
+"kind": "text",
+"from": 350,
+"to": 400,
+"places": [
+"medinet-madi"
+],
+"approx": true,
+"note": "The five living elements of light in the Coptic Kephalaia found at Medinet Madi.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-40",
+"label": "The Manichaean church and its texts",
+"kind": "tradition",
+"from": 277,
+"to": 1000,
+"places": [
+"ctesiphon",
+"dunhuang"
+],
+"approx": true,
+"note": "From Mani’s death to the Uyghur and Chinese communities whose texts survive from Turfan and Dunhuang.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-41",
+"label": "Ginza Rabba",
+"kind": "text",
+"from": 200,
+"to": 700,
+"places": [
+"khuzestan"
+],
+"approx": true,
+"note": "The Mandaean scriptures were compiled between the third and seventh centuries in the marshlands of southern Mesopotamia and Khūzistān.",
+"lane": "Hermetic, Gnostic, Manichaean, and Mandaean Traditions"
+},
+{
+"id": "xv-42",
+"label": "Genesis 1",
+"kind": "text",
+"from": -600,
+"to": -500,
+"places": [
+"babylon",
+"jerusalem"
+],
+"approx": true,
+"note": "The Priestly creation account, usually placed in or after the exile.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-43",
+"label": "The pillar of fire (Exodus 13–14)",
+"kind": "text",
+"from": -700,
+"to": -500,
+"places": [
+"sinai"
+],
+"approx": true,
+"setting": true,
+"note": "The wilderness of Sinai is the narrative’s setting; its composition belongs to the Judahite and exilic centuries.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-44",
+"label": "Ezekiel’s throne vision",
+"kind": "text",
+"from": -593,
+"to": -571,
+"places": [
+"nippur"
+],
+"note": "Dated by the book itself; among the exiles by the Chebar canal.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-45",
+"label": "Psalms of divine radiance",
+"kind": "text",
+"from": -1000,
+"to": -300,
+"places": [
+"jerusalem"
+],
+"approx": true,
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-46",
+"label": "Daniel 7",
+"kind": "text",
+"from": -167,
+"to": -164,
+"places": [
+"jerusalem"
+],
+"approx": true,
+"note": "The visions of Daniel 7–12 come from the Maccabean crisis.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-47",
+"label": "1 Enoch · the Astronomical Book",
+"kind": "text",
+"from": -300,
+"to": -200,
+"places": [
+"jerusalem"
+],
+"approx": true,
+"note": "Aramaic copies were found at Qumran.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-48",
+"label": "War Scroll and Community Rule",
+"kind": "text",
+"from": -150,
+"to": 70,
+"places": [
+"qumran"
+],
+"approx": true,
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-49",
+"label": "The hidden light in rabbinic tradition",
+"kind": "text",
+"from": 300,
+"to": 500,
+"places": [
+"tiberias",
+"babylon"
+],
+"approx": true,
+"note": "Genesis Rabbah (Galilee, c. 400–450) and the Babylonian Talmud’s Ḥagigah (c. 500).",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-50",
+"label": "Gospel of John",
+"kind": "text",
+"from": 90,
+"to": 110,
+"places": [
+"ephesus"
+],
+"approx": true,
+"note": "Traditionally Ephesus.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-51",
+"label": "The Transfiguration",
+"kind": "text",
+"from": 65,
+"to": 75,
+"places": [
+"tabor"
+],
+"approx": true,
+"setting": true,
+"note": "Mark’s account, c. 70 CE; the mountain is unnamed, Tabor is the traditional site, and Hermon the other candidate.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-52",
+"label": "Paul · 2 Corinthians 3",
+"kind": "text",
+"from": 55,
+"to": 56,
+"places": [
+"corinth"
+],
+"approx": true,
+"note": "Written to Corinth from Macedonia.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-53",
+"label": "Odes of Solomon",
+"kind": "text",
+"from": 100,
+"to": 200,
+"places": [
+"edessa"
+],
+"approx": true,
+"note": "Syriac hymns of the second century, usually placed in Edessa or Antioch.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-54",
+"label": "Gregory of Nyssa",
+"kind": "life",
+"from": 335,
+"to": 395,
+"places": [
+"nyssa"
+],
+"approx": true,
+"note": "The Life of Moses c. 390.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-55",
+"label": "Pseudo-Dionysius",
+"kind": "text",
+"from": 485,
+"to": 528,
+"places": [
+"antioch"
+],
+"approx": true,
+"note": "The corpus surfaces in Syria around 500 and is first cited at Constantinople in 532.",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-56",
+"label": "The robe of light in Syriac Christianity",
+"kind": "tradition",
+"from": 200,
+"to": 373,
+"places": [
+"edessa",
+"nisibis"
+],
+"approx": true,
+"note": "From the Hymn of the Pearl in the Acts of Thomas (c. 200–250) to Ephrem (d. 373).",
+"lane": "Israelite, Jewish, and Christian Traditions"
+},
+{
+"id": "xv-57",
+"label": "Ṛgveda · Agni, Sūrya, Uṣas",
+"kind": "text",
+"from": -1500,
+"to": -1200,
+"places": [
+"punjab"
+],
+"approx": true,
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-58",
+"label": "The Upaniṣads",
+"kind": "text",
+"from": -800,
+"to": -300,
+"places": [
+"mithila",
+"varanasi"
+],
+"approx": true,
+"note": "Bṛhadāraṇyaka and Chāndogya (c. 800–600 BCE) to the middle Upaniṣads.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-59",
+"label": "The Gāyatrī (Ṛgveda 3.62.10)",
+"kind": "text",
+"from": -1500,
+"to": -1200,
+"places": [
+"punjab"
+],
+"approx": true,
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-60",
+"label": "Bhagavad Gītā",
+"kind": "text",
+"from": -200,
+"to": 200,
+"places": [
+"kurukshetra"
+],
+"approx": true,
+"setting": true,
+"note": "The battlefield of Kurukṣetra is the poem’s setting; its composition is placed between the second century BCE and the second CE.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-61",
+"label": "Tejas in the elemental systems",
+"kind": "tradition",
+"from": -300,
+"to": 400,
+"places": [
+"taxila",
+"varanasi"
+],
+"approx": true,
+"note": "Vaiśeṣika Sūtra and Caraka Saṃhitā to the Sāṃkhya-kārikā; Takṣaśilā and Kāśī were the medical and philosophical centres.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-62",
+"label": "Sāṃkhya-kārikā",
+"kind": "text",
+"from": 350,
+"to": 400,
+"places": [],
+"approx": true,
+"note": "Īśvarakṛṣṇa’s verses, c. 350; where they were composed is not known.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-63",
+"label": "Yogic signs of light",
+"kind": "text",
+"from": -400,
+"to": 450,
+"places": [],
+"approx": true,
+"note": "Śvetāśvatara Upaniṣad 2.11 (c. 400–200 BCE) to Yoga Sūtra 1.36 (c. 350–450 CE).",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-64",
+"label": "The luminous mind (Aṅguttara Nikāya)",
+"kind": "text",
+"from": -400,
+"to": -100,
+"places": [
+"savatthi",
+"rajgir"
+],
+"approx": true,
+"note": "Transmitted orally before being written down in Sri Lanka in the first century BCE.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-65",
+"label": "Upakkilesa Sutta",
+"kind": "text",
+"from": -400,
+"to": -100,
+"places": [
+"kosambi"
+],
+"approx": true,
+"setting": true,
+"note": "Set at Pācīnavaṃsa, near Kosambī.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-66",
+"label": "Visuddhimagga · the light kasiṇa",
+"kind": "text",
+"from": 430,
+"to": 440,
+"places": [
+"anuradhapura"
+],
+"approx": true,
+"note": "Buddhaghosa at Anurādhapura, c. 430.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-67",
+"label": "Early Mahāyāna radiance",
+"kind": "tradition",
+"from": -100,
+"to": 300,
+"places": [
+"gandhara"
+],
+"approx": true,
+"note": "The earliest Mahāyāna sūtras (Aṣṭasāhasrikā, Sukhāvatīvyūha); Gandhāra preserves the oldest manuscripts.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-68",
+"label": "Tathāgatagarbha sūtras",
+"kind": "text",
+"from": 250,
+"to": 450,
+"places": [
+"gandhara",
+"luoyang"
+],
+"approx": true,
+"note": "Composed in India and translated at Luoyang in the fourth and fifth centuries.",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-69",
+"label": "Tantric and Tibetan clear light",
+"kind": "tradition",
+"from": 700,
+"to": 1400,
+"places": [
+"nalanda",
+"lhasa"
+],
+"approx": true,
+"note": "Guhyasamāja (c. 8th century) and the cycle of Nāropa (11th) to Tsongkhapa (d. 1419).",
+"lane": "India and Buddhism"
+},
+{
+"id": "xv-70",
+"label": "The Mohist canons on light and shadow",
+"kind": "text",
+"from": -350,
+"to": -250,
+"places": [
+"tengzhou"
+],
+"approx": true,
+"note": "The optical propositions of the Mo jing; Mozi came from Lu.",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-71",
+"label": "Dao De Jing",
+"kind": "text",
+"from": -400,
+"to": -300,
+"places": [
+"guodian"
+],
+"approx": true,
+"note": "The Guodian bamboo slips (c. 300 BCE) are the oldest witness.",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-72",
+"label": "Zhuangzi",
+"kind": "text",
+"from": -350,
+"to": -250,
+"places": [
+"shangqiu"
+],
+"approx": true,
+"note": "Zhuang Zhou of Meng, in Song; the Inner Chapters.",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-73",
+"label": "Neiye",
+"kind": "text",
+"from": -350,
+"to": -300,
+"places": [
+"linzi"
+],
+"approx": true,
+"note": "Transmitted in the Guanzi of the Jixia academy at Linzi.",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-74",
+"label": "Yin-yang, sun, and moon",
+"kind": "tradition",
+"from": -300,
+"to": 100,
+"places": [
+"shouchun"
+],
+"approx": true,
+"note": "Correlative cosmology from Zou Yan to the Huainanzi (139 BCE).",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-75",
+"label": "Cantong qi",
+"kind": "text",
+"from": 140,
+"to": 500,
+"places": [
+"shaoxing"
+],
+"approx": true,
+"note": "Ascribed to Wei Boyang of Kuaiji, 142 CE; the received text took shape over the following centuries.",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-76",
+"label": "Secret of the Golden Flower",
+"kind": "text",
+"from": 1668,
+"to": 1692,
+"places": [
+"nanchang"
+],
+"approx": true,
+"note": "The Taiyi jinhua zongzhi emerged in the Jingming milieu of Jiangxi in the late seventeenth century.",
+"lane": "China and Daoism"
+},
+{
+"id": "xv-77",
+"label": "The Light Verse (Qurʾan 24:35)",
+"kind": "text",
+"from": 624,
+"to": 628,
+"places": [
+"medina"
+],
+"approx": true,
+"note": "Sūrat al-Nūr is Medinan.",
+"lane": "Islamic and Illuminationist Traditions"
+},
+{
+"id": "xv-78",
+"label": "Ibn al-Haytham",
+"kind": "life",
+"from": 965,
+"to": 1040,
+"places": [
+"basra",
+"cairo"
+],
+"approx": true,
+"note": "Kitāb al-Manāẓir, c. 1011–21, at Cairo.",
+"lane": "Islamic and Illuminationist Traditions"
+},
+{
+"id": "xv-79",
+"label": "al-Ghazālī",
+"kind": "life",
+"from": 1058,
+"to": 1111,
+"places": [
+"tus",
+"baghdad"
+],
+"note": "Mishkāt al-anwār, c. 1100.",
+"lane": "Islamic and Illuminationist Traditions"
+},
+{
+"id": "xv-80",
+"label": "Suhrawardī",
+"kind": "life",
+"from": 1154,
+"to": 1191,
+"places": [
+"suhraward",
+"isfahan",
+"aleppo"
+],
+"note": "Executed at Aleppo.",
+"lane": "Islamic and Illuminationist Traditions"
+},
+{
+"id": "xv-81",
+"label": "Ḥikmat al-ishrāq",
+"kind": "text",
+"from": 1186,
+"to": 1186,
+"places": [
+"aleppo"
+],
+"note": "Completed in 1186, by its author’s own dating.",
+"lane": "Islamic and Illuminationist Traditions"
+},
+{
+"id": "xv-82",
+"label": "Illumination in Islamic mysticism",
+"kind": "tradition",
+"from": 850,
+"to": 1640,
+"places": [
+"baghdad",
+"damascus",
+"konya",
+"shiraz"
+],
+"approx": true,
+"note": "From the early Sufis of Baghdad (Junayd, d. 910) through Ibn ʿArabī (d. 1240, Damascus) and Rūmī (d. 1273, Konya) to Mullā Ṣadrā of Shiraz (d. 1640).",
+"lane": "Islamic and Illuminationist Traditions"
+},
+{
+"id": "xv-83",
+"label": "Robert Grosseteste",
+"kind": "life",
+"from": 1168,
+"to": 1253,
+"places": [
+"oxford",
+"lincoln"
+],
+"approx": true,
+"note": "De luce, c. 1225.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-84",
+"label": "Perspectiva",
+"kind": "tradition",
+"from": 1260,
+"to": 1290,
+"places": [
+"oxford",
+"paris",
+"viterbo"
+],
+"approx": true,
+"note": "Roger Bacon (Opus maius, 1267), Witelo (Perspectiva, c. 1270–78, at Viterbo), John Pecham (c. 1280).",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-85",
+"label": "Marsilio Ficino",
+"kind": "life",
+"from": 1433,
+"to": 1499,
+"places": [
+"florence"
+],
+"note": "De sole, 1494.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-86",
+"label": "Paracelsus",
+"kind": "life",
+"from": 1493,
+"to": 1541,
+"places": [
+"einsiedeln",
+"basel"
+],
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-87",
+"label": "Jacob Böhme",
+"kind": "life",
+"from": 1575,
+"to": 1624,
+"places": [
+"gorlitz"
+],
+"note": "Aurora, 1612.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-88",
+"label": "Robert Fludd",
+"kind": "life",
+"from": 1574,
+"to": 1637,
+"places": [
+"london",
+"oxford"
+],
+"note": "Utriusque cosmi historia, 1617–21.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-89",
+"label": "Isaac Newton",
+"kind": "life",
+"from": 1642,
+"to": 1727,
+"places": [
+"woolsthorpe",
+"cambridge",
+"london"
+],
+"note": "Opticks, 1704.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-90",
+"label": "Goethe",
+"kind": "life",
+"from": 1749,
+"to": 1832,
+"places": [
+"weimar"
+],
+"note": "Zur Farbenlehre, 1810.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-91",
+"label": "Éliphas Lévi",
+"kind": "life",
+"from": 1810,
+"to": 1875,
+"places": [
+"paris"
+],
+"note": "Dogme et rituel de la haute magie, 1854–56.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-92",
+"label": "The Golden Dawn",
+"kind": "tradition",
+"from": 1888,
+"to": 1903,
+"places": [
+"london"
+],
+"note": "From the founding of the Isis-Urania temple to the schisms of 1900–03.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-93",
+"label": "Theosophical planes and rays",
+"kind": "tradition",
+"from": 1875,
+"to": 1950,
+"places": [
+"adyar",
+"london"
+],
+"approx": true,
+"note": "Founded in New York in 1875 and seated at Adyar from 1882; the doctrine of planes and rays runs from The Secret Doctrine (1888) to Alice Bailey’s ray books.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xv-94",
+"label": "Rudolf Steiner",
+"kind": "life",
+"from": 1861,
+"to": 1925,
+"places": [
+"berlin",
+"dornach"
+],
+"note": "The four ethers were set out by Guenther Wachsmuth at Dornach in 1924 from Steiner’s indications.",
+"lane": "Medieval, Renaissance, and Modern Esotericism"
+},
+{
+"id": "xvi-1",
+"label": "Ancient optical theories",
+"kind": "tradition",
+"from": -494,
+"to": 170,
+"places": [
+"athens",
+"alexandria"
+],
+"approx": true,
+"note": "Empedocles to Ptolemy.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-2",
+"label": "From visual rays to incoming light",
+"kind": "tradition",
+"from": 1011,
+"to": 1604,
+"places": [
+"cairo",
+"prague"
+],
+"approx": true,
+"note": "From Ibn al-Haytham’s Kitāb al-Manāẓir (1011–21) to Kepler’s Paralipomena (Prague, 1604), which completed the reversal.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-3",
+"label": "Ibn al-Haytham · Kitāb al-Manāẓir",
+"kind": "text",
+"from": 1011,
+"to": 1021,
+"places": [
+"cairo"
+],
+"approx": true,
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-4",
+"label": "The sine law of refraction",
+"kind": "event",
+"from": 1621,
+"to": 1637,
+"places": [
+"leiden"
+],
+"note": "Found by Willebrord Snell at Leiden in 1621; published by Descartes in 1637.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-5",
+"label": "Fermat’s principle of least time",
+"kind": "event",
+"from": 1657,
+"to": 1662,
+"places": [
+"toulouse"
+],
+"note": "Generalising Hero of Alexandria’s least path for reflection.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-6",
+"label": "Newton’s prism",
+"kind": "event",
+"from": 1666,
+"to": 1672,
+"places": [
+"cambridge"
+],
+"note": "The experiments of 1666 and the letter to the Royal Society of 1672.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-7",
+"label": "Wave theories of light",
+"kind": "tradition",
+"from": 1678,
+"to": 1818,
+"places": [
+"the-hague",
+"london",
+"paris"
+],
+"note": "Huygens’ Traité de la lumière (1690), Young’s interference (1801), Fresnel’s memoir on diffraction (1818).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-8",
+"label": "Light as electromagnetism",
+"kind": "tradition",
+"from": 1845,
+"to": 1888,
+"places": [
+"london",
+"karlsruhe"
+],
+"note": "Faraday’s rotation (1845), Maxwell’s equations (1865), Hertz’s waves (1888).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-9",
+"label": "The light quantum",
+"kind": "event",
+"from": 1900,
+"to": 1923,
+"places": [
+"berlin",
+"bern"
+],
+"note": "Planck (1900) and Einstein (1905); Compton’s scattering (1923, St Louis) lies beyond the map.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-10",
+"label": "Wave–particle duality",
+"kind": "event",
+"from": 1924,
+"to": 1927,
+"places": [
+"paris",
+"copenhagen"
+],
+"note": "De Broglie’s matter waves (1924) and Bohr’s complementarity (1927).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-11",
+"label": "Polarization",
+"kind": "tradition",
+"from": 1669,
+"to": 1808,
+"places": [
+"copenhagen",
+"paris"
+],
+"note": "Bartholin’s double refraction (1669) to Malus’s law (1808).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-12",
+"label": "Interference and diffraction",
+"kind": "tradition",
+"from": 1665,
+"to": 1818,
+"places": [
+"bologna",
+"london",
+"paris"
+],
+"note": "Grimaldi (1665), Young (1801), Fresnel (1818).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-13",
+"label": "Coherence and the laser",
+"kind": "event",
+"from": 1954,
+"to": 1960,
+"places": [
+"moscow"
+],
+"note": "Basov and Prokhorov in Moscow and Townes in New York proposed the maser in 1954; Maiman’s ruby laser (1960, Malibu) lies beyond the map.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-14",
+"label": "Colour temperature",
+"kind": "event",
+"from": 1893,
+"to": 1900,
+"places": [
+"berlin"
+],
+"note": "Wien’s displacement law (1893) and Planck’s law (1900).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-15",
+"label": "Photometry",
+"kind": "tradition",
+"from": 1729,
+"to": 1760,
+"places": [
+"paris",
+"augsburg"
+],
+"note": "Bouguer’s Essai d’optique (1729) and Lambert’s Photometria (1760).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-16",
+"label": "Theories of colour vision",
+"kind": "tradition",
+"from": 1802,
+"to": 1878,
+"places": [
+"london",
+"heidelberg",
+"prague"
+],
+"note": "Young (1802), Helmholtz (1852–67), Hering (1878).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-17",
+"label": "Beyond the visible",
+"kind": "event",
+"from": 1800,
+"to": 1801,
+"places": [
+"slough",
+"jena"
+],
+"note": "Herschel’s infrared (1800) and Ritter’s ultraviolet (1801).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-18",
+"label": "Spectroscopy of the heavens",
+"kind": "tradition",
+"from": 1814,
+"to": 1864,
+"places": [
+"munich",
+"heidelberg",
+"london"
+],
+"note": "Fraunhofer’s lines (1814), Kirchhoff and Bunsen (1859), Huggins on the nebulae (1864).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-19",
+"label": "Light, space, and relativity",
+"kind": "event",
+"from": 1905,
+"to": 1919,
+"places": [
+"bern",
+"berlin"
+],
+"note": "Special relativity (Bern, 1905) and general relativity (Berlin, 1915); Eddington’s eclipse of 1919 was observed at Príncipe, beyond the map.",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-20",
+"label": "The discovery of photosynthesis",
+"kind": "event",
+"from": 1771,
+"to": 1779,
+"places": [
+"leeds",
+"london"
+],
+"note": "Priestley (1771) and Ingenhousz (1779).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-21",
+"label": "Bioluminescence",
+"kind": "tradition",
+"from": 1667,
+"to": 1887,
+"places": [
+"london",
+"lyon"
+],
+"note": "From Boyle’s finding that glow needs air (1667) to Dubois’s luciferin and luciferase (1885–87).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-22",
+"label": "Circadian biology",
+"kind": "tradition",
+"from": 1729,
+"to": 1935,
+"places": [
+"paris"
+],
+"note": "De Mairan’s mimosa (1729) to Bünning’s endogenous clock (1935).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-23",
+"label": "Biophotons",
+"kind": "tradition",
+"from": 1923,
+"to": 1976,
+"places": [
+"moscow",
+"marburg"
+],
+"note": "Gurwitsch’s mitogenetic rays (1923) to Popp’s measurements at Marburg (from 1976).",
+"lane": "The Science of Light"
+},
+{
+"id": "xvi-24",
+"label": "Phosphenes and the inner light",
+"kind": "tradition",
+"from": 1819,
+"to": 1937,
+"places": [
+"prague"
+],
+"note": "Purkinje’s studies at Prague (1819–25); Penfield’s cortical stimulation (Montreal, 1937) lies beyond the map.",
+"lane": "The Science of Light"
+}
+]
+}

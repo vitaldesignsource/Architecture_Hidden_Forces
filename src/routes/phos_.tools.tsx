@@ -4,9 +4,10 @@ import { TOOLS } from "@/lib/phos/entries";
 import { TOOL_ROUTES } from "@/lib/phos/tools";
 
 /**
- * Instruments — the seven views over the facets the outline promised, four of
- * them live. Each live one is a page that asks one question of the whole
- * encyclopaedia; the other three wait for the entries that would feed them.
+ * Instruments — the views over the facets the outline promised, and the ones
+ * the encyclopaedia grew once it was whole. Each live one is a page that asks
+ * one question of the whole encyclopaedia; the rest wait for the entries that
+ * would feed them.
  */
 export const Route = createFileRoute("/phos_/tools")({
   head: () => ({ meta: [{ title: "Instruments — Phōs" }] }),
@@ -17,13 +18,13 @@ function Tools() {
   return (
     <ToolFrame
       eyebrow="Portal"
-      title={<>Nine ways to ask the encyclopaedia a <span className="italic text-gold">question</span></>}
-      lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Six are live; two wait on the facets that would feed them — qualities and texts — being carried by enough entries to answer with."
+      title={<>Ten ways to ask the encyclopaedia a <span className="italic text-gold">question</span></>}
+      lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Seven are live; three wait on the facets that would feed them — qualities and texts — being carried by enough entries to answer with."
       backdrop="observatory"
       position="center 40%"
     >
       <ToolBand>
-        <Eyebrow>Instruments · six of nine live</Eyebrow>
+        <Eyebrow>Instruments · seven of ten live</Eyebrow>
         <div className="mt-8 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
           {TOOLS.map((t) => {
             const to = TOOL_ROUTES[t.k];

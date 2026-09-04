@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
@@ -7,6 +8,14 @@ import { LabelChips, FacetLines } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
+
+/**
+ * The Atlas places the divisions named here in time and on the map; their
+ * entries carry a "Where and when" panel, fetched only on those pages. The
+ * audit checks that every span the Atlas holds belongs to one of them.
+ */
+const ATLAS_DIVISIONS = new Set(["xv", "xvi"]);
+const WhereAndWhen = lazy(() => import("@/components/phos/WhereAndWhen").then((m) => ({ default: m.WhereAndWhen })));
 import type { Entry as Row } from "@/lib/contents";
 import { entry, entriesOf, entryById, introMeta, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";
 
@@ -130,6 +139,12 @@ function EntryPage() {
                   marked as such rather than filled in.
                 </p>
               </div>
+            )}
+
+            {ATLAS_DIVISIONS.has(d.id) && (
+              <Suspense fallback={null}>
+                <WhereAndWhen id={e.id} />
+              </Suspense>
             )}
 
             {meta && Object.values(meta.facets).some((v) => v.length) && (

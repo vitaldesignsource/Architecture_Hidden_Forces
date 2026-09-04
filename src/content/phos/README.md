@@ -117,3 +117,23 @@ vocabulary, or pointing at an id that does not exist, and reports how many
 entries of each division are written. The outline lives in
 `src/lib/phos/outline.txt`; if it changes, `npm run toc` regenerates
 `toc.json`, and the audit fails until it has been run.
+
+## Where and when
+
+`src/lib/phos/atlas.json` sets entries in time and on the map, for the Atlas
+(`/phos/tools/atlas`) and the "Where and when" panel beneath an entry. Each
+span gives the entry's id, a label, what its dates are dates of (`life`,
+`text`, `tradition`, or `event`), the years (negative before the common era),
+the places it passed through in order, and a note giving the grounds.
+`approx` marks dates ordinary scholarship gives only roughly; `setting` marks a
+place that is a narrative's scene rather than where its words were written. A
+span may have no place at all. Places carry a name and coordinates.
+
+The sheet the map draws on — coastlines, rivers, lakes, region names, and the
+projected position of every place — is generated from Natural Earth data by
+
+    npm run atlas
+
+into `atlas-geo.json`, and the audit fails until that has been re-run after a
+place or the generator changes. Only the divisions the entry route names in
+`ATLAS_DIVISIONS` show the panel; the audit checks every span belongs to one.

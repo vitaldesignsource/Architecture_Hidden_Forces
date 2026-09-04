@@ -20,6 +20,7 @@
  * are required to be unique across the whole site, so a hash can only ever mean
  * one place.
  */
+import { createHash } from "node:crypto";
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -507,6 +508,43 @@ if (lex.length) {
     for (const m of s.text.matchAll(re)) { refs++; if (!ids.has(m[1])) dead.push(`${s.file}: "${m[1]}"`); }
   if (dead.length) fail("portal refs", `not registered entries: ${dead.join(", ")}`);
   note("portal refs", `${refs} entry ids named in source, all registered`);
+}
+
+// ------------------------------------------------------------------ atlas
+// The Atlas sets entries in time and on the map from atlas.json; its sheet is
+// drawn once by scripts/atlas.mjs into atlas-geo.json. Every span must name a
+// registered entry, known places, and a known lane; every place must have been
+// projected; and the sheet must come from the current places and script.
+{
+  const atlas = JSON.parse(readFileSync(join(root, "src/lib/phos/atlas.json"), "utf8"));
+  const geo = JSON.parse(readFileSync(join(root, "src/lib/phos/atlas-geo.json"), "utf8"));
+  const toc = JSON.parse(readFileSync(join(root, "src/lib/phos/toc.json"), "utf8"));
+  const registered = new Set(toc.divisions.flatMap((d) => d.entries.map((e) => e.id)));
+  const bad = [];
+  const seen = new Set();
+  for (const s of atlas.spans) {
+    if (!registered.has(s.id)) bad.push(`${s.id} is not a registered entry`);
+    if (seen.has(s.id)) bad.push(`${s.id} is placed twice`);
+    seen.add(s.id);
+    if (!(s.from <= s.to)) bad.push(`${s.id} ends before it begins`);
+    if (!atlas.lanes.includes(s.lane)) bad.push(`${s.id}: unknown lane "${s.lane}"`);
+    for (const p of s.places) if (!atlas.places[p]) bad.push(`${s.id}: unknown place "${p}"`);
+  }
+  const unprojected = Object.keys(atlas.places).filter((p) => !geo.points[p]);
+  if (unprojected.length) bad.push(`places not on the sheet: ${unprojected.join(", ")}`);
+  const unused = Object.keys(atlas.places).filter((p) => !atlas.spans.some((s) => s.places.includes(p)));
+  if (unused.length) bad.push(`places no span passes through: ${unused.join(", ")}`);
+  if (bad.length) fail("atlas", bad.slice(0, 6).join("; "));
+  const hash = createHash("sha1").update(readFileSync(join(root, "scripts/atlas.mjs"), "utf8")).update(JSON.stringify(atlas.places)).digest("hex").slice(0, 12);
+  if (geo.hash !== hash) fail("atlas", "src/lib/phos/atlas-geo.json was drawn from other places or an older script — run `npm run atlas`");
+  const xv = toc.divisions.find((d) => d.id === "xv").entries.map((e) => e.id);
+  const undated = xv.filter((id) => !seen.has(id));
+  if (undated.length) fail("atlas", `Division XV entries with no place in time: ${undated.join(", ")}`);
+  const gate = readFileSync(join(root, "src/routes/phos_.$division_.$entry.tsx"), "utf8").match(/ATLAS_DIVISIONS = new Set\(\[([^\]]*)\]\)/);
+  const gated = new Set(gate ? [...gate[1].matchAll(/"([a-z]+)"/g)].map((m) => m[1]) : []);
+  const ungated = atlas.spans.filter((s) => !gated.has(s.id.split("-")[0])).map((s) => s.id);
+  if (ungated.length) fail("atlas", `spans whose entries would never show Where and when (division not in ATLAS_DIVISIONS): ${ungated.slice(0, 5).join(", ")}`);
+  note("atlas", `${atlas.spans.length} spans over ${Object.keys(atlas.places).length} places in ${atlas.lanes.length} lanes, on the ${geo.projection} sheet`);
 }
 
 // ---------------------------------------------------------------- measure

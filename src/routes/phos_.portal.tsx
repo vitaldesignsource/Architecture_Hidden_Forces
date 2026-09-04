@@ -30,7 +30,7 @@ const SECTIONS = [
   { n: "", id: "divisions", t: "The twenty-one divisions", d: "Where everything is, and how much of it is written." },
   { n: "", id: "browse", t: "Browse by facet", d: "Tradition, quality, plane, operation, symbol, text, period." },
   { n: "", id: "labels", t: "Evidence labels", d: "The seven kinds of claim an entry can make." },
-  { n: "", id: "instruments", t: "Instruments", d: "Seven tools the facets drive — four of them live." },
+  { n: "", id: "instruments", t: "Instruments", d: "Ten instruments the facets drive — seven of them live." },
 ];
 const GROUPS = [{ at: "movement", k: "The Portal" }];
 
@@ -270,13 +270,13 @@ function Portal() {
       <section id="instruments" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/observatory.webp" opacity={0.3} position="center 40%" scrim={0.25} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · Four of Seven Live</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · Seven of Ten Live</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             What the facets will <span className="italic text-gold">drive</span>
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
             An encyclopaedia is a long collection of articles until it can be asked questions. These
-            seven instruments are views over the same facets every entry carries. Four are live; the
+            ten instruments are views over the same facets every entry carries. Seven are live; the
             other three come online as the entries that feed them are written.
           </p>
           <div className="mt-12 grid gap-px sm:grid-cols-2 lg:grid-cols-3">

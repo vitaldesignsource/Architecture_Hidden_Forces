@@ -234,6 +234,50 @@
   box-shadow: 0 0 18px oklch(0.78 0.13 75 / 0.7);
 }
 
+/* The Atlas: the sheet, drawn once, and the lights set on it. */
+.aoh-atlas-grat { fill: none; stroke: oklch(0.78 0.13 75 / 0.09); stroke-width: 0.5; }
+.aoh-atlas-land { fill: var(--clay); stroke: oklch(0.78 0.13 75 / 0.5); stroke-width: 0.55; }
+.aoh-atlas-lake { fill: var(--void); stroke: oklch(0.78 0.13 75 / 0.35); stroke-width: 0.45; }
+.aoh-atlas-river { fill: none; stroke: oklch(0.59 0.09 75 / 0.65); stroke-linecap: round; stroke-linejoin: round; }
+.aoh-atlas-region,
+.aoh-atlas-sea { font-family: "EB Garamond", ui-serif, Georgia, serif; font-style: italic; pointer-events: none; }
+.aoh-atlas-region { fill: oklch(0.78 0.13 75 / 0.62); }
+.aoh-atlas-sea { fill: oklch(0.78 0.13 75 / 0.38); }
+.aoh-atlas-path { fill: none; stroke: var(--gold); stroke-opacity: 0.75; stroke-linejoin: round; pointer-events: none; }
+.aoh-atlas-mark { transition: opacity 400ms ease; }
+.aoh-atlas-halo { fill: var(--gold); fill-opacity: 0.12; transition: fill-opacity 400ms ease; }
+.aoh-atlas-core { fill: var(--gold); fill-opacity: 0.85; }
+.aoh-atlas-mark.is-hot .aoh-atlas-halo { fill-opacity: 0.42; }
+.aoh-atlas-mark.is-hot .aoh-atlas-core { fill: var(--bone); fill-opacity: 1; }
+.aoh-atlas-mark.is-lit .aoh-atlas-halo { animation: aoh-atlas-breathe 3.2s ease-in-out infinite; }
+@keyframes aoh-atlas-breathe { 0%, 100% { fill-opacity: 0.22 } 50% { fill-opacity: 0.44 } }
+@media (prefers-reduced-motion: reduce) { .aoh-atlas-mark.is-lit .aoh-atlas-halo { animation: none; fill-opacity: 0.36; } }
+
+/* The Atlas's timeline. */
+.aoh-tl-grid { stroke: oklch(0.95 0.012 80 / 0.06); }
+.aoh-tl-axis,
+.aoh-tl-lane,
+.aoh-tl-cursor-label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 9px; }
+.aoh-tl-axis { fill: var(--muted-foreground); letter-spacing: 0.12em; }
+.aoh-tl-lane { fill: var(--gold-dim); letter-spacing: 0.22em; text-transform: uppercase; }
+.aoh-tl-rule { stroke: var(--border); }
+.aoh-tl-span { cursor: pointer; outline: none; transition: opacity 250ms ease; }
+.aoh-tl-bar { fill: var(--gold); fill-opacity: 0.5; transition: fill-opacity 250ms ease, fill 250ms ease; }
+.aoh-tl-span.k-text .aoh-tl-bar { fill: var(--gold-dim); fill-opacity: 0.75; }
+.aoh-tl-span.k-tradition .aoh-tl-bar { fill: var(--gold); fill-opacity: 0.2; stroke: oklch(0.78 0.13 75 / 0.5); stroke-width: 0.8; }
+.aoh-tl-span.k-event .aoh-tl-bar { fill: var(--bone); fill-opacity: 0.55; }
+.aoh-tl-span.is-approx .aoh-tl-bar { stroke: oklch(0.78 0.13 75 / 0.6); stroke-dasharray: 3 2; stroke-width: 0.8; }
+.aoh-tl-span.is-hot .aoh-tl-bar,
+.aoh-tl-span:focus-visible .aoh-tl-bar { fill: var(--bone); fill-opacity: 0.95; }
+.aoh-tl-label { fill: oklch(0.95 0.012 80 / 0.85); font-family: "EB Garamond", ui-serif, Georgia, serif; font-size: 12.5px; }
+.aoh-tl-span.is-hot .aoh-tl-label { fill: var(--gold); }
+.aoh-tl-cursor { stroke: var(--gold); stroke-opacity: 0.55; stroke-width: 1; }
+.aoh-tl-cursor.is-pinned { stroke-opacity: 0.95; }
+.aoh-tl-cursor-label { fill: var(--gold); letter-spacing: 0.15em; }
+.aoh-tl-strip { fill: oklch(0.95 0.012 80 / 0.03); stroke: var(--border); }
+.aoh-tl-strip-mark { fill: var(--gold-dim); fill-opacity: 0.7; }
+.aoh-tl-window { fill: var(--gold); fill-opacity: 0.12; stroke: var(--gold); stroke-opacity: 0.6; }
+
 /* Backdrop: full-bleed cover on wide viewports; a band at the top of the section
    below lg, where a tall section would otherwise crop a 16:9 source to a sliver. */
 /* A band took `height: 100%` on the assumption that a wide viewport makes a
