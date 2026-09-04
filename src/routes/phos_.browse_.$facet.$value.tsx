@@ -3,14 +3,16 @@ import { Backdrop } from "@/components/Backdrop";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHeader";
 import { LabelChips } from "@/components/phos/Labels";
-import { DIVISIONS, FACETS, entriesWith, divisionLabel } from "@/lib/phos/entries";
+import { DIVISIONS, entriesWith, divisionLabel } from "@/lib/phos/entries";
 
 /** Every written entry carrying one value of one facet, grouped by division. */
 export const Route = createFileRoute("/phos_/browse_/$facet/$value")({
-  loader: ({ params }) => {
-    const f = FACETS.find((x) => x.key === params.facet);
+  loader: async ({ params }) => {
+    // Imported here, not at the top, for the same reason as the entry route.
+    const index = await import("@/lib/phos/entries");
+    const f = index.FACETS.find((x) => x.key === params.facet);
     if (!f) throw notFound();
-    const { value } = entriesWith(f.key, params.value);
+    const { value } = index.entriesWith(f.key, params.value);
     if (value === null) throw notFound();
     return { facet: f, value };
   },

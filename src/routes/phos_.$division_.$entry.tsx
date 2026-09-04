@@ -8,7 +8,7 @@ import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
 import type { Entry as Row } from "@/lib/contents";
-import { entry, entriesOf, entryById, introMeta, loadBody, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";
+import { entry, entriesOf, entryById, introMeta, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";
 
 /**
  * One entry of the encyclopaedia. Registered but unwritten entries have a page
@@ -18,14 +18,17 @@ import { entry, entriesOf, entryById, introMeta, loadBody, neighbours, divisionL
  */
 export const Route = createFileRoute("/phos_/$division_/$entry")({
   loader: async ({ params }) => {
-    const e = entry(params.division, params.entry);
+    // Imported here, not at the top: the route definition is part of the site's
+    // first script, and the index of every entry belongs with the Portal's pages.
+    const index = await import("@/lib/phos/entries");
+    const e = index.entry(params.division, params.entry);
     if (!e) throw notFound();
-    return { body: e.written ? await loadBody(e) : null };
+    return {
+      body: e.written ? await index.loadBody(e) : null,
+      title: `${e.title} — ${index.divisionLabel(e.division)} — Phōs`,
+    };
   },
-  head: ({ params }) => {
-    const e = entry(params.division, params.entry);
-    return { meta: [{ title: e ? `${e.title} — ${divisionLabel(e.division)} — Phōs` : "Phōs" }] };
-  },
+  head: ({ loaderData }) => ({ meta: [{ title: loaderData?.title ?? "Phōs" }] }),
   notFoundComponent: () => <Missing what="entry" />,
   component: EntryPage,
 });

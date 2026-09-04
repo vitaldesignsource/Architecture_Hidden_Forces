@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Link } from "@tanstack/react-router";
 import { RELATIONS, type Figure } from "@/lib/phos/figures";
 
@@ -19,7 +20,18 @@ export function FigureFrame({ f, compact = false }: { f: Figure; compact?: boole
         </span>
       </figcaption>
 
-      <f.C />
+      <Suspense
+        fallback={
+          <div
+            aria-busy
+            className="flex h-48 items-center justify-center font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim/70"
+          >
+            Drawing the figure
+          </div>
+        }
+      >
+        <f.C />
+      </Suspense>
 
       <div className="mt-8 grid gap-5 border-t border-border pt-5 sm:grid-cols-2">
         <div>

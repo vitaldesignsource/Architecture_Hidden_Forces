@@ -8,7 +8,7 @@ import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
 import type { Entry as Row } from "@/lib/contents";
-import { division, entriesOf, loadIntro, loadCoda, loadGroupCodas, loadGroupIntros, neighbourDivisions, progress, divisionLabel, valueSlug } from "@/lib/phos/entries";
+import { division, entriesOf, neighbourDivisions, progress, divisionLabel, valueSlug } from "@/lib/phos/entries";
 
 /**
  * A division of the encyclopaedia: its entries in order, grouped where the
@@ -18,17 +18,17 @@ import { division, entriesOf, loadIntro, loadCoda, loadGroupCodas, loadGroupIntr
  */
 export const Route = createFileRoute("/phos_/$division")({
   loader: async ({ params }) => {
-    const d = division(params.division);
+    // Imported here, not at the top, so the index of every entry travels with
+    // the Portal's pages rather than with the site's first script.
+    const index = await import("@/lib/phos/entries");
+    const d = index.division(params.division);
     if (!d || d.id === "portal") throw notFound();
     const [intro, coda, groupIntros, groupCodas] = await Promise.all([
-      loadIntro(d.id), loadCoda(d.id), loadGroupIntros(d.id), loadGroupCodas(d.id),
+      index.loadIntro(d.id), index.loadCoda(d.id), index.loadGroupIntros(d.id), index.loadGroupCodas(d.id),
     ]);
-    return { intro, coda, groupIntros, groupCodas };
+    return { intro, coda, groupIntros, groupCodas, title: `${index.divisionLabel(d)} — ${d.title} — Phōs` };
   },
-  head: ({ params }) => {
-    const d = division(params.division);
-    return { meta: [{ title: d ? `${divisionLabel(d)} — ${d.title} — Phōs` : "Phōs" }] };
-  },
+  head: ({ loaderData }) => ({ meta: [{ title: loaderData?.title ?? "Phōs" }] }),
   notFoundComponent: () => <Missing what="division" />,
   component: DivisionPage,
 });
