@@ -44,6 +44,29 @@ function Tools() {
           })}
         </div>
         <div className="mt-14 border-t border-border pt-10">
+          <Eyebrow>Beside the ten · a register</Eyebrow>
+          <Link
+            to="/phos/tools/beings"
+            className="group mt-6 block border border-gold/40 p-6 transition-colors hover:border-gold hover:bg-gold/5 sm:p-8"
+          >
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+              <span className="shrink-0 font-serif text-3xl text-gold" aria-hidden>𒀭 𓊹 מַלְאָךְ</span>
+              <span>
+                <span className="block font-serif text-2xl text-bone transition-colors group-hover:text-gold">
+                  The Register of Beings
+                </span>
+                <span className="mt-2 block max-w-xl text-sm leading-relaxed text-muted-foreground">
+                  Gods, messengers, daimons, adversaries, ancestors and personified powers across the
+                  traditions — each in the script it was written in, each classed as its own tradition
+                  classes it.
+                </span>
+              </span>
+            </div>
+            <p className="mt-5 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+          </Link>
+        </div>
+
+        <div className="mt-10 border-t border-border pt-10">
           <Eyebrow>Beside the ten · a demonstration</Eyebrow>
           <Link
             to="/phos/tools/flashing"

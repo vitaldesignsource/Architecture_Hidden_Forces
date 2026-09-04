@@ -18,6 +18,7 @@ import { Route as PhosToolsRouteImport } from './routes/phos_.tools'
 import { Route as PhosDivisionEntryRouteImport } from './routes/phos_.$division_.$entry'
 import { Route as PhosToolsAnatomyRouteImport } from './routes/phos_.tools_.anatomy'
 import { Route as PhosToolsAtlasRouteImport } from './routes/phos_.tools_.atlas'
+import { Route as PhosToolsBeingsRouteImport } from './routes/phos_.tools_.beings'
 import { Route as PhosToolsConstellationRouteImport } from './routes/phos_.tools_.constellation'
 import { Route as PhosToolsDiagramsRouteImport } from './routes/phos_.tools_.diagrams'
 import { Route as PhosToolsFlashingRouteImport } from './routes/phos_.tools_.flashing'
@@ -71,6 +72,11 @@ const PhosToolsAtlasRoute = PhosToolsAtlasRouteImport.update({
   path: '/phos/tools/atlas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PhosToolsBeingsRoute = PhosToolsBeingsRouteImport.update({
+  id: '/phos_/tools_/beings',
+  path: '/phos/tools/beings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PhosToolsConstellationRoute = PhosToolsConstellationRouteImport.update({
   id: '/phos_/tools_/constellation',
   path: '/phos/tools/constellation',
@@ -117,6 +123,7 @@ export interface FileRoutesByFullPath {
   '/phos/$division/$entry': typeof PhosDivisionEntryRoute
   '/phos/tools/anatomy': typeof PhosToolsAnatomyRoute
   '/phos/tools/atlas': typeof PhosToolsAtlasRoute
+  '/phos/tools/beings': typeof PhosToolsBeingsRoute
   '/phos/tools/constellation': typeof PhosToolsConstellationRoute
   '/phos/tools/diagrams': typeof PhosToolsDiagramsRoute
   '/phos/tools/flashing': typeof PhosToolsFlashingRoute
@@ -135,6 +142,7 @@ export interface FileRoutesByTo {
   '/phos/$division/$entry': typeof PhosDivisionEntryRoute
   '/phos/tools/anatomy': typeof PhosToolsAnatomyRoute
   '/phos/tools/atlas': typeof PhosToolsAtlasRoute
+  '/phos/tools/beings': typeof PhosToolsBeingsRoute
   '/phos/tools/constellation': typeof PhosToolsConstellationRoute
   '/phos/tools/diagrams': typeof PhosToolsDiagramsRoute
   '/phos/tools/flashing': typeof PhosToolsFlashingRoute
@@ -154,6 +162,7 @@ export interface FileRoutesById {
   '/phos_/$division_/$entry': typeof PhosDivisionEntryRoute
   '/phos_/tools_/anatomy': typeof PhosToolsAnatomyRoute
   '/phos_/tools_/atlas': typeof PhosToolsAtlasRoute
+  '/phos_/tools_/beings': typeof PhosToolsBeingsRoute
   '/phos_/tools_/constellation': typeof PhosToolsConstellationRoute
   '/phos_/tools_/diagrams': typeof PhosToolsDiagramsRoute
   '/phos_/tools_/flashing': typeof PhosToolsFlashingRoute
@@ -174,6 +183,7 @@ export interface FileRouteTypes {
     | '/phos/$division/$entry'
     | '/phos/tools/anatomy'
     | '/phos/tools/atlas'
+    | '/phos/tools/beings'
     | '/phos/tools/constellation'
     | '/phos/tools/diagrams'
     | '/phos/tools/flashing'
@@ -192,6 +202,7 @@ export interface FileRouteTypes {
     | '/phos/$division/$entry'
     | '/phos/tools/anatomy'
     | '/phos/tools/atlas'
+    | '/phos/tools/beings'
     | '/phos/tools/constellation'
     | '/phos/tools/diagrams'
     | '/phos/tools/flashing'
@@ -210,6 +221,7 @@ export interface FileRouteTypes {
     | '/phos_/$division_/$entry'
     | '/phos_/tools_/anatomy'
     | '/phos_/tools_/atlas'
+    | '/phos_/tools_/beings'
     | '/phos_/tools_/constellation'
     | '/phos_/tools_/diagrams'
     | '/phos_/tools_/flashing'
@@ -229,6 +241,7 @@ export interface RootRouteChildren {
   PhosDivisionEntryRoute: typeof PhosDivisionEntryRoute
   PhosToolsAnatomyRoute: typeof PhosToolsAnatomyRoute
   PhosToolsAtlasRoute: typeof PhosToolsAtlasRoute
+  PhosToolsBeingsRoute: typeof PhosToolsBeingsRoute
   PhosToolsConstellationRoute: typeof PhosToolsConstellationRoute
   PhosToolsDiagramsRoute: typeof PhosToolsDiagramsRoute
   PhosToolsFlashingRoute: typeof PhosToolsFlashingRoute
@@ -303,6 +316,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhosToolsAtlasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/phos_/tools_/beings': {
+      id: '/phos_/tools_/beings'
+      path: '/phos/tools/beings'
+      fullPath: '/phos/tools/beings'
+      preLoaderRoute: typeof PhosToolsBeingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/phos_/tools_/constellation': {
       id: '/phos_/tools_/constellation'
       path: '/phos/tools/constellation'
@@ -365,6 +385,7 @@ const rootRouteChildren: RootRouteChildren = {
   PhosDivisionEntryRoute: PhosDivisionEntryRoute,
   PhosToolsAnatomyRoute: PhosToolsAnatomyRoute,
   PhosToolsAtlasRoute: PhosToolsAtlasRoute,
+  PhosToolsBeingsRoute: PhosToolsBeingsRoute,
   PhosToolsConstellationRoute: PhosToolsConstellationRoute,
   PhosToolsDiagramsRoute: PhosToolsDiagramsRoute,
   PhosToolsFlashingRoute: PhosToolsFlashingRoute,
