@@ -17,13 +17,13 @@ function Tools() {
   return (
     <ToolFrame
       eyebrow="Portal"
-      title={<>Eight ways to ask the encyclopaedia a <span className="italic text-gold">question</span></>}
-      lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Five are live; two wait on the facets that would feed them — qualities and texts — being carried by enough entries to answer with."
+      title={<>Nine ways to ask the encyclopaedia a <span className="italic text-gold">question</span></>}
+      lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Six are live; two wait on the facets that would feed them — qualities and texts — being carried by enough entries to answer with."
       backdrop="observatory"
       position="center 40%"
     >
       <ToolBand>
-        <Eyebrow>Instruments · five of eight live</Eyebrow>
+        <Eyebrow>Instruments · six of nine live</Eyebrow>
         <div className="mt-8 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
           {TOOLS.map((t) => {
             const to = TOOL_ROUTES[t.k];

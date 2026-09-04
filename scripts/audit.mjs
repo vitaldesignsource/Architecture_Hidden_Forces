@@ -25,6 +25,7 @@ import { join, dirname, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildToc, render, OUTLINE, TOC } from "./phos-toc.mjs";
 import { parseEntry, validateMeta } from "./lib/frontmatter.mjs";
+import { readGraph, graphHash } from "./lib/graph.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -452,6 +453,23 @@ if (lex.length) {
     `${toc.divisions.length} divisions, ${toc.total} entries registered; ${written} written` +
       (begun.length ? ` — ${begun.map((d) => `${d.numeral || "Portal"} ${perDivision[d.id]}/${d.entries.length}`).join(", ")}` : ""),
   );
+}
+
+// ------------------------------------------------------------ constellation
+// The constellation is the citation graph laid out once and shipped as data.
+// If the graph has changed since it was laid out, the chart is a chart of a
+// different encyclopaedia; regenerate it with `npm run constellation`.
+{
+  const schema = JSON.parse(readFileSync(join(root, "src/lib/phos/schema.json"), "utf8"));
+  const toc = JSON.parse(readFileSync(join(root, "src/lib/phos/toc.json"), "utf8"));
+  const registered = new Set(toc.divisions.flatMap((d) => d.entries.map((e) => e.id)));
+  const { edges } = readGraph(root, schema);
+  const live = graphHash(edges.filter(([a, b]) => registered.has(a) && registered.has(b)));
+  const chart = JSON.parse(readFileSync(join(root, "src/lib/phos/constellation.json"), "utf8"));
+  if (chart.hash !== live) fail("constellation", "src/lib/phos/constellation.json was laid out from a different graph — run `npm run constellation`");
+  const missing = [...registered].filter((id) => !chart.nodes.some((n) => n.id === id));
+  if (missing.length) fail("constellation", `entries with no star: ${missing.slice(0, 8).join(", ")}`);
+  note("constellation", `${chart.nodes.length} stars, ${chart.edges.length} lines, laid out from the current graph`);
 }
 
 // ---------------------------------------------------------------- figures
