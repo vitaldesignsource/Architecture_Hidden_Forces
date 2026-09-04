@@ -7,7 +7,7 @@ quality: [Halo]
 symbol: [Halo]
 related: [xvii-16, iv-44, iv-45, xiv-16, xi-10]
 summary: An iconographic declaration rather than a depiction of physical emission — it marks a centre while extending that centre beyond its bodily boundary.
-backdrop: sanctum
+backdrop: circular-sanctum-with-lit-doorway
 ---
 
 A halo is a ring or region of light appearing around a source, object, or head. Physical halos around the Sun or Moon commonly arise through the refraction and reflection of light by ice crystals in the atmosphere.

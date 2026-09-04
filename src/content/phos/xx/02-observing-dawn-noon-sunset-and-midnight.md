@@ -10,7 +10,7 @@ symbol: [Solar Disc]
 related: [xiv-6, vii-8, vii-9, xviii-8, xvi-22, vi-23]
 summary: Four solar stations as different relations between manifestation and concealment - dawn for regeneration and first appearance, noon for clarity and the danger of excess, sunset for recollection and release, midnight for latent activity and the inner sun that does not depend on outward brightness.
 epigraph: "Exhaustion should not be mistaken for spiritual receptivity."
-backdrop: gorgedawn
+backdrop: gorge-at-dawn-with-burst-of-sun
 ---
 
 The four solar stations are not merely clock times. They express different relations between manifestation and concealment.

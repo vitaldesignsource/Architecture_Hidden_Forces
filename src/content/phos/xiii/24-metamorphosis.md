@@ -8,7 +8,7 @@ operation: [Metamorphōsis]
 related: [xiii-23, xiii-25, xiii-21, ix-12, ix-14, xiii-17]
 summary: Transformation in which the governing relation between force and form is fundamentally changed — something persists yet no longer exists in the same manner, through a protected crisis of reorganisation that can resemble darkness or death.
 epigraph: "Change becomes metamorphosis when the architecture of possibility itself has been renewed."
-backdrop: fold
+backdrop: folded-rock-strata-above-water
 ---
 
 Metamorphōsis is transformation in which the governing relation between force and form is fundamentally changed. It is more than movement, growth, disguise, or alteration. Something persists through the transformation, yet it no longer exists in the same manner.

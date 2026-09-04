@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 operation: [Integration]
 related: [vi-15, iii-29, iii-16, xiii-19, ii-13]
 summary: Interiorisation — the difference between possession and transformation lies in what the vessel does with what it absorbs.
-backdrop: icefissure
+backdrop: ice-fissure-glowing-gold-below
 position: center 50%
 ---
 

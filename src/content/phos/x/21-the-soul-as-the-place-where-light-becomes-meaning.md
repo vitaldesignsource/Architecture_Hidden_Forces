@@ -8,7 +8,7 @@ operation: [Recognition, Integration]
 related: [ii-21, x-1, x-5, x-6, ix-6]
 summary: Meaning is neither contained in the object nor invented by the observer — it arises through participation, and the same event yields different meanings without all being equally true.
 epigraph: "The place where force becomes meaning and where light becomes a life."
-backdrop: delta
+backdrop: river-delta-braided-in-grey-silt
 ---
 
 Light becomes meaning when disclosure is received, interpreted, valued, and incorporated into a living centre. Physical light may reveal an object, but the soul recognises beauty, danger, memory, kinship, sacredness, loss, or possibility within what has been revealed.

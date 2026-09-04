@@ -7,7 +7,7 @@ plane: [Astral, Imaginal]
 related: [xi-6, x-15, x-14, ii-19, xi-16]
 summary: Appearances with shape and identity but no locatable illuminant — dreams and astral forms visible by direct presentation rather than reflected light; light and form must be distinguished.
 epigraph: "Light can exist without object, and appearance can occur without a visible illuminant."
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 Forms without light are appearances that possess shape, boundary, movement, or identity without seeming illuminated by any source. Dreams frequently contain this quality: objects are simply visible although no lamp, sun, or luminous atmosphere can be located.

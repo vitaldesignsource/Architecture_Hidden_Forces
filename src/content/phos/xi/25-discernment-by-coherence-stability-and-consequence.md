@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [xi-26, xi-27, xi-24, portal-9, xi-12]
 summary: Three questions to put to any illumination — do its parts belong together, does it keep its character over time, and what does it produce; not infallible, so judgement converges from several kinds of evidence across sufficient time.
 epigraph: "Disturbing revelations can be authentic, and comforting experiences can deceive."
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 Coherence asks whether the parts of an experience belong together intelligibly. Does the message contradict itself? Does the luminous form correspond to the quality of the presence? Does the experience illuminate other realities without requiring their distortion?

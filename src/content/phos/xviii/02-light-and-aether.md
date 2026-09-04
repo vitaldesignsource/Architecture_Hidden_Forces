@@ -10,7 +10,7 @@ symbol: [Sphere]
 related: [viii-4, ii-5, ii-7, viii-10, xvi-8, xv-94]
 summary: Ancient aithēr, Indian ākāśa, occult astral light, Steiner's ethers, and the rejected mechanical ether kept apart - Morphaithēr as the living, qualitatively differentiated field in which force becomes capable of form rather than a medium light merely crosses.
 epigraph: "Aether without light remains unmanifest capacity. Light without mediation remains unreceived."
-backdrop: veils
+backdrop: figure-before-hanging-veils-of-light
 position: center 45%
 ---
 

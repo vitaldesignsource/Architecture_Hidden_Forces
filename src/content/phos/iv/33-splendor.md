@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Splendor]
 related: [i-17, iv-32, iv-2, xii-16, vi-18]
 summary: Brilliance joined to magnitude, order, and dignity — authentic splendour deepens under examination, false splendour depends on spectacle alone.
-backdrop: rotunda
+backdrop: rotunda-open-to-night-sky
 ---
 
 Splendor is brilliance joined to magnitude, order, dignity, and meaningful form. It is not merely bright; it appears worthy of sustained attention.

@@ -10,7 +10,7 @@ symbol: [Solar Disc, Ray]
 related: [xiii-31, xviii-21, x-22, portal-7, ix-4, xviii-16]
 summary: Procession is not exile: every authentic ray retains an orientation toward its source and returns not by abandoning manifestation but by making it transparent to its origin - cosmically at dawn, ritually in initiation, psychologically in recollection, in healing, and in death - and what returns carries consciousness, character, memory, and particularity rather than regressing to undifferentiated unity.
 epigraph: "The perfected ray knows both its distinct path and its inseparability from the sun."
-backdrop: birdspiral
+backdrop: bird-murmuration-spiral-over-lake
 position: center 45%
 ---
 

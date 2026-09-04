@@ -8,7 +8,7 @@ operation: [Awakening]
 related: [x-22, xi-25, xiii-19, xiii-18, x-2, vii-10]
 summary: The transition from latent consciousness to active participation — the centre from which experience is understood begins to change; sudden in its beginning, long in its integration, and measured by consequence rather than intensity.
 epigraph: "An experience that produces only fascination, superiority, or immunity from correction may have awakened psychic intensity without awakening spiritual intelligence."
-backdrop: birdshaft
+backdrop: light-shaft-in-mossy-green-cavern
 position: center 45%
 ---
 

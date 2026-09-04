@@ -10,7 +10,7 @@ symbol: [Point]
 related: [xvi-8, xvi-10, v-28, iii-17, xiii-5, xvi-13]
 summary: Energy exchanged in discrete quanta - E equals hf, momentum h over lambda - with the photon understood as an excitation of the electromagnetic field rather than a glowing marble; emission and absorption governed by the permitted transitions of emitter and receiver.
 epigraph: "A receiver may respond only to influences compatible with its structure."
-backdrop: concentrator
+backdrop: mirror-concentrator-on-desert-ridge
 ---
 
 Quantum theory revealed that light exchanges energy in discrete quantities. Max Planck introduced energy quanta in his treatment of thermal radiation, and Albert Einstein used the quantum concept to explain the photoelectric effect. The energy of a photon is

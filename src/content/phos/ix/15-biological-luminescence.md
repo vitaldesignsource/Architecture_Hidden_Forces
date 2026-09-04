@@ -9,7 +9,7 @@ operation: [Manifestation]
 related: [ix-16, ix-17, iv-53, iv-36]
 summary: Genuine living light upon the physical plane — chemical force transduced into visible appearance, and a sensible correspondence to the principle that life possesses interior radiance.
 epigraph: "Radiance produced through the organism's own embodied activity."
-backdrop: tidepool
+backdrop: tide-pools-under-broken-sky
 ---
 
 Biological luminescence is the production of visible light by living organisms through chemical processes. It differs from reflected light, fluorescence, phosphorescence, incandescence, and ultraweak metabolic photon emission. In bioluminescent systems, chemical activity generates electronically excited molecules whose return to a lower-energy state releases photons.

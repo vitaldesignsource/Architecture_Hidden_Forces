@@ -9,7 +9,7 @@ operation: [Manifestation, Exposure]
 related: [ix-16, ix-18, xvi-21, xvi-15, ix-20, xvi-26]
 summary: Extremely faint optical radiation from living cells, arising largely through oxidative metabolism and excited molecular products, varying with stress and injury - instrumentally real, its signalling function unsettled, and not to be conflated with the etheric body in either direction.
 epigraph: "UPE exists; its dominant known mechanisms are biochemical; its connection to the etheric body has not been scientifically established."
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 Living cells emit extremely faint optical radiation known as ultraweak photon emission, or UPE. "Biophoton" is also used, although that word sometimes carries theoretical claims beyond the established observation.

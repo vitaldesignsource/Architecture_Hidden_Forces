@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Star]
 related: [v-15, vii-14, vii-15, v-2, vii-30]
 summary: Historical light — the observer encounters a star as it was when the light began its journey, so vision becomes a form of cosmic recollection.
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Stellar light is radiance arriving from distant suns. Because of the immense distances involved, starlight is also historical light: the observer encounters a star as it was when the light began its journey.

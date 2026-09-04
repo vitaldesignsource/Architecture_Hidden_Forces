@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Alchemical]
 operation: [Dissolution, Solve]
 related: [vi-21, vi-24, ii-22, xiii-21, xiii-22]
 summary: The condition in which transformation becomes unavoidable — its darkness may be fertile, but fertility is not guaranteed.
-backdrop: eclipse
+backdrop: total-eclipse-over-forest-ridge
 position: center 40%
 ---
 

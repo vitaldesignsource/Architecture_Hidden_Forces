@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [x-1, x-3, x-22, x-6, i-3]
 summary: What appears and that to which it appears — the Witness as the stable luminous presence within consciousness, distinguished from the field without being severed from it.
 epigraph: "Its first activity is presence."
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 Within every experience there is both what appears and that to which it appears. Sensations change, thoughts pass, emotions rise and dissolve, and identities are revised. Yet awareness contains a witnessing dimension capable of recognising that these changes have occurred.

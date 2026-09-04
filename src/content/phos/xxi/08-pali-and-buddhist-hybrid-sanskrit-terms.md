@@ -11,7 +11,7 @@ text: [Aṅguttara Nikāya, Upakkilesa Sutta, Visuddhimagga]
 related: [xv-64, xv-65, xv-66, xi-4, xv-68, xxi-11]
 summary: Āloka, obhāsa, pabhā, pabhassara, tejo, rasmi, and ābhā in Pāli, with prabhāsvara, ābhāsvara, and avabhāsa in Buddhist Hybrid Sanskrit - and the caution that Buddhist traditions frequently use luminous language while maintaining teachings on impermanence, emptiness, dependent arising, and non-self.
 epigraph: "The luminous mind must be treated in its textual context rather than transformed immediately into a universal doctrine of consciousness."
-backdrop: sleepdawn
+backdrop: sleeper-at-dawn-by-wide-window
 position: center 45%
 ---
 

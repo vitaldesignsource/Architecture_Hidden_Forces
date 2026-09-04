@@ -9,7 +9,7 @@ operation: [Purification, Awakening, Consecration]
 related: [xiv-24, xv-33, xv-92, v-28, xiii-11, xi-25]
 summary: Conduction from one mode of perception into another through darkness, enclosure, symbolic death, testing, and the sudden appearance of light - the secret protecting a living operation rather than hoarding information, and comparison resisting one universal initiation behind every rite.
 epigraph: "The world appears again, but the initiate's place within it has changed."
-backdrop: greatdoors
+backdrop: robed-figure-before-great-lit-doors
 position: center 55%
 ---
 

@@ -7,7 +7,7 @@ quality: [Affect]
 plane: [Psychic]
 related: [x-12, iii-7, xi-25, ii-16, iv-26]
 summary: Evidence of relation, not automatic evidence of the source's nature — discernment asks what the light carries and what in the receiver is responding.
-backdrop: nightterrace
+backdrop: night-terrace-above-cloud-sea
 ---
 
 Affect is the felt tone produced when light enters a living or psychic receiver. It includes attraction, awe, warmth, serenity, fear, exposure, longing, joy, grief, intimacy, and estrangement.

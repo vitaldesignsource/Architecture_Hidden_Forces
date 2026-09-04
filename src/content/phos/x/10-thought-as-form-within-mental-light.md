@@ -8,7 +8,7 @@ operation: [Formation]
 related: [x-4, x-8, ii-29, viii-7, x-13]
 summary: A thought has structure, duration, and direction; sustained, it acquires real formative presence in the psychic and astral fields — mental light can disclose or fabricate, so discernment examines source, structure, and consequence.
 epigraph: "Mental light can disclose or fabricate."
-backdrop: sculptor
+backdrop: sculptor-carving-face-in-stone
 ---
 
 A thought is a form arising within mental light. It possesses structure, emphasis, relation, duration, and direction. Some thoughts appear briefly and dissolve; others recur until they become stable psychic formations capable of influencing perception, desire, memory, and action.

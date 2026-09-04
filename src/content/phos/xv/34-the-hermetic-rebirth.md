@@ -11,7 +11,7 @@ text: [Corpus Hermeticum XIII]
 related: [xv-33, xiii-25, xiii-22, xiii-23, xi-13, x-20]
 summary: Palingenesia in the thirteenth treatise — a mystery that cannot be transmitted by instruction alone; twelve tormenting powers forming a disordered psychic zodiac, displaced by ten divine powers; a noetic body of luminous qualities generated within the initiate; the second birth as reorganisation, not decoration.
 epigraph: "The old psychic architecture loses its sovereignty while a new body of luminous powers is generated within the initiate."
-backdrop: germination
+backdrop: germinating-seed-with-fine-roots
 ---
 
 Hermetic rebirth, or *palingenesia*, is developed most explicitly in the thirteenth treatise of the *Corpus Hermeticum*. Tat asks Hermes to transmit the teaching of rebirth, but Hermes explains that this mystery cannot be acquired through ordinary instruction alone. It must occur as an inward generation, made possible when the disciple becomes capable of receiving it.

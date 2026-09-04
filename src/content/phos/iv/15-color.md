@@ -7,7 +7,7 @@ quality: [Color]
 related: [ii-9, xvi-16, xv-90, xiv-14, iii-13]
 summary: An event arising among source, surface, medium, and perception — and tattvic coloration means formative bias, not literal visible hue.
 epigraph: "Colour is light made qualitative through relation."
-backdrop: spectralvalley
+backdrop: spectral-valley-with-rainbow-beam
 position: center 50%
 ---
 

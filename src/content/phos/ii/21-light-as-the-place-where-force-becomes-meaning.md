@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [x-21, i-10, ii-16, ii-18, ii-19, ii-20]
 summary: Force alone produces change; meaning arises when force enters an interior field able to sense, remember, compare, and interpret — it emerges between the force and the receiver.
-backdrop: blackspire
+backdrop: black-spire-with-golden-light-seam
 position: center 50%
 ---
 

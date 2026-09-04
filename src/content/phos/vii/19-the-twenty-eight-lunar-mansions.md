@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Vedic, Chinese, Islamic]
 related: [vii-20, vii-11, xv-61, vii-13, xxi-21]
 summary: Indian, Chinese, and other systems interacted historically but are not identical lists with interchangeable meanings.
-backdrop: cartography
+backdrop: dark-hall-with-charted-stone-floor
 ---
 
 Lunar mansions divide the Moon's path among groups of stars or celestial regions used for timekeeping, calendrical reckoning, ritual timing, and divination.

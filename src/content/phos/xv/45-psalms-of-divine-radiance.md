@@ -11,7 +11,7 @@ text: [Psalms]
 related: [i-15, x-1, iii-1, vi-8, iv-26, xv-50]
 summary: Light as royal vesture, face, fountain, lamp, path, lightning, and chariot - a garment that reveals while preventing direct access; seeing light by light; a lamp that shows the next steps rather than the whole future; darkness that obstructs human sight without restricting divine awareness.
 epigraph: "Whose light is this, what does it reveal, and how must I live within it?"
-backdrop: belltower
+backdrop: bronze-bell-in-stone-tower
 position: center 40%
 ---
 

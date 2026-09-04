@@ -11,7 +11,7 @@ text: [Mishkāt al-Anwār]
 related: [xv-77, v-24, x-13, x-4, vi-14, xi-25]
 summary: Mishkāt al-Anwār's ascending series - sensible light, imagination, intellect, reflection, and prophetic spirit, each illuminating the level beneath while receiving from above; the parable read as a map of the faculties; and the veils of darkness, of mixed light, and of light itself.
 epigraph: "Partial light absolutised becomes a veil."
-backdrop: nichejar
+backdrop: lit-jar-in-temple-niche
 position: center 60%
 ---
 

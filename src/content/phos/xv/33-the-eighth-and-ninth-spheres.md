@@ -11,7 +11,7 @@ text: [Discourse on the Eighth and Ninth]
 related: [xv-32, xv-34, vii-17, v-24, x-1, xiv-22]
 summary: A Hermetic initiatory dialogue from Nag Hammadi — the Ogdoad beyond the seven planetary heavens, where the initiate hears the powers singing, and the Ennead as a deepening of participation rather than another storey; prayer, silence, and sacred sound as operations upon the whole person.
 epigraph: "The soul discovers that its capacity to perceive the higher world is itself an activity of that world within it."
-backdrop: rotunda
+backdrop: rotunda-open-to-night-sky
 position: center 40%
 ---
 

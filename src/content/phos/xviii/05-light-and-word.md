@@ -9,7 +9,7 @@ operation: [Manifestation, Revelation, Consecration]
 related: [ii-29, xv-50, xiv-18, xii-19, xv-42, xiv-20]
 summary: The word giving determination to what light reveals - Genesis joining divine speech to the appearance of light, the Johannine Logos, Egyptian heka, Vedic mantra, and Qur'anic recitation, none of them one universal word magic; the divine name as a luminous form rendered pronounceable.
 epigraph: "Light without word may overwhelm as undifferentiated brilliance. Word without light becomes empty formula."
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 The word gives determination to what light reveals. Light discloses presence; the word identifies, addresses, distinguishes, commands, blesses, and establishes relation.

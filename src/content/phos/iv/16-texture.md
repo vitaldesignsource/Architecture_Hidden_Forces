@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Texture, Shimmer, Crystalline Light]
 related: [iii-23, iii-26, iv-30, iv-55, xi-8]
 summary: The perceived grain of light — smooth, granular, shimmering, crystalline — which reveals the condition of the medium and gives illumination tactility.
-backdrop: travertine
+backdrop: travertine-cascade-in-gorge
 ---
 
 Texture is the perceived surface or internal grain of light. A luminosity may appear smooth, granular, shimmering, velvety, crystalline, hazy, sharp, liquid, or fractured.

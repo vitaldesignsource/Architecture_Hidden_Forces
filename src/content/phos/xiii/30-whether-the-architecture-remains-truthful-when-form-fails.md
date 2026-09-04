@@ -8,7 +8,7 @@ operation: [Judgment, Exposure, Withdrawal, Solve, Liberation, Coagula, Return]
 related: [xix-20, xiii-29, xiii-22, xiii-23, xiii-27, xiii-16, xiii-26]
 summary: The operations a truthful architecture performs when its form fails, in order - judgment, exposure, withdrawal, solve, liberation, coagula, return - against the counter-operations by which a false one binds its light to a dying vessel; the law itself is stated in Division XIX.
 epigraph: "The highest architecture is one that remains loyal to the light through formation, flourishing, crisis, dissolution, and reconstitution."
-backdrop: ruinstream
+backdrop: stream-through-basalt-ruins
 position: center 45%
 ---
 

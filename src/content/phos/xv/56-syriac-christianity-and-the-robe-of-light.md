@@ -11,7 +11,7 @@ text: [Hymns on Paradise, Hymn of the Pearl]
 related: [xi-13, ix-18, x-18, xii-14, xv-53, ii-26]
 summary: The Robe of Glory lost in Paradise and restored in the Jordan - nakedness as the loss of luminous protection, garments of skin as mortal embodiment, and Christ putting on humanity so humanity may be reclothed; Ephrem's stations of the robe; the Hymn of the Pearl's royal garment bearing the image of its wearer.
 epigraph: "The Robe of Light is not an escape from embodiment. It is embodiment made truthful enough to reveal the spirit that has always animated it."
-backdrop: scrims
+backdrop: light-scrims-hung-in-stone-room
 ---
 
 Syriac Christianity developed one of the richest traditions of luminous clothing. Its poets and theologians speak of the Robe of Glory, the Robe of Light, garments of immortality, wedding robes, baptismal vesture, and the luminous clothing of Paradise.

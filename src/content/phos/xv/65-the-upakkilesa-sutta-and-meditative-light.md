@@ -11,7 +11,7 @@ text: [Majjhima Nikāya]
 related: [xi-27, xi-25, v-29, x-8, xv-63, xv-66]
 summary: Monks who perceive light and forms that repeatedly vanish, and a Buddha who met the same difficulty - eleven imperfections from doubt to excessive attention to forms; light as an instrument revealing subtle imbalance; intensity, extension, stability, and content as separable qualities.
 epigraph: "The disappearance of light does not necessarily prove that the original perception was false."
-backdrop: obscura2
+backdrop: camera-obscura-projection-in-dark-room
 ---
 
 The Upakkilesa Sutta, [Majjhima Nikāya 128](https://suttacentral.net/mn128/en/sujato), presents a remarkably practical discussion of meditative luminosity. Several monks report that during diligent meditation they perceive both light and forms, but the light and visions repeatedly disappear.

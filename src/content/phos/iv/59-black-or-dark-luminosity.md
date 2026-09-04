@@ -8,7 +8,7 @@ symbol: [Black Sun]
 related: [vi-6, vi-7, vi-19, vi-21, i-20, xv-54]
 summary: Presence within darkness, in several distinct conditions — and at its highest, the dazzling darkness of a source that exceeds every form of perception.
 epigraph: "Light before appearance, presence without image, and mystery that remains active without surrendering itself to visibility."
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 Black or dark luminosity is the paradoxical experience of presence within darkness. It should not be confused with commercial blacklight, which generally uses ultraviolet radiation and often produces visible violet light and fluorescence.

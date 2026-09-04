@@ -7,7 +7,7 @@ plane: [Theurgic]
 operation: [Consecration, Illumination]
 related: [xiv-21, xv-30, xiv-22, ii-25, xiv-25]
 summary: Ritual structure as aperture, lens, mirror, and vessel — judged by the order and responsibility it establishes, not by spectacle.
-backdrop: shrinepath
+backdrop: path-to-lit-shrine-under-moon
 ---
 
 Theurgic Light is luminosity encountered through ritual participation in a divine or transpersonal order. It is not simply light imagined by the practitioner, nor is it power manufactured by personal will.

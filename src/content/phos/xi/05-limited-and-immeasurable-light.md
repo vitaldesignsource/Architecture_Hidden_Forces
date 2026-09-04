@@ -7,7 +7,7 @@ plane: [Psychic, Noetic]
 related: [xi-6, xi-15, xi-4, iv-2, v-3]
 summary: Bounded radiance and light without discernible boundary — neither is false or divine by its size; the decisive question is not magnitude but order.
 epigraph: "A small light may carry greater intelligibility than a vast brilliance."
-backdrop: saltflat
+backdrop: sun-pillar-over-salt-flat
 ---
 
 Limited light appears within a bounded region: a point, disc, halo, chamber, body, aperture, or localised field. Its limits may arise from the source, the capacity of the receiver, the chosen object of concentration, or the particular plane through which the light becomes perceptible.

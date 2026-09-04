@@ -11,7 +11,7 @@ text: [Ḥikmat al-Ishrāq]
 related: [i-2, i-12, v-24, x-1, xi-17, xv-81]
 summary: Ḥikmat al-Ishrāq - light needing no definition because nothing is more manifest than manifestation; Nūr al-Anwār as the self-subsisting source; non-depletive procession; bodies as dusky barriers that receive accidental light; knowledge by presence; and the world of suspended images.
 epigraph: "What is conscious and self-aware is luminous in a primary sense: it is present to itself without requiring an intermediary."
-backdrop: threelights
+backdrop: three-lights-in-veiled-hall
 ---
 
 Shihāb al-Dīn Yaḥyā al-Suhrawardī, the twelfth-century founder of the Illuminationist or Ishrāqī school, transformed light from an analogy of knowledge into the governing principle of an entire metaphysics. His principal work, *Ḥikmat al-Ishrāq*, the Philosophy of Illumination, presents reality as a hierarchy of luminous and obscured presences.

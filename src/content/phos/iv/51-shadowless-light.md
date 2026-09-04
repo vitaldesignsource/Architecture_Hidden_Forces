@@ -7,7 +7,7 @@ quality: [Shadowless Light]
 related: [vi-11, vi-27, iv-50, i-20, i-16]
 summary: Nothing standing outside the luminous field — yet without shadow, depth and distinction may become difficult to perceive.
 epigraph: "True illumination does not necessarily eliminate every shadow. It makes the relationship among source, object, boundary, and obscurity intelligible."
-backdrop: saltshelter
+backdrop: stone-shelter-on-white-salt-plain
 position: center 50%
 ---
 

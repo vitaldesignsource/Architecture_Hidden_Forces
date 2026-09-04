@@ -8,7 +8,7 @@ quality: [Rhythm]
 related: [ii-7, iii-27, viii-6, viii-8, xviii-4]
 summary: Tone means ordered relation, not audible sound — chemical order mirrors the principle without replacing chemical explanation.
 epigraph: "Tone orders."
-backdrop: gongcorridor
+backdrop: gong-at-end-of-dark-corridor
 ---
 
 The term **Tone Ether** is preferred within the system because it expresses relation, ratio, interval, resonance, and proportion. The older or alternative phrase **Chemical Ether** emphasises its role in affinity, combination, separation, assimilation, and exchange.

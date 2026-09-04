@@ -7,7 +7,7 @@ quality: [Penetration]
 related: [ii-25, iv-6, ii-20, xx-15, iv-13]
 summary: Reaching the level at which a pattern is continually reproduced — the deepest light is not the one that forces entry.
 epigraph: "The deepest light is not the light that forces entry. It is the light capable of reaching the formative root while preserving the integrity of the vessel."
-backdrop: seacave
+backdrop: sea-cave-glowing-orange-at-dusk
 ---
 
 Penetration is the capacity of light to pass beyond surfaces and reach deeper regions of a medium, form, organism, or consciousness.

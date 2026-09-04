@@ -10,7 +10,7 @@ symbol: [Flame, Black Sun]
 related: [vi-4, vi-5, vi-10, viii-1, vi-26, xiii-22]
 summary: The Ungrund and the will toward self-disclosure - contraction, anguish, and fire as the threshold at which severity breaks open into light; darkness as necessary to manifest light without evil being necessary as evil; evil as contraction closing upon itself.
 epigraph: "The same underlying potency can appear as tormenting fire or blessed radiance according to its mode of relation."
-backdrop: caldera
+backdrop: caldera-lake-at-sunrise
 ---
 
 Jacob Böhme's luminous theology begins not with a static world of completed substances but with an abyssal depth he calls the *Ungrund* - the ungrounded ground, or groundless freedom preceding determinate manifestation. The Ungrund is not simply a dark object existing before God. It indicates the incomprehensible depth beyond every fixed quality and distinction.

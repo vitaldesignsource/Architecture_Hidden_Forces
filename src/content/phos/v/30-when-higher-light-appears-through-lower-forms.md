@@ -7,7 +7,7 @@ operation: [Manifestation, Integration]
 related: [ii-26, v-24, ii-17, xx-18, iii-16]
 summary: Lower forms are the final sites of luminous verification — the highest light may appear through the humblest vessel by becoming completely present where it is needed.
 epigraph: "The apparent simplicity of the form does not determine the causal depth of what it carries."
-backdrop: masons
+backdrop: quarried-blocks-in-mason-yard
 ---
 
 Higher light becomes effective only when it can inhabit forms appropriate to the world in which it must act.

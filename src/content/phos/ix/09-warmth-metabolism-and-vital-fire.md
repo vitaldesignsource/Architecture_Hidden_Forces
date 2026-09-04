@@ -9,7 +9,7 @@ operation: [Awakening, Animation]
 related: [viii-5, ii-7, ix-10, ix-21, viii-1]
 summary: Vital fire is more than a metaphor for metabolism — a real principle of awakening and regulated transformation, of which physical metabolism is one material expression.
 epigraph: "Warmth awakens."
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Metabolism is the coordinated network of chemical transformations through which organisms acquire, store, release, and redirect energy. In endothermic animals, metabolism contributes to the maintenance of body temperature. In plants and ectothermic organisms, environmental warmth strongly conditions the rates and possibilities of biochemical activity.

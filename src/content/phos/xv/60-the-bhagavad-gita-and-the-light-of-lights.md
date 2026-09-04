@@ -11,7 +11,7 @@ text: [Bhagavad Gītā]
 related: [i-13, i-15, v-29, v-28, xi-16, xv-58]
 summary: The Light of lights beyond darkness, dwelling in the heart of every being; the splendour in sun, moon, and fire proceeding from one source; and the Viśvarūpa revealed to Arjuna through granted sight - a thousand suns, creation and destruction together, and a return to gentler form as mercy.
 epigraph: "The Light of lights is not simply the most intense member of a series."
-backdrop: murmuration
+backdrop: starling-murmuration-over-field
 ---
 
 The Bhagavad Gītā brings Vedic, Upanishadic, yogic, devotional, and Sāṃkhya-oriented teachings into a dialogue centred upon Kṛṣṇa's revelation to Arjuna. Light appears as knowledge, divine presence, solar power, spiritual perception, and the overwhelming radiance of the cosmic form.

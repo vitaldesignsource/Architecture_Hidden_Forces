@@ -11,7 +11,7 @@ text: [Babylonian Talmud, Ḥagigah]
 related: [vi-9, ii-27, v-28, i-1, vi-19, xv-42]
 summary: Or ha-Ganuz - the first light by which Adam saw from one end of the world to the other, hidden away for the righteous when the generations of the Flood and Babel were foreseen; concealment as protection rather than annihilation; integral perception rather than mere brightness.
 epigraph: "The hiddenness of light does not prove its absence."
-backdrop: cabinet
+backdrop: cabinet-of-curiosities-in-lamplight
 ---
 
 The unusual sequence of Genesis - light on the first day and luminaries on the fourth - became fertile ground for rabbinic interpretation. If the first light was not simply ordinary sunlight, what was its nature, purpose, and destiny?

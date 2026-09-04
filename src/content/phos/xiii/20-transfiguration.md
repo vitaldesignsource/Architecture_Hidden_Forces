@@ -8,7 +8,7 @@ operation: [Transfiguration]
 related: [xi-13, xii-14, xiii-25, xiii-23, ii-17, xviii-1]
 summary: An existing form becoming transparent to a higher degree of light without ceasing to be itself — the inward principle outwardly perceptible; the clearest image of spiritualised matter, in which the lower is fulfilled rather than abolished.
 epigraph: "Matter becomes capable of bearing spirit without claiming to be its source, while spirit becomes effectively present without abandoning form."
-backdrop: alabaster
+backdrop: alabaster-slab-glowing-in-cavern
 ---
 
 Transfiguration is the operation through which an existing form becomes transparent to a higher degree of light without ceasing to be itself. The form is neither discarded nor covered with a decorative radiance. Its inward principle becomes outwardly perceptible.

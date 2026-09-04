@@ -12,7 +12,7 @@ text: [Qur'an, Mishkāt al-Anwār, Ḥikmat al-Ishrāq]
 related: [xv-77, xv-79, xv-80, xv-82, xxi-9, xvii-11]
 summary: Nūr, ḍiyāʾ, sirāj, miṣbāḥ, and mishkāt from the Qur'anic vocabulary; ishrāq, tajallī, kashf, and basīra from the philosophical and Sufi lexicons; and the Persian rawshan, farr, āftāb, and khurshīd - kept apart, because nūr in the Qur'an, al-Ghazālī, Ibn ʿArabī, Rūmī, and Suhrawardī participates in related but not identical architectures.
 epigraph: "Nūr in the Qur'an, al-Ghazālī, Ibn ʿArabī, Rūmī, and Suhrawardī participates in related but not identical architectures."
-backdrop: nichejar
+backdrop: lit-jar-in-temple-niche
 position: center 60%
 ---
 

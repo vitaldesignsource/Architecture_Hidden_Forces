@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Transparency, Clarity]
 related: [ii-11, ii-12, ii-13, xv-62, ii-8]
 summary: Where tattvas describe direction, the gunas describe condition — sattva clarifies, rajas activates, tamas condenses — and every process needs all three.
-backdrop: basincascade
+backdrop: water-cascading-from-carved-stone-vessel
 ---
 
 If tattvas describe the directional biases of formative activity, the gunas describe the condition under which that activity operates.

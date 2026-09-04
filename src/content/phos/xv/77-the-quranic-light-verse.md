@@ -11,7 +11,7 @@ text: [Qur’an]
 related: [iii-17, v-28, i-13, ii-5, xiv-18, xv-79]
 summary: Āyat al-Nūr - niche, lamp, glass like a brilliant star, and oil from an olive neither of the east nor of the west, almost luminous before fire touches it; nūr ʿalā nūr, light upon light; a nearly complete grammar of transmission and a law of preparation.
 epigraph: "A vessel can receive only according to its condition."
-backdrop: nichejar
+backdrop: lit-jar-in-temple-niche
 position: center 60%
 ---
 

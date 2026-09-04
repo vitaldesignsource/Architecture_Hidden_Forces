@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [iii-15, iii-30, iii-21, xv-78, xv-70, xi-25]
 summary: The science of light, vision, mirrors, and visual geometry built on the Latin translation of Ibn al-Haytham - Bacon's elevation of perspectiva, the doctrine of species as propagated likenesses, and a discipline of error in which an appearance may be genuinely produced yet misjudged.
 epigraph: "An experience can be real and interpreted imperfectly at the same time."
-backdrop: arch
+backdrop: stone-arch-under-construction
 ---
 
 Medieval *perspectiva* was much broader than the modern artistic technique of linear perspective. It was the science of light, vision, reflection, refraction, colour, mirrors, lenses, visual geometry, and the psychological interpretation of sensory appearances. Its development depended heavily upon the translation of Arabic optical works - above all [[xv-78|Ibn al-Haytham's Book of Optics]] - into Latin.

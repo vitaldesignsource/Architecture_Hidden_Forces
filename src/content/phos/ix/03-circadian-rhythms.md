@@ -9,7 +9,7 @@ operation: [Orientation]
 related: [ix-4, ix-5, ix-10, ix-19, ii-7]
 summary: Endogenous cycles entrained by light — a temporal command judged by the relations through which it acts, and one bodily expression of the etheric tide it neither creates nor exhausts.
 epigraph: "The organism is not continuously noon; it survives by passing through dawn, zenith, sunset, and night."
-backdrop: sleepdawn
+backdrop: sleeper-at-dawn-by-wide-window
 position: center 45%
 ---
 

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Radiance, Diffusiveness]
 related: [iii-1, iii-4, iii-5, iv-31, i-11, v-21]
 summary: The anatomical moment between source and ray - the region of presence a source establishes before any direction has been chosen, without which the ray would have nothing to proceed from and the receiver nothing to enter.
-backdrop: summit
+backdrop: summit-above-sea-of-cloud
 ---
 
 Within the anatomy of an illumination, radiance is the moment that follows the source and precedes the ray. The source is where light is what it is; the ray is light already on its way to somewhere. Between them stands a region of presence that belongs to neither: light surrounding its source in every direction at once, before any direction has been chosen.

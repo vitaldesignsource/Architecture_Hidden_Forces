@@ -8,7 +8,7 @@ operation: [Protection]
 related: [ix-18, ix-19, ii-17, iii-10]
 summary: A differentiated interface with the spectrum that protects, admits, and repairs — corresponding to, but not identical with, the etheric boundary that extends through and beyond it.
 epigraph: "The preservation of distinction without the refusal of participation."
-backdrop: handlight
+backdrop: hand-raised-to-lit-wall
 position: center 55%
 ---
 

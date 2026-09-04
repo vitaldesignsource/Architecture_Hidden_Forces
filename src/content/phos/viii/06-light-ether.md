@@ -8,7 +8,7 @@ operation: [Differentiation]
 related: [ii-7, v-7, viii-5, viii-7, xv-94]
 summary: The formative power of differentiation — not to be equated with electromagnetic radiation, though sensible light is its clearest analogue.
 epigraph: "Light differentiates."
-backdrop: crystalcanyon
+backdrop: white-crystal-canyon-at-sunrise
 position: center 50%
 ---
 

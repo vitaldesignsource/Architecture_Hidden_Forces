@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [x-3, x-22, xiii-9, xi-24, xii-13, i-9]
 summary: Light within the receiver answering light in another — awakened kinship, syngeneia and anamnēsis — distinguished from familiarity and projection by whether it expands the soul's capacity for reality, including its capacity to be corrected.
 epigraph: "Authentic recognition expands the soul's capacity for reality, including its capacity to be corrected."
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 Recognition occurs when light within the receiver answers light encountered in another being, symbol, teaching, or presence. It is an act of awakened kinship. The soul does not merely observe something unfamiliar; it discovers that the encountered reality corresponds to a structure, capacity, or memory already latent within itself.

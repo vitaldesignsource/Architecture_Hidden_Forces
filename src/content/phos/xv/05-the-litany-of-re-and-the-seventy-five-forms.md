@@ -11,7 +11,7 @@ text: [Litany of Re, Book of Adoring Re in the West]
 related: [xii-1, i-13, xiii-4, xv-6, xii-21, vi-25]
 summary: The Book of Adoring Re in the West — the sun invoked through seventy-five forms, a theology of differentiated unity, and the nocturnal sun's union with Osiris, in which solar motion and Osirian endurance participate in one another.
 epigraph: "One source may possess many faces without becoming internally divided."
-backdrop: earthcolonnade
+backdrop: turf-roofed-colonnade-at-dusk
 ---
 
 The work usually called the Litany of Re was known more precisely as the Book of Adoring Re in the West. Rather than narrating the solar journey hour by hour, it invokes and praises Re through seventy-five forms or manifestations. These include anthropomorphic, mummiform, animal, composite, and more abstract solar appearances.

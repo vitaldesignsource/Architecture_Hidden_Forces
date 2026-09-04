@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Manifestation]
 related: [i-12, i-11, ii-6, ii-4, xv-28]
 summary: Emission is light leaving a physical source; procession is the transition from concentrated unity into extended participation — not pieces breaking away.
-backdrop: birdshaft
+backdrop: light-shaft-in-mossy-green-cavern
 position: center 45%
 ---
 

@@ -9,7 +9,7 @@ operation: [Integration]
 related: [vii-6, ii-22, xii-2, xii-17, x-22]
 summary: Centralised luminous sovereignty that orders through radiance rather than coercion — Tiphereth and the Inner Sun within the individual; a true king remains transparent to a source higher than himself and is measured by generativity.
 epigraph: "The authentic king makes surrounding life more capable of fulfilling its own proper form."
-backdrop: solarking
+backdrop: solar-king-in-lit-temple-doorway
 position: center 28%
 ---
 

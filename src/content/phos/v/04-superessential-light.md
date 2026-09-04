@@ -7,7 +7,7 @@ plane: [Superessential]
 related: [xv-55, xv-54, vi-7, i-20, v-3]
 summary: Not one more layer above the others but what exceeds the ladder by exceeding its categories — the apophatic summit of luminous language.
 epigraph: "The point at which light reveals the inadequacy of every image of light."
-backdrop: moonfall
+backdrop: moonlit-waterfall-between-two-lakes
 position: center 45%
 ---
 

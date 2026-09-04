@@ -10,7 +10,7 @@ symbol: [Flame]
 related: [xiv-2, xvii-13, xi-20, viii-1, xx-6, iii-17]
 summary: A concentrated image of living luminosity with base, transforming zone, radiant body, and ascending movement - observed at a comfortable distance without strain, the afterimage studied as a lawful physiological event, and the retinal trace distinguished from imaginal elaboration.
 epigraph: "The goal is not to force a vision but to allow a physical phenomenon to become an exact teacher of luminous architecture."
-backdrop: altarflame
+backdrop: fire-altar-flame-over-dark-water
 position: center 45%
 ---
 

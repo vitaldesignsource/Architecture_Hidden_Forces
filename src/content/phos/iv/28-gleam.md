@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Gleam]
 related: [iii-14, iii-20, iv-27, iv-29]
 summary: Concentrated brightness on a surface, revealing both the illumination present and the reflective character of what returns it.
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 A gleam is a concentrated brightness appearing upon a surface. It is usually sharper and more localised than a glow.

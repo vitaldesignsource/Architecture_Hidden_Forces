@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vi-2, vi-3, vi-4, vi-26, iv-59]
 summary: Darkness may lack independent physical substance while remaining a genuine relational condition — what appears when light is absent, interrupted, absorbed, concealed, or beyond capacity.
-backdrop: cavedunes
+backdrop: cave-window-onto-white-dunes
 position: center 45%
 ---
 

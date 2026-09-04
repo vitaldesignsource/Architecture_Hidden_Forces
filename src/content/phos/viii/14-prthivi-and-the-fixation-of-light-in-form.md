@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 quality: [Density, Stability]
 related: [ii-8, ii-13, viii-22, vi-12, vi-17, iii-16]
 summary: Not the defeat of light but the condition through which luminosity acquires enduring consequence.
-backdrop: goldvein
+backdrop: gold-vein-glowing-in-dark-rock
 position: center 50%
 ---
 

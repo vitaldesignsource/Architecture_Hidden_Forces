@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Liquid Light]
 related: [viii-13, viii-24, iv-55, iv-30, xiv-10]
 summary: Illumination in a state of flowing relation, corresponding to Apas — it surrounds rather than pierces and carries rather than fixes.
-backdrop: basincascade
+backdrop: water-cascading-from-carved-stone-vessel
 ---
 
 Liquid light describes luminosity that appears flowing, continuous, reflective, enveloping, or capable of filling a vessel. It is not a claim that light has become an ordinary liquid. It is a real mode of luminous appearance upon the phenomenological, astral, and formative planes, where illumination genuinely takes on the behaviour of flow.

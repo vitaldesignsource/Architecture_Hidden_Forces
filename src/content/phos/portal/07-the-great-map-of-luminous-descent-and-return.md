@@ -7,7 +7,7 @@ related: [i-5, i-12, ii-8, ii-10, xix-2, v-22, v-23, xiii-31]
 summary: Source, procession, mediation, coloration, embodiment, perception, transformation, return — the eight movements the whole portal follows.
 epigraph: "Source → Procession → Mediation → Coloration → Embodiment → Perception → Transformation → Return"
 attribution: The central movement
-backdrop: cartography
+backdrop: dark-hall-with-charted-stone-floor
 ---
 
 The central map of the portal follows eight movements.

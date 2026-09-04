@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Purity]
 related: [iv-7, iv-8, xiii-11, iv-26, ii-11]
 summary: Freedom from admixture, which allows a current's identity to be recognised — but purity is one quality among many, not a final judgment.
-backdrop: basinblade
+backdrop: stone-basin-under-blade-of-light
 position: center 55%
 ---
 

@@ -9,7 +9,7 @@ operation: [Dissolution, Withdrawal, Liberation]
 related: [ix-22, ix-24, xv-10, xv-69, x-20, vi-2]
 summary: The withdrawal of organised vitality from a body, and the corresponding release described as soul, breath, radiance, double, or subtle body - Egyptian akh, Christian entry into light, Tibetan clear light, and Manichaean liberation understood first in their own systems.
 epigraph: "Death is not simply the arrival of darkness. It is a separation of previously joined principles."
-backdrop: nightterrace
+backdrop: night-terrace-above-cloud-sea
 position: center 45%
 ---
 

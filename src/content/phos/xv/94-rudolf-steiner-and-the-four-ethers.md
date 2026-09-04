@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [ii-7, ii-5, ix-18, v-7, ix-20, xv-93]
 summary: Warmth, light, chemical or tone, and life ether as formative realities complementary or contrary to dense physical forces - the sequence by which spiritual force becomes incarnational impulse, spatial form, relational composition, and living integrity; opposed cosmic streams whose regulated meeting sustains health.
 epigraph: "Life is not an accidental arrangement briefly imposed upon dead matter."
-backdrop: leafbeam
+backdrop: sunbeam-on-leaves-above-dark-soil
 ---
 
 Rudolf Steiner's account of the four ethers is one of the most direct historical antecedents to the Fourfold Veil. Steiner did not understand ether merely as the hypothetical mechanical medium once proposed for electromagnetic waves. His ethers are formative realities acting in ways complementary or contrary to dense physical forces.

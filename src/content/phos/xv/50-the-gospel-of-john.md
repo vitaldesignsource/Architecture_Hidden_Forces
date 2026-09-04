@@ -11,7 +11,7 @@ text: [Gospel of John]
 related: [i-14, ii-29, xiii-15, i-16, xii-17, xv-51]
 summary: Logos, life, and the light of humanity - light shining in a darkness that neither overcomes nor comprehends it; the witness distinguished from the Light; the world sustained by a formative source it does not recognise; judgment occurring through manifestation; the Word made flesh.
 epigraph: "Reality can be sustained by a light that its inhabitants do not consciously know."
-backdrop: gateway
+backdrop: gateway-cut-through-rock-to-mist
 ---
 
 The Gospel of John begins by joining several of the greatest luminous themes of the preceding tradition. In the beginning is the Logos; the Logos is with God and is divine; all things come into being through him. In the Logos is life, and that life is [[i-14|the light of humanity]].

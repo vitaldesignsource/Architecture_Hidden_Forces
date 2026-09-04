@@ -11,7 +11,7 @@ text: [Utriusque Cosmi Historia]
 related: [v-24, ii-7, vi-14, ii-25, iii-6, xv-93]
 summary: The History of the Two Worlds - an almost black field for unformed possibility, interpenetrating pyramids of divine light and material darkness whose proportion places every created being, and the cosmic monochord stretched between divine and material poles.
 epigraph: "No created region is defined by light or darkness alone; each is a proportion of illumination and obscuration."
-backdrop: crosssection
+backdrop: cutaway-of-tiered-stone-tower
 position: center 45%
 ---
 

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [x-7, x-19, ii-19, vi-16, xx-15, i-20]
 summary: Light moves through memory, imagination, emotion, and identity unevenly; the layers also preserve material until consciousness can meet it, so illumination must respect timing.
-backdrop: cabinet
+backdrop: cabinet-of-curiosities-in-lamplight
 ---
 
 The psychic layers include memory, imagination, emotion, personal identity, inherited pattern, unconscious association, and the interior narratives through which experience becomes meaningful.

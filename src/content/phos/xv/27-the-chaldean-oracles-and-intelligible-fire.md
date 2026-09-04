@@ -11,7 +11,7 @@ text: [Chaldean Oracles]
 related: [xv-26, xv-28, xii-18, x-4, iii-10, v-8]
 summary: Fragments of second-century hexameters attributed to the two Julians — a paternal Intellect from which Ideas proceed as fire, lightning, sparks, fountains, and rays; fire as both continuity and differentiation; Hecate as living threshold; the flower of fire by which the soul gathers itself to receive; primordial light as operative fire.
 epigraph: "Primordial light is not passive visibility. It is operative fire."
-backdrop: concentrator
+backdrop: mirror-concentrator-on-desert-ridge
 ---
 
 The Chaldean Oracles survive only as fragments quoted and interpreted by later writers. They were probably composed in Greek hexameters during the second century CE and were traditionally associated with Julian the Chaldean and his son, Julian the Theurgist. Their designation as "Chaldean" should not cause them to be treated as a straightforward translation of Babylonian or Zoroastrian scripture. They belong to the religious and philosophical world of the later Roman Empire, although they may contain and recombine several Eastern, Platonic, magical, and initiatory currents. [The Cambridge History of Philosophy in Late Antiquity](https://www.cambridge.org/core/books/abs/cambridge-history-of-philosophy-in-late-antiquity/chaldaean-oracles/8F2A56880C74232A80947E0034F5DA0D) dates the Oracles to the late second century and explains their traditional attribution to one or both Julians.

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Magnitude]
 related: [iv-1, iv-10, iii-6, iv-22]
 summary: The total scale and consequential reach of a luminous event, which duration and propagation may reveal long after its immediate appearance.
-backdrop: summit
+backdrop: summit-above-sea-of-cloud
 ---
 
 Magnitude is the total scale, extent, or consequential reach of a luminous phenomenon. Whereas intensity concerns strength at a particular point, magnitude concerns the greatness of the event considered as a whole.

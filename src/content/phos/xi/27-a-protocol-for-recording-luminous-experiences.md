@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [xi-25, xi-26, portal-9, xi-23, xi-19]
 summary: Fourteen things to record before interpretation hardens — environment, body, state, eyes, location, qualities, agency, content, witnesses, effects, alternatives, a provisional judgement, and review over time; a protocol that protects both the revelation and the receiver.
 epigraph: "Retain the word provisional."
-backdrop: tally
+backdrop: hands-marking-clay-tally
 ---
 
 Luminous experiences should be recorded before interpretation hardens around them. The first account should preserve what occurred as precisely as possible, separating direct observation from later explanation.

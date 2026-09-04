@@ -11,7 +11,7 @@ symbol: [Prism, Rainbow, Gold]
 related: [iv-15, iv-58, iv-59, iv-57, xiv-14, viii-20]
 summary: Shade, saturation, luminosity, opacity, temperature, material, planetary association, elemental relation, ritual use, historical tradition, and visionary quality for each colour - resisting universal formulas, since correspondences may be stable within a ritual system without becoming universally binding across cultures or individuals.
 epigraph: "Correspondences may be stable within a ritual system without becoming universally binding."
-backdrop: prismtable
+backdrop: prism-and-bowl-on-lit-stone-table
 ---
 
 The colour index extends beyond basic hue names. Each entry includes shade, saturation, luminosity, opacity, temperature, material, planetary association, elemental relation, ritual use, historical tradition, and visionary quality.

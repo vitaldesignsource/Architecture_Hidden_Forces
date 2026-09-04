@@ -10,7 +10,7 @@ text: [Orphic Rhapsodies]
 related: [xii-3, i-1, i-2, ii-2, v-22, xv-27]
 summary: Not one Orphic scripture but a family of theogonies — Derveni, Eudemian, Hieronyman, Rhapsodic; Phanes, Protogonos, Metis, Eros as aspects of the first-born; the cosmic egg as undivided potential and its opening as the first articulation of a cosmos; radiant, golden-winged, androgynous; light before the luminaries, swallowed and re-expressed by Zeus.
 epigraph: "Before individual forms can exist, there must be a luminous activity through which form becomes revealable."
-backdrop: phanes
+backdrop: phanes-rising-from-cosmic-egg
 position: center 45%
 ---
 

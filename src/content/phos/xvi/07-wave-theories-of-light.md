@@ -10,7 +10,7 @@ symbol: [Circle]
 related: [xvi-12, xvi-8, xvi-13, viii-18, iii-8, xvi-10]
 summary: Huygens's secondary wavelets, Young's interference bands, and Fresnel's mathematics - wavelength, frequency, amplitude, and phase as the vocabulary of an organised propagation of changing field values rather than a material object moving up and down.
 epigraph: "Effects depend not only on how much energy is present but upon timing, phase, pattern, boundary, and compatibility."
-backdrop: ripples
+backdrop: ripple-marks-in-flooded-vault
 ---
 
 Wave theories emerged because ray models could not fully explain interference, diffraction, and polarisation. Christiaan Huygens proposed that every point on a wavefront can be treated as the source of secondary wavelets. The later wavefront is formed from their collective envelope.

@@ -6,7 +6,7 @@ tradition: [Egyptian, Architecture of Hidden Forces]
 symbol: [Solar Barque]
 related: [xv-5, xv-6, vii-29, ii-22, iii-16]
 summary: Solar power does not cross the cosmos as disembodied abstraction — the barque gives movement a vessel, and is a cosmic image of Ignisophia.
-backdrop: cavesunset
+backdrop: sunset-through-sea-cave-arch
 position: center 45%
 ---
 

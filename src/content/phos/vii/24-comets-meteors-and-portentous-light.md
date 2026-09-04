@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 related: [vii-23, iv-41, vii-13, xi-24, iv-39]
 summary: Portentous light is not automatically prophetic — the event reveals as much about the receiving culture as about the sky.
 epigraph: "A portent is a celestial appearance placed within a human architecture of meaning."
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Comets are icy and dusty bodies whose approach to the Sun can produce a luminous coma and one or more tails. Meteors are brief streaks of light produced when small pieces of cosmic debris enter Earth's atmosphere — see [NASA's skywatching guide](https://science.nasa.gov/skywatching/).

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Clarity]
 related: [ii-11, iv-5, i-9, iv-26, i-16]
 summary: The capacity to reveal distinctions without unnecessary confusion — not the absence of mystery but the recognition of what has genuinely become available.
-backdrop: cavepool
+backdrop: cave-pool-under-single-light-shaft
 ---
 
 Clarity is the capacity of light to reveal distinctions without unnecessary confusion. Clear light allows edges, proportions, relationships, and differences to become perceptible.

@@ -10,7 +10,7 @@ symbol: [Mirror]
 related: [iii-14, x-22, x-13, xiv-8, vi-18, xv-24]
 summary: A surface that receives an image without possessing it - clean, warped, broken, or stained, giving an exact figure for the soul's receptive condition; polished by discipline not to invent light but to remove what prevents its truthful reflection.
 epigraph: "Narcissus does not fail because reflection is unreal; he fails because he cannot establish the correct relation to it."
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 The mirror receives an image without permanently possessing it. It reveals what stands before it while remaining distinct from what it reveals. It therefore symbolises consciousness, self-knowledge, imagination, purity, divination, and reflective wisdom.

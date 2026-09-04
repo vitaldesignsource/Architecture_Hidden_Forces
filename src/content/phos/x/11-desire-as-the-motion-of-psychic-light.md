@@ -8,7 +8,7 @@ operation: [Animation]
 related: [ii-19, ii-22, x-9, x-12, x-18]
 summary: Psychic light in motion toward its object — not inherently corrupt, distorted when a fragment is mistaken for the whole; Netzach supplies motion, wisdom supplies orientation, and purification liberates rather than extinguishes.
 epigraph: "Desire supplies motion; wisdom supplies orientation."
-backdrop: whirlpool
+backdrop: whirlpool-in-dark-open-water
 ---
 
 Desire is psychic light in motion toward an object, condition, experience, person, image, or possibility. It establishes attraction and gives direction to psychic energy. Without desire, the soul would possess awareness but lack much of the movement required for participation.

@@ -11,7 +11,7 @@ text: [Ginza Rba, Qolasta]
 related: [viii-24, xiv-10, ix-18, xi-16, xiii-31, ii-5]
 summary: A living tradition with its priesthood, Mandaic literature, and diaspora — Hayyi Rabbi the Great Life, the uthras, Manda d-Hayyi as the Knowledge of Life; the soul from the World of Light placed in Tibil; yardna, the living water in which the heavenly world reflects itself; maṣbuta and masiqta; light as cool, flowing, and life-bearing.
 epigraph: "Light is not possessed privately."
-backdrop: basincascade
+backdrop: water-cascading-from-carved-stone-vessel
 position: center 45%
 ---
 

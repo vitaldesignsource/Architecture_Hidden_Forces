@@ -8,7 +8,7 @@ operation: [Communication, Consecration]
 related: [xii-19, xii-1, ii-29, xiv-19, xiv-20, xiv-24]
 summary: A form through which a mode of divine presence becomes addressable — differentiating a current without severing it from the source; voiced, written, or sung it gives sound, rhythm, and form to a relation, and used without right relation it may stay empty or activate only projection.
 epigraph: "The name acts as a luminous boundary: it defines what is being approached and distinguishes that power from other orders."
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 A divine name is more than a descriptive label. Within many ritual traditions, it is a form through which a particular mode of divine presence becomes addressable. The name differentiates a current without necessarily separating it from the unity of its source.

@@ -8,7 +8,7 @@ operation: [Animation]
 related: [ix-18, x-5, ix-13, xiii-7, ii-15, xii-12]
 summary: A form becoming inwardly occupied by a living principle — not mechanical movement but movement from an interior centre; spirit prior to animation, mediated through soul and etheric organisation into an inhabited body.
 epigraph: "Matter becomes more than assembled substance: it becomes the inhabited boundary of a living centre."
-backdrop: statue
+backdrop: lamplit-statue-beside-open-book
 ---
 
 Animation is the operation through which a form becomes inwardly occupied by a living or ensouling principle. It is not identical to mechanical movement. A machine may move because external forces act upon it, but a living being moves from an interior centre of organisation, sensation, appetite, responsiveness, and purpose.

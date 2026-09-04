@@ -9,7 +9,7 @@ operation: [Recognition, Integration]
 related: [xii-18, ii-22, vii-12, xv-13, x-22, i-15]
 summary: Knowledge organising information while wisdom discerns order, proportion, purpose, and consequence - solar wisdom revealing the architecture of things, lunar wisdom receiving and gestating, and receptivity understood as a power of transformation rather than passivity.
 epigraph: "A wise light reveals what can be integrated, conceals what requires protection, and never mistakes maximum exposure for maximum truth."
-backdrop: sophia
+backdrop: sophia-holding-light-above-basin
 position: center 30%
 ---
 

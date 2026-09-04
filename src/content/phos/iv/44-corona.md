@@ -7,7 +7,7 @@ quality: [Corona]
 related: [vii-23, iv-43, vi-19, vii-4, iv-49]
 summary: Radiance revealed at a boundary — when the central source is hidden, its surrounding power may become more visible.
 epigraph: "Concealment can reveal dimensions of a source normally overwhelmed by its direct brilliance."
-backdrop: crater
+backdrop: night-crater-with-glowing-lava
 ---
 
 A corona is a crown-like luminosity surrounding a luminous or obscured source. The solar corona is the Sun's outer atmosphere, made dramatically visible during a total solar eclipse. Atmospheric coronas may also appear through diffraction by small droplets or particles.

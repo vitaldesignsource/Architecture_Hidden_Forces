@@ -4,7 +4,7 @@ labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
 tradition: [Architecture of Hidden Forces, Aristotelian, Manichaean]
 related: [xv-21, xv-38, xv-40, i-19, xi-1, xvii-1]
 summary: Five ways of speaking about light, and the discipline of finding which one is operative in a given passage, rite, image, or experience.
-backdrop: alembic
+backdrop: copper-alembic-still-in-stone-workshop
 ---
 
 Different civilisations have assigned light different kinds of reality. Some have treated it as an emanated substance. Others have understood it as the actuality of a transparent medium, the activity of fire, a stream of particles, a geometrical ray, a divine energy, a living power, or the visible expression of an invisible intelligence.

@@ -1,5 +1,5 @@
 ---
-backdrop: threshold
+backdrop: threshold-arches-in-misted-vault
 position: center 50%
 ---
 

@@ -10,7 +10,7 @@ operation: [Manifestation, Vivification]
 related: [i-11, i-12, i-13, xv-28, xviii-14, xix-19]
 summary: A material flame diminishes as its fuel is consumed, but authentic light proceeds without exhausting its source - which distinguishes procession from extraction, since a false architecture drains its members so that a central power may appear radiant, and its brilliance is purchased by the exhaustion of others.
 epigraph: "Authentic light proceeds without exhausting its source."
-backdrop: sunpillar
+backdrop: radiant-sun-in-star-frame
 position: center 32%
 ---
 

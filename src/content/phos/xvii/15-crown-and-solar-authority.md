@@ -10,7 +10,7 @@ symbol: [Crown]
 related: [xii-16, xv-92, ii-25, xii-19, xvii-16, vii-4]
 summary: Ordered radiance placed around the head, its points often resembling rays so that rulership appears as an extension of solar power - governance by sustaining the field in which life is possible, and counterfeit when radiance is appropriated for personal glory.
 epigraph: "A crown that receives no higher light becomes empty status. A crown that receives but does not distribute becomes hoarded power."
-backdrop: solarking
+backdrop: solar-king-in-lit-temple-doorway
 position: center 28%
 ---
 

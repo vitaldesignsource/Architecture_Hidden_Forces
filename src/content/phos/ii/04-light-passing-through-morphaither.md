@@ -8,7 +8,7 @@ operation: [Formation]
 quality: [Color]
 related: [ii-5, viii-26, viii-15, iii-8, i-13]
 summary: Light never enters manifestation unmediated; in Morphaithēr it becomes situated, one in source and many in expression — the medium gives transmission a world.
-backdrop: spectralvalley
+backdrop: spectral-valley-with-rainbow-beam
 position: center 50%
 ---
 

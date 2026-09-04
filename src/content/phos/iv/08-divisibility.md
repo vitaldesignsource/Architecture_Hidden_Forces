@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Divisibility]
 related: [iv-7, iii-13, i-13, v-22, i-11]
 summary: One source supporting many participations without being divided into unrelated pieces — healthy when plurality remains capable of recollecting unity.
-backdrop: greatcrystal
+backdrop: great-crystal-beam-over-valley
 position: center 45%
 ---
 

@@ -7,7 +7,7 @@ plane: [Astral, Psychic, Imaginal]
 related: [x-15, xi-18, x-18, xi-7, xi-16]
 summary: Temples, cities, gardens, and seas lit without a physical source — some memory and imagination, some genuine astral or spiritual environments; a real astral place is real by the conditions of its own plane.
 epigraph: "Space becomes qualitative rather than merely metric."
-backdrop: terraces
+backdrop: steaming-terraced-pools-in-rock
 ---
 
 Visionary consciousness may enter complete luminous environments: temples, cities, mountains, gardens, deserts, heavens, chambers, seas, libraries, or terrains illuminated without an identifiable physical source.

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Imaginal, Astral]
 related: [x-13, x-14, ii-19, xi-25, i-8]
 summary: Neither meaningless illusion nor the complete being of what it represents — an image is truthful when it preserves a meaningful relation to what it reveals.
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 An image is an organised appearance produced through the encounter of source, light, medium, form, and receiver. It is neither a meaningless illusion nor the complete being of what it represents.

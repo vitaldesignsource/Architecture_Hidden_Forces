@@ -7,7 +7,7 @@ quality: [Intensity, Brilliance]
 related: [v-29, ii-6, iii-11, v-4, xi-26, iv-32]
 summary: The dazzled receiver may become certain precisely when perception is least reliable — greater light requires greater mediation, not merely greater openness.
 epigraph: "Sometimes the proper response to luminosity is to narrow the aperture."
-backdrop: saltshelter
+backdrop: stone-shelter-on-white-salt-plain
 position: center 50%
 ---
 

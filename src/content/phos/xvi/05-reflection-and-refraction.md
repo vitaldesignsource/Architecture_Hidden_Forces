@@ -10,7 +10,7 @@ symbol: [Mirror, Ray]
 related: [iii-20, iii-21, iii-14, viii-16, xvi-4, xvi-6]
 summary: Angle of reflection equal to angle of incidence, and Snell's law relating angles across a boundary of differing refractive index - a mirror that contains nothing it shows, and a submerged object displaced because its light crossed between unlike media.
 epigraph: "Distortion is produced by transmission through unlike media."
-backdrop: mirrorcascade
+backdrop: mirrors-cascading-light-down-shaft
 position: center 45%
 ---
 

@@ -7,7 +7,7 @@ plane: [Etheric, Astral, Psychic]
 related: [xi-9, xi-13, xi-20, iv-47, xiv-7]
 summary: A concentrated luminous region within the larger field — sacred art's discs may be theology, convention, and record of perception at once; subtle halos are distinguished from contrast effects by stability, coherence, and independent observers.
 epigraph: "A symbol can preserve the memory of a real perception even after becoming formalised in art."
-backdrop: arch
+backdrop: stone-arch-under-construction
 ---
 
 A halo is a concentrated luminous field appearing around the head, body, organ, or centre of a living being. It may represent etheric vitality, astral intensity, spiritual presence, concentrated attention, or the penetration of higher light into the subtle constitution.

@@ -11,7 +11,7 @@ text: [Ezekiel]
 related: [xii-6, ii-22, xi-17, vii-26, xi-16, xv-46]
 summary: Storm-wind, cloud, and gleaming electrum by the river Chebar - four living creatures, intersecting wheels filled with eyes, a crystal expanse, and a sapphire throne; one spirit animating creatures and wheels alike; the appearance of the likeness of the glory, authentic without being exhaustive.
 epigraph: "Divine force does not enter manifestation as disorderly energy. It comes clothed in architecture."
-backdrop: gorgewheel
+backdrop: waterwheel-under-gorge-waterfall
 position: center 45%
 ---
 

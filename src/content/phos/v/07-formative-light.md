@@ -7,7 +7,7 @@ plane: [Formative]
 operation: [Formation, Differentiation]
 related: [ii-7, ii-6, ii-9, ii-10, viii-6, v-13]
 summary: Luminosity operating as organisation — its light is seen most clearly in structure rather than brightness.
-backdrop: greatcrystal
+backdrop: great-crystal-beam-over-valley
 position: center 45%
 ---
 

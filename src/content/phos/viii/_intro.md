@@ -1,5 +1,5 @@
 ---
-backdrop: elementchamber
+backdrop: element-chamber-with-water-and-light
 position: center 50%
 ---
 

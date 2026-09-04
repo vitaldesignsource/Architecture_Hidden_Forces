@@ -7,7 +7,7 @@ quality: [Phosphorescence]
 operation: [Imprinting]
 related: [ii-27, iii-30, iv-37, v-19, xix-12]
 summary: Emission continuing after the source withdraws — a model for luminous memory, where the continuing light is the delayed expression of what the vessel absorbed.
-backdrop: cavestream
+backdrop: stream-through-lit-cave-mouth
 ---
 
 Phosphorescence is a form of photoluminescence in which a material continues emitting light after the original source of excitation has been removed. Energy becomes temporarily retained within the material and is released gradually.

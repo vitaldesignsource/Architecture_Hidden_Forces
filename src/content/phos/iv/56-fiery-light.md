@@ -8,7 +8,7 @@ symbol: [Flame]
 operation: [Purification, Transfiguration]
 related: [viii-12, ii-22, ii-23, viii-1, iv-35, xiii-11]
 summary: Light that reveals through transformation — it may liberate what a form contains or destroy the vessel before its contents can be integrated.
-backdrop: burnslope
+backdrop: burned-forest-slope-regrowing
 ---
 
 Fiery light is luminosity joined to heat, combustion, excitation, transformation, and consumption. It belongs most directly to flame, incandescent matter, lightning, and the radiant consequences of intense energy release.

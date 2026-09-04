@@ -9,7 +9,7 @@ symbol: [Mirror]
 related: [iii-14, v-18, vii-12, xiv-10, xiv-12, x-13]
 summary: Receiving light and returning an image without possessing either — the soul, moon, and imagination in glass; dark mirrors open a field for subtle images, bright ones return the encounter with one's own form; not a portal by default but reflective mediation.
 epigraph: "Reception is never neutral: angle, surface, light, and observer determine what becomes visible."
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 A mirror receives light and returns an image without permanently possessing either. It is therefore an especially powerful image of the soul, moon, imagination, and receptive intelligence. A well-oriented mirror can reveal what is outside the viewer's ordinary field, redirect a ray, multiply a flame, or bring a hidden object into appearance.

@@ -11,7 +11,7 @@ text: [Exodus]
 related: [xiii-8, ii-22, xi-15, vi-8, xii-2, xv-44]
 summary: Cloud by day and fire by night - a mobile manifestation that illuminates, protects, and orients; the same presence received as darkness on one side and light on the other; fire that reveals joined to cloud that makes an overwhelming presence bearable.
 epigraph: "Light is therefore not only what enables the traveller to see the road."
-backdrop: lighthouse
+backdrop: lighthouse-lamp-room-with-brass-optics
 ---
 
 During the Exodus, divine guidance assumes a visible and mobile form. The Lord goes before Israel as a pillar of cloud by day and a pillar of fire by night. The pillar illuminates the path, establishes direction, protects the people, and confirms that the divine presence accompanies them through the uncertainty of the wilderness.

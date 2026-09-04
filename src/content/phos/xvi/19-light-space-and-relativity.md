@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [xvi-8, xvi-18, ii-2, iii-6, xvi-25, xvi-10]
 summary: The invariance of c, spacetime replacing separate absolute containers, and gravity as curvature along which light follows the available null paths - relativity showing that ordinary intuitions about simultaneity and separation are not final descriptions of physical reality.
 epigraph: "Light does not merely move through a neutral stage. Its behaviour reveals the architecture of space and time."
-backdrop: foldedcliff
+backdrop: folded-cliff-face-on-grey-coast
 position: center 45%
 ---
 

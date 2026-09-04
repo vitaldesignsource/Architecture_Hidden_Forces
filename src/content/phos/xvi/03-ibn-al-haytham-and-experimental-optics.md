@@ -11,7 +11,7 @@ text: [Kitāb al-Manāẓir]
 related: [xv-78, xvi-2, xvi-4, xi-25, iii-17, xvi-24]
 summary: The Kitāb al-Manāẓir's union of physics, geometry, anatomy, and controlled observation - rectilinear propagation, determinate reflection and refraction, and the distinction between immediate sensory reception and perceptual judgment, with error located in the conditions of judgment.
 epigraph: "A genuine transmission and a distorted perception can coexist."
-backdrop: opticstable
+backdrop: optics-table-with-prism-and-spectrum
 ---
 
 Ibn al-Haytham's *Kitāb al-Manāẓir*, composed in the early eleventh century, joined physics, geometry, anatomy, controlled observation, and the psychology of perception. His achievement was not that he invented experiment in isolation from all earlier thinkers. It was that he used systematic testing and mathematical reasoning to transform a large network of optical problems.

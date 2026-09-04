@@ -8,7 +8,7 @@ symbol: [Star]
 related: [vii-14, vii-15, xii-10, ix-23, vii-13]
 summary: The dead placed among the stars — not bodies become astronomical objects but a real relation among soul, celestial order, ancestry, and immortality, of which the visible pattern is the earthly disclosure.
 epigraph: "Symbolic suitability does not exclude spiritual reality."
-backdrop: stellarancestors
+backdrop: standing-stones-under-milky-way
 position: center 40%
 ---
 

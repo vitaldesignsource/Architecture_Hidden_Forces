@@ -33,7 +33,7 @@ function Browse() {
       />
 
       <header id="top" className="relative isolate overflow-hidden pb-12 pt-40 sm:pt-48">
-        <Backdrop src="/bg/cartography.webp" opacity={0.3} position="center 50%" fill />
+        <Backdrop src="/bg/dark-hall-with-charted-stone-floor.webp" opacity={0.3} position="center 50%" fill />
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Browse</p>

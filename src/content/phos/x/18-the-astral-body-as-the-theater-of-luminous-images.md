@@ -8,7 +8,7 @@ operation: [Manifestation]
 related: [ii-19, v-12, x-11, x-13, x-15, ix-18]
 summary: A real subtle vehicle in which psychic forces acquire appearance and movement — the theatre analogy names a place where powers take form, not a figure for unreality; astral projection is possible and must be distinguished from dream and ascent.
 epigraph: "A theatre is a place where powers assume form, interact, and become perceptible."
-backdrop: ripples
+backdrop: ripple-marks-in-flooded-vault
 ---
 
 The astral body is the real subtle vehicle and field of desire, image, sensation, emotion, dream, and psychic motion. It is not merely a metaphor for the imagination or an antiquated name for neurological activity.

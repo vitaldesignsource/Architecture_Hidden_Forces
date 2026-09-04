@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [x-9, x-12, vi-18, xv-36, xv-19, ii-22]
 summary: Desire as ray-like movement from the present centre toward what is absent - light making the object visible while desire selects, magnifies, and colours what appears important; Platonic ascent, Buddhist craving, and Sufi longing as related inquiries rather than one doctrine.
 epigraph: "Purification of desire does not necessarily mean extinction of all movement."
-backdrop: walker
+backdrop: walker-on-moor-track-at-dusk
 ---
 
 Desire directs consciousness toward what is absent, distant, imagined, or potentially attainable. It is therefore ray-like: a movement from the present centre toward an object, condition, or future form.

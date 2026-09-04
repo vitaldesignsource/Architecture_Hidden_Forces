@@ -11,7 +11,7 @@ text: [Ptolemy’s Optics]
 related: [xv-23, iii-20, iii-21, iii-14, viii-16, xi-25]
 summary: Geometry joined with experiment and a psychology of perception — the surviving Latin-from-Arabic text; mirrors plane, convex, and concave; the image located by extending the broken ray backward; the earliest surviving tables of refraction; illusion as sound relations misread by ordinary assumptions; an anatomy of mediation across thresholds.
 epigraph: "A real influence can be received through a distorted path, and a genuine appearance can be assigned to the wrong location or cause."
-backdrop: mirrorcascade
+backdrop: mirrors-cascading-light-down-shaft
 ---
 
 Claudius Ptolemy's *Optics*, composed in the second century CE, united geometrical analysis with experiment and a more developed psychology of perception. The original Greek is lost. Much of the work survives through a Latin translation made from an Arabic translation, and the first book is missing. Its surviving condition requires caution, but its importance is unmistakable.

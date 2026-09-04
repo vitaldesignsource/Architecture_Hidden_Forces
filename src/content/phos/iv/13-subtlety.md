@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Subtlety]
 related: [iv-1, iv-12, xx-10, xi-26, iv-20]
 summary: Action through fine distinctions and minimal pressure — but weakness can imitate subtlety, and ambiguity can disguise itself as refinement.
-backdrop: reedslamp
+backdrop: lamp-among-reeds-in-lake-mist
 ---
 
 Subtlety is the ability of a light to act through fine distinctions, minimal pressure, and delicate degrees of manifestation.

@@ -8,7 +8,7 @@ operation: [Orientation]
 related: [x-9, ii-24, iii-4, x-1, i-18]
 summary: Real psychic directionality — not photons, and not a decorative comparison; what attention repeatedly illuminates becomes a path, a tendency, and a character, for good or ill.
 epigraph: "What attention repeatedly illuminates becomes easier to perceive, remember, desire, and enact."
-backdrop: lighthouse
+backdrop: lighthouse-lamp-room-with-brass-optics
 ---
 
 Attention is the directed ray of consciousness. It concentrates illumination upon a selected portion of the experiential field, strengthening some contents while allowing others to recede. What attention repeatedly illuminates becomes easier to perceive, remember, desire, and enact.

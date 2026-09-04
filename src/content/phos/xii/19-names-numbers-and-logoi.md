@@ -8,7 +8,7 @@ operation: [Communication, Consecration]
 related: [ii-29, x-17, x-10, xii-13, xii-22]
 summary: A sacred name is a structured means of relation, number is intelligible proportion entering form, and a logos is the formative reason by which a thing becomes what it is — coordinated through Heka they become operative rather than descriptive.
 epigraph: "Names identify and open relation. Numbers establish proportion. Logoi articulate formative essence."
-backdrop: masons
+backdrop: quarried-blocks-in-mason-yard
 ---
 
 A sacred name is not merely a label attached to a being. It is a structured means of address, relation, invocation, and participation. Names may carry history, office, power, rhythm, divine authorisation, and the specific form through which a being becomes accessible.

@@ -1,5 +1,5 @@
 ---
-backdrop: icevent
+backdrop: meltwater-vent-in-blue-ice-cave
 position: center 30%
 ---
 

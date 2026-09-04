@@ -7,7 +7,7 @@ operation: [Withdrawal]
 related: [vi-7, vi-5, vi-10, vi-19, vi-26, xv-54, xv-55, i-19]
 summary: The metaphor privileges visibility and can turn destructive when darkness is equated with evil; at its highest limit even divine light must be surrendered.
 epigraph: "Where luminous language reaches its limit, apophatic discipline begins."
-backdrop: moonflats
+backdrop: moon-over-tidal-flats-and-channel
 ---
 
 Light is among the most powerful metaphysical images, but it cannot carry the entire weight of reality.

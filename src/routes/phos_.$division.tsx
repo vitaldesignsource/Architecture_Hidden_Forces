@@ -60,7 +60,7 @@ function DivisionPage() {
     ? groups.map((g) => ({ at: entries.find((e) => e.group === g)!.id, k: g }))
     : [{ at: entries[0]?.id ?? "", k: divisionLabel(d) }];
 
-  const backdrop = intro?.meta.backdrop ? `/bg/${intro.meta.backdrop}.webp` : "/bg/cartography.webp";
+  const backdrop = intro?.meta.backdrop ? `/bg/${intro.meta.backdrop}.webp` : "/bg/dark-hall-with-charted-stone-floor.webp";
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">

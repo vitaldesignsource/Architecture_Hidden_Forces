@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [i-12, i-11, iii-14, v-21, x-22]
 summary: A source must be distinguished from a reflector, and is always greater than any single emission — discernment begins by asking which it is.
-backdrop: sunpillar
+backdrop: radiant-sun-in-star-frame
 position: center 32%
 ---
 

@@ -11,7 +11,7 @@ text: [Kitāb al-Manāẓir]
 related: [iii-8, iii-21, ix-7, iii-17, xv-24, xv-70]
 summary: The Kitāb al-Manāẓir's rejection of extramission - light travelling from sources to objects and from objects to the eye; the physical arrival of light distinguished from the completed act of seeing; the dark chamber as a controlled field in which faint transmissions become legible.
 epigraph: "Mediation is not equivalent to fabrication."
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 Abū ʿAlī al-Ḥasan ibn al-Haytham, known in medieval Latin as Alhazen, transformed the study of sensible light. His monumental *Kitāb al-Manāẓir*, or Book of Optics, composed in the early eleventh century, united geometry, observation, controlled experiment, anatomy, and a sophisticated theory of perception.

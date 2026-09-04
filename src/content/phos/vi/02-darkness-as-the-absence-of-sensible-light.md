@@ -7,7 +7,7 @@ plane: [Physical]
 related: [vi-1, v-17, ix-7, xvi-17, v-28]
 summary: Darkness relative to the receiver — what is invisible cannot be declared nonexistent, but invisibility does not prove a hidden presence either.
 epigraph: "Darkness establishes uncertainty, not confirmation."
-backdrop: cavedunes
+backdrop: cave-window-onto-white-dunes
 position: center 45%
 ---
 

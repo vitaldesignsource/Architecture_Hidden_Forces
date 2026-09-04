@@ -6,7 +6,7 @@ tradition: [Egyptian]
 symbol: [Star]
 related: [vii-14, xii-15, ii-28, xv-10, v-19]
 summary: Enduring radiance after bodily withdrawal — which does not require every star to be read literally as a deceased person.
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Many cultures have associated the dead with stars, constellations, the Milky Way, or particular regions of the night sky. These traditions should be studied individually rather than treated as one universal doctrine.

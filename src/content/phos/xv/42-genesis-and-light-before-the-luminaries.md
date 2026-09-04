@@ -11,7 +11,7 @@ text: [Genesis]
 related: [i-1, vii-3, ii-29, vi-4, i-7, xv-49]
 summary: Light spoken on the first day and the luminaries appointed on the fourth - light as the first articulated condition through which creation becomes a structured world; the sun as vessel rather than origin; goodness declared before any eye exists to see it.
 epigraph: "Light makes a world possible by revealing boundaries, rhythms, relations, and directions."
-backdrop: moonflats
+backdrop: moon-over-tidal-flats-and-channel
 position: center 45%
 ---
 

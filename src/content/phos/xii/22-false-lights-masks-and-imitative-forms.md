@@ -8,7 +8,7 @@ operation: [Exposure, Judgment]
 related: [xi-26, xi-24, xii-11, xii-20, vi-18]
 summary: Real luminosity used to conceal, seduce, or misdirect — imitative forms feed on expectation, flatter importance, demand obedience, and isolate; authentic light may command but never needs falsehood to keep its authority.
 epigraph: "Brilliance reveals power. Coherence reveals order. Consequence reveals orientation. Right relation reveals whether the light serves the whole."
-backdrop: web
+backdrop: dew-covered-web-in-dark-woodland
 ---
 
 False light is not always nonexistent light. It may be real luminosity used to conceal, exaggerate, seduce, imitate, or misdirect. The danger lies precisely in its capacity to appear convincing.

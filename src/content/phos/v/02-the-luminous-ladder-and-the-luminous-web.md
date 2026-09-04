@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 related: [v-24, v-25, v-26, vii-13, iii-27]
 summary: The ladder explains derivation, the web explains ecology — and neither image is sufficient alone.
 epigraph: "A ladder woven into a web: vertically derived, horizontally related, and recursively active."
-backdrop: dewweb
+backdrop: dew-strung-web-over-valley-at-night
 position: center 45%
 ---
 

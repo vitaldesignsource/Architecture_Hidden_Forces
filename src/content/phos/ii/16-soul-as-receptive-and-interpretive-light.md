@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Greek]
 plane: [Psychic]
 related: [ii-14, ii-21, x-5, x-6, vi-18, i-18]
 summary: The soul never receives passively; it is chamber, mirror, lens, prism, and translator at once — and its task is to become conscious of how it colours what it receives.
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 The soul — *Psychē* — is the living intermediary of sensation, image, desire, memory, movement, perception, and inward organisation.

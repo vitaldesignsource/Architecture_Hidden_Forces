@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-4, vi-26, vi-20, xix-19, vi-8]
 summary: The absence of something that ought to be present — privative darkness follows loss or obstruction, where primordial darkness precedes disclosure.
-backdrop: burnslope
+backdrop: burned-forest-slope-regrowing
 ---
 
 Privation is the absence of something that ought to be present for a being or process to fulfil its proper capacity.

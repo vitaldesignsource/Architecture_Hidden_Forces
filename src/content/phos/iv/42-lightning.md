@@ -7,7 +7,7 @@ quality: [Lightning]
 symbol: [Lightning Bolt]
 related: [vii-25, xvii-14, iii-29, iv-41, iii-9]
 summary: Unbuffered transduction — potential difference becoming a luminous and material event, and a demonstration of why mediation matters.
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 Lightning is a massive electrical discharge occurring within clouds, between clouds, or between cloud and ground. It produces intense light, heat, electromagnetic disturbance, rapid expansion of air, and thunder.

@@ -8,7 +8,7 @@ operation: [Inspiration]
 related: [x-13, xiii-9, xiii-2, xiii-11, x-10, xii-19]
 summary: The entrance of a formative current into the soul, taken inward like breath and given expression — neither manufactured by the receiver nor passively transmitted; disciplined by purification and craft so the vessel can hold what it receives.
 epigraph: "A higher idea can be damaged by an inadequate vessel."
-backdrop: breath
+backdrop: seated-figure-breathing-in-flooded-hall
 ---
 
 Inspiration is the entrance of a formative current into the soul. Its ancient association with breathing is exact: something is received, taken inward, and given expression through the life of the recipient. Inspiration may arrive as an idea, image, melody, symbol, method, doctrine, healing impulse, artistic vision, or sudden knowledge of what must be done.

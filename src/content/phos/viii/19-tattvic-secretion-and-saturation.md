@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [viii-17, viii-15, v-29, vi-17, ii-13]
 summary: Secretion reveals what a vessel can radiate; saturation reveals where capacity has become fixation.
-backdrop: wellfall
+backdrop: column-of-water-falling-into-well
 position: center 55%
 ---
 

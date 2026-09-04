@@ -9,7 +9,7 @@ operation: [Recognition, Judgment]
 related: [vi-19, vi-18, x-12, xi-25, xx-14, ix-20]
 summary: Psychic excitement imitating illumination by accelerating thought and charging coincidence with importance - the distinction not made by intensity but by whether the state survives stillness, permits delay, and remains compatible with eating, sleeping, listening, and working.
 epigraph: "Light that is real does not need frantic defence."
-backdrop: whirlpool
+backdrop: whirlpool-in-dark-open-water
 ---
 
 Psychic excitement can imitate illumination. It accelerates thought, intensifies association, increases confidence, and makes coincidences feel charged with universal importance. Because genuine illumination may also produce energy and joy, the distinction cannot be made by intensity alone.

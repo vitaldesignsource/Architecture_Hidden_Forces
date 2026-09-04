@@ -9,7 +9,7 @@ operation: [Recognition, Judgment, Healing]
 related: [xvi-24, xi-20, xi-22, ix-21, xi-25, xx-15]
 summary: Psychology and neurology treated as allies rather than rivals - migraine aura, afterimages, fever, sensory deprivation, sleep transitions, and medication effects understood on their own terms without settling every question of meaning; two symmetrical errors refused.
 epigraph: "When experiences involve dangerous commands, severe sleeplessness, or loss of ordinary functioning, practice should stop and appropriate professional support should be sought."
-backdrop: sleeper
+backdrop: sleeper-under-night-sky-window
 ---
 
 Psychological and neurological understanding should be treated as allies of spiritual discernment. Recognising the bodily or psychological conditions surrounding an experience does not make the experience meaningless. It clarifies the instruments through which the event became conscious.

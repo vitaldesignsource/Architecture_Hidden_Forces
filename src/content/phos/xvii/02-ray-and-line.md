@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [iii-4, iii-2, iii-8, xv-4, xvii-1, viii-16]
 summary: A point placed into motion, adding direction and linking source with receiver - the most elementary geometry of relation, retaining reference to its origin; Aten's rays terminating in hands because solar radiance reaches, gives, and sustains.
 epigraph: "The luminous line is not merely distance - it is the active bond between source and manifestation."
-backdrop: hallrays
+backdrop: rays-crossing-flooded-stone-hall
 ---
 
 A line is a point placed into motion. A luminous ray adds direction, linking a source with something capable of receiving its influence. It is therefore the most elementary geometry of relation.

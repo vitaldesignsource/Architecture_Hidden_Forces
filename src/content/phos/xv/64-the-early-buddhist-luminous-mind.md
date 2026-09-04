@@ -10,7 +10,7 @@ text: [Aṅguttara Nikāya]
 related: [vi-14, vi-3, x-1, ix-20, xi-25, xv-68]
 summary: Pabhassaraṃ idaṃ cittaṃ - the mind luminous and defiled by incoming defilements, and freed from them; luminosity as the mind's capacity to know rather than proof of a permanent Self; obscuration without essential corruption, and therefore workability.
 epigraph: "The field becomes clouded, but clouding is not necessarily the final truth of the field."
-backdrop: cavepool
+backdrop: cave-pool-under-single-light-shaft
 position: center 45%
 ---
 

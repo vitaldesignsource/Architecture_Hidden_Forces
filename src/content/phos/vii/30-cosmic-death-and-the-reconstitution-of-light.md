@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 operation: [Dissolution, Return]
 related: [ii-28, ix-23, vii-13, xiii-21, vi-25]
 summary: The liberation of force from an exhausted form — reconstitution does not restore the identical form but gathers released potential into a new architecture.
-backdrop: crater
+backdrop: night-crater-with-glowing-lava
 ---
 
 Cosmic death is not absolute disappearance. Stars exhaust fuels, transform, shed material, collapse, or leave remnants according to their mass and developmental history. Their matter may enter new cosmic relationships from which later stars, planets, and living forms emerge.

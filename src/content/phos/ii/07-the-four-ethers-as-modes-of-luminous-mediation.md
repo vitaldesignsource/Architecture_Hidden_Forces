@@ -8,7 +8,7 @@ operation: [Animation, Differentiation, Formation, Integration]
 related: [viii-5, viii-6, viii-7, viii-8, ii-6, ii-18, xv-94]
 summary: Warmth awakens, Light differentiates, Tone orders, Life integrates — four interdependent functions that recur within a single process rather than a veil crossed once.
 epigraph: "Warmth awakens. Light differentiates. Tone orders. Life integrates."
-backdrop: etherveils
+backdrop: etheric-veils-of-light-in-grotto
 position: center 45%
 ---
 

@@ -11,7 +11,7 @@ text: [Pyramid Texts]
 related: [vii-14, vii-15, xii-15, xiv-20, xv-3, xii-10]
 summary: The earliest surviving corpus, first in the pyramid of Unas — the dead king joining the imperishable stars, travelling with Re, becoming Osiris, by utterances that were themselves technologies of transformation; ascent as entrance into cosmic operation, not escape.
 epigraph: "The king rises so that he may join the powers maintaining the world."
-backdrop: startemple
+backdrop: star-trails-over-ruined-temple
 position: center 45%
 ---
 

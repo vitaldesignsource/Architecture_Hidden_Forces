@@ -1,5 +1,5 @@
 ---
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 position: center 40%
 ---
 

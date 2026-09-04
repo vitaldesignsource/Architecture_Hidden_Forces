@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Intensity]
 related: [iv-2, vi-19, xi-26, iv-26, ii-12]
 summary: Local strength of presence — not identical with effectiveness, since the correct intensity is relational to purpose and to the capacity of the receiver.
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Intensity is the local strength with which light becomes present. Physically, it concerns how much luminous or radiant power reaches a given region. Phenomenologically, it is experienced as brightness, vividness, pressure, or force of appearance.

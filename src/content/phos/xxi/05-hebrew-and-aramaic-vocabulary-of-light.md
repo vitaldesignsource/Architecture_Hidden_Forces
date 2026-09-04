@@ -12,7 +12,7 @@ text: [Genesis, Ezekiel, Zohar]
 related: [xv-42, xv-44, xv-49, xvii-22, xv-43, xxi-6]
 summary: Hebrew ’or, nogah, zohar, and kavod, together with ’esh, ner, lappid, baraq, and ḥoshekh - and Aramaic nəhōrā, which must be divided by dialect rather than treated as a single timeless language.
 epigraph: "Kavod should not be reduced to light, although divine radiance may be one mode of its appearance."
-backdrop: reedslamp
+backdrop: lamp-among-reeds-in-lake-mist
 ---
 
 The principal Hebrew word is אוֹר — *’or*, light, illumination, or daylight. Its verbal root can express becoming light or giving light. In Genesis, light appears before the creation of the celestial luminaries, allowing later traditions to distinguish primordial light from the sun, moon, and stars — the reading traced in [[xv-42|Genesis and light before the luminaries]].

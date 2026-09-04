@@ -10,7 +10,7 @@ symbol: [Crypt]
 related: [xiii-12, xiv-24, xiii-30, ii-28, xx-17, ii-25]
 summary: Consecration giving light a vessel, and imprisonment beginning when the vessel claims ownership - purpose, limits, maintenance, and a lawful means of release determined before a form is established, and the form revisited to ask whether it still transmits or merely retains.
 epigraph: "A mature practitioner does not seek to possess illumination."
-backdrop: blackspire
+backdrop: black-spire-with-golden-light-seam
 position: center 50%
 ---
 

@@ -7,7 +7,7 @@ plane: [Psychic, Imaginal]
 related: [xi-2, xi-3, xi-5, x-8, x-13]
 summary: The sign that arises as concentration matures — learning sign refined into counterpart sign; an image formed where disciplined attention, psychic substance, and the object enter sustained relation, to be stabilised without being worshipped.
 epigraph: "The nimitta should be stabilised without being worshipped."
-backdrop: moonflats
+backdrop: moon-over-tidal-flats-and-channel
 ---
 
 *Nimitta* means a sign, mark, or mental appearance. In Theravāda meditation literature, particularly the *Visuddhimagga*, the term may refer to signs arising as concentration develops around a meditation object. The preparatory object may give rise to a learning sign, which may then become purified into a counterpart sign associated with access concentration and absorption.

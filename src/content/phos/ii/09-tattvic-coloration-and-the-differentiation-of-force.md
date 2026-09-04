@@ -7,7 +7,7 @@ quality: [Color]
 operation: [Differentiation]
 related: [ii-8, viii-20, viii-16, xix-6, xx-8, vi-17]
 summary: Coloration concerns the behaviour and formative tendency of a current, not its sensory appearance — and character begins in the proportion among tattvas, not the presence of one.
-backdrop: spectralvalley
+backdrop: spectral-valley-with-rainbow-beam
 position: center 50%
 ---
 

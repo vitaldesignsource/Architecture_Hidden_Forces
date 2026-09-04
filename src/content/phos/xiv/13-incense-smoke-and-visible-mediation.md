@@ -8,7 +8,7 @@ operation: [Communication]
 related: [xiv-2, iii-8, viii-12, ii-4, xiv-1, xiii-9]
 summary: Smoke giving visible form to the movement of air, fragrance entering psychic life through breath — and the beam that becomes visible only when it passes through suspended particles, the most precise symbol of mediation the rite possesses.
 epigraph: "The atmosphere does not create the light, but it gives visible body to the light's passage."
-backdrop: hallrays
+backdrop: rays-crossing-flooded-stone-hall
 ---
 
 Incense gives visible form to the movement of otherwise invisible air. Smoke rises, folds, disperses, gathers, and responds to subtle currents. It makes atmosphere perceptible.

@@ -8,7 +8,7 @@ operation: [Vivification, Differentiation]
 related: [ix-2, ix-25, i-7, v-13, ii-18]
 summary: Energy, information, orientation, and temporal instruction — and beneath the solar economy, the formative light that makes organised vitality possible; radiance becomes life only through reception.
 epigraph: "Life is not simply exposure to power; it is the capacity to receive power, qualify it, incorporate it, and transform it into a sustained living order."
-backdrop: leafroots
+backdrop: leaf-and-root-system-in-cross-section
 position: center 50%
 ---
 

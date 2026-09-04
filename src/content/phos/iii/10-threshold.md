@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Awakening, Dissolution]
 related: [vii-10, xiii-17, ix-23, xiv-6, iii-9]
 summary: The boundary at which a current changes its mode of operation — not a line crossed but a zone of instability, selection, and possible transformation.
-backdrop: threshold
+backdrop: threshold-arches-in-misted-vault
 ---
 
 A threshold is the boundary at which a luminous current changes its mode of operation. It marks the passage between fields, media, states, or levels of organisation.

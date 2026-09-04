@@ -10,7 +10,7 @@ text: [Book of Gates]
 related: [iii-10, xiii-16, xiii-14, xiv-23, xii-11, xv-8]
 summary: The night reorganised around guarded thresholds whose names must be known — every gate tests and transforms the one who crosses, light acting as revelation and judgement; an anatomy of luminous thresholds in which passage demands a change in capacity.
 epigraph: "Higher light cannot simply be seized by desire. Every passage demands a change in capacity."
-backdrop: gateway
+backdrop: gateway-cut-through-rock-to-mist
 ---
 
 The Book of Gates reorganises the nocturnal journey around a succession of guarded thresholds. It first appears at the end of the Eighteenth Dynasty and becomes especially important in Ramesside royal tombs. The night is divided into regions separated by gates, each possessing guardian beings whose identities and names must be known.

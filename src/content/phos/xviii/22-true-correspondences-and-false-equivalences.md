@@ -9,7 +9,7 @@ operation: [Recognition, Judgment, Integration]
 related: [xvi-26, portal-6, xi-25, xiii-30, ii-25, xvi-25]
 summary: The rule of the whole division - correspondence preserving likeness and difference at once, the strongest holding across form, function, experience, history, and system; and five distinct relationships that must not all be called sameness.
 epigraph: "True light clarifies relation. False light makes everything appear interchangeable."
-backdrop: cartography
+backdrop: dark-hall-with-charted-stone-floor
 ---
 
 A true correspondence preserves both likeness and difference. It identifies an actual structural relationship without pretending that two terms are historically, physically, or metaphysically identical.

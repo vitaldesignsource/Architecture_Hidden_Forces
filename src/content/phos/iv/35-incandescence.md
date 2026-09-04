@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific, Alchemical]
 quality: [Incandescence]
 related: [iv-56, viii-1, iv-52, xiii-20, ii-22]
 summary: Matter made luminous through heat — form brought to such intensity that its interior activity becomes externally visible.
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Incandescence is light emitted because matter has been heated to a sufficiently high temperature. Heated metal, molten material, flame-heated particles, and the filament of a traditional lamp become incandescent.

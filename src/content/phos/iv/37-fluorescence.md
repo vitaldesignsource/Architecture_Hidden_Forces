@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Fluorescence]
 related: [iv-36, iii-24, iv-52, xi-25]
 summary: Immediate responsive luminosity that ends when excitation ceases — and the discernment question it raises: does the vessel retain what it received?
-backdrop: apothecary
+backdrop: spiral-apothecary-of-lit-vials
 ---
 
 Fluorescence occurs when a substance absorbs radiation and rapidly re-emits part of that energy as light, typically at a longer wavelength. The visible emission generally ends almost immediately when excitation ceases.

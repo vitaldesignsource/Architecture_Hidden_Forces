@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Luminosity]
 related: [xvi-15, xvi-18, iv-31, iv-27, i-3]
 summary: The general condition of being luminous, broad enough to contain glow, radiance, brilliance, and incandescence — something may be visually dim yet noetically luminous.
-backdrop: observatory
+backdrop: mountain-observatory-above-cloud
 ---
 
 Luminosity is the general condition or degree of being luminous. It is broader than glow, radiance, brilliance, or incandescence and can contain all of them.

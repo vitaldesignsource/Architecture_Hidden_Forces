@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Imaginal]
 related: [v-10, v-12, x-15, xi-18, xx-7, v-27]
 summary: Dream light as an order among the gradations - a self-luminous field whose source is usually not represented, standing between psychic-imaginal light and astral light, and ranked by what it discloses rather than by how bright it is.
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 Among the orders of light, dream light is the illumination of a field that lights itself. Waking sensible light has a source that can be located and a medium that can be crossed. Dream light has neither in the ordinary sense. Environments, figures, colours, and movements become perceptible within it, yet its source is frequently not represented anywhere in the dream, and what it illuminates is assembled rather than encountered.

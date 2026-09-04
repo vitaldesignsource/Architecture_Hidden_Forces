@@ -10,7 +10,7 @@ symbol: [Eye]
 related: [xv-11, xv-12, xiii-16, xiii-15, ii-25, xiii-30]
 summary: Light associated with justice because it exposes what concealment protects - Utu-Shamash crossing the heavens as witness to what human authority overlooks; yet exposure alone is not justice, since light without mercy humiliates and surveillance becomes domination.
 epigraph: "Justice is not spiritual brightness punishing darkness. It is the reestablishment of right relation."
-backdrop: sluicegates
+backdrop: sluice-gates-releasing-white-water
 position: center 45%
 ---
 

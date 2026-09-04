@@ -9,7 +9,7 @@ operation: [Judgment, Integration]
 related: [xi-25, xiii-30, ii-25, xii-20, xx-12, xx-9]
 summary: Fruits observed across time and at several levels - spiritual, psychic, etheric, bodily, and relational; difficult consequences not automatically invalidating an encounter, since genuine illumination can dissolve false identities, but disruption must participate in an intelligible process of integration.
 epigraph: "It may be the one that makes a previously impossible act of honesty, forgiveness, protection, or transformation possible."
-backdrop: lightroad
+backdrop: figure-at-fork-of-two-light-roads
 position: center 50%
 ---
 

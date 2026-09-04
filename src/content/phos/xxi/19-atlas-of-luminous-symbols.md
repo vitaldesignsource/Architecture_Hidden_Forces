@@ -10,7 +10,7 @@ symbol: [Point, Ray, Circle, Halo, Mirror, Prism, Cave, Temple]
 related: [xvii-1, xvii-16, xvii-25, xvii-8, xvii-29, xvii-30]
 summary: The point, ray, circle, sphere, triangle, flame, lamp, crown, halo, mandorla, star, solar disc, winged disc, solar barque, eye, mirror, crystal, rainbow, lotus, menorah, cross of light, radiant heart, black sun, cave, and temple - each with visual examples, geographical range, historical development, ritual use, and meaning within the system, and none assumed related to another merely because they look alike.
 epigraph: "A symbol is not merely something that represents an idea; it can organise perception and mediate force."
-backdrop: masons
+backdrop: quarried-blocks-in-mason-yard
 ---
 
 The Atlas gathers the point, ray, circle, sphere, triangle, flame, lamp, crown, halo, mandorla, star, solar disc, winged disc, solar barque, eye, mirror, crystal, rainbow, lotus, menorah, cross of light, radiant heart, black sun, cave, and temple.

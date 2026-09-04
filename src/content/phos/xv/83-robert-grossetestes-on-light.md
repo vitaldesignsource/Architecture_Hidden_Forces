@@ -11,7 +11,7 @@ text: [De Luce]
 related: [ii-2, i-7, iii-2, ii-5, v-22, xv-84]
 summary: De Luce's proposal that lux is the first corporeal form - a dimensionless point multiplying itself in every direction and carrying matter into extension, then lumen returning inward to gather the spheres; source-light distinguished from the work performed by its procession.
 epigraph: "Light does not travel through a preexisting neutral container; its propagation produces the field of extension in which bodies can appear."
-backdrop: crater
+backdrop: night-crater-with-glowing-lava
 ---
 
 Robert Grosseteste's short thirteenth-century treatise *De Luce*, or On Light, presents one of the boldest medieval cosmologies of illumination. Its central proposition is that light - *lux* - is the first corporeal form. Prime matter is not initially an extended physical body. It acquires three-dimensional extension because light, by its nature, multiplies itself equally in every direction and carries matter outward with it.

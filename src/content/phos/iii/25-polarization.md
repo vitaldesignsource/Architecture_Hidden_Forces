@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-11, iii-11, xx-12, vi-16, xi-25]
 summary: Selection according to orientation — discernment filters consciously, unexamined polarisation filters invisibly.
 epigraph: "The question is not whether selection occurs, but whether the principle of selection is understood and rightly ordered."
-backdrop: filters
+backdrop: stacked-glass-filters-in-dark-cell
 ---
 
 In physical optics, polarisation concerns the orientation of light's oscillation. It reveals that light can possess internal directional order beyond its general path of travel.

@@ -9,7 +9,7 @@ operation: [Orientation, Recognition]
 related: [xv-1, xv-19, xv-83, xvi-1, xv-94, xxi-15]
 summary: The history of light displayed across several simultaneous tracks - optics, cosmology, theology, philosophy, ritual, mysticism, art, and subtle-body teaching - so that humanity is not made to march through a single sequence from myth to reason, with the date of a text distinguished from the date of its surviving manuscript.
 epigraph: "Ancient must never be allowed to become a vague category in which writings separated by a thousand years are placed side by side without explanation."
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 ---
 
 The chronology displays the history of light across several simultaneous tracks: scientific optics, cosmology, theology, philosophy, ritual, mysticism, art, and subtle-body teaching. This prevents the misleading impression that humanity moved through a single sequence from myth to reason.

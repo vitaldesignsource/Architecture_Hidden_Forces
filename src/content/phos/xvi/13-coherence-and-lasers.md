@@ -10,7 +10,7 @@ symbol: [Ray, Lamp]
 related: [xvi-12, xvi-7, ii-22, x-9, ix-20, xvi-26]
 summary: Temporal and spatial stability of phase, and the stimulated emission by which an ordered field is amplified within a resonator - a modest coherent source outperforming a stronger incoherent one, because organisation changes efficacy.
 epigraph: "The Psychic Flywheel is not strengthened merely by the amount of psychic energy added to it."
-backdrop: lighthouse
+backdrop: lighthouse-lamp-room-with-brass-optics
 ---
 
 Coherence describes the stability of phase relationships within light. Temporal coherence concerns how predictably phase is maintained over time and relates to spectral purity. Spatial coherence concerns phase relationships across different parts of a wavefront.

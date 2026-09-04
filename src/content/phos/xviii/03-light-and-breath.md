@@ -9,7 +9,7 @@ operation: [Vivification, Animation, Orientation]
 related: [ix-18, v-13, ii-29, xv-73, x-9, xvi-22]
 summary: Invisible movement made intimate, crossing between world and organism as pneuma, ruaḥ, prāṇa, and qi - terms belonging to different cosmologies yet converging structurally; light giving breath orientation and breath giving light rhythmic embodiment.
 epigraph: "A luminous insight that never enters breath may remain disembodied."
-backdrop: breath
+backdrop: seated-figure-breathing-in-flooded-hall
 ---
 
 Breath is invisible movement made intimate. It crosses the boundary between world and organism, becoming rhythm, metabolism, voice, sensation, and life. This made it a natural bearer of spirit in concepts such as *pneuma*, *ruaḥ*, *prāṇa*, and *qi*.

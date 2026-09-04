@@ -1,5 +1,5 @@
 ---
-backdrop: crystal
+backdrop: crystal-suspended-in-glass-sphere
 position: center 45%
 ---
 

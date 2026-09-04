@@ -10,7 +10,7 @@ symbol: [Star]
 related: [vii-14, vii-15, xv-2, xii-10, v-15, xvii-1]
 summary: A distant but enduring point whose courses outlast a human life - the imperishable circumpolar stars of Egyptian mortuary belief, divine signs in Mesopotamian iconography, and later stellar systems whose point-counts belong to different geometries.
 epigraph: "Unlike the sun, the star requires darkness to become visible."
-backdrop: stellarancestors
+backdrop: standing-stones-under-milky-way
 ---
 
 The star is a distant but enduring point of light. Because stars appear to preserve their courses beyond the span of human life, they became natural symbols of permanence, divine order, heavenly beings, ancestors, and the transfigured dead.

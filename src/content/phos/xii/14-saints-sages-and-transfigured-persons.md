@@ -8,7 +8,7 @@ operation: [Transfiguration, Consecration]
 related: [xi-13, xi-10, ix-20, xii-16, xi-14]
 summary: Human beings whose members have become coherent around a higher principle — luminosity as personal opacity made transparent; sanctity is not the destruction of form but its consecration.
 epigraph: "Sanctity is not the destruction of form but its consecration."
-backdrop: sage
+backdrop: seated-sage-in-dark-cell
 position: center 62%
 ---
 

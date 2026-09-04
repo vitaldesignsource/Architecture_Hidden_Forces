@@ -7,7 +7,7 @@ plane: [Formative]
 related: [iii-7, ii-5, ii-10, viii-17, viii-26]
 summary: The local weather of Morphaithēr — tattva describes direction, guna describes condition.
 epigraph: "A tattvic atmosphere is the local weather of Morphaithēr."
-backdrop: spectralvalley
+backdrop: spectral-valley-with-rainbow-beam
 position: center 50%
 ---
 

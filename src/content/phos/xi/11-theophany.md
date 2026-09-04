@@ -8,7 +8,7 @@ operation: [Manifestation, Revelation]
 related: [xi-12, xi-13, xi-16, v-3, xi-26]
 summary: Divine presence genuinely manifest through a form adapted to the receiver — a real mediation, neither the totality of the divine nor an empty costume; recognised by truth, authority, coherence, and consequence, not brightness.
 epigraph: "The form is neither the totality of the divine nor an empty costume. It is a real mediation."
-backdrop: basalthall
+backdrop: basalt-cavern-cut-by-light-shafts
 ---
 
 Theophany is the manifestation of divine presence through a perceptible form. Light, fire, cloud, voice, radiant darkness, angelic form, throne, human figure, mountain, or natural event may become the vessel through which divinity discloses itself.

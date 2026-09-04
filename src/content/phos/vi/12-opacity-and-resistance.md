@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Density]
 related: [ii-13, iv-5, vi-16, iv-12, vi-14]
 summary: Without resistance light could produce no contrast or boundary — opacity can be wall, shield, surface, prison, or foundation.
-backdrop: basalthall
+backdrop: basalt-cavern-cut-by-light-shafts
 ---
 
 Opacity is the condition in which a material or medium prevents visible light from passing through it. Resistance is the broader capacity of a form to limit, redirect, absorb, or oppose a current.

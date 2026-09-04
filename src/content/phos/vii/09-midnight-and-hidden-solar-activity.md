@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Alchemical]
 related: [vi-21, vi-22, vi-23, vii-29, vii-8]
 summary: Concealed continuity — the night exists not because the Sun has died but because the observer is turned away.
 epigraph: "Midnight is not the annihilation of light. It is light operating beyond the current face of the world."
-backdrop: moonfall
+backdrop: moonlit-waterfall-between-two-lakes
 position: center 45%
 ---
 

@@ -9,7 +9,7 @@ operation: [Judgment, Orientation, Withdrawal]
 related: [xx-15, xx-12, xx-14, xiv-25, xviii-19, xix-19]
 summary: A path may be effective, ancient, visionary, or powerful and still be unsuitable for a particular person, time, or purpose - to be judged by its sources, methods, treatment of dissent, relationship to power, the people it produces, and one's own motive - and refusal, delay, and leaving can each be acts of wisdom rather than betrayal.
 epigraph: "The existence of a path does not establish that it should be followed."
-backdrop: forkroad
+backdrop: forked-road-under-dawn-sky
 position: center 58%
 ---
 

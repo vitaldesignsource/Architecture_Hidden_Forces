@@ -5,7 +5,7 @@ confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Platonic]
 related: [xv-19, xix-16, xix-19, xviii-13, i-16, i-17]
 summary: Light participates in goodness when it enters right relation — its goodness lies in fecundity, proportion, and truthfulness, not in brightness.
-backdrop: olivetree
+backdrop: olive-tree-on-ridge-at-dusk
 ---
 
 Light has often been associated with the Good because it gives without immediately depriving, reveals without necessarily possessing, and enables beings to perceive and actualise their capacities.

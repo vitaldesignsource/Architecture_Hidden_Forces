@@ -8,7 +8,7 @@ operation: [Illumination]
 related: [v-3, v-4, i-11, i-12, xii-2, i-13]
 summary: The divine as the source of manifestation and intelligibility — real ontological illumination, not electromagnetic radiation and not figurative language; and a source that exceeds even its own light.
 epigraph: "Its radiance is given without the exhaustion of its origin."
-backdrop: deitydoor
+backdrop: blinding-doorway-in-temple-wall
 position: center 50%
 ---
 

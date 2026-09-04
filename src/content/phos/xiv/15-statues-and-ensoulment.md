@@ -9,7 +9,7 @@ symbol: [Temple]
 related: [xiii-6, xiii-12, xiv-21, xii-2, xiv-16, xiv-24]
 summary: A sacred image made a localised body of presence through formation and consecration — the Opening of the Mouth and its Mesopotamian and theurgic kin; a point of participation, not a prison or a complete incarnation.
 epigraph: "The statue becomes a point of participation, not a prison or complete incarnation."
-backdrop: sculptor
+backdrop: sculptor-carving-face-in-stone
 ---
 
 A sacred statue can be more than a representation of a divine being. Through proper formation and consecration, it may become a localised body of presence — a material interface through which a god, intelligence, ancestor, or sacred power can be approached.

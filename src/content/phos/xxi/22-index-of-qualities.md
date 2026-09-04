@@ -10,7 +10,7 @@ operation: [Differentiation, Recognition]
 related: [iv-1, iv-3, iv-24, iv-26, xx-10, xx-14]
 summary: Intensity, magnitude, clarity, purity, transparency, coherence, unity, stability, directionality, density, subtlety, temperature, colour, rhythm, penetration, diffusiveness, vitality, intelligence, affect, and truthfulness - each linked to physical, phenomenological, symbolic, etheric, astral, and spiritual examples, and searchable in combination.
 epigraph: "Magnitude does not establish spiritual rank."
-backdrop: filters
+backdrop: stacked-glass-filters-in-dark-cell
 ---
 
 The Index of Qualities gathers intensity, magnitude, clarity, purity, transparency, coherence, unity, stability, directionality, density, subtlety, temperature, colour, rhythm, penetration, diffusiveness, vitality, intelligence, affect, and truthfulness.

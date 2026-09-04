@@ -9,7 +9,7 @@ operation: [Differentiation]
 related: [iv-58, viii-26, ii-9, xiv-17, x-12, xiv-4]
 summary: Colour as light received and selectively returned by matter — a receiver revealing its nature by what it gives back; lapis, ochre, Egyptian blue, cinnabar, saffron as living symbolic traditions rather than interchangeable labels, with material danger never overcome by significance.
 epigraph: "Material danger is not spiritually overcome by symbolic significance."
-backdrop: filters
+backdrop: stacked-glass-filters-in-dark-cell
 ---
 
 Sacred colour is light received and selectively returned by matter. A pigment absorbs some wavelengths and reflects others, making colour an interaction among illumination, material structure, surface, and eye. This gives pigment an important metaphysical role: it shows how a receiver reveals its nature by the light it returns.

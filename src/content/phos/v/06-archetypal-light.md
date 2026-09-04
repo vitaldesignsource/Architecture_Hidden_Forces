@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Platonic]
 plane: [Archetypal]
 related: [v-5, v-7, x-17, iii-15, xii-19]
 summary: The grammar of form rather than the finished object — and no single image exhausts the archetype from which it proceeds.
-backdrop: basinblade
+backdrop: stone-basin-under-blade-of-light
 position: center 55%
 ---
 

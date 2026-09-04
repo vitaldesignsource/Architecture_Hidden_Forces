@@ -11,7 +11,7 @@ text: [Zhouyi Cantong Qi]
 related: [xiii-22, xiii-23, xiii-25, viii-23, vi-21, xv-74]
 summary: The Seal of the Unity of the Three - trigrams, metals, furnace and crucible, dragon and tiger read across laboratory, cosmos, body, and spirit; Kan concealing true yang and Li containing true yin; knowing the white while guarding the black so that numinous light arises from their union.
 epigraph: "Alchemical luminosity is generated neither by rejecting darkness nor by maximising brightness."
-backdrop: bellfoundry
+backdrop: bell-foundry-casting-bronze-bells
 ---
 
 The Zhouyi Cantong Qi, usually translated as The Seal of the Unity of the Three, became one of the foundational scriptures of Chinese alchemy. Tradition attributes it to Wei Boyang in the second century CE, but [current scholarship](https://www.goldenelixir.com/jindan/zyctq_2.html) generally places the received work's formation between approximately the fifth and seventh centuries. Its "three" refer broadly to interconnected bodies of teaching: the Book of Changes, Daoist cosmology, and alchemical practice.

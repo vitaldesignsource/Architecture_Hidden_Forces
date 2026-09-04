@@ -10,7 +10,7 @@ symbol: [Flame]
 related: [viii-12, ii-8, viii-11, viii-14, viii-10, ix-9]
 summary: Brilliance, heat, sharpness, and vigour - the pivotal element at which movement becomes visible form; digestion, metabolism, discrimination, and assimilation as fire at different levels; radiance of person as integrated vitality; fire that must remain in relation with the other tattvas.
 epigraph: "Luminous health is not achieved by maximising fire."
-backdrop: alembic
+backdrop: copper-alembic-still-in-stone-workshop
 ---
 
 The Sanskrit term *tejas* carries a broad range of meanings: brilliance, splendour, fiery energy, heat, sharpness, vigour, authority, and luminous power. Depending upon context, it may refer to the physical fire element, a deity's radiance, intellectual sharpness, bodily vitality, ascetic power, or the forceful brilliance of a spiritually accomplished being.

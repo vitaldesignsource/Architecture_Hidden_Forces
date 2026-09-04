@@ -8,7 +8,7 @@ operation: [Orientation]
 related: [xii-9, xii-8, x-19, vii-16, xii-21]
 summary: The intermediary intelligence accompanying an individual life — not ego, conscience, or higher self, but a presence and a trajectory allotted, in Iamblichus, through the whole cosmic order; right relation to it reveals the architecture of fate.
 epigraph: "It is a presence, but it is also a trajectory."
-backdrop: daimoncompanion
+backdrop: figure-beside-luminous-daimon-companion
 position: center 55%
 ---
 

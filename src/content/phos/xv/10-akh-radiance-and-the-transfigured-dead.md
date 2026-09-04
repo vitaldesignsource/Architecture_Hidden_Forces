@@ -10,7 +10,7 @@ symbol: [Star]
 related: [xii-10, xii-14, xi-13, xiii-20, ix-23, xv-2]
 summary: The akh as an achieved condition of transfigured effectiveness rather than a component that escapes at death — related to brilliance and celestial existence without being a body of visible light; the dead made luminous, coherent, and effective through transformation.
 epigraph: "The successful dead became capable of acting from within another order."
-backdrop: nightterrace
+backdrop: night-terrace-above-cloud-sea
 ---
 
 The Egyptian *akh* is often translated as "spirit", "effective spirit", "transfigured dead", "glorious one", or "effective being". None of these English terms fully captures its range. The akh is not simply an immortal component that automatically escapes the body at death. It is an achieved condition of transfigured effectiveness.

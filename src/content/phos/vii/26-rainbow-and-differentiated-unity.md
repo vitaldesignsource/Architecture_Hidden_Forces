@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Rainbow, Prism]
 related: [iii-13, iv-58, ii-9, xvii-9, xvi-6]
 summary: The colours are not broken light but articulated possibilities made visible through mediation — a model for tattvic coloration.
-backdrop: pendantprism
+backdrop: pendant-prism-splitting-white-beam
 position: center 42%
 ---
 

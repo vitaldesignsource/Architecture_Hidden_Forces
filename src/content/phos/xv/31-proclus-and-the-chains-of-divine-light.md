@@ -10,7 +10,7 @@ symbol: [Gold]
 related: [xv-30, v-2, vii-16, xiv-18, ii-27, ii-28]
 summary: The One, the henads, and the seirai — divine properties proceeding through celestial gods, angels, daimons, souls, animals, plants, stones, metals, colours, sounds, and symbols; the solar chain; hieratic perception as an older empiricism; remaining, procession, and reversion; consecration as the discovery of an existing causal relation; planetary participation in a living cosmos.
 epigraph: "Light proceeds without exhausting its source. It differentiates without entirely losing unity."
-backdrop: spherehall
+backdrop: radiant-sphere-in-star-hall
 position: center 32%
 ---
 

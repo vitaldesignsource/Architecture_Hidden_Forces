@@ -10,7 +10,7 @@ symbol: [Solar Barque]
 related: [vii-28, vii-29, xv-6, ii-22, xvii-28, vi-23]
 summary: Light as traveller - Re crossing the day sky and passing through the nocturnal underworld, the vessel carrying divine beings, names, and protective operations through regions the disc cannot traverse alone; night as a hidden phase of solar activity.
 epigraph: "No single force completes the passage alone."
-backdrop: cavestream
+backdrop: stream-through-lit-cave-mouth
 ---
 
 The solar barque represents light as a traveller. In Egyptian cosmology the sun does not remain fixed above the world. Re crosses the daytime sky and [[vii-29|passes through the nocturnal underworld]], where divine and hostile powers participate in the drama of death, defence, regeneration, and renewed dawn.

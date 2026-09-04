@@ -7,7 +7,7 @@ plane: [Divine]
 operation: [Manifestation, Revelation]
 related: [i-5, i-14, i-6, xviii-22]
 summary: The ontological movement from being-in-itself toward being-present-to-another — the primordial generosity by which the concealed becomes communicable.
-backdrop: gatelight
+backdrop: figure-before-gate-of-white-light
 position: center 55%
 ---
 

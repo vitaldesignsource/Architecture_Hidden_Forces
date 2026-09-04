@@ -9,7 +9,7 @@ operation: [Coagula, Transfiguration, Vivification]
 related: [xiii-23, xv-51, xv-6, xiii-20, xv-56, ix-13]
 summary: Light returning to or recreating form after death, distinguished from mere survival - solar descent and dawn, seed and germination, Christian victory over death, and Egyptian reassembly and justification resembling one another without proving identity.
 epigraph: "If the exact disorder simply reappears, there has been repetition rather than rebirth."
-backdrop: glasshouse
+backdrop: abandoned-glasshouse-at-sunrise
 position: center 45%
 ---
 

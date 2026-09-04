@@ -10,7 +10,7 @@ text: [Letter to Anebo]
 related: [xv-28, xv-30, xi-25, vi-18, xiii-11, x-14]
 summary: Plotinus's editor and a philosopher in his own right — illumination beginning in purification and consisting in a turning; the Letter to Anebo's searching questions about sacrifice, divination, and daimons; a graduated view of ritual's reach; luminous discernment: an apparition's light may be real while its interpretation is mistaken; the calibration of the receiver.
 epigraph: "Illumination is not measured by the intensity of an experience alone."
-backdrop: ablutionstack
+backdrop: ablution-tower-tiered-stone-basins
 position: center 45%
 ---
 

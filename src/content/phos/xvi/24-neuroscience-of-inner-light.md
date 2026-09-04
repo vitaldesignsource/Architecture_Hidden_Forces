@@ -10,7 +10,7 @@ symbol: [Eye]
 related: [xi-20, xi-2, xi-25, xi-27, x-16, xvi-25]
 summary: Phosphenes, afterimages, entoptic patterns, hypnagogic imagery, migraine aura, and meditative luminosity - real experiences with identifiable conditions, where a neural correlate settles neither the source nor the meaning, since ordinary vision has correlates too.
 epigraph: "Neural generation, symbolic meaning, psychic projection, and authentic spiritual encounter are not necessarily mutually exclusive in every case."
-backdrop: sleeper
+backdrop: sleeper-under-night-sky-window
 ---
 
 People can experience light without corresponding external illumination. Such experiences include phosphenes, afterimages, entoptic patterns, hypnagogic imagery, migraine aura, dream light, meditation-induced luminosity, and visionary phenomena.

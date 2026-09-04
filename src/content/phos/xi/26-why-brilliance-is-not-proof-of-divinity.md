@@ -7,7 +7,7 @@ plane: [Psychic, Astral, Divine]
 related: [xi-25, xi-11, xi-16, portal-4, vi-18]
 summary: Brilliance indicates intensity of appearance, not height of source — higher light may indeed be brilliant, but counterfeit light demands submission to its appearance while authentic light increases the capacity to see.
 epigraph: "Intensity reveals that force is present. Discernment reveals what force, through what intermediary, acting upon what vessel, within what field."
-backdrop: reedslamp
+backdrop: lamp-among-reeds-in-lake-mist
 ---
 
 Brilliance indicates intensity of appearance, not necessarily height of source. Physical processes can generate overwhelming brightness. Migraine aura can produce radiant geometries. Astral beings may appear magnificent. Psychic formations can be saturated with fascination. Lower powers may employ splendour to command attention.

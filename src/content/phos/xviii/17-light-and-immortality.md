@@ -10,7 +10,7 @@ symbol: [Star, Gold]
 related: [xii-14, vii-14, xv-10, ix-24, xiii-31, xvii-27]
 summary: Not endless duration but participation in an order not exhausted by temporal change - stars, solar renewal, gold, and luminous garments as its symbols, and resurrection, soul survival, ancestral presence, reincarnation, and deification kept as distinct claims.
 epigraph: "The immortal element is not whatever lasts longest but what participates most deeply in the source that does not perish."
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Immortality is not merely endless duration. A process can continue indefinitely while remaining fragmented, unconscious, or bound to repetition. True immortality implies participation in an order not exhausted by temporal change.

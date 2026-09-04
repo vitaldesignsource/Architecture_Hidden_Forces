@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Diffusiveness, Diffuse Light]
 related: [iii-22, iv-20, iii-7, iv-50, iii-6]
 summary: Breadth increased and local concentration decreased — a mature luminous architecture balances the two: fields nourish broadly, beams act precisely.
-backdrop: mangrove
+backdrop: mangrove-roots-in-morning-mist
 ---
 
 Diffusiveness is the tendency of light to spread across a field rather than remain concentrated along a narrow path.

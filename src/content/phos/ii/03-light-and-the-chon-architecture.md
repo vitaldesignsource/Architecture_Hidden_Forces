@@ -8,7 +8,7 @@ operation: [Formation]
 related: [ix-1, ix-2, ix-11, viii-14, ii-7]
 summary: Carbon, hydrogen, oxygen, and nitrogen are the material alphabet; light does not replace their chemistry but enters relationship with it and makes the composition perceptible.
 epigraph: "CHON is the material alphabet through which formative force writes biological form."
-backdrop: mycelium
+backdrop: mycelium-threading-forest-litter
 ---
 
 Within the biological register, CHON names the four dominant material elements of organic life: carbon, hydrogen, oxygen, and nitrogen. They are not metaphysical ethers or spiritual forces. They are material elements whose chemical relationships make terrestrial biological embodiment possible.

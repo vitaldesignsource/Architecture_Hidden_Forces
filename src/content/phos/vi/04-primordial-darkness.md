@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 related: [i-2, ii-2, v-3, vi-5, vi-26]
 summary: The unarticulated condition before the distinctions of light and shadow — not a black room, since a black room is already a formed space perceived through contrast.
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 Primordial Darkness is the depth preceding the distinction between visible and invisible, light and shadow, subject and object, or form and field.

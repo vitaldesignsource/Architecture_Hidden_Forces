@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [portal-3, portal-5, xviii-22, xvi-25, xvi-26, i-20]
 summary: Four legitimate registers of luminous language — physical, phenomenological, symbolic, ontological — and the rule never to slide unconsciously between them.
-backdrop: apothecary
+backdrop: spiral-apothecary-of-lit-vials
 ---
 
 The portal must distinguish four legitimate but different uses of luminous language.

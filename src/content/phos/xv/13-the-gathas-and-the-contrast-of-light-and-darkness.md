@@ -10,7 +10,7 @@ text: [Gāthās, Yasna]
 related: [xv-14, i-16, vi-26, x-9, xi-25, xii-22]
 summary: Seventeen Old Avestan hymns, the oldest stratum of the tradition — aša against druj, truth and right order against the Lie; two primordial orientations that the wise distinguish and the foolish cannot; wisdom as luminous because it sees consequences; ethical life as luminous collaboration with Ahura Mazda.
 epigraph: "Darkness is the condition produced when intelligence becomes separated from truth, speech from reality, and action from right relation."
-backdrop: lightdoor
+backdrop: door-of-light-in-flooded-chamber
 ---
 
 The Gāthās are seventeen Old Avestan hymns embedded within the Yasna. They are traditionally attributed to Zarathustra and constitute the oldest linguistic and theological stratum of the Zoroastrian tradition. Their language is extraordinarily compressed and difficult, and major passages continue to receive different translations. Any interpretation must therefore avoid treating later Zoroastrian cosmology as though it appeared fully developed in the earliest hymns.

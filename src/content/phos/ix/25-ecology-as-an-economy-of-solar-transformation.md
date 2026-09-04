@@ -8,7 +8,7 @@ operation: [Integration]
 related: [ix-2, ix-1, viii-26, ii-5, ix-24]
 summary: An ordered household of solar transformation with an etheric dimension — shared formative atmospheres in which no organism possesses light entirely for itself.
 epigraph: "Life is sustained by participation, and participation is governed by right relation."
-backdrop: coralnursery
+backdrop: coral-nursery-in-sunlit-shallows
 position: center 50%
 ---
 

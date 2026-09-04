@@ -9,7 +9,7 @@ operation: [Recognition, Communication, Integration]
 related: [xxi-1, xxi-15, xxi-21, xviii-22, xxi-17, xxi-16]
 summary: Every significant term, variant spelling, transliteration, divine name, text, person, symbol, place, operation, and doctrine, directed to every relevant occurrence - recognising phos and phōs, Re and Ra, xwarrah and khwarrah, Dao and Tao, and classifying each teaching as historical, traditional, comparative, experiential, scientific, architectural, or speculative.
 epigraph: "Let no borrowed light be imprisoned beneath a false name."
-backdrop: mycelium
+backdrop: mycelium-threading-forest-litter
 ---
 
 The General Concordance is the final connective instrument of the encyclopaedia. It records every significant term, variant spelling, transliteration, divine name, text, person, symbol, place, operation, and doctrine, directing the reader to every relevant occurrence.

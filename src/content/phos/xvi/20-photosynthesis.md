@@ -10,7 +10,7 @@ symbol: [Lotus]
 related: [ix-2, ii-26, ix-25, xvi-21, xvi-23, xiii-23]
 summary: Photons absorbed by pigments, excitation funnelled to reaction centres, charge separation driving electron transfer and the production of ATP and reducing power - light becoming growth not by turning into matter but by driving an organised sequence, with excess energy that must be safely dissipated.
 epigraph: "The plant does not passively absorb all light. Its structure determines what can be received and how it is transformed."
-backdrop: leafroots
+backdrop: leaf-and-root-system-in-cross-section
 position: center 50%
 ---
 

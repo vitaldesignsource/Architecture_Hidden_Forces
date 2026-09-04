@@ -11,7 +11,7 @@ text: [Gāthās, Yasna, Mihr Yašt, Bundahišn, Dēnkard]
 related: [xv-13, xv-14, xv-15, xv-16, xxi-10, xii-2]
 summary: Raocah- for light and brightness, ātar for fire, and xᵛarənah - later xwarrah or khwarrah - for a glory that cannot be translated as optical radiance, being a power of legitimacy, excellence, and participation in a higher order.
 epigraph: "Xᵛarənah cannot simply be translated as optical radiance."
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 The Iranian section centres upon the Avestan semantic fields of light, fire, glory, truth, and the luminous realms. *Raocah-* belongs to the vocabulary of light and brightness; its forms appear in expressions involving the celestial lights and the realm of endless light. *Ātar* is fire, both as a physical reality and as a sacred presence within Zoroastrian life — the subject of [[xv-14|the entry on Avestan fire]].

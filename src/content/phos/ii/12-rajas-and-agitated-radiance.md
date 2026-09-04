@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Intensity, Brilliance, Pulsation]
 related: [ii-10, ii-13, xx-10, xi-26, vi-19, iv-1]
 summary: Motion, intensity, and striving give light urgency; rajasic light rarely reveals falsely but rarely reveals completely — the moving field disturbs its own image.
-backdrop: whirlpool
+backdrop: whirlpool-in-dark-open-water
 ---
 
 Rajas is the principle of motion, intensity, striving, expansion, friction, and change. It gives light urgency and gives force the momentum required to overcome inertia.

@@ -10,7 +10,7 @@ symbol: [Lamp]
 related: [xvi-14, xvi-16, xi-27, xvi-23, xvi-25, xvi-26]
 summary: Radiometry in watts and photometry in lumens, candelas, lux, and nits - the second weighted by human visual sensitivity, so that equal radiant power at two wavelengths produces unequal brightness; every instrument measuring a specified property within a defined range.
 epigraph: "Failure of one instrument to detect something outside its domain is not proof of nonexistence."
-backdrop: tally
+backdrop: hands-marking-clay-tally
 ---
 
 Radiometry measures electromagnetic radiation in physical units. Radiant flux is measured in watts; irradiance measures radiant power arriving per unit area; radiance incorporates direction and projected area.

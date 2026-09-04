@@ -11,7 +11,7 @@ text: [Ṛgveda]
 related: [viii-1, viii-3, xii-2, vii-4, ii-29, xv-59]
 summary: Fire as flame, god, priest, and messenger; the sun as sovereign vision participating in ṛta; and Dawn as the ever-renewed threshold between concealment and manifestation - three distinct operations of light, transformative, governing, and revelatory.
 epigraph: "Agni transforms. Uṣas reveals. Sūrya governs."
-backdrop: burnslope
+backdrop: burned-forest-slope-regrowing
 position: center 45%
 ---
 

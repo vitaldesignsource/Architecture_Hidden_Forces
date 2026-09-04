@@ -9,7 +9,7 @@ operation: [Differentiation, Recognition, Judgment]
 related: [xviii-22, ii-8, viii-12, ix-17, xvi-23, xxi-1]
 summary: Terms, levels, colours, elements, beings, planets, ethers, tattvas, and operations compared with the kind of correspondence always stated - historical, structural, functional, symbolic, experiential, or native to the system - each row carrying tradition, source, original term, literal meaning, extended meaning, proposed relation, strength, and cautions.
 epigraph: "Instruments of disciplined comparison instead of machines for producing superficial equivalence."
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 The tables compare terms, levels, colours, elements, beings, planets, ethers, tattvas, and operations while clearly indicating the kind of correspondence being proposed.

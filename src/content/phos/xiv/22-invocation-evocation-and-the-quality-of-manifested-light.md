@@ -8,7 +8,7 @@ operation: [Manifestation]
 related: [xii-20, xii-22, xi-26, xiv-23, xiv-21, xii-21]
 summary: Calling a power inward into participation, or into a defined external field — a functional rather than absolute distinction; in both, the quality of the manifested light matters more than its intensity, since brilliance alone identifies no order of being.
 epigraph: "Coherent manifestations produce ordered consequences and retain continuity of identity."
-backdrop: veils
+backdrop: figure-before-hanging-veils-of-light
 ---
 
 Invocation ordinarily describes calling a power inward or into participation with the ritual consciousness. Evocation ordinarily describes calling a presence into a defined external or intermediate field. Historical traditions use these terms differently, so the distinction should be treated as functional rather than absolute.

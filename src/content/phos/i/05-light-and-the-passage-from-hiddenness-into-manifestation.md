@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Manifestation, Formation]
 related: [ii-4, ii-9, ii-18, portal-7, xix-7, i-13]
 summary: Manifestation is always selective — at every stage something is revealed and something remains concealed, and limitation is what makes a particular thing distinguishable.
-backdrop: gatelight
+backdrop: figure-before-gate-of-white-light
 position: center 55%
 ---
 

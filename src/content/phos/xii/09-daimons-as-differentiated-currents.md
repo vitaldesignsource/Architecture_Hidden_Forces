@@ -8,7 +8,7 @@ operation: [Differentiation]
 related: [v-9, xii-13, xii-10, xii-11, xi-16]
 summary: Not automatically evil demons but intermediary beings giving a general force a specific path — living vectors of mediation that work through temperament and circumstance without being reducible to them.
 epigraph: "A daimon must be approached according to the deity, order, office, and field from which it proceeds."
-backdrop: beacon
+backdrop: lighthouse-beam-across-storm-sea
 position: center 45%
 ---
 

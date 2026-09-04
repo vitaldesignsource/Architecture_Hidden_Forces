@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Splendor, Radiance]
 related: [vi-18, xvii-3, xviii-13, i-15]
 summary: Beauty is the radiance of relation becoming perceptible; it deepens under sustained perception, where glamour depends on immediate capture.
-backdrop: alabaster
+backdrop: alabaster-slab-glowing-in-cavern
 ---
 
 Beauty is the radiance of relation becoming perceptible. It appears when proportion, vitality, rhythm, meaning, material, and form enter a consonant arrangement.

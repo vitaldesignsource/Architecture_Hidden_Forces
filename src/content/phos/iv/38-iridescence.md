@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Iridescence]
 related: [iv-15, iii-13, xvi-12, i-13, iv-30]
 summary: Colour arising through structure and relation rather than pigment — one form containing several appearances, none of which exhausts it.
-backdrop: web
+backdrop: dew-covered-web-in-dark-woodland
 ---
 
 Iridescence is a changing display of colour produced when light interacts with fine structures, thin films, layered surfaces, or diffraction patterns. The visible colours shift according to the angle of illumination and observation.

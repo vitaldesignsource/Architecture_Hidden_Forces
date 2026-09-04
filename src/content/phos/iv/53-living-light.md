@@ -7,7 +7,7 @@ quality: [Living Light, Vitality]
 plane: [Vital]
 related: [ix-15, ix-16, iv-23, ii-18, iv-52]
 summary: Light appearing through an organism's active participation — a real formative quality upon the vital plane, not a claim that every living being visibly glows.
-backdrop: coralnursery
+backdrop: coral-nursery-in-sunlit-shallows
 position: center 50%
 ---
 

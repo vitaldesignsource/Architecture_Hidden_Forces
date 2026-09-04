@@ -10,7 +10,7 @@ symbol: [Mirror, Radiant Heart]
 related: [x-8, xi-8, iii-14, xiii-11, xi-25, xiii-31]
 summary: The heart as a subtle organ that rusts or is polished; dhikr gathering dispersed psychic power into collected presence; kashf as removal rather than manufacture; tajallī as disclosure through prepared recipients; Kubrawī coloured photisms; and fanāʾ followed by baqāʾ.
 epigraph: "Brilliance alone does not establish rank."
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 Islamic mysticism develops illumination as a lived transformation rather than a purely theoretical doctrine. The heart - *qalb* - is understood as a subtle organ capable of turning, receiving, remembering, and knowing. It can become rusted by heedlessness, fragmented by conflicting desires, or polished through prayer, remembrance, repentance, ethical discipline, love, and contemplative attention.

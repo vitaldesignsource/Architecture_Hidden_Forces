@@ -11,7 +11,7 @@ text: [Avesta]
 related: [xv-13, xiv-2, viii-1, viii-3, xiii-16, iv-4]
 summary: Ātar as sacred power and as the divinity present through fire — hearth and ritual flame as the visible centre of worship directed toward Ahura Mazda; fire as discernment and final test; its tending as reciprocal responsibility; the several fires distributed through creation; a material–spiritual interface.
 epigraph: "The same intensity that strengthens a coherent structure exposes weakness in an incoherent one."
-backdrop: altarflame
+backdrop: fire-altar-flame-over-dark-water
 ---
 
 Fire occupies a central position in ancient Iranian religion and Zoroastrian ritual. The Avestan *Ātar* can designate fire as a sacred power as well as the divinity present through fire. The hearth gave warmth, protection, cooked food, light, and continuity to the household, while ritual fire created a visible centre around which prayer, offering, purification, and communal identity could be organised. [Encyclopaedia Iranica](https://www.iranicaonline.org/articles/atas-fire/) traces this veneration to the ancient Indo-Iranian hearth cult and describes Ātar as a divine presence living among human beings.

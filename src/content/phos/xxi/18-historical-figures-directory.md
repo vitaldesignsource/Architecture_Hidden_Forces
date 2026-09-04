@@ -9,7 +9,7 @@ operation: [Recognition, Communication]
 related: [xv-19, xv-28, xv-78, xv-83, xv-90, xv-94]
 summary: Thinkers, ritualists, scientists, translators, artists, prophets, mystics, and philosophers with their dates, locations, traditions, primary works, major luminous concepts, influence, and modern controversies - with documented biography distinguished from traditional attribution, and legendary figures included without their mythic significance being made to depend on biographical verification.
 epigraph: "Mythic significance does not depend upon modern biographical verification."
-backdrop: ancestors
+backdrop: ancestral-faces-in-clouds-above-pilgrim
 position: center 30%
 ---
 

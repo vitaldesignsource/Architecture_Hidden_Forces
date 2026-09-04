@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Brilliance]
 related: [iv-1, vi-19, xi-26, iv-33, iv-6]
 summary: The force of appearance — which reveals fine detail when proportionate and produces glare when not; its value depends on what it discloses.
-backdrop: saltshelter
+backdrop: stone-shelter-on-white-salt-plain
 position: center 50%
 ---
 

@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-12, iii-27, ii-24, xx-11, ii-12]
 summary: Forces do not act only by their individual strength; timing, phase, and proportion decide what becomes manifest.
-backdrop: ripples
+backdrop: ripple-marks-in-flooded-vault
 ---
 
 Interference occurs when waves meet and combine. Their relation may reinforce intensity, diminish it, or produce complex patterns of alternating strength and absence.

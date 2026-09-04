@@ -4,7 +4,7 @@ labels: [Architecture of Hidden Forces Doctrine]
 tradition: [Architecture of Hidden Forces]
 related: [portal-9, portal-8]
 summary: Seven labels for the kind of knowledge an entry contains, five markers for how firmly a claim is held, and the seven levels upon which a claim may be made.
-backdrop: tally
+backdrop: hands-marking-clay-tally
 ---
 
 Each article carries visible labels identifying the kind of knowledge it contains.

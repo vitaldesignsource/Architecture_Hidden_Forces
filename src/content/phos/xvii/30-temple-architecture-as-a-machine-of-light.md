@@ -10,7 +10,7 @@ symbol: [Temple]
 related: [xiv-5, xiv-17, ii-5, xiv-23, xvii-23, xv-1]
 summary: Orientation, doors, axial corridors, columns, courtyards, and sanctuaries organising the encounter among celestial cycles, material structure, and human perception - Dendur's sunk relief sharpened by Egyptian sunlight, the Pantheon's oculus, Gothic glass, and Konark built as Sūrya's chariot.
 epigraph: "The highest temple does not merely display light. It prepares matter, soul, and consciousness to receive it without distortion."
-backdrop: moonrotunda
+backdrop: moonlight-through-rotunda-oculus
 position: center 45%
 ---
 

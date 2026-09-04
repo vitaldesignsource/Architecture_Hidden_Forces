@@ -4,7 +4,7 @@ labels: [Architecture of Hidden Forces Doctrine]
 tradition: [Architecture of Hidden Forces]
 related: [portal-10, portal-7, xxi-15, xvii-1, iv-55]
 summary: Seven routes in — foundations, qualities, traditions, operations, bodies and worlds, primary texts, symbols — and why every entry cross-connects.
-backdrop: gatesteps
+backdrop: mossy-gate-and-steps-in-forest
 position: center 50%
 ---
 

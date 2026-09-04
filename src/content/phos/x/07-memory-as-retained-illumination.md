@@ -9,7 +9,7 @@ symbol: [Crypt]
 related: [ii-27, ii-28, ix-24, x-19, iv-36, x-8]
 summary: What once became present remains available — living retention rather than inert storage, held in soul, astral, and etheric body beyond neural recording, and participating in the Crypt of Primordial Memory.
 epigraph: "Memory is light held within form."
-backdrop: peatcliff
+backdrop: peat-cliff-above-still-lake
 ---
 
 Memory is retained illumination: the capacity of what once became present to remain available after its immediate appearance has passed. Without memory, each moment would arise without depth, identity, comparison, or continuity.

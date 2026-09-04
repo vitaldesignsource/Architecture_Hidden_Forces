@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Noetic]
 related: [i-3, x-1, x-2, x-8, x-13, x-21, xx-10]
 summary: Consciousness is a real instance of Aphanic Light — it illuminates without appearing as one more object — and its discipline is a kind of interior optics.
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 Consciousness is frequently described through luminous language because it makes experience present. Sensation, thought, memory, emotion, and image enter awareness as objects within an interior field.

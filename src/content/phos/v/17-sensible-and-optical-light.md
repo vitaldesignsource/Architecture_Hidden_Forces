@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 plane: [Physical]
 related: [xvi-4, xvi-16, ix-7, xvi-25, xvi-26]
 summary: Not philosophically trivial because physical — its behaviour reveals a relational architecture, and it offers disciplined models for mediation and disclosure.
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 ---
 
 Sensible Light is light available to sensory perception. Optical Light is light considered through the physical structures governing emission, propagation, reflection, refraction, diffraction, polarisation, interference, and detection.

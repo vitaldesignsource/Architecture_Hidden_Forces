@@ -9,7 +9,7 @@ operation: [Differentiation, Formation]
 related: [vii-17, ii-7, v-24, xvii-22, xv-16, xvii-18]
 summary: Differentiation without necessary division - one light becoming two poles, three functions, four media, seven rays, or twelve stations while remaining related to its source; the ennead, tetractys, Sephiroth, and decans possessing distinct histories that must be demonstrated rather than assumed.
 epigraph: "Number does not manufacture spiritual power; it determines the architecture capable of receiving it."
-backdrop: masons
+backdrop: quarried-blocks-in-mason-yard
 ---
 
 Number differentiates without necessarily dividing. One light can become two poles, three functions, four media, seven rays, twelve stations, or innumerable participations while remaining related to its source.

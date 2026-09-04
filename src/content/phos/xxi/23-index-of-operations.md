@@ -9,7 +9,7 @@ operation: [Illumination, Purification, Exposure, Dissolution]
 related: [xiii-1, xiii-11, xiii-15, xiii-21, xiii-27, ii-25]
 summary: What light does - illuminate, reveal, manifest, differentiate, form, animate, vivify, orient, communicate, purify, consecrate, heal, protect, expose, judge, awaken, inspire, integrate, transfigure, dissolve, imprint, liberate, withdraw, and return - each connected to its agents, receivers, media, risks, and consequences.
 epigraph: "No operation is beneficial merely because it is described as light."
-backdrop: hydraulic
+backdrop: hydraulic-workshop-with-stone-basins
 ---
 
 This index gathers what light does: illuminate, reveal, manifest, differentiate, form, animate, vivify, orient, communicate, purify, consecrate, heal, protect, expose, judge, awaken, inspire, integrate, transfigure, dissolve, imprint, liberate, withdraw, and return.

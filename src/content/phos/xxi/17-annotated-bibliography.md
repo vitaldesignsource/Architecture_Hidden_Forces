@@ -9,7 +9,7 @@ operation: [Recognition, Judgment]
 related: [xxi-15, xxi-16, xvi-25, xv-93, xviii-22, xxi-27]
 summary: Why each work matters rather than a list of titles - classified as primary edition, translation, philological study, historical synthesis, philosophical interpretation, scientific work, esoteric source, or comparative study, with each annotation stating the work's limitations as well as its value.
 epigraph: "The Architecture of Hidden Forces becomes more robust when readers can identify where it inherits, synthesises, departs, and makes original claims."
-backdrop: tally
+backdrop: hands-marking-clay-tally
 ---
 
 The bibliography explains why each work matters rather than merely listing titles. Entries may be classified as primary edition, translation, philological study, historical synthesis, philosophical interpretation, scientific work, esoteric source, or comparative study.

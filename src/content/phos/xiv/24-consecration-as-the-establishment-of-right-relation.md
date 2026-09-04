@@ -8,7 +8,7 @@ operation: [Consecration]
 related: [xiii-12, xiv-1, xiv-15, xiv-18, xiv-25, xii-19]
 summary: The foundation of luminous ritual technology — establishing what a vessel serves, what force it receives, how that force may act, and to what end; a consecrated object enters a vertical chain of mediation, and right relation keeps consecration from becoming possession.
 epigraph: "Consecration is truthful when every part of the architecture is allowed to remain what it is while participating in a coherent whole."
-backdrop: oculus
+backdrop: oculus-light-in-round-sanctuary
 position: center 55%
 ---
 

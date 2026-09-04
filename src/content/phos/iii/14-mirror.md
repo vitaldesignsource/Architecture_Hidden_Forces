@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 symbol: [Mirror]
 related: [xvii-25, xiv-8, iii-20, x-22, viii-24]
 summary: Reflection is not identity; self-knowledge requires the further turn in which the mirror becomes aware of its own surface.
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 A mirror returns light from a boundary. Its image depends upon the condition, angle, curvature, and orientation of the reflective surface.

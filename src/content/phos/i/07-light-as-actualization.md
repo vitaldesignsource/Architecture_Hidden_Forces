@@ -7,7 +7,7 @@ operation: [Formation, Animation]
 quality: [Color]
 related: [xix-2, xix-9, ix-12, viii-20, i-6]
 summary: Light does not manufacture the qualities it reveals; it calls latent capacities into activity — and only where what it carries corresponds to what the form can receive.
-backdrop: germination
+backdrop: germinating-seed-with-fine-roots
 ---
 
 Light does not always create the qualities it reveals. Frequently, it brings latent qualities into activity.

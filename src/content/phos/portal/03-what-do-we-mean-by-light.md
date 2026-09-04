@@ -5,7 +5,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Physical, Vital, Psychic, Noetic, Divine]
 related: [portal-4, portal-5, i-19, i-20]
 summary: Not one thing but a family of phenomena, experiences, operations, and symbols — and eight questions to put to any reference to it.
-backdrop: scrims
+backdrop: light-scrims-hung-in-stone-room
 ---
 
 The word *light* does not name only one thing. It belongs to a family of phenomena, experiences, operations, and symbols whose meanings overlap without becoming interchangeable.

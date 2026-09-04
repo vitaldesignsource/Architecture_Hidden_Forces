@@ -8,7 +8,7 @@ symbol: [Torch]
 related: [xiv-3, xiv-2, xiv-1, ii-17, xiv-14, x-5]
 summary: Every component of a ritual light takes part — the wick as mediator between hidden reserve and manifest fire, an image of the trained soul; oils, waxes, and resins chosen for the rite's real requirements rather than a chart's assigned meaning.
 epigraph: "The wick offers an image of the trained soul, which must draw power from deeper reserves without either obstructing or being consumed by it."
-backdrop: apothecary
+backdrop: spiral-apothecary-of-lit-vials
 ---
 
 Every component of a ritual light contributes to its operation. The candle or lamp is not only a convenient means of producing flame; it is a structured body whose materials determine how the light emerges, how long it remains, how steadily it burns, and what residues it leaves.

@@ -9,7 +9,7 @@ operation: [Manifestation, Communication, Recognition]
 related: [xii-20, xii-22, xii-21, xii-9, xii-13, xi-21]
 summary: Gods, angels, archangels, daimons, ancestors, saints, sages, planetary intelligences, the luminous dead, astral beings, theophanic figures, and counterfeit forms - with a being's order inferred through the quality, intelligence, stability, symbolic coherence, mode of communication, and ethical effect of its manifestation rather than through appearance alone.
 epigraph: "A brilliant figure may be exalted, imaginal, projected, mixed, deceptive, or misunderstood."
-backdrop: daimons
+backdrop: two-luminous-daimons-rising-from-rock
 position: center 45%
 ---
 

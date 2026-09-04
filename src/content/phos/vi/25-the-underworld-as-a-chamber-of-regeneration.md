@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Egyptian, Greek]
 operation: [Dissolution, Return]
 related: [ii-27, ii-28, vi-24, vii-29, xv-6]
 summary: A chamber of regeneration only when death is followed by reorganisation — otherwise it remains an archive of unresolved descent.
-backdrop: icetunnel
+backdrop: ice-tunnel-opening-to-sunset
 position: center 50%
 ---
 

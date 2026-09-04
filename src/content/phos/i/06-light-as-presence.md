@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Manifestation]
 related: [i-7, i-8, i-3, x-8]
 summary: Light establishes availability within a field of relationship; recognising what has become present is the receiver's further work.
-backdrop: sanctum
+backdrop: circular-sanctum-with-lit-doorway
 ---
 
 Light gives presence to what would otherwise remain unavailable. An unilluminated form may physically exist, but it does not occupy the visual field of the observer. When light reaches it, the form acquires perceptual presence.

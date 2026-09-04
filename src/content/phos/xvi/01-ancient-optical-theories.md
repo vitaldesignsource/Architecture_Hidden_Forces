@@ -10,7 +10,7 @@ symbol: [Eye, Ray]
 related: [xv-17, xv-18, xv-20, xv-21, xv-23, xvi-2]
 summary: The schools that answered one deceptively difficult question - what crosses the distance between observer and object; rays from the eye, effluences from things, or an actualised transparent medium, each already containing the object, the medium, and the perceiver's active capacity.
 epigraph: "Modern science eventually changed the physical explanation, but it did not eliminate this relational structure."
-backdrop: ruinedarch
+backdrop: ruined-arch-in-rain-lit-court
 ---
 
 Ancient optical theories arose from a deceptively difficult question: when we see something, what crosses the distance between the observer and the object? Different schools proposed visual rays proceeding from the eye, images or effluences entering the eye from objects, alterations occurring within a transparent medium, or combinations of internal and external light.

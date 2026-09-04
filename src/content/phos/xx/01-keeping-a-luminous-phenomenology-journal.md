@@ -9,7 +9,7 @@ operation: [Recognition, Imprinting]
 related: [xi-27, xi-25, xvi-24, xx-16, xi-2, xvi-15]
 summary: A disciplined record of encounters with light in every form - ordinary conditions first, then description without interpretation, then interpretation held open across several levels, then consequences over the following days, since meaning often becomes clear through what an experience produces.
 epigraph: "Spirit works through conditions, even when it is not reducible to them."
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 A luminous phenomenology journal is a disciplined record of encounters with light in all their forms: physical, atmospheric, bodily, etheric, imaginal, dreamlike, meditative, ritual, and visionary. Its purpose is not merely to collect unusual events. It develops the capacity to perceive subtle distinctions that memory would otherwise blur.

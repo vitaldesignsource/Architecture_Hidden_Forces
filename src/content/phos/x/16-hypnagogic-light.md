@@ -7,7 +7,7 @@ plane: [Imaginal, Astral, Physical]
 related: [x-15, x-14, ix-4, v-10, x-13]
 summary: Flashes, forms, faces, and presences at the threshold of sleep — neither all revelation nor all neurological residue; the threshold is real because several orders approach one another there.
 epigraph: "The threshold should be entered with openness, but not credulity."
-backdrop: threshold
+backdrop: threshold-arches-in-misted-vault
 ---
 
 Hypnagogic light appears at the threshold between waking and sleep. It may arise as flashes, colours, moving forms, geometric patterns, faces, landscapes, sounds, words, presences, or sudden scenes. These appearances can be brief and unstable, yet at times they possess extraordinary clarity.

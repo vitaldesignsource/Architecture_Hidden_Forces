@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [ii-24, ii-27, viii-15, viii-19, v-20]
 summary: Not a container of invisible elemental fluid but accumulated conditions making one type of activity readily available.
-backdrop: wellfall
+backdrop: column-of-water-falling-into-well
 position: center 55%
 ---
 

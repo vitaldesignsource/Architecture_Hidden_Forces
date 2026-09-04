@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 related: [i-10, iii-7, iv-30, vii-24, ii-5]
 summary: A true architecture of hidden forces revealed through luminosity — cosmic force becoming colour through planetary mediation.
 epigraph: "Aurora is cosmic force becoming colour through planetary mediation."
-backdrop: icevent
+backdrop: meltwater-vent-in-blue-ice-cave
 ---
 
 Auroras occur when charged particles associated with solar activity interact with Earth's magnetic field and upper atmosphere, exciting atmospheric gases and producing shifting curtains of light — see [NASA's explanation of auroras](https://science.nasa.gov/skywatching/).

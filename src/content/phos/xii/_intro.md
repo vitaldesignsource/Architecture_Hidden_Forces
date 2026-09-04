@@ -1,5 +1,5 @@
 ---
-backdrop: hallrays
+backdrop: rays-crossing-flooded-stone-hall
 position: center 50%
 ---
 

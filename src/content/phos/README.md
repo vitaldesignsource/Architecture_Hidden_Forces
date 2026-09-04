@@ -34,7 +34,7 @@ address resolves. Writing the file is all that publishing takes.
     summary: Light as the first corporeal form — extension is what it does.
     epigraph: "The first corporeal form I judge to be light."
     attribution: Grosseteste, De Luce
-    backdrop: crystal
+    backdrop: crystal-suspended-in-glass-sphere
     position: center 40%
     ---
 
@@ -61,9 +61,11 @@ Front matter, line by line:
   ends.
 - `summary` — one line, shown wherever the entry is listed.
 - `epigraph`, `attribution` — set above the body, optional.
-- `backdrop` — a bare name from `public/bg` (`crystal`, not `/bg/crystal.webp`);
+- `backdrop` — a bare name from `public/bg`
+  (`crystal-suspended-in-glass-sphere`, not the path and not the extension);
   `position` its object-position. Optional; a division's `_intro.md` may set a
-  default for all its entries.
+  default for all its entries. Backdrop names describe what is in the frame,
+  in lowercase words joined by hyphens — see `public/bg/README.md`.
 
 Lists may be inline `[a, b]` or one `- item` per line. Every facet is optional;
 an entry with none is only unfindable by facet.

@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vi-27, i-5, xv-70, vi-14, iv-51]
 summary: Not a substance projected by the object but a region receiving less light — evidence that light has encountered form.
-backdrop: shafthall
+backdrop: light-shaft-across-pillared-hall
 position: center 50%
 ---
 

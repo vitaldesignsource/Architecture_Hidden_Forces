@@ -8,7 +8,7 @@ operation: [Communication]
 related: [ix-15, ii-29, ix-25, vii-13]
 summary: Local constellations in the deep — light-production evolved repeatedly as courtship, camouflage, lure, and warning; an ecological form of Heka, radiance as an instrument of life.
 epigraph: "The visible heavens seem to descend into the sea."
-backdrop: seainlet
+backdrop: waves-in-narrow-sea-inlet
 ---
 
 Bioluminescence appears among bacteria, fungi, protists, insects, worms, crustaceans, molluscs, fish, and numerous other organisms, especially within marine environments. Different lineages employ different luciferins, luciferases, photoproteins, symbiotic bacteria, and luminous organs. Biological light-production appears to have evolved repeatedly rather than descending from one universal luminous organ.

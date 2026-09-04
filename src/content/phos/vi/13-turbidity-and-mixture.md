@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [iii-23, xv-90, iv-4, iv-3, vi-18]
 summary: Turbidity redistributes light rather than eliminating it — mixture is not corrupt, but the composite must not be mistaken for a pure transmission.
-backdrop: mistgorge
+backdrop: mist-gorge-with-single-lit-window
 position: center 45%
 ---
 

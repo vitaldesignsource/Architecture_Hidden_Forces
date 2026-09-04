@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Glow]
 related: [iv-28, iv-31, iii-16, iv-12]
 summary: Soft continuous luminosity that seems to inhabit a form rather than travel from it — light held closely enough that the vessel appears to participate in it.
-backdrop: kilnvault
+backdrop: kiln-vault-with-glowing-mouth
 ---
 
 A glow is a soft, continuous luminosity whose precise source or boundary may be difficult to distinguish. It seems to inhabit a surface, atmosphere, or body rather than travel from it in sharply defined rays.

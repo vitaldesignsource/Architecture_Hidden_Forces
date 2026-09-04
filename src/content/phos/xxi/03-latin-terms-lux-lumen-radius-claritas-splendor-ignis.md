@@ -11,7 +11,7 @@ text: [De Luce, Summa Theologiae]
 related: [xv-83, xv-84, xxi-2, i-12, xvii-2, iv-33]
 summary: Six Latin words and the distinctions later writers drew between them - lux as light at its source, lumen as light proceeding and received, radius as the ray, claritas as the disclosure of inner order, splendor as participated brilliance, and ignis as fire, with the caution that the lux-lumen distinction is a philosophical instrument rather than a rule governing all Latin texts.
 epigraph: "Claritas is not merely strong brightness; it is the disclosure of an inner order through appearance."
-backdrop: aqueduct
+backdrop: stone-aqueduct-in-morning-mist
 ---
 
 *Lux* generally indicates light considered as a source, presence, or condition of illumination. It may name daylight, heavenly light, or the light by which things become visible. In Christian and medieval metaphysics, *lux* could be used for originating light or light in its more fontal condition.

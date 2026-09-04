@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [ix-7, ix-5, i-18, ii-21]
 summary: A branching instrument of luminous interpretation — the brain is a specialised intermediary of embodied consciousness, not the creator of light, meaning, and awareness from inert matter.
 epigraph: "The place where force becomes meaning."
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 The nervous system receives light principally through the eye. Retinal photoreceptors translate photons into electrochemical activity, and neural pathways distribute this information toward visual, circadian, pupillary, emotional, and behavioural centres. Light can consequently affect attention, alertness, mood, sleep, orientation, and autonomic physiology without always appearing as a consciously perceived image.

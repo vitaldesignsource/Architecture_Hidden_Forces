@@ -9,7 +9,7 @@ operation: [Vivification, Animation, Formation]
 related: [ix-2, ix-18, ix-20, xvi-20, ii-26, xvi-23]
 summary: Life receiving, converting, storing, emitting, and organising light - photosynthesis, circadian timing, vision, and bioluminescence; yet life is matter organised by an inwardly coherent formative activity, and the organism determines what it can receive.
 epigraph: "The seed does not simply absorb sunlight; it unfolds a latent architecture through its relation with light."
-backdrop: leafroots
+backdrop: leaf-and-root-system-in-cross-section
 position: center 50%
 ---
 

@@ -7,7 +7,7 @@ quality: [Rhythm]
 related: [ix-3, ix-19, vii-21, ii-7, iv-18, iv-10]
 summary: The patterned organisation of luminous change through time — the temporary disappearance of light may be part of its order rather than a failure.
 epigraph: "Luminous rhythm is time becoming formative."
-backdrop: tide
+backdrop: tide-patterns-on-grey-strand
 ---
 
 Rhythm is the patterned organisation of luminous change through time. It includes recurrence, interval, alternation, acceleration, deceleration, emergence, and withdrawal.

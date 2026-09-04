@@ -8,7 +8,7 @@ operation: [Manifestation]
 related: [x-13, x-15, x-16, xv-21, x-17]
 summary: The power of appearance within the soul — distinct from sensation and discursive thought, the threshold where the unseen becomes imaginally present, and therefore also the birthplace of glamour.
 epigraph: "Inner vividness alone cannot determine origin."
-backdrop: obscura2
+backdrop: camera-obscura-projection-in-dark-room
 ---
 
 The Greek term *phantasia* concerns the power or occurrence of appearance within the soul. In Aristotle's account it is distinct from sensation and discursive thought while remaining deeply related to both. It allows what is not presently before the senses to become inwardly apparent. His treatment of *phantasia* in *De Anima* III.3 has generated extensive interpretation.

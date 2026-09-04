@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Solar Disc, Star]
 related: [vii-4, vii-13, vii-16, xvi-18, vii-5]
 summary: Physical luminaries that also become inexhaustible symbolic vessels — measurement and astrological reading are distinct but equally legitimate modes of knowing.
-backdrop: summit
+backdrop: summit-above-sea-of-cloud
 ---
 
 Solar and stellar light is physically produced through processes occurring within stars and carried across space as electromagnetic radiation. It provides energy, visibility, heat, temporal orientation, and the conditions supporting terrestrial life.

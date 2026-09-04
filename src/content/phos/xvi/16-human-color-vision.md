@@ -10,7 +10,7 @@ symbol: [Eye]
 related: [iv-15, ii-9, viii-20, xvi-6, ix-7, xvi-24]
 summary: Rods for dim light and three cone classes whose comparison, not whose individual signals, yields colour - metamers, adaptation, and context showing colour to be a real perceptual achievement arising through relation rather than a label carried by a photon.
 epigraph: "Relational emergence does not make a quality arbitrary."
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 ---
 
 Human colour vision begins when light reaching the retina is absorbed by photopigments. Rods are highly sensitive and support vision under dim conditions but provide limited colour information. Cones support daylight vision, visual acuity, and colour discrimination.

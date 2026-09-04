@@ -7,7 +7,7 @@ quality: [Fiery Light, Incandescence]
 symbol: [Flame]
 related: [viii-2, ii-22, iv-56, xviii-1, viii-12]
 summary: Light discloses the form; fire changes it — and Ignisophia unites the operations as fire governed by wisdom.
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Light and fire are among the most ancient symbols of manifestation because both make hidden activity visible. Fire radiates, warms, transforms, consumes, purifies, and releases what had been bound within form. Light reveals, differentiates, guides, colours, and establishes perceptible relation.

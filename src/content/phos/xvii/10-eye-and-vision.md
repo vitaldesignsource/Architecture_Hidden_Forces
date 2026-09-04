@@ -10,7 +10,7 @@ symbol: [Eye]
 related: [iii-18, ix-7, x-2, xvi-16, xv-11, x-8]
 summary: Organ, aperture, receiver, mirror, and emblem of consciousness at once - the Egyptian Eye of Horus, the Eye of Re, and the Eye of Providence historically distinct; a closed eye signifying not blindness but inward vision.
 epigraph: "The open and closed eyes together represent the two directions of illumination."
-backdrop: eyesun
+backdrop: human-eye-with-sun-in-the-iris
 position: center 68%
 ---
 

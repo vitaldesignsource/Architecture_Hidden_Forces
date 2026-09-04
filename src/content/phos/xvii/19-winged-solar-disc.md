@@ -10,7 +10,7 @@ symbol: [Winged Solar Disc]
 related: [xii-2, xv-1, vii-4, ii-22, xvii-3, xv-11]
 summary: Central radiance joined to lateral movement - the disc for solar unity, the wings for extension, protection, elevation, and traverse; Horus of Behdet above temple entrances, with related forms across Anatolia, Mesopotamia, and Iran carrying divinity, kingship, and heavenly protection.
 epigraph: "The wings prevent the solar centre from becoming static."
-backdrop: skygods
+backdrop: sky-gods-above-ritual-shore
 ---
 
 The winged solar disc combines central radiance with lateral movement. The disc signifies solar unity; the wings signify extension, protection, elevation, speed, and the ability of celestial power to traverse space.

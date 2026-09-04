@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [xii-21, xii-22, xi-26, xi-25, xi-20]
 summary: Order shows in quality more than intensity — unity without monotony, ministerial precision, specialised direction, personal memory, mutable colouring; no colour chart can prove rank, and the total manifestation must be read.
 epigraph: "The order of a being is revealed by the relation among its light, intelligence, presence, action, and consequence."
-backdrop: threelights
+backdrop: three-lights-in-veiled-hall
 position: center 50%
 ---
 

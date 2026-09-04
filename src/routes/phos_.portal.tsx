@@ -68,7 +68,7 @@ function Portal() {
 
       {/* ENTRANCE */}
       <header id="top" className="relative isolate overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
-        <Backdrop src="/bg/gorgedawn.webp" opacity={0.34} position="center 45%" fill />
+        <Backdrop src="/bg/gorge-at-dawn-with-burst-of-sun.webp" opacity={0.34} position="center 45%" fill />
         <LumenField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -133,7 +133,7 @@ function Portal() {
 
       {/* PORTAL ENTRANCE */}
       <section id="entrance" className="relative isolate border-t border-border py-24">
-        <Backdrop src="/bg/gatelight.webp" opacity={0.22} position="center 55%" scrim={0.3} />
+        <Backdrop src="/bg/figure-before-gate-of-white-light.webp" opacity={0.22} position="center 55%" scrim={0.3} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Portal Entrance</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -204,7 +204,7 @@ function Portal() {
 
       {/* BROWSE */}
       <section id="browse" className="relative isolate border-t border-border py-24">
-        <Backdrop src="/bg/cartography.webp" opacity={0.26} position="center 50%" scrim={0.3} />
+        <Backdrop src="/bg/dark-hall-with-charted-stone-floor.webp" opacity={0.26} position="center 50%" scrim={0.3} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Browse</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -276,7 +276,7 @@ function Portal() {
 
       {/* INSTRUMENTS */}
       <section id="instruments" className="relative isolate border-t border-border py-24">
-        <Backdrop src="/bg/observatory.webp" opacity={0.3} position="center 40%" scrim={0.25} />
+        <Backdrop src="/bg/mountain-observatory-above-cloud.webp" opacity={0.3} position="center 40%" scrim={0.25} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · Seven of Ten Live</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">

@@ -8,7 +8,7 @@ operation: [Exposure]
 related: [xiii-1, xiii-16, vi-9, ix-14, xiii-14, xii-22]
 summary: Light bringing concealed realities into visibility — liberating, but not automatically merciful; a seed needs darkness before it can bear the sun, and right exposure is governed by timing, proportion, and purpose.
 epigraph: "Light becomes destructive when it exposes merely to dominate, shame, overwhelm, or strip something of the darkness necessary for gestation."
-backdrop: blowhole
+backdrop: sea-blowhole-erupting-on-black-rock
 ---
 
 Exposure is the operation through which light brings concealed realities into visibility. It can reveal deception, corruption, unacknowledged pain, hidden motives, forgotten memory, structural weakness, or a spiritual presence previously acting below the threshold of awareness.

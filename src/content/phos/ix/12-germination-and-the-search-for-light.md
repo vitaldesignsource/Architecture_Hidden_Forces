@@ -8,7 +8,7 @@ operation: [Awakening, Orientation]
 related: [ix-11, vi-9, vi-25, ii-27, ix-14]
 summary: Compressed formative memory released when outer conditions resonate with inner potential — darkness protects and concentrates, light calls forth and differentiates.
 epigraph: "Germination is the passage from hidden formative light into visible living form."
-backdrop: germination
+backdrop: germinating-seed-with-fine-roots
 ---
 
 A seed holds organised potential in a state of concentrated latency. Germination begins when appropriate relations among water, temperature, oxygen, chemical conditions, and — depending upon the species — light or darkness release developmental activity from dormancy. Plant photoreceptors such as phytochromes and cryptochromes help interpret spectral conditions. Once a shoot emerges, phototropism can orient growth toward advantageous illumination. [Research on plant phytochromes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6941077/) shows how light participates in germination and early development.

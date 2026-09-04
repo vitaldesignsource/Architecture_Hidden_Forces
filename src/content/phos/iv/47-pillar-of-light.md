@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific, Israelite]
 quality: [Pillar of Light]
 related: [xv-43, iii-5, xi-15, iv-48, ii-18]
 summary: Radiance given vertical direction — an axis between heaven and earth, which should remain a symbolic geometry unless a physical mechanism is being described.
-backdrop: sunpillar
+backdrop: radiant-sun-in-star-frame
 position: center 32%
 ---
 

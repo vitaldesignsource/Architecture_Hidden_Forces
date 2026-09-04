@@ -8,7 +8,7 @@ operation: [Differentiation]
 related: [xii-4, xii-6, i-13, xii-1, v-6]
 summary: Harmozel, Oroiael, Daveithe, and Eleleth in the Apocryphon of John — living orders through which divine qualities become differentiated and inhabited, each a presence inseparable from the realm it governs.
 epigraph: "Truth, memory, love, peace, form, and wisdom are not accidental psychological states. They possess archetypal and aeonic foundations."
-backdrop: luminaries
+backdrop: four-luminous-pillars-in-dark-hall
 position: center 45%
 ---
 

@@ -9,7 +9,7 @@ symbol: [Radiant Heart]
 related: [ix-3, ix-19, iv-18, ii-18]
 summary: Breath receives and releases; pulse concentrates and distributes — physical rhythms the etheric body organises and inhabits, not rhythms that produce it.
 epigraph: "The heart is both physical organ and luminous symbol of centralised participation."
-backdrop: breath
+backdrop: seated-figure-breathing-in-flooded-hall
 ---
 
 Breath and pulse are among the most immediate physical expressions of embodied rhythm. Respiration exchanges gases and supports cellular metabolism. Circulation distributes oxygen, nutrients, hormones, immune components, warmth, and metabolic products. Both rhythms change with sleep, movement, emotion, illness, attention, posture, and environment.

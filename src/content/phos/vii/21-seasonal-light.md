@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vii-22, ix-4, ix-11, ii-5, iv-17]
 summary: Formative time — seasonal light does not merely reveal the landscape but participates in determining what it can become.
-backdrop: terraces
+backdrop: steaming-terraced-pools-in-rock
 ---
 
 Seasonal light changes through Earth's axial tilt, orbit, latitude, weather, and atmospheric conditions. Day length, solar altitude, colour, intensity, and the angle at which light reaches the land vary across the year.

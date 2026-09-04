@@ -8,7 +8,7 @@ operation: [Binding]
 related: [ix-2, viii-23, xiii-12, xiii-27, v-20, xii-11]
 summary: All embodiment involves luminous capture — plants binding sunlight, symbols binding meaning, consecrated forms binding currents; binding serves manifestation when it keeps the relation among source, vessel, purpose, and recipient alive, and becomes a prison when it severs light from its circulation.
 epigraph: "The question is whether the binding serves manifestation or imprisonment."
-backdrop: crackedvessel
+backdrop: cracked-vessel-mended-with-gold-light
 position: center 50%
 ---
 

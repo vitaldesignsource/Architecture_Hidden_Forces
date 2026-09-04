@@ -1,5 +1,5 @@
 ---
-backdrop: sluicegates
+backdrop: sluice-gates-releasing-white-water
 position: center 50%
 ---
 

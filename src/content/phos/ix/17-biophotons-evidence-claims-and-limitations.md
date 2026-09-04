@@ -7,7 +7,7 @@ plane: [Physical, Etheric]
 related: [ix-18, ix-15, ii-18, v-13, portal-4]
 summary: Ultraweak emission is real and metabolically explicable — it neither proves nor disproves the etheric body, which is real upon its own plane whether or not photon detectors reach its complete activity.
 epigraph: "The etheric body is not composed of biophotons. Biophotons may nevertheless be physical signatures of living processes organised through a deeper etheric field."
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 The term *biophoton* commonly refers to ultraweak photon emission from living tissues. Such emissions have been measured in plants, animals, microorganisms, and cultured cells using sufficiently sensitive detectors. Much of the measured activity has been associated with metabolic and oxidative processes that generate electronically excited molecular products. It is vastly dimmer than ordinary bioluminescence and normally invisible to unaided human sight. [A scientific review by Cifra and Pospíšil](https://pubmed.ncbi.nlm.nih.gov/24726298/) summarises its detection, likely biochemical origins, and methodological difficulties.

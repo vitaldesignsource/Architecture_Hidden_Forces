@@ -7,7 +7,7 @@ quality: [Intelligence]
 plane: [Noetic]
 related: [i-9, x-4, ii-29, iv-6, xii-20]
 summary: The capacity to reveal or carry meaningful order — distinct from claiming that every ray possesses an individual mind.
-backdrop: observatory
+backdrop: mountain-observatory-above-cloud
 ---
 
 Luminous intelligence is the capacity of light to reveal or carry meaningful order. It should not be assumed that physical light is conscious merely because it behaves according to lawful patterns.

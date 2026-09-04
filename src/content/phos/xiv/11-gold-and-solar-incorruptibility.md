@@ -10,7 +10,7 @@ symbol: [Gold]
 related: [viii-23, iv-57, xii-16, xiv-12, xiv-16, xiii-26]
 summary: Matter brought into sustained agreement with a solar principle — surfaces on which light rests without being absorbed, images lit as if from within; its incorruptibility symbolic rather than absolute, and its highest meaning fidelity rather than possession.
 epigraph: "Its highest meaning is not possession but fidelity."
-backdrop: goldvein
+backdrop: gold-vein-glowing-in-dark-rock
 position: center 50%
 ---
 

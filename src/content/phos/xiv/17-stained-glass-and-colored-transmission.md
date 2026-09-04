@@ -9,7 +9,7 @@ symbol: [Prism, Rainbow]
 related: [iii-13, vii-26, xiv-14, xiii-2, iii-8, iv-58]
 summary: Undifferentiated light received, differentiated, and distributed through sacred space — architecture become a prism, imagery activated only by illumination; a precise model of revelation, in which mediation is made truthful rather than eliminated.
 epigraph: "The goal is not to eliminate mediation but to make mediation truthful."
-backdrop: pavilion
+backdrop: timber-pavilion-on-rock-shelf
 position: center 50%
 ---
 

@@ -5,7 +5,7 @@ tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Manifestation]
 related: [ii-1, ii-2, i-11, i-13, xviii-22, xv-28]
 summary: Light stands where hidden force meets manifested appearance — and lets the system study continuity and difference at once.
-backdrop: aperture
+backdrop: cave-mouth-light-on-still-water
 ---
 
 Light is central because it stands at the meeting point between hidden force and manifested appearance. It is neither simply the source nor merely the object illuminated. It is the communicating activity through which something concealed becomes available to perception.

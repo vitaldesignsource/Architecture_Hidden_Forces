@@ -8,7 +8,7 @@ operation: [Formation, Revelation]
 related: [x-14, v-10, x-18, x-15, x-17]
 summary: Not synonymous with unreality — a real formative power, productive and receptive, through which spiritual influence becomes inwardly visible; an intermediary, not the final judge of truth.
 epigraph: "A disciplined imagination does not become empty. It becomes transparent."
-backdrop: moonrotunda
+backdrop: moonlight-through-rotunda-oculus
 position: center 45%
 ---
 

@@ -10,7 +10,7 @@ symbol: [Flame]
 related: [xv-38, xv-40, ii-7, viii-4, viii-15, viii-21]
 summary: The First Man's five sons, garments, or weapons — ether, wind, light, water, and fire as living divine powers rather than terrestrial elements; the Living Soul dispersed in matter when they are devoured; light internally differentiated into atmosphere, motion, visibility, liquidity, and transformative heat.
 epigraph: "Power without adequate relation can be captured, scattered, and turned toward ends contrary to its nature."
-backdrop: elementchamber
+backdrop: element-chamber-with-water-and-light
 ---
 
 The First Man's five sons, garments, weapons, or elements are usually identified as ether or air, wind, light, water, and fire. Terminology differs across Syriac, Middle Persian, Parthian, Coptic, Arabic, and Chinese sources, but the fivefold luminous structure remains central.

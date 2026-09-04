@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Vital]
 related: [ii-18, ii-7, ix-18, iv-23, ix-20]
 summary: Expressed through rhythm and regenerative capacity rather than visual appearance — the real luminosity of the etheric body, which physiology embodies but does not produce.
-backdrop: roots
+backdrop: great-roots-gripping-cliff-edge
 ---
 
 Etheric Light belongs to the etheric body: the real vital-formative dimension of the embodied organism, through which living form is generated, coordinated, repaired, and preserved across time. Physical anatomy supplies its material embodiment; the etheric body supplies the organised vitality through which anatomy becomes and remains alive.

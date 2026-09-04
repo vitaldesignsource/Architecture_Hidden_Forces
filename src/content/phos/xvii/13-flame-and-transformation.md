@@ -10,7 +10,7 @@ symbol: [Flame]
 related: [viii-1, xiii-11, xiii-12, ii-22, xvii-12, xv-14]
 summary: Fuel, oxygen, heat, motion, colour, and emitted light united in one rapidly changing form - stable in appearance while continually consuming and renewing its conditions; purification, transformation, and consecration distinguished rather than merged.
 epigraph: "Unregulated fire consumes its vessel. Insufficient fire leaves the substance unchanged."
-backdrop: altarflame
+backdrop: fire-altar-flame-over-dark-water
 position: center 45%
 ---
 

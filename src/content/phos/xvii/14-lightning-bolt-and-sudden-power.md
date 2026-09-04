@@ -10,7 +10,7 @@ symbol: [Lightning Bolt]
 related: [vii-25, xi-8, v-29, xiii-16, xvii-13, xv-60]
 summary: Light appearing as violent passage, joining heaven and earth through a path formed almost instantaneously - revelation through interruption rather than continuity, disclosing more than the mind can immediately integrate.
 epigraph: "Lightning is revelation without guarantee of integration."
-backdrop: caldera
+backdrop: caldera-lake-at-sunrise
 ---
 
 Lightning is light appearing as violent passage. It joins heaven and earth through a path formed almost instantaneously. It therefore symbolises divine command, judgment, inspiration, revelation, sovereignty, and the sudden release of accumulated force.

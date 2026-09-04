@@ -9,7 +9,7 @@ symbol: [Lamp, Menorah]
 related: [xiv-1, xiv-4, xiv-7, iv-13, ii-17, xiv-24]
 summary: A localised image of enduring presence — vessel, fuel, wick, and flame as a miniature architecture of body, soul, and spirit; tending the lamp is itself the discipline of keeping a living relation between source and form.
 epigraph: "A continuously maintained lamp can become the temporal centre of a sanctuary."
-backdrop: lamplines
+backdrop: oil-lamps-set-in-lines-across-hall
 position: center 60%
 ---
 

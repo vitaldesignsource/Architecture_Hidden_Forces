@@ -8,7 +8,7 @@ operation: [Transfiguration]
 related: [xi-11, xi-10, ix-18, iv-53, xi-13]
 summary: An inward spiritual reality becoming luminous through a person or place from within — testimony that spirit can penetrate the etheric, astral, and even sensible appearance of an embodied being; a temporary transparency rather than a body turned permanently to light.
 epigraph: "Its reality is located not only in whether a camera records brightness."
-backdrop: statue
+backdrop: lamplit-statue-beside-open-book
 ---
 
 Transfiguration occurs when an inward spiritual reality becomes outwardly or subtly luminous through a person, body, face, form, or environment. Unlike ordinary illumination falling upon a surface, transfiguration appears to proceed through the being from within, or from a higher power entering through it.

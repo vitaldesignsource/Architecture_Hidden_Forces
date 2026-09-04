@@ -11,7 +11,7 @@ text: [Timaeus]
 related: [xv-19, xv-17, ix-7, iv-15, ix-4, vii-6]
 summary: The eye's pure, gentle fire joining daylight into one visual body between observer and object; why sight fails at night and closes into sleep; colour as the meeting of fires through a receptive medium; vision's higher purpose in observing the heavens and bringing the soul's revolutions into harmony with the cosmos.
 epigraph: "The eye is a channel through which celestial order educates the soul."
-backdrop: lenshall
+backdrop: lens-focusing-beam-in-stone-hall
 ---
 
 The *Timaeus* offers a physical and cosmological account of vision different from the metaphysical images of the *Republic*. Plato describes the eye as containing a pure, gentle fire related to the light of day. This interior fire passes outward through the eyes and joins with external daylight, forming a continuous visual body between observer and object.

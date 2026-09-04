@@ -8,7 +8,7 @@ operation: [Revelation, Recognition]
 related: [xi-11, i-9, x-4, x-21, xi-25]
 summary: Sudden disclosure through an ordinary object, phrase, or moment — the familiar world becoming transparent to a deeper order; judged by what it reveals and makes possible.
 epigraph: "Sometimes what was always present becomes visible because the receiver has entered a new relation with it."
-backdrop: gateway
+backdrop: gateway-cut-through-rock-to-mist
 ---
 
 Epiphany is sudden disclosure. Something previously concealed becomes immediately intelligible, present, or spiritually significant. Unlike theophany, epiphany does not necessarily involve the appearance of a divine being. It may occur through an ordinary object, phrase, landscape, relationship, memory, or moment of recognition.

@@ -11,7 +11,7 @@ text: [Avesta, Pahlavi Books]
 related: [xv-16, v-2, v-24, v-27, vii-12, v-15]
 summary: The Iranian hierarchy of luminous stations — stars as a celestial order against drought and disorder, the moon's received and cyclical light, the sun's unconcealed victory, and beyond them Endless Light, anagra raocah, the House of Song; degrees of participation that the soul ascends by becoming capable of truth.
 epigraph: "Light exists in levels, but the levels interpenetrate."
-backdrop: spiralstair
+backdrop: spiral-stair-under-light-shaft
 position: center 45%
 ---
 

@@ -10,7 +10,7 @@ symbol: [Lamp]
 related: [ix-20, ix-21, x-13, viii-20, xiii-5, xv-88]
 summary: The Light of Nature distinguished from the Light of Grace - the interior intelligibility placed within creation, read through signatures, sympathies, and behaviours; imagination as a genuine formative faculty that can also deceive; illness with more than one possible level of causation.
 epigraph: "The practitioner collaborates with the formative intelligence already working within the substance."
-backdrop: apothecary
+backdrop: spiral-apothecary-of-lit-vials
 position: center 45%
 ---
 

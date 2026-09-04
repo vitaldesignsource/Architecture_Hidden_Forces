@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Kabbalistic]
 symbol: [Solar Disc]
 related: [ii-22, ii-23, vii-4, ii-24, xviii-22]
 summary: Correspondence without confusion — the Inner Sun is not a miniature star inside the body but a real architecture of centredness.
-backdrop: kilnvault
+backdrop: kiln-vault-with-glowing-mouth
 ---
 
 The Outer Sun is the astronomical body around which Earth travels and from which terrestrial daylight primarily proceeds. The Inner Sun is the real psycho-spiritual centre around which consciousness, value, intelligence, and transformative purpose become organised.

@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [ii-8, ii-9, xix-6, xx-8, ii-10]
 summary: The problem is not the tattva but disproportion — restoration requires renewed relation among openness, movement, transformation, cohesion, and stability.
-backdrop: braided
+backdrop: braided-glacial-river-from-above
 ---
 
 The tattvas are morphogenic biases, not moral forces. Distortion arises when a tattvic tendency becomes excessive, isolated, or disconnected from the balancing architecture.

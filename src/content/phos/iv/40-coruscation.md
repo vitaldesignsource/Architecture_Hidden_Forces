@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Coruscation]
 related: [iv-39, iv-30, vi-19, iii-23, iv-32]
 summary: Multiplicity under high luminous intensity — visually fertile, difficult to stabilise, dazzling the receiver with many simultaneous points of disclosure.
-backdrop: mirrorcascade
+backdrop: mirrors-cascading-light-down-shaft
 ---
 
 Coruscation is a brilliant, glittering, or rapidly flashing play of light. It is more dramatic than shimmer and often suggests multiple sharp reflections or energetic bursts.

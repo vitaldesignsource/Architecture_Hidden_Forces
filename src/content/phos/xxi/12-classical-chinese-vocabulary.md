@@ -11,7 +11,7 @@ text: [Dao De Jing, Zhuangzi, Neiye, Cantong Qi]
 related: [xv-71, xv-72, xv-73, xv-74, xv-76, xv-70]
 summary: Guāng, míng, and guāngmíng; zhào, huī, yào, and jǐng; rì, yuè, huǒ, yáng, and yīn - with the warning that yin must not be translated simply as evil darkness, nor yang as spiritual goodness, since they are relational principles whose meanings arise through polarity and transformation.
 epigraph: "Yin must not be translated simply as evil darkness, nor yang as spiritual goodness."
-backdrop: foldedcliff
+backdrop: folded-cliff-face-on-grey-coast
 position: center 45%
 ---
 

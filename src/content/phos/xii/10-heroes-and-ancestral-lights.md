@@ -7,7 +7,7 @@ plane: [Daimonic, Psychic, Astral]
 related: [xii-15, ix-24, ii-28, vii-15, xii-9]
 summary: Human lives that acquired enduring daimonic or ancestral power — real deceased presences bound to tomb, city, and lineage; honouring ancestors means conscious relation, not indiscriminate submission.
 epigraph: "Death does not instantly perfect the soul."
-backdrop: ancestors
+backdrop: ancestral-faces-in-clouds-above-pilgrim
 position: center 30%
 ---
 

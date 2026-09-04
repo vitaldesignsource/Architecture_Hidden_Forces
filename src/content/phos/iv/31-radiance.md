@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Radiance]
 related: [iii-3, i-11, iii-1, iv-32, v-21]
 summary: Communicative abundance that makes a source environmentally present — and must be distinguished from borrowed brightness.
-backdrop: summit
+backdrop: summit-above-sea-of-cloud
 ---
 
 Radiance is the expansive presence of light proceeding from or surrounding a source. It is broader than a ray and less bounded than a beam.

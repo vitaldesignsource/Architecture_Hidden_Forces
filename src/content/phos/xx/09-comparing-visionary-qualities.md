@@ -9,7 +9,7 @@ operation: [Recognition, Judgment]
 related: [xi-8, xi-25, xii-20, v-27, xx-11, xi-16]
 summary: Visions compared by quality rather than ranked by spectacle - clarity, coherence, stability, autonomy, symbolic density, apparent intelligence, and lasting consequence; etheric, astral, noetic, and theophanic signatures as working distinctions rather than rigid barriers.
 epigraph: "The question is not only what realm the vision came from, but how faithfully each layer translated it."
-backdrop: crystalhall
+backdrop: crystal-pillars-in-mirrored-hall
 ---
 
 Visions should be compared by qualities rather than ranked by spectacle. A quiet inner light may carry greater intelligence than an overwhelming display. A small symbol may reorganise an entire life, while an ocean of colour may leave no durable meaning.

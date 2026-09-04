@@ -8,7 +8,7 @@ operation: [Revelation, Communication]
 related: [ii-29, x-10, i-19, x-13, portal-10]
 summary: Illumination through a form that reveals more than its literal appearance — a true symbol participates in what it reveals, and symbolic perception is a genuine mode of knowledge beside measurement, not beneath it.
 epigraph: "The symbol then becomes not merely descriptive but transmissive."
-backdrop: keystone
+backdrop: keystone-set-in-lit-stone-vault
 ---
 
 Symbolic light is illumination conveyed through a form that reveals more than its literal appearance. A lamp may signify consciousness, a star guidance, a solar disc divine intelligence, a flame transformation, a halo sanctity, and dawn regeneration. Yet a true symbol is not merely an arbitrary sign assigned a definition.

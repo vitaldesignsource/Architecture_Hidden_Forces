@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 operation: [Integration, Imprinting]
 related: [iii-24, iv-36, ii-24, v-19, ii-27]
 summary: What disappears from sight has not necessarily ceased to act — darkness after absorption may conceal active transformation.
-backdrop: icefissure
+backdrop: ice-fissure-glowing-gold-below
 position: center 50%
 ---
 

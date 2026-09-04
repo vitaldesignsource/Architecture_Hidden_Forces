@@ -10,7 +10,7 @@ symbol: [Flame]
 related: [iv-15, xvi-6, xvi-15, viii-20, ii-9, xvi-16]
 summary: The colour of an ideal blackbody at a given absolute temperature, and the linguistic reversal by which lower temperatures look warm and higher ones cool; correlated colour temperature matching appearance without matching spectrum.
 epigraph: "Colour temperature is not a complete account of a light's quality."
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Colour temperature describes the colour of an ideal blackbody radiator at a specified absolute temperature. As the body becomes hotter, its visible glow moves from red through orange and yellow toward white and blue-white.

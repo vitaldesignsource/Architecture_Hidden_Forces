@@ -9,7 +9,7 @@ operation: [Healing, Integration]
 related: [ix-21, ix-19, ix-18, iv-6, ix-22]
 summary: Not visible brightness nor the absence of symptoms but right relation among the dimensions of a being — patterned variation held within an intelligible unity.
 epigraph: "Living coherence is patterned variation held within an intelligible unity."
-backdrop: oasis
+backdrop: desert-oasis-pool-among-palms
 position: center 55%
 ---
 

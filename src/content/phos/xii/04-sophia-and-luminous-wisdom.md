@@ -8,7 +8,7 @@ operation: [Formation, Inspiration]
 related: [xii-18, ii-22, xii-5, i-9, ii-23]
 summary: Wisdom as living presence — mirror of divine intention, womb of intelligibility, guide of return — distinguished in its biblical and Gnostic forms; joined to fire, it becomes Ignisophia.
 epigraph: "Sophia receives and orders; fire tests and transfigures."
-backdrop: sophia
+backdrop: sophia-holding-light-above-basin
 position: center 30%
 ---
 

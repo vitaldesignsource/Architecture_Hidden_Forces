@@ -10,7 +10,7 @@ text: [On Colours]
 related: [xv-21, ii-9, viii-20, iv-15, xiv-14, vi-13]
 summary: The Pseudo-Aristotelian treatise — white and black as poles; darkness by absence, density, or depth; red from bright light in a smoky medium, purple from weakened light in a darkening sky; light, medium, and underlying surface as a threefold relation; plant, fruit, and animal colour as inner state meeting environmental light.
 epigraph: "Light reveals the receiver, but the receiver also colours the light it returns."
-backdrop: leaflight
+backdrop: backlit-leaves-at-forest-edge
 ---
 
 The short treatise *On Colours* or *De Coloribus* was transmitted in the Aristotelian corpus but is generally considered not to have been written by Aristotle himself. It has sometimes been associated with Aristotle's successors Theophrastus or Strato, but its authorship remains uncertain. It should therefore be called Pseudo-Aristotelian rather than used as uncomplicated evidence of Aristotle's own theory.

@@ -8,7 +8,7 @@ operation: [Withdrawal, Return]
 related: [ix-3, ix-5, ix-19, vi-25, vi-9]
 summary: Waking turns consciousness and vitality outward; sleep withdraws into another mode of participation — biological state, etheric tide, psychic transition, and image of procession and return.
 epigraph: "Dawn calls the organism toward manifestation. Noon sustains expenditure. Evening begins recollection. Night returns life toward hidden maintenance."
-backdrop: sleeper
+backdrop: sleeper-under-night-sky-window
 position: center 50%
 ---
 

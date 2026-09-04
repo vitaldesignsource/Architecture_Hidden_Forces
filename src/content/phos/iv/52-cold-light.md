@@ -7,7 +7,7 @@ quality: [Cold Light, Temperature]
 related: [iv-35, iv-37, iv-36, iv-53, iv-14]
 summary: Illumination distinguished from burning — beneficial where precision is needed, sterile when it fails to enter compassionate relation with life.
 epigraph: "Cold light distinguishes illumination from burning."
-backdrop: icefissure
+backdrop: ice-fissure-glowing-gold-below
 position: center 50%
 ---
 

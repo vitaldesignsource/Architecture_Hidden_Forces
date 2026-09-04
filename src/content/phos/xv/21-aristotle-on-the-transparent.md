@@ -11,7 +11,7 @@ text: [De Anima]
 related: [ii-5, iii-8, i-7, ii-2, vi-3, xv-22]
 summary: Against rays from the eye — the transparent, to diaphanes, as a capacity of air, water, and certain bodies; light as the actuality of the transparent as transparent, darkness as its privation; colour moving the actualised medium, which moves the organ; mediation as a necessary condition of vision, and a predecessor to Morphaithēr.
 epigraph: "Light is then not simply placed within the field; it is the field's awakened condition."
-backdrop: crystalcanyon
+backdrop: white-crystal-canyon-at-sunrise
 position: center 50%
 ---
 

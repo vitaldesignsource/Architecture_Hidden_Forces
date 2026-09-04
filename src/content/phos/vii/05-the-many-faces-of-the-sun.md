@@ -6,7 +6,7 @@ tradition: [Egyptian, Greek, Vedic, Mesopotamian]
 symbol: [Solar Disc]
 related: [xii-2, xv-5, vii-4, xviii-22, xii-16]
 summary: Ra, Helios, Sūrya, Shamash, Amaterasu are not interchangeable names for one generic sun god — comparison becomes valuable when differences are preserved.
-backdrop: archer
+backdrop: archer-drawing-bow-in-courtyard
 ---
 
 The Sun appears differently according to time, atmosphere, season, latitude, culture, and symbolic relation. It may be creator, ruler, eye, judge, healer, destroyer, charioteer, child, falcon, lion, disk, wheel, boat, or hidden seed.

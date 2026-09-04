@@ -10,7 +10,7 @@ symbol: [Triangle]
 related: [viii-1, ii-22, xiii-12, xvii-13, v-30, xv-87]
 summary: Three points establishing the first stable plane - the upright triangle for fire and the inverted for water in Western alchemy, so that descending fire is better shown as an upright triangle receiving a ray from above than by inverting the sign.
 epigraph: "Descending fire is truthful only when the receiving architecture can hold its intensity without inflation or fracture."
-backdrop: burnslope
+backdrop: burned-forest-slope-regrowing
 position: center 45%
 ---
 

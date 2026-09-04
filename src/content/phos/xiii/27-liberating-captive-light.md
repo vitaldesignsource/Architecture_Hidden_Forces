@@ -8,7 +8,7 @@ operation: [Liberation]
 related: [v-20, xiii-22, xiii-26, xiii-21, x-7, xiii-23]
 summary: Living force prevented from completing its expression, held in trauma, rigid institution, exhausted doctrine, or forgotten form — liberation distinguishes the light from the architecture confining it, recovering what remains capable of truth rather than breaking the vessel.
 epigraph: "The aim is not simply to break the vessel but to recover what within it remains capable of truth."
-backdrop: crackedvessel
+backdrop: cracked-vessel-mended-with-gold-light
 position: center 50%
 ---
 

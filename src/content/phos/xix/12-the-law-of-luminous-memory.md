@@ -10,7 +10,7 @@ operation: [Imprinting, Recognition]
 related: [xiii-28, iii-30, ii-27, iv-36, xviii-9, xxi-13]
 summary: Every sustained encounter between light and form leaves an imprint - retained as bodily disposition, etheric rhythm, psychic image, ritual atmosphere, ancestral pattern, or the persistent quality of a place - and since recollection can be coloured by expectation and later mythology, the reality of an imprint does not guarantee the accuracy of every story told about it.
 epigraph: "Every sustained encounter between light and form leaves an imprint."
-backdrop: dewweb
+backdrop: dew-strung-web-over-valley-at-night
 position: center 45%
 ---
 

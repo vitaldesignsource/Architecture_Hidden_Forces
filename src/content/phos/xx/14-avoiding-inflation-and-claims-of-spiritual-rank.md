@@ -10,7 +10,7 @@ symbol: [Crown]
 related: [vi-18, xii-22, xviii-14, v-29, xx-11, x-22]
 summary: Inflation as the ordinary personality identifying itself with a magnitude it has encountered - visions of crowns, titles, angelic kinship, or past lives carrying symbolic truth without conferring personal rank; the proper response being increased responsibility.
 epigraph: "Authentic spiritual stature seldom needs continual proclamation."
-backdrop: statue
+backdrop: lamplit-statue-beside-open-book
 ---
 
 Inflation occurs when the ordinary personality identifies itself with a force, being, insight, or archetypal magnitude that it has encountered. The practitioner does not merely receive solar light but begins to imagine that they are the sun around which everyone else must revolve.

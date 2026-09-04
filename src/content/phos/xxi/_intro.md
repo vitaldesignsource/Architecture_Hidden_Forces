@@ -1,5 +1,5 @@
 ---
-backdrop: archive
+backdrop: narrow-archive-aisle-of-scrolls
 position: center 45%
 ---
 

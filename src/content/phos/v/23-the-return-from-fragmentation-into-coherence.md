@@ -7,7 +7,7 @@ operation: [Return, Integration]
 related: [v-22, iii-31, xiii-31, i-12, iv-7]
 summary: Not escape from multiplicity but its transfiguration — coherence is multiplicity remembering its source.
 epigraph: "Coherence is multiplicity remembering its source."
-backdrop: stairs
+backdrop: long-stair-cut-into-cliff
 ---
 
 Luminous return is the restoration of meaningful relation among differentiated parts. It does not erase the distinctions acquired through manifestation.

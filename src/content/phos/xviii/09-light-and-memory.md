@@ -10,7 +10,7 @@ symbol: [Crypt]
 related: [ii-27, ii-28, xiii-28, iii-30, xv-91, ix-24]
 summary: Retained illumination - photograph, neural trace, cultural story, astral image, and surviving soul as different forms of persistence that must not be collapsed; the Crypt as retentive depth rather than a perfect celestial recording.
 epigraph: "A remembered light is not necessarily identical to the original illumination."
-backdrop: archive
+backdrop: narrow-archive-aisle-of-scrolls
 position: center 45%
 ---
 

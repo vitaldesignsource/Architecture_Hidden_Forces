@@ -10,7 +10,7 @@ symbol: [Circle, Solar Disc]
 related: [vii-4, xii-2, xv-4, iv-48, xvii-4, xvii-19]
 summary: Every point of the circumference standing in equal relation to the centre - a natural geometry for one source radiating equally in all directions; the disc as a frontal face of radiance whose boundary marks not imprisonment but the coherent limit through which a centre becomes perceptible.
 epigraph: "The centre is the fontal source; the circumference is the lawful limit of its present manifestation."
-backdrop: startemple
+backdrop: star-trails-over-ruined-temple
 position: center 45%
 ---
 

@@ -11,7 +11,7 @@ text: [Bardo Thödol]
 related: [v-13, x-18, ix-18, xi-13, xiii-31, xv-68]
 summary: Prabhāsvara, 'od gsal - the subtlest condition of mind, accessible as coarser winds dissolve in meditation, sleep, and death; mother and child clear light; the bardo appearances as displays inseparable from awareness; recognition, not brightness, as the decisive operation.
 epigraph: "Clear light may appear without being understood."
-backdrop: icevent
+backdrop: meltwater-vent-in-blue-ice-cave
 position: center 45%
 ---
 

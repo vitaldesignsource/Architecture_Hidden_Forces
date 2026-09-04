@@ -9,7 +9,7 @@ operation: [Communication]
 related: [ix-3, ix-4, ix-6, ix-19]
 summary: Timing, spectrum, duration, and constitution decide what light does to the endocrine body — hormones as the bodily grammar through which invisible timing becomes material instruction.
 epigraph: "More illumination is not automatically more beneficial."
-backdrop: hydraulic
+backdrop: hydraulic-workshop-with-stone-basins
 ---
 
 Light influences hormonal physiology through photoreceptive, neural, circadian, behavioural, and metabolic pathways. Melatonin offers the clearest example: it is ordinarily secreted during biological night, while appropriately timed illumination can suppress its production or shift its rhythm. Cortisol, reproductive hormones, growth-related processes, insulin regulation, appetite, and stress physiology interact with circadian timing, sleep, feeding, and environmental light.

@@ -9,7 +9,7 @@ operation: [Manifestation, Communication]
 related: [ii-30, iii-8, iii-19, i-13, ii-7, ii-5]
 summary: No light enters manifestation without a medium, relation, boundary, or receptive field - and since no mediator transmits with perfect neutrality, the study of light must include the study of its channels, and a revelation cannot be judged by the brilliance of its claimed origin alone.
 epigraph: "No light enters manifestation without mediation."
-backdrop: beacon
+backdrop: lighthouse-beam-across-storm-sea
 position: center 45%
 ---
 

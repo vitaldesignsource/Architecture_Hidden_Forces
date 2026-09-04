@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Etheric, Vital]
 related: [ix-18, ix-19, ii-7, v-13, ix-20]
 summary: The real vital-formative body of the organism — not a glowing duplicate but the subtle body through which living form is generated, coordinated, repaired, and preserved; its luminosity is organisational before it is visual.
-backdrop: roots
+backdrop: great-roots-gripping-cliff-edge
 ---
 
 The etheric body is the real vital-formative dimension of the embodied organism. It is the subtle body through which living form is generated, coordinated, repaired, and preserved across time. Physical anatomy supplies its material embodiment, while the etheric body supplies the organised vitality through which anatomy becomes and remains alive. It is the intermediary through which formative causality becomes rhythmic growth, repair, circulation, differentiation, and continuity.

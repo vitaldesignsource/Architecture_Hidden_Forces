@@ -7,7 +7,7 @@ plane: [Divine]
 operation: [Manifestation]
 related: [i-2, i-4, vii-3, xv-42, xii-1]
 summary: A luminary is a vessel of light; the principle of illumination precedes every vessel through which it appears.
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 The image of light existing before the Sun, Moon, and stars expresses one of the deepest distinctions in luminous metaphysics: the distinction between light itself and the formed bodies through which light becomes localised.

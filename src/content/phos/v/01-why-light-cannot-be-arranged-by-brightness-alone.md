@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Intensity, Brilliance]
 related: [iv-1, iv-26, vi-19, v-2, xi-26]
 summary: The hierarchy must be arranged by causal depth and function — at the highest degree luminosity may surpass the receiver so completely that it appears as darkness.
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 ---
 
 Brightness measures only one aspect of a luminous event. A physically intense light may carry little symbolic meaning, while a faint image may reorganise an entire life. A brilliant psychic vision may be less truthful than a quiet noetic recognition.

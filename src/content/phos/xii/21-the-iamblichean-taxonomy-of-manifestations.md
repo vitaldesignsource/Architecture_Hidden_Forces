@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [xii-20, xii-22, xii-9, xii-11, xii-12]
 summary: Gods, archangels, angels, daimons, heroes, archons, and souls distinguished by the complete signature of their appearance and its effect on the observer — a being is known not by what it claims but by how it manifests.
 epigraph: "A being is known not merely by what it claims to be, but through the complete signature of its manifestation."
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 ---
 
 In *De Mysteriis*, Iamblichus distinguishes manifestations of gods, archangels, angels, daimons, heroes, archons, and souls. These are not arbitrary visual costumes. Their appearances reflect differences in essence, power, activity, universality, and relation to the material world.

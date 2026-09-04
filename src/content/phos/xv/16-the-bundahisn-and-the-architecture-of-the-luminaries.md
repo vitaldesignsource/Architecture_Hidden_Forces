@@ -11,7 +11,7 @@ text: [Bundahišn]
 related: [xv-15, vii-17, vi-13, vii-16, viii-3, v-23]
 summary: Primal Creation — Ohrmazd in Endless Light, Ahriman in Endless Darkness, the void between, and the mixture that follows the attack; the sky as a brilliant enclosure of crystal or shell; the stars as a defensive army, beneficent fixed stars against disruptive planets; fires distributed through creation; frašgird, the final renovation.
 epigraph: "The purpose of cosmic conflict is not endless dualism but the final removal of distortion from existence."
-backdrop: crystalhall
+backdrop: crystal-pillars-in-mirrored-hall
 ---
 
 The Bundahišn, meaning "Primal Creation", is a major Middle Persian compilation of Zoroastrian cosmogony and cosmography. Its surviving forms were compiled in the Islamic period, principally around the ninth century CE, but they preserve, interpret, and systematise much older Avestan traditions. It should therefore not be treated as a text written by Zarathustra or as a direct record of the earliest Iranian religion; [Encyclopaedia Iranica](https://www.iranicaonline.org/articles/bundahisn-primal-creation/) surveys its recensions and transmission.

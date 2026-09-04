@@ -9,7 +9,7 @@ operation: [Differentiation, Recognition, Communication]
 related: [xxi-27, xviii-22, xx-16, xxi-16, xxi-21, xviii-5]
 summary: The linguistic centre of the Library, gathering words for light, fire, brilliance, visibility, clarity, revelation, glory, colour, shadow, radiance, vision, and transfiguration - arranged by semantic family rather than by language alone, so that overlap can be shown without identity being assumed.
 epigraph: "The lexicon should function as a network rather than a flat glossary."
-backdrop: web
+backdrop: dew-covered-web-in-dark-woodland
 ---
 
 The Multilingual Lexicon forms the linguistic centre of the Library. It gathers words connected with light, fire, brilliance, visibility, clarity, revelation, glory, colour, shadow, darkness, radiance, vision, illumination, transparency, and transfiguration. Rather than arranging these words only by language, the portal allows readers to explore them through semantic families.

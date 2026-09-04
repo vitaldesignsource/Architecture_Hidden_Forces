@@ -8,7 +8,7 @@ operation: [Return, Integration]
 related: [x-5, x-21, x-22, i-12, ii-15]
 summary: The middle position is not weakness — descent embodies spirit truthfully, return gathers embodied experience into wisdom; the soul's task is conscious participation in the architecture, not escape from it.
 epigraph: "The soul's task is not escape from the architecture, but conscious participation in it."
-backdrop: stairs
+backdrop: long-stair-cut-into-cliff
 ---
 
 The soul stands between spirit and form, but this middle position is not one of weakness or indecision. It is the place of mediation through which spirit becomes embodied and form becomes capable of returning toward intelligibility.

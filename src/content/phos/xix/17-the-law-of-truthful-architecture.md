@@ -10,7 +10,7 @@ operation: [Exposure, Revelation, Integration]
 related: [i-16, iv-26, xiii-29, xix-16, xix-20, xii-22]
 summary: An architecture is truthful when its visible form, hidden operation, proclaimed purpose, and actual consequences correspond - not perfection, but the capacity to reveal its own condition, acknowledge failure, and receive correction - and falsity becomes structural when contradiction must be concealed to preserve authority.
 epigraph: "The invisible does not excuse visible harm. The visible does not exhaust the invisible."
-backdrop: pavilion
+backdrop: timber-pavilion-on-rock-shelf
 position: center 50%
 ---
 

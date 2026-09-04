@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [xix-7, xix-1, iii-21, iii-8, xviii-22]
 summary: Three questions govern it — what is carried, through what medium, with what fidelity — and success is continuity of essential relation through necessary transformation.
-backdrop: shafthall
+backdrop: light-shaft-across-pillared-hall
 position: center 50%
 ---
 

@@ -11,7 +11,7 @@ text: [Zur Farbenlehre]
 related: [iv-15, ii-9, viii-20, iii-8, vi-27, xv-89]
 summary: Colour investigated as a relational event among light, darkness, medium, boundary, eye, and observer - yellow through a turbid medium, blue through an illuminated one; a phenomenology that does not replace wavelength physics but asks a different question of the same world.
 epigraph: "A wavelength can be measured; the lived quality of gold, crimson, violet, or blue requires another form of disciplined knowledge."
-backdrop: filters
+backdrop: stacked-glass-filters-in-dark-cell
 ---
 
 Goethe objected to reducing colour entirely to an analysis of light performed under highly controlled laboratory conditions. His *Theory of Colours*, published in 1810, approached colour as a phenomenon arising through the relationship among light, darkness, medium, boundary, eye, and observer.

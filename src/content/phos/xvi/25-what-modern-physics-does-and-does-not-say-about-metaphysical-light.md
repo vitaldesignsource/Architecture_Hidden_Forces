@@ -9,7 +9,7 @@ operation: [Recognition, Judgment]
 related: [xvi-9, xvi-10, xvi-19, i-2, portal-6, xvi-26]
 summary: An exact accounting of what the physics of light establishes and what it does not - quantum mechanics not proving that intention determines events, vacuum fluctuations not proving a spiritual plenum, hertz not equalling spiritual rank, and methodological restriction not equalling metaphysical doctrine.
 epigraph: "Science cannot decide between these possibilities without testable consequences."
-backdrop: threshold
+backdrop: threshold-arches-in-misted-vault
 ---
 
 Modern physics says a great deal about electromagnetic fields, photons, radiation, matter, energy transfer, spacetime, quantum states, and measurement. It explains a vast range of luminous phenomena with extraordinary precision.

@@ -8,7 +8,7 @@ operation: [Communication, Protection, Inspiration]
 related: [xii-7, xii-9, v-9, xi-16, xii-13]
 summary: The third triad brings illumination to peoples, places, persons, and events — the descent through the orders is not a decline into unreality but mediation that lets higher light act specifically without destroying the vessel it reaches.
 epigraph: "Their nearness does not make them insignificant."
-backdrop: cityangels
+backdrop: angelic-figures-above-lamplit-city
 position: center 38%
 ---
 

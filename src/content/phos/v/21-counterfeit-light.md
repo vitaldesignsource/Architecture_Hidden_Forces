@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 related: [vi-18, xii-22, xi-26, iv-26, xx-14, i-17]
 summary: What makes it counterfeit is not ugliness but misrepresentation — it may be brilliant, beautiful, and internally coherent.
 epigraph: "Counterfeit light is identified through source, fidelity, ethical consequence, and what it enables the receiver to become."
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 Counterfeit Light produces the appearance or affect of illumination without maintaining truthful relation to its claimed source.

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Purification, Awakening]
 related: [ii-22, xx-10, xx-12, xiii-11, xiii-17, xviii-11]
 summary: Discernment, necessity, truth, initiation, silence, longing — six operations of one fire of wisdom, which together keep the Inner Sun from passivity and from conflagration.
-backdrop: bellfoundry
+backdrop: bell-foundry-casting-bronze-bells
 ---
 
 Ignisophia is one transformative fire appearing through six faces.

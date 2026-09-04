@@ -10,7 +10,7 @@ text: [Coffin Texts, Book of Two Ways]
 related: [xv-2, ix-14, xiii-3, vi-25, xv-4, xi-17]
 summary: Middle Kingdom mortuary knowledge on coffins, walls, and masks, keeping older Pyramid Texts beside new spells — the Book of Two Ways charting paths through the beyond, and the coffin itself a luminous architecture enclosing the body in protected, inscribed darkness.
 epigraph: "Light does not simply arrive and erase death; it reorganises the dead into a being capable of acting beyond death."
-backdrop: chamber
+backdrop: waterfall-chamber-behind-stone-arches
 ---
 
 The Coffin Texts emerged principally during the First Intermediate Period and Middle Kingdom, approximately 2100–1650 BCE. They were written on coffins, sarcophagi, tomb walls, masks, and other funerary objects. Older Pyramid Text material continued to circulate alongside newer compositions, producing a greatly expanded body of mortuary knowledge. The University of Chicago's editions emphasise that Middle Kingdom coffins frequently preserved both contemporary Coffin Texts and copies of older Pyramid Texts, showing continuity rather than simple replacement — see James P. Allen's *The Egyptian Coffin Texts, Volume 8: Middle Kingdom Copies of Pyramid Texts* in the [Oriental Institute Publications series](https://isac.uchicago.edu/research/publications/oriental-institute-publications-oip).

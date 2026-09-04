@@ -8,7 +8,7 @@ operation: [Consecration]
 related: [xiii-11, xii-19, ii-29, xiii-26, xiii-14, xviii-1]
 summary: A person, place, object, time, or action established within a sacred relation — purification makes the vessel available, consecration gives it orientation and belonging; names, rites, and timings can establish actual relations among orders of force.
 epigraph: "A declaration alone does not guarantee consecration. The vessel must become capable of carrying what has been invoked."
-backdrop: ritualcircle
+backdrop: ritual-circle-with-bowls-and-flame
 position: center 55%
 ---
 

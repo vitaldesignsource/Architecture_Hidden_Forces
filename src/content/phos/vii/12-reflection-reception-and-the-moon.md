@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 related: [ii-16, v-18, vii-11, iii-14, ii-15]
 summary: The great celestial image of the soul — the Moon is not diminished at the crescent; only its visible illumination changes.
 epigraph: "Absence of visible radiance does not necessarily mean absence of underlying form."
-backdrop: moonfall
+backdrop: moonlit-waterfall-between-two-lakes
 position: center 45%
 ---
 

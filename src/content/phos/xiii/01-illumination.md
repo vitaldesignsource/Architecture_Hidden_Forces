@@ -8,7 +8,7 @@ operation: [Illumination]
 related: [i-4, i-9, x-1, xiii-2, xiii-15, portal-4]
 summary: The primary operation by which something becomes available to awareness — it does not create what it reveals, and once a thing is genuinely illuminated the receiver can no longer relate to it with complete innocence.
 epigraph: "Knowledge places the soul under an obligation to respond."
-backdrop: shafthall
+backdrop: light-shaft-across-pillared-hall
 position: center 50%
 ---
 

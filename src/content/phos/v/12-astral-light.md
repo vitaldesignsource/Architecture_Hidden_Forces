@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Modern Esoteric]
 plane: [Astral]
 related: [ii-19, xv-91, x-18, vi-18, v-11]
 summary: Highly mobile and plastic, taking form around fear and longing — not identical to physical starlight despite the term's history.
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Astral Light is the luminosity of the image-bearing field of desire, sensation, emotion, movement, and attraction. It belongs to the astral body understood as a *field of felt vectors*.

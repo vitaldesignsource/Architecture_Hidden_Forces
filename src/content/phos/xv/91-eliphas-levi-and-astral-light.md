@@ -10,7 +10,7 @@ symbol: [Mirror]
 related: [x-18, ii-27, ii-28, xii-22, xi-25, ix-24]
 summary: A universal agent, plastic mediator, and image-bearing atmosphere impressed by will, imagination, ritual, and repeated human activity; a medium that retains events and passions as images; morally ambivalent, transmitting hatred as readily as devotion.
 epigraph: "The Astral Light can preserve and magnify images without guaranteeing their truth."
-backdrop: veils
+backdrop: figure-before-hanging-veils-of-light
 position: center 45%
 ---
 

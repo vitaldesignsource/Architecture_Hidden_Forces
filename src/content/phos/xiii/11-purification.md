@@ -8,7 +8,7 @@ operation: [Purification]
 related: [ii-22, xi-14, xiii-12, xiii-22, viii-1, vi-27]
 summary: Light separating the coherent from the mixed, distorted, or parasitic — not an assault on matter or personality but the restoration of a thing to its governing principle; painful because identification forms around what obscures the light.
 epigraph: "What feels like the destruction of the self may sometimes be the removal of what prevented the self from appearing truthfully."
-backdrop: basinblade
+backdrop: stone-basin-under-blade-of-light
 position: center 55%
 ---
 

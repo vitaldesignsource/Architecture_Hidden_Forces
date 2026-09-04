@@ -1,5 +1,5 @@
 ---
-backdrop: leaflight
+backdrop: backlit-leaves-at-forest-edge
 position: center 50%
 ---
 

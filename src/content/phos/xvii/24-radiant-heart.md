@@ -10,7 +10,7 @@ symbol: [Radiant Heart]
 related: [xv-82, ii-22, x-12, x-6, xvii-15, xv-60]
 summary: Illumination centred in affect, relation, and courage rather than authority - the Sacred Heart aflame, wounded, and crowned; the Sufi qalb as an organ of remembrance and unveiling; the heart radiating by circulation, receiving and distributing.
 epigraph: "The heart's light is tested by what it nourishes."
-backdrop: handlight
+backdrop: hand-raised-to-lit-wall
 position: center 55%
 ---
 

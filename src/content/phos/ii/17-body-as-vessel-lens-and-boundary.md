@@ -7,7 +7,7 @@ plane: [Physical]
 related: [ii-14, iii-16, iii-12, ix-8, ii-26]
 summary: Neither incidental container nor prison — the architecture through which luminosity becomes bearable, relational, and effective.
 epigraph: "Form is spirit made bearable through successive degrees of mediation."
-backdrop: nichejar
+backdrop: lit-jar-in-temple-niche
 position: center 60%
 ---
 

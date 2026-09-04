@@ -10,7 +10,7 @@ text: [On the Nature of Things, Natural Questions]
 related: [xv-18, x-2, iii-6, x-14, viii-4, xi-25]
 summary: Pneuma tensioning the air into a visual cone between eye and object, vision as touch through a tensed medium; presentation distinct from assent; Lucretius' simulacra and the honest senses; Galen's crystalline lens and psychic pneuma; Seneca, Pliny, and Vitruvius; Rome as the vessel that carried Greek optics into the Syriac, Arabic, and Latin worlds.
 epigraph: "The reality of contact does not guarantee the correctness of interpretation."
-backdrop: archive
+backdrop: narrow-archive-aisle-of-scrolls
 position: center 45%
 ---
 

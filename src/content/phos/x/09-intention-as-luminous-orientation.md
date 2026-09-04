@@ -8,7 +8,7 @@ operation: [Orientation]
 related: [x-8, ii-22, x-11, x-10, ii-24]
 summary: Attention says where; intention says toward what — the inward vector by which spiritual and psychic causation enter form, uniting understanding and desire around the Inner Sun.
 epigraph: "Understanding alone does not move the chariot, and desire alone does not know its proper road."
-backdrop: archer
+backdrop: archer-drawing-bow-in-courtyard
 ---
 
 If attention is the directed ray, intention is the orientation that gives the ray purpose. Attention determines where consciousness is concentrated; intention determines toward what end that concentration moves.

@@ -8,7 +8,7 @@ operation: [Vivification]
 related: [xiii-6, ix-19, ix-20, viii-8, iv-23, xiii-13]
 summary: The strengthening and renewal of life already present — restoring circulation through sunlight, sleep, breath, affection, communion — and not to be confused with stimulation, which consumes what vivification replenishes.
 epigraph: "Genuine vivification leaves the organism more coherent, resilient, receptive, and capable of sustaining life after the immediate experience has passed."
-backdrop: coralnursery
+backdrop: coral-nursery-in-sunlit-shallows
 position: center 50%
 ---
 

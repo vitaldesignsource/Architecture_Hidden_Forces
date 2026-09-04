@@ -10,7 +10,7 @@ symbol: [Mirror]
 related: [xvii-25, x-22, xiii-9, xiii-10, xiv-8, xix-16]
 summary: That which illuminates is also disclosed through what receives its light - the student's questions reveal the teaching, the world reveals what solar radiance can generate, even resistance discloses the direction of the force that meets it - so that no being may be treated as passive matter for another's spiritual project, and illumination that refuses reciprocity becomes domination.
 epigraph: "Authentic radiance awakens the other's own centre rather than demanding permanent dependence upon an external source."
-backdrop: dewweb
+backdrop: dew-strung-web-over-valley-at-night
 position: center 45%
 ---
 

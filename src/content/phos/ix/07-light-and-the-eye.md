@@ -9,7 +9,7 @@ operation: [Revelation]
 related: [ix-6, ix-8, iii-10, iii-13]
 summary: Aperture, lens, chamber, photosensitive surface, living threshold — vision arises through relation, revelation requires limitation, and ordinary sight is not the measure of all knowing.
 epigraph: "Revelation requires limitation."
-backdrop: eyesun
+backdrop: human-eye-with-sun-in-the-iris
 position: center 68%
 ---
 

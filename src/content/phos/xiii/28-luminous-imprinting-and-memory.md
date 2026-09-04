@@ -9,7 +9,7 @@ symbol: [Crypt]
 related: [ii-27, ii-28, x-7, ix-24, v-19, iv-36]
 summary: Light leaving impressions on bodies, souls, places, and subtle fields — physical trace, neural memory, etheric habit, ritual atmosphere, ancestral inheritance, spiritual recollection; the past continuing to participate in the formation of the present.
 epigraph: "Memory is not merely a private mental archive; it is one of the principal means by which the past continues to participate in the formation of the present."
-backdrop: peatcliff
+backdrop: peat-cliff-above-still-lake
 ---
 
 Light does not always vanish when its immediate appearance ends. Encounters leave impressions upon bodies, nervous systems, souls, places, communities, and subtle fields. Luminous imprinting is the operation through which an organised influence establishes a continuing pattern within a receiver.

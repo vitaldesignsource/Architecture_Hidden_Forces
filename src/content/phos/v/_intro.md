@@ -1,5 +1,5 @@
 ---
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 position: center 40%
 ---
 

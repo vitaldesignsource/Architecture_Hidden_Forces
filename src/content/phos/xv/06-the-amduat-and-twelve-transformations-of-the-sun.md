@@ -11,7 +11,7 @@ text: [Amduat, Book of the Hidden Chamber]
 related: [xv-5, xv-7, vi-25, vi-23, xiii-21, ii-27]
 summary: What Is in the Duat — the sun's twelve-hour night as stages of transformation, the inhabitants of the Duat wakened by its passage, the union of solar ba and Osirian corpse at midnight, Apophis restrained, and the aged sun reborn: light regenerates through descent.
 epigraph: "Dawn is possible because light has entered darkness deeply enough to recover the life hidden there."
-backdrop: cavestream
+backdrop: stream-through-lit-cave-mouth
 ---
 
 The Amduat — "What Is in the Duat" — is also called the Book of the Hidden Chamber. Partial versions appear near the beginning of the New Kingdom, while the tomb of Thutmose III preserves the first complete surviving version. It describes the sun's nocturnal journey through twelve hours or regions of the Netherworld using an inseparable combination of text and image; [the Museo Egizio's study of its Amduat papyri](https://rivista.museoegizio.it/article/the-amduat-papyri-in-the-museo-egizio-tradition-and-innovation-between-the-twenty-first-and-twenty-second-dynasties/) traces the composition's later transmission.

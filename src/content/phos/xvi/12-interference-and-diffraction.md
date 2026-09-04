@@ -10,7 +10,7 @@ symbol: [Circle]
 related: [xvi-7, xvi-13, vi-11, vi-2, x-12, xvi-10]
 summary: Amplitudes reinforcing or cancelling according to phase, and waves spreading as they pass apertures or obstacles - a fundamental limit on focusing, and darkness produced by the ordered interaction of light with light rather than by absence.
 epigraph: "Not every dark region signifies absence, evil, or weak energy."
-backdrop: scrims
+backdrop: light-scrims-hung-in-stone-room
 ---
 
 Interference occurs when wave amplitudes overlap. In constructive interference, compatible phases reinforce and produce greater intensity. In destructive interference, opposed phases reduce or cancel the resulting amplitude. The energy has not simply vanished; it is redistributed through the total interference field.

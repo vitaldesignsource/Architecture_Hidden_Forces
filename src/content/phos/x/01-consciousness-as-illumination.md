@@ -8,7 +8,7 @@ operation: [Revelation, Differentiation]
 related: [i-18, i-3, x-2, x-3, x-21]
 summary: Consciousness grants presence — an active field of disclosure, not a container; distinct from physical light yet participating with it in one principle of manifestation.
 epigraph: "What is wholly outside consciousness may act upon a being, but it has not yet become experience."
-backdrop: aperture
+backdrop: cave-mouth-light-on-still-water
 ---
 
 Consciousness is illumination because it grants presence. What is wholly outside consciousness may act upon a being, but it has not yet become experience. When a sensation, image, thought, memory, or spiritual influence enters awareness, it passes from hidden activity into inward manifestation.

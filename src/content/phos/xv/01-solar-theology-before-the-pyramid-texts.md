@@ -9,7 +9,7 @@ symbol: [Solar Disc, Solar Barque]
 related: [xv-2, vii-2, xii-2, xii-16, vii-1, xiv-5]
 summary: The Pyramid Texts preserved a theology they did not create — solar discs, falcons, barques, horizon imagery, and oriented burial landscapes carried it first; Khepri, Re, and Atum as phases of one solar mystery rather than competing explanations.
 epigraph: "Luminous knowledge was carried through symbol, rite, orientation, and institution before it was gathered into a major textual corpus."
-backdrop: ruinsdawn
+backdrop: colonnade-ruins-at-coloured-dawn
 ---
 
 The Pyramid Texts are the earliest large surviving body of Egyptian religious writing, but they did not create Egyptian solar theology. They preserve, organise, and adapt traditions that had already developed through centuries of ritual, kingship, iconography, temple practice, celestial observation, and oral transmission. The absence of earlier theological manuscripts should not be mistaken for an absence of earlier theology.

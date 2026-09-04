@@ -11,7 +11,7 @@ text: [1 Enoch, Astronomical Book]
 related: [vii-14, vii-16, xii-2, ii-25, xv-15, xv-16]
 summary: The Astronomical Book, chapters 72 to 82, with Uriel as instructor - portals, periods, laws, and rulers for sun and moon; a 364-day calendar on which festivals and priestly service depend; stars with angelic dimensions that keep or abandon their stations; celestial light as lawful light.
 epigraph: "Freedom is not defined as the absence of order; it is the unhindered fulfilment of a being's truthful nature."
-backdrop: observatory
+backdrop: mountain-observatory-above-cloud
 ---
 
 First Enoch is a composite collection whose major sections were produced at different times. It survives completely in Ge'ez, while substantial Aramaic fragments discovered at Qumran demonstrate the antiquity and Jewish origin of much of the collection.

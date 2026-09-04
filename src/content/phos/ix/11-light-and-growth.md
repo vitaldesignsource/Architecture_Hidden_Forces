@@ -8,7 +8,7 @@ operation: [Formation, Differentiation, Integration]
 related: [ix-12, ix-13, ix-2, ii-7, viii-6]
 summary: Ordered development rather than undirected increase — proportion among force, vessel, and stage, with formative light as the real etheric activity that differentiates and keeps the whole one.
 epigraph: "Warmth awakens. Light differentiates. Tone orders. Life integrates."
-backdrop: seedroots
+backdrop: seed-roots-lit-beneath-the-soil
 position: center 45%
 ---
 

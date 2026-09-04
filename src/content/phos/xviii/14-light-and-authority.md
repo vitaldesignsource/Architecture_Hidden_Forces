@@ -10,7 +10,7 @@ symbol: [Crown]
 related: [xii-16, xv-81, v-24, ii-25, xii-22, xvii-15]
 summary: Illumination permitting oversight, orientation, and public recognition - suns, halos, crowns, and fiery thrones communicating a power beyond ordinary individuality, while spectacle and controlled lighting can manufacture the appearance of transcendence.
 epigraph: "The counterfeit solar ruler demands that all other lights disappear so that only his brilliance remains visible."
-backdrop: monolith
+backdrop: monolith-on-shore-in-sea-mist
 position: center 45%
 ---
 

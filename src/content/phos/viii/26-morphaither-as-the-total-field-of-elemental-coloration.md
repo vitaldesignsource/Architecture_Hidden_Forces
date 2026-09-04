@@ -7,7 +7,7 @@ plane: [Formative]
 related: [ii-4, ii-5, viii-9, ii-8, ii-10, viii-15]
 summary: Not a substance added to the world but its real formative depth — an active field of formability and inherited possibility.
 epigraph: "Morphaithēr is the living atmosphere in which light acquires quality, force acquires direction, and possible form approaches embodiment."
-backdrop: spectralvalley
+backdrop: spectral-valley-with-rainbow-beam
 position: center 50%
 ---
 

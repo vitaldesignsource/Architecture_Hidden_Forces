@@ -11,7 +11,7 @@ text: [Euclid’s Optics]
 related: [iii-4, xiii-8, x-8, iii-6, xv-24, xv-20]
 summary: Vision as a geometrical problem — visual rays in straight lines forming a cone with its vertex at the eye; apparent size governed by visual angle rather than distance; small objects lost between discrete rays; ray geometry separated from the unresolved question of the ray's physical nature; a science of how position governs manifestation.
 epigraph: "A ray establishes a directed relation; an aperture selects; a cone defines a field."
-backdrop: opticstable
+backdrop: optics-table-with-prism-and-spectrum
 ---
 
 Euclid's *Optics*, composed around the beginning of the Hellenistic period, transforms vision into a geometrical problem. Rather than focusing primarily upon the material composition of light or the physiology of the eye, Euclid asks how visual lines relate observer, object, angle, apparent size, clarity, and position.

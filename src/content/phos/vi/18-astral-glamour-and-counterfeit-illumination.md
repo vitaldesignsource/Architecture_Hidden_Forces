@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Astral]
 related: [v-21, xi-26, xii-22, xx-14, i-17, ii-19]
 summary: Its danger lies precisely in its luminosity — the receiver mistakes vividness for truth and intensity for authority.
-backdrop: mirror
+backdrop: round-mirror-set-in-stone-wall
 ---
 
 Astral glamour is psychic luminosity organised around attraction, fascination, fear, desire, or self-importance. It captures attention by producing the affect of revelation.

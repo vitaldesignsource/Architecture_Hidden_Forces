@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [White Light]
 related: [iii-13, xvi-6, iv-7, i-13, v-23]
 summary: Not the absence of colour but chromatic multiplicity integrated — and the return to white is meaningful only when it preserves what the spectrum taught.
-backdrop: alabaster
+backdrop: alabaster-slab-glowing-in-cavern
 ---
 
 White light is perceived when a suitable combination of visible wavelengths stimulates the visual system without producing one dominant hue. It is not the absence of colour but a condition in which chromatic multiplicity is integrated.

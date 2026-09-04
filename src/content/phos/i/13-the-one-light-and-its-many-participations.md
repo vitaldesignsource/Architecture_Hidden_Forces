@@ -7,7 +7,7 @@ operation: [Differentiation]
 quality: [Unity, Divisibility]
 related: [xix-2, xix-1, v-27, v-28, iii-8, xiii-4, i-11]
 summary: Difference of appearance need not mean difference of source; unity is generative, plurality is real, and neither abolishes discernment.
-backdrop: birdspiral
+backdrop: bird-murmuration-spiral-over-lake
 position: center 45%
 ---
 

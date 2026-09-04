@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 related: [ii-3, ii-21, ii-22, ix-2, ix-6, iii-24]
 summary: Received light rarely remains light — the bridge between revelation and consequence, running from noetic insight through language and emotion into bodily action.
 epigraph: "Transduction is the bridge between revelation and consequence."
-backdrop: hydraulic
+backdrop: hydraulic-workshop-with-stone-basins
 ---
 
 Transduction is the conversion of one kind of activity into another. Physical light may become heat, chemical change, electrical signal, biological regulation, or neural activity.

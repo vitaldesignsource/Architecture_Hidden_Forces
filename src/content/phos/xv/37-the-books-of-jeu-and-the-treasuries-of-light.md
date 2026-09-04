@@ -11,7 +11,7 @@ text: [Books of Jeu]
 related: [xv-36, xiv-18, viii-17, v-28, xiv-23, iv-4]
 summary: The Bruce Codex's ranked Treasuries of Light with their fathers, guardians, seals, and diagrams — names and seals not as passwords but as marks of luminous formation; baptisms and ethical discipline preparing the vessel; handbooks to eternity for a practising community.
 epigraph: "The mystery gives knowledge, but it also changes the knower."
-backdrop: cartography
+backdrop: dark-hall-with-charted-stone-floor
 ---
 
 The two *Books of Jeu*, preserved in the Bruce Codex, present one of the most elaborate surviving ritual and cosmological architectures of late antique Christianity. They combine revelation discourse, diagrams, divine names, seals, numbers, baptisms, ethical requirements, and instructions for the soul's passage through the higher realms.

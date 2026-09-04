@@ -10,7 +10,7 @@ symbol: [Lamp]
 related: [xvi-20, xvi-23, ix-2, xii-2, iii-1, ix-20]
 summary: Luciferin oxidised with the help of luciferase or a photoprotein, releasing a photon as the excited product decays - light as an organ of communication, lure, camouflage, and signal, produced with little heat and under precise control.
 epigraph: "Living systems do not merely receive cosmic light. They can become luminous sources."
-backdrop: mycelium
+backdrop: mycelium-threading-forest-litter
 ---
 
 Bioluminescence is light produced by living organisms through chemical reactions. It appears in bacteria, fungi, insects, fish, jellyfish, dinoflagellates, and many other organisms, especially in marine environments.

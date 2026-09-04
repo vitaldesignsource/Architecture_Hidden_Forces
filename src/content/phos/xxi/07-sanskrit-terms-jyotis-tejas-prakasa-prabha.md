@@ -11,7 +11,7 @@ text: [Ṛgveda, Upaniṣads, Bhagavad Gītā]
 related: [xv-57, xv-58, viii-12, xv-61, ii-11, xxi-8]
 summary: Jyotis as light, flame, and heavenly luminary; tejas as an active radiance that forms, heats, and distinguishes; prakāśa as the activity of making evident; prabhā as emitted lustre - with usage distinguished across Vedic, Epic, Upanishadic, Buddhist, Sāṃkhya, Yoga, Vedānta, Śaiva, Śākta, and tantric settings.
 epigraph: "Tejas should not be flattened into either light or fire."
-backdrop: sunravine
+backdrop: sunlit-ravine-with-golden-stream
 ---
 
 *Jyotis* is light, brightness, flame, celestial light, or a heavenly luminary. It can refer to the sun, fire, stars, and the inward light of consciousness. In Vedic and Upanishadic settings its meaning ranges from physical brilliance to that light by which experience itself becomes possible — the concern of [[xv-58|the Upanishadic light of the Self]].

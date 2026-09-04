@@ -10,7 +10,7 @@ symbol: [Point]
 related: [iii-1, i-2, x-8, iii-30, ii-2, xvii-2]
 summary: Position without extension - the first determinacy emerging from an immeasurable source, small only from the perspective of manifested space; Kether beneath the veils, the germinal star before the architecture of worlds, and the geometry of gathered attention.
 epigraph: "A point that refuses extension becomes sterile contraction; a point that radiates without losing its centre becomes a living source."
-backdrop: aperture
+backdrop: cave-mouth-light-on-still-water
 ---
 
 The point is light before extension. Geometrically it possesses position without measurable length, width, or depth. Metaphysically it signifies concentrated potential: the first determinacy emerging from an immeasurable source.

@@ -10,7 +10,7 @@ symbol: [Cross of Light]
 related: [xv-50, xv-51, xv-56, ii-26, xvii-13, xiii-20]
 summary: Vertical and horizontal extension meeting - transcendent descent crossing embodied relation; in Christianity never reducible to geometry, since the radiant cross signifies a transfiguration that passes through suffering rather than bypassing it.
 epigraph: "When the axes remain disconnected, transcendence fails to enter life or worldly activity loses higher orientation."
-backdrop: sanctum
+backdrop: circular-sanctum-with-lit-doorway
 ---
 
 The cross joins vertical and horizontal extension. Its vertical axis connects above and below; its horizontal axis extends into the manifested world. Their intersection marks the place where transcendent descent and embodied relation meet.

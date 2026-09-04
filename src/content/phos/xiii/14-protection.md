@@ -8,7 +8,7 @@ operation: [Protection]
 related: [ix-8, ix-18, xiii-12, xii-22, xiii-15, x-6]
 summary: Light establishing and maintaining a truthful boundary that governs exchange — intelligent rather than rigid, recognising what may enter, what must be transformed, what should be reflected, and what must be refused.
 epigraph: "Protection founded only upon fear can become another prison. Protection founded upon right relation preserves openness without surrendering sovereignty."
-backdrop: beacon
+backdrop: lighthouse-beam-across-storm-sea
 position: center 45%
 ---
 

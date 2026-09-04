@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vii-12, v-18, vii-19, ix-3, ii-16]
 summary: Relational light — the Moon changes visibly through phases while remaining whole; what changes is the portion presented to the observer.
-backdrop: moonfall
+backdrop: moonlit-waterfall-between-two-lakes
 position: center 45%
 ---
 

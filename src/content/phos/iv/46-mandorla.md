@@ -8,7 +8,7 @@ symbol: [Mandorla, Vesica]
 related: [xvii-17, xvii-6, iii-10, iv-45, xv-51]
 summary: The geometry of two overlapping circles — light shaped as a threshold, with the figure occupying neither realm exclusively.
 epigraph: "The mandorla is a geometry of mediation. It is light shaped as a threshold."
-backdrop: arch
+backdrop: stone-arch-under-construction
 ---
 
 A mandorla is an almond-shaped or vesica-like aureole enclosing the whole body of a sacred figure. It commonly marks moments of revelation, transfiguration, enthronement, cosmic sovereignty, or passage between worlds.

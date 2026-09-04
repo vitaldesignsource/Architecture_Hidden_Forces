@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [vi-28, ii-16, ii-20, xi-24, x-19]
 summary: What is rejected within is repeatedly encountered as though it existed only outside — illumination makes the obstructing structure visible rather than removing it by force.
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 ---
 
 The psyche does not receive reality neutrally. Memory, desire, fear, shame, attachment, identity, and expectation stand within the field of perception and cast shadows.

@@ -6,7 +6,7 @@ tradition: [Egyptian, Architecture of Hidden Forces]
 related: [xv-6, xv-7, vi-24, vi-25, vii-9, vii-28]
 summary: Night as hidden solar activity rather than mere absence — the Sun rises because its light has successfully passed through darkness.
 epigraph: "The Sun does not rise by avoiding darkness. It rises because its light has successfully passed through darkness."
-backdrop: eclipse
+backdrop: total-eclipse-over-forest-ridge
 position: center 40%
 ---
 

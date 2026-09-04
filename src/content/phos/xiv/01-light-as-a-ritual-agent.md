@@ -9,7 +9,7 @@ symbol: [Lamp]
 related: [xiv-2, xiv-3, xiv-24, xiii-12, x-17, xiv-6]
 summary: Light performing a designated sacred function — revealing, purifying, guiding, marking presence — through the union of natural property and ritual intention; position, colour, and duration all take part, so ritual light is never decoration.
 epigraph: "The symbolism is powerful because it develops from what fire and light actually do."
-backdrop: ritualcircle
+backdrop: ritual-circle-with-bowls-and-flame
 position: center 55%
 ---
 

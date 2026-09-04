@@ -8,7 +8,7 @@ operation: [Awakening]
 related: [xi-2, xi-4, xi-8, iv-55, ii-8]
 summary: Mist, smoke, sun, fire, wind, fireflies, lightning, crystal, and moon — the Śvetāśvatara's signs of yoga, read as neither neurological noise nor guaranteed proof of realisation; a sign remains a sign.
 epigraph: "A sign remains a sign: it indicates a process, threshold, purification, activation, or proximity without necessarily constituting complete spiritual attainment."
-backdrop: icevent
+backdrop: meltwater-vent-in-blue-ice-cave
 ---
 
 Yogic traditions preserve extensive accounts of luminous signs arising through concentration, breath discipline, interiorisation, and the awakening of subtle perception. These may include sparks, mist, smoke, flame, lightning, suns, moons, crystalline clarity, inner space, and radiant forms.

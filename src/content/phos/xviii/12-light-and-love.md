@@ -10,7 +10,7 @@ symbol: [Radiant Heart]
 related: [ii-25, xii-18, xv-82, xv-28, x-12, xvii-24]
 summary: Light entering relation without ceasing to recognise the other - revelation affirming the value of what it reveals; Neoplatonic superabundance, Christian sacrificial love, and Sufi longing compared without being reduced to gravitational attraction or resonance.
 epigraph: "A being may possess brilliance, knowledge, or visionary intensity without love."
-backdrop: olivetree
+backdrop: olive-tree-on-ridge-at-dusk
 position: center 45%
 ---
 

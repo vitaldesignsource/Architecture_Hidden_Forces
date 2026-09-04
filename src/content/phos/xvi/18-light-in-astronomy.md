@@ -10,7 +10,7 @@ symbol: [Star]
 related: [xvi-6, xvi-17, vii-16, ii-28, ix-24, xvi-19]
 summary: Composition from spectral lines, motion from Doppler shifts, magnetic fields from polarisation, and structure from wavelengths the eye cannot see - and, because light travels at a finite speed, a telescope that is an instrument of luminous memory.
 epigraph: "The source may have changed or ceased to exist while its radiation continues through space."
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Nearly everything known about distant astronomical objects comes through radiation. Telescopes collect photons that have crossed immense distances, carrying information about their sources and the media through which they travelled.

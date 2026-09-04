@@ -7,7 +7,7 @@ plane: [Psychic, Etheric, Noetic]
 related: [xi-3, xi-4, xi-5, xi-6, x-1]
 summary: Points, fields, inner suns, and radiant darkness as sensory attention quiets — some physiologically generated, some genuine perception of subtler orders; meditation refines the receiver rather than manufacturing what it sees.
 epigraph: "Attention must remain oriented toward truth rather than spectacle."
-backdrop: rootsstill
+backdrop: roots-and-vessels-beside-stream
 ---
 
 Meditative light may arise when ordinary sensory attention grows quiet and subtler contents become perceptible. Practitioners report points of light, diffuse fields, inner suns, coloured clouds, luminous mist, radiant darkness, geometric forms, and brilliance apparently independent of the physical eyes. Contemporary phenomenological research has documented a wide range of such meditation-induced luminosities among Buddhist practitioners — see [Lindahl and colleagues' study in *Frontiers in Psychology*](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00973/full).

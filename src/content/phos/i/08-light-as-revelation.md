@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Revelation, Exposure]
 related: [xiii-2, xi-26, xi-25, portal-9, i-16]
 summary: Revelation occurs whenever obscurity gives way to meaningful recognition — and it is not obliged to flatter; it is completed only by integration.
-backdrop: lighthouse
+backdrop: lighthouse-lamp-room-with-brass-optics
 ---
 
 To reveal is to remove or penetrate a veil. Revelation is the event in which something hidden becomes disclosed to a receiver.

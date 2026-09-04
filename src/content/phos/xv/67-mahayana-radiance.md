@@ -11,7 +11,7 @@ text: [Lotus Sūtra, Sūtra of the Sublime Golden Light]
 related: [v-26, v-2, xi-17, xii-14, i-13, xv-68]
 summary: Rays that illuminate distant buddha-fields and reveal beings undergoing many conditions; the Avataṃsaka's worlds within particles; Amitābha's immeasurable light inseparable from vows; the Golden Light Sūtra's radiance as protection and cosmic harmony; radiance interpreted beside emptiness.
 epigraph: "A light becomes immeasurable not merely by growing brighter but by becoming capable of reaching every form without losing compassionate specificity."
-backdrop: web
+backdrop: dew-covered-web-in-dark-woodland
 ---
 
 Mahāyāna Buddhist scriptures greatly expand the scale of luminous imagery. Buddhas illuminate innumerable worlds, rays emerge from their bodies, jewelled lands shine without ordinary darkness, bodhisattvas bear names of radiance, and entire assemblies become visible within a single beam.

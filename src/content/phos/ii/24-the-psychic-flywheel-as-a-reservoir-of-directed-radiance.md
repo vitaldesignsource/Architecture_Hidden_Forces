@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Kabbalistic]
 plane: [Psychic]
 related: [ii-22, x-7, x-8, x-19, xiii-28, ii-27]
 summary: Repeated thought, desire, and action accumulate formative momentum — not stored photons but organised readiness, with Hod and Netzach as coordinated wheels around a solar axis.
-backdrop: flywheel
+backdrop: great-flywheel-in-rock-cut-hall
 ---
 
 The Psychic Flywheel describes the way repeated thought, desire, imagination, feeling, and action accumulate formative momentum.

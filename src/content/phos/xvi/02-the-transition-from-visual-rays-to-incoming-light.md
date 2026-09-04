@@ -10,7 +10,7 @@ symbol: [Eye, Ray]
 related: [xvi-1, xvi-3, x-8, ix-7, iii-17, xvi-24]
 summary: Extramission explained why sight feels directed but failed physically; intromission explained the physics but had to account for order in the received image; Kepler's retinal image finally separated image formation from conscious seeing, while attention retained something ray-like.
 epigraph: "Optical reception and attentional projection should be distinguished."
-backdrop: eyesun
+backdrop: human-eye-with-sun-in-the-iris
 position: center 68%
 ---
 

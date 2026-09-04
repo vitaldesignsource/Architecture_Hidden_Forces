@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Mirror]
 related: [iii-14, xvi-5, x-22, v-18, xi-24]
 summary: The beginning of self-reference — which can deepen knowledge or close a loop in which prior expectations are mistaken for new revelation.
-backdrop: stillpool
+backdrop: still-pool-in-gorge-at-dusk
 position: center 50%
 ---
 

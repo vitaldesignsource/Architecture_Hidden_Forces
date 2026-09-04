@@ -11,7 +11,7 @@ symbol: [Cave]
 related: [vi-27, vi-9, vi-10, vi-26, xvii-29, xii-22]
 summary: Every finite manifestation of light generates boundaries, exclusions, and shadows, because a formed being cannot express every possibility at once - shadow is not automatically evil, and becomes pathological only when denied, projected, exploited, or rendered permanently unconscious.
 epigraph: "The mature path does not abolish shadow."
-backdrop: olivegrove
+backdrop: ancient-olive-grove-in-sunlight
 position: center 60%
 ---
 

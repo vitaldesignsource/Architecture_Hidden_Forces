@@ -9,7 +9,7 @@ operation: [Withdrawal, Protection, Healing]
 related: [v-28, v-29, ix-21, xx-13, ii-25, xi-22]
 summary: The warning signs that call for an intelligent closing of the aperture - prolonged sleeplessness, panic, compulsive repetition, escalating paranoia, dangerous commands, severe dissociation, or a conviction that ordinary ethical limits no longer apply; suspension as competence, not failure.
 epigraph: "A practice that repeatedly damages the receiver violates the Law of Corresponding Capacity and the Law of Right Relation."
-backdrop: threshold
+backdrop: threshold-arches-in-misted-vault
 ---
 
 Practice should be suspended when it persistently produces destabilisation beyond the practitioner's capacity to integrate. Warning signs include prolonged sleeplessness, panic, compulsive ritual repetition, escalating paranoia, dangerous commands, severe dissociation, inability to work or care for oneself, uncontrolled psychic opening, or a growing conviction that ordinary ethical limits no longer apply.

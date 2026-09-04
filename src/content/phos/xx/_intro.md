@@ -1,5 +1,5 @@
 ---
-backdrop: terraces
+backdrop: steaming-terraced-pools-in-rock
 position: center 50%
 ---
 

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [x-8, i-18, xx-15, iii-25, xx-12]
 summary: Attention as a controlled opening — too narrow produces rigidity, too wide produces flooding; receptivity is regulated access, not unlimited openness.
-backdrop: aperture
+backdrop: cave-mouth-light-on-still-water
 ---
 
 An aperture is a controlled opening through which light enters a bounded space. It determines how much light can pass, from what direction, and with what degree of concentration.

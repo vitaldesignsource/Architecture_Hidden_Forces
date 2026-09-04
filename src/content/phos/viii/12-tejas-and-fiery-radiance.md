@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 quality: [Fiery Light, Radiance]
 related: [ii-8, ii-22, iv-56, xv-61, vi-17, viii-13]
 summary: Ignisophia is Tejas brought into relationship with wisdom — its fire knows what must be clarified, preserved, transformed, or released.
-backdrop: burnslope
+backdrop: burned-forest-slope-regrowing
 ---
 
 Tejas is the tattvic bias toward radiance, heat, distinction, metabolism, intensity, digestion, and transformation.

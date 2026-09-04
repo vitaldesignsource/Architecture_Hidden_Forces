@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Neoplatonic]
 plane: [Noetic]
 related: [i-9, x-4, iv-24, v-6, xv-19]
 summary: The inward visibility of meaningful structure — clear without necessarily being visual, and validated by coherence and consequence rather than suddenness.
-backdrop: observatory
+backdrop: mountain-observatory-above-cloud
 ---
 
 Noetic Light is the luminosity of intelligence and intelligibility. It is the condition through which principles, relations, causes, and structures become inwardly apprehensible.

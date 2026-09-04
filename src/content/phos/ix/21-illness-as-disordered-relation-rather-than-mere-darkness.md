@@ -8,7 +8,7 @@ operation: [Healing]
 related: [ix-20, ix-22, ix-9, ix-19, vi-20]
 summary: A disturbance of right relation upon any level, often compound — spiritual causation possible without being universal, and never a licence for blame or for refusing physical or psychological care.
 epigraph: "Spiritual causation is possible without being universal, and etheric disorder is real without making the sufferer morally responsible."
-backdrop: splittrunk
+backdrop: split-trunk-of-old-tree
 ---
 
 Illness is a disturbance of right relation that may arise upon physical, etheric, astral, psychic, spiritual, environmental, ancestral, or collective levels. Its causes may be singular, but they are often compound.

@@ -9,7 +9,7 @@ operation: [Solve, Coagula, Withdrawal, Return, Dissolution]
 related: [xiii-30, xiii-29, xiii-22, xiii-23, xix-11, xix-17]
 summary: Every embodied structure eventually meets limitation, and form failure is not necessarily spiritual failure - the final truth of an architecture is whether it can release its light without pretending the dying form is eternal, permitting solve, mourning what cannot be kept, and preparing coagula, rather than suppressing evidence of decay and identifying loyalty to the source with loyalty to the vessel.
 epigraph: "No finite vessel is the source itself."
-backdrop: ruinsdawn
+backdrop: colonnade-ruins-at-coloured-dawn
 ---
 
 Every embodied structure eventually encounters limitation. Bodies age, symbols lose transparency, institutions become rigid, rituals become mechanical, languages change, and civilisations pass away. Form failure is not necessarily spiritual failure. It may be the lawful end of a vessel whose work has been completed.

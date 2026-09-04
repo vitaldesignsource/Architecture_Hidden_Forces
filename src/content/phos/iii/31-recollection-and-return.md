@@ -8,7 +8,7 @@ related: [i-12, xiii-31, v-23, portal-7, x-22, ii-30]
 summary: Return traces illumination back through its mediations, and completes the circuit when the receiver becomes a faithful secondary luminary.
 epigraph: "The source gives. The medium qualifies. The vessel receives. The witness recognizes. The receiver is transformed. The transformed receiver becomes capable of radiance."
 attribution: The luminous circuit
-backdrop: stairs
+backdrop: long-stair-cut-into-cliff
 ---
 
 Recollection is the act through which the receiver recognises the originating relation concealed within its acquired images, forms, and memories.

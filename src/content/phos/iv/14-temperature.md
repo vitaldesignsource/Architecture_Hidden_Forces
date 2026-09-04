@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Temperature, Cold Light]
 related: [xvi-14, ii-7, viii-5, iv-25, iv-3]
 summary: Colour temperature is chromatic appearance, not delivered heat — and metaphysically a complete illumination needs warmth to awaken and coolness to discern.
-backdrop: icevent
+backdrop: meltwater-vent-in-blue-ice-cave
 ---
 
 Temperature enters luminous analysis through several distinct meanings that must not be confused.

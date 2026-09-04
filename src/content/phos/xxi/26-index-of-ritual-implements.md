@@ -10,7 +10,7 @@ symbol: [Lamp, Mirror, Crystal, Temple]
 related: [xiv-3, xiv-4, xiv-8, xiv-9, xiv-13, xx-18]
 summary: Lamps, candles, wicks, oils, incense, mirrors, crystals, bowls of water, metals, pigments, statues, icons, veils, crowns, vestments, ritual circles, temple windows, solar apertures, and instruments of sacred sound - each studied materially and metaphysically, with practical cautions alongside symbolic meanings.
 epigraph: "The consecration of form must remain accountable to the actual properties and risks of the material being used."
-backdrop: moonrotunda
+backdrop: moonlight-through-rotunda-oculus
 position: center 45%
 ---
 

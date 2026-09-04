@@ -9,7 +9,7 @@ operation: [Communication, Revelation]
 related: [xxi-15, xxi-1, xxi-17, xviii-22, xv-60, xv-80]
 summary: Short passages serving as primary witnesses, each with the original language where possible, a reliable translation, textual location, historical note, and commentary on essential terms - translators named, the encyclopaedia's own renderings labelled as such, and difficult terms left partially untranslated where an English equivalent would erase their structure.
 epigraph: "A phrase such as light of lights can be misleading when detached from the argument, hymn, ritual, or cosmology in which it appears."
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 This section gathers short, carefully selected passages that serve as primary witnesses to humanity's luminous thought. Every passage includes the original language where legally and practically possible, a reliable translation, textual location, historical note, and commentary on essential terms.

@@ -8,7 +8,7 @@ operation: [Withdrawal]
 related: [xiii-30, xiii-21, xiii-16, xii-11, xiii-27, ix-22]
 summary: A structure surviving after the light that animated it has withdrawn — offices and rituals intact, transmission gone; not necessarily rejection but sometimes mercy toward both the light and the vessel, freeing the force for a truer architecture.
 epigraph: "The higher principle does not always destroy the form dramatically. It may simply cease to sustain the relationship."
-backdrop: ruinstream
+backdrop: stream-through-basalt-ruins
 position: center 45%
 ---
 

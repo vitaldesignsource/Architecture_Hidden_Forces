@@ -10,7 +10,7 @@ symbol: [Crypt]
 related: [xx-1, iv-15, xi-27, xiii-28, xx-9, xx-7]
 summary: A gathering of one's own recurring luminous forms - each entry separating description, context, personal association, traditional correspondence, possible mechanism, and observed consequence; a lexicon that grows more precise by preserving contradictions rather than hiding them.
 epigraph: "The strongest interpretations often emerge where personal experience and inherited symbolism illuminate one another without being forced into identity."
-backdrop: cabinet
+backdrop: cabinet-of-curiosities-in-lamplight
 ---
 
 A personal lexicon gathers the recurring luminous forms of one's own experience. Entries might include golden radiance, blue points, veiled white light, dark luminosity, inner dawn, solar pressure, crystalline atmosphere, peripheral shimmer, etheric warmth, dream stars, or the light surrounding a particular symbol.

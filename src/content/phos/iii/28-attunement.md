@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Purification, Orientation]
 related: [iii-27, xx-5, xx-6, xiv-25, xx-12]
 summary: Preparation rather than spontaneity — a finely tuned instrument remains selective, and becomes more capable of recognising dissonance as well as consonance.
-backdrop: bellfoundry
+backdrop: bell-foundry-casting-bronze-bells
 ---
 
 Attunement is the deliberate or organic adjustment of a receiver so that it can enter clearer relation with a particular current.

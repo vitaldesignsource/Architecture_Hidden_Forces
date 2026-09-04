@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Manichaean, Gnostic]
 operation: [Binding, Liberation]
 related: [xv-40, xiii-26, xiii-27, xix-11, vi-9]
 summary: Potential held within matter, memory, or institution — captivity may protect light during gestation, so liberation must be discerning.
-backdrop: crackedvessel
+backdrop: cracked-vessel-mended-with-gold-light
 position: center 50%
 ---
 

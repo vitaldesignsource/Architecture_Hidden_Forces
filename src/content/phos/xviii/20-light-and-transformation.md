@@ -9,7 +9,7 @@ operation: [Solve, Coagula, Metastoicheiōsis]
 related: [xiii-22, xiii-23, xiii-25, xi-13, xv-34, xiii-20]
 summary: Illumination revealing the present form while transformation alters its organisation - the two able to occur separately; solve releasing light from a form that has become false, coagula creating a more adequate vessel, and trans-elementation reaching deeper than changed appearance.
 epigraph: "Increased intensity, complexity, psychic power, or visionary brilliance does not by itself constitute advancement."
-backdrop: alembic
+backdrop: copper-alembic-still-in-stone-workshop
 ---
 
 Illumination reveals the present form; transformation alters its organisation. The two can occur separately. A person may see clearly and remain unchanged, or undergo violent change without understanding what is happening.

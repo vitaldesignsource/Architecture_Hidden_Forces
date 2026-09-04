@@ -11,7 +11,7 @@ text: [Exodus]
 related: [xiv-2, vii-17, xii-19, xvii-11, v-24, xv-42]
 summary: The seven-branched lampstand of pure gold made to a revealed pattern - arboreal and luminous at once, its branches, almond blossoms, and central shaft uniting the Tree of Life with ordered illumination; Second Temple readings linking its lamps to the planets without displacing its ritual identity.
 epigraph: "Multiplicity remains balanced around a sustaining centre."
-backdrop: reedslamp
+backdrop: lamp-among-reeds-in-lake-mist
 position: center 45%
 ---
 

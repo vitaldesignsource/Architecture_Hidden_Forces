@@ -8,7 +8,7 @@ operation: [Manifestation]
 related: [i-5, xiii-5, xiii-26, xii-11, xii-22, ii-1]
 summary: Hidden force acquiring a form in which it can appear and act — a passage from latency into effective presence, in which every body selects and excludes; the vessel mistaken for the source becomes an idol of its partial success.
 epigraph: "When the manifestation is mistaken for the whole source, the vessel becomes an idol of its own partial success."
-backdrop: sprout
+backdrop: sprout-on-wet-black-rock
 ---
 
 Manifestation is the operation through which hidden force acquires a form in which it can appear, act, or produce consequences. That which becomes visible may have existed invisibly long before its appearance. Manifestation is therefore not necessarily the creation of something from nothing; it is the completion of a passage from latency into effective presence.

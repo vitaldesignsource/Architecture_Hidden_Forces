@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Greek, Medieval Latin, Neoplatonic]
 related: [vii-16, xv-31, v-24, xv-33, vii-18]
 summary: A historical cosmological map combining observation, mathematics, metaphysics, music, and theology — retained as a real hierarchy of mediation, not as crystalline shells.
-backdrop: rotunda
+backdrop: rotunda-open-to-night-sky
 ---
 
 The classical and medieval seven-sphere sequence commonly includes the Moon, Mercury, Venus, Sun, Mars, Jupiter, and Saturn, ordered according to geocentric cosmology and apparent motion. The sphere of the fixed stars and higher metaphysical regions were often placed beyond them.

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Diffuse Light, Diffusiveness]
 related: [iv-21, iii-22, iv-51, iii-7, iv-20]
 summary: Illumination from many directions that reveals overall form gently — excellent for inclusion and atmosphere, insufficient for precise discrimination.
-backdrop: mistgorge
+backdrop: mist-gorge-with-single-lit-window
 position: center 45%
 ---
 

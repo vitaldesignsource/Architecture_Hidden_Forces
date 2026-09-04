@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Formative, Psychic]
 related: [iii-6, ii-5, viii-25, vii-27, x-6]
 summary: A field experienced qualitatively — not only what occupies a space but how it feels, moves, receives, and modifies what enters it.
-backdrop: nightterrace
+backdrop: night-terrace-above-cloud-sea
 ---
 
 Atmosphere is a field experienced qualitatively. It is not only what occupies a space but how that space feels, moves, receives, and modifies what enters it.

@@ -11,7 +11,7 @@ text: [Opticks]
 related: [i-13, iv-15, iii-21, xiii-22, xiii-23, xv-90]
 summary: White light shown to be heterogeneous, the prism separating rays already differing in refrangibility and recombining them into white - unity that need not mean the absence of differentiation; the Queries on subtle media and active principles; alchemical manuscripts pursuing the same activity in matter.
 epigraph: "A prism does not necessarily falsify the light; it reveals distinctions concealed within the original unity."
-backdrop: prismtable
+backdrop: prism-and-bowl-on-lit-stone-table
 ---
 
 Isaac Newton is commonly remembered as the thinker who separated scientific optics from older metaphysical speculation. The historical reality is more complex. His optical experiments were mathematically rigorous, but his studies of nature existed alongside immense bodies of alchemical, chronological, biblical, and theological writing.

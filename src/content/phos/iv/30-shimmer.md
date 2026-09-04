@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Shimmer]
 related: [iv-16, iv-39, iv-41, iii-15]
 summary: A shifting play belonging neither to source nor object but emerging through movement among them — it reveals through variation.
-backdrop: ripples
+backdrop: ripple-marks-in-flooded-vault
 ---
 
 A shimmer is a soft, shifting play of light produced through small and rapid changes in reflection, refraction, surface position, or atmospheric condition.

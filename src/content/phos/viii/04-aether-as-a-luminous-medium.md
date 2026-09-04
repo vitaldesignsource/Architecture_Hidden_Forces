@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Greek]
 plane: [Etheric, Formative]
 related: [iii-8, viii-9, viii-10, xvi-7, ii-6]
 summary: Formability rather than completed form — and distinct from the discarded mechanical luminiferous ether the system is not reintroducing.
-backdrop: etherveils
+backdrop: etheric-veils-of-light-in-grotto
 position: center 45%
 ---
 

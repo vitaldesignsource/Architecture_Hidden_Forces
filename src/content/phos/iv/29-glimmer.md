@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Glimmer]
 related: [iv-13, iv-28, x-8, iii-18]
 summary: Faint appearance at the threshold of visibility — indication rather than confirmation, resembling intuition before articulation.
-backdrop: moonflats
+backdrop: moon-over-tidal-flats-and-channel
 ---
 
 A glimmer is a faint, uncertain, or distant appearance of light. It stands near the threshold of visibility.

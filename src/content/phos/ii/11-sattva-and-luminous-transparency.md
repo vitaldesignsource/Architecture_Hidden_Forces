@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Yogic]
 quality: [Transparency, Clarity, Purity]
 related: [ii-10, xv-62, iii-8, xx-6, iv-5]
 summary: The condition in which a medium transmits with minimal distortion — transparency without erasure, and never a passive purity that retreats from the world.
-backdrop: stillpool
+backdrop: still-pool-in-gorge-at-dusk
 position: center 50%
 ---
 

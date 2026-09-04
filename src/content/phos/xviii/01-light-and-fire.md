@@ -10,7 +10,7 @@ symbol: [Flame]
 related: [viii-1, viii-2, xiv-2, ii-22, xv-14, xvii-13]
 summary: Fire as a transformative process and light as what proceeds from it or arises without it - fire changing the condition of what it touches while light makes that condition visible; Agni, Avestan fire, Heraclitean fire, and alchemical fire historically distinct but sharing the structure of an active threshold.
 epigraph: "The truthfulness of fire is measured not by violence but by whether its destruction releases captive light."
-backdrop: kilnvault
+backdrop: kiln-vault-with-glowing-mouth
 position: center 45%
 ---
 

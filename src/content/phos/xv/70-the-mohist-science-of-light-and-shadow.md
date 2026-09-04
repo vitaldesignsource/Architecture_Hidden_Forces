@@ -11,7 +11,7 @@ text: [Mozi]
 related: [iii-15, iii-8, iii-4, vi-11, xv-23, xv-24]
 summary: The Later Mohist canons on rectilinear propagation, multiplied shadows, mirrors, and the inverted pinhole image explained by crossing light paths - disciplined investigation of sensible light, and an exact physical analogy for mediated manifestation.
 epigraph: "To understand any light, examine its source, path, interruption, aperture, and field of reception."
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 ---
 
 The Later Mohist writings, preserved within the Mozi, contain some of the earliest surviving systematic discussions of optics. Their investigators considered the straight-line movement of light, the formation and multiplication of shadows, the effects of differently positioned light sources, reflection from mirrors, and the production of inverted images through a small aperture. The Mohists were not merely collecting marvels. They attempted to establish definitions and give causal explanations for what observers could reproduce.

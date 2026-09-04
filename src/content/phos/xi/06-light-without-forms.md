@@ -7,7 +7,7 @@ plane: [Noetic, Divine, Psychic]
 related: [xi-7, xi-5, v-3, v-4, i-2]
 summary: Luminosity without object, figure, or boundary — the field revealing itself before any form emerges within it; profound, but not necessarily final, since beyond the most immeasurable light lies the apophatic source.
 epigraph: "Consciousness encounters not a luminous object but luminosity as a condition of manifestation."
-backdrop: glasshouseflower
+backdrop: overgrown-glasshouse-with-light-shaft
 position: center 50%
 ---
 

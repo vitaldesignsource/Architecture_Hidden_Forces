@@ -8,7 +8,7 @@ quality: [Crystalline Light, Transparency]
 related: [iv-55, xiv-9, xvii-26, viii-14, viii-10]
 summary: Matter made optically articulate — its metaphysical value arises from the visible marriage of structure and transmission, not from stored spiritual energies.
 epigraph: "Crystal is matter made optically articulate."
-backdrop: quartzstream
+backdrop: quartz-boulder-in-cave-stream
 position: center 50%
 ---
 

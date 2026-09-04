@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [iii-28, viii-18, viii-7, xi-25, xx-9, ii-7]
 summary: Resonance indicates correspondence between current and receiver — it is not proof of truth, since a false idea may resonate with an existing fear.
-backdrop: gongcorridor
+backdrop: gong-at-end-of-dark-corridor
 ---
 
 Resonance occurs when one system responds strongly to a pattern compatible with its own structure or natural modes of activity.

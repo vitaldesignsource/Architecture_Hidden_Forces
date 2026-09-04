@@ -7,7 +7,7 @@ symbol: [Prism, Rainbow]
 operation: [Differentiation]
 related: [xvi-6, xvii-8, ii-9, i-13, xv-89]
 summary: Multiplicity revealed within unity — the prism does not necessarily fragment falsely; error begins when one colour claims to be the whole light.
-backdrop: crystal
+backdrop: crystal-suspended-in-glass-sphere
 ---
 
 A prism differentiates apparently unified light into a spectrum. It reveals multiplicity concealed within unity.

@@ -9,7 +9,7 @@ operation: [Formation, Coagula]
 related: [ix-1, ix-11, ix-12, ix-25, iv-53]
 summary: Radiance becoming embodied structure — light's energy lets matter be rearranged into forms that store potential; CHON supplies the letters, Tone the grammar, Life the composition.
 epigraph: "CHON supplies the letters; Tone supplies the grammar; Life composes the organism."
-backdrop: leafbeam
+backdrop: sunbeam-on-leaves-above-dark-soil
 position: center 45%
 ---
 

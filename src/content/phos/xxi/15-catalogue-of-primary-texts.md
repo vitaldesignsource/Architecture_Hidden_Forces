@@ -10,7 +10,7 @@ text: [Pyramid Texts, Chaldean Oracles, Zohar, Corpus Hermeticum]
 related: [xxi-16, xxi-17, xv-2, xv-27, xv-49, xv-32]
 summary: Title, original language, approximate date, authorship status, manuscript witnesses, editions, translations, relevant passages, and the divisions that discuss each text - with original texts distinguished from later paraphrases, modern occult reconstructions, and popular summaries.
 epigraph: "The Pyramid Texts, Chaldean Oracles, Zohar, Upanishads, and Corpus Hermeticum should not be represented as single modern books."
-backdrop: cabinet
+backdrop: cabinet-of-curiosities-in-lamplight
 ---
 
 The Catalogue of Primary Texts is the documentary foundation of the encyclopaedia. Each entry provides title, original language, approximate date, authorship status, manuscript witnesses, available editions, reliable translations, relevant passages, and the divisions in which the text is discussed.

@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [vii-4, xiv-2, viii-1, xv-14, xv-27]
 summary: Their correspondence is metaphysical, not chemical identity — terrestrial flame images celestial radiance in a form available to ritual action.
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Celestial Fire refers physically to the radiance of stars, whose energy is produced through processes fundamentally different from terrestrial combustion. Terrestrial fire ordinarily depends upon chemical reactions involving fuel, oxidiser, heat, and sustained reaction.

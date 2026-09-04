@@ -7,7 +7,7 @@ plane: [Psychic, Imaginal, Physical]
 related: [x-13, x-14, xi-24, xi-21, portal-9]
 summary: Three categories that overlap at the level of appearance without being identical — clinical terms name the mode and the need for care, not the ultimate ontology; the goal is neither to pathologise the sacred nor to sanctify every disturbance.
 epigraph: "An experience may be neurological in mechanism, psychic in content, symbolic in form, and spiritually consequential."
-backdrop: cabinet
+backdrop: cabinet-of-curiosities-in-lamplight
 ---
 
 A hallucination is conventionally defined as a perception-like experience occurring without a corresponding shared sensory stimulus. Imagination is the faculty through which images can be intentionally or spontaneously formed within consciousness. Spiritual experience is an encounter, participation, or disclosure involving spiritual reality.

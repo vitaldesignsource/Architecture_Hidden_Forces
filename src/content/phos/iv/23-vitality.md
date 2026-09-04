@@ -7,7 +7,7 @@ quality: [Vitality, Living Light]
 plane: [Vital, Etheric]
 related: [ix-1, ii-18, ix-20, iv-22, ix-17]
 summary: Recognised through what it sustains — biology expresses vital light without constituting it; the etheric body is real, and vital light helps the organism continue becoming itself.
-backdrop: oasis
+backdrop: desert-oasis-pool-among-palms
 position: center 55%
 ---
 

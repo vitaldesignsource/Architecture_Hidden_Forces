@@ -8,7 +8,7 @@ operation: [Integration]
 related: [x-3, x-7, x-22, x-20, ii-16]
 summary: Not an unchanging object inside the person but a characteristic way essence, soul, memory, desire, and embodiment are gathered into a living centre — rigid when a form is mistaken for the whole, fragmented when no centre holds.
 epigraph: "The Self is deeper than the identity it illuminates."
-backdrop: olivetree
+backdrop: olive-tree-on-ridge-at-dusk
 ---
 
 Identity is not an unchanging object hidden somewhere inside the person. The body changes, memories are revised, emotions fluctuate, beliefs develop, relationships alter, and social roles appear and disappear. Yet a recognisable continuity may persist across these transformations.

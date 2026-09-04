@@ -9,7 +9,7 @@ operation: [Formation]
 related: [ix-13, vi-9, vi-25, vi-4, ix-12]
 summary: Not the absence of light but the chamber of interiorised light — some forms arise only through concealment, and birth is the unveiling of a form assembled through hidden participation.
 epigraph: "Birth is not creation from nothing; it is the unveiling of a living form assembled through hidden participation."
-backdrop: seacave
+backdrop: sea-cave-glowing-orange-at-dusk
 ---
 
 The womb reveals the generative power of darkness. It shelters the developing organism from the full intensity and variability of the outer environment while maintaining controlled exchange through the maternal body. Its darkness is neither empty nor inert. It is warm, fluid, rhythmic, bounded, nutritive, and filled with formative activity.

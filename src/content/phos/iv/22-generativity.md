@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Generativity]
 related: [ix-1, i-7, v-21, xi-26, iv-23]
 summary: The power to bring forth new relations rather than merely expose what exists — a false light demands fascination while producing no new capacity.
-backdrop: coralnursery
+backdrop: coral-nursery-in-sunlit-shallows
 position: center 50%
 ---
 

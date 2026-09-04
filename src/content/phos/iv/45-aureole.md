@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Christian]
 quality: [Aureole]
 related: [iv-43, iv-46, xi-10, xiii-20, iii-3]
 summary: A vessel whose luminosity has become environmental — the transformed form does not merely hold light; it establishes a luminous atmosphere around itself.
-backdrop: statue
+backdrop: lamplit-statue-beside-open-book
 ---
 
 An aureole is a surrounding field of sacred radiance, usually extending around the entire figure rather than only the head.

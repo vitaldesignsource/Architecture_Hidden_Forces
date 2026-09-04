@@ -10,7 +10,7 @@ text: [Democritus, Fragments and Testimonia]
 related: [xv-17, iii-15, iv-15, iii-30, xv-25, i-12]
 summary: Atoms and void, and the eidōla — thin atomic films continually shed from bodies, crossing the air to alter the eye; colour as relational, real as an event of perception though 'by convention'; the world's structure not identical to its appearance; a pattern that anticipates luminous transduction.
 epigraph: "A source remains where it is while something proceeding from it carries its form toward a receiver."
-backdrop: veils
+backdrop: figure-before-hanging-veils-of-light
 ---
 
 Democritus developed a radically material account of perception. According to ancient atomism, reality at its deepest physical level consists of atoms and void. Atoms possess size, shape, position, arrangement, and motion, but qualities such as sweetness, bitterness, heat, cold, and colour do not exist in atoms exactly as they appear to human perception.

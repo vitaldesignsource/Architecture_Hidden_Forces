@@ -11,7 +11,7 @@ text: [Republic, Enneads, Corpus Dionysiacum]
 related: [xv-19, xv-28, xv-31, xv-26, viii-2, xxi-3]
 summary: Six Greek words that divide the field a single English word would flatten - phōs for light at its broadest, augē for radiance at the threshold of appearing, aktis for the directed ray, ellampsis for the event of illumination, lamprotēs for luminous eminence, and pyr for fire, which is related to light but not identical with it.
 epigraph: "Fire heats, consumes, transforms, and generates light; light illuminates and reveals but need not burn."
-backdrop: earthcolonnade
+backdrop: turf-roofed-colonnade-at-dusk
 ---
 
 Φῶς — *phōs* is the broad Greek word for light. It may indicate daylight, visible illumination, the source of visibility, or metaphorical and spiritual illumination. In philosophical and religious texts it can become a name for intelligibility, divine presence, truth, life, and the illuminated condition of the soul.

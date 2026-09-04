@@ -9,7 +9,7 @@ symbol: [Flame]
 related: [viii-1, viii-3, xiii-11, xiii-12, xiv-13, xi-14]
 summary: Physical flame within a consecrated relationship — witness, purifier, messenger, offering, visible body of an invisible power; sacred not by chemistry but by origin, maintenance, and purpose, and reverenced with disciplined material safety.
 epigraph: "Fire may first separate and then seal, first consume and then illuminate."
-backdrop: kilnvault
+backdrop: kiln-vault-with-glowing-mouth
 ---
 
 Sacred fire is physical flame established within a consecrated relationship. It may serve as witness, purifier, messenger, transformer, offering, divine presence, or visible body of an otherwise invisible power. What makes the fire sacred is not a special chemical composition but its origin, maintenance, consecration, purpose, and participation within a larger ritual order.

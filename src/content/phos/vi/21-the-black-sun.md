@@ -7,7 +7,7 @@ symbol: [Black Sun]
 quality: [Black or Dark Luminosity]
 related: [vi-22, vi-23, xvii-28, ii-22, vii-9]
 summary: Solar power concealed within darkness, used here in its alchemical and metaphysical sense and distinguished from modern political appropriations.
-backdrop: eclipse
+backdrop: total-eclipse-over-forest-ridge
 position: center 40%
 ---
 

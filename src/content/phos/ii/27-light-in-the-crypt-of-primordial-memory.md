@@ -7,7 +7,7 @@ operation: [Imprinting]
 related: [ii-28, xix-12, xiii-28, iii-30, ix-24]
 summary: Not a celestial archive but an altered topology of possibility — light in the Crypt is residual intelligibility, and memory is inherited curvature.
 epigraph: "Memory is inherited curvature. The past bends the paths available to the present."
-backdrop: crystalgrove
+backdrop: crystal-grove-in-flooded-hall
 position: center 55%
 ---
 

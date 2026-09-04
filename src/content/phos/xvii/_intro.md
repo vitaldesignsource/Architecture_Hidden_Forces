@@ -1,5 +1,5 @@
 ---
-backdrop: gongcorridor
+backdrop: gong-at-end-of-dark-corridor
 position: center 40%
 ---
 

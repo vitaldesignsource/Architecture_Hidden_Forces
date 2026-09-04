@@ -9,7 +9,7 @@ symbol: [Solar Disc]
 related: [vii-10, vi-23, ix-4, xiv-7, xiv-5, vii-9]
 summary: The solar day differentiated into four ritual conditions — emergence, full manifestation, release, and hidden solar operation; midnight is not the sun's absence but the sun beneath the world, light active within darkness.
 epigraph: "Maximum intensity does not always produce maximum vision."
-backdrop: sunravine
+backdrop: sunlit-ravine-with-golden-stream
 ---
 
 The daily solar cycle differentiates light into four major ritual conditions. Dawn represents emergence, renewal, awakening, and the return of intelligible order. It is suited to beginnings, invocations of regeneration, purification, orientation, and the conscious reception of new force.

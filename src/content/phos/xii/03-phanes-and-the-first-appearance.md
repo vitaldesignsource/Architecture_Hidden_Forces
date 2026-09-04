@@ -8,7 +8,7 @@ operation: [Manifestation]
 related: [i-4, i-5, i-2, xii-17, xii-1]
 summary: The Orphic First-Appearing — the power through which concealed generation breaks into manifestation, emerging from the cosmic egg; not a solar deity but the act by which manifestation itself first shines forth.
 epigraph: "Phanes represents the more primordial act by which manifestation itself first shines forth."
-backdrop: birdshaft
+backdrop: light-shaft-in-mossy-green-cavern
 position: center 45%
 ---
 

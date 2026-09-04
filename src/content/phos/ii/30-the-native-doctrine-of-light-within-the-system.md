@@ -7,7 +7,7 @@ operation: [Return]
 related: [portal-7, xix-1, ii-1, i-3, ii-7, ii-25]
 summary: The whole division stated once — the complete native sequence from Source to Return, and the five governing propositions.
 epigraph: "Light is not the whole of the architecture. It is the principle through which the architecture becomes visible to itself."
-backdrop: earthcolonnade
+backdrop: turf-roofed-colonnade-at-dusk
 ---
 
 The native doctrine of light within The Architecture of Hidden Forces can now be stated.

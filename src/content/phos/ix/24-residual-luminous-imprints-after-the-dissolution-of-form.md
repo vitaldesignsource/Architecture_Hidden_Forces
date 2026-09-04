@@ -9,7 +9,7 @@ symbol: [Crypt]
 related: [ii-27, ii-28, v-19, ix-23, ix-25]
 summary: Beyond genes and memory, real etheric, astral, and psychic impressions in persons, objects, places, and Morphaithēr itself — the Crypt inherits, the Ossuary receives.
 epigraph: "Residual light is the continuing efficacy of a form no longer visibly present."
-backdrop: glasshouseflower
+backdrop: overgrown-glasshouse-with-light-shaft
 position: center 50%
 ---
 

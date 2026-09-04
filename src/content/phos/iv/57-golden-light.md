@@ -7,7 +7,7 @@ quality: [Golden Light]
 symbol: [Gold]
 related: [xvii-27, xiv-11, vii-6, ii-22, iv-33]
 summary: Solar intelligence joined to vitality and embodiment — yet gold is not automatically sacred, and grandeur can conceal disorder.
-backdrop: goldvein
+backdrop: gold-vein-glowing-in-dark-rock
 position: center 50%
 ---
 

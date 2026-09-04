@@ -7,7 +7,7 @@ plane: [Noetic, Psychic]
 related: [x-2, x-19, x-22, i-3, x-1]
 summary: The inward luminosity by which a being is present to itself — not the personality, biography, or inner commentary, and not annihilated when obscured.
 epigraph: "Obscuration is not annihilation."
-backdrop: sanctum
+backdrop: circular-sanctum-with-lit-doorway
 ---
 
 The light of the Self is the inward luminosity by which a being is present to itself. External objects require illumination to become visible, but consciousness does not require a second consciousness standing behind it before awareness can occur. It reveals objects and, in the act of revealing them, discloses its own presence.

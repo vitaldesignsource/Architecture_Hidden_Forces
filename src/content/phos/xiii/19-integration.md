@@ -8,7 +8,7 @@ operation: [Integration]
 related: [xiii-17, xiii-23, x-19, ix-20, viii-8, xiii-4]
 summary: Differentiated illuminations brought into coherent relation without flattening distinction — revelation becoming understanding, understanding character, character action; inflation is one powerful fragment mistaken for the whole.
 epigraph: "The integrated person becomes a more stable vessel because multiple centres of life have begun to revolve around a shared orientation."
-backdrop: braided
+backdrop: braided-glacial-river-from-above
 ---
 
 Integration is the operation through which differentiated illuminations are brought into a coherent relationship. It is not the flattening of all distinctions. It gives every genuine experience, insight, force, and level its correct place within the whole.

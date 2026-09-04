@@ -7,7 +7,7 @@ plane: [Astral, Imaginal, Psychic]
 related: [x-16, v-10, ii-19, x-18, x-13]
 summary: Illumination within which dream images appear while the eyes are closed — memory, body, and neural activity on one level, genuine psychic, astral, ancestral, or spiritual encounter on others, often at once; intensity alone does not establish the source.
 epigraph: "A dream becomes meaningful not merely because it is strange, but because its light reveals a relation previously hidden."
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 Dream light is the illumination within which dream images become visible despite the absence of ordinary waking perception. A dream may contain sunlight, darkness, colour, fire, stars, architecture, faces, and landscapes while the physical eyes remain closed.

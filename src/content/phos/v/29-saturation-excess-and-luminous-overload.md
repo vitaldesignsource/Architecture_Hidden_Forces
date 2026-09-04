@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Intensity]
 related: [v-28, vi-19, xix-8, xx-15, iii-9, iv-1]
 summary: Higher intensity is not always a gift — the remedy is not more exposure but greater capacity and better mediation.
-backdrop: wellfall
+backdrop: column-of-water-falling-into-well
 position: center 55%
 ---
 

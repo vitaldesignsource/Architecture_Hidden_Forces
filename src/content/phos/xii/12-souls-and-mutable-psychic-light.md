@@ -8,7 +8,7 @@ operation: [Return]
 related: [x-5, x-20, ii-24, x-12, xii-21]
 summary: Luminous but mutable — clear, divided, wounded, purified, or transfigured; mutable does not mean unreal, and the soul's dignity lies in its real capacity for orientation, transformation, and return.
 epigraph: "Mutable does not mean unreal."
-backdrop: reedbeds
+backdrop: reed-beds-and-still-water-at-dawn
 ---
 
 Souls are luminous, but their luminosity is mutable. The soul receives from spirit, interprets through its own structures, moves through the astral field, organises embodiment through the etheric body, and acts within the physical world.

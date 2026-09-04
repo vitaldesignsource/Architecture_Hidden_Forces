@@ -1,5 +1,5 @@
 ---
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 position: center 50%
 ---
 

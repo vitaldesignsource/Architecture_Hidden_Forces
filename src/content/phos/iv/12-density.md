@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Density]
 related: [ii-13, iv-5, vi-12, iv-13, xvii-26]
 summary: Concentration of luminous activity — not the optical density of a material; when density becomes excessive, luminosity approaches opacity.
-backdrop: icefissure
+backdrop: ice-fissure-glowing-gold-below
 position: center 50%
 ---
 

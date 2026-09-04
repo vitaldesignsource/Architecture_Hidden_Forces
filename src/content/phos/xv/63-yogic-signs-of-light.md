@@ -11,7 +11,7 @@ text: [Yoga Sūtra]
 related: [xi-3, xi-2, xi-20, xi-27, v-13, xi-25]
 summary: Sparks, points, flames, suns, moons, colours, and lightning-like flashes - some entoptic, some deliberately generated, some read as signs of prāṇic movement or an opening centre; Yoga Sūtra 1.36's sorrowless luminous condition as a support for steadiness; a sign is not automatically a final revelation.
 epigraph: "The proper question is not merely whether the light was real, but at what level it was real."
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 Indian yogic literature contains numerous accounts of inner sparks, points, flames, suns, moons, colours, halos, lightning-like flashes, radiant spaces, and self-luminous forms. These experiences arise in different contexts and cannot all be interpreted through one explanation.

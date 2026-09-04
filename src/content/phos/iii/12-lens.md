@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic]
 related: [ii-16, ii-17, iii-14, x-13, xx-13]
 summary: The soul reorganises what it receives; a clear lens may still focus incorrectly, so discernment is partly the art of examining one's own curvature.
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 ---
 
 A lens gathers, bends, focuses, enlarges, or disperses light. It does not merely receive illumination; it reorganises its path.

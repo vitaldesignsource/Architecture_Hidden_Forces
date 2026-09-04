@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Christian]
 quality: [Black or Dark Luminosity]
 related: [iv-59, vi-7, xv-54, v-3, vi-19]
 summary: Presence within obscurity, the first suggestion that hiddenness is not vacancy — though a dark atmosphere may feel charged through fear or projection.
-backdrop: cavestream
+backdrop: stream-through-lit-cave-mouth
 ---
 
 Luminous Darkness is the paradoxical experience of presence within obscurity. The darkness does not appear empty. It feels dense with concealed intelligibility, potential, or radiance.

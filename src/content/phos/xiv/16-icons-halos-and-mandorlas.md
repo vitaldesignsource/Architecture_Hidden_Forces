@@ -9,7 +9,7 @@ symbol: [Halo, Mandorla, Vesica]
 related: [xi-10, xi-13, iv-47, iv-46, xiv-15, xi-9]
 summary: The icon as an interface of presence rather than an illustration — perception reorganised around a spiritual order; the halo as consciousness radiating beyond the body's outline, the mandorla as a manifestation crossing between worlds; convention shaping, not exhausting, what they preserve.
 epigraph: "These forms need not be reduced to artistic convention, although convention determines how they are represented."
-backdrop: sanctum
+backdrop: circular-sanctum-with-lit-doorway
 ---
 
 An icon is not merely an illustration of a sacred subject. In traditions that treat icons as living sacred images, the icon is an interface of presence and contemplation. Its purpose is not simply to reproduce ordinary visual perspective but to reorganise perception around a spiritual order.

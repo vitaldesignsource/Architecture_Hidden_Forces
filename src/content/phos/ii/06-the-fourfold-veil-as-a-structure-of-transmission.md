@@ -7,7 +7,7 @@ plane: [Formative, Etheric]
 operation: [Formation]
 related: [ii-7, viii-9, iii-9, xix-7, ii-5]
 summary: The woven structure through which force becomes receivable without becoming fixed — a transmitter and a regulator, revealing and concealing at once.
-backdrop: fourveils
+backdrop: four-veils-of-light-in-rock-cleft
 position: center 42%
 ---
 

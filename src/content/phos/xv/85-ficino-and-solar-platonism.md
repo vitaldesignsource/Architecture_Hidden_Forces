@@ -11,7 +11,7 @@ text: [De Sole]
 related: [vii-6, ii-22, vii-16, xiv-11, xii-16, xv-80]
 summary: De Sole and De Lumine - the visible sun as the most perfect sensible image of divine goodness, the heart of heaven distributing celestial life; luminous degrees from inward light through lumen, splendor, calor, and generation; a cosmos of sympathy in which gold, music, and timing receive compatible influence.
 epigraph: "The physical sun is a sacramental likeness - a visible face through which a higher intelligible sun may be contemplated."
-backdrop: solarking
+backdrop: solar-king-in-lit-temple-doorway
 position: center 28%
 ---
 

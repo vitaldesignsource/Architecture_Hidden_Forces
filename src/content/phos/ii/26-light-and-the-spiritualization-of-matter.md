@@ -8,7 +8,7 @@ operation: [Transfiguration, Consecration]
 related: [xiii-23, xix-13, ii-17, xiv-24, xx-18]
 summary: Not the rejection of matter but its growing capacity to carry life, intelligence, and meaning — boundary perfected as a vessel of communication.
 epigraph: "The highest form is not the form that disappears, but the form that carries more light without losing integrity."
-backdrop: blackspire
+backdrop: black-spire-with-golden-light-seam
 position: center 50%
 ---
 

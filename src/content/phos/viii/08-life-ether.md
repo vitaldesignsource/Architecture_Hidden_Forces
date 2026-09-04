@@ -8,7 +8,7 @@ operation: [Integration, Vivification]
 related: [ii-7, ii-18, ix-20, viii-7, iv-23]
 summary: Not an invisible substance added to matter but a real mode of formative mediation — the activity by which many processes remain one organism through time.
 epigraph: "Life integrates."
-backdrop: leafroots
+backdrop: leaf-and-root-system-in-cross-section
 position: center 50%
 ---
 

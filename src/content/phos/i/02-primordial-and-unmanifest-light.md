@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Divine]
 related: [ii-2, vi-4, vi-5, v-3, i-1]
 summary: Not a concealed beam but the capacity for disclosure still gathered within its source — sheltered, not opposed, by generative darkness.
-backdrop: darkroom
+backdrop: darkroom-tray-under-single-lamp
 ---
 
 The phrase *unmanifest light* initially appears contradictory. Light is ordinarily understood as that which appears and makes other things visible. How, then, could light remain unmanifest?

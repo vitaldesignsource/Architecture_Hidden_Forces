@@ -10,7 +10,7 @@ symbol: [Ray, Triangle]
 related: [iii-4, iii-8, iii-15, xvi-5, xvi-3, iii-17]
 summary: Light treated as rays travelling along paths, an approximation valid when objects are much larger than the wavelength - straight lines, the law of reflection, refraction at boundaries, and lenses that converge or diverge; the ray as orientation abstracted from a wave or quantum field.
 epigraph: "The same source can generate different appearances when the paths, apertures, lenses, or receiving surfaces change."
-backdrop: masons
+backdrop: quarried-blocks-in-mason-yard
 ---
 
 Geometrical optics treats light as rays travelling along paths. A ray is an idealised line showing the direction in which optical energy propagates. This approximation works especially well when the relevant objects - mirrors, lenses, apertures, obstacles - are much larger than the light's wavelength.

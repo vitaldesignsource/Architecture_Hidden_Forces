@@ -10,7 +10,7 @@ text: [On the Mysteries]
 related: [xv-29, xv-31, xiv-22, xii-9, xii-20, v-9]
 summary: The Reply to Porphyry — the fully descended soul needs divine assistance through theurgy, effective because the gods have already placed their signatures in the cosmos; Book II's classification of the lights of gods, archangels, angels, daimons, heroes, archons, and souls by unity, stability, purity, extension, motion, and effect; intensity does not determine rank.
 epigraph: "Intensity alone does not determine the rank, goodness, or truthfulness of the presence encountered."
-backdrop: deitydoor
+backdrop: blinding-doorway-in-temple-wall
 ---
 
 Iamblichus of Chalcis transformed the development of Neoplatonism by insisting that philosophical contemplation alone was insufficient for the complete return of the embodied soul. His *Reply to Porphyry*, conventionally known as *On the Mysteries*, responds to the questions raised in Porphyry's *Letter to Anebo*. Iamblichus presents the work through the voice of the Egyptian teacher Abammon, giving his philosophy a deliberately priestly and initiatory setting. [The Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/iamblichus/) describes this reply as a central document in the transformation of later Platonism.

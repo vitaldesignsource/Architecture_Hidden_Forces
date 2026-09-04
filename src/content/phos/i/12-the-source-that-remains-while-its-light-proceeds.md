@@ -7,7 +7,7 @@ plane: [Divine]
 operation: [Manifestation, Return]
 related: [xv-28, xv-31, portal-7, xiii-31, v-22, v-23, i-11]
 summary: Remaining, procession, return — monē, proodos, epistrophē — and the two errors they protect the system from.
-backdrop: rotunda
+backdrop: rotunda-open-to-night-sky
 ---
 
 A source does not need to abandon itself in order to become present through its effects. This principle can be expressed through three movements:

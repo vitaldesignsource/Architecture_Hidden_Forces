@@ -7,7 +7,7 @@ plane: [Physical]
 related: [xi-19, xi-10, iv-36, v-19, xi-21]
 summary: Afterimages and phosphenes are physiological luminous experiences, not imaginary ones — they explain some halos and closed-eye lights without explaining every stable, intelligent, or transformative encounter; and the Sun must never be stared at as a method.
 epigraph: "Retinal light must be distinguished from etheric and spiritual light without assuming that only retinal events are real."
-backdrop: braided
+backdrop: braided-glacial-river-from-above
 ---
 
 An afterimage persists after the original visual stimulus has been removed. It may preserve aspects of the original colour or appear in complementary colours as photoreceptors and visual pathways recover from adaptation. Bright sources can leave powerful temporary forms within the field of sight.

@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [xvi-8, x-9, xiv-23, iii-10, xvi-13, xvi-12]
 summary: The orientation and temporal pattern of the electric field's oscillation - linear, circular, elliptical, or mixed; polarisers, reflection, scattering, and birefringent crystals altering it; two beams alike in wavelength and intensity yet different in internal orientation.
 epigraph: "Luminous quality includes organised orientation, not merely magnitude."
-backdrop: reedbeds
+backdrop: reed-beds-and-still-water-at-dawn
 ---
 
 Light is a transverse electromagnetic wave. Its electric field oscillates perpendicular to the direction of propagation. Polarisation describes the orientation and temporal pattern of that oscillation.

@@ -1,5 +1,5 @@
 ---
-backdrop: monolith
+backdrop: monolith-on-shore-in-sea-mist
 position: center 45%
 ---
 

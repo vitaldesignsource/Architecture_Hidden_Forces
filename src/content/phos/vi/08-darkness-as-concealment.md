@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [iii-9, iv-49, vi-3, v-21, xx-15]
 summary: A veil is not automatically a lie — it becomes false when it claims nothing lies behind it, or manipulates ignorance for illegitimate ends.
-backdrop: scrims
+backdrop: light-scrims-hung-in-stone-room
 ---
 
 Concealment occurs when something present is prevented from appearing fully. The source may be covered, the medium clouded, the form hidden, or the receiver diverted.

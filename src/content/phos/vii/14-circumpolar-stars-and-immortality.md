@@ -6,7 +6,7 @@ tradition: [Egyptian, Scientific]
 symbol: [Star]
 related: [xv-2, vii-15, xv-10, xviii-17, vii-13]
 summary: Immortality that is observational and symbolic rather than physical — stars form, change, and die, but from the human horizon they never set.
-backdrop: startemple
+backdrop: star-trails-over-ruined-temple
 position: center 45%
 ---
 

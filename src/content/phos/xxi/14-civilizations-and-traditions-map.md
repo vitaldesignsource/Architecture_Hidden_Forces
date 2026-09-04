@@ -9,7 +9,7 @@ operation: [Orientation, Communication]
 related: [xxi-13, xv-32, xv-78, xviii-22, xv-93, xxi-18]
 summary: Luminous traditions displayed geographically without implying that ideas remained inside fixed modern borders - Egypt, Mesopotamia, Iran, the Levant, Greece and Rome, India, Tibet, China, the Islamic world, medieval Europe, Mesoamerica, the Andes, sub-Saharan Africa, and the modern esoteric networks - with routes treated as being as important as territories.
 epigraph: "Doctrines of light often developed through contact."
-backdrop: cartography
+backdrop: dark-hall-with-charted-stone-floor
 ---
 
 The map displays luminous traditions geographically without implying that ideas remained contained inside fixed modern borders. Trade, migration, conquest, pilgrimage, translation, and initiation carried words and symbols across regions, and a border drawn today explains almost nothing about where a doctrine travelled.

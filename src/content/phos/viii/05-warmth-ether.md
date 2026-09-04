@@ -9,7 +9,7 @@ operation: [Animation, Awakening]
 related: [ii-7, viii-6, viii-9, ix-9, xv-94]
 summary: The threshold where latent potential becomes operative force — not reducible to temperature.
 epigraph: "Warmth awakens."
-backdrop: kilnvault
+backdrop: kiln-vault-with-glowing-mouth
 ---
 
 Warmth Ether is the function of activation. It marks the threshold where latent potential becomes operative force.

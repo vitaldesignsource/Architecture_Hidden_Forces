@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-10, ix-14, ix-12, vi-9, i-20]
 summary: Obscurity actively serving formation — preparation for a light that can be received without destroying what is still becoming.
-backdrop: germination
+backdrop: germinating-seed-with-fine-roots
 ---
 
 Generative Darkness is obscurity actively serving formation. It shelters what must develop before exposure.

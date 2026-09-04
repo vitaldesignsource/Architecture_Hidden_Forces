@@ -11,7 +11,7 @@ text: [Apocryphon of John]
 related: [xii-5, xii-4, v-24, i-13, ii-7, xv-36]
 summary: Sethian cosmology from the invisible Spirit through Barbelo and Autogenes to Harmozel, Oroiael, Daveithai, and Eleleth — four luminous orders, each surrounded by its aeons; unity that does not exclude articulated order; Eleleth at the threshold where the drama of Sophia becomes visible.
 epigraph: "Light does not become many only when it reaches matter."
-backdrop: luminaries
+backdrop: four-luminous-pillars-in-dark-hall
 ---
 
 The *Apocryphon of John*, also called the Secret Book of John, survives in several Coptic recensions and is one of the foundational texts for understanding Sethian Gnostic cosmology. It presents a revelation of the risen Christ to John, explaining the invisible divine world, the emergence of lower creation, the formation of humanity, and the soul's recovery of its forgotten origin.

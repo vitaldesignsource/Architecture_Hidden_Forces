@@ -11,7 +11,7 @@ text: [Laws of Hammurabi]
 related: [xv-11, xiii-16, xiii-15, ii-25, i-16, xii-16]
 summary: Wrongdoing depends on limited vision, and the sun enters every courtyard — justice as a luminous operation of exposure, distinction, and restoration; the stele of Hammurabi placing royal law beneath the solar source of justice, without romanticising the hierarchies it preserved.
 epigraph: "Judgment resembles sunrise because both replace an uncertain field with one in which distinctions can be seen."
-backdrop: hallrays
+backdrop: rays-crossing-flooded-stone-hall
 ---
 
 The Mesopotamian relationship between light and justice arises from a concrete observation: wrongdoing depends upon limited vision. Human beings conceal actions, suppress testimony, manipulate appearances, and exploit those who lack powerful witnesses. The sun, however, enters courtyards, streets, fields, and distant roads. Its universal presence becomes the natural body of a divine witness who cannot easily be deceived.

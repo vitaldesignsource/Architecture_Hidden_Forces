@@ -11,7 +11,7 @@ text: [Pyramid Texts, Coffin Texts, Amduat, Litany of Re, Book of Gates]
 related: [xv-1, xv-4, xv-10, xv-5, xvii-19, xvii-20]
 summary: A vocabulary that must be read chronologically across Old, Middle, Late, Demotic, and Coptic stages rather than projected uncritically across three millennia - Rꜥ, itn, wbn, psḏ, stwt, and above all ꜣḫ, which names not a glowing apparition but an effective transfigured being.
 epigraph: "Akh should not be translated simply as light."
-backdrop: basalthall
+backdrop: basalt-cavern-cut-by-light-shafts
 ---
 
 The Egyptian section is organised chronologically, because Egyptian vocabulary developed across Old, Middle, Late, Demotic, and Coptic stages. A spelling or meaning attested in one period should not be projected uncritically across three millennia. The [Thesaurus Linguae Aegyptiae](https://thesaurus-linguae-aegyptiae.de/info/text-corpus) is particularly important here, because its lexicon is grounded in a large corpus of hieroglyphic, hieratic, and Demotic texts extending from approximately 3000 BCE into the early centuries CE.

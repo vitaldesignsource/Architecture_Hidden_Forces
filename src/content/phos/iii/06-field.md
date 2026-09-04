@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Formative]
 related: [ii-2, ii-4, iii-7, ii-5]
 summary: The region within which luminous influence becomes active — not empty space containing activity but the structured region of possible interaction.
-backdrop: saltflat
+backdrop: sun-pillar-over-salt-flat
 ---
 
 A luminous field is the region within which light or luminous influence becomes active. Unlike a ray or beam, a field need not possess one dominant direction.

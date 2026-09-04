@@ -11,7 +11,7 @@ text: [Enneads]
 related: [i-12, i-13, i-15, v-23, vi-3, x-22]
 summary: The One, Intellect, and Soul as degrees of unity and participation rather than places — procession as eternal dependence, not depletion; radiance as its clearest analogy; Intellect constituted by turning toward its source, Soul contemplative and generative; the sensible cosmos as image, not mistake; darkness as privation; the inward turn and the return.
 epigraph: "The source remains present to itself while its power becomes present elsewhere."
-backdrop: shaftvault
+backdrop: collapsed-vault-lit-from-above
 ---
 
 Plotinus organised reality around three fundamental principles: the One or Good, Intellect, and Soul. The One is beyond determinate being and beyond thought as ordinarily understood. Intellect is the living totality of intelligible forms, while Soul communicates intelligible order to life, nature, and the sensible cosmos. These principles are not separate locations in physical space. They are degrees of ontological unity, actuality, and participation. [The Stanford Encyclopedia of Philosophy's account of Plotinus](https://plato.stanford.edu/entries/plotinus/) provides a detailed treatment of this structure.

@@ -11,7 +11,7 @@ text: [Ratnagotravibhāga]
 related: [vi-9, xv-64, xv-49, ii-28, xiii-30, xv-69]
 summary: Tathāgatagarbha and buddhadhātu - a Buddha in a decaying lotus, honey surrounded by bees, gold buried in filth, treasure beneath a poor house; coverings real as coverings without becoming the nature of what they cover; emptiness preventing reification, luminosity preventing blankness.
 epigraph: "Light can be fully obscured at the level of lived experience without being annihilated at the level of possibility and nature."
-backdrop: sprout
+backdrop: sprout-on-wet-black-rock
 ---
 
 Buddha-nature teachings use several related terms, especially *tathāgatagarbha*, which can suggest the womb, embryo, or interior presence of a Tathāgata, and *buddhadhātu*, the Buddha-element or Buddha-domain.

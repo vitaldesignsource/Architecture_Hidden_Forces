@@ -11,7 +11,7 @@ text: [Neiye, Guanzi]
 related: [ix-18, v-13, ii-22, x-12, ix-20, xv-76]
 summary: Inward Training, preserved in the Guanzi - jing, qi, shen, and the heart-mind refined through posture, regulated breath, and tranquillity; inner radiance as the experiential quality of gathered vitality; an early discipline of etheric coherence.
 epigraph: "It emerges when the organism becomes sufficiently coherent to retain and conduct its own vital-spiritual power."
-backdrop: breath
+backdrop: seated-figure-breathing-in-flooded-hall
 ---
 
 The Neiye, or Inward Training, is preserved as a chapter of the Guanzi and is generally situated in the late Warring States period. It is among the earliest Chinese texts devoted systematically to interior cultivation. Rather than presenting salvation as adherence to a creed, it describes the refinement of the human being through posture, regulated breathing, tranquillity, careful awareness, and the stabilisation of vital essence. [Harold Roth's influential study](https://cup.columbia.edu/book/original-tao/9780231115650/) dates it approximately to the middle of the fourth century BCE and interprets it as an early expression of contemplative practice associated with the emerging Daoist tradition.

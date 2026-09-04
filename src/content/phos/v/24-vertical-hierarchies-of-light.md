@@ -5,7 +5,7 @@ confidence: [Probable]
 tradition: [Architecture of Hidden Forces, Neoplatonic, Christian]
 related: [v-2, v-25, xv-55, v-30, ii-17]
 summary: Hierarchy meaning sacred or causal order, not domination — a distorted hierarchy turns metaphysical order into social superiority.
-backdrop: gatesteps
+backdrop: mossy-gate-and-steps-in-forest
 position: center 50%
 ---
 

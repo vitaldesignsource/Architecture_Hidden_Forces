@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Directionality]
 related: [iii-4, iii-5, iv-21, x-9, iii-11]
 summary: Orientation gives luminosity purpose; excessive direction becomes fixation, and right direction keeps awareness of the field the ray travels through.
-backdrop: blowhole
+backdrop: sea-blowhole-erupting-on-black-rock
 ---
 
 Directionality is the degree to which light possesses a definite orientation.

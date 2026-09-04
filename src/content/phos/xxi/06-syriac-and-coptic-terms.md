@@ -10,7 +10,7 @@ text: [Odes of Solomon, Acts of Thomas, Hymns on Paradise]
 related: [xv-56, xv-53, xv-41, xviii-18, xxi-5, xv-35]
 summary: Syriac nūhrā, zīwā, šubḥā, and nūrā, carrying the imagery of the robe of light and baptismal illumination; and Coptic ouoein, eoou, and kōht, indexed by dialect, with Greek loanwords distinguished from inherited Egyptian terms even when English renders both as light.
 epigraph: "A Greek loanword in a Coptic text may carry a different history from an inherited Egyptian term."
-backdrop: veils
+backdrop: figure-before-hanging-veils-of-light
 position: center 45%
 ---
 

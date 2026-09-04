@@ -10,7 +10,7 @@ symbol: [Crown, Solar Disc]
 related: [i-15, vi-20, vi-3, xviii-14, xii-16, xix-3]
 summary: Illumination magnifies whatever it enters without sanctifying it - intelligence without wisdom, charisma without love, an institution's influence alongside its corruption - so the test is whether light serves life: solar authority nourishes what lies within its field and generates other centres of life, while counterfeit solarity requires everything else to orbit its self-image.
 epigraph: "The question is not whether the light is strong. It is whether its strength makes life more capable of becoming itself."
-backdrop: dominion
+backdrop: winged-dominion-above-temple-hall
 position: center 45%
 ---
 

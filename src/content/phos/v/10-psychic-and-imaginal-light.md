@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Psychic, Imaginal]
 related: [ii-19, ii-20, x-13, x-14, xi-23, iii-15]
 summary: The imaginal is neither merely unreal nor automatically literal fact — its study requires phenomenological seriousness joined to disciplined interpretation.
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 Psychic Light arises within the soul as image, affect, memory, desire, inward perception, and symbolic meaning. Imaginal Light is the luminosity through which these forms become present within interior experience.

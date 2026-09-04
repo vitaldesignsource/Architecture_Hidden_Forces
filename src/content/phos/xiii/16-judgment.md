@@ -8,7 +8,7 @@ operation: [Judgment]
 related: [xiii-15, xiii-29, xiii-30, xi-25, xii-11, xiii-2]
 summary: The discriminating operation of light — largely intrinsic, since a coherent structure grows more articulate in greater light while a false one reveals contradiction; the same radiance consoles one structure and consumes another.
 epigraph: "What belongs to the light becomes more capable of receiving it; what depends upon concealment experiences illumination as crisis."
-backdrop: gorgewheel
+backdrop: waterwheel-under-gorge-waterfall
 ---
 
 Judgement is the discriminating operation of light. When light enters an architecture, it reveals whether the parts are properly related, whether the form corresponds to its claimed purpose, and whether the structure can transmit the force it professes to embody.

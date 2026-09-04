@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Truthfulness, Clarity]
 related: [xix-17, vi-11, vi-27, vi-19, xviii-15, i-8]
 summary: Illumination alone does not guarantee truth; the enemy of truth is not darkness but distortion — a partial appearance presented as complete.
-backdrop: pavilion
+backdrop: timber-pavilion-on-rock-shelf
 position: center 50%
 ---
 

@@ -7,7 +7,7 @@ plane: [Astral, Psychic, Etheric]
 related: [x-15, xi-17, ix-23, ix-24, xi-25]
 summary: Suns indoors, radiant deceased persons, tunnels and cities of light — and the structured experiences some cardiac-arrest survivors report; the system reads them seriously as consciousness perceiving what embodied organisation ordinarily veils.
 epigraph: "No single narrative should define the post-mortem world for everyone."
-backdrop: waterfallgorge
+backdrop: waterfall-in-mountain-gorge
 ---
 
 Dreams frequently contain extraordinary luminosity: suns appearing indoors, beings composed of light, radiant deceased persons, tunnels, stars, luminous cities, and landscapes without visible sources of illumination. These may arise from personal memory, astral experience, psychic symbolism, spiritual contact, or mixed processes.

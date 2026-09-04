@@ -10,7 +10,7 @@ symbol: [Sphere]
 related: [xv-39, xv-40, vi-26, vi-13, ii-26, i-2]
 summary: Mani's two realms — the uncreated Paradise of Light under the Father of Greatness and the chaotic powers of Darkness; the invasion, the First Man clothed in five living elements, his armour devoured, and a cosmos built as battleground and purification apparatus; a structure capturing a power whose origin transcends it.
 epigraph: "A structure can capture a power whose origin and purpose transcend that structure."
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 ---
 
 Manichaeism was founded in the third century by Mani and spread with remarkable success from the Roman world through Iran and Central Asia into China. Its scriptures, art, hymns, and institutions appeared in numerous languages. Although much of its literature was destroyed or survived only fragmentarily, the recovered sources reveal one of history's most elaborate cosmologies of light.

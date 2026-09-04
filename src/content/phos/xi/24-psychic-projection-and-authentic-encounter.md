@@ -7,7 +7,7 @@ plane: [Psychic, Astral, Angelic, Daimonic]
 related: [xi-16, xi-25, xi-26, x-13, v-9]
 summary: Contents of the observer experienced as though from outside, against contact with a reality possessing some independence — rarely absolute at the level of appearance; no single sign is decisive, and discernment arises through convergence.
 epigraph: "No single sign is decisive. Discernment arises through convergence."
-backdrop: mirrorcascade
+backdrop: mirrors-cascading-light-down-shaft
 ---
 
 Psychic projection occurs when contents belonging primarily to the observer are experienced as though they originate independently outside the self. Desire, fear, expectation, memory, cultural imagery, and unresolved conflict may be projected upon a person, place, symbol, or subtle field.

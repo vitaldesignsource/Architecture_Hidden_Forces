@@ -11,7 +11,7 @@ text: [Hymn to Shamash]
 related: [xv-12, iii-18, xiii-15, xii-2, vii-29, xiii-16]
 summary: The Sumerian Utu and Akkadian Shamash — the sun whose daily crossing sees what human witnesses cannot: hidden crimes, secret agreements, the traveller beyond the walls; rays from the shoulders and the saw-toothed blade that opens the gates of dawn; light as omnidirectional witness.
 epigraph: "He is the cosmic eye through which action becomes accountable to order."
-backdrop: sunravine
+backdrop: sunlit-ravine-with-golden-stream
 ---
 
 Utu was the Sumerian sun god; Shamash was his Akkadian counterpart. As the sun crossed the heavens, his rays reached roads, fields, cities, mountains, courts, and distant regions. This universal movement made him the god who saw what human witnesses could not. He beheld secret agreements, crimes committed in concealment, the suffering of travellers, the vulnerability of the poor, and the truth hidden beneath conflicting testimony.

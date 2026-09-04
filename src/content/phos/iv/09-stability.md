@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Stability]
 related: [iv-10, xi-25, iv-6, ii-13, xx-11]
 summary: Character maintained despite interference — the most valuable stability is dynamic, preserving identity while permitting adaptation.
-backdrop: bristlecone
+backdrop: bristlecone-pine-above-the-clouds
 ---
 
 Stability is the ability of a light to maintain its character despite interference, fluctuation, or environmental change.

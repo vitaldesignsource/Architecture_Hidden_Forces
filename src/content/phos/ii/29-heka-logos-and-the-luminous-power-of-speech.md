@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Egyptian, Greek]
 operation: [Communication, Consecration]
 related: [xiv-20, xiv-19, xiv-18, xviii-5, xii-19, xv-10]
 summary: Two accounts of effective expression from different worlds, compared without being merged — efficacious participation and intelligible articulation, joined in luminous speech.
-backdrop: gongcorridor
+backdrop: gong-at-end-of-dark-corridor
 ---
 
 Heka and Logos belong to different historical and cultural metaphysical worlds. They should not be treated as interchangeable words. Yet they can be compared as two sophisticated accounts of effective expression.

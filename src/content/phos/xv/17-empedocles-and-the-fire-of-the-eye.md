@@ -11,7 +11,7 @@ text: [Empedocles, Fragments]
 related: [xv-18, ix-7, iii-17, v-28, xv-20, viii-21]
 summary: Four roots governed by Love and Strife, and an eye built of them — the lantern comparison, effluences from objects meeting an outward-going ocular fire, pores that admit only what is proportioned to them; like perceived by like; an early theory of active reception.
 epigraph: "An interior light goes forth, an exterior influence approaches, and sight arises where the two enter a relation of sufficient correspondence."
-backdrop: lampshaft
+backdrop: oil-lamp-under-narrow-light-shaft
 ---
 
 Empedocles of Acragas, active in the fifth century BCE, explained nature through four enduring roots — earth, water, air, and fire — whose combinations are governed by Love and Strife. His theory of vision belonged to this elemental cosmology. The eye was not an entirely passive opening through which the world simply entered. It contained elemental structures capable of meeting and recognising what proceeded from external objects.

@@ -9,7 +9,7 @@ symbol: [Solar Disc]
 related: [x-2, x-3, x-19, ii-22, ii-23, x-20]
 summary: Illumination turned back toward the one who sees — not introspection alone but the recognition of the knower through participation; within Ignisophia, the Charioteer awakening before the Inner Sun.
 epigraph: "To see oneself truthfully is to change the relations through which one lives."
-backdrop: cavepillar
+backdrop: figure-in-pillar-of-light-in-cave
 position: center 45%
 ---
 

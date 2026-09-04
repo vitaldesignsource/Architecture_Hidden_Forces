@@ -8,7 +8,7 @@ operation: [Communication]
 related: [xii-19, ii-29, x-17, xiii-2, xiii-10, i-14]
 summary: Light carrying distinction, image, rhythm, and meaning from one order to another — logoi as luminous principles of communication; every communication shaped by its medium, so discernment asks what speaks, through what, and what the receiver added.
 epigraph: "What is communicating, through what medium is it passing, and what has the receiver added to what was received?"
-backdrop: lamplines
+backdrop: oil-lamps-set-in-lines-across-hall
 position: center 60%
 ---
 

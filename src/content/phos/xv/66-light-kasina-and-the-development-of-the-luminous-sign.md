@@ -11,7 +11,7 @@ text: [Visuddhimagga]
 related: [xi-2, x-13, iii-15, iii-30, xiv-9, xv-65]
 summary: Light entering through a keyhole, window, or gap in the branches and forming a luminous circle - the preparatory object, the learning sign, and the counterpart sign; a mind able to sustain a refined object without external support; a deliberately formed psychic vessel, not a deity.
 epigraph: "Calling the sign mind-made does not make it unreal."
-backdrop: aperture
+backdrop: cave-mouth-light-on-still-water
 ---
 
 A *kasiṇa* is an object used to develop unified concentration. In the Theravāda commentarial system, practitioners may work with earth, water, fire, air, colours, light, or delimited space. The word suggests totality or wholeness because the selected quality gradually occupies the complete field of attention.

@@ -10,7 +10,7 @@ symbol: [Spiral]
 related: [iii-2, v-22, v-23, iii-31, x-8, xvii-1]
 summary: Recurrence joined to movement - outward for procession into multiplicity, inward for return, doubled for both at once; natural spirals in galaxies, shells, and growth showing rotation with translation as a fundamental way movement organises itself.
 epigraph: "The distinction between a spiral and a closed circle is the possibility of genuine change."
-backdrop: birdshaft
+backdrop: light-shaft-in-mossy-green-cavern
 position: center 45%
 ---
 

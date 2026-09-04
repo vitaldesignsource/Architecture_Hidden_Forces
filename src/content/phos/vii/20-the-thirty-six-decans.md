@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Egyptian, Greek]
 related: [vii-19, vii-18, xv-1, xv-2, xxi-13]
 summary: Egyptian decanal star lists and later zodiacal decans are historically connected but not identical — their forms and functions changed through transmission.
-backdrop: cartography
+backdrop: dark-hall-with-charted-stone-floor
 ---
 
 The decans originated as groups of stars used in ancient Egyptian celestial observation and timekeeping. Their heliacal risings contributed to the division of the night and the organisation of calendrical cycles. Later astrological traditions integrated thirty-six decans into the twelve-sign zodiac as ten-degree divisions.

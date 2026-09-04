@@ -9,7 +9,7 @@ operation: [Formation, Differentiation, Orientation]
 related: [ii-3, ii-4, ii-6, ii-7, ii-23, ii-24]
 summary: The CHON Architecture, Morphaithēr, the Fourfold Veil, the Four Ethers, tattvic refraction, the gunas, spirit-soul-body mediation, the etheric and astral bodies, the Six Faces of Ignisophia, the Psychic Flywheel, procession and return, captive light, and the laws - each with a legend stating whether its relations are spatial, causal, symbolic, hierarchical, cyclical, or analogical.
 epigraph: "No single geometry should be mistaken for the reality itself."
-backdrop: crosssection
+backdrop: cutaway-of-tiered-stone-tower
 position: center 45%
 ---
 

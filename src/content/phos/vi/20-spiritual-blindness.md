@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vi-3, xx-14, vi-18, i-8, xix-19]
 summary: It can occur in full brightness — a person may speak constantly of illumination while unable to perceive the consequences of their actions.
-backdrop: walker
+backdrop: walker-on-moor-track-at-dusk
 ---
 
 Spiritual blindness is the incapacity or refusal to recognise morally and metaphysically significant relations even when evidence of them is present.

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Greek]
 plane: [Divine]
 related: [ii-14, v-3, x-4, i-11, portal-4]
 summary: Spirit is source-like because it participates nearest the animating origin; its light is known through animation, conscience, and aspiration, and belongs to no ego as property.
-backdrop: breath
+backdrop: seated-figure-breathing-in-flooded-hall
 ---
 
 The word *fontal* means source-like or fountain-like. Spirit is fontal light because it participates nearest to the animating source from which life, intelligence, and orientation proceed.

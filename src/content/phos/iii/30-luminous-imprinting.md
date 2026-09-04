@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Imprinting]
 related: [ii-27, ii-28, xix-12, xiii-28, xx-1, iii-31]
 summary: The imprint is not the original light but the altered structure left by reception — healthy imprinting expands capacity, distorted imprinting creates fixation.
-backdrop: dewweb
+backdrop: dew-strung-web-over-valley-at-night
 position: center 45%
 ---
 

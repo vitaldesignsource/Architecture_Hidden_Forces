@@ -8,7 +8,7 @@ symbol: [Solar Disc, Star, Flame]
 related: [vii-2, vii-11, vii-1, viii-3, xii-16, vii-15]
 summary: Divine powers encountered through the most commanding luminosities — not primitive astronomy but deities acting through visible vessels they exceed; names may address distinct gods or local faces of one current.
 epigraph: "A divine power is not an abstract energy available without relation."
-backdrop: skygods
+backdrop: sky-gods-above-ritual-shore
 position: center 40%
 ---
 

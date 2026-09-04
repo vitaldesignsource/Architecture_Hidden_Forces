@@ -11,7 +11,7 @@ text: [Odes of Solomon]
 related: [viii-24, xiv-10, xii-19, xv-41, xv-56, x-6]
 summary: Forty-two early hymns in Syriac whose singer stands inside salvation rather than outside describing it - light rising within the heart, living water drunk and poured out, sealing and clothing as a new luminous identity, and doctrine become song.
 epigraph: "The soul does not receive light only through abstract contemplation."
-backdrop: springterrace
+backdrop: hot-spring-terraces-at-lake-edge
 ---
 
 The Odes of Solomon are a collection of forty-two early Christian hymns preserved principally in Syriac, though their original language and precise date remain debated. They are anonymous and should not be attributed to the biblical Solomon merely because of their traditional title.

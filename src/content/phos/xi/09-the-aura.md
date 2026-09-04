@@ -7,7 +7,7 @@ plane: [Etheric, Astral, Psychic]
 related: [ix-18, ii-18, ii-19, xi-10, xi-20]
 summary: The real subtle field surrounding and interpenetrating a living being — etheric, astral, psychic, and spiritual levels in one perceptible expression; optical effects can mingle with its perception without making it unreal.
 epigraph: "Its interpretation should be based upon repeated observation rather than rigid colour dictionaries."
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 The aura is the real subtle field surrounding and interpenetrating a living being. It is not one uniform shell or a decorative coloured outline. It is the perceptible expression of several interacting levels: etheric vitality, astral movement, psychic condition, thought, emotion, spiritual orientation, bodily health, and environmental relation.

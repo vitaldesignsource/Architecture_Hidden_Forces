@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Imprinting]
 related: [ii-27, ii-28, iii-30, iv-36, xi-20]
 summary: What illumination leaves behind in the structures it has touched — surviving as altered possibility rather than a perfect recording.
-backdrop: glasshouseflower
+backdrop: overgrown-glasshouse-with-light-shaft
 position: center 50%
 ---
 

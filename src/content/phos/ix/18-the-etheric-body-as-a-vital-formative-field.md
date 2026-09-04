@@ -8,7 +8,7 @@ operation: [Vivification, Formation, Integration]
 related: [ii-18, v-13, ix-19, ix-17, viii-26, ii-7, ix-8]
 summary: The real vital-formative dimension of the organism — a subtle body upon the etheric plane, individualising Morphaithēr, practically coextensive with the physical body yet able to extend, radiate, and project.
 epigraph: "Physical anatomy supplies material embodiment, but the etheric body supplies the organised vitality through which anatomy becomes and remains alive."
-backdrop: mycelium
+backdrop: mycelium-threading-forest-litter
 ---
 
 The etheric body is the real vital-formative dimension of the embodied organism. It is a subtle body operating upon the etheric plane and mediating between essence, soul, astral activity, and physical anatomy. It is not merely a model of biological complexity, a metaphor for metabolism, or an invisible copy of the physical body.

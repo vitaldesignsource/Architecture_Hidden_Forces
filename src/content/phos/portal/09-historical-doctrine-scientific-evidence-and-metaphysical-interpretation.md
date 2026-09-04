@@ -4,7 +4,7 @@ labels: [Architecture of Hidden Forces Doctrine]
 tradition: [Architecture of Hidden Forces]
 related: [portal-10, xvi-25, xvi-26, xviii-22, xix-17, xix-6, xix-1, xix-11, xix-4]
 summary: Six kinds of claim the portal keeps apart, and the methodological covenant that lets wonder and rigour inhabit one architecture.
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 The strength of this portal depends upon disciplined distinctions.

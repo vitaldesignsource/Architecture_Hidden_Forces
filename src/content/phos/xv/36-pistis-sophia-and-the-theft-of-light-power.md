@@ -11,7 +11,7 @@ text: [Pistis Sophia]
 related: [xii-22, vi-18, xii-4, x-18, xi-25, xv-35]
 summary: Sophia in the thirteenth aeon deceived by an imitative light produced below by Authades — her light-power stripped away in Chaos, her repentances as repeated reorientation, and the light-stream that restrains the hostile powers and returns what was taken; true, reflected, borrowed, stolen, and counterfeit light distinguished.
 epigraph: "Brilliance alone cannot establish divine identity."
-backdrop: sophia
+backdrop: sophia-holding-light-above-basin
 position: center 30%
 ---
 

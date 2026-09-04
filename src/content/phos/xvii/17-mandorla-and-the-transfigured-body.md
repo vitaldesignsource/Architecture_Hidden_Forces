@@ -10,7 +10,7 @@ symbol: [Mandorla]
 related: [xi-13, xiv-16, xv-51, xvii-16, xvii-6, ix-18]
 summary: An almond aureole surrounding the whole body rather than the head alone - concentric bands, and in some Eastern Christian works a darkening toward the centre where transcendence exceeds sight; radiance and threshold at once.
 epigraph: "It is not escape from form but the disclosure of form's higher capacity."
-backdrop: statue
+backdrop: lamplit-statue-beside-open-book
 ---
 
 The mandorla is an almond-shaped aureole surrounding the entire body rather than only the head. It often appears around Christ in Majesty, the Transfiguration, the Ascension, or the Virgin in glory. Its shape is closely related to [[xvii-6|the vesica]] formed by intersecting circles.

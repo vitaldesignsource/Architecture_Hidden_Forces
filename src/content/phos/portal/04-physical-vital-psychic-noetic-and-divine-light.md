@@ -5,7 +5,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Physical, Vital, Psychic, Noetic, Divine]
 related: [v-3, v-5, v-10, v-13, v-17, ix-1, x-1, xi-26]
 summary: Five real registers of luminous operation, not five substances stacked above one another — and why the divine is not simply the brightest of them.
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 ---
 
 The Luminous Architecture begins with five primary registers. These are not presented as five scientifically proven substances stacked mechanically above one another. They are real registers of luminous operation, each belonging to a plane the system affirms as real, and at the same time domains of inquiry through which different meanings and operations of light can be distinguished. That they are not measured by one instrument does not make any of them less real than the physical.

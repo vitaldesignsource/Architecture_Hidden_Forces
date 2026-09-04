@@ -7,7 +7,7 @@ plane: [Physical, Psychic, Astral]
 related: [xi-19, xi-6, xi-15, portal-3, x-13]
 summary: Three places light can appear to consciousness — the shared environment, the inner field, and a field exceeding bodily location; the categories say where, not what.
 epigraph: "The categories identify where light appears to consciousness; they do not by themselves determine what the light is."
-backdrop: crater
+backdrop: night-crater-with-glowing-lava
 ---
 
 External light appears to occupy the shared physical environment. It reflects from surfaces, casts shadows, changes with bodily orientation, and can ordinarily be confirmed by other observers or instruments. Sunlight, flame, lightning, lamps, bioluminescence, and atmospheric luminosity belong primarily to this category.

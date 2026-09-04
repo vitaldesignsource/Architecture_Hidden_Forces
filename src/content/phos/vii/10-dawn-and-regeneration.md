@@ -7,7 +7,7 @@ operation: [Awakening]
 related: [vii-1, xx-2, vi-5, iii-10, v-29]
 summary: The model of sustainable transformation — the new form becomes perceptible through a sequence of thresholds rather than erupting complete.
 epigraph: "Dawn is darkness learning to disclose what it has gestated."
-backdrop: springterrace
+backdrop: hot-spring-terraces-at-lake-edge
 ---
 
 Dawn is the gradual return of distinguishability. It begins before the solar disk appears because the atmosphere scatters sunlight into the observer's field.

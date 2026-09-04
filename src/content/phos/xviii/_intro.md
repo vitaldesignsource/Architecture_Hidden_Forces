@@ -1,5 +1,5 @@
 ---
-backdrop: braided
+backdrop: braided-glacial-river-from-above
 position: center 50%
 ---
 

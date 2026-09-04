@@ -10,7 +10,7 @@ symbol: [Prism]
 related: [iv-15, ii-9, xvi-16, viii-20, xx-8, xvii-8]
 summary: Colour observed as light differentiated through relation - hue, saturation, temperature, and density first, then the feelings and memories that follow, held as personal association or cultural symbolism rather than assumed universal correspondence; stable patterns studied, unstable ones left provisional.
 epigraph: "A colour's meaning depends upon context."
-backdrop: filters
+backdrop: stacked-glass-filters-in-dark-cell
 ---
 
 Colour is light differentiated through relation. It arises through source, spectrum, medium, surface, surrounding colours, and the perceiving organism. In subtle experience, colour can also express tattvic quality, emotional atmosphere, psychic condition, symbolic meaning, or the signature of a particular presence.

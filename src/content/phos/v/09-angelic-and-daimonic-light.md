@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Angelic, Daimonic]
 related: [xii-8, xii-9, xii-13, xii-20, xii-22]
 summary: Intermediary rather than fontal — daimonic does not inherently mean evil, and authenticity is judged by source, function, relation, and consequence.
-backdrop: gateway
+backdrop: gateway-cut-through-rock-to-mist
 ---
 
 Angelic and daimonic lights belong to intermediary orders described differently across religious and philosophical traditions. These categories should not be indiscriminately merged.

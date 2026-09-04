@@ -7,7 +7,7 @@ plane: [Superessential]
 related: [xv-54, xv-55, v-4, i-20, vi-6]
 summary: Not ignorance but the recognition that the object exceeds the structure of finite knowing — it prevents partial knowledge from pretending to be total.
 epigraph: "It does not forbid knowledge; it prevents partial knowledge from pretending to be total."
-backdrop: moonflats
+backdrop: moon-over-tidal-flats-and-channel
 ---
 
 Apophatic Darkness is encountered where concepts, images, names, and distinctions can no longer contain the reality toward which they point.

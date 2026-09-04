@@ -7,7 +7,7 @@ plane: [Noetic]
 operation: [Illumination, Integration]
 related: [x-4, x-8, xv-19, i-3, i-18]
 summary: Noetic light is the luminosity through which order becomes understandable — not information, but the architecture connecting facts, seen inwardly without becoming a visual object.
-backdrop: observatory
+backdrop: mountain-observatory-above-cloud
 ---
 
 Noetic light is the luminosity through which order becomes understandable. It appears when scattered observations resolve into structure, when a difficult principle becomes clear, or when the relationship among causes, forms, and consequences can finally be perceived.

@@ -11,7 +11,7 @@ text: [Corpus Hermeticum, Poimandres]
 related: [ii-2, vi-4, vi-10, x-4, vii-17, ii-29]
 summary: The first treatise of the Corpus Hermeticum — boundless Light, then a downward Darkness becoming watery nature, and the holy Logos descending upon it; divine Mind as the source of mind in humanity; the seven Governors; the Anthropos beholding its own reflection in Nature and entering embodiment.
 epigraph: "Light makes ordered appearance possible."
-backdrop: whirlpool
+backdrop: whirlpool-in-dark-open-water
 ---
 
 The *Poimandres*, the first treatise of the *Corpus Hermeticum*, begins with a visionary transformation of consciousness. While the narrator's bodily senses become suspended, an immeasurable being appears and identifies itself as Poimandres, the Mind of Sovereignty. The revelation that follows is therefore not offered merely as philosophical argument. It is received through an encounter with a superior intelligence that opens the seer's perception to the origins of cosmos and humanity.

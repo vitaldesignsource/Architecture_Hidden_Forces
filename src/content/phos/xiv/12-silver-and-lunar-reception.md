@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [vii-11, vii-12, xiv-11, xiv-8, xiv-10, v-18]
 summary: Cool, receptive, relational brilliance — the faithful reception and redistribution of light where gold radiates from a centre; the tarnish that obscures without destroying, and the purification that restores the power to receive and reflect.
 epigraph: "Reception requires maintenance."
-backdrop: moonfall
+backdrop: moonlit-waterfall-between-two-lakes
 position: center 45%
 ---
 

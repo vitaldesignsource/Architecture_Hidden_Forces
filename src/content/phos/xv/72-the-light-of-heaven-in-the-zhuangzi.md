@@ -10,7 +10,7 @@ text: [Zhuangzi]
 related: [x-2, x-13, vi-27, xi-25, v-28, xv-71]
 summary: Heavenly light as awareness released from rigid attachment to one-sided judgments; brightness arising in the empty chamber; fasting the heart-mind; interior peace whose radiance may be insight, presence, and energetic expression at once.
 epigraph: "The empty chamber does not manufacture the higher light; it permits that light to enter without being immediately seized and reshaped."
-backdrop: chamber2
+backdrop: figure-in-dark-chamber-with-light-slots
 ---
 
 The Zhuangzi develops a more explicitly experiential language of illumination. Its "light of Heaven" or "heavenly light" does not primarily mean sunlight. It names a mode of awareness released from rigid attachment to one-sided judgments. In the second chapter, the sage does not become imprisoned within fixed oppositions of "this" and "that", right and wrong, but illuminates them within a more comprehensive heavenly perspective.

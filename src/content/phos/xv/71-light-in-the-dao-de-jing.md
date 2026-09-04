@@ -10,7 +10,7 @@ text: [Dao De Jing]
 related: [i-12, vi-8, vi-6, ii-25, xiii-31, xv-72]
 summary: Harmonising one's light and becoming one with the dust - radiance perfected when it ceases to demand recognition; the movement between brightness and obscurity that prevents equating visible brilliance with spiritual superiority; light as a means of return to the Mother.
 epigraph: "The most authentic source may appear indistinct precisely because it does not isolate itself as an object."
-backdrop: rootsstill
+backdrop: roots-and-vessels-beside-stream
 position: center 45%
 ---
 

@@ -8,7 +8,7 @@ operation: [Protection, Judgment]
 related: [xi-25, xi-27, xi-22, xi-26, xiii-30, xiv-24]
 summary: Six safeguards for ritual work — ethical purpose, psychological discernment, bodily stability, documentation, humility before the manifested light, and the Law of Right Relation; medical and psychological care coexist with metaphysical understanding.
 epigraph: "Intensity is not rank. Beauty is not goodness. Fear is not proof of evil. Familiar symbolism is not proof of identity."
-backdrop: tally
+backdrop: hands-marking-clay-tally
 ---
 
 The first safeguard is ethical purpose. Ritual power should not be separated from responsibility for its effects upon the practitioner, participants, community, and wider field. A technically successful operation can still be spiritually disordered if it depends upon coercion, deception, exploitation, or the violation of another person's rightful boundaries.

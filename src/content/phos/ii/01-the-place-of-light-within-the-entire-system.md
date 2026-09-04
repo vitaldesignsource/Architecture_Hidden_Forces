@@ -9,7 +9,7 @@ related: [ii-30, i-10, i-14, portal-2]
 summary: Light occupies the interval between force and perceptibility — one of six primary terms, none of which replaces the others.
 epigraph: "Form is frozen force. Force is liberated form."
 attribution: The governing formula
-backdrop: keystone
+backdrop: keystone-set-in-lit-stone-vault
 ---
 
 The Architecture of Hidden Forces begins from the proposition that visible things are not self-explanatory. Every formed thing is the temporary stabilisation of relations, forces, histories, boundaries, and mediating conditions that exceed its visible surface.

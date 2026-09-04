@@ -7,7 +7,7 @@ quality: [Unity]
 related: [i-13, iv-8, v-23, iv-6, xvii-9]
 summary: One governing identity that remains capable of internal differentiation — true unity coordinates difference, false unity suppresses it.
 epigraph: "True unity coordinates difference. False unity suppresses it."
-backdrop: rotunda
+backdrop: rotunda-open-to-night-sky
 ---
 
 Unity is the degree to which a luminous phenomenon possesses one governing identity while remaining capable of internal differentiation.

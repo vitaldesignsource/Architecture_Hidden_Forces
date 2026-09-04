@@ -9,7 +9,7 @@ operation: [Recognition, Imprinting]
 related: [x-15, v-11, xi-18, x-18, xx-1, xi-17]
 summary: Dream light rarely behaving like physical illumination - landscapes visible without a sun, objects glowing from within, beings whose radiance communicates identity; recurring motifs read through the dreamer's own lexicon before any traditional interpretation is imposed.
 epigraph: "A dream can be psychologically formative, symbolically exact, and spiritually significant at the same time."
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 Dream light rarely behaves exactly like physical illumination. A dream landscape may be perfectly visible without any visible sun. A room may glow from within its objects. A being may radiate light that communicates emotion, identity, or knowledge. Colours may possess unusual depth, and darkness may remain luminous rather than empty.

@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces]
 related: [vii-8, iv-51, xx-2, xiv-6, vi-19]
 summary: Maximum visibility that can also flatten depth — the hour of accountability, and the point at which manifested power begins its decline.
-backdrop: saltflat
+backdrop: sun-pillar-over-salt-flat
 ---
 
 Noon represents maximum visibility, explicitness, exposure, and the apparent triumph of the manifest world. Symbolically, it is the condition in which force has entered form and stands beneath the strongest available illumination.

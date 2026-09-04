@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [xvi-8, xvi-18, viii-3, ix-9, xvi-25, xvi-22]
 summary: The bands on either side of the visible - infrared bound to thermal and molecular states, ultraviolet energetic enough to make vitamin D and to damage DNA; instruments converting invisible frequencies into images, and the lesson that unaided invisibility is not absence.
 epigraph: "Absence from unaided perception is not absence from reality."
-backdrop: saltflat
+backdrop: sun-pillar-over-salt-flat
 ---
 
 Visible light is a small portion of the electromagnetic spectrum. Infrared radiation has longer wavelengths than visible red, while ultraviolet has shorter wavelengths than visible violet. Human eyes ordinarily detect neither, yet both have powerful physical and biological effects.

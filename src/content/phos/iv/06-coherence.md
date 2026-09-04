@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Coherence]
 related: [xvi-13, xix-4, iii-5, ix-20, xi-25, iv-26]
 summary: Ordered relationship among the parts of a current — scattered intensity excites a field, coherent intensity can reorganise it; but coherence alone does not guarantee truth.
-backdrop: pavilion
+backdrop: timber-pavilion-on-rock-shelf
 position: center 50%
 ---
 

@@ -1,5 +1,5 @@
 ---
-backdrop: lenshall
+backdrop: lens-focusing-beam-in-stone-hall
 position: center 50%
 ---
 

@@ -10,7 +10,7 @@ symbol: [Prism, Rainbow]
 related: [i-13, iv-15, xv-89, vii-26, xvi-5, xvi-16]
 summary: Refractive index varying with wavelength, so that a prism or raindrop separates what appeared unified - a continuous spectrum whose sevenfold division is linguistic rather than physical, and spectroscopy in which absorption and emission lines become the signatures of unreachable sources.
 epigraph: "A source can be one at one level and multiple at another."
-backdrop: worldprism
+backdrop: world-prism-splitting-light-over-landscape
 position: center 45%
 ---
 

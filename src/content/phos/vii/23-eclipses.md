@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [iv-44, vii-24, vi-8, vii-9, vi-11]
 summary: Predictable alignments rather than the destruction of a luminary — and the revelation made possible by concealment.
-backdrop: crater
+backdrop: night-crater-with-glowing-lava
 ---
 
 A solar eclipse occurs when the Moon passes between Earth and the Sun from the observer's perspective. A lunar eclipse occurs when Earth's shadow falls upon the Moon — see [NASA's overview of eclipses](https://science.nasa.gov/skywatching/).

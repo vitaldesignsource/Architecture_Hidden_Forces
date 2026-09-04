@@ -10,7 +10,7 @@ symbol: [Solar Disc]
 related: [ix-4, xiv-6, vii-4, ix-20, xvi-17, ii-25]
 summary: Endogenous cycles of about twenty-four hours reset by light through melanopsin-bearing retinal ganglion cells and the retinohypothalamic tract to the suprachiasmatic nucleus - illumination becoming time-information within an organism that need not consciously attend to it.
 epigraph: "The organism is temporally porous: celestial cycles enter physiology and organise life from within."
-backdrop: sleepdawn
+backdrop: sleeper-at-dawn-by-wide-window
 ---
 
 Circadian rhythms are internally generated cycles of approximately twenty-four hours. They persist in constant conditions, but environmental signals - especially light - reset them so that biological time remains aligned with day and night.

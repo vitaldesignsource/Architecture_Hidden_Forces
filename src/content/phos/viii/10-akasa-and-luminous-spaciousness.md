@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 plane: [Formative]
 related: [ii-8, viii-4, viii-11, vi-17, iii-6]
 summary: Not to be equated with Root Ether — Root Ether is prequalitative receptivity, while Ākāśa is already an inclination toward openness and interval.
-backdrop: saltflat
+backdrop: sun-pillar-over-salt-flat
 ---
 
 Ākāśa is the tattvic bias toward spaciousness, continuity, resonance, receptivity, and the possibility of relation.

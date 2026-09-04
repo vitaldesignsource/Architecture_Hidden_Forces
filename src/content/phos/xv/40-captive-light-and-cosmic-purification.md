@@ -10,7 +10,7 @@ symbol: [Solar Disc]
 related: [xv-38, xv-39, ii-28, xiii-22, ii-25, vii-4]
 summary: Divine particles dispersed through the world, the sun and moon as vessels of transport, and cosmic cycles as processes of salvation; the Elect and the Hearers, the ritual meal, and the cosmic weight of the smallest action; captive light retained as a category without absolute hostility toward matter.
 epigraph: "A truthful architecture must be willing to release power it cannot rightfully integrate."
-backdrop: filterstack
+backdrop: filter-stack-of-cloth-and-stone
 position: center 45%
 ---
 

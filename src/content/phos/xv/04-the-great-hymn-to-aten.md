@@ -11,7 +11,7 @@ text: [Great Hymn to the Aten]
 related: [ix-1, xiii-7, vii-1, xii-2, xv-5, xii-16]
 summary: Akhenaten's hymn in the tomb of Ay — sunrise as universal awakening, rays ending in hands that give life; a supreme ancient statement of light as vivification, and a warning that even universal light may be enclosed in a restrictive architecture of mediation.
 epigraph: "The light reaches every land, but knowledge of its divine identity is concentrated in the king."
-backdrop: gorgedawn
+backdrop: gorge-at-dawn-with-burst-of-sun
 ---
 
 The Great Hymn to Aten is preserved in the tomb of Ay at Amarna and belongs to the religious transformation associated with Akhenaten in the fourteenth century BCE. It praises the Aten — the visible solar disc and its life-giving rays — as the source upon which human beings, animals, plants, lands, waters, and daily activity depend.

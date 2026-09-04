@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Manifestation, Differentiation]
 related: [ii-2, xiii-3, xix-5, ii-21]
 summary: Forces are known through their effects; light occupies the threshold where force becomes legible, and every manifestation is an illuminated trace.
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 Forces are often known through their effects rather than perceived directly. Wind becomes visible through moving leaves. Magnetism becomes visible through the organisation of filings. Gravity becomes visible through trajectories, weight, and falling bodies. Psychic forces become visible through recurring images, behaviours, desires, and emotional patterns.

@@ -11,7 +11,7 @@ text: [Book of the Heavenly Cow]
 related: [xiii-29, xii-2, xii-9, xv-10, xiii-3, xiii-14]
 summary: The Destruction of Humanity and the sun god's withdrawal upon the celestial cow — the cosmos reorganised into differentiated levels, divine presence made more mediated; a profound theology of luminous withdrawal as a creative operation.
 epigraph: "When an existing relation fails, light may retreat, establish boundaries, assign mediators, and form a new cosmos capable of preserving what remains possible."
-backdrop: crater
+backdrop: night-crater-with-glowing-lava
 ---
 
 The Book of the Heavenly Cow contains the narrative commonly called the Destruction of Humanity. Portions first survive on one of Tutankhamun's gilded shrines, while more extensive versions appear in the tombs of Seti I, Ramesses II, Ramesses III, and other New Kingdom contexts.

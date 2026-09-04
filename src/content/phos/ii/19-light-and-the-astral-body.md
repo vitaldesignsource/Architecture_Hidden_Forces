@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Astral, Psychic]
 related: [x-18, v-12, ii-10, xi-26, vi-18, ii-20]
 summary: A field of felt vectors whose light is mobile and image-bearing, easily coloured by the gunas — the theatre of luminous appearance, not the judge of what appears.
-backdrop: ripples
+backdrop: ripple-marks-in-flooded-vault
 ---
 
 The astral body is a field of felt vectors. It includes desire, sensation, emotional movement, attraction, repulsion, dream, image, and symbolic experience.

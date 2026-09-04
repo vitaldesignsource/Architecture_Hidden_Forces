@@ -264,7 +264,7 @@ function Phos() {
 
       {/* HERO */}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
-        <Backdrop src="/bg/lightdoor.webp" opacity={0.4} position="68% 50%" scrim={0.28} fill />
+        <Backdrop src="/bg/door-of-light-in-flooded-chamber.webp" opacity={0.4} position="68% 50%" scrim={0.28} fill />
         <LumenField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -416,7 +416,7 @@ function Phos() {
       {/* § I — REGISTERS */}
       <section id="registers" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-12} />
-        <Backdrop src="/bg/sunravine.webp" opacity={0.4} position="center 40%" scrim={0.26} portrait />
+        <Backdrop src="/bg/sunlit-ravine-with-golden-stream.webp" opacity={0.4} position="center 40%" scrim={0.26} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § I · Three Registers of Light
@@ -490,7 +490,7 @@ function Phos() {
       {/* § II — DIFFUSION */}
       <section id="diffusion" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-96} />
-        <Backdrop src="/bg/lamplines.webp" opacity={0.34} position="center 60%" scrim={0.28} />
+        <Backdrop src="/bg/oil-lamps-set-in-lines-across-hall.webp" opacity={0.34} position="center 60%" scrim={0.28} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § II · The Self-Diffusion of the Good
@@ -558,7 +558,7 @@ function Phos() {
       {/* § III — DE LUCE */}
       <section id="deluce" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-210} />
-        <Backdrop src="/bg/crystalhall.webp" opacity={0.34} position="center 50%" scrim={0.22} />
+        <Backdrop src="/bg/crystal-pillars-in-mirrored-hall.webp" opacity={0.34} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § III · De Luce
@@ -642,7 +642,7 @@ function Phos() {
       {/* § IV — MEDIUM */}
       <section id="medium" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-330} />
-        <Backdrop src="/bg/shafthall.webp" opacity={0.34} position="center 50%" scrim={0.24} />
+        <Backdrop src="/bg/light-shaft-across-pillared-hall.webp" opacity={0.34} position="center 50%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § IV · The Diaphanous
@@ -724,7 +724,7 @@ function Phos() {
       {/* § V — SHADOW */}
       <section id="shadow" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-455} />
-        <Backdrop src="/bg/eclipse.webp" opacity={0.48} position="center 40%" scrim={0.18} anchor="left" />
+        <Backdrop src="/bg/total-eclipse-over-forest-ridge.webp" opacity={0.48} position="center 40%" scrim={0.18} anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § V · Shadow
@@ -809,7 +809,7 @@ function Phos() {
       {/* § VI — VESSEL */}
       <section id="vessel" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-580} />
-        <Backdrop src="/bg/crackedvessel.webp" opacity={0.34} position="center 50%" scrim={0.22} />
+        <Backdrop src="/bg/cracked-vessel-mended-with-gold-light.webp" opacity={0.34} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § VI · The Vessel and the Measure
@@ -883,7 +883,7 @@ function Phos() {
       {/* § VII — LADDER */}
       <section id="ladder" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-700} />
-        <Backdrop src="/bg/spherehall.webp" opacity={0.36} position="center 32%" scrim={0.22} portrait />
+        <Backdrop src="/bg/radiant-sphere-in-star-hall.webp" opacity={0.36} position="center 32%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <GirihBand className="mb-12" />
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -1070,7 +1070,7 @@ function Phos() {
       {/* § VIII — COLOUR */}
       <section id="colour" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-820} />
-        <Backdrop src="/bg/spectralvalley.webp" opacity={0.36} position="center 50%" scrim={0.2} />
+        <Backdrop src="/bg/spectral-valley-with-rainbow-beam.webp" opacity={0.36} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § VIII · The Boundary Where Colour Arises
@@ -1242,7 +1242,7 @@ function Phos() {
       {/* § IX — EYE */}
       <section id="eye" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-940} />
-        <Backdrop src="/bg/lampshaft.webp" opacity={0.52} position="center 60%" scrim={0.18} portrait anchor="left" />
+        <Backdrop src="/bg/oil-lamp-under-narrow-light-shaft.webp" opacity={0.52} position="center 60%" scrim={0.18} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § IX · The Sunlike Eye
@@ -1323,7 +1323,7 @@ function Phos() {
       {/* § X — COUNTERFEITS */}
       <section id="counterfeits" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-1060} />
-        <Backdrop src="/bg/mirrorcascade.webp" opacity={0.3} position="center 46%" scrim={0.26} portrait />
+        <Backdrop src="/bg/mirrors-cascading-light-down-shaft.webp" opacity={0.3} position="center 46%" scrim={0.26} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § X · The Counterfeits of Light
@@ -1430,7 +1430,7 @@ function Phos() {
       {/* § XI — READING */}
       <section id="reading" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-1185} />
-        <Backdrop src="/bg/opticstable.webp" opacity={0.34} position="center 50%" scrim={0.2} />
+        <Backdrop src="/bg/optics-table-with-prism-and-spectrum.webp" opacity={0.34} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XI · The Discipline of Reading Light
@@ -1534,7 +1534,7 @@ function Phos() {
       {/* § XII — RESTORATION */}
       <section id="restoration" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-1300} />
-        <Backdrop src="/bg/altarflame.webp" opacity={0.36} position="center 55%" scrim={0.2} portrait />
+        <Backdrop src="/bg/fire-altar-flame-over-dark-water.webp" opacity={0.36} position="center 55%" scrim={0.2} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XII · The Returning Light
@@ -1607,7 +1607,7 @@ function Phos() {
       {/* LEXICON */}
       <section id="luxlexicon" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-1420} />
-        <Backdrop src="/bg/archive.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait anchor="left" />
+        <Backdrop src="/bg/narrow-archive-aisle-of-scrolls.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § Lexicon · The Terms of This Volume
@@ -1677,7 +1677,7 @@ function Phos() {
       {/* THE PORTAL */}
       <section id="encyclopaedia" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-612} />
-        <Backdrop src="/bg/shaftvault.webp" opacity={0.36} position="center 55%" scrim={0.2} />
+        <Backdrop src="/bg/collapsed-vault-lit-from-above.webp" opacity={0.36} position="center 55%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § The Portal · Beyond This Volume
@@ -1712,7 +1712,7 @@ function Phos() {
 
       {/* THE LUMINOUS FORMULA */}
       <section id="luminous" className="relative isolate overflow-hidden border-t border-border py-40">
-        <Backdrop src="/bg/nightterrace.webp" opacity={0.44} position="center 50%" scrim={0.16} portrait />
+        <Backdrop src="/bg/night-terrace-above-cloud-sea.webp" opacity={0.44} position="center 50%" scrim={0.16} portrait />
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <svg
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-slow-spin opacity-[0.16]"

@@ -296,7 +296,7 @@ function Index() {
 
       {/* HERO */}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
-        <Backdrop src="/bg/threshold.webp" opacity={0.3} position="center 42%" fill />
+        <Backdrop src="/bg/threshold-arches-in-misted-vault.webp" opacity={0.3} position="center 42%" fill />
         <GeometryField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -381,7 +381,7 @@ function Index() {
 
       {/* INDEX */}
       <section id="index" className="relative isolate border-t border-border py-24">
-        <Backdrop src="/bg/summit.webp" opacity={0.42} position="center 40%" scrim={0.25} />
+        <Backdrop src="/bg/summit-above-sea-of-cloud.webp" opacity={0.42} position="center 40%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             Πίναξ · The Architecture in Order
@@ -393,7 +393,7 @@ function Index() {
       </section>
 
       <section id="doctrine" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/archer.webp" opacity={0.72} position="center 45%" scrim={0.3} />
+        <Backdrop src="/bg/archer-drawing-bow-in-courtyard.webp" opacity={0.72} position="center 45%" scrim={0.3} />
         <SectionGlyph />
         <div className="relative mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <aside className="lg:sticky lg:top-32 lg:self-start">
@@ -428,7 +428,7 @@ function Index() {
 
       {/* THE FIVE TERMS */}
       <section id="terms" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/whirlpool.webp" opacity={0.7} position="center 55%" scrim={0.2} />
+        <Backdrop src="/bg/whirlpool-in-dark-open-water.webp" opacity={0.7} position="center 55%" scrim={0.2} />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -479,7 +479,7 @@ function Index() {
 
       {/* THE SPINE */}
       <section id="spine" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/concentrator.webp" opacity={0.16} position="center 55%" />
+        <Backdrop src="/bg/mirror-concentrator-on-desert-ridge.webp" opacity={0.16} position="center 55%" />
         <SectionGlyph delay={-25} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -547,7 +547,7 @@ function Index() {
 
       {/* DESCENT */}
       <section id="descent" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/cascade.webp" opacity={0.22} position="center 40%" />
+        <Backdrop src="/bg/cascade-over-limestone-in-gorge.webp" opacity={0.22} position="center 40%" />
         <SectionGlyph delay={-30} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -626,7 +626,7 @@ function Index() {
 
       {/* LAYERED CORRESPONDENCE */}
       <section id="correspondence" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/web.webp" opacity={0.16} position="center 50%" />
+        <Backdrop src="/bg/dew-covered-web-in-dark-woodland.webp" opacity={0.16} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -682,7 +682,7 @@ function Index() {
 
       {/* THE FOURFOLD FIELD */}
       <section id="fourfold" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/gateway.webp" opacity={0.16} position="center 50%" />
+        <Backdrop src="/bg/gateway-cut-through-rock-to-mist.webp" opacity={0.16} position="center 50%" />
         <SectionGlyph delay={-40} />
         <div className="relative mx-auto max-w-6xl px-6">
           {/* Header */}
@@ -1087,7 +1087,7 @@ function Index() {
 
       {/* MORPHAITHER */}
       <section id="morphaither" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/tide.webp" opacity={0.2} position="center 55%" />
+        <Backdrop src="/bg/tide-patterns-on-grey-strand.webp" opacity={0.2} position="center 55%" />
         <SectionGlyph delay={-15} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
@@ -1146,7 +1146,7 @@ function Index() {
 
       {/* RETURN */}
       <section id="return" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/birdspiral.webp" opacity={0.29} position="center 45%" scrim={0.3} />
+        <Backdrop src="/bg/bird-murmuration-spiral-over-lake.webp" opacity={0.29} position="center 45%" scrim={0.3} />
         <SectionGlyph delay={-60} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -1179,7 +1179,7 @@ function Index() {
 
       {/* SEED EXAMPLE */}
       <section id="seed" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/roots.webp" opacity={0.16} position="center 45%" />
+        <Backdrop src="/bg/great-roots-gripping-cliff-edge.webp" opacity={0.16} position="center 45%" />
         <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -1217,7 +1217,7 @@ function Index() {
 
       {/* KABBALAH */}
       <section id="kabbalah" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/chamber.webp" opacity={0.45} position="center 35%" />
+        <Backdrop src="/bg/waterfall-chamber-behind-stone-arches.webp" opacity={0.45} position="center 35%" />
         <SectionGlyph />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
@@ -1349,7 +1349,7 @@ function Index() {
 
       {/* EXTENDED — hidden powers */}
       <section id="extended" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/mycelium.webp" opacity={0.67} position="center 55%" scrim={0.2} />
+        <Backdrop src="/bg/mycelium-threading-forest-litter.webp" opacity={0.67} position="center 55%" scrim={0.2} />
         <SectionGlyph delay={-45} />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
@@ -1422,7 +1422,7 @@ function Index() {
 
       {/* THE PSYCHIC FLYWHEEL */}
       <section id="flywheel" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/flywheel.webp" opacity={0.5} position="center 45%" />
+        <Backdrop src="/bg/great-flywheel-in-rock-cut-hall.webp" opacity={0.5} position="center 45%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § IX · The Psychic Flywheel
@@ -1496,7 +1496,7 @@ function Index() {
 
       {/* THE ALCHEMICAL TRIAD */}
       <section id="triad" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/alembic.webp" opacity={0.38} position="center 50%" />
+        <Backdrop src="/bg/copper-alembic-still-in-stone-workshop.webp" opacity={0.38} position="center 50%" />
         <SectionGlyph delay={-45} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -1570,7 +1570,7 @@ function Index() {
 
       {/* THE RETENTIVE DEPTH */}
       <section id="retentive" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/strata.webp" opacity={0.45} position="center 50%" />
+        <Backdrop src="/bg/layered-strata-in-dark-passage.webp" opacity={0.45} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XI · The Retentive Depth
@@ -1580,7 +1580,7 @@ function Index() {
           </h2>
 
           <div className="relative isolate mt-12 grid gap-16 lg:grid-cols-2">
-            <Backdrop src="/bg/peatcliff.webp" opacity={0.26} position="center 55%" scrim={0.22} />
+            <Backdrop src="/bg/peat-cliff-above-still-lake.webp" opacity={0.26} position="center 55%" scrim={0.22} />
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Κρύπτη · The Crypt of Primordial Memory
@@ -1625,7 +1625,7 @@ function Index() {
 
       {/* THE LAWS OF FORMATION */}
       <section id="laws" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/nurselog.webp" opacity={0.16} position="center 55%" />
+        <Backdrop src="/bg/nurse-log-in-foggy-forest.webp" opacity={0.16} position="center 55%" />
         <SectionGlyph delay={-70} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -1713,7 +1713,7 @@ function Index() {
 
           {/* The safeguard */}
           <div className="relative isolate mt-20 border-l border-gold/40 pl-8">
-            <Backdrop src="/bg/reedbeds.webp" opacity={0.3} position="center 50%" scrim={0.22} />
+            <Backdrop src="/bg/reed-beds-and-still-water-at-dawn.webp" opacity={0.3} position="center 50%" scrim={0.22} />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Safeguard · No Vessel Exhausts the Field
             </p>
@@ -1741,7 +1741,7 @@ function Index() {
 
       {/* ASTROLOGY */}
       <section id="astrology" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/startemple.webp" opacity={0.32} position="center 45%" />
+        <Backdrop src="/bg/star-trails-over-ruined-temple.webp" opacity={0.32} position="center 45%" />
         <SectionGlyph delay={-90} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -1956,7 +1956,7 @@ function Index() {
 
       {/* SUB-TATTVAS */}
       <section id="subtattva" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/scrims.webp" opacity={0.28} position="center 50%" scrim={0.25} />
+        <Backdrop src="/bg/light-scrims-hung-in-stone-room.webp" opacity={0.28} position="center 50%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XIV · The Compound Qualities
@@ -2176,7 +2176,7 @@ function Index() {
 
       {/* DAOIST DYNAMICS */}
       <section id="dao" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/aperture.webp" opacity={0.42} position="center 45%" />
+        <Backdrop src="/bg/cave-mouth-light-on-still-water.webp" opacity={0.42} position="center 45%" />
         <SectionGlyph delay={-110} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -2449,7 +2449,7 @@ function Index() {
 
       {/* IGNISOPHIA */}
       <section id="ignisophia" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/furnace.webp" opacity={0.26} position="center 60%" />
+        <Backdrop src="/bg/furnace-mouth-glowing-in-ravine.webp" opacity={0.26} position="center 60%" />
         <SectionGlyph delay={-130} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -2672,7 +2672,7 @@ function Index() {
 
       {/* THE RECIPROCAL FIELD */}
       <section id="reciprocal" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/dewweb.webp" opacity={0.49} position="center 45%" />
+        <Backdrop src="/bg/dew-strung-web-over-valley-at-night.webp" opacity={0.49} position="center 45%" />
         <SectionGlyph delay={-150} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -2767,7 +2767,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-20 border-l border-gold/40 pl-8">
-            <Backdrop src="/bg/rimstone.webp" opacity={0.34} position="center 50%" scrim={0.22} />
+            <Backdrop src="/bg/rimstone-pools-in-limestone-cave.webp" opacity={0.34} position="center 50%" scrim={0.22} />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The recursion
             </p>
@@ -2787,7 +2787,7 @@ function Index() {
 
       {/* ELEMENTAL MIXING */}
       <section id="mixing" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/braided.webp" opacity={0.16} position="center 50%" />
+        <Backdrop src="/bg/braided-glacial-river-from-above.webp" opacity={0.16} position="center 50%" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XVIII · The Dynamics of Mixing
@@ -2978,7 +2978,7 @@ function Index() {
 
       {/* CELESTIAL CORRESPONDENCE */}
       <section id="celestial" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/alabaster.webp" opacity={0.49} position="center 45%" />
+        <Backdrop src="/bg/alabaster-slab-glowing-in-cavern.webp" opacity={0.49} position="center 45%" />
         <SectionGlyph delay={-170} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -3227,7 +3227,7 @@ function Index() {
 
       {/* CHANNELS */}
       <section id="channels" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/delta.webp" opacity={0.16} position="center 50%" />
+        <Backdrop src="/bg/river-delta-braided-in-grey-silt.webp" opacity={0.16} position="center 50%" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XX · Nadis, Meridians, and Channels
@@ -3385,7 +3385,7 @@ function Index() {
 
           {/* disturbances */}
           <div className="relative isolate mt-20">
-            <Backdrop src="/bg/beaverdam.webp" opacity={0.16} position="center 55%" scrim={0.22} />
+            <Backdrop src="/bg/beaver-dam-causeway-in-lake-mist.webp" opacity={0.16} position="center 55%" scrim={0.22} />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Eight ways circulation fails
             </p>
@@ -3451,7 +3451,7 @@ function Index() {
 
       {/* CHAKRAS */}
       <section id="centers" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/terraces.webp" opacity={0.16} position="center 45%" />
+        <Backdrop src="/bg/steaming-terraced-pools-in-rock.webp" opacity={0.16} position="center 45%" />
         <SectionGlyph delay={-190} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -3690,7 +3690,7 @@ function Index() {
 
       {/* THREE TREASURES */}
       <section id="treasures" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/germination.webp" opacity={0.22} position="center 55%" />
+        <Backdrop src="/bg/germinating-seed-with-fine-roots.webp" opacity={0.22} position="center 55%" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXII · Jing, Qi, Shen
@@ -3922,7 +3922,7 @@ function Index() {
 
       {/* HEAD HEART HARA */}
       <section id="axis" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/chamber2.webp" opacity={0.18} position="center 40%" />
+        <Backdrop src="/bg/figure-in-dark-chamber-with-light-slots.webp" opacity={0.18} position="center 40%" />
         <SectionGlyph delay={-210} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4146,7 +4146,7 @@ function Index() {
 
       {/* THE SEVEN BOOKS */}
       <section id="organs" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/sprout.webp" opacity={0.61} position="center 55%" />
+        <Backdrop src="/bg/sprout-on-wet-black-rock.webp" opacity={0.61} position="center 55%" />
         <SectionGlyph delay={-230} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4182,7 +4182,7 @@ function Index() {
 
           {/* ---- the organ as seat ---- */}
           <div className="relative isolate mt-24 grid gap-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/leafbowl.webp" opacity={0.56} position="center 55%" scrim={0.18} />
+            <Backdrop src="/bg/bowls-and-leaf-on-wet-terrace.webp" opacity={0.56} position="center 55%" scrim={0.18} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Organs as physical-vital seats</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -4363,7 +4363,7 @@ function Index() {
 
           {/* ---- healing ---- */}
           <div className="relative isolate mt-28 border-t border-border pt-16">
-            <Backdrop src="/bg/burnslope.webp" opacity={0.5} position="center 50%" scrim={0.22} portrait />
+            <Backdrop src="/bg/burned-forest-slope-regrowing.webp" opacity={0.5} position="center 50%" scrim={0.22} portrait />
             <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
               <div className="lg:sticky lg:top-32 lg:self-start">
                 <h3 className="font-serif text-2xl leading-tight">
@@ -4441,7 +4441,7 @@ function Index() {
       </section>
 
       <section id="image" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/obscura2.webp" opacity={0.7} position="center 45%" scrim={0.18} />
+        <Backdrop src="/bg/camera-obscura-projection-in-dark-room.webp" opacity={0.7} position="center 45%" scrim={0.18} />
         <SectionGlyph delay={-250} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4466,7 +4466,7 @@ function Index() {
           </p>
 
           <div className="relative isolate mt-20">
-            <Backdrop src="/bg/darkroom.webp" opacity={0.65} position="center 60%" scrim={0.05} />
+            <Backdrop src="/bg/darkroom-tray-under-single-lamp.webp" opacity={0.65} position="center 60%" scrim={0.05} />
             <h3 className="font-serif text-2xl leading-tight">The imaginal bridge</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Corbin used <span className="italic">imaginal</span> to distinguish an intermediary
@@ -4505,7 +4505,7 @@ function Index() {
 
           {/* ---- image as first legible configuration ---- */}
           <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/obscura.webp" opacity={0.85} position="center 45%" scrim={0.05} />
+            <Backdrop src="/bg/camera-obscura-tree-cast-on-wall.webp" opacity={0.85} position="center 45%" scrim={0.05} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">
                 The soul&rsquo;s first reception of hidden form
@@ -4561,7 +4561,7 @@ function Index() {
 
           {/* ---- eikon / phantasia ---- */}
           <div className="relative isolate mt-28 border-t border-border pt-16">
-            <Backdrop src="/bg/mirror.webp" opacity={0.74} position="center 50%" />
+            <Backdrop src="/bg/round-mirror-set-in-stone-wall.webp" opacity={0.74} position="center 50%" />
             <h3 className="font-serif text-2xl leading-tight">
               Eik&#333;n, phantasia, and inner appearance
             </h3>
@@ -4638,7 +4638,7 @@ function Index() {
 
           {/* ---- four modes ---- */}
           <div className="relative isolate mt-28 border-t border-border pt-16">
-            <Backdrop src="/bg/dreamer.webp" opacity={0.85} position="center 40%" scrim={0.05} />
+            <Backdrop src="/bg/sleeper-in-room-with-rippling-light.webp" opacity={0.85} position="center 40%" scrim={0.05} />
             <h3 className="font-serif text-2xl leading-tight">
               Dream, vision, memory, symbolic perception
             </h3>
@@ -4675,7 +4675,7 @@ function Index() {
 
           {/* ---- cartography ---- */}
           <div className="relative isolate mt-28 border-t border-border pt-16">
-            <Backdrop src="/bg/cartography.webp" opacity={0.61} position="center 65%" scrim={0.05} />
+            <Backdrop src="/bg/dark-hall-with-charted-stone-floor.webp" opacity={0.61} position="center 65%" scrim={0.05} />
             <h3 className="font-serif text-2xl leading-tight">
               Sacred art, diagrams, and esoteric cartography
             </h3>
@@ -4762,7 +4762,7 @@ function Index() {
       </section>
 
       <section id="symbol" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/murmuration.webp" opacity={0.63} position="center 40%" scrim={0.3} />
+        <Backdrop src="/bg/starling-murmuration-over-field.webp" opacity={0.63} position="center 40%" scrim={0.3} />
         <SectionGlyph delay={-270} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -4806,7 +4806,7 @@ function Index() {
 
           {/* ---- symbolon ---- */}
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/tally.webp" opacity={0.7} position="center 45%" scrim={0.2} />
+            <Backdrop src="/bg/hands-marking-clay-tally.webp" opacity={0.7} position="center 45%" scrim={0.2} />
             <h3 className="font-serif text-2xl leading-tight">Symbol as symbolon</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The Greek <span className="italic">symbolon</span> meant a token, tally, credential, or
@@ -4884,7 +4884,7 @@ function Index() {
 
           {/* ---- gathered reality ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/caldera.webp" opacity={0.44} position="center 50%" scrim={0.24} />
+            <Backdrop src="/bg/caldera-lake-at-sunrise.webp" opacity={0.44} position="center 50%" scrim={0.24} />
             <h3 className="font-serif text-2xl leading-tight">The symbol as gathered reality</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A powerful symbol gathers a constellation into a bounded form — a visible or audible
@@ -5207,7 +5207,7 @@ function Index() {
       </section>
 
       <section id="ritual" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/ritualcircle.webp" opacity={0.72} position="center 55%" scrim={0.15} />
+        <Backdrop src="/bg/ritual-circle-with-bowls-and-flame.webp" opacity={0.72} position="center 55%" scrim={0.15} />
         <SectionGlyph delay={-370} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -5234,7 +5234,7 @@ function Index() {
 
           {/* ---- habit and rite ---- */}
           <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/ablutionstack.webp" opacity={0.5} position="center 40%" scrim={0.24} portrait anchor="left" />
+            <Backdrop src="/bg/ablution-tower-tiered-stone-basins.webp" opacity={0.5} position="center 40%" scrim={0.24} portrait anchor="left" />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Repetition is not the criterion</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -5280,7 +5280,7 @@ function Index() {
 
           {/* ---- consecration ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/gongcorridor.webp" opacity={0.7} position="center 50%" scrim={0.2} portrait />
+            <Backdrop src="/bg/gong-at-end-of-dark-corridor.webp" opacity={0.7} position="center 50%" scrim={0.2} portrait />
             <h3 className="font-serif text-2xl leading-tight">Consecration and its release</h3>
             <div className="mt-8 max-w-3xl border-l-2 border-gold pl-6">
               <p className="font-serif text-xl leading-relaxed text-bone/90">
@@ -5369,7 +5369,7 @@ function Index() {
       </section>
 
       <section id="taxonomy" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/fieldlines.webp" opacity={0.62} position="center 60%" scrim={0.15} />
+        <Backdrop src="/bg/field-lines-in-black-volcanic-sand.webp" opacity={0.62} position="center 60%" scrim={0.15} />
         <SectionGlyph delay={-290} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -5391,7 +5391,7 @@ function Index() {
 
           {/* ---- transcendent ---- */}
           <div className="relative isolate mt-28 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/cavepool.webp" opacity={0.56} position="center 50%" scrim={0.18} portrait />
+            <Backdrop src="/bg/cave-pool-under-single-light-shaft.webp" opacity={0.56} position="center 50%" scrim={0.18} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Transcendent — force beyond force</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -5438,7 +5438,7 @@ function Index() {
 
           {/* ---- formative ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/travertine.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait />
+            <Backdrop src="/bg/travertine-cascade-in-gorge.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait />
             <h3 className="font-serif text-2xl leading-tight">Formative — the forces that give pattern</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Formative forces do not necessarily supply the energy that moves a system. They
@@ -5558,7 +5558,7 @@ function Index() {
 
           {/* ---- material ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/waterfallgorge.webp" opacity={0.4} position="center 50%" scrim={0.22} portrait />
+            <Backdrop src="/bg/waterfall-in-mountain-gorge.webp" opacity={0.4} position="center 50%" scrim={0.22} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Material — embodied constraint</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -5612,7 +5612,7 @@ function Index() {
 
           {/* ---- intermediary ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/filterstack.webp" opacity={0.47} position="center 50%" scrim={0.16} portrait />
+            <Backdrop src="/bg/filter-stack-of-cloth-and-stone.webp" opacity={0.47} position="center 50%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">Intermediary — the Mercurial category</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not a sixth substance inserted between spirit and matter. Intermediary names any
@@ -5760,7 +5760,7 @@ function Index() {
       </section>
 
       <section id="mediation" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/filters.webp" opacity={0.74} position="center 50%" scrim={0.12} />
+        <Backdrop src="/bg/stacked-glass-filters-in-dark-cell.webp" opacity={0.74} position="center 50%" scrim={0.12} />
         <SectionGlyph delay={-310} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -6033,7 +6033,7 @@ function Index() {
 
           {/* ---- descent and return ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/stairs.webp" opacity={0.46} position="center 5%" scrim={0.18} />
+            <Backdrop src="/bg/long-stair-cut-into-cliff.webp" opacity={0.46} position="center 5%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">Descent and return</h3>
             <div className="mt-8 grid gap-10 lg:grid-cols-2">
               <div>
@@ -6080,7 +6080,7 @@ function Index() {
 
           {/* ---- laws ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/mirrorcascade.webp" opacity={0.72} position="center 50%" scrim={0.16} portrait />
+            <Backdrop src="/bg/mirrors-cascading-light-down-shaft.webp" opacity={0.72} position="center 50%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">Laws of vertical mediation</h3>
             <div className="mt-10 max-w-4xl">
               {[["No mediator is the Source", "Every member receives and transmits something greater than its own particular expression."],
@@ -6119,7 +6119,7 @@ function Index() {
       </section>
 
       <section id="theurgy" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/sanctum.webp" opacity={0.58} position="center 50%" scrim={0.22} />
+        <Backdrop src="/bg/circular-sanctum-with-lit-doorway.webp" opacity={0.58} position="center 50%" scrim={0.22} />
         <SectionGlyph delay={-330} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -6173,7 +6173,7 @@ function Index() {
 
           {/* ---- theurgic engineering ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/gorgewheel.webp" opacity={0.52} position="center 50%" scrim={0.2} portrait />
+            <Backdrop src="/bg/waterwheel-under-gorge-waterfall.webp" opacity={0.52} position="center 50%" scrim={0.2} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">What engineering means here</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -6299,7 +6299,7 @@ function Index() {
 
           {/* ---- temple ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/reedslamp.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait />
+            <Backdrop src="/bg/lamp-among-reeds-in-lake-mist.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait />
             <h3 className="font-serif text-2xl leading-tight">The temple as an engineered field</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A late-antique temple was not a building containing religious objects. It was a
@@ -6333,7 +6333,7 @@ function Index() {
 
           {/* ---- statues and ensoulment ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/statue.webp" opacity={0.66} position="center 45%" scrim={0.16} />
+            <Backdrop src="/bg/lamplit-statue-beside-open-book.webp" opacity={0.66} position="center 45%" scrim={0.16} />
             <h3 className="font-serif text-2xl leading-tight">Statues, ensoulment, and telestic art</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A sacred statue is neither a mere representation nor a body claimed to exhaust the god.
@@ -6398,7 +6398,7 @@ function Index() {
 
           {/* ---- law of the vessel ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/lighthouse.webp" opacity={0.7} position="center 55%" scrim={0.22} />
+            <Backdrop src="/bg/lighthouse-lamp-room-with-brass-optics.webp" opacity={0.7} position="center 55%" scrim={0.22} />
             <div className="border-l-2 border-gold pl-6">
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
                 The Law of the Vessel
@@ -6480,7 +6480,7 @@ function Index() {
       </section>
 
       <section id="daimons" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/mangrove.webp" opacity={0.56} position="center 45%" scrim={0.34} />
+        <Backdrop src="/bg/mangrove-roots-in-morning-mist.webp" opacity={0.56} position="center 45%" scrim={0.34} />
         <SectionGlyph delay={-350} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -6579,7 +6579,7 @@ function Index() {
 
           {/* ---- fate ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/foldedcliff.webp" opacity={0.5} position="center 50%" scrim={0.2} portrait />
+            <Backdrop src="/bg/folded-cliff-face-on-grey-coast.webp" opacity={0.5} position="center 50%" scrim={0.2} portrait />
             <h3 className="font-serif text-2xl leading-tight">Fate as the order of embodied causation</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Fate — <span className="italic">heimarmenē</span> — is not an arbitrary supernatural
@@ -6797,7 +6797,7 @@ function Index() {
 
           {/* ---- deeper purpose ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/walker.webp" opacity={0.45} position="center 88%" scrim={0.26} />
+            <Backdrop src="/bg/walker-on-moor-track-at-dusk.webp" opacity={0.45} position="center 88%" scrim={0.26} />
             <h3 className="font-serif text-2xl leading-tight">The paradox of the office</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The personal daimōn stands at the threshold between particular destiny and universal
@@ -6890,7 +6890,7 @@ function Index() {
       </section>
 
       <section id="books" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/crosssection.webp" opacity={0.62} position="center 45%" scrim={0.2} portrait anchor="left" />
+        <Backdrop src="/bg/cutaway-of-tiered-stone-tower.webp" opacity={0.62} position="center 45%" scrim={0.2} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
@@ -6938,7 +6938,7 @@ function Index() {
 
       {/* GROUNDS */}
       <section id="grounds" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/pavilion.webp" opacity={0.25} position="center 50%" />
+        <Backdrop src="/bg/timber-pavilion-on-rock-shelf.webp" opacity={0.25} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § Grounds · Why the Structure Holds
@@ -6984,7 +6984,7 @@ function Index() {
 
       {/* LINEAGE */}
       <section id="tradition" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/scribe.webp" opacity={0.72} position="center 45%" scrim={0.15} />
+        <Backdrop src="/bg/scribe-at-work-by-lamplight.webp" opacity={0.72} position="center 45%" scrim={0.15} />
         <SectionGlyph delay={-390} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -7030,7 +7030,7 @@ function Index() {
 
           {/* ---- fidelity ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/bellfoundry.webp" opacity={0.64} position="center 55%" scrim={0.2} />
+            <Backdrop src="/bg/bell-foundry-casting-bronze-bells.webp" opacity={0.64} position="center 55%" scrim={0.2} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">What fidelity actually requires</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -7073,7 +7073,7 @@ function Index() {
 
           {/* ---- initiation ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/olivetree.webp" opacity={0.52} position="center 50%" scrim={0.24} portrait />
+            <Backdrop src="/bg/olive-tree-on-ridge-at-dusk.webp" opacity={0.52} position="center 50%" scrim={0.24} portrait />
             <h3 className="font-serif text-2xl leading-tight">What initiation is for</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Once tradition is defined as transmitting a capacity rather than a content, initiation
@@ -7100,7 +7100,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24 border-t border-gold/30 pt-12">
-            <Backdrop src="/bg/bristlecone.webp" opacity={0.3} position="center 40%" scrim={0.22} portrait />
+            <Backdrop src="/bg/bristlecone-pine-above-the-clouds.webp" opacity={0.3} position="center 40%" scrim={0.22} portrait />
             <p className="mx-auto max-w-3xl text-center text-base leading-relaxed text-muted-foreground">
               Ritual transmits pattern through ordered time within an enactment. Tradition transmits
               pattern through historical time across generations. Together they close the ladder:
@@ -7117,7 +7117,7 @@ function Index() {
       </section>
 
       <section id="lineage" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/fold.webp" opacity={0.54} position="center 50%" scrim={0.28} />
+        <Backdrop src="/bg/folded-rock-strata-above-water.webp" opacity={0.54} position="center 50%" scrim={0.28} />
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
@@ -7159,7 +7159,7 @@ function Index() {
 
       {/* THE UNIFIED FORMULA */}
       <section id="forceform" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/arch.webp" opacity={0.7} position="center 55%" scrim={0.24} />
+        <Backdrop src="/bg/stone-arch-under-construction.webp" opacity={0.7} position="center 55%" scrim={0.24} />
         <SectionGlyph delay={-410} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -7194,7 +7194,7 @@ function Index() {
 
           {/* ---- frozen force ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/pine.webp" opacity={0.5} position="center 45%" scrim={0.26} />
+            <Backdrop src="/bg/wind-shaped-pine-on-cliff.webp" opacity={0.5} position="center 45%" scrim={0.26} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Form is frozen force</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -7235,7 +7235,7 @@ function Index() {
 
           {/* ---- liberated form ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/rootsstill.webp" opacity={0.35} position="center 55%" scrim={0.18} portrait />
+            <Backdrop src="/bg/roots-and-vessels-beside-stream.webp" opacity={0.35} position="center 55%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">Force is liberated form</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               If form is constrained force, then force is form released from its present constraint.
@@ -7296,7 +7296,7 @@ function Index() {
 
           {/* ---- the descent ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/sculptor.webp" opacity={0.72} position="center 50%" scrim={0.18} />
+            <Backdrop src="/bg/sculptor-carving-face-in-stone.webp" opacity={0.72} position="center 50%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">The descent into determination</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not a fall into inferiority. A descent into determination — where Morphaithēr is the
@@ -7315,7 +7315,7 @@ function Index() {
 
           {/* ---- how pattern holds ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/millwheel.webp" opacity={0.56} position="center 50%" scrim={0.18} portrait />
+            <Backdrop src="/bg/mill-wheel-beside-timber-shed.webp" opacity={0.56} position="center 50%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">How pattern holds force</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Not as a vessel holds liquid. Pattern holds force by continually returning activity
@@ -7411,7 +7411,7 @@ function Index() {
       </section>
 
       <section id="tides" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/bowl.webp" opacity={0.72} position="center 55%" scrim={0.26} />
+        <Backdrop src="/bg/bronze-bowl-on-clifftop-in-rain.webp" opacity={0.72} position="center 55%" scrim={0.26} />
         <SectionGlyph delay={-430} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -7467,7 +7467,7 @@ function Index() {
 
           {/* ---- rhythmos ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/tidepool.webp" opacity={0.42} position="center 45%" scrim={0.26} />
+            <Backdrop src="/bg/tide-pools-under-broken-sky.webp" opacity={0.42} position="center 45%" scrim={0.26} />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">Rhythmos</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -7511,7 +7511,7 @@ function Index() {
 
           {/* ---- vocabulary ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/hydraulic.webp" opacity={0.72} position="center 50%" scrim={0.2} />
+            <Backdrop src="/bg/hydraulic-workshop-with-stone-basins.webp" opacity={0.72} position="center 50%" scrim={0.2} />
             <h3 className="font-serif text-2xl leading-tight">
               Not every change is a tide
             </h3>
@@ -7554,7 +7554,7 @@ function Index() {
 
           {/* ---- planetary and ritual ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/belltower.webp" opacity={0.7} position="center 50%" scrim={0.18} portrait />
+            <Backdrop src="/bg/bronze-bell-in-stone-tower.webp" opacity={0.7} position="center 50%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">Windows of affinity, and rites that make their own</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Planetary tides are not simplistic rays compelling events or personalities. They are
@@ -7603,7 +7603,7 @@ function Index() {
 
           {/* ---- bodily tides ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/breath.webp" opacity={0.72} position="center 45%" scrim={0.18} />
+            <Backdrop src="/bg/seated-figure-breathing-in-flooded-hall.webp" opacity={0.72} position="center 45%" scrim={0.18} />
             <h3 className="font-serif text-2xl leading-tight">The body as receiver and generator</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The living body does not merely endure changes in the field. It interprets, transforms,
@@ -7655,7 +7655,7 @@ function Index() {
       </section>
 
       <section id="mansions" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/observatory.webp" opacity={0.72} position="center 45%" scrim={0.26} />
+        <Backdrop src="/bg/mountain-observatory-above-cloud.webp" opacity={0.72} position="center 45%" scrim={0.26} />
         <SectionGlyph delay={-450} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -7697,7 +7697,7 @@ function Index() {
 
           {/* ---- moon as mediator ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/seainlet.webp" opacity={0.5} position="center 50%" scrim={0.2} portrait />
+            <Backdrop src="/bg/waves-in-narrow-sea-inlet.webp" opacity={0.5} position="center 50%" scrim={0.2} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">The Moon as formative mediator</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -7734,7 +7734,7 @@ function Index() {
 
           {/* ---- what a mansion is ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/shrinepath.webp" opacity={0.58} position="center 50%" scrim={0.18} portrait />
+            <Backdrop src="/bg/path-to-lit-shrine-under-moon.webp" opacity={0.58} position="center 50%" scrim={0.18} portrait />
             <h3 className="font-serif text-2xl leading-tight">
               A station of qualitative modulation
             </h3>
@@ -7777,7 +7777,7 @@ function Index() {
 
           {/* ---- qualitative time ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/moonflats.webp" opacity={0.6} position="center 55%" scrim={0.16} portrait />
+            <Backdrop src="/bg/moon-over-tidal-flats-and-channel.webp" opacity={0.6} position="center 55%" scrim={0.16} portrait />
             <h3 className="font-serif text-2xl leading-tight">A clock of qualitative time</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               The nakshatras turn the starry field into a clock whose hand is the Moon — and the
@@ -7941,7 +7941,7 @@ function Index() {
       </section>
 
       <section id="zodiac" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/saltflat.webp" opacity={0.72} position="center 50%" scrim={0.24} />
+        <Backdrop src="/bg/sun-pillar-over-salt-flat.webp" opacity={0.72} position="center 50%" scrim={0.24} />
         <SectionGlyph delay={-470} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -8050,7 +8050,7 @@ function Index() {
 
           {/* ---- grammar ---- */}
           <div className="relative isolate mt-24 grid gap-16 border-t border-border pt-16 lg:grid-cols-[1fr_2fr]">
-            <Backdrop src="/bg/rotunda.webp" opacity={0.39} position="center 55%" scrim={0.18} portrait />
+            <Backdrop src="/bg/rotunda-open-to-night-sky.webp" opacity={0.39} position="center 55%" scrim={0.18} portrait />
             <div className="lg:sticky lg:top-32 lg:self-start">
               <h3 className="font-serif text-2xl leading-tight">The Zodiac as cosmic grammar</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -8275,7 +8275,7 @@ function Index() {
 
       <section id="rightrelation" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-510} />
-        <Backdrop src="/bg/gorgestair.webp" opacity={0.22} position="center 40%" scrim={0.26} portrait anchor="left" />
+        <Backdrop src="/bg/stair-cut-into-misted-gorge.webp" opacity={0.22} position="center 40%" scrim={0.26} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXIX · The Art of Right Relation
@@ -8461,7 +8461,7 @@ function Index() {
 
           {/* ---- the test ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/cliffroad.webp" opacity={0.28} position="center 55%" scrim={0.22} />
+            <Backdrop src="/bg/cliff-road-vanishing-into-fog.webp" opacity={0.28} position="center 55%" scrim={0.22} />
             <h3 className="font-serif text-2xl leading-tight">The practical test</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Discernment is the faculty governing the whole sequence — whether a correspondence is
@@ -8527,7 +8527,7 @@ function Index() {
 
       <section id="mortality" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-530} />
-        <Backdrop src="/bg/ruinstream.webp" opacity={0.32} position="center 45%" scrim={0.24} />
+        <Backdrop src="/bg/stream-through-basalt-ruins.webp" opacity={0.32} position="center 45%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XL · Death, Suffering, and the Cost of Form
@@ -8551,7 +8551,7 @@ function Index() {
 
           {/* ---- what persists ---- */}
           <div className="relative isolate mt-24 border-t border-border pt-16">
-            <Backdrop src="/bg/splittrunk.webp" opacity={0.3} position="center 40%" scrim={0.24} portrait />
+            <Backdrop src="/bg/split-trunk-of-old-tree.webp" opacity={0.3} position="center 40%" scrim={0.24} portrait />
             <h3 className="font-serif text-2xl leading-tight">What persists</h3>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
               A living being is a pattern capable of continually gathering its materials into one
@@ -8834,7 +8834,7 @@ function Index() {
       <section id="atmosphere" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-560} />
         <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
-          <Backdrop src="/bg/earthcolonnade.webp" opacity={0.26} position="center 45%" fill />
+          <Backdrop src="/bg/turf-roofed-colonnade-at-dusk.webp" opacity={0.26} position="center 45%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -8901,7 +8901,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/springterrace.webp" opacity={0.24} position="center 45%" />
+            <Backdrop src="/bg/hot-spring-terraces-at-lake-edge.webp" opacity={0.24} position="center 45%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 How form emerges, and returns
@@ -8959,7 +8959,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/nightterrace.webp" opacity={0.4} position="center 65%" />
+            <Backdrop src="/bg/night-terrace-above-cloud-sea.webp" opacity={0.4} position="center 65%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Tradition as long-duration Morphaithēr
@@ -9013,7 +9013,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/basalthall.webp" opacity={0.32} position="center 50%" />
+            <Backdrop src="/bg/basalt-cavern-cut-by-light-shafts.webp" opacity={0.32} position="center 50%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Necessary safeguards
@@ -9073,7 +9073,7 @@ function Index() {
       <section id="chon" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-575} />
         <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
-          <Backdrop src="/bg/saplinglog.webp" opacity={0.36} position="center 55%" fill />
+          <Backdrop src="/bg/sapling-growing-from-fallen-log.webp" opacity={0.36} position="center 55%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -9161,7 +9161,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/riftoak.webp" opacity={0.26} position="center 40%" />
+            <Backdrop src="/bg/lit-oak-rooted-over-rift.webp" opacity={0.26} position="center 40%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 What death does not take
@@ -9183,7 +9183,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/kilnvault.webp" opacity={0.38} position="center 45%" />
+            <Backdrop src="/bg/kiln-vault-with-glowing-mouth.webp" opacity={0.38} position="center 45%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The lowest biological octave
@@ -9212,7 +9212,7 @@ function Index() {
       <section id="transduction" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-590} />
         <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
-          <Backdrop src="/bg/fourveils.webp" opacity={0.24} position="center 42%" fill />
+          <Backdrop src="/bg/four-veils-of-light-in-rock-cleft.webp" opacity={0.24} position="center 42%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -9237,7 +9237,7 @@ function Index() {
           </p>
 
           <div className="relative isolate mt-20">
-            <Backdrop src="/bg/icevent.webp" opacity={0.14} position="center 45%" />
+            <Backdrop src="/bg/meltwater-vent-in-blue-ice-cave.webp" opacity={0.14} position="center 45%" />
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Why it is called a veil
             </p>
@@ -9291,7 +9291,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/cisterntower.webp" opacity={0.3} position="center 35%" />
+            <Backdrop src="/bg/overgrown-cistern-tower-interior.webp" opacity={0.3} position="center 35%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 How an error becomes an institution
@@ -9361,7 +9361,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/keystone.webp" opacity={0.32} position="center 50%" />
+            <Backdrop src="/bg/keystone-set-in-lit-stone-vault.webp" opacity={0.32} position="center 50%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Three levels, distinguished
@@ -9453,7 +9453,7 @@ function Index() {
       <section id="relation" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-605} />
         <div className="pointer-events-none absolute inset-x-0 top-0 isolate h-[min(78vh,44rem)]">
-          <Backdrop src="/bg/sluicegates.webp" opacity={0.26} position="center 50%" fill />
+          <Backdrop src="/bg/sluice-gates-releasing-white-water.webp" opacity={0.26} position="center 50%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -9620,7 +9620,7 @@ function Index() {
           </div>
 
           <div className="relative isolate mt-24">
-            <Backdrop src="/bg/reservoirs.webp" opacity={0.28} position="center 45%" />
+            <Backdrop src="/bg/terraced-reservoirs-fed-by-waterfall.webp" opacity={0.28} position="center 45%" />
             <div className="max-w-3xl">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The relational flywheel
@@ -9747,7 +9747,7 @@ function Index() {
 
       <section id="matter" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-620} />
-        <Backdrop src="/bg/apothecary.webp" opacity={0.42} position="center 45%" scrim={0.22} portrait anchor="left" />
+        <Backdrop src="/bg/spiral-apothecary-of-lit-vials.webp" opacity={0.42} position="center 45%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLV · Spiritualising Matter
@@ -9895,7 +9895,7 @@ function Index() {
 
       <section id="sophia" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-635} />
-        <Backdrop src="/bg/oldgrowth.webp" opacity={0.3} position="center 50%" scrim={0.22} />
+        <Backdrop src="/bg/old-growth-forest-in-deep-shade.webp" opacity={0.3} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVI · Sophia and the Divine Feminine
@@ -10262,7 +10262,7 @@ function Index() {
 
       <section id="transformation" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-650} />
-        <Backdrop src="/bg/regrowth.webp" opacity={0.3} position="center 50%" scrim={0.22} />
+        <Backdrop src="/bg/green-regrowth-on-volcanic-headland.webp" opacity={0.3} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVII · Transformation
@@ -10479,7 +10479,7 @@ function Index() {
 
       <section id="heka" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-665} />
-        <Backdrop src="/bg/aqueduct.webp" opacity={0.21} position="center 45%" scrim={0.22} />
+        <Backdrop src="/bg/stone-aqueduct-in-morning-mist.webp" opacity={0.21} position="center 45%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <KhekerFrieze className="mb-12" />
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
@@ -10991,7 +10991,7 @@ function Index() {
 
       <section id="microcosm" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-680} />
-        <Backdrop src="/bg/seastack.webp" opacity={0.16} position="center 45%" scrim={0.22} portrait />
+        <Backdrop src="/bg/sea-stack-in-pale-tide.webp" opacity={0.16} position="center 45%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLIX · Spirit, Soul, and Body
@@ -11149,7 +11149,7 @@ function Index() {
 
       <section id="etheric" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-695} />
-        <Backdrop src="/bg/basincascade.webp" opacity={0.34} position="center 45%" scrim={0.22} portrait />
+        <Backdrop src="/bg/water-cascading-from-carved-stone-vessel.webp" opacity={0.34} position="center 45%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § L · The Etheric Body
@@ -11278,7 +11278,7 @@ function Index() {
 
       <section id="astral" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-710} />
-        <Backdrop src="/bg/cliffpool.webp" opacity={0.16} position="center 40%" scrim={0.22} portrait anchor="left" />
+        <Backdrop src="/bg/tidal-pool-below-sea-cliff.webp" opacity={0.16} position="center 40%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § LI · The Astral and Psychic Layers
@@ -11560,7 +11560,7 @@ function Index() {
 
       <section id="soul" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-725} />
-        <Backdrop src="/bg/cavestream.webp" opacity={0.28} position="center 50%" scrim={0.22} />
+        <Backdrop src="/bg/stream-through-lit-cave-mouth.webp" opacity={0.28} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § LII · Soul and Interior Life
@@ -11750,7 +11750,7 @@ function Index() {
 
       <section id="lexicon" className="relative isolate border-t border-border py-32">
         <SectionGlyph delay={-490} />
-        <Backdrop src="/bg/cabinet.webp" opacity={0.4} position="center 50%" scrim={0.2} />
+        <Backdrop src="/bg/cabinet-of-curiosities-in-lamplight.webp" opacity={0.4} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § Lexicon · Where the Terms Are Defined
@@ -11770,7 +11770,7 @@ function Index() {
       </section>
 
       <section id="unified" className="relative isolate border-t border-border py-32">
-        <Backdrop src="/bg/crater.webp" opacity={0.5} position="center 50%" scrim={0.05} />
+        <Backdrop src="/bg/night-crater-with-glowing-lava.webp" opacity={0.5} position="center 50%" scrim={0.05} />
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             The Unified Formula
@@ -11838,7 +11838,7 @@ function Index() {
 
       {/* FINAL FORMULA */}
       <section id="formula" className="relative isolate overflow-hidden border-t border-border py-40">
-        <Backdrop src="/bg/crystal.webp" opacity={0.56} position="center 62%" scrim={0.15} />
+        <Backdrop src="/bg/crystal-suspended-in-glass-sphere.webp" opacity={0.56} position="center 62%" scrim={0.15} />
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <svg
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-slow-spin opacity-[0.18]"

@@ -8,7 +8,7 @@ operation: [Metastoicheiōsis]
 related: [viii-1, viii-26, viii-15, xiii-24, xiii-20, viii-9]
 summary: Transformation at the level of elemental constitution — earth from fixation to stable embodiment, water from dissolution to receptive memory, air to articulate communication, fire to consecrating intelligence; the same material entering a different order of life.
 epigraph: "The same material may begin to participate in an entirely different order of life."
-backdrop: caldera
+backdrop: caldera-lake-at-sunrise
 ---
 
 Metastoicheiōsis refers to transformation at the level of elemental constitution. Instead of merely changing the visible arrangement of a form, it changes the governing relations among the forces composing it.

@@ -10,7 +10,7 @@ symbol: [Sphere]
 related: [iv-48, xi-15, ii-5, xvii-3, xi-16, ix-18]
 summary: The solar circle extended into three dimensions - maximum concentration at the centre, the surface marking the present limit of transmission, and gradations of intensity between; the natural figure of a coherent being, and a test of whether a field still returns to its source.
 epigraph: "Its boundary distinguishes it from its surroundings without making it absolutely separate."
-backdrop: bowl
+backdrop: bronze-bowl-on-clifftop-in-rain
 ---
 
 A luminous sphere extends the solar circle into three dimensions. It represents a source whose presence is not confined to one frontal direction but surrounds itself with a complete field.

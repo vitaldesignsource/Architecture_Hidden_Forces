@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 related: [ii-25, xix-16, vi-4, vi-5, v-21, i-20]
 summary: Evil is a radical deformation of right relation — and it can surround itself with brilliance, purity, and claims of divine authority.
 epigraph: "Equating darkness with evil prevents genuine discernment. It condemns the hidden while leaving luminous deception unrecognised."
-backdrop: nightterrace
+backdrop: night-terrace-above-cloud-sea
 ---
 
 Evil cannot be defined adequately as darkness. Optical darkness harms no one by itself. Generative darkness shelters life. Apophatic darkness protects mystery. Night permits rest, repair, contemplation, and the perception of stars.

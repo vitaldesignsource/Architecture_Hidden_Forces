@@ -10,7 +10,7 @@ symbol: [Prism]
 related: [ii-8, ii-9, xvi-6, i-13, xvii-9, xv-89]
 summary: White light entering and differentiated colours emerging - a structure of mediation in which a higher unity appears as a spectrum of qualities, and a warning against confusing an authentic ray with the whole of its source.
 epigraph: "A single colour can be authentic without being complete."
-backdrop: pendantprism
+backdrop: pendant-prism-splitting-white-beam
 position: center 42%
 ---
 

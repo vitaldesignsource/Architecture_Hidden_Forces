@@ -9,7 +9,7 @@ operation: [Vivification, Integration]
 related: [xviii-3, ix-18, v-13, x-9, xx-6, ix-9]
 summary: Breath as the bridge between voluntary and involuntary life - inhalation receiving, the pause gathering, exhalation distributing, the empty interval preparing; contemplative relations rather than claims that photons are inhaled, and a caution against manufacturing luminosity through respiratory stress.
 epigraph: "The objective is not to manufacture luminosity through physiological stress."
-backdrop: breath
+backdrop: seated-figure-breathing-in-flooded-hall
 ---
 
 Breath mediates between voluntary and involuntary life. It can be consciously altered, yet it continues without deliberate command. For this reason, it forms a natural bridge among body, etheric rhythm, psychic state, and attention.

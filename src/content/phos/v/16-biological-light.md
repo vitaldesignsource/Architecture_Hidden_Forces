@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 plane: [Vital, Physical]
 related: [ix-2, ix-15, ix-16, ii-3, iv-53]
 summary: Light entering CHON-based organisation and becoming metabolism, orientation, and ecological relation — the symbolic category grounded in biology rather than replacing it.
-backdrop: mycelium
+backdrop: mycelium-threading-forest-litter
 ---
 
 Biological Light includes literal bioluminescence as well as the many relationships between organisms and illumination. Living beings produce, detect, absorb, reflect, and respond to light.

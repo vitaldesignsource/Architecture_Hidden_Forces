@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Neoplatonic]
 operation: [Manifestation, Differentiation]
 related: [v-23, i-12, portal-7, iv-8, i-5]
 summary: Each stage adds specificity while narrowing possibility — not a corruption, since without differentiation unity could not become communicable.
-backdrop: delta
+backdrop: river-delta-braided-in-grey-silt
 ---
 
 Luminous descent is the movement through which unified possibility becomes differentiated participation.

@@ -10,7 +10,7 @@ symbol: [Ray]
 related: [xvi-7, xvi-9, xvi-17, ii-5, viii-4, xvi-19]
 summary: Maxwell's unification of electricity, magnetism, and optics - coupled changing fields propagating at a speed matching the measured speed of light, and visible light identified as one region of a far broader spectrum; the mechanical ether abandoned, which is not the same as every spiritual ether refuted.
 epigraph: "Similar language may indicate structural correspondence, but it does not establish physical identity."
-backdrop: fieldlines
+backdrop: field-lines-in-black-volcanic-sand
 ---
 
 James Clerk Maxwell unified electricity, magnetism, and optics. His equations showed that changing electric fields produce magnetic fields and changing magnetic fields produce electric fields. These coupled fields can propagate through space as waves.

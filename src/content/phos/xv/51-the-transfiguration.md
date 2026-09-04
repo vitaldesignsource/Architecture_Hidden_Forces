@@ -11,7 +11,7 @@ text: [Synoptic Gospels]
 related: [xi-13, xiii-20, xii-14, v-29, ii-26, xv-52]
 summary: A face shining like the sun and garments dazzlingly white - light radiating through the body rather than falling upon it; Moses and Elijah speaking of the coming exodus at Jerusalem; the overshadowing cloud and the voice; disciples who fall or struggle to stay awake; the human form made capable of manifesting its own higher truth.
 epigraph: "The Transfiguration is luminous because the complete architecture is truthful, not merely because the spectacle is intense."
-backdrop: summit
+backdrop: summit-above-sea-of-cloud
 ---
 
 The Transfiguration appears in the Synoptic Gospels as a concentrated revelation of Christic glory. Jesus takes Peter, James, and John upon a mountain. His appearance changes before them; his face shines like the sun in Matthew, while his garments become intensely or dazzlingly white.

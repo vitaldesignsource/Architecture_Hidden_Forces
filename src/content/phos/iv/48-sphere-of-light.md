@@ -7,7 +7,7 @@ quality: [Sphere of Light]
 symbol: [Sphere]
 related: [xvii-4, xi-15, iv-47, iii-2, xi-19]
 summary: Light organised around a centre with no privileged orientation — and photographic orbs are not automatically spiritual entities.
-backdrop: crystal
+backdrop: crystal-suspended-in-glass-sphere
 ---
 
 A sphere of light is luminosity appearing as a bounded, self-contained orb or globe. Physically, spherical appearances may result from luminous objects, plasma phenomena, defocused point sources, lens artefacts, atmospheric effects, or reflections.

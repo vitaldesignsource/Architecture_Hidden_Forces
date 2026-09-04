@@ -9,7 +9,7 @@ symbol: [Solar Disc, Star]
 related: [iv-55, vii-11, vii-6, iv-47, xi-3]
 summary: Four qualities of visionary light and what each tends to disclose — clarity, indirect reflection, centred generativity, and sudden discontinuous strike; none is an infallible label.
 epigraph: "A solar appearance is not automatically divine, nor is lunar light necessarily passive."
-backdrop: cliffpool
+backdrop: tidal-pool-below-sea-cliff
 ---
 
 Crystalline light is transparent, precise, refractive, ordered, and often experienced as clarifying. It may indicate differentiation without fragmentation: many facets transmitting one luminosity. It can accompany experiences of intellectual lucidity, subtle structure, purified perception, or the disclosure of hidden order.

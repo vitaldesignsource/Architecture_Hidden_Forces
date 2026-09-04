@@ -10,7 +10,7 @@ operation: [Manifestation, Protection, Communication]
 related: [ii-6, iii-9, i-5, iii-19, xii-22, xiv-16]
 summary: A veil is not merely an obstruction: symbol, myth, ritual, dream, body, language, and sacred image all reduce intensity so that contact becomes possible - and a veil becomes deceptive only when it conceals its own mediating nature and claims to be the source itself.
 epigraph: "Light is transmitted through veils that simultaneously conceal, protect, translate, and reveal it."
-backdrop: fourveils
+backdrop: four-veils-of-light-in-rock-cleft
 position: center 42%
 ---
 

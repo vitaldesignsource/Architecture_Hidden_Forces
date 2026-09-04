@@ -11,7 +11,7 @@ text: [Kangyur, Tengyur]
 related: [xv-69, xv-68, xxi-8, x-14, v-27, xi-13]
 summary: ’Od gsal, ’od, gsal ba, ’od zer, gsal snang, and rang bzhin ’od gsal, distinguished across sūtra, tantra, Dzogchen, Mahāmudrā, dream yoga, completion-stage practice, death teachings, and philosophical commentary - and distinguished from rig pa, which a translation rendering both as luminosity would conceal.
 epigraph: "Clear light is not merely brightness within meditation."
-backdrop: icevent
+backdrop: meltwater-vent-in-blue-ice-cave
 position: center 45%
 ---
 

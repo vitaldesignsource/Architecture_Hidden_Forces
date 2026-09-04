@@ -11,7 +11,7 @@ text: [Daniel]
 related: [xiii-16, xiii-15, xv-12, xii-16, xiii-30, xv-44]
 summary: Beasts rising from a turbulent sea and a heavenly court whose throne is fiery flame - white radiance for incorruptible wisdom, fire for active judgment, a stream of fire proceeding from the throne, opened books, and dominion transferred from beastly power to one like a human being.
 epigraph: "Judgment is the moment when concealed architecture becomes legible."
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Daniel 7 presents a night vision in which violent beasts rise from a turbulent sea. These beasts represent imperial powers whose authority is predatory, unstable, and temporary. Against them appears a heavenly court centred upon the Ancient of Days.

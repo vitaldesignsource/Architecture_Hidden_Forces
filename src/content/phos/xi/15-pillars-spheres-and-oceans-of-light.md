@@ -7,7 +7,7 @@ plane: [Etheric, Astral, Noetic]
 related: [iv-47, xi-5, xi-6, xi-1, iii-4]
 summary: Vertical connection, centred totality, and boundless immersion — three geometries of visionary light with genuine significance, whose shape describes how force became perceptible but not the order it belongs to.
 epigraph: "Geometry describes how force has become available to perception. Discernment identifies the order to which that force belongs."
-backdrop: earthcolonnade
+backdrop: turf-roofed-colonnade-at-dusk
 ---
 
 A pillar of light expresses vertical connection. It may join above and below, descend into a person or place, rise from a centre, or establish an axis through which different planes communicate. The pillar is a form of transmission, alignment, and stabilised passage.

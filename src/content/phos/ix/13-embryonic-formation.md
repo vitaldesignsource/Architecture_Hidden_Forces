@@ -8,7 +8,7 @@ operation: [Formation]
 related: [ix-14, ix-18, ix-11, ix-2]
 summary: Morphogenesis is real mechanism and more — the embryo develops within an individualised etheric field that participates in generating anatomy from the beginning, not after it.
 epigraph: "Embryogenesis is a supreme demonstration of force becoming form through mediation."
-backdrop: fold
+backdrop: folded-rock-strata-above-water
 ---
 
 Embryonic development is an extraordinary process in which cells divide, migrate, communicate, fold, specialise, and form tissues and organs. Genes participate in this process, but development is not the execution of a simple linear blueprint. Chemical gradients, electrical conditions, mechanical forces, cellular signalling, timing, spatial position, and reciprocal interactions among tissues all contribute to morphogenesis.

@@ -8,7 +8,7 @@ operation: [Withdrawal]
 related: [ix-23, ix-19, ix-20, vii-10, ix-18]
 summary: Molecular damage and declining regeneration are real — and so is the gradual withdrawal of formative light from matter, which need not be spiritual diminishment; the setting Sun is not inferior to noon.
 epigraph: "The setting Sun is not inferior to noon."
-backdrop: bristlecone
+backdrop: bristlecone-pine-above-the-clouds
 ---
 
 Biological ageing involves accumulating molecular damage, altered cellular communication, changing gene regulation, metabolic shifts, declining regenerative capacity, immune transformation, and reduced resilience across interacting systems. These physical processes describe genuine aspects of ageing.

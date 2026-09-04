@@ -8,7 +8,7 @@ operation: [Dissolution]
 related: [ix-23, ii-28, xiii-22, xiii-29, vi-25, xiii-27]
 summary: The loosening of a form whose organising relations have reached their limit — frightening because identity clings to continuity of form, yet the condition of every transformation; not automatically liberation, so solve must remain related to coagula.
 epigraph: "Some architectures can be repaired; others must release what they contain. Wisdom lies in discerning the difference."
-backdrop: saltflat
+backdrop: sun-pillar-over-salt-flat
 ---
 
 Dissolution is the loosening of a form whose organising relations have reached their limit. The elements, forces, memories, and energies held within the structure begin to separate. This may occur through death, decay, crisis, initiation, psychological breakdown, institutional collapse, ritual unbinding, or alchemical decomposition.

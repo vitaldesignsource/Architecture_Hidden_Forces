@@ -11,7 +11,7 @@ text: [Ṛgveda 3.62.10]
 related: [ii-29, x-9, x-8, xiv-18, iii-4, xv-57]
 summary: Ṛgveda 3.62.10, addressed to Savitar the impeller - a contemplation of bhargas that asks the divine radiance to stimulate dhī, vision or inspired thought; illumination joined to right action; the three worlds gathered by the vyāhṛtis; sound as ritual architecture.
 epigraph: "Intelligence possesses power, but unless its movement is aligned with truth, it can rationalise desire."
-backdrop: gongcorridor
+backdrop: gong-at-end-of-dark-corridor
 position: center 40%
 ---
 

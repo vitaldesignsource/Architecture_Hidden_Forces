@@ -9,7 +9,7 @@ operation: [Formation]
 related: [xii-4, ix-14, vi-25, vii-12, xii-5]
 summary: Receiving without passivity, reflecting without copying, gestating without possessing — Sophia, Isis, Shekhinah, Barbelo kept distinct, yet together disclosing that manifestation requires receptive, relational, and formative power.
 epigraph: "Concealment can be an operation of luminous wisdom."
-backdrop: basincascade
+backdrop: water-cascading-from-carved-stone-vessel
 ---
 
 The Divine Feminine receives without being passive, reflects without merely copying, gestates without possessing, and gives form without exhausting the source from which form proceeds.

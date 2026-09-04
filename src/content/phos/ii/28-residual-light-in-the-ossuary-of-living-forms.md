@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 operation: [Dissolution, Imprinting]
 related: [ii-27, ix-23, ix-24, v-19, xiii-29]
 summary: What remains when a living vessel loses its unity — traces, effects, altered possibilities — without being read automatically as a surviving conscious entity.
-backdrop: glasshouse
+backdrop: abandoned-glasshouse-at-sunrise
 position: center 45%
 ---
 

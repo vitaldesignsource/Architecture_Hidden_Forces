@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 plane: [Divine, Noetic, Vital, Formative]
 related: [ii-14, ii-2, x-1, xiii-5, i-4]
 summary: Five distinguishable moments within manifestation, not five substances — with light standing between hidden being and articulated form as the power of communicability.
-backdrop: crosssection
+backdrop: cutaway-of-tiered-stone-tower
 ---
 
 These five principles constitute a fundamental luminous architecture.

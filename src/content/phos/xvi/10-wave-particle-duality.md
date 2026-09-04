@@ -10,7 +10,7 @@ symbol: [Point]
 related: [xvi-9, xvi-7, xvi-12, i-13, x-2, xvi-25]
 summary: Neither classical category complete - interference and quantised detection both real, with the experimental arrangement determining which properties become manifest; the observer as an interaction that makes alternatives distinguishable rather than a mind creating the world.
 epigraph: "Reality may exceed the images used to describe it."
-backdrop: obscura2
+backdrop: camera-obscura-projection-in-dark-room
 ---
 
 Wave-particle duality means that quantum entities do not fit completely into either classical category. Light exhibits interference, diffraction, and phase relationships associated with waves. It also produces discrete detection events and transfers energy in quanta associated with particles.

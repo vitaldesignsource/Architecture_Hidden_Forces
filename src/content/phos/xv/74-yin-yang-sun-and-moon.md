@@ -10,7 +10,7 @@ symbol: [Solar Disc, Circle]
 related: [vii-12, vi-27, vi-5, vii-4, ii-25, xv-75]
 summary: Complementary tendencies rather than substances at war - each reaching a limit at which it generates the other; lunar light received and redistributed through phases; correlative systems extending the pattern across seasons, organs, and planets; several modes of celestial influence that can coexist.
 epigraph: "Yang is emissive radiance; yin is receptive depth. Yang reveals; yin retains."
-backdrop: tide
+backdrop: tide-patterns-on-grey-strand
 ---
 
 Yin and yang are not two substances locked in moral warfare. They are complementary tendencies within transformation. Yin is associated with shade, concealment, inwardness, receptivity, coolness, condensation, rest, and the moon. Yang is associated with brightness, exposure, outward movement, warmth, expansion, activity, and the sun. Yet neither is absolutely pure or self-sufficient. Each reaches a limit at which it begins to generate or disclose the other.

@@ -6,7 +6,7 @@ tradition: [Israelite, Jewish, Architecture of Hidden Forces]
 text: [Genesis]
 related: [i-1, xv-42, xv-49, vii-2, v-3]
 summary: An ontological distinction rather than a competing astronomical theory — the principle of disclosure precedes the body through which it becomes measurable.
-backdrop: threshold
+backdrop: threshold-arches-in-misted-vault
 ---
 
 The biblical creation narrative famously places the command for light before the appointment of the Sun, Moon, and stars as celestial luminaries. This sequence has generated a long history of interpretation because it separates primordial light from its later astronomical bearers — see [BioLogos on Genesis and ancient interpreters](https://biologos.org/articles/genesis-creation-and-ancient-interpreters-the-beginning).

@@ -7,7 +7,7 @@ quality: [Directionality]
 symbol: [Ray]
 related: [iii-3, iii-5, xvi-4, xvii-2, x-8]
 summary: Light as a directed relation between source and destination — the first geometry of luminous purpose.
-backdrop: basinblade
+backdrop: stone-basin-under-blade-of-light
 position: center 55%
 ---
 

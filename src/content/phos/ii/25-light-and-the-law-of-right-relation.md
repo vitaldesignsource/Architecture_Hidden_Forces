@@ -7,7 +7,7 @@ related: [xix-16, xix-9, xix-2, ii-26, xx-11, xiv-24]
 summary: No force is judged by its nature alone but by the relations through which it becomes active — five terms to examine in every luminous act.
 epigraph: "No force can be judged solely by its nature; it must also be judged by the relations through which it becomes active."
 attribution: The Law of Right Relation
-backdrop: sluicegates
+backdrop: sluice-gates-releasing-white-water
 ---
 
 The Law of Right Relation states:

@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [xvi-5, xix-6, viii-16, iii-19, i-19]
 summary: The necessary geometry of translation — refraction is not automatically distortion, and the task is to tell faithful bending from deviation.
-backdrop: icetunnel
+backdrop: ice-tunnel-opening-to-sunset
 position: center 50%
 ---
 

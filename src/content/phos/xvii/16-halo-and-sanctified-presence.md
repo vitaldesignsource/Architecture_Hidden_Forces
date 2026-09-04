@@ -10,7 +10,7 @@ symbol: [Halo]
 related: [xiv-16, xi-10, xii-14, xvii-17, iv-43, xvi-23]
 summary: A localised field of radiance around the head, developed across Greco-Roman, Iranian, Buddhist, Hindu, and Christian art with varying meanings - gold indicating a heavenly mode of presence rather than ordinary illumination, and a convention that may rest on real perception.
 epigraph: "Light has become visibly associated with the individual's presence."
-backdrop: seraph
+backdrop: seraph-of-fire-in-dark-hall
 position: center 35%
 ---
 

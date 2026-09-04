@@ -299,7 +299,15 @@ const missing = [...referenced].filter((n) => !onDisk.has(n));
 const unused = [...onDisk].filter((n) => !referenced.has(n));
 if (missing.length) fail("backdrops", `referenced but not on disk: ${missing.join(", ")}`);
 if (unused.length) note("backdrops", `on disk but unmounted: ${unused.join(", ")}`);
-note("backdrops", `${referenced.size} mounted, all present`);
+// A file name is the one string a search engine, an image search and a person
+// scanning the directory all read, so it has to say what is in the frame:
+// lowercase words joined by hyphens, three of them at least, short enough to
+// read whole. public/bg/README.md gives the rule and the reasoning.
+const SHAPE = /^[a-z]+(?:-[a-z0-9]+){2,}$/;
+const misnamed = [...onDisk].filter((n) => !SHAPE.test(n) || n.length + 5 > 64);
+if (misnamed.length)
+  fail("backdrops", `names that break public/bg/README.md: ${misnamed.slice(0, 6).join(", ")}`);
+note("backdrops", `${referenced.size} mounted, all present, every name to the convention`);
 
 // ------------------------------------------------------------ reveal class
 // styles.css reserves .aoh-reveal for script application because it starts at

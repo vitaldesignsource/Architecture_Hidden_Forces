@@ -10,7 +10,7 @@ operation: [Integration, Illumination]
 related: [iv-6, ii-14, xx-11, xiii-19, xx-14, iv-26]
 summary: True light tends to bring the levels of a being into more truthful relation - not uniformity, but differentiated parts participating in an intelligible whole - and the test of a disruptive experience is developmental: whether it eventually generates integration, honesty, freedom, and capacity for relationship, or escalating fragmentation, grandiosity, deception, and isolation.
 epigraph: "Light becomes coherent when its radiance reaches conduct."
-backdrop: braided
+backdrop: braided-glacial-river-from-above
 ---
 
 Coherence does not mean uniformity. A living organism contains many organs, rhythms, fluids, structures, and functions. A soul contains thought, desire, memory, imagination, will, and affect. Coherence occurs when differentiated parts participate in an intelligible whole without losing their proper character — the quality [[iv-6|the entry on coherence]] defines.

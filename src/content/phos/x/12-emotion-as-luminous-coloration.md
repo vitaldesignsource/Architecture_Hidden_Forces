@@ -8,7 +8,7 @@ quality: [Color]
 related: [x-11, ii-9, ii-10, ii-19, x-6]
 summary: Emotion colours the psychic field — fear contracts it, love reveals value, wonder enlarges it; physical, etheric, astral, and psychic at once, and tinted by tattva and guna.
 epigraph: "Wonder enlarges the field by allowing the unknown to appear without immediate reduction."
-backdrop: filters
+backdrop: stacked-glass-filters-in-dark-cell
 ---
 
 Emotion is the coloration of the psychic field. It changes how the world appears, what becomes salient, which memories are activated, how the body organises itself, and what forms of action seem possible.

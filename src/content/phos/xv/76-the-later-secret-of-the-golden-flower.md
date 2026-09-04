@@ -11,7 +11,7 @@ text: [Taiyi Jinhua Zongzhi]
 related: [x-8, x-22, ii-22, xi-25, xiii-31, xv-73]
 summary: The Taiyi Jinhua Zongzhi, arising among Qing spirit-writing communities of the Pure Brightness tradition - turning the light around, the recollection of power habitually dispersed among objects; gold for incorruptibility and flower for organic unfolding; luminous phenomena that require discernment rather than proving arrival.
 epigraph: "The operation is completed not when the practitioner escapes embodiment, but when spirit can inhabit soul and body more truthfully."
-backdrop: leafbowl
+backdrop: bowls-and-leaf-on-wet-terrace
 ---
 
 The Taiyi Jinhua Zongzhi, commonly known in English as The Secret of the Golden Flower, belongs to a much later historical world than the Dao De Jing, Zhuangzi, or Neiye. Although traditionally attributed to the immortal Lü Dongbin, its surviving forms arose among Qing-period spirit-writing communities. Evidence associates its formation with transmissions received during the late seventeenth century, particularly within communities connected with the Jingming or "Pure Brightness" tradition. It was subsequently edited, expanded, transmitted through different lineages, and incorporated into Longmen-associated collections.

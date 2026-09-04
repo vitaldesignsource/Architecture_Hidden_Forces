@@ -8,7 +8,7 @@ operation: [Recognition]
 related: [i-9, i-16, x-1, x-10, xv-22, x-22]
 summary: Intellect in its highest sense apprehends principles and wholes directly — a real spiritual-intellectual order in which reasoning participates without containing it; noetic certainty is not psychological conviction.
 epigraph: "Nous sees a structure as an ordered whole."
-backdrop: concentrator
+backdrop: mirror-concentrator-on-desert-ridge
 ---
 
 Nous is intellect in its highest and most interior sense. It is not merely calculation, verbal reasoning, or the sequential manipulation of concepts. Noetic intelligence apprehends principles, forms, unities, *logoi*, and intelligible relations directly. Discursive reasoning moves from one proposition to another; Nous sees a structure as an ordered whole.

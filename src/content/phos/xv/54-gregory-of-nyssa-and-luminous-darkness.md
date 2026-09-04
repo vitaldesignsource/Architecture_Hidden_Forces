@@ -10,7 +10,7 @@ text: [Life of Moses]
 related: [vi-6, vi-7, vi-19, i-2, v-29, xv-55]
 summary: Moses at the bush, in the cloud, and finally within the darkness where God is present - an ascent from illumination toward recognised incomprehensibility; two darknesses distinguished, one from deficiency and one from excess; epektasis, in which every attainment opens a deeper capacity.
 epigraph: "One cannot see because there is too little light; the other cannot see because the source exceeds the capacity of sight."
-backdrop: basalthall
+backdrop: basalt-cavern-cut-by-light-shafts
 ---
 
 Gregory of Nyssa develops one of Christianity's most profound accounts of darkness beyond light. In his *Life of Moses*, the spiritual journey is interpreted through successive encounters with divine manifestation.

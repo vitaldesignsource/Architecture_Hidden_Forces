@@ -11,7 +11,7 @@ text: [Bṛhadāraṇyaka Upaniṣad, Kaṭha Upaniṣad]
 related: [x-3, i-18, x-2, x-22, i-13, xv-60]
 summary: Janaka asks what serves as a person's light, and Yājñavalkya answers sun, then fire, then speech, then the Self - the witnessing presence through which waking, dream, and deep sleep become manifest; that which needs no second light to be known.
 epigraph: "Sensible lights reveal objects, but awareness reveals sensible lights and the experience of their revelation."
-backdrop: dreamer
+backdrop: sleeper-in-room-with-rippling-light
 ---
 
 The Upanishads turn many earlier Vedic images inward without simply abandoning their ritual and cosmic origins. Fire, sun, breath, sacrifice, space, and light become means of investigating consciousness and the deepest identity of the human being.

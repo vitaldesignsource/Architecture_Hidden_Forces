@@ -7,7 +7,7 @@ symbol: [Mirror]
 quality: [Liquid Light]
 related: [viii-13, xiv-10, iii-14, ii-27, iv-54]
 summary: Water's memory is architectural — continuity, transport, and trace — and is not the contested claim that water retains therapeutic information.
-backdrop: stillpool
+backdrop: still-pool-in-gorge-at-dusk
 position: center 50%
 ---
 

@@ -10,7 +10,7 @@ text: [Community Rule, War Scroll]
 related: [vi-26, xii-22, xii-20, ii-25, xi-25, xv-38]
 summary: The Two Spirits teaching and the War Scroll - a Prince of Lights and an Angel of Darkness, allotted portions and mixture that persists until purification; opposition severe yet within divine governance; and the danger that a community identifying itself with light projects all darkness outward.
 epigraph: "A name cannot substitute for luminous consequence."
-backdrop: scribe
+backdrop: scribe-at-work-by-lamplight
 ---
 
 The Dead Sea Scrolls comprise a diverse collection of biblical manuscripts, interpretations, hymns, legal writings, apocalypses, calendars, community regulations, and other works. Not every scroll represents the doctrine of one group, and the precise relationship between the manuscripts, the settlement at Qumran, and the Essenes continues to be studied.

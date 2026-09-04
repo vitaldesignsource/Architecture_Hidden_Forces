@@ -8,7 +8,7 @@ operation: [Illumination, Consecration]
 related: [xii-21, xii-13, xii-19, xiv-15, v-8, xiv-22]
 summary: Sacred action ordered toward participation in divine realities — effective not because intellect compels the gods but because their signatures are already placed through the cosmos; the theurgist assembles an architecture able to receive what descends according to the receiver's capacity.
 epigraph: "The goal is not spectacle, control, or the accumulation of unusual experiences. It is the reorientation and elevation of the whole person."
-backdrop: shrinepath
+backdrop: path-to-lit-shrine-under-moon
 ---
 
 Theurgy is sacred action ordered toward participation in divine realities. In the Iamblichean understanding, theurgy does not succeed because the human intellect compels the gods. Divine symbols, rites, materials, names, and sacred correspondences are effective because the gods have already placed their signatures throughout the cosmos.

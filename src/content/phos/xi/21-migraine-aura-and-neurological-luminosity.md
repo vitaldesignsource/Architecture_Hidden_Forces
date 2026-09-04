@@ -7,7 +7,7 @@ plane: [Physical, Psychic]
 related: [xi-19, xi-20, xi-23, ix-6, xi-25]
 summary: Scintillating lines, fortifications, and arcs are real as experience though neurological in cause — meaning and mechanism are different questions, and neither spiritual reading nor medical assessment should displace the other.
 epigraph: "Discovering a neurological mechanism does not exhaust the experience's significance, just as spiritual interpretation should not prevent medical assessment."
-backdrop: foldedcliff
+backdrop: folded-cliff-face-on-grey-coast
 ---
 
 Migraine aura can produce scintillating lines, zigzags, geometric fortifications, luminous arcs, blind regions, flickering patterns, distortions, and changes in visual scale. These phenomena commonly develop gradually and may occur before, during, or even without headache. They arise through neurological processes rather than external light. [Clinical literature](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9857878/) describes the characteristic visual phenomena and their differential diagnosis.

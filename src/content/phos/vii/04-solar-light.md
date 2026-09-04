@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 symbol: [Solar Disc]
 related: [v-15, vii-5, vii-6, ix-1, vii-21]
 summary: The organising luminary of the terrestrial field — the natural image of a source remaining one while extending toward innumerable receivers.
-backdrop: summit
+backdrop: summit-above-sea-of-cloud
 ---
 
 Solar light is the dominant external source of energy and illumination for terrestrial life. It establishes day, supports photosynthesis, influences climate and weather, regulates biological rhythms, and makes ordinary visual perception possible across the daytime world.

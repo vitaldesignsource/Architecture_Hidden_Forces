@@ -7,7 +7,7 @@ quality: [Pulsation]
 related: [iv-17, ix-10, ix-19, xiv-19, ii-24]
 summary: Recurrent intensification and relaxation around a centre — the simplest architecture through which light begins to breathe.
 epigraph: "The pulse is the simplest architecture through which light begins to breathe."
-backdrop: ripples
+backdrop: ripple-marks-in-flooded-vault
 ---
 
 Pulsation is the recurrent intensification and relaxation of light. It is a particular form of rhythm organised around contraction and expansion, presence and recession, or concentration and release.

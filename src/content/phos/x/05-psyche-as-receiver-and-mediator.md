@@ -8,7 +8,7 @@ operation: [Integration, Communication]
 related: [x-20, x-6, x-21, ii-15, ix-18]
 summary: The living mediator between spirit and embodiment — receptive but not passive, mediating downward into action and upward into knowledge; its dignity lies in mediation.
 epigraph: "Reception is an activity requiring selection, proportion, and assimilation."
-backdrop: bowl
+backdrop: bronze-bowl-on-clifftop-in-rain
 ---
 
 Psychē, the soul, is the living mediator between spirit and embodiment. It receives illumination from higher orders, impressions from the sensible world, movements from the astral body, rhythms from the etheric body, and conditions from physical existence. It does not merely transmit these influences unchanged. It interprets, remembers, values, imagines, chooses, and gives them interior significance.

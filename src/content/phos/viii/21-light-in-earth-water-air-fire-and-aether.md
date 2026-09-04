@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Greek, Scientific]
 plane: [Elemental]
 related: [viii-20, viii-22, viii-24, viii-25, viii-4]
 summary: Each element gives light an embodied vocabulary — reflected and fixed in earth, made fluid in water, atmospheric in air, transformative in fire.
-backdrop: elementsaltar
+backdrop: altar-of-four-elements-under-light-beam
 position: center 62%
 ---
 

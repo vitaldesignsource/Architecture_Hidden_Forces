@@ -11,7 +11,7 @@ text: [2 Corinthians]
 related: [xiii-20, xiii-25, x-22, ix-21, ii-26, xv-51]
 summary: Beholding with unveiled faces and being transformed from glory to glory - metamorphosis worked by the Spirit rather than manufactured by the ego; the God who commanded light shining within human hearts; treasure carried in earthen vessels; the outer person decaying while the inner is renewed; resurrection as transformed embodiment.
 epigraph: "A person may bear genuine spiritual power while remaining physically vulnerable."
-backdrop: kilnvault
+backdrop: kiln-vault-with-glowing-mouth
 position: center 45%
 ---
 

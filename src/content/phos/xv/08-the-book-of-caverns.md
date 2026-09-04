@@ -11,7 +11,7 @@ text: [Book of Caverns]
 related: [ii-27, ii-28, xv-6, vi-25, xiii-16, ix-24]
 summary: Six divisions of vertical, enclosed, intensely Osirian depth — the cavern as tomb, womb, reservoir, prison, sanctuary, and chamber of transformation, where the same light that vivifies the justified exposes the enemies of order.
 epigraph: "What has disappeared from the surface remains present in another mode within the cavern."
-backdrop: seacave
+backdrop: sea-cave-glowing-orange-at-dusk
 ---
 
 The Book of Caverns belongs to the later New Kingdom tradition of Netherworld cosmography. Important versions occur in the Osireion at Abydos and in Ramesside royal tombs, especially the tomb of Ramesses VI. Unlike the Amduat and Book of Gates, it is organised into six major divisions rather than a straightforward sequence of twelve hourly panels.

@@ -7,7 +7,7 @@ plane: [Psychic, Astral]
 related: [x-5, x-2, x-7, x-18, ii-21]
 summary: Not a single faculty but a field with regions of clarity and obscurity — interior as a mode of presence, participating in realities beyond the personal boundary; a real field of encounter, not a private theatre of inventions.
 epigraph: "Consciousness occupies only part of the soul's total field at any moment."
-backdrop: rotunda
+backdrop: rotunda-open-to-night-sky
 ---
 
 The soul is an interior field rather than a single faculty. Perception, memory, imagination, emotion, desire, attention, judgement, conscience, identity, and spiritual receptivity arise within it as differentiated but interacting powers.

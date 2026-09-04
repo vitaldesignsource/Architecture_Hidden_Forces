@@ -8,7 +8,7 @@ operation: [Dissolution, Liberation]
 related: [ix-24, ix-22, ii-28, ii-27, vi-25]
 summary: The real loosening and separation of the etheric body from a vessel that can no longer hold right relation with it — not photons escaping a corpse, but vitality released according to the laws of its own plane.
 epigraph: "Force is liberated from one form and made available to further transformation."
-backdrop: glasshouse
+backdrop: abandoned-glasshouse-at-sunrise
 position: center 45%
 ---
 

@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 related: [vi-5, ix-14, ii-6, ii-5, xii-18]
 summary: Enclosed but not empty, hidden but intensely active — darkness becomes womb when enclosure serves becoming.
 epigraph: "Darkness becomes womb when enclosure serves becoming."
-backdrop: seacave
+backdrop: sea-cave-glowing-orange-at-dusk
 ---
 
 The womb is the archetypal architecture of generative darkness. It is enclosed but not empty, hidden but intensely active, bounded but oriented toward future emergence.

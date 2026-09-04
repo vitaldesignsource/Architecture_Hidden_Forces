@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 quality: [Diffusiveness, Diffuse Light]
 related: [iv-50, iii-23, iii-5, iii-7, xviii-22]
 summary: Reach increased and concentration reduced — beneficial when a field needs general nourishment, insufficient when precise transformation is needed.
-backdrop: reedslamp
+backdrop: lamp-among-reeds-in-lake-mist
 ---
 
 Diffusion is the movement from concentration toward broader distribution. It softens boundaries and establishes more general conditions of illumination.

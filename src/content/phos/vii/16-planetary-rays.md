@@ -6,7 +6,7 @@ tradition: [Islamic, Medieval Latin, Architecture of Hidden Forces]
 symbol: [Ray]
 related: [vii-17, xv-85, xvi-25, v-15, iii-4]
 summary: Historical ray theories rather than modern astrophysics — yet planetary influence is real; what remains contested is the degree and precision of particular claims.
-backdrop: observatory
+backdrop: mountain-observatory-above-cloud
 ---
 
 Planets appear luminous primarily because they reflect sunlight, although astronomical bodies may also emit radiation outside the visible range and possess their own thermal and electromagnetic activity.

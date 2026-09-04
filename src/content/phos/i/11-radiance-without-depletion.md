@@ -7,7 +7,7 @@ operation: [Manifestation]
 related: [i-12, xix-3, xv-28, xiii-2, i-13]
 summary: Material giving divides; metaphysical radiance communicates without division — the source made participable, not a severed piece of itself.
 epigraph: "The source remains abundant because its radiance is not a severed piece of itself."
-backdrop: lamplines
+backdrop: oil-lamps-set-in-lines-across-hall
 position: center 60%
 ---
 

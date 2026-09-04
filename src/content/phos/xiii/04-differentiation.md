@@ -9,7 +9,7 @@ symbol: [Prism]
 related: [i-13, iii-13, vii-26, ii-9, xii-5, xiii-19]
 summary: Unified light revealing distinct qualities, powers, and directions — the One Light becoming many participations without division at its source; fragmentation is what differentiation becomes when the parts forget the whole.
 epigraph: "Healthy differentiation produces articulate multiplicity; disordered differentiation produces competing fragments."
-backdrop: greatcrystal
+backdrop: great-crystal-beam-over-valley
 position: center 45%
 ---
 

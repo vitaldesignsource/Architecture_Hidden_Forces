@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Scientific]
 related: [iii-22, vi-13, xvi-5, vii-27, i-10]
 summary: What interrupts transmission can also make transmission perceptible — a beam becomes visible in dusty air precisely because particles scatter it.
-backdrop: reedslamp
+backdrop: lamp-among-reeds-in-lake-mist
 ---
 
 Scattering occurs when light is redirected through encounters with particles, irregularities, or structures within a medium.

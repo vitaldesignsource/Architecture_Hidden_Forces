@@ -11,7 +11,7 @@ text: [Neophyte Ritual]
 related: [v-24, xiv-23, xiii-12, xiv-18, iv-15, xv-93]
 summary: Ain, Ain Soph, and Ain Soph Aur before Kether - the veils of negative existence and the first luminous concentration; a temple built as an active model of the cosmos; the Neophyte's passage from darkness to Light in Extension; pillars of mercy and severity requiring a Middle Pillar.
 epigraph: "A ritual architecture can be newly constructed yet genuinely capable of mediating spiritual forces."
-backdrop: earthcolonnade
+backdrop: turf-roofed-colonnade-at-dusk
 ---
 
 The Hermetic Order of the Golden Dawn, founded in Britain in the late nineteenth century, created one of the most elaborate ritual architectures of light in modern Western esotericism. Its system synthesised Hermetic Qabalah, Rosicrucian symbolism, alchemy, astrology, Tarot, Egyptian imagery, Enochian materials, elemental magic, and graded initiation.

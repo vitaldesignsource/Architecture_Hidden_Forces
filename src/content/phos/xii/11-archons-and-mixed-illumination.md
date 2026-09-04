@@ -8,7 +8,7 @@ operation: [Binding]
 related: [xii-22, xii-21, xi-26, vi-20, xii-7]
 summary: Rulers who may administer legitimately or mistake limited jurisdiction for ultimate sovereignty — real power and real light without full knowledge of the source; the archontic error is partial light absolutised.
 epigraph: "The archontic error is not always total darkness. It is partial light absolutised."
-backdrop: archons
+backdrop: hall-of-throned-archons-in-light-beams
 position: center 50%
 ---
 

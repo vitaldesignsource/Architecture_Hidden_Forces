@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces, Scientific]
 quality: [Velocity]
 related: [xvi-19, xvi-7, iv-20, ii-20, iii-19]
 summary: The invariant speed of light in vacuum is not a warrant for claims about higher lights travelling faster — luminous velocity means movement through levels of mediation.
-backdrop: cliffroad
+backdrop: cliff-road-vanishing-into-fog
 ---
 
 Velocity concerns how rapidly light or luminous influence propagates.

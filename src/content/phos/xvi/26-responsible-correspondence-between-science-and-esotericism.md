@@ -9,7 +9,7 @@ operation: [Recognition, Integration]
 related: [xvi-25, xi-27, ii-25, xiii-30, xvi-13, portal-9]
 summary: The rules that keep both domains intact - identity distinguished from analogy, technical terms not borrowed for authority, and a threefold classification separating what is scientifically established, what is a plausible correspondence, and what is a metaphysical commitment held on other grounds.
 epigraph: "Science should not be forced to authenticate claims beyond its evidence, and metaphysics should not be reduced to whatever current instruments can detect."
-backdrop: aqueduct
+backdrop: stone-aqueduct-in-morning-mist
 ---
 
 Responsible correspondence begins by distinguishing identity from analogy. To say that spiritual illumination resembles optical illumination is not to say that the two are physically identical. To say that the etheric body may influence metabolism is not to say that every metabolic photon is etheric radiation.

@@ -7,7 +7,7 @@ quality: [Duration]
 related: [iv-9, iv-17, xviii-8, iv-41, iii-30]
 summary: A light may be stable but brief, or unstable but persistent — and time is one of the principal media of illumination.
 epigraph: "Time is one of the principal media of illumination."
-backdrop: startrails
+backdrop: star-trails-above-desert-wall
 ---
 
 Duration is the length of time during which a luminous phenomenon remains active or perceptible. It differs from stability. A light may remain stable but brief, or unstable but persistent.

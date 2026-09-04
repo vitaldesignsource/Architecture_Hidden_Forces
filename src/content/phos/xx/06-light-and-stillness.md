@@ -9,7 +9,7 @@ operation: [Recognition, Purification]
 related: [x-1, x-2, xi-2, xi-6, xx-5, x-22]
 summary: Not the absence of activity but the reduction of unnecessary motion so subtler movements become perceptible - noticing first that experience is disclosed at all, then observing where a phenomenon appears, whether it responds to attention, and whether it leaves clarity or agitation.
 epigraph: "True receptivity preserves judgment, ethical agency, and the ability to return fully to ordinary life."
-backdrop: stillpool
+backdrop: still-pool-in-gorge-at-dusk
 position: center 50%
 ---
 

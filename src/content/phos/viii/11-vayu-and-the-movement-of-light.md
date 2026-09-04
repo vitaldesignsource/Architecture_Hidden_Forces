@@ -5,7 +5,7 @@ confidence: [Established]
 tradition: [Architecture of Hidden Forces, Tantric, Vedic]
 related: [ii-8, viii-10, viii-12, vi-17, iv-11]
 summary: Mobility given to luminosity — Tone must give that mobility rhythm, and Life must integrate its movements into a continuing whole.
-backdrop: murmuration
+backdrop: starling-murmuration-over-field
 ---
 
 Vāyu is the tattvic bias toward motion, exchange, circulation, communication, variation, and responsiveness.

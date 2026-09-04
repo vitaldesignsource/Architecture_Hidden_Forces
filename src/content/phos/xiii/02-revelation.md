@@ -8,7 +8,7 @@ operation: [Revelation]
 related: [xiii-1, xi-11, xi-12, xi-25, xi-26, x-14]
 summary: Illumination carrying disclosure from beyond the receiver's ordinary range — always mediated, never proven by brilliance; genuine revelation makes the receiver more capable of truth, counterfeit more certain and less correctable.
 epigraph: "Genuine revelation makes the receiver more capable of truth. Counterfeit revelation often makes the receiver more certain while making them less capable of correction."
-backdrop: gatelight
+backdrop: figure-before-gate-of-white-light
 position: center 55%
 ---
 

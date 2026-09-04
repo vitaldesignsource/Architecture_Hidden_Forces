@@ -10,7 +10,7 @@ symbol: [Sphere]
 related: [v-2, v-24, ii-8, ix-18, x-18, vii-16]
 summary: Physical, astral, mental, buddhic, atmic, monadic, and divine planes as states of substance and consciousness rather than stacked floors; the etheric body as formative interface; the Seven Rays as differentiated streams of will, love, intelligence, and organisation; planets as vehicles of greater intelligences.
 epigraph: "A plane is a state of substance, consciousness, vibration, law, and perceptual capacity."
-backdrop: strata
+backdrop: layered-strata-in-dark-passage
 ---
 
 Modern Theosophy presented the universe as a living hierarchy of visible and invisible planes. Helena Petrovna Blavatsky's writings drew upon Western esotericism, Neoplatonism, Kabbalah, Spiritualism, Hindu and Buddhist terminology, contemporary science, and claimed occult instruction. Later Theosophists - including Annie Besant and C. W. Leadbeater - systematised these teachings more rigidly, while Alice Bailey developed the doctrine of the Seven Rays in another direction.

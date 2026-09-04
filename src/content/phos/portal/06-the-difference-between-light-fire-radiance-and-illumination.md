@@ -6,7 +6,7 @@ operation: [Illumination]
 quality: [Radiance, Brilliance, Color]
 related: [viii-1, viii-2, ii-22, iii-3, xiii-1, iv-31, iv-32, iv-15]
 summary: Related, not synonymous — light reveals, fire changes, radiance proceeds, illumination requires a receiver, and brilliance proves nothing.
-backdrop: furnace
+backdrop: furnace-mouth-glowing-in-ravine
 ---
 
 Light, fire, radiance, and illumination are closely related, but they should not be treated as synonyms.

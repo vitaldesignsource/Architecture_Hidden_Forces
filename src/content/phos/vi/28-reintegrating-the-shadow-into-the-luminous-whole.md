@@ -7,7 +7,7 @@ operation: [Integration, Transfiguration]
 related: [vi-16, xiii-19, ii-7, vi-27, xx-12]
 summary: Not acting out every impulse but restoring excluded contents to conscious relation — with necessary boundaries preserved around what remains destructive.
 epigraph: "The luminous whole is not a world without darkness. It is an architecture in which light, shadow, concealment, latency, and mystery occupy their rightful relations."
-backdrop: olivegrove
+backdrop: ancient-olive-grove-in-sunlight
 position: center 60%
 ---
 

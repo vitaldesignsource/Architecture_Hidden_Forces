@@ -7,7 +7,7 @@ quality: [Density, Stability]
 related: [ii-10, vi-12, vi-14, vi-15, vi-5, xiii-29]
 summary: Heaviness and resistance are necessary for embodiment; tamas turns pathological when condensation stops serving life — vessel or prison, foundation or stagnation.
 epigraph: "Condensed light becomes form. Excessively condensed light becomes opacity."
-backdrop: peatcliff
+backdrop: peat-cliff-above-still-lake
 ---
 
 Tamas is heaviness, inertia, obscuration, fixation, and resistance. It can block light, absorb motion, and preserve patterns after their living purpose has ended.

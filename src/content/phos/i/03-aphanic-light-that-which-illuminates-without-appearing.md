@@ -6,7 +6,7 @@ tradition: [Architecture of Hidden Forces]
 related: [i-18, x-2, i-6, i-9, i-12]
 summary: A technical term for the light known by hidden efficacy rather than hidden brightness — the condition of appearance that stays behind appearance.
 epigraph: "It illuminates without demanding to be seen."
-backdrop: obscura
+backdrop: camera-obscura-tree-cast-on-wall
 ---
 
 Within this portal, *Aphanic Light* is a technical term formed from the Greek sense of *aphanēs*: unseen, invisible, or not appearing. It names a light that performs the work of illumination without itself becoming an ordinary object of perception.

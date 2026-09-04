@@ -9,7 +9,7 @@ symbol: [Solar Disc, Temple]
 related: [vii-2, vii-1, xiv-6, xiii-8, xiv-24, vii-17]
 summary: Architecture entering a measured relation with celestial light — a doorway or sanctuary receiving sunrise or solstice, the building an instrument through which a cosmic cycle becomes locally present; one form of celestial right relation, not a universal key.
 epigraph: "Architecture can receive a cosmic ray and guide it toward a particular form."
-backdrop: startemple
+backdrop: star-trails-over-ruined-temple
 position: center 45%
 ---
 

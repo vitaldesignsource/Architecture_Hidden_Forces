@@ -7,7 +7,7 @@ plane: [Divine, Psychic, Physical]
 related: [ii-15, ii-16, ii-17, i-14, x-20]
 summary: Spirit animates, essence determines, soul mediates, body embodies — and light appears in each as a register of one luminous movement under successive mediation.
 epigraph: "Spirit animates. Essence determines. Soul mediates. Body embodies."
-backdrop: chamber
+backdrop: waterfall-chamber-behind-stone-arches
 ---
 
 The relation among spirit, soul, and body is governed by the established sequence:
