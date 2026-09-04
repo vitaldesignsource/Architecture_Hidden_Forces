@@ -359,6 +359,7 @@ export const BEINGS: Being[] = [
     sources: "Pyramid Texts; Papyrus Turin 1993 (Isis and the secret name of Re); Robert K. Ritner, The Mechanics of Ancient Egyptian Magical Practice (SAOC 54, 1993); sign values for Q1 (As, st, ws) from JSesh signs_description.xml; the site's own src/lib/hieroglyphs.ts",
     confidence: "firm",
     light: "Her ba is identified with Sopdet, the star Sirius, whose heliacal rising after seventy days of invisibility opened the Egyptian year and heralded the flood — a light that returns on a reckonable schedule, which is why the star and the goddess were read together.",
+    entries: ["xii-18"],
   },
   {
     id: "osiris",
@@ -373,6 +374,7 @@ export const BEINGS: Being[] = [
     sources: "Pyramid Texts; Amduat, sixth hour (Hornung, The Ancient Egyptian Books of the Afterlife, 1999); J. Gwyn Griffiths, The Origins of Osiris and His Cult (1980); J. Zeidler's review of the etymological proposals (2000); sign values Q1 and D4 from JSesh signs_description.xml",
     confidence: "firm",
     light: "He is the still point the light must reach and return from: the sun does not shine on him from outside so much as unite with him at midnight in the lowest place. In the sky he is read as Orion, sꜣḥ, so the dead king's ascent is stellar as well as solar.",
+    entries: ["xv-2", "xv-5", "xv-6", "xv-8"],
   },
   {
     id: "anubis",
@@ -401,6 +403,7 @@ export const BEINGS: Being[] = [
     sources: "Der ägyptische Mythos von der Himmelskuh (Hornung, 1982); Betsy Bryan's work on the Mut precinct and the Sekhmet statuary (ARCE); the Sekhmet statues of Amenhotep III in the British Museum, reassessed in the published catalogue literature; sign value S42 = sxm from JSesh signs_description.xml; hieroglyphic spelling as given in the standard reference article, 𓌂𓐍𓏏𓁐",
     confidence: "probable",
     light: "She is solar light at its lethal end — the Eye detached from the face that governs it, heat rather than illumination. The uraeus on the sun's brow is the same idea in miniature: the burning that protects.",
+    entries: ["xv-9"],
   },
   {
     id: "hathor",
@@ -415,6 +418,7 @@ export const BEINGS: Being[] = [
     sources: "Gardiner, Egyptian Grammar, Sign List O10; sign value O10 = Hwt-Hr from JSesh signs_description.xml (CC-BY); Der ägyptische Mythos von der Himmelskuh (Hornung, 1982); the Dendera temple publications",
     confidence: "firm",
     light: "Her standing epithet is nbwt, 'the Golden One', and gold in Egypt is the flesh of the gods and the colour of the sun's own body; she carries the disc between her horns. The returning Distant Goddess, appeased and brought home, is the light coming back into relation with the one who sent it.",
+    entries: ["xv-9"],
   },
   {
     id: "maat",
@@ -585,6 +589,7 @@ export const BEINGS: Being[] = [
     light: "In the Chaldean use, wholly a fire term: Eros is fire clothing fire, the bond by which the Ideas cohere. In Orphic material Eros is often identified with Phanes, the shining first-born (Greek spelling not verified here) — but that identification is itself a late systematization and is disputed. Hesiodic and Homeric Eros is not a light power at all, and reading him as one is anachronism.",
     sources: "LSJ s.vv. ἔρως, Ἔρως, ἔρος (lsj.gr); Hesiod, Theogony 116–22; Plato, Symposium 202e–203a; Chaldean Oracles fr. 42–44 des Places, tr. Majercik (1989)",
     confidence: "contested",
+    entries: ["xii-3", "xv-26"],
   },
   {
     id: "nyx",
@@ -755,6 +760,7 @@ export const BEINGS: Being[] = [
     office: "Patron and defender of Israel; the prince who stands over Daniel's people and contends with the princes of the nations.",
     sources: "WLC/OSHB Dan.xml 10:13, 10:21, 12:1; pointed Pirqei de-Rabbi Eliezer ch. 4; bedtime Shema formula in pointed siddur (relbns/siddur-plus, sefard)",
     confidence: "firm",
+    entries: ["xv-36"],
   },
   {
     id: "gabriel",
@@ -768,6 +774,7 @@ export const BEINGS: Being[] = [
     light: "His office is illumination in the intellectual sense: he is sent so that a מַרְאֶה, a thing seen, can be understood. Daniel sees; Gabriel makes the seeing mean something.",
     sources: "WLC/OSHB Dan.xml 8:16, 9:21; pointed Pirqei de-Rabbi Eliezer ch. 4",
     confidence: "firm",
+    entries: ["xv-36"],
   },
   {
     id: "raphael",
@@ -794,6 +801,7 @@ export const BEINGS: Being[] = [
     light: "The name is the light-name — אוּר / אוֹר. His Enochic office is the calendar of sun, moon and stars, which makes him the one archangel whose function is literally the ordering of light. This is the strongest light-connection in the Jewish angelic repertoire and it is genuinely ancient, not a modern colour-correspondence.",
     sources: "WLC/OSHB 1Chr.xml 6:9, 15:5, 15:11; 2Chr.xml 13:2; pointed Pirqei de-Rabbi Eliezer ch. 4; pointed bedtime Shema (relbns/siddur-plus); 1 Enoch 72-82 and 4 Ezra (reported)",
     confidence: "firm",
+    entries: ["xv-47"],
   },
   {
     id: "metatron",
@@ -955,6 +963,7 @@ export const BEINGS: Being[] = [
     light: "His abode is anaγra raocå, 'the beginningless lights' — the highest heaven, above the graded stations of the stars, the moon and the sun, and the destination the Gāthās ask to reach. Fire, Ātar, is called his son and the visible presence of Ahura Mazdā and his aṣ̌a. The popular gloss 'Ahura means light' is folk etymology; ahura is 'lord', and the luminous associations are theological, not lexical.",
     sources: "Gāthās (Yasna 28–53); Yašt 1; Vīdēvdād 19; Darius, DB and DNa; Enc. Iranica, 'AHURA MAZDĀ'; Boyce, HZ I; Skjærvø, The Spirit of Zoroastrianism.",
     confidence: "firm",
+    entries: ["xv-13", "xv-14", "xv-15"],
   },
   {
     id: "vohu-manah",
@@ -1328,6 +1337,7 @@ export const BEINGS: Being[] = [
     light: "She is described in light-language throughout: she comes to be when the Spirit beholds himself in luminous water, and she is ‘the perfect glory’, the first light in which the unknowable becomes visible to itself.",
     sources: "Ap. John NHC II,1 pp. 4–5 (Coptic verified against the Marcion Nag Hammadi database; standard ed. Waldstein & Wisse, The Apocryphon of John: Synopsis of NHC II,1; III,1; IV,1 with BG 8502,2, NHMS 33, Brill 1995); Irenaeus, Adv. haer. 1.29.1 (Greek in Epiphanius, Pan. 26, ed. Holl GCS); Epiphanius, P",
     confidence: "firm",
+    entries: ["xii-18", "xv-35"],
   },
   {
     id: "yaldabaoth",
@@ -1355,6 +1365,7 @@ export const BEINGS: Being[] = [
     light: "He is enthroned over the four φωστῆρες, the Luminaries Harmozel, Oroiael, Daveithai and Eleleth, and stands with them in the light of the invisible Spirit — the structural centre of the Sethian light-world.",
     sources: "Ap. John NHC II,1 and III,1; Gospel of the Egyptians NHC III,2 and IV,2; Zostrianos NHC VIII,1; Three Steles of Seth NHC VII,5; Irenaeus, Adv. haer. 1.29.2 (Greek fragment, First1KGreek).",
     confidence: "firm",
+    entries: ["xii-5", "xv-35"],
   },
   {
     id: "achamoth",
@@ -1411,6 +1422,7 @@ export const BEINGS: Being[] = [
     light: "He IS the Realm of Light in person — its king, its five limbs, and the origin of every particle of light later scattered through the cosmos and progressively recovered.",
     sources: "W. Sundermann, ‘Manicheism ii. The Manichean Pantheon’, Encyclopaedia Iranica; Theodore bar Konai, Liber Scholiorum XI (Syriac); Coptic Kephalaia; P. O. Skjærvø, An Introduction to Manicheism. Language forms here rest on secondary report, not on my own inspection of an edition.",
     confidence: "firm",
+    entries: ["xv-38"],
   },
   {
     id: "the-living-spirit",
@@ -1680,6 +1692,7 @@ export const BEINGS: Being[] = [
     light: "Central, and etymologically so. The name is amita-ābha, \"measureless light\", and the Tibetan འོད་དཔག་མེད། translates it exactly — 'od \"light\", dpag med \"immeasurable\". 84000 renders one entry \"Amitābha, 'Infinite Light'\" and CC-CEDICT glosses 阿彌陀如來 \"Buddha of infinite light\". Of the whole Buddhist pantheon he is the being whose name simply is light.",
     sources: "84000 glossary entity-35445, entity-19375, entity-36712 (Amitāyus synonymy); CC-CEDICT 阿彌陀佛, 阿彌陀如來, 彌陀",
     confidence: "firm",
+    entries: ["xv-67"],
   },
   {
     id: "vairocana",
