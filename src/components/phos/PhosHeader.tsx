@@ -1,7 +1,12 @@
 import type { ReactNode } from "react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, lazy, Suspense } from "react";
 import { Link } from "@tanstack/react-router";
-import { SearchButton, SearchPalette, useSearchHotkey } from "@/components/phos/Search";
+import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+
+// The palette carries the entry index; it arrives when a reader first asks for it.
+const SearchPalette = lazy(() =>
+  import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })),
+);
 
 /**
  * PhosHeader — the fixed bar the encyclopaedia's pages share.
@@ -55,7 +60,11 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
           {panel}
         </div>
       </div>
-      <SearchPalette open={searching} onClose={() => setSearching(false)} />
+      {searching && (
+        <Suspense fallback={null}>
+          <SearchPalette open onClose={() => setSearching(false)} />
+        </Suspense>
+      )}
       <div className="border-t border-border/50 lg:hidden">
         <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
           {links}

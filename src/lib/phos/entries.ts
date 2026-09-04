@@ -1,5 +1,5 @@
 import toc from "./toc.json";
-import schema from "./schema.json";
+import { FACETS, valueSlug } from "./vocab";
 
 /**
  * The encyclopaedia's index: the table of contents joined to whatever content
@@ -20,8 +20,6 @@ import schema from "./schema.json";
 
 export type Division = (typeof toc.divisions)[number];
 export type TocEntry = Division["entries"][number];
-export type LabelDef = (typeof schema.labels)[number];
-export type FacetDef = (typeof schema.facets)[number];
 
 export type EntryMeta = {
   title: string;
@@ -188,24 +186,10 @@ export function neighbourDivisions(d: Division) {
   return { prev: DIVISIONS[i - 1] ?? null, next: DIVISIONS[i + 1] ?? null };
 }
 
-export const LABELS = schema.labels;
-export const CONFIDENCE = schema.confidence;
-export const FACETS = schema.facets;
-export const MOVEMENT = schema.movement;
-export const TOOLS = schema.tools;
-
-export const labelDef = (name: string) => LABELS.find((l) => l.name === name) ?? null;
-
-/** The same slug rule as scripts/phos-toc.mjs, for facet values in URLs. */
-export const valueSlug = (v: string) =>
-  v
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[’'"“”]/g, "")
-    .replace(/&/g, " and ")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+// The controlled vocabulary lives in vocab.ts, which holds no entry data;
+// re-exported here so the modules that need both keep one import.
+export { LABELS, CONFIDENCE, FACETS, MOVEMENT, TOOLS, labelDef, valueSlug } from "./vocab";
+export type { LabelDef, FacetDef } from "./vocab";
 
 /** Every value a facet can take, with how many written entries carry it.
  *  A controlled facet lists its whole vocabulary; a free one, what is in use. */

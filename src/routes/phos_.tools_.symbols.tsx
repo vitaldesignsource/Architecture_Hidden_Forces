@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ToolFrame, ToolBand, Eyebrow, EntryRows } from "@/components/phos/ToolFrame";
+import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
+import { EntryRows } from "@/components/phos/EntryRows";
 import { SymbolGlyph } from "@/components/phos/SymbolGlyph";
 import { SYMBOL_MEANINGS, symbolValues, withFacet } from "@/lib/phos/tools";
 

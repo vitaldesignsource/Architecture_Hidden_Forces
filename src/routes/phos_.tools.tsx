@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
-import { TOOLS } from "@/lib/phos/entries";
-import { TOOL_ROUTES } from "@/lib/phos/tools";
+import { TOOLS } from "@/lib/phos/vocab";
+import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
 
 /**
  * Instruments — the views over the facets the outline promised, and the ones

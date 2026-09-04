@@ -10,7 +10,7 @@ import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSecti
 import {
   DIVISIONS, TOTAL, LABELS, CONFIDENCE, FACETS, MOVEMENT, TOOLS, entriesOf, progress, divisionLabel,
 } from "@/lib/phos/entries";
-import { TOOL_ROUTES } from "@/lib/phos/tools";
+import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
 
 /**
  * The Portal — the entrance to the encyclopaedia of light.

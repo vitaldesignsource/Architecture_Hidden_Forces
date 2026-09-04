@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { ToolFrame, ToolBand, Eyebrow, EntryRow, EntryRows } from "@/components/phos/ToolFrame";
+import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
+import { EntryRow, EntryRows } from "@/components/phos/EntryRows";
 import { LabelChips } from "@/components/phos/Labels";
 import { divisionLabel } from "@/lib/phos/entries";
 import { groupByDivision, sharedBetween, traditionBySlug, traditionValues, withFacet } from "@/lib/phos/tools";

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { ToolFrame, ToolBand, Eyebrow, EntryRows } from "@/components/phos/ToolFrame";
+import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
+import { EntryRows } from "@/components/phos/EntryRows";
 import { ConceptGraph } from "@/components/phos/ConceptGraph";
 import { entryById } from "@/lib/phos/entries";
 import { TRACE_SEEDS, graphAround, searchTitles } from "@/lib/phos/tools";

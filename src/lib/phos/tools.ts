@@ -10,17 +10,6 @@ import { DIVISIONS, ENTRIES, entryById, facetValues, valueSlug, type Division, t
  * A tool that needs more than the front matter provides is not ready to exist.
  */
 
-/** Which of the seven planned instruments are live, and where. */
-export const TOOL_ROUTES: Record<string, "/phos/tools/symbols" | "/phos/tools/traditions" | "/phos/tools/trace" | "/phos/tools/anatomy" | "/phos/tools/diagrams" | "/phos/tools/constellation" | "/phos/tools/atlas"> = {
-  "Symbol Atlas": "/phos/tools/symbols",
-  "Compare Traditions": "/phos/tools/traditions",
-  "Trace a Concept": "/phos/tools/trace",
-  "Luminous Anatomy": "/phos/tools/anatomy",
-  "Diagram Library": "/phos/tools/diagrams",
-  "The Constellation": "/phos/tools/constellation",
-  "The Atlas": "/phos/tools/atlas",
-};
-
 /** Written entries grouped by the division they sit in, empty divisions dropped. */
 export function groupByDivision(entries: PhosEntry[]): { d: Division; rows: PhosEntry[] }[] {
   return DIVISIONS.map((d) => ({ d, rows: entries.filter((e) => e.division.id === d.id) })).filter((x) => x.rows.length);

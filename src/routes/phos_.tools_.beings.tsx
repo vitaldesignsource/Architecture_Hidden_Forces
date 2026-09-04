@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
-import { entryById } from "@/lib/phos/entries";
+import { entryRef } from "@/lib/phos/refs";
 import { Term } from "@/components/Term";
 import { RegisterField } from "@/components/phos/RegisterField";
 import {
@@ -467,14 +467,14 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
                 </span>
                 <span className="mt-2 block">
                   {b.entries.map((id, i) => {
-                    const e = entryById(id);
+                    const e = entryRef(id);
                     if (!e) return null;
                     return (
                       <span key={id}>
                         {i > 0 && <span className="mx-2 text-bone/30">·</span>}
                         <Link
                           to="/phos/$division/$entry"
-                          params={{ division: e.division.id, entry: e.slug }}
+                          params={{ division: e.division, entry: e.slug }}
                           className="text-gold-dim underline-offset-4 hover:text-gold hover:underline"
                         >
                           {e.title}

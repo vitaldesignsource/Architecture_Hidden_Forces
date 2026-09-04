@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { CONFIDENCE, FACETS, labelDef, valueSlug } from "@/lib/phos/entries";
+import { CONFIDENCE, FACETS, labelDef, valueSlug } from "@/lib/phos/vocab";
 
 /**
  * The evidence labels an entry carries, as chips. Every entry has at least one,

@@ -1,5 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { ToolFrame, ToolBand, Eyebrow, EntryRows } from "@/components/phos/ToolFrame";
+import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
+import { EntryRows } from "@/components/phos/EntryRows";
 import { AnatomyAxis } from "@/components/phos/AnatomyAxis";
 import { valueSlug } from "@/lib/phos/entries";
 import { STATIONS, stationByKey, stationEntries } from "@/lib/phos/tools";

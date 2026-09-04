@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { ToolFrame, ToolBand, Eyebrow, EntryRow } from "@/components/phos/ToolFrame";
+import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
+import { EntryRow } from "@/components/phos/EntryRows";
 import { AtlasMap } from "@/components/phos/AtlasMap";
 import { AtlasTimeline } from "@/components/phos/AtlasTimeline";
 import {
