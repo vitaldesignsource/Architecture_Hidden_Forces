@@ -187,6 +187,53 @@
 .aoh-still .aoh-ec-spark,
 .aoh-still .aoh-lux-pulse { animation-play-state: paused; }
 
+/* The Luminous Formula, lit by a ray that descends the column as it is read.
+   --ray-p is how far down the column the tip has come (0..1). It defaults to 1
+   and .aoh-formula-live is applied by script, so with no script, or under
+   reduced motion, the formula stands fully lit beneath a ray at rest. */
+.aoh-formula { --ray-p: 1; }
+.aoh-formula-beam,
+.aoh-formula-tip { position: absolute; left: 50%; pointer-events: none; }
+.aoh-formula-beam {
+  top: 0;
+  width: min(64%, 30rem);
+  height: calc(var(--ray-p) * 100%);
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom,
+    oklch(0.78 0.13 75 / 0.3),
+    oklch(0.78 0.13 75 / 0.12) 45%,
+    oklch(0.78 0.13 75 / 0.2));
+  -webkit-mask-image: linear-gradient(to right, transparent, black 32%, black 68%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 32%, black 68%, transparent);
+}
+.aoh-formula-tip {
+  top: calc(var(--ray-p) * 100%);
+  width: 13rem;
+  height: 13rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle,
+    oklch(0.78 0.13 75 / 0.42),
+    oklch(0.78 0.13 75 / 0.12) 34%,
+    transparent 62%);
+}
+.aoh-formula-live [data-formula-line],
+.aoh-formula-live [data-formula-coda] {
+  transition: opacity 700ms cubic-bezier(0.16, 1, 0.3, 1), text-shadow 900ms ease;
+}
+.aoh-formula-live [data-formula-line]:not([data-lit]),
+.aoh-formula-live [data-formula-coda]:not([data-lit]) { opacity: 0.28; }
+.aoh-formula-live [data-lit="now"] {
+  text-shadow: 0 0 30px oklch(0.78 0.13 75 / 0.5), 0 0 3px oklch(0.78 0.13 75 / 0.3);
+}
+.aoh-formula-live [data-formula-rule] {
+  transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 900ms ease, background-color 900ms ease;
+}
+.aoh-formula-live:not([data-arrived]) [data-formula-rule] { transform: scaleX(0.3); }
+.aoh-formula-live[data-arrived] [data-formula-rule] {
+  background-color: var(--gold);
+  box-shadow: 0 0 18px oklch(0.78 0.13 75 / 0.7);
+}
+
 /* Backdrop: full-bleed cover on wide viewports; a band at the top of the section
    below lg, where a tall section would otherwise crop a 16:9 source to a sliver. */
 /* A band took `height: 100%` on the assumption that a wide viewport makes a

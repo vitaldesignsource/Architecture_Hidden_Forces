@@ -1,8 +1,9 @@
-import { Fragment, type ReactNode } from "react";
+import { Fragment, useRef, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import toc from "@/lib/phos/toc.json";
 import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
+import { useFormulaRay } from "@/hooks/useFormulaRay";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { ContentsPanel } from "@/components/ContentsPanel";
@@ -157,6 +158,8 @@ function Phos() {
   const active = useActiveSection();
   useReveal();
   usePauseOffscreen();
+  const formulaRef = useRef<HTMLDivElement>(null);
+  useFormulaRay(formulaRef);
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
@@ -1498,7 +1501,10 @@ function Phos() {
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
             ΦΩΣ · The Luminous Formula
           </p>
-          <div className="mt-12 space-y-4 font-serif text-lg italic leading-relaxed text-bone/85 sm:text-xl md:text-2xl">
+          <div ref={formulaRef} className="aoh-formula relative mt-12">
+            <div className="aoh-formula-beam" aria-hidden />
+            <div className="aoh-formula-tip" aria-hidden />
+            <div className="relative space-y-4 font-serif text-lg italic leading-relaxed text-bone/85 sm:text-xl md:text-2xl">
             <p data-formula-line>
               The Source gives, because giving is what it is.
               <LawTag id="xix-3" />
@@ -1549,14 +1555,15 @@ function Phos() {
               <span className="not-italic text-gold">and owes what it received</span>.
               <LawTag id="xix-15" />
             </p>
-          </div>
+            </div>
 
-          <div className="mx-auto mt-20 h-px w-24 bg-gold/50" />
-          <p className="mt-12 font-serif text-xl italic text-bone/80 sm:text-2xl">
-            Light is not seen.
-            <br />
-            What is seen is light <span className="text-gold">arrived</span>.
-          </p>
+            <div data-formula-rule className="relative mx-auto mt-20 h-px w-24 bg-gold/50" />
+            <p data-formula-coda className="relative mt-12 font-serif text-xl italic text-bone/80 sm:text-2xl">
+              Light is not seen.
+              <br />
+              What is seen is light <span className="text-gold">arrived</span>.
+            </p>
+          </div>
           <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
             Ω · Phōs — the architecture read by its own light
           </p>
