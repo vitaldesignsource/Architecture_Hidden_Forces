@@ -5,6 +5,7 @@ import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { entryRef } from "@/lib/phos/refs";
 import { Term } from "@/components/Term";
 import { RegisterField } from "@/components/phos/RegisterField";
+import { KinGraph } from "@/components/phos/KinGraph";
 import {
   BEINGS,
   CLASSES,
@@ -289,6 +290,31 @@ function Register() {
           the tradition is not silent; it has drawn its verticals somewhere else.
         </p>
       </ToolBand>
+
+      {/* one tradition's own structure — only when a tradition is chosen, since
+          the whole point is that these graphs do not join across traditions */}
+      {tradition && (
+        <ToolBand>
+          <Eyebrow>Inside {tradition} · how its beings stand to one another</Eyebrow>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+            The one graph the register draws, and it stops at the tradition&rsquo;s edge. Every tie
+            here is a relation the tradition&rsquo;s own sources make — a parentage, a rank, a god
+            brought in against another, two names the texts move between — and none of them reaches
+            out to another column of the field above, because a line drawn there would assert the
+            identification this whole instrument exists to refuse. Take a node for its ties; take it
+            again to open its row.
+          </p>
+          <KinGraph
+            tradition={tradition}
+            onPick={(id) => {
+              setOpen(id);
+              requestAnimationFrame(() =>
+                document.getElementById(`being-${id}`)?.scrollIntoView({ block: "center", behavior: "smooth" }),
+              );
+            }}
+          />
+        </ToolBand>
+      )}
 
       {/* the register */}
       <ToolBand>
