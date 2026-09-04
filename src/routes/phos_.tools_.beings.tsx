@@ -534,16 +534,52 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
       </button>
       {open && (
         <div className="grid gap-6 pb-8 sm:grid-cols-[13rem_minmax(0,1fr)] sm:gap-6">
-          <div className="hidden sm:block" />
+          {/* The column the name hangs in carries where the being stands: the
+              volume's own placement, and then the ties its tradition draws.
+              The prose keeps the wider column to itself. */}
+          <div className="hidden sm:block">
+            {b.kin?.length ? (
+              <div className="border-t border-gold/25 pt-4">
+                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                  In its tradition
+                </p>
+                <ul className="mt-3 space-y-3">
+                  {b.kin.map((k) => {
+                    const other = BEINGS.find((x) => x.id === k.to);
+                    if (!other) return null;
+                    return (
+                      <li key={k.to} className="text-xs leading-relaxed text-muted-foreground">
+                        <Link
+                          to="/phos/tools/beings"
+                          search={{ being: other.id }}
+                          className="block font-serif text-sm text-bone/90 underline-offset-4 transition-colors hover:text-gold hover:underline"
+                        >
+                          {other.name}
+                        </Link>
+                        {k.as}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ) : (
+              <div className="border-t border-border pt-4">
+                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-bone/30">
+                  No tie recorded inside its own tradition
+                </p>
+              </div>
+            )}
+          </div>
           <div className="max-w-3xl">
             <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               Its own tradition calls it
             </p>
             <p className="mt-2 text-sm leading-relaxed text-bone/85">{b.kind}</p>
+            {/* On a phone there is one column, so the ties follow the kind. */}
             {b.kin?.length ? (
-              <div className="mt-6 border-l border-gold/25 pl-4">
+              <div className="mt-6 border-l border-gold/25 pl-4 sm:hidden">
                 <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
-                  Where it stands in that tradition
+                  In its tradition
                 </p>
                 <ul className="mt-2 space-y-1.5">
                   {b.kin.map((k) => {
