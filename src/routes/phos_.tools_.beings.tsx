@@ -457,7 +457,10 @@ function Register() {
             [state.total, "beings, across " + state.traditions + " traditions"],
             [state.scripts, "scripts, and " + state.noScript + " names that stand in transliteration alone"],
             [state.contested, "entries the sources themselves contest"],
-            [state.noContext, "that carry an office and no account yet"],
+            [state.noContext,
+             state.noContext === 0
+               ? "left with an office and no account — every entry now carries one"
+               : "that carry an office and no account yet"],
           ].map(([n, label]) => (
             <div key={String(label)} className="border-t border-border pt-4">
               <p className="font-serif text-3xl text-gold">{n}</p>
