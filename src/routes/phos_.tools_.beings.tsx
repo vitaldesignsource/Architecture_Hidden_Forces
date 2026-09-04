@@ -4,6 +4,7 @@ import { Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { entryById } from "@/lib/phos/entries";
 import { Term } from "@/components/Term";
+import { RegisterField } from "@/components/phos/RegisterField";
 import {
   BEINGS,
   CLASSES,
@@ -83,6 +84,8 @@ function Register() {
             .includes(needle)),
     );
   }, [tradition, cls, plane, q]);
+  // What the filters keep, for the field: it dims the rest rather than dropping it.
+  const shown = useMemo(() => new Set(rows.map((b) => b.id)), [rows]);
   const kinds = KINDS.filter((k) => !tradition || k.tradition === tradition);
 
   return (
@@ -203,6 +206,44 @@ function Register() {
             </button>
           )}
         </div>
+      </ToolBand>
+
+      {/* the field */}
+      <ToolBand>
+        <Eyebrow>The field · every being on both axes at once</Eyebrow>
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+          Traditions across, the volume's planes down, one mark for each being. The filters above
+          dim what they exclude rather than removing it, so the shape of the whole stays visible
+          while you narrow; a mark's strength is the register's confidence in the entry, and the
+          strata fade as they descend because that is what the volume claims about light rather
+          than a decoration. Touch a mark for the name, take one to open its row below, or take a
+          label to filter by that plane or tradition.
+        </p>
+        {/* Two geometries rather than one that scrolls: on a phone a sideways
+            field would carry its plane labels off the screen. */}
+        {([true, false] as const).map((compact) => (
+          <div key={String(compact)} className={compact ? "sm:hidden" : "hidden sm:block"}>
+            <RegisterField
+              compact={compact}
+              traditions={TRADITION_ORDER}
+              visible={shown}
+              tradition={tradition}
+              plane={plane}
+              onPick={(id) => {
+                setOpen(id);
+                document.getElementById(`being-${id}`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+              }}
+              onPlane={(p) => setPlane(plane === p ? null : p)}
+              onTradition={(t) => setTradition(tradition === t ? null : t)}
+            />
+          </div>
+        ))}
+        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+          The empty ground is the reading. No tradition here populates every stratum, and the ones
+          that crowd the middle — the Greek daimonic, the Islamic and the Jewish angelic — are the
+          traditions that built an explicit doctrine of what stands between. Where a band is bare
+          the tradition is not silent; it has drawn its verticals somewhere else.
+        </p>
       </ToolBand>
 
       {/* the register */}
