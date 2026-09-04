@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { SearchButton, SearchPalette, useSearchHotkey } from "@/components/phos/Search";
 
 /**
  * PhosHeader — the fixed bar the encyclopaedia's pages share.
@@ -13,6 +14,9 @@ import { Link } from "@tanstack/react-router";
  * entries — and marks where the reader is.
  */
 export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNode }) {
+  const [searching, setSearching] = useState(false);
+  const openSearch = useCallback(() => setSearching(true), []);
+  useSearchHotkey(openSearch);
   const links = (
     <>
       <Link to="/phos/portal" className="whitespace-nowrap transition-colors hover:text-gold" activeProps={{ className: "text-gold" }}>
@@ -47,9 +51,11 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
         </div>
         <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
           <div className="hidden items-center gap-4 lg:flex xl:gap-6">{links}</div>
+          <SearchButton onClick={openSearch} />
           {panel}
         </div>
       </div>
+      <SearchPalette open={searching} onClose={() => setSearching(false)} />
       <div className="border-t border-border/50 lg:hidden">
         <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
           {links}
