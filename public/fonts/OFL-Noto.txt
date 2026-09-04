@@ -1,3 +1,16 @@
+The scripts on this site are set in subsets of the Noto faces, each of which is
+licensed under the SIL Open Font License, Version 1.1. The subsets under
+public/fonts hold only the characters the pages actually set, and are built by
+scripts/fonts.mjs from the upstream faces in the google/fonts repository.
+
+  Noto Sans Egyptian Hieroglyphs   Noto Sans Cuneiform
+  Noto Serif Hebrew                Noto Naskh Arabic
+  Noto Serif Devanagari            Noto Sans Coptic
+  Noto Serif Tibetan               Noto Sans Avestan
+  Noto Serif SC
+
+The licence text follows in full.
+
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/egyptian-hieroglyphs)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.

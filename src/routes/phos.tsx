@@ -2,6 +2,8 @@ import { Fragment, useRef, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import toc from "@/lib/phos/toc.json";
 import { ZODIAC } from "@/lib/phos/colour";
+import { GirihBand, NicheLamp } from "@/components/IslamicDevices";
+import { GlossTerm, TermRegister, Term, type TermData } from "@/components/Term";
 import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import { useFormulaRay } from "@/hooks/useFormulaRay";
@@ -106,6 +108,22 @@ function PortalPointers({ ids }: { ids: string[] }) {
     </div>
   );
 }
+
+/** The Ishrāqī vocabulary § VII sets, transliterated in the IJMES scheme. The
+ *  vowel marks are the dictionary's, not a manuscript's. */
+const ISHRAQ_TERMS: TermData[] = [
+  { script: "arabic", orig: "نُورُ الأَنْوَار", tr: "nūr al-anwār", gloss: "the Light of Lights — the first principle, from which everything that is, is by being lit." },
+  { script: "arabic", orig: "النُّورُ الْمُجَرَّد", tr: "al-nūr al-mujarrad", gloss: "the immaterial light: light in and for itself, needing nothing to shine in." },
+  { script: "arabic", orig: "الأَنْوَارُ الْقَاهِرَة", tr: "al-anwār al-qāhira", gloss: "the dominating lights — Corbin's “victorial lights”: the higher order, which the lower cannot look at without being overcome.", note: "Walbridge and Ziai render them “dominating”; the vertical order descends from the Light of Lights, the horizontal order stands beside it as the lords of the species." },
+  { script: "arabic", orig: "الْقَهْرُ وَالْمَحَبَّة", tr: "al-qahr wa-l-maḥabba", gloss: "domination and love — the two directions of traffic that hold the hierarchy together: the higher dominates, the lower loves." },
+  { script: "arabic", orig: "بَرْزَخ", tr: "barzakh · pl. barāzikh", gloss: "an isthmus. In Suhrawardī, a body: the dark thing that does not manifest of itself." },
+  { script: "arabic", orig: "الْجَوْهَرُ الْغَاسِق", tr: "al-jawhar al-ghāsiq", gloss: "the dusky substance — body considered as darkness that subsists, rather than as evil." },
+  { script: "arabic", orig: "النُّورُ الإِسْفَهْبَد", tr: "al-nūr al-isfahbad", gloss: "the commanding light: the human soul, named after the Persian word for a general.", note: "A Persian word in Arabic dress; the manuscripts vary between إسفهبد and إسفهبذ." },
+  { script: "arabic", orig: "الْعِلْمُ الْحُضُورِيّ", tr: "al-ʿilm al-ḥuḍūrī", gloss: "knowledge by presence — knowing with no image standing between the knower and the known.", note: "The fixed pairing with al-ʿilm al-ḥuṣūlī, knowledge by acquisition, hardens later, in Mullā Ṣadrā and after." },
+  { script: "arabic", orig: "الْمُثُلُ الْمُعَلَّقَة", tr: "al-muthul al-muʿallaqa", gloss: "the suspended images — forms that are neither in a mind nor in a body, and have a place of their own.", note: "The label ʿālam al-mithāl, “the world of image”, is later Persian usage and Corbin's; it is not Suhrawardī's habitual phrase." },
+  { script: "arabic", orig: "هَيَاكِلُ النُّور", tr: "hayākil al-nūr", gloss: "the temples of light — bodies as the edifices a light inhabits, and the title of his short summary." },
+  { script: "arabic", orig: "التَّأَلُّه", tr: "al-taʾalluh", gloss: "deiformity: becoming godlike. The sage who has it is al-ḥakīm al-mutaʾallih, and in this system he outranks the one who merely reasons well." },
+];
 
 const ENTRIES = [
   { n: "I", id: "registers", t: "Three Registers of Light", d: "Lux, lumen, splendor — light in its source, on its way, and arrived." },
@@ -864,12 +882,24 @@ function Phos() {
         <SectionGlyph delay={-700} />
         <Backdrop src="/bg/spherehall.webp" opacity={0.36} position="center 32%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
+          <GirihBand className="mb-12" />
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § VII · The Ladder of Lights
           </p>
-          <h2 className="mt-6 font-serif text-4xl leading-tight">Ishrāq</h2>
+          <div className="mt-6 flex flex-wrap items-baseline gap-x-7 gap-y-3">
+            <Term script="arabic" orig="إِشْرَاق" label="ishrāq — illumination, the first light over the horizon"
+                  className="text-5xl text-gold" />
+            <h2 className="font-serif text-4xl leading-tight">Ishrāq</h2>
+          </div>
           <p className="mt-4 font-serif text-lg italic text-gold-dim">
             Suhrawardī — one substance, differing only in intensity
+          </p>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-bone/60">
+            The word is the sunrise: not light in general but the moment light comes over an edge.
+            Transliterations here follow the scheme of the{" "}
+            <span className="italic">International Journal of Middle East Studies</span>, and the
+            vowel marks are set where a dictionary would set them, which is not how the words appear
+            in a manuscript.
           </p>
           <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
             <p className="font-serif text-2xl leading-relaxed text-bone/90">
@@ -888,6 +918,115 @@ function Phos() {
 
           <div className="mt-24">
             <LadderOfLights />
+          </div>
+
+          {/* the verse the whole vocabulary answers to */}
+          <div className="mt-24 grid gap-12 border-t border-border pt-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,13rem)] lg:items-start">
+            <div className="max-w-3xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                The verse the vocabulary answers to
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                No Islamic philosophy of light begins from nothing. It begins from one verse, and
+                from three centuries of argument about how literally to take it — whether God is
+                called light because light is the least inadequate thing to call Him, or whether
+                everything else is called light only by borrowing.
+              </p>
+              <blockquote className="mt-8 border-l-2 border-gold pl-6">
+                <p dir="rtl" lang="ar" className="scr scr-arabic text-3xl leading-loose text-gold">
+                  اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ
+                </p>
+                <p className="mt-5 font-serif text-2xl leading-relaxed text-bone/90">
+                  God is the Light of the heavens and the earth; the likeness of His Light is as a
+                  niche wherein is a lamp — the lamp in a glass, the glass as it were a glittering
+                  star — kindled from a Blessed Tree, an olive that is neither of the East nor of the
+                  West, whose oil wellnigh would shine, even if no fire touched it.{" "}
+                  <span className="text-gold">Light upon Light.</span>
+                </p>
+                <footer className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">
+                  Qur&rsquo;ān 24:35, the Light Verse · Arberry&rsquo;s rendering
+                </footer>
+              </blockquote>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                Al-Ghazālī took the verse apart in{" "}
+                <span className="italic">Mishkāt al-Anwār</span>, the Niche of Lights, and reached
+                the strict conclusion: the real light is God, and the name light applied to anything
+                else is{" "}
+                <Term script="arabic" orig="مَجَاز" label="majāz — metaphor, trope" className="text-gold/90" />{" "}
+                — <span className="italic">majāz</span>, metaphor, with no reality in it. Everything
+                that shines does so from what stands above it and not from itself.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Suhrawardī, a century later, is not writing a commentary on the verse, and this
+                volume should not pretend otherwise. But he inherits its problem and answers it the
+                other way: light is not a metaphor for being — being{" "}
+                <span className="text-bone/90">is</span> light, in degrees, and what the verse calls
+                Light upon Light his system draws as a hierarchy of intensities with nothing
+                borrowed anywhere in it.
+              </p>
+            </div>
+            <div className="flex justify-center lg:sticky lg:top-32">
+              <div>
+                <NicheLamp className="w-full max-w-[13rem]" />
+                <p className="mt-4 font-mono text-[9px] uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
+                  The niche, the glass, the lamp — the figures of the verse, drawn. The mihrab of a
+                  mosque takes its shape from the same sentence.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* the vocabulary */}
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The vocabulary, in its own script
+            </p>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Eight words carry the system. Read in Arabic they are less abstract than they look in
+              English: an isthmus is a strip of land between two seas before it is a body, and a
+              commander of an army before it is a soul.
+            </p>
+            <div className="mt-4 max-w-4xl">
+              <TermRegister terms={ISHRAQ_TERMS} />
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+              One caution about the most portable of them.{" "}
+              <span className="italic">Barzakh</span> in Ibn ʿArabī and in ordinary Sufi usage names
+              the intermediate world between spirit and body — the imaginal realm. In Suhrawardī it
+              names the body itself, the dark thing a light must stand on. The same word sits at
+              opposite ends of the same scale, and a reader who carries one sense into the other
+              text will read it exactly backwards.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The man, and the books
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Shihāb al-Dīn Yaḥyā al-Suhrawardī wrote the{" "}
+              <span className="italic">Ḥikmat al-Ishrāq</span> in 1186 and was executed at Aleppo in
+              1191, in his mid-thirties, at the order of Saladin — which is why the tradition calls
+              him <span className="italic">al-maqtūl</span>, the killed. The philosophy of
+              illumination is therefore a young man&rsquo;s last book, and it is deliberately built
+              against the Peripatetic system it comes out of: he had written Avicennan philosophy
+              competently before deciding that definition by genus and difference cannot reach the
+              things that matter, and that a knowing which needs no definition is available.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              He also revives, on purpose, a vocabulary older than Islamic philosophy: the{" "}
+              <Term script="arabic" orig="خُرَّه" label="khurra — the divine glory of kings" className="text-gold/90" />{" "}
+              of the Persian kings, the Glory that legitimates a ruler, and{" "}
+              <span className="italic">arbāb al-anwāʿ</span>, the lords of the species, which he
+              connects with the Zoroastrian archetypes. Whether those lords are the yazatas in
+              philosophical dress, as Corbin argued, is contested — and the identification is
+              Corbin&rsquo;s more than Suhrawardī&rsquo;s.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              The line does not end there. The Ishrāqī vocabulary is what Mullā Ṣadrā and the school
+              of Isfahan build on four centuries later, and it is through that line, not directly,
+              that most of it reaches European readers.
+            </p>
           </div>
 
           <div className="mt-24 max-w-3xl">
