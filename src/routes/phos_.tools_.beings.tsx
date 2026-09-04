@@ -43,7 +43,7 @@ function Register() {
     <ToolFrame
       name="The Register of Beings"
       title={<>Who populates the <span className="italic text-gold">middle of the world</span></>}
-      lede="Every tradition here fills the space between the first principle and the body, and each fills it its own way and sorts it with its own words. The register sets those populations side by side — each name in the script it was written in, each kind named as its own tradition names it — without letting the comparison collapse them into one another."
+      lede="Every tradition here fills the space between the first principle and the body, and each fills it its own way and sorts it with its own words. The register sets ten of those populations side by side — each name in the script it was written in, each kind named as its own tradition names it, from cuneiform and hieroglyphs through Hebrew, Greek, Coptic, Avestan, Devanagari, Chinese and Arabic — without letting the comparison collapse them into one another."
       backdrop="archons"
       position="center 40%"
     >
@@ -163,11 +163,21 @@ function Register() {
       <ToolBand>
         <Eyebrow>What the register does not yet hold</Eyebrow>
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
-          The register is being built tradition by tradition, and every entry waits on a name being
-          verified in its own script before it is set. Where a spelling could not be confirmed, the
-          entry stands in transliteration alone and says so rather than showing a plausible guess.
-          Greek, Jewish, Christian and Gnostic, Iranian, Indian, Buddhist, Chinese and Islamic
-          populations are in preparation.
+          Ten populations are in, and none of them is complete: a tradition with a thousand named
+          beings is represented here by the fifteen or so that carry its argument. Where a spelling
+          could not be confirmed the entry stands in transliteration alone and says so rather than
+          showing a plausible guess — the Manichaean names, Zurvan, the Egyptian Ogdoad.
+        </p>
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+          Every name was gathered against scholarly sources and then checked a second time by a
+          reader whose only task was to break it. What that check could confirm is set; what it
+          could not, is not. Several entries therefore carry an office and a class and no narrative:
+          the account offered did not survive the second reading, and a blank is more honest than a
+          paragraph.{" "}
+          <span className="text-bone/90">
+            The notes say which script a name is in, what scheme its transliteration follows, and
+            what was actually verified — not what would have been nice to claim.
+          </span>
         </p>
       </ToolBand>
     </ToolFrame>
