@@ -7,16 +7,11 @@ import { Term } from "@/components/Term";
 import { SCRIPTS, type ScriptKey } from "@/lib/scripts";
 import { RegisterField } from "@/components/phos/RegisterField";
 import { KinGraph } from "@/components/phos/KinGraph";
-import {
-  BEINGS,
-  CLASSES,
-  KINDS,
-  PLANES,
-  classLabel,
-  type Being,
-  type ClassKey,
-  type Plane,
-} from "@/lib/phos/beings";
+// The vocabularies come from the module that holds no entries: the route's
+// validateSearch runs when the app loads, so anything it touches ships to every
+// page. The register itself is only ever reached from inside the component.
+import { CLASSES, PLANES, TRADITION_ORDER, classLabel, type ClassKey, type Plane } from "@/lib/phos/being-kinds";
+import { BEINGS, KINDS, type Being } from "@/lib/phos/beings";
 
 /**
  * The Register of Beings — who populates the middle of the world, tradition by
@@ -29,12 +24,6 @@ import {
  * volume's comparative class second and marks it as the volume's, and says
  * plainly in the opening band that the classes are a finding aid.
  */
-/** The traditions in the order the encyclopaedia meets them, for the cross-table. */
-const TRADITION_ORDER = [
-  "Mesopotamian", "Egyptian", "Greek", "Jewish", "Christian and Gnostic",
-  "Iranian", "Vedic", "Buddhist", "Daoist", "Islamic",
-];
-
 /**
  * The register's whole state lives in the URL. A narrowed view — the Iranian
  * adversaries, everything on the angelic plane, a search in cuneiform — is a
@@ -48,8 +37,6 @@ type BeingsSearch = {
   plane?: Plane;
   q?: string;
 };
-
-const TRADITIONS = [...new Set(BEINGS.map((b) => b.tradition))];
 
 /** The volume spells small numbers in its prose and sets them as figures in a
  *  table; a counted number that lands in a sentence should follow the prose. */
@@ -70,7 +57,7 @@ export const Route = createFileRoute("/phos_/tools_/beings")({
       (all as readonly string[]).includes(String(v)) ? (v as T) : undefined;
     return {
       being: str(search.being),
-      tradition: one(search.tradition, TRADITIONS),
+      tradition: one(search.tradition, TRADITION_ORDER),
       cls: one(search.cls, CLASSES.map((c) => c.k)),
       plane: one(search.plane, PLANES),
       q: str(search.q),
@@ -112,7 +99,7 @@ function Register() {
     );
   }, [being]);
 
-  const traditions = useMemo(() => [...TRADITIONS].sort(), []);
+  const traditions = useMemo(() => [...new Set(BEINGS.map((b) => b.tradition))].sort(), []);
   const rows = useMemo(() => {
     const needle = q.trim().toLowerCase();
     return BEINGS.filter(
@@ -133,7 +120,7 @@ function Register() {
   // that the order has not been told about — a being should never be drawn
   // nowhere because a column was forgotten.
   const columns = useMemo(
-    () => [...TRADITION_ORDER, ...traditions.filter((t) => !TRADITION_ORDER.includes(t))],
+    () => [...TRADITION_ORDER, ...traditions.filter((t) => !(TRADITION_ORDER as readonly string[]).includes(t))],
     [traditions],
   );
   const kinds = KINDS.filter((k) => !tradition || k.tradition === tradition);
@@ -143,7 +130,7 @@ function Register() {
     for (const b of BEINGS) if (b.native?.orig) byScript.set(b.native.script, (byScript.get(b.native.script) ?? 0) + 1);
     return {
       total: BEINGS.length,
-      traditions: TRADITIONS.length,
+      traditions: new Set(BEINGS.map((b) => b.tradition)).size,
       scripts: byScript.size,
       noScript: BEINGS.filter((b) => !b.native?.orig).length,
       contested: BEINGS.filter((b) => b.confidence === "contested").length,
