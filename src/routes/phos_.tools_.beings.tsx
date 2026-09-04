@@ -1,14 +1,18 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
+import { entryById } from "@/lib/phos/entries";
 import { Term } from "@/components/Term";
 import {
   BEINGS,
   CLASSES,
   KINDS,
+  PLANES,
   classLabel,
   type Being,
   type ClassKey,
+  type Plane,
 } from "@/lib/phos/beings";
 
 /**
@@ -22,6 +26,12 @@ import {
  * volume's comparative class second and marks it as the volume's, and says
  * plainly in the opening band that the classes are a finding aid.
  */
+/** The traditions in the order the encyclopaedia meets them, for the cross-table. */
+const TRADITION_ORDER = [
+  "Mesopotamian", "Egyptian", "Greek", "Jewish", "Christian and Gnostic",
+  "Iranian", "Vedic", "Buddhist", "Daoist", "Islamic",
+];
+
 export const Route = createFileRoute("/phos_/tools_/beings")({
   head: () => ({ meta: [{ title: "The Register of Beings — Instruments — Phōs" }] }),
   component: Register,
@@ -30,13 +40,25 @@ export const Route = createFileRoute("/phos_/tools_/beings")({
 function Register() {
   const [tradition, setTradition] = useState<string | null>(null);
   const [cls, setCls] = useState<ClassKey | null>(null);
+  const [plane, setPlane] = useState<Plane | null>(null);
+  const [q, setQ] = useState("");
   const [open, setOpen] = useState<string | null>(null);
 
   const traditions = useMemo(() => [...new Set(BEINGS.map((b) => b.tradition))].sort(), []);
-  const rows = useMemo(
-    () => BEINGS.filter((b) => (!tradition || b.tradition === tradition) && (!cls || b.cls === cls)),
-    [tradition, cls],
-  );
+  const rows = useMemo(() => {
+    const needle = q.trim().toLowerCase();
+    return BEINGS.filter(
+      (b) =>
+        (!tradition || b.tradition === tradition) &&
+        (!cls || b.cls === cls) &&
+        (!plane || b.plane === plane) &&
+        (!needle ||
+          [b.name, b.native?.tr ?? "", b.native?.orig ?? "", b.kind, b.office]
+            .join(" ")
+            .toLowerCase()
+            .includes(needle)),
+    );
+  }, [tradition, cls, plane, q]);
   const kinds = KINDS.filter((k) => !tradition || k.tradition === tradition);
 
   return (
@@ -99,6 +121,12 @@ function Register() {
             </button>
           ))}
         </div>
+        <input
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder="Search a name, a script, an office…"
+          className="mt-6 w-full max-w-md border border-border bg-transparent px-3 py-2 font-sans text-sm text-bone placeholder:text-muted-foreground focus:border-gold/60 focus:outline-none"
+        />
         <div className="mt-3 flex flex-wrap gap-2">
           {CLASSES.map((c) => {
             const n = BEINGS.filter((b) => b.cls === c.k && (!tradition || b.tradition === tradition)).length;
@@ -118,6 +146,39 @@ function Register() {
             );
           })}
         </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {PLANES.map((pl) => {
+            const n = rows.filter((b) => b.plane === pl).length + (plane && plane !== pl ? 0 : 0);
+            const total = BEINGS.filter(
+              (b) => b.plane === pl && (!tradition || b.tradition === tradition) && (!cls || b.cls === cls),
+            ).length;
+            return (
+              <button
+                key={pl}
+                onClick={() => setPlane(plane === pl ? null : pl)}
+                aria-pressed={plane === pl}
+                disabled={!total}
+                className={`border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] transition-colors ${
+                  plane === pl
+                    ? "border-gold text-gold"
+                    : total
+                      ? "border-border text-muted-foreground hover:border-gold/40"
+                      : "border-border/50 text-bone/25"
+                }`}
+              >
+                {pl} <span className="ml-1.5 opacity-70">{total}</span>
+              </button>
+            );
+          })}
+          {(tradition || cls || plane || q) && (
+            <button
+              onClick={() => { setTradition(null); setCls(null); setPlane(null); setQ(""); }}
+              className="border border-gold/50 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-gold transition-colors hover:bg-gold/10"
+            >
+              Clear
+            </button>
+          )}
+        </div>
       </ToolBand>
 
       {/* the register */}
@@ -132,6 +193,75 @@ function Register() {
             </p>
           )}
         </div>
+      </ToolBand>
+
+      {/* read across */}
+      <ToolBand>
+        <Eyebrow>Read across · one office, several traditions</Eyebrow>
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+          The register's one comparative move, made carefully. Each row is a class of the volume's
+          own devising, and the columns are what each tradition files there. Some cells are crowded
+          and some are empty, and the empty ones are the finding:{" "}
+          <span className="text-bone/90">
+            a tradition with no adversaries is telling you something about its cosmology, not
+            leaving a gap for a later editor to fill.
+          </span>
+        </p>
+        <div className="mt-10 overflow-x-auto">
+          <table className="w-full min-w-[52rem] border-collapse">
+            <thead>
+              <tr>
+                <th className="border-b border-border py-3 pr-4 text-left font-mono text-[9px] uppercase tracking-[0.14em] text-gold-dim">
+                  Class
+                </th>
+                {TRADITION_ORDER.map((t) => (
+                  <th key={t} className="border-b border-border px-2 py-3 text-left font-mono text-[9px] uppercase tracking-[0.12em] text-gold-dim">
+                    {t.split(" ")[0]}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {CLASSES.map((c) => (
+                <tr key={c.k}>
+                  <td className="border-b border-border py-3 pr-4 align-top">
+                    <button
+                      onClick={() => { setCls(cls === c.k ? null : c.k); setTradition(null); }}
+                      className={`text-left font-serif text-base transition-colors ${cls === c.k ? "text-gold" : "text-bone/85 hover:text-gold"}`}
+                    >
+                      {c.label}
+                    </button>
+                  </td>
+                  {TRADITION_ORDER.map((t) => {
+                    const n = BEINGS.filter((b) => b.cls === c.k && b.tradition === t).length;
+                    return (
+                      <td key={t} className="border-b border-border px-2 py-3 align-top">
+                        {n ? (
+                          <button
+                            onClick={() => { setCls(c.k); setTradition(t); }}
+                            className="font-mono text-xs text-bone/80 transition-colors hover:text-gold"
+                            aria-label={`${n} ${c.label} in the ${t} tradition`}
+                          >
+                            {"·".repeat(Math.min(n, 8))}
+                            <span className="ml-1.5 text-bone/40">{n}</span>
+                          </button>
+                        ) : (
+                          <span className="font-mono text-xs text-bone/15">—</span>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+          Read the rows and the differences are structural. The messengers are an Abrahamic
+          speciality and are thin everywhere else; the intermediary middle is where the Greek,
+          Islamic and Indian populations are dense; and the personified powers — me, melammu, the
+          Glory — are a category two traditions build on and most do not have at all.
+        </p>
       </ToolBand>
 
       {/* the class vocabulary */}
@@ -239,6 +369,31 @@ function Row({ b, open, onToggle }: { b: Being; open: boolean; onToggle: () => v
               <p className="mt-4 text-xs leading-relaxed text-bone/45">{b.native.note}</p>
             )}
             <p className="mt-4 text-xs leading-relaxed text-bone/45">{b.sources}</p>
+            {b.entries?.length ? (
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                  In the Portal
+                </span>
+                <span className="mt-2 block">
+                  {b.entries.map((id, i) => {
+                    const e = entryById(id);
+                    if (!e) return null;
+                    return (
+                      <span key={id}>
+                        {i > 0 && <span className="mx-2 text-bone/30">·</span>}
+                        <Link
+                          to="/phos/$division/$entry"
+                          params={{ division: e.division.id, entry: e.slug }}
+                          className="text-gold-dim underline-offset-4 hover:text-gold hover:underline"
+                        >
+                          {e.title}
+                        </Link>
+                      </span>
+                    );
+                  })}
+                </span>
+              </p>
+            ) : null}
           </div>
         </div>
       )}

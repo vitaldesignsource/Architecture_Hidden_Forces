@@ -119,6 +119,7 @@ export const BEINGS: Being[] = [
     sources: "ORACC AMGG, “Utu/Šamaš (god)”; ETCSL 4.32.2, “A hymn to Utu”; Šamaš Hymn (Lambert, Babylonian Wisdom Literature, 121–138); CAD Š/1 s.v. Šamaš; Black & Green (1992) s.v. “Shamash”.",
     confidence: "firm",
     light: "Central. Utu is not a god who has light — he is the daylight, and the texts treat seeing and judging as one act. He rises between twin mountains with rays (šarūru) standing out from his shoulders, a fixed iconographic sign of him on Akkadian seals. His epithets run on nūru “light”: he is “light of the great gods”, “light of heaven and earth”, and darkness in his hymns is the place where injustice can still hide. This is the clearest ancient case of illumination as a moral and forensic power rather than a merely physical one.",
+    entries: ["xv-11"],
   },
   {
     id: "inanna-istar",
@@ -287,6 +288,7 @@ export const BEINGS: Being[] = [
     sources: "Bīt Mēseri III (Reiner, “The Etiological Myth of the ‘Seven Sages’,” Orientalia 30, 1961); Uruk List of Kings and Sages (van Dijk 1962); Berossos, Babyloniaca (Burstein 1978); Wiggermann, Mesopotamian Protective Spirits (1992); Annus, “On the Origin of Watchers,” JSP 19 (2010).",
     confidence: "probable",
     light: "Modest and easy to overstate. The apkallū bring the arts, the crafts and the exorcistic corpus — knowledge, not radiance — and the sources do not describe them as shining. The equation of wisdom with light here is a modern gloss and should be flagged as such; the one genuine luminous-adjacent motif is Utuabzu’s ascent to heaven, and the name Utu-abzu itself couples the sun-god with the freshwater abyss.",
+    entries: ["xii-14"],
   },
   {
     id: "me",
@@ -441,6 +443,7 @@ export const BEINGS: Being[] = [
     sources: "Coffin Texts spell 261; Robert K. Ritner, The Mechanics of Ancient Egyptian Magical Practice (SAOC 54, 1993); the site's own src/lib/hieroglyphs.ts",
     confidence: "firm",
     light: "The site already puts him with Sia and Hu at the heart-and-tongue doctrine; the light connection is that the power is exercised by uttering, and the utterance is what makes the pattern operative.",
+    entries: ["ii-29", "xiv-20"],
   },
   {
     id: "sia",
@@ -455,6 +458,7 @@ export const BEINGS: Being[] = [
     sources: "Book of Gates and Amduat (Hornung, The Ancient Egyptian Books of the Afterlife, 1999); Memphite Theology (the Shabaka Stone); the site's own src/lib/hieroglyphs.ts",
     confidence: "firm",
     light: "The closest thing in the Egyptian material to light as knowing: Sia is the god of the faculty by which anything is discerned at all, and he stands where the light goes first, at the prow.",
+    entries: ["ii-29"],
   },
   {
     id: "hu",
@@ -469,6 +473,7 @@ export const BEINGS: Being[] = [
     sources: "Book of Gates and Amduat; Memphite Theology (the Shabaka Stone); the site's own src/lib/hieroglyphs.ts",
     confidence: "firm",
     light: "Where the site treats light and word together, this is the god that stands at that joint: the utterance is the act by which what was perceived becomes visible.",
+    entries: ["ii-29"],
   },
   {
     id: "apep",
@@ -511,6 +516,7 @@ export const BEINGS: Being[] = [
     sources: "Jiří Janák, 'Akh', UCLA Encyclopedia of Egyptology (2013), https://escholarship.org/uc/item/7255p86v; the Letters to the Dead (Gardiner and Sethe, Egyptian Letters to the Dead, 1928); Robert J. Demarée, The ꜣḫ jḳr n Rꜥ-Stelae (1983); the site's own src/lib/hieroglyphs.ts",
     confidence: "firm",
     light: "This is the strongest light-word in the Egyptian anthropology. Jiří Janák argues the root is bound to jꜣḫw, 'light, radiance, glow', and Jansen-Winkeln reads the original notion as the sun's efficacy at the horizon, where the light is visible while its source is hidden — so 'effective' and 'luminous' are not two meanings but one. The ꜣḫt, horizon, is the same root. Being made effective and being made to shine are the same operation.",
+    entries: ["xv-10"],
   },
   {
     id: "helios",
@@ -524,6 +530,7 @@ export const BEINGS: Being[] = [
     light: "Total, and not metaphorical: he is the light rather than a symbol of it. Neoplatonism turns Plato's analogy of the Sun (Rep. VI 508–9) into doctrine — the visible sun is in the sensible world what the Good is in the intelligible — and Julian inserts a third, noeric Helios between them. The Greek nouns for what he emits, φῶς (phôs, light) and augḗ (ray, radiance; Greek form not verified here), are the vocabulary the entire later literature of intelligible light borrows.",
     sources: "LSJ s.vv. ἥλιος, Ἥλιος, ἠέλιος (lsj.gr); Homer, Odyssey 12; Plato, Republic VI 508–9; Julian, Hymn to King Helios (Or. 4 Wright / 11 Rochefort); modern commentary on Neoplatonic solar theology (KU Leuven, Solar Theology in Neoplatonism)",
     confidence: "firm",
+    entries: ["x-4"],
   },
   {
     id: "apollo",
@@ -564,6 +571,7 @@ export const BEINGS: Being[] = [
     light: "The Oracles' governing image is fire rather than light: she is the ζωογόνος (zōogónos, \"life-generating\") womb filled from the paternal fire, and the Chaldean cosmos is a graded hierarchy of fires — empyrean, ethereal, material. The recurring \"flower of fire\" belongs to this register, and translating it as \"light\" softens something that the text keeps deliberately hot.",
     sources: "Chaldean Oracles, ed. É. des Places (1971); R. Majercik, The Chaldean Oracles: Text, Translation and Commentary (1989); S. I. Johnston, Hekate Soteira (1990); J. Dillon (1990), S. Ronan (1992), L. Brisson, R. M. van den Berg; LSJ s.v. ζωογόνος (lsj.gr); en.wikipedia \"Chaldean Hekate\" for the survey ",
     confidence: "contested",
+    entries: ["xv-27"],
   },
   {
     id: "eros",
@@ -605,6 +613,7 @@ export const BEINGS: Being[] = [
     light: "Architectural rather than iconographic, and it sits inside the Myth of Er. The souls come first to a column of light stretching through heaven and earth, straighter and purer than a rainbow, and the spindle of Necessity turns in its ends (Rep. X 616b–617c); the Moirai sit around it singing. They do not shine — they work at the luminous axis of the cosmos, which is a different and more interesting relation to light.",
     sources: "LSJ s.vv. μοῖρα, Μοῖρα, Κλωθώ, Λάχεσις, Ἄτροπος, ἄτροπος (lsj.gr); Hesiod, Theogony 217–22, 904–6; Plato, Republic X 616b–617e",
     confidence: "firm",
+    entries: ["xii-19"],
   },
   {
     id: "the-nymphs",
@@ -632,6 +641,7 @@ export const BEINGS: Being[] = [
     light: "Structural rather than luminous. They are not light-beings; they are the mechanism by which the noetic fire is transmitted downward and returned upward, which is why later theurgic practice attaches to them instruments rather than images.",
     sources: "LSJ s.v. ἴυγξ (lsj.gr; also el.wiktionary.org); Theocritus, Idyll 2; Proclus, in Remp. 2.213 Kroll; Chaldean Oracles ed. des Places / Majercik (1989); N. Spanu, Proclus and the Chaldean Oracles (2021), ch. 1 \"The Chaldean Triad\"",
     confidence: "firm",
+    entries: ["xv-27"],
   },
   {
     id: "the-synocheis",
@@ -646,6 +656,7 @@ export const BEINGS: Being[] = [
     light: "Only through the Chaldean fire-grading, where the empyrean member belongs to the highest fire. They hold; they do not shine. Any luminous character they have is borrowed from what passes through them.",
     sources: "LSJ s.vv. συνοχή, συνοχικός, συνέχω (lsj.gr); Perseus word-study gloss of συνοχεύς; Proclus, Platonic Theology; Damascius; R. Majercik, The Chaldean Oracles (1989); N. Spanu, Proclus and the Chaldean Oracles (2021)",
     confidence: "probable",
+    entries: ["xv-27"],
   },
   {
     id: "the-teletarchai",
@@ -660,6 +671,7 @@ export const BEINGS: Being[] = [
     light: "Through the empyrean rank only. Their business is completion — the English \"Perfectings\" renders it better than any light word would — and treating them as illuminators imports something the sources do not say.",
     sources: "LSJ s.vv. τελετάρχης, τελεταρχικός (lsj.gr); Damascius, De principiis 96; Proclus; R. Majercik, The Chaldean Oracles (1989); N. Spanu, Proclus and the Chaldean Oracles (2021)",
     confidence: "firm",
+    entries: ["xv-27"],
   },
   {
     id: "agathos-daimon",
@@ -673,6 +685,7 @@ export const BEINGS: Being[] = [
     light: "None to speak of, and the honest answer is worth more here than a stretched one. In particular, do not import the modern occult reading of the Agathos Daimon as the \"Holy Guardian Angel\" — that identification is a nineteenth- and twentieth-century construction laid over this cult figure and over Plato's personal daimon alike.",
     sources: "LSJ s.vv. δαίμων (ἀγαθὸς δ.), ἀγαθοδαίμων, Ἀγαθοδαίμων, ἀγαθός (lsj.gr); D. Ogden on Greek serpent cults; scholarship on the Agathos Daimon in Greco-Egyptian religion",
     confidence: "firm",
+    entries: ["xii-13", "xii-9"],
   },
   {
     id: "the-personal-daimon-of-the-myth-of-er",
@@ -687,6 +700,7 @@ export const BEINGS: Being[] = [
     light: "Only by way of the setting, but the setting is precise: the souls reach the column of light that binds heaven and earth before any choosing happens (Rep. X 616b), so the election of a daimon takes place at the luminous axis of the cosmos. The daimon itself is not described as a light-being.",
     sources: "Plato, Republic X 616b, 617d–e, 620d–e; LSJ s.v. δαίμων (lsj.gr); Iamblichus, De mysteriis IX; C. Addey and others on the personal daimōn in De mysteriis",
     confidence: "firm",
+    entries: ["xii-13"],
   },
   {
     id: "nous",
@@ -700,6 +714,7 @@ export const BEINGS: Being[] = [
     light: "The tradition's master metaphor for intelligible light, and the origin of most later uses. Plato's analogy of the Sun (Rep. VI 508–9) makes the Good in the intelligible realm what the sun is in the visible; Neoplatonism runs its whole doctrine of illumination off that comparison — Soul lit by Intellect, Intellect lit by the One. Whenever a later writer says \"intelligible light\" without explanation, this is the referent.",
     sources: "LSJ s.vv. νοῦς, νόος, νῶς (lsj.gr); Plotinus, Enneads V.1; Plato, Republic VI 508–9; Chaldean Oracles ed. des Places / Majercik (1989)",
     confidence: "firm",
+    entries: ["x-4"],
   },
   {
     id: "psyche",
@@ -714,6 +729,7 @@ export const BEINGS: Being[] = [
     light: "Considerable and technical, but receptive: the soul is what is illuminated by Nous, not what emits. The tradition also gives it a luminous body — the ὄχημα (óchēma, \"vehicle\"), called augoeides, light-formed, in the scholarly transliteration — which Porphyry treated as a temporary set of envelopes gathered during the descent and which Iamblichus argued was an ethereal body fashioned by the demiurge and therefore immortal. Proclus, Syrianus and Hermias multiply it into a hierarchy of vehicles. This is the direct ancestor of every later \"body of light\".",
     sources: "LSJ s.vv. ψυχή, ὄχημα, θεουργία (lsj.gr); Plotinus, Enneads V.1; Iamblichus, De mysteriis; J. F. Finamore on the vehicle of the soul; M. Griffin, \"Proclus on Place as the Luminous Vehicle of the Soul\"",
     confidence: "firm",
+    entries: ["x-5"],
   },
   {
     id: "the-angel-of-the-lord",
@@ -791,6 +807,7 @@ export const BEINGS: Being[] = [
     light: "Cordovero: וְה״ס י׳ עֶשֶׂר נִיצוֹצוֹת מֵהַסְפִירוֹת הָעֶלְיוֹנוֹת מִתְלַבְּשׁוֹת בּוֹ — ten sparks from the supernal sefirot clothe themselves in him, and it is because of the divine name lodged in him that Exodus 23:21 must be applied to him. The Hekhalot literature describes Enoch's flesh turned to flame and his body to fire at the transformation. The 'lesser YHWH' title attached to him in some Hekhalot manuscripts is the most theologically dangerous claim in the corpus, and Ḥagigah 15a is the tradition's own alarm about it.",
     sources: "b. Sanhedrin 38b, b. Ḥagigah 15a, b. Avodah Zarah 3b (Vilna text, disacorns/talmud-bavli-text); Moses Cordovero, Derishot be-Inyanei ha-Malʾakhim; Jastrow, Dictionary (1903), s.v.; 3 Enoch / Sefer Hekhalot and Schäfer's Synopse zur Hekhalot-Literatur (reported)",
     confidence: "contested",
+    entries: ["xii-14"],
   },
   {
     id: "sandalphon",
@@ -817,6 +834,7 @@ export const BEINGS: Being[] = [
     light: "Extensive and central. The Talmud's picture of the world to come is the righteous seated with their crowns, נֶהֱנִים מִזִּיו הַשְּׁכִינָה, 'taking pleasure in the radiance of the Shekhinah' (b. Berakhot 17a). In Kabbalah Malkhut is characteristically the vessel or mirror that has no light of its own and shines only with what it receives — which is precisely why she is figured as the moon.",
     sources: "b. Berakhot 17a (Vilna text); pointed Pirqei de-Rabbi Eliezer ch. 4; El Male Raḥamim, Yizkor (Sefaria corpus); bedtime Shema (pointed siddur); Cordovero, Derishot be-Inyanei ha-Malʾakhim",
     confidence: "firm",
+    entries: ["xii-18"],
   },
   {
     id: "the-hayyot-of-the-merkabah",
@@ -831,6 +849,7 @@ export const BEINGS: Being[] = [
     light: "The most sustained light-description of any Jewish being. Their appearance is כְּגַחֲלֵי אֵשׁ בֹּעֲרוֹת, 'like burning coals of fire', with torches moving among them, brightness to the fire, and lightning going out of it (Ezek 1:13). The Talmud reads their 'running and returning' (רָצוֹא וָשׁוֹב) as כְּאוֹר הַיּוֹצֵא מִפִּי הַכִּבְשָׁן, 'like the light that comes out of the mouth of a furnace', and a baraita there calls them חַיּוֹת אֵשׁ מְמַלְּלוֹת, fire-creatures that speak — silent when the divine word goes forth, speaking when it does not (b. Ḥagigah 13b).",
     sources: "WLC/OSHB Ezek.xml 1:5, 1:13, 1:20; 10:15, 10:20; b. Ḥagigah 13b (Vilna text); pointed Yotzer Or; Mishneh Torah, Yesodei ha-Torah 2:7",
     confidence: "firm",
+    entries: ["xv-44"],
   },
   {
     id: "the-covering-cherub",
@@ -845,6 +864,7 @@ export const BEINGS: Being[] = [
     light: "אַבְנֵי אֵשׁ, 'stones of fire', which he walks among and is expelled from (Ezek 28:14, 16), and the covering of precious stones in 28:13. The imagery is of a being set among burning brightness rather than radiant in itself.",
     sources: "WLC/OSHB Ezek.xml 28:14, 28:16",
     confidence: "contested",
+    entries: ["xii-6"],
   },
   {
     id: "ha-satan",
@@ -1097,6 +1117,7 @@ export const BEINGS: Being[] = [
     light: "The most explicitly luminous concept in the whole Iranian corpus, and the one that makes the Iranian equation of legitimacy with light: the rightful king shines because the Glory rests on him, and its withdrawal is a darkening. Note that the etymology is disputed — the traditional derivation from *hvar 'to shine' (giving 'radiance') is opposed by H. W. Bailey, who derived it from a root 'to obtain', giving 'good things obtained, fortune'. Most Iranists still favour the 'shine' connection, but the light-meaning should be presented as probable, not proven.",
     sources: "Yašt 19 (Zamyād Yašt); Enc. Iranica, 'FARR(AH)'; Bailey, Zoroastrian Problems in the Ninth-Century Books (1943); Gnoli, 'Avestan xvarənah-: the etymology and concept'; Skjærvø, 'Kayānian Glory'.",
     confidence: "probable",
+    entries: ["xv-52"],
   },
   {
     id: "ara-mainiiu",
@@ -1123,6 +1144,7 @@ export const BEINGS: Being[] = [
     light: "They are said to uphold the sky and to guide the sun, moon and stars along their courses (Yt 13.57) — which places them at the machinery of the lights rather than among the lights themselves. This is one of the clearest places where the Avesta makes the motion of the luminaries a moral and personal act rather than a mechanism.",
     sources: "Yašt 13 (Frawardīn Yašt); Enc. Iranica, 'FRAVAŠI' and 'FRAWARDĪN YAŠT'; Boyce, HZ I; Malandra, An Introduction to Ancient Iranian Religion.",
     confidence: "firm",
+    entries: ["xii-10"],
   },
   {
     id: "zurwan",
@@ -1150,6 +1172,7 @@ export const BEINGS: Being[] = [
     light: "The most luminous of all created things in this system: they touch the θεαρχικὴ ἔλλαμψις (the divine-source illumination) without mediation and hand it down. Dionysius's whole angelology is a photagogy — light-giving (φωτοδοσία), rays (αὐγαί), illumination (ἔλλαμψις) are its working vocabulary, and the Seraphim are the first burning of that light.",
     sources: "Ps.-Dionysius, De caelesti hierarchia 6.2, 7.1 (Migne PG 3, verified in the Calfa–GREgORI Patrologia Graeca corpus); Isaiah 6:2, 6:6 LXX (Rahlfs, verified via the Marcion LXX database); critical ed. Heil–Ritter, Corpus Dionysiacum II.",
     confidence: "firm",
+    entries: ["xii-6"],
   },
   {
     id: "cherubim",
@@ -1164,6 +1187,7 @@ export const BEINGS: Being[] = [
     light: "Their name is glossed as an outpouring — they receive the first light and let it flow. In the Byzantine liturgy the congregation sings the Cherubic Hymn as those who ‘mystically represent the Cherubim’, which is a living, not antiquarian, use of the term.",
     sources: "Ps.-Dionysius, De caelesti hierarchia 7.1 (PG 3); Genesis 3:24, Ezekiel 10:1 LXX; Exodus 25:18–22.",
     confidence: "firm",
+    entries: ["xii-6"],
   },
   {
     id: "thrones",
@@ -1177,6 +1201,7 @@ export const BEINGS: Being[] = [
     light: "The steady vessel of the thearchic ray: what the Seraphim burn with and the Cherubim know, the Thrones simply and immovably hold.",
     sources: "Colossians 1:16 (SBLGNT, MorphGNT edition); Ps.-Dionysius, De caelesti hierarchia 6.2, 7.1 (PG 3).",
     confidence: "firm",
+    entries: ["xii-6"],
   },
   {
     id: "dominions",
@@ -1191,6 +1216,7 @@ export const BEINGS: Being[] = [
     light: "They receive the illumination of the first triad and lord it over nothing except their own likeness to the source of light; their rule is a transmission, not a possession.",
     sources: "Colossians 1:16, Ephesians 1:21 (SBLGNT); Ps.-Dionysius, De caelesti hierarchia 8.1 (PG 3).",
     confidence: "firm",
+    entries: ["xii-7"],
   },
   {
     id: "powers",
@@ -1204,6 +1230,7 @@ export const BEINGS: Being[] = [
     light: "Their virtue is the strength not to flinch at the light — they hold the incoming ἔλλαμψις without wavering and pass it on.",
     sources: "Ephesians 1:21 (SBLGNT); Ps.-Dionysius, De caelesti hierarchia 8 (PG 3, chapter heading ‘περὶ κυριοτήτων, καὶ δυνάμεων, καὶ ἐξουσιῶν’).",
     confidence: "firm",
+    entries: ["xii-7"],
   },
   {
     id: "authorities",
@@ -1217,6 +1244,7 @@ export const BEINGS: Being[] = [
     light: "They order the reception of light into a governable form, so that the third triad can carry it out to the world.",
     sources: "Colossians 1:16 (SBLGNT); Ps.-Dionysius, De caelesti hierarchia 8 and its scholia (PG 3).",
     confidence: "firm",
+    entries: ["xii-7"],
   },
   {
     id: "principalities",
@@ -1230,6 +1258,7 @@ export const BEINGS: Being[] = [
     light: "The point at which the light begins to be directed outward, toward the hierarchies that human beings can enter.",
     sources: "Colossians 1:16 (SBLGNT); Ps.-Dionysius, De caelesti hierarchia 9 (PG 3).",
     confidence: "firm",
+    entries: ["xii-8"],
   },
   {
     id: "archangels",
@@ -1243,6 +1272,7 @@ export const BEINGS: Being[] = [
     light: "A hinge in the transmission: they receive from above in a more hidden way and give below in a more manifest one.",
     sources: "1 Thessalonians 4:16, Jude 9 (SBLGNT); Ps.-Dionysius, De caelesti hierarchia 9 (PG 3); 1 Enoch 20 for the named seven.",
     confidence: "firm",
+    entries: ["xii-8"],
   },
   {
     id: "angels",
@@ -1256,6 +1286,7 @@ export const BEINGS: Being[] = [
     light: "The last stage of the descent of light, and the one at which it reaches a human hierarchy — Dionysius's ἐκφαντορικά, the ‘manifesters’ of the thearchic illumination.",
     sources: "Ps.-Dionysius, De caelesti hierarchia 5, 9 and scholia (PG 3): ‘ὡς τελευταίων τῶν ἀγγέλων ὄντων, τὰ ὑπερκείμενα πάντα ἄγγελοι ἐκλήθησαν τῷ τῶν ὑποδεεστέρων ὀνόματι’.",
     confidence: "firm",
+    entries: ["xii-8"],
   },
   {
     id: "christ-the-logos",
@@ -1269,6 +1300,7 @@ export const BEINGS: Being[] = [
     light: "The controlling image of the whole tradition: ‘the true light that enlightens everyone’ (John 1:9), the light Dionysius calls the θεαρχικὴ ἀκτίς whose descent through the ranks is the celestial hierarchy, and the light whose theft and recovery is the Gnostic plot.",
     sources: "John 1:1, 1:9, 1:14 (SBLGNT, MorphGNT edition); Irenaeus, Adv. haer. 1.29.1–2 (Greek fragment, First1KGreek); Nag Hammadi Coptic corpus (Gospel of Truth NHC I,3; Ap. John NHC II,1).",
     confidence: "firm",
+    entries: ["ii-29", "xii-19"],
   },
   {
     id: "sophia",
@@ -1282,6 +1314,7 @@ export const BEINGS: Being[] = [
     light: "Her substance is light: what she loses to Yaldabaoth is a portion of light-power (ⲇⲩⲛⲁⲙⲓⲥ), and the entire cosmic drama is its recovery. In Ap. John she is renewed by the Epinoia of light (ⲉⲡⲓⲛⲟⲓⲁ, 40× in the corpus) sent into Adam.",
     sources: "Irenaeus, Adv. haer. 1.2, 1.29.4, 1.30.2–3 (Greek fragments, First1KGreek); Hippolytus, Refutatio 6.30–31; Ap. John NHC II,1 and III,1; Hypostasis of the Archons NHC II,4; On the Origin of the World NHC II,5.",
     confidence: "firm",
+    entries: ["xii-4", "xv-36"],
   },
   {
     id: "barbelo",
@@ -1308,6 +1341,7 @@ export const BEINGS: Being[] = [
     light: "He is the anti-luminary: a being of fire and darkness who possesses stolen light he cannot see by. In Ap. John he is expressly ‘ignorant’, and the whole redemptive action consists in getting light past him.",
     sources: "Ap. John NHC II,1 (ⲓ̈ⲁⲗⲧⲁⲃⲁⲱⲑ) and NHC III,1 (ⲓ̈ⲁⲗⲇⲁⲃⲁⲱⲑ); Hypostasis of the Archons NHC II,4; On the Origin of the World NHC II,5; Origen, Contra Celsum 6.31–32 (Greek, First1KGreek/Perseus); Epiphanius, Pan. 25–26; Irenaeus, Adv. haer. 1.30.",
     confidence: "firm",
+    entries: ["xii-11"],
   },
   {
     id: "autogenes",
@@ -1335,6 +1369,7 @@ export const BEINGS: Being[] = [
     light: "She turns to the light that left her and is formed by it; the light she cannot keep becomes the psychic substance of the cosmos. Her passion is described as being outside the light and reaching back toward it.",
     sources: "Irenaeus, Adv. haer. 1.4.5–1.5.6 (Greek fragments preserved via Epiphanius, Pan. 31; First1KGreek); Hippolytus, Refutatio 6.30–34; Gospel of Philip NHC II,3 60.10–15; First Apocalypse of James NHC V,3; Hebrew: Proverbs 9:1 (OSHB / Westminster Leningrad Codex).",
     confidence: "firm",
+    entries: ["xv-36"],
   },
   {
     id: "the-demiurge",
@@ -1348,6 +1383,7 @@ export const BEINGS: Being[] = [
     light: "He works from an image of a light he has not seen. In the Tripartite Tractate the Logos acts through the Demiurge, who does not know that a higher one exists.",
     sources: "Tripartite Tractate NHC I,5; A Valentinian Exposition NHC XI,2; Irenaeus, Adv. haer. 1.5; Hippolytus, Refutatio 6.32–34; Plato, Timaeus 28a for the term's origin.",
     confidence: "firm",
+    entries: ["xii-11"],
   },
   {
     id: "the-ogdoad-and-the-hebdomad",
@@ -1401,6 +1437,7 @@ export const BEINGS: Being[] = [
     light: "Wholly a being of light and literally visible: the Milky Way as the ladder of ascending souls, with the moon filling and emptying as the ferry that receives them.",
     sources: "W. Sundermann, ‘Manicheism ii. The Manichean Pantheon’ and ‘Cosmogony and Cosmology iii. In Manicheism’, Encyclopaedia Iranica; Coptic Kephalaia; A. J. Welburn, Mani, the Angel and the Column of Glory (1998). Language forms rest on secondary report.",
     confidence: "probable",
+    entries: ["xv-52"],
   },
   {
     id: "indra",
@@ -1427,6 +1464,7 @@ export const BEINGS: Being[] = [
     light: "Central, and the most useful being here for a register about light. शोचिष्केश means 'flame-haired'; कृष्णवर्त्मन् 'black-tracked' names the smoke behind the flame, so his light is defined against its own residue. In Upaniṣadic thought the fire's light becomes a standing image for the light of consciousness.",
     sources: "Amarakośa 1.1.64–65; Ṛgveda 1.1.1; Hiraṇyakeśi Gṛhyasūtra and Bodhāyana Dharmasūtra (pratīkas)",
     confidence: "firm",
+    entries: ["xv-57"],
   },
   {
     id: "surya",
@@ -1440,6 +1478,7 @@ export const BEINGS: Being[] = [
     light: "Absolutely central — he is the luminary itself. Keep him lexically distinct from ज्योतिस् jyotis (light in general), तेजस् tejas (fiery potency), प्रकाश prakāśa (the act of making manifest) and प्रभा prabhā (emitted lustre). Sanskrit maintains these distinctions carefully and collapsing them loses the tradition's actual optics.",
     sources: "Halāyudha, Abhidhānaratnamālā 1.1.1.35–37; Amarakośa 1.1 (Āditya synonyms)",
     confidence: "firm",
+    entries: ["xv-57"],
   },
   {
     id: "savitr",
@@ -1466,6 +1505,7 @@ export const BEINGS: Being[] = [
     light: "Among the most light-saturated beings in the entire corpus. RV 7.77.3: उषा अदर्शि रश्मिभिर् व्यक्ता — 'Dawn has appeared, made manifest by her rays'; RV 7.77.5 asks her to shine forth with her best beams. She is the daily re-arrival of visibility as such, and the Ṛgvedic hymns to her are the tradition's primary poetry of light.",
     sources: "Ṛgveda 6.64.6, 7.77.3–6 (GRETIL Devanagari e-text); Pāṇini, Aṣṭādhyāyī 4.2.31, 6.3.31",
     confidence: "firm",
+    entries: ["xv-57"],
   },
   {
     id: "varuna",
@@ -1625,6 +1665,7 @@ export const BEINGS: Being[] = [
     light: "Not a light-being. His awakening is figured with dawn imagery and he is called \"eye of the world\", but radiance as an identity belongs to Amitābha and Vairocana, not to him.",
     sources: "84000 glossary entity-43916, entity-28430; CC-CEDICT 釋迦牟尼, 釋迦牟尼佛, 釋迦佛",
     confidence: "firm",
+    entries: ["xv-68"],
   },
   {
     id: "amitabha",
@@ -1652,6 +1693,7 @@ export const BEINGS: Being[] = [
     light: "His identity. Vairocana derives from virocana, \"shining, illuminating\"; 84000 translates the name \"The Illuminator\" and \"Completely Illuminating\", and one entry as \"Brilliance of the Sun\". The Tibetan རྣམ་པར་སྣང་མཛད། means \"the one who makes fully luminous/manifest\", and the Chinese 大日 is literally \"Great Sun\". If any Buddhist figure belongs in an architecture of light, it is this one.",
     sources: "84000 glossary entity-35931, entity-26947, entity-31633, entity-22645; CC-CEDICT 大日如來",
     confidence: "contested",
+    entries: ["xv-68"],
   },
   {
     id: "maitreya",
@@ -2071,6 +2113,7 @@ export const BEINGS: Being[] = [
     light: "Not himself called luminous in the Qurʾān, but as an angel he belongs to the order 'created from light'. Q 53:5-11 describes the Prophet seeing him 'on the highest horizon', which the tradition reads as a vision of his true form filling the sky. His title al-Rūḥ al-Amīn ties him to the descent of revelation, figured throughout the tradition as an illumination of the heart.",
     sources: "Qurʾān 2:97, 2:98, 66:4 (Tanzil Ḥafṣ text + independent Uthmānī cross-check; 3 occurrences, exhaustively verified); Ṣaḥīḥ Muslim; Musnad Aḥmad; EI² art. 'Djabrāʾīl'.",
     confidence: "firm",
+    entries: ["v-9"],
   },
   {
     id: "mikal",
@@ -2085,6 +2128,7 @@ export const BEINGS: Being[] = [
     light: "No independent light attribution; he shares the angelic substance of light. Exegetes sometimes contrast his portfolio with Jibrīl's as sustenance (water and earth) against revelation (light and knowledge), but this is a homiletic pairing, not a scriptural one.",
     sources: "Qurʾān 2:98 (sole occurrence, verified in two digital editions); Ṣaḥīḥ Muslim, Ṣalāt al-musāfirīn; Musnad Aḥmad (38 hadith attestations of مِيكَائِيل verified); EI² art. 'Mīkāl'.",
     confidence: "firm",
+    entries: ["v-9"],
   },
   {
     id: "israfil",
@@ -2098,6 +2142,7 @@ export const BEINGS: Being[] = [
     light: "Nothing specific in the sources. Later cosmological writing places him nearest the Throne and describes him as vast beyond measure, sometimes with the Preserved Tablet before him, but this is elaboration rather than attested doctrine.",
     sources: "Ṣaḥīḥ Muslim; Musnad Aḥmad; Sunan al-Tirmidhī, al-Nasāʾī, Abī Dāwūd, Ibn Māja, al-Dārimī (11 attestations verified by exhaustive search of 62,178 records); Qurʾān 39:68 for the Trumpet alone; EI² art. 'Isrāfīl'.",
     confidence: "firm",
+    entries: ["v-9"],
   },
   {
     id: "the-angel-of-death",
