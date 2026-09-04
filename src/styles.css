@@ -15,12 +15,22 @@
   --color-border: var(--border);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  /* Gentium Plus stands behind both faces for one reason: neither EB Garamond
-     nor Inter carries the Egyptological letters ꜣ (U+A723) and ꜥ (U+A725), and
-     the transliterations need them. Fallback is per character, so ordinary text
-     still sets in Garamond and only the two letters come from Gentium. */
-  --font-serif: "EB Garamond", "Gentium Plus", ui-serif, Georgia, serif;
-  --font-sans: "Inter", "Gentium Plus", ui-sans-serif, system-ui, sans-serif;
+  /* Fallback is per character, so the stacks can carry every script the volumes
+     quote in without touching a word of English. Gentium Plus supplies the
+     Egyptological letters ꜣ (U+A723) and ꜥ (U+A725), which neither EB Garamond
+     nor Inter has; the Noto subsets below supply their own scripts, and their
+     unicode-range keeps each of them to it. A Hebrew or hieroglyphic word set
+     anywhere on the site therefore comes out in the site's own face rather than
+     in whatever the visitor's device happens to have — or, on the devices that
+     have nothing, rather than in nothing at all. */
+  --font-serif: "EB Garamond", "Gentium Plus", "Noto Serif Hebrew", "Noto Naskh Arabic",
+    "Noto Serif Devanagari", "Noto Sans Coptic", "Noto Serif Tibetan", "Noto Serif SC",
+    "Noto Sans Cuneiform", "Noto Sans Egyptian Hieroglyphs", "Noto Sans Avestan",
+    ui-serif, Georgia, serif;
+  --font-sans: "Inter", "Gentium Plus", "Noto Serif Hebrew", "Noto Naskh Arabic",
+    "Noto Serif Devanagari", "Noto Sans Coptic", "Noto Serif Tibetan", "Noto Serif SC",
+    "Noto Sans Cuneiform", "Noto Sans Egyptian Hieroglyphs", "Noto Sans Avestan",
+    ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {

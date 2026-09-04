@@ -58,6 +58,7 @@ import {
 import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
 import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
+import { PetalRosette } from "@/components/PetalRosette";
 import { Term, TermRegister, type TermData } from "@/components/Term";
 import { CrossMark } from "@/components/CrossMark";
 import {
@@ -96,6 +97,21 @@ const NAV = [
 
 /** The wisdom vocabulary § XLVI sets. Hebrew is pointed as a dictionary points
  *  it; Greek is polytonic; the Coptic is the form the Nag Hammadi codices use. */
+/** The Hebrew § VII borrows, with the pointing convention the section states:
+ *  biblical words pointed, later technical terms unpointed. */
+const KABBALAH_TERMS: TermData[] = [
+  { script: "hebrew", orig: "אֵין סוֹף", tr: "ʾein sof", gloss: "without end. Not a name of God but a refusal of one: the boundless, before anything can be predicated of it." },
+  { script: "hebrew", orig: "צמצום", tr: "tzimtzum", gloss: "contraction, withdrawal. The first act is a making-room: the infinite withdraws so that something finite can stand where it was.", note: "Luria's term, sixteenth century. Whether the withdrawal is literal or figurative was disputed almost immediately, and the dispute is the whole later argument in miniature." },
+  { script: "hebrew", orig: "ספירות", tr: "sefirot · sg. sefirah", gloss: "the ten: vessels of divine quality through which the boundless becomes ordered power. The root suggests counting and, by another reading, sapphire — a brightness." },
+  { script: "hebrew", orig: "אור ישר", tr: "or yashar", gloss: "direct light: the light that descends from the source into the vessel." },
+  { script: "hebrew", orig: "אור חוזר", tr: "or ḥozer", gloss: "returning light: what the vessel sends back. The pair is why this system is not a one-way emanation." },
+  { script: "hebrew", orig: "שבירת הכלים", tr: "shevirat ha-kelim", gloss: "the breaking of the vessels. The light was more than the vessels could hold, and they broke — which is where this tradition puts the origin of disorder, in a structural failure rather than a moral one." },
+  { script: "hebrew", orig: "קליפות", tr: "qelipot · sg. qelipah", gloss: "husks, shells: the shards of the broken vessels, which hold captive sparks and are nourished by them." },
+  { script: "hebrew", orig: "ניצוצות", tr: "niṣoṣot", gloss: "the sparks: the light caught in the shells, which the work of repair gathers." },
+  { script: "hebrew", orig: "תיקון", tr: "tiqqun", gloss: "repair, mending, setting right — the labour of gathering what fell. In the modern phrase tiqqun ʿolam it has travelled a long way from Safed." },
+  { script: "hebrew", orig: "שְׁכִינָה", tr: "shekhinah", gloss: "the indwelling presence, which the tradition says goes into exile with the people and is gathered back in the same work of repair." },
+];
+
 const SOPHIA_TERMS: TermData[] = [
   { script: "hebrew", orig: "חָכְמָה", tr: "ḥokmāh", gloss: "wisdom — the ordinary Hebrew word, grammatically feminine, as every abstract noun of its kind is.", note: "The site prints Chochmah for the sefirah of the same root, following its diagrams; the Kabbalistic sense is later and distinct." },
   { script: "hebrew", orig: "חָכְמוֹת", tr: "ḥokmôt", gloss: "the plural-looking form that takes a singular verb at Proverbs 1:20 and 9:1 — wisdom par excellence, the one who cries out in the street and builds the house." },
@@ -1197,6 +1213,32 @@ function Index() {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* the vocabulary, in Hebrew */}
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              אוֹצָר · The words themselves
+            </p>
+            <h3 className="mt-6 font-serif text-3xl leading-tight">
+              What the tradition <span className="italic text-gold">actually says</span>
+            </h3>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Every term this section borrows is a Hebrew word with a life of its own, and most of
+              them are Lurianic — sixteenth-century Safed, not ancient. Set beside their English
+              renderings they are harder to romanticise: a contraction is a contraction, a shell is
+              a shell, and repair is what you do to something broken.
+            </p>
+            <div className="mt-8 max-w-4xl">
+              <TermRegister terms={KABBALAH_TERMS} />
+            </div>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+              A convention worth naming: the biblical words are set with their vowel points, as a
+              printed Bible sets them, and the later technical terms are set unpointed, as the
+              Kabbalistic literature itself sets them. The site&rsquo;s English spellings of the
+              sefirot follow its own diagrams — Chochmah, Malchut — rather than a scholarly
+              transliteration, and are left that way for consistency with them.
+            </p>
           </div>
 
           {/* Hebrew Letters */}
@@ -3363,6 +3405,53 @@ function Index() {
               through Avalon's <em>The Serpent Power</em>; rainbow colours, endocrine
               correspondences, and many psychological meanings were standardized later. What
               follows uses that model as a particular working map, not as the only one.
+            </p>
+          </div>
+
+          {/* the petals */}
+          <div className="mt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              कमल · The petals, and what they count
+            </p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              In the text the modern map descends from, each centre is a lotus with a fixed number
+              of petals, and each petal carries a letter. The six lower centres come to fifty petals
+              between them — the Sanskrit alphabet, once. That is the strongest internal evidence
+              that this is a system rather than a list: the body is being described as an alphabet
+              laid out along a spine.
+            </p>
+            <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:grid-cols-7">
+              {[
+                { n: 4, s: "मूलाधार", tr: "Mūlādhāra", b: "लं", bt: "laṃ" },
+                { n: 6, s: "स्वाधिष्ठान", tr: "Svādhiṣṭhāna", b: "वं", bt: "vaṃ" },
+                { n: 10, s: "मणिपूर", tr: "Maṇipūra", b: "रं", bt: "raṃ" },
+                { n: 12, s: "अनाहत", tr: "Anāhata", b: "यं", bt: "yaṃ" },
+                { n: 16, s: "विशुद्ध", tr: "Viśuddha", b: "हं", bt: "haṃ" },
+                { n: 2, s: "आज्ञा", tr: "Ājñā", b: "ॐ", bt: "oṃ" },
+                { n: 1000, s: "सहस्रार", tr: "Sahasrāra", b: "", bt: "beyond the syllables" },
+              ].map((c) => (
+                <div key={c.tr} className="text-center">
+                  <PetalRosette
+                    n={c.n}
+                    bija={c.b || undefined}
+                    size={86}
+                    className="mx-auto text-gold"
+                    label={`${c.tr}, a lotus of ${c.n === 1000 ? "a thousand" : c.n} petals`}
+                  />
+                  <p className="mt-3 font-serif text-lg text-bone/90" lang="sa">{c.s}</p>
+                  <p className="mt-1 font-serif text-sm italic text-gold-dim">{c.tr}</p>
+                  <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+                    {c.n === 1000 ? "a thousand" : `${c.n} petals`} · {c.bt}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 max-w-3xl text-sm leading-relaxed text-bone/60">
+              The counts and the seed syllables are those of the Ṣaṭ-Cakra-Nirūpaṇa, written by
+              Pūrṇānanda in 1526 and translated by Woodroffe in 1918 — which is late, and is the
+              route by which nearly everything the modern world says about chakras arrived. Other
+              tantric systems count differently. The crown is drawn here as a fringe of
+              forty-eight because a thousand petals cannot be drawn honestly at this size.
             </p>
           </div>
 
