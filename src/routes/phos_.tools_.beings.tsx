@@ -86,6 +86,13 @@ function Register() {
   }, [tradition, cls, plane, q]);
   // What the filters keep, for the field: it dims the rest rather than dropping it.
   const shown = useMemo(() => new Set(rows.map((b) => b.id)), [rows]);
+  // The field's columns. TRADITION_ORDER first, then anything the register holds
+  // that the order has not been told about — a being should never be drawn
+  // nowhere because a column was forgotten.
+  const columns = useMemo(
+    () => [...TRADITION_ORDER, ...traditions.filter((t) => !TRADITION_ORDER.includes(t))],
+    [traditions],
+  );
   const kinds = KINDS.filter((k) => !tradition || k.tradition === tradition);
 
   return (
@@ -225,13 +232,23 @@ function Register() {
           <div key={String(compact)} className={compact ? "sm:hidden" : "hidden sm:block"}>
             <RegisterField
               compact={compact}
-              traditions={TRADITION_ORDER}
+              traditions={columns}
               visible={shown}
               tradition={tradition}
               plane={plane}
               onPick={(id) => {
+                // A dimmed mark has no row to open — the filters excluded it — so
+                // taking one clears them rather than doing nothing.
+                if (!shown.has(id)) {
+                  setTradition(null);
+                  setCls(null);
+                  setPlane(null);
+                  setQ("");
+                }
                 setOpen(id);
-                document.getElementById(`being-${id}`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+                requestAnimationFrame(() =>
+                  document.getElementById(`being-${id}`)?.scrollIntoView({ block: "center", behavior: "smooth" }),
+                );
               }}
               onPlane={(p) => setPlane(plane === p ? null : p)}
               onTradition={(t) => setTradition(tradition === t ? null : t)}

@@ -105,6 +105,16 @@ export const KINDS: KindTerm[] = [
  * The register itself. It grows tradition by tradition; each entry carries the
  * script it was verified in, or none, and says how firm it is.
  */
+/**
+ * The first clause of a tradition's own word for a kind, for the places that
+ * set it in tracked uppercase beside a name — where a full sentence becomes two
+ * lines of shouting. The register's own rows show the kind in full.
+ */
+export function shortKind(kind: string): string {
+  const first = kind.split(/[—,;.(]/)[0].trim();
+  return first.length > 46 ? `${first.slice(0, 44).trimEnd()}…` : first;
+}
+
 export const BEINGS: Being[] = [
   {
     id: "utu-samas",

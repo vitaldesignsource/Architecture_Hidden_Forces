@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { BEINGS, PLANES, type Being, type Plane } from "@/lib/phos/beings";
+import { BEINGS, PLANES, shortKind, type Being, type Plane } from "@/lib/phos/beings";
 
 /**
  * The field: every being in the register placed at once on the two axes that
@@ -31,7 +31,7 @@ const OPACITY: Record<string, number> = { firm: 0.95, probable: 0.68, contested:
 function gloss(b: Being) {
   const tr = b.native?.tr;
   if (tr && tr.toLowerCase() !== b.name.toLowerCase()) return tr;
-  return b.kind.split(/[—,;(]/)[0].trim();
+  return shortKind(b.kind);
 }
 
 export function RegisterField({

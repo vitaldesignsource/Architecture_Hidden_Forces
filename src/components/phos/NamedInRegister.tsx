@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Term } from "@/components/Term";
-import { BEINGS, CLASSES } from "@/lib/phos/beings";
+import { BEINGS, CLASSES, shortKind } from "@/lib/phos/beings";
 
 /**
  * The other direction of the register's link. An entry that a being is filed
@@ -55,7 +55,7 @@ export function NamedInRegister({ id }: { id: string }) {
               {b.office}
             </span>
             <span className="mt-1.5 block font-mono text-[9px] uppercase tracking-[0.16em] text-bone/40">
-              {b.tradition} · {b.kind.split(",")[0].split(";")[0].trim()} ·{" "}
+              {b.tradition} · {shortKind(b.kind)} ·{" "}
               {CLASSES.find((c) => c.k === b.cls)?.label ?? b.cls}
             </span>
           </Link>
