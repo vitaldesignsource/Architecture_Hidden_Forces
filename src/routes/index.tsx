@@ -57,6 +57,8 @@ import {
 } from "@/components/diagrams";
 import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
 import { PassageGeometry } from "@/components/PassageGeometry";
+import { SevenPillars } from "@/components/SevenPillars";
+import { Term, TermRegister, type TermData } from "@/components/Term";
 import { CrossMark } from "@/components/CrossMark";
 import {
   KhekerFrieze,
@@ -90,6 +92,23 @@ const NAV = [
   { id: "symbol", label: "Symbol" },
   { id: "astrology", label: "Sky" },
   { id: "rightrelation", label: "Relation" },
+];
+
+/** The wisdom vocabulary § XLVI sets. Hebrew is pointed as a dictionary points
+ *  it; Greek is polytonic; the Coptic is the form the Nag Hammadi codices use. */
+const SOPHIA_TERMS: TermData[] = [
+  { script: "hebrew", orig: "חָכְמָה", tr: "ḥokmāh", gloss: "wisdom — the ordinary Hebrew word, grammatically feminine, as every abstract noun of its kind is.", note: "The site prints Chochmah for the sefirah of the same root, following its diagrams; the Kabbalistic sense is later and distinct." },
+  { script: "hebrew", orig: "חָכְמוֹת", tr: "ḥokmôt", gloss: "the plural-looking form that takes a singular verb at Proverbs 1:20 and 9:1 — wisdom par excellence, the one who cries out in the street and builds the house." },
+  { script: "greek", orig: "Σοφία", tr: "sophia", gloss: "what the Septuagint puts for ḥokmāh, and the name under which the figure travels through Greek, Coptic and Latin." },
+  { script: "hebrew", orig: "שְׁכִינָה", tr: "shekhinah", gloss: "the indwelling: the rabbinic term for the divine presence that goes into exile with the people. It is not a biblical word, and its later feminine reading is the Kabbalists', not the Talmud's." },
+  { script: "greek", orig: "ἀπαύγασμα", tr: "apaugasma", gloss: "a radiance thrown off, the word Wisdom 7:26 uses of her: a reflection of eternal light, beside the spotless mirror and the image of goodness." },
+];
+
+/** The Gnostic vocabulary, in the Coptic the codices are written in. */
+const GNOSTIC_TERMS: TermData[] = [
+  { script: "coptic", orig: "ⲥⲟⲫⲓⲁ", tr: "sophia", gloss: "the Greek word taken over unchanged into Coptic, as most of the technical vocabulary of these texts is." },
+  { script: "coptic", orig: "ⲡⲓⲥⲧⲓⲥ ⲥⲟⲫⲓⲁ", tr: "pistis sophia", gloss: "Faith-Wisdom: the title figure of the Askew Codex, who is deceived by a false light, dragged down into chaos, and utters thirteen penitences before she is raised." },
+  { script: "greek", orig: "ἐνθύμησις", tr: "enthymēsis", gloss: "the intention or desire that, in the Valentinian account as Irenaeus reports it, is separated from Sophia and becomes the lower Sophia, Achamoth." },
 ];
 
 export const Route = createFileRoute("/")({
@@ -9624,7 +9643,13 @@ function Index() {
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVI · Sophia and the Divine Feminine
           </p>
-          <h2 className="mt-6 font-serif text-4xl leading-tight">Σοφία</h2>
+          <div className="mt-8 flex flex-wrap items-baseline gap-x-8 gap-y-3">
+            <h2 className="font-serif text-4xl leading-tight">Σοφία</h2>
+            <Term script="hebrew" orig="חָכְמָה" label="ḥokmāh — wisdom" className="text-4xl text-gold" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              sophia · ḥokmāh
+            </p>
+          </div>
           <p className="mt-4 font-serif text-lg italic text-gold-dim">
             The intelligence through which power learns how to serve life
           </p>
@@ -9710,6 +9735,152 @@ function Index() {
 
           <div className="mt-24">
             <SophianicFaces />
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Where she is named
+            </p>
+            <div className="mt-10 flex justify-center">
+              <SevenPillars className="w-full max-w-2xl text-gold" height={120} />
+            </div>
+            <p className="mt-6 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+              Wisdom has built her house, she has hewn her seven pillars · Proverbs 9:1
+            </p>
+            <p className="mt-12 text-base leading-relaxed text-muted-foreground">
+              She is not a personification the treatise has invented. In Proverbs she speaks in the
+              first person, calls in the street, keeps a house and sets a table; and in the passage
+              everything else turns on, she says she was there before the world was made. Two words
+              in that passage have been argued over for two thousand years, and both arguments are
+              worth knowing before anyone builds on the verse.
+            </p>
+            <div className="mt-10 space-y-8">
+              <div className="border-l-2 border-gold/40 pl-5">
+                <p className="flex flex-wrap items-baseline gap-x-4">
+                  <Term script="hebrew" orig="קָנָנִי" label="qānānî — he created me, or acquired me" className="text-2xl text-gold" />
+                  <span className="font-serif text-base italic text-bone/85">qānānî</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Proverbs 8:22</span>
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  &ldquo;The Lord <span className="italic">qānānî</span> at the beginning of his
+                  way.&rdquo; The verb ordinarily means to acquire or possess; in a handful of
+                  places it appears to mean to create or beget. The Septuagint chose{" "}
+                  <span className="italic">ektisen</span>, created — which is why this verse became
+                  the central proof-text of the Arian controversy, with both sides assuming the
+                  speaker was the pre-existent Son. English versions still divide, and the Hebrew
+                  genuinely allows both.
+                </p>
+              </div>
+              <div className="border-l-2 border-gold/40 pl-5">
+                <p className="flex flex-wrap items-baseline gap-x-4">
+                  <Term script="hebrew" orig="אָמוֹן" label="ʾāmôn — master worker, or nursling, or confidant" className="text-2xl text-gold" />
+                  <span className="font-serif text-base italic text-bone/85">ʾāmôn</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Proverbs 8:30</span>
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  &ldquo;Then I was beside him, <span className="italic">ʾāmôn</span>.&rdquo; A
+                  master worker, says one reading, and Wisdom is the artisan of the world. A little
+                  child, says another, and she is the one at play beside the maker — the same verse
+                  goes on to speak of delight and of playing. A confidant, says a third. The choice
+                  changes what kind of figure she is, and no reading has won.
+                </p>
+              </div>
+            </div>
+            <p className="mt-10 text-base leading-relaxed text-muted-foreground">
+              What the later texts do with her is a sequence, not a single doctrine. Ben Sira has her
+              looking for a resting place among the nations and being told to pitch her tent in
+              Jacob — and then, in his own voice rather than hers, identifies her with the book of
+              the covenant. The Wisdom of Solomon gives her the language this volume keeps returning
+              to: a breath of the power of God, a pure emanation of his glory, a spotless mirror of
+              his working, an image of his goodness. And 1 Enoch tells it the other way: Wisdom went
+              out to dwell among men, found no dwelling place, and returned to her seat among the
+              angels.
+            </p>
+            <div className="mt-10 max-w-3xl">
+              <TermRegister terms={SOPHIA_TERMS} />
+            </div>
+            <p className="mt-8 text-sm leading-relaxed text-bone/60">
+              One thing to notice about the transmission. In Philo, the functions Wisdom holds in the
+              Greek Jewish texts begin to pass to the Logos — the same offices, a masculine noun —
+              and by the time the prologue of John is written it is the Logos who was in the
+              beginning, who was with God, through whom all things were made. Nothing here says that
+              was a suppression. But it is the same job description, and the gender of the word doing
+              it changed.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The texts people mean by &ldquo;the Gospel of Sophia&rdquo;
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              There is no Gospel of Sophia. The phrase circulates, and it does point at something
+              real, but a reader who goes looking for a text with that title will not find one —
+              so it is worth saying plainly what the two texts behind the phrase are.
+            </p>
+            <div className="mt-8 space-y-px">
+              {[
+                ["The Sophia of Jesus Christ",
+                 "Nag Hammadi Codex III,4 and Berlin Codex 8502,3",
+                 "A revelation dialogue: the risen Christ appears to the disciples on a mountain in Galilee and answers their questions. It is a Christianised rewriting of a philosophical letter, Eugnostos the Blessed, which survives beside it in the same codex — so the two can be read against each other, which is unusual and useful. Sophia appears in the upper emanations rather than as the cause of a catastrophe; the reproach found in other texts is muted here, though the work still speaks of what she did without her consort."],
+                ["Pistis Sophia",
+                 "the Askew Codex, in Coptic, probably third century",
+                 "A long dialogue in which the risen Christ teaches for years after the resurrection, and Sophia — Faith-Wisdom — repents in thirteen penitences after being deceived and dragged down by a false light. G. R. S. Mead's 1896 translation carried the subtitle A Gnostic Gospel, which is where the phrase most likely comes from; his second edition changed it to A Gnostic Miscellany."],
+              ].map(([t, w, d]) => (
+                <div key={t} className="border-b border-border py-6">
+                  <p className="font-serif text-xl text-bone/90">{t}</p>
+                  <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{w}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Two others belong beside them. <span className="italic">The Thunder, Perfect Mind</span>{" "}
+              is a poem in the first person by a speaker who is both &ldquo;the whore and the holy
+              one&rdquo;, &ldquo;the barren one and many are her sons&rdquo; — its editor warns
+              against calling it Gnostic at all, and it names no Sophia, but no other ancient text
+              holds those opposites in one voice so unflinchingly. And the Valentinian Sophia, the
+              one whose fall makes the world, reaches us mostly through{" "}
+              <span className="text-bone/90">Irenaeus, who was writing to refute her</span> — the
+              lower Sophia, Achamoth, formed from her passion, the material world congealed out of
+              her grief and her tears. A summary by a hostile witness is evidence, but of a
+              particular kind, and this volume marks it as such.
+            </p>
+            <div className="mt-10 max-w-3xl">
+              <TermRegister terms={GNOSTIC_TERMS} />
+            </div>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              And after the ancient texts
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The figure does not stop in late antiquity. Hildegard of Bingen sees Sapientia and
+              Caritas as women of overwhelming splendour and writes them into her visions and her
+              music, inside the Church rather than against it. Jacob Böhme, a shoemaker in Görlitz,
+              makes Sophia the mirror in which the unground beholds itself, and the bride the soul
+              must be married to — the most sustained Protestant treatment of her there is. And
+              Russian sophiology, from Solovyov&rsquo;s visions to Bulgakov&rsquo;s dogmatics, tried
+              to give her a place in Orthodox theology; Bulgakov&rsquo;s teaching was condemned by
+              two Russian church jurisdictions in 1935 and defended by his own, and the dispute has
+              never been formally settled.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Solovyov&rsquo;s poem about his three visions of her opens by refusing to name her —{" "}
+              <span className="italic">eternal friend, I will not name you</span> — which is worth
+              keeping in mind against the confidence with which she is named now.
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              This volume does not equate these figures. Ḥokmāh in Proverbs, the Sophia of the
+              Valentinians, the Shekhinah of the rabbis, Isis under her own name, and Bulgakov&rsquo;s
+              divine Wisdom are not one being with five costumes, and saying so would be the
+              comparative error § XXV exists to prevent.{" "}
+              <span className="text-bone/90">
+                What they share is a question: whether the intelligence by which a world is well
+                made is itself something, and if so, what its relation is to the one who makes.
+              </span>
+            </p>
           </div>
 
           <div className="mt-24 max-w-3xl">
