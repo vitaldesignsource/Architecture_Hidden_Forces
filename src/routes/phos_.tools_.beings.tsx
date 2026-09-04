@@ -4,6 +4,7 @@ import { Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { entryRef } from "@/lib/phos/refs";
 import { Term } from "@/components/Term";
+import { SCRIPTS, type ScriptKey } from "@/lib/scripts";
 import { RegisterField } from "@/components/phos/RegisterField";
 import { KinGraph } from "@/components/phos/KinGraph";
 import {
@@ -49,6 +50,15 @@ type BeingsSearch = {
 };
 
 const TRADITIONS = [...new Set(BEINGS.map((b) => b.tradition))];
+
+/** The volume spells small numbers in its prose and sets them as figures in a
+ *  table; a counted number that lands in a sentence should follow the prose. */
+const WORDS = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+  "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+const spell = (n: number) => {
+  const w = WORDS[n];
+  return w ? w[0].toUpperCase() + w.slice(1) : String(n);
+};
 
 export const Route = createFileRoute("/phos_/tools_/beings")({
   // Every value is checked against what the register actually holds: a hand-
@@ -127,6 +137,20 @@ function Register() {
     [traditions],
   );
   const kinds = KINDS.filter((k) => !tradition || k.tradition === tradition);
+  // The register's account of itself, counted rather than asserted.
+  const state = useMemo(() => {
+    const byScript = new Map<ScriptKey, number>();
+    for (const b of BEINGS) if (b.native?.orig) byScript.set(b.native.script, (byScript.get(b.native.script) ?? 0) + 1);
+    return {
+      total: BEINGS.length,
+      traditions: TRADITIONS.length,
+      scripts: byScript.size,
+      noScript: BEINGS.filter((b) => !b.native?.orig).length,
+      contested: BEINGS.filter((b) => b.confidence === "contested").length,
+      noContext: BEINGS.filter((b) => !b.context).length,
+      byScript: [...byScript.entries()].sort((a, b) => b[1] - a[1]),
+    };
+  }, []);
 
   return (
     <ToolFrame
@@ -434,17 +458,40 @@ function Register() {
       <ToolBand>
         <Eyebrow>What the register does not yet hold</Eyebrow>
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
-          Ten populations are in, and none of them is complete: a tradition with a thousand named
-          beings is represented here by the fifteen or so that carry its argument. Where a spelling
-          could not be confirmed the entry stands in transliteration alone and says so rather than
-          showing a plausible guess — the Manichaean names, Zurvan, the Egyptian Ogdoad.
+          {spell(state.traditions)} populations are in, and none of them is complete: a tradition with a
+          thousand named beings is represented here by the fifteen or so that carry its argument.
+          Where a spelling could not be confirmed the entry stands in transliteration alone and says
+          so rather than showing a plausible guess.
         </p>
+        {/* Counted from the register itself rather than written down, so the page
+            cannot quietly become wrong about its own state as entries are filled in. */}
+        <div className="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            [state.total, "beings, across " + state.traditions + " traditions"],
+            [state.scripts, "scripts, and " + state.noScript + " names that stand in transliteration alone"],
+            [state.contested, "entries the sources themselves contest"],
+            [state.noContext, "that carry an office and no account yet"],
+          ].map(([n, label]) => (
+            <div key={String(label)} className="border-t border-border pt-4">
+              <p className="font-serif text-3xl text-gold">{n}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{label}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2">
+          {state.byScript.map(([k, n]) => (
+            <p key={k} className="font-mono text-[9px] uppercase tracking-[0.14em] text-bone/45">
+              {SCRIPTS[k].label} <span className="text-gold-dim">{n}</span>
+            </p>
+          ))}
+        </div>
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
           Every name was gathered against scholarly sources and then checked a second time by a
           reader whose only task was to break it. What that check could confirm is set; what it
-          could not, is not. Several entries therefore carry an office and a class and no narrative:
-          the account offered did not survive the second reading, and a blank is more honest than a
-          paragraph.{" "}
+          could not, is not. The figures above are counted from the register itself, not written
+          down beside it, so the fourth of them falls as accounts are filled in and rises the moment
+          one is withdrawn: an entry that carries an office and no narrative is one whose account
+          did not survive the second reading, and a blank is more honest than a paragraph.{" "}
           <span className="text-bone/90">
             The notes say which script a name is in, what scheme its transliteration follows, and
             what was actually verified — not what would have been nice to claim.
