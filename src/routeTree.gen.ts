@@ -10,7 +10,14 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EcologyRouteImport } from './routes/ecology'
 import { Route as PhosRouteImport } from './routes/phos'
+import { Route as EcologyCryptRouteImport } from './routes/ecology_.crypt'
+import { Route as EcologyFormRouteImport } from './routes/ecology_.form'
+import { Route as EcologyHydrologyRouteImport } from './routes/ecology_.hydrology'
+import { Route as EcologyMorphaitherRouteImport } from './routes/ecology_.morphaither'
+import { Route as EcologyOssuaryRouteImport } from './routes/ecology_.ossuary'
+import { Route as EcologySapRouteImport } from './routes/ecology_.sap'
 import { Route as PhosDivisionRouteImport } from './routes/phos_.$division'
 import { Route as PhosBrowseRouteImport } from './routes/phos_.browse'
 import { Route as PhosPortalRouteImport } from './routes/phos_.portal'
@@ -32,9 +39,44 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EcologyRoute = EcologyRouteImport.update({
+  id: '/ecology',
+  path: '/ecology',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PhosRoute = PhosRouteImport.update({
   id: '/phos',
   path: '/phos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologyCryptRoute = EcologyCryptRouteImport.update({
+  id: '/ecology_/crypt',
+  path: '/ecology/crypt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologyFormRoute = EcologyFormRouteImport.update({
+  id: '/ecology_/form',
+  path: '/ecology/form',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologyHydrologyRoute = EcologyHydrologyRouteImport.update({
+  id: '/ecology_/hydrology',
+  path: '/ecology/hydrology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologyMorphaitherRoute = EcologyMorphaitherRouteImport.update({
+  id: '/ecology_/morphaither',
+  path: '/ecology/morphaither',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologyOssuaryRoute = EcologyOssuaryRouteImport.update({
+  id: '/ecology_/ossuary',
+  path: '/ecology/ossuary',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologySapRoute = EcologySapRouteImport.update({
+  id: '/ecology_/sap',
+  path: '/ecology/sap',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PhosDivisionRoute = PhosDivisionRouteImport.update({
@@ -115,7 +157,14 @@ const PhosBrowseFacetValueRoute = PhosBrowseFacetValueRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ecology': typeof EcologyRoute
   '/phos': typeof PhosRoute
+  '/ecology/crypt': typeof EcologyCryptRoute
+  '/ecology/form': typeof EcologyFormRoute
+  '/ecology/hydrology': typeof EcologyHydrologyRoute
+  '/ecology/morphaither': typeof EcologyMorphaitherRoute
+  '/ecology/ossuary': typeof EcologyOssuaryRoute
+  '/ecology/sap': typeof EcologySapRoute
   '/phos/$division': typeof PhosDivisionRoute
   '/phos/browse': typeof PhosBrowseRoute
   '/phos/portal': typeof PhosPortalRoute
@@ -134,7 +183,14 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ecology': typeof EcologyRoute
   '/phos': typeof PhosRoute
+  '/ecology/crypt': typeof EcologyCryptRoute
+  '/ecology/form': typeof EcologyFormRoute
+  '/ecology/hydrology': typeof EcologyHydrologyRoute
+  '/ecology/morphaither': typeof EcologyMorphaitherRoute
+  '/ecology/ossuary': typeof EcologyOssuaryRoute
+  '/ecology/sap': typeof EcologySapRoute
   '/phos/$division': typeof PhosDivisionRoute
   '/phos/browse': typeof PhosBrowseRoute
   '/phos/portal': typeof PhosPortalRoute
@@ -154,7 +210,14 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ecology': typeof EcologyRoute
   '/phos': typeof PhosRoute
+  '/ecology_/crypt': typeof EcologyCryptRoute
+  '/ecology_/form': typeof EcologyFormRoute
+  '/ecology_/hydrology': typeof EcologyHydrologyRoute
+  '/ecology_/morphaither': typeof EcologyMorphaitherRoute
+  '/ecology_/ossuary': typeof EcologyOssuaryRoute
+  '/ecology_/sap': typeof EcologySapRoute
   '/phos_/$division': typeof PhosDivisionRoute
   '/phos_/browse': typeof PhosBrowseRoute
   '/phos_/portal': typeof PhosPortalRoute
@@ -175,7 +238,14 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/ecology'
     | '/phos'
+    | '/ecology/crypt'
+    | '/ecology/form'
+    | '/ecology/hydrology'
+    | '/ecology/morphaither'
+    | '/ecology/ossuary'
+    | '/ecology/sap'
     | '/phos/$division'
     | '/phos/browse'
     | '/phos/portal'
@@ -194,7 +264,14 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/ecology'
     | '/phos'
+    | '/ecology/crypt'
+    | '/ecology/form'
+    | '/ecology/hydrology'
+    | '/ecology/morphaither'
+    | '/ecology/ossuary'
+    | '/ecology/sap'
     | '/phos/$division'
     | '/phos/browse'
     | '/phos/portal'
@@ -213,7 +290,14 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/ecology'
     | '/phos'
+    | '/ecology_/crypt'
+    | '/ecology_/form'
+    | '/ecology_/hydrology'
+    | '/ecology_/morphaither'
+    | '/ecology_/ossuary'
+    | '/ecology_/sap'
     | '/phos_/$division'
     | '/phos_/browse'
     | '/phos_/portal'
@@ -233,7 +317,14 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  EcologyRoute: typeof EcologyRoute
   PhosRoute: typeof PhosRoute
+  EcologyCryptRoute: typeof EcologyCryptRoute
+  EcologyFormRoute: typeof EcologyFormRoute
+  EcologyHydrologyRoute: typeof EcologyHydrologyRoute
+  EcologyMorphaitherRoute: typeof EcologyMorphaitherRoute
+  EcologyOssuaryRoute: typeof EcologyOssuaryRoute
+  EcologySapRoute: typeof EcologySapRoute
   PhosDivisionRoute: typeof PhosDivisionRoute
   PhosBrowseRoute: typeof PhosBrowseRoute
   PhosPortalRoute: typeof PhosPortalRoute
@@ -260,11 +351,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ecology': {
+      id: '/ecology'
+      path: '/ecology'
+      fullPath: '/ecology'
+      preLoaderRoute: typeof EcologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/phos': {
       id: '/phos'
       path: '/phos'
       fullPath: '/phos'
       preLoaderRoute: typeof PhosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/crypt': {
+      id: '/ecology_/crypt'
+      path: '/ecology/crypt'
+      fullPath: '/ecology/crypt'
+      preLoaderRoute: typeof EcologyCryptRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/form': {
+      id: '/ecology_/form'
+      path: '/ecology/form'
+      fullPath: '/ecology/form'
+      preLoaderRoute: typeof EcologyFormRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/hydrology': {
+      id: '/ecology_/hydrology'
+      path: '/ecology/hydrology'
+      fullPath: '/ecology/hydrology'
+      preLoaderRoute: typeof EcologyHydrologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/morphaither': {
+      id: '/ecology_/morphaither'
+      path: '/ecology/morphaither'
+      fullPath: '/ecology/morphaither'
+      preLoaderRoute: typeof EcologyMorphaitherRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/ossuary': {
+      id: '/ecology_/ossuary'
+      path: '/ecology/ossuary'
+      fullPath: '/ecology/ossuary'
+      preLoaderRoute: typeof EcologyOssuaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/sap': {
+      id: '/ecology_/sap'
+      path: '/ecology/sap'
+      fullPath: '/ecology/sap'
+      preLoaderRoute: typeof EcologySapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/phos_/$division': {
@@ -377,7 +517,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  EcologyRoute: EcologyRoute,
   PhosRoute: PhosRoute,
+  EcologyCryptRoute: EcologyCryptRoute,
+  EcologyFormRoute: EcologyFormRoute,
+  EcologyHydrologyRoute: EcologyHydrologyRoute,
+  EcologyMorphaitherRoute: EcologyMorphaitherRoute,
+  EcologyOssuaryRoute: EcologyOssuaryRoute,
+  EcologySapRoute: EcologySapRoute,
   PhosDivisionRoute: PhosDivisionRoute,
   PhosBrowseRoute: PhosBrowseRoute,
   PhosPortalRoute: PhosPortalRoute,

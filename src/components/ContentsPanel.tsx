@@ -185,6 +185,14 @@ export function ContentsPanel({
                           </span>
                         </>
                       );
+                      // A station of the Hidden Ecology is a page of its own.
+                      if (e.to) {
+                        return (
+                          <Link key={e.id} to={e.to} onClick={follow} aria-current={here ? "true" : undefined} className={className}>
+                            {inner}
+                          </Link>
+                        );
+                      }
                       // An encyclopaedia row is a page, not a place on this page.
                       if (e.route?.entry) {
                         return (

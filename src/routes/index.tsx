@@ -1141,6 +1141,20 @@ function Index() {
               </p>
             </div>
           </div>
+        
+          {/* the hidden layer this section opens onto */}
+          <div className="relative mt-16 border-t border-gold/30 pt-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
+            <Link to="/ecology/morphaither" className="group mt-4 inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">
+                This section opens onto the Hidden Ecology of Formation
+              </span>
+              <CrossMark className="text-gold/70" />
+            </Link>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              The living formative atmosphere is the first station of a circulation — weather, nourishment, circulation, vessel, inheritance, memory — asked its governing question there: under what conditions does becoming occur?
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1619,6 +1633,20 @@ function Index() {
                 through it.
               </p>
             </div>
+          </div>
+        
+          {/* the hidden layer this section opens onto */}
+          <div className="relative mt-16 border-t border-gold/30 pt-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
+            <Link to="/ecology/crypt" className="group mt-4 inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">
+                This section opens onto the Hidden Ecology of Formation
+              </span>
+              <CrossMark className="text-gold/70" />
+            </Link>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              The Crypt and the Ossuary are two stations of the Hidden Ecology, told apart there and set in the circulation that runs from Morphaithēr through the Sap of Heaven and Etheric Hydrology to living form, and back one level on.
+            </p>
           </div>
         </div>
       </section>
@@ -9067,6 +9095,20 @@ function Index() {
             acquires tendency, tendency becomes recurrence, recurrence gains embodiment, and every
             embodied thing leaves the world differently conditioned for what comes next.
           </p>
+        
+          {/* the hidden layer this section opens onto */}
+          <div className="relative mt-16 border-t border-gold/30 pt-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
+            <Link to="/ecology" className="group mt-4 inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">
+                This section opens onto the Hidden Ecology of Formation
+              </span>
+              <CrossMark className="text-gold/70" />
+            </Link>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              Morphaithēr as the condition a whole ecology runs in: fed by the Sap of Heaven, distributed by Etheric Hydrology, taking vessels and exhausting them, inheriting their architecture and retaining their consequence — drawn as a spiral rather than a ring.
+            </p>
+          </div>
         </div>
       </section>
 

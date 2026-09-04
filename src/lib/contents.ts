@@ -18,6 +18,8 @@ export type Entry = {
   d: string;
   movement?: boolean;
   route?: { division: string; entry?: string };
+  /** A row that is a page of its own — the Hidden Ecology's stations. */
+  to?: "/ecology" | "/ecology/morphaither" | "/ecology/sap" | "/ecology/hydrology" | "/ecology/form" | "/ecology/ossuary" | "/ecology/crypt";
 };
 
 export const ENTRIES: Entry[] = [
@@ -194,5 +196,10 @@ export const VOLUMES = [
     to: "/phos/portal",
     t: "The Portal",
     d: "The encyclopaedia of light — twenty-one divisions, browsable by tradition, quality, plane, operation, symbol, text, and period.",
+  },
+  {
+    to: "/ecology",
+    t: "The Hidden Ecology of Formation",
+    d: "A layer of the Architecture opened: the invisible as an ecology that is fed, circulates, takes vessels, inherits their architecture and retains their consequence.",
   },
 ] as const;
