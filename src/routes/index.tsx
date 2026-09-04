@@ -57,6 +57,15 @@ import {
 } from "@/components/diagrams";
 import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
 import { PassageGeometry } from "@/components/PassageGeometry";
+import {
+  KhekerFrieze,
+  SkyBand,
+  ShenRing,
+  Hiero,
+  Sign,
+  GlossedWord,
+  SignRegister,
+} from "@/components/EgyptianDevices";
 
 /**
  * The header and the mobile strip were two hand-maintained lists, and they drifted:
@@ -10043,10 +10052,17 @@ function Index() {
         <SectionGlyph delay={-665} />
         <Backdrop src="/bg/aqueduct.webp" opacity={0.21} position="center 45%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
+          <KhekerFrieze className="mb-12" />
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVIII · Heka
           </p>
-          <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+          <div className="mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2">
+            <Hiero w="heka" size="lg" className="text-gold" />
+            <p className="font-serif text-lg italic text-gold-dim">
+              ḥkꜣ <span className="not-italic text-muted-foreground">· heka</span>
+            </p>
+          </div>
+          <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-tight">
             How significance becomes{" "}
             <span className="italic text-gold">causally consequential</span>
           </h2>
@@ -10074,6 +10090,51 @@ function Index() {
             </span>
           </p>
 
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              How the word is written
+            </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-4">
+              {[
+                ["V28", "a wick of twisted flax", "ḥ"],
+                ["D28", "two arms raised", "kꜣ"],
+                ["G1", "the Egyptian vulture", "ꜣ"],
+                ["Y1", "a rolled papyrus, tied", "—"],
+              ].map(([g, draws, sound]) => (
+                <div key={g} className="border-t border-border pt-4">
+                  <Sign s={g as "V28"} size="md" className="block text-gold" />
+                  <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">
+                    {g} · {sound}
+                  </p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{draws}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 text-base leading-relaxed text-muted-foreground">
+              Three sounds and a silent sign. The rolled papyrus at the end is a classifier: it
+              says nothing aloud, and marks the word as an abstraction. Change that last sign to
+              the seated god and the same word names the god Heka; add the plural strokes and it
+              names spells in the plural. The word survived into Coptic as{" "}
+              <span className="font-serif text-bone/85">ϩⲓⲕ</span>, hik.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              The second sign is the one to notice. Two arms raised are also the sign for the{" "}
+              <span className="italic">ka</span>, the vital double, so the writing of heka carries
+              the ka inside it. What that means is disputed. Te Velde read the god&rsquo;s name as
+              &ldquo;he who consecrates the ka&rdquo;, and the reading is often repeated as though
+              settled; Ritner surveys the term at length and adopts no derivation.{" "}
+              <span className="text-bone/90">
+                The sign is there. The etymology is a proposal, and this volume leaves it one.
+              </span>
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              The signs are set here in a row because a font can only set them in a row. Monumental
+              Egyptian grouped them into square quadrats and ran in either direction, with the signs
+              facing the beginning of the line. The vowels in &ldquo;heka&rdquo; are a convenience of
+              modern reading, not a recovered pronunciation.
+            </p>
+          </div>
+
           <div className="mt-24">
             <HekaAndMaat />
           </div>
@@ -10082,10 +10143,40 @@ function Index() {
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The shape of an operation
             </p>
-            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
-              VIRTUE → MYTHIC PATTERN → NAME AND IMAGE → SPOKEN FORMULA → EMBODIED ACTION →
-              MATERIAL VESSEL → TRANSFORMED CONDITION
-            </p>
+            <div className="mt-8">
+              <SkyBand height={15} />
+              <div className="grid grid-cols-2 border-b border-gold/45 sm:grid-cols-4 lg:grid-cols-7">
+                {[
+                  ["Virtue", null],
+                  ["Mythic pattern", null],
+                  ["Name and image", "ren"],
+                  ["Spoken formula", "hu"],
+                  ["Embodied action", null],
+                  ["Material vessel", null],
+                  ["Transformed condition", null],
+                ].map(([stage, w], i) => (
+                  <div
+                    key={stage as string}
+                    className={`flex min-h-[5rem] flex-col justify-between px-3 py-3.5 ${
+                      i === 0 ? "border-l border-gold/25" : ""
+                    } border-r border-gold/25`}
+                  >
+                    <p className="font-mono text-[9.5px] uppercase leading-relaxed tracking-[0.12em] text-gold-dim">
+                      {stage}
+                    </p>
+                    {w ? (
+                      <Hiero w={w as "ren"} size="sm" className="mt-3 block text-gold/80" />
+                    ) : (
+                      <span className="mt-3 block h-[1.15rem]" aria-hidden />
+                    )}
+                  </div>
+                ))}
+              </div>
+              <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+                Sky above, register line below · the two stages the Egyptians named are marked: rn,
+                the name, and ḥw, authoritative utterance
+              </p>
+            </div>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
               Each stage translates the one before it, and because no translation is perfect, each
               introduces the possibility of the transductive loss named in § XVII. The image may
@@ -10110,12 +10201,15 @@ function Index() {
             </p>
             <div className="mt-8 space-y-px">
               {[
-                ["Sia", "perceives the pattern", "Perception differentiates and recognises — the Light function."],
-                ["Hu", "articulates the pattern", "The recognised pattern given ordered, authoritative speech — the Tone function."],
-                ["Heka", "makes the articulated pattern operative", "The transductive efficacy by which what is perceived and said becomes an actual alteration."],
-              ].map(([a, b, c]) => (
-                <div key={a} className="grid gap-1 border-b border-border py-4 sm:grid-cols-[6rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                ["Sia", "sia", "perceives the pattern", "Perception differentiates and recognises — the Light function."],
+                ["Hu", "huGod", "articulates the pattern", "The recognised pattern given ordered, authoritative speech — the Tone function."],
+                ["Heka", "hekaGod", "makes the articulated pattern operative", "The transductive efficacy by which what is perceived and said becomes an actual alteration."],
+              ].map(([a, w, b, c]) => (
+                <div key={a} className="grid gap-2 border-b border-border py-5 sm:grid-cols-[9rem_1fr]">
+                  <span>
+                    <Hiero w={w as "sia"} size="md" className="block text-gold" />
+                    <span className="mt-2 block font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  </span>
                   <span>
                     <span className="font-serif text-base italic text-bone/80">{b}</span>
                     <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{c}</span>
@@ -10123,6 +10217,19 @@ function Index() {
                 </div>
               ))}
             </div>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The Egyptians put the three in a boat. In the Book of Gates, carried on the walls of
+              the royal tombs from Horemheb onward, the bark of the sun runs through the hours of
+              the night with Sia standing at the prow and Heka at the stern by the steering oars,
+              the ram-headed sun between them in his shrine.{" "}
+              <span className="text-bone/90">
+                Perception goes first because it must see the way; efficacy stands at the back
+                because it is what steers.
+              </span>{" "}
+              The spell that explains the &ldquo;gods in the following of Atum&rdquo; in Book of the
+              Dead 17 names them as Hu and Sia — utterance and perception, at the creator&rsquo;s
+              side from the beginning.
+            </p>
             <p className="mt-8 text-sm leading-relaxed text-bone/60">
               A functional correspondence, not a claim that the Egyptian terms are the
               architecture&rsquo;s ethers. What it registers is that Egyptian thought did not divide
@@ -10135,6 +10242,48 @@ function Index() {
               incantation was never merely explanatory: recitation laid names, events and identities
               into an ordered verbal act, a path the force could move along. Life installs the
               pattern in a vessel so it persists past the moment of utterance.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              What it was given for
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              One Middle Kingdom text states the Egyptian position on heka more plainly than any
+              other. In the hymn to the creator in the Instruction for King Merikare, the god who
+              made the sky and the earth for humankind, and breath for their noses, is said to have
+              made one more thing for them.
+            </p>
+            <blockquote className="mt-8 border-l-2 border-gold pl-6">
+              <p className="font-serif text-2xl leading-relaxed text-bone/90">
+                He made for them magic as weapons
+                <br />
+                to ward off the blow of events,
+                <br />
+                guarding them by day and by night.
+              </p>
+              <footer className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">
+                Instruction for King Merikare, lines 136–137 · Lichtheim&rsquo;s rendering; Parkinson
+                translates the last clause &ldquo;watching over them by night and by day&rdquo;
+              </footer>
+            </blockquote>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Weapons, and a guard: defensive, given, and given to everyone. Nothing in the sentence
+              treats heka as a trespass against the order of things, which is the modern assumption
+              carried inside the word &ldquo;magic&rdquo;. It is the creator&rsquo;s provision for
+              beings who live inside events they cannot foresee.{" "}
+              <span className="text-bone/90">
+                A power to ward off the blow is not a power to command the world.
+              </span>
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              The Coffin Texts spell for becoming Heka — spell 261, &ldquo;to become Heka&rdquo; —
+              puts the same power at the beginning rather than in the middle: the speaker is what the
+              sole creator made before duality had come into being in the land, present at the going
+              forth from his mouth. Whether one reads that as cosmology or as a claim about the
+              speaker, its structure is the volume&rsquo;s: utterance first, and efficacy as what
+              guards the utterance into effect.
             </p>
           </div>
 
@@ -10163,6 +10312,105 @@ function Index() {
               within the drama, the body becomes the image, speech becomes utterance. Without
               preparation and closure it becomes inflation, projection, or the appropriation of an
               authority no one conferred — which is why § XLVI governs it.
+            </p>
+
+            <div className="mt-14 border-t border-border pt-10">
+              <div className="flex flex-wrap items-baseline gap-x-5 gap-y-2">
+                <Hiero w="ren" size="md" className="text-gold" />
+                <p className="font-serif text-base italic text-bone/85">
+                  rn <span className="not-italic text-muted-foreground">· the name</span>
+                </p>
+              </div>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                The Egyptians counted the name among the parts of a person, beside the ka, the ba,
+                the akh, the shadow and the body. To keep a name spoken and inscribed was to keep
+                the being in existence; to cut a name out of a wall was an attack on the one who
+                bore it. That is why the Ramesside tale of Isis and the secret name of Re is not a
+                story about a password. Isis makes a serpent from the aged sun god&rsquo;s own
+                spittle, it bites him, and she withholds the cure until he gives her his true name —
+                which passes, the text says, from his body into hers.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                Read carefully, the tale states three things and not a fourth. The name is a
+                constituent of the god&rsquo;s being, transferred like a substance rather than told
+                like a fact. The public epithets are not the operative name. And knowledge of the
+                true name confers a real purchase on what bears it.{" "}
+                <span className="text-bone/90">
+                  What it does not say is that a name compels. Isis gains a relation, and a
+                  standing, and the sun goes on rising.
+                </span>
+              </p>
+              <p className="mt-6 text-sm leading-relaxed text-bone/60">
+                Her own standing epithet is written{" "}
+                <Hiero w="wertHekau" size="sm" className="mx-1 align-baseline text-gold/85" /> — wrt
+                ḥkꜣw, &ldquo;great of magics&rdquo;, an epithet she shares with Hathor, Sekhmet and
+                the royal uraeus, and which becomes from the New Kingdom the name of a goddess in her
+                own right. The plural matters: not one power held, but many.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Who did it, and where it was kept
+            </p>
+            <div className="mt-8 flex flex-wrap items-baseline gap-x-6 gap-y-3">
+              <GlossedWord w="perAnkh" size="md" className="min-w-[13rem] flex-1" />
+              <GlossedWord w="lector" size="md" className="min-w-[13rem] flex-1" />
+            </div>
+            <p className="mt-10 text-base leading-relaxed text-muted-foreground">
+              There was no guild of magicians standing outside the temple. The principal practitioner
+              was the lector priest, the man who carried and read the ritual roll, trained in the
+              House of Life — the institution attached to a temple where the sacred, medical and
+              magical books were composed, copied and kept. Gardiner collected more than sixty
+              attestations of it. The same techniques served temple cult, state rites, healing and
+              private protection, which is Ritner&rsquo;s central institutional conclusion and the
+              reason the modern division of magic from religion from medicine will not map onto
+              Egypt.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              The chief lector&rsquo;s title left a long trail. Shortened in Late Egyptian and
+              Demotic, it became the ordinary word for a magician, and travelled into Hebrew as the
+              ḥarṭummîm, the Egyptian practitioners of the Exodus narrative. In Egyptian storytelling
+              he is the wonder-worker: in the Westcar Papyrus a chief lector makes a wax crocodile
+              that comes alive, and another folds back the water of a lake to recover a pendant.{" "}
+              <span className="text-bone/90">
+                An office in the record, a marvel in the tales — the distinction the sources
+                themselves keep, and worth keeping here.
+              </span>
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Late Period officials record restoring these institutions: Udjahorresnet, serving under
+              Darius I, says he was commanded to return to Egypt to restore the establishment of the
+              House of Life after it had decayed. The books were held to be worth the labour of a
+              state.
+            </p>
+          </div>
+
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Taking the text into the body
+            </p>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              The clearest Egyptian evidence for the chain this section describes is a technique
+              rather than a doctrine. Cippi — small stelae showing the child Horus standing on
+              crocodiles and grasping snakes and scorpions, covered with recitations against venom —
+              were made with basins cut into their bases. Water was poured over the inscribed
+              surface, collected, and drunk or applied to the bite. The healing statues work the same
+              way; the statue of Djedhor at Athribis is the best known.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Note what the arrangement assumes. The words are held to be in the water because they
+              were cut in the stone, and in the sufferer because the water was drunk: name, image,
+              inscription, material and body joined into a single passage.{" "}
+              <span className="text-bone/90">
+                Whatever one concludes about its efficacy, it is not a magical short cut around
+                matter. It is an unusually literal insistence that the operation must find a material
+                route.
+              </span>{" "}
+              The Demotic tale of Setne makes the same move in the register of knowledge, where
+              Naneferkaptah copies the Book of Thoth onto fresh papyrus, dissolves it in beer, drinks
+              it, and knows what was in it.
             </p>
           </div>
 
@@ -10193,6 +10441,24 @@ function Index() {
               divide material from symbolic causation. This is not a replacement for medicine. Heka
               does not become greater by ignoring matter — it becomes effective by finding the
               material relations through which transformation can actually occur.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              The papyri say so themselves. The Ebers papyrus, the longest medical manuscript to
+              survive, opens with recitations to be spoken while a remedy is applied, and then runs
+              to some eight hundred prescriptions of material remedies; its spell for drinking a
+              remedy sets the two in one sentence, the remedy effective with the magic and the magic
+              effective with the remedy, in wording translators render variously. Its book of the
+              heart names the three practitioners side by side — the physician, the wab-priest of
+              Sekhmet, and the maker of protection — all laying hands on the patient and examining
+              the vessels. The Edwin Smith papyrus, meanwhile, is a surgical text that sorts each
+              case into three verdicts: an ailment I will treat, an ailment I will contend with, an
+              ailment not to be treated.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              That last verdict is the one worth carrying away. A tradition that recited spells also
+              wrote down the cases it judged untreatable, and set its recitations beside splints,
+              sutures and honey dressings rather than in place of them. Anyone who cites Egypt as a
+              warrant for refusing treatment is citing the opposite of what these documents contain.
             </p>
           </div>
 
@@ -10233,7 +10499,43 @@ function Index() {
             </p>
           </div>
 
-          <div className="mx-auto mt-24 h-px w-24 bg-gold/40" />
+          <div className="mt-24 max-w-3xl">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The register of words
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+              Every Egyptian word this section sets, with the signs it is built from and Gardiner&rsquo;s
+              numbers for them. The writings are normalised and linearised: they are how the words are
+              cited, not how any one inscription cuts them.
+            </p>
+            <SignRegister
+              words={["heka", "hekau", "hekaGod", "ka", "akh", "sia", "huGod", "maat", "ren", "sa", "wertHekau", "perAnkh"]}
+            />
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              Two of these carry the volume&rsquo;s own argument. The root of{" "}
+              <span className="font-serif italic text-bone/85">ꜣḫ</span> means effective and luminous
+              at once, and the same root names the transfigured dead — a language in which becoming
+              light and becoming able are one word, which is the claim{" "}
+              <Link
+                to="/phos/$division/$entry"
+                params={{ division: "xv", entry: "akh-radiance-and-the-transfigured-dead" }}
+                className="text-gold-dim underline-offset-4 hover:text-gold hover:underline"
+              >
+                the Portal follows through the Egyptian material
+              </Link>
+              . And <span className="font-serif italic text-bone/85">sꜣ</span>, protection, is what
+              Coffin Texts 261 makes Heka: the guarding of what was commanded into effect.
+            </p>
+            <p className="mt-6 text-xs leading-relaxed text-bone/45">
+              &ldquo;Words of power&rdquo; is Budge&rsquo;s Victorian rendering of ḥkꜣw, and the
+              occult noun &ldquo;hekau&rdquo; descends from it; Egyptologists do not use it as a
+              technical term, and neither does this volume.
+            </p>
+          </div>
+
+          <div className="mt-24 flex justify-center">
+            <ShenRing size={38} />
+          </div>
           <div className="mx-auto mt-12 max-w-3xl space-y-2 text-center font-serif text-lg italic leading-relaxed text-bone/85">
             <p>Sia perceives the pattern.</p>
             <p>Sophia discerns its right relation.</p>
@@ -10242,7 +10544,10 @@ function Index() {
             <p>The Fourfold Veil translates it.</p>
             <p>Morphaithēr carries it.</p>
             <p>The living vessel embodies it.</p>
-            <p>Ma&rsquo;at judges whether the resulting form belongs to the harmony of the whole.</p>
+            <p className="flex items-center justify-center gap-3">
+              <Sign s="H6" size="sm" className="text-gold/80" />
+              Ma&rsquo;at judges whether the resulting form belongs to the harmony of the whole.
+            </p>
           </div>
           <p className="mx-auto mt-12 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
             An invisible force becomes operative not through intention alone but through the

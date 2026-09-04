@@ -15,8 +15,12 @@
   --color-border: var(--border);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --font-serif: "EB Garamond", ui-serif, Georgia, serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* Gentium Plus stands behind both faces for one reason: neither EB Garamond
+     nor Inter carries the Egyptological letters ꜣ (U+A723) and ꜥ (U+A725), and
+     the transliterations need them. Fallback is per character, so ordinary text
+     still sets in Garamond and only the two letters come from Gentium. */
+  --font-serif: "EB Garamond", "Gentium Plus", ui-serif, Georgia, serif;
+  --font-sans: "Inter", "Gentium Plus", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -557,4 +561,42 @@ input[type="range"]:focus-visible {
   .zw-eyebrow { font-size: 13px; letter-spacing: 2.2px; }
   .zw-count { font-size: 34px; }
   .zw-sub { font-size: 12.5px; }
+}
+
+/* ── the hieroglyphs ─────────────────────────────────────────────────────────
+   Egyptian hieroglyphs have no font on most devices — macOS and iOS ship none
+   at all, so an unfonted run renders as nothing — and the block is 1,071 signs.
+   The thirty-seven signs the treatise sets are therefore served as a subset of
+   Noto Sans Egyptian Hieroglyphs (SIL Open Font License; the licence sits beside
+   the font), built by scripts/hieroglyphs.mjs from src/lib/hieroglyphs.ts. The
+   unicode-range keeps the face away from Latin text, and font-display: block
+   rather than swap because the flash here would be tofu or a blank, not text. */
+@font-face {
+  font-family: "Noto Sans Egyptian Hieroglyphs";
+  src: url(/fonts/hieroglyphs.woff2) format("woff2");
+  unicode-range: U+13000-1342F;
+  font-display: block;
+}
+.hiero {
+  font-family: "Noto Sans Egyptian Hieroglyphs", "Segoe UI Historic", sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.15;
+  white-space: nowrap;
+  vertical-align: -0.05em;
+  letter-spacing: 0.02em;
+}
+/* The signs are open line drawings rather than silhouettes, so their strokes
+   thin out below about eighteen pixels; the display sizes stay well above it. */
+.hiero-lg { font-size: 2.4rem; line-height: 1; }
+.hiero-md { font-size: 1.65rem; line-height: 1; }
+.hiero-sm { font-size: 1.15rem; line-height: 1; }
+
+/* Egyptian blue, the one accent § XLVIII allows itself: gold plays the part of
+   gold leaf, and gold with lapis is the Egyptian pairing of the precious. The
+   historic pigment is too electric on this ground, so it is set back. */
+:root {
+  --lapis: oklch(0.58 0.14 262);
+  --lapis-deep: oklch(0.4 0.11 262);
 }
