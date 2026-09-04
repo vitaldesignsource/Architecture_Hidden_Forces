@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { entryRef } from "@/lib/phos/refs";
@@ -33,21 +33,56 @@ const TRADITION_ORDER = [
   "Iranian", "Vedic", "Buddhist", "Daoist", "Islamic",
 ];
 
+/**
+ * The register's whole state lives in the URL. A narrowed view — the Iranian
+ * adversaries, everything on the angelic plane, a search in cuneiform — is a
+ * link someone can send, and the back button walks the filters rather than
+ * leaving the instrument. ?being= additionally opens one row.
+ */
+type BeingsSearch = {
+  being?: string;
+  tradition?: string;
+  cls?: ClassKey;
+  plane?: Plane;
+  q?: string;
+};
+
+const TRADITIONS = [...new Set(BEINGS.map((b) => b.tradition))];
+
 export const Route = createFileRoute("/phos_/tools_/beings")({
-  // ?being=<id> opens that row and scrolls to it, so an entry in the Portal can
-  // point at one being rather than at the register as a whole.
-  validateSearch: (search: Record<string, unknown>): { being?: string } =>
-    typeof search.being === "string" && search.being ? { being: search.being } : {},
+  // Every value is checked against what the register actually holds: a hand-
+  // edited URL narrows to nothing rather than rendering a filter that no
+  // control can clear.
+  validateSearch: (search: Record<string, unknown>): BeingsSearch => {
+    const str = (v: unknown) => (typeof v === "string" && v ? v : undefined);
+    const one = <T extends string>(v: unknown, all: readonly T[]) =>
+      (all as readonly string[]).includes(String(v)) ? (v as T) : undefined;
+    return {
+      being: str(search.being),
+      tradition: one(search.tradition, TRADITIONS),
+      cls: one(search.cls, CLASSES.map((c) => c.k)),
+      plane: one(search.plane, PLANES),
+      q: str(search.q),
+    };
+  },
   head: () => ({ meta: [{ title: "The Register of Beings — Instruments — Phōs" }] }),
   component: Register,
 });
 
 function Register() {
-  const { being } = Route.useSearch();
-  const [tradition, setTradition] = useState<string | null>(null);
-  const [cls, setCls] = useState<ClassKey | null>(null);
-  const [plane, setPlane] = useState<Plane | null>(null);
-  const [q, setQ] = useState("");
+  const { being, tradition = null, cls = null, plane = null, q = "" } = Route.useSearch();
+  const navigate = useNavigate({ from: Route.fullPath });
+  /** Filters are navigation: a chip click is a step back, typing is not. */
+  const set = (patch: BeingsSearch, replace = false) =>
+    navigate({ search: (prev: BeingsSearch) => ({ ...prev, ...patch }), replace });
+  const setTradition = (t: string | null) => set({ tradition: t ?? undefined });
+  const setCls = (c: ClassKey | null) => set({ cls: c ?? undefined });
+  const setPlane = (pl: Plane | null) => set({ plane: pl ?? undefined });
+  // Typing should cost one history entry, not one per letter: entering a search
+  // is a step back to the unfiltered view, and every letter after it is not.
+  const setQ = (text: string) => set({ q: text || undefined }, Boolean(q) && Boolean(text));
+  const clear = () => set({ tradition: undefined, cls: undefined, plane: undefined, q: undefined });
+
   const [open, setOpen] = useState<string | null>(being ?? null);
   const asked = useRef<string | null>(null);
 
@@ -58,10 +93,7 @@ function Register() {
     asked.current = being;
     if (!BEINGS.some((b) => b.id === being)) return;
     setOpen(being);
-    setTradition(null);
-    setCls(null);
-    setPlane(null);
-    setQ("");
+    set({ tradition: undefined, cls: undefined, plane: undefined, q: undefined }, true);
     // After the frame in which the tool frame puts the page back at the top,
     // and instantly: a deep link should arrive at its row, not travel to it.
     requestAnimationFrame(() =>
@@ -69,7 +101,7 @@ function Register() {
     );
   }, [being]);
 
-  const traditions = useMemo(() => [...new Set(BEINGS.map((b) => b.tradition))].sort(), []);
+  const traditions = useMemo(() => [...TRADITIONS].sort(), []);
   const rows = useMemo(() => {
     const needle = q.trim().toLowerCase();
     return BEINGS.filter(
@@ -206,7 +238,7 @@ function Register() {
           })}
           {(tradition || cls || plane || q) && (
             <button
-              onClick={() => { setTradition(null); setCls(null); setPlane(null); setQ(""); }}
+              onClick={clear}
               className="border border-gold/50 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-gold transition-colors hover:bg-gold/10"
             >
               Clear
@@ -239,12 +271,7 @@ function Register() {
               onPick={(id) => {
                 // A dimmed mark has no row to open — the filters excluded it — so
                 // taking one clears them rather than doing nothing.
-                if (!shown.has(id)) {
-                  setTradition(null);
-                  setCls(null);
-                  setPlane(null);
-                  setQ("");
-                }
+                if (!shown.has(id)) clear();
                 setOpen(id);
                 requestAnimationFrame(() =>
                   document.getElementById(`being-${id}`)?.scrollIntoView({ block: "center", behavior: "smooth" }),
@@ -314,7 +341,7 @@ function Register() {
                 <tr key={c.k}>
                   <td className="border-b border-border py-3 pr-4 align-top">
                     <button
-                      onClick={() => { setCls(cls === c.k ? null : c.k); setTradition(null); }}
+                      onClick={() => set({ cls: cls === c.k ? undefined : c.k, tradition: undefined })}
                       className={`text-left font-serif text-base transition-colors ${cls === c.k ? "text-gold" : "text-bone/85 hover:text-gold"}`}
                     >
                       {c.label}
@@ -326,7 +353,7 @@ function Register() {
                       <td key={t} className="border-b border-border px-2 py-3 align-top">
                         {n ? (
                           <button
-                            onClick={() => { setCls(c.k); setTradition(t); }}
+                            onClick={() => set({ cls: c.k, tradition: t })}
                             className="font-mono text-xs text-bone/80 transition-colors hover:text-gold"
                             aria-label={`${n} ${c.label} in the ${t} tradition`}
                           >
