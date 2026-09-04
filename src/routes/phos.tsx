@@ -13,10 +13,13 @@ import { ContentsPanel } from "@/components/ContentsPanel";
 import { CrossMark } from "@/components/CrossMark";
 import {
   BoundaryColour,
+  EdgeColours,
+  GoetheCircle,
   LadderOfLights,
   LumenField,
   LuxSphere,
   ThreeLights,
+  TurbidMedium,
   VesselAndMeasure,
 } from "@/components/diagrams";
 
@@ -1093,6 +1096,78 @@ function Phos() {
 
           <div className="mt-24">
             <BoundaryColour />
+          </div>
+
+          {/* the experiment, and what it is doing */}
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The experiment he put in place of the spectrum
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Newton&rsquo;s prism sits in a beam in a dark room and throws a spectrum on a screen.
+              Goethe&rsquo;s is held to the eye and pointed at the world. Look through it at an
+              evenly lit wall and the wall is displaced without colouring; the colour appears only
+              where the wall meets a window frame — at an edge.{" "}
+              <span className="text-bone/90">
+                So the fringes are the phenomenon, and the spectrum is a special case of them:
+                what happens when the lit band is narrow enough for its two edges to overlap.
+              </span>
+            </p>
+            <div className="mt-12">
+              <EdgeColours />
+            </div>
+            <p className="mt-8 max-w-3xl text-sm leading-relaxed text-bone/60">
+              The demonstration above is built the way modern optics explains it — the band laid
+              down once for each of twenty-four wavelengths and displaced by its own refraction,
+              then added together. Goethe&rsquo;s phenomena come out of the dispersion he denied,
+              which is the honest position: he was right about what appears and wrong about why.
+              Green is not in either fringe, and magenta is in no spectrum at all; both are what
+              two fringes make when they meet.
+            </p>
+          </div>
+
+          {/* the turbid medium */}
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Trübe Medien · the load-bearing doctrine
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              A medium between transparent and opaque — cloudy, smoky, dusty, watery — is what
+              Goethe calls turbid, and it is where his whole account is anchored. Look through it at
+              a light and the light warms. Let it stand lit in front of darkness and the darkness
+              cools. One medium, two directions of looking.
+            </p>
+            <div className="mt-12">
+              <TurbidMedium />
+            </div>
+          </div>
+
+          {/* the circle */}
+          <div className="mt-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              The Farbenkreis, and what the eye demands
+            </p>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Goethe puts the physiological colours first in the book, and the placement is the
+              argument: what the eye does of itself is not a nuisance to be subtracted from the real
+              colours, it is the ground the rest is read on. Shown yellow and then taken from it,
+              the eye produces violet; shown blue, orange; shown purple, green.{" "}
+              <span className="text-bone/90">
+                The circle is drawn from those demands, not from mixing pigments.
+              </span>
+            </p>
+            <div className="mt-12">
+              <GoetheCircle />
+            </div>
+            <p className="mt-10 max-w-3xl text-sm leading-relaxed text-bone/60">
+              The Order of the Golden Dawn took the same fact — that the eye supplies the opposite —
+              and put it to work on painted implements; that is the{" "}
+              <Link to="/phos/tools/flashing" className="text-gold-dim underline-offset-4 hover:text-gold hover:underline">
+                Flashing Colours
+              </Link>{" "}
+              instrument, and its pairs are the painter&rsquo;s rather than Goethe&rsquo;s: on the
+              paintbox wheel red faces green, where on this one it is magenta that does.
+            </p>
           </div>
 
           <div className="mt-24 max-w-3xl">

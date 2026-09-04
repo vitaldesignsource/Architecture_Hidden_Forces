@@ -207,6 +207,15 @@ export const FIGURES: Figure[] = [
     not: "No single carrier contains the tradition, so no single loss ends it." },
 
   // ── celestial ───────────────────────────────────────────────────────────
+  { k: "Goethe's Colour Circle", C: drawing("GoetheCircle"), rel: "cyclical", teaching: "The boundary where colour arises",
+    d: "Six colours and three diameters, with the pair across each one being what the eye demands of itself.",
+    not: "The apex is Purpur, which is magenta. Drawing it fire-red collapses the structure." },
+  { k: "Edge Colours", C: drawing("EdgeColours"), rel: "causal", teaching: "The boundary where colour arises",
+    d: "A band laid down once for each of twenty-four wavelengths and displaced by its refraction: two coloured edges, and green or magenta where they meet.",
+    not: "Not a picture of the phenomenon but a computation of it — Goethe's fringes falling out of ordinary dispersion." },
+  { k: "The Turbid Medium", C: drawing("TurbidMedium"), rel: "causal", teaching: "The boundary where colour arises",
+    d: "One cloudiness looked through in both directions: light warms toward ruby, darkness cools toward blue.",
+    not: "The two poles are not symmetrical, and the asymmetry is the whole sequence." },
   { k: "Zodiac Wheel", C: drawing("ZodiacWheel"), rel: "spatial", teaching: "The celestial pattern",
     d: "The twelve in circular order, with the triangles of element and the crosses of modality drawn as consequences of the ordering.",
     not: "The triangles and crosses are not additional doctrine. They are what four and three produce on one ring." },
