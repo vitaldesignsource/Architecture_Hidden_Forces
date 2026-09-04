@@ -72,6 +72,15 @@ export function verb(s: Span): string {
 }
 export const placeName = (id: string) => PLACES[id]?.name ?? id;
 
+/** The traditions an entry is filed under, read off its facets. */
+export function traditionsOf(s: Span): string[] {
+  return entryOfSpan(s)?.meta?.facets.tradition ?? [];
+}
+/** Spans whose entries are filed under a tradition. */
+export const spansOfTradition = (name: string) => SPANS.filter((s) => traditionsOf(s).includes(name));
+/** Spans of one division. */
+export const spansOfDivision = (division: string) => SPANS.filter((s) => s.id.split("-")[0] === division);
+
 let geo: Promise<Geo> | null = null;
 /** The drawn geography, fetched once, only by a page that draws a map. */
 export function loadGeo(): Promise<Geo> {

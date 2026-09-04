@@ -540,10 +540,10 @@ if (lex.length) {
   const xv = toc.divisions.find((d) => d.id === "xv").entries.map((e) => e.id);
   const undated = xv.filter((id) => !seen.has(id));
   if (undated.length) fail("atlas", `Division XV entries with no place in time: ${undated.join(", ")}`);
-  const gate = readFileSync(join(root, "src/routes/phos_.$division_.$entry.tsx"), "utf8").match(/ATLAS_DIVISIONS = new Set\(\[([^\]]*)\]\)/);
+  const gate = readFileSync(join(root, "src/lib/phos/atlas-gate.ts"), "utf8").match(/ATLAS_DIVISIONS = new Set\(\[([^\]]*)\]\)/);
   const gated = new Set(gate ? [...gate[1].matchAll(/"([a-z]+)"/g)].map((m) => m[1]) : []);
   const ungated = atlas.spans.filter((s) => !gated.has(s.id.split("-")[0])).map((s) => s.id);
-  if (ungated.length) fail("atlas", `spans whose entries would never show Where and when (division not in ATLAS_DIVISIONS): ${ungated.slice(0, 5).join(", ")}`);
+  if (ungated.length) fail("atlas", `spans whose entries would never show Where and when (division not in atlas-gate.ts): ${ungated.slice(0, 5).join(", ")}`);
   note("atlas", `${atlas.spans.length} spans over ${Object.keys(atlas.places).length} places in ${atlas.lanes.length} lanes, on the ${geo.projection} sheet`);
 }
 

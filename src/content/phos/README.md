@@ -135,5 +135,6 @@ projected position of every place — is generated from Natural Earth data by
     npm run atlas
 
 into `atlas-geo.json`, and the audit fails until that has been re-run after a
-place or the generator changes. Only the divisions the entry route names in
-`ATLAS_DIVISIONS` show the panel; the audit checks every span belongs to one.
+place or the generator changes. Only the divisions named in
+`src/lib/phos/atlas-gate.ts` show the panel and open their division page with
+the sheet; the audit checks every span belongs to one of them.

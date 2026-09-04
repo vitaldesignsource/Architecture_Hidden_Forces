@@ -368,10 +368,10 @@
 "lat": 30.0,
 "lon": 120.58
 },
-"luoyang": {
-"name": "Luoyang",
-"lat": 34.62,
-"lon": 112.45
+"jiankang": {
+"name": "Jiankang (Nanjing)",
+"lat": 32.06,
+"lon": 118.8
 },
 "nanchang": {
 "name": "Jiangxi (Nanchang)",
@@ -532,6 +532,11 @@
 "name": "Moscow",
 "lat": 55.76,
 "lon": 37.62
+},
+"simferopol": {
+"name": "Simferopol (Crimea)",
+"lat": 44.95,
+"lon": 34.1
 }
 },
 "spans": [
@@ -1424,10 +1429,10 @@
 "to": 450,
 "places": [
 "gandhara",
-"luoyang"
+"jiankang"
 ],
 "approx": true,
-"note": "Composed in India and translated at Luoyang in the fourth and fifth centuries.",
+"note": "Composed in India from the third century; translated in China in the early fifth, Buddhabhadra’s Tathāgatagarbha Sūtra at Jiankang in 420.",
 "lane": "India and Buddhism"
 },
 {
@@ -1572,7 +1577,7 @@
 "tus",
 "baghdad"
 ],
-"note": "Mishkāt al-anwār, c. 1100.",
+"note": "Mishkāt al-anwār, written in his last years.",
 "lane": "Islamic and Illuminationist Traditions"
 },
 {
@@ -2064,10 +2069,10 @@
 "from": 1923,
 "to": 1976,
 "places": [
-"moscow",
+"simferopol",
 "marburg"
 ],
-"note": "Gurwitsch’s mitogenetic rays (1923) to Popp’s measurements at Marburg (from 1976).",
+"note": "Gurwitsch’s mitogenetic rays, found at Simferopol in 1923, to Popp’s measurements at Marburg from 1976.",
 "lane": "The Science of Light"
 },
 {

@@ -9,12 +9,8 @@ import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
 
-/**
- * The Atlas places the divisions named here in time and on the map; their
- * entries carry a "Where and when" panel, fetched only on those pages. The
- * audit checks that every span the Atlas holds belongs to one of them.
- */
-const ATLAS_DIVISIONS = new Set(["xv", "xvi"]);
+import { ATLAS_DIVISIONS } from "@/lib/phos/atlas-gate";
+
 const WhereAndWhen = lazy(() => import("@/components/phos/WhereAndWhen").then((m) => ({ default: m.WhereAndWhen })));
 import type { Entry as Row } from "@/lib/contents";
 import { entry, entriesOf, entryById, introMeta, neighbours, divisionLabel, citedBy } from "@/lib/phos/entries";

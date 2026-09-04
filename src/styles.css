@@ -251,6 +251,14 @@
 .aoh-atlas-mark.is-hot .aoh-atlas-core { fill: var(--bone); fill-opacity: 1; }
 .aoh-atlas-mark.is-lit .aoh-atlas-halo { animation: aoh-atlas-breathe 3.2s ease-in-out infinite; }
 @keyframes aoh-atlas-breathe { 0%, 100% { fill-opacity: 0.22 } 50% { fill-opacity: 0.44 } }
+/* Tints for compared sets of places: gold, bone, and a hollow ring, told apart by form as much as hue. */
+.aoh-atlas-mark.t-a .aoh-atlas-core { fill: var(--gold); }
+.aoh-atlas-mark.t-b .aoh-atlas-core { fill: var(--bone); }
+.aoh-atlas-mark.t-b .aoh-atlas-halo { fill: var(--bone); }
+.aoh-atlas-mark.t-c .aoh-atlas-core { fill: var(--void); stroke: var(--gold); stroke-width: 1.2; }
+.aoh-atlas-ring { fill: none; stroke: var(--gold); stroke-opacity: 0.9; }
+.aoh-atlas-ring.t-b { stroke: var(--bone); }
+.aoh-atlas-ring.t-c { stroke: var(--gold); stroke-dasharray: 2 1.5; }
 @media (prefers-reduced-motion: reduce) { .aoh-atlas-mark.is-lit .aoh-atlas-halo { animation: none; fill-opacity: 0.36; } }
 
 /* The Atlas's timeline. */

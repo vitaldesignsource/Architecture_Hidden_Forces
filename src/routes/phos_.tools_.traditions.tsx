@@ -1,8 +1,11 @@
+import { lazy, Suspense } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow, EntryRow, EntryRows } from "@/components/phos/ToolFrame";
 import { LabelChips } from "@/components/phos/Labels";
 import { divisionLabel } from "@/lib/phos/entries";
 import { groupByDivision, sharedBetween, traditionBySlug, traditionValues, withFacet } from "@/lib/phos/tools";
+
+const TraditionsAtlas = lazy(() => import("@/components/phos/TraditionsAtlas").then((m) => ({ default: m.TraditionsAtlas })));
 
 /**
  * Compare Traditions — up to three traditions side by side, each column its
@@ -104,6 +107,18 @@ function CompareTraditions() {
               );
             })}
           </div>
+        </ToolBand>
+      )}
+
+      {chosen.length >= 1 && (
+        <ToolBand>
+          <Eyebrow>Where they were kindled · {names.join(" · ")}</Eyebrow>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            The places and years of every dated entry filed under each chosen tradition, from the Atlas: one tint and one lane to a tradition, and an entry filed under two of them in both.
+          </p>
+          <Suspense fallback={null}>
+            <TraditionsAtlas names={names} />
+          </Suspense>
         </ToolBand>
       )}
 

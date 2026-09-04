@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
@@ -7,6 +8,9 @@ import { LabelChips } from "@/components/phos/Labels";
 import { EntryBody } from "@/components/phos/EntryBody";
 import { Missing } from "@/components/phos/Missing";
 import { useStepKeys, KeyHint } from "@/components/phos/StepKeys";
+import { ATLAS_DIVISIONS } from "@/lib/phos/atlas-gate";
+
+const DivisionAtlas = lazy(() => import("@/components/phos/DivisionAtlas").then((m) => ({ default: m.DivisionAtlas })));
 import type { Entry as Row } from "@/lib/contents";
 import { division, entriesOf, neighbourDivisions, progress, divisionLabel, valueSlug } from "@/lib/phos/entries";
 
@@ -77,6 +81,12 @@ function DivisionPage() {
           {intro && <EntryBody body={intro.body} className="mt-2" />}
         </div>
       </header>
+
+      {ATLAS_DIVISIONS.has(d.id) && (
+        <Suspense fallback={null}>
+          <DivisionAtlas division={d.id} />
+        </Suspense>
+      )}
 
       <section className="relative isolate border-t border-border py-16">
         <SectionGlyph delay={-260} />

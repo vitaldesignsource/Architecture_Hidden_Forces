@@ -213,6 +213,8 @@ export function AtlasTimeline(p: TimelineProps) {
           {cursor !== null && cursor >= t0 && cursor <= t1 && (
             <g className="pointer-events-none">
               <line x1={x(cursor)} x2={x(cursor)} y1={AXIS - 8} y2={height} className={p.pinned === cursor ? "aoh-tl-cursor is-pinned" : "aoh-tl-cursor"} />
+              {/* backed, so it reads over whatever tick it lands on */}
+              <rect x={x(cursor) + 1} y={0} width={fmtYear(cursor).length * 6.2 + 8} height={AXIS - 6} fill="var(--void)" />
               <text x={x(cursor) + 4} y={AXIS - 10} className="aoh-tl-cursor-label">{fmtYear(cursor)}</text>
             </g>
           )}

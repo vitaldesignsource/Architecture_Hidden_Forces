@@ -26,13 +26,15 @@ export type MapProps = {
   onPlace?: (id: string | null) => void;
   /** Place ids to frame when the map first shows, and again when they change. */
   focus?: string[] | null;
+  /** Tinted sets of places, as when traditions are compared; a place in none of them is dimmed. */
+  groups?: { id: string; places: Set<string>; cls: string }[];
   compact?: boolean;
   className?: string;
 };
 
 type Mark = { id: string; x: number; y: number; spans: Span[] };
 
-export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, place = null, hovPlace = null, onHover, onHoverPlace, onPlace, focus = null, compact = false, className = "" }: MapProps) {
+export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, place = null, hovPlace = null, onHover, onHoverPlace, onPlace, focus = null, groups, compact = false, className = "" }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
   const vb = useViewBox(svgRef, { w: geo.w, h: geo.h }, { minW: 140, interactive: !compact });
@@ -105,15 +107,19 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
           const hot = activePlaces.has(m.id) || hovPlace === m.id;
           const chosen = place === m.id;
           const lit = litNow ? litNow.has(m.id) : true;
-          const dim = (litNow && !lit) || (active && !hot) || (place && !chosen && !hot);
+          const gs = groups ? groups.filter((g) => g.places.has(m.id)) : [];
+          const dim = (litNow && !lit) || (active && !hot) || (place && !chosen && !hot) || (groups && gs.length === 0);
           return (
-            <g key={m.id} data-place={m.id} className={`aoh-atlas-mark ${hot || chosen ? "is-hot" : ""} ${litNow && lit ? "is-lit" : ""}`} style={{ opacity: dim ? 0.28 : 1 }}
+            <g key={m.id} data-place={m.id} className={`aoh-atlas-mark ${hot || chosen ? "is-hot" : ""} ${litNow && lit ? "is-lit" : ""} ${gs[0]?.cls ?? ""}`} style={{ opacity: dim ? 0.22 : 1 }}
                onPointerEnter={(ev) => { showTip(m, ev); onHoverPlace?.(m.id); }}
                onPointerMove={(ev) => showTip(m, ev)}
                onPointerLeave={() => { setTip(null); onHoverPlace?.(null); }}>
               <circle cx={m.x} cy={m.y} r={r * 3.2} className="aoh-atlas-halo" />
               {chosen && <circle cx={m.x} cy={m.y} r={r * 2.2} fill="none" stroke="var(--gold)" strokeWidth={0.9 * fs} />}
               <circle cx={m.x} cy={m.y} r={r} className="aoh-atlas-core" style={{ cursor: compact ? "default" : "pointer" }} />
+              {gs.slice(1).map((g, i) => (
+                <circle key={g.id} cx={m.x} cy={m.y} r={r * (1.8 + i * 0.7)} className={`aoh-atlas-ring ${g.cls}`} style={{ strokeWidth: 0.9 * fs }} />
+              ))}
             </g>
           );
         })}
