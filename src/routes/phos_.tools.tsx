@@ -56,9 +56,10 @@ function Tools() {
                   The Register of Beings
                 </span>
                 <span className="mt-2 block max-w-xl text-sm leading-relaxed text-muted-foreground">
-                  Gods, messengers, daimons, adversaries, ancestors and personified powers across the
-                  traditions — each in the script it was written in, each classed as its own tradition
-                  classes it.
+                  A hundred and sixty gods, messengers, daimons, adversaries, ancestors and
+                  personified powers, each in the script it was written in and classed as its own
+                  tradition classes it — drawn as a field so you can see at a glance which
+                  tradition&rsquo;s middle is crowded and which is bare.
                 </span>
               </span>
             </div>
