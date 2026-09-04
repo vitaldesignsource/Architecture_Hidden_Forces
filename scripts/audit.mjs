@@ -549,11 +549,11 @@ if (lex.length) {
 
 // ----------------------------------------------------------------- register
 {
-  const src = readFileSync(join(root, "src/lib/phos/beings.ts"), "utf8");
+  const reg = readFileSync(join(root, "src/lib/phos/beings.ts"), "utf8");
   const toc = JSON.parse(readFileSync(join(root, "src/lib/phos/toc.json"), "utf8"));
   const ids = new Set(toc.divisions.flatMap((d) => d.entries.map((e) => e.id)));
   const cited = new Set();
-  for (const m of src.matchAll(/entries:\s*\[([^\]]*)\]/g))
+  for (const m of reg.matchAll(/entries:\s*\[([^\]]*)\]/g))
     for (const q of m[1].matchAll(/"([^"]+)"/g)) cited.add(q[1]);
   const unknown = [...cited].filter((id) => !ids.has(id));
   if (unknown.length) fail("register", `beings filed against entries that do not exist: ${unknown.join(", ")}`);
@@ -563,8 +563,20 @@ if (lex.length) {
   if (missing.length) fail("register", `entries whose beings would never show (not in beings-gate.ts): ${missing.join(", ")}`);
   const stale = [...gated].filter((id) => !cited.has(id));
   if (stale.length) fail("register", `beings-gate.ts would fetch the register for entries no being names: ${stale.join(", ")}`);
-  const beings = (src.match(/^    id: "/gm) ?? []).length;
-  note("register", `${cited.size} entries carry beings from a register of ${beings}`);
+  // Anything in the source that points at one being by name — the treatise's own
+  // list of mediators, a ?being= deep link — must still name a being.
+  const known = new Set([...reg.matchAll(/^    id: "([^"]+)",$/gm)].map((m) => m[1]));
+  const named = new Map();
+  for (const { file, text } of sources) {
+    if (file.endsWith("phos/beings.ts")) continue;
+    for (const m of text.matchAll(/\?being=([a-z0-9-]{3,})/g))
+      if (!known.has(m[1])) named.set(m[1], file);
+    for (const m of text.matchAll(/^    id: "([a-z0-9-]{3,})", name:/gm))
+      if (!known.has(m[1])) named.set(m[1], file);
+  }
+  if (named.size)
+    fail("register", `ids pointed at a being that is not in the register: ${[...named].map(([k, f]) => `${k} (${f})`).slice(0, 5).join(", ")}`);
+  note("register", `${cited.size} entries carry beings from a register of ${known.size}`);
 }
 
 // ---------------------------------------------------------------- measure

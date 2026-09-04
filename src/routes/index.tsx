@@ -62,6 +62,7 @@ import { PetalRosette } from "@/components/PetalRosette";
 import { SealBlock } from "@/components/SealBlock";
 import { MeanderBand } from "@/components/MeanderBand";
 import { Term, TermRegister, type TermData } from "@/components/Term";
+import type { ScriptKey } from "@/lib/scripts";
 import { CrossMark } from "@/components/CrossMark";
 import {
   KhekerFrieze,
@@ -140,6 +141,65 @@ const GNOSTIC_TERMS: TermData[] = [
   { script: "coptic", orig: "ⲥⲟⲫⲓⲁ", tr: "sophia", gloss: "the Greek word taken over unchanged into Coptic, as most of the technical vocabulary of these texts is." },
   { script: "coptic", orig: "ⲡⲓⲥⲧⲓⲥ ⲥⲟⲫⲓⲁ", tr: "pistis sophia", gloss: "Faith-Wisdom: the title figure of the Askew Codex, who is deceived by a false light, dragged down into chaos, and utters thirteen penitences before she is raised." },
   { script: "greek", orig: "ἐνθύμησις", tr: "enthymēsis", gloss: "the intention or desire that, in the Valentinian account as Irenaeus reports it, is separated from Sophia and becomes the lower Sophia, Achamoth." },
+];
+
+/**
+ * Ten of the register's hundred and sixty, one per tradition and all from the
+ * same stratum — the daimonic middle § XXXI is about. Set here rather than
+ * imported: the register is a quarter of a megabyte and belongs in its own
+ * chunk, and the audit checks that every id below still names a being.
+ */
+const MEDIATORS: { id: string; name: string; tradition: string; script: ScriptKey; orig: string; tr: string; office: string }[] = [
+  {
+    id: "the-seven-apkallu", name: "The Seven Apkallū", tradition: "Mesopotamian",
+    script: "cuneiform", orig: "𒉣𒈨", tr: "abgal",
+    office: "Antediluvian culture-bringers sent by Ea to teach humanity the arts of civilisation; afterwards, guardian figures.",
+  },
+  {
+    id: "apep", name: "Apep", tradition: "Egyptian",
+    script: "hieroglyphs", orig: "𓉻𓊪𓊪𓆙", tr: "ꜥꜣpp",
+    office: "The serpent that attacks the sun barque at the edge of night and must be repelled every day, without ever being finally destroyed.",
+  },
+  {
+    id: "the-personal-daimon-of-the-myth-of-er", name: "The personal daimōn", tradition: "Greek",
+    script: "greek", orig: "δαίμων", tr: "daímōn",
+    office: "The guardian allotted to, or rather chosen by, a soul before birth, who then carries out the life that soul selected.",
+  },
+  {
+    id: "ashmedai", name: "Ashmedai", tradition: "Jewish",
+    script: "hebrew", orig: "אשמדאי", tr: "ʾašmədaʾy",
+    office: "King of demons; in the Talmud, a captive expert who knows where the shamir is kept.",
+  },
+  {
+    id: "ara-mainiiu", name: "Aŋra Mainiiu", tradition: "Iranian",
+    script: "avestan", orig: "𐬀𐬢𐬭𐬀⸱𐬨𐬀𐬌𐬥𐬌𐬌𐬎", tr: "aŋra- mainiiu-",
+    office: "The destructive mentality; source of the counter-creation — sickness, winter, the noxious creatures, and death.",
+  },
+  {
+    id: "the-demiurge", name: "The Demiurge", tradition: "Christian and Gnostic",
+    script: "coptic", orig: "ⲇⲏⲙⲓⲟⲩⲣⲅⲟⲥ", tr: "Dēmiourgos",
+    office: "To fashion and administer the visible and psychic world, unknowingly executing his mother's designs.",
+  },
+  {
+    id: "dakini", name: "Ḍākinī", tradition: "Vedic",
+    script: "devanagari", orig: "डाकिनी", tr: "ḍākinī",
+    office: "The śakti seated in the mūlādhāra, the earth-cakra; and, more broadly, one of a class of dangerous female powers.",
+  },
+  {
+    id: "mara", name: "Māra", tradition: "Buddhist",
+    script: "devanagari", orig: "मार", tr: "māra",
+    office: "The tempter; the being, and the category, of whatever obstructs awakening.",
+  },
+  {
+    id: "siming-director-of-destinies", name: "Siming, Director of Destinies", tradition: "Daoist",
+    script: "hanzi", orig: "司命", tr: "Sīmìng",
+    office: "Keeps the registers of lifespan; audits conduct and deducts time from the allotted span.",
+  },
+  {
+    id: "iblis", name: "Iblīs", tradition: "Islamic",
+    script: "arabic", orig: "إِبْلِيس", tr: "Iblīs",
+    office: "The refuser of prostration to Ādam; the tempter, granted respite until the appointed Day.",
+  },
 ];
 
 export const Route = createFileRoute("/")({
@@ -6751,6 +6811,64 @@ function Index() {
               <span className="italic text-gold">custodian of the passage beyond merely allotted
               existence</span> — fulfilling its office most completely when the soul becomes capable
               of receiving direction from a higher principle than itself.
+            </p>
+          </div>
+
+          {/* ---- the population, named ---- */}
+          <div className="mt-24 border-t border-border pt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              Who fills it, named
+            </p>
+            <h3 className="mt-6 max-w-3xl font-serif text-3xl leading-tight">
+              The middle of the world is not a category.{" "}
+              <span className="italic text-gold">It is a population.</span>
+            </h3>
+            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Everything above is structural: orders, offices, mediation. But no tradition
+              experienced the middle as a diagram. It named it, one being at a time, in its own
+              language, and the names carry what the structure cannot — that the middle is morally
+              mixed, that a culture-bringer and a strangler of infants occupy the same stratum, and
+              that some of these beings are offices a star or a god or a kitchen hearth may fill
+              rather than individuals at all.
+            </p>
+            <div className="mt-12 grid gap-x-12 gap-y-px lg:grid-cols-2">
+              {MEDIATORS.map((m) => (
+                <Link
+                  key={m.id}
+                  to="/phos/tools/beings"
+                  search={{ being: m.id }}
+                  className="group grid grid-cols-[minmax(0,1fr)] gap-1 border-b border-border py-5 transition-colors hover:border-gold/40"
+                >
+                  <span className="flex flex-wrap items-baseline gap-x-3">
+                    <Term script={m.script} orig={m.orig} label={`${m.tr} — ${m.name}`} className="text-xl text-gold" />
+                    <span className="font-serif text-lg text-bone transition-colors group-hover:text-gold">
+                      {m.name}
+                    </span>
+                    <span className="font-serif text-sm italic text-gold-dim">{m.tr}</span>
+                  </span>
+                  <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
+                    {m.office}
+                  </span>
+                  <span className="mt-1.5 block font-mono text-[9px] uppercase tracking-[0.16em] text-bone/40">
+                    {m.tradition}
+                  </span>
+                </Link>
+              ))}
+            </div>
+            <p className="mt-10 max-w-3xl text-base leading-relaxed text-muted-foreground">
+              Ten of a hundred and sixty, one from each tradition, and all from the same stratum —
+              which is why they can be set beside one another at all. The rest, with each name in
+              its own script, its own tradition&rsquo;s word for what kind of thing it is, and the
+              sources it rests on, are in{" "}
+              <Link
+                to="/phos/tools/beings"
+                className="text-gold-dim underline-offset-4 hover:text-gold hover:underline"
+              >
+                the Register of Beings <CrossMark className="text-gold/70" />
+              </Link>
+              . It will not tell you that an apkallu and a daimōn are the same thing. It shows you
+              where each tradition&rsquo;s population is thick and where it is empty, and the empty
+              places are the finding.
             </p>
           </div>
 
