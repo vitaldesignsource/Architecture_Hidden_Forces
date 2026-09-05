@@ -69,6 +69,8 @@ import { Seal, type SealKey } from "@/components/diagrams/Seals";
 import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
 import { CentresLotus } from "@/components/diagrams/CentresLotus";
+import { PlanetGlyph } from "@/components/PlanetGlyph";
+import { ZodiacGlyph } from "@/components/ZodiacGlyph";
 import { SealBlock } from "@/components/SealBlock";
 import { MeanderBand } from "@/components/MeanderBand";
 import { Term, TermRegister, type TermData } from "@/components/Term";
@@ -2252,15 +2254,17 @@ function Index() {
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { p: "Mars in Cancer", c: "Apas–Tejas", d: "A watery, protective, cohesive field carrying a fiery and separating force." },
-                { p: "Moon in Aries", c: "Tejas–Apas", d: "A fiery field inwardly modified by feeling, attachment, and memory." },
-                { p: "Mercury in Taurus", c: "Prithivi–Vayu", d: "Stable structure containing movement, language, and exchange." },
-                { p: "Saturn in Aquarius", c: "Vayu–Prithivi", d: "An airy, conceptual field containing limitation and durability." },
-                { p: "Jupiter in Scorpio", c: "Apas–Akasha", d: "Emotional depth and penetration opened toward meaning and hidden possibility." },
+                { p: "Mars in Cancer", pl: "Mars", sg: "Cancer", c: "Apas–Tejas", d: "A watery, protective, cohesive field carrying a fiery and separating force." },
+                { p: "Moon in Aries", pl: "Moon", sg: "Aries", c: "Tejas–Apas", d: "A fiery field inwardly modified by feeling, attachment, and memory." },
+                { p: "Mercury in Taurus", pl: "Mercury", sg: "Taurus", c: "Prithivi–Vayu", d: "Stable structure containing movement, language, and exchange." },
+                { p: "Saturn in Aquarius", pl: "Saturn", sg: "Aquarius", c: "Vayu–Prithivi", d: "An airy, conceptual field containing limitation and durability." },
+                { p: "Jupiter in Scorpio", pl: "Jupiter", sg: "Scorpio", c: "Apas–Akasha", d: "Emotional depth and penetration opened toward meaning and hidden possibility." },
               ].map((x) => (
                 <div key={x.p} className="group border border-border p-4 transition-colors hover:border-gold/40">
-                  <div className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
-                    {x.p}
+                  <div className="flex items-center gap-2 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    <PlanetGlyph planet={x.pl} className="h-[15px] w-[15px] shrink-0 text-gold/75" decorative />
+                    <span className="min-w-0">{x.p}</span>
+                    <ZodiacGlyph sign={x.sg} className="h-[15px] w-[15px] shrink-0 text-gold/75" decorative />
                   </div>
                   <div className="mt-2 flex items-center gap-2.5 font-serif text-lg italic text-gold">
                     <SubTattvaSign pair={x.c} size={22} />

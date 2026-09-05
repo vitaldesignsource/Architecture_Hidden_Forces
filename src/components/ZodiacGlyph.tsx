@@ -55,7 +55,7 @@ export const ZODIAC_PATHS: Record<string, string> = {
   Pisces: "M7 4c-3 4-3 12 0 16 M17 4c3 4 3 12 0 16 M4 12h16",
 };
 
-export function ZodiacGlyph({ sign, className = "" }: { sign: string; className?: string }) {
+export function ZodiacGlyph({ sign, className = "", decorative = false }: { sign: string; className?: string; decorative?: boolean }) {
   const d = ZODIAC_PATHS[sign];
   if (!d) return null;
   return (
@@ -67,8 +67,9 @@ export function ZodiacGlyph({ sign, className = "" }: { sign: string; className?
       strokeWidth="1.35"
       strokeLinecap="round"
       strokeLinejoin="round"
-      role="img"
-      aria-label={sign}
+      role={decorative ? undefined : "img"}
+      aria-label={decorative ? undefined : sign}
+      aria-hidden={decorative || undefined}
     >
       <path d={d} />
     </svg>
