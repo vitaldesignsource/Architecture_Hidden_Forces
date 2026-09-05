@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { describe } from "@/lib/seo";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { TOOLS } from "@/lib/phos/vocab";
 import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
@@ -10,7 +11,7 @@ import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
  * would feed them.
  */
 export const Route = createFileRoute("/phos_/tools")({
-  head: () => ({ meta: [{ title: "Instruments — Phōs" }] }),
+  head: () => ({ meta: describe("Instruments — Phōs", "The instruments of Phōs: the Symbol Atlas, Compare Traditions, Trace a Concept, the Luminous Anatomy, the Diagram Library, the Constellation, the Atlas, the Flashing Colours and the Register of Beings.") }),
   component: Tools,
 });
 

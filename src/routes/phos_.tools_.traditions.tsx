@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { EntryRow, EntryRows } from "@/components/phos/EntryRows";
@@ -21,7 +22,7 @@ export const Route = createFileRoute("/phos_/tools_/traditions")({
     const pick = (k: keyof Search) => (typeof search[k] === "string" && search[k] ? (search[k] as string) : undefined);
     return { a: pick("a"), b: pick("b"), c: pick("c") };
   },
-  head: () => ({ meta: [{ title: "Compare Traditions — Phōs" }] }),
+  head: () => ({ meta: describe("Compare Traditions — Phōs", "Compare Traditions: two or three traditions of light side by side, with the entries of Phōs they share.") }),
   component: CompareTraditions,
 });
 

@@ -1,3 +1,4 @@
+import { describe } from "@/lib/seo";
 import { useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
@@ -20,7 +21,7 @@ export const Route = createFileRoute("/phos_/tools_/trace")({
     at: typeof search.at === "string" && search.at ? search.at : undefined,
     path: typeof search.path === "string" && search.path ? search.path : undefined,
   }),
-  head: () => ({ meta: [{ title: "Trace a Concept — Phōs" }] }),
+  head: () => ({ meta: describe("Trace a Concept — Phōs", "Trace a Concept: follow an entry's related entries through Phōs, with a breadcrumb of the path taken.") }),
   component: Trace,
 });
 

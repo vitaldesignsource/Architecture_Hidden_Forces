@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { EntryRow } from "@/components/phos/EntryRows";
@@ -27,7 +28,7 @@ export const Route = createFileRoute("/phos_/tools_/atlas")({
       : typeof s.y === "string" && s.y.trim() && Number.isFinite(Number(s.y)) ? Math.round(Number(s.y)) : undefined,
     p: typeof s.p === "string" && s.p ? s.p : undefined,
   }),
-  head: () => ({ meta: [{ title: "The Atlas — Phōs" }] }),
+  head: () => ({ meta: describe("The Atlas — Phōs", "Where and when the entries of Phōs belong: a map of the old world and a timeline from the Pyramid Texts to the science of light.") }),
   component: Atlas,
 });
 

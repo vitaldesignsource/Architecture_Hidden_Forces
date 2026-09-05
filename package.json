@@ -7,14 +7,15 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "node scripts/sitemap.mjs && vite build",
     "start": "vite preview --host 0.0.0.0 --port ${PORT:-4173}",
     "preview": "vite preview",
     "audit": "node scripts/audit.mjs",
     "toc": "node scripts/phos-toc.mjs",
     "constellation": "node scripts/constellation.mjs",
     "atlas": "node scripts/atlas.mjs",
-    "fonts": "node scripts/fonts.mjs"
+    "fonts": "node scripts/fonts.mjs",
+    "sitemap": "node scripts/sitemap.mjs"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.132.0",

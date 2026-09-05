@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState, type PointerEvent as RPointerEvent, type WheelEvent as RWheelEvent } from "react";
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { DIVISIONS, entryById } from "@/lib/phos/entries";
@@ -29,7 +30,7 @@ export const Route = createFileRoute("/phos_/tools_/constellation")({
     d: typeof s.d === "string" && s.d ? s.d : undefined,
     e: typeof s.e === "string" && s.e ? s.e : undefined,
   }),
-  head: () => ({ meta: [{ title: "The Constellation — Phōs" }] }),
+  head: () => ({ meta: describe("The Constellation — Phōs", "The citation graph of Phōs drawn as a night sky: every entry a star, every cross-reference a line, the divisions as constellations.") }),
   component: Constellation,
 });
 

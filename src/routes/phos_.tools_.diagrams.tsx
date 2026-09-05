@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { FigureFrame } from "@/components/phos/FigureFrame";
@@ -25,7 +26,7 @@ export const Route = createFileRoute("/phos_/tools_/diagrams")({
   validateSearch: (search: Record<string, unknown>): { f?: string } => ({
     f: typeof search.f === "string" && search.f ? search.f : undefined,
   }),
-  head: () => ({ meta: [{ title: "Diagram Library — Phōs" }] }),
+  head: () => ({ meta: describe("Diagram Library — Phōs", "The Diagram Library: every drawing in the three volumes of The Architecture of Hidden Forces, with the page each belongs to.") }),
   component: DiagramLibrary,
 });
 

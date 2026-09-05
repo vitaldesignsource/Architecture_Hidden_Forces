@@ -4,3 +4,5 @@ dist
 *.local
 .vite
 .claude
+# written by scripts/sitemap.mjs at build time, from SITE_ORIGIN
+public/sitemap.xml

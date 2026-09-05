@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
@@ -30,9 +31,13 @@ export const Route = createFileRoute("/phos_/$division")({
     const [intro, coda, groupIntros, groupCodas] = await Promise.all([
       index.loadIntro(d.id), index.loadCoda(d.id), index.loadGroupIntros(d.id), index.loadGroupCodas(d.id),
     ]);
-    return { intro, coda, groupIntros, groupCodas, title: `${index.divisionLabel(d)} — ${d.title} — Phōs` };
+    return {
+      intro, coda, groupIntros, groupCodas,
+      title: `${index.divisionLabel(d)} — ${d.title} — Phōs`,
+      description: intro?.meta.summary ?? `${d.title}: the entries of ${index.divisionLabel(d)} of Phōs, the encyclopaedia of light.`,
+    };
   },
-  head: ({ loaderData }) => ({ meta: [{ title: loaderData?.title ?? "Phōs" }] }),
+  head: ({ loaderData }) => ({ meta: describe(loaderData?.title ?? "Phōs", loaderData?.description ?? "A division of Phōs, the encyclopaedia of light.") }),
   notFoundComponent: () => <Missing what="division" />,
   component: DivisionPage,
 });

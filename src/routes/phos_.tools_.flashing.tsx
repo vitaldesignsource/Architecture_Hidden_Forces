@@ -1,3 +1,4 @@
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import {
@@ -21,7 +22,7 @@ import {
  * from what is claimed about what is seen.
  */
 export const Route = createFileRoute("/phos_/tools_/flashing")({
-  head: () => ({ meta: [{ title: "Flashing Colours — Instruments — Phōs" }] }),
+  head: () => ({ meta: describe("Flashing Colours — Instruments — Phōs", "The Flashing Colours: the Golden Dawn's colour scales and the complementary flash, as a working instrument.") }),
   component: Flashing,
 });
 

@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { describe } from "@/lib/seo";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { EntryRows } from "@/components/phos/EntryRows";
 import { AnatomyAxis } from "@/components/phos/AnatomyAxis";
@@ -17,7 +18,7 @@ export const Route = createFileRoute("/phos_/tools_/anatomy")({
   validateSearch: (search: Record<string, unknown>): { station?: string } => ({
     station: typeof search.station === "string" && search.station ? search.station : undefined,
   }),
-  head: () => ({ meta: [{ title: "Luminous Anatomy — Phōs" }] }),
+  head: () => ({ meta: describe("Luminous Anatomy — Phōs", "A guided walk down the planes of the luminous anatomy, from spirit to environment, with the entries of Phōs that belong to each.") }),
   component: Anatomy,
 });
 

@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { describe } from "@/lib/seo";
 import { Backdrop } from "@/components/Backdrop";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHeader";
@@ -11,7 +12,7 @@ import { FACETS, facetValues } from "@/lib/phos/entries";
  * will fill it exist. A free facet shows only what is in use.
  */
 export const Route = createFileRoute("/phos_/browse")({
-  head: () => ({ meta: [{ title: "Browse — Phōs" }] }),
+  head: () => ({ meta: describe("Browse — Phōs", "Browse Phōs, the encyclopaedia of light, by tradition, quality, plane, operation, symbol, text or period.") }),
   component: Browse,
 });
 

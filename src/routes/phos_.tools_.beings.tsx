@@ -1,3 +1,4 @@
+import { describe } from "@/lib/seo";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
@@ -63,7 +64,7 @@ export const Route = createFileRoute("/phos_/tools_/beings")({
       q: str(search.q),
     };
   },
-  head: () => ({ meta: [{ title: "The Register of Beings — Instruments — Phōs" }] }),
+  head: () => ({ meta: describe("The Register of Beings — Instruments — Phōs", "The Register of Beings: ten traditions' populations of the middle of the world, each named in its own script and set side by side.") }),
   component: Register,
 });
 

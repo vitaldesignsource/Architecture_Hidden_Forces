@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { describe } from "@/lib/seo";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { EntryRows } from "@/components/phos/EntryRows";
 import { SymbolGlyph } from "@/components/phos/SymbolGlyph";
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/phos_/tools_/symbols")({
   validateSearch: (search: Record<string, unknown>): { s?: string } => ({
     s: typeof search.s === "string" && search.s ? search.s : undefined,
   }),
-  head: () => ({ meta: [{ title: "Symbol Atlas — Phōs" }] }),
+  head: () => ({ meta: describe("Symbol Atlas — Phōs", "The Symbol Atlas: thirty-three symbols of light drawn as glyphs, with their meanings and the entries of Phōs that carry each.") }),
   component: SymbolAtlas,
 });
 

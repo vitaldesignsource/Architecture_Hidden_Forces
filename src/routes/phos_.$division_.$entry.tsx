@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { describe } from "@/lib/seo";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
@@ -33,9 +34,10 @@ export const Route = createFileRoute("/phos_/$division_/$entry")({
     return {
       body: e.written ? await index.loadBody(e) : null,
       title: `${e.title} — ${index.divisionLabel(e.division)} — Phōs`,
+      description: e.meta?.summary ?? `${e.title}: an entry of ${index.divisionLabel(e.division)} of Phōs, the encyclopaedia of light.`,
     };
   },
-  head: ({ loaderData }) => ({ meta: [{ title: loaderData?.title ?? "Phōs" }] }),
+  head: ({ loaderData }) => ({ meta: describe(loaderData?.title ?? "Phōs", loaderData?.description ?? "An entry of Phōs, the encyclopaedia of light.") }),
   notFoundComponent: () => <Missing what="entry" />,
   component: EntryPage,
 });

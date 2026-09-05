@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { describe } from "@/lib/seo";
 import { Backdrop } from "@/components/Backdrop";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHeader";
@@ -17,7 +18,10 @@ export const Route = createFileRoute("/phos_/browse_/$facet/$value")({
     return { facet: f, value };
   },
   head: ({ loaderData }) => ({
-    meta: [{ title: loaderData ? `${loaderData.value} — ${loaderData.facet.name} — Phōs` : "Phōs" }],
+    meta: describe(
+      loaderData ? `${loaderData.value} — ${loaderData.facet.name} — Phōs` : "Phōs",
+      loaderData ? `The entries of Phōs that name ${loaderData.value} under ${loaderData.facet.name.toLowerCase()}.` : "A facet of Phōs, the encyclopaedia of light.",
+    ),
   }),
   notFoundComponent: () => (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
