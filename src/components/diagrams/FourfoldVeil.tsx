@@ -132,20 +132,30 @@ const STEPS_DOWN: [string, string][] = [
   ["Material institutions fix it, and tradition passes on the structure as though it were the pattern", "Beyond the Veil"],
 ];
 
-/** the same movement run the other way: the correction is what gets transmitted */
-const STEPS_UP: [string, string][] = [
-  ["Material failure exposes a weakness in a living process", "Beyond the Veil"],
-  ["The organism adapts", "Life"],
-  ["New perception revises what is understood", "Light"],
-  ["The correction is what gets transmitted", "Warmth"],
+/**
+ * The same movement run the other way: the correction is what gets
+ * transmitted. The section gives these four clauses in this order and assigns
+ * none of them to a membrane, so no layer is named here — the rows simply
+ * follow the band's rise.
+ */
+const STEPS_UP: string[] = [
+  "Material failure exposes a weakness in a living process",
+  "The organism adapts",
+  "New perception revises what is understood",
+  "The correction is what gets transmitted",
 ];
 
-/** which spans of the band, and which ring line, each step lights */
-const LIT_DOWN: { sp: number[]; ring: number | "chon" }[] = [
+/**
+ * Which spans of the band, and which ring line, each step lights. Descending,
+ * the section names a membrane for every step, so its ring is outlined as the
+ * band passes; ascending it names only matter, so past CHON the band alone
+ * lights and no ring is claimed for a clause.
+ */
+const LIT_DOWN: { sp: number[]; ring: number | "chon" | null }[] = [
   { sp: [1], ring: 0 }, { sp: [2], ring: 1 }, { sp: [3], ring: 2 }, { sp: [4], ring: 3 }, { sp: [5], ring: "chon" },
 ];
-const LIT_UP: { sp: number[]; ring: number | "chon" }[] = [
-  { sp: [5], ring: "chon" }, { sp: [4], ring: 3 }, { sp: [3, 2], ring: 1 }, { sp: [1, 0], ring: 0 },
+const LIT_UP: { sp: number[]; ring: number | "chon" | null }[] = [
+  { sp: [5], ring: "chon" }, { sp: [4], ring: null }, { sp: [3, 2], ring: null }, { sp: [1, 0], ring: null },
 ];
 
 export function FourfoldVeil() {
@@ -159,7 +169,9 @@ export function FourfoldVeil() {
   const descending = dir === "descending";
   const col = descending ? "var(--gold)" : "var(--bone)";
   const sp = spans(descending, err);
-  const steps = descending ? STEPS_DOWN : STEPS_UP;
+  const steps: [string, string | null][] = descending
+    ? STEPS_DOWN
+    : STEPS_UP.map((t): [string, null] => [t, null]);
   const lit = step === null ? null : (descending ? LIT_DOWN : LIT_UP)[step];
 
   useEffect(() => {
@@ -237,7 +249,7 @@ export function FourfoldVeil() {
                         strokeOpacity={on ? 1 : sel ? 0.22 : 0.45}
                         strokeWidth={on ? 1.8 : 1} />
                 {/* the name on the ring's shoulder, clear of the channel */}
-                <text className="font-label" style={fs(7.4)} letterSpacing="1.3" textAnchor="middle"
+                <text className="font-label" style={fs(7.6)} letterSpacing="1.3" textAnchor="middle"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       fillOpacity={on ? 1 : sel ? 0.55 : 0.9}>
                   <textPath href={`#aoh-fv-arc-${i}`} startOffset="24%">{e.k.toUpperCase()}</textPath>
@@ -249,9 +261,9 @@ export function FourfoldVeil() {
           {/* dense form: what the innermost membrane meets */}
           <circle cx={C} cy={C} r={R0} fill="var(--void)" stroke="var(--bone)"
                   strokeOpacity={lit?.ring === "chon" ? 0.85 : 0.5} strokeWidth={lit?.ring === "chon" ? 1.4 : 1.1} />
-          <text x={C} y={C - 1} textAnchor="middle" className="font-label" style={fs(7.2)}
+          <text x={C} y={C - 1} textAnchor="middle" className="font-label" style={fs(7.8)}
                 letterSpacing="0.8" fill="var(--bone)" fillOpacity="0.85">CHON</text>
-          <text x={C} y={C + 8} textAnchor="middle" className="font-label" style={fs(7)}
+          <text x={C} y={C + 8} textAnchor="middle" className="font-label" style={fs(7.6)}
                 letterSpacing="0.5" fill="var(--bone)" fillOpacity="0.85">MATTER</text>
 
           {/* the channel — one passage crossing every membrane, paying at each */}
@@ -321,16 +333,16 @@ export function FourfoldVeil() {
                     strokeOpacity="0.5" strokeWidth="1.3" pointerEvents="none" />
           )}
 
-          <text x={C + 26} y="2" className="font-label" style={fs(6.6)} letterSpacing="1.1"
+          <text x={C + 26} y="2" className="font-label" style={fs(7.6)} letterSpacing="1.1"
                 fill="var(--muted-foreground)" fillOpacity="0.85">
             {descending ? "A LATENT PATTERN" : "IMAGE AND MEMORY"}
           </text>
 
-          <text x={C} y="340" textAnchor="middle" className="font-label hidden sm:block" style={fs(6.8)}
+          <text x={C} y="340" textAnchor="middle" className="font-label hidden sm:block" style={fs(7.6)}
                 letterSpacing="1.1" fill="var(--muted-foreground)" fillOpacity="0.85">
             NESTED, NOT STACKED — NOT A LADDER BUT A RESPIRATION
           </text>
-          <text x={C} y="334" textAnchor="middle" className="font-label sm:hidden" style={fs(6.8)}
+          <text x={C} y="334" textAnchor="middle" className="font-label sm:hidden" style={fs(7.6)}
                 letterSpacing="1.1" fill="var(--muted-foreground)" fillOpacity="0.85">
             <tspan x={C} dy="0">NESTED, NOT STACKED —</tspan>
             <tspan x={C} dy="12">NOT A LADDER BUT A RESPIRATION</tspan>
@@ -387,10 +399,12 @@ export function FourfoldVeil() {
               {steps.map(([text, layer], i) => {
                 const on = step === null || step === i;
                 return (
-                  <div key={layer}
-                       className={`grid grid-cols-[1fr_7rem] items-baseline gap-4 border-b border-border py-2.5 transition-opacity duration-300 ${on ? "opacity-100" : "opacity-40"}`}>
+                  <div key={text}
+                       className={`grid items-baseline gap-4 border-b border-border py-2.5 transition-opacity duration-300 ${layer ? "grid-cols-[1fr_7rem]" : ""} ${on ? "opacity-100" : "opacity-40"}`}>
                     <span className={`text-sm leading-relaxed ${on ? "text-bone/85" : "text-muted-foreground"}`}>{text}</span>
-                    <span className={`font-label text-[10px] uppercase tracking-[0.12em] ${on ? (descending ? "text-gold" : "text-bone/80") : "text-gold-dim"}`}>{layer}</span>
+                    {layer && (
+                      <span className={`font-label text-[10px] uppercase tracking-[0.12em] ${on ? "text-gold" : "text-gold-dim"}`}>{layer}</span>
+                    )}
                   </div>
                 );
               })}
@@ -398,7 +412,7 @@ export function FourfoldVeil() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               {descending
                 ? "In the drawing the pattern's line leaves centre by a little at the Warmth line and by more at Light; at Tone the band itself moves to it, and the displacement now belongs to the ordering; Life carries it whole; and it reaches CHON off centre — a definite offset where there was a pattern. Limitation is the price of actuality. Distortion begins only where the loss grows severe enough to replace the original telos."
-                : "The line leaves CHON off centre — a material failure — and at each membrane it crosses upward the displacement shrinks: the living process adapts, perception revises what is understood, and what reaches Warmth is the correction. The Veil carries both degradation and learning, which is the whole reason § IV insists it is a circuit and not a descent."}
+                : "The line leaves CHON off centre — a material failure — and at each membrane it crosses upward the displacement shrinks: the organism adapts, new perception revises what is understood, and what is transmitted upward is the correction. The Veil carries both degradation and learning, which is the whole reason § IV insists it is a circuit and not a descent."}
             </p>
           </>
         ) : (

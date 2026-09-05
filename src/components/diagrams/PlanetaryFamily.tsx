@@ -15,17 +15,27 @@ import { fs } from "./fig";
  * re-shapes the vessels and re-bends the line while the line itself persists.
  * The foot gathers the five to ritual, the sixth term. Agrippa follows the
  * line down from the virtue; Paracelsus reads it back up from the signature.
- * A pending planet shows five empty dashed vessels and no line at all.
+ * The words the family shares are lettered once, at the head of the line: the
+ * doctrine gives them to the family as a whole and assigns none to a level, so
+ * none is dealt out to a band. A pending planet shows five empty dashed
+ * vessels and no line at all.
  */
 
 const W = 420; // viewBox width
 const LX = 116; // where the virtue line runs
-const TOPS = [30, 114, 198, 282, 366]; // band tops
+const TOPS = [62, 146, 230, 314, 398]; // band tops; the head above them holds the virtue and its family words
 const BH = 76; // band height
 const VY = 42; // vessel centre below the band top
 const VR = 23; // half-height of a vessel: the line bends at VY ± VR
-const END = 460; // where the line ends below the fifth band
-const H = 540; // viewBox height
+const END = 492; // where the line ends below the fifth band
+const H = 584; // viewBox height
+/** the least a label is lettered at: eight units is eight pixels where the
+ *  figure is shown at its full width, and still seven on a 360 phone once
+ *  aoh-fig-tight has raised it; stacked lines sit sixteen units apart so
+ *  their boxes clear at that scale too */
+const LABEL = 8.6;
+const SMALL = 8;
+const LEAD = 16;
 
 /** horizontal offsets of the line at each vessel edge: entry of band 0, then
  *  the exit of each band (which is the entry of the next). Straight between
@@ -41,6 +51,23 @@ const SHORT: Record<string, string> = {
   "The circle · the crown · kingship": "The circle · the crown",
   "The sickle · the hourglass · enclosed places": "The sickle · the hourglass",
 };
+
+/** a word list as two lines joined by middle dots, broken where the longer
+ *  of the two comes out shortest */
+function balance(words: string[]): string[] {
+  let best = [words.join(" · ")];
+  let span = best[0].length;
+  for (let k = 1; k < words.length; k++) {
+    const a = words.slice(0, k).join(" · ");
+    const b = words.slice(k).join(" · ");
+    const m = Math.max(a.length, b.length);
+    if (m < span) {
+      span = m;
+      best = [a, b];
+    }
+  }
+  return best;
+}
 
 const rmq = () =>
   typeof window !== "undefined" && !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
@@ -312,9 +339,10 @@ export function PlanetaryFamily() {
   if (isFam) lastFam.current = sel;
   const xs = useTween(BENDS[isFam ? sel : lastFam.current].map((o) => LX + o), 300);
 
-  // the invariant words of the family, one riding the line at each band
-  const why = cur
-    ? cur.why.split(",").map((w) => w.trim().replace(/^or /, "").toUpperCase())
+  // the words the family shares, lettered once at the head of the line in two
+  // balanced lines: the section gives them to the whole family, not one to a level
+  const whyLines = cur
+    ? balance(cur.why.split(",").map((w) => w.trim().replace(/^or /, "").toUpperCase()))
     : [];
 
   const question = up
@@ -401,9 +429,10 @@ export function PlanetaryFamily() {
         .aoh-pf-tin { animation: aoh-pf-fade 300ms ease both; }
         @keyframes aoh-pf-fade { from { opacity: 0 } to { opacity: 1 } }
         .aoh-pf-end { cursor: pointer; }
+        .aoh-pf-foot { transition: opacity 300ms ease; }
         @media (prefers-reduced-motion: reduce) {
           .aoh-pf-row, .aoh-pf-run, .aoh-pf-tin { animation: none }
-          .aoh-pf-v { transition: none }
+          .aoh-pf-v, .aoh-pf-foot { transition: none }
         }
       `}</style>
 
@@ -419,9 +448,10 @@ export function PlanetaryFamily() {
               <title id="aoh-pf-t">
                 One formative virtue drawn as a single gold line descending through five stacked
                 vessels — celestial, mineral, living, bodily, imaginal — and bent at the edge of
-                each vessel it enters; the selected planet's expression is lettered in every band,
-                and a bracket at the foot gathers the five to ritual, their deliberate convergence.
-                A planet whose chain is not set down shows five empty dashed vessels and no line.
+                each vessel it enters; the words the family shares are lettered once at the head
+                of the line, the selected planet's expression is lettered in every band, and a
+                bracket at the foot gathers the five to ritual, their deliberate convergence. A
+                planet whose chain is not set down shows five empty dashed vessels and no line.
               </title>
 
               {/* a plate against the photograph behind the section */}
@@ -490,19 +520,18 @@ export function PlanetaryFamily() {
                     <circle key={k} cx={x.toFixed(1)} cy={y} r="1.7" fill="var(--gold)" />
                   ))}
 
-                  {/* the invariant words ride the line as it enters each band */}
-                  {TOPS.map((t, i) => (
+                  {/* the words the family shares, once, under the virtue the line begins from */}
+                  {whyLines.map((line, k) => (
                     <text
-                      key={`${name}-w${i}`}
+                      key={`${name}-w${k}`}
                       className="font-label aoh-pf-tin"
-                      x={(xs[i] + 8).toFixed(1)}
-                      y={t + 14}
-                      style={fs(7.2)}
+                      x={(x0 + 10).toFixed(1)}
+                      y={38 + k * LEAD}
+                      style={fs(SMALL)}
                       letterSpacing="1"
                       fill="var(--gold-dim)"
                     >
-                      {i ? "· " : ""}
-                      {why[i] ?? ""}
+                      {line}
                     </text>
                   ))}
 
@@ -521,13 +550,13 @@ export function PlanetaryFamily() {
                       }
                     }}
                   >
-                    <rect x={(x0 - 14).toFixed(1)} y="-3" width="150" height="33" fill="transparent" />
+                    <rect x={(x0 - 14).toFixed(1)} y="-2" width="300" height="30" fill="transparent" />
                     {up && <path d={`M${(x0 - 4).toFixed(1)} 14 L${x0.toFixed(1)} 8 L${(x0 + 4).toFixed(1)} 14`} fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />}
-                    <text x={(x0 + 10).toFixed(1)} y="15" className="font-label" style={fs(7.4)} letterSpacing="1.4" fill={up ? "var(--gold-dim)" : "var(--gold)"}>
+                    <text x={(x0 + 10).toFixed(1)} y="18" className="font-label" style={fs(LABEL)} letterSpacing="1.4" fill={up ? "var(--gold-dim)" : "var(--gold)"}>
                       THE VIRTUE
-                    </text>
-                    <text x={(x0 + 10).toFixed(1)} y="25" className="font-label" style={fs(6.8)} letterSpacing="1" fill="var(--gold-dim)" fillOpacity={up ? 0 : 1}>
-                      FOLLOWED DOWN FROM HERE
+                      <tspan style={fs(SMALL)} letterSpacing="1" fill="var(--gold-dim)" fillOpacity={up ? 0 : 1}>
+                        {" · FOLLOWED DOWN FROM HERE"}
+                      </tspan>
                     </text>
                   </g>
                   <g
@@ -544,38 +573,38 @@ export function PlanetaryFamily() {
                       }
                     }}
                   >
-                    <rect x={(x5 - 14).toFixed(1)} y="444" width="150" height="34" fill="transparent" />
-                    {!up && <path d={`M${(x5 - 4).toFixed(1)} 454 L${x5.toFixed(1)} 460 L${(x5 + 4).toFixed(1)} 454`} fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />}
-                    <text x={(x5 + 10).toFixed(1)} y="464" className="font-label" style={fs(7.4)} letterSpacing="1.4" fill={up ? "var(--gold)" : "var(--gold-dim)"}>
+                    <rect x={(x5 - 14).toFixed(1)} y={END - 14} width="300" height="30" fill="transparent" />
+                    {!up && <path d={`M${(x5 - 4).toFixed(1)} ${END - 6} L${x5.toFixed(1)} ${END} L${(x5 + 4).toFixed(1)} ${END - 6}`} fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />}
+                    <text x={(x5 + 10).toFixed(1)} y={END + 4} className="font-label" style={fs(LABEL)} letterSpacing="1.4" fill={up ? "var(--gold)" : "var(--gold-dim)"}>
                       THE SIGNATURE
-                    </text>
-                    <text x={(x5 + 10).toFixed(1)} y="474" className="font-label" style={fs(6.8)} letterSpacing="1" fill="var(--gold-dim)" fillOpacity={up ? 1 : 0}>
-                      READ BACK UP FROM HERE
+                      <tspan style={fs(SMALL)} letterSpacing="1" fill="var(--gold-dim)" fillOpacity={up ? 1 : 0}>
+                        {" · READ BACK UP FROM HERE"}
+                      </tspan>
                     </text>
                   </g>
                 </>
               ) : (
-                <text x={LX - 14} y="15" className="font-label aoh-pf-tin" key={name} style={fs(7.4)} letterSpacing="1.4" fill="var(--gold-dim)">
+                <text x={LX - 14} y="18" className="font-label aoh-pf-tin" key={name} style={fs(LABEL)} letterSpacing="1.4" fill="var(--gold-dim)">
                   {name.toUpperCase()} · CHAIN NOT YET SET DOWN
                 </text>
               )}
 
               {/* the foot: a bracket gathers the five to one point */}
-              <g opacity={cur ? 1 : 0.4} style={{ transition: "opacity 300ms ease" }}>
+              <g className="aoh-pf-foot" opacity={cur ? 1 : 0.4}>
                 <path
-                  d="M14 478 Q14 486 22 486 H200 Q210 486 210 496 Q210 486 220 486 H398 Q406 486 406 478"
+                  d="M14 512 Q14 520 22 520 H200 Q210 520 210 530 Q210 520 220 520 H398 Q406 520 406 512"
                   fill="none"
                   stroke="var(--gold)"
                   strokeOpacity="0.8"
                   strokeWidth="1.1"
                   strokeDasharray={cur ? undefined : "3 3"}
                 />
-                <path d="M210 496 V504" stroke="var(--gold)" strokeOpacity="0.8" strokeWidth="1.1" />
-                <circle cx="210" cy="508" r="3.4" fill="var(--gold)" fillOpacity={cur ? 1 : 0.6} />
-                <text x="210" y="524" textAnchor="middle" className="font-label" style={fs(8.6)} letterSpacing="1.8" fill="var(--gold)">
+                <path d="M210 530 V538" stroke="var(--gold)" strokeOpacity="0.8" strokeWidth="1.1" />
+                <circle cx="210" cy="542" r="3.4" fill="var(--gold)" fillOpacity={cur ? 1 : 0.6} />
+                <text x="210" y="558" textAnchor="middle" className="font-label" style={fs(LABEL)} letterSpacing="1.8" fill="var(--gold)">
                   RITUAL
                 </text>
-                <text x="210" y="535" textAnchor="middle" className="font-label" style={fs(7)} letterSpacing="1" fill="var(--gold-dim)">
+                <text x="210" y={558 + LEAD} textAnchor="middle" className="font-label" style={fs(SMALL)} letterSpacing="1" fill="var(--gold-dim)">
                   THEIR DELIBERATE CONVERGENCE · THE SIXTH TERM
                 </text>
               </g>
@@ -651,7 +680,7 @@ export function PlanetaryFamily() {
                     <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                       {level}
                     </span>
-                    <span aria-label="not yet set down" className="inline-block w-14 self-center border-b border-dashed border-gold-dim/60" />
+                    <span role="img" aria-label="not yet set down" className="inline-block w-14 self-center border-b border-dashed border-gold-dim/60" />
                     <span className="col-span-2 text-sm italic leading-relaxed text-muted-foreground/70 sm:col-span-1">
                       {i === 0 ? "not yet set down" : ""}
                     </span>

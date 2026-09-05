@@ -122,7 +122,7 @@ export function MorphaithericField() {
 
   const crossed = pass >= 2; // the level has reached the lip
   const formed = crossed && !lapsed; // a pattern stands beyond it
-  const bent = pass >= 3 || lapsed; // the current goes round where it stands or stood
+  const bent = pass >= 3; // from the pass after precipitation the current goes round where it stands — or stood
   const depth = Math.min(pass - 1, 5);
 
   const on = (k: Key) => sel === k;
@@ -151,7 +151,9 @@ export function MorphaithericField() {
   const status = !crossed
     ? `Pass ${pad(pass)} · the reservoir is filling; nothing has yet crossed the threshold.`
     : lapsed
-      ? `Pass ${pad(pass)} · the form has lapsed. Its scar remains, and the current keeps the bend.`
+      ? bent
+        ? `Pass ${pad(pass)} · the form has lapsed. Its scar remains, and the current keeps the bend.`
+        : `Pass ${pad(pass)} · the form has lapsed before the current had bent round it. Its scar remains.`
       : returned
         ? `Pass ${pad(pass)} · the pattern has reappeared along its scar — retained readiness.`
         : pass === 2
@@ -167,16 +169,18 @@ export function MorphaithericField() {
     Reservoir: [`M${VX} ${VY + VR} ${FEED}`, BASIN],
     Threshold: [`M104 ${LIP} L236 ${LIP}`, OUT_HEAD],
     "Standing pattern": [bendD],
-    Scar: [`M18 254 ${RETURN_BEND}`, ...(lapsed ? [bendD] : [])],
+    Scar: [`M18 254 ${RETURN_BEND}`, ...(lapsed && bent ? [bendD] : [])],
   };
 
-  const label = (k: Key, x: number, y: number, anchor: "start" | "middle" | "end", lines: string[], stage: string | null, opacity = 1) => (
-    <text x={x} y={y} textAnchor={anchor} className="font-label" style={fs(7)} letterSpacing="1" opacity={opacity}>
+  /* `tone` sets the lettering back a little for a feature whose site is empty; it never goes below the
+     0.55 the house asks of a label, so the name of a selectable node can always be found and read */
+  const label = (k: Key, x: number, y: number, anchor: "start" | "middle" | "end", lines: string[], stage: string | null, tone = 1) => (
+    <text x={x} y={y} textAnchor={anchor} className="font-label" style={fs(7)} letterSpacing="1">
       {lines.map((l, i) => (
-        <tspan key={l} x={x} dy={i ? "1.25em" : 0} fill={ink(k)}>{l}</tspan>
+        <tspan key={l} x={x} dy={i ? "1.25em" : 0} fill={ink(k)} fillOpacity={on(k) ? 1 : tone}>{l}</tspan>
       ))}
       {stage && (
-        <tspan x={x} dy="1.4em" style={fs(6.5)} fill={on(k) ? "var(--gold)" : "var(--gold-dim)"} fillOpacity={on(k) ? 1 : 0.9}>
+        <tspan x={x} dy="1.4em" style={fs(6.5)} fill={on(k) ? "var(--gold)" : "var(--gold-dim)"} fillOpacity={on(k) ? 1 : Math.min(0.9, tone)}>
           {stage}
         </tspan>
       )}
@@ -360,7 +364,7 @@ export function MorphaithericField() {
                     style={{ opacity: formed ? 1 : 0, transform: formed ? "scale(1)" : "scale(0.2)" }} />
             <circle className="aoh-mf-form" cx={SITE.x} cy={SITE.y} r="2" fill="var(--gold)"
                     style={{ opacity: formed ? 0.9 : 0, transform: formed ? "scale(1)" : "scale(0.2)" }} />
-            {label("Standing pattern", 228, 258, "end", ["STANDING", "PATTERN"], "form", formed ? 1 : lapsed ? 0.3 : 0.45)}
+            {label("Standing pattern", 228, 258, "end", ["STANDING", "PATTERN"], "form", formed ? 1 : 0.6)}
           </g>
 
           {/* scar — an older one the return already bends round; and, once the form lapses, a new one at its place */}

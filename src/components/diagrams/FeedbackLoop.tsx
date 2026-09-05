@@ -222,7 +222,11 @@ export function FeedbackLoop() {
           <line x1={GX0} y1={GY - 3} x2={GX0} y2={GY + 3} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1} />
           <line x1={GX1} y1={GY - 3} x2={GX1} y2={GY + 3} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1} />
           <line x1={TICK} y1={GY - 6} x2={TICK} y2={GY + 6} stroke={G} strokeOpacity={0.9} strokeWidth={1} />
-          <text x={TICK} y={GY - 9} textAnchor="middle" className="font-label uppercase" style={small} fill={G} fillOpacity={0.85}>saturation</text>
+          {/* the tick's word sits centred over the tick where the row has room; on a phone the lettering
+              grows two fifths while the gauge does not, and PARTICIPATION would run into a centred
+              SATURATION, so there the word steps to the tick's right and the tick stands between them */}
+          <text x={TICK} y={GY - 9} textAnchor="middle" className="hidden sm:block font-label uppercase" style={small} fill={G} fillOpacity={0.85}>saturation</text>
+          <text x={TICK + 4.5} y={GY - 9} className="sm:hidden font-label uppercase" style={small} fill={G} fillOpacity={0.85}>saturation</text>
           <g className="aoh-fl-mark" style={{ transform: `translateX(${(GW * lap) / MAX}px)` }}>
             <circle cx={GX0} cy={GY} r={3.4} fill={G} stroke="var(--void, #000)" strokeWidth={1} />
           </g>

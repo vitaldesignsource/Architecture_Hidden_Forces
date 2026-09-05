@@ -107,7 +107,7 @@ export function ForceAndForm() {
     { k: "Activity", d: "The vector meets a medium, and the medium answers with both resistance and affordance. Neither alone would produce anything.", cost: "One more branch ends here. Two remain." },
     { k: "Recurrence", d: "Repetition deepens the pathway. Feedback reinforces some movements and suppresses others, and the difference between them begins to matter.", cost: "One more branch ends here. One alternative still runs beside the path." },
     { k: "Stabilisation", d: "Activity becomes steady enough to hold a recognisable relation. This is where Salt does its work — fixing what has been achieved into something durable.", cost: "The last alternative ends here. One path remains, and it alone can cross the line." },
-    { k: "Visible form", d: "The late result of an invisible history. By the time a form can be seen, touched, named, or measured, every selection above it has already been made.", cost: "The one path crosses. From the form a narrower fan re-opens — three branches, one of them still bent by the channel it left." },
+    { k: "Visible form", d: "The late result of an invisible history. By the time a form can be seen, touched, named, or measured, every selection above it has already been made.", cost: "The one path crosses. From the form a new fan re-opens — three branches inside the boundary the form accepted, one of them still bent by the channel it left." },
   ];
   const cur = sel === null ? null : S[sel];
   const reach = sel;
@@ -230,7 +230,7 @@ export function ForceAndForm() {
               <g key={st.k} className="aoh-ff-n" onClick={() => choose(i)}
                  role="button" tabIndex={0} aria-pressed={on} aria-label={`${st.k}, step ${i + 1} of 7`}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); choose(i); } }}>
-                <circle cx={X(i)} cy={Y(i)} r="13" fill="transparent" />
+                <circle cx={X(i)} cy={Y(i)} r="16" fill="transparent" />
                 <circle cx={X(i)} cy={Y(i)} r={on ? 9 : 6} className="aoh-ff-fade"
                         fill={vis ? "var(--gold)" : "var(--void)"}
                         fillOpacity={vis ? (on || cycle ? 1 : 0.5) : 1}
@@ -303,7 +303,7 @@ export function ForceAndForm() {
             <p className="mt-4 text-sm leading-relaxed text-bone/60">
               And the arc returning overhead is the part easiest to miss: actuality does not exhaust
               potency. A realised form generates new capacities, and becomes the ground of further
-              possibility — a narrower range than the first, and already leaning the way it came.
+              possibility — a range of its own, bounded by what the form has accepted, and already leaning the way it came.
             </p>
           </>
         )}
