@@ -216,7 +216,7 @@ function Form() {
       </Band>
 
       {/* ---- captive light and failed architecture ---- */}
-      <Band id="eco-f-captive" backdrop="split-trunk-of-old-tree" opacity={0.2} position="center 45%" portrait>
+      <Band id="eco-f-captive" backdrop="ember-glow-inside-glacier-ice-wall" opacity={0.22} position="center 45%" portrait>
         <Eyebrow>Captive light and failed architecture</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           A structure built to conduct a current may come <span className="italic text-gold">to preserve itself instead</span>

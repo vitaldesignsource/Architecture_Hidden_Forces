@@ -172,7 +172,7 @@ function Hydrology() {
       </Band>
 
       {/* ---- watersheds ---- */}
-      <Band id="eco-h-watershed" backdrop="braided-glacial-river-from-above" opacity={0.18} position="center 50%">
+      <Band id="eco-h-watershed" backdrop="dendritic-channels-on-rocky-tidal-shore" opacity={0.2} position="center 60%">
         <Eyebrow>Etheric watersheds</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           A watershed is not the water. It is the architecture that decides{" "}

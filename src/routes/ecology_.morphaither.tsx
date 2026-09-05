@@ -117,7 +117,7 @@ function Morphaither() {
       </Band>
 
       {/* ---- the equation ---- */}
-      <Band id="eco-m-equation" backdrop="caldera-lake-at-sunrise" opacity={0.18} position="center 50%">
+      <Band id="eco-m-equation" backdrop="rain-on-cracked-ground-beside-green-valley" opacity={0.22} position="center 50%" portrait>
         <Eyebrow>The essential principle</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           The same force does not produce the same manifestation{" "}
@@ -291,7 +291,7 @@ function Morphaither() {
       </Band>
 
       {/* ---- places ---- */}
-      <Band id="eco-m-places" backdrop="cliff-road-vanishing-into-fog" opacity={0.16} position="center 50%">
+      <Band id="eco-m-places" backdrop="mountain-lake-mirroring-storm-and-peaks" opacity={0.18} position="center 45%">
         <Eyebrow>Places and atmospheres</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Different places hold <span className="italic text-gold">different conditions of formation</span>

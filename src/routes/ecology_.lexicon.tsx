@@ -59,7 +59,7 @@ const FAMILIES: { id: string; k: string; root: string; note: string; backdrop?: 
     ],
   },
   {
-    id: "eco-lx-pneum", k: "The pneum- family", root: "πνεῦμα · breath, spirit", backdrop: "narrow-archive-aisle-of-scrolls",
+    id: "eco-lx-pneum", k: "The pneum- family", root: "πνεῦμα · breath, spirit", backdrop: "steaming-volcanic-crater-at-sunrise", portrait: true,
     note: "Spirit in movement: why it moves, how slowly it penetrates, how it crosses a boundary, and how it is kindled.",
     terms: [
       { k: "Pneumotension", root: "πνεῦμα + tensio", d: "A difference in pneumatic or spiritual potential between beings, regions, states or ontological levels. Such differences make movement or transmission possible — a way to say why spiritual influence moves, rather than merely that it does. In an unborn form, the inward pressure by which it strains toward fuller expression.", at: { to: "/ecology/aquifer", hash: "eco-a-formed", label: "The Aquifer" } },
