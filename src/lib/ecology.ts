@@ -147,8 +147,8 @@ export const AQUIFER: Station = {
   shorthand: "the groundwater",
   definition:
     "The deep reservoir into which force descends when it is no longer carried by a living form, yet has not ceased to possess tendency, memory or power. Not literal water, and not a name for the unconscious: a subterranean condition of the subtle world, in which force is retained, transported, mingled, and sometimes returned to manifestation.",
-  backdrop: "cave-pool-under-single-light-shaft",
-  position: "center 50%",
+  backdrop: "black-cavern-lake-under-glowing-veins",
+  position: "center 55%",
 };
 
 /**
@@ -172,7 +172,7 @@ export const PROVINCES: Station[] = [
     shorthand: "the between",
     definition:
       "The field of mediation in which causes meet before an effect appears. Not an empty distance through which causation travels but a productive medium — currents, tides, confluences, eddies, sediment — that participates in what a cause becomes. Every effect is an estuary.",
-    backdrop: "moon-over-tidal-flats-and-channel",
+    backdrop: "glowing-currents-between-islands-at-dusk",
     position: "center 50%",
   },
   {
@@ -187,8 +187,8 @@ export const PROVINCES: Station[] = [
     shorthand: "the gestation",
     definition:
       "The gestational province of Morphaithēr, where forces acquire contour, relation and the first intimations of a possible body. Not a warehouse of blueprints: tendencies becoming patterns, patterns seeking organs, possibilities discovering what existence could truthfully receive them — and not every possible form should be given a body.",
-    backdrop: "germinating-seed-with-fine-roots",
-    position: "center 50%",
+    backdrop: "luminous-cocoon-in-moonlit-glasshouse-pool",
+    position: "center 62%",
   },
   AQUIFER,
   {
@@ -203,7 +203,7 @@ export const PROVINCES: Station[] = [
     shorthand: "the afterlife of the sacred",
     definition:
       "The relational underworld in which once-sacred architectures persist: displaced god-forms, extinguished cults, deserted names, broken rites, deconsecrated places, residual egregores and fragments of former hierophanies, in unequal states of preservation. Not a cavern and not a museum of false beliefs — the subterranean memory of humanity's sacred experiments.",
-    backdrop: "star-trails-over-ruined-temple",
+    backdrop: "broken-colossi-in-sunlit-underground-temple",
     position: "center 45%",
   },
   {
@@ -218,8 +218,8 @@ export const PROVINCES: Station[] = [
     shorthand: "the allure",
     definition:
       "The region of the subtle ecology in which forms flourish by appearing to possess a lineage, authority or purpose they do not bear. Its flowers are visions, doctrines, spirit-images, revelations, symbols and myths that show the colour of one origin while drawing nourishment from another — and they are most deceptive where something in them is alive.",
-    backdrop: "crystal-grove-in-flooded-hall",
-    position: "center 50%",
+    backdrop: "stone-flowers-in-walled-garden-at-dawn",
+    position: "center 55%",
   },
   {
     id: "hungry",
