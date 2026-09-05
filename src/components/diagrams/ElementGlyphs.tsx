@@ -69,10 +69,11 @@ export function PrincipleMark({ k, x, y, s, fill, op = 1, width = 0.9 }: Ink & {
 }
 
 /** One element's sign on its own, as a small inline SVG: the alchemical mark, or the egg for ether. */
-export function ElementSign({ k, size = 28, className = "", title }: { k: ElementKey; size?: number; className?: string; title?: string }) {
+export function ElementSign({ k, size = 28, className = "", title, decorative = false }: { k: ElementKey; size?: number; className?: string; title?: string; decorative?: boolean }) {
   return (
-    <svg viewBox="0 0 32 32" width={size} height={size} className={className} role="img" aria-label={title ?? `${k} — ${k === "Ether" ? "the egg" : "alchemical sign"}`}>
-      <title>{title ?? k}</title>
+    <svg viewBox="0 0 32 32" width={size} height={size} className={className}
+         role={decorative ? undefined : "img"} aria-label={decorative ? undefined : title ?? `${k} — ${k === "Ether" ? "the egg" : "alchemical sign"}`} aria-hidden={decorative || undefined}>
+      {!decorative && <title>{title ?? k}</title>}
       {k === "Ether" ? <TattvaOutline k="Ether" x={16} y={16} s={19} fill="currentColor" width={1.2} /> : <AlchemicalMark k={k} x={16} y={16} s={22} fill="currentColor" width={1.2} />}
     </svg>
   );

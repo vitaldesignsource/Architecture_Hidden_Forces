@@ -1,5 +1,5 @@
 import { lazy, Suspense, useCallback, useState } from "react";
-import { TattvaGlyph } from "@/components/diagrams/TattvaGlyph";
+import { TattvaGlyph, type TattvaKey } from "@/components/diagrams/TattvaGlyph";
 import { ArrowMark, CycleMark } from "@/components/marks";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
@@ -82,6 +82,18 @@ import {
   GlossedWord,
   SignRegister,
 } from "@/components/EgyptianDevices";
+
+/** A compound tattva is written dominant–modifier; the glyph seats the modifier
+ *  inside the dominant, so the order the prose insists on is visible. */
+const TATTVA_KEY: Record<string, TattvaKey> = {
+  Akasha: "akasha", Vayu: "vayu", Tejas: "tejas", Apas: "apas", Prithivi: "prithivi",
+};
+function SubTattvaSign({ pair, size = 22 }: { pair: string; size?: number }) {
+  const [d, m] = pair.split("\u2013");
+  const dominant = TATTVA_KEY[d?.trim() ?? ""];
+  if (!dominant) return null;
+  return <TattvaGlyph dominant={dominant} modifier={TATTVA_KEY[m?.trim() ?? ""] ?? null} size={size} className="shrink-0" decorative />;
+}
 
 /**
  * The header and the mobile strip were two hand-maintained lists, and they drifted:
@@ -763,12 +775,12 @@ function Index() {
           </p>
             </div>
             <div className="space-y-6">
-              {[
-                { ether: "Warmth Ether", tattva: "Tejas", element: "Πῦρ · Fire", note: "Activation, ignition, transformation." },
-                { ether: "Light Ether", tattva: "Vayu", element: "Ἀήρ · Air", note: "Illumination, direction, breath, transmission." },
-                { ether: "Tone / Chemical Ether", tattva: "Apas", element: "Ὕδωρ · Water", note: "Relation, harmony, cohesion, memory." },
-                { ether: "Life Ether", tattva: "Prithivi", element: "Γῆ · Earth", note: "Integration, structure, crystallization, durable form." },
-              ].map((row) => (
+              {([
+                { ether: "Warmth Ether", tattva: "Tejas", t: "tejas", element: "Πῦρ · Fire", e: "Fire", note: "Activation, ignition, transformation." },
+                { ether: "Light Ether", tattva: "Vayu", t: "vayu", element: "Ἀήρ · Air", e: "Air", note: "Illumination, direction, breath, transmission." },
+                { ether: "Tone / Chemical Ether", tattva: "Apas", t: "apas", element: "Ὕδωρ · Water", e: "Water", note: "Relation, harmony, cohesion, memory." },
+                { ether: "Life Ether", tattva: "Prithivi", t: "prithivi", element: "Γῆ · Earth", e: "Earth", note: "Integration, structure, crystallization, durable form." },
+              ] as const).map((row) => (
                 <div
                   key={row.element}
                   className="grid gap-2 border-b border-border pb-6 sm:grid-cols-[1fr_1fr_1fr] sm:gap-6"
@@ -776,8 +788,14 @@ function Index() {
                   <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                     {row.ether}
                   </div>
-                  <div className="font-serif italic text-bone/85">{row.tattva}</div>
-                  <div className="font-serif text-bone/90">{row.element}</div>
+                  <div className="flex items-center gap-2.5 font-serif italic text-bone/85">
+                    <TattvaGlyph dominant={row.t} size={18} className="shrink-0" decorative />
+                    {row.tattva}
+                  </div>
+                  <div className="flex items-center gap-2.5 font-serif text-bone/90">
+                    <ElementSign k={row.e} size={22} className="shrink-0 text-gold/75" decorative />
+                    {row.element}
+                  </div>
                   <p className="col-span-full text-sm leading-relaxed text-muted-foreground">
                     {row.note}
                   </p>
@@ -871,6 +889,8 @@ function Index() {
                 english: "Warmth Ether",
                 verb: "quickens",
                 corr: "Tejas · Πῦρ",
+                t: "tejas" as TattvaKey,
+                el: "Fire" as ElementKey,
                 title: "Activation · The Threshold Ether",
                 fn: "The first activated condition of Root Ether — the formative gradient through which latent possibility becomes movement, receptivity, will, and the capacity for transformation.",
                 quote: "Warmth is what allows knowledge to become participation.",
@@ -906,6 +926,8 @@ function Index() {
                 english: "Light Ether",
                 verb: "articulates",
                 corr: "Vayu · Ἀήρ",
+                t: "vayu" as TattvaKey,
+                el: "Air" as ElementKey,
                 title: "The Articulation of Difference",
                 fn: "Once possibility is active it must acquire distinction. Light is the function through which orientation, contrast, boundary, and intelligible space emerge.",
                 quote: "Light gives force a face.",
@@ -937,6 +959,8 @@ function Index() {
                 english: "Tone Ether",
                 verb: "coordinates",
                 corr: "Apas · Ὕδωρ",
+                t: "apas" as TattvaKey,
+                el: "Water" as ElementKey,
                 title: "Affinity, Interval, and Proportion",
                 fn: "The function through which differentiated powers enter measured relationship — rhythm, interval, ratio, resonance, affinity, combination, separation.",
                 quote: "Tone orders through affinity, interval, and proportion.",
@@ -968,6 +992,8 @@ function Index() {
                 english: "Life Ether",
                 verb: "regenerates",
                 corr: "Prithivi · Γῆ",
+                t: "prithivi" as TattvaKey,
+                el: "Earth" as ElementKey,
                 title: "Integration, Renewal, and Regeneration",
                 fn: "The function through which differentiated and coordinated relations become an enduring whole capable of renewal.",
                 quote: "Life without renewed relation to Source becomes self-perpetuation.",
@@ -1006,8 +1032,12 @@ function Index() {
                         {e.translit} · {e.verb}
                       </p>
                       <div className="mt-6 h-px w-12 bg-gold/40 transition-all duration-700 group-hover:w-24" />
-                      <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                        § III · {e.corr.split(" · ")[0]} · <span lang="el" className="scr-greek">{e.corr.split(" · ")[1]}</span>
+                      <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                        <span>§ III ·</span>
+                        <TattvaGlyph dominant={e.t} size={15} className="shrink-0" decorative />
+                        <span>{e.corr.split(" · ")[0]} ·</span>
+                        <ElementSign k={e.el} size={17} className="shrink-0 text-gold/70" decorative />
+                        <span lang="el" className="scr-greek">{e.corr.split(" · ")[1]}</span>
                       </p>
                     </div>
                     <div className="min-w-0">
@@ -2115,7 +2145,10 @@ function Index() {
               { t: "Tejas–Apas", d: "The reverse. Something primarily fiery whose intensity is moderated, contained, and nourished — incubatory warmth, healing heat, controlled passion, fire held in a fluid medium." },
             ].map((x) => (
               <div key={x.t} className="border border-gold/25 p-5">
-                <div className="font-serif text-xl italic text-gold">{x.t}</div>
+                <div className="flex items-center gap-3 font-serif text-xl italic text-gold">
+                  <SubTattvaSign pair={x.t} size={26} />
+                  {x.t}
+                </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
               </div>
             ))}
@@ -2204,7 +2237,10 @@ function Index() {
                   <div className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                     {x.p}
                   </div>
-                  <div className="mt-2 font-serif text-lg italic text-gold">{x.c}</div>
+                  <div className="mt-2 flex items-center gap-2.5 font-serif text-lg italic text-gold">
+                    <SubTattvaSign pair={x.c} size={22} />
+                    {x.c}
+                  </div>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
                 </div>
               ))}
