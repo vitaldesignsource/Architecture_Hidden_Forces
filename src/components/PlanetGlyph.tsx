@@ -31,6 +31,18 @@ export const PLANET_PATHS: Record<string, string> = {
   Saturn:
     "M8.5 4.6v7.4 M5.9 7.3h5.2" +
     " M8.5 12c2-2.4 6.1-1.3 6.1 2.1 0 2.6-2 4.5-2.6 6.2-.3.9.4 1.6 1.5 1.3",
+  // the outer three, in the astrological forms: two arms about a crossed stem
+  Uranus:
+    "M6.8 4.4v7 M17.2 4.4v7 M6.8 7.8h10.4 M12 7.8v8.4" +
+    " M12 16.2a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4z",
+  // the trident, crossed at its shaft
+  Neptune:
+    "M12 5.2v15.2 M8.9 17.5h6.2" +
+    " M6.4 6.4v3.4c0 3.1 2.5 5.6 5.6 5.6s5.6-2.5 5.6-5.6V6.4",
+  // a disc within the crescent, over a cross
+  Pluto:
+    "M6.6 8.9a5.4 5.4 0 0 0 10.8 0 M12 5.1a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8z" +
+    " M12 14.3v6.2 M9.2 17.6h5.6",
 };
 
 export function PlanetGlyph({

@@ -2020,19 +2020,23 @@ function Index() {
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { g: "☉", n: "Sun", d: "Centering, coherence, vitality, illumination — the power around which a system organizes itself." },
-                { g: "☾", n: "Moon", d: "Reception, memory, habit, embodiment, fluctuation, and the capacity to contain impressions." },
-                { g: "☿", n: "Mercury", d: "Translation, mediation, communication, movement, exchange." },
-                { g: "♀", n: "Venus", d: "Attraction, affinity, valuation, harmony, combination." },
-                { g: "♂", n: "Mars", d: "Separation, assertion, conflict, cutting, directed force." },
-                { g: "♃", n: "Jupiter", d: "Expansion, authorization, synthesis, confidence, increase." },
-                { g: "♄", n: "Saturn", d: "Boundary, duration, limitation, responsibility, crystallization, consequence." },
-                { g: "⛢ ♆ ♇", n: "The Outer Powers", d: "Slower collective processes reorganizing generations, cultures, institutions, and historical fields." },
+                { g: ["Sun"], n: "Sun", d: "Centering, coherence, vitality, illumination — the power around which a system organizes itself." },
+                { g: ["Moon"], n: "Moon", d: "Reception, memory, habit, embodiment, fluctuation, and the capacity to contain impressions." },
+                { g: ["Mercury"], n: "Mercury", d: "Translation, mediation, communication, movement, exchange." },
+                { g: ["Venus"], n: "Venus", d: "Attraction, affinity, valuation, harmony, combination." },
+                { g: ["Mars"], n: "Mars", d: "Separation, assertion, conflict, cutting, directed force." },
+                { g: ["Jupiter"], n: "Jupiter", d: "Expansion, authorization, synthesis, confidence, increase." },
+                { g: ["Saturn"], n: "Saturn", d: "Boundary, duration, limitation, responsibility, crystallization, consequence." },
+                { g: ["Uranus", "Neptune", "Pluto"], n: "The Outer Powers", d: "Slower collective processes reorganizing generations, cultures, institutions, and historical fields." },
               ].map((x) => (
                 <div key={x.n} className="group border border-border p-4 transition-colors hover:border-gold/40">
                   <div className="flex items-baseline justify-between gap-3">
                     <div className="font-serif text-lg italic text-bone">{x.n}</div>
-                    <div className="shrink-0 text-lg text-gold">{x.g}</div>
+                    <div className="flex shrink-0 items-center gap-1.5 text-gold">
+                      {x.g.map((pl) => (
+                        <PlanetGlyph key={pl} planet={pl} className="h-[19px] w-[19px]" decorative />
+                      ))}
+                    </div>
                   </div>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
                 </div>
