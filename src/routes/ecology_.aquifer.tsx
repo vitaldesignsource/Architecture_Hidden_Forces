@@ -638,7 +638,7 @@ function Aquifer() {
       </Band>
 
       {/* ---- flood, drought and ontic weather ---- */}
-      <Band id="eco-a-weather" backdrop="sea-blowhole-erupting-on-black-rock" opacity={0.22} position="center 50%">
+      <Band id="eco-a-weather" backdrop="glowing-plume-rising-from-seabed-vent" opacity={0.24} position="center 60%" portrait>
         <Eyebrow>Flood, drought and ontic weather</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           The depth contributes <span className="italic text-gold">to the weather above it</span>

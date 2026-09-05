@@ -84,7 +84,7 @@ function Sea() {
       </Band>
 
       {/* ---- causation as passage ---- */}
-      <Band id="eco-sea-passage" backdrop="tide-pools-under-broken-sky" opacity={0.16} position="center 50%">
+      <Band id="eco-sea-passage" backdrop="sandstorm-pouring-through-desert-arches" opacity={0.16} position="center 45%">
         <Eyebrow>Causation as passage</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Every cause must find a vehicle, <span className="italic text-gold">and no vehicle is transparent</span>

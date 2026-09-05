@@ -387,7 +387,7 @@ function Garden() {
       </Band>
 
       {/* ---- the horticulture of discernment ---- */}
-      <Band id="eco-g-horticulture" backdrop="filter-stack-of-cloth-and-stone" opacity={0.2} position="center 50%">
+      <Band id="eco-g-horticulture" backdrop="porous-stone-wall-between-storm-and-garden" opacity={0.2} position="center 50%">
         <Eyebrow>The horticulture of discernment</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Horticultural, <span className="italic text-gold">not iconoclastic</span>
