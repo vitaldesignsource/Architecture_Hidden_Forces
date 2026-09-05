@@ -154,9 +154,9 @@ function Hydrology() {
               behind the block; a stagnant store leaks by whatever way is left to it; what leaks
               floods what was never built to receive it; and the system downstream of all this is
               depleted, its channels dry, while the current that should have fed it stands still
-              behind a dam. Every pathology of the etheric body the treatise describes — congestion,
-              depletion, the wrong charge in the wrong place — is one of these five, read in a
-              body.
+              behind a dam. The pathologies of the etheric body the treatise describes — depletion
+              that is not an empty tank, stimulation that agitates without vitalising — are these
+              exits, read in a body.
             </p>
           </div>
           <div>

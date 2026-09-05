@@ -204,7 +204,7 @@ function Form() {
               </p>
               <p>
                 It follows that grief is not a failure to release. The treatise's account of{" "}
-                <Arch id="atmosphere">grief as the labour by which love changes form</Arch> is the
+                <Arch id="mortality">grief as the labour by which love changes form</Arch> is the
                 human case of what this station describes in general: a relation that cannot
                 continue in its former mode and cannot be erased has to be transformed — into
                 memory, inheritance, symbolic presence. That is dissolution done rightly, and it is
@@ -265,12 +265,17 @@ function Form() {
               cannot ask them. A truthful one contains the wisdom of its own transformation.
             </p>
             <p className="mt-6 text-sm leading-relaxed text-bone/60">
-              Not a licence for demolition. The Portal is equally clear that{" "}
-              <Entry id="xiii-27">liberation is not demolition</Entry>: a form may need to be
-              opened, purified, mourned, translated, fulfilled or consciously dissolved, and
-              liberation without reformation scatters what it recovered. Breaking fidelity with a
-              form is a last act of fidelity to what it was for, and it is judged by whether the
-              current circulates again.
+              Not a licence for demolition. The Portal's{" "}
+              <Entry id="xix-11">Law of Captive Light</Entry> is equally clear that liberation is
+              not demolition: a form may need to be opened, purified, mourned, translated, fulfilled
+              or consciously dissolved, and liberation without reformation may scatter what has been
+              recovered. Its entry on <Entry id="xiii-27">liberating captive light</Entry> puts the
+              aim in a sentence: not simply to break the vessel but to recover what within it
+              remains capable of truth. Breaking fidelity with a form is a last act of fidelity to
+              what it was for, and it is judged by the one criterion this layer keeps everywhere —
+              does the architecture maintain <Arch id="relation">right relation</Arch> with the
+              force it exists to mediate? — which, put to a dying vessel, asks whether the current
+              circulates again.
             </p>
             <Pointers
               arch={["forceform", "laws", "mortality", "triad", "transformation", "relation", "retentive"]}

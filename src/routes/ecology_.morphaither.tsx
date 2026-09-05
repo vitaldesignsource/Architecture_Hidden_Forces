@@ -43,9 +43,9 @@ const ENCOMPASSES: [string, string][] = [
 const PLACES: [string, string][] = [
   ["Forest", "Slow, layered, indifferent to the visitor; a condition that was there before you and will be after. Formation here is patient and mostly unseen."],
   ["City", "Dense, fast, symbolically saturated to the point of noise; countless standing patterns competing for the same current."],
-  ["Temple", "A condition made on purpose and kept by repetition: attention narrowed, gesture slowed, the threshold doing half the work."],
-  ["Home", "Inherited residue at its thickest. Old postures return because the atmosphere was built by the people who taught them."],
-  ["Battlefield", "Perception collapsed to threat, reflex ahead of deliberation, and afterwards a scar in the field that outlasts the grass."],
+  ["Temple", "A condition made on purpose and kept by repetition, so that the descent which scatters in the street outside sets, here, into form."],
+  ["Home", "Inherited residue at its thickest: nourishment that would make something new elsewhere is received here on the old pattern, and resumes it."],
+  ["Battlefield", "Whatever descends here is received as threat and spent as reflex; afterwards the field keeps a scar that outlasts the grass, and the next thing to form there forms on it."],
   ["Ritual chamber", "A place whose entire architecture exists to set one condition of reception, and to exclude the others for the duration."],
   ["Landscape", "Weather in the plain sense, and the subtle weather it sets: a coast, a plateau and a valley do not receive the same descent alike."],
   ["Community", "A shared atmosphere maintained by many bodies at once, which is why it is so hard to change from inside and so easy to feel from outside."],
@@ -319,12 +319,12 @@ function Morphaither() {
             <p className="text-base leading-relaxed text-muted-foreground">
               The treatise's <Arch id="fourfold">Fourfold Field</Arch> and its{" "}
               <Arch id="transduction">Fourfold Veil</Arch> describe what the formative field does:
-              Warmth activating, Light orienting, Tone differentiating, Life integrating, in a
-              circuit that every embodied act involves at once. Morphaithēr does not add a fifth
-              ether and does not replace the four. It is the condition the four operate in — the
-              measure, timing and state of the vessel under which Warmth activates too early or
-              Tone outruns integration, which the treatise says the four ethers "support or distort
-              one another" according to.
+              Warmth quickens, Light articulates, Tone coordinates, Life regenerates, in a circuit
+              that every embodied act involves at once. Morphaithēr does not add a fifth ether and
+              does not replace the four. It is the condition the four operate in — the measure,
+              timing and condition of the vessel according to which, the treatise says, each ether
+              "supports or distorts the others": the state under which activation comes before
+              orientation, or differentiation outruns integration.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               So the relation is that of operation to condition. The ethers are verbs. Morphaithēr

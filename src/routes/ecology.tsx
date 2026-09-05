@@ -52,10 +52,12 @@ const ANALOGUES: [string, string][] = [
 ];
 
 const GLOSSARY: { k: string; d: string; to: (typeof STATIONS)[number]["to"] }[] = [
-  { k: "Morphaithēr", d: "The living qualitative atmosphere of becoming; the conditioned environment within which formation occurs.", to: "/ecology/morphaither" },
+  { k: "Aether", d: "The subtle medium itself, which the Portal treats as luminous. Not a station of this layer: what every station is a relation within.", to: "/ecology/morphaither" },
+  { k: "Morphaithēr", d: "The living qualitative atmosphere of becoming; the conditioned environment within which formation occurs. Not the medium: the condition the medium is in.", to: "/ecology/morphaither" },
   { k: "Differential reception", d: "The same influence producing different manifestations in different vessels under different conditions.", to: "/ecology/morphaither" },
   { k: "The Sap of Heaven", d: "Higher formative influence in so far as it becomes available to lower orders as nourishment.", to: "/ecology/sap" },
   { k: "One current, many expressions", d: "The Sap is one according to procession and many according to reception.", to: "/ecology/sap" },
+  { k: "The four ethers", d: "Warmth, Light, Tone and Life: the modes in which the field operates and one nourishment is received. Not four kinds of Sap, and not the weather it arrives in.", to: "/ecology/sap" },
   { k: "Etheric Hydrology", d: "The analogical study of how formative influence moves, is held, is blocked, and returns.", to: "/ecology/hydrology" },
   { k: "Etheric watershed", d: "Not the current: the architecture that determines where the current can move.", to: "/ecology/hydrology" },
   { k: "Formative topology", d: "The pathways, boundaries, centres, gradients, reservoirs and thresholds of a system, taken as the structure through which influence moves.", to: "/ecology/hydrology" },
@@ -232,7 +234,8 @@ function Ecology() {
             </h2>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
               A circle would say that becoming returns to where it began, and that is exactly what
-              it does not do. The twelfth station stands directly above the first — the same phase,
+              it does not do. The twelfth point of the spiral stands directly above the first — the
+              same phase,
               one level on. Form has passed through, lived, dissolved; its architecture has entered
               the Ossuary and its consequence the Crypt; the world that receives the next descent is
               the inherited one. Morphaithēr again, but not the same Morphaithēr.
@@ -314,8 +317,9 @@ function Ecology() {
         </div>
         <p className="mt-10 max-w-3xl text-sm leading-relaxed text-bone/60">
           The guardrails, stated once here and kept everywhere: nothing on these pages is reduced to
-          energy; no analogy is presented as physics; aether, Morphaithēr, the Sap and the four ethers
-          are not synonyms; the Ossuary and the Crypt are not one concept; the Crypt is not a
+          energy; no analogy is presented as physics; aether is the medium, Morphaithēr its
+          condition, the Sap what descends into it and the four ethers the modes in which the field
+          operates — four things, kept four; the Ossuary and the Crypt are not one concept; the Crypt is not a
           database; death is not intrinsically evil; inherited forms are not automatically sacred and
           novelty is not automatically superior. The one criterion, throughout:{" "}
           <span className="text-bone/90">does the architecture maintain right relation with the force it exists to mediate?</span>

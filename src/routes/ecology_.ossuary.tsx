@@ -52,7 +52,7 @@ function Ossuary() {
               Forms perish. <span className="italic text-gold">Architectures remain available.</span>
             </h2>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-              The Ossuary is not a metaphysical graveyard. It is a graveyard, a morphological
+              The Ossuary is not merely a metaphysical graveyard. It is a graveyard, a morphological
               library, a workshop of inheritance and a quarry of becoming at once.
             </p>
           </div>
@@ -80,8 +80,9 @@ function Ossuary() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Nature and culture very rarely make unprecedented forms. They modify inherited
               architectures — rework a limb, repurpose a word, re-set a column into a wall. The
-              treatise's own <Arch id="spine">spine</Arch> puts it as a commitment: nature preserves
-              no vessel forever, yet begins from nothing.
+              treatise's <Arch id="retentive">Retentive Depth</Arch> puts it as a commitment: nature
+              retains no obligation to preserve every vessel, yet it does not begin again from
+              nothing.
             </p>
           </div>
         </div>
@@ -160,7 +161,7 @@ function Ossuary() {
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               This is the station's answer to a sentimental view of tradition. The past is not
-              honoured by being kept whole; it is honoured by being used, which means cut. The
+              honoured only by being kept whole; it is honoured by being used, which means cut. The
               builder who sets an old capital into a new corner is doing exactly what the
               tradition that carved it did with the one before. Which does not make every cut
               right — the last section of this station is about the wrong ones — but it puts the
@@ -204,10 +205,11 @@ function Ossuary() {
                 be inherited as the condition of the ground.
               </p>
               <p>
-                And it is not an afterlife. The Portal's caution stands: residual light is real, and
-                it is trace, not tenant. Whether spirit and soul continue beyond the dissolved vessel
-                is a question the treatise answers elsewhere and answers in the affirmative; the
-                Ossuary is silent about it, because its subject is what the vessel leaves in the
+                And it is not an afterlife. The Portal's{" "}
+                <Entry id="ii-28">caution</Entry> stands: residual light is real, and the Ossuary
+                concerns the trace, not the traveller. The same entry adds that the caution does not
+                deny spirit and soul their own continuation beyond the dissolved vessel; the Ossuary
+                is simply silent about it, because its subject is what the vessel leaves in the
                 world, not where the vessel's life goes.
               </p>
             </Deeper>
