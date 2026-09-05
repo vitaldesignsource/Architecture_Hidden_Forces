@@ -379,6 +379,74 @@ function Index() {
         </div>
       </section>
 
+      {/* WHAT THE ARCHITECTURE IS FOR */}
+      <section id="goals" className="relative isolate border-t border-border py-24">
+        <Backdrop src="/bg/lighthouse-lamp-room-with-brass-optics.webp" opacity={0.3} position="center 50%" scrim={0.28} />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
+            <p className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
+              Τέλος
+              <span className="mt-2 block text-gold-dim">What the Architecture is for</span>
+            </p>
+            <div className="max-w-3xl">
+              <p className="font-serif text-xl leading-relaxed text-bone/90 sm:text-2xl">
+                A coherent account of how the invisible becomes operative within the visible.
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                The central goal of this work is a metaphysics of what occurs between transcendent
+                principle and material manifestation: how an intelligible pattern becomes a formative
+                current, how that current is received by psychic and etheric fields, how it gathers
+                substance, and how it becomes a body, an event, a symbol, an organism, an institution,
+                or a world. So it concentrates on the intermediate regions that many systems acknowledge
+                and do not explain — the astral, etheric, psychic, elemental, celestial, daimonic and
+                imaginal orders as distinct, interacting layers of mediation — and rather than treating
+                spirit and matter as two disconnected poles it maps the gradients, thresholds, vessels,
+                pressures, transmissions and transformations through which one passes into the other.
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                A second goal is a precise vocabulary for processes that esoteric language leaves vague:
+                Morphaithēr, morphogenic pressure, aitheric confluence, pneumic percolation, hierostasis,
+                vestigium, the Crypt of Primordial Memory, the Ossuary of Living Forms, Etheric
+                Hydrology, the Sap of Heaven. The words let the work say not only what hidden forces are
+                but how they move, combine, crystallise, leave residue, inherit earlier patterns and
+                generate new forms; they are gathered, defined once, in the{" "}
+                <Link to="/ecology/lexicon" className="text-gold-dim underline-offset-4 transition-colors hover:text-gold hover:underline">Lexicon of the Hidden Ecology</Link>.
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                A third is to bring the traditions into disciplined conversation — Neoplatonism,
+                Hermeticism, theurgy, alchemy, Kabbalah, Indian metaphysics, Chinese energetic thought,
+                Egyptian heka, Western occultism — without collapsing them into one doctrine. Each is
+                treated as revealing a different region, scale or operation within a greater
+                architecture; their correspondences are explored, their differences preserved, and their
+                unresolved questions used as openings. The purpose is not synthesis alone. The work means
+                to extend the inherited systems where they are underdeveloped: the ecology of the Astral
+                Light, the mechanics of etheric manifestation, the inheritance and decay of forms, the
+                relation between force and memory, the movement of qualities through bodies, and the
+                hidden conditions beneath meaningful coincidence.
+              </p>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                Another is to reunite theory with lived and practical experience: to help a person
+                discern what kind of force is present, through which level it operates, what vessel
+                receives it, what pattern it is attempting to establish, and what effects may follow —
+                without reducing every illness, misfortune, emotion or coincidence to a hidden
+                supernatural cause. And ethical discernment is essential to the whole. The work does not
+                assume that every available force should be invoked, every threshold crossed, or every
+                transformation pursued. It asks whether a path should be walked, whether a force serves
+                life or merely magnifies power, whether a relationship is reciprocal or parasitic, and
+                whether an architecture remains truthful when its visible forms begin to fail. Power
+                stays subordinate to right relation, proportion, responsibility and truth.
+              </p>
+              <p className="mt-5 font-serif text-lg italic leading-relaxed text-bone/75">
+                Ultimately the work seeks to restore depth to the world: matter not as spiritually empty
+                but as the terminal expression of profound processes; form not as a prison alone but as
+                vessel, memory and momentary revelation; the human being not as a passive observer but as
+                a participant within a living continuum of forces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* INDEX */}
       <section id="index" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/summit-above-sea-of-cloud.webp" opacity={0.42} position="center 40%" scrim={0.25} />

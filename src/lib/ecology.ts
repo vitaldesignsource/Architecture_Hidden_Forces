@@ -14,15 +14,19 @@
  * relation described by an analogy the text is careful to mark as one.
  */
 
-export type StationId = "morphaither" | "sap" | "hydrology" | "form" | "ossuary" | "crypt" | "aquifer";
+export type StationId =
+  | "morphaither" | "sap" | "hydrology" | "form" | "ossuary" | "crypt"
+  | "sea" | "nursery" | "aquifer" | "catacombs" | "garden" | "hungry";
 
 export type Station = {
   id: StationId;
   to: `/ecology/${StationId}`;
   /** The station's number in the circulation, as a word for prose. */
   n: string;
-  /** Set on the one page that is not a station: the stratum beneath them. */
-  beneath?: string;
+  /** Set on a province — a page that is not a station — to say where it lies in relation to them. */
+  region?: string;
+  /** A province's short name for the strips and cards. */
+  short?: string;
   title: string;
   /** Where the treatise already gives the term a Greek form, that form. Never coined here. */
   greek?: string;
@@ -135,7 +139,8 @@ export const AQUIFER: Station = {
   id: "aquifer",
   to: "/ecology/aquifer",
   n: "↓",
-  beneath: "Beneath the stations",
+  region: "Beneath the stations",
+  short: "Aquifer",
   title: "The Black Aquifer",
   dimension: "Retention · Pressure · Return",
   question: "Where does force go when form fails?",
@@ -146,7 +151,96 @@ export const AQUIFER: Station = {
   position: "center 50%",
 };
 
-export const station = (id: StationId) => [...STATIONS, AQUIFER].find((s) => s.id === id)!;
+/**
+ * The provinces: the regions beneath, before, between and after the six
+ * stations. None is a station. Each is a place the circulation's argument
+ * reaches and cannot hold — the field all mediation happens in, the
+ * gestation before form, the depth beneath it, the afterlife of the sacred
+ * form, the allure residues acquire, and the appetite of a form that has
+ * lost its return — and each hands the reader back toward the vessel.
+ */
+export const PROVINCES: Station[] = [
+  {
+    id: "sea",
+    to: "/ecology/sea",
+    n: "≈",
+    region: "Between the stations",
+    short: "Sea",
+    title: "The Sea Between Causes",
+    dimension: "Mediation · Passage · Confluence",
+    question: "What happens between a cause and its effect?",
+    shorthand: "the between",
+    definition:
+      "The field of mediation in which causes meet before an effect appears. Not an empty distance through which causation travels but a productive medium — currents, tides, confluences, eddies, sediment — that participates in what a cause becomes. Every effect is an estuary.",
+    backdrop: "moon-over-tidal-flats-and-channel",
+    position: "center 50%",
+  },
+  {
+    id: "nursery",
+    to: "/ecology/nursery",
+    n: "○",
+    region: "Before the stations",
+    short: "Nursery",
+    title: "The Nursery of Unborn Forms",
+    dimension: "Gestation · Selection · Birth",
+    question: "What has not yet become enough itself to live?",
+    shorthand: "the gestation",
+    definition:
+      "The gestational province of Morphaithēr, where forces acquire contour, relation and the first intimations of a possible body. Not a warehouse of blueprints: tendencies becoming patterns, patterns seeking organs, possibilities discovering what existence could truthfully receive them — and not every possible form should be given a body.",
+    backdrop: "germinating-seed-with-fine-roots",
+    position: "center 50%",
+  },
+  AQUIFER,
+  {
+    id: "catacombs",
+    to: "/ecology/catacombs",
+    n: "⌂",
+    region: "After the cult",
+    short: "Catacombs",
+    title: "The Catacombs of Forgotten Gods",
+    dimension: "Afterlife · Sacred Form · Return",
+    question: "What becomes of a god's house when the god has gone?",
+    shorthand: "the afterlife of the sacred",
+    definition:
+      "The relational underworld in which once-sacred architectures persist: displaced god-forms, extinguished cults, deserted names, broken rites, deconsecrated places, residual egregores and fragments of former hierophanies, in unequal states of preservation. Not a cavern and not a museum of false beliefs — the subterranean memory of humanity's sacred experiments.",
+    backdrop: "star-trails-over-ruined-temple",
+    position: "center 45%",
+  },
+  {
+    id: "garden",
+    to: "/ecology/garden",
+    n: "✱",
+    region: "Where residue acquires allure",
+    short: "Garden",
+    title: "The Garden of Counterfeit Flowers",
+    dimension: "Appearance · Selection · Fruit",
+    question: "How can a form be real and its name be false?",
+    shorthand: "the allure",
+    definition:
+      "The region of the subtle ecology in which forms flourish by appearing to possess a lineage, authority or purpose they do not bear. Its flowers are visions, doctrines, spirit-images, revelations, symbols and myths that show the colour of one origin while drawing nourishment from another — and they are most deceptive where something in them is alive.",
+    backdrop: "crystal-grove-in-flooded-hall",
+    position: "center 50%",
+  },
+  {
+    id: "hungry",
+    to: "/ecology/hungry",
+    n: "◐",
+    region: "When circulation fails",
+    short: "Hungry Forms",
+    title: "Hungry Forms and Egregores",
+    dimension: "Appetite · Collective Life · Return",
+    question: "What becomes of a form that must be fed to go on existing?",
+    shorthand: "the appetite",
+    definition:
+      "A hungry form is a subtle formation that cannot sustain itself through right relation and so seeks repeated nourishment without achieving completion. An egregore is a collectively sustained form with continuity, memory, atmosphere and some reciprocal influence over its group. They overlap and are not identical: hunger is not a species of entity but a disorder of relationship.",
+    backdrop: "starling-murmuration-over-field",
+    position: "center 50%",
+  },
+];
+
+export const isProvince = (id: string) => PROVINCES.some((p) => p.id === id);
+
+export const station = (id: StationId) => [...STATIONS, ...PROVINCES].find((s) => s.id === id)!;
 
 /** Each station hands the reader to the next in its own words — the text a
  *  transition shows, and the station it leads to. The last leads to the first,
@@ -164,6 +258,41 @@ export const TRANSITIONS: Record<StationId, { line: string; to: StationId; eyebr
     eyebrow: "Anodos · the upward return",
     label: "Rise to",
     note: "Not back into the circulation, and not straight to the surface. What rises from the depth is released from a dead form and re-patterned into a living one, which is why the way up leads to the vessel — and why the vessel, not the rising, decides whether the return was a return to health.",
+  },
+  sea: {
+    line: "What the sea holds in suspension waits for a condition. Where a condition is made and kept, gestation begins.",
+    to: "nursery",
+    eyebrow: "The between, continued",
+    label: "On to",
+    note: "The Sea is the field every province and station lies in; it hands on to the one where a possibility first acquires enough enclosure to become a pattern.",
+  },
+  nursery: {
+    line: "A form that has earned a body is born into the intersection of the whole ecology — and is judged there by what it does with what passes through it.",
+    to: "form",
+    eyebrow: "Birth",
+    label: "Born into",
+    note: "The Nursery does not end in itself. What it allows to be born enters Living Form; what it refuses returns to Morphaithēr, sinks to the Aquifer, leaves a bone in the Ossuary or a consequence in the Crypt.",
+  },
+  catacombs: {
+    line: "Sometimes only the empty throne returns, searching for another occupant. What claims it is judged where forms compete by allure.",
+    to: "garden",
+    eyebrow: "The empty throne",
+    label: "On to",
+    note: "A returning god-form must pass the Garden's test before it passes the ecology's: not whether it is vivid, but what it feeds on and what fruit it bears.",
+  },
+  garden: {
+    line: "A flower that must be fed to keep its colour has become an appetite.",
+    to: "hungry",
+    eyebrow: "When the flower must be fed",
+    label: "On to",
+    note: "The Hungry Flower is one species of the Garden; the province it opens into is where hunger is anatomised as a failure of return, and where forms that know how to die are told apart from forms that do not.",
+  },
+  hungry: {
+    line: "The wisest architecture is not the one that lasts forever. It is the one that gives force a fitting body, returns more life than it receives, and knows when its work is complete.",
+    to: "form",
+    eyebrow: "Forms that know how to die",
+    label: "Return to",
+    note: "Back to the vessel, where dissolution is done rightly: a form's claim on loyalty was always conditional on the participation, and a form that can open its hands is the one this province exists to make possible.",
   },
 };
 

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
-import { Transition } from "@/components/ecology/Transition";
+import { Province, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Items, Pointers } from "@/components/ecology/Pointers";
 import { Spolia } from "@/components/diagrams/Spolia";
 import { station } from "@/lib/ecology";
@@ -268,6 +268,8 @@ function Ossuary() {
           </div>
         </div>
       </Band>
+
+      <Province id="catacombs" line="The Ossuary keeps bones. Where the bones were a god's — a cult's gestures, a temple's anatomy, a statue's face — they lie in passages of their own, joined to the Crypt's chambers and pressed on by the Aquifer." />
 
       <Transition from="ossuary" />
     </EcologyFrame>

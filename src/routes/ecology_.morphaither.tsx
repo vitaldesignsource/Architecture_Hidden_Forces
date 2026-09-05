@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
-import { Transition } from "@/components/ecology/Transition";
+import { Province, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Items, Pointers } from "@/components/ecology/Pointers";
 import { DifferentialReception } from "@/components/diagrams/DifferentialReception";
 import { station } from "@/lib/ecology";
@@ -345,6 +345,8 @@ function Morphaither() {
           </div>
         </div>
       </Band>
+
+      <Province id="nursery" line="Morphaithēr has a specialised condition, wherever becoming is protected long enough to differentiate itself: the region in which forms gestate before they are born — or are refused a body." />
 
       <Transition from="morphaither" />
     </EcologyFrame>

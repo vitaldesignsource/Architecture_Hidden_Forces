@@ -19,11 +19,14 @@ export type Entry = {
   movement?: boolean;
   route?: { division: string; entry?: string };
   /** A row that is a page of its own — the Hidden Ecology's stations. */
-  to?: "/ecology" | "/ecology/morphaither" | "/ecology/sap" | "/ecology/hydrology" | "/ecology/form" | "/ecology/ossuary" | "/ecology/crypt" | "/ecology/aquifer";
+  to?:
+    | "/ecology" | "/ecology/morphaither" | "/ecology/sap" | "/ecology/hydrology" | "/ecology/form" | "/ecology/ossuary" | "/ecology/crypt"
+    | "/ecology/sea" | "/ecology/nursery" | "/ecology/aquifer" | "/ecology/catacombs" | "/ecology/garden" | "/ecology/hungry" | "/ecology/lexicon";
 };
 
 export const ENTRIES: Entry[] = [
 
+            { n: "—", id: "goals", t: "What the Architecture Is For", d: "The goals of the work: mediation mapped, a vocabulary made, the traditions in conversation, ethics kept." },
             { n: "00", id: "doctrine", t: "Central Doctrine", d: "Form is frozen force. Force is liberated form." },
             { n: "I", id: "terms", t: "The Five Terms", d: "Matter, Form, Force, Field, Centre — what the words mean." },
             { n: "II", id: "spine", t: "The Doctrinal Spine", d: "Eighteen commitments the rest of the architecture depends upon." },

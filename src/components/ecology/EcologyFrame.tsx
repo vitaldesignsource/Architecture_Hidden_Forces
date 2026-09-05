@@ -5,7 +5,7 @@ import { ContentsPanel } from "@/components/ContentsPanel";
 import { CrossMark } from "@/components/CrossMark";
 import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
-import { AQUIFER, STATIONS, type Station } from "@/lib/ecology";
+import { PROVINCES, STATIONS, isProvince, type Station } from "@/lib/ecology";
 import type { Entry } from "@/lib/contents";
 
 /**
@@ -61,29 +61,35 @@ export function AscentMark({ className = "" }: { className?: string }) {
 const ROWS: Entry[] = [
   { n: "—", id: "top", t: "The Hidden Ecology of Formation", d: "The layer as a whole: the circulation, the spiral, the laws.", to: "/ecology" },
   ...STATIONS.map((s) => ({ n: s.n, id: s.id, t: s.title, d: s.dimension, to: s.to })),
-  { n: AQUIFER.n, id: AQUIFER.id, t: AQUIFER.title, d: AQUIFER.dimension, to: AQUIFER.to },
+  ...PROVINCES.map((p) => ({ n: p.n, id: p.id, t: p.title, d: p.region ?? p.dimension, to: p.to })),
+  { n: "—", id: "lexicon", t: "The Lexicon", d: "The layer's coined terms, each defined once, with where it is treated.", to: "/ecology/lexicon" },
 ];
 const GROUPS = [
   { at: "top", k: "The layer" },
   { at: "morphaither", k: "The circulation, in order" },
-  { at: "aquifer", k: "Beneath the circulation" },
+  { at: "sea", k: "The provinces: beneath, before, between and after" },
+  { at: "lexicon", k: "Apparatus" },
 ];
 
 export function EcologyFrame({
   station,
   title,
+  page,
   children,
 }: {
   /** The station this page is; undefined on the landing. */
   station?: Station;
   /** The landing's own title block, when there is no station. */
   title?: ReactNode;
+  /** A page of the apparatus (the lexicon), marked in the contents by its id. */
+  page?: string;
   children: ReactNode;
 }) {
   const active = useActiveSection();
   useReveal();
   usePauseOffscreen();
-  const here = station?.id ?? "top";
+  const here = station?.id ?? page ?? "top";
+  const inProvince = isProvince(here);
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
@@ -114,13 +120,14 @@ export function EcologyFrame({
                 <ReturnMark />
               </Link>
               <Link
-                to={AQUIFER.to}
-                aria-current={here === AQUIFER.id ? "page" : undefined}
-                className={`hidden whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold xl:inline-flex xl:items-baseline xl:gap-2 2xl:pl-6 ${here === AQUIFER.id ? "text-gold" : "text-bone/70"}`}
-                title="Beneath the stations: the Black Aquifer"
+                to="/ecology"
+                hash="eco-provinces"
+                aria-current={inProvince ? "true" : undefined}
+                className={`hidden whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold xl:inline-flex xl:items-baseline xl:gap-2 2xl:pl-6 ${inProvince ? "text-gold" : "text-bone/70"}`}
+                title="The provinces: beneath, before, between and after the stations"
               >
                 <DescentMark className="text-gold/60" />
-                Aquifer
+                Provinces
               </Link>
             </div>
             <Link
@@ -132,7 +139,7 @@ export function EcologyFrame({
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
           </div>
           <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
-            {station ? (station.beneath ? "Beneath" : `${station.n} · VI`) : "ΟΙΚΟΣ"}
+            {station ? (station.region ? "Province" : `${station.n} · VI`) : "ΟΙΚΟΣ"}
           </div>
         </div>
         <div className="border-t border-border/50 lg:hidden">
@@ -143,11 +150,13 @@ export function EcologyFrame({
                 {s.title.replace(/^The /, "").replace(/ of .*$/, "")}
               </Link>
             ))}
-            <Link to={AQUIFER.to} aria-current={here === AQUIFER.id ? "page" : undefined}
-                  className={`inline-flex items-baseline gap-1.5 whitespace-nowrap border-l border-border py-1 pl-4 transition-colors hover:text-gold ${here === AQUIFER.id ? "text-gold" : "text-bone/70"}`}>
-              <DescentMark className="text-gold/60" />
-              Aquifer
-            </Link>
+            {PROVINCES.map((p, i) => (
+              <Link key={p.id} to={p.to} aria-current={here === p.id ? "page" : undefined}
+                    className={`inline-flex items-baseline gap-1.5 whitespace-nowrap py-1 transition-colors hover:text-gold ${i === 0 ? "border-l border-border pl-4" : ""} ${here === p.id ? "text-gold" : "text-bone/70"}`}>
+                {i === 0 && <DescentMark className="text-gold/60" />}
+                {p.short}
+              </Link>
+            ))}
             <Link to="/" className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold">
               Architecture <CrossMark className="text-gold/70" />
             </Link>
@@ -162,7 +171,7 @@ export function EcologyFrame({
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise">
               <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
-                The Hidden Ecology of Formation · {station.beneath ?? `Station ${station.n} of VI`}
+                The Hidden Ecology of Formation · {station.region ?? `Station ${station.n} of VI`}
               </p>
               <h1 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl">
                 <RevealText text={station.title} shimmer />

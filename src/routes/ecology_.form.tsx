@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
-import { Transition } from "@/components/ecology/Transition";
+import { Province, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Items, Pointers } from "@/components/ecology/Pointers";
 import { FormAtTheIntersection } from "@/components/diagrams/FormAtTheIntersection";
 import { CaptiveLightProgression } from "@/components/diagrams/CaptiveLightProgression";
@@ -292,6 +292,10 @@ function Form() {
           </div>
         </div>
       </Band>
+
+      <Province id="garden" line="A form's claim about itself is an argument its anatomy makes — colour, fragrance, nectar, thorns. Only the fruit reveals the plant, and there is a region where forms compete by allure alone." />
+
+      <Province id="hungry" line="A form that keeps its appetite after losing its rightful source, and feeds on whatever living systems are near, has undergone a metabolic inversion. The ecology of that inversion has a province of its own." />
 
       <Transition from="form" />
     </EcologyFrame>

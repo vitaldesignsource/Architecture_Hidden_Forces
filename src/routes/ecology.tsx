@@ -6,7 +6,8 @@ import { EcologyFrame, Band, Eyebrow, DescentMark } from "@/components/ecology/E
 import { Law } from "@/components/ecology/Law";
 import { Arch, Entry, Pointers } from "@/components/ecology/Pointers";
 import { SpiralOfBecoming } from "@/components/diagrams/SpiralOfBecoming";
-import { AQUIFER, CIRCULATION, LAWS, SHORTHAND, STATIONS, station } from "@/lib/ecology";
+import { ProvincesAtlas } from "@/components/diagrams/ProvincesAtlas";
+import { CIRCULATION, LAWS, PROVINCES, SHORTHAND, STATIONS, station } from "@/lib/ecology";
 
 /**
  * The Hidden Ecology of Formation — the landing.
@@ -69,7 +70,12 @@ const GLOSSARY: { k: string; d: string; to: (typeof STATIONS)[number]["to"] }[] 
   { k: "The Ossuary of Living Forms", d: "The morphological inheritance of becoming: architectures remaining available after the forms that bore them have gone.", to: "/ecology/ossuary" },
   { k: "The Crypt of Primordial Memory", d: "The retentive depth of existence: what has occurred entering the conditions of what may occur.", to: "/ecology/crypt" },
   { k: "Ontological retention", d: "Consequence without survival — a thing need not remain present for its existence to go on having effect.", to: "/ecology/crypt" },
+  { k: "The Sea Between Causes", d: "The field of mediation in which causes meet before an effect appears; every effect is an estuary.", to: "/ecology/sea" },
+  { k: "The Nursery of Unborn Forms", d: "The gestational province of Morphaithēr, where a possibility is conceived, nourished, tested, refused or born.", to: "/ecology/nursery" },
   { k: "The Black Aquifer", d: "The subterranean memory of force: the saturated, low-luminosity phase of Morphaithēr into which force settles when form fails, and from which it may rise again.", to: "/ecology/aquifer" },
+  { k: "The Catacombs of Forgotten Gods", d: "The relational underworld in which once-sacred architectures persist after their cults have died, in unequal states of preservation.", to: "/ecology/catacombs" },
+  { k: "The Garden of Counterfeit Flowers", d: "Where residue acquires allure: forms that flourish by claiming a lineage, authority or purpose they do not bear.", to: "/ecology/garden" },
+  { k: "Hungry Forms and Egregores", d: "Appetite as a disorder of relationship: a form that must be fed to go on existing, and the collective bodies that can become one.", to: "/ecology/hungry" },
 ];
 
 function Ecology() {
@@ -208,8 +214,8 @@ function Ecology() {
           These are not five synonyms for subtle energy or the invisible world. They are five
           dimensions of one ecology, each with a governing question the others cannot answer, and
           Living Form is where all five intersect. Take any one; it will hand you to the next.
-          Beneath all six lies one stratum that is not a station: where the circulation's
-          remainder goes.
+          Beneath, before, between and after all six lie the provinces, which are not stations:
+          the regions the circulation reaches and cannot hold.
         </p>
         <div className="mt-12 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-3">
           {STATIONS.map((s) => (
@@ -224,15 +230,55 @@ function Ecology() {
               </span>
             </Link>
           ))}
-          <Link to={AQUIFER.to} className="group flex flex-col gap-3 bg-void/70 p-6 transition-colors hover:bg-gold/5 sm:col-span-2 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-8 sm:p-8 lg:col-span-3">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Beneath the stations</span>
-            <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">{AQUIFER.title}</span>
-            <span className="font-serif text-base italic leading-relaxed text-bone/70">{AQUIFER.question}</span>
+          <Link to="/ecology" hash="eco-provinces" className="group flex flex-col gap-3 bg-void/70 p-6 transition-colors hover:bg-gold/5 sm:col-span-2 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-8 sm:p-8 lg:col-span-3">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Beneath, before, between and after</span>
+            <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">The six provinces</span>
+            <span className="font-serif text-base italic leading-relaxed text-bone/70">Where does the circulation's remainder go, and what has not yet earned a body?</span>
             <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold sm:ml-auto">
-              {AQUIFER.shorthand} <DescentMark className="ml-1 text-gold/70" />
+              the regions <DescentMark className="ml-1 text-gold/70" />
             </span>
           </Link>
         </div>
+      </Band>
+
+      {/* ---- the provinces ---- */}
+      <Band id="eco-provinces" backdrop="moon-over-tidal-flats-and-channel" opacity={0.18} position="center 50%">
+        <Eyebrow>The provinces</Eyebrow>
+        <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
+          Beneath, before, between and after — <span className="italic text-gold">the regions the circulation cannot hold</span>
+        </h2>
+        <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+          The six stations are one circulation, and a circulation has edges. Force that leaves it
+          without completing it settles beneath. A possibility that has not yet earned a body waits
+          before it. The field in which every cause meets every other lies between. A sacred form
+          whose cult has died persists after. Residue acquires allure, and a form that has lost its
+          return learns to hunger. None of these is a station. Each is a region the circulation's
+          argument reaches and cannot hold, and each is entered from the station whose argument
+          reaches it.
+        </p>
+        <div className="mt-12">
+          <ProvincesAtlas />
+          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            spatial · above, beneath and beside are relations to the circulation, not directions
+          </p>
+        </div>
+        <div className="mt-12 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-3">
+          {PROVINCES.map((p) => (
+            <Link key={p.id} to={p.to} className="group flex flex-col bg-void p-6 transition-colors hover:bg-gold/5 sm:p-8">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">{p.region}</span>
+              <span className="mt-4 font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">{p.title}</span>
+              <span className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{p.dimension}</span>
+              <span className="mt-5 font-serif text-base italic leading-relaxed text-bone/80">{p.question}</span>
+              <span className="mt-auto pt-6 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">
+                {p.shorthand} <CrossMark className="ml-1 text-gold/70" />
+              </span>
+            </Link>
+          ))}
+        </div>
+        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-bone/60">
+          The provinces share a vocabulary, coined to interlock, and every term of it is defined once in{" "}
+          <Link to="/ecology/lexicon" className="underline-offset-4 transition-colors hover:text-gold hover:underline">the Lexicon</Link>.
+        </p>
       </Band>
 
       {/* ---- the spiral ---- */}
@@ -318,6 +364,11 @@ function Ecology() {
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Each defined once, <span className="italic text-gold">where it belongs</span>
         </h2>
+        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+          The layer's chief terms, and the page each belongs to. The full coined vocabulary — the
+          morph-, aither-, pneum-, hier- and crypt- families, descent and return — is set out by root in{" "}
+          <Link to="/ecology/lexicon" className="underline-offset-4 transition-colors hover:text-gold hover:underline">the Lexicon</Link>.
+        </p>
         <div className="mt-10 grid gap-x-12 gap-y-px lg:grid-cols-2">
           {GLOSSARY.map((g) => (
             <Link key={g.k} to={g.to} className="group grid grid-cols-[1fr] gap-1 border-b border-border py-4 transition-colors hover:border-gold/40">
@@ -331,7 +382,7 @@ function Ecology() {
           energy; no analogy is presented as physics; aether is the medium, Morphaithēr its
           condition, the Sap what descends into it and the four ethers the modes in which the field
           operates — four things, kept four; the Ossuary and the Crypt are not one concept; the Crypt is not a
-          database; the Black Aquifer is neither the unconscious nor the abyss before creation; death is not intrinsically evil; inherited forms are not automatically sacred and
+          database; the Black Aquifer is neither the unconscious nor the abyss before creation; an egregore is not automatically a god and a god is not automatically an egregore; an appearance may be real as an appearance and false as an identity; death is not intrinsically evil; inherited forms are not automatically sacred and
           novelty is not automatically superior. The one criterion, throughout:{" "}
           <span className="text-bone/90">does the architecture maintain right relation with the force it exists to mediate?</span>
         </p>

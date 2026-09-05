@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
-import { Transition } from "@/components/ecology/Transition";
+import { Province, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Pointers } from "@/components/ecology/Pointers";
 import { StrataOfConsequence } from "@/components/diagrams/StrataOfConsequence";
 import { OssuaryAndCrypt } from "@/components/diagrams/OssuaryAndCrypt";
@@ -298,6 +298,8 @@ function Crypt() {
           portal={["ii-27", "ii-28", "xix-12", "x-7", "iii-30", "xiii-28", "ix-24"]}
         />
       </Band>
+
+      <Province id="catacombs" line="The Crypt's seals are not perfectly impermeable. Where what seeps out was once sacred, it gathers in the passages between the chambers: the afterlife of divine forms." />
 
       <Transition from="crypt" />
     </EcologyFrame>

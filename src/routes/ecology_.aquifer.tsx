@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
-import { Transition } from "@/components/ecology/Transition";
+import { Neighbours, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Items, Pointers, Sequence } from "@/components/ecology/Pointers";
 import { AquiferSection } from "@/components/diagrams/AquiferSection";
 import { FormToTendency } from "@/components/diagrams/FormToTendency";
@@ -466,8 +466,9 @@ function Aquifer() {
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Among the structures most often built around Aquiferic pressure the system names the
-              Catacombs of Forgotten Gods. A forgotten god does not necessarily sleep in the Aquifer
+              Among the structures most often built around Aquiferic pressure the system names the{" "}
+              <Link to="/ecology/catacombs" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Catacombs of Forgotten Gods</Link>.
+              A forgotten god does not necessarily sleep in the Aquifer
               like a creature beneath water. Rather, the worship, fear, sacrifice, image, name and
               expectation once gathered around that god may have sunk into the underlying strata.
               The cultic body dies; its charge undergoes Katadynamis. Its statues stand empty at the
@@ -485,8 +486,9 @@ function Aquifer() {
               holds the names such returns wear; the Aquifer is what moves beneath the names.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              This is also where what the system calls the Menagerie of Impossible Forms approaches
-              the Aquifer. Submerged Vestigia from unrelated lineages can meet under pressure and
+              This is also where what the system calls the Menagerie of Impossible Forms — and the{" "}
+              <Link to="/ecology/garden" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Garden</Link>{" "}
+              in which its recombinations first acquire allure — approaches the Aquifer. Submerged Vestigia from unrelated lineages can meet under pressure and
               seek a single outlet. Their recombination may produce unprecedented symbolic
               organisms: forms with no continuous historical ancestry, composed of genuinely
               inherited parts. Some become creative revelations. Others are unstable chimeras. The
@@ -505,7 +507,8 @@ function Aquifer() {
         <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Hungry Forms gather near Aquiferic upwellings. A form becomes hungry when it retains
+              <Link to="/ecology/hungry" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Hungry Forms</Link>{" "}
+              gather near Aquiferic upwellings. A form becomes hungry when it retains
               an organising appetite but has lost access to the rightful source that once sustained
               it. Unable to complete its own cycle of reception, embodiment, expenditure and return,
               it draws force from whatever living systems are available: a family narrative, a
@@ -739,6 +742,16 @@ function Aquifer() {
         />
       </Band>
 
+      <Neighbours
+        of="aquifer"
+        lines={{
+          sea: "The sea's floor: what lies beneath every current the sea carries, and where its sediment settles.",
+          nursery: "What the Aquifer feeds — vitality, and unresolved material — and where a failed gestation returns.",
+          catacombs: "The houses whose charge sinks here when the cult dies, and rises again when a later age makes an opening.",
+          garden: "Where a fragment risen from the depth borrows bones and puts on colour.",
+          hungry: "The groove a hungry form cuts down to the depth, and the composting powers the depth also holds.",
+        }}
+      />
       <Transition from={station("aquifer").id} />
     </EcologyFrame>
   );

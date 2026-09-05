@@ -12,7 +12,8 @@ import { fs } from "./fig";
  *
  * The back half of each turn is drawn fainter, so the helix reads in depth;
  * a single mark travels the path, slowly, and stops for anyone who has asked
- * motion to stop.
+ * motion to stop. The box is wider than the helix by a margin on each side,
+ * for the captions at its extremes, which grow on a phone.
  */
 const STATIONS = [
   ["Morphaithēr", "condition"],
@@ -29,9 +30,9 @@ const STATIONS = [
   ["New formation", "one level on"],
 ] as const;
 
-const W = 480;
+const W = 520;
 const H = 560;
-const CX = 240;
+const CX = 260;
 const R = 118;
 const TOP = 70;
 const BOTTOM = 500;
@@ -59,7 +60,7 @@ export function SpiralOfBecoming() {
   const last = pts[pts.length - 1];
 
   return (
-    <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[500px]">
+    <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[540px]">
       <style>{`
         .aoh-sp-mark { offset-rotate: 0deg; }
         @media (prefers-reduced-motion: reduce) { .aoh-sp-mark { display: none } }
@@ -83,7 +84,8 @@ export function SpiralOfBecoming() {
         ))}
         {/* the return that is not a return: first and last share a phase */}
         <line x1={first.x} y1={first.y - 8} x2={last.x} y2={last.y + 8} stroke="var(--gold, #c9a227)" strokeOpacity={0.5} strokeWidth={0.7} strokeDasharray="3 4" />
-        <text x={first.x + 10} y={(first.y + last.y) / 2 + 3} className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
+        {/* set left of the tick, above the height at which the curve crosses the axis */}
+        <text x={first.x - 10} y={(first.y + last.y) / 2 - 22} textAnchor="end" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
           not where it began
         </text>
         {/* stations */}

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
-import { Beneath, Transition } from "@/components/ecology/Transition";
+import { Province, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Items, Pointers, Sequence } from "@/components/ecology/Pointers";
 import { HydrologicalSequence } from "@/components/diagrams/HydrologicalSequence";
 import { EthericWatershed } from "@/components/diagrams/EthericWatershed";
@@ -347,7 +347,9 @@ function Hydrology() {
         </div>
       </Band>
 
-      <Beneath line="No hydrology is complete that studies only rain, rivers and visible springs. Beneath every open current lies another order of water — older, slower, pressurised, and largely untouched by the light." />
+      <Province id="sea" line="Etheric Hydrology studies one great water. The field in which its currents meet astral images, spiritual orientations, material limits and living acts of choice is wider than the etheric, and it has a name." />
+
+      <Province id="aquifer" line="No hydrology is complete that studies only rain, rivers and visible springs. Beneath every open current lies another order of water — older, slower, pressurised, and largely untouched by the light." />
 
       <Transition from="hydrology" />
     </EcologyFrame>
