@@ -144,7 +144,7 @@ function Ossuary() {
       </Band>
 
       {/* ---- the quarry ---- */}
-      <Band id="eco-o-quarry">
+      <Band id="eco-o-quarry" backdrop="flowers-in-amber-along-descending-stair" opacity={0.22} position="center 40%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>The quarry of becoming</Eyebrow>

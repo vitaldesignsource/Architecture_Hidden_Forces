@@ -80,7 +80,7 @@ function Hungry() {
       </Band>
 
       {/* ---- the old intuitions ---- */}
-      <Band id="eco-hf-inheritance" backdrop="cabinet-of-curiosities-in-lamplight" opacity={0.18} position="center 50%">
+      <Band id="eco-hf-inheritance" backdrop="luminous-specimens-in-conservatory-cases" opacity={0.2} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>The old intuitions and their unfinished questions</Eyebrow>
@@ -229,7 +229,7 @@ function Hungry() {
       </Band>
 
       {/* ---- the meaning of hunger ---- */}
-      <Band id="eco-hf-hunger">
+      <Band id="eco-hf-hunger" backdrop="golden-threads-spiralling-in-moonlit-forest" opacity={0.16} position="center 40%">
         <Eyebrow>The meaning of hunger</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Exchange is not hunger — <span className="italic text-gold">hunger is a failure of circulation</span>

@@ -240,7 +240,7 @@ function Hydrology() {
       </Band>
 
       {/* ---- vocabulary ---- */}
-      <Band id="eco-h-vocabulary">
+      <Band id="eco-h-vocabulary" backdrop="alpine-river-over-gold-veined-bedrock" opacity={0.18} position="center 60%">
         <Eyebrow>The hydrological vocabulary</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Twelve terms, each a relation — <span className="italic text-gold">none of them the current</span>

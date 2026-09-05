@@ -108,7 +108,7 @@ export const STATIONS: Station[] = [
     shorthand: "the inheritance",
     definition:
       "The morphological inheritance of becoming. Forms perish; their architectures remain available. Graveyard, library, workshop and quarry at once — the future scavenges the past.",
-    backdrop: "nurse-log-in-foggy-forest",
+    backdrop: "bone-white-vaulted-hall-with-fossils",
     position: "center 55%",
   },
   {
