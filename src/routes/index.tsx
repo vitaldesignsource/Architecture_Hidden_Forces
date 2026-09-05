@@ -9090,6 +9090,76 @@ function Index() {
             </div>
           </div>
 
+          <div className="mt-16 max-w-3xl border-t border-border pt-8">
+            <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+              <span lang="el" className="scr-greek">Σφραγίς</span> · The Morphaithēric Seed
+            </p>
+            <div className="mt-5 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+              <Seal k="seed" size={120} className="shrink-0 text-gold/70" title="The Morphaithēric Seed — the seal of the localised centre" />
+              <div className="min-w-0">
+                <p className="font-serif text-xl italic text-gold">The Seal of the Morphaithēric Seed</p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Universal formative possibility becoming concentrated into one particular morphal
+                  identity. Morphaithēr is the distributed field; the Seed is a localised centre
+                  formed within that field.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 space-y-7">
+              {[
+                ["Morphocrypt", "the central point",
+                 "The compressed principle of identity: what allows a form to remain recognisably itself through growth, repair, material replacement and changing conditions. It is not a miniature organism or a rigid blueprint. It is a concentrated grammar of permissible becoming."],
+                ["Cryptodynamis", "the spiral",
+                 "Its latent capacity to unfold, translating one central pattern across increasing scales: cellular arrangement, tissue, organ, body, posture, behaviour. Because it can be followed both outward and inward it is also feedback — manifestation unfolds from the Seed, while embodied experience can return toward it and leave morphal inheritance, or an Aitheric Scar."],
+                ["The morphal horizon", "the two great curves",
+                 "They define the range within which variation can occur without the form losing its underlying identity. This is why the seal encloses without being rigid: a Seed guides development without mechanically predetermining every detail."],
+                ["Anodos", "the opening above",
+                 "The Seed remains connected to Morphaithēr — individualised, never wholly severed from the greater form-bearing field. The twin upward points express reception, replenishment, and the movement back toward formative causation."],
+                ["Kathodos", "the lower point",
+                 "It concentrates the pattern into a direction of embodiment, where Warmth awakens it, Light differentiates it, Tone organises it, and Life integrates it."],
+                ["What stays unexpressed", "the black spaces",
+                 "Every Seed holds more potential variation than any single incarnation can realise. The visible form is one actualisation within a larger morphal range."],
+              ].map(([term, place, d]) => (
+                <div key={term} className="grid gap-1.5 sm:grid-cols-[13rem_minmax(0,1fr)] sm:gap-6">
+                  <div>
+                    <p className="font-serif text-base italic text-gold">{term}</p>
+                    <p className="mt-0.5 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{place}</p>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{d}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 border-t border-border pt-6">
+              <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                The three inks
+              </p>
+              <div className="mt-5 grid gap-5 sm:grid-cols-3">
+                {([
+                  ["morphaither", "Pale opaline lavender", "universal Morphaithēr"],
+                  ["seed", "Bright violet", "the localised Morphaithēric Seed"],
+                  ["life", "Viridian emerald", "the Life Ether that animates and maintains the pattern"],
+                ] as const).map(([k, name, gloss]) => (
+                  <div key={k} className="flex items-start gap-3.5">
+                    <Seal k={k} size={34} className="shrink-0" tinted decorative />
+                    <div className="min-w-0">
+                      <p className="font-serif text-base italic text-bone/90">{name}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{gloss}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-10 font-serif text-lg leading-relaxed text-bone/90">
+              Field condenses <span className="italic text-gold">→</span> identity centres{" "}
+              <span className="italic text-gold">→</span> pattern unfolds{" "}
+              <span className="italic text-gold">→</span> form descends{" "}
+              <span className="italic text-gold">→</span> Life Ether enacts and renews it.
+            </p>
+          </div>
+
           <div className="mt-24 max-w-3xl">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A configuration, not a substance
