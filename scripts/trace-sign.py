@@ -8,9 +8,10 @@ stair-step. So this reads each stroke instead — its centre-line and the width 
 was drawn at — and emits cubic paths to be stroked in the ink of the page.
 
 Some marks are strokes of an even width, and read best that way. Others are
-built of tapered points and straight edges, where an even width would throw the
-taper away; those are traced as an outline instead, which straight edges take
-cleanly. Hence two modes:
+built of tapered points, straight edges or curved blades, where an even width
+would throw the taper away; those are traced as an outline instead. An outline
+is simplified and then rebuilt as curves, with a real corner left sharp, so a
+curved edge does not arrive as a row of facets. Hence two modes:
 
     python3 scripts/trace-sign.py design/ethers/<name>.webp                 # strokes
     python3 scripts/trace-sign.py design/ethers/<name>.webp --mode fill     # outline
@@ -159,6 +160,58 @@ def outline(m, w, h, eps):
     return [l for l in loops if len(l) > 3]
 
 
+def curve_loop(pts, corner_deg, to_box):
+    """A closed loop of points as cubics: smooth through gentle turns, sharp at corners."""
+    p = [to_box(q) for q in pts]
+    if p[0] == p[-1]:
+        p = p[:-1]
+    n = len(p)
+    if n < 3:
+        return ""
+
+    def turn(i):
+        a, b, c = p[(i - 1) % n], p[i], p[(i + 1) % n]
+        u = math.atan2(b[1] - a[1], b[0] - a[0])
+        v = math.atan2(c[1] - b[1], c[0] - b[0])
+        return abs(math.degrees(math.atan2(math.sin(v - u), math.cos(v - u))))
+
+    sharp = [turn(i) > corner_deg for i in range(n)]
+
+    def out_t(i):
+        """tangent leaving point i"""
+        a, b, c = p[(i - 1) % n], p[i], p[(i + 1) % n]
+        if sharp[i]:
+            return ((c[0] - b[0]) / 3, (c[1] - b[1]) / 3)
+        return ((c[0] - a[0]) / 6, (c[1] - a[1]) / 6)
+
+    def in_t(i):
+        """tangent arriving at point i"""
+        a, b, c = p[(i - 1) % n], p[i], p[(i + 1) % n]
+        if sharp[i]:
+            return ((b[0] - a[0]) / 3, (b[1] - a[1]) / 3)
+        return ((c[0] - a[0]) / 6, (c[1] - a[1]) / 6)
+
+    def straight(a, b, c1, c2):
+        """the controls sit on the segment, so a line says the same thing in less"""
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        n = math.hypot(dx, dy)
+        if n < 1e-9:
+            return True
+        return all(abs(dy * (c[0] - a[0]) - dx * (c[1] - a[1])) / n < 0.06 for c in (c1, c2))
+
+    d = [f"M{p[0][0]:.2f} {p[0][1]:.2f}"]
+    for i in range(n):
+        j = (i + 1) % n
+        t1, t2 = out_t(i), in_t(j)
+        c1 = (p[i][0] + t1[0], p[i][1] + t1[1])
+        c2 = (p[j][0] - t2[0], p[j][1] - t2[1])
+        if straight(p[i], p[j], c1, c2):
+            d.append(f"L{p[j][0]:.2f} {p[j][1]:.2f}")
+        else:
+            d.append(f"C{c1[0]:.2f} {c1[1]:.2f} {c2[0]:.2f} {c2[1]:.2f} {p[j][0]:.2f} {p[j][1]:.2f}")
+    return "".join(d) + "Z"
+
+
 def rdp(pts, eps):
     """Ramer-Douglas-Peucker, iteratively so a long boundary cannot blow the stack."""
     keep = [False] * len(pts)
@@ -190,6 +243,7 @@ def main():
         step = float(sys.argv[sys.argv.index("--step") + 1])
     mode = sys.argv[sys.argv.index("--mode") + 1] if "--mode" in sys.argv else "stroke"
     eps = float(sys.argv[sys.argv.index("--eps") + 1]) if "--eps" in sys.argv else 1.1
+    corner = float(sys.argv[sys.argv.index("--corner") + 1]) if "--corner" in sys.argv else 55.0
     m, w, h = load_mask(src)
     xs = [x for y in range(h) for x in range(w) if m[y][x]]
     ys = [y for y in range(h) for x in range(w) if m[y][x]]
@@ -202,10 +256,11 @@ def main():
         loops = outline(m, w, h, eps)
         span = max(max(xs) - min(xs), max(ys) - min(ys))
         k = 100.0 / span
-        d = "".join(
-            "M" + " L".join(f"{50 + (px_ - cx) * k:.2f} {50 + (py - cy) * k:.2f}" for px_, py in loop) + "Z"
-            for loop in loops
-        )
+
+        def to_box(q):
+            return (50 + (q[0] - cx) * k, 50 + (q[1] - cy) * k)
+
+        d = "".join(curve_loop(loop, corner, to_box) for loop in loops)
         print(f"    // outline of {len(loops)} shapes traced from {src}")
         print(f'    {{ d: "{d}" }},')
         return
