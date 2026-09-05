@@ -49,7 +49,7 @@ export function OneLayerOfSeven() {
           {L.map((l, i) => {
             const on = sel === i;
             return (
-              <line key={l.k} x1={X + 8} y1={l.y} x2={CX - 22} y2={CY}
+              <line key={l.k} x1={X + 8} y1={l.y} x2={CX - 26} y2={CY}
                     stroke={l.mapped ? "var(--gold)" : "var(--muted-foreground)"}
                     strokeOpacity={on ? 0.9 : sel !== null ? 0.08 : 0.32}
                     strokeWidth={on ? 1.6 : 1} />
@@ -81,7 +81,7 @@ export function OneLayerOfSeven() {
             );
           })}
 
-          <circle cx={CX} cy={CY} r="21" fill="var(--void)" stroke="var(--gold)"
+          <circle cx={CX} cy={CY} r="25" fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity="0.85" strokeWidth="1.3" />
           <text x={CX} y={CY + 3} textAnchor="middle" className="font-label" style={fs(7)}
                 letterSpacing="0.8" fill="var(--gold)">MOMENT</text>

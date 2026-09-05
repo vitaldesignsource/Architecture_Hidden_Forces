@@ -64,10 +64,13 @@ export function HekaAndMaat() {
           {/* axes */}
           <line x1={X0} y1={Y0} x2={X1} y2={Y0} stroke="var(--gold)" strokeOpacity="0.45" strokeWidth="1" />
           <line x1={X0} y1={Y0} x2={X0} y2={Y1} stroke="var(--gold)" strokeOpacity="0.45" strokeWidth="1" />
+          {/* the axes carry their own arrowheads; the label face has no arrow glyph */}
+          <path d={`M${X1 - 5} ${Y0 - 3} L${X1} ${Y0} L${X1 - 5} ${Y0 + 3}`} fill="none" stroke="var(--gold)" strokeOpacity="0.45" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+          <path d={`M${X0 - 3} ${Y1 + 5} L${X0} ${Y1} L${X0 + 3} ${Y1 + 5}`} fill="none" stroke="var(--gold)" strokeOpacity="0.45" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
           <text x={X1} y={Y0 + 16} textAnchor="end" className="font-label" fontSize="6.6"
-                letterSpacing="1" fill="var(--gold)" opacity="0.85">HEKA — OPERATIVE →</text>
+                letterSpacing="1" fill="var(--gold)" opacity="0.85">HEKA — OPERATIVE</text>
           <text x={X0 - 6} y={Y1 - 8} textAnchor="start" className="font-label" fontSize="6.6"
-                letterSpacing="1" fill="var(--gold)" opacity="0.85">↑ MA&rsquo;AT — IN RIGHT ORDER</text>
+                letterSpacing="1" fill="var(--gold)" opacity="0.85">MA&rsquo;AT — IN RIGHT ORDER</text>
 
           {[
             { x: 0.75, y: 0.93, t: "FULFILLED" },

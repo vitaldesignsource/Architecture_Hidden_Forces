@@ -44,7 +44,7 @@ export function SubTattvaMatrix() {
                 }`}
               >
                 <TattvaGlyph dominant={K[j]} size={22} decorative />
-                <span>{t}</span>
+                <span className="aoh-tr" lang="sa-Latn">{t}</span>
               </div>
             ))}
             {T.map((dom, i) => (
@@ -55,7 +55,7 @@ export function SubTattvaMatrix() {
                   }`}
                 >
                   <TattvaGlyph dominant={K[i]} size={22} decorative />
-                  <span>{dom}</span>
+                  <span className="aoh-tr" lang="sa-Latn">{dom}</span>
                 </div>
                 {T.map((mod, j) => {
                   const on = sel && sel[0] === i && sel[1] === j;
@@ -110,7 +110,7 @@ export function SubTattvaMatrix() {
                   </p>
                   {cur[0] !== cur[1] && (
                     <p className="mt-1 font-label text-[9px] uppercase tracking-[0.18em] text-gold-dim">
-                      Golden Dawn: {T[cur[1]]} of {T[cur[0]]}
+                      Golden Dawn: <span className="aoh-tr" lang="sa-Latn">{T[cur[1]]}</span> of <span className="aoh-tr" lang="sa-Latn">{T[cur[0]]}</span>
                     </p>
                   )}
                 </div>
@@ -123,7 +123,7 @@ export function SubTattvaMatrix() {
                     onClick={() => setSel([cur[1], cur[0]])}
                     className="-mx-1 px-1 py-2 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim transition-colors hover:text-gold"
                   >
-                    <SwapMark /> Swap to {T[cur[1]]}–{T[cur[0]]}
+                    <SwapMark /> Swap to <span className="aoh-tr" lang="sa-Latn">{T[cur[1]]}</span>–<span className="aoh-tr" lang="sa-Latn">{T[cur[0]]}</span>
                   </button>
                   <p className="mt-3 text-sm italic leading-relaxed text-bone/70">
                     {M[cur[1]][cur[0]]}

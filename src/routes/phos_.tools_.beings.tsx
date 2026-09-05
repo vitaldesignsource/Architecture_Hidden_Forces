@@ -220,7 +220,7 @@ function Register() {
                   cls === c.k ? "border-gold text-gold" : n ? "border-border text-muted-foreground hover:border-gold/40" : "border-border/50 text-bone/25"
                 }`}
               >
-                {c.label} <span className="ml-1.5 opacity-70">{n}</span>
+                {c.label} <span className="ml-1.5 text-muted-foreground">{n}</span>
               </button>
             );
           })}
@@ -245,7 +245,7 @@ function Register() {
                       : "border-border/50 text-bone/25"
                 }`}
               >
-                {pl} <span className="ml-1.5 opacity-70">{total}</span>
+                {pl} <span className="ml-1.5 text-muted-foreground">{total}</span>
               </button>
             );
           })}
@@ -268,7 +268,7 @@ function Register() {
           dim what they exclude rather than removing it, so the shape of the whole stays visible
           while you narrow; a mark's strength is the register's confidence in the entry, and the
           strata fade as they descend because that is what the volume claims about light rather
-          than a decoration. Touch a mark for the name, take one to open its row below, or take a
+          than a decoration. Touch a mark for the name and again to open its row below, or take a
           label to filter by that plane or tradition.
         </p>
         {/* Two geometries rather than one that scrolls: on a phone a sideways
@@ -396,7 +396,7 @@ function Register() {
                             aria-label={`${n} ${c.label} in the ${t} tradition`}
                           >
                             {"·".repeat(Math.min(n, 8))}
-                            <span className="ml-1.5 text-bone/40">{n}</span>
+                            <span className="ml-1.5 text-muted-foreground">{n}</span>
                           </button>
                         ) : (
                           <span className="font-label text-xs text-bone/15">—</span>

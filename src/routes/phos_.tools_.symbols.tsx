@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowMark } from "@/components/marks";
 import { describe } from "@/lib/seo";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { EntryRows } from "@/components/phos/EntryRows";
@@ -67,7 +68,7 @@ function SymbolAtlas() {
                 params={{ facet: "symbol", value: sel.slug }}
                 className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim hover:text-gold"
               >
-                In browse →
+                In browse <ArrowMark />
               </Link>
             </div>
             <div>

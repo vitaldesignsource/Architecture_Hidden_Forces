@@ -66,6 +66,8 @@ export function ForceAndForm() {
               <g key={st.k} className="aoh-ff-n" onClick={() => setSel(on ? null : i)}
                  role="button" tabIndex={0} aria-pressed={on} aria-label={st.k}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <circle cx={X(i)} cy={Y(i)} r="15" fill="transparent" />
+                <rect x={X(i) - 20} y={Y(i) - 23} width="40" height="14" fill="transparent" />
                 <circle cx={X(i)} cy={Y(i)} r={on ? 9 : 6} fill={vis ? "var(--gold)" : "var(--void)"}
                         fillOpacity={vis ? (on ? 1 : 0.85) : 1}
                         stroke="var(--gold)" strokeOpacity={on ? 1 : sel === null ? 0.7 : 0.3}

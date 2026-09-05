@@ -127,7 +127,7 @@ export function FlashWheel() {
               trying to hold two hues at once whose signals travel the same opponent channel, and
               the boundary appears to move. That instability is what the Order meant by a flash.
             </p>
-            <p className="mt-4 font-label text-[10px] uppercase tracking-[0.15em] text-bone/45">
+            <p className="mt-4 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
               {s.hex} · {opp.hex} — contrast in light {contrastRatio(s.hex, opp.hex).toFixed(2)} : 1
             </p>
           </>
@@ -454,7 +454,7 @@ export function ScaleTable() {
               {WORLDS.map((w) => (
                 <th key={w.k} className="border-b border-border px-2 py-3 text-left font-label text-[9.5px] uppercase tracking-[0.14em] text-gold-dim">
                   {w.k}
-                  <span className="mt-0.5 block text-[8.5px] tracking-[0.1em] text-bone/40">{w.world}</span>
+                  <span className="mt-0.5 block text-[8.5px] tracking-[0.1em] text-muted-foreground">{w.world}</span>
                 </th>
               ))}
             </tr>
@@ -464,7 +464,7 @@ export function ScaleTable() {
               <tr key={s.name}>
                 <td className="border-b border-border py-2.5 pr-3 align-middle">
                   <span className="font-serif text-base text-bone/85">{s.name}</span>
-                  <span className="ml-2 font-label text-[9px] text-bone/35">{s.n}</span>
+                  <span className="ml-2 font-label text-[9px] text-muted-foreground">{s.n}</span>
                 </td>
                 {s.scales.map((c, wi) => {
                   const on = cell?.s === si && cell?.w === wi;

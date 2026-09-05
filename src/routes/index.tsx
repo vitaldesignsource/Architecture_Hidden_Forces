@@ -3,7 +3,7 @@ import { ArrowMark, CycleMark } from "@/components/marks";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
 import { all, descent, ret } from "@/lib/principles";
-import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
+import { useActiveSection, useHashSettle, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { PrincipleCard } from "@/components/PrincipleCard";
@@ -248,6 +248,7 @@ function Index() {
   useSearchHotkey(openSearch);
   useReveal();
   usePauseOffscreen();
+  useHashSettle();
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
@@ -1165,7 +1166,7 @@ function Index() {
                           href="#fourfold"
                           className="mt-8 inline-flex items-center gap-3 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim transition-colors hover:text-gold"
                         >
-                          <span className="text-base leading-none">↺</span>
+                          <CycleMark className="h-[1em] w-[1em] text-base" />
                           Begin again at I · <span lang="el" className="scr-greek">Θερμότης</span>
                         </a>
                       </div>

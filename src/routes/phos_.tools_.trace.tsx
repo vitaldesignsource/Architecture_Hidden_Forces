@@ -1,4 +1,5 @@
 import { describe } from "@/lib/seo";
+import { ArrowMark } from "@/components/marks";
 import { useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
@@ -116,7 +117,7 @@ function Trace() {
                   >
                     {e.title}
                   </Link>
-                  <span className="text-muted-foreground">→</span>
+                  <ArrowMark className="text-muted-foreground" />
                 </span>
               ))}
               <span className="text-gold">{graph.centre.title}</span>

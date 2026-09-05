@@ -85,7 +85,7 @@ function EntryPage() {
         crumb={
           <>
             <Link to="/phos/portal" className="inline-block py-2 -my-2 hover:text-gold">Portal</Link> ·{" "}
-            <Link to="/phos/$division" params={{ division: d.id }} className="inline-block py-2 -my-2 hover:text-gold">{divisionLabel(d)}</Link>{" "}
+            <Link to="/phos/$division" params={{ division: d.id }} activeOptions={{ exact: true }} className="inline-block py-2 -my-2 hover:text-gold">{divisionLabel(d)}</Link>{" "}
             · {String(e.n).padStart(2, "0")}
           </>
         }
@@ -98,7 +98,7 @@ function EntryPage() {
           <div className="grain" />
           <div className="relative mx-auto max-w-6xl px-6">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-              <Link to="/phos/$division" params={{ division: d.id }} className="hover:underline">
+              <Link to="/phos/$division" params={{ division: d.id }} activeOptions={{ exact: true }} className="inline-block py-2 -my-2 hover:underline">
                 {divisionLabel(d)}
               </Link>{" "}
               · Entry {e.n} of {siblings.length}
@@ -222,7 +222,7 @@ function EntryPage() {
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{prev.title}</span>
                 </Link>
               ) : (
-                <Link to="/phos/$division" params={{ division: d.id }} className="group" aria-keyshortcuts="ArrowLeft [">
+                <Link to="/phos/$division" params={{ division: d.id }} activeOptions={{ exact: true }} className="group" aria-keyshortcuts="ArrowLeft [">
                   <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim"><BackMark /> {divisionLabel(d)}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{d.title}</span>
                 </Link>
@@ -233,7 +233,7 @@ function EntryPage() {
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{next.title}</span>
                 </Link>
               ) : (
-                <Link to="/phos/$division" params={{ division: d.id }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
+                <Link to="/phos/$division" params={{ division: d.id }} activeOptions={{ exact: true }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
                   <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(d)} <ArrowMark /></span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">Back to the division</span>
                 </Link>

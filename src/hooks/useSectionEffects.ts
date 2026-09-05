@@ -1,4 +1,33 @@
 import { useEffect, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
+
+/**
+ * useHashSettle — a link to a section lands on the section, even on a cold
+ * cache. The router scrolls to the hash once, at render; the web fonts arrive
+ * afterwards, per weight and per subset, and each swap reflows the thirty
+ * thousand pixels above the target by a little. Nothing re-anchored it, so a
+ * pointer to § XII could land with its heading under the bar. This watches
+ * the target's document position as faces load and scrolls by the difference,
+ * so a reader who has moved on is not yanked back.
+ */
+export function useHashSettle() {
+  const hash = useRouterState({ select: (s) => s.location.hash });
+  useEffect(() => {
+    if (!hash || typeof document === "undefined" || !("fonts" in document)) return;
+    const el = document.getElementById(decodeURIComponent(hash));
+    if (!el) return;
+    let docTop = el.getBoundingClientRect().top + window.scrollY;
+    const settle = () => {
+      const now = el.getBoundingClientRect().top + window.scrollY;
+      const delta = now - docTop;
+      docTop = now;
+      if (Math.abs(delta) > 1) window.scrollBy(0, delta);
+    };
+    document.fonts.addEventListener("loadingdone", settle);
+    const stop = window.setTimeout(() => document.fonts.removeEventListener("loadingdone", settle), 8000);
+    return () => { document.fonts.removeEventListener("loadingdone", settle); window.clearTimeout(stop); };
+  }, [hash]);
+}
 
 /**
  * useActiveSection — which section the reader is actually in.

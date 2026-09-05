@@ -58,6 +58,7 @@ export function DaimonicChain() {
               <g key={n.k} className="aoh-dc-n" onClick={() => setSel(on ? null : i)}
                  role="button" tabIndex={0} aria-pressed={on} aria-label={n.k}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
+                <rect x="40" y={Y(i) - 14} width="200" height="28" fill="transparent" />
                 <circle cx="52" cy={Y(i)} r={on ? 8 : 5.5} fill="var(--void)" stroke="var(--gold)"
                         strokeOpacity={on ? 1 : sel === null ? 0.65 : 0.28} strokeWidth={on ? 2 : 1.1} />
                 <text x="72" y={Y(i) + 4} className="font-serif" fontSize="13.5"

@@ -101,7 +101,7 @@ export function PhosFooter() {
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 sm:flex sm:justify-between">
         <div className="min-w-0 truncate font-serif text-sm italic text-muted-foreground">
           Phōs · The Portal —{" "}
-          <Link to="/phos" className="underline-offset-4 hover:text-gold hover:underline">
+          <Link to="/phos" activeOptions={{ exact: true }} className="underline-offset-4 hover:text-gold hover:underline">
             the volume
           </Link>{" "}
           ·{" "}

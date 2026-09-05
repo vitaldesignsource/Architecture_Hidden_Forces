@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { ArrowMark } from "@/components/marks";
 import { Link } from "@tanstack/react-router";
 import { RELATIONS, type Figure } from "@/lib/phos/figures";
 
@@ -51,7 +52,7 @@ export function FigureFrame({ f, compact = false }: { f: Figure; compact?: boole
       {!compact && (
         <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
           <Link to="/phos/tools/diagrams" search={{ f: undefined }} className="hover:text-gold">
-            The Diagram Library →
+            The Diagram Library <ArrowMark />
           </Link>
         </p>
       )}

@@ -194,17 +194,18 @@
 }
 /* Off screen the glint stops; the arrival, which fills both ways, never does. */
 .aoh-still .reveal-title.title-shimmer .rt-char { animation-play-state: running, paused; }
+.title-underline {
+  transform-origin: left center;
+  animation: title-underline 1.6s cubic-bezier(0.16, 1, 0.3, 1) 2s both;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .reveal-title .rt-char { animation: none; opacity: 1; filter: none; transform: none; color: inherit; }
+  /* every variant named, so the reduce rule outranks the (0,3,0) shimmer rule */
+  .reveal-title .rt-char, .reveal-title.rt-variant-rise .rt-char, .reveal-title.rt-variant-shimmer .rt-char, .reveal-title.title-shimmer .rt-char { animation: none; opacity: 1; filter: none; transform: none; color: inherit; }
   .reveal-title.title-shimmer .rt-char { color: var(--gold); }
   .animate-rise, .title-underline { animation: none; opacity: 1; transform: none; }
   /* the ambient ornaments: a slow spin or drift is still motion */
   .animate-slow-spin, .animate-slow-spin-reverse, .animate-drift, .animate-breathe, .animate-glyph-fade { animation: none; }
-}
-
-.title-underline {
-  transform-origin: left center;
-  animation: title-underline 1.6s cubic-bezier(0.16, 1, 0.3, 1) 2s both;
 }
 
 .grain {

@@ -82,7 +82,7 @@ export function EthericTides() {
         <input
           type="range" min={0} max={1} step={0.002} value={t} aria-label="Position in time"
           onChange={(e) => setT(parseFloat(e.target.value))}
-          className="mt-3 w-full accent-[var(--gold)]"
+          className="mt-3 h-6 w-full accent-[var(--gold)]"
         />
       </div>
 

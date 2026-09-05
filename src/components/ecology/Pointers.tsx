@@ -1,4 +1,5 @@
 import { Fragment, type ReactNode } from "react";
+import { ArrowMark } from "@/components/marks";
 import { Link } from "@tanstack/react-router";
 import toc from "@/lib/phos/toc.json";
 
@@ -143,7 +144,7 @@ export function Items({ items }: { items: [string, string][] }) {
 }
 
 /** A run of short phrases with a mark between, for sequences read across. */
-export function Sequence({ steps, sep = "→" }: { steps: string[]; sep?: string }) {
+export function Sequence({ steps, sep = <ArrowMark className="text-gold/50" /> }: { steps: string[]; sep?: ReactNode }) {
   return (
     <p className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-label text-[11px] uppercase tracking-[0.18em] text-bone/85">
       {steps.map((s, i) => (

@@ -4,7 +4,7 @@ import { Backdrop } from "@/components/Backdrop";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { CrossMark } from "@/components/CrossMark";
 import { RevealText } from "@/components/RevealText";
-import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
+import { useActiveSection, useHashSettle, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import { PROVINCES, STATIONS, isProvince, type Station } from "@/lib/ecology";
 import type { Entry } from "@/lib/contents";
 import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
@@ -93,6 +93,7 @@ export function EcologyFrame({
   const active = useActiveSection();
   useReveal();
   usePauseOffscreen();
+  useHashSettle();
   const here = station?.id ?? page ?? "top";
   const inProvince = isProvince(here);
   // search: the palette carries the index of all three volumes, so it arrives

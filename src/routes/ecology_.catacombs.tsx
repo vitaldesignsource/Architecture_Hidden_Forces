@@ -296,7 +296,7 @@ function Catacombs() {
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
               The vision genuinely occurred; the image carried genuine charge; the atmosphere was not
               imaginary in the trivial sense. Yet the conclusion that the ancient god has personally
-              returned may still be wrong. The experience may arise from a vestigium, a morphally
+              returned may still be wrong. The experience may arise from a Vestigium, a morphally
               saturated cultural image, an egregoric remnant, an Aitheric Scar, a psychic projection, a
               daimonic intelligence using inherited symbolism, or a confluence in which several of these
               meet. The Architecture refuses both reflexive disbelief and premature enthronement. It
@@ -342,7 +342,7 @@ function Catacombs() {
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Such a surviving house may become a <Link to="/ecology/hungry" className={L}>hungry form</Link>.
+              Such a surviving house may become a <Link to="/ecology/hungry" className={L}>Hungry Form</Link>.
               Hunger begins when a form must acquire fresh attention merely to resist dissolution. It
               may attract through beauty, dread, erotic fascination, promises of secret chosenness,
               compulsive research, recurring dreams, ideological possession, or the endless demand to
@@ -352,7 +352,7 @@ function Catacombs() {
               feed it, dependency becomes parasitism.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              The hungry form is most dangerous when it has enough inherited sacred authority to
+              The Hungry Form is most dangerous when it has enough inherited sacred authority to
               demand obedience and no longer transmits the force that once justified that authority.
               It retains command after losing communion. The layer calls this spiritual necrosis: the
               persistence of sacred anatomy after circulation has ceased.
@@ -378,7 +378,7 @@ function Catacombs() {
               Not every god entered the catacombs through peaceful forgetting. Many were driven there by
               conquest, forced conversion, iconoclasm, enslavement, political centralisation or
               deliberate ridicule. These acts do more than interrupt transmission. They can produce an
-              Aitheric Scar: a persistent deformation in the field of relation. A vestigium merely
+              Aitheric Scar: a persistent deformation in the field of relation. A Vestigium merely
               remains; a scar continues to bias what later becomes possible around it. When a
               sanctuary is destroyed in hatred, the remnant may carry both the prior devotion and the
               violence of suppression. When a god is demonised, the older form can become fused with

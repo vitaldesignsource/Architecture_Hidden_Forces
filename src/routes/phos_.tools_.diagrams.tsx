@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BackMark } from "@/components/marks";
 import { describe } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
@@ -51,7 +52,7 @@ function DiagramLibrary() {
             <Eyebrow>Figure · {sel.rel}</Eyebrow>
             <Link to="/phos/tools/diagrams" search={{ f: undefined }}
                   className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">
-              ← all figures
+              <BackMark /> all figures
             </Link>
           </div>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">{sel.d}</p>

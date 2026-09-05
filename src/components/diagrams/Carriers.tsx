@@ -65,6 +65,13 @@ export function Carriers() {
                  onClick={() => setLost((l) => l.includes(i) ? l.filter((v) => v !== i) : [...l, i])}
                  role="button" tabIndex={0} aria-pressed={gone} aria-label={`${c}${gone ? " (lost)" : ""}`}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setLost((l) => l.includes(i) ? l.filter((v) => v !== i) : [...l, i]); } }}>
+                {/* a finger's target: the node and the word beside it, not a 10px ring */}
+                <circle cx={x} cy={y} r="16" fill="transparent" />
+                {mid ? (
+                  <rect x={x - 32} y={y < CY ? y - 30 : y + 4} width="64" height="26" fill="transparent" />
+                ) : (
+                  <rect x={right ? x : x - 70} y={y - 13} width="70" height="26" fill="transparent" />
+                )}
                 <circle cx={x} cy={y} r="6" fill="var(--void)" stroke="var(--gold)"
                         strokeOpacity={gone ? 0.2 : 0.85} strokeWidth="1" />
                 {gone && (

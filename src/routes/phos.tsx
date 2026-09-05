@@ -6,7 +6,7 @@ import { ZODIAC } from "@/lib/phos/colour";
 import { GirihBand, NicheLamp } from "@/components/IslamicDevices";
 import { GlossTerm, TermRegister, Term, type TermData } from "@/components/Term";
 import { RevealText } from "@/components/RevealText";
-import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
+import { useActiveSection, usePauseOffscreen, useHashSettle, useReveal } from "@/hooks/useSectionEffects";
 import { useFormulaRay } from "@/hooks/useFormulaRay";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
@@ -192,6 +192,7 @@ function Phos() {
   useSearchHotkey(openSearch);
   useReveal();
   usePauseOffscreen();
+  useHashSettle();
   const formulaRef = useRef<HTMLDivElement>(null);
   useFormulaRay(formulaRef);
 
@@ -444,8 +445,8 @@ function Phos() {
             § I · Three Registers of Light
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
-            Lux <span className="italic text-gold">→</span> Lumen{" "}
-            <span className="italic text-gold">→</span> Splendor
+            Lux <ArrowMark className="text-gold" /> Lumen{" "}
+            <ArrowMark className="text-gold" /> Splendor
           </h2>
           <p className="mt-4 font-serif text-lg italic text-gold-dim">
             Light in its source, on its way, and arrived
@@ -1247,7 +1248,7 @@ function Phos() {
                 separates what the eye is doing from what the tradition claims it means.
               </span>
               <span className="mt-6 block font-label text-[9px] uppercase tracking-[0.2em] text-gold">
-                Open the demonstration &rarr;
+                Open the demonstration <ArrowMark />
               </span>
             </span>
             <span className="flex h-3 w-full" aria-hidden>
@@ -1683,9 +1684,9 @@ function Phos() {
                   </span>
                 </a>
                 <span className="flex shrink-0 flex-col items-end gap-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
-                  <a href={`#${e.at}`}>§ {e.n}</a>
+                  <a href={`#${e.at}`} className="inline-block px-1.5 py-2 -mx-1.5 -my-2">§ {e.n}</a>
                   {e.portal && (
-                    <EntryLink id={e.portal} className="text-gold/50 transition-colors hover:text-gold">
+                    <EntryLink id={e.portal} className="inline-block py-2 -my-2 text-gold/50 transition-colors hover:text-gold">
                       Portal · {ref(e.portal).numeral} {ref(e.portal).n}
                     </EntryLink>
                   )}
@@ -1727,7 +1728,7 @@ function Phos() {
             to="/phos/portal"
             className="mt-10 inline-block border border-gold/60 px-5 py-3 font-label text-[10px] uppercase tracking-[0.25em] text-gold transition-colors hover:bg-gold/10"
           >
-            Enter the Portal →
+            Enter the Portal <ArrowMark />
           </Link>
         </div>
       </section>

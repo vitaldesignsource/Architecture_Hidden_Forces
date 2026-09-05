@@ -70,7 +70,7 @@ export function LunarClocks() {
         </svg>
         <input type="range" min={0} max={60} step={0.1} value={day} aria-label="Days elapsed"
                onChange={(e) => setDay(parseFloat(e.target.value))}
-               className="mt-3 w-full accent-[var(--gold)]" />
+               className="mt-3 h-6 w-full accent-[var(--gold)]" />
       </div>
 
       <div className="min-h-[15rem]">

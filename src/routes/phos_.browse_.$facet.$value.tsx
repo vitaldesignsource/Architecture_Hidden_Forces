@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { BackMark } from "@/components/marks";
 import { describe } from "@/lib/seo";
 import { Backdrop } from "@/components/Backdrop";
 import { ContentsPanel } from "@/components/ContentsPanel";
@@ -30,7 +31,7 @@ export const Route = createFileRoute("/phos_/browse_/$facet/$value")({
         <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Not a facet value</p>
         <h1 className="mt-6 font-serif text-4xl leading-tight">Nothing is filed under that</h1>
         <Link to="/phos/browse" className="mt-10 inline-block font-label text-[10px] uppercase tracking-[0.25em] text-gold hover:underline">
-          ← Browse
+          <BackMark /> Browse
         </Link>
       </div>
       <PhosFooter />

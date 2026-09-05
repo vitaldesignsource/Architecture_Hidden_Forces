@@ -749,7 +749,7 @@ function Aquifer() {
           nursery: "What the Aquifer feeds — vitality, and unresolved material — and where a failed gestation returns.",
           catacombs: "The houses whose charge sinks here when the cult dies, and rises again when a later age makes an opening.",
           garden: "Where a fragment risen from the depth borrows bones and puts on colour.",
-          hungry: "The groove a hungry form cuts down to the depth, and the composting powers the depth also holds.",
+          hungry: "The groove a Hungry Form cuts down to the depth, and the composting powers the depth also holds.",
         }}
       />
       <Transition from={station("aquifer").id} />

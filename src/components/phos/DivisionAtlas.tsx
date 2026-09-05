@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ArrowMark } from "@/components/marks";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { AtlasMap } from "@/components/phos/AtlasMap";
 import { AtlasTimeline } from "@/components/phos/AtlasTimeline";
@@ -31,7 +32,7 @@ export function DivisionAtlas({ division }: { division: string }) {
             Where and when · {spans.length} entries placed · {places.length} places
           </p>
           <Link to="/phos/tools/atlas" search={{}} className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">
-            The Atlas, whole →
+            The Atlas, whole <ArrowMark />
           </Link>
         </div>
         <div className="mt-6 overflow-hidden border border-border bg-void">

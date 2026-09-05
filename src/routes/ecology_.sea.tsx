@@ -175,7 +175,7 @@ function Sea() {
                 ["A tide", "A periodic increase or withdrawal of availability."],
                 ["A confluence", "Where previously distinct causal streams meet."],
                 ["An eddy", "A self-reinforcing pattern that captures new force and turns it repeatedly through an old circuit."],
-                ["Sediment", "Causal memory: the vestigia left by former events."],
+                ["Sediment", "Causal memory: the Vestigia left by former events."],
                 ["A storm", "A period of unstable Ontic Weather in which many forces are amplified at once and ordinary relations are hard to keep."],
               ]}
             />
@@ -187,7 +187,7 @@ function Sea() {
               them move psychic and astral causes — desire, memory, imagination, identification, fear.
               Deeper still are etheric processes of vitality, rhythm, transmission and formative
               organisation. In the abyssal regions lie the dormant configurations of the Morphocrypt,
-              the Cryptodynamis of unexpressed powers, and the vestigia of patterns whose visible
+              the Cryptodynamis of unexpressed powers, and the Vestigia of patterns whose visible
               embodiments vanished long ago.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
@@ -202,7 +202,7 @@ function Sea() {
               transmits and revises form.{" "}
               <Link to="/ecology/hydrology" className={L}>Etheric Hydrology</Link> studies the movement
               of those formative waters; the Sea names the wider field in which etheric currents meet
-              astral images, spiritual orientations, material limits, ancestral vestigia and living
+              astral images, spiritual orientations, material limits, ancestral Vestigia and living
               acts of choice. It is broader than the etheric. It is not another name for aether,
               astral light or universal vitality. It is the relational ocean through which all such
               media enter causal composition.
@@ -348,7 +348,7 @@ function Sea() {
             Passage modifies the pathway of passage. Repeated anger makes future anger easier to
             conduct. Repeated devotion deepens a channel through which devotion can return. A
             building, a landscape, a family, an institution, a symbol or a rite may accumulate
-            vestigia until it conditions everything later introduced into it. When such residue
+            Vestigia until it conditions everything later introduced into it. When such residue
             grows concentrated enough it forms an Aitheric Scar: a persistent deformation in the
             formative field, neither merely a memory nor an independent being but a path of altered
             receptivity. New force tends to follow its curvature. This is how the past acts without
@@ -438,7 +438,7 @@ function Sea() {
             <p className="text-base leading-relaxed text-muted-foreground">
               For this reason the <Arch id="relation">Law of Right Relation</Arch> stands above mere
               effectiveness. No operation remains wholly local. Every introduced force enters a shared
-              medium, touches existing currents, and leaves vestigia. The question is never only
+              medium, touches existing currents, and leaves Vestigia. The question is never only
               whether an effect can be produced.
             </p>
             <div className="mt-8 border-l-2 border-gold pl-6 font-serif text-xl italic leading-relaxed text-bone/85">
@@ -468,7 +468,7 @@ function Sea() {
             ["Vehicle", "Every cause requires a vehicle, and every vehicle transforms what it carries."],
             ["Reception", "Every receiver participates in what it receives."],
             ["Confluence", "Every confluence can generate more than the sum of its currents."],
-            ["Vestigia", "Every passage leaves vestigia."],
+            ["Vestigia", "Every passage leaves Vestigia."],
             ["Remainder", "No visible effect necessarily exhausts the force from which it arose."],
           ]}
         />

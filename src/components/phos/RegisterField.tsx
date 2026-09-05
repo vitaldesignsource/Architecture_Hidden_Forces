@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef } from "react";
 import { BEINGS, PLANES, shortKind, type Being, type Plane } from "@/lib/phos/beings";
 
 /**
@@ -54,6 +54,11 @@ export function RegisterField({
   onTradition: (t: string) => void;
 }) {
   const [hover, setHover] = useState<{ b: Being; x: number; y: number } | null>(null);
+  // marks are a few pixels apart on a phone, so a tap is resolved to the nearest
+  // mark at the svg, not by which circle the finger happened to land on; on a
+  // touch the first tap names the mark and the second opens its row
+  const [armed, setArmed] = useState<string | null>(null);
+  const pointer = useRef<string>("mouse");
   const { COL, ROW, GUTTER, HEAD, PER_ROW, STEP, R, LABEL, MARK_TOP } = compact ? COMPACT : WIDE;
 
   // Only the planes the register actually populates, in the volume's own order.
@@ -115,6 +120,18 @@ export function RegisterField({
         role="img"
         aria-label={`${BEINGS.length} beings placed by tradition and plane; the same filtering is available from the controls above and the rows below.`}
         onMouseLeave={() => setHover(null)}
+        onPointerDown={(e) => { pointer.current = e.pointerType; }}
+        onClick={(e) => {
+          const svg = e.currentTarget;
+          const ctm = svg.getScreenCTM();
+          if (!ctm) return;
+          const pt = new DOMPoint(e.clientX, e.clientY).matrixTransform(ctm.inverse());
+          let best: (typeof marks)[number] | null = null, bd = Infinity;
+          for (const m of marks) { const d = Math.hypot(m.x - pt.x, m.y - pt.y); if (d < bd) { bd = d; best = m; } }
+          if (!best || bd > Math.max(R * 3, 10)) return;
+          if (pointer.current === "touch" && armed !== best.b.id) { setHover(best); setArmed(best.b.id); return; }
+          onPick(best.b.id);
+        }}
       >
         <defs>
           <linearGradient id="rf-fade" x1="0" y1="0" x2="0" y2="1">
@@ -209,7 +226,6 @@ export function RegisterField({
               opacity={on ? OPACITY[m.b.confidence] ?? 0.7 : 0.1}
               className="cursor-pointer transition-[r,opacity] duration-150"
               onMouseEnter={() => setHover(m)}
-              onClick={() => onPick(m.b.id)}
             >
               <title>{`${m.b.name} — ${m.b.tradition}, ${m.b.plane}`}</title>
             </circle>

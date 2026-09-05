@@ -77,6 +77,16 @@ export function SwapMark({ className = "" }: { className?: string }) {
   );
 }
 
+/** ↵ the key that takes a chosen thing. */
+export function EnterMark({ className = "" }: { className?: string }) {
+  return (
+    <Mark className={className}>
+      <path d="M10 2.2v5H3.2" />
+      <path d="M5.6 4.6 3 7.2l2.6 2.6" />
+    </Mark>
+  );
+}
+
 /** ↑↓ a direction that can be reversed. */
 export function UpDownMark({ className = "" }: { className?: string }) {
   return (

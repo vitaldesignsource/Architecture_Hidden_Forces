@@ -298,7 +298,7 @@ function Portal() {
                   <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold">open <ArrowMark /></p>
                 </Link>
               ) : (
-                <div key={t.k} className="border border-border p-5 opacity-80">
+                <div key={t.k} className="border border-border p-5">
                   <p className="font-serif text-xl text-bone">{t.k}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
                   <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">forthcoming</p>

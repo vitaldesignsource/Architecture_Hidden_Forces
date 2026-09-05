@@ -54,7 +54,7 @@ export function NamedInRegister({ id }: { id: string }) {
             <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
               {b.office}
             </span>
-            <span className="mt-1.5 block font-label text-[9px] uppercase tracking-[0.16em] text-bone/40">
+            <span className="mt-1.5 block font-label text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
               {b.tradition} · {shortKind(b.kind)} ·{" "}
               {CLASSES.find((c) => c.k === b.cls)?.label ?? b.cls}
             </span>

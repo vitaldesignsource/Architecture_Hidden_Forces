@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { ArrowMark } from "@/components/marks";
 import { describe } from "@/lib/seo";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
@@ -87,7 +88,7 @@ function CompareTraditions() {
                   <p className="mt-2 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {rows.length} {rows.length === 1 ? "entry" : "entries"} ·{" "}
                     <Link to="/phos/browse/$facet/$value" params={{ facet: "tradition", value: v.slug }} className="hover:text-gold">
-                      in browse →
+                      in browse <ArrowMark />
                     </Link>
                   </p>
                   <div className="mt-6">

@@ -87,7 +87,7 @@ export function FiveArchitecturesOfFear() {
         {cur ? (
           <>
             <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
-              Fear under {cur.k} · {cur.short}
+              Fear under <span className="aoh-tr" lang="sa-Latn">{cur.k}</span> · {cur.short}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
             <p className="mt-5 border-l-2 border-gold/40 pl-5 font-serif text-lg italic leading-relaxed text-bone/80">

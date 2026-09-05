@@ -82,6 +82,7 @@ export function RightRelation() {
                 <g className="aoh-rr-h" onClick={() => setSel(sel === g.k ? null : g.k)}
                    role="button" tabIndex={0} aria-pressed={sel === g.k} aria-label={`${g.k} gate`}
                    onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(sel === g.k ? null : g.k); } }}>
+                  <circle cx={x2} cy={y2} r="14" fill="transparent" />
                   <circle cx={x2} cy={y2} r={on ? 13 : 11} fill="var(--void)" stroke="var(--bone)"
                           strokeOpacity={on ? 0.9 : 0.4} strokeWidth="1" />
                   <text x={x2} y={y2 + 3.5} textAnchor="middle" className="font-label" fontSize="8.5"

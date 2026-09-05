@@ -60,7 +60,7 @@ function Hungry() {
               consume the life it was made to serve.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              A hungry form is a subtle formation that cannot sustain itself through right relation
+              A Hungry Form is a subtle formation that cannot sustain itself through right relation
               and therefore seeks repeated nourishment without achieving completion. An egregore is a
               collectively sustained form that has acquired continuity, memory, atmosphere and some
               degree of reciprocal influence over the group associated with it — the treatise's{" "}
@@ -129,7 +129,7 @@ function Hungry() {
               not an indigent consumer waiting to be fed. The Architecture does not flatten the
               disagreement. Porphyry gives the image of lower formations whose subtle organisation
               depends on recurrent intake; Iamblichus protects the transcendence and non-indigence of
-              the higher orders. A hungry form, in the technical sense developed here, is therefore
+              the higher orders. A Hungry Form, in the technical sense developed here, is therefore
               neither a god made needy nor necessarily a primordial daimon. It is a contingent
               formation within the intermediary world: generated, conditioned, compounded, dependent.
               It may imitate a higher being, attach itself to the image of one, or occupy a vessel
@@ -164,7 +164,7 @@ function Hungry() {
             atmosphere is an entity. Not every repeated conflict proves occult attack. Not every
             powerful collective experience reveals a spiritual intelligence. Some formations are
             emotional climates; some are inherited institutional habits; some are psychic complexes
-            distributed across several people; some are vestigia left by events whose living centre is
+            distributed across several people; some are Vestigia left by events whose living centre is
             gone. The first task is not dramatic naming but relational diagnosis:{" "}
             <span className="text-bone/90">what is occurring, through which medium, sustained by what
             recurrence, and with what consequences for agency, truth and life?</span>
@@ -247,7 +247,7 @@ function Hungry() {
               eliminates, rests and renews, and a healthy collective form does likewise: it receives
               attention and returns meaning, receives labour and returns capacity, receives memory and
               returns orientation, receives devotion and returns a wider participation in truth,
-              beauty, service or sacred order. Its nourishment circulates. The hungry form is marked by
+              beauty, service or sacred order. Its nourishment circulates. The Hungry Form is marked by
               a failure of that circulation. It takes in force but cannot transmute it into a
               proportionate good, and so substitutes accumulation for fulfilment. More attention
               produces the need for still more attention. More obedience increases the fear of
@@ -256,7 +256,7 @@ function Hungry() {
               purpose. It makes its own perpetuation the purpose.
             </p>
             <div className="mt-8">
-              <Law k="In the treatise's Greek" text="Its proodos, its movement outward into manifestation, has lost its epistrophē, its return. The hungry form is a broken circuit wearing identity as a body." />
+              <Law k="In the treatise's Greek" text="Its proodos, its movement outward into manifestation, has lost its epistrophē, its return. The Hungry Form is a broken circuit wearing identity as a body." />
             </div>
           </div>
           <div>
@@ -286,7 +286,7 @@ function Hungry() {
       <Band id="eco-hf-consumes" backdrop="dew-strung-web-over-valley-at-night" opacity={0.2} position="center 50%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <Eyebrow>What hungry forms consume</Eyebrow>
+            <Eyebrow>What Hungry Forms consume</Eyebrow>
             <h2 className="mt-6 font-serif text-4xl leading-tight">
               Not attention alone — <span className="italic text-gold">attention joined to consequence</span>
             </h2>
@@ -295,7 +295,7 @@ function Hungry() {
             <p className="text-base leading-relaxed text-muted-foreground">
               It is common to say such forms feed on attention, and it is too vague. Attention
               supplies orientation and recurrence; it is not always nourishment in itself. What
-              sustains a hungry form is attention joined to affect, behaviour, vitality and
+              sustains a Hungry Form is attention joined to affect, behaviour, vitality and
               consequence. Fear that repeatedly changes conduct is more nutritive than a passing
               fearful thought. Devotion embodied in time, offerings, labour, money, vows or sacrifice
               cuts deeper channels than verbal assent. Shame hidden in silence may feed a form as
@@ -303,7 +303,7 @@ function Hungry() {
               which the same relations continue.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Opposition can also be nourishment. A mature hungry form learns to digest its enemies.
+              Opposition can also be nourishment. A mature Hungry Form learns to digest its enemies.
               Criticism is recast as persecution; persecution confirms chosenness; chosenness
               intensifies loyalty; loyalty produces further conflict. The opponent may reject the
               form's declared beliefs while repeating its image, its language, its emotional rhythm
@@ -311,7 +311,7 @@ function Hungry() {
               require agreement so long as it remains the organising centre of attention and action.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              This is why direct assault so often fails. To attack a hungry form only at the level of
+              This is why direct assault so often fails. To attack a Hungry Form only at the level of
               its image may intensify the current supplying it. The deeper work is to interrupt the
               relation between stimulus, emotion, repetition and embodied consequence: to discover
               which channels carry nourishment, which wounds make participants available to
@@ -388,7 +388,7 @@ function Hungry() {
               nourishment, and <Link to="/ecology/hydrology" className={L}>Etheric Hydrology</Link>{" "}
               its distribution through currents, channels, reservoirs, tides, droughts and
               confluences. A healthy form receives the descent, gives it fitting embodiment, and lets
-              its fruits pass onward. A hungry form intercepts the circulation: it builds reservoirs
+              its fruits pass onward. A Hungry Form intercepts the circulation: it builds reservoirs
               without outlets, diverts currents toward its own centre, and produces drought in
               neighbouring forms of life. Strictly, it does not consume the Sap in its purity. It
               captures the Sap's mediated derivatives — human vitality, imagination, devotion,
@@ -510,7 +510,7 @@ function Hungry() {
               Portal puts it as a title:{" "}
               <Entry id="xix-20">does the architecture remain truthful when form fails?</Entry> A healthy
               collective can acknowledge that its vessel has become inadequate to its purpose. It can
-              revise, divide, moult, transmit its essence elsewhere, or die. A hungry form must
+              revise, divide, moult, transmit its essence elsewhere, or die. A Hungry Form must
               reinterpret every failure as a reason for more nourishment.
             </p>
             <Deeper label="Go deeper · the measure the treatise already gives">
@@ -589,7 +589,7 @@ function Hungry() {
               ]}
             />
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              Without a new ecology the old appetite will often reassemble from its surviving vestigia.
+              Without a new ecology the old appetite will often reassemble from its surviving Vestigia.
               At times Hieropyrosis, sacred combustion, is required: the concentrated exposure of a
               hardened form to truth intense enough to release its captive force. Combustion must be
               followed by Hierostasis, a living sacred equilibrium; otherwise the cleared field stays
@@ -629,7 +629,7 @@ function Hungry() {
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              The problem of the hungry form is finally the problem of a vessel that has forgotten why
+              The problem of the Hungry Form is finally the problem of a vessel that has forgotten why
               it was built. It receives but does not transmit. It remembers but does not learn. It
               gathers but does not fructify. It survives by convincing living beings that its survival
               and their good are the same. Yet collective forms are not errors. Human beings require
@@ -657,9 +657,9 @@ function Hungry() {
       <Neighbours
         of="hungry"
         lines={{
-          sea: "The field a hungry form intercepts: reservoirs without outlets, drought downstream.",
-          nursery: "What a hungry form invades — it recruits newly arriving force to its inherited image.",
-          aquifer: "The groove a hungry form cuts beneath itself, and what nourishes it there.",
+          sea: "The field a Hungry Form intercepts: reservoirs without outlets, drought downstream.",
+          nursery: "What a Hungry Form invades — it recruits newly arriving force to its inherited image.",
+          aquifer: "The groove a Hungry Form cuts beneath itself, and what nourishes it there.",
           catacombs: "The houses of the gods, where an egregore may go on moving after its inhabitant has gone.",
           garden: "The Hungry Flower: beauty as an organ of intake, and the fruit that reveals it.",
         }}

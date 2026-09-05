@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { EnterMark, UpDownMark } from "@/components/marks";
 import { useNavigate } from "@tanstack/react-router";
 import { DIVISIONS, ENTRIES, TOOLS, valueSlug, type PhosEntry } from "@/lib/phos/entries";
 import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
@@ -233,7 +234,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
           })}
         </ul>
         <div className="hidden gap-5 border-t border-border px-6 py-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim pointer-fine:flex">
-          <span>↑↓ move</span><span>↵ enter</span><span>esc close</span>
+          <span className="inline-flex items-center gap-1.5"><UpDownMark /> move</span><span className="inline-flex items-center gap-1.5"><EnterMark /> enter</span><span>esc close</span>
         </div>
       </div>
     </div>

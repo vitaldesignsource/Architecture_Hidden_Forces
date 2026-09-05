@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { ArrowMark } from "@/components/marks";
 import { Link } from "@tanstack/react-router";
 import { AtlasMap } from "@/components/phos/AtlasMap";
 import { AtlasTimeline } from "@/components/phos/AtlasTimeline";
@@ -53,7 +54,7 @@ export function TraditionsAtlas({ names }: { names: string[] }) {
         <AtlasTimeline spans={laned} lanes={names} window={win} onWindow={setWin} hov={hov} year={year} hovPlace={hovPlace} onHover={setHov} onYear={setYear} />
       </div>
       <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
-        <Link to="/phos/tools/atlas" search={{}} className="hover:text-gold">The Atlas, whole →</Link>
+        <Link to="/phos/tools/atlas" search={{}} className="hover:text-gold">The Atlas, whole <ArrowMark /></Link>
       </p>
     </div>
   );

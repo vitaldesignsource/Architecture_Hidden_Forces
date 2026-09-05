@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ArrowMark } from "@/components/marks";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { AtlasMap } from "@/components/phos/AtlasMap";
 import { AtlasTimeline } from "@/components/phos/AtlasTimeline";
@@ -54,7 +55,7 @@ export function WhereAndWhen({ id }: { id: string }) {
         )}
       </div>
       <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
-        <Link to="/phos/tools/atlas" search={{ e: s.id }} className="hover:text-gold">Open in the Atlas →</Link>
+        <Link to="/phos/tools/atlas" search={{ e: s.id }} className="hover:text-gold">Open in the Atlas <ArrowMark /></Link>
       </p>
     </section>
   );

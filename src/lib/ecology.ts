@@ -232,7 +232,7 @@ export const PROVINCES: Station[] = [
     question: "What becomes of a form that must be fed to go on existing?",
     shorthand: "the appetite",
     definition:
-      "A hungry form is a subtle formation that cannot sustain itself through right relation and so seeks repeated nourishment without achieving completion. An egregore is a collectively sustained form with continuity, memory, atmosphere and some reciprocal influence over its group. They overlap and are not identical: hunger is not a species of entity but a disorder of relationship.",
+      "A Hungry Form is a subtle formation that cannot sustain itself through right relation and so seeks repeated nourishment without achieving completion. An egregore is a collectively sustained form with continuity, memory, atmosphere and some reciprocal influence over its group. They overlap and are not identical: hunger is not a species of entity but a disorder of relationship.",
     backdrop: "starling-murmuration-over-field",
     position: "center 50%",
   },

@@ -180,7 +180,7 @@ function Nursery() {
               A wake is not yet a vessel, and recurrence is not proof of destiny. An unborn form can
               announce a relationship without possessing the right to be born. Here the Nursery
               guards against the commonest error of esoteric interpretation: confusing intensity with
-              authority. Repeated symbols may indicate Morphogenic Pressure, inherited vestigia,
+              authority. Repeated symbols may indicate Morphogenic Pressure, inherited Vestigia,
               astral contagion, personal fixation, or an authentic formative arrival. Discernment
               attends to the whole ecology and does not submit to the loudest sign.
             </p>
@@ -227,7 +227,7 @@ function Nursery() {
               The <Link to="/ecology/ossuary" className={L}>Ossuary</Link> supplies the bones. No form
               is born without ancestry; even the most unprecedented manifestation borrows ratios,
               gestures, organs, symbols and strategies from structures that existed before it, and
-              these vestigia, Morphorelics and fragments of inheritance enter the Nursery as
+              these Vestigia, Morphorelics and fragments of inheritance enter the Nursery as
               scaffolds. A scaffold can become a prison. If the Nursery is dominated by old bones,
               novelty is forced to impersonate the past, and what appears to be prophecy is nostalgia
               under Morphogenic Pressure. The <Link to="/ecology/crypt" className={L}>Crypt</Link>{" "}
@@ -287,7 +287,7 @@ function Nursery() {
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
               Some forms are wisely resorbed into Morphaithēr because their relations cannot be made
-              truthful. Some return to the Aquifer as unspent force. Some leave vestigia in the
+              truthful. Some return to the Aquifer as unspent force. Some leave Vestigia in the
               Ossuary, supplying one useful organ to a form that will arise centuries later. Others
               withdraw into the Crypt, where their consequences deepen primordial memory. Failure
               becomes dangerous chiefly when an arrested form refuses dissolution: it may survive as
@@ -296,7 +296,7 @@ function Nursery() {
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               This is where the Nursery touches the{" "}
-              <Link to="/ecology/hungry" className={L}>hungry forms</Link>. A hungry form may invade a
+              <Link to="/ecology/hungry" className={L}>Hungry Forms</Link>. A Hungry Form may invade a
               gestational field and set its inherited image around newly arriving force. It does not
               create; it recruits. It persuades a person or a community that repetition is revelation
               and urgency is proof of election. Healthy unborn forms become more proportionate as they

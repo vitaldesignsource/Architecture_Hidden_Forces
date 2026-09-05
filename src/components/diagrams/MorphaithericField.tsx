@@ -72,6 +72,7 @@ export function MorphaithericField() {
           <g opacity={dim("Current")} className="aoh-mf-h" onClick={() => setSel(on("Current") ? null : "Current")}
              role="button" tabIndex={0} aria-pressed={on("Current")} aria-label="Current"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Current") ? null : "Current"); } }}>
+            <rect x="24" y="34" width="274" height="50" fill="transparent" />
             <path className="aoh-mf-flow" d="M26 64 C78 46 148 78 208 60 C248 48 274 60 294 56"
                   fill="none" stroke="var(--gold)" strokeOpacity={on("Current") ? 1 : 0.6}
                   strokeWidth={on("Current") ? 1.8 : 1.2} />
@@ -83,6 +84,7 @@ export function MorphaithericField() {
           <g opacity={dim("Gradient")} className="aoh-mf-h" onClick={() => setSel(on("Gradient") ? null : "Gradient")}
              role="button" tabIndex={0} aria-pressed={on("Gradient")} aria-label="Gradient"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Gradient") ? null : "Gradient"); } }}>
+            <rect x="24" y="74" width="120" height="54" fill="transparent" />
             <rect x="26" y="90" width="116" height="34" fill="url(#aoh-mf-grad)"
                   stroke="var(--gold)" strokeOpacity={on("Gradient") ? 0.55 : 0.16} strokeWidth="0.7" />
             <text x="30" y="84" className="font-label" fontSize="6.6" letterSpacing="1"
@@ -93,6 +95,7 @@ export function MorphaithericField() {
           <g opacity={dim("Reservoir")} className="aoh-mf-h" onClick={() => setSel(on("Reservoir") ? null : "Reservoir")}
              role="button" tabIndex={0} aria-pressed={on("Reservoir")} aria-label="Reservoir"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Reservoir") ? null : "Reservoir"); } }}>
+            <rect x="206" y="76" width="60" height="40" fill="transparent" />
             <path d="M210 94 a26 17 0 0 0 52 0" fill="var(--gold)"
                   fillOpacity={on("Reservoir") ? 0.3 : 0.12} stroke="var(--gold)"
                   strokeOpacity={on("Reservoir") ? 1 : 0.5} strokeWidth="1.1" />
@@ -104,6 +107,7 @@ export function MorphaithericField() {
           <g opacity={dim("Tide")} className="aoh-mf-h" onClick={() => setSel(on("Tide") ? null : "Tide")}
              role="button" tabIndex={0} aria-pressed={on("Tide")} aria-label="Tide"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Tide") ? null : "Tide"); } }}>
+            <rect x="22" y="132" width="66" height="54" fill="transparent" />
             <path className="aoh-mf-tide" d="M26 152 q14 -10 28 0 t28 0 M26 166 q14 -10 28 0 t28 0 M26 180 q14 -10 28 0 t28 0"
                   fill="none" stroke="var(--gold)" strokeOpacity={on("Tide") ? 1 : 0.55} strokeWidth="1.1" />
             <text x="26" y="142" className="font-label" fontSize="6.6" letterSpacing="1"
@@ -114,6 +118,7 @@ export function MorphaithericField() {
           <g opacity={dim("Vortex")} className="aoh-mf-h" onClick={() => setSel(on("Vortex") ? null : "Vortex")}
              role="button" tabIndex={0} aria-pressed={on("Vortex")} aria-label="Vortex"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Vortex") ? null : "Vortex"); } }}>
+            <rect x="206" y="138" width="64" height="68" fill="transparent" />
             <path className="aoh-mf-spin"
                   d="M238 146 a22 22 0 1 1 -16 37 a15 15 0 1 0 11 -26 a8.5 8.5 0 1 1 -6 15"
                   fill="none" stroke="var(--gold)" strokeOpacity={on("Vortex") ? 1 : 0.6}
@@ -126,6 +131,7 @@ export function MorphaithericField() {
           <g opacity={dim("Standing pattern")} className="aoh-mf-h" onClick={() => setSel(on("Standing pattern") ? null : "Standing pattern")}
              role="button" tabIndex={0} aria-pressed={on("Standing pattern")} aria-label="Standing pattern"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Standing pattern") ? null : "Standing pattern"); } }}>
+            <rect x="76" y="192" width="76" height="56" fill="transparent" />
             <path className="aoh-mf-flow" d="M78 212 h72" stroke="var(--gold)"
                   strokeOpacity={on("Standing pattern") ? 0.9 : 0.4} strokeWidth="1" fill="none" />
             <circle cx="114" cy="212" r="18" fill="var(--void)" stroke="var(--gold)"
@@ -139,6 +145,7 @@ export function MorphaithericField() {
           <g opacity={dim("Threshold")} className="aoh-mf-h" onClick={() => setSel(on("Threshold") ? null : "Threshold")}
              role="button" tabIndex={0} aria-pressed={on("Threshold")} aria-label="Threshold"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Threshold") ? null : "Threshold"); } }}>
+            <rect x="226" y="206" width="40" height="60" fill="transparent" />
             <line x1="246" y1="222" x2="246" y2="262" stroke="var(--gold)"
                   strokeOpacity={on("Threshold") ? 1 : 0.5} strokeDasharray="4 4" strokeWidth="1.2" />
             <circle cx="246" cy="242" r={on("Threshold") ? 5 : 3.5} fill="var(--gold)"
@@ -151,6 +158,7 @@ export function MorphaithericField() {
           <g opacity={dim("Scar")} className="aoh-mf-h" onClick={() => setSel(on("Scar") ? null : "Scar")}
              role="button" tabIndex={0} aria-pressed={on("Scar")} aria-label="Scar"
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Scar") ? null : "Scar"); } }}>
+            <rect x="24" y="240" width="84" height="30" fill="transparent" />
             <path d="M28 260 q20 -13 38 -3 t34 -5" fill="none" stroke="var(--bone)"
                   strokeOpacity={on("Scar") ? 0.9 : 0.4} strokeDasharray="1 5" strokeWidth="1.5" />
             <text x="28" y="250" className="font-label" fontSize="6.6" letterSpacing="1"

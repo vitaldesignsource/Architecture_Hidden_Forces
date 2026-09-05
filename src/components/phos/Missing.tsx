@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { BackMark } from "@/components/marks";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { PhosHeader, PhosFooter } from "@/components/phos/PhosHeader";
 
@@ -15,7 +16,7 @@ export function Missing({ what }: { what: "division" | "entry" }) {
           written, so an address that resolves to nothing is a mistyped one rather than a page still to come.
         </p>
         <Link to="/phos/portal" className="mt-10 inline-block font-label text-[10px] uppercase tracking-[0.25em] text-gold hover:underline">
-          ← The Portal
+          <BackMark /> The Portal
         </Link>
       </div>
       <PhosFooter />

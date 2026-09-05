@@ -141,7 +141,7 @@ function Garden() {
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Most counterfeit flowers begin with something real: a vestigium, a Morphorelic, a
+              Most counterfeit flowers begin with something real: a Vestigium, a Morphorelic, a
               surviving correspondence, the broken syntax of an older sacred form. The{" "}
               <Link to="/ecology/crypt" className={L}>Crypt</Link> preserves deep tendency and
               consequence; the <Link to="/ecology/ossuary" className={L}>Ossuary</Link> the structural
@@ -312,7 +312,7 @@ function Garden() {
         <div className="mt-10 grid gap-12 lg:grid-cols-2">
           <p className="text-base leading-relaxed text-muted-foreground">
             The Crypt preserves deep consequence. The Ossuary retains structural remains. The Aquifer
-            holds submerged pressures, vestigia and Morphorelics in a dense memory-bearing medium. The
+            holds submerged pressures, Vestigia and Morphorelics in a dense memory-bearing medium. The
             Nursery shelters possibilities that have not entered stable manifestation. The system also
             names a Menagerie of Impossible Forms, the unprecedented organisms produced when
             incompatible or previously unrelated lineages recombine. The Garden is where these
