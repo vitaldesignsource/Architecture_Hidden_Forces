@@ -888,6 +888,7 @@ function Index() {
                 n: "I",
                 greek: "Θερμότης",
                 sign: "warmth" as EtherKey,
+                seal: { name: "The First Pulse", reading: "The ancestral concentric circles are kept, but each ring is opened at a progressively rotated point. The rings are successive intensifications of one germinal event, and their openings trace an invisible spiral of temporal unfolding. The dark centre is pre-formal potential; the outward pulse is birth. Unlike material Fire, which consumes and dissipates, Warmth Ether awakens from within and gives duration to becoming." },
                 translit: "Thermotēs",
                 english: "Warmth Ether",
                 verb: "quickens",
@@ -926,6 +927,7 @@ function Index() {
                 n: "II",
                 greek: "Φῶς",
                 sign: "light" as EtherKey,
+                seal: { name: "The Mediating Ray", reading: "The single upper ray is undiminished luminous procession. The hollow central diamond is the receptive veil through which light becomes proportioned to the capacity of a form. After mediation the ray divides into two descending blades — differential reception, separation, formative illumination. The black interval between them is Necessary Shadow: not light’s enemy, but the distinction that makes revelation possible. The golden lambda remains visible within the lower half, now given a fuller metaphysical function." },
                 translit: "Phōs",
                 english: "Light Ether",
                 verb: "articulates",
@@ -960,6 +962,7 @@ function Index() {
                 n: "III",
                 greek: "Τόνος",
                 sign: "tone" as EtherKey,
+                seal: { name: "The Interval Wheel", reading: "The eight separate arms are discrete identities, and their measured black intervals matter equally: Tone Ether produces order through proportion, separation and relation. The curved movement expresses resonance and affinity; the silent central opening is the unstruck tone from which harmonic structure arises. Unlike Water’s continuous flow, Tone Ether articulates the field into distinguishable intervals, branches, cellular divisions and relational patterns." },
                 translit: "Tonos · Chemical Ether",
                 english: "Tone Ether",
                 verb: "coordinates",
@@ -994,6 +997,7 @@ function Index() {
                 n: "IV",
                 greek: "Ζωή",
                 sign: "life" as EtherKey,
+                seal: null as { name: string; reading: string } | null,
                 translit: "Zōē",
                 english: "Life Ether",
                 verb: "regenerates",
@@ -1066,6 +1070,20 @@ function Index() {
                           </p>
                         ))}
                       </div>
+                      {e.seal ? (
+                        <div className="mt-8 border-t border-border pt-6">
+                          <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                            <span lang="el" className="scr-greek">Σφραγίς</span> · The seal
+                          </p>
+                          <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-7">
+                            <EtherSign k={e.sign} size={72} className="shrink-0 text-gold/70" title={`${e.english} — ${e.seal.name}`} />
+                            <div className="min-w-0">
+                              <p className="font-serif text-lg italic text-gold">{e.seal.name}</p>
+                              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.seal.reading}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ) : null}
                     </div>
                   </div>
 
