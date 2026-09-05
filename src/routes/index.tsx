@@ -253,12 +253,18 @@ function Index() {
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       {/* NAV */}
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
-        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
+        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-3 sm:flex sm:justify-between sm:py-5">
           <a href="#top" className="min-w-0">
             {/* The name gives way before the waypoints do: from lg the two other
                 volumes join the bar, and until xl that is the room the name's tail took. */}
             <div className="truncate font-serif text-[15px] italic tracking-wide sm:text-lg">
               The Architecture<span className="hidden sm:inline lg:hidden xl:inline"> of Hidden Forces</span>
+            </div>
+            {/* Where the reader is, on a phone: the numeral of the section in view,
+                which the bar has no room to name. Under the title, not on a row of
+                its own: as a third grid child it wrapped and cost the screen 40px. */}
+            <div className="mt-0.5 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden" aria-live="polite">
+              {numeral(active)}
             </div>
           </a>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.2em]">
@@ -288,11 +294,6 @@ function Index() {
             </div>
             <SearchButton onClick={openSearch} />
             <ContentsPanel active={active} />
-          </div>
-          {/* Where the reader is, on a phone: the numeral of the section in view,
-              which the bar has no room to name. A fixed numeral here read as one. */}
-          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden" aria-live="polite">
-            {numeral(active)}
           </div>
         </div>
 
@@ -3897,7 +3898,7 @@ function Index() {
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Functional correspondences
             </p>
-            <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+            <div className="mt-6 -mx-6 aoh-scroll-x overflow-x-auto px-6 sm:mx-0 sm:px-0">
               <table className="w-full min-w-[44rem] border-collapse text-left">
                 <thead>
                   <tr>
@@ -4116,7 +4117,7 @@ function Index() {
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Gift and distortion
             </p>
-            <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+            <div className="mt-6 -mx-6 aoh-scroll-x overflow-x-auto px-6 sm:mx-0 sm:px-0">
               <table className="w-full min-w-[42rem] border-collapse text-left">
                 <thead>
                   <tr>

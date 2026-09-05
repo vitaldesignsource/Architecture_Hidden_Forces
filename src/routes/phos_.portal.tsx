@@ -93,7 +93,7 @@ function Portal() {
               <span className="whitespace-nowrap text-bone/55">read by ·</span>{" "}
               {["tradition", "quality", "plane", "operation", "symbol", "text", "period"].map((f, i, a) => (
                 <span key={f}>
-                  <Link to="/phos/browse" hash={f} className="whitespace-nowrap transition-colors hover:text-gold">{f}{i < a.length - 1 ? " ·" : ""}</Link>{" "}
+                  <Link to="/phos/browse" hash={f} className="inline-block whitespace-nowrap py-2 -my-2 transition-colors hover:text-gold">{f}{i < a.length - 1 ? " ·" : ""}</Link>{" "}
                 </span>
               ))}
             </p>

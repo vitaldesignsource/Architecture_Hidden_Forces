@@ -27,7 +27,7 @@ const MAC = typeof navigator !== "undefined" && /Mac|iPhone|iPad/.test(navigator
 export function SearchButton({ onClick }: { onClick: () => void }) {
   return (
     <button onClick={onClick} aria-label="Search the three volumes" aria-keyshortcuts="Meta+K Control+K /"
-      className="flex items-center gap-2 border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
+      className="flex items-center gap-2 border border-border px-3 py-2 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
       <span>Search</span>
       <span className="hidden text-[9px] tracking-normal text-gold-dim xl:inline">{MAC ? <span className="font-sans">⌘</span> : "Ctrl "}K</span>
     </button>

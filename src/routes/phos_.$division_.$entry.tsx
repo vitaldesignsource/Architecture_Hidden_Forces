@@ -84,8 +84,8 @@ function EntryPage() {
       <PhosHeader
         crumb={
           <>
-            <Link to="/phos/portal" className="hover:text-gold">Portal</Link> ·{" "}
-            <Link to="/phos/$division" params={{ division: d.id }} className="hover:text-gold">{divisionLabel(d)}</Link>{" "}
+            <Link to="/phos/portal" className="inline-block py-2 -my-2 hover:text-gold">Portal</Link> ·{" "}
+            <Link to="/phos/$division" params={{ division: d.id }} className="inline-block py-2 -my-2 hover:text-gold">{divisionLabel(d)}</Link>{" "}
             · {String(e.n).padStart(2, "0")}
           </>
         }

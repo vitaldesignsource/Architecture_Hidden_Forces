@@ -71,7 +71,7 @@ function DivisionPage() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       <PhosHeader
-        crumb={<><Link to="/phos/portal" className="hover:text-gold">Portal</Link> · {divisionLabel(d)}</>}
+        crumb={<><Link to="/phos/portal" className="inline-block py-2 -my-2 hover:text-gold">Portal</Link> · {divisionLabel(d)}</>}
         panel={<ContentsPanel active={null} entries={rows} groups={panelGroups} paths={[]} volume="/phos/portal" />}
       />
 

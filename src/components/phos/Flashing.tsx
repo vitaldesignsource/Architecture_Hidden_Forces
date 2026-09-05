@@ -444,7 +444,7 @@ export function ScaleTable() {
   const selName = sel ? sel.scales[cell!.w] : null;
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,17rem)] lg:items-start">
-      <div className="overflow-x-auto">
+      <div className="aoh-scroll-x overflow-x-auto">
         <table className="w-full min-w-[34rem] border-collapse">
           <thead>
             <tr>

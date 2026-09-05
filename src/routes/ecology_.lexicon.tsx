@@ -85,7 +85,7 @@ function Lexicon() {
                     {t.root && <p className="mt-1 font-serif text-sm italic text-gold/70">{t.root}</p>}
                     {t.at && (
                       <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
-                        <Link to={t.at.to} hash={t.at.hash} className="transition-colors hover:text-gold">
+                        <Link to={t.at.to} hash={t.at.hash} className="inline-block py-2 -my-2 transition-colors hover:text-gold">
                           at work · {t.at.label}
                         </Link>
                       </p>

@@ -199,10 +199,13 @@ function Phos() {
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       {/* NAV */}
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
-        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
+        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-3 sm:flex sm:justify-between sm:py-5">
           <a href="#top" className="min-w-0">
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
               Phōs<span className="hidden sm:inline lg:hidden"> · The Luminous Architecture</span>
+            </div>
+            <div className="mt-0.5 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
+              <span lang="el" className="scr-greek">ΦΩΣ</span>
             </div>
           </a>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.2em]">
@@ -243,9 +246,6 @@ function Phos() {
               indexHref="#contents"
               volume="/phos"
             />
-          </div>
-          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
-            <span lang="el" className="scr-greek">ΦΩΣ</span>
           </div>
         </div>
 

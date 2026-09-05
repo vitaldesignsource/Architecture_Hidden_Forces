@@ -31,7 +31,7 @@ export function ToolFrame({
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       <PhosHeader
-        crumb={<><Link to="/phos/tools" className="hover:text-gold">Instruments</Link>{name ? <> · {name}</> : null}</>}
+        crumb={<><Link to="/phos/tools" className="inline-block py-2 -my-2 hover:text-gold">Instruments</Link>{name ? <> · {name}</> : null}</>}
         panel={<ContentsPanel active={null} entries={[]} groups={[]} paths={[]} volume="/phos/portal" />}
       />
       <header id="top" className="relative isolate overflow-hidden pb-12 pt-40 sm:pt-48">

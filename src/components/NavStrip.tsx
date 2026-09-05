@@ -49,7 +49,7 @@ export function NavStrip({ children, current, className = "" }: { children: Reac
   return (
     <div
       ref={ref}
-      className={`aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em] ${className}`}
+      className={`aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-1.5 pt-0.5 font-label text-[10px] uppercase tracking-[0.2em] sm:pb-3 sm:pt-2 ${className}`}
       style={{ maskImage: mask, WebkitMaskImage: mask }}
     >
       {children}

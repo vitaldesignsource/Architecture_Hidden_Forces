@@ -232,7 +232,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
             );
           })}
         </ul>
-        <div className="flex gap-5 border-t border-border px-6 py-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+        <div className="hidden gap-5 border-t border-border px-6 py-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim pointer-fine:flex">
           <span>↑↓ move</span><span>↵ enter</span><span>esc close</span>
         </div>
       </div>

@@ -360,8 +360,8 @@ function Register() {
             leaving a gap for a later editor to fill.
           </span>
         </p>
-        <div className="mt-10 overflow-x-auto">
-          <table className="w-full min-w-[52rem] border-collapse">
+        <div className="mt-10 aoh-scroll-x overflow-x-auto">
+          <table className="aoh-sticky-col w-full min-w-[52rem] border-collapse">
             <thead>
               <tr>
                 <th className="border-b border-border py-3 pr-4 text-left font-label text-[9px] uppercase tracking-[0.14em] text-gold-dim">

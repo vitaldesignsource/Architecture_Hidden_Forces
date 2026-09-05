@@ -50,7 +50,7 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
   );
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
-      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-3 sm:flex sm:justify-between sm:py-5">
         <div className="min-w-0">
           <Link to="/phos" activeOptions={{ exact: true }} className="block truncate font-serif text-base italic tracking-wide transition-colors hover:text-gold sm:text-lg">
             Phōs<span className="hidden sm:inline"> · The Luminous Architecture</span>

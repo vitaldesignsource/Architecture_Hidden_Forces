@@ -114,6 +114,9 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
                onPointerEnter={(ev) => { showTip(m, ev); onHoverPlace?.(m.id); }}
                onPointerMove={(ev) => showTip(m, ev)}
                onPointerLeave={() => { setTip(null); onHoverPlace?.(null); }}>
+              {/* a tap lands on a finger-sized target, not on a 3px core: 11 CSS px
+                  of radius in sheet units at the current zoom */}
+              <circle cx={m.x} cy={m.y} r={Math.max(r * 3.2, 11 * vb.view.w / (boxRef.current?.clientWidth || 800))} fill="none" pointerEvents="all" />
               <circle cx={m.x} cy={m.y} r={r * 3.2} className="aoh-atlas-halo" />
               {chosen && <circle cx={m.x} cy={m.y} r={r * 2.2} fill="none" stroke="var(--gold)" strokeWidth={0.9 * fs} />}
               <circle cx={m.x} cy={m.y} r={r} className="aoh-atlas-core" style={{ cursor: compact ? "default" : "pointer" }} />
@@ -127,9 +130,9 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
 
       {!compact && (
         <div className="absolute right-3 top-3 flex gap-1 font-label text-[10px] uppercase tracking-[0.12em]">
-          <button onClick={() => vb.zoom(0.7)} aria-label="Zoom in" className="border border-border bg-void/70 px-2.5 py-1 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">+</button>
-          <button onClick={() => vb.zoom(1.45)} aria-label="Zoom out" className="border border-border bg-void/70 px-2.5 py-1 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">−</button>
-          <button onClick={vb.reset} className="border border-border bg-void/70 px-2.5 py-1 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">Whole sheet</button>
+          <button onClick={() => vb.zoom(0.7)} aria-label="Zoom in" className="border border-border bg-void/70 px-3 py-2 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">+</button>
+          <button onClick={() => vb.zoom(1.45)} aria-label="Zoom out" className="border border-border bg-void/70 px-3 py-2 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">−</button>
+          <button onClick={vb.reset} className="border border-border bg-void/70 px-3 py-2 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">Whole sheet</button>
         </div>
       )}
 

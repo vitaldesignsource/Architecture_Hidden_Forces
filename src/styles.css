@@ -214,8 +214,29 @@
 
 /* Mobile nav strip: scrollable, but the scrollbar itself would sit across the
    type. Hidden in both engines. */
-.aoh-navstrip { scrollbar-width: none; -ms-overflow-style: none; }
+.aoh-navstrip { scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x proximity; scroll-padding-inline: 1.5rem; }
 .aoh-navstrip::-webkit-scrollbar { display: none; }
+.aoh-navstrip > * { scroll-snap-align: start; }
+/* a waypoint is a finger's target as well as a word: 32px tall, not 24 */
+.aoh-navstrip a { padding-block: 0.5rem; }
+
+/* A wide table on a phone scrolls sideways; these shadows are painted only
+   at an edge with more beyond it, so the cut-off column reads as cut off. */
+.aoh-scroll-x {
+  background:
+    linear-gradient(to right, var(--void) 40%, transparent) left / 32px 100% no-repeat local,
+    linear-gradient(to left, var(--void) 40%, transparent) right / 32px 100% no-repeat local,
+    linear-gradient(to right, oklch(0.95 0.012 80 / 0.14), transparent) left / 18px 100% no-repeat scroll,
+    linear-gradient(to left, oklch(0.95 0.012 80 / 0.14), transparent) right / 18px 100% no-repeat scroll;
+}
+.aoh-sticky-col th:first-child, .aoh-sticky-col td:first-child { position: sticky; left: 0; background: var(--void); }
+
+/* On a phone the smallest label size is read, not glanced at: chips, dates,
+   row metadata and links set at 9px take 11px there, and the eyebrows with
+   them, since a floor that spared the eyebrows would spare the metadata too. */
+@media (max-width: 639px) {
+  .text-\[9px\] { font-size: 11px; }
+}
 
 /* Sections settle in as they are reached. .aoh-reveal is applied by script,
    never in markup, so a failed observer leaves the page visible. */

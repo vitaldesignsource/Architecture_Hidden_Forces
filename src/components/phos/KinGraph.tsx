@@ -120,7 +120,7 @@ export function KinGraph({ tradition, onPick }: { tradition: string; onPick: (id
           </p>
         )}
       </div>
-      <div className="overflow-x-auto">
+      <div className="aoh-scroll-x overflow-x-auto">
         <svg viewBox={`0 0 ${W} ${height}`} style={{ minWidth: `${W / 20}rem` }} className="w-full" role="img"
              aria-label={`${nodes.length} beings of the ${tradition} tradition and the ${edges.length} relations between them; the same relations are listed under each being's row below.`}
              onMouseLeave={() => setHover(null)}>

@@ -104,7 +104,7 @@ export function EcologyFrame({
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
-        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
+        <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-3 sm:flex sm:justify-between sm:py-5">
           <Link to="/ecology" activeOptions={{ exact: true }} className="min-w-0">
             {/* The name gives way before the circulation does: the six stations, the
                 provinces, the lexicon, the other volumes, search and contents keep
@@ -113,6 +113,9 @@ export function EcologyFrame({
                 room for the whole name, a phone for the name's head. */}
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
               <span className="hidden sm:inline xl:hidden">The Hidden </span>Ecology<span className="hidden sm:inline xl:hidden"> of Formation</span>
+            </div>
+            <div className="mt-0.5 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim xl:hidden">
+              {station ? (station.region ? "Province" : `${station.n} · VI`) : <span lang="el" className="scr-greek">ΟΙΚΟΣ</span>}
             </div>
           </Link>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:tracking-[0.2em]">
@@ -166,9 +169,6 @@ export function EcologyFrame({
             </div>
             <SearchButton onClick={openSearch} />
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
-          </div>
-          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim xl:hidden">
-            {station ? (station.region ? "Province" : `${station.n} · VI`) : <span lang="el" className="scr-greek">ΟΙΚΟΣ</span>}
           </div>
         </div>
         <div className="border-t border-border/50 xl:hidden">

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { CONFIDENCE, FACETS, labelDef, valueSlug } from "@/lib/phos/vocab";
 
@@ -17,22 +18,35 @@ export function LabelChips({
   confidence?: string[];
   size?: "sm" | "xs";
 }) {
+  // a chip's gloss lived in its title, which a finger never sees; a chip is now
+  // a button that opens its gloss beneath the row, for a tap or a keyboard alike
+  const [open, setOpen] = useState<string | null>(null);
   if (!labels.length && !confidence.length) return null;
   const base = size === "xs"
     ? "px-1.5 py-0.5 font-label text-[9px] uppercase tracking-[0.14em]"
     : "px-2 py-1 font-label text-[9px] uppercase tracking-[0.16em]";
+  const glossOf = (k: string) => labelDef(k)?.gloss ?? CONFIDENCE.find((x) => x.name === k)?.gloss;
+  const chip = (k: string, cls: string) => (
+    <button
+      key={k}
+      type="button"
+      onClick={(e) => { e.preventDefault(); e.stopPropagation(); setOpen((o) => (o === k ? null : k)); }}
+      aria-expanded={open === k}
+      className={`${base} border transition-colors ${cls} ${open === k ? "border-gold text-gold" : ""}`}
+      title={glossOf(k)}
+    >
+      {k}
+    </button>
+  );
   return (
-    <span className="inline-flex flex-wrap gap-1.5">
-      {labels.map((l) => (
-        <span key={l} className={`${base} border border-gold/40 text-gold-dim`} title={labelDef(l)?.gloss}>
-          {l}
+    <span className="inline-flex flex-wrap items-center gap-1.5">
+      {labels.map((l) => chip(l, "border-gold/40 text-gold-dim hover:border-gold/70"))}
+      {confidence.map((c) => chip(c, "border-bone/25 text-bone/60 hover:border-bone/50"))}
+      {open && glossOf(open) && (
+        <span className="basis-full pt-1 font-sans text-xs normal-case leading-relaxed tracking-normal text-muted-foreground">
+          <span className="text-gold-dim">{open}</span> — {glossOf(open)}
         </span>
-      ))}
-      {confidence.map((c) => (
-        <span key={c} className={`${base} border border-bone/25 text-bone/60`} title={CONFIDENCE.find((x) => x.name === c)?.gloss}>
-          {c}
-        </span>
-      ))}
+      )}
     </span>
   );
 }

@@ -74,7 +74,7 @@ function Atlas() {
     <ToolFrame
       name="The Atlas"
       title={<>Where a light was <span className="italic text-gold">kindled</span>, and when</>}
-      lede="Ninety-four entries of the global history of light and twenty-four founding discoveries of its science, set where they were kindled and when. Hover a bar to find its place and hover a place to find its years; move along the years to see what was alight together, and click to hold a year. The dates are those of ordinary scholarship: where it disagrees the range is wide and marked c., and where a text’s scene is not where it was written the map says so."
+      lede="Ninety-four entries of the global history of light and twenty-four founding discoveries of its science, set where they were kindled and when. Hover or tap a bar to find its place, and a place to find its years; move along the years to see what was alight together, and click to hold a year. The dates are those of ordinary scholarship: where it disagrees the range is wide and marked c., and where a text’s scene is not where it was written the map says so."
       backdrop="dark-hall-with-charted-stone-floor"
       position="center 45%"
     >
@@ -109,7 +109,7 @@ function Atlas() {
               </button>
             )}
             {!selSpan && !place && pinned === null && (
-              <span className="text-muted-foreground">wheel to zoom · drag to pan · click the timeline to hold a year</span>
+              <span className="text-muted-foreground"><span className="hidden pointer-fine:inline">wheel to zoom · drag to pan · click the timeline to hold a year</span><span className="pointer-fine:hidden">the buttons zoom · drag to pan · tap a place, or the timeline to hold a year</span></span>
             )}
           </div>
         </div>

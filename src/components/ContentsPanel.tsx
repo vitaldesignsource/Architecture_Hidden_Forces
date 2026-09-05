@@ -125,7 +125,7 @@ export function ContentsPanel({
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-haspopup="dialog"
-        className="shrink-0 border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold"
+        className="shrink-0 border border-border px-3 py-2 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold"
       >
         Contents
       </button>
@@ -157,7 +157,7 @@ export function ContentsPanel({
               </p>
               <button
                 onClick={close}
-                className="font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-gold"
+                className="-m-3 p-3 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-gold"
               >
                 Close ✕
               </button>
