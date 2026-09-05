@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { ArrowMark, BackMark } from "@/components/marks";
 import { describe } from "@/lib/seo";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
@@ -217,23 +218,23 @@ function EntryPage() {
             <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
               {prev ? (
                 <Link to="/phos/$division/$entry" params={{ division: d.id, entry: prev.slug }} className="group" aria-keyshortcuts="ArrowLeft [">
-                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {String(prev.n).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim"><BackMark /> {String(prev.n).padStart(2, "0")}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{prev.title}</span>
                 </Link>
               ) : (
                 <Link to="/phos/$division" params={{ division: d.id }} className="group" aria-keyshortcuts="ArrowLeft [">
-                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(d)}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim"><BackMark /> {divisionLabel(d)}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{d.title}</span>
                 </Link>
               )}
               {next ? (
                 <Link to="/phos/$division/$entry" params={{ division: d.id, entry: next.slug }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
-                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{String(next.n).padStart(2, "0")} →</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{String(next.n).padStart(2, "0")} <ArrowMark /></span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{next.title}</span>
                 </Link>
               ) : (
                 <Link to="/phos/$division" params={{ division: d.id }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
-                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(d)} →</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(d)} <ArrowMark /></span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">Back to the division</span>
                 </Link>
               )}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { fs } from "./fig";
 
 /**
  * OneLayerOfSeven — what an astrology section's diagram ought to show.
@@ -38,7 +39,7 @@ export function OneLayerOfSeven() {
 
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)] lg:items-center">
-      <div className="mx-auto w-full max-w-[340px]">
+      <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[340px]">
         <svg viewBox="0 0 340 330" className="h-auto w-full" role="img" aria-labelledby="aoh-ol-t">
           <title id="aoh-ol-t">
             Seven contributing layers converging on a single moment, celestial timing among them and
@@ -48,7 +49,7 @@ export function OneLayerOfSeven() {
           {L.map((l, i) => {
             const on = sel === i;
             return (
-              <line key={l.k} x1={X + 8} y1={l.y} x2={CX - 16} y2={CY}
+              <line key={l.k} x1={X + 8} y1={l.y} x2={CX - 22} y2={CY}
                     stroke={l.mapped ? "var(--gold)" : "var(--muted-foreground)"}
                     strokeOpacity={on ? 0.9 : sel !== null ? 0.08 : 0.32}
                     strokeWidth={on ? 1.6 : 1} />
@@ -62,7 +63,7 @@ export function OneLayerOfSeven() {
                  role="button" tabIndex={0} aria-pressed={on} aria-label={l.k}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
                 <rect x="0" y={l.y - 13} width={X + 14} height="26" fill="transparent" />
-                <text x={X - 12} y={l.y + 3} textAnchor="end" className="font-label" fontSize="6.4"
+                <text x={X - 12} y={l.y + 3} textAnchor="end" className="font-label" style={fs(7.6)}
                       letterSpacing="0.7"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel !== null && !on ? 0.3 : 1}>
@@ -80,12 +81,12 @@ export function OneLayerOfSeven() {
             );
           })}
 
-          <circle cx={CX} cy={CY} r="15" fill="var(--void)" stroke="var(--gold)"
+          <circle cx={CX} cy={CY} r="21" fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity="0.85" strokeWidth="1.3" />
-          <text x={CX} y={CY + 3} textAnchor="middle" className="font-label" fontSize="6"
+          <text x={CX} y={CY + 3} textAnchor="middle" className="font-label" style={fs(7)}
                 letterSpacing="0.8" fill="var(--gold)">MOMENT</text>
 
-          <text x="170" y="322" textAnchor="middle" className="font-label" fontSize="6.4"
+          <text x="170" y="322" textAnchor="middle" className="font-label" style={fs(7.4)}
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             ONE LAYER OF THE FIELD — NOT THE WHOLE CAUSE
           </text>

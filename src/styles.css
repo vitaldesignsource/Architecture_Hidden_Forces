@@ -667,6 +667,20 @@ input[type="range"]:focus-visible {
    punctuation with it. */
 .scr-hebrew, .scr-arabic { unicode-bidi: isolate; }
 
+/* Greek inside a capitals label. Cinzel carries four Greek letters and no
+   more, so a Greek word in the label face was Δ and Ω in Cinzel and the rest
+   in the serif. The span keeps the whole word in the serif; lang="el" lets
+   the browser drop the accents a Greek capital does not carry; and the
+   serif's capitals take a little size and weight to sit level with Cinzel's. */
+.font-label .scr-greek, .font-label.scr-greek { font-weight: 500; font-size: 1.08em; }
+
+/* A transliteration inside a capitals label. IAST and Egyptological letters
+   Cinzel lacks (ṛ ṃ ḥ ꜣ) fell mid-word into the serif, and the Egyptological
+   convention is lowercase besides; so the whole word is set in the serif
+   italic, as the site sets its transliterations, at the size that sits level
+   with the capitals around it. */
+.aoh-tr { font-family: var(--serif-face); font-style: italic; font-weight: 500; text-transform: none; letter-spacing: 0.03em; font-size: 1.25em; }
+
 /* ── the hieroglyphs ─────────────────────────────────────────────────────────
    Egyptian hieroglyphs have no font on most devices — macOS and iOS ship none
    at all, so an unfonted run renders as nothing — and the block is 1,071 signs.

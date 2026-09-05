@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { ArrowMark } from "@/components/marks";
 import {
   ELEMENTS,
   SEPHIROTH,
@@ -386,7 +387,7 @@ export function Afterimage() {
           </p>
           <div className="mt-3 flex items-center gap-3">
             <span className="h-9 w-9 border border-bone/20" style={{ background: hex }} />
-            <span className="font-label text-[10px] text-muted-foreground">→</span>
+            <ArrowMark className="text-sm text-muted-foreground" />
             <span className="h-9 w-9 border border-bone/20" style={{ background: partner }} />
             <span className="text-xs text-muted-foreground">approximately</span>
           </div>

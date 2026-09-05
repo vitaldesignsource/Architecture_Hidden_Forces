@@ -26,7 +26,7 @@ function Petals({ cx, cy, open = 1, faint = false }: { cx: number; cy: number; o
 
 export function SixSpecies() {
   const cap = { ...fs(7), letterSpacing: "0.16em" };
-  const sub = { ...fs(5.6), letterSpacing: "0.12em" };
+  const sub = { ...fs(6.2), letterSpacing: "0.12em" };
   const species: { k: string; sub: [string, string]; title: string; draw: React.ReactNode }[] = [
     {
       k: "the Mirror", sub: ["grown round", "the beholder"], title: "A flower and, across a mirror line, its reflection facing a small figure.",

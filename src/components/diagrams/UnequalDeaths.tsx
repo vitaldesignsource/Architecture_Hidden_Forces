@@ -12,12 +12,12 @@ import { fs } from "./fig";
  * deaths guarantees the others. The box runs past the present by a margin,
  * for the longest note, which grows on a phone.
  */
-const DEATHS: { k: string; note: string; ends: number | null; fade?: boolean }[] = [
+const DEATHS: { k: string; note: string | [string, string]; ends: number | null; fade?: boolean }[] = [
   { k: "liturgical", note: "the rite is no longer enacted", ends: 0.28 },
   { k: "social", note: "no community organises around the name", ends: 0.42 },
   { k: "imaginal", note: "the symbols still awaken awe", ends: null, fade: true },
   { k: "aetheric", note: "the place keeps its scar", ends: 0.86 },
-  { k: "daimonic", note: "the current withdrew — or never depended on the house", ends: 0.6 },
+  { k: "daimonic", note: ["the current withdrew —", "or never depended on the house"], ends: 0.6 },
 ];
 
 export function UnequalDeaths() {
@@ -25,7 +25,7 @@ export function UnequalDeaths() {
   const X0 = 120, X1 = 440;
   return (
     <div className="aoh-fig aoh-fig-wide mx-auto w-full max-w-[660px]">
-      <svg viewBox="0 0 500 200" className="h-auto w-full" role="img" aria-labelledby="aoh-ud-t">
+      <svg viewBox="0 0 500 214" className="h-auto w-full" role="img" aria-labelledby="aoh-ud-t">
         <title id="aoh-ud-t">
           Five horizontal bars labelled liturgical, social, imaginal, aetheric and daimonic, running from the
           living cult on the left toward the present on the right, each ending at a different point and one
@@ -44,12 +44,16 @@ export function UnequalDeaths() {
               <line x1={X0} y1={y} x2={xe} y2={y} stroke={G} strokeOpacity={d.fade ? 0.45 : 0.85} strokeWidth={d.fade ? 1.2 : 2} strokeLinecap="round" strokeDasharray={d.fade ? "6 4" : undefined} />
               {d.ends !== null && <line x1={xe} y1={y - 5} x2={xe} y2={y + 5} stroke="currentColor" strokeOpacity={0.6} strokeWidth={1} />}
               {d.ends !== null && <line x1={xe} y1={y} x2={X1} y2={y} stroke="currentColor" strokeOpacity={0.1} strokeWidth={0.6} />}
-              {/* the note sits under its bar, so it can be as long as the doctrine needs */}
-              <text x={X0} y={y + 13} className="font-label uppercase" style={{ ...fs(5.4), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>{d.note}</text>
+              {/* the note sits under its bar, so it can be as long as the doctrine needs;
+                  the longest breaks into two lines, since on a phone the lettering is
+                  near twice this size and one line would run past the present */}
+              <text x={X0} y={y + 13} className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.55}>
+                {typeof d.note === "string" ? d.note : <><tspan x={X0}>{d.note[0]}</tspan><tspan x={X0} dy="1.15em">{d.note[1]}</tspan></>}
+              </text>
             </g>
           );
         })}
-        <text x={(X0 + X1) / 2} y={194} textAnchor="middle" className="font-serif italic" style={fs(9)} fill="currentColor" fillOpacity={0.6}>none of these guarantees the others</text>
+        <text x={(X0 + X1) / 2} y={208} textAnchor="middle" className="font-serif italic" style={fs(9)} fill="currentColor" fillOpacity={0.6}>none of these guarantees the others</text>
       </svg>
     </div>
   );

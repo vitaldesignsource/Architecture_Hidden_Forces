@@ -42,7 +42,7 @@ export function FormToTendency() {
             {i === 1 && <path d="M 70 10 L 70 60 C 70 96, 62 110, 58 132" fill="none" stroke={G} strokeWidth={1.2} strokeOpacity={0.75} className="aoh-ft-run" />}
             {i === 2 && <path d="M 48 40 L 48 100 Q 70 112 92 100 L 92 40" fill="none" stroke={G} strokeWidth={1.3} strokeOpacity={0.8} className="aoh-ft-run" />}
             <text x={70} y={150} textAnchor="middle" className="font-serif" style={fs(9.5)} fill="currentColor" fillOpacity={0.85}>{f.label}</text>
-            <text x={70} y={162} textAnchor="middle" className="font-label uppercase" style={{ ...fs(5.8), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>{f.sub}</text>
+            <text x={70} y={162} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.55}>{f.sub}</text>
           </svg>
         ))}
       </div>

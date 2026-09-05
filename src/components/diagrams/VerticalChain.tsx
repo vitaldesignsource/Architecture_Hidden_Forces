@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SwapMark } from "@/components/marks";
 
 /**
  * VerticalChain — the chain drawn radially, because the doctrine states its own
@@ -109,7 +110,7 @@ export function VerticalChain() {
         <div className="mt-3 flex justify-center">
           <button onClick={() => setUp((v) => !v)}
             className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
-            reverse the chain ⇄
+            reverse the chain <SwapMark />
           </button>
         </div>
       </div>

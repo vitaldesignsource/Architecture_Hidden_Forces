@@ -114,7 +114,7 @@ export function ElementalPairs() {
       <div className="min-h-[15rem]">
         {akasha ? (
           <>
-            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">Ἀκάσα · the interval</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim"><span lang="el" className="scr-greek">Ἀκάσα</span> · the interval</p>
             <p className="mt-3 font-serif text-2xl italic leading-tight text-bone">
               Akasha does not mix. It is the space of the operation.
             </p>

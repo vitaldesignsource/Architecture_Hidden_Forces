@@ -19,7 +19,7 @@ export function LabelChips({
 }) {
   if (!labels.length && !confidence.length) return null;
   const base = size === "xs"
-    ? "px-1.5 py-0.5 font-label text-[8px] uppercase tracking-[0.14em]"
+    ? "px-1.5 py-0.5 font-label text-[9px] uppercase tracking-[0.14em]"
     : "px-2 py-1 font-label text-[9px] uppercase tracking-[0.16em]";
   return (
     <span className="inline-flex flex-wrap gap-1.5">

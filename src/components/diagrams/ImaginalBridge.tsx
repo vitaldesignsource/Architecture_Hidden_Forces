@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { UpDownMark } from "@/components/marks";
 
 /**
  * ImaginalBridge — the six stages between an unrepresented force and an
@@ -55,7 +56,7 @@ export function ImaginalBridge() {
           onClick={() => setUp((v) => !v)}
           className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold"
         >
-          reverse ↑↓
+          reverse <UpDownMark />
         </button>
       </div>
 

@@ -50,7 +50,7 @@ export function EntryRow({ e, compact = false }: { e: PhosEntry; compact?: boole
             {e.title}
           </span>
           {!compact && e.written && <LabelChips labels={e.meta?.labels ?? []} size="xs" />}
-          {!e.written && <span className="font-label text-[8px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
+          {!e.written && <span className="font-label text-[9px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
         </span>
         {!compact && e.meta?.summary && <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{e.meta.summary}</span>}
       </span>

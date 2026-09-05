@@ -118,7 +118,7 @@ export function EtherCircuit() {
         })}
 
         <text x={C} y={C - 8} textAnchor="middle" className="font-label" fontSize="7.5" letterSpacing="2.4" fill="var(--gold-dim)">
-          ΚΥΚΛΟΣ
+          <tspan lang="el" className="scr-greek">ΚΥΚΛΟΣ</tspan>
         </text>
         <text x={C} y={C + 8} textAnchor="middle" className="font-serif" fontSize="10" fontStyle="italic" fill="var(--muted-foreground)">
           the circuit

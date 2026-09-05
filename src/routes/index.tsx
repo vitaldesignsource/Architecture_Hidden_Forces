@@ -1,4 +1,5 @@
 import { lazy, Suspense, useCallback, useState } from "react";
+import { ArrowMark, CycleMark } from "@/components/marks";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
 import { all, descent, ret } from "@/lib/principles";
@@ -260,7 +261,7 @@ function Index() {
               The Architecture<span className="hidden sm:inline lg:hidden xl:inline"> of Hidden Forces</span>
             </div>
           </a>
-          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.2em]">
             <div className="hidden items-center gap-4 lg:flex xl:gap-6">
             {NAV.map((l) => (
               <a
@@ -365,7 +366,7 @@ function Index() {
           {/* Greek chain */}
           <div className="relative mt-32">
             <p className="text-center font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">
-              Σειρά · The Chain of Manifestation
+              <span lang="el" className="scr-greek">Σειρά</span> · The Chain of Manifestation
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-6 sm:gap-x-6">
               {all.map((p, i) => (
@@ -377,7 +378,7 @@ function Index() {
                     {p.greek}
                   </span>
                   {i < all.length - 1 && (
-                    <span className="font-label text-xs text-gold/40">→</span>
+                    <ArrowMark className="text-sm text-gold/40" />
                   )}
                 </div>
               ))}
@@ -391,7 +392,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
             <p className="font-label text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
-              Ἐν προόδῳ
+              <span lang="el" className="scr-greek">Ἐν προόδῳ</span>
               <span className="mt-2 block text-gold-dim">On the status of this work</span>
             </p>
             <div className="max-w-3xl">
@@ -421,7 +422,7 @@ function Index() {
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
             <p className="font-label text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
-              Τέλος
+              <span lang="el" className="scr-greek">Τέλος</span>
               <span className="mt-2 block text-gold-dim">What the Architecture is for</span>
             </p>
             <div className="max-w-3xl">
@@ -488,7 +489,7 @@ function Index() {
         <Backdrop src="/bg/summit-above-sea-of-cloud.webp" opacity={0.42} position="center 40%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
           <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-            Πίναξ · The Architecture in Order
+            <span lang="el" className="scr-greek">Πίναξ</span> · The Architecture in Order
           </p>
 
 
@@ -657,7 +658,7 @@ function Index() {
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
               <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
-                Πρόοδος · The First Movement
+                <span lang="el" className="scr-greek">Πρόοδος</span> · The First Movement
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-6xl">
                 The Descent <span className="italic text-gold">into Form</span>
@@ -713,7 +714,7 @@ function Index() {
         </div>
         <div className="relative mx-auto max-w-4xl px-6 text-center">
           <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
-            Δύναμις · Μορφή
+            <span lang="el" className="scr-greek">Δύναμις · Μορφή</span>
           </p>
           <p className="mt-12 font-serif text-4xl leading-tight text-balance sm:text-6xl md:text-7xl">
             Form is <span className="italic text-gold">frozen force</span>.
@@ -802,7 +803,7 @@ function Index() {
                 <span className="italic text-gold">↻</span>
               </h2>
               <p className="mt-8 font-label text-[11px] uppercase tracking-[0.25em] text-gold-dim">
-                Τὸ Τετραμερὲς Πεδίον
+                <span lang="el" className="scr-greek">Τὸ Τετραμερὲς Πεδίον</span>
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Four functions, one formative circulation. The ethers are not separate substances
@@ -834,7 +835,7 @@ function Index() {
           {/* The circuit, then the ladder: shape first, then depth */}
           <div className="mt-20 border-t border-border pt-10">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-              Κύκλος · The Living Circuit
+              <span lang="el" className="scr-greek">Κύκλος</span> · The Living Circuit
             </p>
             <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,440px)_minmax(0,1fr)] lg:items-center">
               <EtherCircuit />
@@ -1033,7 +1034,7 @@ function Index() {
                     <div className="mt-8 grid gap-5 sm:grid-cols-3 sm:gap-6">
                       <div className="border-t border-border pt-5">
                         <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                          Ἔλλειψις · Deficiency
+                          <span lang="el" className="scr-greek">Ἔλλειψις</span> · Deficiency
                         </p>
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                           {e.deficiency}
@@ -1041,7 +1042,7 @@ function Index() {
                       </div>
                       <div className="border-t border-gold/60 pt-5">
                         <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
-                          Μεσότης · Virtue
+                          <span lang="el" className="scr-greek">Μεσότης</span> · Virtue
                         </p>
                         <p className="mt-3 font-serif text-lg italic text-bone/90">“{e.virtue}”</p>
                         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -1050,7 +1051,7 @@ function Index() {
                       </div>
                       <div className="border-t border-border pt-5">
                         <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                          Ὑπερβολή · Excess
+                          <span lang="el" className="scr-greek">Ὑπερβολή</span> · Excess
                         </p>
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                           {e.excess}
@@ -1064,7 +1065,7 @@ function Index() {
                   <div className="flex flex-col items-center px-2 py-7 text-center">
                     <span className="h-7 w-px bg-gradient-to-b from-transparent to-gold/50" />
                     <p className="mt-4 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-                      Διάστημα {["I", "II", "III"][i]} · {e.greek}{" "}
+                      <span lang="el" className="scr-greek">Διάστημα</span> {["I", "II", "III"][i]} · <span lang="el" className="scr-greek">{e.greek}</span>{" "}
                       <span className="text-gold">→</span> {e.into.to}
                     </p>
                     <p className="mt-3 max-w-xl font-serif text-base italic leading-relaxed text-bone/85 sm:text-lg">
@@ -1145,7 +1146,7 @@ function Index() {
                       </svg>
                       <div className="min-w-0">
                         <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-                          Διάστημα IV · The Return to {e.into.to}
+                          <span lang="el" className="scr-greek">Διάστημα</span> IV · The Return to {e.into.to}
                         </p>
                         <p className="mt-6 font-serif text-2xl italic leading-tight text-bone/90 sm:text-3xl">
                           “Life completes the cycle by preserving the power to{" "}
@@ -1270,7 +1271,7 @@ function Index() {
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
               <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
-                Ἐπιστροφή · The Second Movement
+                <span lang="el" className="scr-greek">Ἐπιστροφή</span> · The Second Movement
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-6xl">
                 The Return <span className="italic text-gold">through Reading</span>
@@ -1591,7 +1592,7 @@ function Index() {
             </div>
             <div>
               <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-                Ἥλιος Ἐντός · The Inner Sun
+                <span lang="el" className="scr-greek">Ἥλιος Ἐντός</span> · The Inner Sun
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 A divided person disperses force. One part desires what another fears; one part
@@ -1701,7 +1702,7 @@ function Index() {
             <Backdrop src="/bg/peat-cliff-above-still-lake.webp" opacity={0.26} position="center 55%" scrim={0.22} />
             <div>
               <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-                Κρύπτη · The Crypt of Primordial Memory
+                <span lang="el" className="scr-greek">Κρύπτη</span> · The Crypt of Primordial Memory
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 Not a warehouse of perfect historical images. The retentive depth of causation —
@@ -1720,7 +1721,7 @@ function Index() {
             </div>
             <div>
               <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-                Ὀστοφυλάκιον · The Ossuary of Living Forms
+                <span lang="el" className="scr-greek">Ὀστοφυλάκιον</span> · The Ossuary of Living Forms
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 Nature retains no obligation to preserve every vessel, yet it does not begin again
@@ -2591,7 +2592,7 @@ function Index() {
             The chariot of the <span className="italic text-gold">Inner Sun</span>
           </h2>
           <p className="mt-5 font-label text-[11px] uppercase tracking-[0.25em] text-gold-dim">
-            ignis · fire &nbsp;+&nbsp; σοφία · wisdom
+            ignis · fire &nbsp;+&nbsp; <span lang="el" className="scr-greek">σοφία</span> · wisdom
           </p>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
             Fire made wise. Not passion, energy, or willpower — those can stay divided,
@@ -3459,7 +3460,7 @@ function Index() {
           {/* hodoi */}
           <div className="mt-20">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              ὁδοί · the ways of living energy
+              <span lang="el" className="scr-greek">ὁδοί</span> · the ways of living energy
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
               A path exists because passage has become organized. Some are inherited through
@@ -3648,7 +3649,7 @@ function Index() {
                   <p className="mt-3 font-serif text-lg text-bone/90" lang="sa">{c.s}</p>
                   <p className="mt-1 font-serif text-sm italic text-gold-dim">{c.tr}</p>
                   <p className="mt-1 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
-                    {c.n === 1000 ? "a thousand" : `${c.n} petals`} · {c.bt}
+                    {c.n === 1000 ? "a thousand" : `${c.n} petals`} · <span className="aoh-tr" lang="sa-Latn">{c.bt}</span>
                   </p>
                 </div>
               ))}
@@ -4468,7 +4469,7 @@ function Index() {
                     <div className="flex min-h-[3.5rem] flex-1 items-center border border-border px-4 py-3">
                       <span className="text-sm leading-snug text-muted-foreground">{t}</span>
                     </div>
-                    <span className="self-center font-label text-sm text-gold" aria-hidden>→</span>
+                    <ArrowMark className="self-center text-base text-gold" />
                     {i === 3 && (
                       <div className="flex min-h-[3.5rem] items-center border border-gold/50 px-4 py-3">
                         <span className="text-sm leading-snug text-gold">New perception</span>
@@ -5105,7 +5106,7 @@ function Index() {
                     i === 5 ? "border-gold/60 text-gold" : "border-border text-muted-foreground"}`}>
                     {t}
                   </span>
-                  <span className="font-label text-sm text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
+                  {i === 5 ? <CycleMark className="text-base text-gold" /> : <ArrowMark className="text-base text-gold" />}
                 </div>
               ))}
             </div>
@@ -6174,7 +6175,7 @@ function Index() {
                   {["Source", "Name", "Pattern", "Message", "Operation", "Embodiment"].map((t, i) => (
                     <div key={t} className="flex items-center gap-2">
                       <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{t}</span>
-                      {i < 5 && <span className="font-label text-xs text-gold" aria-hidden>→</span>}
+                      {i < 5 && <ArrowMark className="text-sm text-gold" />}
                     </div>
                   ))}
                 </div>
@@ -6190,7 +6191,7 @@ function Index() {
                     <div key={t} className="flex items-center gap-2">
                       <span className={`border px-2.5 py-1.5 text-[13px] ${
                         i === 5 ? "border-gold/60 text-gold" : "border-border text-muted-foreground"}`}>{t}</span>
-                      {i < 5 && <span className="font-label text-xs text-gold" aria-hidden>→</span>}
+                      {i < 5 && <ArrowMark className="text-sm text-gold" />}
                     </div>
                   ))}
                 </div>
@@ -6285,7 +6286,7 @@ function Index() {
           {/* the working vocabulary, in Greek */}
           <div className="mt-24">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
-              Τὰ ὀνόματα · the words this section works with
+              <span lang="el" className="scr-greek">Τὰ ὀνόματα</span> · the words this section works with
             </p>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
               Nine words carry the theurgic argument, and most of them are ordinary Greek put to
@@ -7618,7 +7619,7 @@ function Index() {
                 {["Emergence", "Increase", "Crest", "Recession", "Trough", "Return"].map((x, i) => (
                   <div key={x} className="flex items-center gap-2">
                     <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{x}</span>
-                    <span className="font-label text-xs text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
+                    {i === 5 ? <CycleMark className="text-sm text-gold" /> : <ArrowMark className="text-sm text-gold" />}
                   </div>
                 ))}
               </div>
@@ -8886,7 +8887,7 @@ function Index() {
                 "Remembrance", "Reintegration", "Closure"].map((t, i) => (
                 <div key={t} className="flex items-center gap-2">
                   <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{t}</span>
-                  {i < 8 && <span className="font-label text-xs text-gold" aria-hidden>→</span>}
+                  {i < 8 && <ArrowMark className="text-sm text-gold" />}
                 </div>
               ))}
             </div>
@@ -10050,7 +10051,7 @@ function Index() {
             <h2 className="font-serif text-4xl leading-tight">Σοφία</h2>
             <Term script="hebrew" orig="חָכְמָה" label="ḥokmāh — wisdom" className="text-4xl text-gold" />
             <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              sophia · ḥokmāh
+              sophia · <span className="aoh-tr" lang="he-Latn">ḥokmāh</span>
             </p>
           </div>
           <p className="mt-4 font-serif text-lg italic text-gold-dim">
@@ -10679,7 +10680,7 @@ function Index() {
                 <div key={g} className="border-t border-border pt-4">
                   <Sign s={g as "V28"} size="md" className="block text-gold" />
                   <p className="mt-3 font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">
-                    {g} · {sound}
+                    {g} · <span className="aoh-tr" lang="egy-Latn">{sound}</span>
                   </p>
                   <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{draws}</p>
                 </div>
@@ -10747,9 +10748,9 @@ function Index() {
                   </div>
                 ))}
               </div>
-              <p className="mt-3 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
-                Sky above, register line below · the two stages the Egyptians named are marked: rn,
-                the name, and ḥw, authoritative utterance
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Sky above, register line below · the two stages the Egyptians named are marked:{" "}
+                <i lang="egy-Latn">rn</i>, the name, and <i lang="egy-Latn">ḥw</i>, authoritative utterance
               </p>
             </div>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -12020,7 +12021,7 @@ function Index() {
 
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
-            Μεταμόρφωσις · The Final Formula
+            <span lang="el" className="scr-greek">Μεταμόρφωσις</span> · The Final Formula
           </p>
           <div className="mt-12 space-y-4 font-serif text-lg italic leading-relaxed text-bone/85 sm:text-xl md:text-2xl">
             <p>Source emanates Spirit.</p>
@@ -12056,7 +12057,7 @@ function Index() {
             The visible is the invisible <span className="text-gold">brought to rest</span>.
           </p>
           <p className="mt-10 font-label text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Ω · Kosmos — an ordered beauty — an architecture of hidden forces
+            <span lang="el" className="scr-greek">Ω</span> · Kosmos — an ordered beauty — an architecture of hidden forces
           </p>
         </div>
       </section>

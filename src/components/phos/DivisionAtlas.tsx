@@ -51,7 +51,7 @@ export function DivisionAtlas({ division }: { division: string }) {
               if (en) navigate({ to: "/phos/$division/$entry", params: { division: en.division.id, entry: en.slug } });
             }}
           />
-          <p className="mt-3 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
             Hover a bar to find its place, or a place to find its years · wheel to zoom, drag to pan · click a bar to open its entry
           </p>
         </div>

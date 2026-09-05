@@ -59,12 +59,12 @@ export function LunarClocks() {
                 letterSpacing="1.4" fill="var(--gold)">MANSION {mansion + 1} / {N}</text>
           <text x={C} y={C + 72} textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="1.1" fill="var(--muted-foreground)">{PHASE.toUpperCase()}</text>
-          <text x={C} y="352" textAnchor="middle" className="font-label" fontSize="6.8"
-                letterSpacing="1.2" fill="var(--muted-foreground)">
-            DAY {day.toFixed(1)} — SIDEREAL 27.32d · SYNODIC 29.53d
+          <text x={C} y="352" textAnchor="middle" className="font-label" fontSize="7.2"
+                letterSpacing="1.1" fill="var(--muted-foreground)">
+            DAY {day.toFixed(1)} — SIDEREAL 27.32 DAYS · SYNODIC 29.53 DAYS
           </text>
-          <text x={C} y="366" textAnchor="middle" className="font-label" fontSize="6.4"
-                letterSpacing="1" fill="var(--gold)" opacity={day >= SID ? 0.95 : 0.3}>
+          <text x={C} y="366" textAnchor="middle" className="font-label" fontSize="7"
+                letterSpacing="1" fill="var(--gold)" opacity={day >= SID ? 0.95 : 0.55}>
             {day >= SID ? "SAME STAR — DIFFERENT PHASE" : "DASHED MARK IS WHERE IT BEGAN"}
           </text>
         </svg>

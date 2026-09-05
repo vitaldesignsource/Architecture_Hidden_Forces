@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+import { ArrowMark, BackMark } from "@/components/marks";
 import { useEffect } from "react";
 
 /**
@@ -23,7 +25,7 @@ export function useStepKeys(step: { prev?: (() => void) | null; next?: (() => vo
   }, [prev, next]);
 }
 
-function Key({ k }: { k: string }) {
+function Key({ k }: { k: ReactNode }) {
   return (
     <kbd className="inline-block min-w-[1.4em] border border-border px-1 py-px text-center font-label text-[9px] not-italic text-bone/60">
       {k}
@@ -35,7 +37,7 @@ function Key({ k }: { k: string }) {
 export function KeyHint({ between }: { between: string }) {
   return (
     <p className="mt-6 hidden items-center gap-1.5 font-label text-[9px] uppercase tracking-[0.25em] text-gold-dim/80 pointer-fine:flex">
-      <Key k="←" /> <Key k="→" />
+      <Key k={<BackMark />} /> <Key k={<ArrowMark />} />
       <span className="mx-1">or</span>
       <Key k="[" /> <Key k="]" />
       <span className="ml-1">step between {between}</span>

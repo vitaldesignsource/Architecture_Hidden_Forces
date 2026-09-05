@@ -90,7 +90,7 @@ function Trace() {
                     >
                       <span className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">{e.division.numeral || "P"}.{e.n}</span>
                       <span className="font-serif text-base text-bone">{e.title}</span>
-                      {!e.written && <span className="font-label text-[8px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
+                      {!e.written && <span className="font-label text-[9px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
                     </button>
                   ))
                 ) : (

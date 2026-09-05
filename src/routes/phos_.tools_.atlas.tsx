@@ -127,7 +127,7 @@ function Atlas() {
             </div>
           )}
         </div>
-        <p className="mt-3 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           The sheet is the Old World, where every entry but one is placed; the Theosophical Society, founded in New York, is set at Adyar, its home from 1882. Discoveries made beyond the sheet are named in their notes.
         </p>
 

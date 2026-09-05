@@ -513,7 +513,7 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
               className="block text-2xl text-gold"
             />
           ) : (
-            <span className="font-label text-[9px] uppercase tracking-[0.15em] text-bone/35">
+            <span className="font-label text-[9px] uppercase tracking-[0.15em] text-bone/60">
               spelling not set
             </span>
           )}
@@ -528,7 +528,7 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
           <p className="mt-1 font-label text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
             {classLabel(b.cls)} · {b.plane}
           </p>
-          <p className="mt-1 font-label text-[9px] uppercase tracking-[0.14em] text-bone/35">
+          <p className="mt-1 font-label text-[9px] uppercase tracking-[0.14em] text-bone/60">
             {b.confidence}
           </p>
         </div>

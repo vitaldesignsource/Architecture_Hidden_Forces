@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TurnMark } from "@/components/marks";
 import { AlchemicalMark, TattvaOutline, type ElementKey } from "./ElementGlyphs";
 
 /**
@@ -111,9 +112,9 @@ export function WheelOfTranselementation() {
                   strokeOpacity="0.8" strokeWidth="1.3" />
           <text x={C} y={CY - 6} textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="1.2" fill="var(--gold)" opacity="0.95">SEEDFORM</text>
-          <text x={C} y={CY + 7} textAnchor="middle" className="font-label" fontSize="5.9"
+          <text x={C} y={CY + 7} textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="0.7" fill="var(--muted-foreground)">THE GOVERNING</text>
-          <text x={C} y={CY + 17} textAnchor="middle" className="font-label" fontSize="5.9"
+          <text x={C} y={CY + 18} textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="0.7" fill="var(--muted-foreground)">VIRTUE</text>
 
           <text x={C} y="374" textAnchor="middle" className="font-label" fontSize="6.4"
@@ -125,7 +126,7 @@ export function WheelOfTranselementation() {
         <div className="mt-3 flex items-center justify-center gap-3">
           <button onClick={() => setTurn((t) => t + 1)}
             className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
-            Turn ↻
+            Turn <TurnMark />
           </button>
           {turn > 0 && (
             <button onClick={() => { setTurn(0); setSel(null); }}
@@ -140,7 +141,7 @@ export function WheelOfTranselementation() {
         {cur ? (
           <>
             <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
-              {cur.k} · {cur.gk}
+              {cur.k} · <span className="aoh-tr" lang="sa-Latn">{cur.gk}</span>
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.does}</p>
             <p className="mt-6 border-l-2 border-gold/40 pl-5 font-serif text-lg leading-relaxed text-bone/85">

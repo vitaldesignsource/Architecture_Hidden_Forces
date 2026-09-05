@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowMark } from "@/components/marks";
 import { describe } from "@/lib/seo";
 import { ToolFrame, ToolBand, Eyebrow } from "@/components/phos/ToolFrame";
 import { TOOLS } from "@/lib/phos/vocab";
@@ -33,7 +34,7 @@ function Tools() {
               <Link key={t.k} to={to} className="group border border-gold/40 p-6 transition-colors hover:border-gold hover:bg-gold/5">
                 <p className="font-serif text-2xl text-bone transition-colors group-hover:text-gold">{t.k}</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+                <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open <ArrowMark /></p>
               </Link>
             ) : (
               <div key={t.k} className="border border-border p-6 opacity-70">
@@ -64,7 +65,7 @@ function Tools() {
                 </span>
               </span>
             </div>
-            <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+            <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open <ArrowMark /></p>
           </Link>
         </div>
 
@@ -91,7 +92,7 @@ function Tools() {
                 </span>
               </span>
             </div>
-            <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+            <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open <ArrowMark /></p>
           </Link>
         </div>
 

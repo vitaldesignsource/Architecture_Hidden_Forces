@@ -61,7 +61,7 @@ export function SacredArchitectureLayers() {
         <House x={230} gone={true} />
         {/* the layers, named once between the two */}
         {[["source", 22], ["current", 60], ["morphal body", 104], ["astral clothing", 130], ["the house", 158]].map(([k, y]) => (
-          <text key={k as string} x={220} y={(y as number) + 3} textAnchor="middle" className="font-label uppercase" style={{ ...fs(5.6), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.4}>{k}</text>
+          <text key={k as string} x={220} y={(y as number) + 3} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.4}>{k}</text>
         ))}
       </svg>
     </div>

@@ -61,7 +61,7 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
             </div>
           )}
         </div>
-        <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+        <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.2em]">
           <div className="hidden items-center gap-4 lg:flex xl:gap-6">{links}</div>
           <div className="hidden shrink-0 items-center gap-4 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 lg:flex xl:gap-5 xl:pl-6">
             {volumes}

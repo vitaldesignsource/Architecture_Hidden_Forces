@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SwapMark } from "@/components/marks";
 import { TATTVAS, TATTVA_LEGEND, TATTVA_ORDER, TattvaGlyph, tattvaLabel } from "./TattvaGlyph";
 
 /**
@@ -49,7 +50,7 @@ export function SubTattvaMatrix() {
             {T.map((dom, i) => (
               <div key={dom} className="contents">
                 <div
-                  className={`flex flex-col items-center justify-center gap-1 pr-1 text-center font-label text-[8px] uppercase tracking-[0.1em] transition-colors sm:text-[9px] ${
+                  className={`flex flex-col items-center justify-center gap-1 pr-1 text-center font-label text-[9px] uppercase tracking-[0.1em] transition-colors sm:text-[10px] ${
                     cur && cur[0] === i ? "text-gold" : "text-gold-dim"
                   }`}
                 >
@@ -80,7 +81,7 @@ export function SubTattvaMatrix() {
                       }`}
                     >
                       <TattvaGlyph dominant={K[i]} modifier={diag ? null : K[j]} size="100%" decorative />
-                      <span className={`absolute bottom-0.5 right-1 font-label text-[8px] uppercase tracking-[0.06em] ${on ? "text-gold" : "text-muted-foreground/70"}`}>
+                      <span className={`absolute bottom-0.5 right-1 font-label text-[9px] uppercase tracking-[0.06em] ${on ? "text-gold" : "text-muted-foreground/70"}`}>
                         {ABBR[i]}·{ABBR[j]}
                       </span>
                     </button>
@@ -122,7 +123,7 @@ export function SubTattvaMatrix() {
                     onClick={() => setSel([cur[1], cur[0]])}
                     className="-mx-1 px-1 py-2 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim transition-colors hover:text-gold"
                   >
-                    ⇄ &nbsp;Swap to {T[cur[1]]}–{T[cur[0]]}
+                    <SwapMark /> Swap to {T[cur[1]]}–{T[cur[0]]}
                   </button>
                   <p className="mt-3 text-sm italic leading-relaxed text-bone/70">
                     {M[cur[1]][cur[0]]}

@@ -1,4 +1,5 @@
 import { Fragment, lazy, Suspense, useCallback, useRef, useState, type ReactNode } from "react";
+import { ArrowMark } from "@/components/marks";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import toc from "@/lib/phos/toc.json";
 import { ZODIAC } from "@/lib/phos/colour";
@@ -204,7 +205,7 @@ function Phos() {
               Phōs<span className="hidden sm:inline lg:hidden"> · The Luminous Architecture</span>
             </div>
           </a>
-          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.2em]">
             <div className="hidden items-center gap-2.5 lg:flex xl:gap-6">
               {NAV.map((l) => (
                 <a
@@ -244,7 +245,7 @@ function Phos() {
             />
           </div>
           <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
-            ΦΩΣ
+            <span lang="el" className="scr-greek">ΦΩΣ</span>
           </div>
         </div>
 
@@ -321,7 +322,7 @@ function Phos() {
 
           <div className="relative mt-32">
             <p className="text-center font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">
-              ΦΩΣ · The Chain of Illumination
+              <span lang="el" className="scr-greek">ΦΩΣ</span> · The Chain of Illumination
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-6 sm:gap-x-6">
               {[
@@ -341,7 +342,7 @@ function Phos() {
                   >
                     {p.g}
                   </span>
-                  {i < a.length - 1 && <span className="font-label text-xs text-gold/40">→</span>}
+                  {i < a.length - 1 && <ArrowMark className="text-sm text-gold/40" />}
                 </div>
               ))}
             </div>
@@ -354,7 +355,7 @@ function Phos() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
             <p className="font-label text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
-              ΔΕΥΤΕΡΟΣ ΤΟΜΟΣ
+              <span lang="el" className="scr-greek">ΔΕΥΤΕΡΟΣ ΤΟΜΟΣ</span>
               <span className="mt-2 block text-gold-dim">On the standing of this volume</span>
             </p>
             <div className="max-w-3xl">
@@ -1771,7 +1772,7 @@ function Phos() {
 
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
-            ΦΩΣ · The Luminous Formula
+            <span lang="el" className="scr-greek">ΦΩΣ</span> · The Luminous Formula
           </p>
           <div ref={formulaRef} className="aoh-formula relative mt-12">
             <div className="aoh-formula-beam" aria-hidden />
@@ -1837,7 +1838,7 @@ function Phos() {
             </p>
           </div>
           <p className="mt-10 font-label text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Ω · Phōs — the architecture read by its own light
+            <span lang="el" className="scr-greek">Ω</span> · Phōs — the architecture read by its own light
           </p>
         </div>
       </section>

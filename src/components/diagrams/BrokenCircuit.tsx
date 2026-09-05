@@ -13,7 +13,7 @@ import { fs } from "./fig";
 export function BrokenCircuit() {
   const G = "var(--gold, #c9a227)";
   const cap = { ...fs(6.6), letterSpacing: "0.16em" };
-  const sub = { ...fs(5.4), letterSpacing: "0.14em" };
+  const sub = { ...fs(6.2), letterSpacing: "0.14em" };
   const steps = ["receives", "transforms", "gives", "returns"];
   const cx = 115, cy = 100, R = 46;
   const spiral = (() => {

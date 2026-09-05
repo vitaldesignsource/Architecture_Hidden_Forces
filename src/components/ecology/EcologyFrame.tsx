@@ -115,7 +115,7 @@ export function EcologyFrame({
               <span className="hidden sm:inline xl:hidden">The Hidden </span>Ecology<span className="hidden sm:inline xl:hidden"> of Formation</span>
             </div>
           </Link>
-          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em]">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:tracking-[0.2em]">
             {/* One row holds everything only from xl; between lg and xl the bar
                 once showed the stations and nothing else, so a tablet had no way to
                 a province. Below xl the strip carries the whole circulation instead. */}
@@ -156,7 +156,7 @@ export function EcologyFrame({
                 Lexicon
               </Link>
             </div>
-            <div className="hidden shrink-0 items-center gap-4 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 xl:flex">
+            <div className="hidden shrink-0 items-center gap-3 border-l border-border pl-3 font-serif text-sm normal-case tracking-normal text-bone/80 xl:flex">
               <Link to="/" className="whitespace-nowrap transition-colors hover:text-gold">
                 Architecture <CrossMark className="text-gold/70" />
               </Link>
@@ -168,7 +168,7 @@ export function EcologyFrame({
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
           </div>
           <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim xl:hidden">
-            {station ? (station.region ? "Province" : `${station.n} · VI`) : "ΟΙΚΟΣ"}
+            {station ? (station.region ? "Province" : `${station.n} · VI`) : <span lang="el" className="scr-greek">ΟΙΚΟΣ</span>}
           </div>
         </div>
         <div className="border-t border-border/50 xl:hidden">

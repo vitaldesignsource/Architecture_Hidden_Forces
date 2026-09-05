@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowMark } from "@/components/marks";
 import { RevealText } from "@/components/RevealText";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
@@ -108,7 +109,7 @@ function Portal() {
         <SectionGlyph delay={-140} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-            Κίνησις · The Central Movement
+            <span lang="el" className="scr-greek">Κίνησις</span> · The Central Movement
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Light followed from Source to <span className="italic text-gold">Return</span>
@@ -294,7 +295,7 @@ function Portal() {
                 <Link key={t.k} to={to} className="group border border-gold/40 p-5 transition-colors hover:border-gold hover:bg-gold/5">
                   <p className="font-serif text-xl text-bone transition-colors group-hover:text-gold">{t.k}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                  <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold">open →</p>
+                  <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold">open <ArrowMark /></p>
                 </Link>
               ) : (
                 <div key={t.k} className="border border-border p-5 opacity-80">

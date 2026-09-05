@@ -19,12 +19,17 @@ export function useSearchHotkey(open: () => void) {
   }, [open]);
 }
 
+/** The key that opens search, named for the keyboard in front of the reader:
+ *  ⌘ means nothing on a machine without one. The glyph is set in the sans, since
+ *  neither the label face nor the serif carries it. */
+const MAC = typeof navigator !== "undefined" && /Mac|iPhone|iPad/.test(navigator.platform ?? "");
+
 export function SearchButton({ onClick }: { onClick: () => void }) {
   return (
     <button onClick={onClick} aria-label="Search the three volumes" aria-keyshortcuts="Meta+K Control+K /"
       className="flex items-center gap-2 border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
       <span>Search</span>
-      <span className="hidden text-[9px] text-gold-dim xl:inline">⌘K</span>
+      <span className="hidden text-[9px] tracking-normal text-gold-dim xl:inline">{MAC ? <span className="font-sans">⌘</span> : "Ctrl "}K</span>
     </button>
   );
 }
