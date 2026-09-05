@@ -255,7 +255,7 @@ function Sea() {
       </Band>
 
       {/* ---- causal refraction ---- */}
-      <Band id="eco-sea-refraction">
+      <Band id="eco-sea-refraction" backdrop="cloud-wall-crystallising-over-salt-flat" opacity={0.16} position="center 50%">
         <Eyebrow>Causal refraction</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Reception <span className="italic text-gold">is itself causal</span>

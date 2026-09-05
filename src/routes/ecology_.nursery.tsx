@@ -133,7 +133,7 @@ function Nursery() {
       </Band>
 
       {/* ---- conception in the formative atmosphere ---- */}
-      <Band id="eco-n-conception">
+      <Band id="eco-n-conception" backdrop="seedling-rooting-through-soil-to-embers" opacity={0.22} position="center 50%" portrait>
         <Eyebrow>Conception in the formative atmosphere</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Nurseries form <span className="italic text-gold">wherever becoming is protected long enough</span>

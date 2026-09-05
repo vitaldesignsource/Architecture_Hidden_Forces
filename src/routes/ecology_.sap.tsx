@@ -44,7 +44,7 @@ function Sap() {
   return (
     <EcologyFrame station={S}>
       {/* ---- the nutritive descent ---- */}
-      <Band id="eco-s-descent" backdrop="seed-roots-lit-beneath-the-soil" opacity={0.22} position="center 55%">
+      <Band id="eco-s-descent" backdrop="golden-sap-running-down-summit-tree" opacity={0.24} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>The nutritive descent</Eyebrow>
@@ -164,7 +164,7 @@ function Sap() {
       </Band>
 
       {/* ---- sap and the four ethers ---- */}
-      <Band id="eco-s-ethers">
+      <Band id="eco-s-ethers" backdrop="seed-roots-lit-beneath-the-soil" opacity={0.2} position="center 55%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>The Sap and the four ethers</Eyebrow>

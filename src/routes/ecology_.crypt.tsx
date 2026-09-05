@@ -79,7 +79,7 @@ function Crypt() {
       </Band>
 
       {/* ---- ontological memory ---- */}
-      <Band id="eco-c-memory">
+      <Band id="eco-c-memory" backdrop="glowing-crystal-vein-in-basalt-cliff" opacity={0.22} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Ontological memory</Eyebrow>
@@ -191,7 +191,7 @@ function Crypt() {
       </Band>
 
       {/* ---- memory and future possibility ---- */}
-      <Band id="eco-c-future">
+      <Band id="eco-c-future" backdrop="wet-city-square-with-glass-oculus" opacity={0.2} position="center 50%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Memory and future possibility</Eyebrow>
