@@ -7,9 +7,15 @@ they cannot scale; tracing the outline of the ink gives a shape whose edges
 stair-step. So this reads each stroke instead — its centre-line and the width it
 was drawn at — and emits cubic paths to be stroked in the ink of the page.
 
-    python3 scripts/trace-sign.py design/ethers/<name>.webp [--step 10]
+Some marks are strokes of an even width, and read best that way. Others are
+built of tapered points and straight edges, where an even width would throw the
+taper away; those are traced as an outline instead, which straight edges take
+cleanly. Hence two modes:
 
-Prints the `{ d, w }` entries for src/components/diagrams/EtherSigns.tsx.
+    python3 scripts/trace-sign.py design/ethers/<name>.webp                 # strokes
+    python3 scripts/trace-sign.py design/ethers/<name>.webp --mode fill     # outline
+
+Prints the entries for src/components/diagrams/EtherSigns.tsx.
 Needs Pillow, which scripts/backdrops.mjs already requires.
 """
 from PIL import Image
@@ -116,11 +122,74 @@ def catmull(p):
     return "".join(d)
 
 
+def outline(m, w, h, eps):
+    """Marching-squares boundary loops of the ink, simplified."""
+    def on(x, y):
+        return 0 <= x < w and 0 <= y < h and m[y][x]
+
+    corners = {0: ((0, 0), (1, 0)), 1: ((1, 0), (1, 1)), 2: ((1, 1), (0, 1)), 3: ((0, 1), (0, 0))}
+    step = {0: (0, -1), 1: (1, 0), 2: (0, 1), 3: (-1, 0)}
+    edges = {}
+    for y in range(h):
+        for x in range(w):
+            if not m[y][x]:
+                continue
+            for d in range(4):
+                dx, dy = step[d]
+                if not on(x + dx, y + dy):
+                    (ax, ay), (bx, by) = corners[d]
+                    edges.setdefault((x + ax, y + ay), []).append((x + bx, y + by))
+    loops = []
+    while edges:
+        start = next(iter(edges))
+        loop, cur = [start], start
+        while True:
+            nxt = edges.get(cur)
+            if not nxt:
+                break
+            step_to = nxt.pop()
+            if not nxt:
+                del edges[cur]
+            loop.append(step_to)
+            cur = step_to
+            if cur == start:
+                break
+        if len(loop) > 16:
+            loops.append(rdp(loop, eps))
+    return [l for l in loops if len(l) > 3]
+
+
+def rdp(pts, eps):
+    """Ramer-Douglas-Peucker, iteratively so a long boundary cannot blow the stack."""
+    keep = [False] * len(pts)
+    keep[0] = keep[-1] = True
+    work = [(0, len(pts) - 1)]
+    while work:
+        i, j = work.pop()
+        if j <= i + 1:
+            continue
+        a, b = pts[i], pts[j]
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        n = math.hypot(dx, dy)
+        worst, wi = -1.0, i
+        for k in range(i + 1, j):
+            p = pts[k]
+            d = (abs(dy * p[0] - dx * p[1] + b[0] * a[1] - b[1] * a[0]) / n) if n else math.hypot(p[0] - a[0], p[1] - a[1])
+            if d > worst:
+                worst, wi = d, k
+        if worst > eps:
+            keep[wi] = True
+            work.append((i, wi)); work.append((wi, j))
+    return [p for p, k in zip(pts, keep) if k]
+
+
 def main():
     src = sys.argv[1]
     step = 10.0
     if "--step" in sys.argv:
         step = float(sys.argv[sys.argv.index("--step") + 1])
+    mode = sys.argv[sys.argv.index("--mode") + 1] if "--mode" in sys.argv else "stroke"
+    eps = float(sys.argv[sys.argv.index("--eps") + 1]) if "--eps" in sys.argv else 1.1
     m, w, h = load_mask(src)
     xs = [x for y in range(h) for x in range(w) if m[y][x]]
     ys = [y for y in range(h) for x in range(w) if m[y][x]]
@@ -128,6 +197,18 @@ def main():
         sys.exit("no ink found")
     cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
     rmax = max(max(xs) - min(xs), max(ys) - min(ys)) / 2
+
+    if mode == "fill":
+        loops = outline(m, w, h, eps)
+        span = max(max(xs) - min(xs), max(ys) - min(ys))
+        k = 100.0 / span
+        d = "".join(
+            "M" + " L".join(f"{50 + (px_ - cx) * k:.2f} {50 + (py - cy) * k:.2f}" for px_, py in loop) + "Z"
+            for loop in loops
+        )
+        print(f"    // outline of {len(loops)} shapes traced from {src}")
+        print(f'    {{ d: "{d}" }},')
+        return
 
     strokes = []
     for comp in components(m, w, h):
