@@ -706,4 +706,8 @@ a:hover > .aoh-crossmark, a:focus-visible > .aoh-crossmark { transform: translat
 @media (max-width: 640px) {
   .aoh-fig { --aoh-k: 1.4; }
   .aoh-fig-tight { --aoh-k: 1.25; }
+  /* a box five or six hundred units wide shrinks its lettering to nothing on a
+     phone; a drawing that can afford it — margins clear, labels sparse — asks
+     for more, and pays with a wider box where its edge labels need the room */
+  .aoh-fig-wide { --aoh-k: 1.8; }
 }

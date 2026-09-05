@@ -9,7 +9,8 @@ import { fs } from "./fig";
  * some do not break at all: a deity may be socially forgotten and imaginally
  * potent, a place may keep its scar after its name is lost, a power may be
  * fully real while every form once used to reach it is gone. None of the
- * deaths guarantees the others.
+ * deaths guarantees the others. The box runs past the present by a margin,
+ * for the longest note, which grows on a phone.
  */
 const DEATHS: { k: string; note: string; ends: number | null; fade?: boolean }[] = [
   { k: "liturgical", note: "the rite is no longer enacted", ends: 0.28 },
@@ -23,8 +24,8 @@ export function UnequalDeaths() {
   const G = "var(--gold, #c9a227)";
   const X0 = 120, X1 = 440;
   return (
-    <div className="aoh-fig mx-auto w-full max-w-[640px]">
-      <svg viewBox="0 0 480 200" className="h-auto w-full" role="img" aria-labelledby="aoh-ud-t">
+    <div className="aoh-fig aoh-fig-wide mx-auto w-full max-w-[660px]">
+      <svg viewBox="0 0 500 200" className="h-auto w-full" role="img" aria-labelledby="aoh-ud-t">
         <title id="aoh-ud-t">
           Five horizontal bars labelled liturgical, social, imaginal, aetheric and daimonic, running from the
           living cult on the left toward the present on the right, each ending at a different point and one

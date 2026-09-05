@@ -54,7 +54,7 @@ export function CounterfeitBloom() {
         <text x={cx + 22} y={150} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>thorns · penalty on doubt</text>
         <text x={cx - 138} y={250} className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.85}>the root · where it feeds</text>
         <text x={cx + 90} y={228} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.85}>the fruit</text>
-        <text x={cx + 90} y={238} className="font-mono uppercase" style={{ ...fs(5.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
+        <text x={cx + 90} y={238} className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
           <tspan x={cx + 90}>only this reveals</tspan>
           <tspan x={cx + 90} dy={8}>the whole plant</tspan>
         </text>

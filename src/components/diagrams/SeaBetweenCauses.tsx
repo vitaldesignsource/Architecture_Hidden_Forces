@@ -9,7 +9,8 @@ import { fs } from "./fig";
  * meet at a confluence; one is caught in an eddy and turns; sediment lies
  * along the floor; and at the right they arrive together at one shore,
  * which is the effect. The nearest cause to an outcome is only the gate
- * through which the older ones emerged.
+ * through which the older ones emerged. The box carries a margin at each
+ * side for the labels that stand outside the water, which grow on a phone.
  */
 const CURRENTS = ["intention", "memory", "vitality", "image", "inheritance", "choice"];
 
@@ -25,14 +26,14 @@ export function SeaBetweenCauses() {
     "M 74 190 C 130 194, 180 232, 230 240 C 290 250, 410 176, 470 140",
   ];
   return (
-    <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[760px]">
+    <div className="aoh-fig aoh-fig-wide mx-auto w-full max-w-[800px]">
       <style>{`
         .aoh-sb-run { stroke-dasharray: 4 7; animation: aoh-sb-go 6s linear infinite; }
         .aoh-sb-eddy { stroke-dasharray: 3 5; animation: aoh-sb-go 4s linear infinite; }
         @keyframes aoh-sb-go { to { stroke-dashoffset: -22 } }
         @media (prefers-reduced-motion: reduce) { .aoh-sb-run, .aoh-sb-eddy { animation: none } }
       `}</style>
-      <svg viewBox="0 0 560 280" className="h-auto w-full" role="img" aria-labelledby="aoh-sb-t">
+      <svg viewBox="-30 0 630 280" className="h-auto w-full" role="img" aria-labelledby="aoh-sb-t">
         <title id="aoh-sb-t">
           Six currents entering from the left, labelled intention, memory, vitality, image, inheritance and
           choice, crossing three bands labelled astral, etheric and material, meeting at a confluence, one
@@ -61,7 +62,7 @@ export function SeaBetweenCauses() {
         ))}
         {/* the confluence */}
         <circle cx={300} cy={96} r={3.2} fill={G} />
-        <text x={300} y={86} textAnchor="middle" className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.8}>confluence</text>
+        <text x={300} y={78} textAnchor="middle" className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.8}>confluence</text>
         {/* the eddy */}
         <path d="M 236 204 a 14 14 0 1 1 0.1 0" fill="none" stroke={G} strokeOpacity={0.6} strokeWidth={0.8} className="aoh-sb-eddy" />
         <text x={236} y={236} textAnchor="middle" className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.7}>eddy</text>
@@ -71,7 +72,7 @@ export function SeaBetweenCauses() {
         <path d="M 472 20 C 486 100, 486 180, 472 262" fill="none" stroke="currentColor" strokeOpacity={0.7} strokeWidth={1.1} />
         <circle cx={470} cy={140} r={4} fill="var(--bone, #f0ead8)" />
         <text x={500} y={143} className="font-serif" style={fs(10.5)} fill="currentColor" fillOpacity={0.9}>the effect</text>
-        <text x={500} y={155} className="font-mono uppercase" style={{ ...fs(5.4), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>an estuary</text>
+        <text x={500} y={155} className="font-mono uppercase" style={{ ...fs(6), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>an estuary</text>
       </svg>
     </div>
   );
