@@ -58,7 +58,19 @@ export type Figure = {
 };
 
 export const FIGURES: Figure[] = [
-  // ── the Hidden Ecology of Formation, in eleven figures ───────────────────
+  // ── the Hidden Ecology of Formation, in fifteen figures ──────────────────
+  { k: "A Section of the Subtle Ground", C: drawing("AquiferSection"), rel: "spatial", teaching: "The Hidden Ecology",
+    d: "The Black Aquifer in cross-section: the threshold beneath which force settles, percolation, scar, confluence, reservoir, well, upwelling and artesian spring — a landscape carrying the vocabulary of the depth.",
+    not: "Not a map of a place. Depth here is latency, not distance; the strata are times and kinds of experience, not rock." },
+  { k: "From Form to Tendency", C: drawing("FormToTendency"), rel: "analogical", teaching: "The Hidden Ecology",
+    d: "A vessel, its outline in pieces, and then only the current bent to the shape the vessel gave it: what the black water keeps is how a force moved.",
+    not: "Not decay into nothing. The third frame holds the most of the three — direction, appetite, rhythm — with none of the outline." },
+  { k: "Three Retentions", C: drawing("ThreeRetentions"), rel: "symbolic", teaching: "The Hidden Ecology",
+    d: "The Ossuary's arch with a stone lifted free, the Crypt's footprint bending the strata, and the Aquifer carrying the softened stones beneath both: architecture, consequence and impulse retained.",
+    not: "Not three names for one memory. The Crypt contains, the Ossuary preserves, the Aquifer carries — and the drawing keeps them three." },
+  { k: "Scar and Return", C: drawing("ScarAndReturn"), rel: "causal", teaching: "The Hidden Ecology",
+    d: "A hungry form at the waterline and the groove beneath it: force descending from the incomplete form, gathering charge, and rising through the same scar, which each pass deepens.",
+    not: "Not a portrait of a curse. The loop is a hydraulic structure, and breaking the visible behaviour without the channel leaves the reservoir intact." },
   { k: "Spiral of Becoming", C: drawing("SpiralOfBecoming"), rel: "cyclical", teaching: "The Hidden Ecology",
     d: "The circulation of formation as a rising helix of two turns, twelve stations along it, the last directly above the first.",
     not: "Not a ring. Height is difference, not altitude or progress — the twelfth station is the first station changed." },

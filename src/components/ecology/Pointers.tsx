@@ -39,6 +39,7 @@ export const ARCH = {
   tides: "§ XXXVI · Etheric Tides",
   mansions: "§ XXXVII · Lunar Mansions and Nakshatras",
   mortality: "§ XL · Death, Suffering, and the Cost of Form",
+  sophia: "§ XLVI · Sophia and the Divine Feminine",
   atmosphere: "§ XLI · Morphaithēr",
   transduction: "§ XLIII · The Fourfold Veil",
   relation: "§ XLIV · The Law of Right Relation",

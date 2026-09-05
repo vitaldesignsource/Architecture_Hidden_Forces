@@ -19,7 +19,7 @@ export type Entry = {
   movement?: boolean;
   route?: { division: string; entry?: string };
   /** A row that is a page of its own — the Hidden Ecology's stations. */
-  to?: "/ecology" | "/ecology/morphaither" | "/ecology/sap" | "/ecology/hydrology" | "/ecology/form" | "/ecology/ossuary" | "/ecology/crypt";
+  to?: "/ecology" | "/ecology/morphaither" | "/ecology/sap" | "/ecology/hydrology" | "/ecology/form" | "/ecology/ossuary" | "/ecology/crypt" | "/ecology/aquifer";
 };
 
 export const ENTRIES: Entry[] = [

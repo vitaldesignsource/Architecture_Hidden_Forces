@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
@@ -276,6 +276,14 @@ function Form() {
               does the architecture maintain <Arch id="relation">right relation</Arch> with the
               force it exists to mediate? — which, put to a dying vessel, asks whether the current
               circulates again.
+            </p>
+            <p className="mt-6 text-sm leading-relaxed text-bone/60">
+              A captive form has a relative beneath the waterline. A form that keeps its organising
+              appetite after losing its rightful source, and feeds on whatever living systems are
+              near, is what the layer calls a Hungry Form; the groove such a form cuts beneath
+              itself, and what nourishes it there, are the{" "}
+              <Link to="/ecology/aquifer" hash="eco-a-hungry" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Aquifer's</Link>{" "}
+              subject.
             </p>
             <Pointers
               arch={["forceform", "laws", "mortality", "triad", "transformation", "relation", "retentive"]}

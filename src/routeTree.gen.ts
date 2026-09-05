@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as EcologyRouteImport } from './routes/ecology'
 import { Route as PhosRouteImport } from './routes/phos'
+import { Route as EcologyAquiferRouteImport } from './routes/ecology_.aquifer'
 import { Route as EcologyCryptRouteImport } from './routes/ecology_.crypt'
 import { Route as EcologyFormRouteImport } from './routes/ecology_.form'
 import { Route as EcologyHydrologyRouteImport } from './routes/ecology_.hydrology'
@@ -47,6 +48,11 @@ const EcologyRoute = EcologyRouteImport.update({
 const PhosRoute = PhosRouteImport.update({
   id: '/phos',
   path: '/phos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcologyAquiferRoute = EcologyAquiferRouteImport.update({
+  id: '/ecology_/aquifer',
+  path: '/ecology/aquifer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EcologyCryptRoute = EcologyCryptRouteImport.update({
@@ -159,6 +165,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ecology': typeof EcologyRoute
   '/phos': typeof PhosRoute
+  '/ecology/aquifer': typeof EcologyAquiferRoute
   '/ecology/crypt': typeof EcologyCryptRoute
   '/ecology/form': typeof EcologyFormRoute
   '/ecology/hydrology': typeof EcologyHydrologyRoute
@@ -185,6 +192,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ecology': typeof EcologyRoute
   '/phos': typeof PhosRoute
+  '/ecology/aquifer': typeof EcologyAquiferRoute
   '/ecology/crypt': typeof EcologyCryptRoute
   '/ecology/form': typeof EcologyFormRoute
   '/ecology/hydrology': typeof EcologyHydrologyRoute
@@ -212,6 +220,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/ecology': typeof EcologyRoute
   '/phos': typeof PhosRoute
+  '/ecology_/aquifer': typeof EcologyAquiferRoute
   '/ecology_/crypt': typeof EcologyCryptRoute
   '/ecology_/form': typeof EcologyFormRoute
   '/ecology_/hydrology': typeof EcologyHydrologyRoute
@@ -240,6 +249,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ecology'
     | '/phos'
+    | '/ecology/aquifer'
     | '/ecology/crypt'
     | '/ecology/form'
     | '/ecology/hydrology'
@@ -266,6 +276,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ecology'
     | '/phos'
+    | '/ecology/aquifer'
     | '/ecology/crypt'
     | '/ecology/form'
     | '/ecology/hydrology'
@@ -292,6 +303,7 @@ export interface FileRouteTypes {
     | '/'
     | '/ecology'
     | '/phos'
+    | '/ecology_/aquifer'
     | '/ecology_/crypt'
     | '/ecology_/form'
     | '/ecology_/hydrology'
@@ -319,6 +331,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EcologyRoute: typeof EcologyRoute
   PhosRoute: typeof PhosRoute
+  EcologyAquiferRoute: typeof EcologyAquiferRoute
   EcologyCryptRoute: typeof EcologyCryptRoute
   EcologyFormRoute: typeof EcologyFormRoute
   EcologyHydrologyRoute: typeof EcologyHydrologyRoute
@@ -363,6 +376,13 @@ declare module '@tanstack/react-router' {
       path: '/phos'
       fullPath: '/phos'
       preLoaderRoute: typeof PhosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecology_/aquifer': {
+      id: '/ecology_/aquifer'
+      path: '/ecology/aquifer'
+      fullPath: '/ecology/aquifer'
+      preLoaderRoute: typeof EcologyAquiferRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ecology_/crypt': {
@@ -519,6 +539,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   EcologyRoute: EcologyRoute,
   PhosRoute: PhosRoute,
+  EcologyAquiferRoute: EcologyAquiferRoute,
   EcologyCryptRoute: EcologyCryptRoute,
   EcologyFormRoute: EcologyFormRoute,
   EcologyHydrologyRoute: EcologyHydrologyRoute,

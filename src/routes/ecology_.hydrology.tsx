@@ -1,8 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
-import { Transition } from "@/components/ecology/Transition";
+import { Beneath, Transition } from "@/components/ecology/Transition";
 import { Arch, Entry, Items, Pointers, Sequence } from "@/components/ecology/Pointers";
 import { HydrologicalSequence } from "@/components/diagrams/HydrologicalSequence";
 import { EthericWatershed } from "@/components/diagrams/EthericWatershed";
@@ -156,13 +156,16 @@ function Hydrology() {
               depleted, its channels dry, while the current that should have fed it stands still
               behind a dam. The pathologies of the etheric body the treatise describes — depletion
               that is not an empty tank, stimulation that agitates without vitalising — are these
-              exits, read in a body.
+              exits, read in a body. Dead ends for the circulation are not dead ends for the charge:
+              what leaves the ring by them settles beneath the threshold, into the{" "}
+              <Link to="/ecology/aquifer" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Black Aquifer</Link>,
+              which the drawing marks under the bar.
             </p>
           </div>
           <div>
             <HydrologicalSequence />
             <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
-              cyclical · the failures are dead ends, drawn as ones
+              cyclical · the failures leave the ring; beneath the last, the waterline
             </p>
           </div>
         </div>
@@ -343,6 +346,8 @@ function Hydrology() {
           </div>
         </div>
       </Band>
+
+      <Beneath line="No hydrology is complete that studies only rain, rivers and visible springs. Beneath every open current lies another order of water — older, slower, pressurised, and largely untouched by the light." />
 
       <Transition from="hydrology" />
     </EcologyFrame>

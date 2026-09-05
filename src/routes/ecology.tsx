@@ -2,11 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { CrossMark } from "@/components/CrossMark";
 import { RevealText } from "@/components/RevealText";
-import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
+import { EcologyFrame, Band, Eyebrow, DescentMark } from "@/components/ecology/EcologyFrame";
 import { Law } from "@/components/ecology/Law";
 import { Arch, Entry, Pointers } from "@/components/ecology/Pointers";
 import { SpiralOfBecoming } from "@/components/diagrams/SpiralOfBecoming";
-import { CIRCULATION, LAWS, SHORTHAND, STATIONS, station } from "@/lib/ecology";
+import { AQUIFER, CIRCULATION, LAWS, SHORTHAND, STATIONS, station } from "@/lib/ecology";
 
 /**
  * The Hidden Ecology of Formation — the landing.
@@ -69,6 +69,7 @@ const GLOSSARY: { k: string; d: string; to: (typeof STATIONS)[number]["to"] }[] 
   { k: "The Ossuary of Living Forms", d: "The morphological inheritance of becoming: architectures remaining available after the forms that bore them have gone.", to: "/ecology/ossuary" },
   { k: "The Crypt of Primordial Memory", d: "The retentive depth of existence: what has occurred entering the conditions of what may occur.", to: "/ecology/crypt" },
   { k: "Ontological retention", d: "Consequence without survival — a thing need not remain present for its existence to go on having effect.", to: "/ecology/crypt" },
+  { k: "The Black Aquifer", d: "The subterranean memory of force: the saturated, low-luminosity phase of Morphaithēr into which force settles when form fails, and from which it may rise again.", to: "/ecology/aquifer" },
 ];
 
 function Ecology() {
@@ -207,6 +208,8 @@ function Ecology() {
           These are not five synonyms for subtle energy or the invisible world. They are five
           dimensions of one ecology, each with a governing question the others cannot answer, and
           Living Form is where all five intersect. Take any one; it will hand you to the next.
+          Beneath all six lies one stratum that is not a station: where the circulation's
+          remainder goes.
         </p>
         <div className="mt-12 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-3">
           {STATIONS.map((s) => (
@@ -221,6 +224,14 @@ function Ecology() {
               </span>
             </Link>
           ))}
+          <Link to={AQUIFER.to} className="group flex flex-col gap-3 bg-void/70 p-6 transition-colors hover:bg-gold/5 sm:col-span-2 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-8 sm:p-8 lg:col-span-3">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Beneath the stations</span>
+            <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">{AQUIFER.title}</span>
+            <span className="font-serif text-base italic leading-relaxed text-bone/70">{AQUIFER.question}</span>
+            <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold sm:ml-auto">
+              {AQUIFER.shorthand} <DescentMark className="ml-1 text-gold/70" />
+            </span>
+          </Link>
         </div>
       </Band>
 
@@ -275,7 +286,7 @@ function Ecology() {
       <Band id="eco-shorthand">
         <div className="grid gap-16 lg:grid-cols-2">
           <div>
-            <Eyebrow>In seven lines</Eyebrow>
+            <Eyebrow>In eight lines</Eyebrow>
             <div className="mt-8">
               {SHORTHAND.map(([a, b]) => (
                 <p key={a} className="border-b border-border py-4 font-serif text-xl leading-snug text-bone/90 sm:text-2xl">
@@ -320,7 +331,7 @@ function Ecology() {
           energy; no analogy is presented as physics; aether is the medium, Morphaithēr its
           condition, the Sap what descends into it and the four ethers the modes in which the field
           operates — four things, kept four; the Ossuary and the Crypt are not one concept; the Crypt is not a
-          database; death is not intrinsically evil; inherited forms are not automatically sacred and
+          database; the Black Aquifer is neither the unconscious nor the abyss before creation; death is not intrinsically evil; inherited forms are not automatically sacred and
           novelty is not automatically superior. The one criterion, throughout:{" "}
           <span className="text-bone/90">does the architecture maintain right relation with the force it exists to mediate?</span>
         </p>

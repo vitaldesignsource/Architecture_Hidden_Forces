@@ -10,7 +10,9 @@ import { fs } from "./fig";
  * channelling, and the chain it starts: stagnation, then leakage, then
  * flooding when the blocked current finds the wrong way out, then depletion
  * downstream of it all. A dead end is drawn as one: the chain drops away
- * beneath the ring and stops at a bar.
+ * beneath the ring and stops at a bar — which is a waterline. What leaves
+ * the circulation by these exits does not vanish; it settles beneath the
+ * threshold, into the Black Aquifer, and the drawing says so under the bar.
  */
 const RING = ["Descent", "Reception", "Channelling", "Accumulation", "Saturation", "Overflow", "Transformation", "Release", "Return"];
 const EXITS = ["Obstruction", "Stagnation", "Leakage", "Flooding", "Depletion"];
@@ -37,7 +39,8 @@ export function HydrologicalSequence() {
         <title id="aoh-hs-t">
           Nine stations of healthy circulation on a ring — descent, reception, channelling, accumulation,
           saturation, overflow, transformation, release, return — with a chain of five failures leaving it:
-          obstruction, stagnation, leakage, flooding, depletion.
+          obstruction, stagnation, leakage, flooding, depletion — and beneath the last, the waterline of
+          the Black Aquifer.
         </title>
         <circle cx={cx} cy={cy} r={R} fill="none" stroke="var(--gold, #c9a227)" strokeOpacity={0.18} strokeWidth={1} />
         <circle cx={cx} cy={cy} r={R} fill="none" stroke="var(--gold, #c9a227)" strokeOpacity={0.55} strokeWidth={1} className="aoh-hs-flow" />
@@ -73,10 +76,14 @@ export function HydrologicalSequence() {
             </text>
           </g>
         ))}
-        {/* the dead end */}
-        <line x1={last.x - 7} y1={last.y + 14} x2={last.x + 7} y2={last.y + 14} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.2} />
+        {/* the dead end is a waterline, and there is a depth beneath it */}
+        <line x1={last.x - 16} y1={last.y + 14} x2={last.x + 16} y2={last.y + 14} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.2} />
+        <rect x={last.x - 40} y={last.y + 16} width={80} height={26} fill="currentColor" fillOpacity={0.06} />
         <text x={last.x} y={last.y + 26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>
           no return
+        </text>
+        <text x={last.x} y={last.y + 37} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.6}>
+          beneath: the Black Aquifer
         </text>
       </svg>
     </div>

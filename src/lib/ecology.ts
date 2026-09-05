@@ -14,13 +14,15 @@
  * relation described by an analogy the text is careful to mark as one.
  */
 
-export type StationId = "morphaither" | "sap" | "hydrology" | "form" | "ossuary" | "crypt";
+export type StationId = "morphaither" | "sap" | "hydrology" | "form" | "ossuary" | "crypt" | "aquifer";
 
 export type Station = {
   id: StationId;
   to: `/ecology/${StationId}`;
   /** The station's number in the circulation, as a word for prose. */
   n: string;
+  /** Set on the one page that is not a station: the stratum beneath them. */
+  beneath?: string;
   title: string;
   /** Where the treatise already gives the term a Greek form, that form. Never coined here. */
   greek?: string;
@@ -121,18 +123,48 @@ export const STATIONS: Station[] = [
   },
 ];
 
-export const station = (id: StationId) => STATIONS.find((s) => s.id === id)!;
+/**
+ * Beneath the six stations, one stratum. The Black Aquifer is not a seventh
+ * station — the circulation is complete at six — but the depth force settles
+ * into when it leaves the circulation without completing it, and from which
+ * it may rise again. It is reached by descending from Etheric Hydrology and
+ * left by rising into Living Form, so the navigation enacts the doctrine:
+ * descent, latency, return.
+ */
+export const AQUIFER: Station = {
+  id: "aquifer",
+  to: "/ecology/aquifer",
+  n: "↓",
+  beneath: "Beneath the stations",
+  title: "The Black Aquifer",
+  dimension: "Retention · Pressure · Return",
+  question: "Where does force go when form fails?",
+  shorthand: "the groundwater",
+  definition:
+    "The deep reservoir into which force descends when it is no longer carried by a living form, yet has not ceased to possess tendency, memory or power. Not literal water, and not a name for the unconscious: a subterranean condition of the subtle world, in which force is retained, transported, mingled, and sometimes returned to manifestation.",
+  backdrop: "cave-pool-under-single-light-shaft",
+  position: "center 50%",
+};
+
+export const station = (id: StationId) => [...STATIONS, AQUIFER].find((s) => s.id === id)!;
 
 /** Each station hands the reader to the next in its own words — the text a
  *  transition shows, and the station it leads to. The last leads to the first,
  *  which is the whole point: the circulation is a spiral, not a ring. */
-export const TRANSITIONS: Record<StationId, { line: string; to: StationId }> = {
+export const TRANSITIONS: Record<StationId, { line: string; to: StationId; eyebrow?: string; label?: string; note?: string }> = {
   morphaither: { line: "The atmosphere establishes the conditions — but what enters the atmosphere as nourishment?", to: "sap" },
   sap: { line: "Nourishment must travel. Follow the current.", to: "hydrology" },
   hydrology: { line: "Every current eventually encounters architecture.", to: "form" },
   form: { line: "Forms perish, but their architectures do not simply disappear.", to: "ossuary" },
   ossuary: { line: "Architecture is not the only thing the world retains.", to: "crypt" },
   crypt: { line: "Memory alters the conditions of everything that follows. The circulation returns — one level on.", to: "morphaither" },
+  aquifer: {
+    line: "What the water has kept must be given a body again — and it is judged by the body it is given.",
+    to: "form",
+    eyebrow: "Anodos · the upward return",
+    label: "Rise to",
+    note: "Not back into the circulation, and not straight to the surface. What rises from the depth is released from a dead form and re-patterned into a living one, which is why the way up leads to the vessel — and why the vessel, not the rising, decides whether the return was a return to health.",
+  },
 };
 
 /** The circulation in the order the overview and the spiral draw it. */
@@ -172,5 +204,6 @@ export const SHORTHAND: [string, string][] = [
   ["Living Form", "is the vessel."],
   ["The Ossuary", "is the inheritance."],
   ["The Crypt", "is the memory."],
+  ["The Black Aquifer", "is the groundwater."],
   ["Becoming", "is the river passing through them all."],
 ];

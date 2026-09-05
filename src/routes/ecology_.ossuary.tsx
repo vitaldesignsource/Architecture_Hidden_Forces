@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Transition } from "@/components/ecology/Transition";
@@ -203,6 +203,14 @@ function Ossuary() {
                 case, and the world is different for it. A column can be quarried. The fact that a
                 temple once stood there, and what happened in it, cannot be quarried; it can only
                 be inherited as the condition of the ground.
+              </p>
+              <p>
+                It is not the Black Aquifer either, though the water runs through it. The Ossuary
+                preserves syntax — how a form once stood. The{" "}
+                <Link to="/ecology/aquifer" hash="eco-a-three" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Aquifer</Link>{" "}
+                preserves impulse — what still desires to move through that posture — and it
+                dissolves some of the bones, mineralises others, and carries their salts far from
+                where they lay.
               </p>
               <p>
                 And it is not an afterlife. The Portal's{" "}

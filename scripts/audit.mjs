@@ -84,7 +84,8 @@ if (!routes.length) fail("volumes", "no createFileRoute() found under src/routes
 
 // ---------------------------------------------------------------- numbering
 for (const r of routes) {
-  r.sections = [...r.text.matchAll(/<section id="([a-z-]+)"/g)].map((m) => ({
+  // A <Band id> is a <section id> once rendered (components/ecology/EcologyFrame), so it counts as one here.
+  r.sections = [...r.text.matchAll(/<(?:section|Band) id="([a-z-]+)"/g)].map((m) => ({
     id: m[1],
     at: m.index,
     route: r.path,

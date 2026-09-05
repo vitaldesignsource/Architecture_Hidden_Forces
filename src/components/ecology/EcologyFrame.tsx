@@ -5,7 +5,7 @@ import { ContentsPanel } from "@/components/ContentsPanel";
 import { CrossMark } from "@/components/CrossMark";
 import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
-import { STATIONS, type Station } from "@/lib/ecology";
+import { AQUIFER, STATIONS, type Station } from "@/lib/ecology";
 import type { Entry } from "@/lib/contents";
 
 /**
@@ -31,13 +31,42 @@ export function ReturnMark({ className = "" }: { className?: string }) {
   );
 }
 
+/** A drawn descent mark — a line finding the waterline — in the weight of
+ *  the CrossMark and the ReturnMark, for the way beneath the stations. */
+export function DescentMark({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 12 12" aria-hidden focusable="false"
+         className={`inline-block h-[0.72em] w-[0.72em] shrink-0 align-[0.06em] ${className}`}
+         fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 1.2v7.4" />
+      <path d="M3.2 5.9 6 8.6l2.8-2.7" />
+      <path d="M2 11h8" strokeOpacity="0.5" />
+    </svg>
+  );
+}
+
+/** The same mark rising: the way back up. */
+export function AscentMark({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 12 12" aria-hidden focusable="false"
+         className={`inline-block h-[0.72em] w-[0.72em] shrink-0 align-[0.06em] ${className}`}
+         fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 9.6V2.2" />
+      <path d="M3.2 4.9 6 2.2l2.8 2.7" />
+      <path d="M2 11h8" strokeOpacity="0.5" />
+    </svg>
+  );
+}
+
 const ROWS: Entry[] = [
   { n: "—", id: "top", t: "The Hidden Ecology of Formation", d: "The layer as a whole: the circulation, the spiral, the laws.", to: "/ecology" },
   ...STATIONS.map((s) => ({ n: s.n, id: s.id, t: s.title, d: s.dimension, to: s.to })),
+  { n: AQUIFER.n, id: AQUIFER.id, t: AQUIFER.title, d: AQUIFER.dimension, to: AQUIFER.to },
 ];
 const GROUPS = [
   { at: "top", k: "The layer" },
   { at: "morphaither", k: "The circulation, in order" },
+  { at: "aquifer", k: "Beneath the circulation" },
 ];
 
 export function EcologyFrame({
@@ -61,12 +90,14 @@ export function EcologyFrame({
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
           <Link to="/ecology" className="min-w-0">
+            {/* The name gives way before the circulation does: the six stations keep their
+                room at every desktop width, and the title shortens as the row fills. */}
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
-              The Hidden Ecology of Formation
+              <span className="lg:hidden xl:inline">The Hidden </span>Ecology<span className="lg:hidden 2xl:inline"> of Formation</span>
             </div>
           </Link>
-          <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
-            <div className="hidden items-center gap-4 lg:flex xl:gap-6">
+          <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] 2xl:gap-6 2xl:tracking-[0.25em]">
+            <div className="hidden items-center gap-4 lg:flex 2xl:gap-6">
               {STATIONS.map((s, i) => (
                 <Link
                   key={s.id}
@@ -75,24 +106,33 @@ export function EcologyFrame({
                   className={`whitespace-nowrap transition-colors hover:text-gold ${here === s.id ? "text-gold" : ""}`}
                   title={s.title}
                 >
-                  {i > 0 && <span className="mr-4 text-bone/25 xl:mr-6" aria-hidden>→</span>}
+                  {i > 0 && <span className="mr-4 hidden text-bone/25 xl:inline 2xl:mr-6" aria-hidden>→</span>}
                   {s.title.replace(/^The /, "").replace(/ of .*$/, "")}
                 </Link>
               ))}
               <Link to="/ecology/morphaither" className="text-gold-dim transition-colors hover:text-gold" title="The circulation returns to Morphaithēr">
                 <ReturnMark />
               </Link>
+              <Link
+                to={AQUIFER.to}
+                aria-current={here === AQUIFER.id ? "page" : undefined}
+                className={`hidden whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold xl:inline-flex xl:items-baseline xl:gap-2 2xl:pl-6 ${here === AQUIFER.id ? "text-gold" : "text-bone/70"}`}
+                title="Beneath the stations: the Black Aquifer"
+              >
+                <DescentMark className="text-gold/60" />
+                Aquifer
+              </Link>
             </div>
             <Link
               to="/"
-              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
+              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block 2xl:pl-6"
             >
               The Architecture <CrossMark className="text-gold/70" />
             </Link>
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
           </div>
           <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
-            {station ? `${station.n} · VI` : "ΟΙΚΟΣ"}
+            {station ? (station.beneath ? "Beneath" : `${station.n} · VI`) : "ΟΙΚΟΣ"}
           </div>
         </div>
         <div className="border-t border-border/50 lg:hidden">
@@ -103,6 +143,11 @@ export function EcologyFrame({
                 {s.title.replace(/^The /, "").replace(/ of .*$/, "")}
               </Link>
             ))}
+            <Link to={AQUIFER.to} aria-current={here === AQUIFER.id ? "page" : undefined}
+                  className={`inline-flex items-baseline gap-1.5 whitespace-nowrap border-l border-border py-1 pl-4 transition-colors hover:text-gold ${here === AQUIFER.id ? "text-gold" : "text-bone/70"}`}>
+              <DescentMark className="text-gold/60" />
+              Aquifer
+            </Link>
             <Link to="/" className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold">
               Architecture <CrossMark className="text-gold/70" />
             </Link>
@@ -117,7 +162,7 @@ export function EcologyFrame({
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise">
               <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
-                The Hidden Ecology of Formation · Station {station.n} of VI
+                The Hidden Ecology of Formation · {station.beneath ?? `Station ${station.n} of VI`}
               </p>
               <h1 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl">
                 <RevealText text={station.title} shimmer />

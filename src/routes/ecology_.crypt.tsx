@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Law } from "@/components/ecology/Law";
@@ -258,6 +258,13 @@ function Crypt() {
           that the arch exists to be quarried is in the Crypt — and every consequence was once the
           passage of a form whose architecture may be in the Ossuary. The interaction is not the
           identity; it is the reason the ecology needs both stations.
+        </p>
+        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-bone/60">
+          A third retention runs beneath both, and it is hydraulic where the Crypt is archival: the
+          Black Aquifer carries what the Crypt contains and the Ossuary preserves, under pressure
+          and in motion. The seals of the Crypt are not perfectly impermeable, and the layer says
+          so{" "}
+          <Link to="/ecology/aquifer" hash="eco-a-three" className="underline-offset-4 transition-colors hover:text-gold hover:underline">beneath the stations</Link>.
         </p>
       </Band>
 

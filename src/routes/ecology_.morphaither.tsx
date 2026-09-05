@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Transition } from "@/components/ecology/Transition";
@@ -263,6 +263,12 @@ function Morphaither() {
               the Crypt, felt as the present atmosphere. A place's climate is its history become
               its condition. The tree in the margin has grown for five thousand years into the
               shape of the wind, and now the wind meets a shape.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Climate has a depth as well as a duration. Morphaithēr saturated with prior formation —
+              dense, memory-bearing, low in light — is a phase of the same medium, and the layer
+              treats it beneath the circulation as the{" "}
+              <Link to="/ecology/aquifer" hash="eco-a-saturated" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Black Aquifer</Link>.
             </p>
             <div className="mt-8 grid gap-px border border-border bg-border/60 sm:grid-cols-2">
               <div className="bg-void p-6">

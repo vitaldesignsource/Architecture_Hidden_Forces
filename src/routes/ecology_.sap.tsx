@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { EcologyFrame, Band, Eyebrow } from "@/components/ecology/EcologyFrame";
 import { Deeper } from "@/components/ecology/Deeper";
 import { Transition } from "@/components/ecology/Transition";
@@ -243,6 +243,13 @@ function Sap() {
               <Entry id="xiii-27">liberating captive light</Entry> — is never demolition alone.
               What was captured must be released into circulation again, and circulation is the
               next station's whole subject.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Nor is capture the only way nourishment fails to arrive. Some Sap passes through
+              unready forms, some is held by damaged structures, and some reaches the deep earth
+              of the subtle world, where its light becomes latent — not destroyed, but occluded. The
+              layer follows it there, beneath the circulation, to the{" "}
+              <Link to="/ecology/aquifer" hash="eco-a-light" className="underline-offset-4 transition-colors hover:text-gold hover:underline">Black Aquifer</Link>.
             </p>
             <Pointers
               arch={["mediation", "celestial", "transduction", "laws", "forceform", "matter"]}
