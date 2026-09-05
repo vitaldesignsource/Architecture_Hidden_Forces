@@ -51,7 +51,7 @@ function CompareTraditions() {
       name="Compare Traditions"
       title={<>Two or three traditions, <span className="italic text-gold">side by side</span></>}
       lede="Choose up to three traditions. Each column lists what the encyclopaedia has filed under it, division by division, and the band beneath shows the entries the chosen traditions share — resemblances already recorded, with their historical differences kept."
-      backdrop="filterstack"
+      backdrop="filter-stack-of-cloth-and-stone"
     >
       <ToolBand>
         <Eyebrow>Traditions · choose up to three</Eyebrow>

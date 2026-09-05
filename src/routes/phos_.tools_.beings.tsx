@@ -144,7 +144,7 @@ function Register() {
       name="The Register of Beings"
       title={<>Who populates the <span className="italic text-gold">middle of the world</span></>}
       lede="Every tradition here fills the space between the first principle and the body, and each fills it its own way and sorts it with its own words. The register sets ten of those populations side by side — each name in the script it was written in, each kind named as its own tradition names it, from cuneiform and hieroglyphs through Hebrew, Greek, Coptic, Avestan, Devanagari, Chinese and Arabic — without letting the comparison collapse them into one another."
-      backdrop="archons"
+      backdrop="hall-of-throned-archons-in-light-beams"
       position="center 40%"
     >
       {/* how to read it */}

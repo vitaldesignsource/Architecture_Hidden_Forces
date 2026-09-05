@@ -47,7 +47,7 @@ function Trace() {
       name="Trace a Concept"
       title={<>Follow a concept through its <span className="italic text-gold">relations</span></>}
       lede="Every entry names the entries it is related to. Stand at one and the instrument draws that neighbourhood: what it names in the first ring, what those name in the second. Step to any written entry to stand there instead; the path you have walked is kept above the map."
-      backdrop="web"
+      backdrop="dew-covered-web-in-dark-woodland"
     >
       <ToolBand>
         <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-start">

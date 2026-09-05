@@ -35,7 +35,7 @@ function Anatomy() {
       name="Luminous Anatomy"
       title={<>From spirit to the material environment, <span className="italic text-gold">in order</span></>}
       lede="Six stations on one axis. Each gathers the entries that stand on its planes, and quotes the line of the governing formula it enacts. Walk downward and the same light is followed into embodiment; walk upward and it is followed home."
-      backdrop="cisterntower"
+      backdrop="overgrown-cistern-tower-interior"
     >
       <ToolBand>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:items-start">

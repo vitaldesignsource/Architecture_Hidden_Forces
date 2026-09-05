@@ -74,7 +74,7 @@ function Atlas() {
       name="The Atlas"
       title={<>Where a light was <span className="italic text-gold">kindled</span>, and when</>}
       lede="Ninety-four entries of the global history of light and twenty-four founding discoveries of its science, set where they were kindled and when. Hover a bar to find its place and hover a place to find its years; move along the years to see what was alight together, and click to hold a year. The dates are those of ordinary scholarship: where it disagrees the range is wide and marked c., and where a text’s scene is not where it was written the map says so."
-      backdrop="cartography"
+      backdrop="dark-hall-with-charted-stone-floor"
       position="center 45%"
     >
       <ToolBand>

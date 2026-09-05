@@ -41,7 +41,7 @@ function DiagramLibrary() {
       name="Diagram Library"
       title={<>Every figure, and what its geometry <span className="italic text-gold">does not say</span></>}
       lede="A diagram asserts a kind of relation before it asserts anything else, and a reader who takes a ladder for a map of heights has been misled by the drawing rather than by the doctrine. Every figure here declares which of the six relations it draws and what it must not be read as claiming. Where one teaching needs more than one geometry, its drawings are gathered as projections of a single subject."
-      backdrop="crosssection"
+      backdrop="cutaway-of-tiered-stone-tower"
       position="center 45%"
     >
       {sel && (

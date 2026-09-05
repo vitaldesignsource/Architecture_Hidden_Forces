@@ -125,7 +125,7 @@ function Constellation() {
       name="The Constellation"
       title={<>The whole encyclopaedia, <span className="italic text-gold">as a sky</span></>}
       lede="Every entry is a star and every citation between two entries is a line: six hundred and fifty-three stars, three thousand lines. A star's brightness is how many entries cite it, so what you are looking at is where the doctrine's weight actually sits. The divisions gather into constellations because most entries cite their neighbours; the long lines between constellations are where one division reaches into another. Hover a star to read it and see its lines. Click to enter. Scroll to draw closer."
-      backdrop="startrails"
+      backdrop="star-trails-above-desert-wall"
       position="center 40%"
     >
       <ToolBand>

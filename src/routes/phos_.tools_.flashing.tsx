@@ -31,7 +31,7 @@ function Flashing() {
       name="Flashing Colours"
       title={<>The colour that will not <span className="italic text-gold">hold still</span></>}
       lede="Set a colour beside its opposite on the painter's wheel and the seam between them refuses to settle. The Hermetic Order of the Golden Dawn built a working practice on that instability — four scales of colour for the four worlds, talismans painted in one colour and lettered in its flash, elemental tablets whose every square carries its own opposite. Here are the tables, the demonstrations that show what the eye actually does, and a plain account of where the seeing ends and the claim begins."
-      backdrop="prismtable"
+      backdrop="prism-and-bowl-on-lit-stone-table"
       position="center 45%"
     >
       {/* ── the wheel ─────────────────────────────────────────────────── */}

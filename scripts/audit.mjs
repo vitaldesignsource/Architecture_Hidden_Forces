@@ -277,6 +277,12 @@ for (const m of src.matchAll(/className="([^"]*)">\s*\n\s*<Backdrop/g)) {
 }
 
 const referenced = new Set([...src.matchAll(/\/bg\/([a-z0-9-]+)\.webp/g)].map((m) => m[1]));
+// The ecology mounts by name rather than by path — `backdrop="name"` on a Band,
+// `backdrop: "name"` on a station, a province or a lexicon family — and the
+// component builds the path. Those are references too; without them a backdrop
+// only a Band uses is reported as unmounted, and a Band pointing at a file that
+// is not there passes.
+for (const m of src.matchAll(/\bbackdrop(?:=|:\s*)"([a-z][a-z0-9-]*)"/g)) referenced.add(m[1]);
 // Encyclopaedia front matter mounts backdrops too (`backdrop: name` in an entry,
 // intro, or coda), so those count as referenced — otherwise every image used
 // only by the Portal is reported here as unmounted.

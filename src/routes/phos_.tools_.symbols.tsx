@@ -30,7 +30,7 @@ function SymbolAtlas() {
       name="Symbol Atlas"
       title={<>The symbols of light, <span className="italic text-gold">drawn and read</span></>}
       lede={`${values.length} symbols recur through the traditions of light. Each is drawn below with its meaning in the system's own terms; choose one to see every entry that carries it. ${carried} are carried by written entries so far.`}
-      backdrop="keystone"
+      backdrop="keystone-set-in-lit-stone-vault"
     >
       <ToolBand>
         <Eyebrow>Vocabulary · {values.length} symbols</Eyebrow>
