@@ -257,7 +257,7 @@ function Nursery() {
       </Band>
 
       {/* ---- ontic weather, saturation and failed births ---- */}
-      <Band id="eco-n-weather" backdrop="abandoned-glasshouse-at-sunrise" opacity={0.2} position="center 50%">
+      <Band id="eco-n-weather" backdrop="salt-flat-polygons-under-passing-storm" opacity={0.2} position="center 55%">
         <Eyebrow>Ontic weather, morphal saturation and failed births</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Not every failed gestation <span className="italic text-gold">is a tragedy</span>

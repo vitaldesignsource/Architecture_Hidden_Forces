@@ -108,7 +108,7 @@ function Aquifer() {
   return (
     <EcologyFrame station={S}>
       {/* ---- another order of water ---- */}
-      <Band id="eco-a-order" backdrop="cave-mouth-light-on-still-water" opacity={0.2} position="center 50%">
+      <Band id="eco-a-order" backdrop="storm-water-sinking-through-cliff-strata" opacity={0.22} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Another order of water</Eyebrow>

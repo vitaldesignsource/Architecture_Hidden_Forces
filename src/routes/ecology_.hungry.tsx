@@ -558,7 +558,7 @@ function Hungry() {
       </Band>
 
       {/* ---- dissolution is not defeat ---- */}
-      <Band id="eco-hf-dissolution" backdrop="furnace-mouth-glowing-in-ravine" opacity={0.2} position="center 50%">
+      <Band id="eco-hf-dissolution" backdrop="river-flowing-through-ruined-turbine-hall" opacity={0.2} position="center 50%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Dissolution is not defeat</Eyebrow>

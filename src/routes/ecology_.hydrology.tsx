@@ -74,7 +74,7 @@ function Hydrology() {
   return (
     <EcologyFrame station={S}>
       {/* ---- the model ---- */}
-      <Band id="eco-h-model" backdrop="river-delta-braided-in-grey-silt" opacity={0.22} position="center 50%">
+      <Band id="eco-h-model" backdrop="dendrites-on-rock-above-worn-stream-channel" opacity={0.22} position="center 40%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>A metaphysical science, by analogy</Eyebrow>
@@ -306,7 +306,7 @@ function Hydrology() {
       </Band>
 
       {/* ---- sedimentation ---- */}
-      <Band id="eco-h-sedimentation" backdrop="rimstone-pools-in-limestone-cave" opacity={0.22} position="center 50%">
+      <Band id="eco-h-sedimentation" backdrop="steaming-travertine-terraces-at-alpine-sunrise" opacity={0.2} position="center 55%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Etheric sedimentation</Eyebrow>
