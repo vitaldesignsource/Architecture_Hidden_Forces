@@ -68,7 +68,7 @@ import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "
 import { Seal, type SealKey } from "@/components/diagrams/Seals";
 import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
-import { PetalRosette } from "@/components/PetalRosette";
+import { CentresLotus } from "@/components/diagrams/CentresLotus";
 import { SealBlock } from "@/components/SealBlock";
 import { MeanderBand } from "@/components/MeanderBand";
 import { Term, TermRegister, type TermData } from "@/components/Term";
@@ -3692,38 +3692,27 @@ function Index() {
               that this is a system rather than a list: the body is being described as an alphabet
               laid out along a spine.
             </p>
-            <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:grid-cols-7">
-              {[
-                { n: 4, s: "मूलाधार", tr: "Mūlādhāra", b: "लं", bt: "laṃ" },
-                { n: 6, s: "स्वाधिष्ठान", tr: "Svādhiṣṭhāna", b: "वं", bt: "vaṃ" },
-                { n: 10, s: "मणिपूर", tr: "Maṇipūra", b: "रं", bt: "raṃ" },
-                { n: 12, s: "अनाहत", tr: "Anāhata", b: "यं", bt: "yaṃ" },
-                { n: 16, s: "विशुद्ध", tr: "Viśuddha", b: "हं", bt: "haṃ" },
-                { n: 2, s: "आज्ञा", tr: "Ājñā", b: "ॐ", bt: "oṃ" },
-                { n: 1000, s: "सहस्रार", tr: "Sahasrāra", b: "", bt: "beyond the syllables" },
-              ].map((c) => (
-                <div key={c.tr} className="text-center">
-                  <PetalRosette
-                    n={c.n}
-                    bija={c.b || undefined}
-                    size={86}
-                    className="mx-auto text-gold"
-                    label={`${c.tr}, a lotus of ${c.n === 1000 ? "a thousand" : c.n} petals`}
-                  />
-                  <p className="mt-3 font-serif text-lg text-bone/90" lang="sa">{c.s}</p>
-                  <p className="mt-1 font-serif text-sm italic text-gold-dim">{c.tr}</p>
-                  <p className="mt-1 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
-                    {c.n === 1000 ? "a thousand" : `${c.n} petals`} · <span className="aoh-tr" lang="sa-Latn">{c.bt}</span>
-                  </p>
-                </div>
-              ))}
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              The colours are the text&rsquo;s own, and they are not a spectrum: crimson, vermilion,
+              the blue-black of a heavy rain cloud, the red of the bandhūka flower, smoky purple,
+              white. Each lotus also carries a figure in its pericarp — earth&rsquo;s square,
+              water&rsquo;s crescent, fire&rsquo;s triangle, air&rsquo;s hexagram, ether&rsquo;s
+              circle — so the elements are counted upward through the body and stop below the brow.
+              Select a centre to read the letters it holds.
+            </p>
+
+            <div className="mt-10">
+              <CentresLotus />
             </div>
+
             <p className="mt-8 max-w-3xl text-sm leading-relaxed text-bone/60">
-              The counts and the seed syllables are those of the Ṣaṭ-Cakra-Nirūpaṇa, written by
-              Pūrṇānanda in 1526 and translated by Woodroffe in 1918 — which is late, and is the
-              route by which nearly everything the modern world says about chakras arrived. Other
-              tantric systems count differently. The crown is drawn here as a fringe of
-              forty-eight because a thousand petals cannot be drawn honestly at this size.
+              The counts, the seed syllables, the petal letters, the colours and the pericarp
+              figures are those of the Ṣaṭ-Cakra-Nirūpaṇa, written by Pūrṇānanda in 1526 and
+              translated by Woodroffe in 1918 — which is late, and is the route by which nearly
+              everything the modern world says about chakras arrived. Other tantric systems count
+              differently. The crown is drawn here as a fringe of forty-eight because a thousand
+              petals cannot be drawn honestly at this size, and its letters are the same fifty over
+              again rather than a further alphabet.
             </p>
           </div>
 
