@@ -41,14 +41,17 @@ const angle = (i: number) => -90 + 60 * i;
 
 /** what each arc does to the node it reaches, in the band's own words; the lines after the first
  *  sit inside the loop and are for wide screens, where a phone shows the first line alone */
-const ARCS: { cw: boolean; lines: string[]; phone?: string }[] = [
-  { cw: true, lines: ["ATTENTION", "AND EMOTION"] },
+const ARCS: { cw: boolean; lines: string[]; phone?: string; bias?: number }[] = [
+  { cw: true, lines: ["ATTENTION", "AND EMOTION"], bias: -3 },
   { cw: true, lines: ["INTENSIFIES"] },
   { cw: false, lines: ["CHARGE"] },
-  { cw: false, lines: ["CONSEQUENCE"] },
+  { cw: false, lines: ["CONSEQUENCE"], bias: -3 },
   { cw: false, lines: ["ATTRACTS COMPATIBLE", "TEMPERAMENTS"], phone: "ATTRACTS" },
   { cw: true, lines: ["INHERIT POSTURES"], phone: "INHERIT" },
 ];
+/** A phrase is centred on its arc, so the two long ones would run into the word at the node they
+ *  reach — on a phone, where the lettering grows by --aoh-k and the wheel does not. `bias` swings
+ *  the whole label a few degrees back along the band, away from that word. */
 /** baseline radius of the j-th line of a phrase: the first outside the ring, the rest inside */
 const lineR = (cw: boolean, j: number) => (j === 0 ? (cw ? R + 4 : R + 11) : cw ? R - 2 - 9 * j : R + 5 - 9 * j);
 
@@ -120,13 +123,14 @@ export function FeedbackLoop() {
         <defs>
           {ARCS.map((a, i) => {
             const a0 = angle(i), a1 = angle(i + 1);
+            const b = a.bias ?? 0;
             return a.lines.map((_, j) => (
-              <path key={j} id={`aoh-fl-p${i}-${j}`} d={arc(a0 - 12, a1 + 12, lineR(a.cw, j), a.cw)} />
+              <path key={j} id={`aoh-fl-p${i}-${j}`} d={arc(a0 - 12 + b, a1 + 12 + b, lineR(a.cw, j), a.cw)} />
             ));
           })}
           {NODES.map((_, i) => {
             const cw = i === 0 || i === 1 || i === 5;
-            return <path key={i} id={`aoh-fl-w${i}`} d={arc(angle(i) - 40, angle(i) + 40, cw ? R + 20 : R + 27, cw)} />;
+            return <path key={i} id={`aoh-fl-w${i}`} d={arc(angle(i) - 40, angle(i) + 40, cw ? R + 28 : R + 35, cw)} />;
           })}
         </defs>
 

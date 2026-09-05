@@ -13,10 +13,10 @@ would throw the taper away; those are traced as an outline instead. An outline
 is simplified and then rebuilt as curves, with a real corner left sharp, so a
 curved edge does not arrive as a row of facets. Hence two modes:
 
-    python3 scripts/trace-sign.py design/ethers/<name>.webp                 # strokes
-    python3 scripts/trace-sign.py design/ethers/<name>.webp --mode fill     # outline
+    python3 scripts/trace-sign.py design/seals/<name>.webp                 # strokes
+    python3 scripts/trace-sign.py design/seals/<name>.webp --mode fill     # outline
 
-Prints the entries for src/components/diagrams/EtherSigns.tsx.
+Prints the entries for src/components/diagrams/Seals.tsx.
 Needs Pillow, which scripts/backdrops.mjs already requires.
 """
 from PIL import Image

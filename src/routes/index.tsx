@@ -65,7 +65,7 @@ import {
   OneLayerOfSeven,
 } from "@/components/diagrams";
 import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
-import { EtherSign, type EtherKey } from "@/components/diagrams/EtherSigns";
+import { Seal, type SealKey } from "@/components/diagrams/Seals";
 import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
 import { PetalRosette } from "@/components/PetalRosette";
@@ -787,7 +787,7 @@ function Index() {
                   className="grid gap-2 border-b border-border pb-6 sm:grid-cols-[1fr_1fr_1fr] sm:gap-6"
                 >
                   <div className="flex items-center gap-2.5 font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
-                    <EtherSign k={row.s} size={20} className="shrink-0 text-gold/70" decorative />
+                    <Seal k={row.s} size={20} className="shrink-0 text-gold/70" decorative />
                     {row.ether}
                   </div>
                   <div className="flex items-center gap-2.5 font-serif italic text-bone/85">
@@ -887,7 +887,7 @@ function Index() {
               {
                 n: "I",
                 greek: "Θερμότης",
-                sign: "warmth" as EtherKey,
+                sign: "warmth" as SealKey,
                 seal: { name: "The First Pulse", reading: "The ancestral concentric circles are kept, but each ring is opened at a progressively rotated point. The rings are successive intensifications of one germinal event, and their openings trace an invisible spiral of temporal unfolding. The dark centre is pre-formal potential; the outward pulse is birth. Unlike material Fire, which consumes and dissipates, Warmth Ether awakens from within and gives duration to becoming." },
                 translit: "Thermotēs",
                 english: "Warmth Ether",
@@ -926,7 +926,7 @@ function Index() {
               {
                 n: "II",
                 greek: "Φῶς",
-                sign: "light" as EtherKey,
+                sign: "light" as SealKey,
                 seal: { name: "The Mediating Ray", reading: "The single upper ray is undiminished luminous procession. The hollow central diamond is the receptive veil through which light becomes proportioned to the capacity of a form. After mediation the ray divides into two descending blades — differential reception, separation, formative illumination. The black interval between them is Necessary Shadow: not light’s enemy, but the distinction that makes revelation possible. The golden lambda remains visible within the lower half, now given a fuller metaphysical function." },
                 translit: "Phōs",
                 english: "Light Ether",
@@ -961,7 +961,7 @@ function Index() {
               {
                 n: "III",
                 greek: "Τόνος",
-                sign: "tone" as EtherKey,
+                sign: "tone" as SealKey,
                 seal: { name: "The Interval Wheel", reading: "The eight separate arms are discrete identities, and their measured black intervals matter equally: Tone Ether produces order through proportion, separation and relation. The curved movement expresses resonance and affinity; the silent central opening is the unstruck tone from which harmonic structure arises. Unlike Water’s continuous flow, Tone Ether articulates the field into distinguishable intervals, branches, cellular divisions and relational patterns." },
                 translit: "Tonos · Chemical Ether",
                 english: "Tone Ether",
@@ -996,7 +996,7 @@ function Index() {
               {
                 n: "IV",
                 greek: "Ζωή",
-                sign: "life" as EtherKey,
+                sign: "life" as SealKey,
                 seal: null as { name: string; reading: string } | null,
                 translit: "Zōē",
                 english: "Life Ether",
@@ -1036,7 +1036,7 @@ function Index() {
                         {e.n} · {e.english}
                       </p>
                       <h3 className="mt-3 flex items-center gap-3.5 font-serif text-3xl leading-none text-bone sm:text-4xl">
-                        <EtherSign k={e.sign} size={44} className="shrink-0 text-gold/65" decorative />
+                        <Seal k={e.sign} size={44} className="shrink-0 text-gold/65" decorative />
                         {e.greek}
                       </h3>
                       <p className="mt-3 font-serif text-lg italic text-gold/80">
@@ -1076,7 +1076,7 @@ function Index() {
                             <span lang="el" className="scr-greek">Σφραγίς</span> · The seal
                           </p>
                           <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-7">
-                            <EtherSign k={e.sign} size={72} className="shrink-0 text-gold/70" title={`${e.english} — ${e.seal.name}`} />
+                            <Seal k={e.sign} size={72} className="shrink-0 text-gold/70" title={`${e.english} — ${e.seal.name}`} />
                             <div className="min-w-0">
                               <p className="font-serif text-lg italic text-gold">{e.seal.name}</p>
                               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.seal.reading}</p>
@@ -9034,7 +9034,8 @@ function Index() {
           <Backdrop src="/bg/turf-roofed-colonnade-at-dusk.webp" opacity={0.26} position="center 45%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="flex items-center gap-3 font-label text-[10px] uppercase tracking-[0.3em] text-gold">
+            <Seal k="morphaither" size={22} className="shrink-0 text-gold/70" decorative />
             § XLI · Morphaithēr
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -9065,6 +9066,28 @@ function Index() {
 
           <div className="mt-24">
             <MorphaithericField />
+          </div>
+
+          <div className="mt-20 max-w-3xl border-t border-border pt-8">
+            <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+              <span lang="el" className="scr-greek">Σφραγίς</span> · The seal
+            </p>
+            <div className="mt-5 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+              <Seal k="morphaither" size={104} className="shrink-0 text-gold/70" title="Morphaithēr — the Morphic Loom" />
+              <div className="min-w-0">
+                <p className="font-serif text-xl italic text-gold">The Morphic Loom</p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Its distributed bands are the universal form-bearing field rather than a single
+                  object. The repeating chambers signify latent forms held within forms, while the
+                  open outer points show that Morphaithēr extends beyond any individual organism or
+                  boundary.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-bone/85">
+                  The empty central chamber is not a seed. It is a field-crossing from which
+                  localised Morphaithēric Seeds can condense.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="mt-24 max-w-3xl">
