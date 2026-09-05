@@ -1,3 +1,5 @@
+import { fs } from "./fig";
+
 /**
  * DifferentialReception — one force, three vessels, three manifestations.
  *
@@ -14,13 +16,13 @@ export function DifferentialReception() {
     { x: 330, k: "resistant", note: "a faint, deflected trace", out: [[6, 10]] },
   ];
   return (
-    <div className="mx-auto w-full max-w-[420px]">
-      <svg viewBox="0 0 400 250" className="h-auto w-full" role="img" aria-labelledby="aoh-dr-t">
+    <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[420px]">
+      <svg viewBox="0 0 400 264" className="h-auto w-full" role="img" aria-labelledby="aoh-dr-t">
         <title id="aoh-dr-t">
           One identical force descends into three vessels — open, saturated, resistant — and three
           different manifestations emerge beneath them.
         </title>
-        <text x={200} y={22} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={200} y={22} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           one force
         </text>
         <line x1={40} y1={34} x2={360} y2={34} stroke="var(--gold, #c9a227)" strokeOpacity={0.5} strokeWidth={0.8} />
@@ -47,14 +49,14 @@ export function DifferentialReception() {
                 <line x1={v.x - 22} y1={113} x2={v.x + 22} y2={113} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1} />
               </>
             )}
-            <text x={v.x} y={178} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.18em" }} fill="currentColor" fillOpacity={0.6}>
+            <text x={v.x} y={178} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.18em" }} fill="currentColor" fillOpacity={0.6}>
               {v.k}
             </text>
             {/* what emerges */}
             {v.out.map(([dx, len], i) => (
               <line key={i} x1={v.x + dx} y1={188} x2={v.x + dx * 1.4} y2={188 + len} stroke="var(--gold, #c9a227)" strokeOpacity={v.k === "resistant" ? 0.35 : 0.8} strokeWidth={v.k === "resistant" ? 0.7 : 1} strokeLinecap="round" />
             ))}
-            <text x={v.x} y={238} textAnchor="middle" className="font-serif" style={{ fontSize: 9.5 }} fill="currentColor" fillOpacity={0.75}>
+            <text x={v.x} y={v.k === "saturated" ? 254 : 238} textAnchor="middle" className="font-serif" style={fs(9.5)} fill="currentColor" fillOpacity={0.75}>
               {v.note}
             </text>
           </g>

@@ -1,3 +1,5 @@
+import { fs } from "./fig";
+
 /**
  * HydrologicalSequence — the healthy circulation as a ring, and the ways it
  * fails as dead ends leaving it.
@@ -7,23 +9,25 @@
  * pathologies are not stations. They are exits — obstruction leaving
  * channelling, and the chain it starts: stagnation, then leakage, then
  * flooding when the blocked current finds the wrong way out, then depletion
- * downstream of it all. A dead end is drawn as one.
+ * downstream of it all. A dead end is drawn as one: the chain drops away
+ * beneath the ring and stops at a bar.
  */
 const RING = ["Descent", "Reception", "Channelling", "Accumulation", "Saturation", "Overflow", "Transformation", "Release", "Return"];
 const EXITS = ["Obstruction", "Stagnation", "Leakage", "Flooding", "Depletion"];
 
 export function HydrologicalSequence() {
-  const W = 440, H = 400, cx = 200, cy = 200, R = 132;
+  const W = 600, H = 400, cx = 230, cy = 200, R = 132;
   const pos = (i: number) => {
     const a = -Math.PI / 2 + (i / RING.length) * 2 * Math.PI;
     return { x: cx + R * Math.cos(a), y: cy + R * Math.sin(a), a };
   };
   const pts = RING.map((_, i) => pos(i));
-  // the exit chain leaves at Channelling and walks away to the right
+  // the exit chain leaves at Channelling, ducks beneath its label, and walks away down and to the right
   const from = pts[2];
-  const chain = EXITS.map((_, i) => ({ x: from.x + 44 + i * 40, y: from.y - 6 + i * 22 }));
+  const chain = EXITS.map((_, i) => ({ x: from.x + 50 + i * 24, y: from.y + 34 + i * 30 }));
+  const last = chain[chain.length - 1];
   return (
-    <div className="mx-auto w-full max-w-[480px]">
+    <div className="aoh-fig mx-auto w-full max-w-[560px]">
       <style>{`
         .aoh-hs-flow { stroke-dasharray: 4 7; animation: aoh-hs-run 4s linear infinite; }
         @keyframes aoh-hs-run { to { stroke-dashoffset: -22 } }
@@ -44,34 +48,34 @@ export function HydrologicalSequence() {
           return (
             <g key={RING[i]}>
               <circle cx={p.x} cy={p.y} r={3.2} fill="var(--gold, #c9a227)" />
-              <text x={lx} y={ly + 3} textAnchor={anchor} className="font-serif" style={{ fontSize: 10.5 }} fill="currentColor" fillOpacity={0.9}>
+              <text x={lx} y={ly + 3} textAnchor={anchor} className="font-serif" style={fs(10.5)} fill="currentColor" fillOpacity={0.9}>
                 {RING[i]}
               </text>
             </g>
           );
         })}
-        <text x={cx} y={cy - 6} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={cy - 6} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           what returns
         </text>
-        <text x={cx} y={cy + 8} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={cy + 8} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           is received again
         </text>
         {/* the exit */}
-        <path d={`M ${from.x} ${from.y} C ${from.x + 24} ${from.y - 10}, ${chain[0].x - 14} ${chain[0].y}, ${chain[0].x} ${chain[0].y}`} fill="none" stroke="currentColor" strokeOpacity={0.4} strokeWidth={0.9} strokeDasharray="2 3" />
+        <path d={`M ${from.x} ${from.y} C ${from.x + 30} ${from.y + 4}, ${chain[0].x - 24} ${chain[0].y - 8}, ${chain[0].x} ${chain[0].y}`} fill="none" stroke="currentColor" strokeOpacity={0.4} strokeWidth={0.9} strokeDasharray="2 3" />
         {chain.map((c, i) => (
           <g key={EXITS[i]}>
             {i > 0 && (
               <line x1={chain[i - 1].x} y1={chain[i - 1].y} x2={c.x} y2={c.y} stroke="currentColor" strokeOpacity={0.35} strokeWidth={0.9} strokeDasharray="2 3" />
             )}
             <circle cx={c.x} cy={c.y} r={2.4} fill="none" stroke="currentColor" strokeOpacity={0.7} strokeWidth={0.9} />
-            <text x={c.x + 7} y={c.y + 3} className="font-serif italic" style={{ fontSize: 9.5 }} fill="currentColor" fillOpacity={0.6}>
+            <text x={c.x + 7} y={c.y + 3} className="font-serif italic" style={fs(9.5)} fill="currentColor" fillOpacity={0.6}>
               {EXITS[i]}
             </text>
           </g>
         ))}
         {/* the dead end */}
-        <line x1={chain[4].x + 52} y1={chain[4].y - 6} x2={chain[4].x + 52} y2={chain[4].y + 6} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.2} />
-        <text x={chain[4].x + 58} y={chain[4].y + 3} className="font-mono uppercase" style={{ fontSize: 6.5, letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>
+        <line x1={last.x - 7} y1={last.y + 14} x2={last.x + 7} y2={last.y + 14} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.2} />
+        <text x={last.x} y={last.y + 26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>
           no return
         </text>
       </svg>

@@ -1,3 +1,5 @@
+import { fs } from "./fig";
+
 import { useState } from "react";
 
 /**
@@ -21,8 +23,8 @@ export function EthericWatershed() {
     { k: "Confluence", at: [172, 134], d: "Currents meeting. Where two histories of movement become one current with both in it." },
     { k: "Threshold", at: [174, 166], d: "What regulates passage: a weir, a gate, a rite of entry. Nothing crosses without being changed in rate or measure." },
     { k: "Filter", at: [176, 194], d: "What modifies what passes through. Not a wall: a difference between what enters and what leaves." },
-    { k: "Reservoir", at: [174, 226], d: "What stores or concentrates influence against time — for later use, or, without an outlet, for stagnation." },
-    { k: "Dam", at: [220, 226], d: "What obstructs and accumulates. Some dams are made to hold; some are simply where the channel failed." },
+    { k: "Reservoir", at: [166, 226], d: "What stores or concentrates influence against time — for later use, or, without an outlet, for stagnation." },
+    { k: "Dam", at: [228, 226], d: "What obstructs and accumulates. Some dams are made to hold; some are simply where the channel failed." },
     { k: "Delta", at: [176, 276], d: "One current differentiating into many expressions as it slows and spreads. The Sap's delta is this figure." },
     { k: "Drought", at: [54, 176], d: "Insufficient formative nourishment: the channel is there and nothing moves in it." },
     { k: "Flood", at: [262, 150], d: "More influence than the structure can integrate. Overflow is not abundance; it is what a vessel could not take up." },
@@ -35,7 +37,7 @@ export function EthericWatershed() {
 
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] lg:items-center">
-      <div className="mx-auto w-full max-w-[380px]">
+      <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[380px]">
         <style>{`
           .aoh-ws-flow { stroke-dasharray: 4 7; animation: aoh-ws-run 3.6s linear infinite; }
           @keyframes aoh-ws-run { to { stroke-dashoffset: -22 } }
@@ -93,7 +95,7 @@ export function EthericWatershed() {
           {/* labels */}
           {F.map((f) => (
             <text key={f.k} x={f.at[0]} y={f.at[1]} textAnchor="middle" className="aoh-ws-h font-mono uppercase"
-                  style={{ fontSize: 6.6, letterSpacing: "0.14em" }} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
+                  style={{ ...fs(6.6), letterSpacing: "0.14em" }} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
                   onClick={() => setSel(on(f.k) ? null : f.k)}>
               {f.k}
             </text>

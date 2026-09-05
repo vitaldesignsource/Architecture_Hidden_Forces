@@ -696,3 +696,14 @@ a:hover > .aoh-crossmark, a:focus-visible > .aoh-crossmark { transform: translat
   .aoh-crossmark { transition: none; }
   a:hover > .aoh-crossmark, a:focus-visible > .aoh-crossmark { transform: none; }
 }
+
+/* Drawings letter themselves in user units and shrink with the figure, so on a
+   phone their labels go below legibility. A figure that carries .aoh-fig sizes
+   its lettering through --aoh-k (see components/diagrams/fig.ts), raised here
+   for narrow screens, and paints past its box instead of clipping the label
+   that grew. .aoh-fig-tight is for a drawing whose labels sit close. */
+.aoh-fig svg { overflow: visible; }
+@media (max-width: 640px) {
+  .aoh-fig { --aoh-k: 1.4; }
+  .aoh-fig-tight { --aoh-k: 1.25; }
+}

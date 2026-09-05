@@ -1,7 +1,9 @@
+import { fs } from "./fig";
+
 /**
  * SpiralOfBecoming — the circulation drawn as what it is: a helix, not a ring.
  *
- * Twelve stations are set along two full turns of a rising spiral, so that
+ * Twelve points are set along two full turns of a rising spiral, so that
  * the twelfth, "New formation", stands directly above the first,
  * "Morphaithēr" — same phase, one level on. The vertical tick between them is
  * the whole doctrine of the layer: the circulation returns to the station it
@@ -27,9 +29,9 @@ const STATIONS = [
   ["New formation", "one level on"],
 ] as const;
 
-const W = 420;
+const W = 480;
 const H = 560;
-const CX = 210;
+const CX = 240;
 const R = 118;
 const TOP = 70;
 const BOTTOM = 500;
@@ -57,14 +59,14 @@ export function SpiralOfBecoming() {
   const last = pts[pts.length - 1];
 
   return (
-    <div className="mx-auto w-full max-w-[460px]">
+    <div className="aoh-fig aoh-fig-tight mx-auto w-full max-w-[500px]">
       <style>{`
         .aoh-sp-mark { offset-rotate: 0deg; }
         @media (prefers-reduced-motion: reduce) { .aoh-sp-mark { display: none } }
       `}</style>
       <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-labelledby="aoh-sp-t">
         <title id="aoh-sp-t">
-          The circulation of formation drawn as a rising spiral of two turns, with twelve stations along
+          The circulation of formation drawn as a rising spiral of two turns, with twelve points along
           it from Morphaithēr to New formation, which stands directly above Morphaithēr one level up.
         </title>
         <defs>
@@ -81,7 +83,7 @@ export function SpiralOfBecoming() {
         ))}
         {/* the return that is not a return: first and last share a phase */}
         <line x1={first.x} y1={first.y - 8} x2={last.x} y2={last.y + 8} stroke="var(--gold, #c9a227)" strokeOpacity={0.5} strokeWidth={0.7} strokeDasharray="3 4" />
-        <text x={first.x + 10} y={(first.y + last.y) / 2 + 3} className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
+        <text x={first.x + 10} y={(first.y + last.y) / 2 + 3} className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
           not where it began
         </text>
         {/* stations */}
@@ -92,11 +94,11 @@ export function SpiralOfBecoming() {
           return (
             <g key={s[0]} opacity={front ? 1 : 0.55}>
               <circle cx={x} cy={y} r={i === 0 || i === pts.length - 1 ? 4.2 : 3} fill="var(--gold, #c9a227)" fillOpacity={front ? 0.95 : 0.6} />
-              <text x={lx} y={y + 3} textAnchor={right ? "start" : "end"} className="font-serif" style={{ fontSize: 11.5 }} fill="currentColor" fillOpacity={front ? 0.92 : 0.6}>
+              <text x={lx} y={y + 3} textAnchor={right ? "start" : "end"} className="font-serif" style={fs(11.5)} fill="currentColor" fillOpacity={front ? 0.92 : 0.6}>
                 {s[0]}
               </text>
               {s[1] && (
-                <text x={lx} y={y + 14} textAnchor={right ? "start" : "end"} className="font-mono uppercase" style={{ fontSize: 6.8, letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
+                <text x={lx} y={y + 14} textAnchor={right ? "start" : "end"} className="font-mono uppercase" style={{ ...fs(6.8), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
                   {s[1]}
                 </text>
               )}

@@ -1,3 +1,5 @@
+import { fs } from "./fig";
+
 /**
  * Spolia — the Ossuary drawn as what builders have always done.
  *
@@ -12,7 +14,7 @@
 export function Spolia() {
   const G = "var(--gold, #c9a227)";
   return (
-    <div className="mx-auto w-full max-w-[560px]">
+    <div className="aoh-fig mx-auto w-full max-w-[560px]">
       <svg viewBox="0 0 520 240" className="h-auto w-full" role="img" aria-labelledby="aoh-spo-t">
         <title id="aoh-spo-t">
           A ruined colonnade on the left with blocks missing; on the right a later wall built with those
@@ -22,7 +24,7 @@ export function Spolia() {
         <line x1={10} y1={200} x2={510} y2={200} stroke="currentColor" strokeOpacity={0.3} strokeWidth={0.8} />
         {/* the ruin */}
         <g>
-          <text x={120} y={26} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that failed</text>
+          <text x={120} y={26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that failed</text>
           {[50, 110, 170].map((x, i) => (
             <g key={x}>
               {/* drums, some present, some gone */}
@@ -46,10 +48,10 @@ export function Spolia() {
         {/* the arrow of reuse */}
         <path d="M 250 120 C 280 96, 300 96, 330 120" fill="none" stroke={G} strokeOpacity={0.5} strokeWidth={0.8} strokeDasharray="3 4" />
         <polygon points="326,114 334,121 325,124" fill={G} fillOpacity={0.6} />
-        <text x={290} y={92} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 6.5, letterSpacing: "0.16em" }} fill={G} fillOpacity={0.7}>quarried</text>
+        <text x={290} y={92} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.7}>quarried</text>
         {/* the newer wall */}
         <g>
-          <text x={415} y={26} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that inherits</text>
+          <text x={415} y={26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that inherits</text>
           {/* courses of a wall */}
           {[0, 1, 2, 3, 4].map((r) =>
             [0, 1, 2, 3].map((c) => {
@@ -63,7 +65,7 @@ export function Spolia() {
           )}
           {/* a drum on its side as a threshold, gold */}
           <ellipse cx={402} cy={198} rx={22} ry={6} fill="none" stroke={G} strokeOpacity={0.9} strokeWidth={0.9} />
-          <text x={415} y={224} textAnchor="middle" className="font-serif italic" style={{ fontSize: 9.5 }} fill="currentColor" fillOpacity={0.6}>the same stones, another architecture</text>
+          <text x={415} y={224} textAnchor="middle" className="font-serif italic" style={fs(9.5)} fill="currentColor" fillOpacity={0.6}>the same stones, another architecture</text>
         </g>
       </svg>
     </div>

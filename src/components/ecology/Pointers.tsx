@@ -90,8 +90,8 @@ export function Pointers({ arch = [], portal = [] }: { arch?: ArchId[]; portal?:
           <ul className="mt-4 space-y-2">
             {arch.map((id) => (
               <li key={id}>
-                <Link to="/" hash={id} className="group grid grid-cols-[3.4rem_1fr] gap-3 text-sm leading-relaxed text-bone/80 transition-colors hover:text-gold">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{ARCH[id].split(" · ")[0]}</span>
+                <Link to="/" hash={id} className="group grid grid-cols-[4.2rem_1fr] gap-3 text-sm leading-relaxed text-bone/80 transition-colors hover:text-gold">
+                  <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{ARCH[id].split(" · ")[0]}</span>
                   <span>{ARCH[id].split(" · ")[1]}</span>
                 </Link>
               </li>
@@ -108,8 +108,8 @@ export function Pointers({ arch = [], portal = [] }: { arch?: ArchId[]; portal?:
               return (
                 <li key={id}>
                   <Link to="/phos/$division/$entry" params={{ division: r.division, entry: r.slug }}
-                        className="group grid grid-cols-[3.4rem_1fr] gap-3 text-sm leading-relaxed text-bone/80 transition-colors hover:text-gold">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{r.numeral} {r.n}</span>
+                        className="group grid grid-cols-[4.2rem_1fr] gap-3 text-sm leading-relaxed text-bone/80 transition-colors hover:text-gold">
+                    <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{r.numeral} {r.n}</span>
                     <span>{r.title}</span>
                   </Link>
                 </li>

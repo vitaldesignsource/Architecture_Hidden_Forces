@@ -1,3 +1,5 @@
+import { fs } from "./fig";
+
 /**
  * OneCurrentManyExpressions — the Sap as a delta.
  *
@@ -13,7 +15,7 @@ const LEAVES = [
 ];
 
 export function OneCurrentManyExpressions() {
-  const W = 480, H = 300;
+  const W = 480, H = 344;
   const cx = W / 2;
   const xs = LEAVES.map((_, i) => 24 + (i * (W - 48)) / (LEAVES.length - 1));
   // three tiers of forking: 1 → 2 → 5 → 10
@@ -23,12 +25,12 @@ export function OneCurrentManyExpressions() {
   const curve = (x1: number, y1: number, x2: number, y2: number) =>
     `M ${x1} ${y1} C ${x1} ${(y1 + y2) / 2}, ${x2} ${(y1 + y2) / 2}, ${x2} ${y2}`;
   return (
-    <div className="mx-auto w-full max-w-[520px]">
+    <div className="aoh-fig mx-auto w-full max-w-[520px]">
       <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-labelledby="aoh-oc-t">
         <title id="aoh-oc-t">
           One descending current dividing by reception into ten expressions, from etheric vitality to meaning.
         </title>
-        <text x={cx} y={12} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={12} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           one according to procession
         </text>
         <line x1={cx} y1={Y0} x2={cx} y2={Y1} stroke="var(--gold, #c9a227)" strokeWidth={2} strokeOpacity={0.9} strokeLinecap="round" />
@@ -42,23 +44,27 @@ export function OneCurrentManyExpressions() {
           <path key={"c" + i} d={curve(tier3[Math.floor(i / 2)], Y3, x, Y4)} fill="none" stroke="var(--gold, #c9a227)" strokeWidth={0.8} strokeOpacity={0.5} />
         ))}
         {[Y1, Y2, Y3].map((y, i) => (
-          <text key={y} x={W - 6} y={y + 3} textAnchor="end" className="font-mono uppercase" style={{ fontSize: 6.5, letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.35}>
+          <text key={y} x={W - 6} y={y + 3} textAnchor="end" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.35}>
             {["the medium", "the condition", "the vessel"][i]}
           </text>
         ))}
-        {xs.map((x, i) => (
-          <g key={LEAVES[i]}>
-            <circle cx={x} cy={Y4} r={2.2} fill="var(--gold, #c9a227)" fillOpacity={0.9} />
-            <text x={x} y={Y4 + 16} textAnchor="middle" className="font-serif" style={{ fontSize: 8.5 }} fill="currentColor" fillOpacity={0.8}
-                  transform={`rotate(${i % 2 ? 0 : 0} ${x} ${Y4 + 16})`}>
-              {LEAVES[i].split(" ")[0]}
-            </text>
-            <text x={x} y={Y4 + 27} textAnchor="middle" className="font-serif" style={{ fontSize: 8.5 }} fill="currentColor" fillOpacity={0.8}>
-              {LEAVES[i].split(" ").slice(1).join(" ")}
-            </text>
-          </g>
-        ))}
-        <text x={cx} y={H - 2} textAnchor="middle" className="font-mono uppercase" style={{ fontSize: 7.5, letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        {xs.map((x, i) => {
+          // alternate rows, so ten names have twice the room and stay legible when the figure is narrow
+          const drop = i % 2 ? 26 : 0;
+          return (
+            <g key={LEAVES[i]}>
+              <circle cx={x} cy={Y4} r={2.2} fill="var(--gold, #c9a227)" fillOpacity={0.9} />
+              {drop > 0 && <line x1={x} y1={Y4 + 4} x2={x} y2={Y4 + drop + 4} stroke="currentColor" strokeOpacity={0.25} strokeWidth={0.6} />}
+              <text x={x} y={Y4 + drop + 16} textAnchor="middle" className="font-serif" style={fs(8.5)} fill="currentColor" fillOpacity={0.8}>
+                {LEAVES[i].split(" ")[0]}
+              </text>
+              <text x={x} y={Y4 + drop + 27} textAnchor="middle" className="font-serif" style={fs(8.5)} fill="currentColor" fillOpacity={0.8}>
+                {LEAVES[i].split(" ").slice(1).join(" ")}
+              </text>
+            </g>
+          );
+        })}
+        <text x={cx} y={H - 2} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           many according to reception
         </text>
       </svg>
