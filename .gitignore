@@ -9,3 +9,4 @@ public/sitemap.xml
 # written by scripts/backdrops.mjs at build time, from the sources beside them
 public/bg/w800/
 public/bg/w1320/
+dist-*/
