@@ -172,7 +172,7 @@ function Ossuary() {
       </Band>
 
       {/* ---- ancestry of form ---- */}
-      <Band id="eco-o-ancestry" backdrop="ruined-arch-in-rain-lit-court" opacity={0.2} position="center 50%">
+      <Band id="eco-o-ancestry" backdrop="sapling-growing-from-split-apple-tree" opacity={0.22} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Ancestry of form</Eyebrow>

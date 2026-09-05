@@ -215,7 +215,7 @@ function Sea() {
       </Band>
 
       {/* ---- confluence and the birth of effects ---- */}
-      <Band id="eco-sea-estuary" backdrop="reed-beds-and-still-water-at-dawn" opacity={0.2} position="center 55%">
+      <Band id="eco-sea-estuary" backdrop="confluence-of-blue-and-gold-rivers" opacity={0.2} position="center 55%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Confluence and the birth of effects</Eyebrow>

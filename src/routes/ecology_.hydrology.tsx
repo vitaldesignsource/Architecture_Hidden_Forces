@@ -262,7 +262,7 @@ function Hydrology() {
       </Band>
 
       {/* ---- erosion ---- */}
-      <Band id="eco-h-erosion" backdrop="folded-rock-strata-above-water" opacity={0.24} position="center 50%">
+      <Band id="eco-h-erosion" backdrop="water-channel-through-temple-ruins-at-sunrise" opacity={0.22} position="center 55%">
         <Eyebrow>Etheric erosion</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           A canyon is the memory of water <span className="italic text-gold">written into stone</span>

@@ -160,7 +160,7 @@ function Morphaither() {
       </Band>
 
       {/* ---- tattvic weather ---- */}
-      <Band id="eco-m-weather" backdrop="night-terrace-above-cloud-sea" opacity={0.2} position="center 50%" portrait>
+      <Band id="eco-m-weather" backdrop="standing-stone-in-pool-under-sandstorm" opacity={0.2} position="center 45%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Tattvic weather</Eyebrow>
@@ -194,7 +194,7 @@ function Morphaither() {
       </Band>
 
       {/* ---- differential reception ---- */}
-      <Band id="eco-m-reception">
+      <Band id="eco-m-reception" backdrop="seedling-in-gorge-under-falling-light" opacity={0.22} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Differential reception</Eyebrow>
