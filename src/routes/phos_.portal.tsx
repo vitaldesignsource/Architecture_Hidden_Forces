@@ -73,7 +73,7 @@ function Portal() {
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="animate-rise text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
               Phōs · The Portal
             </p>
             <h1 className="mx-auto mt-10 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl">
@@ -88,7 +88,7 @@ function Portal() {
               <Link to="/" className="text-gold/90 underline decoration-gold/35 underline-offset-4 transition-colors hover:text-gold hover:decoration-gold">The Architecture of Hidden Forces</Link>,
               with every entry labelled by <span className="italic text-gold">the kind of claim it makes</span>.
             </p>
-            <p className="mx-auto mt-6 max-w-3xl font-mono text-[10px] uppercase leading-loose tracking-[0.3em] text-gold-dim text-balance">
+            <p className="mx-auto mt-6 max-w-3xl font-label text-[10px] uppercase leading-loose tracking-[0.3em] text-gold-dim text-balance">
               <span className="whitespace-nowrap text-bone/55">read by ·</span>{" "}
               {["tradition", "quality", "plane", "operation", "symbol", "text", "period"].map((f, i, a) => (
                 <span key={f}>
@@ -96,7 +96,7 @@ function Portal() {
                 </span>
               ))}
             </p>
-            <p className="mx-auto mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="mx-auto mt-8 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               {all.written} of {TOTAL} entries written · {begun} of {DIVISIONS.length} divisions begun
             </p>
           </div>
@@ -107,7 +107,7 @@ function Portal() {
       <section id="movement" className="relative isolate border-t border-border py-24">
         <SectionGlyph delay={-140} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             Κίνησις · The Central Movement
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -120,7 +120,7 @@ function Portal() {
           <ol className="mt-12 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
             {MOVEMENT.map((m, i) => (
               <li key={m.k} className="border border-border p-5 transition-colors hover:border-gold/40">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                   {String(i + 1).padStart(2, "0")}
                 </p>
                 <p className="mt-2 font-serif text-2xl text-bone">{m.k}</p>
@@ -135,7 +135,7 @@ function Portal() {
       <section id="entrance" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/figure-before-gate-of-white-light.webp" opacity={0.22} position="center 55%" scrim={0.3} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Portal Entrance</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Portal Entrance</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Ten entries that <span className="italic text-gold">open the work</span>
           </h2>
@@ -149,7 +149,7 @@ function Portal() {
               Light is not merely what appears. Light is the relation through which appearance
               becomes possible.
             </p>
-            <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+            <footer className="mt-3 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
               — The threshold statement
             </footer>
           </blockquote>
@@ -161,7 +161,7 @@ function Portal() {
       <section id="divisions" className="relative isolate border-t border-border py-24">
         <SectionGlyph delay={-320} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">The Divisions</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">The Divisions</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Twenty-one divisions, <span className="italic text-gold">{TOTAL - entrance.length} entries</span>
           </h2>
@@ -180,12 +180,12 @@ function Portal() {
                   params={{ division: d.id }}
                   className="group grid grid-cols-[3.5rem_1fr] items-baseline gap-4 border-b border-border py-5 transition-colors hover:border-gold/40"
                 >
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{d.numeral}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{d.numeral}</span>
                   <span className="min-w-0">
                     <span className="block font-serif text-lg text-bone transition-colors group-hover:text-gold">
                       {d.title}
                     </span>
-                    <span className="mt-1 flex items-baseline justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+                    <span className="mt-1 flex items-baseline justify-between gap-4 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
                       <span>{p.total} entries</span>
                       <span className={p.written ? "text-gold-dim" : ""}>
                         {p.written ? `${p.written} written` : "forthcoming"}
@@ -206,7 +206,7 @@ function Portal() {
       <section id="browse" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/dark-hall-with-charted-stone-floor.webp" opacity={0.26} position="center 50%" scrim={0.3} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Browse</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Browse</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Seven ways <span className="italic text-gold">across</span> the divisions
           </h2>
@@ -220,7 +220,7 @@ function Portal() {
               <Link
                 key={f.key}
                 to="/phos/browse"
-                className="border border-border px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold"
+                className="border border-border px-4 py-2 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold"
               >
                 {f.name}
                 {f.controlled && <span className="ml-2 text-gold-dim">{f.values.length}</span>}
@@ -234,7 +234,7 @@ function Portal() {
       <section id="labels" className="relative isolate border-t border-border py-24">
         <SectionGlyph delay={-505} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Evidence Labels</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Evidence Labels</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Seven kinds of claim, <span className="italic text-gold">never mixed unmarked</span>
           </h2>
@@ -252,7 +252,7 @@ function Portal() {
             ))}
           </div>
 
-          <p className="mt-14 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+          <p className="mt-14 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
             And a degree of confidence
           </p>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -278,7 +278,7 @@ function Portal() {
       <section id="instruments" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/mountain-observatory-above-cloud.webp" opacity={0.3} position="center 40%" scrim={0.25} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · Seven of Ten Live</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Instruments · Seven of Ten Live</p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             What the facets will <span className="italic text-gold">drive</span>
           </h2>
@@ -294,13 +294,13 @@ function Portal() {
                 <Link key={t.k} to={to} className="group border border-gold/40 p-5 transition-colors hover:border-gold hover:bg-gold/5">
                   <p className="font-serif text-xl text-bone transition-colors group-hover:text-gold">{t.k}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                  <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">open →</p>
+                  <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold">open →</p>
                 </Link>
               ) : (
                 <div key={t.k} className="border border-border p-5 opacity-80">
                   <p className="font-serif text-xl text-bone">{t.k}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                  <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">forthcoming</p>
+                  <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">forthcoming</p>
                 </div>
               );
             })}
@@ -331,7 +331,7 @@ function EntryRows({ entries }: { entries: ReturnType<typeof entriesOf> }) {
             e.written ? "" : "opacity-60"
           }`}
         >
-          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+          <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
             {String(e.n).padStart(2, "0")}
           </span>
           <span className="min-w-0">
@@ -340,7 +340,7 @@ function EntryRows({ entries }: { entries: ReturnType<typeof entriesOf> }) {
               {e.written ? (
                 <LabelChips labels={e.meta?.labels ?? []} size="xs" />
               ) : (
-                <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">forthcoming</span>
+                <span className="font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">forthcoming</span>
               )}
             </span>
             {e.meta?.summary && (

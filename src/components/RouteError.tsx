@@ -24,7 +24,7 @@ export function RouteError({ error }: ErrorComponentProps) {
   return (
     <div className="flex min-h-screen items-center bg-void font-sans text-bone">
       <div className="mx-auto w-full max-w-3xl px-6 py-24">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+        <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
           {stale ? "A newer version was published" : "This page did not open"}
         </p>
         <h1 className="mt-6 font-serif text-4xl leading-tight sm:text-5xl">
@@ -46,19 +46,19 @@ export function RouteError({ error }: ErrorComponentProps) {
           <button
             type="button"
             onClick={() => window.location.reload()}
-            className="border border-gold px-5 py-2.5 font-mono text-[10px] uppercase tracking-[0.2em] text-gold transition-colors hover:bg-gold/10"
+            className="border border-gold px-5 py-2.5 font-label text-[10px] uppercase tracking-[0.2em] text-gold transition-colors hover:bg-gold/10"
           >
             Reload
           </button>
           <Link
             to="/phos/portal"
-            className="border border-border px-5 py-2.5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-gold/50 hover:text-gold-dim"
+            className="border border-border px-5 py-2.5 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-gold/50 hover:text-gold-dim"
           >
             The Portal
           </Link>
           <Link
             to="/"
-            className="border border-border px-5 py-2.5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-gold/50 hover:text-gold-dim"
+            className="border border-border px-5 py-2.5 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:border-gold/50 hover:text-gold-dim"
           >
             The Architecture
           </Link>
@@ -66,7 +66,7 @@ export function RouteError({ error }: ErrorComponentProps) {
 
         {detail && (
           <details className="mt-12 max-w-2xl border-t border-border pt-6">
-            <summary className="cursor-pointer font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            <summary className="cursor-pointer font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
               What the browser reported
             </summary>
             <p className="mt-4 break-words font-mono text-xs leading-relaxed text-bone/50">{detail}</p>

@@ -112,7 +112,7 @@ export function TattvaCard({ k, width = 112, className = "" }: { k: TattvaKey; w
       </div>
       <figcaption className="mt-3 text-center">
         <span className="block font-serif text-base text-bone">{t.name}</span>
-        <span className="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">{t.element} · {t.colour.replace(", shown as indigo", "")} {t.form}</span>
+        <span className="mt-0.5 block font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">{t.element} · {t.colour.replace(", shown as indigo", "")} {t.form}</span>
       </figcaption>
     </figure>
   );

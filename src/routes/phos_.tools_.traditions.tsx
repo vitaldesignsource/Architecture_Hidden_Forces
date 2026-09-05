@@ -63,7 +63,7 @@ function CompareTraditions() {
                 key={v.slug}
                 type="button"
                 onClick={() => toggle(v.slug)}
-                className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors ${
+                className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors ${
                   on ? "border-gold bg-gold/10 text-gold" : v.count ? "border-gold/40 text-bone/85 hover:border-gold/70 hover:text-gold" : "border-border text-muted-foreground opacity-60"
                 }`}
               >
@@ -83,7 +83,7 @@ function CompareTraditions() {
               return (
                 <div key={v.slug} className="min-w-0">
                   <Eyebrow>{v.value}</Eyebrow>
-                  <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <p className="mt-2 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {rows.length} {rows.length === 1 ? "entry" : "entries"} ·{" "}
                     <Link to="/phos/browse/$facet/$value" params={{ facet: "tradition", value: v.slug }} className="hover:text-gold">
                       in browse →
@@ -92,7 +92,7 @@ function CompareTraditions() {
                   <div className="mt-6">
                     {groupByDivision(rows).map(({ d, rows: r }, gi) => (
                       <div key={d.id} className={gi ? "mt-8" : ""}>
-                        <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground">
+                        <p className="font-label text-[9px] uppercase tracking-[0.25em] text-muted-foreground">
                           <Link to="/phos/$division" params={{ division: d.id }} className="hover:text-gold">{divisionLabel(d)}</Link>
                         </p>
                         <div className="mt-2 space-y-px">
@@ -134,7 +134,7 @@ function CompareTraditions() {
           {shared.length > 0 && (
             <div className="mt-8">
               <EntryRows entries={shared} />
-              <p className="mt-6 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+              <p className="mt-6 font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
                 Each row carries <LabelChips labels={["Comparative Parallel"]} size="xs" /> where the entry itself makes the comparison.
               </p>
             </div>

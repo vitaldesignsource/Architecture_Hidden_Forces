@@ -72,7 +72,7 @@ function Crypt() {
         </div>
         <div className="mt-16">
           <StrataOfConsequence />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             causal · the present surface is laid on a shape the past left
           </p>
         </div>
@@ -226,19 +226,19 @@ function Crypt() {
         </h2>
         <div className="mt-12 grid gap-px border border-gold/30 bg-border/60 sm:grid-cols-2">
           <div className="bg-void p-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-gold">The Ossuary</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.35em] text-gold">The Ossuary</p>
             <p className="mt-6 font-serif text-3xl leading-tight text-bone">remembers architecture.</p>
-            <p className="mt-8 font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">It asks</p>
+            <p className="mt-8 font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">It asks</p>
             <p className="mt-3 font-serif text-xl italic text-bone/90">What pattern remains available?</p>
-            <p className="mt-8 font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Its concern</p>
+            <p className="mt-8 font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Its concern</p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Morphological inheritance. A structure that can be read, quarried, re-set, reused — whether or not anyone does.</p>
           </div>
           <div className="bg-void p-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-gold">The Crypt</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.35em] text-gold">The Crypt</p>
             <p className="mt-6 font-serif text-3xl leading-tight text-bone">remembers consequence.</p>
-            <p className="mt-8 font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">It asks</p>
+            <p className="mt-8 font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">It asks</p>
             <p className="mt-3 font-serif text-xl italic text-bone/90">How is existence different because this happened?</p>
-            <p className="mt-8 font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Its concern</p>
+            <p className="mt-8 font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Its concern</p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Ontological retention. Not available for anything; simply the case, and the condition of everything after.</p>
           </div>
         </div>

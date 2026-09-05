@@ -78,13 +78,13 @@ export function Symbolon() {
                 stroke="var(--gold)" strokeWidth="1.4" opacity={fitted ? 0.6 : 0}
                 clipPath="url(#aoh-sy-disc)" />
 
-          <text x="86" y="203" textAnchor="middle" className="font-mono" fontSize="7.5"
+          <text x="86" y="203" textAnchor="middle" className="font-label" fontSize="7.5"
                 letterSpacing="1.5" fill="var(--muted-foreground)">VISIBLE FORM</text>
-          <text x="254" y="203" textAnchor="middle" className="font-mono" fontSize="7.5"
+          <text x="254" y="203" textAnchor="middle" className="font-label" fontSize="7.5"
                 letterSpacing="1.5" fill={fitted ? "var(--gold)" : "var(--muted-foreground)"}>
             {fitted ? "FITS" : "THE LEVEL IT FITS"}
           </text>
-          <text x="170" y="226" textAnchor="middle" className="font-mono" fontSize="7.5"
+          <text x="170" y="226" textAnchor="middle" className="font-label" fontSize="7.5"
                 letterSpacing="1.5" fill="var(--gold-dim)" opacity={fitted ? 1 : 0.35}>
             CONSCIOUSNESS RECOGNISES THE FIT
           </text>
@@ -92,7 +92,7 @@ export function Symbolon() {
       </div>
 
       <div className="min-h-[15rem]">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           One half, seven locks — the solar symbolon
         </p>
         <div className="mt-4 flex flex-wrap gap-2">

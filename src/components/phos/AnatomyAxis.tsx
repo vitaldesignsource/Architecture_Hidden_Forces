@@ -26,10 +26,10 @@ export function AnatomyAxis({ current, onSelect }: { current: string; onSelect: 
             <rect x="0" y="-24" width="340" height="48" fill="transparent" />
             {on && <circle cx={X} r="17" fill="var(--gold)" fillOpacity="0.18" />}
             <circle cx={X} r={on ? 8 : 5} fill={on ? "var(--gold)" : "var(--void)"} stroke="var(--gold)" strokeWidth="1.2" strokeOpacity={on ? 1 : 0.7} />
-            <text x={X + 26} y="-2" fontSize="14" fontFamily="var(--font-serif)" fill={on ? "var(--gold)" : "var(--bone)"} fontStyle={on ? "italic" : "normal"}>
+            <text x={X + 26} y="-2" fontSize="14" fontFamily="var(--serif-face)" fill={on ? "var(--gold)" : "var(--bone)"} fontStyle={on ? "italic" : "normal"}>
               {s.name}
             </text>
-            <text x={X + 26} y="14" fontSize="8.5" fontFamily="var(--font-mono)" letterSpacing="1.4" fill="var(--muted-foreground)">
+            <text x={X + 26} y="14" fontSize="8.5" fontFamily="var(--label-face)" letterSpacing="1.4" fill="var(--muted-foreground)">
               {s.planes.slice(0, 4).join(" · ").toUpperCase()}{s.planes.length > 4 ? " · …" : ""}
             </text>
           </g>

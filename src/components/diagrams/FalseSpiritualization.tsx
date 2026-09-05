@@ -68,7 +68,7 @@ export function FalseSpiritualization() {
                   <circle cx={x} cy={y} r={on ? 17 : 14} fill="var(--void)" stroke="var(--bone)"
                           strokeOpacity={on ? 0.95 : sel !== null ? 0.2 : 0.45}
                           strokeDasharray="4 3" strokeWidth={on ? 1.6 : 1} />
-                  <text x={x} y={y + 3.5} textAnchor="middle" className="font-mono" fontSize="8.5"
+                  <text x={x} y={y + 3.5} textAnchor="middle" className="font-label" fontSize="8.5"
                         fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                         opacity={sel !== null && !on ? 0.35 : 1}>{i + 1}</text>
                 </g>
@@ -78,14 +78,14 @@ export function FalseSpiritualization() {
 
           <circle cx={C} cy={C} r="42" fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity={sel === null ? 0.75 : 0.4} strokeWidth="1.2" />
-          <text x={C} y={C - 8} textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y={C - 8} textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="0.9" fill="var(--gold)" opacity="0.9">MATTER</text>
-          <text x={C} y={C + 2} textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y={C + 2} textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="0.9" fill="var(--gold)" opacity="0.9">AS ITSELF</text>
-          <text x={C} y={C + 14} textAnchor="middle" className="font-mono" fontSize="5.8"
+          <text x={C} y={C + 14} textAnchor="middle" className="font-label" fontSize="5.8"
                 letterSpacing="0.7" fill="var(--muted-foreground)">PARTICIPATING</text>
 
-          <text x={C} y="344" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="344" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             NOT THE OPPOSITE OF THE WORK — ITS RESEMBLANCE
           </text>
@@ -95,7 +95,7 @@ export function FalseSpiritualization() {
       <div className="min-h-[15rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {sel! + 1} · {cur.k}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>

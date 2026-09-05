@@ -62,7 +62,7 @@ export function OneLayerOfSeven() {
                  role="button" tabIndex={0} aria-pressed={on} aria-label={l.k}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
                 <rect x="0" y={l.y - 13} width={X + 14} height="26" fill="transparent" />
-                <text x={X - 12} y={l.y + 3} textAnchor="end" className="font-mono" fontSize="6.4"
+                <text x={X - 12} y={l.y + 3} textAnchor="end" className="font-label" fontSize="6.4"
                       letterSpacing="0.7"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel !== null && !on ? 0.3 : 1}>
@@ -82,10 +82,10 @@ export function OneLayerOfSeven() {
 
           <circle cx={CX} cy={CY} r="15" fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity="0.85" strokeWidth="1.3" />
-          <text x={CX} y={CY + 3} textAnchor="middle" className="font-mono" fontSize="6"
+          <text x={CX} y={CY + 3} textAnchor="middle" className="font-label" fontSize="6"
                 letterSpacing="0.8" fill="var(--gold)">MOMENT</text>
 
-          <text x="170" y="322" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="170" y="322" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             ONE LAYER OF THE FIELD — NOT THE WHOLE CAUSE
           </text>
@@ -95,7 +95,7 @@ export function OneLayerOfSeven() {
       <div className="min-h-[13rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k}{cur.mapped ? " · the layer this section maps" : ""}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>

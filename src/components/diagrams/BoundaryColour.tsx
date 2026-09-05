@@ -41,8 +41,8 @@ export function BoundaryColour() {
           <circle cx="95" cy="84" r={38 + t * 4} fill={warm} />
           <circle cx="95" cy="84" r={52 + t * 10} fill={warm} opacity={0.12 + t * 0.2} />
           <rect x="12" y="14" width="166" height="140" fill="var(--bone)" opacity={t * 0.22} />
-          <text x="95" y="172" textAnchor="middle" className="font-mono" fontSize="6.6" letterSpacing="1.1" fill="var(--gold-dim)">LIGHT THROUGH A TURBID MEDIUM</text>
-          <text x="95" y="183" textAnchor="middle" className="font-mono" fontSize="6.2" letterSpacing="1" fill="var(--muted-foreground)">the warm pole · yellow → red</text>
+          <text x="95" y="172" textAnchor="middle" className="font-label" fontSize="6.6" letterSpacing="1.1" fill="var(--gold-dim)">LIGHT THROUGH A TURBID MEDIUM</text>
+          <text x="95" y="183" textAnchor="middle" className="font-label" fontSize="6.2" letterSpacing="1" fill="var(--muted-foreground)">the warm pole · yellow → red</text>
 
           {/* darkness through the medium, lit */}
           <rect x="202" y="14" width="166" height="140" fill="var(--bone)" opacity="0.86" />
@@ -50,23 +50,23 @@ export function BoundaryColour() {
           <circle cx="285" cy="84" r={52 + t * 10} fill={cool} opacity={0.14 + t * 0.2} />
           <rect x="202" y="14" width="166" height="140" fill="var(--bone)" opacity={t * 0.18} />
           <rect x="202" y="14" width="166" height="140" fill="none" stroke="var(--border)" />
-          <text x="285" y="172" textAnchor="middle" className="font-mono" fontSize="6.6" letterSpacing="1.1" fill="var(--gold-dim)">DARKNESS THROUGH A LIT MEDIUM</text>
-          <text x="285" y="183" textAnchor="middle" className="font-mono" fontSize="6.2" letterSpacing="1" fill="var(--muted-foreground)">the cool pole · violet → blue</text>
+          <text x="285" y="172" textAnchor="middle" className="font-label" fontSize="6.6" letterSpacing="1.1" fill="var(--gold-dim)">DARKNESS THROUGH A LIT MEDIUM</text>
+          <text x="285" y="183" textAnchor="middle" className="font-label" fontSize="6.2" letterSpacing="1" fill="var(--muted-foreground)">the cool pole · violet → blue</text>
 
-          <text x="190" y="204" textAnchor="middle" className="font-mono" fontSize="6.2" letterSpacing="1" fill="var(--gold)" opacity="0.9">
+          <text x="190" y="204" textAnchor="middle" className="font-label" fontSize="6.2" letterSpacing="1" fill="var(--gold)" opacity="0.9">
             {readout}
           </text>
         </svg>
         <input type="range" min={0} max={1} step={0.005} value={t} aria-label="Turbidity of the medium"
                onChange={(e) => setT(parseFloat(e.target.value))}
                className="mt-3 w-full accent-[var(--gold)]" />
-        <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+        <p className="mt-2 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           Turbidity of the medium — clear at the left, opaque at the right
         </p>
       </div>
 
       <div className="min-h-[13rem]">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           The primal phenomenon
         </p>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">

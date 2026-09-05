@@ -78,7 +78,7 @@ export function LadderOfLights() {
                     stroke={i === 3 ? "var(--bone)" : "var(--gold)"}
                     strokeOpacity={on(i) ? 1 : sel !== null ? 0.2 : 0.5}
                     strokeDasharray={i === 3 ? "2 4" : undefined} strokeWidth={on(i) ? 1.6 : 1} />
-              <text x={X0 + 14} y={yOf(i) + 22} className="font-mono" fontSize="7.4" letterSpacing="1.2"
+              <text x={X0 + 14} y={yOf(i) + 22} className="font-label" fontSize="7.4" letterSpacing="1.2"
                     fill={on(i) ? "var(--gold)" : "var(--muted-foreground)"}
                     opacity={sel !== null && !on(i) ? 0.35 : 1}>{t.ar.toUpperCase()}</text>
               <text x={X0 + 14} y={yOf(i) + 41} fontFamily="EB Garamond, serif" fontSize="12.5" fontStyle="italic"
@@ -88,16 +88,16 @@ export function LadderOfLights() {
 
           {/* illumination descends */}
           <line x1="22" y1={top} x2="22" y2={bottom} stroke="var(--gold)" strokeOpacity="0.7" strokeWidth="1" markerEnd="url(#aoh-ll-down)" />
-          <text transform={`translate(12 ${(top + bottom) / 2}) rotate(-90)`} textAnchor="middle" className="font-mono"
+          <text transform={`translate(12 ${(top + bottom) / 2}) rotate(-90)`} textAnchor="middle" className="font-label"
                 fontSize="6.4" letterSpacing="1.2" fill="var(--gold-dim)">ISHRĀQ · ILLUMINATION</text>
 
           {/* longing ascends */}
           <line x1="318" y1={bottom} x2="318" y2={top} stroke="var(--bone)" strokeOpacity="0.5" strokeWidth="1"
                 strokeDasharray="3 3" markerEnd="url(#aoh-ll-up)" />
-          <text transform={`translate(330 ${(top + bottom) / 2}) rotate(90)`} textAnchor="middle" className="font-mono"
+          <text transform={`translate(330 ${(top + bottom) / 2}) rotate(90)`} textAnchor="middle" className="font-label"
                 fontSize="6.4" letterSpacing="1.2" fill="var(--bone)" opacity="0.6">SHAWQ · LONGING</text>
 
-          <text x="170" y="310" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="170" y="310" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             ONE LIGHT, THINNING — NOT FOUR KINDS OF THING
           </text>
@@ -107,12 +107,12 @@ export function LadderOfLights() {
       <div className="min-h-[14rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.ar} · {cur.k}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
             <p className="mt-5 border-l-2 border-bone/30 pl-4 text-sm leading-relaxed text-bone/75">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/60">How it knows · </span>
+              <span className="font-label text-[10px] uppercase tracking-[0.2em] text-bone/60">How it knows · </span>
               {cur.knows}
             </p>
           </>

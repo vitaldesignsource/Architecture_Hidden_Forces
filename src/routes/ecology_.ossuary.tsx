@@ -88,7 +88,7 @@ function Ossuary() {
         </div>
         <div className="mt-16">
           <Spolia />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             analogical · the gold blocks are the same blocks
           </p>
         </div>

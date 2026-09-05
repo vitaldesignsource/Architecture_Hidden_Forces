@@ -126,7 +126,7 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
       </svg>
 
       {!compact && (
-        <div className="absolute right-3 top-3 flex gap-1 font-mono text-[10px] uppercase tracking-[0.12em]">
+        <div className="absolute right-3 top-3 flex gap-1 font-label text-[10px] uppercase tracking-[0.12em]">
           <button onClick={() => vb.zoom(0.7)} aria-label="Zoom in" className="border border-border bg-void/70 px-2.5 py-1 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">+</button>
           <button onClick={() => vb.zoom(1.45)} aria-label="Zoom out" className="border border-border bg-void/70 px-2.5 py-1 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">−</button>
           <button onClick={vb.reset} className="border border-border bg-void/70 px-2.5 py-1 text-muted-foreground backdrop-blur hover:border-gold/60 hover:text-gold">Whole sheet</button>
@@ -140,12 +140,12 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
             {tipMark.spans.slice(0, 6).map((s) => (
               <li key={s.id} className={`text-xs leading-snug ${s.id === (hov ?? sel) ? "text-gold" : "text-bone/75"}`}>
                 <span className="font-serif">{s.label}</span>
-                <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">{when(s)}</span>
+                <span className="ml-2 font-label text-[9px] uppercase tracking-[0.15em] text-gold-dim">{when(s)}</span>
               </li>
             ))}
-            {tipMark.spans.length > 6 && <li className="font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">and {tipMark.spans.length - 6} more</li>}
+            {tipMark.spans.length > 6 && <li className="font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">and {tipMark.spans.length - 6} more</li>}
           </ul>
-          {!compact && <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">click to keep</p>}
+          {!compact && <p className="mt-2 font-label text-[9px] uppercase tracking-[0.15em] text-gold-dim">click to keep</p>}
         </div>
       )}
     </div>

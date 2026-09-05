@@ -34,7 +34,7 @@ export function TraditionsAtlas({ names }: { names: string[] }) {
 
   return (
     <div data-traditions-atlas>
-      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
+      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
         {groups.map((g) => (
           <span key={g.id} className="flex items-center gap-2">
             <i className={`inline-block h-2.5 w-2.5 rounded-full ${g.cls === "t-a" ? "bg-gold" : g.cls === "t-b" ? "bg-bone" : "border border-gold"}`} />
@@ -52,7 +52,7 @@ export function TraditionsAtlas({ names }: { names: string[] }) {
       <div className="mt-8">
         <AtlasTimeline spans={laned} lanes={names} window={win} onWindow={setWin} hov={hov} year={year} hovPlace={hovPlace} onHover={setHov} onYear={setYear} />
       </div>
-      <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+      <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
         <Link to="/phos/tools/atlas" search={{}} className="hover:text-gold">The Atlas, whole →</Link>
       </p>
     </div>

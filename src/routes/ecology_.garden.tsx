@@ -189,7 +189,7 @@ function Garden() {
         <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <CounterfeitBloom />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               symbolic · what the petals say, and what the root admits
             </p>
           </div>
@@ -229,7 +229,7 @@ function Garden() {
         </h2>
         <div className="mt-12">
           <SixSpecies />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             symbolic · six glyphs; not six kinds of lie
           </p>
         </div>

@@ -65,7 +65,7 @@ export function ThreeTreasures() {
           {/* the relation the section does NOT name */}
           <line x1={P.Jing[0] + 22} y1={P.Jing[1] - 16} x2={P.Shen[0] - 26} y2={P.Shen[1] + 24}
                 stroke="var(--bone)" strokeOpacity="0.18" strokeDasharray="2 8" strokeWidth="1" />
-          <text x="104" y="146" className="font-mono" fontSize="6.4" letterSpacing="0.8"
+          <text x="104" y="146" className="font-label" fontSize="6.4" letterSpacing="0.8"
                 fill="var(--muted-foreground)" opacity="0.65"
                 transform="rotate(-56 104 146)">NO DIRECT PATH</text>
 
@@ -100,14 +100,14 @@ export function ThreeTreasures() {
                         strokeDasharray={withheld ? "3 5" : "none"} strokeWidth="1.3" />
                 <text x={x} y={y + 7} textAnchor="middle" className="font-serif" fontSize="21"
                       fill="var(--gold)" fillOpacity={withheld ? 0.2 : 1}>{n.glyph}</text>
-                <text x={x} y={y + 45} textAnchor="middle" className="font-mono" fontSize="7.5"
+                <text x={x} y={y + 45} textAnchor="middle" className="font-label" fontSize="7.5"
                       letterSpacing="1.4" fill={withheld ? "var(--bone)" : "var(--muted-foreground)"}
                       opacity={withheld ? 0.45 : 1}>{n.k.toUpperCase()}</text>
               </g>
             );
           })}
 
-          <text x="180" y="308" textAnchor="middle" className="font-mono" fontSize="6.6"
+          <text x="180" y="308" textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="1.2" fill="var(--muted-foreground)" opacity="0.8">
             {out ? `WITHHOLDING ${out.toUpperCase()}` : "FOUR RELATIONS — AND ONE THAT DOES NOT EXIST"}
           </text>
@@ -116,7 +116,7 @@ export function ThreeTreasures() {
         <div className="mt-3 flex justify-center gap-2">
           {(["ascending", "descending"] as const).map((d) => (
             <button key={d} onClick={() => setDir(d)} aria-pressed={dir === d}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 dir === d ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
               {d}
             </button>
@@ -127,7 +127,7 @@ export function ThreeTreasures() {
       <div className="min-h-[15rem]">
         {out ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-bone/70">
               Withholding {out}
             </p>
             <div className="mt-4 space-y-3">
@@ -143,7 +143,7 @@ export function ThreeTreasures() {
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {dir === "ascending"
                 ? "Ascending · stored capacity becomes activity, activity becomes awareness"
                 : "Descending · vision directs circulation, circulation reorganises essence"}
@@ -151,7 +151,7 @@ export function ThreeTreasures() {
             <div className="mt-4 space-y-px">
               {EDGES.filter((e) => (dir === "ascending" ? e.up : !e.up)).map((e) => (
                 <div key={e.verb} className="grid grid-cols-[8.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">
                     {e.from} {e.verb} {e.to}
                   </span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{e.note}</span>

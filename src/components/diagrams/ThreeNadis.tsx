@@ -67,7 +67,7 @@ export function ThreeNadis() {
               <circle cx={MID} cy={y} r="13" fill="var(--void)" stroke="var(--gold)"
                       strokeOpacity="0.5" strokeWidth="0.9" />
               <circle cx={MID} cy={y} r="3" fill="var(--gold)" fillOpacity="0.55" />
-              <text x={MID + 26} y={y + 3} className="font-mono" fontSize="7"
+              <text x={MID + 26} y={y + 3} className="font-label" fontSize="7"
                     letterSpacing="1.2" fill="var(--muted-foreground)">
                 {["I", "II", "III", "IV", "V", "VI"][i]}
               </text>
@@ -91,10 +91,10 @@ export function ThreeNadis() {
               }}
             />
           ))}
-          <text x={MID} y={568} textAnchor="middle" className="font-mono" fontSize="7.5"
+          <text x={MID} y={568} textAnchor="middle" className="font-label" fontSize="7.5"
                 letterSpacing="2" fill="var(--muted-foreground)">SIX NODES</text>
         </svg>
-        <div className="mt-3 flex flex-wrap justify-center gap-4 font-mono text-[9px] uppercase tracking-[0.18em]">
+        <div className="mt-3 flex flex-wrap justify-center gap-4 font-label text-[9px] uppercase tracking-[0.18em]">
           {ch.map((c, i) => (
             <button key={c.k} type="button" onClick={() => setSel(sel === i ? null : i)}
               aria-pressed={sel === i}
@@ -108,7 +108,7 @@ export function ThreeNadis() {
       <div className="min-h-[14rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.z} · {cur.k} — {cur.t}
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>

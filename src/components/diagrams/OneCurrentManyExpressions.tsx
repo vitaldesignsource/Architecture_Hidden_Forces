@@ -30,7 +30,7 @@ export function OneCurrentManyExpressions() {
         <title id="aoh-oc-t">
           One descending current dividing by reception into ten expressions, from etheric vitality to meaning.
         </title>
-        <text x={cx} y={12} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={12} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           one according to procession
         </text>
         <line x1={cx} y1={Y0} x2={cx} y2={Y1} stroke="var(--gold, #c9a227)" strokeWidth={2} strokeOpacity={0.9} strokeLinecap="round" />
@@ -44,7 +44,7 @@ export function OneCurrentManyExpressions() {
           <path key={"c" + i} d={curve(tier3[Math.floor(i / 2)], Y3, x, Y4)} fill="none" stroke="var(--gold, #c9a227)" strokeWidth={0.8} strokeOpacity={0.5} />
         ))}
         {[Y1, Y2, Y3].map((y, i) => (
-          <text key={y} x={W - 6} y={y + 3} textAnchor="end" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.35}>
+          <text key={y} x={W - 6} y={y + 3} textAnchor="end" className="font-label uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.35}>
             {["the medium", "the condition", "the vessel"][i]}
           </text>
         ))}
@@ -64,7 +64,7 @@ export function OneCurrentManyExpressions() {
             </g>
           );
         })}
-        <text x={cx} y={H - 2} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={H - 2} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           many according to reception
         </text>
       </svg>

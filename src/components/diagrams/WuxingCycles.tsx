@@ -125,7 +125,7 @@ export function WuxingCycles() {
                       fill={on || isGen ? "var(--gold)" : "var(--bone)"} fillOpacity={on ? 1 : 0.78}>
                   {e.z}
                 </text>
-                <text x={x} y={y + 45} textAnchor="middle" className="font-mono" fontSize="8"
+                <text x={x} y={y + 45} textAnchor="middle" className="font-label" fontSize="8"
                       letterSpacing="1.6" fill="var(--muted-foreground)">
                   {e.n.toUpperCase()}
                 </text>
@@ -133,7 +133,7 @@ export function WuxingCycles() {
             );
           })}
         </svg>
-        <div className="mt-3 flex items-center justify-center gap-6 font-mono text-[9px] uppercase tracking-[0.18em]">
+        <div className="mt-3 flex items-center justify-center gap-6 font-label text-[9px] uppercase tracking-[0.18em]">
           <span className="flex items-center gap-2 text-gold-dim">
             <span className="inline-block h-px w-6 bg-gold/70" /> generating
           </span>
@@ -146,13 +146,13 @@ export function WuxingCycles() {
       <div className="min-h-[13rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.z} · {cur.n}
             </p>
             <p className="mt-3 font-serif text-2xl italic leading-tight text-bone">{cur.d}</p>
             <div className="mt-6 space-y-4">
               <div className="border-l border-gold/50 pl-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Generates {ph[genOf(sel!)].n}
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
@@ -160,7 +160,7 @@ export function WuxingCycles() {
                 </p>
               </div>
               <div className="border-l border-dashed border-muted-foreground/60 pl-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                   Regulates {ph[regOf(sel!)].n}
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">

@@ -57,7 +57,7 @@ export function TheInterval() {
                       fillOpacity={on ? 0.09 : 0.022} stroke="var(--gold)"
                       strokeOpacity={on ? 1 : sel !== null ? 0.18 : 0.5}
                       strokeWidth={on ? 1.7 : 1} />
-                <text x={X0 + i * 8 + 14} y={y + 24} className="font-mono" fontSize="8.4"
+                <text x={X0 + i * 8 + 14} y={y + 24} className="font-label" fontSize="8.4"
                       letterSpacing="1.1" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel !== null && !on ? 0.3 : 1}>{s.k.toUpperCase()}</text>
               </g>
@@ -82,7 +82,7 @@ export function TheInterval() {
             );
           })}
 
-          <text x="170" y="328" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="170" y="328" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             THE GAPS ARE THE SUBJECT — NOT THE STEPS
           </text>
@@ -92,12 +92,12 @@ export function TheInterval() {
       <div className="min-h-[13rem]">
         {step ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{step.k}</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{step.k}</p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{step.d}</p>
           </>
         ) : gap ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-bone/70">
               The interval · {gap.k}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">{gap.cost}</p>

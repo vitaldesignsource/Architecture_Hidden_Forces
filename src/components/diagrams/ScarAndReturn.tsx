@@ -44,11 +44,11 @@ export function ScarAndReturn() {
           </animateMotion>
         </circle>
         {/* labels */}
-        <text x={150} y={12} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.6), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.6}>a hungry form</text>
-        <text x={16} y={46} className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>the waterline</text>
-        <text x={200} y={132} className="font-mono uppercase" style={{ ...fs(6.6), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.8}>the scar</text>
+        <text x={150} y={12} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.6), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.6}>a hungry form</text>
+        <text x={16} y={46} className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>the waterline</text>
+        <text x={200} y={132} className="font-label uppercase" style={{ ...fs(6.6), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.8}>the scar</text>
         <text x={150} y={196} textAnchor="middle" className="font-serif italic" style={fs(9)} fill="currentColor" fillOpacity={0.6}>each pass deepens the channel</text>
-        <text x={150} y={212} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>descend · gather · rise · repeat</text>
+        <text x={150} y={212} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>descend · gather · rise · repeat</text>
       </svg>
     </div>
   );

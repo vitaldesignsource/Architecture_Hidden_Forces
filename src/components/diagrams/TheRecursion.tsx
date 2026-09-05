@@ -79,7 +79,7 @@ export function TheRecursion() {
                 <circle cx={x as number} cy={y as number} r="7" fill="var(--void)"
                         stroke="var(--gold)" strokeOpacity="0.9" strokeWidth="1.3" />
                 <text x={(x as number) + (label === "FIELD" ? -12 : 13)} y={(y as number) + 3}
-                      textAnchor={label === "FIELD" ? "end" : "start"} className="font-mono"
+                      textAnchor={label === "FIELD" ? "end" : "start"} className="font-label"
                       fontSize="7" letterSpacing="1" fill="var(--gold)" opacity="0.95">
                   {label}
                 </text>
@@ -98,7 +98,7 @@ export function TheRecursion() {
                 <circle cx={x} cy={y} r={on ? 13 : 10} fill="var(--void)"
                         stroke={n.down ? "var(--gold)" : "var(--bone)"}
                         strokeOpacity={on ? 1 : sel ? 0.22 : 0.7} strokeWidth={on ? 1.7 : 1.1} />
-                <text x={x} y={y + 3} textAnchor="middle" className="font-mono" fontSize="7.4"
+                <text x={x} y={y + 3} textAnchor="middle" className="font-label" fontSize="7.4"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.35 : 1}>
                   {n.down ? i + 1 : i - DOWN.length + 1}
@@ -107,14 +107,14 @@ export function TheRecursion() {
             );
           })}
 
-          <text x="86" y="176" textAnchor="middle" className="font-mono" fontSize="6"
+          <text x="56" y="176" textAnchor="middle" className="font-label" fontSize="6"
                 letterSpacing="0.9" fill="var(--gold)" opacity={sel && !onDown ? 0.2 : 0.65}
-                transform="rotate(-84 86 176)">WHAT PASSAGE COSTS</text>
-          <text x="284" y="164" textAnchor="middle" className="font-mono" fontSize="6"
+                transform="rotate(-84 56 176)">WHAT PASSAGE COSTS</text>
+          <text x="284" y="164" textAnchor="middle" className="font-label" fontSize="6"
                 letterSpacing="0.9" fill="var(--bone)" opacity={sel && onDown ? 0.15 : 0.6}
                 transform="rotate(84 284 164)">WHAT FORM GIVES BACK</text>
 
-          <text x="168" y="308" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="168" y="308" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             IT DOES NOT RETURN TO THE SAME FIELD
           </text>
@@ -124,7 +124,7 @@ export function TheRecursion() {
       <div className="min-h-[14rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {onDown ? "Descending · what passage costs" : "Ascending · what a form gives back"}
             </p>
             <p className="mt-3 font-serif text-xl text-gold">{cur.k}</p>

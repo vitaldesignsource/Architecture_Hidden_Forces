@@ -94,7 +94,7 @@ function EntryPage() {
           {bd && <Backdrop src={`/bg/${bd}.webp`} opacity={0.3} position={meta?.position ?? "center 50%"} fill />}
           <div className="grain" />
           <div className="relative mx-auto max-w-6xl px-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
               <Link to="/phos/$division" params={{ division: d.id }} className="hover:underline">
                 {divisionLabel(d)}
               </Link>{" "}
@@ -111,7 +111,7 @@ function EntryPage() {
               <blockquote className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
                 <p className="font-serif text-2xl leading-relaxed text-bone/90">{meta.epigraph}</p>
                 {meta.attribution && (
-                  <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                  <footer className="mt-3 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                     — {meta.attribution}
                   </footer>
                 )}
@@ -127,7 +127,7 @@ function EntryPage() {
               <EntryBody body={body} />
             ) : (
               <div className="max-w-3xl">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Forthcoming</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Forthcoming</p>
                 <p className="mt-6 font-serif text-2xl leading-relaxed text-bone/90">
                   This entry is registered in the outline and not yet written.
                 </p>
@@ -147,7 +147,7 @@ function EntryPage() {
 
             {meta && Object.values(meta.facets).some((v) => v.length) && (
               <div className="mt-16 border-t border-border pt-8">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Facets</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Facets</p>
                 <div className="mt-4">
                   <FacetLines facets={meta.facets} />
                 </div>
@@ -156,7 +156,7 @@ function EntryPage() {
 
             {related.length > 0 && (
               <div className="mt-16 border-t border-border pt-8">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Related entries</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Related entries</p>
                 <div className="mt-4 grid gap-x-12 gap-y-px lg:grid-cols-2">
                   {related.map((r) => (
                     <Link
@@ -165,7 +165,7 @@ function EntryPage() {
                       params={{ division: r.division.id, entry: r.slug }}
                       className={`group grid grid-cols-[6rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40 ${r.written ? "" : "opacity-60"}`}
                     >
-                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                      <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                         {r.division.numeral || "Portal"} · {String(r.n).padStart(2, "0")}
                       </span>
                       <span className="min-w-0">
@@ -182,7 +182,7 @@ function EntryPage() {
 
             {cited.length > 0 && (
               <div className="mt-16 border-t border-border pt-8">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Cited by</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Cited by</p>
                 <div className="mt-4 grid gap-x-12 gap-y-px lg:grid-cols-2">
                   {cited.map((r) => (
                     <Link
@@ -191,7 +191,7 @@ function EntryPage() {
                       params={{ division: r.division.id, entry: r.slug }}
                       className={`group grid grid-cols-[6rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40 ${r.written ? "" : "opacity-60"}`}
                     >
-                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                      <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                         {r.division.numeral || "Portal"} · {String(r.n).padStart(2, "0")}
                       </span>
                       <span className="min-w-0">
@@ -215,23 +215,23 @@ function EntryPage() {
             <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
               {prev ? (
                 <Link to="/phos/$division/$entry" params={{ division: d.id, entry: prev.slug }} className="group" aria-keyshortcuts="ArrowLeft [">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {String(prev.n).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {String(prev.n).padStart(2, "0")}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{prev.title}</span>
                 </Link>
               ) : (
                 <Link to="/phos/$division" params={{ division: d.id }} className="group" aria-keyshortcuts="ArrowLeft [">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(d)}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(d)}</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{d.title}</span>
                 </Link>
               )}
               {next ? (
                 <Link to="/phos/$division/$entry" params={{ division: d.id, entry: next.slug }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{String(next.n).padStart(2, "0")} →</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{String(next.n).padStart(2, "0")} →</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{next.title}</span>
                 </Link>
               ) : (
                 <Link to="/phos/$division" params={{ division: d.id }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(d)} →</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(d)} →</span>
                   <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">Back to the division</span>
                 </Link>
               )}

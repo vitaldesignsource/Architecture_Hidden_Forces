@@ -33,19 +33,19 @@ export function TurbidMedium() {
             className="h-28 w-28 rounded-full"
             style={{ background: rgb(through), boxShadow: `0 0 90px 30px ${rgb(through)}33` }}
           />
-          <p className="absolute bottom-3 left-3 font-mono text-[9px] uppercase tracking-[0.15em] text-bone/60">
+          <p className="absolute bottom-3 left-3 font-label text-[9px] uppercase tracking-[0.15em] text-bone/60">
             light seen through the medium
           </p>
         </div>
         <div className="relative flex h-52 items-center justify-center overflow-hidden border border-border" style={{ background: rgb(scattered) }}>
           <div className="h-28 w-28 rounded-full" style={{ background: "#050506" }} />
-          <p className="absolute bottom-3 left-3 font-mono text-[9px] uppercase tracking-[0.15em] text-black/60">
+          <p className="absolute bottom-3 left-3 font-label text-[9px] uppercase tracking-[0.15em] text-black/60">
             darkness seen through the lit medium
           </p>
         </div>
       </div>
       <label className="mt-5 block max-w-md">
-        <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+        <span className="font-label text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
           turbidity · {(t * 100).toFixed(0)}
         </span>
         <input

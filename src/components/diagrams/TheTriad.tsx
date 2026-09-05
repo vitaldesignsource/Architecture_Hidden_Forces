@@ -72,19 +72,19 @@ export function TheTriad() {
                         strokeDasharray={merc ? "5 4" : undefined} />
                 <text x={MID} y={n.y + 5} textAnchor="middle" className="font-serif" fontSize="15"
                       fill="var(--gold)" fillOpacity={on ? 1 : 0.8}>{n.z}</text>
-                <text x={MID + 44} y={n.y + 2} className="font-mono" fontSize="7.5" letterSpacing="1.5"
+                <text x={MID + 44} y={n.y + 2} className="font-label" fontSize="7.5" letterSpacing="1.5"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}>{n.k.toUpperCase()}</text>
-                <text x={MID + 44} y={n.y + 13} className="font-mono" fontSize="6.5" letterSpacing="1.1"
+                <text x={MID + 44} y={n.y + 13} className="font-label" fontSize="6.5" letterSpacing="1.1"
                       fill="var(--muted-foreground)">{n.role.toUpperCase()}</text>
               </g>
             );
           })}
-          <text x={MID} y={322} textAnchor="middle" className="font-mono" fontSize="7"
+          <text x={MID} y={322} textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="2" fill="var(--muted-foreground)">
             {dir === "coagula" ? "COAGULA · TOWARD FIXATION" : "SOLVE · TOWARD LOOSENING"}
           </text>
         </svg>
-        <div className="mt-3 flex justify-center gap-5 font-mono text-[9px] uppercase tracking-[0.18em]">
+        <div className="mt-3 flex justify-center gap-5 font-label text-[9px] uppercase tracking-[0.18em]">
           {(["coagula", "solve"] as const).map((d) => (
             <button key={d} type="button" onClick={() => setDir(d)} aria-pressed={dir === d}
               className={`px-2 py-2 transition-colors ${dir === d ? "text-gold" : "text-muted-foreground hover:text-gold"}`}>
@@ -97,11 +97,11 @@ export function TheTriad() {
       <div className="min-h-[12rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.z} · {cur.k} — {cur.role}
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
-            <p className="mt-4 border-t border-border pt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 border-t border-border pt-4 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
               {cur.w}
             </p>
           </>

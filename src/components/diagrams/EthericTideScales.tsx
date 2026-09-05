@@ -68,7 +68,7 @@ export function EthericTideScales() {
                       stroke={on ? "var(--gold)" : "var(--muted-foreground)"}
                       strokeOpacity={on ? 1 : sel !== null ? 0.2 : 0.62}
                       strokeWidth={on ? 1.7 : 1.1} strokeLinecap="round" />
-                <text x={X0} y={t.y - 21} className="font-mono" fontSize="6.6" letterSpacing="1"
+                <text x={X0} y={t.y - 21} className="font-label" fontSize="6.6" letterSpacing="1"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel !== null && !on ? 0.35 : 1}>
                   {t.k.toUpperCase()}
@@ -77,7 +77,7 @@ export function EthericTideScales() {
             );
           })}
 
-          <text x="172" y="312" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="172" y="312" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             LESS A BATTERY THAN A TIDAL ECOLOGY
           </text>
@@ -87,7 +87,7 @@ export function EthericTideScales() {
       <div className="min-h-[14rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k} · {cur.a} ↔ {cur.b}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>

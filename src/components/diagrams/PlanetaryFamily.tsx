@@ -65,7 +65,7 @@ export function PlanetaryFamily() {
             }`}
           >
             <span className="font-serif text-xl">{f.g}</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em]">{f.n}</span>
+            <span className="font-label text-[10px] uppercase tracking-[0.25em]">{f.n}</span>
           </button>
         ))}
       </div>
@@ -86,7 +86,7 @@ export function PlanetaryFamily() {
             style={{ animationDelay: `${(i * 70).toFixed(0)}ms` }}
             className="aoh-pf-row grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-4 sm:grid-cols-[7rem_minmax(0,16rem)_1fr] sm:gap-6"
           >
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+            <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
               {level}
             </span>
             <span className={`font-serif text-lg ${i === 0 ? "text-gold" : "text-bone/90"}`}>
@@ -107,7 +107,7 @@ export function PlanetaryFamily() {
       </p>
 
       <div className="mt-10 border-t border-border pt-6">
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+        <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           Awaiting their chains
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

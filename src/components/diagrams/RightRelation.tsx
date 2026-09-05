@@ -84,7 +84,7 @@ export function RightRelation() {
                    onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(sel === g.k ? null : g.k); } }}>
                   <circle cx={x2} cy={y2} r={on ? 13 : 11} fill="var(--void)" stroke="var(--bone)"
                           strokeOpacity={on ? 0.9 : 0.4} strokeWidth="1" />
-                  <text x={x2} y={y2 + 3.5} textAnchor="middle" className="font-mono" fontSize="8.5"
+                  <text x={x2} y={y2 + 3.5} textAnchor="middle" className="font-label" fontSize="8.5"
                         fill={on ? "var(--bone)" : "var(--muted-foreground)"}>{g.fails.length}</text>
                 </g>
               </g>
@@ -102,9 +102,9 @@ export function RightRelation() {
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : s.k); } }}>
                 <circle cx={x} cy={y} r={on ? 22 : 18} fill="var(--void)" stroke="var(--gold)"
                         strokeOpacity={on ? 1 : 0.65} strokeWidth={on ? 1.8 : 1.2} />
-                <text x={x} y={y + 3.5} textAnchor="middle" className="font-mono" fontSize="9"
+                <text x={x} y={y + 3.5} textAnchor="middle" className="font-label" fontSize="9"
                       fill="var(--gold)" fillOpacity={on ? 1 : 0.8}>{STAGES.indexOf(s) + 1}</text>
-                <text x={x} y={below ? y + 36 : y - 28} textAnchor="middle" className="font-mono"
+                <text x={x} y={below ? y + 36 : y - 28} textAnchor="middle" className="font-label"
                       fontSize="7" letterSpacing="1.2"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}>{label}</text>
               </g>
@@ -114,12 +114,12 @@ export function RightRelation() {
           {/* the hinge */}
           <circle cx={C} cy={C} r="34" fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity="0.3" strokeDasharray="3 5" strokeWidth="0.9" />
-          <text x={C} y={C - 2} textAnchor="middle" className="font-mono" fontSize="7.5"
+          <text x={C} y={C - 2} textAnchor="middle" className="font-label" fontSize="7.5"
                 letterSpacing="1.3" fill="var(--gold)" fillOpacity="0.85">DISCERNMENT</text>
-          <text x={C} y={C + 11} textAnchor="middle" className="font-mono" fontSize="6.2"
+          <text x={C} y={C + 11} textAnchor="middle" className="font-label" fontSize="6.2"
                 letterSpacing="0.9" fill="var(--muted-foreground)">AT EVERY GATE</text>
 
-          <text x={C} y="332" textAnchor="middle" className="font-mono" fontSize="6.6"
+          <text x={C} y="332" textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.8">
             NOT FOUR AUTOMATIC STEPS — ELEVEN WAYS OUT
           </text>
@@ -129,21 +129,21 @@ export function RightRelation() {
       <div className="min-h-[16rem]">
         {stage ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {STAGES.indexOf(stage) + 1} · {stage.k}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{stage.d}</p>
           </>
         ) : gate ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-bone/70">
               {gate.k} — {gate.fails.length} ways this transition fails
             </p>
             <div className="mt-4 space-y-px">
               {gate.fails.map((f) => (
                 <button key={f.n} onClick={() => setSel(f.n)}
                   className="grid w-full grid-cols-[1fr] gap-1 border-b border-border py-3 text-left transition-colors hover:border-gold/40">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{f.n}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{f.n}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{f.d}</span>
                 </button>
               ))}
@@ -151,7 +151,7 @@ export function RightRelation() {
           </>
         ) : fail ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-bone/70">
               Distortion · {fail.n}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">{fail.d}</p>

@@ -47,7 +47,7 @@ function BlockView({ b, lead }: { b: Block; lead: boolean }) {
       );
     case "h2":
       return (
-        <p className="mt-16 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+        <p className="mt-16 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
           <InlineView c={b.c} />
         </p>
       );
@@ -66,7 +66,7 @@ function BlockView({ b, lead }: { b: Block; lead: boolean }) {
             </p>
           ))}
           {b.cite && (
-            <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+            <footer className="mt-3 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
               — <InlineView c={b.cite} />
             </footer>
           )}
@@ -88,7 +88,7 @@ function BlockView({ b, lead }: { b: Block; lead: boolean }) {
         <ol className="mt-6 max-w-3xl space-y-3 text-base leading-relaxed text-muted-foreground">
           {b.items.map((it, i) => (
             <li key={i} className="grid grid-cols-[2rem_1fr] gap-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim pt-1">
+              <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim pt-1">
                 {String(b.start + i).padStart(2, "0")}
               </span>
               <span><InlineView c={it} /></span>
@@ -126,7 +126,7 @@ function InlineNode({ n }: { n: Inline }): ReactNode {
     case "strong":
       return <span className="text-bone/90"><InlineView c={n.c} /></span>;
     case "code":
-      return <span className="font-mono text-[0.85em] text-gold-dim">{n.v}</span>;
+      return <span className="font-label text-[0.85em] text-gold-dim">{n.v}</span>;
     case "link":
       return <SmartLink href={n.href}><InlineView c={n.c} /></SmartLink>;
     case "ref": {

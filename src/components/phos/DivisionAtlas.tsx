@@ -27,10 +27,10 @@ export function DivisionAtlas({ division }: { division: string }) {
     <section className="relative isolate border-t border-border py-16" data-division-atlas>
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="flex flex-wrap items-baseline justify-between gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
             Where and when · {spans.length} entries placed · {places.length} places
           </p>
-          <Link to="/phos/tools/atlas" search={{}} className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">
+          <Link to="/phos/tools/atlas" search={{}} className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">
             The Atlas, whole →
           </Link>
         </div>
@@ -51,7 +51,7 @@ export function DivisionAtlas({ division }: { division: string }) {
               if (en) navigate({ to: "/phos/$division/$entry", params: { division: en.division.id, entry: en.slug } });
             }}
           />
-          <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="mt-3 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
             Hover a bar to find its place, or a place to find its years · wheel to zoom, drag to pan · click a bar to open its entry
           </p>
         </div>

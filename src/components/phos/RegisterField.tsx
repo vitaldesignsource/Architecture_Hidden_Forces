@@ -97,12 +97,12 @@ export function RegisterField({
                 <span className="ml-3 font-serif text-sm italic text-bone/55">{gloss(hover.b)}</span>
               )}
             </p>
-            <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
+            <p className="font-label text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
               {hover.b.tradition} · {hover.b.plane} · {hover.b.confidence}
             </p>
           </>
         ) : (
-          <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-bone/35">
+          <p className="font-label text-[9px] uppercase tracking-[0.16em] text-bone/35">
             Ten traditions across · the volume's planes down · one mark for each being
           </p>
         )}
@@ -137,7 +137,7 @@ export function RegisterField({
                 y={compact ? HEAD + i * ROW + 8 : HEAD + i * ROW + ROW / 2}
                 textAnchor={compact ? "start" : "end"}
                 dominantBaseline="central"
-                className="cursor-pointer font-mono uppercase"
+                className="cursor-pointer font-label uppercase"
                 style={{ fontSize: LABEL, letterSpacing: "0.14em" }}
                 fill="currentColor"
                 fillOpacity={plane === p ? 1 : 0.55 - i * 0.03}
@@ -168,7 +168,7 @@ export function RegisterField({
               y={HEAD - (compact ? 8 : 20)}
               textAnchor={compact ? "start" : "middle"}
               transform={compact ? `rotate(-90 ${GUTTER + i * COL + COL / 2} ${HEAD - 8})` : undefined}
-              className="cursor-pointer font-mono uppercase"
+              className="cursor-pointer font-label uppercase"
               style={{ fontSize: LABEL, letterSpacing: "0.12em" }}
               fill="currentColor"
               fillOpacity={tradition === t ? 1 : 0.55}
@@ -181,7 +181,7 @@ export function RegisterField({
                 x={GUTTER + i * COL + COL / 2}
                 y={HEAD - 8}
                 textAnchor="middle"
-                className="font-mono"
+                className="font-label"
                 style={{ fontSize: 8 }}
                 fill="currentColor"
                 fillOpacity={0.3}

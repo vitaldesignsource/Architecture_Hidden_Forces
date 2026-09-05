@@ -48,12 +48,12 @@ export function ImaginalBridge() {
       `}</style>
 
       <div className="flex items-center justify-between gap-4 border-b border-border pb-4">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           {up ? "Ascent · symbol toward pattern" : "Descent · force toward action"}
         </p>
         <button
           onClick={() => setUp((v) => !v)}
-          className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold"
+          className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold"
         >
           reverse ↑↓
         </button>
@@ -73,7 +73,7 @@ export function ImaginalBridge() {
                     on ? "border-gold" : "border-border hover:border-gold/50"
                   }`}
                 >
-                  <span className="font-mono text-[10px] text-gold-dim">
+                  <span className="font-label text-[10px] text-gold-dim">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className={`font-serif text-lg ${on ? "text-gold" : "text-bone/85"}`}>

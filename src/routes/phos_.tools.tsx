@@ -32,13 +32,13 @@ function Tools() {
               <Link key={t.k} to={to} className="group border border-gold/40 p-6 transition-colors hover:border-gold hover:bg-gold/5">
                 <p className="font-serif text-2xl text-bone transition-colors group-hover:text-gold">{t.k}</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+                <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
               </Link>
             ) : (
               <div key={t.k} className="border border-border p-6 opacity-70">
                 <p className="font-serif text-2xl text-bone">{t.k}</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.d}</p>
-                <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">Forthcoming</p>
+                <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">Forthcoming</p>
               </div>
             );
           })}
@@ -63,7 +63,7 @@ function Tools() {
                 </span>
               </span>
             </div>
-            <p className="mt-5 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+            <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
           </Link>
         </div>
 
@@ -90,7 +90,7 @@ function Tools() {
                 </span>
               </span>
             </div>
-            <p className="mt-5 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
+            <p className="mt-5 font-label text-[9px] uppercase tracking-[0.2em] text-gold">Open →</p>
           </Link>
         </div>
 

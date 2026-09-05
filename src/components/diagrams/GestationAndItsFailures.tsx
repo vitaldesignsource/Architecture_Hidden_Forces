@@ -68,7 +68,7 @@ export function GestationAndItsFailures() {
               {i === 5 && <path d={`M ${x - 12} ${Y - 6} L ${x - 10} ${Y + 16} Q ${x} ${Y + 22} ${x + 10} ${Y + 16} L ${x + 12} ${Y - 6}`} fill="none" stroke="currentColor" strokeOpacity={0.9} strokeWidth={1.1} />}
               {i === 0 && <circle cx={x} cy={Y} r={3} fill={G} />}
               <text x={x} y={Y - 22} textAnchor="middle" className="font-serif" style={fs(9)} fill="currentColor" fillOpacity={0.9}>{k}</text>
-              <text x={x} y={Y - 12} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(5), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>{sub}</text>
+              <text x={x} y={Y - 12} textAnchor="middle" className="font-label uppercase" style={{ ...fs(5), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>{sub}</text>
             </g>
           );
         })}
@@ -87,7 +87,7 @@ export function GestationAndItsFailures() {
                 <circle cx={x + 6} cy={yEnd} r={2} fill="none" stroke="currentColor" strokeOpacity={0.5} strokeWidth={0.7} />
               )}
               <text x={x + 6} y={yEnd + 16} textAnchor="middle" className="font-serif italic" style={fs(8)} fill="currentColor" fillOpacity={0.65}>{k}</text>
-              <text x={x + 6} y={yEnd + 26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(5), letterSpacing: "0.12em" }} fill={i === 4 ? G : "currentColor"} fillOpacity={i === 4 ? 0.8 : 0.45}>{to}</text>
+              <text x={x + 6} y={yEnd + 26} textAnchor="middle" className="font-label uppercase" style={{ ...fs(5), letterSpacing: "0.12em" }} fill={i === 4 ? G : "currentColor"} fillOpacity={i === 4 ? 0.8 : 0.45}>{to}</text>
             </g>
           );
         })}
@@ -127,7 +127,7 @@ function TallGestation({ G }: { G: string }) {
             {i === 4 && [-9, -3, 3, 9].map((d) => <line key={d} x1={X - 9} y1={y + d} x2={X + 9} y2={y + d} stroke={G} strokeOpacity={0.8} strokeWidth={0.8} />)}
             {i === 5 && <path d={`M ${X - 12} ${y - 14} L ${X - 10} ${y + 12} Q ${X} ${y + 18} ${X + 10} ${y + 12} L ${X + 12} ${y - 14}`} fill="none" stroke="currentColor" strokeOpacity={0.9} strokeWidth={1.1} />}
             <text x={X + 22} y={y + 4} className="font-serif" style={title} fill="currentColor" fillOpacity={0.9}>{k}</text>
-            <text x={X + 22} y={y + 17} className="font-mono uppercase" style={cap} fill="currentColor" fillOpacity={0.45}>{sub}</text>
+            <text x={X + 22} y={y + 17} className="font-label uppercase" style={cap} fill="currentColor" fillOpacity={0.45}>{sub}</text>
           </g>
         );
       })}
@@ -144,7 +144,7 @@ function TallGestation({ G }: { G: string }) {
               <circle cx={ex} cy={ey} r={2} fill="none" stroke="currentColor" strokeOpacity={0.5} strokeWidth={0.7} />
             )}
             <text x={ex + 14} y={ey - 1} className="font-serif italic" style={exit} fill="currentColor" fillOpacity={0.65}>{k}</text>
-            <text x={ex + 14} y={ey + 12} className="font-mono uppercase" style={cap} fill={i === 4 ? G : "currentColor"} fillOpacity={i === 4 ? 0.8 : 0.45}>{to}</text>
+            <text x={ex + 14} y={ey + 12} className="font-label uppercase" style={cap} fill={i === 4 ? G : "currentColor"} fillOpacity={i === 4 ? 0.8 : 0.45}>{to}</text>
           </g>
         );
       })}

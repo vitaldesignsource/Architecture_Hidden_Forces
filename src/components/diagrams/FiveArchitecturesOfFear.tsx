@@ -62,7 +62,7 @@ export function FiveArchitecturesOfFear() {
                 <text x={x2} y={y2 + 3} textAnchor="middle" className="font-serif" fontSize="9.5"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.35 : 1}>{f.k}</text>
-                <text x={x2} y={y2 + 38} textAnchor="middle" className="font-mono" fontSize="6.2"
+                <text x={x2} y={y2 + 38} textAnchor="middle" className="font-label" fontSize="6.2"
                       letterSpacing="0.8" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={on ? 0.95 : sel ? 0.2 : 0.55}>
                   {f.short.toUpperCase()}
@@ -76,7 +76,7 @@ export function FiveArchitecturesOfFear() {
           <text x={C} y={CY + 5} textAnchor="middle" className="font-serif" fontSize="19"
                 fill="var(--gold)" fillOpacity="0.95">fear</text>
 
-          <text x={C} y="328" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="328" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             ONE WORD — FIVE FORMATIVE BEHAVIOURS
           </text>
@@ -86,7 +86,7 @@ export function FiveArchitecturesOfFear() {
       <div className="min-h-[13rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Fear under {cur.k} · {cur.short}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>

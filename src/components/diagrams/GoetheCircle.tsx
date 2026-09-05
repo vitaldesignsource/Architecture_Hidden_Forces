@@ -61,7 +61,7 @@ export function GoetheCircle() {
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
                 <path d={wedge(i)} fill={w.hex} fillOpacity={sel === null || on || isOpp ? 0.92 : 0.35}
                       stroke={on || isOpp ? "var(--bone)" : "var(--background)"} strokeWidth={on ? 2.4 : 1.2} />
-                <text x={lx} y={ly + 3} textAnchor="middle" className="pointer-events-none font-mono"
+                <text x={lx} y={ly + 3} textAnchor="middle" className="pointer-events-none font-label"
                       fontSize="8.5" letterSpacing="0.9"
                       fill={["Gelb", "Gelbrot", "Grün"].includes(w.de) ? "#17130a" : "#f5f2ea"}>
                   {w.de.toUpperCase()}
@@ -85,7 +85,7 @@ export function GoetheCircle() {
           {cur ? (
             <>
               <text x={C} y={C - 8} textAnchor="middle" className="font-serif" fontSize="20" fill={cur.hex}>{cur.de}</text>
-              <text x={C} y={C + 14} textAnchor="middle" className="font-mono" fontSize="8" letterSpacing="1.2" fill="var(--muted-foreground)">
+              <text x={C} y={C + 14} textAnchor="middle" className="font-label" fontSize="8" letterSpacing="1.2" fill="var(--muted-foreground)">
                 DEMANDS
               </text>
               <text x={C} y={C + 34} textAnchor="middle" className="font-serif" fontSize="17" fill={WEDGES[opp(sel!)].hex}>
@@ -94,7 +94,7 @@ export function GoetheCircle() {
             </>
           ) : (
             <>
-              <text x={C} y={C - 6} textAnchor="middle" className="font-mono" fontSize="8" letterSpacing="2" fill="var(--gold-dim)">
+              <text x={C} y={C - 6} textAnchor="middle" className="font-label" fontSize="8" letterSpacing="2" fill="var(--gold-dim)">
                 FARBENKREIS
               </text>
               <text x={C} y={C + 18} textAnchor="middle" className="font-serif" fontSize="19" fill="var(--gold)">Totalität</text>
@@ -106,7 +106,7 @@ export function GoetheCircle() {
       <div>
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.en}
             </p>
             <p className="mt-3 font-serif text-3xl" style={{ color: cur.hex }}>{cur.de}</p>

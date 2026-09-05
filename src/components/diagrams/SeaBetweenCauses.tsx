@@ -45,10 +45,10 @@ export function SeaBetweenCauses() {
           <g key={k as string}>
             <rect x={100} y={y as number} width={380} height={h as number} fill="currentColor" fillOpacity={0.03 + i * 0.02} />
             <line x1={100} y1={y as number} x2={480} y2={y as number} stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.6} strokeDasharray="2 4" />
-            <text x={484} y={(y as number) + 10} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.45}>{k as string}</text>
+            <text x={484} y={(y as number) + 10} className="font-label uppercase" style={lbl} fill="currentColor" fillOpacity={0.45}>{k as string}</text>
           </g>
         ))}
-        <text x={484} y={268} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.35}>sediment</text>
+        <text x={484} y={268} className="font-label uppercase" style={lbl} fill="currentColor" fillOpacity={0.35}>sediment</text>
         {/* the sediment */}
         {[254, 260, 266].map((y, i) => (
           <path key={y} d={`M 100 ${y} C 180 ${y - 3}, 260 ${y + 3}, 340 ${y} S 460 ${y - 2}, 480 ${y}`} fill="none" stroke="currentColor" strokeOpacity={0.14 + i * 0.05} strokeWidth={0.6} />
@@ -62,17 +62,17 @@ export function SeaBetweenCauses() {
         ))}
         {/* the confluence */}
         <circle cx={300} cy={96} r={3.2} fill={G} />
-        <text x={300} y={78} textAnchor="middle" className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.8}>confluence</text>
+        <text x={300} y={78} textAnchor="middle" className="font-label uppercase" style={lbl} fill={G} fillOpacity={0.8}>confluence</text>
         {/* the eddy */}
         <path d="M 236 204 a 14 14 0 1 1 0.1 0" fill="none" stroke={G} strokeOpacity={0.6} strokeWidth={0.8} className="aoh-sb-eddy" />
-        <text x={236} y={236} textAnchor="middle" className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.7}>eddy</text>
+        <text x={236} y={236} textAnchor="middle" className="font-label uppercase" style={lbl} fill={G} fillOpacity={0.7}>eddy</text>
         {/* the vestigium left along the floor */}
         <path d="M 300 96 C 300 150, 330 220, 360 252" fill="none" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.6} strokeDasharray="1.5 3" />
         {/* the shore */}
         <path d="M 472 20 C 486 100, 486 180, 472 262" fill="none" stroke="currentColor" strokeOpacity={0.7} strokeWidth={1.1} />
         <circle cx={470} cy={140} r={4} fill="var(--bone, #f0ead8)" />
         <text x={500} y={143} className="font-serif" style={fs(10.5)} fill="currentColor" fillOpacity={0.9}>the effect</text>
-        <text x={500} y={155} className="font-mono uppercase" style={{ ...fs(6), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>an estuary</text>
+        <text x={500} y={155} className="font-label uppercase" style={{ ...fs(6), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>an estuary</text>
       </svg>
     </div>
   );

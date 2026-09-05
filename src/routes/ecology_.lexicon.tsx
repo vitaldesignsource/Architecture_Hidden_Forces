@@ -123,13 +123,13 @@ function Lexicon() {
           <div className="grain" />
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
                 The Hidden Ecology of Formation · Apparatus
               </p>
               <h1 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl">
                 <RevealText text="The Lexicon" shimmer />
               </h1>
-              <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="mt-6 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 {count} coined terms · defined once · grouped by root
               </p>
               <p className="mt-10 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone/90 sm:text-3xl">
@@ -167,7 +167,7 @@ function Lexicon() {
                     <p className="font-serif text-xl text-bone">{t.k}</p>
                     {t.root && <p className="mt-1 font-serif text-sm italic text-gold/70">{t.root}</p>}
                     {t.at && (
-                      <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                      <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
                         <Link to={t.at.to} hash={t.at.hash} className="transition-colors hover:text-gold">
                           at work · {t.at.label}
                         </Link>
@@ -197,9 +197,9 @@ function Lexicon() {
         <div className="mt-10 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
           {[...STATIONS, ...PROVINCES].map((s) => (
             <Link key={s.id} to={s.to} className="group flex flex-col bg-void p-5 transition-colors hover:bg-gold/5">
-              <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-gold-dim">{s.region ?? `Station ${s.n}`}</span>
+              <span className="font-label text-[9px] uppercase tracking-[0.25em] text-gold-dim">{s.region ?? `Station ${s.n}`}</span>
               <span className="mt-3 font-serif text-lg leading-tight text-bone transition-colors group-hover:text-gold">{s.title}</span>
-              <span className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{s.shorthand}</span>
+              <span className="mt-2 font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{s.shorthand}</span>
             </Link>
           ))}
         </div>

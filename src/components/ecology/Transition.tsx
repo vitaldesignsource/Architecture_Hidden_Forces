@@ -23,7 +23,7 @@ export function Transition({ from }: { from: StationId }) {
   return (
     <section className="relative isolate border-t border-gold/30 py-24 sm:py-32">
       <div className="relative mx-auto max-w-6xl px-6">
-        <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.35em] text-gold-dim">
           {t.eyebrow ?? (returning ? "The circulation returns" : "The circulation continues")}
         </p>
         <p className="mt-6 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone/90 sm:text-3xl">{t.line}</p>
@@ -31,7 +31,7 @@ export function Transition({ from }: { from: StationId }) {
           to={next.to}
           className="group mt-10 inline-flex flex-wrap items-baseline gap-x-4 gap-y-2 border-b border-gold/40 pb-3 transition-colors hover:border-gold"
         >
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
             {t.label ?? (returning ? "Return to" : `Station ${next.n}`)}
           </span>
           <span className="font-serif text-3xl text-bone transition-colors group-hover:text-gold sm:text-4xl">
@@ -77,13 +77,13 @@ export function Province({ id, line }: { id: StationId; line: string }) {
   return (
     <section className="relative isolate border-t border-border py-16 sm:py-20">
       <div className="relative mx-auto max-w-6xl px-6">
-        <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-gold-dim">{w.eyebrow}</p>
+        <p className="font-label text-[10px] uppercase tracking-[0.35em] text-gold-dim">{w.eyebrow}</p>
         <p className="mt-5 max-w-3xl font-serif text-xl italic leading-relaxed text-bone/80 sm:text-2xl">{line}</p>
         <Link
           to={p.to}
           className="group mt-8 inline-flex flex-wrap items-baseline gap-x-4 gap-y-2 border-b border-gold/30 pb-3 transition-colors hover:border-gold"
         >
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">{w.verb}</span>
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">{w.verb}</span>
           <span className="font-serif text-2xl text-bone transition-colors group-hover:text-gold sm:text-3xl">{p.title}</span>
           {w.down ? <DescentMark className="text-gold/70" /> : <CrossMark className="text-gold/70" />}
         </Link>
@@ -108,11 +108,11 @@ export function Neighbours({ of, lines }: { of: StationId; lines: Partial<Record
   return (
     <section className="relative isolate border-t border-border py-16 sm:py-20">
       <div className="relative mx-auto max-w-6xl px-6">
-        <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-gold-dim">The neighbouring provinces</p>
+        <p className="font-label text-[10px] uppercase tracking-[0.35em] text-gold-dim">The neighbouring provinces</p>
         <div className="mt-6 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-5">
           {rest.map((p) => (
             <Link key={p.id} to={p.to} className="group flex flex-col bg-void p-5 transition-colors hover:bg-gold/5">
-              <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-gold-dim">{p.region}</span>
+              <span className="font-label text-[9px] uppercase tracking-[0.25em] text-gold-dim">{p.region}</span>
               <span className="mt-3 font-serif text-lg leading-tight text-bone transition-colors group-hover:text-gold">{p.title}</span>
               <span className="mt-3 text-xs leading-relaxed text-muted-foreground">{lines[p.id] ?? p.question}</span>
             </Link>

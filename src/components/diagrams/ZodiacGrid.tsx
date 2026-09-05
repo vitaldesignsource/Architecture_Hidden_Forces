@@ -47,7 +47,7 @@ export function ZodiacGrid() {
           <div />
           {MOD.map((m) => (
             <button key={m.k} onClick={() => setSel(sel === m.k ? null : m.k)} aria-pressed={sel === m.k}
-              className={`border-b py-2 text-left font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border-b py-2 text-left font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 sel === m.k ? "border-gold text-gold" : "border-border text-gold-dim hover:text-gold"}`}>
               {m.k}
             </button>
@@ -55,7 +55,7 @@ export function ZodiacGrid() {
           {EL.map((e) => (
             <div key={e.k} className="contents">
               <button onClick={() => setSel(sel === e.k ? null : e.k)} aria-pressed={sel === e.k}
-                className={`border-r py-4 pr-3 text-left font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+                className={`border-r py-4 pr-3 text-left font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                   sel === e.k ? "border-gold text-gold" : "border-border text-gold-dim hover:text-gold"}`}>
                 {e.k}
               </button>
@@ -81,7 +81,7 @@ export function ZodiacGrid() {
             </div>
           ))}
         </div>
-        <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+        <p className="mt-4 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
           Four media × three phases · exactly twelve, and no remainder
         </p>
       </div>
@@ -89,7 +89,7 @@ export function ZodiacGrid() {
       <div className="min-h-[13rem] lg:border-l lg:border-border lg:pl-8">
         {cell ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {sel?.split("|")[0]} × {sel?.split("|")[1]}
             </p>
             <p className="mt-3 flex items-center gap-3 font-serif text-3xl text-gold">
@@ -104,7 +104,7 @@ export function ZodiacGrid() {
           </>
         ) : el || mo ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {el ? "Element · the medium" : "Modality · the phase"}
             </p>
             <p className="mt-3 font-serif text-2xl text-gold">{(el || mo)!.k}</p>

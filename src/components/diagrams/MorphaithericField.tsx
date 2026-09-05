@@ -75,7 +75,7 @@ export function MorphaithericField() {
             <path className="aoh-mf-flow" d="M26 64 C78 46 148 78 208 60 C248 48 274 60 294 56"
                   fill="none" stroke="var(--gold)" strokeOpacity={on("Current") ? 1 : 0.6}
                   strokeWidth={on("Current") ? 1.8 : 1.2} />
-            <text x="30" y="44" className="font-mono" fontSize="6.6" letterSpacing="1"
+            <text x="30" y="44" className="font-label" fontSize="6.6" letterSpacing="1"
                   fill={on("Current") ? "var(--gold)" : "var(--muted-foreground)"}>CURRENT</text>
           </g>
 
@@ -85,7 +85,7 @@ export function MorphaithericField() {
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Gradient") ? null : "Gradient"); } }}>
             <rect x="26" y="90" width="116" height="34" fill="url(#aoh-mf-grad)"
                   stroke="var(--gold)" strokeOpacity={on("Gradient") ? 0.55 : 0.16} strokeWidth="0.7" />
-            <text x="30" y="84" className="font-mono" fontSize="6.6" letterSpacing="1"
+            <text x="30" y="84" className="font-label" fontSize="6.6" letterSpacing="1"
                   fill={on("Gradient") ? "var(--gold)" : "var(--muted-foreground)"}>GRADIENT</text>
           </g>
 
@@ -96,7 +96,7 @@ export function MorphaithericField() {
             <path d="M210 94 a26 17 0 0 0 52 0" fill="var(--gold)"
                   fillOpacity={on("Reservoir") ? 0.3 : 0.12} stroke="var(--gold)"
                   strokeOpacity={on("Reservoir") ? 1 : 0.5} strokeWidth="1.1" />
-            <text x="236" y="86" textAnchor="middle" className="font-mono" fontSize="6.6" letterSpacing="1"
+            <text x="236" y="86" textAnchor="middle" className="font-label" fontSize="6.6" letterSpacing="1"
                   fill={on("Reservoir") ? "var(--gold)" : "var(--muted-foreground)"}>RESERVOIR</text>
           </g>
 
@@ -106,7 +106,7 @@ export function MorphaithericField() {
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Tide") ? null : "Tide"); } }}>
             <path className="aoh-mf-tide" d="M26 152 q14 -10 28 0 t28 0 M26 166 q14 -10 28 0 t28 0 M26 180 q14 -10 28 0 t28 0"
                   fill="none" stroke="var(--gold)" strokeOpacity={on("Tide") ? 1 : 0.55} strokeWidth="1.1" />
-            <text x="26" y="142" className="font-mono" fontSize="6.6" letterSpacing="1"
+            <text x="26" y="142" className="font-label" fontSize="6.6" letterSpacing="1"
                   fill={on("Tide") ? "var(--gold)" : "var(--muted-foreground)"}>TIDE</text>
           </g>
 
@@ -118,7 +118,7 @@ export function MorphaithericField() {
                   d="M238 146 a22 22 0 1 1 -16 37 a15 15 0 1 0 11 -26 a8.5 8.5 0 1 1 -6 15"
                   fill="none" stroke="var(--gold)" strokeOpacity={on("Vortex") ? 1 : 0.6}
                   strokeWidth={on("Vortex") ? 1.6 : 1.1} />
-            <text x="238" y="200" textAnchor="middle" className="font-mono" fontSize="6.6" letterSpacing="1"
+            <text x="238" y="200" textAnchor="middle" className="font-label" fontSize="6.6" letterSpacing="1"
                   fill={on("Vortex") ? "var(--gold)" : "var(--muted-foreground)"}>VORTEX</text>
           </g>
 
@@ -131,7 +131,7 @@ export function MorphaithericField() {
             <circle cx="114" cy="212" r="18" fill="var(--void)" stroke="var(--gold)"
                     strokeOpacity={on("Standing pattern") ? 1 : 0.65}
                     strokeWidth={on("Standing pattern") ? 1.7 : 1.2} />
-            <text x="114" y="242" textAnchor="middle" className="font-mono" fontSize="6.4" letterSpacing="1"
+            <text x="114" y="242" textAnchor="middle" className="font-label" fontSize="6.4" letterSpacing="1"
                   fill={on("Standing pattern") ? "var(--gold)" : "var(--muted-foreground)"}>STANDING</text>
           </g>
 
@@ -143,7 +143,7 @@ export function MorphaithericField() {
                   strokeOpacity={on("Threshold") ? 1 : 0.5} strokeDasharray="4 4" strokeWidth="1.2" />
             <circle cx="246" cy="242" r={on("Threshold") ? 5 : 3.5} fill="var(--gold)"
                     fillOpacity={on("Threshold") ? 1 : 0.6} />
-            <text x="246" y="216" textAnchor="middle" className="font-mono" fontSize="6.4" letterSpacing="1"
+            <text x="246" y="216" textAnchor="middle" className="font-label" fontSize="6.4" letterSpacing="1"
                   fill={on("Threshold") ? "var(--gold)" : "var(--muted-foreground)"}>THRESHOLD</text>
           </g>
 
@@ -153,7 +153,7 @@ export function MorphaithericField() {
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on("Scar") ? null : "Scar"); } }}>
             <path d="M28 260 q20 -13 38 -3 t34 -5" fill="none" stroke="var(--bone)"
                   strokeOpacity={on("Scar") ? 0.9 : 0.4} strokeDasharray="1 5" strokeWidth="1.5" />
-            <text x="28" y="250" className="font-mono" fontSize="6.6" letterSpacing="1"
+            <text x="28" y="250" className="font-label" fontSize="6.6" letterSpacing="1"
                   fill={on("Scar") ? "var(--gold)" : "var(--muted-foreground)"}>SCAR</text>
           </g>
         </svg>
@@ -162,7 +162,7 @@ export function MorphaithericField() {
       <div className="min-h-[14rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
             <p className="mt-5 text-sm leading-relaxed text-bone/60">
               A metaphysical model, not fluid mechanics. Whether the word is meant literally or

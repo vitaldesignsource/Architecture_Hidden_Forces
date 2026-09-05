@@ -43,7 +43,7 @@ export function Persistence() {
           {/* and the fifth does not follow — the gap is the argument */}
           <line x1={X0} y1={y(3) + H + 20} x2={X0 + W} y2={y(3) + H + 20}
                 stroke="var(--bone)" strokeOpacity="0.3" strokeDasharray="3 6" strokeWidth="1" />
-          <text x={X0 + W} y={y(3) + H + 14} textAnchor="end" className="font-mono" fontSize="6.4"
+          <text x={X0 + W} y={y(3) + H + 14} textAnchor="end" className="font-label" fontSize="6.4"
                 letterSpacing="0.9" fill="var(--muted-foreground)">
             THE FOUR ABOVE DO NOT ESTABLISH THE ONE BELOW
           </text>
@@ -59,7 +59,7 @@ export function Persistence() {
                       strokeOpacity={on ? 1 : n.firm ? 0.55 : 0.35}
                       strokeDasharray={n.firm ? "none" : "5 4"}
                       strokeWidth={on ? 1.7 : 1} />
-                <text x={X0 + 14} y={y(i) + 21} className="font-mono" fontSize="8.5"
+                <text x={X0 + 14} y={y(i) + 21} className="font-label" fontSize="8.5"
                       letterSpacing="1.1"
                       fill={on ? "var(--gold)" : n.firm ? "var(--bone)" : "var(--muted-foreground)"}
                       fillOpacity={on ? 1 : 0.85}>
@@ -69,7 +69,7 @@ export function Persistence() {
             );
           })}
 
-          <text x={X0} y="284" className="font-mono" fontSize="6.6" letterSpacing="1"
+          <text x={X0} y="284" className="font-label" fontSize="6.6" letterSpacing="1"
                 fill="var(--muted-foreground)" opacity="0.8">
             THE WORLD RETAINS CONSEQUENCES EVEN WHERE IT DOES NOT RETAIN FORMS
           </text>
@@ -79,7 +79,7 @@ export function Persistence() {
       <div className="min-h-[14rem]">
         {sel !== null ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {KINDS[sel].firm ? "Follows from embodiment" : "A stronger claim"}
             </p>
             <p className="mt-3 font-serif text-2xl text-gold">{KINDS[sel].k}</p>

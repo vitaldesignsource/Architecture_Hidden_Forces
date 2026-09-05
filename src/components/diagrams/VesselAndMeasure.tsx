@@ -82,8 +82,8 @@ export function VesselAndMeasure() {
             <line key={dx} x1={CX + dx * 0.35} y1="48" x2={CX + dx} y2={RIM - 3}
                   stroke="var(--gold)" strokeOpacity={0.06 + (light / 100) * 0.74} strokeWidth="1" />
           ))}
-          <text x="14" y="104" className="font-mono" fontSize="6.8" letterSpacing="1.2" fill="var(--gold-dim)">OR YASHAR</text>
-          <text x="14" y="114" className="font-mono" fontSize="6" letterSpacing="0.8" fill="var(--muted-foreground)">straight light · descending</text>
+          <text x="14" y="104" className="font-label" fontSize="6.8" letterSpacing="1.2" fill="var(--gold-dim)">OR YASHAR</text>
+          <text x="14" y="114" className="font-label" fontSize="6" letterSpacing="0.8" fill="var(--muted-foreground)">straight light · descending</text>
 
           {/* or chozer — the returning light */}
           {[-46, -24, 24, 46].map((dx) => (
@@ -91,8 +91,8 @@ export function VesselAndMeasure() {
                   stroke="var(--bone)" strokeDasharray="3 3" strokeWidth="0.9"
                   strokeOpacity={state === "broken" ? 0.08 : state === "dark" ? 0 : 0.12 + (held / CAP) * 0.55} />
           ))}
-          <text x="326" y="104" textAnchor="end" className="font-mono" fontSize="6.8" letterSpacing="1.2" fill="var(--bone)" opacity="0.75">OR CHOZER</text>
-          <text x="326" y="114" textAnchor="end" className="font-mono" fontSize="6" letterSpacing="0.8" fill="var(--muted-foreground)">returning light · ascending</text>
+          <text x="326" y="104" textAnchor="end" className="font-label" fontSize="6.8" letterSpacing="1.2" fill="var(--bone)" opacity="0.75">OR CHOZER</text>
+          <text x="326" y="114" textAnchor="end" className="font-label" fontSize="6" letterSpacing="0.8" fill="var(--muted-foreground)">returning light · ascending</text>
 
           {/* the vessel */}
           <g clipPath="url(#aoh-vm-clip)">
@@ -102,7 +102,7 @@ export function VesselAndMeasure() {
                 strokeOpacity={state === "broken" ? 0.45 : 0.85} />
           <line x1={L - 12} y1={RIM} x2={R + 12} y2={RIM} stroke="var(--gold)" strokeOpacity="0.55"
                 strokeDasharray="1.5 3.5" />
-          <text x={R + 16} y={RIM + 3} className="font-mono" fontSize="6" letterSpacing="1" fill="var(--gold-dim)">MEASURE</text>
+          <text x={R + 16} y={RIM + 3} className="font-label" fontSize="6" letterSpacing="1" fill="var(--gold-dim)">MEASURE</text>
 
           {/* the breaking */}
           <g opacity={over}>
@@ -117,7 +117,7 @@ export function VesselAndMeasure() {
             ))}
           </g>
 
-          <text x="170" y="324" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="170" y="324" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill={state === "broken" ? "var(--bone)" : "var(--gold)"} opacity="0.9">
             {readout}
           </text>
@@ -125,13 +125,13 @@ export function VesselAndMeasure() {
         <input type="range" min={0} max={100} step={1} value={light} aria-label="Light given by the source"
                onChange={(e) => setLight(parseInt(e.target.value, 10))}
                className="mt-3 w-full accent-[var(--gold)]" />
-        <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+        <p className="mt-2 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           The slider gives the source. The bowl keeps its measure.
         </p>
       </div>
 
       <div className="min-h-[15rem]">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{TEXT.k}</p>
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{TEXT.k}</p>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">{TEXT.a}</p>
         <p className="mt-5 font-serif text-xl leading-relaxed text-bone/85">{TEXT.b}</p>
       </div>

@@ -80,13 +80,13 @@ export function PhaseOrgans() {
                         strokeOpacity={on ? 1 : next ? 0.8 : 0.5} strokeWidth={on ? 1.8 : 1} />
                 <text x={x} y={y + 6} textAnchor="middle" className="font-serif" fontSize="18"
                       fill="var(--gold)" fillOpacity={on || sel === null ? 1 : 0.45}>{n.z}</text>
-                <text x={x} y={y + 44} textAnchor="middle" className="font-mono" fontSize="7"
+                <text x={x} y={y + 44} textAnchor="middle" className="font-label" fontSize="7"
                       letterSpacing="1.4" fill="var(--muted-foreground)">{n.k.toUpperCase()}</text>
               </g>
             );
           })}
         </svg>
-        <p className="mt-2 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+        <p className="mt-2 text-center font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
           generating, clockwise
         </p>
       </div>
@@ -94,27 +94,27 @@ export function PhaseOrgans() {
       <div className="min-h-[17rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.z} · {cur.k} — {cur.move}
             </p>
             <div className="mt-4 space-y-px">
               {[["Organ network", cur.org], ["Formative virtue", cur.virt],
                 [`Spirit · ${cur.sp}`, cur.spD]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[8.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
             </div>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               <div className="border-t border-gold/50 pt-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   {cur.emo} — in its office
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.emoOK}</p>
               </div>
               <div className="border-t border-border pt-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                   When it will not complete
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.emoOff}</p>

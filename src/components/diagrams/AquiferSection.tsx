@@ -112,7 +112,7 @@ export function AquiferSection() {
           {/* labels */}
           {F.map((f) => (
             <text key={f.k} x={f.at[0]} y={f.at[1]} textAnchor={f.k === "Strata" || f.k === "Well" || f.k === "Pneumotension" ? "start" : f.k === "Hierosmosis" || f.k === "Artesian spring" || f.k === "Anodos" ? "end" : "middle"}
-                  className="aoh-aq-h font-mono uppercase" style={lbl(f.k)} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
+                  className="aoh-aq-h font-label uppercase" style={lbl(f.k)} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
                   onClick={() => setSel(on(f.k) ? null : f.k)}>
               {f.k}
             </text>
@@ -123,7 +123,7 @@ export function AquiferSection() {
         <div className="flex flex-wrap gap-2">
           {F.map((f) => (
             <button key={f.k} onClick={() => setSel(on(f.k) ? null : f.k)} aria-pressed={on(f.k)}
-                    className={`border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] transition-colors ${on(f.k) ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/40"}`}>
+                    className={`border px-2.5 py-1 font-label text-[9px] uppercase tracking-[0.14em] transition-colors ${on(f.k) ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/40"}`}>
               {f.k}
             </button>
           ))}

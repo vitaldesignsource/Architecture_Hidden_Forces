@@ -71,7 +71,7 @@ export function RightMeasure() {
                  role="button" tabIndex={0} aria-pressed={on} aria-label={`Right ${p.k}`}
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
                 <rect x="0" y={Y - 13} width="320" height="26" fill="transparent" />
-                <text x={X0 - 12} y={Y + 3} textAnchor="end" className="font-mono" fontSize="7.4"
+                <text x={X0 - 12} y={Y + 3} textAnchor="end" className="font-label" fontSize="7.4"
                       letterSpacing="0.9"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel !== null && !on ? 0.35 : 1}>
@@ -97,9 +97,10 @@ export function RightMeasure() {
             );
           })}
 
-          <text x={MID} y="298" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={MID} y="290" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.8">
-            THE VIRTUE IS THE CENTRE, NOT THE ABSENCE OF EITHER END
+            <tspan x={MID}>THE VIRTUE IS THE CENTRE,</tspan>
+            <tspan x={MID} dy="11">NOT THE ABSENCE OF EITHER END</tspan>
           </text>
         </svg>
       </div>
@@ -107,7 +108,7 @@ export function RightMeasure() {
       <div className="min-h-[17rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Right {cur.k}
             </p>
             <p className="mt-3 font-serif text-2xl leading-relaxed text-gold">{cur.asks}</p>
@@ -115,13 +116,13 @@ export function RightMeasure() {
             <div className="mt-6 space-y-3">
               {cur.lo && (
                 <p className="border-l-2 border-bone/30 pl-5 text-sm leading-relaxed text-bone/70">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-bone/60">Too little · </span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-bone/60">Too little · </span>
                   {cur.lo}
                 </p>
               )}
               {cur.hi && (
                 <p className="border-l-2 border-bone/30 pl-5 text-sm leading-relaxed text-bone/70">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-bone/60">
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-bone/60">
                     {cur.lo ? "Too much · " : "How it fails · "}
                   </span>
                   {cur.hi}

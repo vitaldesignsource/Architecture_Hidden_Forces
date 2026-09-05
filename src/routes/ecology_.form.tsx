@@ -80,7 +80,7 @@ function Form() {
           </div>
           <div>
             <FormAtTheIntersection />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               spatial · the vessel is open above and below on purpose
             </p>
           </div>
@@ -223,7 +223,7 @@ function Form() {
         </h2>
         <div className="mt-12">
           <CaptiveLightProgression />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             causal · one closure separates the frames
           </p>
         </div>
@@ -232,7 +232,7 @@ function Form() {
             <p className="font-serif text-xl leading-relaxed text-bone/90">
               The architecture serves the current.
             </p>
-            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">then, potentially</p>
+            <p className="mt-4 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">then, potentially</p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
               The current becomes subordinated to the architecture.
             </p>

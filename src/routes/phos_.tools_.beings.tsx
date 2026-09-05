@@ -179,7 +179,7 @@ function Register() {
           <button
             onClick={() => setTradition(null)}
             aria-pressed={tradition === null}
-            className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors ${
+            className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors ${
               tradition === null ? "border-gold bg-gold/10 text-gold" : "border-border text-muted-foreground hover:border-gold/50"
             }`}
           >
@@ -190,7 +190,7 @@ function Register() {
               key={t}
               onClick={() => setTradition(tradition === t ? null : t)}
               aria-pressed={tradition === t}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors ${
+              className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors ${
                 tradition === t ? "border-gold bg-gold/10 text-gold" : "border-gold/40 text-bone/85 hover:border-gold/70 hover:text-gold"
               }`}
             >
@@ -215,7 +215,7 @@ function Register() {
                 aria-pressed={cls === c.k}
                 disabled={!n}
                 title={c.d}
-                className={`border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] transition-colors ${
+                className={`border px-2.5 py-1 font-label text-[9px] uppercase tracking-[0.14em] transition-colors ${
                   cls === c.k ? "border-gold text-gold" : n ? "border-border text-muted-foreground hover:border-gold/40" : "border-border/50 text-bone/25"
                 }`}
               >
@@ -236,7 +236,7 @@ function Register() {
                 onClick={() => setPlane(plane === pl ? null : pl)}
                 aria-pressed={plane === pl}
                 disabled={!total}
-                className={`border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] transition-colors ${
+                className={`border px-2.5 py-1 font-label text-[9px] uppercase tracking-[0.14em] transition-colors ${
                   plane === pl
                     ? "border-gold text-gold"
                     : total
@@ -251,7 +251,7 @@ function Register() {
           {(tradition || cls || plane || q) && (
             <button
               onClick={clear}
-              className="border border-gold/50 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-gold transition-colors hover:bg-gold/10"
+              className="border border-gold/50 px-2.5 py-1 font-label text-[9px] uppercase tracking-[0.14em] text-gold transition-colors hover:bg-gold/10"
             >
               Clear
             </button>
@@ -363,11 +363,11 @@ function Register() {
           <table className="w-full min-w-[52rem] border-collapse">
             <thead>
               <tr>
-                <th className="border-b border-border py-3 pr-4 text-left font-mono text-[9px] uppercase tracking-[0.14em] text-gold-dim">
+                <th className="border-b border-border py-3 pr-4 text-left font-label text-[9px] uppercase tracking-[0.14em] text-gold-dim">
                   Class
                 </th>
                 {TRADITION_ORDER.map((t) => (
-                  <th key={t} className="border-b border-border px-2 py-3 text-left font-mono text-[9px] uppercase tracking-[0.12em] text-gold-dim">
+                  <th key={t} className="border-b border-border px-2 py-3 text-left font-label text-[9px] uppercase tracking-[0.12em] text-gold-dim">
                     {t.split(" ")[0]}
                   </th>
                 ))}
@@ -391,14 +391,14 @@ function Register() {
                         {n ? (
                           <button
                             onClick={() => set({ cls: c.k, tradition: t })}
-                            className="font-mono text-xs text-bone/80 transition-colors hover:text-gold"
+                            className="font-label text-xs text-bone/80 transition-colors hover:text-gold"
                             aria-label={`${n} ${c.label} in the ${t} tradition`}
                           >
                             {"·".repeat(Math.min(n, 8))}
                             <span className="ml-1.5 text-bone/40">{n}</span>
                           </button>
                         ) : (
-                          <span className="font-mono text-xs text-bone/15">—</span>
+                          <span className="font-label text-xs text-bone/15">—</span>
                         )}
                       </td>
                     );
@@ -432,7 +432,7 @@ function Register() {
                   <Term script={k.script} orig={k.orig} label={`${k.tr} — ${k.gloss}`} className="text-2xl text-gold" />
                 )}
                 <p className="font-serif text-base italic text-bone/85">{k.tr}</p>
-                <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">{k.tradition}</p>
+                <p className="font-label text-[9px] uppercase tracking-[0.15em] text-gold-dim">{k.tradition}</p>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{k.gloss}</p>
               {k.note && <p className="mt-2 text-xs leading-relaxed text-bone/45">{k.note}</p>}
@@ -470,7 +470,7 @@ function Register() {
         </div>
         <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2">
           {state.byScript.map(([k, n]) => (
-            <p key={k} className="font-mono text-[9px] uppercase tracking-[0.14em] text-bone/45">
+            <p key={k} className="font-label text-[9px] uppercase tracking-[0.14em] text-bone/45">
               {SCRIPTS[k].label} <span className="text-gold-dim">{n}</span>
             </p>
           ))}
@@ -512,7 +512,7 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
               className="block text-2xl text-gold"
             />
           ) : (
-            <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-bone/35">
+            <span className="font-label text-[9px] uppercase tracking-[0.15em] text-bone/35">
               spelling not set
             </span>
           )}
@@ -523,11 +523,11 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
           <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{b.office}</p>
         </div>
         <div className="sm:text-right">
-          <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-gold">{b.tradition}</p>
-          <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+          <p className="font-label text-[9px] uppercase tracking-[0.14em] text-gold">{b.tradition}</p>
+          <p className="mt-1 font-label text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
             {classLabel(b.cls)} · {b.plane}
           </p>
-          <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.14em] text-bone/35">
+          <p className="mt-1 font-label text-[9px] uppercase tracking-[0.14em] text-bone/35">
             {b.confidence}
           </p>
         </div>
@@ -540,7 +540,7 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
           <div className="hidden sm:block">
             {b.kin?.length ? (
               <div className="border-t border-gold/25 pt-4">
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                <p className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
                   In its tradition
                 </p>
                 <ul className="mt-3 space-y-3">
@@ -564,21 +564,21 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
               </div>
             ) : (
               <div className="border-t border-border pt-4">
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-bone/30">
+                <p className="font-label text-[9px] uppercase tracking-[0.2em] text-bone/30">
                   No tie recorded inside its own tradition
                 </p>
               </div>
             )}
           </div>
           <div className="max-w-3xl">
-            <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               Its own tradition calls it
             </p>
             <p className="mt-2 text-sm leading-relaxed text-bone/85">{b.kind}</p>
             {/* On a phone there is one column, so the ties follow the kind. */}
             {b.kin?.length ? (
               <div className="mt-6 border-l border-gold/25 pl-4 sm:hidden">
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                <p className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
                   In its tradition
                 </p>
                 <ul className="mt-2 space-y-1.5">
@@ -614,7 +614,7 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
             <p className="mt-4 text-xs leading-relaxed text-bone/45">{b.sources}</p>
             {b.entries?.length ? (
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-                <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                <span className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
                   In the Portal
                 </span>
                 <span className="mt-2 block">

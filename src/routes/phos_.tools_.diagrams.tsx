@@ -49,7 +49,7 @@ function DiagramLibrary() {
           <div className="flex flex-wrap items-baseline justify-between gap-4">
             <Eyebrow>Figure · {sel.rel}</Eyebrow>
             <Link to="/phos/tools/diagrams" search={{ f: undefined }}
-                  className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">
+                  className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">
               ← all figures
             </Link>
           </div>
@@ -83,7 +83,7 @@ function DiagramLibrary() {
             const rows = FIGURES.filter((x) => x.rel === rel);
             return (
               <div key={rel}>
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                   {rel} · {rows.length}
                 </p>
                 <p className="mt-3 max-w-3xl text-sm leading-relaxed text-bone/70">{RELATIONS[rel]}</p>
@@ -94,7 +94,7 @@ function DiagramLibrary() {
                       <p className="font-serif text-lg text-bone transition-colors group-hover:text-gold">{x.k}</p>
                       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
                       {x.teaching && (
-                        <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+                        <p className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
                           {x.teaching}
                         </p>
                       )}
@@ -125,7 +125,7 @@ function Projection({ teaching, figures }: { teaching: string; figures: Figure[]
               className={`border px-3 py-1.5 text-left transition-colors ${
                 n === i ? "border-gold" : "border-border hover:border-gold/60"}`}>
               <span className={`block font-serif text-sm ${n === i ? "text-gold" : "text-bone/80"}`}>{x.k}</span>
-              <span className="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+              <span className="mt-0.5 block font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
                 {x.rel}
               </span>
             </button>

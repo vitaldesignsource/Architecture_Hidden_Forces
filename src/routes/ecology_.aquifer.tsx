@@ -215,7 +215,7 @@ function Aquifer() {
         </div>
         <div className="mt-16">
           <AquiferSection />
-          <p className="mt-6 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim lg:text-left">
+          <p className="mt-6 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim lg:text-left">
             spatial · analogical · one section carrying the vocabulary of the depth
           </p>
         </div>
@@ -248,7 +248,7 @@ function Aquifer() {
             </p>
             <div className="mt-10">
               <FormToTendency />
-              <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+              <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
                 analogical · the water keeps the movement, not the outline
               </p>
             </div>
@@ -338,11 +338,11 @@ function Aquifer() {
                 {f.link && <p className="mt-3 text-xs text-muted-foreground">{f.link}</p>}
               </div>
               <div>
-                <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">What it gives</p>
+                <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">What it gives</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.gives}</p>
               </div>
               <div>
-                <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Where the Aquifer parts from it</p>
+                <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Where the Aquifer parts from it</p>
                 <p className="mt-3 text-sm leading-relaxed text-bone/80">{f.differs}</p>
               </div>
             </div>
@@ -392,7 +392,7 @@ function Aquifer() {
         </div>
         <div className="mt-12">
           <ThreeRetentions />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             symbolic · three retentions, kept three
           </p>
         </div>
@@ -530,7 +530,7 @@ function Aquifer() {
           </div>
           <div>
             <ScarAndReturn />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               causal · each pass deepens the channel
             </p>
           </div>
@@ -565,7 +565,7 @@ function Aquifer() {
               possesses more age than one's personal history can explain.
             </p>
             <div className="mt-8 border border-gold/30 bg-void/60 p-6 sm:p-8">
-              <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Used with restraint</p>
+              <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Used with restraint</p>
               <p className="mt-4 text-base leading-relaxed text-bone/90">
                 This doctrine does not mean that every emotion has an occult source, that every
                 inherited difficulty is caused by a subtle reservoir, or that ordinary
@@ -651,14 +651,14 @@ function Aquifer() {
         </p>
         <div className="mt-10 grid gap-px border border-border bg-border/60 sm:grid-cols-3">
           <div className="bg-void p-6">
-            <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Drought</p>
+            <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Drought</p>
             <p className="mt-3 text-sm leading-relaxed text-bone/85">
               Inherited forms turn brittle because no deep vitality reaches them. A culture repeats
               its symbols without meeting their roots.
             </p>
           </div>
           <div className="bg-void p-6">
-            <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Flood</p>
+            <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Flood</p>
             <p className="mt-3 text-sm leading-relaxed text-bone/85">
               Submerged passions and archaic patterns rise faster than conscious institutions can
               mediate them: contagious images, sudden fanaticism, visionary creativity, the return
@@ -666,7 +666,7 @@ function Aquifer() {
             </p>
           </div>
           <div className="bg-void p-6">
-            <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Artesian spring</p>
+            <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Artesian spring</p>
             <p className="mt-3 text-sm leading-relaxed text-bone/85">
               A clean pressure from the depths rises without coercion, because a true opening has
               finally been formed. A forgotten art restored; a religious language renewed; an

@@ -83,7 +83,7 @@ export function Hypostases() {
                 <circle cx={C} cy={C} r={h.r} fill="var(--void)" fillOpacity={i === 0 ? 1 : 0.55}
                         stroke="var(--gold)" strokeOpacity={on ? 1 : sel === null ? 0.6 : 0.25}
                         strokeWidth={on ? 2 : 1.1} />
-                <text x={C} y={C - h.r + 15} textAnchor="middle" className="font-mono"
+                <text x={C} y={C - h.r + 15} textAnchor="middle" className="font-label"
                       fontSize="8" letterSpacing="1.5"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel === null || on ? 1 : 0.35}>
@@ -94,7 +94,7 @@ export function Hypostases() {
           })}
           <circle className="aoh-hy-core" cx={C} cy={C} r="13" fill="var(--gold)" />
 
-          <text x={C} y="342" textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="1.5"
+          <text x={C} y="342" textAnchor="middle" className="font-label" fontSize="7.5" letterSpacing="1.5"
                 fill="var(--muted-foreground)">
             THE CORE NEVER DIMINISHES
           </text>
@@ -103,7 +103,7 @@ export function Hypostases() {
         <div className="mt-3 flex justify-center gap-2">
           {M.map((m, i) => (
             <button key={m.k} onClick={() => setMv(i)} aria-pressed={mv === i}
-              className={`border px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors ${
+              className={`border px-2.5 py-1.5 font-label text-[10px] uppercase tracking-[0.1em] transition-colors ${
                 mv === i ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
               {m.k}
             </button>
@@ -129,7 +129,7 @@ export function Hypostases() {
           <>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">{cur.is}</p>
             <div className="mt-6 border-l-2 border-bone/40 pl-5">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/70">
+              <p className="font-label text-[10px] uppercase tracking-[0.2em] text-bone/70">
                 Not to be identified with — {cur.not}
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cur.why}</p>
@@ -137,7 +137,7 @@ export function Hypostases() {
           </>
         ) : (
           <>
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {M[mv].k} — {M[mv].g}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{M[mv].d}</p>

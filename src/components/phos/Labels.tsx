@@ -19,8 +19,8 @@ export function LabelChips({
 }) {
   if (!labels.length && !confidence.length) return null;
   const base = size === "xs"
-    ? "px-1.5 py-0.5 font-mono text-[8px] uppercase tracking-[0.14em]"
-    : "px-2 py-1 font-mono text-[9px] uppercase tracking-[0.16em]";
+    ? "px-1.5 py-0.5 font-label text-[8px] uppercase tracking-[0.14em]"
+    : "px-2 py-1 font-label text-[9px] uppercase tracking-[0.16em]";
   return (
     <span className="inline-flex flex-wrap gap-1.5">
       {labels.map((l) => (
@@ -45,7 +45,7 @@ export function FacetLines({ facets }: { facets: Record<string, string[]> }) {
     <dl className="grid gap-x-8 gap-y-2 sm:grid-cols-[auto_1fr]">
       {rows.map((f) => (
         <div key={f.key} className="contents">
-          <dt className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim sm:pt-0.5">{f.name}</dt>
+          <dt className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim sm:pt-0.5">{f.name}</dt>
           <dd className="text-sm leading-relaxed text-bone/80">
             {facets[f.key].map((v, i) => (
               <span key={v}>

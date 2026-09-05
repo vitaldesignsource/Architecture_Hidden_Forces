@@ -100,7 +100,7 @@ function Flashing() {
         </h2>
         <div className="mt-10 grid gap-14 lg:grid-cols-2 lg:items-start">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               One · the afterimage
             </p>
             <div className="mt-6">
@@ -108,7 +108,7 @@ function Flashing() {
             </div>
           </div>
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Two · simultaneous contrast
             </p>
             <div className="mt-6">
@@ -230,7 +230,7 @@ function Flashing() {
           </div>
 
           <div className="lg:border-l lg:border-border lg:pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Where this sits
             </p>
             <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground">
@@ -261,7 +261,7 @@ function Flashing() {
                 — the text the treatise reads there.
               </p>
             </div>
-            <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-8 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Sources for the tables
             </p>
             <ul className="mt-4 space-y-2 text-xs leading-relaxed text-bone/55">

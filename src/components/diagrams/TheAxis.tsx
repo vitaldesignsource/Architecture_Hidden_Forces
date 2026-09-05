@@ -73,12 +73,12 @@ export function TheAxis() {
                 <circle cx="150" cy={c.y} r="29" fill="var(--void)" stroke="var(--gold)"
                         strokeOpacity={lit ? 1 : 0.24}
                         strokeDasharray={lit ? "none" : "4 4"} strokeWidth={lit ? 1.6 : 1} />
-                <text x="150" y={c.y + 4} textAnchor="middle" className="font-mono" fontSize="8.4"
+                <text x="150" y={c.y + 4} textAnchor="middle" className="font-label" fontSize="8.4"
                       letterSpacing="1.1" fill={lit ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={lit ? 1 : 0.5}>{c.k.toUpperCase()}</text>
                 <text x="112" y={c.y + 3} textAnchor="end" className="font-serif" fontSize="9.5"
                       fill="var(--muted-foreground)" opacity={lit ? 0.85 : 0.3}>{c.pr}</text>
-                <text x="188" y={c.y + 3} className="font-mono" fontSize="6"
+                <text x="188" y={c.y + 3} className="font-label" fontSize="6"
                       fill="var(--muted-foreground)" opacity={lit ? 0.7 : 0.25}>
                   {lit ? "ENGAGED" : "ABSENT"}
                 </text>
@@ -86,7 +86,7 @@ export function TheAxis() {
             );
           })}
 
-          <text x="150" y="322" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="150" y="322" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill={whole ? "var(--gold)" : "var(--muted-foreground)"}
                 opacity="0.85">
             {whole ? "THE COMPLETE AXIS" : "THE AXIS IS BROKEN"}
@@ -95,7 +95,7 @@ export function TheAxis() {
       </div>
 
       <div className="min-h-[15rem]">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           {whole ? "Complete" : "Incomplete"}
         </p>
         <p className="mt-3 font-serif text-2xl leading-relaxed text-gold">{cur.k}</p>
@@ -104,7 +104,7 @@ export function TheAxis() {
         <div className="mt-8 space-y-px">
           {C.map((c) => (
             <div key={c.k} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[5rem_1fr]">
-              <span className={`font-mono text-[10px] uppercase tracking-[0.12em] ${on[c.k as keyof typeof on] ? "text-gold" : "text-muted-foreground"}`}>
+              <span className={`font-label text-[10px] uppercase tracking-[0.12em] ${on[c.k as keyof typeof on] ? "text-gold" : "text-muted-foreground"}`}>
                 {c.k}
               </span>
               <span className={`text-sm leading-relaxed ${on[c.k as keyof typeof on] ? "text-bone/80" : "text-muted-foreground"}`}>

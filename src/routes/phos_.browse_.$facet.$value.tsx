@@ -23,9 +23,9 @@ export const Route = createFileRoute("/phos_/browse_/$facet/$value")({
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       <PhosHeader panel={<ContentsPanel active={null} entries={[]} groups={[]} paths={[]} volume="/phos/portal" />} />
       <div className="mx-auto max-w-3xl px-6 pt-48 pb-32">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Not a facet value</p>
+        <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Not a facet value</p>
         <h1 className="mt-6 font-serif text-4xl leading-tight">Nothing is filed under that</h1>
-        <Link to="/phos/browse" className="mt-10 inline-block font-mono text-[10px] uppercase tracking-[0.25em] text-gold hover:underline">
+        <Link to="/phos/browse" className="mt-10 inline-block font-label text-[10px] uppercase tracking-[0.25em] text-gold hover:underline">
           ← Browse
         </Link>
       </div>
@@ -53,11 +53,11 @@ function FacetValue() {
         <Backdrop src="/bg/dark-hall-with-charted-stone-floor.webp" opacity={0.26} position="center 50%" fill />
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             <Link to="/phos/browse" className="hover:underline">Browse</Link> · {facet.name}
           </p>
           <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-tight sm:text-5xl">{value}</h1>
-          <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          <p className="mt-4 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
             {entries.length ? `${entries.length} written ${entries.length === 1 ? "entry" : "entries"}` : "no written entries yet"}
           </p>
         </div>
@@ -73,7 +73,7 @@ function FacetValue() {
           )}
           {byDivision.map(({ d, rows }) => (
             <div key={d.id} className="mt-12 first:mt-0">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 <Link to="/phos/$division" params={{ division: d.id }} className="hover:text-gold">
                   {divisionLabel(d)}{d.numeral ? ` · ${d.title}` : ""}
                 </Link>
@@ -86,7 +86,7 @@ function FacetValue() {
                     params={{ division: d.id, entry: e.slug }}
                     className="group grid grid-cols-[3rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40"
                   >
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{String(e.n).padStart(2, "0")}</span>
+                    <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{String(e.n).padStart(2, "0")}</span>
                     <span className="min-w-0">
                       <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                         <span className="font-serif text-lg text-bone transition-colors group-hover:text-gold">{e.title}</span>

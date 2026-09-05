@@ -92,12 +92,12 @@ export function Pointers({ arch = [], portal = [] }: { arch?: ArchId[]; portal?:
     <div className="mt-16 grid gap-10 border-t border-border pt-8 lg:grid-cols-2">
       {arch.length > 0 && (
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Architecture</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Architecture</p>
           <ul className="mt-4 space-y-2">
             {arch.map((id) => (
               <li key={id}>
                 <Link to="/" hash={id} className="group grid grid-cols-[4.2rem_1fr] gap-3 text-sm leading-relaxed text-bone/80 transition-colors hover:text-gold">
-                  <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{ARCH[id].split(" · ")[0]}</span>
+                  <span className="whitespace-nowrap font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{ARCH[id].split(" · ")[0]}</span>
                   <span>{ARCH[id].split(" · ")[1]}</span>
                 </Link>
               </li>
@@ -107,7 +107,7 @@ export function Pointers({ arch = [], portal = [] }: { arch?: ArchId[]; portal?:
       )}
       {portal.length > 0 && (
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Portal</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Portal</p>
           <ul className="mt-4 space-y-2">
             {portal.map((id) => {
               const r = ref(id);
@@ -115,7 +115,7 @@ export function Pointers({ arch = [], portal = [] }: { arch?: ArchId[]; portal?:
                 <li key={id}>
                   <Link to="/phos/$division/$entry" params={{ division: r.division, entry: r.slug }}
                         className="group grid grid-cols-[4.2rem_1fr] gap-3 text-sm leading-relaxed text-bone/80 transition-colors hover:text-gold">
-                    <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{r.numeral} {r.n}</span>
+                    <span className="whitespace-nowrap font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{r.numeral} {r.n}</span>
                     <span>{r.title}</span>
                   </Link>
                 </li>
@@ -145,7 +145,7 @@ export function Items({ items }: { items: [string, string][] }) {
 /** A run of short phrases with a mark between, for sequences read across. */
 export function Sequence({ steps, sep = "→" }: { steps: string[]; sep?: string }) {
   return (
-    <p className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-mono text-[11px] uppercase tracking-[0.18em] text-bone/85">
+    <p className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-label text-[11px] uppercase tracking-[0.18em] text-bone/85">
       {steps.map((s, i) => (
         <Fragment key={s + i}>
           {i > 0 && <span className="text-gold/50" aria-hidden>{sep}</span>}

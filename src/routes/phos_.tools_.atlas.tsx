@@ -86,12 +86,12 @@ function Atlas() {
               {cur !== null ? fmtYear(cur) : <span className="text-bone/40">move along the timeline</span>}
             </p>
             {cur !== null && (
-              <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+              <p className="mt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                 {lit.length} {lit.length === 1 ? "light" : "lights"} alight
               </p>
             )}
           </div>
-          <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em]">
+          <div className="flex flex-wrap items-center gap-2 font-label text-[10px] uppercase tracking-[0.18em]">
             {selSpan && (
               <button onClick={() => set({ e: undefined })} className="border border-gold/60 px-3 py-1.5 text-gold hover:bg-gold/10" data-chip="span">
                 {selSpan.label} <span className="ml-2 text-gold-dim">×</span>
@@ -121,18 +121,18 @@ function Atlas() {
               onHoverPlace={setHovPlace} onPlace={(id) => set({ p: id ?? undefined })} focus={focus}
             />
           ) : (
-            <div className="flex aspect-[5/3] items-center justify-center font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim/70" aria-busy>
+            <div className="flex aspect-[5/3] items-center justify-center font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim/70" aria-busy>
               Drawing the sheet
             </div>
           )}
         </div>
-        <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
+        <p className="mt-3 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
           The sheet is the Old World, where every entry but one is placed; the Theosophical Society, founded in New York, is set at Adyar, its home from 1882. Discoveries made beyond the sheet are named in their notes.
         </p>
 
         {/* the timeline */}
         <div className="mt-10">
-          <div className="mb-4 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
+          <div className="mb-4 flex flex-wrap items-center gap-x-6 gap-y-2 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
             <span><i className="mr-2 inline-block h-2 w-5 bg-gold/50 align-middle" />life</span>
             <span><i className="mr-2 inline-block h-2 w-5 rounded-full bg-gold-dim/75 align-middle" />text</span>
             <span><i className="mr-2 inline-block h-2 w-5 border border-gold/50 bg-gold/20 align-middle" />tradition</span>
@@ -144,7 +144,7 @@ function Atlas() {
             hov={hov} sel={sel} year={year} pinned={pinned} place={place} hovPlace={hovPlace}
             onHover={setHov} onSelect={(id) => set({ e: id ?? undefined })} onYear={setYear} onPin={(yy) => set({ y: yy ?? undefined })}
           />
-          <div className="mt-3 flex gap-2 font-mono text-[10px] uppercase tracking-[0.12em]">
+          <div className="mt-3 flex gap-2 font-label text-[10px] uppercase tracking-[0.12em]">
             <button onClick={() => setWin(FULL)} className="border border-border px-3 py-1.5 text-muted-foreground hover:border-gold/60 hover:text-gold">All of time</button>
             {selSpan && <button onClick={() => setWin(windowFor(selSpan))} className="border border-border px-3 py-1.5 text-muted-foreground hover:border-gold/60 hover:text-gold">Around {selSpan.label}</button>}
           </div>
@@ -160,7 +160,7 @@ function Atlas() {
                 <p className="mt-2 text-sm text-bone/75">
                   {selSpan.places.length === 0 ? "Where it was composed is not known." : (
                     <>
-                      <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">{selSpan.setting ? "setting" : selSpan.places.length > 1 ? "moving through" : "at"}</span>{" "}
+                      <span className="font-label text-[9px] uppercase tracking-[0.18em] text-gold-dim">{selSpan.setting ? "setting" : selSpan.places.length > 1 ? "moving through" : "at"}</span>{" "}
                       {selSpan.places.map((pl, i) => (
                         <span key={pl}>
                           {i > 0 && <span className="text-gold-dim"> → </span>}
@@ -174,7 +174,7 @@ function Atlas() {
                 {entry && <div className="mt-5"><EntryRow e={entry} /></div>}
                 {contemporaries(selSpan).length > 0 && (
                   <div className="mt-6">
-                    <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">Alight at the same time</p>
+                    <p className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">Alight at the same time</p>
                     <p className="mt-2 text-sm leading-relaxed text-bone/75">
                       {contemporaries(selSpan).slice(0, 12).map((c, i) => (
                         <span key={c.id}>
@@ -182,7 +182,7 @@ function Atlas() {
                           <button onClick={() => set({ e: c.id })} onPointerEnter={() => setHov(c.id)} onPointerLeave={() => setHov(null)} className="underline-offset-4 hover:text-gold hover:underline">{c.label}</button>
                         </span>
                       ))}
-                      {contemporaries(selSpan).length > 12 && <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">and {contemporaries(selSpan).length - 12} more</span>}
+                      {contemporaries(selSpan).length > 12 && <span className="ml-2 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">and {contemporaries(selSpan).length - 12} more</span>}
                     </p>
                   </div>
                 )}
@@ -195,7 +195,7 @@ function Atlas() {
                   {here.map((s) => (
                     <li key={s.id}>
                       <button onClick={() => set({ e: s.id })} onPointerEnter={() => setHov(s.id)} onPointerLeave={() => setHov(null)} className="group grid w-full grid-cols-[7rem_1fr] items-baseline gap-3 py-2.5 text-left">
-                        <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">{when(s)}</span>
+                        <span className="font-label text-[9px] uppercase tracking-[0.15em] text-gold-dim">{when(s)}</span>
                         <span className="font-serif text-base text-bone transition-colors group-hover:text-gold">{s.label}</span>
                       </button>
                     </li>
@@ -221,7 +221,7 @@ function Atlas() {
                   <div className="mt-3 space-y-3">
                     {LANES.filter((l) => lit.some((s) => s.lane === l)).map((l) => (
                       <div key={l}>
-                        <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">{l}</p>
+                        <p className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">{l}</p>
                         <p className="mt-1 text-sm leading-relaxed text-bone/80">
                           {lit.filter((s) => s.lane === l).map((s, i) => (
                             <span key={s.id}>
@@ -253,13 +253,13 @@ function Atlas() {
         <div className="mt-8 grid gap-x-12 gap-y-10 lg:grid-cols-2">
           {LANES.map((l) => (
             <div key={l}>
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">{l}</p>
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">{l}</p>
               <ul className="mt-3 divide-y divide-border">
                 {SPANS.filter((s) => s.lane === l).map((s) => {
                   const en = entryOfSpan(s);
                   const inner = (
                     <>
-                      <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">{when(s)}</span>
+                      <span className="font-label text-[9px] uppercase tracking-[0.15em] text-gold-dim">{when(s)}</span>
                       <span className="min-w-0">
                         <span className="block font-serif text-base text-bone transition-colors group-hover:text-gold">{s.label}</span>
                         {s.places.length > 0 && <span className="block text-xs text-muted-foreground">{s.places.map(placeName).join(" → ")}</span>}

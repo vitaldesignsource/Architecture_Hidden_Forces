@@ -31,7 +31,7 @@ export function ThreeRetentions() {
         })}
         <path d="M 100 12 L 120 12 L 116 30 L 104 30 Z" fill="none" stroke={G} strokeWidth={1} />
         <path d="M 104 32 L 116 32" stroke={G} strokeOpacity={0.4} strokeWidth={0.6} strokeDasharray="2 2" />
-        <text x={110} y={146} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.85}>architecture retained</text>
+        <text x={110} y={146} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.85}>architecture retained</text>
       </svg>
       <svg viewBox="0 0 220 150" className="h-auto w-full" role="img" aria-labelledby="aoh-tr2">
         <title id="aoh-tr2">The footprint of the same arch pressed into layered ground, the strata bent around where it stood.</title>
@@ -40,7 +40,7 @@ export function ThreeRetentions() {
         ))}
         <path d="M 70 130 L 70 118 M 150 130 L 150 118" stroke={G} strokeOpacity={0.7} strokeWidth={1} />
         <path d="M 70 118 L 150 118" stroke={G} strokeOpacity={0.35} strokeWidth={0.6} strokeDasharray="2 3" />
-        <text x={110} y={146} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.85}>consequence retained</text>
+        <text x={110} y={146} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.85}>consequence retained</text>
       </svg>
       <svg viewBox="0 0 220 150" className="h-auto w-full" role="img" aria-labelledby="aoh-tr3">
         <title id="aoh-tr3">Beneath a waterline, the arch's stones softened and carried along in a dark current.</title>
@@ -53,7 +53,7 @@ export function ThreeRetentions() {
           <path d="M 104 104 l 11 -2 l 2 10 l -10 3 z" transform="rotate(22 110 109)" />
           <path d="M 160 88 l 10 -3 l 3 9 l -10 4 z" transform="rotate(-30 166 93)" />
         </g>
-        <text x={110} y={146} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.85}>impulse retained</text>
+        <text x={110} y={146} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.85}>impulse retained</text>
       </svg>
     </div>
   );

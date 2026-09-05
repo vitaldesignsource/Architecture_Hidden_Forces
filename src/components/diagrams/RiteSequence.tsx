@@ -39,7 +39,7 @@ export function RiteSequence() {
           {/* the threshold — a bounded world, with a gate on the left where it is crossed */}
           <path d="M28,26 L28,14 M28,42 L28,150 L372,150 L372,14 L28,14"
                 fill="none" stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="1" />
-          <text x="24" y="37" textAnchor="end" className="font-mono" fontSize="6.5"
+          <text x="24" y="37" textAnchor="end" className="font-label" fontSize="6.5"
                 letterSpacing="0.8" fill="var(--muted-foreground)"
                 transform="rotate(-90 24 37)">THRESHOLD</text>
 
@@ -51,9 +51,9 @@ export function RiteSequence() {
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : i); } }}>
                 <circle cx={X(i)} cy="58" r={on ? 15 : 12} fill="var(--void)" stroke="var(--gold)"
                         strokeOpacity={on ? 1 : 0.6} strokeWidth={on ? 1.8 : 1} />
-                <text x={X(i)} y="62" textAnchor="middle" className="font-mono" fontSize="9"
+                <text x={X(i)} y="62" textAnchor="middle" className="font-label" fontSize="9"
                       fill="var(--gold)" fillOpacity={on ? 1 : 0.75}>{i + 1}</text>
-                <text x={X(i)} y="92" textAnchor="middle" className="font-mono" fontSize="6.4"
+                <text x={X(i)} y="92" textAnchor="middle" className="font-label" fontSize="6.4"
                       letterSpacing="0.7" fill={on ? "var(--gold)" : "var(--muted-foreground)"}>
                   {st.k.toUpperCase()}
                 </text>
@@ -73,15 +73,15 @@ export function RiteSequence() {
                    stroke={displaced ? "var(--bone)" : "var(--gold)"}
                    strokeOpacity={displaced ? 0.75 : 0.9}
                    strokeDasharray={displaced ? "5 4" : "none"} strokeWidth="1.4" />
-          <text x="200" y="209" textAnchor="middle" className="font-mono" fontSize="7"
+          <text x="200" y="209" textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="1.3" fill={displaced ? "var(--bone)" : "var(--gold)"}>
             {displaced ? "OPERATIVE OBJECT" : "DECLARED OBJECT"}
           </text>
-          <text x="200" y="223" textAnchor="middle" className="font-mono" fontSize="6.2"
+          <text x="200" y="223" textAnchor="middle" className="font-label" fontSize="6.2"
                 letterSpacing="0.9" fill="var(--muted-foreground)">
             {displaced ? "NO LONGER WHAT IS NAMED" : "WHAT THE PARTICIPANTS NAME"}
           </text>
-          <text x="200" y="258" textAnchor="middle" className="font-mono" fontSize="6.6"
+          <text x="200" y="258" textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.8">
             THE SEQUENCE IS IDENTICAL IN BOTH STATES
           </text>
@@ -89,7 +89,7 @@ export function RiteSequence() {
 
         <div className="mt-3 flex justify-center">
           <button onClick={() => setDisplaced((v) => !v)}
-            className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
+            className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
             {displaced ? "restore the declared object" : "displace the object"}
           </button>
         </div>
@@ -98,7 +98,7 @@ export function RiteSequence() {
       <div className="min-h-[15rem]">
         {sel !== null ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {String(sel + 1).padStart(2, "0")} · {ST[sel].k}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">
@@ -113,7 +113,7 @@ export function RiteSequence() {
           </>
         ) : displaced ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-bone/70">
               Telestic inertia
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">

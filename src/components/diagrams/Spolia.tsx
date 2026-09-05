@@ -24,7 +24,7 @@ export function Spolia() {
         <line x1={10} y1={200} x2={510} y2={200} stroke="currentColor" strokeOpacity={0.3} strokeWidth={0.8} />
         {/* the ruin */}
         <g>
-          <text x={120} y={26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that failed</text>
+          <text x={120} y={26} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that failed</text>
           {[50, 110, 170].map((x, i) => (
             <g key={x}>
               {/* drums, some present, some gone */}
@@ -48,10 +48,10 @@ export function Spolia() {
         {/* the arrow of reuse */}
         <path d="M 250 120 C 280 96, 300 96, 330 120" fill="none" stroke={G} strokeOpacity={0.5} strokeWidth={0.8} strokeDasharray="3 4" />
         <polygon points="326,114 334,121 325,124" fill={G} fillOpacity={0.6} />
-        <text x={290} y={92} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.7}>quarried</text>
+        <text x={290} y={92} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.7}>quarried</text>
         {/* the newer wall */}
         <g>
-          <text x={415} y={26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that inherits</text>
+          <text x={415} y={26} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.2em" }} fill="currentColor" fillOpacity={0.5}>the form that inherits</text>
           {/* courses of a wall */}
           {[0, 1, 2, 3, 4].map((r) =>
             [0, 1, 2, 3].map((c) => {

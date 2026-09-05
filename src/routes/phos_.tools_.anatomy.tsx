@@ -45,7 +45,7 @@ function Anatomy() {
             <h2 className="mt-4 font-serif text-4xl leading-tight">{cur.name}</h2>
             <p className="mt-4 border-l-2 border-gold/40 pl-5 font-serif text-xl italic leading-relaxed text-bone/85">{cur.line}</p>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">{cur.d}</p>
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Planes ·{" "}
               {cur.planes.map((p, k) => (
                 <span key={p}>
@@ -54,7 +54,7 @@ function Anatomy() {
                 </span>
               ))}
             </p>
-            <div className="mt-6 flex gap-3 font-mono text-[10px] uppercase tracking-[0.25em]">
+            <div className="mt-6 flex gap-3 font-label text-[10px] uppercase tracking-[0.25em]">
               {prev ? (
                 <button type="button" onClick={() => go(prev.key)} className="border border-gold/40 px-3 py-1.5 text-bone/85 hover:border-gold hover:text-gold">↑ {prev.name}</button>
               ) : (

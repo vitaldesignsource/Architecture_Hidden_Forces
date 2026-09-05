@@ -55,15 +55,15 @@ export function LunarClocks() {
           <circle cx={C} cy={C} r={r} fill="none" stroke="var(--gold)" strokeOpacity="0.4" strokeWidth="0.9" />
           <path d={moon} fill="var(--gold)" fillOpacity="0.92" />
 
-          <text x={C} y={C + 58} textAnchor="middle" className="font-mono" fontSize="8"
+          <text x={C} y={C + 58} textAnchor="middle" className="font-label" fontSize="8"
                 letterSpacing="1.4" fill="var(--gold)">MANSION {mansion + 1} / {N}</text>
-          <text x={C} y={C + 72} textAnchor="middle" className="font-mono" fontSize="7"
+          <text x={C} y={C + 72} textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="1.1" fill="var(--muted-foreground)">{PHASE.toUpperCase()}</text>
-          <text x={C} y="352" textAnchor="middle" className="font-mono" fontSize="6.8"
+          <text x={C} y="352" textAnchor="middle" className="font-label" fontSize="6.8"
                 letterSpacing="1.2" fill="var(--muted-foreground)">
             DAY {day.toFixed(1)} — SIDEREAL 27.32d · SYNODIC 29.53d
           </text>
-          <text x={C} y="366" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="366" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--gold)" opacity={day >= SID ? 0.95 : 0.3}>
             {day >= SID ? "SAME STAR — DIFFERENT PHASE" : "DASHED MARK IS WHERE IT BEGAN"}
           </text>
@@ -74,7 +74,7 @@ export function LunarClocks() {
       </div>
 
       <div className="min-h-[15rem]">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           Two clocks, running independently
         </p>
         <div className="mt-4 space-y-px">
@@ -82,7 +82,7 @@ export function LunarClocks() {
             ["Synodic", PHASE, "the Moon against the Sun — 29.53 days"],
             ["This phase favours", movement, "which the mansion then refines into a kind"]].map(([a2, b, c]) => (
             <div key={a2} className="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a2}</span>
+              <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{a2}</span>
               <span className="text-sm leading-relaxed text-muted-foreground">
                 <span className="text-bone/90">{b}</span> — {c}
               </span>

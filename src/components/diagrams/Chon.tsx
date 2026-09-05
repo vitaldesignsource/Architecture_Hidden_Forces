@@ -64,9 +64,9 @@ export function Chon() {
 
           <circle cx={C} cy={163} r="34" fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity={shadow ? 0.25 : 0.45} strokeDasharray="3 5" strokeWidth="0.9" />
-          <text x={C} y="160" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="160" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="0.9" fill="var(--gold)" opacity="0.85">LIVING</text>
-          <text x={C} y="171" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="171" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="0.9" fill="var(--gold)" opacity="0.85">VESSEL</text>
 
           {EL.map((e) => {
@@ -84,14 +84,14 @@ export function Chon() {
                 <text x={x} y={y + 6} textAnchor="middle" className="font-serif" fontSize="18"
                       fill={shadow ? "var(--bone)" : "var(--gold)"}
                       fillOpacity={on ? 1 : sel ? 0.3 : 0.9}>{e.s}</text>
-                <text x={x} y={e.lab} textAnchor="middle" className="font-mono" fontSize="6.6"
+                <text x={x} y={e.lab} textAnchor="middle" className="font-label" fontSize="6.6"
                       letterSpacing="1.1" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.35 : 1}>{e.k.toUpperCase()}</text>
               </g>
             );
           })}
 
-          <text x={C} y="334" textAnchor="middle" className="font-mono" fontSize="6.5"
+          <text x={C} y="334" textAnchor="middle" className="font-label" fontSize="6.5"
                 letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.85">
             {shadow ? "THE SAME CAPACITY, UNGOVERNED" : "NONE OF THEM SUFFICIENT ALONE"}
           </text>
@@ -100,7 +100,7 @@ export function Chon() {
         <div className="mt-3 flex justify-center gap-2">
           {[["Function", false], ["Shadow", true]].map(([label, v]) => (
             <button key={String(label)} onClick={() => setShadow(v as boolean)} aria-pressed={shadow === v}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 shadow === v ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
               {label}
             </button>
@@ -111,12 +111,12 @@ export function Chon() {
       <div className="min-h-[15rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k} · {cur.res}
             </p>
             {shadow ? (
               <>
-                <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-bone/70">Its shadow</p>
+                <p className="mt-4 font-label text-[10px] uppercase tracking-[0.2em] text-bone/70">Its shadow</p>
                 <p className="mt-3 font-serif text-xl leading-relaxed text-bone/85">{cur.sh}</p>
               </>
             ) : (

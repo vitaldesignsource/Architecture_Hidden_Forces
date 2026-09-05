@@ -25,7 +25,7 @@ export function WhereAndWhen({ id }: { id: string }) {
     : `${s.setting ? "set at" : s.places.length > 1 ? "moving through" : "at"} ${s.places.map(placeName).join(" → ")}`;
   return (
     <section className="mt-16 border-t border-border pt-8" data-where-and-when>
-      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Where and when</p>
+      <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Where and when</p>
       <p className="mt-3 font-serif text-xl text-bone">
         {s.label} <span className="mx-1 text-bone/40">·</span> <span className="text-gold">{when(s)}</span>
       </p>
@@ -53,7 +53,7 @@ export function WhereAndWhen({ id }: { id: string }) {
           </div>
         )}
       </div>
-      <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+      <p className="mt-4 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
         <Link to="/phos/tools/atlas" search={{ e: s.id }} className="hover:text-gold">Open in the Atlas →</Link>
       </p>
     </section>

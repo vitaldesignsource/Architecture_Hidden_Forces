@@ -103,7 +103,7 @@ export function TermRegister({ terms, className = "" }: { terms: TermData[]; cla
                 className="block text-2xl text-gold"
               />
             ) : (
-              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-bone/35">
+              <span className="font-label text-[10px] uppercase tracking-[0.15em] text-bone/35">
                 spelling not set
               </span>
             )}

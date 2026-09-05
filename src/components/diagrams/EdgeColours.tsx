@@ -77,7 +77,7 @@ export function EdgeColours() {
             aria-hidden
           />
         </div>
-        <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+        <p className="mt-3 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
           {dark
             ? "a dark band on a light ground · the edges meet in magenta"
             : "a light band on a dark ground · the edges meet in green"}
@@ -87,9 +87,9 @@ export function EdgeColours() {
       </div>
 
       <div>
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">The band</p>
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">The band</p>
         <label className="mt-4 block">
-          <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+          <span className="font-label text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
             width · {width}px
           </span>
           <input
@@ -99,7 +99,7 @@ export function EdgeColours() {
           />
         </label>
         <label className="mt-5 block">
-          <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+          <span className="font-label text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
             refraction · {spread}
           </span>
           <input
@@ -110,7 +110,7 @@ export function EdgeColours() {
         </label>
         <button
           onClick={() => setDark((v) => !v)}
-          className="mt-6 w-full border border-gold/50 px-3 py-2 font-mono text-[9px] uppercase tracking-[0.18em] text-gold transition-colors hover:bg-gold/10"
+          className="mt-6 w-full border border-gold/50 px-3 py-2 font-label text-[9px] uppercase tracking-[0.18em] text-gold transition-colors hover:bg-gold/10"
         >
           {dark ? "Show a light band on dark" : "Show a dark band on light"}
         </button>

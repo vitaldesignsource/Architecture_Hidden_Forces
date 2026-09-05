@@ -21,7 +21,7 @@ export function EntryRows({ entries, compact = false, grouped = true }: { entrie
       {groups.map(({ d, rows }, gi) => (
         <div key={d?.id ?? gi} className={gi ? "mt-10" : ""}>
           {d && (
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               <Link to="/phos/$division" params={{ division: d.id }} className="hover:text-gold">
                 {divisionLabel(d)}{d.numeral ? ` · ${d.title}` : ""}
               </Link>
@@ -41,7 +41,7 @@ export function EntryRows({ entries, compact = false, grouped = true }: { entrie
 export function EntryRow({ e, compact = false }: { e: PhosEntry; compact?: boolean }) {
   const inner = (
     <>
-      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+      <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
         {e.division.numeral ? `${e.division.numeral}.` : ""}{e.n}
       </span>
       <span className="min-w-0">
@@ -50,7 +50,7 @@ export function EntryRow({ e, compact = false }: { e: PhosEntry; compact?: boole
             {e.title}
           </span>
           {!compact && e.written && <LabelChips labels={e.meta?.labels ?? []} size="xs" />}
-          {!e.written && <span className="font-mono text-[8px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
+          {!e.written && <span className="font-label text-[8px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
         </span>
         {!compact && e.meta?.summary && <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{e.meta.summary}</span>}
       </span>

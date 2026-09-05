@@ -94,7 +94,7 @@ export function EthericWatershed() {
           <path d="M 236 58 L 244 210 L 262 243" fill="none" stroke="currentColor" strokeOpacity={0.14 * dim("Stagnation")} strokeWidth={0.6} strokeDasharray="2 4" />
           {/* labels */}
           {F.map((f) => (
-            <text key={f.k} x={f.at[0]} y={f.at[1]} textAnchor="middle" className="aoh-ws-h font-mono uppercase"
+            <text key={f.k} x={f.at[0]} y={f.at[1]} textAnchor="middle" className="aoh-ws-h font-label uppercase"
                   style={{ ...fs(6.6), letterSpacing: "0.14em" }} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
                   onClick={() => setSel(on(f.k) ? null : f.k)}>
               {f.k}
@@ -106,7 +106,7 @@ export function EthericWatershed() {
         <div className="flex flex-wrap gap-2">
           {F.map((f) => (
             <button key={f.k} onClick={() => setSel(on(f.k) ? null : f.k)} aria-pressed={on(f.k)}
-                    className={`border px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.14em] transition-colors ${on(f.k) ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/40"}`}>
+                    className={`border px-2.5 py-1 font-label text-[9px] uppercase tracking-[0.14em] transition-colors ${on(f.k) ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/40"}`}>
               {f.k}
             </button>
           ))}

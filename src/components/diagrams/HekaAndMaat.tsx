@@ -64,9 +64,9 @@ export function HekaAndMaat() {
           {/* axes */}
           <line x1={X0} y1={Y0} x2={X1} y2={Y0} stroke="var(--gold)" strokeOpacity="0.45" strokeWidth="1" />
           <line x1={X0} y1={Y0} x2={X0} y2={Y1} stroke="var(--gold)" strokeOpacity="0.45" strokeWidth="1" />
-          <text x={X1} y={Y0 + 16} textAnchor="end" className="font-mono" fontSize="6.6"
+          <text x={X1} y={Y0 + 16} textAnchor="end" className="font-label" fontSize="6.6"
                 letterSpacing="1" fill="var(--gold)" opacity="0.85">HEKA — OPERATIVE →</text>
-          <text x={X0 - 6} y={Y1 - 8} textAnchor="start" className="font-mono" fontSize="6.6"
+          <text x={X0 - 6} y={Y1 - 8} textAnchor="start" className="font-label" fontSize="6.6"
                 letterSpacing="1" fill="var(--gold)" opacity="0.85">↑ MA&rsquo;AT — IN RIGHT ORDER</text>
 
           {[
@@ -75,7 +75,7 @@ export function HekaAndMaat() {
             { x: 0.25, y: 0.93, t: "MEASURE WITHOUT MEANS" },
             { x: 0.25, y: 0.07, t: "INERT" },
           ].map((q) => (
-            <text key={q.t} x={px(q.x)} y={py(q.y)} textAnchor="middle" className="font-mono"
+            <text key={q.t} x={px(q.x)} y={py(q.y)} textAnchor="middle" className="font-label"
                   fontSize="5.9" letterSpacing="0.9" fill="var(--muted-foreground)" opacity="0.6">
               {q.t}
             </text>
@@ -93,14 +93,14 @@ export function HekaAndMaat() {
                         strokeOpacity={on ? 1 : sel !== null ? 0.22 : 0.7}
                         strokeDasharray={good ? "none" : "4 3"}
                         strokeWidth={on ? 1.8 : 1.1} />
-                <text x={px(c.e)} y={py(c.m) + 3} textAnchor="middle" className="font-mono"
+                <text x={px(c.e)} y={py(c.m) + 3} textAnchor="middle" className="font-label"
                       fontSize="7.4" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel !== null && !on ? 0.3 : 1}>{i + 1}</text>
               </g>
             );
           })}
 
-          <text x="172" y="332" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="172" y="332" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             EFFECTIVE AND RIGHTFUL ARE NOT THE SAME AXIS
           </text>
@@ -110,7 +110,7 @@ export function HekaAndMaat() {
       <div className="min-h-[15rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {sel! + 1} · {cur.k}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>

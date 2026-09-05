@@ -100,13 +100,13 @@ export function ElementalPairs() {
                         strokeOpacity={lit ? 1 : sel === null ? 0.55 : 0.2} strokeWidth={lit ? 1.5 : 1} />
                 <text x={n.x} y={n.y - 2} textAnchor="middle" className="font-serif" fontSize="16"
                       fill="var(--gold)" fillOpacity={lit || sel === null ? 1 : 0.35}>{n.z}</text>
-                <text x={n.x} y={n.y + 13} textAnchor="middle" className="font-mono" fontSize="7"
+                <text x={n.x} y={n.y + 13} textAnchor="middle" className="font-label" fontSize="7"
                       letterSpacing="1.4" fill="var(--muted-foreground)">{n.k.toUpperCase()}</text>
               </g>
             );
           })}
         </svg>
-        <p className="mt-3 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+        <p className="mt-3 text-center font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
           choose an edge · six minglings
         </p>
       </div>
@@ -114,7 +114,7 @@ export function ElementalPairs() {
       <div className="min-h-[15rem]">
         {akasha ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">Ἀκάσα · the interval</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">Ἀκάσα · the interval</p>
             <p className="mt-3 font-serif text-2xl italic leading-tight text-bone">
               Akasha does not mix. It is the space of the operation.
             </p>
@@ -131,17 +131,17 @@ export function ElementalPairs() {
           </>
         ) : cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.t} &nbsp;·&nbsp; emergent third: <span className="text-gold">{cur.third}</span>
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               <div className="border-t border-gold/50 pt-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">In proportion</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">In proportion</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.bal}</p>
               </div>
               <div className="border-t border-border pt-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Out of it</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Out of it</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{cur.exc}</p>
               </div>
             </div>

@@ -106,8 +106,8 @@ export function SixSpecies() {
         <svg key={s.k} viewBox="0 0 120 148" className="h-auto w-full" role="img" aria-labelledby={`aoh-ss-t${i}`}>
           <title id={`aoh-ss-t${i}`}>{s.title}</title>
           {s.draw}
-          <text x={60} y={124} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.85}>{s.k}</text>
-          <text x={60} y={134} textAnchor="middle" className="font-mono uppercase" style={sub} fill="currentColor" fillOpacity={0.45}>
+          <text x={60} y={124} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.85}>{s.k}</text>
+          <text x={60} y={134} textAnchor="middle" className="font-label uppercase" style={sub} fill="currentColor" fillOpacity={0.45}>
             <tspan x={60}>{s.sub[0]}</tspan>
             <tspan x={60} dy={8}>{s.sub[1]}</tspan>
           </text>

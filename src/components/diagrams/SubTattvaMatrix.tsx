@@ -28,7 +28,7 @@ export function SubTattvaMatrix() {
 
   return (
     <div>
-      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+      <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
         The twenty-five · large form down, small form across
       </p>
       <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,20rem)]">
@@ -38,7 +38,7 @@ export function SubTattvaMatrix() {
             {T.map((t, j) => (
               <div
                 key={t}
-                className={`flex flex-col items-center gap-1 pb-2 text-center font-mono text-[9px] uppercase tracking-[0.12em] transition-colors sm:text-[10px] ${
+                className={`flex flex-col items-center gap-1 pb-2 text-center font-label text-[9px] uppercase tracking-[0.12em] transition-colors sm:text-[10px] ${
                   cur && cur[1] === j ? "text-gold" : "text-gold-dim"
                 }`}
               >
@@ -49,7 +49,7 @@ export function SubTattvaMatrix() {
             {T.map((dom, i) => (
               <div key={dom} className="contents">
                 <div
-                  className={`flex flex-col items-center justify-center gap-1 pr-1 text-center font-mono text-[8px] uppercase tracking-[0.1em] transition-colors sm:text-[9px] ${
+                  className={`flex flex-col items-center justify-center gap-1 pr-1 text-center font-label text-[8px] uppercase tracking-[0.1em] transition-colors sm:text-[9px] ${
                     cur && cur[0] === i ? "text-gold" : "text-gold-dim"
                   }`}
                 >
@@ -80,7 +80,7 @@ export function SubTattvaMatrix() {
                       }`}
                     >
                       <TattvaGlyph dominant={K[i]} modifier={diag ? null : K[j]} size="100%" decorative />
-                      <span className={`absolute bottom-0.5 right-1 font-mono text-[8px] uppercase tracking-[0.06em] ${on ? "text-gold" : "text-muted-foreground/70"}`}>
+                      <span className={`absolute bottom-0.5 right-1 font-label text-[8px] uppercase tracking-[0.06em] ${on ? "text-gold" : "text-muted-foreground/70"}`}>
                         {ABBR[i]}·{ABBR[j]}
                       </span>
                     </button>
@@ -89,7 +89,7 @@ export function SubTattvaMatrix() {
               </div>
             ))}
           </div>
-          <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+          <p className="mt-4 font-label text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
             the diagonal is each tendency in its most direct form
           </p>
           <p className="mt-4 max-w-2xl text-[11px] leading-relaxed text-muted-foreground">{TATTVA_LEGEND}</p>
@@ -98,7 +98,7 @@ export function SubTattvaMatrix() {
         <div className="min-h-[13rem] border-t border-border pt-5 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
           {cur ? (
             <>
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                 {cur[0] === cur[1] ? "Undiluted" : "Dominant · Modifier"}
               </p>
               <div className="mt-3 flex items-center gap-4">
@@ -108,7 +108,7 @@ export function SubTattvaMatrix() {
                     {T[cur[0]]}–{T[cur[1]]}
                   </p>
                   {cur[0] !== cur[1] && (
-                    <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
+                    <p className="mt-1 font-label text-[9px] uppercase tracking-[0.18em] text-gold-dim">
                       Golden Dawn: {T[cur[1]]} of {T[cur[0]]}
                     </p>
                   )}
@@ -120,7 +120,7 @@ export function SubTattvaMatrix() {
                   <button
                     type="button"
                     onClick={() => setSel([cur[1], cur[0]])}
-                    className="-mx-1 px-1 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim transition-colors hover:text-gold"
+                    className="-mx-1 px-1 py-2 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim transition-colors hover:text-gold"
                   >
                     ⇄ &nbsp;Swap to {T[cur[1]]}–{T[cur[0]]}
                   </button>

@@ -126,7 +126,7 @@ function Sap() {
           </div>
           <div>
             <OneCurrentManyExpressions />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               analogical · the forks are differences in the receiver, not decisions in the source
             </p>
           </div>

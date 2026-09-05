@@ -102,7 +102,7 @@ export function EcologyFrame({
               <span className="lg:hidden xl:inline">The Hidden </span>Ecology<span className="lg:hidden 2xl:inline"> of Formation</span>
             </div>
           </Link>
-          <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] 2xl:gap-6 2xl:tracking-[0.25em]">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] 2xl:gap-6 2xl:tracking-[0.25em]">
             <div className="hidden items-center gap-4 lg:flex 2xl:gap-6">
               {STATIONS.map((s, i) => (
                 <Link
@@ -138,12 +138,12 @@ export function EcologyFrame({
             </Link>
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
           </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
             {station ? (station.region ? "Province" : `${station.n} · VI`) : "ΟΙΚΟΣ"}
           </div>
         </div>
         <div className="border-t border-border/50 lg:hidden">
-          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
+          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
             {STATIONS.map((s) => (
               <Link key={s.id} to={s.to} aria-current={here === s.id ? "page" : undefined}
                     className={`whitespace-nowrap py-1 transition-colors hover:text-gold ${here === s.id ? "text-gold" : ""}`}>
@@ -170,7 +170,7 @@ export function EcologyFrame({
           <div className="grain" />
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
                 The Hidden Ecology of Formation · {station.region ?? `Station ${station.n} of VI`}
               </p>
               <h1 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl">
@@ -181,20 +181,20 @@ export function EcologyFrame({
                   </span>
                 )}
               </h1>
-              <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">{station.dimension}</p>
+              <p className="mt-6 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">{station.dimension}</p>
               <p className="mt-10 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone/90 sm:text-3xl">
                 {station.question}
               </p>
               {/* thirty seconds: the whole station on one card */}
               <div className="mt-14 grid max-w-5xl gap-px border border-gold/30 bg-border/60 sm:grid-cols-[2fr_1fr]">
                 <div className="bg-void/80 p-6 sm:p-8">
-                  <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">In thirty seconds</p>
+                  <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">In thirty seconds</p>
                   <p className="mt-4 text-base leading-relaxed text-bone/90">{station.definition}</p>
                 </div>
                 <div className="bg-void/80 p-6 sm:p-8">
-                  <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">In one word</p>
+                  <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">In one word</p>
                   <p className="mt-4 font-serif text-2xl text-gold">{station.shorthand}</p>
-                  <p className="mt-6 font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Read on for</p>
+                  <p className="mt-6 font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Read on for</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                     Five minutes in the sections; half an hour in what opens beneath them.
                   </p>
@@ -217,7 +217,7 @@ export function EcologyFrame({
               The Architecture of Hidden Forces
             </Link>
           </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.4em] text-gold-dim">MMXXVI</div>
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">MMXXVI</div>
         </div>
       </footer>
     </div>
@@ -253,5 +253,5 @@ export function Band({
 }
 
 export function Eyebrow({ children }: { children: ReactNode }) {
-  return <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">{children}</p>;
+  return <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">{children}</p>;
 }

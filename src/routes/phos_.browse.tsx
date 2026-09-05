@@ -36,7 +36,7 @@ function Browse() {
         <Backdrop src="/bg/dark-hall-with-charted-stone-floor.webp" opacity={0.3} position="center 50%" fill />
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Browse</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Browse</p>
           <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-tight sm:text-5xl">
             Across the divisions, <span className="italic text-gold">by facet</span>
           </h1>
@@ -53,7 +53,7 @@ function Browse() {
         return (
           <section key={f.key} id={f.key} className="relative isolate border-t border-border py-16">
             <div className="relative mx-auto max-w-6xl px-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 {f.name} · {f.controlled ? `${values.length} values` : "open vocabulary"}
               </p>
               {values.length ? (
@@ -63,7 +63,7 @@ function Browse() {
                       key={v.slug}
                       to="/phos/browse/$facet/$value"
                       params={{ facet: f.key, value: v.slug }}
-                      className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors hover:border-gold/60 hover:text-gold ${
+                      className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors hover:border-gold/60 hover:text-gold ${
                         v.count ? "border-gold/40 text-bone/85" : "border-border text-muted-foreground opacity-70"
                       }`}
                     >

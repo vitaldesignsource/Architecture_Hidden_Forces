@@ -47,13 +47,13 @@ export function StrataOfConsequence() {
         ))}
         {/* the fault, and the channel, marked in the lowest bed */}
         <line x1={190} y1={224} x2={190} y2={186} stroke="var(--gold, #c9a227)" strokeOpacity={0.6} strokeWidth={0.8} strokeDasharray="2 3" />
-        <text x={196} y={228} className="font-mono uppercase" style={{ ...fs(6.4), letterSpacing: "0.14em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>what occurred</text>
+        <text x={196} y={228} className="font-label uppercase" style={{ ...fs(6.4), letterSpacing: "0.14em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>what occurred</text>
         <ellipse cx={110} cy={196} rx={18} ry={5} fill="var(--gold, #c9a227)" fillOpacity={0.14} stroke="var(--gold, #c9a227)" strokeOpacity={0.5} strokeWidth={0.6} />
-        <text x={110} y={230} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.4), letterSpacing: "0.14em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>what was there</text>
+        <text x={110} y={230} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.4), letterSpacing: "0.14em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>what was there</text>
         {/* the present surface, laid on the inherited shape */}
         <path d={`M ${tops[N - 1].join(" L ")}`} fill="none" stroke="var(--gold, #c9a227)" strokeOpacity={0.95} strokeWidth={1.4} className="aoh-st-now" />
-        <text x={432} y={52} textAnchor="end" className="font-mono uppercase" style={{ ...fs(6.8), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.55}>the present</text>
-        <text x={432} y={214} textAnchor="end" className="font-mono uppercase" style={{ ...fs(6.8), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.35}>the past</text>
+        <text x={432} y={52} textAnchor="end" className="font-label uppercase" style={{ ...fs(6.8), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.55}>the present</text>
+        <text x={432} y={214} textAnchor="end" className="font-label uppercase" style={{ ...fs(6.8), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.35}>the past</text>
       </svg>
     </div>
   );

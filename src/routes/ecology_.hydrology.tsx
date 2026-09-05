@@ -147,7 +147,7 @@ function Hydrology() {
               appearance and continuous in preparation for exactly this reason. Overflow is the
               threshold crossed. Transformation is what the crossing does.
             </p>
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">The dysfunctional possibilities</p>
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">The dysfunctional possibilities</p>
             <Sequence steps={["Obstruction", "Stagnation", "Leakage", "Flooding", "Depletion"]} />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               These are not stages; they are exits. A current obstructed at the channel stagnates
@@ -164,7 +164,7 @@ function Hydrology() {
           </div>
           <div>
             <HydrologicalSequence />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               cyclical · the failures leave the ring; beneath the last, the waterline
             </p>
           </div>
@@ -190,7 +190,7 @@ function Hydrology() {
         <div className="mt-16">
           <EthericWatershed />
         </div>
-        <p className="mt-6 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+        <p className="mt-6 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
           spatial · analogical · one landscape carrying the whole vocabulary
         </p>
       </Band>
@@ -291,7 +291,7 @@ function Hydrology() {
           </div>
           <div>
             <ErosionSeries />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               causal · the water is identical in every frame
             </p>
           </div>

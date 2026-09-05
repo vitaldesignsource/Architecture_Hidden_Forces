@@ -40,7 +40,7 @@ export function FormAtTheIntersection() {
               {l.k.split("|").map((line, j, all) => (
                 <text key={line} x={x} y={y - 8 - (all.length - 1 - j) * 11} textAnchor={anchor} className="font-serif" style={fs(9.5)} fill="currentColor" fillOpacity={0.85}>{line}</text>
               ))}
-              <text x={x} y={y + 14} textAnchor={anchor} className="font-mono uppercase" style={{ ...fs(6.4), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.45}>{l.sub}</text>
+              <text x={x} y={y + 14} textAnchor={anchor} className="font-label uppercase" style={{ ...fs(6.4), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.45}>{l.sub}</text>
             </g>
           );
         })}
@@ -57,11 +57,11 @@ export function FormAtTheIntersection() {
           return <line key={o} x1={x1} y1={y1} x2={x1 + (i - 2.5) * 5} y2={y2} stroke="var(--gold, #c9a227)" strokeOpacity={0.6} strokeWidth={0.8} />;
         })}
         {[OUT.slice(0, 3), OUT.slice(3)].map((row, r) => (
-          <text key={r} x={cx} y={cy + 68 + r * 11} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(5.8), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.6}>
+          <text key={r} x={cx} y={cy + 68 + r * 11} textAnchor="middle" className="font-label uppercase" style={{ ...fs(5.8), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.6}>
             {row.join(" · ")}
           </text>
         ))}
-        <text x={cx} y={312} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
+        <text x={cx} y={312} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7), letterSpacing: "0.2em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
           a temporary architecture of participation
         </text>
       </svg>

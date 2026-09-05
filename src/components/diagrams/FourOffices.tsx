@@ -61,10 +61,10 @@ export function FourOffices() {
                 stroke="var(--gold)" strokeOpacity={down ? 0.85 : 0.2} strokeWidth="1.4" />
           <line className="aoh-fo-ch" x1="300" y1="316" x2="300" y2="40"
                 stroke="var(--bone)" strokeOpacity={down ? 0.2 : 0.7} strokeWidth="1.4" />
-          <text x="40" y="330" textAnchor="middle" className="font-mono" fontSize="5.8"
+          <text x="40" y="330" textAnchor="middle" className="font-label" fontSize="5.8"
                 letterSpacing="0.8" fill="var(--muted-foreground)"
                 opacity={down ? 0.95 : 0.35}>DESCENT</text>
-          <text x="300" y="330" textAnchor="middle" className="font-mono" fontSize="5.8"
+          <text x="300" y="330" textAnchor="middle" className="font-label" fontSize="5.8"
                 letterSpacing="0.8" fill="var(--muted-foreground)"
                 opacity={down ? 0.35 : 0.95}>RETURN</text>
 
@@ -77,7 +77,7 @@ export function FourOffices() {
                 <rect x="62" y={r.y} width="216" height="56" fill="var(--gold)"
                       fillOpacity={on ? 0.07 : 0.02} stroke="var(--gold)"
                       strokeOpacity={on ? 1 : sel ? 0.2 : 0.5} strokeWidth={on ? 1.7 : 1} />
-                <text x="170" y={r.y + 24} textAnchor="middle" className="font-mono" fontSize="8.6"
+                <text x="170" y={r.y + 24} textAnchor="middle" className="font-label" fontSize="8.6"
                       letterSpacing="1.3" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.35 : 1}>{r.k.toUpperCase()}</text>
                 <text x="170" y={r.y + 38} textAnchor="middle" className="font-serif" fontSize="9"
@@ -90,7 +90,7 @@ export function FourOffices() {
             );
           })}
 
-          <text x="170" y="344" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="170" y="344" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             VERTICAL IN ORDER — RECIPROCAL IN OPERATION
           </text>
@@ -99,7 +99,7 @@ export function FourOffices() {
         <div className="mt-3 flex justify-center gap-2">
           {(["descending", "ascending"] as const).map((d) => (
             <button key={d} onClick={() => setDir(d)} aria-pressed={dir === d}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 dir === d ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
               {d}
             </button>
@@ -110,12 +110,12 @@ export function FourOffices() {
       <div className="min-h-[15rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.gk} · {cur.k} {cur.verb}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
             <p className="mt-6 border-l-2 border-bone/30 pl-5 text-sm leading-relaxed text-bone/75">
-              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-bone/60">
+              <span className="font-label text-[10px] uppercase tracking-[0.15em] text-bone/60">
                 {cur.without} ·{" "}
               </span>
               {cur.fail}
@@ -123,7 +123,7 @@ export function FourOffices() {
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {down ? "Descent — toward embodiment" : "Return — toward understanding"}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">

@@ -83,7 +83,7 @@ function LawTag({ id }: { id: string }) {
   return (
     <EntryLink
       id={id}
-      className="ml-3 inline-block whitespace-nowrap align-middle font-mono text-[9px] not-italic uppercase tracking-[0.25em] text-gold/50 transition-colors hover:text-gold"
+      className="ml-3 inline-block whitespace-nowrap align-middle font-label text-[9px] not-italic uppercase tracking-[0.25em] text-gold/50 transition-colors hover:text-gold"
     >
       {r.numeral} · {r.title.replace(/^The Law of /, "")}
     </EntryLink>
@@ -93,7 +93,7 @@ function LawTag({ id }: { id: string }) {
 function PortalPointers({ ids }: { ids: string[] }) {
   return (
     <div data-portal-pointers className="mt-12 max-w-3xl border-t border-border pt-6">
-      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Portal</p>
+      <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">In the Portal</p>
       <p className="mt-3 text-sm leading-relaxed text-bone/70">
         {ids.map((id, i) => {
           const r = ref(id);
@@ -101,7 +101,7 @@ function PortalPointers({ ids }: { ids: string[] }) {
             <Fragment key={id}>
               {i > 0 && <span className="mx-2 text-bone/30">·</span>}
               <EntryLink id={id} className="underline-offset-4 hover:text-gold hover:underline">
-                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{r.numeral} {r.n}</span>{" "}
+                <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">{r.numeral} {r.n}</span>{" "}
                 {r.title}
               </EntryLink>
             </Fragment>
@@ -194,7 +194,7 @@ function Phos() {
               Phōs · The Luminous Architecture
             </div>
           </a>
-          <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
             <div className="hidden items-center gap-4 lg:flex xl:gap-6">
               {NAV.map((l) => (
                 <a
@@ -230,13 +230,13 @@ function Phos() {
               volume="/phos"
             />
           </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
             ΦΩΣ
           </div>
         </div>
 
         <div className="border-t border-border/50 lg:hidden">
-          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
+          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
             {NAV.map((l) => (
               <a
                 key={l.id}
@@ -269,7 +269,7 @@ function Phos() {
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="animate-rise text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
               The Second Volume · MMXXVI
             </p>
             <h1 className="mx-auto mt-10 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-7xl md:text-8xl">
@@ -299,7 +299,7 @@ function Phos() {
           </div>
 
           <div className="relative mt-32">
-            <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-gold-dim">
+            <p className="text-center font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">
               ΦΩΣ · The Chain of Illumination
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-6 sm:gap-x-6">
@@ -320,7 +320,7 @@ function Phos() {
                   >
                     {p.g}
                   </span>
-                  {i < a.length - 1 && <span className="font-mono text-xs text-gold/40">→</span>}
+                  {i < a.length - 1 && <span className="font-label text-xs text-gold/40">→</span>}
                 </div>
               ))}
             </div>
@@ -332,7 +332,7 @@ function Phos() {
       <section className="relative border-t border-border py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
-            <p className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
               ΔΕΥΤΕΡΟΣ ΤΟΜΟΣ
               <span className="mt-2 block text-gold-dim">On the standing of this volume</span>
             </p>
@@ -369,7 +369,7 @@ function Phos() {
       {/* CONTENTS */}
       <section id="contents" className="relative isolate border-t border-border py-24">
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § Contents · The Twelve
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -389,7 +389,7 @@ function Phos() {
                 className="group grid grid-cols-[3.25rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-all hover:border-gold/40"
               >
                 <span
-                  className={`font-mono text-[10px] uppercase tracking-[0.2em] ${
+                  className={`font-label text-[10px] uppercase tracking-[0.2em] ${
                     x.movement ? "text-gold/40" : "text-gold-dim"
                   }`}
                 >
@@ -418,7 +418,7 @@ function Phos() {
         <SectionGlyph delay={-12} />
         <Backdrop src="/bg/sunlit-ravine-with-golden-stream.webp" opacity={0.4} position="center 40%" scrim={0.26} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § I · Three Registers of Light
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -456,7 +456,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Why the three cannot be collapsed
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -492,7 +492,7 @@ function Phos() {
         <SectionGlyph delay={-96} />
         <Backdrop src="/bg/oil-lamps-set-in-lines-across-hall.webp" opacity={0.34} position="center 60%" scrim={0.28} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § II · The Self-Diffusion of the Good
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Bonum diffusivum sui</h2>
@@ -521,7 +521,7 @@ function Phos() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What follows, and what does not
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -560,7 +560,7 @@ function Phos() {
         <SectionGlyph delay={-210} />
         <Backdrop src="/bg/crystal-pillars-in-mirrored-hall.webp" opacity={0.34} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § III · De Luce
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -613,7 +613,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What the proposition is worth now
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -644,7 +644,7 @@ function Phos() {
         <SectionGlyph delay={-330} />
         <Backdrop src="/bg/light-shaft-across-pillared-hall.webp" opacity={0.34} position="center 50%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § IV · The Diaphanous
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Διαφανές</h2>
@@ -677,7 +677,7 @@ function Phos() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Four ways a medium fails
             </p>
             <div className="mt-8 space-y-px">
@@ -703,7 +703,7 @@ function Phos() {
                   key={f.k}
                   className="group grid grid-cols-1 items-baseline gap-2 border-b border-border py-5 transition-colors hover:border-gold/40 sm:grid-cols-[10rem_1fr] sm:gap-6"
                 >
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {f.k}
                   </span>
                   <span className="text-base leading-relaxed text-muted-foreground">{f.d}</span>
@@ -726,7 +726,7 @@ function Phos() {
         <SectionGlyph delay={-455} />
         <Backdrop src="/bg/total-eclipse-over-forest-ridge.webp" opacity={0.48} position="center 40%" scrim={0.18} anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § V · Shadow
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Σκιά</h2>
@@ -755,7 +755,7 @@ function Phos() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Every illumination selects
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -786,7 +786,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Umbra and penumbra
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -811,7 +811,7 @@ function Phos() {
         <SectionGlyph delay={-580} />
         <Backdrop src="/bg/cracked-vessel-mended-with-gold-light.webp" opacity={0.34} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § VI · The Vessel and the Measure
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -846,7 +846,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The breaking of the vessels
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -886,7 +886,7 @@ function Phos() {
         <Backdrop src="/bg/radiant-sphere-in-star-hall.webp" opacity={0.36} position="center 32%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
           <GirihBand className="mb-12" />
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § VII · The Ladder of Lights
           </p>
           <div className="mt-6 flex flex-wrap items-baseline gap-x-7 gap-y-3">
@@ -926,7 +926,7 @@ function Phos() {
           {/* the verse the whole vocabulary answers to */}
           <div className="mt-24 grid gap-12 border-t border-border pt-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,13rem)] lg:items-start">
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The verse the vocabulary answers to
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -946,7 +946,7 @@ function Phos() {
                   West, whose oil wellnigh would shine, even if no fire touched it.{" "}
                   <span className="text-gold">Light upon Light.</span>
                 </p>
-                <footer className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">
+                <footer className="mt-4 font-label text-[10px] uppercase tracking-[0.18em] text-gold-dim">
                   Qur&rsquo;ān 24:35, the Light Verse · Arberry&rsquo;s rendering
                 </footer>
               </blockquote>
@@ -971,7 +971,7 @@ function Phos() {
             <div className="flex justify-center lg:sticky lg:top-32">
               <div>
                 <NicheLamp className="w-full max-w-[13rem]" />
-                <p className="mt-4 font-mono text-[9px] uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
+                <p className="mt-4 font-label text-[9px] uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
                   The niche, the glass, the lamp — the figures of the verse, drawn. The mihrab of a
                   mosque takes its shape from the same sentence.
                 </p>
@@ -981,7 +981,7 @@ function Phos() {
 
           {/* the vocabulary */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The vocabulary, in its own script
             </p>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -1003,7 +1003,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The man, and the books
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -1033,7 +1033,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Knowledge by presence
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -1072,7 +1072,7 @@ function Phos() {
         <SectionGlyph delay={-820} />
         <Backdrop src="/bg/spectral-valley-with-rainbow-beam.webp" opacity={0.36} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § VIII · The Boundary Where Colour Arises
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Urphänomen</h2>
@@ -1100,7 +1100,7 @@ function Phos() {
 
           {/* the experiment, and what it is doing */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The experiment he put in place of the spectrum
             </p>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -1128,7 +1128,7 @@ function Phos() {
 
           {/* the turbid medium */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Trübe Medien · the load-bearing doctrine
             </p>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -1144,7 +1144,7 @@ function Phos() {
 
           {/* the circle */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Farbenkreis, and what the eye demands
             </p>
             <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -1171,7 +1171,7 @@ function Phos() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What this volume takes, and what it leaves
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -1211,7 +1211,7 @@ function Phos() {
               ))}
             </span>
             <span className="block bg-void/40 p-7 transition-colors group-hover:bg-gold/5 sm:p-9">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 Instrument · Flashing Colours
               </span>
               <span className="mt-4 block max-w-2xl font-serif text-3xl leading-tight text-bone transition-colors group-hover:text-gold">
@@ -1224,7 +1224,7 @@ function Phos() {
                 instrument sets out the tables, lets the pairs be tested against near misses, and
                 separates what the eye is doing from what the tradition claims it means.
               </span>
-              <span className="mt-6 block font-mono text-[9px] uppercase tracking-[0.2em] text-gold">
+              <span className="mt-6 block font-label text-[9px] uppercase tracking-[0.2em] text-gold">
                 Open the demonstration &rarr;
               </span>
             </span>
@@ -1244,7 +1244,7 @@ function Phos() {
         <SectionGlyph delay={-940} />
         <Backdrop src="/bg/oil-lamp-under-narrow-light-shaft.webp" opacity={0.52} position="center 60%" scrim={0.18} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § IX · The Sunlike Eye
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Ὄψις</h2>
@@ -1274,7 +1274,7 @@ function Phos() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Three things the principle establishes
             </p>
             <div className="mt-8 space-y-px">
@@ -1296,7 +1296,7 @@ function Phos() {
                   key={f.k}
                   className="group grid grid-cols-1 items-baseline gap-2 border-b border-border py-5 transition-colors hover:border-gold/40 sm:grid-cols-[10rem_1fr] sm:gap-6"
                 >
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {f.k}
                   </span>
                   <span className="text-base leading-relaxed text-muted-foreground">{f.d}</span>
@@ -1325,7 +1325,7 @@ function Phos() {
         <SectionGlyph delay={-1060} />
         <Backdrop src="/bg/mirrors-cascading-light-down-shaft.webp" opacity={0.3} position="center 46%" scrim={0.26} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § X · The Counterfeits of Light
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -1397,7 +1397,7 @@ function Phos() {
                 key={c.k}
                 className="group border border-border p-5 transition-colors hover:border-gold/40 sm:p-7"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   {c.n} · {c.k}
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">{c.d}</p>
@@ -1432,7 +1432,7 @@ function Phos() {
         <SectionGlyph delay={-1185} />
         <Backdrop src="/bg/optics-table-with-prism-and-spectrum.webp" opacity={0.34} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XI · The Discipline of Reading Light
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -1496,7 +1496,7 @@ function Phos() {
                 key={s.n}
                 className="group grid grid-cols-[auto_1fr] items-baseline gap-6 border-b border-border py-6 transition-colors hover:border-gold/40"
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                   {s.n}
                 </span>
                 <span className="min-w-0">
@@ -1536,7 +1536,7 @@ function Phos() {
         <SectionGlyph delay={-1300} />
         <Backdrop src="/bg/fire-altar-flame-over-dark-water.webp" opacity={0.36} position="center 55%" scrim={0.2} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XII · The Returning Light
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Ἐπιστροφή</h2>
@@ -1566,7 +1566,7 @@ function Phos() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The circuit, restated
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -1609,7 +1609,7 @@ function Phos() {
         <SectionGlyph delay={-1420} />
         <Backdrop src="/bg/narrow-archive-aisle-of-scrolls.webp" opacity={0.46} position="center 50%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § Lexicon · The Terms of This Volume
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1660,7 +1660,7 @@ function Phos() {
                     {e.gloss}
                   </span>
                 </a>
-                <span className="flex shrink-0 flex-col items-end gap-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                <span className="flex shrink-0 flex-col items-end gap-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                   <a href={`#${e.at}`}>§ {e.n}</a>
                   {e.portal && (
                     <EntryLink id={e.portal} className="text-gold/50 transition-colors hover:text-gold">
@@ -1679,7 +1679,7 @@ function Phos() {
         <SectionGlyph delay={-612} />
         <Backdrop src="/bg/collapsed-vault-lit-from-above.webp" opacity={0.36} position="center 55%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § The Portal · Beyond This Volume
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1703,7 +1703,7 @@ function Phos() {
           </p>
           <Link
             to="/phos/portal"
-            className="mt-10 inline-block border border-gold/60 px-5 py-3 font-mono text-[10px] uppercase tracking-[0.25em] text-gold transition-colors hover:bg-gold/10"
+            className="mt-10 inline-block border border-gold/60 px-5 py-3 font-label text-[10px] uppercase tracking-[0.25em] text-gold transition-colors hover:bg-gold/10"
           >
             Enter the Portal →
           </Link>
@@ -1749,7 +1749,7 @@ function Phos() {
         </div>
 
         <div className="relative mx-auto max-w-3xl px-6 text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
             ΦΩΣ · The Luminous Formula
           </p>
           <div ref={formulaRef} className="aoh-formula relative mt-12">
@@ -1815,7 +1815,7 @@ function Phos() {
               What is seen is light <span className="text-gold">arrived</span>.
             </p>
           </div>
-          <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+          <p className="mt-10 font-label text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
             Ω · Phōs — the architecture read by its own light
           </p>
         </div>
@@ -1830,7 +1830,7 @@ function Phos() {
               the first volume
             </Link>
           </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.4em] text-gold-dim">
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">
             MMXXVI
           </div>
         </div>

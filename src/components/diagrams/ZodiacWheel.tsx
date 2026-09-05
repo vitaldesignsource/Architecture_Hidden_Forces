@@ -107,7 +107,7 @@ export function ZodiacWheel() {
       key={k}
       onClick={() => setShow((v) => ({ ...v, [k]: !v[k] }))}
       aria-pressed={show[k]}
-      className={`border px-3 py-1.5 font-mono text-[9px] uppercase tracking-[0.18em] transition-colors ${
+      className={`border px-3 py-1.5 font-label text-[9px] uppercase tracking-[0.18em] transition-colors ${
         show[k] ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/40 hover:text-gold-dim"
       }`}
     >
@@ -213,7 +213,7 @@ export function ZodiacWheel() {
                   x={nx}
                   y={ny + 3}
                   textAnchor="middle"
-                  className="font-mono zw-name"
+                  className="font-label zw-name"
                   fontSize="9"
                   letterSpacing="1.4"
                   fill={on ? "var(--gold)" : "var(--muted-foreground)"}
@@ -286,7 +286,7 @@ export function ZodiacWheel() {
                     x={tx}
                     y={ty + 3}
                     textAnchor="middle"
-                    className="font-mono zw-mark"
+                    className="font-label zw-mark"
                     fontSize="7.4"
                     letterSpacing="1.6"
                     fill="var(--gold-dim)"
@@ -322,7 +322,7 @@ export function ZodiacWheel() {
                 x={C}
                 y={C + 64}
                 textAnchor="middle"
-                className="font-mono zw-sub"
+                className="font-label zw-sub"
                 fontSize="8.4"
                 letterSpacing="1.6"
                 fill="var(--muted-foreground)"
@@ -334,9 +334,9 @@ export function ZodiacWheel() {
             <g>
               <text
                 x={C}
-                y={C - 6}
+                y={C - 14}
                 textAnchor="middle"
-                className="font-mono zw-eyebrow"
+                className="font-label zw-eyebrow"
                 fontSize="8.6"
                 letterSpacing="2.4"
                 fill="var(--gold-dim)"
@@ -348,9 +348,9 @@ export function ZodiacWheel() {
               </text>
               <text
                 x={C}
-                y={C + 46}
+                y={C + 50}
                 textAnchor="middle"
-                className="font-mono zw-sub"
+                className="font-label zw-sub"
                 fontSize="8"
                 letterSpacing="1.5"
                 fill="var(--muted-foreground)"
@@ -368,13 +368,13 @@ export function ZodiacWheel() {
           {sel !== null && (
             <button
               onClick={() => setSel(null)}
-              className="border border-border px-3 py-1.5 font-mono text-[9px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/40 hover:text-gold-dim"
+              className="border border-border px-3 py-1.5 font-label text-[9px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/40 hover:text-gold-dim"
             >
               Clear
             </button>
           )}
         </div>
-        <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+        <p className="mt-3 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
           0° Aries at the left · counter-clockwise · equinoctial axis horizontal
         </p>
       </div>
@@ -382,7 +382,7 @@ export function ZodiacWheel() {
       <div className="min-h-[20rem] lg:border-l lg:border-border lg:pl-8">
         {s ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {s.el} × {s.mo} · {polarity(sel!)}
             </p>
             <p className="mt-3 font-serif text-3xl text-gold">{s.n}</p>
@@ -398,7 +398,7 @@ export function ZodiacWheel() {
                 ["Classical ruler", `${s.ruler} — the older scheme, before the outer planets were assigned`],
               ].map(([a, b]) => (
                 <div key={a} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[7.5rem_1fr] sm:gap-4">
-                  <dt className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</dt>
+                  <dt className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</dt>
                   <dd className="text-sm leading-relaxed text-muted-foreground">{b}</dd>
                 </div>
               ))}
@@ -428,7 +428,7 @@ export function ZodiacWheel() {
               The alternation around the ring — active, receptive, active — is the polarity older
               sources call diurnal and nocturnal; it is a rhythm of the sequence, not a ranking.
             </p>
-            <p className="mt-5 font-mono text-[10px] uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
+            <p className="mt-5 font-label text-[10px] uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
               Tropical frame · equinoctial and solstitial points marked by geometry, not by season
             </p>
           </>

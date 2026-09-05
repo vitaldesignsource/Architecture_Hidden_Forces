@@ -67,9 +67,9 @@ export function SophianicFaces() {
              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(dark ? null : "dark"); } }}>
             <circle cx={C} cy={C} r={dark ? 52 : 46} fill="url(#aoh-sf-dark)" stroke="var(--bone)"
                     strokeOpacity={dark ? 0.6 : 0.25} strokeDasharray="3 6" strokeWidth="1" />
-            <text x={C} y={C - 3} textAnchor="middle" className="font-mono" fontSize="6.6"
+            <text x={C} y={C - 3} textAnchor="middle" className="font-label" fontSize="6.6"
                   letterSpacing="1" fill={dark ? "var(--gold)" : "var(--muted-foreground)"}>THE DARK</text>
-            <text x={C} y={C + 8} textAnchor="middle" className="font-mono" fontSize="6.6"
+            <text x={C} y={C + 8} textAnchor="middle" className="font-label" fontSize="6.6"
                   letterSpacing="1" fill={dark ? "var(--gold)" : "var(--muted-foreground)"}>FEMININE</text>
           </g>
 
@@ -82,7 +82,7 @@ export function SophianicFaces() {
                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(on ? null : f.k); } }}>
                 <circle cx={x} cy={y} r={on ? 25 : 21} fill="var(--void)" stroke="var(--gold)"
                         strokeOpacity={on ? 1 : sel ? 0.28 : 0.65} strokeWidth={on ? 1.7 : 1.1} />
-                <text x={x} y={y + 3} textAnchor="middle" className="font-mono" fontSize="6.6"
+                <text x={x} y={y + 3} textAnchor="middle" className="font-label" fontSize="6.6"
                       letterSpacing="0.8" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.4 : 1}>
                   {f.k.toUpperCase()}
@@ -91,7 +91,7 @@ export function SophianicFaces() {
             );
           })}
 
-          <text x={C} y="330" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="330" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             NONE OF THEM IS THE COMPLETE FEMININE
           </text>
@@ -101,7 +101,7 @@ export function SophianicFaces() {
       <div className="min-h-[16rem]">
         {face ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               The {face.k}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{face.d}</p>
@@ -112,7 +112,7 @@ export function SophianicFaces() {
           </>
         ) : dark ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bone/70">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-bone/70">
               The Dark Feminine
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -125,13 +125,13 @@ export function SophianicFaces() {
               She strips away false illumination — the demand that everything be immediately
               understandable, productive, positive, or revealed.
             </p>
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-bone/60">
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-bone/60">
               And her distortions
             </p>
             <div className="mt-3 space-y-px">
               {DARK.map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-3 border-b border-border py-2.5">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">becomes {b}</span>
                 </div>
               ))}

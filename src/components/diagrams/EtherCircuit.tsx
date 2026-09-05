@@ -107,7 +107,7 @@ export function EtherCircuit() {
               <text x={x} y={y - 2} textAnchor="middle" className="font-serif" fontSize="15" fill="var(--gold)">
                 {e.greek}
               </text>
-              <text x={x} y={y + 13} textAnchor="middle" className="font-mono" fontSize="7" letterSpacing="1.4" fill="var(--muted-foreground)">
+              <text x={x} y={y + 13} textAnchor="middle" className="font-label" fontSize="7" letterSpacing="1.4" fill="var(--muted-foreground)">
                 {e.k.toUpperCase()}
               </text>
               <text x={x} y={y + 48} textAnchor="middle" className="font-serif" fontSize="10" fontStyle="italic" fill="var(--bone)" opacity="0.6">
@@ -117,7 +117,7 @@ export function EtherCircuit() {
           );
         })}
 
-        <text x={C} y={C - 8} textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="2.4" fill="var(--gold-dim)">
+        <text x={C} y={C - 8} textAnchor="middle" className="font-label" fontSize="7.5" letterSpacing="2.4" fill="var(--gold-dim)">
           ΚΥΚΛΟΣ
         </text>
         <text x={C} y={C + 8} textAnchor="middle" className="font-serif" fontSize="10" fontStyle="italic" fill="var(--muted-foreground)">
@@ -128,21 +128,21 @@ export function EtherCircuit() {
       <div className="mt-4 min-h-[8.5rem] border-t border-border pt-5">
         {sel ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
               {sel.greek} · {sel.k} {sel.verb}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{sel.fn}</p>
             <div className="mt-4 grid grid-cols-3 gap-3 text-[11px] leading-snug">
               <div>
-                <div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Deficiency</div>
+                <div className="font-label uppercase tracking-[0.15em] text-muted-foreground">Deficiency</div>
                 <div className="mt-1 text-muted-foreground">{sel.low}</div>
               </div>
               <div>
-                <div className="font-mono uppercase tracking-[0.15em] text-gold">Virtue</div>
+                <div className="font-label uppercase tracking-[0.15em] text-gold">Virtue</div>
                 <div className="mt-1 font-serif italic text-bone/90">“{sel.virtue}”</div>
               </div>
               <div>
-                <div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Excess</div>
+                <div className="font-label uppercase tracking-[0.15em] text-muted-foreground">Excess</div>
                 <div className="mt-1 text-muted-foreground">{sel.high}</div>
               </div>
             </div>

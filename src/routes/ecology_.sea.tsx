@@ -113,7 +113,7 @@ function Sea() {
         </div>
         <div className="mt-14">
           <SeaBetweenCauses />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             analogical · six currents, three media, one shore
           </p>
         </div>
@@ -291,7 +291,7 @@ function Sea() {
           </div>
           <div>
             <DifferentialReception />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               causal · the force is drawn identical on purpose
             </p>
           </div>

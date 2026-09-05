@@ -85,7 +85,7 @@ export function SpiralOfBecoming() {
         {/* the return that is not a return: first and last share a phase */}
         <line x1={first.x} y1={first.y - 8} x2={last.x} y2={last.y + 8} stroke="var(--gold, #c9a227)" strokeOpacity={0.5} strokeWidth={0.7} strokeDasharray="3 4" />
         {/* set left of the tick, above the height at which the curve crosses the axis */}
-        <text x={first.x - 10} y={(first.y + last.y) / 2 - 22} textAnchor="end" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
+        <text x={first.x - 10} y={(first.y + last.y) / 2 - 22} textAnchor="end" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.7}>
           not where it began
         </text>
         {/* stations */}
@@ -100,7 +100,7 @@ export function SpiralOfBecoming() {
                 {s[0]}
               </text>
               {s[1] && (
-                <text x={lx} y={y + 14} textAnchor={right ? "start" : "end"} className="font-mono uppercase" style={{ ...fs(6.8), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
+                <text x={lx} y={y + 14} textAnchor={right ? "start" : "end"} className="font-label uppercase" style={{ ...fs(6.8), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
                   {s[1]}
                 </text>
               )}

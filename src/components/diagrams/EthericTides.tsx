@@ -65,7 +65,7 @@ export function EthericTides() {
             <g key={r.k}>
               <line x1={X0} y1={r.y} x2={X1} y2={r.y} stroke="var(--gold)" strokeOpacity="0.14" strokeWidth="0.7" />
               <path d={path(r)} fill="none" stroke="var(--gold)" strokeOpacity="0.6" strokeWidth="1.1" />
-              <text x={X0} y={r.y - AMP - 9} className="font-mono" fontSize="7" letterSpacing="1.3"
+              <text x={X0} y={r.y - AMP - 9} className="font-label" fontSize="7" letterSpacing="1.3"
                     fill="var(--muted-foreground)">{r.k.toUpperCase()}</text>
             </g>
           ))}
@@ -74,7 +74,7 @@ export function EthericTides() {
           {ROWS.map((r) => (
             <circle key={r.k} cx={X0 + t * W} cy={yAt(r, t)} r="4.5" fill="var(--gold)" />
           ))}
-          <text x="200" y="245" textAnchor="middle" className="font-mono" fontSize="6.6"
+          <text x="200" y="245" textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.85">
             DRAG OR CLICK TO READ ANOTHER MOMENT
           </text>
@@ -87,18 +87,18 @@ export function EthericTides() {
       </div>
 
       <div className="min-h-[15rem]">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           The composite at this instant
         </p>
         <div className="mt-4 space-y-px">
           {ROWS.map((r, i) => (
             <div key={r.k} className="grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">
+              <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">
                 {r.k}
               </span>
               <span className="text-sm leading-relaxed text-muted-foreground">
                 {r.names[quarter(phaseAt(r.p, t))]}
-                <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.12em] text-bone/55">
+                <span className="ml-2 font-label text-[9px] uppercase tracking-[0.12em] text-bone/55">
                   {states[i]}
                 </span>
               </span>

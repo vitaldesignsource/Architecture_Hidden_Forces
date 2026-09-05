@@ -55,8 +55,8 @@ export function BrokenCircuit() {
             </g>
           );
         })}
-        <text x={cx} y={186} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.85}>the lawful exchange</text>
-        <text x={cx} y={196} textAnchor="middle" className="font-mono uppercase" style={sub} fill="currentColor" fillOpacity={0.45}>
+        <text x={cx} y={186} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.85}>the lawful exchange</text>
+        <text x={cx} y={196} textAnchor="middle" className="font-label uppercase" style={sub} fill="currentColor" fillOpacity={0.45}>
           <tspan x={cx}>what it takes in,</tspan>
           <tspan x={cx} dy={8}>it gives back changed</tspan>
         </text>
@@ -68,8 +68,8 @@ export function BrokenCircuit() {
         <path d={spiral} fill="none" stroke={G} strokeOpacity={0.75} strokeWidth={1} className="aoh-bc-in" />
         <circle cx={cx} cy={cy} r={5} fill="currentColor" fillOpacity={0.9} />
         <path d={`M ${cx + 56} ${cy} L 210 ${cy}`} fill="none" stroke="currentColor" strokeOpacity={0.15} strokeWidth={0.8} strokeDasharray="2 4" />
-        <text x={cx} y={186} textAnchor="middle" className="font-mono uppercase" style={cap} fill="currentColor" fillOpacity={0.8}>the hungry form</text>
-        <text x={cx} y={196} textAnchor="middle" className="font-mono uppercase" style={sub} fill="currentColor" fillOpacity={0.45}>
+        <text x={cx} y={186} textAnchor="middle" className="font-label uppercase" style={cap} fill="currentColor" fillOpacity={0.8}>the hungry form</text>
+        <text x={cx} y={196} textAnchor="middle" className="font-label uppercase" style={sub} fill="currentColor" fillOpacity={0.45}>
           <tspan x={cx}>proodos without epistrophē</tspan>
           <tspan x={cx} dy={8}>nothing returns</tspan>
         </text>

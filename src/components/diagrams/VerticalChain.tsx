@@ -100,7 +100,7 @@ export function VerticalChain() {
                     fillOpacity={on("Divine Name") ? 1 : 0.7} />
           </g>
 
-          <text x={C} y="330" textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="1.6"
+          <text x={C} y="330" textAnchor="middle" className="font-label" fontSize="7.5" letterSpacing="1.6"
                 fill="var(--muted-foreground)">
             {up ? "RETURN · INWARD, TOWARD SILENCE" : "DESCENT · OUTWARD, TOWARD EMBODIMENT"}
           </text>
@@ -108,7 +108,7 @@ export function VerticalChain() {
 
         <div className="mt-3 flex justify-center">
           <button onClick={() => setUp((v) => !v)}
-            className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
+            className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:border-gold hover:text-gold">
             reverse the chain ⇄
           </button>
         </div>
@@ -127,7 +127,7 @@ export function VerticalChain() {
         </div>
         {cur ? (
           <>
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k} — {cur.kind}
             </p>
             <p className="mt-4 font-serif text-lg leading-relaxed text-bone/85">{cur.q}</p>

@@ -86,7 +86,7 @@ export function SolveCoagula() {
                         strokeWidth={on ? 1.8 : 1.2} />
                 <text x={x} y={y + 6} textAnchor="middle" className="font-serif" fontSize="17"
                       fill="var(--gold)" fillOpacity={on ? 1 : sel ? 0.35 : 0.9}>{P[k].gl}</text>
-                <text x={x} y={y + 44} textAnchor="middle" className="font-mono" fontSize="7"
+                <text x={x} y={y + 44} textAnchor="middle" className="font-label" fontSize="7"
                       letterSpacing="1.2" fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.4 : 1}>{k.toUpperCase()}</text>
               </g>
@@ -97,12 +97,12 @@ export function SolveCoagula() {
                 fill="var(--gold)" fillOpacity="0.9">
             {dissolving ? "solve" : "coagula"}
           </text>
-          <text x={C} y={C + 12} textAnchor="middle" className="font-mono" fontSize="6.2"
+          <text x={C} y={C + 12} textAnchor="middle" className="font-label" fontSize="6.2"
                 letterSpacing="0.9" fill="var(--muted-foreground)">
             {dissolving ? "DISSOLVE" : "GATHER"}
           </text>
 
-          <text x={C} y="322" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="322" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             THE SAME THREE — DIFFERENT WORK
           </text>
@@ -111,7 +111,7 @@ export function SolveCoagula() {
         <div className="mt-3 flex justify-center gap-2">
           {(["solve", "coagula"] as const).map((p) => (
             <button key={p} onClick={() => setPhase(p)} aria-pressed={phase === p}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 phase === p ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
               {p}
             </button>
@@ -122,7 +122,7 @@ export function SolveCoagula() {
       <div className="min-h-[16rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur} · in {phase}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">
@@ -136,7 +136,7 @@ export function SolveCoagula() {
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {phase === "solve" ? "Dissolve" : "Gather"}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -144,7 +144,7 @@ export function SolveCoagula() {
                 ? "Loosens the bonds through which force has become fixed — separating what was falsely joined, exposing hidden components, returning rigid structure to renewed possibility. It appears as questioning, grief, disillusionment, the breakdown of a self-concept; as purification, unbinding, symbolic death."
                 : "Gathers what has been released and gives it a new centre, pattern, boundary and body. It appears as commitment after questioning, reconstruction after dissolution, embodiment after insight, renewed identity after initiation."}
             </p>
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-bone/60">
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-bone/60">
               {FAIL[phase].k}
             </p>
             <p className="mt-3 border-l-2 border-bone/30 pl-5 text-sm leading-relaxed text-bone/75">

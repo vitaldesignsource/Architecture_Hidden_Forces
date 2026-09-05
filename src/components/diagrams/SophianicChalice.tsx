@@ -149,7 +149,7 @@ export function SophianicChalice() {
       <div className="min-h-[13rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
           </>
         ) : (

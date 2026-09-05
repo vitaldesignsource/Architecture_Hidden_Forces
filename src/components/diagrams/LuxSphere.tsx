@@ -66,17 +66,17 @@ export function LuxSphere() {
           <line x1={C + RINGS[3] * 0.72} y1={C + RINGS[3] * 0.72} x2={C + RIM + 22} y2={C + 74} />
           <line x1={C + RIM + 22} y1={C + 74} x2={C + RIM + 34} y2={C + 74} />
         </g>
-        <text x={C + RIM + 38} y={C + 76} className="font-mono" fontSize="6.4" letterSpacing="1"
+        <text x={C + RIM + 38} y={C + 76} className="font-label" fontSize="6.4" letterSpacing="1"
               fill="var(--bone)" opacity="0.75">THE FOUR</text>
 
         <g stroke="var(--muted-foreground)" strokeOpacity="0.45" strokeWidth="0.6">
           <line x1={C + RINGS[10] * 0.72} y1={C - RINGS[10] * 0.72} x2={C + RIM + 22} y2={C - 96} />
           <line x1={C + RIM + 22} y1={C - 96} x2={C + RIM + 34} y2={C - 96} />
         </g>
-        <text x={C + RIM + 38} y={C - 94} className="font-mono" fontSize="6.4" letterSpacing="1"
+        <text x={C + RIM + 38} y={C - 94} className="font-label" fontSize="6.4" letterSpacing="1"
               fill="var(--muted-foreground)" opacity="0.95">THE NINE</text>
 
-        <text x="196" y="340" textAnchor="middle" className="font-mono" fontSize="6.4"
+        <text x="196" y="340" textAnchor="middle" className="font-label" fontSize="6.4"
               letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
           DENSER AT THE POINT · RARER AT THE RIM — THE SPHERE IS WHAT THE POINT DOES
         </text>

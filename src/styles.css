@@ -23,10 +23,12 @@
      anywhere on the site therefore comes out in the site's own face rather than
      in whatever the visitor's device happens to have — or, on the devices that
      have nothing, rather than in nothing at all. */
-  --font-serif: "EB Garamond", "Gentium Plus", "Noto Serif Hebrew", "Noto Naskh Arabic",
-    "Noto Serif Devanagari", "Noto Sans Coptic", "Noto Serif Tibetan", "Noto Serif SC",
-    "Noto Sans Cuneiform", "Noto Sans Egyptian Hieroglyphs", "Noto Sans Avestan",
-    ui-serif, Georgia, serif;
+  --font-serif: var(--serif-face);
+  /* The label face: every eyebrow, caption, numeral and drawing label on the
+     site. Cinzel — Roman capitals; its lowercase is small capitals, and its
+     Greek and arrows come from the serif behind it. Until it was chosen the
+     role fell to whatever monospace the device had. */
+  --font-label: var(--label-face);
   --font-sans: "Inter", "Gentium Plus", "Noto Serif Hebrew", "Noto Naskh Arabic",
     "Noto Serif Devanagari", "Noto Sans Coptic", "Noto Serif Tibetan", "Noto Serif SC",
     "Noto Sans Cuneiform", "Noto Sans Egyptian Hieroglyphs", "Noto Sans Avestan",
@@ -34,6 +36,16 @@
 }
 
 :root {
+  /* the faces as real properties — @theme inline emits none of its own, so a
+     drawing's fontFamily="var(--serif-face)" would otherwise fall through */
+  --serif-face: "EB Garamond", "Gentium Plus", "Noto Serif Hebrew", "Noto Naskh Arabic",
+    "Noto Serif Devanagari", "Noto Sans Coptic", "Noto Serif Tibetan", "Noto Serif SC",
+    "Noto Sans Cuneiform", "Noto Sans Egyptian Hieroglyphs", "Noto Sans Avestan",
+    ui-serif, Georgia, serif;
+  --label-face: "Cinzel", "EB Garamond", "Gentium Plus", "Noto Serif Hebrew", "Noto Naskh Arabic",
+    "Noto Serif Devanagari", "Noto Sans Coptic", "Noto Serif Tibetan", "Noto Serif SC",
+    "Noto Sans Cuneiform", "Noto Sans Egyptian Hieroglyphs", "Noto Sans Avestan",
+    ui-serif, Georgia, serif;
   --background: oklch(0.08 0.005 60);
   --foreground: oklch(0.95 0.012 80);
   --void: oklch(0.06 0.005 60);
@@ -336,7 +348,7 @@
 .aoh-tl-grid { stroke: oklch(0.95 0.012 80 / 0.06); }
 .aoh-tl-axis,
 .aoh-tl-lane,
-.aoh-tl-cursor-label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 9px; }
+.aoh-tl-cursor-label { font-family: var(--label-face); font-size: 9px; }
 .aoh-tl-axis { fill: var(--muted-foreground); letter-spacing: 0.12em; }
 .aoh-tl-lane { fill: var(--gold-dim); letter-spacing: 0.22em; text-transform: uppercase; }
 .aoh-tl-rule { stroke: var(--border); }

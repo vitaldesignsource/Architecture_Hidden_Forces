@@ -140,7 +140,7 @@ export function SignRegister({ words }: { words: WordKey[] }) {
             <p className="mt-2 font-serif text-sm italic text-bone/85">{WORDS[k].tr}</p>
           </div>
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.18em] text-gold-dim">
               {WORDS[k].say} · {gardiner(k)}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{WORDS[k].gloss}</p>

@@ -172,13 +172,13 @@ export function AtlasTimeline(p: TimelineProps) {
           {tk.map((t) => (
             <g key={t}>
               <line x1={x(t)} x2={x(t)} y1={AXIS - 4} y2={height} className="aoh-tl-grid" />
-              <text x={x(t) + 3} y={11} className="aoh-tl-axis">{t === 0 ? "BCE · CE" : fmtYear(t)}</text>
+              <text x={x(t) > width - 48 ? x(t) - 3 : x(t) + 3} y={11} textAnchor={x(t) > width - 48 ? "end" : "start"} className="aoh-tl-axis">{t === 0 ? "BCE · CE" : fmtYear(t)}</text>
             </g>
           ))}
           {/* lanes */}
           {lanes.map((lane, li) => (
             <g key={lane}>
-              <text x={0} y={laneTops[li] + 10} className="aoh-tl-lane">{lane}</text>
+              <text x={0} y={laneTops[li] + 10} className="aoh-tl-lane">{lane.length > Math.floor(width / 9.5) ? lane.slice(0, Math.floor(width / 9.5) - 1).replace(/[,\s]+$/, "") + "…" : lane}</text>
               <line x1={0} x2={width} y1={laneTops[li] + HEAD - 4} y2={laneTops[li] + HEAD - 4} className="aoh-tl-rule" />
             </g>
           ))}

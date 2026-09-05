@@ -134,9 +134,9 @@ function Morphaither() {
               first.
             </p>
             <div className="mt-8 border border-gold/30 p-6 sm:p-8">
-              <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Refused</p>
+              <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Refused</p>
               <p className="mt-3 font-serif text-xl text-bone/50 line-through decoration-gold/50">Force → Effect</p>
-              <p className="mt-6 font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Kept</p>
+              <p className="mt-6 font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Kept</p>
               <p className="mt-3 font-serif text-xl leading-relaxed text-bone sm:text-2xl">
                 Force <span className="text-gold/70">+</span> Medium <span className="text-gold/70">+</span> Condition{" "}
                 <span className="text-gold/70">+</span> Vessel <span className="text-gold/70">+</span> Existing pattern{" "}
@@ -152,7 +152,7 @@ function Morphaither() {
           </div>
           <div>
             <DifferentialReception />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               causal · the force is drawn identical on purpose
             </p>
           </div>
@@ -272,14 +272,14 @@ function Morphaither() {
             </p>
             <div className="mt-8 grid gap-px border border-border bg-border/60 sm:grid-cols-2">
               <div className="bg-void p-6">
-                <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Temporary state</p>
+                <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Temporary state</p>
                 <p className="mt-3 text-sm leading-relaxed text-bone/85">
                   Changes with the hour and the act. Can be set on purpose and lost by neglect.
                   Responds to a single intervention.
                 </p>
               </div>
               <div className="bg-void p-6">
-                <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-dim">Persistent condition</p>
+                <p className="font-label text-[9px] uppercase tracking-[0.3em] text-gold-dim">Persistent condition</p>
                 <p className="mt-3 text-sm leading-relaxed text-bone/85">
                   Accumulated from many states. Shapes the states that arrive into it. Responds only
                   to sustained change, and slowly, because it is partly memory.

@@ -4,10 +4,10 @@ export function PrincipleCard({ p, accent }: { p: Principle; accent: "descent" |
   return (
     <article className="group relative overflow-hidden border border-border bg-void/40 p-8 backdrop-blur-sm transition-colors hover:bg-clay/40 sm:p-10">
       <div className="mb-6 flex items-baseline justify-between gap-4">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+        <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
           {p.num} · {accent === "descent" ? "Descent" : "Return"}
         </span>
-        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+        <span className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           {p.english}
         </span>
       </div>

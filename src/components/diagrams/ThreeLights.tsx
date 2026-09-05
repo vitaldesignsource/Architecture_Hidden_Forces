@@ -81,7 +81,7 @@ export function ThreeLights() {
             <circle cx="52" cy="104" r="6.5" fill="var(--bone)" />
             <circle cx="52" cy="104" r="42" fill="none" stroke="var(--gold)"
                     strokeOpacity={on(0) ? 0.9 : 0.25} strokeDasharray={on(0) ? undefined : "2 4"} strokeWidth="0.9" />
-            <text x="52" y="172" textAnchor="middle" className="font-mono" fontSize="8"
+            <text x="52" y="172" textAnchor="middle" className="font-label" fontSize="8"
                   letterSpacing="1.4" fill={on(0) ? "var(--gold)" : "var(--muted-foreground)"}>LUX</text>
           </g>
 
@@ -98,7 +98,7 @@ export function ThreeLights() {
             ))}
             <rect x="100" y="64" width="150" height="80" fill="none" stroke="var(--gold)"
                   strokeOpacity={on(1) ? 0.9 : 0.25} strokeDasharray={on(1) ? undefined : "2 4"} strokeWidth="0.9" />
-            <text x="175" y="172" textAnchor="middle" className="font-mono" fontSize="8"
+            <text x="175" y="172" textAnchor="middle" className="font-label" fontSize="8"
                   letterSpacing="1.4" fill={on(1) ? "var(--gold)" : "var(--muted-foreground)"}>LUMEN</text>
           </g>
 
@@ -116,11 +116,11 @@ export function ThreeLights() {
             <rect x="268" y="66" width="76" height="76" rx="2" fill="var(--gold)"
                   fillOpacity={on(2) ? 0.16 : 0.07} stroke="var(--gold)" strokeOpacity={on(2) ? 0.95 : 0.45} strokeWidth="1" />
             <path d="M278 78 q 20 -6 44 4" fill="none" stroke="var(--bone)" strokeOpacity={on(2) ? 0.8 : 0.45} strokeWidth="1.1" />
-            <text x="306" y="172" textAnchor="middle" className="font-mono" fontSize="8"
+            <text x="306" y="172" textAnchor="middle" className="font-label" fontSize="8"
                   letterSpacing="1.4" fill={on(2) ? "var(--gold)" : "var(--muted-foreground)"}>SPLENDOR</text>
           </g>
 
-          <text x="180" y="206" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="180" y="206" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             SOURCE · MEDIUM · THING SEEN — THREE PLACES, NOT THREE LIGHTS
           </text>
@@ -130,12 +130,12 @@ export function ThreeLights() {
       <div className="min-h-[13rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k} · {cur.gr} · {cur.en}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
             <p className="mt-5 border-l-2 border-bone/30 pl-4 text-sm leading-relaxed text-bone/75">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/60">Where it fails · </span>
+              <span className="font-label text-[10px] uppercase tracking-[0.2em] text-bone/60">Where it fails · </span>
               {cur.fail}
             </p>
           </>

@@ -87,7 +87,7 @@ export function FourfoldVeil() {
                         fillOpacity={on ? 0.05 : 0.018} stroke="var(--gold)"
                         strokeOpacity={on ? 1 : sel ? 0.22 : 0.45}
                         strokeWidth={on ? 1.8 : 1} />
-                <text x={C} y={C - e.r + 15} textAnchor="middle" className="font-mono"
+                <text x={C} y={C - e.r + 15} textAnchor="middle" className="font-label"
                       fontSize="7.4" letterSpacing="1.3"
                       fill={on ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={on ? 1 : sel ? 0.4 : 0.9}>
@@ -105,9 +105,9 @@ export function FourfoldVeil() {
           {/* dense form: what the innermost membrane meets */}
           <circle cx={C} cy={C} r="22" fill="var(--void)" stroke="var(--bone)"
                   strokeOpacity="0.5" strokeWidth="1.1" />
-          <text x={C} y={C - 1} textAnchor="middle" className="font-mono" fontSize="6.2"
+          <text x={C} y={C - 1} textAnchor="middle" className="font-label" fontSize="6.2"
                 letterSpacing="0.8" fill="var(--bone)" opacity="0.8">CHON</text>
-          <text x={C} y={C + 8} textAnchor="middle" className="font-mono" fontSize="6.2"
+          <text x={C} y={C + 8} textAnchor="middle" className="font-label" fontSize="6.2"
                 letterSpacing="0.8" fill="var(--bone)" opacity="0.8">MATTER</text>
 
           {/* the channel — one passage crossing every membrane, both ways */}
@@ -116,7 +116,7 @@ export function FourfoldVeil() {
           <line className="aoh-fv-ch" x1={C} y1={C + 146} x2={C} y2={C + 24}
                 stroke="var(--bone)" strokeOpacity="0.45" strokeWidth="1.2" />
 
-          <text x={C} y="338" textAnchor="middle" className="font-mono" fontSize="6.6"
+          <text x={C} y="338" textAnchor="middle" className="font-label" fontSize="6.6"
                 letterSpacing="1.1" fill="var(--muted-foreground)" opacity="0.85">
             NESTED, NOT STACKED — NOT A LADDER BUT A RESPIRATION
           </text>
@@ -125,7 +125,7 @@ export function FourfoldVeil() {
         <div className="mt-3 flex justify-center gap-2">
           {(["descending", "ascending"] as const).map((d) => (
             <button key={d} onClick={() => setDir(d)} aria-pressed={dir === d}
-              className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 dir === d ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/60"}`}>
               {d}
             </button>
@@ -136,7 +136,7 @@ export function FourfoldVeil() {
       <div className="min-h-[19rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.gk} · {cur.verb} · {cur.sub}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">{cur.q}</p>
@@ -148,7 +148,7 @@ export function FourfoldVeil() {
               ))}
             </div>
 
-            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-bone/60">
+            <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-bone/60">
               How it fails
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -159,7 +159,7 @@ export function FourfoldVeil() {
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {descending ? "Descending — manifestation" : "Ascending — experience"}
             </p>
             <p className="mt-4 font-serif text-xl leading-relaxed text-bone/85">

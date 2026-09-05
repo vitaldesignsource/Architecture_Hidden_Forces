@@ -31,8 +31,8 @@ export function UnequalDeaths() {
           living cult on the left toward the present on the right, each ending at a different point and one
           continuing faintly to the end.
         </title>
-        <text x={X0} y={22} className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.8}>the living cult</text>
-        <text x={X1} y={22} textAnchor="end" className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.5}>the present</text>
+        <text x={X0} y={22} className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.16em" }} fill={G} fillOpacity={0.8}>the living cult</text>
+        <text x={X1} y={22} textAnchor="end" className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.5}>the present</text>
         <line x1={X0} y1={28} x2={X0} y2={180} stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.6} />
         <line x1={X1} y1={28} x2={X1} y2={180} stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.6} strokeDasharray="2 3" />
         {DEATHS.map((d, i) => {
@@ -45,7 +45,7 @@ export function UnequalDeaths() {
               {d.ends !== null && <line x1={xe} y1={y - 5} x2={xe} y2={y + 5} stroke="currentColor" strokeOpacity={0.6} strokeWidth={1} />}
               {d.ends !== null && <line x1={xe} y1={y} x2={X1} y2={y} stroke="currentColor" strokeOpacity={0.1} strokeWidth={0.6} />}
               {/* the note sits under its bar, so it can be as long as the doctrine needs */}
-              <text x={X0} y={y + 13} className="font-mono uppercase" style={{ ...fs(5.4), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>{d.note}</text>
+              <text x={X0} y={y + 13} className="font-label uppercase" style={{ ...fs(5.4), letterSpacing: "0.12em" }} fill="currentColor" fillOpacity={0.45}>{d.note}</text>
             </g>
           );
         })}

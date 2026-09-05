@@ -67,7 +67,7 @@ export function ForceRegisters() {
                     stroke="var(--gold)" strokeOpacity={on(b.k) ? 1 : 0.45} strokeWidth={on(b.k) ? 1.5 : 0.9} />
               <text x="76" y={b.y + 27} className="font-serif" fontSize="15"
                     fill={on(b.k) ? "var(--gold)" : "var(--bone)"} fillOpacity={on(b.k) ? 1 : 0.8}>{b.k}</text>
-              <text x="76" y={b.y + 44} className="font-mono" fontSize="7" letterSpacing="1.1"
+              <text x="76" y={b.y + 44} className="font-label" fontSize="7" letterSpacing="1.1"
                     fill="var(--muted-foreground)">ONTOLOGICAL REGISTER</text>
             </g>
           ))}
@@ -83,7 +83,7 @@ export function ForceRegisters() {
                       stroke="var(--gold)" strokeOpacity={on(b.k) ? 0.55 : 0.2} strokeWidth="0.6" />
               ))}
               <text x={b.x} y="129" textAnchor="middle" transform={`rotate(-90 ${b.x} 129)`}
-                    className="font-mono" fontSize="9.5" letterSpacing="2"
+                    className="font-label" fontSize="9.5" letterSpacing="2"
                     fill={on(b.k) ? "var(--gold)" : "var(--bone)"} fillOpacity={on(b.k) ? 1 : 0.75}>
                 {b.k.toUpperCase()}
               </text>
@@ -101,11 +101,11 @@ export function ForceRegisters() {
               <circle key={cy} cx="46" cy={cy} r={on(THREAD.k) ? 4 : 3} fill="var(--void)"
                       stroke="var(--gold)" strokeOpacity={on(THREAD.k) ? 1 : 0.55} strokeWidth="1" />
             ))}
-            <text x="46" y="268" textAnchor="middle" className="font-mono" fontSize="7.5" letterSpacing="1.2"
+            <text x="46" y="268" textAnchor="middle" className="font-label" fontSize="7.5" letterSpacing="1.2"
                   fill={on(THREAD.k) ? "var(--gold)" : "var(--muted-foreground)"}>INTERMEDIARY</text>
           </g>
 
-          <text x="176" y="284" textAnchor="middle" className="font-mono" fontSize="7" letterSpacing="1.2"
+          <text x="176" y="284" textAnchor="middle" className="font-label" fontSize="7" letterSpacing="1.2"
                 fill="var(--muted-foreground)" opacity="0.75">
             REGISTERS STACK · SCALES CUT ACROSS · THE FUNCTION CROSSES BETWEEN
           </text>
@@ -115,16 +115,16 @@ export function ForceRegisters() {
       <div className="min-h-[16rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k} — {cur.kind}
             </p>
             <div className="mt-4 space-y-px">
               <div className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">Causal mode</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">Causal mode</span>
                 <span className="text-sm leading-relaxed text-muted-foreground">{cur.mode}</span>
               </div>
               <div className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">It asks</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">It asks</span>
                 <span className="font-serif text-base italic leading-relaxed text-gold">{cur.q}</span>
               </div>
             </div>

@@ -35,8 +35,8 @@ export function ProvincesAtlas() {
         </title>
         {/* the sea: everything sits in it */}
         <ellipse cx={260} cy={168} rx={244} ry={150} fill="currentColor" fillOpacity={0.035} stroke="currentColor" strokeOpacity={0.25} strokeWidth={0.7} strokeDasharray="3 5" />
-        <text x={492} y={40} textAnchor="end" className="font-mono uppercase" style={lbl(6.6)} fill="currentColor" fillOpacity={0.55}>the Sea Between Causes</text>
-        <text x={492} y={50} textAnchor="end" className="font-mono uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.35}>between every cause and its effect</text>
+        <text x={492} y={40} textAnchor="end" className="font-label uppercase" style={lbl(6.6)} fill="currentColor" fillOpacity={0.55}>the Sea Between Causes</text>
+        <text x={492} y={50} textAnchor="end" className="font-label uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.35}>between every cause and its effect</text>
         {/* the waterline */}
         <line x1={40} y1={214} x2={480} y2={214} stroke="currentColor" strokeOpacity={0.35} strokeWidth={0.7} strokeDasharray="2 4" />
         {/* morphaithēr's reach, and the nursery in it */}
@@ -49,18 +49,18 @@ export function ProvincesAtlas() {
             </g>
           ))}
         </g>
-        <text x={195} y={30} textAnchor="middle" className="font-mono uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Nursery</text>
-        <text x={195} y={84} textAnchor="middle" className="font-mono uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>before form · within Morphaithēr</text>
+        <text x={195} y={30} textAnchor="middle" className="font-label uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Nursery</text>
+        <text x={195} y={84} textAnchor="middle" className="font-label uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>before form · within Morphaithēr</text>
         {/* the ring of stations */}
         <circle cx={cx} cy={cy} r={R} fill="none" stroke={G} strokeOpacity={0.5} strokeWidth={1} className="aoh-pa-flow" />
         {pts.map((p, i) => <circle key={i} cx={p.x} cy={p.y} r={3} fill={G} fillOpacity={0.9} />)}
-        <text x={cx} y={cy - 4} textAnchor="middle" className="font-mono uppercase" style={lbl(6)} fill={G} fillOpacity={0.8}>the six stations</text>
-        <text x={cx} y={cy + 8} textAnchor="middle" className="font-mono uppercase" style={lbl(5)} fill={G} fillOpacity={0.55}>one circulation</text>
+        <text x={cx} y={cy - 4} textAnchor="middle" className="font-label uppercase" style={lbl(6)} fill={G} fillOpacity={0.8}>the six stations</text>
+        <text x={cx} y={cy + 8} textAnchor="middle" className="font-label uppercase" style={lbl(5)} fill={G} fillOpacity={0.55}>one circulation</text>
         {/* the aquifer beneath */}
         <ellipse cx={250} cy={262} rx={78} ry={17} fill="var(--void, #000)" fillOpacity={0.85} stroke={G} strokeOpacity={0.45} strokeWidth={0.8} />
         <path d="M 250 210 L 250 244" stroke={G} strokeOpacity={0.45} strokeWidth={0.8} strokeDasharray="2 3" />
-        <text x={250} y={266} textAnchor="middle" className="font-mono uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Black Aquifer</text>
-        <text x={250} y={294} textAnchor="middle" className="font-mono uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>beneath · where the remainder sinks</text>
+        <text x={250} y={266} textAnchor="middle" className="font-label uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Black Aquifer</text>
+        <text x={250} y={294} textAnchor="middle" className="font-label uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>beneath · where the remainder sinks</text>
         {/* the catacombs, below and to the side */}
         <g fill="none" stroke="currentColor" strokeOpacity={0.5} strokeWidth={0.8}>
           {[380, 404, 428].map((x) => (
@@ -68,8 +68,8 @@ export function ProvincesAtlas() {
           ))}
           <path d="M 372 300 L 456 300" strokeOpacity={0.3} />
         </g>
-        <text x={414} y={318} textAnchor="middle" className="font-mono uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Catacombs</text>
-        <text x={414} y={238} textAnchor="middle" className="font-mono uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>after the cult</text>
+        <text x={414} y={318} textAnchor="middle" className="font-label uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Catacombs</text>
+        <text x={414} y={238} textAnchor="middle" className="font-label uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>after the cult</text>
         {/* the garden, at the surface */}
         <g fill="none" stroke={G} strokeOpacity={0.7} strokeWidth={0.8}>
           {[[392, 196], [412, 190], [432, 198]].map(([x, y], i) => (
@@ -81,13 +81,13 @@ export function ProvincesAtlas() {
             </g>
           ))}
         </g>
-        <text x={412} y={170} textAnchor="middle" className="font-mono uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Garden</text>
-        <text x={412} y={180} textAnchor="middle" className="font-mono uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>where residue acquires allure</text>
+        <text x={412} y={170} textAnchor="middle" className="font-label uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>the Garden</text>
+        <text x={412} y={180} textAnchor="middle" className="font-label uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>where residue acquires allure</text>
         {/* the hungry form at the waterline, left */}
         <path d="M 96 176 L 99 212 Q 112 220 125 212" fill="none" stroke="currentColor" strokeOpacity={0.8} strokeWidth={0.9} />
         <path d="M 102 218 C 90 240, 96 262, 112 268 C 128 262, 134 240, 122 218" fill="none" stroke={G} strokeOpacity={0.6} strokeWidth={0.8} className="aoh-pa-flow" />
-        <text x={112} y={166} textAnchor="middle" className="font-mono uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>a hungry form</text>
-        <text x={112} y={286} textAnchor="middle" className="font-mono uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>when circulation fails</text>
+        <text x={112} y={166} textAnchor="middle" className="font-label uppercase" style={lbl(6.6)} fill={G} fillOpacity={0.85}>a hungry form</text>
+        <text x={112} y={286} textAnchor="middle" className="font-label uppercase" style={lbl(5.4)} fill="currentColor" fillOpacity={0.45}>when circulation fails</text>
       </svg>
     </div>
   );

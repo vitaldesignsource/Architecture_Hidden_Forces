@@ -48,13 +48,13 @@ export function CounterfeitBloom() {
         <path d={`M ${cx} 178 C ${cx + 20} 190, ${cx + 50} 196, ${cx + 70} 216`} fill="none" stroke="currentColor" strokeOpacity={0.6} strokeWidth={0.8} />
         <ellipse cx={cx + 74} cy={224} rx={7} ry={9} fill="none" stroke="currentColor" strokeOpacity={0.85} strokeWidth={1} />
         {/* labels with leaders */}
-        <text x={cx - 60} y={cy - 60} textAnchor="end" className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>fragrance · affect</text>
-        <text x={cx + 46} y={cy - 24} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>colour · correspondence</text>
-        <text x={cx + 46} y={cy + 4} className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.85}>nectar · the reward</text>
-        <text x={cx + 22} y={150} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>thorns · penalty on doubt</text>
-        <text x={cx - 138} y={250} className="font-mono uppercase" style={lbl} fill={G} fillOpacity={0.85}>the root · where it feeds</text>
-        <text x={cx + 90} y={228} className="font-mono uppercase" style={lbl} fill="currentColor" fillOpacity={0.85}>the fruit</text>
-        <text x={cx + 90} y={238} className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
+        <text x={cx - 60} y={cy - 60} textAnchor="end" className="font-label uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>fragrance · affect</text>
+        <text x={cx + 46} y={cy - 24} className="font-label uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>colour · correspondence</text>
+        <text x={cx + 46} y={cy + 4} className="font-label uppercase" style={lbl} fill={G} fillOpacity={0.85}>nectar · the reward</text>
+        <text x={cx + 22} y={150} className="font-label uppercase" style={lbl} fill="currentColor" fillOpacity={0.55}>thorns · penalty on doubt</text>
+        <text x={cx - 138} y={250} className="font-label uppercase" style={lbl} fill={G} fillOpacity={0.85}>the root · where it feeds</text>
+        <text x={cx + 90} y={228} className="font-label uppercase" style={lbl} fill="currentColor" fillOpacity={0.85}>the fruit</text>
+        <text x={cx + 90} y={238} className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.45}>
           <tspan x={cx + 90}>only this reveals</tspan>
           <tspan x={cx + 90} dy={8}>the whole plant</tspan>
         </text>

@@ -26,7 +26,7 @@ export function OssuaryAndCrypt() {
           {/* the lifted keystone */}
           <path d="M 100 12 L 120 12 L 116 30 L 104 30 Z" fill="none" stroke={G} strokeWidth={1} />
           <path d="M 104 32 L 116 32" stroke={G} strokeOpacity={0.4} strokeWidth={0.6} strokeDasharray="2 2" />
-          <text x={110} y={146} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7), letterSpacing: "0.18em" }} fill={G} fillOpacity={0.85}>architecture retained</text>
+          <text x={110} y={146} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7), letterSpacing: "0.18em" }} fill={G} fillOpacity={0.85}>architecture retained</text>
         </svg>
       </div>
       <div>
@@ -38,7 +38,7 @@ export function OssuaryAndCrypt() {
           {/* the footprint */}
           <path d="M 70 130 L 70 118 M 150 130 L 150 118" stroke={G} strokeOpacity={0.7} strokeWidth={1} />
           <path d="M 70 118 L 150 118" stroke={G} strokeOpacity={0.35} strokeWidth={0.6} strokeDasharray="2 3" />
-          <text x={110} y={146} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7), letterSpacing: "0.18em" }} fill={G} fillOpacity={0.85}>consequence retained</text>
+          <text x={110} y={146} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7), letterSpacing: "0.18em" }} fill={G} fillOpacity={0.85}>consequence retained</text>
         </svg>
       </div>
     </div>

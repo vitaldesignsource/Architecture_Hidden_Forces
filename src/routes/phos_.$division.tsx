@@ -73,7 +73,7 @@ function DivisionPage() {
         <Backdrop src={backdrop} opacity={0.3} position={intro?.meta.position ?? "center 50%"} fill />
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             {divisionLabel(d)} · {p.total} entries · {p.written ? `${p.written} written` : "forthcoming"}
           </p>
           <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-tight sm:text-5xl">{d.title}</h1>
@@ -94,7 +94,7 @@ function DivisionPage() {
           {(groups.length ? groups : [null]).map((g) => (
             <div key={g ?? "all"} className={g ? "mt-14 first:mt-0" : ""}>
               {g && (
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">{g}</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">{g}</p>
               )}
               {g && groupIntros[valueSlug(g)] && (
                 <EntryBody body={groupIntros[valueSlug(g)]} className="mt-4 max-w-3xl" />
@@ -109,7 +109,7 @@ function DivisionPage() {
                       e.written ? "" : "opacity-60"
                     }`}
                   >
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                       {String(e.n).padStart(2, "0")}
                     </span>
                     <span className="min-w-0">
@@ -118,7 +118,7 @@ function DivisionPage() {
                         {e.written ? (
                           <LabelChips labels={e.meta?.labels ?? []} size="xs" />
                         ) : (
-                          <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">forthcoming</span>
+                          <span className="font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">forthcoming</span>
                         )}
                       </span>
                       {e.meta?.summary && (
@@ -143,18 +143,18 @@ function DivisionPage() {
           <div className="mt-16 grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
             {prev && prev.id !== "portal" ? (
               <Link to="/phos/$division" params={{ division: prev.id }} className="group" aria-keyshortcuts="ArrowLeft [">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(prev)}</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">← {divisionLabel(prev)}</span>
                 <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{prev.title}</span>
               </Link>
             ) : (
               <Link to="/phos/portal" className="group" aria-keyshortcuts="ArrowLeft [">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">← The Portal</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">← The Portal</span>
                 <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">The Encyclopaedia of Light</span>
               </Link>
             )}
             {next && (
               <Link to="/phos/$division" params={{ division: next.id }} className="group sm:text-right" aria-keyshortcuts="ArrowRight ]">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(next)} →</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{divisionLabel(next)} →</span>
                 <span className="mt-1 block font-serif text-lg text-bone/85 transition-colors group-hover:text-gold">{next.title}</span>
               </Link>
             )}

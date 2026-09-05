@@ -39,7 +39,7 @@ export function ErosionSeries() {
             ))}
             {/* the water, the same each time */}
             <line x1={41} y1={f.water} x2={59} y2={f.water} stroke="var(--gold, #c9a227)" strokeWidth={2.2} strokeOpacity={0.9} strokeLinecap="round" className="aoh-er-w" />
-            <text x={50} y={144} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.8), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.55}>
+            <text x={50} y={144} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.8), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.55}>
               {f.label}
             </text>
           </svg>

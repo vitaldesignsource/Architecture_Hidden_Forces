@@ -16,7 +16,7 @@ export function Deeper({ label = "Go deeper", children }: { label?: string; chil
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls={id}
-        className="group flex items-baseline gap-3 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim transition-colors hover:text-gold"
+        className="group flex items-baseline gap-3 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim transition-colors hover:text-gold"
       >
         <span className="inline-block w-3 text-center transition-transform group-hover:text-gold" aria-hidden>
           {open ? "−" : "+"}

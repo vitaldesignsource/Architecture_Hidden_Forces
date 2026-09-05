@@ -19,14 +19,11 @@ export function TreeOfLife({
   // ignite BEFORE the light reached them — up to 1.21s early at Binah.
   const IGNITE_AT = [0.0, 2.42, 3.41, 4.06, 4.5, 4.78, 5.11, 5.86, 6.71, 8.8];
 
-  // Must match the stacks Tailwind emits for font-serif/font-mono, or the tree's
-  // Hebrew resolves to a different face than the byte-identical Hebrew in the
-  // cards beside it. (var(--font-serif) does NOT work here: @theme inline inlines
-  // into utility classes and never emits the custom property, so it silently
-  // falls back to the inherited sans stack.)
-  const SERIF = '"EB Garamond", ui-serif, Georgia, serif';
-  const MONO =
-    'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+  // The same stacks the site sets its serif and its labels in, as the real
+  // custom properties styles.css declares on :root — so the tree's Hebrew
+  // resolves to the same face as the byte-identical Hebrew in the cards beside it.
+  const SERIF = "var(--serif-face)";
+  const MONO = "var(--label-face)";
 
   type Sefirah = {
     id: string;

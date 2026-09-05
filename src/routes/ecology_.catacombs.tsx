@@ -91,7 +91,7 @@ function Catacombs() {
         </h2>
         <div className="mt-12">
           <SacredArchitectureLayers />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             hierarchical · the same house, inhabited and withdrawn
           </p>
         </div>
@@ -170,7 +170,7 @@ function Catacombs() {
           </div>
           <div>
             <UnequalDeaths />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               causal · five bars that break at different points
             </p>
           </div>

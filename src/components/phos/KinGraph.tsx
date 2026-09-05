@@ -101,7 +101,7 @@ export function KinGraph({ tradition, onPick }: { tradition: string; onPick: (id
           <>
             <p className="font-serif text-lg text-gold">
               {held.b.name}
-              <span className="ml-3 font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
+              <span className="ml-3 font-label text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
                 {held.ties === 1 ? "one tie" : `${held.ties} ties`} · {held.b.plane}
               </span>
             </p>
@@ -115,7 +115,7 @@ export function KinGraph({ tradition, onPick }: { tradition: string; onPick: (id
             </p>
           </>
         ) : (
-          <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-bone/35">
+          <p className="font-label text-[9px] uppercase tracking-[0.16em] text-bone/35">
             {nodes.length} beings · {edges.length} relations · laid out on the volume&rsquo;s planes
           </p>
         )}

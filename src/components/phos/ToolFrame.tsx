@@ -38,7 +38,7 @@ export function ToolFrame({
         <Backdrop src={`/bg/${backdrop}.webp`} opacity={0.3} position={position} fill />
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             <Link to="/phos/tools" className="hover:underline">{eyebrow}</Link>{name ? <> · {name}</> : null}
           </p>
           <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-tight sm:text-5xl">{title}</h1>
@@ -61,5 +61,5 @@ export function ToolBand({ children, className = "" }: { children: ReactNode; cl
 }
 
 export function Eyebrow({ children }: { children: ReactNode }) {
-  return <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">{children}</p>;
+  return <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">{children}</p>;
 }

@@ -57,10 +57,10 @@ export function HydrologicalSequence() {
             </g>
           );
         })}
-        <text x={cx} y={cy - 6} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={cy - 6} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           what returns
         </text>
-        <text x={cx} y={cy + 8} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(7.5), letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
+        <text x={cx} y={cy + 8} textAnchor="middle" className="font-label uppercase" style={{ ...fs(7.5), letterSpacing: "0.22em" }} fill="var(--gold, #c9a227)" fillOpacity={0.8}>
           is received again
         </text>
         {/* the exit */}
@@ -79,10 +79,10 @@ export function HydrologicalSequence() {
         {/* the dead end is a waterline, and there is a depth beneath it */}
         <line x1={last.x - 16} y1={last.y + 14} x2={last.x + 16} y2={last.y + 14} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.2} />
         <rect x={last.x - 40} y={last.y + 16} width={80} height={26} fill="currentColor" fillOpacity={0.06} />
-        <text x={last.x} y={last.y + 26} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>
+        <text x={last.x} y={last.y + 26} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.5), letterSpacing: "0.16em" }} fill="currentColor" fillOpacity={0.4}>
           no return
         </text>
-        <text x={last.x} y={last.y + 37} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.6}>
+        <text x={last.x} y={last.y + 37} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6), letterSpacing: "0.16em" }} fill="var(--gold, #c9a227)" fillOpacity={0.6}>
           beneath: the Black Aquifer
         </text>
       </svg>

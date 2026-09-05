@@ -34,7 +34,7 @@ export function ArchitectureIndex() {
       </p>
 
       <div className="mt-10 border-t border-border pt-8">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+        <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
           Routes through it
         </p>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -56,7 +56,7 @@ export function ArchitectureIndex() {
               }`}
             >
               {x.k}
-              <span className="mt-0.5 block font-mono text-[9px] uppercase tracking-[0.12em] opacity-60">
+              <span className="mt-0.5 block font-label text-[9px] uppercase tracking-[0.12em] opacity-60">
                 {x.n} · {Object.keys(x.why).length}
               </span>
             </button>
@@ -65,7 +65,7 @@ export function ArchitectureIndex() {
         {active && (
           <div className="aoh-pop mt-6 max-w-3xl border-l-2 border-gold pl-5">
             <p className="text-sm leading-relaxed text-muted-foreground">{active.blurb}</p>
-            <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">
+            <p className="mt-2 font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">
               Marked below, in order
             </p>
           </div>
@@ -85,7 +85,7 @@ export function ArchitectureIndex() {
               } ${off ? "opacity-25" : "opacity-100"}`}
             >
               <span
-                className={`font-mono text-[10px] uppercase tracking-[0.2em] ${
+                className={`font-label text-[10px] uppercase tracking-[0.2em] ${
                   step ? "text-gold" : x.movement ? "text-gold/40" : "text-gold-dim"
                 }`}
               >

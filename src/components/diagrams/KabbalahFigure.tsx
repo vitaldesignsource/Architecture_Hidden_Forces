@@ -13,7 +13,7 @@ export function KabbalahFigure() {
     <div className="mt-24 grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
                 <TreeOfLife active={active} onSelect={(tr) => setActive((a) => (a === tr ? null : tr))} />
                 <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                     עֵץ הַחַיִּים · The Ten Sefirot
                   </p>
                   <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -44,7 +44,7 @@ export function KabbalahFigure() {
                       >
                         <div className="flex items-baseline justify-between gap-3">
                           <div className="font-serif text-2xl text-gold">{s.he}</div>
-                          <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                          <div className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                             {s.n}
                           </div>
                         </div>

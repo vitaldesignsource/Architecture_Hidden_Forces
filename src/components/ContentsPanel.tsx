@@ -125,7 +125,7 @@ export function ContentsPanel({
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-haspopup="dialog"
-        className="shrink-0 border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold"
+        className="shrink-0 border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold"
       >
         Contents
       </button>
@@ -152,12 +152,12 @@ export function ContentsPanel({
             className="aoh-cp fixed inset-y-0 right-0 z-[61] flex w-full max-w-[26rem] flex-col border-l border-border bg-void"
           >
             <div className="flex items-baseline justify-between border-b border-border px-6 py-5">
-              <p id={titleId} className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p id={titleId} className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 Contents
               </p>
               <button
                 onClick={close}
-                className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-gold"
+                className="font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-gold"
               >
                 Close ✕
               </button>
@@ -166,7 +166,7 @@ export function ContentsPanel({
             <div data-scroll className="min-h-0 flex-1 overflow-y-auto px-6 py-6">
               {grouped.map((g) => (
                 <div key={g.k} className="mb-8">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {g.k}
                   </p>
                   <div className="mt-3 space-y-px">
@@ -177,7 +177,7 @@ export function ContentsPanel({
                       }`;
                       const inner = (
                         <>
-                          <span className={`font-mono text-[10px] ${here ? "text-gold" : "text-gold-dim"}`}>
+                          <span className={`font-label text-[10px] ${here ? "text-gold" : "text-gold-dim"}`}>
                             {e.movement ? "—" : e.n}
                           </span>
                           <span className={`text-sm leading-snug ${here ? "text-gold" : "text-bone/80"}`}>
@@ -224,7 +224,7 @@ export function ContentsPanel({
 
               {paths.length > 0 && (
                 <div className="border-t border-border pt-6">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     Routes through it
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -244,7 +244,7 @@ export function ContentsPanel({
                         className="block border-b border-border py-3 transition-colors hover:border-gold/40"
                       >
                         <span className="font-serif text-base text-bone/85">{p.k}</span>
-                        <span className="mt-0.5 block font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
+                        <span className="mt-0.5 block font-label text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
                           {p.n}
                         </span>
                       </a>
@@ -256,7 +256,7 @@ export function ContentsPanel({
               {/* The other volume is one page away, and this is the one place a
                   reader can be sure of finding it from anywhere in either. */}
               <div className="mt-8 border-t border-border pt-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                   Volumes
                 </p>
                 <div className="mt-3 space-y-px">
@@ -265,7 +265,7 @@ export function ContentsPanel({
                       <div key={v.to} aria-current="page" className="border-l-2 border-gold bg-gold/5 py-3 pl-3">
                         <span className="block font-serif text-base text-gold">{v.t}</span>
                         <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">
-                          {v.d} <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-gold-dim">· you are here</span>
+                          {v.d} <span className="font-label text-[9px] uppercase tracking-[0.15em] text-gold-dim">· you are here</span>
                         </span>
                       </div>
                     ) : (

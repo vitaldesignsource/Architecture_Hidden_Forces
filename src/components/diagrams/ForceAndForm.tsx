@@ -40,9 +40,9 @@ export function ForceAndForm() {
           {/* threshold of visibility — only the final step rises above it */}
           <line x1="14" y1={Y(6) + 17} x2="366" y2={Y(6) + 17} stroke="var(--gold)"
                 strokeOpacity="0.45" strokeDasharray="6 5" strokeWidth="1" />
-          <text x="14" y={Y(6) + 11} className="font-mono" fontSize="6.6" letterSpacing="1.1"
+          <text x="14" y={Y(6) + 11} className="font-label" fontSize="6.6" letterSpacing="1.1"
                 fill="var(--gold)" fillOpacity="0.8">THRESHOLD OF VISIBILITY</text>
-          <text x="366" y={Y(6) + 29} textAnchor="end" className="font-mono" fontSize="6.2"
+          <text x="366" y={Y(6) + 29} textAnchor="end" className="font-label" fontSize="6.2"
                 letterSpacing="0.9" fill="var(--muted-foreground)">EVERYTHING BELOW HAS ALREADY HAPPENED</text>
 
           {S.map((_, i) => i < 6 && (
@@ -53,7 +53,7 @@ export function ForceAndForm() {
           {/* actuality does not exhaust potency: structure becomes the vessel of new potency */}
           <path className="aoh-ff-r" d={`M${X(6)},${Y(6) - 16} C${X(6) + 20},${Y(6) - 60} 40,${Y(0) - 90} ${X(0)},${Y(0) - 16}`}
                 fill="none" stroke="var(--bone)" strokeOpacity="0.45" strokeWidth="1" />
-          <text x="196" y="26" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x="196" y="26" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)">STRUCTURE BECOMES THE VESSEL OF NEW POTENCY</text>
 
           {S.map((st, i) => {
@@ -67,7 +67,7 @@ export function ForceAndForm() {
                         fillOpacity={vis ? (on ? 1 : 0.85) : 1}
                         stroke="var(--gold)" strokeOpacity={on ? 1 : sel === null ? 0.7 : 0.3}
                         strokeWidth={on ? 2 : 1.1} />
-                <text x={X(i)} y={Y(i) - 15} textAnchor="middle" className="font-mono" fontSize="6.6"
+                <text x={X(i)} y={Y(i) - 15} textAnchor="middle" className="font-label" fontSize="6.6"
                       letterSpacing="0.7"
                       fill={on ? "var(--gold)" : vis ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel === null || on || vis ? 1 : 0.35}>
@@ -82,7 +82,7 @@ export function ForceAndForm() {
       <div className="min-h-[15rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {String((sel as number) + 1).padStart(2, "0")} · {cur.k}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>

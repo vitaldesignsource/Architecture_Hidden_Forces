@@ -81,7 +81,7 @@ export function CentersAxis() {
             x1={MID - 44} y1={dir === "up" ? 580 : 180} x2={MID - 44} y2={dir === "up" ? 180 : 580}
             stroke="var(--gold)" strokeOpacity="0.5" strokeWidth="1" markerEnd="url(#aoh-cx-a)"
           />
-          <text x={MID - 50} y={dir === "up" ? 372 : 372} textAnchor="end" className="font-mono"
+          <text x={MID - 50} y={dir === "up" ? 372 : 372} textAnchor="end" className="font-label"
                 fontSize="7" letterSpacing="1.4" fill="var(--muted-foreground)">
             {dir === "up" ? "REFINE" : "EMBODY"}
           </text>
@@ -107,15 +107,15 @@ export function CentersAxis() {
                 <circle cx={MID} cy={c.y} r="3.4" fill="var(--gold)" fillOpacity={on ? 1 : 0.5} />
                 <text x={MID + 34} y={c.y - 2} className="font-serif" fontSize="12"
                       fill={on ? "var(--gold)" : "var(--bone)"} fillOpacity={on ? 1 : 0.75}>{c.s}</text>
-                <text x={MID + 34} y={c.y + 11} className="font-mono" fontSize="6.8" letterSpacing="1.2"
+                <text x={MID + 34} y={c.y + 11} className="font-label" fontSize="6.8" letterSpacing="1.2"
                       fill="var(--muted-foreground)">{c.k.toUpperCase()}</text>
               </g>
             );
           })}
-          <text x={MID} y={636} textAnchor="middle" className="font-mono" fontSize="7"
+          <text x={MID} y={636} textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="1.8" fill="var(--muted-foreground)">SIX ON THE AXIS · CROWN ABOVE</text>
         </svg>
-        <div className="mt-3 flex justify-center gap-5 font-mono text-[9px] uppercase tracking-[0.18em]">
+        <div className="mt-3 flex justify-center gap-5 font-label text-[9px] uppercase tracking-[0.18em]">
           {(["up", "down"] as const).map((d) => (
             <button key={d} type="button" onClick={() => setDir(d)} aria-pressed={dir === d}
               className={`px-2 py-2 transition-colors ${dir === d ? "text-gold" : "text-muted-foreground hover:text-gold"}`}>
@@ -128,26 +128,26 @@ export function CentersAxis() {
       <div className="min-h-[16rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.s} · {cur.tr} — {cur.op}
             </p>
             <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone">{cur.q}</p>
             <div className="mt-5 grid grid-cols-3 gap-3 border-y border-border py-4 text-[11px] leading-snug">
-              <div><div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Tattva</div><div className="mt-1 text-bone/85">{cur.tat}</div></div>
-              <div><div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Ether</div><div className="mt-1 text-bone/85">{cur.eth}</div></div>
-              <div><div className="font-mono uppercase tracking-[0.15em] text-muted-foreground">Alchemy</div><div className="mt-1 text-bone/85">{cur.al}</div></div>
+              <div><div className="font-label uppercase tracking-[0.15em] text-muted-foreground">Tattva</div><div className="mt-1 text-bone/85">{cur.tat}</div></div>
+              <div><div className="font-label uppercase tracking-[0.15em] text-muted-foreground">Ether</div><div className="mt-1 text-bone/85">{cur.eth}</div></div>
+              <div><div className="font-label uppercase tracking-[0.15em] text-muted-foreground">Alchemy</div><div className="mt-1 text-bone/85">{cur.al}</div></div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.n}</p>
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {dir === "up" ? "Ascent · refinement" : "Descent · embodiment"}
             </p>
             <div className="mt-4 space-y-px">
               {order.map((c) => (
                 <div key={c.k} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-4 border-b border-border py-2.5">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">{c.k}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.18em] text-gold-dim">{c.k}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{c.op}</span>
                 </div>
               ))}

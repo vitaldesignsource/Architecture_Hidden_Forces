@@ -76,7 +76,7 @@ export function TheChariot() {
                       fontSize="14" fill={on ? "var(--gold)" : "var(--bone)"} fillOpacity={on ? 1 : 0.8}>
                   {w.he}
                 </text>
-                <text x={w.cx} y={CY + R + 38} textAnchor="middle" className="font-mono"
+                <text x={w.cx} y={CY + R + 38} textAnchor="middle" className="font-label"
                       fontSize="7" letterSpacing="1.6" fill="var(--muted-foreground)">
                   {w.k.toUpperCase()}
                 </text>
@@ -101,11 +101,11 @@ export function TheChariot() {
             <circle cx="220" cy={CY} r="30" fill="none" stroke="var(--gold)"
                     strokeOpacity={gathered ? 1 : 0.4} strokeWidth={gathered ? 1.6 : 1} />
             <circle cx="220" cy={CY} r="5" fill="var(--gold)" fillOpacity={gathered ? 1 : 0.4} />
-            <text x="220" y={CY + 52} textAnchor="middle" className="font-mono" fontSize="7"
+            <text x="220" y={CY + 52} textAnchor="middle" className="font-label" fontSize="7"
                   letterSpacing="1.8" fill="var(--muted-foreground)">INNER SUN</text>
           </g>
         </svg>
-        <div className="mt-3 flex justify-center gap-5 font-mono text-[9px] uppercase tracking-[0.18em]">
+        <div className="mt-3 flex justify-center gap-5 font-label text-[9px] uppercase tracking-[0.18em]">
           {[[true, "Gathered"], [false, "Divided"]].map(([v, label]) => (
             <button key={String(label)} type="button" onClick={() => setGathered(v as boolean)}
               aria-pressed={gathered === v}
@@ -119,7 +119,7 @@ export function TheChariot() {
       <div className="min-h-[12rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.he} · {cur.k} — {cur.role}
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{cur.d}</p>
@@ -129,7 +129,7 @@ export function TheChariot() {
           </>
         ) : gathered ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">Gathered</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">Gathered</p>
             <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone">
               Both wheels turn together, and the centre lights.
             </p>
@@ -141,7 +141,7 @@ export function TheChariot() {
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">Divided</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">Divided</p>
             <p className="mt-4 font-serif text-xl italic leading-relaxed text-bone">
               Several animals pulling a chariot in opposing directions.
             </p>

@@ -105,12 +105,12 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
       <div role="dialog" aria-modal="true" aria-label="Search the encyclopaedia" onMouseDown={(e) => e.stopPropagation()}
            className="animate-rise w-full max-w-2xl border border-gold/40 bg-void shadow-[0_0_80px_-20px_oklch(0.78_0.13_75_/_0.5)]">
         <div className="flex items-center gap-4 border-b border-border px-6 py-4">
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">Search</span>
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Search</span>
           <input ref={inputRef} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={onKey}
                  placeholder="a title, a word from a summary, a tradition, a plane, a symbol, a division…"
                  aria-label="Search" aria-controls="aoh-hits" aria-activedescendant={hits[i] ? `aoh-hit-${i}` : undefined}
                  className="min-w-0 flex-1 bg-transparent font-serif text-xl italic text-bone placeholder:text-muted-foreground/70 focus:outline-none" />
-          <button onClick={onClose} className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">esc</button>
+          <button onClick={onClose} className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">esc</button>
         </div>
 
         <ul id="aoh-hits" role="listbox" className="max-h-[56vh] overflow-y-auto">
@@ -125,7 +125,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
             const row = `grid cursor-pointer gap-4 border-b border-border/60 px-6 py-3.5 transition-colors ${on ? "bg-gold/10" : "hover:bg-gold/5"}`;
             if (h.kind === "entry") return (
               <li key={h.e.id} id={`aoh-hit-${n}`} role="option" aria-selected={on} onMouseEnter={() => setI(n)} onClick={() => go(h)} className={`${row} grid-cols-[4.5rem_1fr]`}>
-                <span className="pt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{h.e.division.numeral || "Portal"} · {String(h.e.n).padStart(2, "0")}</span>
+                <span className="pt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{h.e.division.numeral || "Portal"} · {String(h.e.n).padStart(2, "0")}</span>
                 <span className="min-w-0">
                   <span className={`block font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.e.title}</span>
                   <span className="mt-0.5 line-clamp-2 block text-sm leading-relaxed text-muted-foreground">{h.e.meta?.summary}</span>
@@ -135,25 +135,25 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
             );
             if (h.kind === "division") return (
               <li key={"d" + h.id} id={`aoh-hit-${n}`} role="option" aria-selected={on} onMouseEnter={() => setI(n)} onClick={() => go(h)} className={`${row} grid-cols-[4.5rem_1fr]`}>
-                <span className="pt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Division</span>
+                <span className="pt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold">Division</span>
                 <span className={`font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.numeral} · {h.title}</span>
               </li>
             );
             if (h.kind === "tool") return (
               <li key={"t" + h.k} id={`aoh-hit-${n}`} role="option" aria-selected={on} onMouseEnter={() => setI(n)} onClick={() => go(h)} className={`${row} grid-cols-[4.5rem_1fr]`}>
-                <span className="pt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Instrument</span>
+                <span className="pt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold">Instrument</span>
                 <span className="min-w-0"><span className={`block font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.k}</span><span className="block text-sm text-muted-foreground">{h.d}</span></span>
               </li>
             );
             return (
               <li key={"f" + h.facet + h.value} id={`aoh-hit-${n}`} role="option" aria-selected={on} onMouseEnter={() => setI(n)} onClick={() => go(h)} className={`${row} grid-cols-[4.5rem_1fr]`}>
-                <span className="pt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Browse</span>
-                <span className={`font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.facet} · {h.value} <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{h.count} entries</span></span>
+                <span className="pt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold">Browse</span>
+                <span className={`font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.facet} · {h.value} <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{h.count} entries</span></span>
               </li>
             );
           })}
         </ul>
-        <div className="flex gap-5 border-t border-border px-6 py-3 font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+        <div className="flex gap-5 border-t border-border px-6 py-3 font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
           <span>↑↓ move</span><span>↵ enter</span><span>esc close</span>
         </div>
       </div>

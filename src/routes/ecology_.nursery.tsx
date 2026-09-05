@@ -188,7 +188,7 @@ function Nursery() {
         </div>
         <div className="mt-14">
           <GestationAndItsFailures />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             causal · the way to birth, and the exit at every stage
           </p>
         </div>

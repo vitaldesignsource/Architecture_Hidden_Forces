@@ -245,7 +245,7 @@ export function Lexicon() {
     <>
       <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <label className="block max-w-sm flex-1">
-          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+          <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
             Find a term
           </span>
           <input
@@ -262,7 +262,7 @@ export function Lexicon() {
               key={o}
               onClick={() => setOrigin(origin === o ? null : o)}
               aria-pressed={origin === o}
-              className={`border px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors ${
+              className={`border px-2.5 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] transition-colors ${
                 origin === o
                   ? "border-gold text-gold"
                   : "border-border text-muted-foreground hover:border-gold/60 hover:text-bone/80"
@@ -274,7 +274,7 @@ export function Lexicon() {
         </div>
       </div>
 
-      <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+      <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
         {shown.length === ENTRIES.length
           ? `${ENTRIES.length} terms`
           : `${shown.length} of ${ENTRIES.length}`}
@@ -295,14 +295,14 @@ export function Lexicon() {
                 {e.script && (
                   <span className="font-serif text-sm text-muted-foreground">{e.script}</span>
                 )}
-                <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-bone/55">
+                <span className="font-label text-[9px] uppercase tracking-[0.15em] text-bone/55">
                   {e.origin}
                 </span>
               </span>
             </span>
             <span className="min-w-0">
               <span className="block text-sm leading-relaxed text-muted-foreground">{e.gloss}</span>
-              <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim transition-colors group-hover:text-gold">
+              <span className="mt-1 block font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim transition-colors group-hover:text-gold">
                 § {e.n}
               </span>
             </span>

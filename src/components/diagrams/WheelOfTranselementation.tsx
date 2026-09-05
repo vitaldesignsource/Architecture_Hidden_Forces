@@ -65,7 +65,7 @@ export function WheelOfTranselementation() {
 
           {/* the governing mark — fixed, the wheel moves beneath it */}
           <path d={`M${C} ${CY - R_OUT - 6} l-6 -11 h12 Z`} fill="var(--gold)" fillOpacity="0.9" />
-          <text x={C} y={CY - R_OUT - 22} textAnchor="middle" className="font-mono" fontSize="6.2"
+          <text x={C} y={CY - R_OUT - 22} textAnchor="middle" className="font-label" fontSize="6.2"
                 letterSpacing="1" fill="var(--muted-foreground)">GOVERNS</text>
 
           {EL.map((e, i) => {
@@ -89,7 +89,7 @@ export function WheelOfTranselementation() {
                       strokeOpacity={on ? 1 : sel ? 0.2 : gov ? 0.8 : 0.4}
                       strokeDasharray={e.k === "Ether" ? "5 4" : "none"}
                       strokeWidth={on ? 1.7 : gov ? 1.3 : 0.9} />
-                <text x={lx} y={ly - 1} textAnchor="middle" className="font-mono" fontSize="8.4"
+                <text x={lx} y={ly - 1} textAnchor="middle" className="font-label" fontSize="8.4"
                       letterSpacing="1.1"
                       fill={on || gov ? "var(--gold)" : "var(--muted-foreground)"}
                       opacity={sel && !on ? 0.35 : 1}>
@@ -109,14 +109,14 @@ export function WheelOfTranselementation() {
           {/* the centre does not turn */}
           <circle cx={C} cy={CY} r={R_IN - 6} fill="var(--void)" stroke="var(--gold)"
                   strokeOpacity="0.8" strokeWidth="1.3" />
-          <text x={C} y={CY - 6} textAnchor="middle" className="font-mono" fontSize="7"
+          <text x={C} y={CY - 6} textAnchor="middle" className="font-label" fontSize="7"
                 letterSpacing="1.2" fill="var(--gold)" opacity="0.95">SEEDFORM</text>
-          <text x={C} y={CY + 7} textAnchor="middle" className="font-mono" fontSize="5.9"
+          <text x={C} y={CY + 7} textAnchor="middle" className="font-label" fontSize="5.9"
                 letterSpacing="0.7" fill="var(--muted-foreground)">THE GOVERNING</text>
-          <text x={C} y={CY + 17} textAnchor="middle" className="font-mono" fontSize="5.9"
+          <text x={C} y={CY + 17} textAnchor="middle" className="font-label" fontSize="5.9"
                 letterSpacing="0.7" fill="var(--muted-foreground)">VIRTUE</text>
 
-          <text x={C} y="374" textAnchor="middle" className="font-mono" fontSize="6.4"
+          <text x={C} y="374" textAnchor="middle" className="font-label" fontSize="6.4"
                 letterSpacing="1" fill="var(--muted-foreground)" opacity="0.85">
             NOTHING LEAVES THE WHEEL — ONLY ITS ORDER CHANGES
           </text>
@@ -124,12 +124,12 @@ export function WheelOfTranselementation() {
 
         <div className="mt-3 flex items-center justify-center gap-3">
           <button onClick={() => setTurn((t) => t + 1)}
-            className="border border-border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
+            className="border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
             Turn ↻
           </button>
           {turn > 0 && (
             <button onClick={() => { setTurn(0); setSel(null); }}
-              className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground underline-offset-4 transition-colors hover:text-gold">
+              className="font-label text-[10px] uppercase tracking-[0.12em] text-muted-foreground underline-offset-4 transition-colors hover:text-gold">
               reset
             </button>
           )}
@@ -139,7 +139,7 @@ export function WheelOfTranselementation() {
       <div className="min-h-[15rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {cur.k} · {cur.gk}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.does}</p>
@@ -150,7 +150,7 @@ export function WheelOfTranselementation() {
           </>
         ) : (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               {EL[governingIdx].k} governs
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">

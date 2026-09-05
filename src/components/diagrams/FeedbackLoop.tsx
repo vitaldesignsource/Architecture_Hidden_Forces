@@ -43,8 +43,8 @@ export function FeedbackLoop() {
             </g>
           );
         })}
-        <text x={cx} y={cy - 4} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.2em" }} fill={G} fillOpacity={0.8}>what began as expression</text>
-        <text x={cx} y={cy + 8} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(6.2), letterSpacing: "0.2em" }} fill={G} fillOpacity={0.8}>becomes environment</text>
+        <text x={cx} y={cy - 4} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.2em" }} fill={G} fillOpacity={0.8}>what began as expression</text>
+        <text x={cx} y={cy + 8} textAnchor="middle" className="font-label uppercase" style={{ ...fs(6.2), letterSpacing: "0.2em" }} fill={G} fillOpacity={0.8}>becomes environment</text>
         <text x={cx} y={232} textAnchor="middle" className="font-serif italic" style={fs(9)} fill="currentColor" fillOpacity={0.6}>the ring closes without anyone deciding to close it</text>
       </svg>
     </div>

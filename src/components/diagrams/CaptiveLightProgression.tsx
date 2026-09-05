@@ -28,7 +28,7 @@ export function CaptiveLightProgression() {
         <svg viewBox="0 0 236 200" className="h-auto w-full" role="img" aria-labelledby="aoh-cl-t1">
           <title id="aoh-cl-t1">A current passing through an open architecture and on beyond it.</title>
           <g transform="translate(6 0)">
-            <text x={110} y={22} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.8}>the architecture serves the current</text>
+            <text x={110} y={22} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.8}>the architecture serves the current</text>
             <path d="M 60 50 L 60 150 M 160 50 L 160 150" fill="none" stroke="currentColor" strokeOpacity={0.8} strokeWidth={1.2} />
             <path d="M 60 50 L 160 50" fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={0.8} strokeDasharray="2 4" />
             <path d="M 0 100 L 60 100 L 160 100 L 218 100" fill="none" stroke={G} strokeWidth={1.6} strokeOpacity={0.9} className="aoh-cl-run" />
@@ -42,7 +42,7 @@ export function CaptiveLightProgression() {
         <svg viewBox="0 0 236 200" className="h-auto w-full" role="img" aria-labelledby="aoh-cl-t2">
           <title id="aoh-cl-t2">The same architecture closed, with the current circling inside it and feeding the walls.</title>
           <g transform="translate(6 0)">
-            <text x={110} y={22} textAnchor="middle" className="font-mono uppercase" style={cap} fill={G} fillOpacity={0.8}>the current serves the architecture</text>
+            <text x={110} y={22} textAnchor="middle" className="font-label uppercase" style={cap} fill={G} fillOpacity={0.8}>the current serves the architecture</text>
             <rect x={60} y={50} width={100} height={100} fill="none" stroke="currentColor" strokeOpacity={0.9} strokeWidth={1.4} />
             <path d="M 0 100 L 58 100" fill="none" stroke={G} strokeWidth={1.6} strokeOpacity={0.5} className="aoh-cl-run" />
             <path d="M 110 72 a 28 28 0 1 1 -0.1 0" fill="none" stroke={G} strokeWidth={1.4} strokeOpacity={0.85} className="aoh-cl-loop" />

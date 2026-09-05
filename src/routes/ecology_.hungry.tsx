@@ -211,7 +211,7 @@ function Hungry() {
           </div>
           <div>
             <FeedbackLoop />
-            <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
               cyclical · the loop Fortune saw, drawn as the ecology it becomes
             </p>
           </div>
@@ -236,7 +236,7 @@ function Hungry() {
         </h2>
         <div className="mt-12">
           <BrokenCircuit />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             cyclical · the same intake, with and without a return
           </p>
         </div>

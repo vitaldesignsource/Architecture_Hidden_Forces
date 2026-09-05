@@ -87,7 +87,7 @@ function Ecology() {
           <div className="grain" />
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise text-center">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
                 A layer of the Architecture · MMXXVI
               </p>
               <h1 className="mx-auto mt-10 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-7xl md:text-8xl">
@@ -189,7 +189,7 @@ function Ecology() {
                 <div className={last ? "translate-x-6" : ""}>
                   <Link to={s.to} className="group inline-block">
                     <span className="block font-serif text-2xl text-bone transition-colors group-hover:text-gold">{c.k}</span>
-                    <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{c.sub}</span>
+                    <span className="mt-1 block font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{c.sub}</span>
                   </Link>
                 </div>
               </li>
@@ -220,21 +220,21 @@ function Ecology() {
         <div className="mt-12 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-3">
           {STATIONS.map((s) => (
             <Link key={s.id} to={s.to} className="group flex flex-col bg-void p-6 transition-colors hover:bg-gold/5 sm:p-8">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Station {s.n}</span>
+              <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Station {s.n}</span>
               <span className="mt-4 font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">{s.title}</span>
               {s.greek && <span className="mt-1 font-serif text-base text-gold/60" lang="grc">{s.greek}</span>}
-              <span className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{s.dimension}</span>
+              <span className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{s.dimension}</span>
               <span className="mt-5 font-serif text-base italic leading-relaxed text-bone/80">{s.question}</span>
-              <span className="mt-auto pt-6 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">
+              <span className="mt-auto pt-6 font-label text-[9px] uppercase tracking-[0.2em] text-gold">
                 {s.shorthand} <CrossMark className="ml-1 text-gold/70" />
               </span>
             </Link>
           ))}
           <Link to="/ecology" hash="eco-provinces" className="group flex flex-col gap-3 bg-void/70 p-6 transition-colors hover:bg-gold/5 sm:col-span-2 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-8 sm:p-8 lg:col-span-3">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Beneath, before, between and after</span>
+            <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Beneath, before, between and after</span>
             <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">The six provinces</span>
             <span className="font-serif text-base italic leading-relaxed text-bone/70">Where does the circulation's remainder go, and what has not yet earned a body?</span>
-            <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold sm:ml-auto">
+            <span className="font-label text-[9px] uppercase tracking-[0.2em] text-gold sm:ml-auto">
               the regions <DescentMark className="ml-1 text-gold/70" />
             </span>
           </Link>
@@ -258,18 +258,18 @@ function Ecology() {
         </p>
         <div className="mt-12">
           <ProvincesAtlas />
-          <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+          <p className="mt-4 text-center font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">
             spatial · above, beneath and beside are relations to the circulation, not directions
           </p>
         </div>
         <div className="mt-12 grid gap-px border border-border bg-border/60 sm:grid-cols-2 lg:grid-cols-3">
           {PROVINCES.map((p) => (
             <Link key={p.id} to={p.to} className="group flex flex-col bg-void p-6 transition-colors hover:bg-gold/5 sm:p-8">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">{p.region}</span>
+              <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">{p.region}</span>
               <span className="mt-4 font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">{p.title}</span>
-              <span className="mt-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{p.dimension}</span>
+              <span className="mt-3 font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{p.dimension}</span>
               <span className="mt-5 font-serif text-base italic leading-relaxed text-bone/80">{p.question}</span>
-              <span className="mt-auto pt-6 font-mono text-[9px] uppercase tracking-[0.2em] text-gold">
+              <span className="mt-auto pt-6 font-label text-[9px] uppercase tracking-[0.2em] text-gold">
                 {p.shorthand} <CrossMark className="ml-1 text-gold/70" />
               </span>
             </Link>
@@ -395,13 +395,13 @@ function Ecology() {
       {/* ---- begin ---- */}
       <section className="relative isolate border-t border-gold/30 py-24 sm:py-32">
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-gold-dim">Begin the circulation</p>
+          <p className="font-label text-[10px] uppercase tracking-[0.35em] text-gold-dim">Begin the circulation</p>
           <p className="mt-6 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone/90 sm:text-3xl">
             Nothing manifests in a vacuum. Before anything is fed, moves, or takes a body, there is
             weather.
           </p>
           <Link to="/ecology/morphaither" className="group mt-10 inline-flex flex-wrap items-baseline gap-x-4 gap-y-2 border-b border-gold/40 pb-3 transition-colors hover:border-gold">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">Station I</span>
+            <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">Station I</span>
             <span className="font-serif text-3xl text-bone transition-colors group-hover:text-gold sm:text-4xl">Morphaithēr</span>
             <CrossMark className="text-gold/70" />
           </Link>

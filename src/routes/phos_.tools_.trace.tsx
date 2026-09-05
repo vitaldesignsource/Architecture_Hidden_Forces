@@ -59,7 +59,7 @@ function Trace() {
                   key={e.id}
                   type="button"
                   onClick={() => go(e.id, false)}
-                  className={`border px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors ${
+                  className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors ${
                     graph?.centre.id === e.id ? "border-gold bg-gold/10 text-gold" : "border-gold/40 text-bone/85 hover:border-gold/70 hover:text-gold"
                   }`}
                 >
@@ -87,9 +87,9 @@ function Trace() {
                       onClick={() => { go(e.id, false); setQ(""); }}
                       className="flex w-full items-baseline gap-3 border-b border-border px-3 py-2 text-left last:border-b-0 hover:bg-gold/5 disabled:opacity-50"
                     >
-                      <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">{e.division.numeral || "P"}.{e.n}</span>
+                      <span className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">{e.division.numeral || "P"}.{e.n}</span>
                       <span className="font-serif text-base text-bone">{e.title}</span>
-                      {!e.written && <span className="font-mono text-[8px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
+                      {!e.written && <span className="font-label text-[8px] uppercase tracking-[0.14em] text-muted-foreground">forthcoming</span>}
                     </button>
                   ))
                 ) : (
@@ -104,7 +104,7 @@ function Trace() {
       {graph && (
         <ToolBand>
           {trail.length > 0 && (
-            <p className="mb-6 flex flex-wrap items-baseline gap-x-2 gap-y-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+            <p className="mb-6 flex flex-wrap items-baseline gap-x-2 gap-y-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
               <span className="text-muted-foreground">Path</span>
               {trail.map((e, i) => (
                 <span key={`${e.id}-${i}`} className="contents">
@@ -131,7 +131,7 @@ function Trace() {
                 </Link>
               </h2>
               {graph.centre.meta?.summary && <p className="mt-3 text-base leading-relaxed text-muted-foreground">{graph.centre.meta.summary}</p>}
-              <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="mt-6 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                 {ring1.length} related · {ring2.length} beyond them · {[...ring1, ...ring2].filter((e) => !e.written).length} not yet written
               </p>
               <div className="mt-6">

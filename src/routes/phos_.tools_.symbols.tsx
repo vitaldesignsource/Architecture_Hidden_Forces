@@ -48,8 +48,8 @@ function SymbolAtlas() {
                 title={SYMBOL_MEANINGS[v.value]}
               >
                 <SymbolGlyph name={v.value} size={44} className={on ? "" : "opacity-85 transition-opacity group-hover:opacity-100"} />
-                <span className={`font-mono text-[9px] uppercase tracking-[0.14em] ${on ? "text-gold" : "text-bone/80"}`}>{v.value}</span>
-                <span className="font-mono text-[9px] text-gold-dim">{v.count}</span>
+                <span className={`font-label text-[9px] uppercase tracking-[0.14em] ${on ? "text-gold" : "text-bone/80"}`}>{v.value}</span>
+                <span className="font-label text-[9px] text-gold-dim">{v.count}</span>
               </Link>
             );
           })}
@@ -64,7 +64,7 @@ function SymbolAtlas() {
               <Link
                 to="/phos/browse/$facet/$value"
                 params={{ facet: "symbol", value: sel.slug }}
-                className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim hover:text-gold"
+                className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim hover:text-gold"
               >
                 In browse →
               </Link>
@@ -73,7 +73,7 @@ function SymbolAtlas() {
               <Eyebrow>Symbol</Eyebrow>
               <h2 className="mt-4 font-serif text-4xl leading-tight">{sel.value}</h2>
               <p className="mt-4 max-w-2xl font-serif text-xl italic leading-relaxed text-bone/85">{SYMBOL_MEANINGS[sel.value]}</p>
-              <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="mt-6 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                 {entries.length ? `${entries.length} written ${entries.length === 1 ? "entry carries" : "entries carry"} it` : "no written entry carries it yet"}
               </p>
               <div className="mt-6">

@@ -39,7 +39,7 @@ export function SacredArchitectureLayers() {
       {[70, 84, 116, 130].map((ox) => (
         <circle key={ox} cx={ox} cy={168} r={1.6} fill={G} fillOpacity={gone ? 0.35 : 0.7} />
       ))}
-      <text x={100} y={192} textAnchor="middle" className="font-mono uppercase" style={lbl} fill={gone ? "currentColor" : G} fillOpacity={0.8}>
+      <text x={100} y={192} textAnchor="middle" className="font-label uppercase" style={lbl} fill={gone ? "currentColor" : G} fillOpacity={0.8}>
         {gone ? "the inhabitant withdrawn" : "inhabited · hierostasis"}
       </text>
     </g>
@@ -61,7 +61,7 @@ export function SacredArchitectureLayers() {
         <House x={230} gone={true} />
         {/* the layers, named once between the two */}
         {[["source", 22], ["current", 60], ["morphal body", 104], ["astral clothing", 130], ["the house", 158]].map(([k, y]) => (
-          <text key={k as string} x={220} y={(y as number) + 3} textAnchor="middle" className="font-mono uppercase" style={{ ...fs(5.6), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.4}>{k}</text>
+          <text key={k as string} x={220} y={(y as number) + 3} textAnchor="middle" className="font-label uppercase" style={{ ...fs(5.6), letterSpacing: "0.14em" }} fill="currentColor" fillOpacity={0.4}>{k}</text>
         ))}
       </svg>
     </div>

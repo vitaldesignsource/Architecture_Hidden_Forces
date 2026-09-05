@@ -48,7 +48,7 @@ export function DaimonicChain() {
           {/* the loop closes at character, four stages down — not at the top */}
           <path className="aoh-dc-loop" d={`M52,${Y(6)} C12,${Y(6) - 6} 12,${Y(4) + 8} 52,${Y(4)}`}
                 fill="none" stroke="var(--bone)" strokeOpacity="0.55" strokeWidth="1.1" />
-          <text x="6" y={(Y(4) + Y(6)) / 2} className="font-mono" fontSize="6.5" letterSpacing="0.8"
+          <text x="6" y={(Y(4) + Y(6)) / 2} className="font-label" fontSize="6.5" letterSpacing="0.8"
                 fill="var(--muted-foreground)" transform={`rotate(-90 6 ${(Y(4) + Y(6)) / 2})`}
                 textAnchor="middle">FEEDS BACK</text>
 
@@ -66,7 +66,7 @@ export function DaimonicChain() {
               </g>
             );
           })}
-          <text x="72" y={Y(6) + 26} className="font-mono" fontSize="7" letterSpacing="1.2"
+          <text x="72" y={Y(6) + 26} className="font-label" fontSize="7" letterSpacing="1.2"
                 fill="var(--muted-foreground)">RETURNS TO CHARACTER — NOT TO THE SOURCE</text>
         </svg>
       </div>
@@ -74,15 +74,15 @@ export function DaimonicChain() {
       <div className="min-h-[17rem]">
         {cur ? (
           <>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{cur.k}</p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{cur.d}</p>
             {cur.layers && (
               <div className="mt-6 space-y-px">
                 {LAYERS.map(([a, b, c]) => (
                   <div key={a} className="border-b border-border py-3">
                     <div className="flex flex-wrap items-baseline gap-x-3">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
-                      <span className="font-mono text-[9px] uppercase tracking-[0.12em] text-bone/55">{c}</span>
+                      <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
+                      <span className="font-label text-[9px] uppercase tracking-[0.12em] text-bone/55">{c}</span>
                     </div>
                     <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{b}</p>
                   </div>

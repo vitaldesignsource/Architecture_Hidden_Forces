@@ -49,12 +49,12 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
             Phōs · The Luminous Architecture
           </Link>
           {crumb && (
-            <div className="mt-1 hidden truncate font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim lg:block">
+            <div className="mt-1 hidden truncate font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim lg:block">
               {crumb}
             </div>
           )}
         </div>
-        <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+        <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
           <div className="hidden items-center gap-4 lg:flex xl:gap-6">{links}</div>
           <SearchButton onClick={openSearch} />
           {panel}
@@ -66,7 +66,7 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
         </Suspense>
       )}
       <div className="border-t border-border/50 lg:hidden">
-        <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
+        <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
           {links}
         </div>
       </div>
@@ -96,7 +96,7 @@ export function PhosFooter() {
             the first volume
           </Link>
         </div>
-        <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.4em] text-gold-dim">MMXXVI</div>
+        <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">MMXXVI</div>
       </div>
     </footer>
   );

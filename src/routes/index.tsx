@@ -239,7 +239,7 @@ function Index() {
               The Architecture of Hidden Forces
             </div>
           </a>
-          <div className="flex shrink-0 items-center gap-4 font-mono text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
             <div className="hidden items-center gap-4 lg:flex xl:gap-6">
             {NAV.map((l) => (
               <a
@@ -262,7 +262,7 @@ function Index() {
             </Link>
             <ContentsPanel active={active} />
           </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
             XVIII
           </div>
         </div>
@@ -271,7 +271,7 @@ function Index() {
             rather than a longer list: 43 entries in a horizontal scroller was not
             navigation, it was an unsorted index competing with the real one. */}
         <div className="border-t border-border/50 lg:hidden">
-          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-mono text-[10px] uppercase tracking-[0.2em]">
+          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
             {NAV.map((l) => (
               <a
                 key={l.id}
@@ -301,7 +301,7 @@ function Index() {
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="animate-rise text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
               A Treatise on Metaphysics · MMXXVI
             </p>
             <h1 className="mx-auto mt-10 max-w-5xl font-serif text-5xl leading-[1.05] tracking-tight text-balance sm:text-7xl md:text-8xl">
@@ -328,7 +328,7 @@ function Index() {
 
           {/* Greek chain */}
           <div className="relative mt-32">
-            <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-gold-dim">
+            <p className="text-center font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">
               Σειρά · The Chain of Manifestation
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-6 sm:gap-x-6">
@@ -341,7 +341,7 @@ function Index() {
                     {p.greek}
                   </span>
                   {i < all.length - 1 && (
-                    <span className="font-mono text-xs text-gold/40">→</span>
+                    <span className="font-label text-xs text-gold/40">→</span>
                   )}
                 </div>
               ))}
@@ -354,7 +354,7 @@ function Index() {
       <section className="relative border-t border-border py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
-            <p className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
               Ἐν προόδῳ
               <span className="mt-2 block text-gold-dim">On the status of this work</span>
             </p>
@@ -384,7 +384,7 @@ function Index() {
         <Backdrop src="/bg/lighthouse-lamp-room-with-brass-optics.webp" opacity={0.3} position="center 50%" scrim={0.28} />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)] lg:gap-16">
-            <p className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase leading-relaxed tracking-[0.3em] text-gold">
               Τέλος
               <span className="mt-2 block text-gold-dim">What the Architecture is for</span>
             </p>
@@ -451,7 +451,7 @@ function Index() {
       <section id="index" className="relative isolate border-t border-border py-24">
         <Backdrop src="/bg/summit-above-sea-of-cloud.webp" opacity={0.42} position="center 40%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             Πίναξ · The Architecture in Order
           </p>
 
@@ -465,7 +465,7 @@ function Index() {
         <SectionGlyph />
         <div className="relative mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <aside className="lg:sticky lg:top-32 lg:self-start">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
               § 00 · Central Doctrine
             </p>
             <h2 className="mt-6 font-serif text-3xl leading-tight sm:text-4xl">
@@ -500,7 +500,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § I · The Five Terms
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -525,7 +525,7 @@ function Index() {
                 >
                   <div className="font-serif text-xl text-gold">{t.greek}</div>
                   <div className="font-serif italic text-bone/85">{t.latin}</div>
-                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                     {t.english}
                   </div>
                   <p className="col-span-full text-sm leading-relaxed text-muted-foreground">
@@ -550,7 +550,7 @@ function Index() {
         <Backdrop src="/bg/mirror-concentrator-on-desert-ridge.webp" opacity={0.16} position="center 55%" />
         <SectionGlyph delay={-25} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § II · The Doctrinal Spine
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -590,7 +590,7 @@ function Index() {
               >
                 <div className="flex items-baseline justify-between gap-3">
                   <div className="font-serif text-lg italic text-bone">{k.t}</div>
-                  <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {k.n}
                   </div>
                 </div>
@@ -600,7 +600,7 @@ function Index() {
           </div>
 
           <div className="mt-16 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Reduced to one proposition
             </p>
             <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone sm:text-3xl">
@@ -620,14 +620,14 @@ function Index() {
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
                 Πρόοδος · The First Movement
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-6xl">
                 The Descent <span className="italic text-gold">into Form</span>
               </h2>
             </div>
-            <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+            <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
               XIII Principles
             </div>
           </div>
@@ -676,7 +676,7 @@ function Index() {
           </svg>
         </div>
         <div className="relative mx-auto max-w-4xl px-6 text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
             Δύναμις · Μορφή
           </p>
           <p className="mt-12 font-serif text-4xl leading-tight text-balance sm:text-6xl md:text-7xl">
@@ -698,7 +698,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § III · Layered Correspondence
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -733,7 +733,7 @@ function Index() {
                   key={row.element}
                   className="grid gap-2 border-b border-border pb-6 sm:grid-cols-[1fr_1fr_1fr] sm:gap-6"
                 >
-                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                     {row.ether}
                   </div>
                   <div className="font-serif italic text-bone/85">{row.tattva}</div>
@@ -756,7 +756,7 @@ function Index() {
           {/* Header */}
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § IV · The Fourfold Field
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -765,7 +765,7 @@ function Index() {
                 <span className="italic text-gold">→</span> Ζωή{" "}
                 <span className="italic text-gold">↻</span>
               </h2>
-              <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="mt-8 font-label text-[11px] uppercase tracking-[0.25em] text-gold-dim">
                 Τὸ Τετραμερὲς Πεδίον
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -797,7 +797,7 @@ function Index() {
 
           {/* The circuit, then the ladder: shape first, then depth */}
           <div className="mt-20 border-t border-border pt-10">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
               Κύκλος · The Living Circuit
             </p>
             <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,440px)_minmax(0,1fr)] lg:items-center">
@@ -956,7 +956,7 @@ function Index() {
                 <article className="group border border-border p-5 transition-colors hover:border-gold/40 sm:p-7">
                   <div className="grid gap-6 lg:grid-cols-[minmax(0,200px)_minmax(0,1fr)] lg:gap-10">
                     <div>
-                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                      <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                         {e.n} · {e.english}
                       </p>
                       <h3 className="mt-3 font-serif text-3xl leading-none text-bone sm:text-4xl">
@@ -966,12 +966,12 @@ function Index() {
                         {e.translit} · {e.verb}
                       </p>
                       <div className="mt-6 h-px w-12 bg-gold/40 transition-all duration-700 group-hover:w-24" />
-                      <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                      <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                         § III · {e.corr}
                       </p>
                     </div>
                     <div className="min-w-0">
-                      <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                      <p className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                         {e.title}
                       </p>
                       <p className="mt-4 font-serif text-base leading-relaxed text-bone/85 sm:text-lg">
@@ -996,7 +996,7 @@ function Index() {
                   {e.virtue ? (
                     <div className="mt-8 grid gap-5 sm:grid-cols-3 sm:gap-6">
                       <div className="border-t border-border pt-5">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                        <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                           Ἔλλειψις · Deficiency
                         </p>
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -1004,7 +1004,7 @@ function Index() {
                         </p>
                       </div>
                       <div className="border-t border-gold/60 pt-5">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                        <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                           Μεσότης · Virtue
                         </p>
                         <p className="mt-3 font-serif text-lg italic text-bone/90">“{e.virtue}”</p>
@@ -1013,7 +1013,7 @@ function Index() {
                         </p>
                       </div>
                       <div className="border-t border-border pt-5">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                        <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                           Ὑπερβολή · Excess
                         </p>
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -1027,7 +1027,7 @@ function Index() {
                 {i < 3 ? (
                   <div className="flex flex-col items-center px-2 py-7 text-center">
                     <span className="h-7 w-px bg-gradient-to-b from-transparent to-gold/50" />
-                    <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                    <p className="mt-4 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                       Διάστημα {["I", "II", "III"][i]} · {e.greek}{" "}
                       <span className="text-gold">→</span> {e.into.to}
                     </p>
@@ -1108,7 +1108,7 @@ function Index() {
                         ))}
                       </svg>
                       <div className="min-w-0">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+                        <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                           Διάστημα IV · The Return to {e.into.to}
                         </p>
                         <p className="mt-6 font-serif text-2xl italic leading-tight text-bone/90 sm:text-3xl">
@@ -1125,7 +1125,7 @@ function Index() {
                         </p>
                         <a
                           href="#fourfold"
-                          className="mt-8 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim transition-colors hover:text-gold"
+                          className="mt-8 inline-flex items-center gap-3 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim transition-colors hover:text-gold"
                         >
                           <span className="text-base leading-none">↺</span>
                           Begin again at I · Θερμότης
@@ -1160,7 +1160,7 @@ function Index() {
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § V · The Morphaithēr
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -1180,7 +1180,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Where it is felt
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -1196,7 +1196,7 @@ function Index() {
                     key={x.place}
                     className="group border border-border p-4 transition-colors hover:border-gold/40"
                   >
-                    <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                    <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                       {x.place}
                     </div>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.note}</p>
@@ -1212,7 +1212,7 @@ function Index() {
         
           {/* the hidden layer this section opens onto */}
           <div className="relative mt-16 border-t border-gold/30 pt-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
             <Link to="/ecology/morphaither" className="group mt-4 inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">
                 This section opens onto the Hidden Ecology of Formation
@@ -1233,14 +1233,14 @@ function Index() {
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
                 Ἐπιστροφή · The Second Movement
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-6xl">
                 The Return <span className="italic text-gold">through Reading</span>
               </h2>
             </div>
-            <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+            <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
               V Principles
             </div>
           </div>
@@ -1264,7 +1264,7 @@ function Index() {
         <Backdrop src="/bg/great-roots-gripping-cliff-edge.webp" opacity={0.16} position="center 45%" />
         <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1fr_2fr]">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
               § VI · A Worked Example
             </p>
             <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -1304,13 +1304,13 @@ function Index() {
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § VII · Kabbalah
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
                 The sacred grammar of <span className="italic text-gold">emanation</span>
               </h2>
-              <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="mt-8 font-label text-[11px] uppercase tracking-[0.25em] text-gold-dim">
                 אֵין סוֹף · Ein Sof
               </p>
               <p className="mt-4 font-serif text-sm leading-relaxed text-muted-foreground">
@@ -1342,7 +1342,7 @@ function Index() {
 
           {/* Four Worlds */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               אַרְבָּעָה עוֹלָמוֹת · The Four Worlds
             </p>
             <h3 className="mt-6 font-serif text-3xl leading-tight">
@@ -1356,7 +1356,7 @@ function Index() {
                 { he: "עֲשִׂיָּה", en: "Assiah", g: "Action", mapping: "Element · Matter · Form · Trace · Signature" },
               ].map((w, i) => (
                 <div key={w.en} className="relative border border-border p-6">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  <div className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                     World {["I", "II", "III", "IV"][i]}
                   </div>
                   <div className="mt-4 font-serif text-3xl text-gold">{w.he}</div>
@@ -1374,7 +1374,7 @@ function Index() {
 
           {/* the vocabulary, in Hebrew */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               אוֹצָר · The words themselves
             </p>
             <h3 className="mt-6 font-serif text-3xl leading-tight">
@@ -1401,7 +1401,7 @@ function Index() {
           {/* Hebrew Letters */}
           <div className="mt-24 grid gap-12 lg:grid-cols-[2fr_1fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 אוֹתִיּוֹת · The Formative Letters
               </p>
               <h3 className="mt-6 font-serif text-3xl leading-tight">
@@ -1436,14 +1436,14 @@ function Index() {
         <div className="relative mx-auto max-w-7xl px-6">
           <div className="mb-20 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6 sm:flex sm:items-end sm:justify-between">
             <div className="min-w-0">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
                 § VIII · The Hidden Powers
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-6xl">
                 The extended <span className="italic text-gold">architecture</span>
               </h2>
             </div>
-            <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+            <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
               XI Principles
             </div>
           </div>
@@ -1473,10 +1473,10 @@ function Index() {
                 className="group relative overflow-hidden border border-border bg-void/40 p-8 backdrop-blur-sm transition-colors hover:bg-clay/40 sm:p-10"
               >
                 <div className="mb-6 flex items-baseline justify-between gap-4">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                  <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                     Hidden Power
                   </span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  <span className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                     {p.english}
                   </span>
                 </div>
@@ -1506,7 +1506,7 @@ function Index() {
       <section id="flywheel" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/great-flywheel-in-rock-cut-hall.webp" opacity={0.5} position="center 45%" />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § IX · The Psychic Flywheel
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1526,7 +1526,7 @@ function Index() {
               { n: "4", t: "Momentum", d: "The circuit closes and begins to turn itself." },
             ].map((x) => (
               <div key={x.n} className="group border border-border p-4 transition-colors hover:border-gold/40">
-                <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                <div className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                   {x.n}
                 </div>
                 <div className="mt-2 font-serif text-lg italic text-bone">{x.t}</div>
@@ -1537,7 +1537,7 @@ function Index() {
 
           <div className="mt-14 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Reservoirs as attractors
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -1554,7 +1554,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Ἥλιος Ἐντός · The Inner Sun
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -1581,7 +1581,7 @@ function Index() {
         <Backdrop src="/bg/copper-alembic-still-in-stone-workshop.webp" opacity={0.38} position="center 50%" />
         <SectionGlyph delay={-45} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § X · The Alchemical Triad
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1608,7 +1608,7 @@ function Index() {
               <div key={x.en} className="group border border-border p-5 transition-colors hover:border-gold/40">
                 <div className="flex items-baseline justify-between gap-3">
                   <div className="font-serif text-2xl text-gold">{x.greek}</div>
-                  <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                  <div className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                     {x.role}
                   </div>
                 </div>
@@ -1616,7 +1616,7 @@ function Index() {
                   {x.en} <span className="text-muted-foreground">· {x.latin}</span>
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
-                <p className="mt-4 border-t border-border pt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                <p className="mt-4 border-t border-border pt-3 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                   {x.without}
                 </p>
               </div>
@@ -1625,7 +1625,7 @@ function Index() {
 
           <div className="mt-14 grid gap-8 sm:grid-cols-2">
             <div className="border border-border p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Solve
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -1636,7 +1636,7 @@ function Index() {
               </p>
             </div>
             <div className="border border-border p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Coagula
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -1654,7 +1654,7 @@ function Index() {
       <section id="retentive" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/layered-strata-in-dark-passage.webp" opacity={0.45} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XI · The Retentive Depth
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1664,7 +1664,7 @@ function Index() {
           <div className="relative isolate mt-12 grid gap-16 lg:grid-cols-2">
             <Backdrop src="/bg/peat-cliff-above-still-lake.webp" opacity={0.26} position="center 55%" scrim={0.22} />
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Κρύπτη · The Crypt of Primordial Memory
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -1683,7 +1683,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Ὀστοφυλάκιον · The Ossuary of Living Forms
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -1705,7 +1705,7 @@ function Index() {
         
           {/* the hidden layer this section opens onto */}
           <div className="relative mt-16 border-t border-gold/30 pt-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
             <Link to="/ecology/crypt" className="group mt-4 inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">
                 This section opens onto the Hidden Ecology of Formation
@@ -1724,7 +1724,7 @@ function Index() {
         <Backdrop src="/bg/nurse-log-in-foggy-forest.webp" opacity={0.16} position="center 55%" />
         <SectionGlyph delay={-70} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XII · The Laws of Formation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1787,7 +1787,7 @@ function Index() {
             },
           ].map((cluster) => (
             <div key={cluster.group} className="mt-16">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 {cluster.group}
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -1810,7 +1810,7 @@ function Index() {
           {/* The safeguard */}
           <div className="relative isolate mt-20 border-l border-gold/40 pl-8">
             <Backdrop src="/bg/reed-beds-and-still-water-at-dawn.webp" opacity={0.3} position="center 50%" scrim={0.22} />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Safeguard · No Vessel Exhausts the Field
             </p>
             <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -1840,7 +1840,7 @@ function Index() {
         <Backdrop src="/bg/star-trails-over-ruined-temple.webp" opacity={0.32} position="center 45%" />
         <SectionGlyph delay={-90} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XIII · Celestial Anatomy
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -1861,7 +1861,7 @@ function Index() {
 
           {/* Not the total cause */}
           <div className="mt-14 border border-border p-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               One layer of the field, not the whole cause
             </p>
             <p className="mt-5 font-serif text-lg leading-relaxed text-bone/90">
@@ -1885,7 +1885,7 @@ function Index() {
           </div>
 
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The components and what each does
             </p>
             <div className="mt-6 space-y-px">
@@ -1901,7 +1901,7 @@ function Index() {
                   key={r.k}
                   className="grid gap-1 border-b border-border py-4 sm:grid-cols-[8rem_1fr_auto] sm:items-baseline sm:gap-6"
                 >
-                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                     {r.k}
                   </div>
                   <div className="text-sm leading-relaxed text-muted-foreground">{r.v}</div>
@@ -1918,7 +1918,7 @@ function Index() {
 
           {/* Planets as functions */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The planets as formative functions
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -1949,7 +1949,7 @@ function Index() {
 
           {/* Where it meets the rest of the architecture */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Where it meets the architecture
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -1971,7 +1971,7 @@ function Index() {
 
           {/* Modes of reading */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Modes of reading
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -1996,7 +1996,7 @@ function Index() {
 
           {/* Freedom */}
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               And freedom
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -2014,7 +2014,7 @@ function Index() {
 
           {/* Definition + placement */}
           <div className="mt-20 border-t border-border pt-12">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Defined
             </p>
             <p className="mt-5 max-w-4xl font-serif text-xl leading-relaxed text-bone/90 sm:text-2xl">
@@ -2035,14 +2035,14 @@ function Index() {
                 ["The Crypt", "preserves the consequences after"],
               ].map(([a, b]) => (
                 <div key={a} className="border-b border-border py-4">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                     {a}
                   </div>
                   <div className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</div>
                 </div>
               ))}
             </div>
-            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+            <p className="mt-10 font-label text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
               neither an isolated system nor the master key — the celestial clock and geometrical
               calendar of a universe in formation
             </p>
@@ -2054,7 +2054,7 @@ function Index() {
       <section id="subtattva" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/light-scrims-hung-in-stone-room.webp" opacity={0.28} position="center 50%" scrim={0.25} />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XIV · The Compound Qualities
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -2092,7 +2092,7 @@ function Index() {
           {/* The arithmetic */}
           <div className="mt-20 grid gap-12 lg:grid-cols-[1fr_1fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Why Root Ether is not multiplied
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -2114,7 +2114,7 @@ function Index() {
                 { l: "× 3 gunic conditions", r: "300 qualified expressions" },
               ].map((x) => (
                 <div key={x.l} className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-b border-border py-5">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                  <span className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
                     {x.l}
                   </span>
                   <span className="font-serif text-xl italic text-gold">{x.r}</span>
@@ -2132,7 +2132,7 @@ function Index() {
                   { g: "Tamasic", d: "Tejas–Vayu as frustrated motion, blocked anger, energy trapped in a destructive circuit." },
                 ].map((x) => (
                   <div key={x.g} className="border border-border p-4">
-                    <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                    <div className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                       {x.g}
                     </div>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{x.d}</p>
@@ -2144,7 +2144,7 @@ function Index() {
 
           {/* In the sky */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Read into the chart
             </p>
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -2161,7 +2161,7 @@ function Index() {
                 { p: "Jupiter in Scorpio", c: "Apas–Akasha", d: "Emotional depth and penetration opened toward meaning and hidden possibility." },
               ].map((x) => (
                 <div key={x.p} className="group border border-border p-4 transition-colors hover:border-gold/40">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                     {x.p}
                   </div>
                   <div className="mt-2 font-serif text-lg italic text-gold">{x.c}</div>
@@ -2171,7 +2171,7 @@ function Index() {
             </div>
             <div className="mt-10 grid gap-8 lg:grid-cols-2">
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   Akasha is not a fifth zodiacal element
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2183,7 +2183,7 @@ function Index() {
                 </p>
               </div>
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   A chart is a chord, not a note
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2201,7 +2201,7 @@ function Index() {
           {/* Reservoirs + the fear example */}
           <div className="mt-20 grid gap-12 lg:grid-cols-[1fr_1fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 What places accumulate
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -2218,7 +2218,7 @@ function Index() {
                   ["Battlefield", "Tejas–Prithivi", "violence fixed into landscape, ruin, memory"],
                 ].map(([a, b, c]) => (
                   <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-4">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                       {a}
                     </span>
                     <span>
@@ -2230,7 +2230,7 @@ function Index() {
               </div>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 How a fear is built
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -2246,7 +2246,7 @@ function Index() {
                   ["Prithivi–Prithivi", "Fixed into posture, avoidance, behaviour, identity."],
                 ].map(([a, b], i) => (
                   <div key={a} className="grid grid-cols-[auto_1fr] items-baseline gap-4 border-b border-border py-4">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                    <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span>
@@ -2275,7 +2275,7 @@ function Index() {
         <Backdrop src="/bg/cave-mouth-light-on-still-water.webp" opacity={0.42} position="center 45%" />
         <SectionGlyph delay={-110} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XV · The Dynamics of Return
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -2290,7 +2290,7 @@ function Index() {
 
           {/* The Dao is not Root Ether */}
           <div className="mt-14 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Dao is not Root Ether
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -2311,7 +2311,7 @@ function Index() {
 
           {/* 42 */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               道生一 · From the Way to the ten thousand things
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-5">
@@ -2346,7 +2346,7 @@ function Index() {
           {/* Yin/yang as modes, and qi */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 陰陽 · Not two more tattvas
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -2375,7 +2375,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 氣 · Qi is not another name for ether
               </p>
               <div className="mt-6 space-y-px">
@@ -2386,7 +2386,7 @@ function Index() {
                   ["Form", "the temporary organization it produces"],
                 ].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[5.5rem_1fr] items-baseline gap-4 border-b border-border py-4">
-                    <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
+                    <span className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
                     <span className="font-serif text-lg italic text-bone/90">{b}</span>
                   </div>
                 ))}
@@ -2408,7 +2408,7 @@ function Index() {
 
           {/* Five Phases */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               五行 · The Five Phases are not the five tattvas
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -2420,7 +2420,7 @@ function Index() {
             <WuxingCycles />
             <div className="mt-8 grid gap-8 sm:grid-cols-2">
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   The generating cycle
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2430,7 +2430,7 @@ function Index() {
                 </p>
               </div>
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   The regulating cycle
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2461,7 +2461,7 @@ function Index() {
 
           {/* Reversal */}
           <div className="mt-16 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               反 · The Law of Reversal
             </p>
             <p className="mt-5 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -2486,7 +2486,7 @@ function Index() {
 
           {/* Internal alchemy */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               內丹 · The furnace and the cauldron
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -2511,7 +2511,7 @@ function Index() {
             </p>
             <div className="mt-8 grid gap-8 sm:grid-cols-2">
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   Furnace and cauldron
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2523,7 +2523,7 @@ function Index() {
                 </p>
               </div>
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                   Fire and Water
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2548,13 +2548,13 @@ function Index() {
         <Backdrop src="/bg/furnace-mouth-glowing-in-ravine.webp" opacity={0.26} position="center 60%" />
         <SectionGlyph delay={-130} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XVI · Ignisophia
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             The chariot of the <span className="italic text-gold">Inner Sun</span>
           </h2>
-          <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.25em] text-gold-dim">
+          <p className="mt-5 font-label text-[11px] uppercase tracking-[0.25em] text-gold-dim">
             ignis · fire &nbsp;+&nbsp; σοφία · wisdom
           </p>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -2573,7 +2573,7 @@ function Index() {
 
           {/* The chariot */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The chariot · two wheels and a governing centre
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -2593,7 +2593,7 @@ function Index() {
                 >
                   <div className="flex items-baseline justify-between gap-3">
                     <div className="font-serif text-2xl text-gold">{x.he}</div>
-                    <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                    <div className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                       {x.r}
                     </div>
                   </div>
@@ -2610,7 +2610,7 @@ function Index() {
           {/* Flywheel + gyroscope */}
           <div className="mt-16 grid gap-8 sm:grid-cols-2">
             <div className="border border-border p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The solar flywheel
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2626,7 +2626,7 @@ function Index() {
               </p>
             </div>
             <div className="border border-border p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The gyroscope
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -2643,7 +2643,7 @@ function Index() {
 
           {/* Through the ethers */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Warmth alone is not wisdom
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-4">
@@ -2655,7 +2655,7 @@ function Index() {
               ].map(([a, b, c]) => (
                 <div key={a} className="group border border-border p-4 transition-colors hover:border-gold/40">
                   <div className="font-serif text-lg italic text-bone">{a}</div>
-                  <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="mt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
                     {b}
                   </div>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c}</p>
@@ -2675,7 +2675,7 @@ function Index() {
           {/* Tattvas + alchemy */}
           <div className="mt-16 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Not purely Tejasic
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -2691,14 +2691,14 @@ function Index() {
                   ["Prithivi", "gives it embodiment"],
                 ].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[6rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                    <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
+                    <span className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
                     <span className="font-serif text-base italic text-bone/85">{b}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 And the three principles
               </p>
               <div className="mt-6 space-y-px">
@@ -2710,7 +2710,7 @@ function Index() {
                   <div key={a} className="border-b border-border py-4">
                     <div className="font-serif text-lg italic text-gold">{a}</div>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b}</p>
-                    <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{c}</p>
+                    <p className="mt-2 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{c}</p>
                   </div>
                 ))}
               </div>
@@ -2728,7 +2728,7 @@ function Index() {
 
           {/* Six faces */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The six faces · not six fires but six functions of one solar process
             </p>
             <div className="mt-6 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
@@ -2742,7 +2742,7 @@ function Index() {
               ].map(([a, b], i) => (
                 <div key={a} className="border-b border-border py-5">
                   <div className="flex items-baseline gap-3">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                    <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="font-serif text-lg italic text-bone">{a}</span>
@@ -2754,7 +2754,7 @@ function Index() {
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The art of preventing inner fire from remaining blind
             </p>
             <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -2771,7 +2771,7 @@ function Index() {
         <Backdrop src="/bg/dew-strung-web-over-valley-at-night.webp" opacity={0.49} position="center 45%" />
         <SectionGlyph delay={-150} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XVII · The Reciprocal Field
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -2838,7 +2838,7 @@ function Index() {
             },
           ].map((cluster) => (
             <div key={cluster.group} className="mt-16">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 {cluster.group}
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -2864,7 +2864,7 @@ function Index() {
 
           <div className="relative isolate mt-20 border-l border-gold/40 pl-8">
             <Backdrop src="/bg/rimstone-pools-in-limestone-cave.webp" opacity={0.34} position="center 50%" scrim={0.22} />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The recursion
             </p>
             <p className="mt-5 font-serif text-3xl leading-tight text-bone sm:text-4xl">
@@ -2885,7 +2885,7 @@ function Index() {
       <section id="mixing" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/braided-glacial-river-from-above.webp" opacity={0.16} position="center 50%" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XVIII · The Dynamics of Mixing
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -2912,7 +2912,7 @@ function Index() {
 
           {/* how they can be related */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Mixing is not always homogenization
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -2943,7 +2943,7 @@ function Index() {
 
           {/* what governs the result */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What governs the result
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -2967,7 +2967,7 @@ function Index() {
           {/* shoreline + failures */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The elemental shoreline
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -2982,7 +2982,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Two ways mixing fails
               </p>
               <div className="mt-5 space-y-4">
@@ -3029,7 +3029,7 @@ function Index() {
 
           {/* the cycle */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A complete act of transformation
             </p>
             <div className="mt-6 grid gap-px sm:grid-cols-5">
@@ -3043,7 +3043,7 @@ function Index() {
                 <div key={k} className="border-b border-border py-4">
                   <ElementSign k={(k === "Akasha" ? "Ether" : k) as ElementKey} size={26} className="text-gold/80" title={`${k} — ${k === "Akasha" ? "the egg of Ākāśa" : "its alchemical sign"}`} />
                   <div className="mt-3 font-serif text-xl text-gold">{z}</div>
-                  <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{k}</div>
+                  <div className="mt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{k}</div>
                   <div className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</div>
                 </div>
               ))}
@@ -3055,7 +3055,7 @@ function Index() {
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The central law
             </p>
             <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -3077,7 +3077,7 @@ function Index() {
         <Backdrop src="/bg/alabaster-slab-glowing-in-cavern.webp" opacity={0.49} position="center 45%" />
         <SectionGlyph delay={-170} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XIX · Celestial Correspondence
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -3099,7 +3099,7 @@ function Index() {
           {/* what makes a correspondence strong */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 What makes a correspondence strong
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3128,7 +3128,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Virtue means efficacy, not goodness
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3166,7 +3166,7 @@ function Index() {
 
           {/* the two methods */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Two methods, one circuit
             </p>
             <div className="mt-6 grid gap-3 lg:grid-cols-2">
@@ -3214,7 +3214,7 @@ function Index() {
 
           {/* reading a signature */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A signature is read through the whole life of a thing
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -3262,7 +3262,7 @@ function Index() {
           {/* mirror */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 A patterned mirror, not a machine
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3280,7 +3280,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Every vessel curves the reflection
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3299,7 +3299,7 @@ function Index() {
 
           {/* the discipline */}
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Correspondence is not identity
             </p>
             <p className="mt-5 max-w-3xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -3325,7 +3325,7 @@ function Index() {
       <section id="channels" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/river-delta-braided-in-grey-silt.webp" opacity={0.16} position="center 50%" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XX · Nadis, Meridians, and Channels
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -3366,7 +3366,7 @@ function Index() {
           {/* repetition carves */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Channels are carved by repetition
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3389,7 +3389,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Meridians carry organ-force
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3407,7 +3407,7 @@ function Index() {
                   ["Organs", "living centres of transformation"],
                 ].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
+                    <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{a}</span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                   </div>
                 ))}
@@ -3422,7 +3422,7 @@ function Index() {
 
           {/* hodoi */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               ὁδοί · the ways of living energy
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -3457,7 +3457,7 @@ function Index() {
 
           {/* the ethers within a channel */}
           <div className="mt-20 border border-border p-6 sm:p-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A channel can be open at one level and disordered at another
             </p>
             <div className="mt-6 grid gap-6 sm:grid-cols-4">
@@ -3482,7 +3482,7 @@ function Index() {
           {/* disturbances */}
           <div className="relative isolate mt-20">
             <Backdrop src="/bg/beaver-dam-causeway-in-lake-mist.webp" opacity={0.16} position="center 55%" scrim={0.22} />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Eight ways circulation fails
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -3513,7 +3513,7 @@ function Index() {
 
           {/* proportioned circulation */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Flow is not maximum movement
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -3534,7 +3534,7 @@ function Index() {
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The doctrine of the channels
             </p>
             <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -3550,7 +3550,7 @@ function Index() {
         <Backdrop src="/bg/steaming-terraced-pools-in-rock.webp" opacity={0.16} position="center 45%" />
         <SectionGlyph delay={-190} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXI · Chakras and Centers
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -3565,7 +3565,7 @@ function Index() {
 
           {/* the historical caveat, stated up front */}
           <div className="mt-10 max-w-3xl border-l border-border pl-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
               On the map being used
             </p>
             <p className="mt-3 text-sm leading-relaxed text-bone/70">
@@ -3581,7 +3581,7 @@ function Index() {
 
           {/* the petals */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               कमल · The petals, and what they count
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -3611,7 +3611,7 @@ function Index() {
                   />
                   <p className="mt-3 font-serif text-lg text-bone/90" lang="sa">{c.s}</p>
                   <p className="mt-1 font-serif text-sm italic text-gold-dim">{c.tr}</p>
-                  <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+                  <p className="mt-1 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
                     {c.n === 1000 ? "a thousand" : `${c.n} petals`} · {c.bt}
                   </p>
                 </div>
@@ -3628,7 +3628,7 @@ function Index() {
 
           {/* five functions */}
           <div className="mt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What a centre does
             </p>
             <div className="mt-6 grid gap-px sm:grid-cols-5">
@@ -3654,7 +3654,7 @@ function Index() {
           {/* attractors + not a ladder */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Centres as formative attractors
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3670,14 +3670,14 @@ function Index() {
                   ["Through the root", "a threat to security"],
                 ].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[11rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
+                    <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The axis is not a ladder of worth
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3703,7 +3703,7 @@ function Index() {
 
           {/* four images */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Four ways to read one centre
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -3724,7 +3724,7 @@ function Index() {
           {/* correspondences with their caveat */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Every centre is a tattvic chord
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3739,7 +3739,7 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Planetary resonance, not rulership
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3760,7 +3760,7 @@ function Index() {
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               One axial organism
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -3788,7 +3788,7 @@ function Index() {
       <section id="treasures" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/germinating-seed-with-fine-roots.webp" opacity={0.22} position="center 55%" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXII · Jing, Qi, Shen
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -3844,7 +3844,7 @@ function Index() {
               <div key={x.k} className="group border border-border p-6 transition-colors hover:border-gold/40">
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="font-serif text-3xl text-gold">{x.z}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">{x.t}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">{x.t}</span>
                 </div>
                 <div className="mt-3 font-serif text-xl italic text-bone">{x.k}</div>
                 <p className="mt-4 font-serif text-base italic leading-relaxed text-bone/85">{x.q}</p>
@@ -3857,7 +3857,7 @@ function Index() {
 
           {/* the matrix */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Functional correspondences
             </p>
             <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
@@ -3865,7 +3865,7 @@ function Index() {
                 <thead>
                   <tr>
                     {["", "Primary function", "Tattvic", "Etheric", "Alchemical"].map((h) => (
-                      <th key={h} className="border-b border-border px-3 pb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{h}</th>
+                      <th key={h} className="border-b border-border px-3 pb-3 font-label text-[10px] uppercase tracking-[0.2em] text-gold">{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -3894,7 +3894,7 @@ function Index() {
           {/* refinement */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Refinement is not purification of the dense
               </p>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -3939,11 +3939,11 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Both directions are required
               </p>
               <div className="mt-6 border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Ascending</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Ascending</p>
                 <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
                   Jing <span className="text-gold">→</span> Qi <span className="text-gold">→</span>{" "}
                   Shen <span className="text-gold">→</span> emptiness
@@ -3954,7 +3954,7 @@ function Index() {
                 </p>
               </div>
               <div className="mt-3 border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Descending</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Descending</p>
                 <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
                   orientation <span className="text-gold">→</span> Shen{" "}
                   <span className="text-gold">→</span> Qi <span className="text-gold">→</span> Jing{" "}
@@ -4004,7 +4004,7 @@ function Index() {
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Most distilled
             </p>
             <p className="mt-5 max-w-4xl font-serif text-2xl italic leading-relaxed text-bone">
@@ -4021,7 +4021,7 @@ function Index() {
         <Backdrop src="/bg/figure-in-dark-chamber-with-light-slots.webp" opacity={0.18} position="center 40%" />
         <SectionGlyph delay={-210} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXIII · Head, Heart, and Hara
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -4062,7 +4062,7 @@ function Index() {
               <div key={c.k} className="group border border-border p-6 transition-colors hover:border-gold/40">
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="font-serif text-2xl italic text-gold">{c.k}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{c.pr}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{c.pr}</span>
                 </div>
                 <p className="mt-3 font-serif text-lg italic leading-relaxed text-bone/90">“{c.q}”</p>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
@@ -4076,7 +4076,7 @@ function Index() {
 
           {/* gift and distortion */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Gift and distortion
             </p>
             <div className="mt-6 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
@@ -4084,7 +4084,7 @@ function Index() {
                 <thead>
                   <tr>
                     {["", "Primary question", "Gift", "Possible distortion"].map((h) => (
-                      <th key={h} className="border-b border-border px-3 pb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{h}</th>
+                      <th key={h} className="border-b border-border px-3 pb-3 font-label text-[10px] uppercase tracking-[0.2em] text-gold">{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -4108,7 +4108,7 @@ function Index() {
 
           {/* what each partial alignment produces */}
           <div className="mt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What each partial alignment produces
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -4121,7 +4121,7 @@ function Index() {
                 ["Head and Hara", "efficient execution without moral participation"],
               ].map(([a, b]) => (
                 <div key={a} className="border border-border p-4">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold-dim">{a}</div>
+                  <div className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">{a}</div>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                 </div>
               ))}
@@ -4131,7 +4131,7 @@ function Index() {
           {/* full alignment as circulation */}
           <div className="mt-20 grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Full alignment, in five movements
               </p>
               <div className="mt-6 space-y-px">
@@ -4143,7 +4143,7 @@ function Index() {
                   "The three centres revise themselves through that feedback.",
                 ].map((x, i) => (
                   <div key={x} className="grid grid-cols-[auto_1fr] items-baseline gap-4 border-b border-border py-4">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                    <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{x}</span>
@@ -4161,11 +4161,11 @@ function Index() {
               </p>
             </div>
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Descent and return on a human scale
               </p>
               <div className="mt-6 border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Descending</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Descending</p>
                 <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
                   Pattern <span className="text-gold">→</span> Value{" "}
                   <span className="text-gold">→</span> Embodiment
@@ -4176,7 +4176,7 @@ function Index() {
                 </p>
               </div>
               <div className="mt-3 border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Returning</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Returning</p>
                 <p className="mt-3 font-serif text-lg leading-relaxed text-bone/90">
                   Experience <span className="text-gold">→</span> Meaning{" "}
                   <span className="text-gold">→</span> Wisdom
@@ -4210,7 +4210,7 @@ function Index() {
           </div>
 
           <div className="mt-20 border-l border-gold/40 pl-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The complete axis
             </p>
             <div className="mt-5 space-y-px">
@@ -4221,7 +4221,7 @@ function Index() {
                 ["The aligned person", "the pattern becomes a way of being"],
               ].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className={`font-mono text-[10px] uppercase tracking-[0.2em] ${i === 3 ? "text-gold" : "text-gold-dim"}`}>{a}</span>
+                  <span className={`font-label text-[10px] uppercase tracking-[0.2em] ${i === 3 ? "text-gold" : "text-gold-dim"}`}>{a}</span>
                   <span className={`font-serif text-lg italic ${i === 3 ? "text-bone" : "text-bone/80"}`}>{b}</span>
                 </div>
               ))}
@@ -4245,7 +4245,7 @@ function Index() {
         <Backdrop src="/bg/sprout-on-wet-black-rock.webp" opacity={0.61} position="center 55%" />
         <SectionGlyph delay={-230} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXIV · Organs, Elements, and Five Phases
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -4261,7 +4261,7 @@ function Index() {
           </p>
 
           <div className="mt-12 max-w-3xl border-l-2 border-gold/50 pl-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
               A distinction held throughout
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -4303,7 +4303,7 @@ function Index() {
                   ["Reservoir", "gathers particular capacities"],
                   ["Regulator", "maintains proportion among processes"]].map(([a, b]) => (
                   <div key={a} className="border-t border-border py-4 pr-4">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{a}</p>
+                    <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">{a}</p>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                   </div>
                 ))}
@@ -4376,10 +4376,10 @@ function Index() {
                 ["Three principles", "the grammar of impulse, mediation, and embodiment"]].map(([a, b], i) => (
                 <div key={a}
                      className="grid grid-cols-[1.6rem_10rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_13rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">
+                  <span className="font-label text-[10px] text-gold-dim">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -4423,7 +4423,7 @@ function Index() {
               movement becomes excessive, deficient, frozen, displaced, or self-reinforcing.
             </p>
             <div className="mt-12 max-w-4xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                 The loop that closes on itself
               </p>
               <div className="mt-5 flex flex-wrap items-stretch gap-2">
@@ -4432,7 +4432,7 @@ function Index() {
                     <div className="flex min-h-[3.5rem] flex-1 items-center border border-border px-4 py-3">
                       <span className="text-sm leading-snug text-muted-foreground">{t}</span>
                     </div>
-                    <span className="self-center font-mono text-sm text-gold" aria-hidden>→</span>
+                    <span className="self-center font-label text-sm text-gold" aria-hidden>→</span>
                     {i === 3 && (
                       <div className="flex min-h-[3.5rem] items-center border border-gold/50 px-4 py-3">
                         <span className="text-sm leading-snug text-gold">New perception</span>
@@ -4489,7 +4489,7 @@ function Index() {
                     ["Symbolic field", "a new interpretation"],
                     ["Relational Morphaithēr", "healthier boundaries, surroundings, and forms of participation"]].map(([a, b]) => (
                     <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[11rem_1fr]">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
+                      <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">{a}</span>
                       <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                     </div>
                   ))}
@@ -4521,7 +4521,7 @@ function Index() {
           </div>
 
           <div className="mt-16 mx-auto max-w-3xl border border-border p-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               On the limits of these correspondences
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -4540,7 +4540,7 @@ function Index() {
         <Backdrop src="/bg/camera-obscura-projection-in-dark-room.webp" opacity={0.7} position="center 45%" scrim={0.18} />
         <SectionGlyph delay={-250} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXV · Image and Imagination
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -4682,7 +4682,7 @@ function Index() {
                 ["Logos", "interprets and articulates it"], ["Desire", "assigns attraction or aversion"],
                 ["The Hara", "prepares an embodied response"]].map(([a, b]) => (
                 <div key={a} className="border-t border-border py-4 pr-4">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
+                  <p className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                 </div>
               ))}
@@ -4698,14 +4698,14 @@ function Index() {
             </p>
             <div className="mt-10 grid gap-8 md:grid-cols-2">
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Eikonic</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Eikonic</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   Preserves the important relationships inside the pattern, even when its visual
                   content is entirely symbolic.
                 </p>
               </div>
               <div className="border-t border-border pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                   Phantasmatic
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -4810,7 +4810,7 @@ function Index() {
               energy than a coordinated point of convergence.
             </p>
 
-            <p className="mt-14 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-14 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Five rules for any map in this architecture
             </p>
             <div className="mt-6 max-w-4xl">
@@ -4825,7 +4825,7 @@ function Index() {
                 ["No map exhausts the field",
                  "Every successful diagram reveals a pattern by excluding other possible views."]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-4 sm:grid-cols-[2rem_14rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">
+                  <span className="font-label text-[10px] text-gold-dim">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="text-sm leading-relaxed text-gold sm:text-[13px]">{a}</span>
@@ -4861,7 +4861,7 @@ function Index() {
         <Backdrop src="/bg/starling-murmuration-over-field.webp" opacity={0.63} position="center 40%" scrim={0.3} />
         <SectionGlyph delay={-270} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXVI · Symbol
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -4993,13 +4993,13 @@ function Index() {
             </p>
             <div className="mt-12 grid gap-10 md:grid-cols-2">
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Centre</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Centre</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   Its governing formative virtue. Lose it and interpretation becomes arbitrary.
                 </p>
               </div>
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Circumference
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5018,7 +5018,7 @@ function Index() {
               A living symbol holds a stable centre and an expanding circumference.
             </p>
 
-            <p className="mt-16 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-16 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               What a symbol needs in order to live — and its three deaths
             </p>
             <div className="mt-6 grid gap-px lg:grid-cols-3">
@@ -5031,7 +5031,7 @@ function Index() {
                 <div key={a} className="border-t border-border py-5 pr-6">
                   <p className="font-serif text-xl text-gold">{a}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
-                  <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-bone/50">
+                  <p className="mt-5 font-label text-[10px] uppercase tracking-[0.18em] text-bone/50">
                     {c}
                   </p>
                   <p className="mt-2 text-[13px] leading-relaxed text-bone/60">{d}</p>
@@ -5069,7 +5069,7 @@ function Index() {
                     i === 5 ? "border-gold/60 text-gold" : "border-border text-muted-foreground"}`}>
                     {t}
                   </span>
-                  <span className="font-mono text-sm text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
+                  <span className="font-label text-sm text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
                 </div>
               ))}
             </div>
@@ -5087,7 +5087,7 @@ function Index() {
             </p>
             <div className="mt-12 grid gap-10 md:grid-cols-2">
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Integral coherence
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5096,7 +5096,7 @@ function Index() {
                 </p>
               </div>
               <div className="border-t border-border pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                   Parasitic coherence
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5135,8 +5135,8 @@ function Index() {
                 ["Charge", "Emotion and value attach to otherwise neutral perceptions."],
                 ["Orient", "Centres, directions, thresholds, boundaries, goals, adversaries, paths, and possible actions are established."]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_6rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_8rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5152,7 +5152,7 @@ function Index() {
               or coercive action. A symbol becomes transformative only when vision, value, and
               embodiment align around it.
             </p>
-            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-10 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Symbolic literacy — three attentions at once
             </p>
             <div className="mt-6 grid gap-px md:grid-cols-3">
@@ -5160,7 +5160,7 @@ function Index() {
                 ["Seeing through it", "toward the pattern it mediates."],
                 ["Seeing what it does", "within the observer. This third is the one routinely neglected."]].map(([a, b]) => (
                 <div key={a} className="border-t border-border py-4 pr-5">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
+                  <p className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                 </div>
               ))}
@@ -5202,7 +5202,7 @@ function Index() {
                 ["Architecture", "structure carried through spatial movement"],
                 ["Music and sacred speech", "rhythm, resonance, and Tone Ether"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[13rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5214,7 +5214,7 @@ function Index() {
               complete.
             </p>
             <div className="mt-10 border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 The Law of Symbolic Remainder
               </p>
               <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
@@ -5250,7 +5250,7 @@ function Index() {
                 ["Morphaithēr", "provides the formative atmosphere through which it moves"],
                 ["Tradition", "preserves the capacity to recognise and regenerate it across generations — § XXXIII"]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-3 sm:grid-cols-[2rem_10rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-gold">{a}</span>
                   <span className="col-start-2 text-sm leading-relaxed text-muted-foreground sm:col-start-3">
                     {b}
@@ -5306,7 +5306,7 @@ function Index() {
         <Backdrop src="/bg/ritual-circle-with-bowls-and-flame.webp" opacity={0.72} position="center 55%" scrim={0.15} />
         <SectionGlyph delay={-370} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXVII · Ritual
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -5341,7 +5341,7 @@ function Index() {
             <div>
               <div className="grid gap-10 md:grid-cols-2">
                 <div className="border-t border-border pt-5">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                     Habit
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5350,7 +5350,7 @@ function Index() {
                   </p>
                 </div>
                 <div className="border-t border-gold/50 pt-5">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Rite</p>
+                  <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Rite</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                     Orders action in relation to a threshold, an object, and a transformation —
                     gathering attention, differentiating the moment from ordinary time, and directing
@@ -5391,7 +5391,7 @@ function Index() {
             </p>
             <div className="mt-10 grid gap-10 md:grid-cols-2">
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Deconsecration
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5400,7 +5400,7 @@ function Index() {
                 </p>
               </div>
               <div className="border-t border-border pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                   Desecration
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5429,7 +5429,7 @@ function Index() {
               what the participants name.
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 Telestic inertia
               </p>
               <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
@@ -5468,7 +5468,7 @@ function Index() {
         <Backdrop src="/bg/field-lines-in-black-volcanic-sand.webp" opacity={0.62} position="center 60%" scrim={0.15} />
         <SectionGlyph delay={-290} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXVIII · Taxonomy of Forces
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -5504,7 +5504,7 @@ function Index() {
                 stay unarticulated.
               </p>
               <div className="mt-8 border-l-2 border-gold pl-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                   The transcendent is not Root Ether
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -5543,7 +5543,7 @@ function Index() {
               a path. A musical scale does not create sound, but it determines which relationships
               can become harmonic.
             </p>
-            <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-8 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               What a formative force is made of
             </p>
             <div className="mt-5 flex flex-wrap items-stretch gap-2">
@@ -5552,7 +5552,7 @@ function Index() {
                   <div className="flex min-h-[3rem] items-center border border-border px-4">
                     <span className="text-sm text-muted-foreground">{t}</span>
                   </div>
-                  {i < 4 && <span className="self-center font-mono text-sm text-gold" aria-hidden>+</span>}
+                  {i < 4 && <span className="self-center font-label text-sm text-gold" aria-hidden>+</span>}
                 </div>
               ))}
             </div>
@@ -5600,8 +5600,8 @@ function Index() {
                 ["Integrated", "Head, Heart, and Hara sharing one centre"],
                 ["Consecrated", "power ordered toward a value greater than immediate appetite"]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_7rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_9rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5629,7 +5629,7 @@ function Index() {
               status, speech, sound, clothing, posture, and repeated action.
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold/50 pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 On the word egregore
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -5663,7 +5663,7 @@ function Index() {
             </div>
             <div>
               <div className="border border-border p-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                   Where analogy is not identity
                 </p>
                 <div className="mt-4 space-y-px">
@@ -5672,7 +5672,7 @@ function Index() {
                     ["Tone Ether", "is not reducible to acoustic vibration"],
                     ["Life Ether", "is not another name for biochemistry"]].map(([a, b]) => (
                     <div key={a} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-3 border-b border-border py-2.5">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                      <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                       <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                     </div>
                   ))}
@@ -5727,7 +5727,7 @@ function Index() {
                 ["Celestial timing", "macrocosmic pattern into a framework for participation"],
                 ["Art", "formative relationships into perceptible arrangements"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5740,7 +5740,7 @@ function Index() {
               transformative node.
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 Transductive Loss, at the level of mediation
               </p>
               <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
@@ -5779,7 +5779,7 @@ function Index() {
                 ["Material", "bodies, architecture, fire, sound, breath, light, objects, temperature, movement"],
                 ["Intermediary", "the words, symbols, images, gestures, music, incense and actions carrying the pattern across the rest"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5812,8 +5812,8 @@ function Index() {
                 ["Status", "Is the claim empirical, traditional, symbolic, metaphysical, or speculative?"]].map(([a, b], i) => (
                 <div key={a} className={`grid grid-cols-[1.6rem_5.5rem_1fr] items-baseline gap-3 border-b py-3 ${
                   i === 11 ? "border-gold/50" : "border-border"}`}>
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
-                  <span className={`font-mono text-[10px] uppercase tracking-[0.12em] ${
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className={`font-label text-[10px] uppercase tracking-[0.12em] ${
                     i === 11 ? "text-gold" : "text-gold"}`}>{a}</span>
                   <span className={`text-sm leading-relaxed ${i === 11 ? "text-bone/85" : "text-muted-foreground"}`}>
                     {b}
@@ -5830,7 +5830,7 @@ function Index() {
           </div>
 
           <div className="mt-24 border-t border-gold/30 pt-12">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               The Law of Force and Vessel
             </p>
             <p className="mt-6 max-w-3xl font-serif text-2xl leading-relaxed text-bone/90">
@@ -5843,7 +5843,7 @@ function Index() {
                 ["Collective", "coordinate and amplify"], ["Material", "embody and constrain"],
                 ["Intermediary", "translate among them"]].map(([a, b]) => (
                 <div key={a} className="border-t border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{a}</span>
                   <span className="ml-3 text-sm text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5859,7 +5859,7 @@ function Index() {
         <Backdrop src="/bg/stacked-glass-filters-in-dark-cell.webp" opacity={0.74} position="center 50%" scrim={0.12} />
         <SectionGlyph delay={-310} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXIX · Vertical Chains of Mediation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -5897,7 +5897,7 @@ function Index() {
                 ["Intelligence", "the noetic and pattern-governing pole of a sphere"],
                 ["Spirit", "the dynamic, operative, or locally present pole"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[11rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -5942,7 +5942,7 @@ function Index() {
                 most of the Morphaithēr that gave it coherence.
               </p>
               <div className="mt-8 border-l-2 border-gold pl-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                   The danger of magical nominalism
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -5986,7 +5986,7 @@ function Index() {
               premature certainty — which is the same demand the force profile of § XXVIII makes of
               every claim it admits.
             </p>
-            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-10 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               What archangelic mediation should display
             </p>
             <div className="mt-6 grid gap-x-10 gap-y-px sm:grid-cols-2">
@@ -5997,7 +5997,7 @@ function Index() {
                 "Preservation of proportion among parts",
                 "Orientation toward a virtue beyond the mediator itself"].map((t, i) => (
                 <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
                 </div>
               ))}
@@ -6037,7 +6037,7 @@ function Index() {
               judgement. None of these should automatically be read as anatomy.
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold/50 pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 The angelic test
               </p>
               <div className="mt-4 space-y-2.5">
@@ -6046,7 +6046,7 @@ function Index() {
                   "Does it increase responsible agency rather than dependency?",
                   "Can its symbolic form be distinguished from its possible underlying meaning?"].map((q, i) => (
                   <p key={q} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                    <span className="font-mono text-[10px] text-gold-dim">{i + 1}</span>
+                    <span className="font-label text-[10px] text-gold-dim">{i + 1}</span>
                     {q}
                   </p>
                 ))}
@@ -6072,7 +6072,7 @@ function Index() {
             </p>
             <div className="mt-10 grid gap-10 md:grid-cols-2">
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Intelligence asks
                 </p>
                 <p className="mt-3 font-serif text-lg italic leading-relaxed text-bone/85">
@@ -6080,7 +6080,7 @@ function Index() {
                 </p>
               </div>
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Spirit asks
                 </p>
                 <p className="mt-3 font-serif text-lg italic leading-relaxed text-bone/85">
@@ -6110,7 +6110,7 @@ function Index() {
               an ontological status.
             </p>
             <div className="mt-10 max-w-3xl border border-border p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                 On Agrippa&rsquo;s planetary tables
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -6133,12 +6133,12 @@ function Index() {
             <h3 className="font-serif text-2xl leading-tight">Descent and return</h3>
             <div className="mt-8 grid gap-10 lg:grid-cols-2">
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">Descent</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">Descent</p>
                 <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-2">
                   {["Source", "Name", "Pattern", "Message", "Operation", "Embodiment"].map((t, i) => (
                     <div key={t} className="flex items-center gap-2">
                       <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{t}</span>
-                      {i < 5 && <span className="font-mono text-xs text-gold" aria-hidden>→</span>}
+                      {i < 5 && <span className="font-label text-xs text-gold" aria-hidden>→</span>}
                     </div>
                   ))}
                 </div>
@@ -6148,13 +6148,13 @@ function Index() {
                 </p>
               </div>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">Return</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">Return</p>
                 <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-2">
                   {["Embodiment", "Participation", "Meaning", "Understanding", "Unity", "Silence"].map((t, i) => (
                     <div key={t} className="flex items-center gap-2">
                       <span className={`border px-2.5 py-1.5 text-[13px] ${
                         i === 5 ? "border-gold/60 text-gold" : "border-border text-muted-foreground"}`}>{t}</span>
-                      {i < 5 && <span className="font-mono text-xs text-gold" aria-hidden>→</span>}
+                      {i < 5 && <span className="font-label text-xs text-gold" aria-hidden>→</span>}
                     </div>
                   ))}
                 </div>
@@ -6187,7 +6187,7 @@ function Index() {
                 ["Every vessel can distort", "Personal desire, collective expectation, fear, language, and tradition all shape how mediation is received."],
                 ["Every valid ascent returns as embodiment", "If an alleged ascent produces no deeper truthfulness, responsibility, virtue, or integration, the chain has not been completed."]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_1fr] gap-4 border-b border-border py-4 sm:grid-cols-[2rem_17rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-gold">{a}</span>
                   <span className="col-start-2 text-sm leading-relaxed text-muted-foreground sm:col-start-3">{b}</span>
                 </div>
@@ -6218,7 +6218,7 @@ function Index() {
         <Backdrop src="/bg/circular-sanctum-with-lit-doorway.webp" opacity={0.58} position="center 50%" scrim={0.22} />
         <SectionGlyph delay={-330} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXX · Greek Metaphysics and Theurgic Engineering
           </p>
           <MeanderBand className="mt-8 max-w-3xl" />
@@ -6248,7 +6248,7 @@ function Index() {
 
           {/* the working vocabulary, in Greek */}
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Τὰ ὀνόματα · the words this section works with
             </p>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -6332,7 +6332,7 @@ function Index() {
                 ["Ethically", "the demand to become more coherent than one's immediate appetites"],
                 ["Imaginally", "a figure appearing in dream, vision, myth, or guidance"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -6412,7 +6412,7 @@ function Index() {
                 ["Repeated rites", "create formative memory, making the temple more responsive to what is enacted in it"],
                 ["Correspondence", "gathers stones, metals, colours, plants, hymns, numbers, myths, and hours into one chain"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -6452,7 +6452,7 @@ function Index() {
               The statue is Salt made receptive to Sulfur through Mercury.
             </p>
             <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 What ensoulment is not
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -6468,7 +6468,7 @@ function Index() {
                 of a worshipping community. These need not be carelessly collapsed into one another.
               </p>
             </div>
-            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-10 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               The sequence of telestic art
             </p>
             <div className="mt-6 max-w-4xl">
@@ -6479,7 +6479,7 @@ function Index() {
                 "Repeated participation stabilises the presence",
                 "Ongoing ritual maintains the vessel's coherence"].map((t, i) => (
                 <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
                 </div>
               ))}
@@ -6496,7 +6496,7 @@ function Index() {
           <div className="relative isolate mt-24 border-t border-border pt-16">
             <Backdrop src="/bg/lighthouse-lamp-room-with-brass-optics.webp" opacity={0.7} position="center 55%" scrim={0.22} />
             <div className="border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 The Law of the Vessel
               </p>
               <p className="mt-4 max-w-3xl font-serif text-2xl leading-relaxed text-bone/90">
@@ -6535,7 +6535,7 @@ function Index() {
                 ["The daimōn", "the vertical current"],
                 ["The Inner Sun", "the integrating centre"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[10rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -6579,7 +6579,7 @@ function Index() {
         <Backdrop src="/bg/mangrove-roots-in-morning-mist.webp" opacity={0.56} position="center 45%" scrim={0.34} />
         <SectionGlyph delay={-350} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXI · Daimons, Interfaces, and Mediating Orders
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -6655,7 +6655,7 @@ function Index() {
                 ["Archons", "governance of cosmic or material domains", "regulators of large environmental orders"],
                 ["Souls", "particular centres of life and experience", "living vessels capable of ascent, choice, transformation"]].map(([a, b, c]) => (
                 <div key={a} className="grid grid-cols-[7rem_1fr] gap-4 border-b border-border py-3 sm:grid-cols-[8rem_14rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-bone/75">{b}</span>
                   <span className="col-start-1 text-sm leading-relaxed text-muted-foreground sm:col-start-3">{c}</span>
                 </div>
@@ -6694,7 +6694,7 @@ function Index() {
                 ["The daimōn", "mediates between a particular life and that larger order"],
                 ["Theurgy", "aligns the soul with causes higher than those that ordinarily bind it"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -6710,7 +6710,7 @@ function Index() {
               experiencing it only as blind compulsion.
             </p>
             <div className="mt-12 max-w-3xl border-l-2 border-gold/50 pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 Fate is not fatalism
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -6749,7 +6749,7 @@ function Index() {
                 "A guide of thought and action toward intelligible principles",
                 "A representative of the person's place within a greater divine chain"].map((t, i) => (
                 <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
                 </div>
               ))}
@@ -6763,7 +6763,7 @@ function Index() {
               universal than itself.</span>
             </p>
             <div className="mt-12 max-w-3xl border border-border p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                 The chart is not the daim&#333;n
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -6797,7 +6797,7 @@ function Index() {
                 ["Tone Ether", "coordinates events, symbols, relationships, names, meaningful rhythms"],
                 ["Life Ether", "integrates the current into character, body, practice, sustained development"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -6817,7 +6817,7 @@ function Index() {
               inspire endlessly without producing a life.
             </p>
 
-            <p className="mt-16 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-16 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               And its three ways of going wrong
             </p>
             <div className="mt-6 grid gap-px lg:grid-cols-3">
@@ -6833,7 +6833,7 @@ function Index() {
                     <p className="font-serif text-xl text-gold">{a}</p>
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b}</p>
-                  <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-bone/50">{c}</p>
+                  <p className="mt-5 font-label text-[10px] uppercase tracking-[0.18em] text-bone/50">{c}</p>
                   <p className="mt-2 text-[13px] leading-relaxed text-bone/60">{d}</p>
                 </div>
               ))}
@@ -6864,7 +6864,7 @@ function Index() {
                 "Does it produce genuine capability, or only fantasies of exceptional status?",
                 "Does it respect ethical reality and the autonomy of others?"].map((q, i) => (
                 <p key={q} className="flex gap-3 text-base leading-relaxed text-muted-foreground">
-                  <span className="font-mono text-[10px] text-gold-dim">{i + 1}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{i + 1}</span>
                   {q}
                 </p>
               ))}
@@ -6912,7 +6912,7 @@ function Index() {
 
           {/* ---- the population, named ---- */}
           <div className="mt-24 border-t border-border pt-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Who fills it, named
             </p>
             <h3 className="mt-6 max-w-3xl font-serif text-3xl leading-tight">
@@ -6945,7 +6945,7 @@ function Index() {
                   <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
                     {m.office}
                   </span>
-                  <span className="mt-1.5 block font-mono text-[9px] uppercase tracking-[0.16em] text-bone/40">
+                  <span className="mt-1.5 block font-label text-[9px] uppercase tracking-[0.16em] text-bone/40">
                     {m.tradition}
                   </span>
                 </Link>
@@ -6990,7 +6990,7 @@ function Index() {
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § XXXII · The Series
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -7014,7 +7014,7 @@ function Index() {
                   key={b.n}
                   className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-6 border-b border-border pb-6"
                 >
-                  <div className="font-mono text-[11px] uppercase tracking-[0.3em] text-gold-dim">
+                  <div className="font-label text-[11px] uppercase tracking-[0.3em] text-gold-dim">
                     Book {b.n}
                   </div>
                   <div>
@@ -7036,7 +7036,7 @@ function Index() {
       <section id="grounds" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/timber-pavilion-on-rock-shelf.webp" opacity={0.25} position="center 50%" />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § Grounds · Why the Structure Holds
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -7083,7 +7083,7 @@ function Index() {
         <Backdrop src="/bg/scribe-at-work-by-lamplight.webp" opacity={0.72} position="center 45%" scrim={0.15} />
         <SectionGlyph delay={-390} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXIII · Tradition
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -7154,7 +7154,7 @@ function Index() {
                   ["Distorts", "the constraint survives, deformed"],
                   ["Replaces", "a different constraint now occupies the form"]].map(([a, b]) => (
                   <div key={a} className="border-t border-border py-4 pr-5">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
+                    <p className="font-label text-[10px] uppercase tracking-[0.15em] text-gold">{a}</p>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                   </div>
                 ))}
@@ -7217,7 +7217,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
                 § XXXIV · Lineage
               </p>
               <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -7240,7 +7240,7 @@ function Index() {
                   key={row.from}
                   className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-4 border-b border-border pb-6 sm:grid-cols-[220px_minmax(0,1fr)] sm:gap-8"
                 >
-                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold-dim sm:text-xs">
+                  <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim sm:text-xs">
                     {row.from}
                   </div>
                   <p className="col-span-2 text-sm leading-relaxed text-muted-foreground sm:col-span-1 sm:text-base">
@@ -7258,7 +7258,7 @@ function Index() {
         <Backdrop src="/bg/stone-arch-under-construction.webp" opacity={0.7} position="center 55%" scrim={0.24} />
         <SectionGlyph delay={-410} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXV · The Law of Force and Form
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -7306,7 +7306,7 @@ function Index() {
                   ["A habit", "repeated psychic activity hardened into an automatic pathway"],
                   ["An institution", "collective action fixed into roles, procedures, expectations"]].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                   </div>
                 ))}
@@ -7342,7 +7342,7 @@ function Index() {
               spent maintaining it.
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 But liberation does not erase what preceded it
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -7427,7 +7427,7 @@ function Index() {
               caused it — which is the basis of formative inertia in § XII, and of the flywheel in
               § IX. Past a certain momentum the pattern begins recruiting new force into itself.
             </p>
-            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-10 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               And every pattern has a holding capacity
             </p>
             <div className="mt-6 grid gap-px lg:grid-cols-3">
@@ -7435,7 +7435,7 @@ function Index() {
                 ["Too strong", "the pattern ruptures"],
                 ["Unable to adapt", "force escapes through distortion, symptom, conflict, or collapse"]].map(([a, b]) => (
                 <div key={a} className="border-t border-border py-5 pr-6">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold">{a}</p>
+                  <p className="font-label text-[10px] uppercase tracking-[0.18em] text-gold">{a}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                 </div>
               ))}
@@ -7477,7 +7477,7 @@ function Index() {
                 ["A parasitic tradition", "form that extracts new force from its participants merely to continue its own existence"]].map(([a, b], i) => (
                 <div key={a} className={`grid grid-cols-[10rem_1fr] items-baseline gap-4 border-b py-3 sm:grid-cols-[13rem_1fr] ${
                   i > 1 ? "border-border" : "border-gold/30"}`}>
-                  <span className={`font-mono text-[11px] uppercase tracking-[0.12em] ${i > 1 ? "text-bone/60" : "text-gold"}`}>{a}</span>
+                  <span className={`font-label text-[11px] uppercase tracking-[0.12em] ${i > 1 ? "text-bone/60" : "text-gold"}`}>{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -7485,7 +7485,7 @@ function Index() {
           </div>
 
           <div className="mt-24 border-t border-gold/30 pt-12">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Reduced to three propositions
             </p>
             <div className="mt-8 space-y-4">
@@ -7493,7 +7493,7 @@ function Index() {
                 "Form remains living through force.",
                 "Transformation occurs when force exceeds, dissolves, or reorganises its present form."].map((t, i) => (
                 <p key={t} className="flex gap-5 font-serif text-2xl leading-relaxed text-bone/90">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   {t}
                 </p>
               ))}
@@ -7510,7 +7510,7 @@ function Index() {
         <Backdrop src="/bg/bronze-bowl-on-clifftop-in-rain.webp" opacity={0.72} position="center 55%" scrim={0.26} />
         <SectionGlyph delay={-430} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXVI · Etheric Tides
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -7582,7 +7582,7 @@ function Index() {
                 {["Emergence", "Increase", "Crest", "Recession", "Trough", "Return"].map((x, i) => (
                   <div key={x} className="flex items-center gap-2">
                     <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{x}</span>
-                    <span className="font-mono text-xs text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
+                    <span className="font-label text-xs text-gold" aria-hidden>{i === 5 ? "↺" : "→"}</span>
                   </div>
                 ))}
               </div>
@@ -7623,12 +7623,12 @@ function Index() {
                 ["Current", "A relatively sustained directional movement."],
                 ["Etheric weather", "The temporary local condition produced when tides, currents, waves, bodies, places, and events interact."]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
             </div>
-            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="mt-10 font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               Which sorts the scale of things
             </p>
             <div className="mt-6 grid gap-x-10 gap-y-px sm:grid-cols-2">
@@ -7712,7 +7712,7 @@ function Index() {
                 ["Growth", "A slower formative wave — not constant expansion but a succession of accumulation, differentiation, consolidation, and rest."],
                 ["Healing", "Not a straight ascent from disorder to health but a passage through protection, breakdown, repair, remodelling, exertion, and rest. Metaphysically: the recovery of coherent circulation and adaptive rhythm."]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-4 sm:grid-cols-[7rem_1fr] sm:gap-4">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -7722,7 +7722,7 @@ function Index() {
               same limit § XXIV sets on the Five Phases.
             </p>
             <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 Which makes the body the testing ground
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -7754,7 +7754,7 @@ function Index() {
         <Backdrop src="/bg/mountain-observatory-above-cloud.webp" opacity={0.72} position="center 45%" scrim={0.26} />
         <SectionGlyph delay={-450} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXVII · Lunar Mansions and Nakshatras
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -7778,7 +7778,7 @@ function Index() {
           </div>
 
           <div className="mt-16 max-w-3xl border border-border p-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               And a second distinction, of category
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -7845,7 +7845,7 @@ function Index() {
                 "The formative associations accumulated through centuries of observation and ritual use",
                 "Its present activation through a particular Moon, phase, place, practitioner, and operation"].map((t, i) => (
                 <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
                 </div>
               ))}
@@ -7881,7 +7881,7 @@ function Index() {
             </p>
             <div className="mt-8 grid gap-10 md:grid-cols-2">
               <div className="border-t border-border pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                   A mechanical clock
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -7889,7 +7889,7 @@ function Index() {
                 </p>
               </div>
               <div className="border-t border-gold/50 pt-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Nakshatra timing
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -7980,7 +7980,7 @@ function Index() {
                 ["The sidereal clock", "the mansion occupied — which refines that movement into a kind"],
                 ["The local clock", "planetary, seasonal, bodily, environmental, and ritual conditions — whether the vessel can carry it"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[10rem_1fr] sm:gap-4">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -8040,7 +8040,7 @@ function Index() {
         <Backdrop src="/bg/sun-pillar-over-salt-flat.webp" opacity={0.72} position="center 50%" scrim={0.24} />
         <SectionGlyph delay={-470} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXVIII · Zodiacal Patterning
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -8056,7 +8056,7 @@ function Index() {
 
           {/* ---- which map ---- */}
           <div className="mt-16 max-w-3xl border-l-2 border-gold pl-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
               Which map, declared before anything else
             </p>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -8077,7 +8077,7 @@ function Index() {
               ["Nakshatras", "finer lunar-stellar timing — § XXXVII"],
               ["Fixed stars", "particular stellar signatures"]].map(([a, b]) => (
               <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[10rem_1fr] sm:gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                 <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
               </div>
             ))}
@@ -8088,7 +8088,7 @@ function Index() {
             <span className="text-bone/90">every diagram must declare its coordinate system.</span>
           </p>
           <div className="mt-8 max-w-3xl border border-border p-5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
               And a hemispheric problem
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -8164,7 +8164,7 @@ function Index() {
                   ["Phase and mansion", "tense, cadence, and timing"],
                   ["Living vessel", "the speaker through whom the grammar is embodied"]].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[8rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[10rem_1fr]">
-                    <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                   </div>
                 ))}
@@ -8212,7 +8212,7 @@ function Index() {
                 "The collective current created by repeated cultural and ritual attention",
                 "Its particular activation within a chart or operation"].map((t, i) => (
                 <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
                 </div>
               ))}
@@ -8223,7 +8223,7 @@ function Index() {
               which a tradition recognises and works with its perceived virtue.
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 And the method must be named
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -8251,7 +8251,7 @@ function Index() {
                 ["Midheaven", "culmination, elevation, public visibility"],
                 ["Imum Coeli", "root, foundation, ancestry, interior depth"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -8281,7 +8281,7 @@ function Index() {
                 ["Succedent", "accumulation, support, stabilisation"],
                 ["Cadent", "distribution, transition, displacement"]].map(([a, b]) => (
                 <div key={a} className="border-t border-border py-4 pr-6">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-gold">{a}</p>
+                  <p className="font-label text-[10px] uppercase tracking-[0.18em] text-gold">{a}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
                 </div>
               ))}
@@ -8306,7 +8306,7 @@ function Index() {
                 ["Trine · 120°", "affinity, circulation, effortless reinforcement"],
                 ["Sextile · 60°", "exchange, coordination, available cooperation"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[9rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[11rem_1fr]">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -8322,7 +8322,7 @@ function Index() {
               from it.
             </p>
             <div className="mt-12 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 Which makes a chart a topology
               </p>
               <div className="mt-4 space-y-2">
@@ -8373,7 +8373,7 @@ function Index() {
         <SectionGlyph delay={-510} />
         <Backdrop src="/bg/stair-cut-into-misted-gorge.webp" opacity={0.22} position="center 40%" scrim={0.26} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XXXIX · The Art of Right Relation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -8426,7 +8426,7 @@ function Index() {
                   ["Timing", "when the relation can be entered fruitfully"],
                   ["Purpose", "what the relation is actually serving"]].map(([a, b]) => (
                   <div key={a} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                    <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                   </div>
                 ))}
@@ -8470,7 +8470,7 @@ function Index() {
               upon.</span>
             </p>
             <div className="mt-10 max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 Which is why the art governs access
               </p>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -8541,7 +8541,7 @@ function Index() {
                 ["A tradition", "generates living recognisers rather than obedient preservers"],
                 ["A calling", "becomes responsible action rather than an identity claimed by the ego"]].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[1fr] gap-1 border-b border-border py-3 sm:grid-cols-[8rem_1fr] sm:gap-4">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -8574,8 +8574,8 @@ function Index() {
                 ["Fruit", "Does it increase appropriate capacity, coherence, and responsible action?"],
                 ["Closure", "Can the relation be concluded, released, or deconsecrated when its work is done?"]].map(([a, b], i) => (
                 <div key={a} className="grid grid-cols-[1.6rem_6rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[2rem_8rem_1fr]">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[11px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -8625,7 +8625,7 @@ function Index() {
         <SectionGlyph delay={-530} />
         <Backdrop src="/bg/stream-through-basalt-ruins.webp" opacity={0.32} position="center 45%" scrim={0.24} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XL · Death, Suffering, and the Cost of Form
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -8718,7 +8718,7 @@ function Index() {
                 "Material contingency, with no symbolic purpose at all",
                 "Deliberate cruelty or injustice"].map((t, i) => (
                 <div key={t} className="grid grid-cols-[1.6rem_1fr] items-baseline gap-3 border-b border-border py-3">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{t}</span>
                 </div>
               ))}
@@ -8790,7 +8790,7 @@ function Index() {
           {/* ---- the remainder ---- */}
           <div className="mt-24 border-t border-border pt-16">
             <div className="max-w-3xl border-l-2 border-gold pl-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold">
+              <p className="font-label text-[10px] uppercase tracking-[0.25em] text-gold">
                 The Unfulfilled Remainder
               </p>
               <p className="mt-4 font-serif text-xl leading-relaxed text-bone/90">
@@ -8850,7 +8850,7 @@ function Index() {
                 "Remembrance", "Reintegration", "Closure"].map((t, i) => (
                 <div key={t} className="flex items-center gap-2">
                   <span className="border border-border px-2.5 py-1.5 text-[13px] text-muted-foreground">{t}</span>
-                  {i < 8 && <span className="font-mono text-xs text-gold" aria-hidden>→</span>}
+                  {i < 8 && <span className="font-label text-xs text-gold" aria-hidden>→</span>}
                 </div>
               ))}
             </div>
@@ -8933,7 +8933,7 @@ function Index() {
           <Backdrop src="/bg/turf-roofed-colonnade-at-dusk.webp" opacity={0.26} position="center 45%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLI · Morphaithēr
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -8967,7 +8967,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A configuration, not a substance
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -8999,10 +8999,10 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/hot-spring-terraces-at-lake-edge.webp" opacity={0.24} position="center 45%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 How form emerges, and returns
               </p>
-              <p className="mt-8 font-mono text-xs leading-loose tracking-[0.1em] text-gold">
+              <p className="mt-8 font-label text-xs leading-loose tracking-[0.1em] text-gold">
                 FIELD → BIAS → VECTOR → RESONANCE → RECURRENCE → THRESHOLD → FORM
               </p>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
@@ -9025,7 +9025,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The psychic flywheel
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9043,7 +9043,7 @@ function Index() {
                 ["Formative inertia", "recruits new experience into the pattern"],
               ].map(([a, b]) => (
                 <div key={a} className="grid grid-cols-[10rem_1fr] items-baseline gap-4 border-b border-border py-3">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -9057,7 +9057,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/night-terrace-above-cloud-sea.webp" opacity={0.4} position="center 65%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Tradition as long-duration Morphaithēr
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9087,7 +9087,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A question the ladder leaves open
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9111,7 +9111,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/basalt-cavern-cut-by-light-shafts.webp" opacity={0.32} position="center 50%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Necessary safeguards
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9128,7 +9128,7 @@ function Index() {
                   "Allow the model to be corrected when it fails to predict or clarify anything.",
                 ].map((r, i) => (
                   <li key={r} className="grid grid-cols-[2rem_1fr] gap-4">
-                    <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                     <span className="text-base leading-relaxed text-muted-foreground">{r}</span>
                   </li>
                 ))}
@@ -9166,7 +9166,7 @@ function Index() {
         
           {/* the hidden layer this section opens onto */}
           <div className="relative mt-16 border-t border-gold/30 pt-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">A hidden layer</p>
             <Link to="/ecology" className="group mt-4 inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <span className="font-serif text-2xl leading-tight text-bone transition-colors group-hover:text-gold">
                 This section opens onto the Hidden Ecology of Formation
@@ -9186,7 +9186,7 @@ function Index() {
           <Backdrop src="/bg/sapling-growing-from-fallen-log.webp" opacity={0.36} position="center 55%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLII · CHON
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -9218,7 +9218,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Not a material duplicate of the Veil
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9236,7 +9236,7 @@ function Index() {
                 ["CHON", "receives embodiment", "organic molecules, cells, tissues, bodies"],
               ].map(([n, f, m], i) => (
                 <div key={n} className={`grid grid-cols-[6rem_1fr] items-baseline gap-4 border-b border-border py-3 sm:grid-cols-[6rem_11rem_1fr] ${i === 4 ? "border-t border-t-gold/30 pt-4" : ""}`}>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
                   <span className="font-serif text-sm italic text-bone/75">{f}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{m}</span>
                 </div>
@@ -9247,14 +9247,14 @@ function Index() {
               orders its combinations; Life integrates those combinations into a self-maintaining
               being.
             </p>
-            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+            <p className="mt-8 font-label text-xs leading-loose tracking-[0.08em] text-gold-dim">
               FORCE → FOURFOLD VEIL → TATTVIC QUALIFICATION → ELEMENTAL CONDITIONS → CHON
               ORGANISATION → LIVING VESSEL
             </p>
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Substance and the field of its renewal
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9273,7 +9273,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/lit-oak-rooted-over-rift.webp" opacity={0.26} position="center 40%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 What death does not take
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9295,7 +9295,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/kiln-vault-with-glowing-mouth.webp" opacity={0.38} position="center 45%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The lowest biological octave
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9325,7 +9325,7 @@ function Index() {
           <Backdrop src="/bg/four-veils-of-light-in-rock-cleft.webp" opacity={0.24} position="center 42%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLIII · The Fourfold Veil
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -9348,7 +9348,7 @@ function Index() {
 
           <div className="relative isolate mt-20">
             <Backdrop src="/bg/meltwater-vent-in-blue-ice-cave.webp" opacity={0.14} position="center 45%" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Why it is called a veil
             </p>
             <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_1fr]">
@@ -9403,7 +9403,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/overgrown-cistern-tower-interior.webp" opacity={0.3} position="center 35%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 How an error becomes an institution
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9421,7 +9421,7 @@ function Index() {
                 ].map(([step, layer]) => (
                   <div key={step} className="grid grid-cols-[1fr_7rem] items-baseline gap-4 border-b border-border py-3">
                     <span className="text-sm leading-relaxed text-muted-foreground">{step}</span>
-                    <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold-dim">{layer}</span>
+                    <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold-dim">{layer}</span>
                   </div>
                 ))}
               </div>
@@ -9439,18 +9439,18 @@ function Index() {
           </div>
 
           <div className="mt-24">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Which direction repair takes
             </p>
             <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_1fr]">
               <div className="border-l-2 border-gold/40 pl-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">Downward</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">Downward</p>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                   Begin with meaning, image or intention, and work to embody a corrected pattern.
                 </p>
               </div>
               <div className="border-l-2 border-bone/30 pl-6">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/80">Upward</p>
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-bone/80">Upward</p>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                   Begin with sleep, nourishment, safety, environment, movement or bodily regulation,
                   and let improved conditions change sensation and thought.
@@ -9473,7 +9473,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/keystone-set-in-lit-stone-vault.webp" opacity={0.32} position="center 50%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 Three levels, distinguished
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9490,7 +9490,7 @@ function Index() {
                   ["Morphaithēr", "the changing atmosphere produced by their interaction", "weather"],
                 ].map(([n, f, tag]) => (
                   <div key={n} className="grid grid-cols-[9rem_1fr_5rem] items-baseline gap-4 border-b border-border py-4">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
+                    <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{f}</span>
                     <span className="font-serif text-sm italic text-bone/60">{tag}</span>
                   </div>
@@ -9503,7 +9503,7 @@ function Index() {
                 prior to specialisation, and the Veil is what that capacity becomes when it
                 differentiates.
               </p>
-              <p className="mt-6 font-mono text-xs leading-loose tracking-[0.1em] text-gold-dim">
+              <p className="mt-6 font-label text-xs leading-loose tracking-[0.1em] text-gold-dim">
                 AKASHA → ROOT ETHER → WARMTH → LIGHT → TONE → LIFE → CHON
               </p>
               <p className="mt-4 text-sm leading-relaxed text-bone/60">
@@ -9513,7 +9513,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Necessary safeguards
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9531,7 +9531,7 @@ function Index() {
                 "Correspondences across the four are hypotheses requiring discernment, not automatic proof.",
               ].map((r, i) => (
                 <li key={r} className="grid grid-cols-[2rem_1fr] gap-4">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-base leading-relaxed text-muted-foreground">{r}</span>
                 </li>
               ))}
@@ -9566,7 +9566,7 @@ function Index() {
           <Backdrop src="/bg/sluice-gates-releasing-white-water.webp" opacity={0.26} position="center 50%" fill />
         </div>
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLIV · The Law of Right Relation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -9602,7 +9602,7 @@ function Index() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Orthē schesis
             </p>
             <p className="mt-4 font-serif text-3xl leading-tight text-gold">ὀρθὴ σχέσις</p>
@@ -9631,7 +9631,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The five terms
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9647,7 +9647,7 @@ function Index() {
                 ["Field", "the surrounding conditions of the operation", "may dissipate it — or reward the distorted expression"],
               ].map(([t, d, f]) => (
                 <div key={t} className="grid gap-1 border-b border-border py-4 sm:grid-cols-[7.5rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{t}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{t}</span>
                   <span>
                     <span className="text-sm leading-relaxed text-muted-foreground">{d}</span>
                     <span className="mt-1 block text-sm leading-relaxed text-bone/60">{f}</span>
@@ -9666,7 +9666,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Where metamorphosis stops short
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9682,7 +9682,7 @@ function Index() {
                 ["Reorganisation without embodiment", "the change stays imaginary"],
               ].map(([a, b]) => (
                 <div key={a} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[19rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -9695,7 +9695,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Four tests, one from each membrane
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9710,7 +9710,7 @@ function Index() {
                 ["Life", "Does the relation nourish integration, renewal, and the capacity to participate more fully?"],
               ].map(([n, q]) => (
                 <div key={n} className="grid gap-1 border-b border-border py-4 sm:grid-cols-[6rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{n}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{q}</span>
                 </div>
               ))}
@@ -9732,7 +9732,7 @@ function Index() {
           <div className="relative isolate mt-24">
             <Backdrop src="/bg/terraced-reservoirs-fed-by-waterfall.webp" opacity={0.28} position="center 45%" />
             <div className="max-w-3xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+              <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                 The relational flywheel
               </p>
               <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9756,7 +9756,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Right relation is not passivity
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9785,7 +9785,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               An ethics of participation
             </p>
             <p className="mt-8 font-serif text-2xl leading-relaxed text-bone/90">
@@ -9806,7 +9806,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The diagnostic
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9832,7 +9832,7 @@ function Index() {
                 "Does its visible form still carry its originating virtue?",
               ].map((q, i) => (
                 <li key={q} className="grid grid-cols-[2rem_1fr] gap-4">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-base leading-relaxed text-muted-foreground">{q}</span>
                 </li>
               ))}
@@ -9859,7 +9859,7 @@ function Index() {
         <SectionGlyph delay={-620} />
         <Backdrop src="/bg/spiral-apothecary-of-lit-vials.webp" opacity={0.42} position="center 45%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLV · Spiritualising Matter
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -9883,10 +9883,10 @@ function Index() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Where the claim is tested
             </p>
-            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+            <p className="mt-8 font-label text-xs leading-loose tracking-[0.08em] text-gold-dim">
               SOURCE → SPIRIT → ESSENCE → VIRTUE → FORCE → SEEDFORM → FOURFOLD VEIL → FORM → MATTER
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9907,7 +9907,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Transparent, not invisible
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9934,7 +9934,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Sustained participation, not declaration
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -9960,7 +9960,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The body, and what this does not mean
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10007,13 +10007,13 @@ function Index() {
         <SectionGlyph delay={-635} />
         <Backdrop src="/bg/old-growth-forest-in-deep-shade.webp" opacity={0.3} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVI · Sophia and the Divine Feminine
           </p>
           <div className="mt-8 flex flex-wrap items-baseline gap-x-8 gap-y-3">
             <h2 className="font-serif text-4xl leading-tight">Σοφία</h2>
             <Term script="hebrew" orig="חָכְמָה" label="ḥokmāh — wisdom" className="text-4xl text-gold" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            <p className="font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
               sophia · ḥokmāh
             </p>
           </div>
@@ -10035,7 +10035,7 @@ function Index() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Receptivity is not passivity
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10068,7 +10068,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Veil as gestation
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10105,13 +10105,13 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Where she is named
             </p>
             <div className="mt-10 flex justify-center">
               <SevenPillars className="w-full max-w-2xl text-gold" height={120} />
             </div>
-            <p className="mt-6 text-center font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+            <p className="mt-6 text-center font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
               Wisdom has built her house, she has hewn her seven pillars · Proverbs 9:1
             </p>
             <p className="mt-12 text-base leading-relaxed text-muted-foreground">
@@ -10126,7 +10126,7 @@ function Index() {
                 <p className="flex flex-wrap items-baseline gap-x-4">
                   <Term script="hebrew" orig="קָנָנִי" label="qānānî — he created me, or acquired me" className="text-2xl text-gold" />
                   <span className="font-serif text-base italic text-bone/85">qānānî</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Proverbs 8:22</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Proverbs 8:22</span>
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   &ldquo;The Lord <span className="italic">qānānî</span> at the beginning of his
@@ -10142,7 +10142,7 @@ function Index() {
                 <p className="flex flex-wrap items-baseline gap-x-4">
                   <Term script="hebrew" orig="אָמוֹן" label="ʾāmôn — master worker, or nursling, or confidant" className="text-2xl text-gold" />
                   <span className="font-serif text-base italic text-bone/85">ʾāmôn</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Proverbs 8:30</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Proverbs 8:30</span>
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   &ldquo;Then I was beside him, <span className="italic">ʾāmôn</span>.&rdquo; A
@@ -10177,7 +10177,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The texts people mean by &ldquo;the Gospel of Sophia&rdquo;
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10196,7 +10196,7 @@ function Index() {
               ].map(([t, w, d]) => (
                 <div key={t} className="border-b border-border py-6">
                   <p className="font-serif text-xl text-bone/90">{t}</p>
-                  <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">{w}</p>
+                  <p className="mt-1 font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">{w}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
                 </div>
               ))}
@@ -10219,7 +10219,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               And after the ancient texts
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10251,7 +10251,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The wound
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10282,7 +10282,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Not against the masculine
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10299,7 +10299,7 @@ function Index() {
                 ["Integration without differentiation", "dissolves meaningful distinction"],
               ].map(([a, b]) => (
                 <div key={a} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[17rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -10317,7 +10317,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The Sophianic test
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10336,7 +10336,7 @@ function Index() {
                 "Can it mourn what must die, and release what can no longer live?",
               ].map((q, i) => (
                 <li key={q} className="grid grid-cols-[2rem_1fr] gap-4">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-base leading-relaxed text-muted-foreground">{q}</span>
                 </li>
               ))}
@@ -10374,7 +10374,7 @@ function Index() {
         <SectionGlyph delay={-650} />
         <Backdrop src="/bg/green-regrowth-on-volcanic-headland.webp" opacity={0.3} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVII · Transformation
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -10394,13 +10394,13 @@ function Index() {
             reorganised so profoundly that a new mode of existence becomes possible — not a change in
             appearance or behaviour, but the emergence of a new formative order.
           </p>
-          <p className="mt-8 max-w-3xl font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+          <p className="mt-8 max-w-3xl font-label text-xs leading-loose tracking-[0.08em] text-gold-dim">
             EXISTING FORM → DISSOLUTION OF FIXATION → LIBERATION OF FORCE → RE-PATTERNING → RENEWED
             EMBODIMENT
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Three depths, told apart
             </p>
             <div className="mt-8 space-y-px">
@@ -10410,7 +10410,7 @@ function Index() {
                 ["Transformation", "reorganises the relationship among pattern, force, form and purpose", "It changes not only what a being does but what kinds of action have become possible."],
               ].map(([a, b, c]) => (
                 <div key={a} className="grid gap-1 border-b border-border py-4 sm:grid-cols-[8rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span>
                     <span className="font-serif text-base italic text-bone/80">{b}</span>
                     <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{c}</span>
@@ -10434,7 +10434,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The formative thread
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10463,7 +10463,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What receives the liberated force
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10493,7 +10493,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What &ldquo;higher&rdquo; means here
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10516,7 +10516,7 @@ function Index() {
                 Transformation reveals the undeveloped virtue imprisoned within the distorted form.
               </span>
             </p>
-            <p className="mt-8 font-mono text-xs leading-loose tracking-[0.08em] text-gold-dim">
+            <p className="mt-8 font-label text-xs leading-loose tracking-[0.08em] text-gold-dim">
               NEW POSSIBILITY → SYMBOLIC IMAGE → EMOTIONAL INVESTMENT → REPEATED ACTION → FORMATIVE
               INERTIA → EMBODIED CHARACTER
             </p>
@@ -10530,7 +10530,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Metastoicheiōsis · trans-elementation
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10592,7 +10592,7 @@ function Index() {
         <Backdrop src="/bg/stone-aqueduct-in-morning-mist.webp" opacity={0.21} position="center 45%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
           <KhekerFrieze className="mb-12" />
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLVIII · Heka
           </p>
           <div className="mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2">
@@ -10630,7 +10630,7 @@ function Index() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               How the word is written
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-4">
@@ -10642,7 +10642,7 @@ function Index() {
               ].map(([g, draws, sound]) => (
                 <div key={g} className="border-t border-border pt-4">
                   <Sign s={g as "V28"} size="md" className="block text-gold" />
-                  <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">
+                  <p className="mt-3 font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">
                     {g} · {sound}
                   </p>
                   <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{draws}</p>
@@ -10679,7 +10679,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The shape of an operation
             </p>
             <div className="mt-8">
@@ -10700,7 +10700,7 @@ function Index() {
                       i === 0 ? "border-l border-gold/25" : ""
                     } border-r border-gold/25`}
                   >
-                    <p className="font-mono text-[9.5px] uppercase leading-relaxed tracking-[0.12em] text-gold-dim">
+                    <p className="font-label text-[9.5px] uppercase leading-relaxed tracking-[0.12em] text-gold-dim">
                       {stage}
                     </p>
                     {w ? (
@@ -10711,7 +10711,7 @@ function Index() {
                   </div>
                 ))}
               </div>
-              <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
+              <p className="mt-3 font-label text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
                 Sky above, register line below · the two stages the Egyptians named are marked: rn,
                 the name, and ḥw, authoritative utterance
               </p>
@@ -10735,7 +10735,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Sia, Hu, and Heka
             </p>
             <div className="mt-8 space-y-px">
@@ -10747,7 +10747,7 @@ function Index() {
                 <div key={a} className="grid gap-2 border-b border-border py-5 sm:grid-cols-[9rem_1fr]">
                   <span>
                     <Hiero w={w as "sia"} size="md" className="block text-gold" />
-                    <span className="mt-2 block font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                    <span className="mt-2 block font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   </span>
                   <span>
                     <span className="font-serif text-base italic text-bone/80">{b}</span>
@@ -10785,7 +10785,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What it was given for
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10802,7 +10802,7 @@ function Index() {
                 <br />
                 guarding them by day and by night.
               </p>
-              <footer className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-gold-dim">
+              <footer className="mt-4 font-label text-[10px] uppercase tracking-[0.18em] text-gold-dim">
                 Instruction for King Merikare, lines 136–137 · Lichtheim&rsquo;s rendering; Parkinson
                 translates the last clause &ldquo;watching over them by night and by day&rdquo;
               </footer>
@@ -10827,7 +10827,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The name, and what it is not
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10890,7 +10890,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Who did it, and where it was kept
             </p>
             <div className="mt-8 flex flex-wrap items-baseline gap-x-6 gap-y-3">
@@ -10927,7 +10927,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Taking the text into the body
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -10954,7 +10954,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What cannot simply be copied
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11002,7 +11002,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Six questions, not one
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11020,7 +11020,7 @@ function Index() {
                 "Did it contribute to right relation in the surrounding field?",
               ].map((q, i) => (
                 <li key={q} className="grid grid-cols-[2rem_1fr] gap-4">
-                  <span className="font-mono text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-label text-[10px] text-gold-dim">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-base leading-relaxed text-muted-foreground">{q}</span>
                 </li>
               ))}
@@ -11039,7 +11039,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The register of words
             </p>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
@@ -11103,7 +11103,7 @@ function Index() {
         <SectionGlyph delay={-680} />
         <Backdrop src="/bg/sea-stack-in-pale-tide.webp" opacity={0.16} position="center 45%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § XLIX · Spirit, Soul, and Body
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -11133,7 +11133,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               What microcosm means here
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11161,7 +11161,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Intensity does not establish origin
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11172,7 +11172,7 @@ function Index() {
             </p>
             <div className="mt-8 grid gap-8 lg:grid-cols-2">
               <div className="border-l-2 border-gold/40 pl-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold">
                   Authentic influence
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -11180,7 +11180,7 @@ function Index() {
                 </p>
               </div>
               <div className="border-l-2 border-bone/30 pl-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone/80">
+                <p className="font-label text-[10px] uppercase tracking-[0.2em] text-bone/80">
                   Counterfeit illumination
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -11194,7 +11194,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Why the body is not merely physical
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11227,7 +11227,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Practice as architectural work
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11261,7 +11261,7 @@ function Index() {
         <SectionGlyph delay={-695} />
         <Backdrop src="/bg/water-cascading-from-carved-stone-vessel.webp" opacity={0.34} position="center 45%" scrim={0.22} portrait />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § L · The Etheric Body
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -11284,7 +11284,7 @@ function Index() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Vital, and formative
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11316,7 +11316,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Depletion is not an empty tank
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11346,7 +11346,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Pattern acting as process
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11390,7 +11390,7 @@ function Index() {
         <SectionGlyph delay={-710} />
         <Backdrop src="/bg/tidal-pool-below-sea-cliff.webp" opacity={0.16} position="center 40%" scrim={0.22} portrait anchor="left" />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § LI · The Astral and Psychic Layers
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -11414,7 +11414,7 @@ function Index() {
           </p>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Desire, image, sensation
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11455,7 +11455,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Quality and dynamic state
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11482,9 +11482,9 @@ function Index() {
               ))}
               <div className="grid gap-1 pt-2 sm:grid-cols-[6rem_1fr_1fr_1fr]">
                 <span />
-                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">under sattva</span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">under rajas</span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-gold-dim">under tamas</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">under sattva</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">under rajas</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.15em] text-gold-dim">under tamas</span>
               </div>
             </div>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11505,7 +11505,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Memory, complex, and the returning configuration
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11528,7 +11528,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Emotion, dream, imagination
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11562,7 +11562,7 @@ function Index() {
                 ["Contemplative", "becomes receptive to symbolic relations the discursive mind cannot easily generate"],
               ].map(([a, b]) => (
                 <div key={a} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[9rem_1fr]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
+                  <span className="font-label text-[10px] uppercase tracking-[0.12em] text-gold">{a}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{b}</span>
                 </div>
               ))}
@@ -11576,7 +11576,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Phantasia, and what appearance does not prove
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11617,7 +11617,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The theatre, and who is shaping it
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11672,7 +11672,7 @@ function Index() {
         <SectionGlyph delay={-725} />
         <Backdrop src="/bg/stream-through-lit-cave-mouth.webp" opacity={0.28} position="center 50%" scrim={0.22} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § LII · Soul and Interior Life
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">Ψυχή</h2>
@@ -11707,7 +11707,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Memory, desire, image, identity
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11747,7 +11747,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A field, not a collection
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11782,7 +11782,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The lived topology
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11808,7 +11808,7 @@ function Index() {
           </div>
 
           <div className="mt-24 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               Where force becomes meaning
             </p>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
@@ -11862,7 +11862,7 @@ function Index() {
         <SectionGlyph delay={-490} />
         <Backdrop src="/bg/cabinet-of-curiosities-in-lamplight.webp" opacity={0.4} position="center 50%" scrim={0.2} />
         <div className="relative mx-auto max-w-6xl px-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             § Lexicon · Where the Terms Are Defined
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
@@ -11882,7 +11882,7 @@ function Index() {
       <section id="unified" className="relative isolate border-t border-border py-32">
         <Backdrop src="/bg/night-crater-with-glowing-lava.webp" opacity={0.5} position="center 50%" scrim={0.05} />
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
             The Unified Formula
           </p>
           <h2 className="mt-6 font-serif text-4xl leading-tight">
@@ -11909,7 +11909,7 @@ function Index() {
                 key={i}
                 className="group grid grid-cols-[auto_1fr] items-baseline gap-6 border-b border-border py-5 transition-colors hover:border-gold/40"
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold-dim">
+                <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-dim">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="font-serif text-lg leading-relaxed text-bone/90 sm:text-xl">
@@ -11920,7 +11920,7 @@ function Index() {
           </div>
 
           <div className="mx-auto mt-16 max-w-3xl text-left">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold-dim">
+            <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               The same arc, read through the laws of maintenance
             </p>
             <p className="mt-5 font-serif text-lg leading-relaxed text-bone/85">
@@ -11940,7 +11940,7 @@ function Index() {
             </p>
           </div>
 
-          <p className="mt-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+          <p className="mt-12 font-label text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
             and the field is altered for what comes after
           </p>
         </div>
@@ -11983,7 +11983,7 @@ function Index() {
         </div>
 
         <div className="relative mx-auto max-w-3xl px-6 text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-gold">
+          <p className="font-label text-[10px] uppercase tracking-[0.4em] text-gold">
             Μεταμόρφωσις · The Final Formula
           </p>
           <div className="mt-12 space-y-4 font-serif text-lg italic leading-relaxed text-bone/85 sm:text-xl md:text-2xl">
@@ -12019,7 +12019,7 @@ function Index() {
             <br />
             The visible is the invisible <span className="text-gold">brought to rest</span>.
           </p>
-          <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+          <p className="mt-10 font-label text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
             Ω · Kosmos — an ordered beauty — an architecture of hidden forces
           </p>
         </div>
@@ -12031,7 +12031,7 @@ function Index() {
           <div className="min-w-0 truncate font-serif text-sm italic text-muted-foreground">
             The Architecture of Hidden Forces
           </div>
-          <div className="shrink-0 font-mono text-[10px] uppercase tracking-[0.4em] text-gold-dim">
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.4em] text-gold-dim">
             MMXXVI
           </div>
         </div>
