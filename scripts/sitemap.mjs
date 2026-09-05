@@ -5,7 +5,9 @@
  *   SITE_ORIGIN=https://example.org npm run sitemap
  *
  * A sitemap has to carry absolute addresses, so it is written only when the
- * site's origin is known — set SITE_ORIGIN in the environment the build runs
+ * site's origin is known. The site lives at thearchitectureofhiddenforces.com, which
+ * is the default; set SITE_ORIGIN in the environment the build runs to point a
+ * mirror or a staging copy elsewhere.
  * in. Without it this prints a note and writes nothing, and the build goes on;
  * with it, public/sitemap.xml is (re)written and robots.txt points at it. The
  * pages come from the sources of truth: the routes for the static pages, the
@@ -19,7 +21,7 @@ import { parseEntry } from "./lib/frontmatter.mjs";
 import { entryFiles } from "./lib/graph.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const origin = (process.env.SITE_ORIGIN ?? "").replace(/\/+$/, "");
+const origin = (process.env.SITE_ORIGIN ?? "https://thearchitectureofhiddenforces.com").replace(/\/+$/, "");
 const out = join(root, "public/sitemap.xml");
 const robots = join(root, "public/robots.txt");
 

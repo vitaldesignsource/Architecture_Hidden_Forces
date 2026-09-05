@@ -15,7 +15,13 @@
  *
  * The variants are not committed — .gitignore holds both directories — and a
  * variant newer than its source is left alone, so a rerun costs nothing.
- * Needs python3 with Pillow.
+ *
+ * The resizing is done by sharp, which installs with the package and runs
+ * wherever Node does, including a hosting service's build machine. Where
+ * sharp cannot load, python3 with Pillow is tried; where neither is there,
+ * the sources are copied under both names unchanged and the build goes on —
+ * a page that names three candidates must find three files, and a build
+ * must never fail for want of a smaller picture.
  */
 import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -36,6 +42,16 @@ for (const f of files)
     if (!existsSync(dst) || statSync(dst).mtimeMs < statSync(src).mtimeMs) jobs.push([src, dst, w]);
   }
 
+async function withSharp() {
+  const { default: sharp } = await import("sharp");
+  for (const [src, dst, w] of jobs) {
+    const meta = await sharp(src).metadata();
+    if (meta.width > w * 1.1) await sharp(src).resize({ width: w }).webp({ quality: 80, effort: 4 }).toFile(dst);
+    else copyFileSync(src, dst);
+  }
+  return "sharp";
+}
+
 const PY = `
 import json, shutil, sys
 from PIL import Image
@@ -48,8 +64,28 @@ for src, dst, w in jobs:
     else:
         shutil.copyfile(src, dst)
 `;
-if (jobs.length) {
+function withPillow() {
   // in batches, so the argument list stays well under the OS limit
-  for (let i = 0; i < jobs.length; i += 120) execFileSync("python3", ["-c", PY, JSON.stringify(jobs.slice(i, i + 120))], { stdio: "inherit" });
+  for (let i = 0; i < jobs.length; i += 120)
+    execFileSync("python3", ["-c", PY, JSON.stringify(jobs.slice(i, i + 120))], { stdio: ["ignore", "inherit", "pipe"] });
+  return "pillow";
 }
-console.log(`backdrops: ${files.length} sources, ${jobs.length} variants written`);
+function byCopy() {
+  for (const [src, dst] of jobs) copyFileSync(src, dst);
+  return "copy";
+}
+
+let how = "none";
+if (jobs.length) {
+  try {
+    how = await withSharp();
+  } catch (e1) {
+    try {
+      how = withPillow();
+    } catch (e2) {
+      console.warn(`backdrops: neither sharp nor Pillow could resize (${(e1 && e1.message) || e1}); copying sources unchanged`);
+      how = byCopy();
+    }
+  }
+}
+console.log(`backdrops: ${files.length} sources, ${jobs.length} variants written${jobs.length ? ` by ${how}` : ""}`);
