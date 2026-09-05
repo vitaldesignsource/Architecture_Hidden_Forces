@@ -10,6 +10,8 @@ import { ArchitectureIndex } from "@/components/ArchitectureIndex";
 import { Lexicon } from "@/components/Lexicon";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+import { NavStrip } from "@/components/NavStrip";
+import { ENTRIES as CONTENTS } from "@/lib/contents";
 
 // the palette holds the whole index; it is fetched on the first search
 const SearchPalette = lazy(() => import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })));
@@ -229,6 +231,13 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+/** The numeral of the section the reader is in, for the phone bar; the year
+ *  above the sections and between the movements, where there is none. */
+function numeral(active: string) {
+  const n = CONTENTS.find((e) => e.id === active)?.n;
+  return n && n !== "—" ? `§ ${n}` : "MMXXVI";
+}
+
 function Index() {
   const active = useActiveSection();
   // search: the palette carries the index of all three volumes, so it arrives
@@ -245,8 +254,10 @@ function Index() {
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
           <a href="#top" className="min-w-0">
-            <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
-              The Architecture<span className="hidden sm:inline"> of Hidden Forces</span>
+            {/* The name gives way before the waypoints do: from lg the two other
+                volumes join the bar, and until xl that is the room the name's tail took. */}
+            <div className="truncate font-serif text-[15px] italic tracking-wide sm:text-lg">
+              The Architecture<span className="hidden sm:inline lg:hidden xl:inline"> of Hidden Forces</span>
             </div>
           </a>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
@@ -264,17 +275,23 @@ function Index() {
               </a>
             ))}
             </div>
-            <Link
-              to="/phos"
-              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
-            >
-              Phōs <CrossMark className="text-gold/70" />
-            </Link>
+            {/* The other two volumes, from here as from every bar: a volume that
+                points only to one of its siblings leaves the third to be found. */}
+            <div className="hidden shrink-0 items-center gap-4 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 lg:flex xl:gap-5 xl:pl-6">
+              <Link to="/phos" className="whitespace-nowrap transition-colors hover:text-gold">
+                Phōs <CrossMark className="text-gold/70" />
+              </Link>
+              <Link to="/ecology" className="whitespace-nowrap transition-colors hover:text-gold">
+                Ecology <CrossMark className="text-gold/70" />
+              </Link>
+            </div>
             <SearchButton onClick={openSearch} />
             <ContentsPanel active={active} />
           </div>
-          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
-            XVIII
+          {/* Where the reader is, on a phone: the numeral of the section in view,
+              which the bar has no room to name. A fixed numeral here read as one. */}
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden" aria-live="polite">
+            {numeral(active)}
           </div>
         </div>
 
@@ -282,7 +299,7 @@ function Index() {
             rather than a longer list: 43 entries in a horizontal scroller was not
             navigation, it was an unsorted index competing with the real one. */}
         <div className="border-t border-border/50 lg:hidden">
-          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
+          <NavStrip current={active}>
             {NAV.map((l) => (
               <a
                 key={l.id}
@@ -301,7 +318,10 @@ function Index() {
             >
               Phōs <CrossMark className="text-gold/70" />
             </Link>
-          </div>
+            <Link to="/ecology" className="whitespace-nowrap py-1 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold">
+              Ecology <CrossMark className="text-gold/70" />
+            </Link>
+          </NavStrip>
         </div>
       </nav>
 

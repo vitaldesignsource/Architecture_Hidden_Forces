@@ -8,6 +8,7 @@ import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSecti
 import { PROVINCES, STATIONS, isProvince, type Station } from "@/lib/ecology";
 import type { Entry } from "@/lib/contents";
 import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+import { NavStrip } from "@/components/NavStrip";
 
 // the palette holds the whole index; it is fetched on the first search
 const SearchPalette = lazy(() => import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })));
@@ -104,18 +105,22 @@ export function EcologyFrame({
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
-          <Link to="/ecology" className="min-w-0">
+          <Link to="/ecology" activeOptions={{ exact: true }} className="min-w-0">
             {/* The name gives way before the circulation does: the six stations, the
-                provinces, search and contents keep their room at every width, and the
-                bar is capped at 1280px, so from lg the title is Ecology alone; a
-                tablet has the room for the whole name, a phone for the name's head. */}
+                provinces, the lexicon, the other volumes, search and contents keep
+                their room, and the bar is capped at 1280px, so from xl the title is
+                Ecology alone; below xl the bar is the strip, and a tablet has the
+                room for the whole name, a phone for the name's head. */}
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
-              <span className="hidden sm:inline lg:hidden">The Hidden </span>Ecology<span className="hidden sm:inline lg:hidden"> of Formation</span>
+              <span className="hidden sm:inline xl:hidden">The Hidden </span>Ecology<span className="hidden sm:inline xl:hidden"> of Formation</span>
             </div>
           </Link>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em]">
-            <div className="hidden items-center gap-4 lg:flex">
-              {STATIONS.map((s, i) => (
+            {/* One row holds everything only from xl; between lg and xl the bar
+                once showed the stations and nothing else, so a tablet had no way to
+                a province. Below xl the strip carries the whole circulation instead. */}
+            <div className="hidden items-center gap-4 xl:flex">
+              {STATIONS.map((s) => (
                 <Link
                   key={s.id}
                   to={s.to}
@@ -123,39 +128,51 @@ export function EcologyFrame({
                   className={`whitespace-nowrap transition-colors hover:text-gold ${here === s.id ? "text-gold" : ""}`}
                   title={s.title}
                 >
-                  {i > 0 && <span className="mr-4 hidden text-bone/25 xl:inline" aria-hidden>→</span>}
                   {s.title.replace(/^The /, "").replace(/ of .*$/, "")}
                 </Link>
               ))}
               <Link to="/ecology/morphaither" className="text-gold-dim transition-colors hover:text-gold" title="The circulation returns to Morphaithēr">
                 <ReturnMark />
               </Link>
+              {/* The provinces and the lexicon, at every width the bar exists at:
+                  from lg to xl the bar once offered no way to a province at all. */}
               <Link
                 to="/ecology"
                 hash="eco-provinces"
+                activeOptions={{ exact: true, includeHash: true }}
                 aria-current={inProvince ? "true" : undefined}
-                className={`hidden whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold xl:inline-flex xl:items-baseline xl:gap-2 ${inProvince ? "text-gold" : "text-bone/70"}`}
+                className={`inline-flex items-baseline gap-2 whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold ${inProvince ? "text-gold" : "text-bone/70"}`}
                 title="The provinces: beneath, before, between and after the stations"
               >
                 <DescentMark className="text-gold/60" />
                 Provinces
               </Link>
+              <Link
+                to="/ecology/lexicon"
+                aria-current={here === "lexicon" ? "page" : undefined}
+                className={`whitespace-nowrap transition-colors hover:text-gold ${here === "lexicon" ? "text-gold" : "text-bone/70"}`}
+                title="The layer's coined terms, each defined once"
+              >
+                Lexicon
+              </Link>
             </div>
-            <Link
-              to="/"
-              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block"
-            >
-              Architecture <CrossMark className="text-gold/70" />
-            </Link>
+            <div className="hidden shrink-0 items-center gap-4 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 xl:flex">
+              <Link to="/" className="whitespace-nowrap transition-colors hover:text-gold">
+                Architecture <CrossMark className="text-gold/70" />
+              </Link>
+              <Link to="/phos" className="whitespace-nowrap transition-colors hover:text-gold">
+                Phōs <CrossMark className="text-gold/70" />
+              </Link>
+            </div>
             <SearchButton onClick={openSearch} />
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
           </div>
-          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
+          <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim xl:hidden">
             {station ? (station.region ? "Province" : `${station.n} · VI`) : "ΟΙΚΟΣ"}
           </div>
         </div>
-        <div className="border-t border-border/50 lg:hidden">
-          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
+        <div className="border-t border-border/50 xl:hidden">
+          <NavStrip current={here}>
             {STATIONS.map((s) => (
               <Link key={s.id} to={s.to} aria-current={here === s.id ? "page" : undefined}
                     className={`whitespace-nowrap py-1 transition-colors hover:text-gold ${here === s.id ? "text-gold" : ""}`}>
@@ -169,10 +186,17 @@ export function EcologyFrame({
                 {p.short}
               </Link>
             ))}
+            <Link to="/ecology/lexicon" aria-current={here === "lexicon" ? "page" : undefined}
+                  className={`whitespace-nowrap py-1 transition-colors hover:text-gold ${here === "lexicon" ? "text-gold" : "text-bone/70"}`}>
+              Lexicon
+            </Link>
             <Link to="/" className="ml-auto whitespace-nowrap border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold">
               Architecture <CrossMark className="text-gold/70" />
             </Link>
-          </div>
+            <Link to="/phos" className="whitespace-nowrap py-1 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold">
+              Phōs <CrossMark className="text-gold/70" />
+            </Link>
+          </NavStrip>
         </div>
       </nav>
 

@@ -92,14 +92,14 @@ export function RevealText({
     >
       {words.map((word, wi) => (
         <span key={wi} className="rt-word">
-          {Array.from(word).map((ch) => {
+          {Array.from(word).map((ch, ci, chars) => {
             const delay = startDelay + idx * perChar;
             idx += 1;
             return (
               <span
                 key={idx}
                 className="rt-char"
-                style={{ animationDelay: `${delay.toFixed(3)}s` }}
+                style={{ animationDelay: `${delay.toFixed(3)}s`, "--rt-i": (ci - (chars.length - 1) / 2).toFixed(1) } as CSSProperties}
                 aria-hidden="true"
               >
                 {ch}

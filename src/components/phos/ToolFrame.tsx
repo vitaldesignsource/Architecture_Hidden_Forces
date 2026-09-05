@@ -39,7 +39,7 @@ export function ToolFrame({
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-            <Link to="/phos/tools" className="hover:underline">{eyebrow}</Link>{name ? <> · {name}</> : null}
+            {name ? <><Link to="/phos/tools" className="hover:underline">{eyebrow}</Link> · {name}</> : eyebrow}
           </p>
           <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-tight sm:text-5xl">{title}</h1>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">{lede}</p>

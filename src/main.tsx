@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 import { RouteError } from "@/components/RouteError";
+import { NotFound } from "@/components/NotFound";
 import { healStaleBuild, markPreloadError } from "@/lib/stale";
 import "./styles.css";
 
@@ -15,7 +16,7 @@ window.addEventListener("vite:preloadError", (event) => {
   healStaleBuild();
 });
 
-const router = createRouter({ routeTree, defaultErrorComponent: RouteError });
+const router = createRouter({ routeTree, defaultErrorComponent: RouteError, defaultNotFoundComponent: NotFound });
 
 declare module "@tanstack/react-router" {
   interface Register {

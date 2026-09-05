@@ -112,18 +112,23 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* The letters begin spread apart and gather. The spread is a transform from
+   each letter's offset from its word's centre (--rt-i), never letter-spacing:
+   spacing is layout, and while it ran the title wrapped onto extra lines and
+   the whole page beneath moved by their height — which is why a link to
+   /#laws used to land a hundred pixels short of it. */
 @keyframes letter-coalesce {
-  0%   { opacity: 0; filter: blur(var(--rt-blur, 18px)); transform: translateY(var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); letter-spacing: var(--rt-letter-spacing, 0.4em); color: var(--gold); text-shadow: 0 0 24px color-mix(in oklab, var(--gold) 60%, transparent); }
-  55%  { opacity: 1; filter: blur(2px); transform: translateY(-0.05em) scale(1.02) rotate(0.5deg); letter-spacing: 0.02em; }
-  100% { opacity: 1; filter: blur(0); transform: none; letter-spacing: normal; color: inherit; }
+  0%   { opacity: 0; filter: blur(var(--rt-blur, 18px)); transform: translate(calc(var(--rt-i, 0) * var(--rt-letter-spacing, 0.4em)), var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); color: var(--gold); text-shadow: 0 0 24px color-mix(in oklab, var(--gold) 60%, transparent); }
+  55%  { opacity: 1; filter: blur(2px); transform: translate(calc(var(--rt-i, 0) * 0.02em), -0.05em) scale(1.02) rotate(0.5deg); }
+  100% { opacity: 1; filter: blur(0); transform: none; color: inherit; }
 }
 
 /* The same arrival for the glinting letters, whose colour the glint owns:
    coalesce without the colour, shadow and filter frames. */
 @keyframes letter-coalesce-clip {
-  0%   { opacity: 0; transform: translateY(var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); letter-spacing: var(--rt-letter-spacing, 0.4em); }
-  55%  { opacity: 1; transform: translateY(-0.05em) scale(1.02) rotate(0.5deg); letter-spacing: 0.02em; }
-  100% { opacity: 1; transform: none; letter-spacing: normal; }
+  0%   { opacity: 0; transform: translate(calc(var(--rt-i, 0) * var(--rt-letter-spacing, 0.4em)), var(--rt-translate-y, 0.5em)) scale(var(--rt-scale, 1.35)) rotate(var(--rt-rotate, -6deg)); }
+  55%  { opacity: 1; transform: translate(calc(var(--rt-i, 0) * 0.02em), -0.05em) scale(1.02) rotate(0.5deg); }
+  100% { opacity: 1; transform: none; }
 }
 
 @keyframes letter-rise {

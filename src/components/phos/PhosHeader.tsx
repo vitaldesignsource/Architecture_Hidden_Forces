@@ -2,6 +2,8 @@ import type { ReactNode } from "react";
 import { useCallback, useEffect, useState, lazy, Suspense } from "react";
 import { Link } from "@tanstack/react-router";
 import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+import { CrossMark } from "@/components/CrossMark";
+import { NavStrip } from "@/components/NavStrip";
 
 // The palette carries the entry index; it arrives when a reader first asks for it.
 const SearchPalette = lazy(() =>
@@ -13,10 +15,11 @@ const SearchPalette = lazy(() =>
  *
  * The two treatises carry waypoints into a single long page. An encyclopaedia
  * page is short and one of hundreds, so its bar carries places instead: the
- * Portal, the browse index, the volume this all belongs to, and the first
- * volume. The Contents panel is handed in by the page, since each page lists
- * something different in it — the Portal its own sections, a division its
- * entries — and marks where the reader is.
+ * Portal, the browse index, the instruments, and then the other two volumes,
+ * set as every bar sets them. The wordmark is the way to the volume's own
+ * essay, as a wordmark is. The Contents panel is handed in by the page, since
+ * each page lists something different in it — the Portal its own sections, a
+ * division its entries — and marks where the reader is.
  */
 export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNode }) {
   const [searching, setSearching] = useState(false);
@@ -33,11 +36,15 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
       <Link to="/phos/tools" className="whitespace-nowrap transition-colors hover:text-gold" activeProps={{ className: "text-gold" }}>
         Instruments
       </Link>
-      <Link to="/phos" className="whitespace-nowrap transition-colors hover:text-gold">
-        The Volume
-      </Link>
+    </>
+  );
+  const volumes = (
+    <>
       <Link to="/" className="whitespace-nowrap transition-colors hover:text-gold">
-        The Architecture
+        Architecture <CrossMark className="text-gold/70" />
+      </Link>
+      <Link to="/ecology" className="whitespace-nowrap transition-colors hover:text-gold">
+        Ecology <CrossMark className="text-gold/70" />
       </Link>
     </>
   );
@@ -45,7 +52,7 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
         <div className="min-w-0">
-          <Link to="/phos" className="block truncate font-serif text-base italic tracking-wide sm:text-lg">
+          <Link to="/phos" activeOptions={{ exact: true }} className="block truncate font-serif text-base italic tracking-wide transition-colors hover:text-gold sm:text-lg">
             Phōs<span className="hidden sm:inline"> · The Luminous Architecture</span>
           </Link>
           {crumb && (
@@ -56,6 +63,9 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
         </div>
         <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
           <div className="hidden items-center gap-4 lg:flex xl:gap-6">{links}</div>
+          <div className="hidden shrink-0 items-center gap-4 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 lg:flex xl:gap-5 xl:pl-6">
+            {volumes}
+          </div>
           <SearchButton onClick={openSearch} />
           {panel}
         </div>
@@ -66,9 +76,12 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
         </Suspense>
       )}
       <div className="border-t border-border/50 lg:hidden">
-        <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
+        <NavStrip>
           {links}
-        </div>
+          <div className="ml-auto flex items-center gap-4 border-l border-border py-1 pl-4 font-serif text-xs normal-case tracking-normal text-bone/80">
+            {volumes}
+          </div>
+        </NavStrip>
       </div>
     </nav>
   );

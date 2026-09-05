@@ -24,7 +24,7 @@ export function SearchButton({ onClick }: { onClick: () => void }) {
     <button onClick={onClick} aria-label="Search the three volumes" aria-keyshortcuts="Meta+K Control+K /"
       className="flex items-center gap-2 border border-border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-gold/60 hover:text-gold">
       <span>Search</span>
-      <span className="hidden text-[9px] text-gold-dim sm:inline">⌘K</span>
+      <span className="hidden text-[9px] text-gold-dim xl:inline">⌘K</span>
     </button>
   );
 }

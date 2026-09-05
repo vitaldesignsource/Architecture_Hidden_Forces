@@ -11,6 +11,7 @@ import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { ContentsPanel } from "@/components/ContentsPanel";
 import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+import { NavStrip } from "@/components/NavStrip";
 
 // the palette holds the whole index; it is fetched on the first search
 const SearchPalette = lazy(() => import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })));
@@ -204,7 +205,7 @@ function Phos() {
             </div>
           </a>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
-            <div className="hidden items-center gap-4 lg:flex xl:gap-6">
+            <div className="hidden items-center gap-2.5 lg:flex xl:gap-6">
               {NAV.map((l) => (
                 <a
                   key={l.id}
@@ -219,17 +220,19 @@ function Phos() {
               ))}
               <Link
                 to="/phos/portal"
-                className="whitespace-nowrap border-l border-border pl-4 text-gold-dim transition-colors hover:text-gold xl:pl-6"
+                className="whitespace-nowrap border-l border-border pl-2.5 text-gold-dim transition-colors hover:text-gold xl:pl-6"
               >
                 Portal <CrossMark className="text-gold/70" />
               </Link>
             </div>
-            <Link
-              to="/"
-              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
-            >
-              Architecture <CrossMark className="text-gold/70" />
-            </Link>
+            <div className="hidden shrink-0 items-center gap-3 border-l border-border pl-3 font-serif text-sm normal-case tracking-normal text-bone/80 lg:flex xl:gap-5 xl:pl-6">
+              <Link to="/" className="whitespace-nowrap transition-colors hover:text-gold">
+                Architecture <CrossMark className="text-gold/70" />
+              </Link>
+              <Link to="/ecology" className="whitespace-nowrap transition-colors hover:text-gold">
+                Ecology <CrossMark className="text-gold/70" />
+              </Link>
+            </div>
             <SearchButton onClick={openSearch} />
             <ContentsPanel
               active={active}
@@ -246,7 +249,7 @@ function Phos() {
         </div>
 
         <div className="border-t border-border/50 lg:hidden">
-          <div className="aoh-navstrip mx-auto flex max-w-7xl gap-5 overflow-x-auto px-6 pb-3 pt-2 font-label text-[10px] uppercase tracking-[0.2em]">
+          <NavStrip current={active}>
             {NAV.map((l) => (
               <a
                 key={l.id}
@@ -268,7 +271,10 @@ function Phos() {
             >
               Architecture <CrossMark className="text-gold/70" />
             </Link>
-          </div>
+            <Link to="/ecology" className="whitespace-nowrap py-1 font-serif text-xs normal-case tracking-normal text-bone/80 transition-colors hover:text-gold">
+              Ecology <CrossMark className="text-gold/70" />
+            </Link>
+          </NavStrip>
         </div>
       </nav>
 

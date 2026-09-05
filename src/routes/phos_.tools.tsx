@@ -18,7 +18,7 @@ export const Route = createFileRoute("/phos_/tools")({
 function Tools() {
   return (
     <ToolFrame
-      eyebrow="Portal"
+      eyebrow="Instruments"
       title={<>Ten ways to ask the encyclopaedia a <span className="italic text-gold">question</span></>}
       lede="An encyclopaedia is a long collection of articles until it can be asked questions. Each instrument reads the same facets every entry carries and answers one question with them. Seven are live; three wait on the facets that would feed them — qualities and texts — being carried by enough entries to answer with."
       backdrop="mountain-observatory-above-cloud"
