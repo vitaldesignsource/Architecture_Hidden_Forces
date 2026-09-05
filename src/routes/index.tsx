@@ -860,7 +860,7 @@ function Index() {
           {/* The circuit, then the ladder: shape first, then depth */}
           <div className="mt-20 border-t border-border pt-10">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-              <span lang="el" className="scr-greek">Κύκλος</span> · The Living Circuit
+              <span lang="el" className="scr-greek">Κύκλος</span> · The four in one circuit
             </p>
             <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,440px)_minmax(0,1fr)] lg:items-center">
               <EtherCircuit />
@@ -999,7 +999,24 @@ function Index() {
                 n: "IV",
                 greek: "Ζωή",
                 sign: "life" as SealKey,
-                seal: null as { name: string; reading: string } | null,
+                seal: {
+                  name: "The Living Circuit",
+                  reading: [
+                    "The seal represents the power by which separate processes are gathered into a self-renewing whole. It does not symbolise a seed, a soul, or the original pattern of a being; it symbolises the continuous activity that keeps a living form integrated once that form has begun to manifest.",
+                    "Its four interlocking currents express the principal movements of living organisation: reception, circulation, assimilation and renewal. Each current bends back into the others, showing that life does not proceed in a straight line — it continually returns its products to the whole. What is received is transformed; what is transformed becomes nourishment for further life.",
+                    "The pointed upper and lower poles establish a living axis. The upper point suggests inward reception and formative guidance, while the lower point indicates embodiment, posture and rooted presence; between them the lateral curves create mobility and exchange. So the seal combines vertical orientation with circulating movement: a living being possesses both an enduring posture and the capacity to adapt.",
+                    "The central black opening is essential. It is not a seed or an object hidden inside the organism. It represents the living interior — the open centre around which the organism continually reorganises itself. Life preserves identity without becoming completely closed or rigid.",
+                    "The seal is emerald or deep viridian green because Life Ether belongs to active vitality, restoration, growth and organic coherence. That distinguishes it from the violet Morphaithēric Seed, which carries concentrated formative identity, and from the pale opaline Morphaithēr, which holds universal formative possibility.",
+                  ],
+                  againstHead: "Life Ether is opposed to Earth in a precise way.",
+                  against: [
+                    ["Earth fixes form into position.", "Life Ether gives that form inner mobility."],
+                    ["Earth provides structural resistance.", "Life Ether circulates, repairs and renews within that structure."],
+                  ] as [string, string][],
+                  close:
+                    "In the full etheric sequence Warmth awakens, Light differentiates, Tone relates and Life integrates. The Life Ether seal therefore represents neither the origin nor the blueprint of a being, but the power through which its many parts remain one living being across time.",
+                  principle: "Life is the continuous restoration of wholeness through change.",
+                },
                 translit: "Zōē",
                 english: "Life Ether",
                 verb: "regenerates",
@@ -1081,7 +1098,28 @@ function Index() {
                             <Seal k={e.sign} size={72} className="shrink-0 text-gold/70" title={`${e.english} — ${e.seal.name}`} />
                             <div className="min-w-0">
                               <p className="font-serif text-lg italic text-gold">{e.seal.name}</p>
-                              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.seal.reading}</p>
+                              {(Array.isArray(e.seal.reading) ? e.seal.reading : [e.seal.reading]).map((para) => (
+                                <p key={para.slice(0, 40)} className="mt-2 text-sm leading-relaxed text-muted-foreground">{para}</p>
+                              ))}
+                              {"againstHead" in e.seal && (
+                                <p className="mt-5 text-sm leading-relaxed text-bone/85">{e.seal.againstHead}</p>
+                              )}
+                              {"against" in e.seal && e.seal.against && (
+                                <div className="mt-3 grid gap-2 sm:grid-cols-2 sm:gap-x-6">
+                                  {e.seal.against.map(([earth, life]) => (
+                                    <div key={earth} className="border-t border-border pt-3">
+                                      <p className="text-sm leading-relaxed text-bone/60">{earth}</p>
+                                      <p className="mt-1 text-sm leading-relaxed text-bone/85">{life}</p>
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                              {"close" in e.seal && (
+                                <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{e.seal.close}</p>
+                              )}
+                              {"principle" in e.seal && (
+                                <p className="mt-5 font-serif text-lg italic leading-relaxed text-bone/90">{e.seal.principle}</p>
+                              )}
                             </div>
                           </div>
                         </div>
