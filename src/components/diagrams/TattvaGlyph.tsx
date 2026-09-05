@@ -99,6 +99,19 @@ export function TattvaGlyph({ dominant, modifier = null, size = 40, className = 
 }
 
 /**
+ * A tattva's form set inside another drawing's svg, centred at (x, y) and s
+ * units across, in its canonical colour — so a figure that names the tattvas
+ * can show them as the cards do, not only spell them.
+ */
+export function TattvaMark({ k, x, y, s, opacity = 1 }: { k: TattvaKey; x: number; y: number; s: number; opacity?: number }) {
+  return (
+    <g transform={`translate(${x - s / 2} ${y - s / 2}) scale(${s / 100})`} opacity={opacity} aria-hidden>
+      {k === "akasha" ? <Form k="akasha" fill={TATTVAS.akasha.fill} stroke={{ colour: GOLD, width: 3 }} /> : <Form k={k} fill={TATTVAS[k].fill} />}
+    </g>
+  );
+}
+
+/**
  * A tattva on its own, framed as a card in the proportion of Regardie's set
  * (3½ × 4½ inches): a hairline on clay, the form at three-fifths of the width.
  */

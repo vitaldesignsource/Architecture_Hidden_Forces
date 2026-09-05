@@ -1,4 +1,5 @@
 import { lazy, Suspense, useCallback, useState } from "react";
+import { TattvaGlyph } from "@/components/diagrams/TattvaGlyph";
 import { ArrowMark, CycleMark } from "@/components/marks";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
@@ -11505,15 +11506,18 @@ function Index() {
               Disorder is one dominating beyond its measure, or arriving at the wrong time.
             </p>
             <div className="mt-8 space-y-px">
-              {[
-                ["Tejas", "lucid discrimination", "ambition, anger", "smouldering resentment"],
-                ["Apas", "compassion", "emotional hunger", "stagnant grief"],
-                ["Pṛthivī", "embodied reliability", "accumulation, control", "immobility, refusal"],
-                ["Vāyu", "intellectual flexibility", "anxious proliferation", "confused circulation"],
-                ["Ākāśa", "contemplative openness", "fascination with the unlimited", "vacant withdrawal"],
-              ].map(([t, s, r, m]) => (
-                <div key={t} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[6rem_1fr_1fr_1fr]">
-                  <span className="font-serif text-base text-gold">{t}</span>
+              {([
+                ["tejas", "Tejas", "lucid discrimination", "ambition, anger", "smouldering resentment"],
+                ["apas", "Apas", "compassion", "emotional hunger", "stagnant grief"],
+                ["prithivi", "Pṛthivī", "embodied reliability", "accumulation, control", "immobility, refusal"],
+                ["vayu", "Vāyu", "intellectual flexibility", "anxious proliferation", "confused circulation"],
+                ["akasha", "Ākāśa", "contemplative openness", "fascination with the unlimited", "vacant withdrawal"],
+              ] as const).map(([k, t, s, r, m]) => (
+                <div key={t} className="grid gap-1 border-b border-border py-3 sm:grid-cols-[7rem_1fr_1fr_1fr]">
+                  <span className="flex items-center gap-2.5 font-serif text-base text-gold">
+                    <TattvaGlyph dominant={k} size={18} decorative />
+                    {t}
+                  </span>
                   <span className="text-sm leading-relaxed text-bone/80">{s}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{r}</span>
                   <span className="text-sm leading-relaxed text-muted-foreground">{m}</span>
