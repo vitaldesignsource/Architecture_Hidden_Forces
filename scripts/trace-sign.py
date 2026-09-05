@@ -15,6 +15,11 @@ curved edge does not arrive as a row of facets. Hence two modes:
 
     python3 scripts/trace-sign.py design/seals/<name>.webp                 # strokes
     python3 scripts/trace-sign.py design/seals/<name>.webp --mode fill     # outline
+    python3 scripts/trace-sign.py design/seals/<name>.webp --mode layers   # one outline per colour
+
+A mark whose colours carry meaning is traced in layers: the ink is sorted into
+its few colours and each is traced on its own, so the page can draw the seal in
+its own inks or in one.
 
 Prints the entries for src/components/diagrams/Seals.tsx.
 Needs Pillow, which scripts/backdrops.mjs already requires.
@@ -236,6 +241,47 @@ def rdp(pts, eps):
     return [p for p, k in zip(pts, keep) if k]
 
 
+def layers_of(m, w, h, px, scale, keep=0.005):
+    """Sort the ink into its few colours; return (hue, mask) per colour, biggest first."""
+    from collections import Counter
+    counts = Counter()
+    for y in range(h):
+        for x in range(w):
+            if m[y][x]:
+                r, g, b = px[x, y]
+                counts[(r // 24, g // 24, b // 24)] += 1
+    total = sum(counts.values())
+    seeds = []
+    for (qr, qg, qb), n in counts.most_common():
+        if n < total * keep:
+            break
+        c = (qr * 24 + 12, qg * 24 + 12, qb * 24 + 12)
+        if all(sum((a - b) ** 2 for a, b in zip(c, s)) > 110 ** 2 for s in seeds):
+            seeds.append(c)
+    if not seeds:
+        return []
+    sums = [[0, 0, 0, 0] for _ in seeds]
+    masks = [[[False] * w for _ in range(h)] for _ in seeds]
+    for y in range(h):
+        for x in range(w):
+            if not m[y][x]:
+                continue
+            c = px[x, y]
+            i = min(range(len(seeds)), key=lambda k: sum((a - b) ** 2 for a, b in zip(c, seeds[k])))
+            masks[i][y][x] = True
+            for k in range(3):
+                sums[i][k] += c[k]
+            sums[i][3] += 1
+    out = []
+    for i, s in enumerate(sums):
+        if s[3] < total * 0.0015:
+            continue
+        hue = "#%02X%02X%02X" % tuple(round(s[k] / s[3]) for k in range(3))
+        out.append((hue, masks[i], s[3]))
+    out.sort(key=lambda t: -t[2])
+    return [(h_, m_) for h_, m_, _ in out]
+
+
 def main():
     src = sys.argv[1]
     step = 10.0
@@ -251,6 +297,24 @@ def main():
         sys.exit("no ink found")
     cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
     rmax = max(max(xs) - min(xs), max(ys) - min(ys)) / 2
+
+    def box(k):
+        def to_box(q):
+            return (50 + (q[0] - cx) * k, 50 + (q[1] - cy) * k)
+        return to_box
+
+    if mode == "layers":
+        span = max(max(xs) - min(xs), max(ys) - min(ys))
+        k = 100.0 / span
+        im2 = Image.open(src).convert("RGB")
+        im2 = im2.resize((w, h), Image.LANCZOS)
+        print(f"    // {src}, one outline per colour")
+        for hue, mask in layers_of(m, w, h, im2.load(), SCALE):
+            loops = outline(mask, w, h, eps)
+            d = "".join(curve_loop(loop, corner, box(k)) for loop in loops)
+            if d:
+                print(f'      {{ hue: "{hue}", d: "{d}" }},')
+        return
 
     if mode == "fill":
         loops = outline(m, w, h, eps)

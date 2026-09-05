@@ -9160,6 +9160,102 @@ function Index() {
             </p>
           </div>
 
+          <div className="mt-20 border-t border-border pt-8">
+            <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+              <span lang="el" className="scr-greek">Σφραγίς</span> · The Aitheric Confluence
+            </p>
+            <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,260px)_minmax(0,1fr)] lg:gap-12">
+              <div>
+                <Seal k="confluence" size="100%" className="mx-auto block w-full max-w-[260px]" tinted
+                      title="The Aitheric Confluence — Morphaithēr, a Seed, and the four ethers in right relation" />
+                <p className="mt-4 text-center font-serif text-lg italic text-gold">
+                  The Aitheric Confluence
+                </p>
+              </div>
+              <div className="min-w-0">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  Not a fifth ether, and not a further substance. It is the coordinated condition
+                  produced when Morphaithēr, a particular Morphaithēric Seed and the four ethers enter
+                  right relation — so the seal is a diagram of manifestation: the universal field
+                  surrounds the process, the individualised pattern holds its centre, and the etheric
+                  powers mediate between them.
+                </p>
+                <div className="mt-6 space-y-1.5 font-serif text-lg leading-relaxed text-bone/90">
+                  <p>Morphaithēr provides <span className="italic text-gold">possibility</span>.</p>
+                  <p>The Seed provides <span className="italic text-gold">identity</span>.</p>
+                  <p>The four ethers provide the <span className="italic text-gold">operations of becoming</span>.</p>
+                  <p>The Confluence is their <span className="italic text-gold">coordinated activity</span>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 max-w-3xl space-y-7">
+              {([
+                ["morphaither", "Morphaithēr", "the pale opaline structure, beyond the ring",
+                 "The universal form-bearing field. It stands behind and outside everything else because Morphaithēr exceeds every individual manifestation, and its open extensions say that this field cannot be enclosed within one organism, seal or event."],
+                ["warmth", "Warmth Ether", "the two broken crimson rings",
+                 "Warmth establishes intensive motion and the first pulse of time. The rings surround the inner operation because every manifestation needs a temporal field within which it can awaken and unfold; their openings, set at different points, keep them from becoming static circles and mark successive moments, rhythmic expansion, birth."],
+                ["light", "Light Ether", "the golden ray and its diamond",
+                 "It descends as undivided luminous procession, enters the hollow diamond of mediation, and differentiates into two lower rays. The diamond is receptive capacity: light becomes formative only through something able to receive and proportion it. The black division between the lower rays is Necessary Shadow, the distinction through which forms become intelligible."],
+                ["tone", "Tone Ether", "the eight blue currents",
+                 "They establish an architecture of nodes, intervals, ratios and affinities, and their separateness is essential. Tone does not organise by erasing differences; it places discrete identities into harmonic relationship, so the intervals between the arms mean as much as the arms."],
+                ["life", "Life Ether", "the emerald living circuit",
+                 "It surrounds the centre because Life gathers the distinctions Light produces and the relations Tone establishes into one functioning organism. Its returning movements are circulation, inner mobility, repair, posture, renewal — green for active vitality, as against violet for morphal memory."],
+                ["seed", "The Morphaithēric Seed", "the violet spiral and point",
+                 "The point is its Morphocrypt, the particular identity around which manifestation is organised; the spiral is its Cryptodynamis, the power by which one compressed pattern unfolds across scales. The Seed holds the centre because a confluence is always a confluence around some particular formative identity."],
+              ] as const).map(([k, term, place, d]) => (
+                <div key={term} className="grid gap-2 sm:grid-cols-[13rem_minmax(0,1fr)] sm:gap-6">
+                  <div className="flex items-start gap-3">
+                    <Seal k={k} size={22} className="mt-0.5 shrink-0" tinted decorative />
+                    <div className="min-w-0">
+                      <p className="font-serif text-base italic text-gold">{term}</p>
+                      <p className="mt-0.5 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{place}</p>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{d}</p>
+                </div>
+              ))}
+              <div className="grid gap-2 sm:grid-cols-[13rem_minmax(0,1fr)] sm:gap-6">
+                <div>
+                  <p className="font-serif text-base italic text-gold">The black spaces</p>
+                  <p className="mt-0.5 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                    the necessary intervals
+                  </p>
+                </div>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  They let the powers cooperate without collapsing into one another, and are read
+                  through the{" "}
+                  <Link to="/ecology/sea" className="text-bone/85 underline-offset-4 hover:text-gold hover:underline">
+                    Sea Between Causes
+                  </Link>
+                  : a true confluence is not an indiscriminate fusion. Warmth remains Warmth, Light
+                  remains Light, Tone remains Tone, Life remains Life. Their effectiveness depends on
+                  differentiated cooperation.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 max-w-3xl border-t border-border pt-8">
+              <p className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim">
+                The movement the seal encodes
+              </p>
+              <div className="mt-5 space-y-1.5 font-serif text-lg leading-relaxed text-bone/90">
+                <p>Morphaithēr holds the possible form.</p>
+                <p>The Seed concentrates a particular form.</p>
+                <p>Warmth <span className="italic text-gold">awakens</span> it.</p>
+                <p>Light <span className="italic text-gold">differentiates</span> it.</p>
+                <p>Tone <span className="italic text-gold">organises</span> it.</p>
+                <p>Life <span className="italic text-gold">integrates and renews</span> it.</p>
+              </div>
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
+                The sequence is logical rather than merely chronological. In an actual living
+                formation all these powers operate recursively and feed back into one another, so the
+                Confluence is not only the moment of birth: it is the continuing hidden architecture
+                by which a being remains coherently itself through change.
+              </p>
+            </div>
+          </div>
+
           <div className="mt-24 max-w-3xl">
             <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
               A configuration, not a substance
