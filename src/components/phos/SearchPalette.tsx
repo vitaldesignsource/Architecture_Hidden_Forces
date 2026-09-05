@@ -2,6 +2,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { DIVISIONS, ENTRIES, TOOLS, valueSlug, type PhosEntry } from "@/lib/phos/entries";
 import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
+import { AQUIFER, PROVINCES, STATIONS, type Station } from "@/lib/ecology";
+import { TERMS } from "@/lib/lexicon";
+import { ENTRIES as SECTIONS } from "@/lib/contents";
 import { LabelChips } from "@/components/phos/Labels";
 
 /**
@@ -11,7 +14,10 @@ import { LabelChips } from "@/components/phos/Labels";
  * entry already carries eagerly — title, summary, division, labels, and the
  * facet values — so it costs no extra load and answers as you type. Divisions
  * and instruments answer too, and a query that is exactly a facet value offers
- * that facet's browse page. Arrow keys move, Enter enters, Escape leaves.
+ * that facet's browse page. The other two volumes answer as well — the
+ * Ecology's stations and provinces, the lexicon's terms, the treatise's
+ * sections — so a word found anywhere can be followed from anywhere. Arrow
+ * keys move, Enter enters, Escape leaves.
  */
 type Hit =
 
@@ -21,7 +27,30 @@ type Hit =
   | { kind: "entry"; e: PhosEntry; score: number }
   | { kind: "division"; id: string; numeral: string; title: string; score: number }
   | { kind: "tool"; k: string; d: string; to: string; score: number }
-  | { kind: "facet"; facet: string; value: string; count: number; score: number };
+  | { kind: "facet"; facet: string; value: string; count: number; score: number }
+  | { kind: "page"; k: string; d: string; where: string; to: PageTo; hash?: string; score: number };
+
+/** Where a page hit can lead: the treatise, the Ecology's landing, a station, a province, the lexicon. */
+type PageTo = "/" | "/ecology" | "/ecology/lexicon" | Station["to"];
+
+/** The pages of the other two volumes, as search reads them: a name, a line, where they are. */
+type PageDoc = { k: string; d: string; where: string; to: PageTo; hash?: string; title: string; text: string };
+let PAGES: PageDoc[] | null = null;
+const pages = (): PageDoc[] =>
+  (PAGES ??= [
+    ...[...STATIONS, AQUIFER, ...PROVINCES].map((st) => ({
+      k: st.title, d: st.question, where: st.region ?? `The Hidden Ecology · station ${st.n}`, to: st.to,
+      title: norm(st.title), text: norm(`${st.question} ${st.shorthand} ${st.definition} ${st.dimension}`),
+    })),
+    ...TERMS.map((t) => ({
+      k: t.k, d: t.d.split(/(?<=[.:])\s/)[0], where: `Lexicon · ${t.family}`, to: "/ecology/lexicon" as const, hash: t.familyId,
+      title: norm(t.k), text: norm(`${t.root ?? ""} ${t.d}`),
+    })),
+    ...SECTIONS.filter((e) => !e.to).map((e) => ({
+      k: e.n === "—" ? e.t : `§ ${e.n} · ${e.t}`, d: e.d, where: "The Architecture", to: "/" as const, hash: e.id,
+      title: norm(e.t), text: norm(e.d),
+    })),
+  ]);
 
 const FACETS = ["tradition", "plane", "operation", "symbol", "quality", "text", "period"] as const;
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
@@ -61,6 +90,18 @@ function search(q: string): Hit[] {
     const to = TOOL_ROUTES[tool.k]; if (!to) continue;
     if (norm(tool.k).includes(t)) hits.push({ kind: "tool", k: tool.k, d: tool.d, to, score: 30 });
   }
+  for (const pg of pages()) {
+    let s = 0;
+    for (const w of words) {
+      if (pg.title === t) s += 40;
+      else if (pg.title.startsWith(w)) s += 14;
+      else if (new RegExp(`\\b${w}`).test(pg.title)) s += 9;
+      else if (pg.title.includes(w)) s += 5;
+      if (pg.text.includes(w)) s += 3;
+    }
+    if (s > 0 && words.every((w) => pg.title.includes(w) || pg.text.includes(w)))
+      hits.push({ kind: "page", k: pg.k, d: pg.d, where: pg.where, to: pg.to, hash: pg.hash, score: s });
+  }
   for (const f of FACETS) {
     const seen = new Map<string, number>();
     for (const e of ENTRIES) for (const v of e.meta?.facets[f] ?? []) if (norm(v) === t) seen.set(v, (seen.get(v) ?? 0) + 1);
@@ -89,6 +130,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
     if (h.kind === "entry") navigate({ to: "/phos/$division/$entry", params: { division: h.e.division.id, entry: h.e.slug } });
     else if (h.kind === "division") navigate(h.id === "portal" ? { to: "/phos/portal" } : { to: "/phos/$division", params: { division: h.id } });
     else if (h.kind === "tool") navigate({ to: h.to });
+    else if (h.kind === "page") navigate({ to: h.to, hash: h.hash });
     else navigate({ to: "/phos/browse/$facet/$value", params: { facet: h.facet, value: valueSlug(h.value) } });
   };
   const onKey = (e: React.KeyboardEvent) => {
@@ -102,12 +144,12 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-[80] flex items-start justify-center bg-void/80 px-4 pt-[12vh] backdrop-blur-md" onMouseDown={onClose} role="presentation">
-      <div role="dialog" aria-modal="true" aria-label="Search the encyclopaedia" onMouseDown={(e) => e.stopPropagation()}
+      <div role="dialog" aria-modal="true" aria-label="Search the three volumes" onMouseDown={(e) => e.stopPropagation()}
            className="animate-rise w-full max-w-2xl border border-gold/40 bg-void shadow-[0_0_80px_-20px_oklch(0.78_0.13_75_/_0.5)]">
         <div className="flex items-center gap-4 border-b border-border px-6 py-4">
           <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Search</span>
           <input ref={inputRef} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={onKey}
-                 placeholder="a title, a word from a summary, a tradition, a plane, a symbol, a division…"
+                 placeholder="a title, a word from a summary, a tradition, a station, a term of the lexicon…"
                  aria-label="Search" aria-controls="aoh-hits" aria-activedescendant={hits[i] ? `aoh-hit-${i}` : undefined}
                  className="min-w-0 flex-1 bg-transparent font-serif text-xl italic text-bone placeholder:text-muted-foreground/70 focus:outline-none" />
           <button onClick={onClose} className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">esc</button>
@@ -116,7 +158,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
         <ul id="aoh-hits" role="listbox" className="max-h-[56vh] overflow-y-auto">
           {q.trim().length < 2 ? (
             <li className="px-6 py-8 text-sm leading-relaxed text-muted-foreground">
-              Six hundred and fifty-three entries, twenty-two divisions, six instruments. Type two letters. A division's numeral goes straight to it; a facet value exactly typed offers its browse page.
+              Six hundred and fifty-three entries, twenty-two divisions and the instruments of Phōs; the stations, provinces and lexicon of the Hidden Ecology; the sections of the Architecture. Type two letters. A division's numeral goes straight to it; a facet value exactly typed offers its browse page.
             </li>
           ) : hits.length === 0 ? (
             <li className="px-6 py-8 text-sm text-muted-foreground">Nothing carries that yet.</li>
@@ -137,6 +179,16 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
               <li key={"d" + h.id} id={`aoh-hit-${n}`} role="option" aria-selected={on} onMouseEnter={() => setI(n)} onClick={() => go(h)} className={`${row} grid-cols-[4.5rem_1fr]`}>
                 <span className="pt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold">Division</span>
                 <span className={`font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.numeral} · {h.title}</span>
+              </li>
+            );
+            if (h.kind === "page") return (
+              <li key={"p" + h.to + (h.hash ?? "")} id={`aoh-hit-${n}`} role="option" aria-selected={on} onMouseEnter={() => setI(n)} onClick={() => go(h)} className={`${row} grid-cols-[4.5rem_1fr]`}>
+                <span className="pt-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold">{h.where.startsWith("Lexicon") ? "Lexicon" : h.where === "The Architecture" ? "Treatise" : "Ecology"}</span>
+                <span className="min-w-0">
+                  <span className={`block font-serif text-lg ${on ? "text-gold" : "text-bone"}`}>{h.k}</span>
+                  <span className="mt-0.5 line-clamp-2 block text-sm leading-relaxed text-muted-foreground">{h.d}</span>
+                  <span className="mt-1 block font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">{h.where}</span>
+                </span>
               </li>
             );
             if (h.kind === "tool") return (

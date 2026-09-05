@@ -46,10 +46,10 @@ export function PhosHeader({ panel, crumb }: { panel: ReactNode; crumb?: ReactNo
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
         <div className="min-w-0">
           <Link to="/phos" className="block truncate font-serif text-base italic tracking-wide sm:text-lg">
-            Phōs · The Luminous Architecture
+            Phōs<span className="hidden sm:inline"> · The Luminous Architecture</span>
           </Link>
           {crumb && (
-            <div className="mt-1 hidden truncate font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim lg:block">
+            <div className="mt-1 hidden truncate font-label text-[10px] uppercase tracking-[0.14em] text-gold-dim lg:block xl:tracking-[0.2em]">
               {crumb}
             </div>
           )}

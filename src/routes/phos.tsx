@@ -1,4 +1,4 @@
-import { Fragment, useRef, type ReactNode } from "react";
+import { Fragment, lazy, Suspense, useCallback, useRef, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import toc from "@/lib/phos/toc.json";
 import { ZODIAC } from "@/lib/phos/colour";
@@ -10,6 +10,10 @@ import { useFormulaRay } from "@/hooks/useFormulaRay";
 import { Backdrop } from "@/components/Backdrop";
 import { SectionGlyph } from "@/components/SectionGlyph";
 import { ContentsPanel } from "@/components/ContentsPanel";
+import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+
+// the palette holds the whole index; it is fetched on the first search
+const SearchPalette = lazy(() => import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })));
 import { CrossMark } from "@/components/CrossMark";
 import {
   BoundaryColour,
@@ -179,6 +183,11 @@ export const Route = createFileRoute("/phos")({
 
 function Phos() {
   const active = useActiveSection();
+  // search: the palette carries the index of all three volumes, so it arrives
+  // only when a reader first asks for it
+  const [searching, setSearching] = useState(false);
+  const openSearch = useCallback(() => setSearching(true), []);
+  useSearchHotkey(openSearch);
   useReveal();
   usePauseOffscreen();
   const formulaRef = useRef<HTMLDivElement>(null);
@@ -191,7 +200,7 @@ function Phos() {
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
           <a href="#top" className="min-w-0">
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
-              Phōs · The Luminous Architecture
+              Phōs<span className="hidden sm:inline lg:hidden"> · The Luminous Architecture</span>
             </div>
           </a>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
@@ -219,8 +228,9 @@ function Phos() {
               to="/"
               className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block xl:pl-6"
             >
-              The Architecture <CrossMark className="text-gold/70" />
+              Architecture <CrossMark className="text-gold/70" />
             </Link>
+            <SearchButton onClick={openSearch} />
             <ContentsPanel
               active={active}
               entries={ENTRIES}
@@ -263,6 +273,11 @@ function Phos() {
       </nav>
 
       {/* HERO */}
+      {searching && (
+        <Suspense fallback={null}>
+          <SearchPalette open onClose={() => setSearching(false)} />
+        </Suspense>
+      )}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
         <Backdrop src="/bg/door-of-light-in-flooded-chamber.webp" opacity={0.4} position="68% 50%" scrim={0.28} fill />
         <LumenField />

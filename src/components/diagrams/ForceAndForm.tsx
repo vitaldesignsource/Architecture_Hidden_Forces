@@ -53,8 +53,11 @@ export function ForceAndForm() {
           {/* actuality does not exhaust potency: structure becomes the vessel of new potency */}
           <path className="aoh-ff-r" d={`M${X(6)},${Y(6) - 16} C${X(6) + 20},${Y(6) - 60} 40,${Y(0) - 90} ${X(0)},${Y(0) - 16}`}
                 fill="none" stroke="var(--bone)" strokeOpacity="0.45" strokeWidth="1" />
-          <text x="196" y="26" textAnchor="middle" className="font-label" fontSize="6.4"
-                letterSpacing="1" fill="var(--muted-foreground)">STRUCTURE BECOMES THE VESSEL OF NEW POTENCY</text>
+          <text x="14" y="16" className="font-label" fontSize="6.4"
+                letterSpacing="1" fill="var(--muted-foreground)">
+            <tspan x="14">STRUCTURE BECOMES</tspan>
+            <tspan x="14" dy="10">THE VESSEL OF NEW POTENCY</tspan>
+          </text>
 
           {S.map((st, i) => {
             const on = sel === i;

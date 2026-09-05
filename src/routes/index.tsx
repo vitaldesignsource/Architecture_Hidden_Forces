@@ -1,3 +1,4 @@
+import { lazy, Suspense, useCallback, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { RevealText } from "@/components/RevealText";
 import { all, descent, ret } from "@/lib/principles";
@@ -8,6 +9,10 @@ import { PrincipleCard } from "@/components/PrincipleCard";
 import { ArchitectureIndex } from "@/components/ArchitectureIndex";
 import { Lexicon } from "@/components/Lexicon";
 import { ContentsPanel } from "@/components/ContentsPanel";
+import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+
+// the palette holds the whole index; it is fetched on the first search
+const SearchPalette = lazy(() => import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })));
 import {
   Carriers,
   CentersAxis,
@@ -226,6 +231,11 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const active = useActiveSection();
+  // search: the palette carries the index of all three volumes, so it arrives
+  // only when a reader first asks for it
+  const [searching, setSearching] = useState(false);
+  const openSearch = useCallback(() => setSearching(true), []);
+  useSearchHotkey(openSearch);
   useReveal();
   usePauseOffscreen();
 
@@ -236,7 +246,7 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
           <a href="#top" className="min-w-0">
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
-              The Architecture of Hidden Forces
+              The Architecture<span className="hidden sm:inline"> of Hidden Forces</span>
             </div>
           </a>
           <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] xl:gap-6 xl:tracking-[0.25em]">
@@ -260,6 +270,7 @@ function Index() {
             >
               Phōs <CrossMark className="text-gold/70" />
             </Link>
+            <SearchButton onClick={openSearch} />
             <ContentsPanel active={active} />
           </div>
           <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
@@ -295,6 +306,11 @@ function Index() {
       </nav>
 
       {/* HERO */}
+      {searching && (
+        <Suspense fallback={null}>
+          <SearchPalette open onClose={() => setSearching(false)} />
+        </Suspense>
+      )}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
         <Backdrop src="/bg/threshold-arches-in-misted-vault.webp" opacity={0.3} position="center 42%" fill />
         <GeometryField />

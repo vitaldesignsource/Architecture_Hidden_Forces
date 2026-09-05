@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { lazy, Suspense, useCallback, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { Backdrop } from "@/components/Backdrop";
 import { ContentsPanel } from "@/components/ContentsPanel";
@@ -7,6 +7,10 @@ import { RevealText } from "@/components/RevealText";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
 import { PROVINCES, STATIONS, isProvince, type Station } from "@/lib/ecology";
 import type { Entry } from "@/lib/contents";
+import { SearchButton, useSearchHotkey } from "@/components/phos/Search";
+
+// the palette holds the whole index; it is fetched on the first search
+const SearchPalette = lazy(() => import("@/components/phos/SearchPalette").then((m) => ({ default: m.SearchPalette })));
 
 /**
  * EcologyFrame — the page every station of the Hidden Ecology sits in.
@@ -90,20 +94,27 @@ export function EcologyFrame({
   usePauseOffscreen();
   const here = station?.id ?? page ?? "top";
   const inProvince = isProvince(here);
+  // search: the palette carries the index of all three volumes, so it arrives
+  // only when a reader first asks for it
+  const [searching, setSearching] = useState(false);
+  const openSearch = useCallback(() => setSearching(true), []);
+  useSearchHotkey(openSearch);
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-void/70 backdrop-blur-md">
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
           <Link to="/ecology" className="min-w-0">
-            {/* The name gives way before the circulation does: the six stations keep their
-                room at every desktop width, and the title shortens as the row fills. */}
+            {/* The name gives way before the circulation does: the six stations, the
+                provinces, search and contents keep their room at every width, and the
+                bar is capped at 1280px, so from lg the title is Ecology alone; a
+                tablet has the room for the whole name, a phone for the name's head. */}
             <div className="truncate font-serif text-base italic tracking-wide sm:text-lg">
-              <span className="lg:hidden xl:inline">The Hidden </span>Ecology<span className="lg:hidden 2xl:inline"> of Formation</span>
+              <span className="hidden sm:inline lg:hidden">The Hidden </span>Ecology<span className="hidden sm:inline lg:hidden"> of Formation</span>
             </div>
           </Link>
-          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em] 2xl:gap-6 2xl:tracking-[0.25em]">
-            <div className="hidden items-center gap-4 lg:flex 2xl:gap-6">
+          <div className="flex shrink-0 items-center gap-4 font-label text-[10px] uppercase tracking-[0.18em]">
+            <div className="hidden items-center gap-4 lg:flex">
               {STATIONS.map((s, i) => (
                 <Link
                   key={s.id}
@@ -112,7 +123,7 @@ export function EcologyFrame({
                   className={`whitespace-nowrap transition-colors hover:text-gold ${here === s.id ? "text-gold" : ""}`}
                   title={s.title}
                 >
-                  {i > 0 && <span className="mr-4 hidden text-bone/25 xl:inline 2xl:mr-6" aria-hidden>→</span>}
+                  {i > 0 && <span className="mr-4 hidden text-bone/25 xl:inline" aria-hidden>→</span>}
                   {s.title.replace(/^The /, "").replace(/ of .*$/, "")}
                 </Link>
               ))}
@@ -123,7 +134,7 @@ export function EcologyFrame({
                 to="/ecology"
                 hash="eco-provinces"
                 aria-current={inProvince ? "true" : undefined}
-                className={`hidden whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold xl:inline-flex xl:items-baseline xl:gap-2 2xl:pl-6 ${inProvince ? "text-gold" : "text-bone/70"}`}
+                className={`hidden whitespace-nowrap border-l border-border pl-4 transition-colors hover:text-gold xl:inline-flex xl:items-baseline xl:gap-2 ${inProvince ? "text-gold" : "text-bone/70"}`}
                 title="The provinces: beneath, before, between and after the stations"
               >
                 <DescentMark className="text-gold/60" />
@@ -132,10 +143,11 @@ export function EcologyFrame({
             </div>
             <Link
               to="/"
-              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block 2xl:pl-6"
+              className="hidden shrink-0 border-l border-border pl-4 font-serif text-sm normal-case tracking-normal text-bone/80 transition-colors hover:text-gold lg:block"
             >
-              The Architecture <CrossMark className="text-gold/70" />
+              Architecture <CrossMark className="text-gold/70" />
             </Link>
+            <SearchButton onClick={openSearch} />
             <ContentsPanel active={here} entries={ROWS} groups={GROUPS} paths={[]} indexHref="#top" volume="/ecology" />
           </div>
           <div className="shrink-0 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim lg:hidden">
@@ -163,6 +175,12 @@ export function EcologyFrame({
           </div>
         </div>
       </nav>
+
+      {searching && (
+        <Suspense fallback={null}>
+          <SearchPalette open onClose={() => setSearching(false)} />
+        </Suspense>
+      )}
 
       {station ? (
         <header id="top" className="relative isolate overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
