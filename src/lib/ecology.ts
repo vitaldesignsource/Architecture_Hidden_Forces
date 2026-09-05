@@ -81,8 +81,8 @@ export const STATIONS: Station[] = [
     shorthand: "the circulation",
     definition:
       "The study of how formative influence moves — its reception, channelling, accumulation, obstruction, filtration, transformation, release and return — modelled on the behaviour of water in a landscape, and marked at every step as a model.",
-    backdrop: "braided-glacial-river-from-above",
-    position: "center 50%",
+    backdrop: "glacier-meltwater-braiding-at-sunrise",
+    position: "center 55%",
   },
   {
     id: "form",

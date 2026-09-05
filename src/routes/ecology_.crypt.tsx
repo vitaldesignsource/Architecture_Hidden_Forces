@@ -269,7 +269,7 @@ function Crypt() {
       </Band>
 
       {/* ---- the crypt beneath morphaithēr ---- */}
-      <Band id="eco-c-beneath" backdrop="layered-strata-in-dark-passage" opacity={0.26} position="center 50%">
+      <Band id="eco-c-beneath" backdrop="folded-strata-under-frozen-plain-at-sunset" opacity={0.24} position="center 60%">
         <Eyebrow>The Crypt beneath Morphaithēr</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Retained consequence becomes <span className="italic text-gold">future formative condition</span>

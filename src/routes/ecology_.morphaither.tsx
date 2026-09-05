@@ -313,7 +313,7 @@ function Morphaither() {
       </Band>
 
       {/* ---- the veil ---- */}
-      <Band id="eco-m-veil">
+      <Band id="eco-m-veil" backdrop="leaf-against-rain-streaked-glasshouse-window" opacity={0.22} position="center 50%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Morphaithēr and the Fourfold Veil</Eyebrow>

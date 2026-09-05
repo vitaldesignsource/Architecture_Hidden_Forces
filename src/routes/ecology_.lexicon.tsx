@@ -30,7 +30,7 @@ export const Route = createFileRoute("/ecology_/lexicon")({
 type Where = { to: (typeof STATIONS)[number]["to"] | "/ecology" | "/phos"; hash?: string; label: string };
 type Term = { k: string; root?: string; d: string; at?: Where };
 
-const FAMILIES: { id: string; k: string; root: string; note: string; backdrop?: string; terms: Term[] }[] = [
+const FAMILIES: { id: string; k: string; root: string; note: string; backdrop?: string; portrait?: boolean; terms: Term[] }[] = [
   {
     id: "eco-lx-morph", k: "The morph- family", root: "μορφή · form", backdrop: "scribe-at-work-by-lamplight",
     note: "Formation: the medium, the movement within it, the pressures and saturations that decide what becomes, and what form leaves behind.",
@@ -79,7 +79,7 @@ const FAMILIES: { id: string; k: string; root: string; note: string; backdrop?: 
     ],
   },
   {
-    id: "eco-lx-crypt", k: "The crypt- family", root: "κρυπτός · hidden", backdrop: "hands-marking-clay-tally",
+    id: "eco-lx-crypt", k: "The crypt- family", root: "κρυπτός · hidden", backdrop: "pale-root-threads-in-wet-forest-ravine", portrait: true,
     note: "The hidden as power, as order, as a way, as a course, and as an ignition beneath the threshold.",
     terms: [
       { k: "Cryptodynamis", root: "κρυπτός + δύναμις", d: "Hidden potency: a force whose existence is not directly apparent and becomes inferable through its operations and effects. Not simply something invisible — an operative potency whose nature must be reconstructed through what it causes, often through its Vestigia. The term nearest the central premise of the Architecture.", at: { to: "/ecology/sea", hash: "eco-sea-waters", label: "The Sea" } },
@@ -153,7 +153,7 @@ function Lexicon() {
       }
     >
       {FAMILIES.map((f) => (
-        <Band key={f.id} id={f.id} backdrop={f.backdrop} opacity={0.14} position="center 50%">
+        <Band key={f.id} id={f.id} backdrop={f.backdrop} opacity={f.portrait ? 0.18 : 0.14} position="center 50%" portrait={f.portrait}>
           <div className="grid gap-12 lg:grid-cols-[1fr_3fr]">
             <div className="lg:sticky lg:top-32 lg:self-start">
               <Eyebrow>{f.k}</Eyebrow>

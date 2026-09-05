@@ -299,7 +299,7 @@ function Sea() {
       </Band>
 
       {/* ---- renaissance intimations ---- */}
-      <Band id="eco-sea-intimations" backdrop="monolith-on-shore-in-sea-mist" opacity={0.18} position="center 50%">
+      <Band id="eco-sea-intimations" backdrop="web-strung-across-ruined-rotunda-oculus" opacity={0.2} position="center 40%" portrait>
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <Eyebrow>Renaissance intimations</Eyebrow>
