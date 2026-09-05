@@ -65,6 +65,7 @@ import {
   OneLayerOfSeven,
 } from "@/components/diagrams";
 import { ElementSign, PrincipleSign, type ElementKey, type PrincipleKey } from "@/components/diagrams/ElementGlyphs";
+import { EtherSign, type EtherKey } from "@/components/diagrams/EtherSigns";
 import { PassageGeometry } from "@/components/PassageGeometry";
 import { SevenPillars } from "@/components/SevenPillars";
 import { PetalRosette } from "@/components/PetalRosette";
@@ -776,16 +777,17 @@ function Index() {
             </div>
             <div className="space-y-6">
               {([
-                { ether: "Warmth Ether", tattva: "Tejas", t: "tejas", element: "Πῦρ · Fire", e: "Fire", note: "Activation, ignition, transformation." },
-                { ether: "Light Ether", tattva: "Vayu", t: "vayu", element: "Ἀήρ · Air", e: "Air", note: "Illumination, direction, breath, transmission." },
-                { ether: "Tone / Chemical Ether", tattva: "Apas", t: "apas", element: "Ὕδωρ · Water", e: "Water", note: "Relation, harmony, cohesion, memory." },
-                { ether: "Life Ether", tattva: "Prithivi", t: "prithivi", element: "Γῆ · Earth", e: "Earth", note: "Integration, structure, crystallization, durable form." },
+                { ether: "Warmth Ether", s: "warmth", tattva: "Tejas", t: "tejas", element: "Πῦρ · Fire", e: "Fire", note: "Activation, ignition, transformation." },
+                { ether: "Light Ether", s: "light", tattva: "Vayu", t: "vayu", element: "Ἀήρ · Air", e: "Air", note: "Illumination, direction, breath, transmission." },
+                { ether: "Tone / Chemical Ether", s: "tone", tattva: "Apas", t: "apas", element: "Ὕδωρ · Water", e: "Water", note: "Relation, harmony, cohesion, memory." },
+                { ether: "Life Ether", s: "life", tattva: "Prithivi", t: "prithivi", element: "Γῆ · Earth", e: "Earth", note: "Integration, structure, crystallization, durable form." },
               ] as const).map((row) => (
                 <div
                   key={row.element}
                   className="grid gap-2 border-b border-border pb-6 sm:grid-cols-[1fr_1fr_1fr] sm:gap-6"
                 >
-                  <div className="font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                  <div className="flex items-center gap-2.5 font-label text-[11px] uppercase tracking-[0.2em] text-gold-dim">
+                    <EtherSign k={row.s} size={20} className="shrink-0 text-gold/70" decorative />
                     {row.ether}
                   </div>
                   <div className="flex items-center gap-2.5 font-serif italic text-bone/85">
@@ -885,6 +887,7 @@ function Index() {
               {
                 n: "I",
                 greek: "Θερμότης",
+                sign: "warmth" as EtherKey,
                 translit: "Thermotēs",
                 english: "Warmth Ether",
                 verb: "quickens",
@@ -922,6 +925,7 @@ function Index() {
               {
                 n: "II",
                 greek: "Φῶς",
+                sign: "light" as EtherKey,
                 translit: "Phōs",
                 english: "Light Ether",
                 verb: "articulates",
@@ -955,6 +959,7 @@ function Index() {
               {
                 n: "III",
                 greek: "Τόνος",
+                sign: "tone" as EtherKey,
                 translit: "Tonos · Chemical Ether",
                 english: "Tone Ether",
                 verb: "coordinates",
@@ -988,6 +993,7 @@ function Index() {
               {
                 n: "IV",
                 greek: "Ζωή",
+                sign: "life" as EtherKey,
                 translit: "Zōē",
                 english: "Life Ether",
                 verb: "regenerates",
@@ -1025,7 +1031,8 @@ function Index() {
                       <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                         {e.n} · {e.english}
                       </p>
-                      <h3 className="mt-3 font-serif text-3xl leading-none text-bone sm:text-4xl">
+                      <h3 className="mt-3 flex items-center gap-3.5 font-serif text-3xl leading-none text-bone sm:text-4xl">
+                        <EtherSign k={e.sign} size={44} className="shrink-0 text-gold/65" decorative />
                         {e.greek}
                       </h3>
                       <p className="mt-3 font-serif text-lg italic text-gold/80">
