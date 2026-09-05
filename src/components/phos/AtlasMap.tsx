@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useLayoutEffect } from "react";
 import { useViewBox } from "@/hooks/useViewBox";
 import { PLACES, alive as aliveIn, when, type Geo, type Span } from "@/lib/phos/atlas";
 
@@ -39,6 +39,19 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
   const boxRef = useRef<HTMLDivElement>(null);
   const vb = useViewBox(svgRef, { w: geo.w, h: geo.h }, { minW: 140, interactive: !compact });
   const [tip, setTip] = useState<{ x: number; y: number; id: string } | null>(null);
+  // the box's width, measured, so a tap's target is a real 22px at the first
+  // render and at every width; and which kind of pointer is on the sheet
+  const [boxW, setBoxW] = useState(800);
+  const pointer = useRef<string>("mouse");
+  useLayoutEffect(() => {
+    const el = boxRef.current;
+    if (!el) return;
+    const read = () => setBoxW(el.clientWidth || 800);
+    read();
+    const ro = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(read);
+    ro?.observe(el);
+    return () => ro?.disconnect();
+  }, []);
 
   const marks = useMemo<Mark[]>(() => {
     const by = new Map<string, Span[]>();
@@ -62,6 +75,8 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
     ? active.places.map((p) => geo.points[p]).filter(Boolean).map(([x, y], i) => `${i ? "L" : "M"}${x} ${y}`).join(" ")
     : "";
 
+  const rOf = (m: Mark) => (2.1 + Math.log2(1 + m.spans.length) * 1.15) * fs;
+  const hitR = (m: Mark) => Math.max(rOf(m) * 3.2, 11 * vb.view.w / boxW);
   const showTip = (m: Mark, ev: { clientX: number; clientY: number }) => {
     const r = boxRef.current?.getBoundingClientRect();
     if (!r) return;
@@ -79,15 +94,23 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
         style={{ aspectRatio: `${geo.w} / ${geo.h}` }}
         role="img"
         aria-label="Map of the Old World with the places of the encyclopaedia’s dated entries"
-        onPointerDown={vb.onPointerDown}
+        onPointerDown={(ev) => { pointer.current = ev.pointerType; vb.onPointerDown(ev); }}
         onPointerMove={(ev) => { if (vb.onPointerMove(ev)) setTip(null); }}
         onPointerUp={(ev) => {
-          const { moved, pressed, wasDown } = vb.onPointerUp(ev);
+          const { moved, wasDown } = vb.onPointerUp(ev);
           if (moved || !wasDown || compact) return;
-          const id = (pressed?.closest?.("[data-place]") as HTMLElement | null)?.dataset.place ?? null;
-          onPlace?.(id && id !== place ? id : null);
+          // the nearest mark within a finger's reach, not the one drawn last:
+          // two places a hair apart used to answer for each other
+          const pt = vb.toChart(ev);
+          let best: Mark | null = null, bd = Infinity;
+          for (const m of marks) {
+            const d = Math.hypot(m.x - pt.x, m.y - pt.y);
+            if (d < bd && d <= hitR(m)) { bd = d; best = m; }
+          }
+          onPlace?.(best && best.id !== place ? best.id : null);
+          if (best && pointer.current === "touch") showTip(best, ev);
         }}
-        onPointerLeave={(ev) => { vb.onPointerUp(ev); setTip(null); onHoverPlace?.(null); }}
+        onPointerLeave={(ev) => { vb.onPointerUp(ev); if (pointer.current !== "touch") setTip(null); onHoverPlace?.(null); }}
       >
         <rect x={0} y={0} width={geo.w} height={geo.h} fill="var(--void)" />
         <path d={geo.graticule} className="aoh-atlas-grat" />
@@ -116,7 +139,7 @@ export function AtlasMap({ geo, spans, hov = null, sel = null, year = null, plac
                onPointerLeave={() => { setTip(null); onHoverPlace?.(null); }}>
               {/* a tap lands on a finger-sized target, not on a 3px core: 11 CSS px
                   of radius in sheet units at the current zoom */}
-              <circle cx={m.x} cy={m.y} r={Math.max(r * 3.2, 11 * vb.view.w / (boxRef.current?.clientWidth || 800))} fill="none" pointerEvents="all" />
+              <circle cx={m.x} cy={m.y} r={hitR(m)} fill="none" pointerEvents="all" />
               <circle cx={m.x} cy={m.y} r={r * 3.2} className="aoh-atlas-halo" />
               {chosen && <circle cx={m.x} cy={m.y} r={r * 2.2} fill="none" stroke="var(--gold)" strokeWidth={0.9 * fs} />}
               <circle cx={m.x} cy={m.y} r={r} className="aoh-atlas-core" style={{ cursor: compact ? "default" : "pointer" }} />

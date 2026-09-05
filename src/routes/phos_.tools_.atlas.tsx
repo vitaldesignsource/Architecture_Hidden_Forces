@@ -56,7 +56,7 @@ function Atlas() {
   const [win, setWin] = useState<[number, number]>(() => (selSpan ? windowFor(selSpan) : FULL));
 
   const set = (patch: Search) =>
-    navigate({ to: "/phos/tools/atlas", search: (prev: Search) => ({ ...prev, ...patch }), replace: true });
+    navigate({ to: "/phos/tools/atlas", search: (prev: Search) => ({ ...prev, ...patch }), replace: true, resetScroll: false });
 
   // A span chosen from a card may lie outside the window; bring it in.
   useEffect(() => {

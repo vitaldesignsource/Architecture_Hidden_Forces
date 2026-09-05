@@ -47,13 +47,20 @@ function ticks(t0: number, t1: number, width: number): number[] {
   return out;
 }
 
+/** A lane's title, cut at a word when the strip is narrow, never mid-word. */
+function laneTitle(lane: string, lim: number) {
+  if (lane.length <= lim) return lane;
+  const at = lane.lastIndexOf(" ", lim);
+  return lane.slice(0, at > 8 ? at : lim).replace(/[,\s]+$/, "") + "…";
+}
+
 export function AtlasTimeline(p: TimelineProps) {
   const { spans, lanes, window: win, compact = false } = p;
   const [t0, t1] = win;
   const wrap = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const [width, setWidth] = useState(0);
-  const drag = useRef<{ px: number; t0: number; t1: number; moved: boolean; strip: boolean; target: Element | null } | null>(null);
+  const drag = useRef<{ px: number; py: number; t0: number; t1: number; moved: boolean; strip: boolean; target: Element | null } | null>(null);
   const propsRef = useRef(p);
   propsRef.current = p;
 
@@ -128,14 +135,15 @@ export function AtlasTimeline(p: TimelineProps) {
     if (ev.button !== 0) return;
     // Capturing the pointer retargets later events at the svg; what was pressed
     // is remembered so a click can be told from a drag and judged on release.
-    drag.current = { px: ev.clientX, t0, t1, moved: false, strip, target: ev.target as Element };
+    drag.current = { px: ev.clientX, py: ev.clientY, t0, t1, moved: false, strip, target: ev.target as Element };
     ev.currentTarget.setPointerCapture(ev.pointerId);
   };
   const onMove = (ev: RPointerEvent<SVGSVGElement>) => {
     const d = drag.current;
     if (d) {
       if (compact) return;
-      if (!d.moved && Math.abs(ev.clientX - d.px) < 4) return;
+      // a finger that moved in any direction was scrolling or dragging, not choosing
+      if (!d.moved && Math.hypot(ev.clientX - d.px, ev.clientY - d.py) < 4) return;
       d.moved = true;
       const dt = ((ev.clientX - d.px) / width) * (d.t1 - d.t0) * (d.strip ? -(1) : 1);
       p.onWindow?.([d.t0 - dt, d.t1 - dt]);
@@ -166,8 +174,10 @@ export function AtlasTimeline(p: TimelineProps) {
       {width > 0 && (
         <svg ref={svgRef} width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={`block select-none ${compact ? "" : "cursor-crosshair"}`}
              role="img" aria-label="Timeline of the encyclopaedia’s dated entries"
+             style={{ touchAction: "pan-y" }}
              onPointerDown={(ev) => onDown(ev)} onPointerMove={onMove} onPointerUp={onUp}
-             onPointerLeave={(ev) => { onUp(ev); p.onYear?.(null); p.onHover?.(null); }}>
+             onPointerCancel={() => { drag.current = null; }}
+             onPointerLeave={() => { drag.current = null; p.onYear?.(null); p.onHover?.(null); }}>
           {/* century grid and axis */}
           {tk.map((t) => (
             <g key={t}>
@@ -178,7 +188,7 @@ export function AtlasTimeline(p: TimelineProps) {
           {/* lanes */}
           {lanes.map((lane, li) => (
             <g key={lane}>
-              <text x={0} y={laneTops[li] + 10} className="aoh-tl-lane">{lane.length > Math.floor(width / 9.5) ? lane.slice(0, Math.floor(width / 9.5) - 1).replace(/[,\s]+$/, "") + "…" : lane}</text>
+              <text x={0} y={laneTops[li] + 10} className="aoh-tl-lane">{laneTitle(lane, Math.floor(width / 9.5))}</text>
               <line x1={0} x2={width} y1={laneTops[li] + HEAD - 4} y2={laneTops[li] + HEAD - 4} className="aoh-tl-rule" />
             </g>
           ))}
@@ -198,6 +208,7 @@ export function AtlasTimeline(p: TimelineProps) {
                  tabIndex={compact ? -1 : 0} role="button" aria-label={`${s.label}, ${when(s)}`}
                  onPointerEnter={() => p.onHover?.(s.id)} onPointerLeave={() => p.onHover?.(null)}
                  onKeyDown={(ev) => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); p.onSelect?.(s.id); } }}>
+                <rect x={(l.x0 + l.x1) / 2 - Math.max(l.x1 - l.x0, 24) / 2} y={y} width={Math.max(l.x1 - l.x0, 24)} height={ROW} fill="transparent" />
                 {point ? (
                   <path d={`M${l.x0} ${y + 3} l5 5 l-5 5 l-5 -5 z`} className="aoh-tl-bar" />
                 ) : (
@@ -222,10 +233,11 @@ export function AtlasTimeline(p: TimelineProps) {
       )}
       {/* the strip: the whole of recorded time, and where the window sits */}
       {!compact && width > 0 && (
-        <svg width={width} height={STRIP} viewBox={`0 0 ${width} ${STRIP}`} className="mt-2 block cursor-ew-resize select-none"
+        <svg width={width} height={STRIP} viewBox={`0 0 ${width} ${STRIP}`} className="mt-2 block cursor-ew-resize select-none" style={{ touchAction: "pan-y" }}
              aria-hidden
-             onPointerDown={(ev) => { if (ev.button !== 0) return; const r = ev.currentTarget.getBoundingClientRect(); const t = all.a + ((ev.clientX - r.left) / width) * (all.b - all.a); const span = t1 - t0; p.onWindow?.([t - span / 2, t + span / 2]); drag.current = { px: ev.clientX, t0: t - span / 2, t1: t + span / 2, moved: false, strip: true, target: null }; ev.currentTarget.setPointerCapture(ev.pointerId); }}
+             onPointerDown={(ev) => { if (ev.button !== 0) return; const r = ev.currentTarget.getBoundingClientRect(); const t = all.a + ((ev.clientX - r.left) / width) * (all.b - all.a); const span = t1 - t0; p.onWindow?.([t - span / 2, t + span / 2]); drag.current = { px: ev.clientX, py: ev.clientY, t0: t - span / 2, t1: t + span / 2, moved: false, strip: true, target: null }; ev.currentTarget.setPointerCapture(ev.pointerId); }}
              onPointerMove={(ev) => { const d = drag.current; if (!d || !d.strip) return; const dt = ((ev.clientX - d.px) / width) * (all.b - all.a); p.onWindow?.([d.t0 + dt, d.t1 + dt]); }}
+             onPointerCancel={() => { drag.current = null; }}
              onPointerUp={(ev) => { drag.current = null; try { ev.currentTarget.releasePointerCapture(ev.pointerId); } catch { /* */ } }}>
           <rect x={0} y={0} width={width} height={STRIP} className="aoh-tl-strip" />
           {lanes.map((lane, li) => spans.filter((s) => s.lane === lane).map((s) => {

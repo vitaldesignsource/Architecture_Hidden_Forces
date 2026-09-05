@@ -1,5 +1,8 @@
-import toc from "./toc.json";
+import { DIVISIONS, TOTAL, divisionLabel, type Division, type TocEntry } from "./toc";
 import { FACETS, valueSlug } from "./vocab";
+
+export { DIVISIONS, TOTAL, divisionLabel };
+export type { Division, TocEntry };
 
 /**
  * The encyclopaedia's index: the table of contents joined to whatever content
@@ -17,9 +20,6 @@ import { FACETS, valueSlug } from "./vocab";
  * time, when an entry is opened. Both come pre-parsed from the Vite plugin in
  * vite.config.ts, with the same parser the audit runs.
  */
-
-export type Division = (typeof toc.divisions)[number];
-export type TocEntry = Division["entries"][number];
 
 export type EntryMeta = {
   title: string;
@@ -92,9 +92,6 @@ for (const [path, meta] of Object.entries(META)) {
   const at = locate(path);
   if (at) found.set(`${at.division}/${at.slug}`, { meta, path });
 }
-
-export const DIVISIONS: Division[] = toc.divisions;
-export const TOTAL = toc.total;
 
 export const ENTRIES: PhosEntry[] = DIVISIONS.flatMap((division) =>
   division.entries.map((e) => {
@@ -209,4 +206,3 @@ export function entriesWith(key: string, slug: string) {
 }
 
 /** "Division IV" for a numbered division, "Portal Entrance" for the first. */
-export const divisionLabel = (d: Division) => (d.numeral ? `Division ${d.numeral}` : d.title);

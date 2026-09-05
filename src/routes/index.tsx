@@ -335,7 +335,7 @@ function Index() {
         </Suspense>
       )}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
-        <Backdrop src="/bg/threshold-arches-in-misted-vault.webp" opacity={0.3} position="center 42%" fill />
+        <Backdrop src="/bg/threshold-arches-in-misted-vault.webp" opacity={0.3} position="center 42%" fill priority />
         <GeometryField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">

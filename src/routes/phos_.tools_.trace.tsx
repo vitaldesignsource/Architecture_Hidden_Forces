@@ -39,6 +39,7 @@ function Trace() {
     navigate({
       to: "/phos/tools/trace",
       search: { at: next, path: keep && graph ? [...trail.map((e) => e.id), graph.centre.id].slice(-12).join(",") || undefined : undefined },
+      resetScroll: false,
     });
 
   const ring1 = graph ? graph.nodes.filter((n) => n.ring === 1).map((n) => n.e) : [];

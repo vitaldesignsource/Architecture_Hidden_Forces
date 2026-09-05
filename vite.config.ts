@@ -1,11 +1,12 @@
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import path from "node:path";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { parseEntry } from "./scripts/lib/frontmatter.mjs";
 import schema from "./src/lib/phos/schema.json";
+import toc from "./src/lib/phos/toc.json";
 
 /**
  * The encyclopaedia's entries are markdown files under src/content/phos. A page
@@ -36,12 +37,51 @@ function phosContent() {
   };
 }
 
+/**
+ * The Portal's own data: how many entries each division has written, and the
+ * ten rows of the Portal Entrance. The Portal used to import the whole index
+ * to count them — seven hundred kilobytes of front matter for twenty-two
+ * numbers — so the counts are taken here, at build, from the content
+ * directory, with the same slug rule entries.ts applies.
+ */
+function phosPortal(): Plugin {
+  const V = "virtual:phos-portal";
+  const R = "\0" + V;
+  return {
+    name: "phos-portal",
+    resolveId(id) {
+      if (id === V) return R;
+    },
+    load(id) {
+      if (id !== R) return;
+      const root = path.resolve(import.meta.dirname, "src/content/phos");
+      this.addWatchFile(root);
+      const written: Record<string, number> = {};
+      let entrance: unknown[] = [];
+      for (const d of toc.divisions) {
+        const dir = path.join(root, d.id);
+        const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(".md") && f !== "README.md" && !f.startsWith("_")) : [];
+        const bySlug = new Map(files.map((f) => [f.replace(/^\d+-/, "").replace(/\.md$/, ""), f]));
+        written[d.id] = d.entries.filter((e) => bySlug.has(e.slug)).length;
+        if (d.id === "portal")
+          entrance = d.entries.map((e) => {
+            const f = bySlug.get(e.slug);
+            const meta = f ? parseEntry(readFileSync(path.join(dir, f), "utf8"), schema).meta : null;
+            return { n: e.n, id: e.id, slug: e.slug, title: e.title, written: !!f, labels: meta?.labels ?? [], summary: meta?.summary ?? "" };
+          });
+      }
+      return `export default ${JSON.stringify({ written, entrance })};`;
+    },
+  };
+}
+
 export default defineConfig({
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),
     tailwindcss(),
     phosContent(),
+    phosPortal(),
   ],
   resolve: {
     alias: { "@": path.resolve(import.meta.dirname, "./src") },

@@ -6,3 +6,6 @@ dist
 .claude
 # written by scripts/sitemap.mjs at build time, from SITE_ORIGIN
 public/sitemap.xml
+# written by scripts/backdrops.mjs at build time, from the sources beside them
+public/bg/w800/
+public/bg/w1320/

@@ -287,7 +287,7 @@ function Phos() {
         </Suspense>
       )}
       <header id="top" className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-48 sm:pt-56">
-        <Backdrop src="/bg/door-of-light-in-flooded-chamber.webp" opacity={0.4} position="68% 50%" scrim={0.28} fill />
+        <Backdrop src="/bg/door-of-light-in-flooded-chamber.webp" opacity={0.4} position="68% 50%" scrim={0.28} fill priority />
         <LumenField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">

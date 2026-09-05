@@ -35,7 +35,7 @@ export function ToolFrame({
         panel={<ContentsPanel active={null} entries={[]} groups={[]} paths={[]} volume="/phos/portal" />}
       />
       <header id="top" className="relative isolate overflow-hidden pb-12 pt-40 sm:pt-48">
-        <Backdrop src={`/bg/${backdrop}.webp`} opacity={0.3} position={position} fill />
+        <Backdrop src={`/bg/${backdrop}.webp`} opacity={0.3} position={position} fill priority />
         <div className="grain" />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">

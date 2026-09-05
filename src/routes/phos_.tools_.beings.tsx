@@ -1,4 +1,5 @@
 import { describe } from "@/lib/seo";
+import { ACCOUNTS } from "@/lib/phos/beings-accounts";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
@@ -73,7 +74,7 @@ function Register() {
   const navigate = useNavigate({ from: Route.fullPath });
   /** Filters are navigation: a chip click is a step back, typing is not. */
   const set = (patch: BeingsSearch, replace = false) =>
-    navigate({ search: (prev: BeingsSearch) => ({ ...prev, ...patch }), replace });
+    navigate({ search: (prev: BeingsSearch) => ({ ...prev, ...patch }), replace, resetScroll: false });
   const setTradition = (t: string | null) => set({ tradition: t ?? undefined });
   const setCls = (c: ClassKey | null) => set({ cls: c ?? undefined });
   const setPlane = (pl: Plane | null) => set({ plane: pl ?? undefined });
@@ -135,7 +136,7 @@ function Register() {
       scripts: byScript.size,
       noScript: BEINGS.filter((b) => !b.native?.orig).length,
       contested: BEINGS.filter((b) => b.confidence === "contested").length,
-      noContext: BEINGS.filter((b) => !b.context).length,
+      noContext: BEINGS.filter((b) => !ACCOUNTS[b.id]?.context).length,
       byScript: [...byScript.entries()].sort((a, b) => b[1] - a[1]),
     };
   }, []);
@@ -603,16 +604,16 @@ function Row({ b, open, asked, onToggle }: { b: Being; open: boolean; asked: boo
                 </ul>
               </div>
             ) : null}
-            <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{b.context}</p>
-            {b.light && (
+            <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{ACCOUNTS[b.id]?.context}</p>
+            {ACCOUNTS[b.id]?.light && (
               <p className="mt-4 border-l-2 border-gold/40 pl-4 text-sm leading-relaxed text-bone/80">
-                {b.light}
+                {ACCOUNTS[b.id]?.light}
               </p>
             )}
             {b.native?.note && (
               <p className="mt-4 text-xs leading-relaxed text-bone/45">{b.native.note}</p>
             )}
-            <p className="mt-4 text-xs leading-relaxed text-bone/45">{b.sources}</p>
+            <p className="mt-4 text-xs leading-relaxed text-bone/45">{ACCOUNTS[b.id]?.sources}</p>
             {b.entries?.length ? (
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 <span className="font-label text-[9px] uppercase tracking-[0.2em] text-gold-dim">

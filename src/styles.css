@@ -383,6 +383,7 @@
 .aoh-tl-axis,
 .aoh-tl-lane,
 .aoh-tl-cursor-label { font-family: var(--label-face); font-size: 9px; }
+@media (max-width: 639px) { .aoh-tl-axis, .aoh-tl-lane, .aoh-tl-cursor-label { font-size: 11px; } }
 .aoh-tl-axis { fill: var(--muted-foreground); letter-spacing: 0.12em; }
 .aoh-tl-lane { fill: var(--gold-dim); letter-spacing: 0.22em; text-transform: uppercase; }
 .aoh-tl-rule { stroke: var(--border); }

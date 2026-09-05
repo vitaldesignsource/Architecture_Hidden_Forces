@@ -16,6 +16,25 @@ window.addEventListener("vite:preloadError", (event) => {
   healStaleBuild();
 });
 
+// The first screen's backdrop is asked for before the app has rendered a
+// single element: measured, the hero was otherwise requested a second after
+// the route chunk had long arrived, behind the whole tree's commit.
+const HERO: Record<string, string> = {
+  "/": "/bg/threshold-arches-in-misted-vault.webp",
+  "/phos": "/bg/door-of-light-in-flooded-chamber.webp",
+  "/phos/portal": "/bg/gorge-at-dawn-with-burst-of-sun.webp",
+  "/ecology": "/bg/moon-over-tidal-flats-and-channel.webp",
+};
+const hero = HERO[window.location.pathname.replace(/\/+$/, "") || "/"];
+if (hero) {
+  const link = document.createElement("link");
+  link.rel = "preload";
+  link.as = "image";
+  link.href = hero;
+  link.setAttribute("fetchpriority", "high");
+  document.head.appendChild(link);
+}
+
 const router = createRouter({ routeTree, defaultErrorComponent: RouteError, defaultNotFoundComponent: NotFound });
 
 declare module "@tanstack/react-router" {

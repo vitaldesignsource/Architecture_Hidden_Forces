@@ -8,9 +8,13 @@ import { LumenField } from "@/components/diagrams";
 import { PhosHeader, PhosFooter, useScrollTop } from "@/components/phos/PhosHeader";
 import { LabelChips } from "@/components/phos/Labels";
 import { useActiveSection, usePauseOffscreen, useReveal } from "@/hooks/useSectionEffects";
-import {
-  DIVISIONS, TOTAL, LABELS, CONFIDENCE, FACETS, MOVEMENT, TOOLS, entriesOf, progress, divisionLabel,
-} from "@/lib/phos/entries";
+import { DIVISIONS, TOTAL, divisionLabel } from "@/lib/phos/toc";
+import { LABELS, CONFIDENCE, FACETS, MOVEMENT, TOOLS } from "@/lib/phos/vocab";
+// the counts and the ten entrance rows, taken at build (vite.config.ts): the
+// Portal names every division without carrying the index of every entry
+import portal from "virtual:phos-portal";
+
+const PORTAL_DIVISION = DIVISIONS.find((d) => d.id === "portal")!;
 import { TOOL_ROUTES } from "@/lib/phos/tool-routes";
 
 /**
@@ -57,9 +61,9 @@ function Portal() {
   usePauseOffscreen();
   useScrollTop("portal");
 
-  const all = progress();
-  const begun = DIVISIONS.filter((d) => progress(d.id).written > 0).length;
-  const entrance = entriesOf("portal");
+  const all = { written: Object.values(portal.written).reduce((a, b) => a + b, 0), total: TOTAL };
+  const begun = DIVISIONS.filter((d) => (portal.written[d.id] ?? 0) > 0).length;
+  const entrance = portal.entrance;
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-void font-sans text-bone">
@@ -69,7 +73,7 @@ function Portal() {
 
       {/* ENTRANCE */}
       <header id="top" className="relative isolate overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
-        <Backdrop src="/bg/gorge-at-dawn-with-burst-of-sun.webp" opacity={0.34} position="center 45%" fill />
+        <Backdrop src="/bg/gorge-at-dawn-with-burst-of-sun.webp" opacity={0.34} position="center 45%" fill priority />
         <LumenField />
         <div className="grain" />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -172,7 +176,7 @@ function Portal() {
           </p>
           <div className="mt-12 grid gap-x-12 gap-y-px lg:grid-cols-2">
             {DIVISIONS.filter((d) => d.id !== "portal").map((d) => {
-              const p = progress(d.id);
+              const p = { written: portal.written[d.id] ?? 0, total: d.entries.length };
               const pct = p.total ? (p.written / p.total) * 100 : 0;
               return (
                 <Link
@@ -320,14 +324,14 @@ function Portal() {
 }
 
 /** Rows for the Portal Entrance — the same shape a division page uses. */
-function EntryRows({ entries }: { entries: ReturnType<typeof entriesOf> }) {
+function EntryRows({ entries }: { entries: typeof portal.entrance }) {
   return (
     <div className="mt-10 space-y-px">
       {entries.map((e) => (
         <Link
           key={e.id}
           to="/phos/$division/$entry"
-          params={{ division: e.division.id, entry: e.slug }}
+          params={{ division: "portal", entry: e.slug }}
           className={`group grid grid-cols-[3rem_1fr] items-baseline gap-4 border-b border-border py-4 transition-colors hover:border-gold/40 ${
             e.written ? "" : "opacity-60"
           }`}
@@ -339,15 +343,15 @@ function EntryRows({ entries }: { entries: ReturnType<typeof entriesOf> }) {
             <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <span className="font-serif text-lg text-bone transition-colors group-hover:text-gold">{e.title}</span>
               {e.written ? (
-                <LabelChips labels={e.meta?.labels ?? []} size="xs" />
+                <LabelChips labels={e.labels} size="xs" />
               ) : (
                 <span className="font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground">forthcoming</span>
               )}
             </span>
-            {e.meta?.summary && (
-              <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{e.meta.summary}</span>
+            {e.summary && (
+              <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">{e.summary}</span>
             )}
-            <span className="sr-only">{divisionLabel(e.division)}</span>
+            <span className="sr-only">{divisionLabel(PORTAL_DIVISION)}</span>
           </span>
         </Link>
       ))}

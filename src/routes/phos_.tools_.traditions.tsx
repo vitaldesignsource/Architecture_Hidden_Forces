@@ -37,7 +37,7 @@ function CompareTraditions() {
   const names = chosen.map((v) => v.value);
 
   const set = (next: string[]) =>
-    navigate({ to: "/phos/tools/traditions", search: { a: next[0], b: next[1], c: next[2] } });
+    navigate({ to: "/phos/tools/traditions", search: { a: next[0], b: next[1], c: next[2] }, resetScroll: false });
   const toggle = (slug: string) => {
     const cur = chosen.map((v) => v.slug);
     if (cur.includes(slug)) return set(cur.filter((x) => x !== slug));

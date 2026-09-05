@@ -209,7 +209,7 @@ export function EcologyFrame({
 
       {station ? (
         <header id="top" className="relative isolate overflow-hidden pb-24 pt-40 sm:pb-32 sm:pt-52">
-          <Backdrop src={`/bg/${station.backdrop}.webp`} opacity={0.34} position={station.position} scrim={0.26} fill />
+          <Backdrop src={`/bg/${station.backdrop}.webp`} opacity={0.34} position={station.position} scrim={0.26} fill priority />
           <div className="grain" />
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise">

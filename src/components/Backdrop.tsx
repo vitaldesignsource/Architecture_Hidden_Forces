@@ -17,6 +17,7 @@ export function Backdrop({
   portrait = false,
   anchor = "right",
   edgeFade = 13,
+  priority = false,
 }: {
   src: string;
   opacity?: number;
@@ -38,7 +39,21 @@ export function Backdrop({
   scrim?: number;
   /** Cover the whole section even on narrow viewports. Only the hero wants this. */
   fill?: boolean;
+  /** The first screen's image, fetched eagerly and first. One per page: the
+   *  four full-height backdrops far down the treatise are not it. */
+  priority?: boolean;
 }) {
+  // A band or a panel is drawn far smaller than its 1920px source, and on a
+  // phone at three device pixels per CSS pixel still needs no more than 1320
+  // of them, so each source has an 800 and a 1320 wide sibling written at
+  // build (scripts/backdrops.mjs) and the browser picks by the box it fills.
+  // The hero keeps the whole file: on a phone it is bound by height and a
+  // narrower candidate would only blur.
+  const w800 = src.replace("/bg/", "/bg/w800/");
+  const w1320 = src.replace("/bg/", "/bg/w1320/");
+  const sizes = portrait
+    ? anchor === "left" ? "(min-width: 1024px) min(54vw, 46rem), 100vw" : "(min-width: 1024px) min(59.2vh, 688px), min(36.8vh, 344px)"
+    : "100vw";
   // `-z-10` escapes to the root stacking context unless the containing section
   // isolates. Relying on an author to remember `isolate` has failed four times in
   // this file — every recurrence made a backdrop silently invisible. So the
@@ -81,9 +96,11 @@ export function Backdrop({
       >
         <img
           src={src}
+          srcSet={fill ? undefined : `${w800} 800w, ${w1320} 1320w, ${src} 1920w`}
+          sizes={fill ? undefined : sizes}
           alt=""
-          loading={fill ? "eager" : "lazy"}
-          fetchPriority={fill ? "high" : undefined}
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : undefined}
           decoding="async"
           className="aoh-bd-img h-full w-full object-cover"
           style={{ objectPosition: position }}

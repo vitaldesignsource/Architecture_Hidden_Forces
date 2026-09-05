@@ -83,7 +83,7 @@ function Ecology() {
     <EcologyFrame
       title={
         <header id="top" className="relative isolate overflow-hidden pb-28 pt-40 sm:pb-40 sm:pt-56">
-          <Backdrop src="/bg/moon-over-tidal-flats-and-channel.webp" opacity={0.36} position="center 60%" scrim={0.3} fill />
+          <Backdrop src="/bg/moon-over-tidal-flats-and-channel.webp" opacity={0.36} position="center 60%" scrim={0.3} fill priority />
           <div className="grain" />
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="animate-rise text-center">

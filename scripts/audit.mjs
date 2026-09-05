@@ -21,6 +21,7 @@
  * one place.
  */
 import { createHash } from "node:crypto";
+import { buildRefs, render as renderRefs } from "./lib/ecology-refs.mjs";
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -525,6 +526,18 @@ if (lex.length) {
   note("portal refs", `${refs} entry ids named in source, all registered`);
 }
 
+// ------------------------------------------------------------ ecology refs
+// The Ecology's pointers render from src/lib/ecology-refs.json, resolved at
+// build from the ids its sources name; a pointer to an id the file lacks
+// throws at runtime, so the file must be what the sources and outline yield.
+{
+  const toc = JSON.parse(readFileSync(join(root, "src/lib/phos/toc.json"), "utf8"));
+  const want = renderRefs(buildRefs(root, toc));
+  const have = readFileSync(join(root, "src/lib/ecology-refs.json"), "utf8");
+  if (want !== have) fail("ecology refs", "src/lib/ecology-refs.json is not what the Ecology's sources and the outline yield — run `npm run ecology-refs`");
+  else note("ecology refs", `${Object.keys(JSON.parse(have)).length} entries resolved for the Ecology's pointers`);
+}
+
 // ------------------------------------------------------------------ atlas
 // The Atlas sets entries in time and on the map from atlas.json; its sheet is
 // drawn once by scripts/atlas.mjs into atlas-geo.json. Every span must name a
@@ -572,6 +585,16 @@ if (lex.length) {
     for (const q of m[1].matchAll(/"([^"]+)"/g)) cited.add(q[1]);
   const unknown = [...cited].filter((id) => !ids.has(id));
   if (unknown.length) fail("register", `beings filed against entries that do not exist: ${unknown.join(", ")}`);
+  // every being has its account, and no account is orphaned
+  {
+    const acc = readFileSync(join(root, "src/lib/phos/beings-accounts.ts"), "utf8");
+    const accIds = new Set([...acc.matchAll(/^  "([a-z0-9-]+)": \{/gm)].map((m) => m[1]));
+    const regIds = new Set([...reg.matchAll(/^    id: "([a-z0-9-]+)",/gm)].map((m) => m[1]));
+    const noAccount = [...regIds].filter((id) => !accIds.has(id));
+    const orphan = [...accIds].filter((id) => !regIds.has(id));
+    if (noAccount.length) fail("register", `beings without an account in beings-accounts.ts: ${noAccount.join(", ")}`);
+    if (orphan.length) fail("register", `accounts for beings not in the register: ${orphan.join(", ")}`);
+  }
   const gate = readFileSync(join(root, "src/lib/phos/beings-gate.ts"), "utf8").match(/REGISTERED_ENTRIES = new Set\(\[([^\]]*)\]\)/);
   const gated = new Set(gate ? [...gate[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]) : []);
   const missing = [...cited].filter((id) => !gated.has(id));

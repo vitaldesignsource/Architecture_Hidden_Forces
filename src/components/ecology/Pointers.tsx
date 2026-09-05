@@ -1,7 +1,7 @@
 import { Fragment, type ReactNode } from "react";
 import { ArrowMark } from "@/components/marks";
 import { Link } from "@tanstack/react-router";
-import toc from "@/lib/phos/toc.json";
+import refs from "@/lib/ecology-refs.json";
 
 /**
  * Pointers — where this layer touches the two volumes it belongs to.
@@ -57,9 +57,9 @@ export const ARCH = {
 } as const;
 export type ArchId = keyof typeof ARCH;
 
-const PORTAL = new Map(
-  toc.divisions.flatMap((d) => d.entries.map((e) => [e.id, { ...e, division: d.id, numeral: d.numeral || "Portal" }])),
-);
+// the entries this volume names, resolved at build by scripts/ecology-refs.mjs,
+// so the whole outline is not shipped for a few dozen titles
+const PORTAL = new Map(Object.entries(refs).map(([id, e]) => [id, { ...e, id }]));
 function ref(id: string) {
   const r = PORTAL.get(id);
   if (!r) throw new Error(`ecology: "${id}" is not a registered entry`);
