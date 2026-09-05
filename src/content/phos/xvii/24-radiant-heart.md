@@ -26,4 +26,4 @@ Within the system, the radiant heart is the central chamber in which force becom
 
 The heart's light is tested by what it nourishes. Genuine radiance increases the capacity for truth, courage, compassion, and faithful relation.
 
-:: In the Architecture: [§ XXI · Chakras and Centers](/#centers) and [§ LII · Soul and Interior Life](/#soul).
+:: In the Architecture: [§ XXI · Chakras and Centres](/#centers) and [§ LII · Soul and Interior Life](/#soul).

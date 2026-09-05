@@ -268,7 +268,7 @@ export function Lexicon() {
                   : "border-border text-muted-foreground hover:border-gold/60 hover:text-bone/80"
               }`}
             >
-              {o} <span className="opacity-50">{originCounts[o]}</span>
+              {o} <span className="text-muted-foreground">{originCounts[o]}</span>
             </button>
           ))}
         </div>

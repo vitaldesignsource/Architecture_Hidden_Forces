@@ -349,7 +349,7 @@ function Hydrology() {
 
       <Province id="sea" line="Etheric Hydrology studies one great water. The field in which its currents meet astral images, spiritual orientations, material limits and living acts of choice is wider than the etheric, and it has a name." />
 
-      <Province id="aquifer" line="No hydrology is complete that studies only rain, rivers and visible springs. Beneath every open current lies another order of water — older, slower, pressurised, and largely untouched by the light." />
+      <Province id="aquifer" line="No hydrology is complete that studies only rain, rivers and visible springs. What the currents leave unspent does not vanish: it sinks, and the water it sinks into has a physiology of its own." />
 
       <Transition from="hydrology" />
     </EcologyFrame>

@@ -22,7 +22,7 @@ export const Route = createFileRoute("/ecology_/catacombs")({
   head: () => ({
     meta: [
       { title: "The Catacombs of Forgotten Gods — The Hidden Ecology of Formation" },
-      { name: "description", content: "On the afterlife of divine forms: the unequal deaths of a sacred architecture, its descent from formwake to the retentive deep, egregores in the houses of the gods, desecration and the aitheric scar, and the kinds of return." },
+      { name: "description", content: "On the afterlife of divine forms: the unequal deaths of a sacred architecture, its descent from Formwake to the retentive deep, egregores in the houses of the gods, desecration and the Aitheric Scar, and the kinds of return." },
     ],
   }),
   component: Catacombs,
@@ -112,7 +112,7 @@ function Catacombs() {
               and devotees supply continuity, interpretation, attention and embodied act.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              When these layers align, hierostasis is established: sacred presence is given a stable
+              When these layers align, Hierostasis is established: sacred presence is given a stable
               place to stand. The temple is then more than a building, the image more than a
               representation, the rite more than symbolic theatre. Together they form a vessel through
               which an otherwise diffuse or transcendent current acquires duration, locality,
@@ -155,14 +155,14 @@ function Catacombs() {
             <p className="text-base leading-relaxed text-muted-foreground">
               There is a liturgical death, when the rite is no longer enacted. A social death, when no
               living community organises itself around the name. An imaginal death, when the symbols
-              cease to wake awe, devotion, fear or recognition. An aetheric death, when the formative
+              cease to wake awe, devotion, fear or recognition. An etheric death, when the formative
               circulation that once joined place, image, body, offering and season loses coherence.
               And there may be a daimonic withdrawal, when the mediating intelligence that answered
               through the architecture no longer does so. None of these guarantees the others.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A deity may be socially forgotten and imaginally potent. A myth may stay emotionally
-              charged after its ritual current has gone. A sacred place may retain an aitheric scar
+              charged after its ritual current has gone. A sacred place may retain an Aitheric Scar
               long after its name has been lost. An egregore may go on imitating the gestures of a god
               whose higher current has withdrawn. Conversely, a divine or cosmic power may remain
               fully real while every historical form once used to approach it has become obsolete.
@@ -195,7 +195,7 @@ function Catacombs() {
       <Band id="eco-cat-descent" backdrop="stream-through-basalt-ruins" opacity={0.2} position="center 50%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <Eyebrow>From formwake to the retentive deep</Eyebrow>
+            <Eyebrow>From Formwake to the retentive deep</Eyebrow>
             <h2 className="mt-6 font-serif text-4xl leading-tight">
               A sacred architecture does not vanish <span className="italic text-gold">without residue</span>
             </h2>
@@ -243,7 +243,7 @@ function Catacombs() {
             different. They are the relational underworld in which once-sacred architectures persist
             as named or partially named remains. If the Crypt is the depth of retained potency and the
             Ossuary the repository of structural inheritance, the Catacombs are the network of passages
-            joining abandoned chambers. Each morphocrypt may shelter a dormant pattern; the catacombs
+            joining abandoned chambers. Each Morphocrypt may shelter a dormant pattern; the catacombs
             describe the greater ecology in which those patterns encounter, contaminate, nourish,
             imitate and wake one another.
           </p>
@@ -281,12 +281,12 @@ function Catacombs() {
               personality without possessing the ontological status attributed to it. Within the
               Architecture the Astral Light is the field of appearance, memory, affect and imaginal
               circulation; Morphaithēr is the formative hinge through which patterns become
-              environmentally and morphologically persuasive; Aithēr permits transmission; etheric
+              environmentally and morphologically persuasive; aether permits transmission; etheric
               embodiment grants operative vitality. These levels can coincide, and need not.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A forgotten god can appear with extraordinary vividness in dream or vision because its
-              astral envelope remains saturated, while no corresponding aetheric ingress or daimonic
+              astral envelope remains saturated, while no corresponding etheric ingress or daimonic
               contact is present. Another power may arrive with little familiar imagery because the
               old god-form has died while the deeper current seeks a new and more truthful body.
             </p>
@@ -297,7 +297,7 @@ function Catacombs() {
               The vision genuinely occurred; the image carried genuine charge; the atmosphere was not
               imaginary in the trivial sense. Yet the conclusion that the ancient god has personally
               returned may still be wrong. The experience may arise from a vestigium, a morphally
-              saturated cultural image, an egregoric remnant, an aitheric scar, a psychic projection, a
+              saturated cultural image, an egregoric remnant, an Aitheric Scar, a psychic projection, a
               daimonic intelligence using inherited symbolism, or a confluence in which several of these
               meet. The Architecture refuses both reflexive disbelief and premature enthronement. It
               asks not only whether something was experienced but{" "}
@@ -329,7 +329,7 @@ function Catacombs() {
               the current, preserving institutional authority after living contact has diminished. It
               may have formed around a mistaken attribution from the beginning. When a cult dies, its
               egregore may collapse quickly, remain as a weak habit, or survive for centuries because
-              prolonged devotion has produced morphal saturation.
+              prolonged devotion has produced Morphal Saturation.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Here the Architecture fills a major gap in ordinary occult language. To call every
@@ -368,7 +368,7 @@ function Catacombs() {
       <Band id="eco-cat-scar" backdrop="two-figures-at-rock-cut-gateway" opacity={0.2} position="center 50%">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <Eyebrow>Desecration, demonisation and the aitheric scar</Eyebrow>
+            <Eyebrow>Desecration, demonisation and the Aitheric Scar</Eyebrow>
             <h2 className="mt-6 font-serif text-4xl leading-tight">
               Not a pristine deity awaiting rediscovery — <span className="italic text-gold">a compressed mixture</span>
             </h2>
@@ -378,7 +378,7 @@ function Catacombs() {
               Not every god entered the catacombs through peaceful forgetting. Many were driven there by
               conquest, forced conversion, iconoclasm, enslavement, political centralisation or
               deliberate ridicule. These acts do more than interrupt transmission. They can produce an
-              aitheric scar: a persistent deformation in the field of relation. A vestigium merely
+              Aitheric Scar: a persistent deformation in the field of relation. A vestigium merely
               remains; a scar continues to bias what later becomes possible around it. When a
               sanctuary is destroyed in hatred, the remnant may carry both the prior devotion and the
               violence of suppression. When a god is demonised, the older form can become fused with
@@ -391,7 +391,7 @@ function Catacombs() {
               This complicates the familiar claim that the demons of a new religion are merely the gods
               of the old. Sometimes the defeated deity does survive within the demonised form; sometimes
               only selected traits are transferred; sometimes the polemical image becomes an entirely
-              new egregore. Morphal inheritance permits continuity without requiring total identity:
+              new egregore. Morphal Inheritance permits continuity without requiring total identity:
               old bones can be recognised beneath a new figure, and the being, the current and the
               ethical architecture may all have changed.
             </p>
@@ -421,9 +421,9 @@ function Catacombs() {
               translation restores hymns; museums display cult images to millions; digital archives
               reproduce sacred symbols at a scale no priesthood could have imagined; artists,
               occultists, reconstructionists, novelists, film-makers and online communities return
-              abandoned names to collective attention. This creates new morphogenic pressure around
+              abandoned names to collective attention. This creates new Morphogenic Pressure around
               old forms. Yet a million reproductions of a divine image can produce astral charge
-              without restoring its original aetheric body. Modern fascination can generate a new
+              without restoring its original etheric body. Modern fascination can generate a new
               egregore in the silhouette of an ancient god. A commercial image can become morphally
               saturated while remaining spiritually empty. A god may return as an aesthetic, a brand,
               an identity, an ideology, a fantasy of power, or a psychological archetype without
@@ -441,9 +441,9 @@ function Catacombs() {
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
               These can overlap; they should never be assumed identical. A sudden flare from
-              accumulated residue the layer calls cryptopyrosis — the hidden burning of a form from
+              accumulated residue the layer calls Cryptopyrosis — the hidden burning of a form from
               below, kindled by stored charge, sympathetic contact or renewed attention. It differs
-              from hieropyrosis, the sacred ignition that occurs when a living higher current truly
+              from Hieropyrosis, the sacred ignition that occurs when a living higher current truly
               enters and illuminates a vessel. Cryptopyrosis can be spectacular, emotionally
               overwhelming and culturally contagious; it does not by itself prove divine presence.
             </p>
@@ -597,7 +597,7 @@ function Catacombs() {
               the secondary psychic organisms generated by sustained collective attention. The study of
               hierophany explains how sacred reality appears through ordinary things and places. What
               these rarely offer is a unified account of what happens after the hierophany has lost
-              its people: the survival of the image from the survival of the current, the memory of a
+              its people, one that tells apart the survival of the image from the survival of the current, the memory of a
               rite from its operative vitality, the persistence of an egregore from the presence of a
               god, the inheritance of sacred morphology from actual continuity of identity.
             </p>

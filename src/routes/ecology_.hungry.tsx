@@ -198,7 +198,7 @@ function Hungry() {
               ]}
             />
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              When these converge they generate morphogenic pressure: an increasing tendency for a
+              When these converge they generate Morphogenic Pressure: an increasing tendency for a
               dispersed current to acquire a recognisable, repeatable body. At first the formation
               depends on deliberate participation. With reinforcement the field reaches morphal
               saturation, and the form becomes easier to evoke than to forget. New participants feel an
@@ -271,7 +271,7 @@ function Hungry() {
               the form retains the symbols of its former purpose after its metabolism has inverted.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              The first station drew the same shape in a single form:{" "}
+              The fourth station drew the same shape in a single form:{" "}
               <Link to="/ecology/form" hash="eco-f-captive" className={L}>captive light</Link>, a
               structure deepened by what it carried until it carries only itself. This province is
               that progression in a collective body, and the{" "}
@@ -354,7 +354,7 @@ function Hungry() {
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Its waste products are equally important. Hungry forms discharge exhaustion, confusion,
-              rivalry, shame, imitation and aitheric scars into their habitat. These residues do not
+              rivalry, shame, imitation and Aitheric Scars into their habitat. These residues do not
               vanish when individual members depart. They alter the conditions under which later people
               meet, interpret and respond. The form changes not only its participants but the field of
               future possibility — which is the great law of this layer, read in a collective body.
@@ -379,7 +379,7 @@ function Hungry() {
               atmosphere within which forces incline toward pattern: not an entity that manufactures
               forms but the conditioned medium of formability itself, shaped by organisms, places,
               rituals, symbols, histories and prior acts. An egregore changes Morphaithēr by making
-              certain configurations easier to assume and others harder. It produces an ontic weather
+              certain configurations easier to assume and others harder. It produces an Ontic Weather
               in which some thoughts feel natural, some emotions arrive already amplified, and some
               roles seem to await occupants.
             </p>
@@ -436,7 +436,7 @@ function Hungry() {
             morphology in the Ossuary and a wound in the Crypt, and a later community, entering
             compatible conditions within Morphaithēr, may inherit the old architecture and wake the old
             consequence. The new form is not numerically identical with the old and not wholly new. It
-            is morphal inheritance: force taking up familiar bones under altered conditions. The cycle
+            is Morphal Inheritance: force taking up familiar bones under altered conditions. The cycle
             is a spiral, not a closed circle. Nothing simply resets.
           </p>
         </div>
@@ -590,9 +590,9 @@ function Hungry() {
             />
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
               Without a new ecology the old appetite will often reassemble from its surviving vestigia.
-              At times hieropyrosis, sacred combustion, is required: the concentrated exposure of a
+              At times Hieropyrosis, sacred combustion, is required: the concentrated exposure of a
               hardened form to truth intense enough to release its captive force. Combustion must be
-              followed by hierostasis, a living sacred equilibrium; otherwise the cleared field stays
+              followed by Hierostasis, a living sacred equilibrium; otherwise the cleared field stays
               empty, and emptiness invites the nearest familiar architecture to return.
             </p>
             <div className="mt-8">

@@ -62,7 +62,7 @@ function Nursery() {
               destination, an inner proportion without an outer shape, a recognisable atmosphere
               without a name. Neither pure archetype nor material object: a morphogenic becoming, a
               provisional arrangement of force, memory, relation and possibility undergoing what the
-              layer calls morphokyēsis, the gestation of form.
+              layer calls Morphokyēsis, the gestation of form.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               This distinguishes the Nursery from the other provinces, and it is also the chamber in
@@ -113,7 +113,7 @@ function Nursery() {
               doctrine, because they understand causation as formative and germinal rather than
               mechanical. The Nursery adds an anatomy of gestation to the metaphysics of the seed: it
               distinguishes the seed-current from its nourishment, the inherited scaffold from the
-              living pattern, the astral image from the aetheric body, and the appointed possibility
+              living pattern, the astral image from the etheric body, and the appointed possibility
               from the conditions that permit or refuse its birth.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
@@ -121,7 +121,7 @@ function Nursery() {
               imagination as a power mediating between invisible influence and bodily consequence.
               The Architecture separates what that "astral" language gathers into one field. A
               signature may be the visible vestige of a formative history; an image may be astral;
-              the current sustaining it aetheric; its structural ancestry a matter of morphal
+              the current sustaining it etheric; its structural ancestry a matter of morphal
               inheritance; the pressure drawing these together Morphaithēr's. The signature reveals
               that something has crossed into appearance. The Nursery describes what had to occur
               before the crossing became possible. Plato gives the receptive field, Plotinus and
@@ -151,14 +151,14 @@ function Nursery() {
               differentiate itself.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Conception begins through aitheric confluence. Currents previously separate enter a
+              Conception begins through Aitheric Confluence. Currents previously separate enter a
               relation strong enough to produce more than their sum: an idea meets a need, a memory a
               new environment, a celestial influence a prepared organism, an ancestral pattern
               unfamiliar materials, a descending possibility an answering desire. If the confluence
-              generates a distinct formative current, aitherogenesis has occurred. Conception alone
-              does not guarantee birth. The current must acquire aitherostasis, a stability sufficient
+              generates a distinct formative current, Aitherogenesis has occurred. Conception alone
+              does not guarantee birth. The current must acquire Aitherostasis, a stability sufficient
               to keep it from dispersing back into the field; held within a protected and rightly
-              ordered locus, that stability approaches hierostasis — not immobility but sacred
+              ordered locus, that stability approaches Hierostasis — not immobility but sacred
               placement, in which the nascent pattern is held in truthful relation to its source, its
               environment and its possible purpose.
             </p>
@@ -166,21 +166,21 @@ function Nursery() {
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Within the enclosure, pneumic percolation begins. Spirit does not always descend as a
+              Within the enclosure, Pneumic Percolation begins. Spirit does not always descend as a
               single dramatic act; it may enter gradually, filtering through an incomplete pattern
-              until its parts learn how to bear a common interiority. This produces pneumotension,
+              until its parts learn how to bear a common interiority. This produces Pneumotension,
               the inward pressure by which an unborn form strains toward fuller expression. Around it,
-              morphogenic pressure attracts compatible images, materials, persons, symbols and
+              Morphogenic Pressure attracts compatible images, materials, persons, symbols and
               circumstances. Coincidences cluster. Similar designs arise independently. A word appears
               repeatedly before its doctrine is understood; a place seems to anticipate the rite later
-              performed there. These may be the signs of a formwake — the disturbance left in
+              performed there. These may be the signs of a Formwake — the disturbance left in
               experience by a form moving beneath the threshold of manifestation.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A wake is not yet a vessel, and recurrence is not proof of destiny. An unborn form can
               announce a relationship without possessing the right to be born. Here the Nursery
               guards against the commonest error of esoteric interpretation: confusing intensity with
-              authority. Repeated symbols may indicate morphogenic pressure, inherited vestigia,
+              authority. Repeated symbols may indicate Morphogenic Pressure, inherited vestigia,
               astral contagion, personal fixation, or an authentic formative arrival. Discernment
               attends to the whole ecology and does not submit to the loudest sign.
             </p>
@@ -227,10 +227,10 @@ function Nursery() {
               The <Link to="/ecology/ossuary" className={L}>Ossuary</Link> supplies the bones. No form
               is born without ancestry; even the most unprecedented manifestation borrows ratios,
               gestures, organs, symbols and strategies from structures that existed before it, and
-              these vestigia, morphorelics and fragments of inheritance enter the Nursery as
+              these vestigia, Morphorelics and fragments of inheritance enter the Nursery as
               scaffolds. A scaffold can become a prison. If the Nursery is dominated by old bones,
               novelty is forced to impersonate the past, and what appears to be prophecy is nostalgia
-              under morphogenic pressure. The <Link to="/ecology/crypt" className={L}>Crypt</Link>{" "}
+              under Morphogenic Pressure. The <Link to="/ecology/crypt" className={L}>Crypt</Link>{" "}
               offers something deeper than structure: what existence learned through its forms —
               consequences, unresolved relations, latent capacities. It contributes memory without
               insisting on repetition, and can disclose what a future form must remember in order not
@@ -258,14 +258,14 @@ function Nursery() {
 
       {/* ---- ontic weather, saturation and failed births ---- */}
       <Band id="eco-n-weather" backdrop="salt-flat-polygons-under-passing-storm" opacity={0.2} position="center 55%">
-        <Eyebrow>Ontic weather, morphal saturation and failed births</Eyebrow>
+        <Eyebrow>Ontic Weather, Morphal Saturation and failed births</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           Not every failed gestation <span className="italic text-gold">is a tragedy</span>
         </h2>
         <div className="mt-10 grid gap-12 lg:grid-cols-2">
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Every Nursery exists within ontic weather. Some periods and places make particular
+              Every Nursery exists within Ontic Weather. Some periods and places make particular
               embodiments easy; others resist them. A culture may be ready for a symbol but not the
               discipline it requires. A person may receive the image of a future vocation while
               lacking the etheric organisation to sustain it. A ritual current may be authentic and
@@ -274,7 +274,7 @@ function Nursery() {
               world able to carry it to term.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              When too many patterns accumulate without resolution, morphal saturation occurs. The
+              When too many patterns accumulate without resolution, Morphal Saturation occurs. The
               Nursery is crowded with uncompleted tendencies, borrowed images, ancestral demands,
               cultural fantasies and interrupted projects; forms interfere with one another,
               boundaries blur, one current appropriates another's imagery, a genuine possibility is
@@ -291,7 +291,7 @@ function Nursery() {
               Ossuary, supplying one useful organ to a form that will arise centuries later. Others
               withdraw into the Crypt, where their consequences deepen primordial memory. Failure
               becomes dangerous chiefly when an arrested form refuses dissolution: it may survive as
-              an aitheric scar, a hardened site of interrupted becoming, or as a hungry fragment
+              an Aitheric Scar, a hardened site of interrupted becoming, or as a hungry fragment
               seeking vitality without a whole to integrate it into.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
@@ -324,8 +324,8 @@ function Nursery() {
               Human <Arch id="image">imagination</Arch> can enter the Nursery, but it does not rule it.
               An image may clothe a current, attract one, distort one, or fabricate the appearance of
               one — which is why the Architecture keeps the imaginal and affective field of the Astral
-              Light apart from aetheric manifestation. Desire and visualisation can strengthen an
-              astral figure without generating a stable aetheric organism, and a genuine aetheric
+              Light apart from etheric manifestation. Desire and visualisation can strengthen an
+              astral figure without generating a stable etheric organism, and a genuine etheric
               current may exist before anyone can envision an adequate symbol for it. Morphogenic
               pressure moves in both directions: coherent currents recruit images, and coherent images
               help recruit and organise force. Manifestation occurs only when their relation becomes
@@ -342,7 +342,7 @@ function Nursery() {
                 ["Rhythm", "Rhythm regulates the hydrology."],
                 ["Offering", "Offerings feed particular relations."],
                 ["Consecration", "Consecration invites a current to inhabit a fitting body."],
-                ["Repetition and silence", "Repetition assists aitherostasis; silence prevents premature fixation."],
+                ["Repetition and silence", "Repetition assists Aitherostasis; silence prevents premature fixation."],
               ]}
             />
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">

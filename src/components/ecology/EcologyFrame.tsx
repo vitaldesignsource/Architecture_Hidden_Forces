@@ -131,7 +131,7 @@ export function EcologyFrame({
                   {s.title.replace(/^The /, "").replace(/ of .*$/, "")}
                 </Link>
               ))}
-              <Link to="/ecology/morphaither" className="text-gold-dim transition-colors hover:text-gold" title="The circulation returns to Morphaithēr">
+              <Link to="/ecology/morphaither" aria-label="Return to Morphaithēr" className="-m-2 p-2 text-gold-dim transition-colors hover:text-gold" title="The circulation returns to Morphaithēr">
                 <ReturnMark />
               </Link>
               {/* The provinces and the lexicon, at every width the bar exists at:

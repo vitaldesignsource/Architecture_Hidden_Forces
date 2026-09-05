@@ -1,5 +1,5 @@
 ---
-title: Index of Colors
+title: Index of Colours
 labels: [Architecture of Hidden Forces Doctrine, Comparative Parallel]
 confidence: [Established, Symbolic]
 tradition: [Architecture of Hidden Forces]

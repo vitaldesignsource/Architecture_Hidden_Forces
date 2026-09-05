@@ -1,5 +1,5 @@
 ---
-title: Democritus on Color and Emanation
+title: Democritus on Colour and Emanation
 labels: [Historical Doctrine, Architecture of Hidden Forces Doctrine]
 confidence: [Established, Probable]
 tradition: [Greek, Architecture of Hidden Forces]

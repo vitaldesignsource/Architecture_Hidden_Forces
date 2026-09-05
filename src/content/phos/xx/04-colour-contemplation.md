@@ -1,5 +1,5 @@
 ---
-title: Color Contemplation
+title: Colour Contemplation
 labels: [Architecture of Hidden Forces Doctrine, Phenomenological Report]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces]

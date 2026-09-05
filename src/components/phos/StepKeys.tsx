@@ -36,7 +36,7 @@ function Key({ k }: { k: ReactNode }) {
 /** The keys, named once beneath the previous/next links; only where there is a keyboard to speak of. */
 export function KeyHint({ between }: { between: string }) {
   return (
-    <p className="mt-6 hidden items-center gap-1.5 font-label text-[9px] uppercase tracking-[0.25em] text-gold-dim/80 pointer-fine:flex">
+    <p className="mt-6 hidden items-center gap-1.5 font-label text-[9px] uppercase tracking-[0.25em] text-gold-dim pointer-fine:flex">
       <Key k={<BackMark />} /> <Key k={<ArrowMark />} />
       <span className="mx-1">or</span>
       <Key k="[" /> <Key k="]" />

@@ -20,4 +20,4 @@ Natural contrast effects can produce apparent borders of brightness around figur
 
 The halo is not the whole aura. It is a region of intensified luminosity within the larger field, often indicating concentration around consciousness, identity, spiritual receptivity, or a particular active centre.
 
-:: In the Architecture: [§ XXI · Chakras and Centers](/#centers).
+:: In the Architecture: [§ XXI · Chakras and Centres](/#centers).

@@ -1,5 +1,5 @@
 ---
-title: Color Temperature
+title: Colour Temperature
 labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Scientific, Architecture of Hidden Forces]

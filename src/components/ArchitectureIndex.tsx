@@ -56,7 +56,7 @@ export function ArchitectureIndex() {
               }`}
             >
               {x.k}
-              <span className="mt-0.5 block font-label text-[9px] uppercase tracking-[0.12em] opacity-60">
+              <span className="mt-0.5 block font-label text-[9px] uppercase tracking-[0.12em] text-muted-foreground">
                 {x.n} · {Object.keys(x.why).length}
               </span>
             </button>

@@ -115,9 +115,23 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
   const [q, setQ] = useState("");
   const [i, setI] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  // whoever opened the palette gets focus back when it closes — the Search
+  // button, usually — unless a hit was chosen and the page is changing anyway
+  const opener = useRef<HTMLElement | null>(null);
   const hits = useMemo(() => search(q), [q]);
 
-  useEffect(() => { if (open) { setQ(""); setI(0); setTimeout(() => inputRef.current?.focus(), 0); } }, [open]);
+  useEffect(() => {
+    if (open) {
+      opener.current = document.activeElement as HTMLElement | null;
+      setQ(""); setI(0);
+      setTimeout(() => inputRef.current?.focus(), 0);
+    }
+  }, [open]);
+  const close = (navigating = false) => {
+    onClose();
+    if (!navigating) { const el = opener.current; setTimeout(() => el?.focus?.(), 0); }
+  };
   useEffect(() => { setI(0); }, [q]);
   useEffect(() => {
     if (!open) return;
@@ -126,43 +140,56 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
   }, [open]);
 
   const go = (h: Hit) => {
-    onClose();
+    close(true);
     if (h.kind === "entry") navigate({ to: "/phos/$division/$entry", params: { division: h.e.division.id, entry: h.e.slug } });
     else if (h.kind === "division") navigate(h.id === "portal" ? { to: "/phos/portal" } : { to: "/phos/$division", params: { division: h.id } });
     else if (h.kind === "tool") navigate({ to: h.to });
     else if (h.kind === "page") navigate({ to: h.to, hash: h.hash });
     else navigate({ to: "/phos/browse/$facet/$value", params: { facet: h.facet, value: valueSlug(h.value) } });
   };
+  // one handler on the dialog, so Escape works wherever focus is and Tab
+  // stays inside: a keyboard reader once tabbed out under the veil, where
+  // Escape no longer answered and the page beneath could not scroll
   const onKey = (e: React.KeyboardEvent) => {
-    if (e.key === "Escape") { e.preventDefault(); onClose(); }
+    if (e.key === "Escape") { e.preventDefault(); close(); }
     else if (e.key === "ArrowDown") { e.preventDefault(); setI((x) => Math.min(hits.length - 1, x + 1)); }
     else if (e.key === "ArrowUp") { e.preventDefault(); setI((x) => Math.max(0, x - 1)); }
-    else if (e.key === "Enter" && hits[i]) { e.preventDefault(); go(hits[i]); }
+    else if (e.key === "Enter" && e.target === inputRef.current && hits[i]) { e.preventDefault(); go(hits[i]); }
+    else if (e.key === "Tab") {
+      const focusable = Array.from(dialogRef.current?.querySelectorAll<HTMLElement>('input, button, [tabindex]:not([tabindex="-1"])') ?? []);
+      if (!focusable.length) return;
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   };
+  const guidance = q.trim().length < 2
+    ? "Six hundred and fifty-three entries, twenty-two divisions and the instruments of Phōs; the stations, provinces and lexicon of the Hidden Ecology; the sections of the Architecture. Type two letters. A division's numeral goes straight to it; a facet value exactly typed offers its browse page."
+    : hits.length === 0 ? "Nothing carries that yet." : null;
   useEffect(() => { document.getElementById(`aoh-hit-${i}`)?.scrollIntoView({ block: "nearest" }); }, [i]);
 
   if (!open) return null;
   return (
-    <div className="fixed inset-0 z-[80] flex items-start justify-center bg-void/80 px-4 pt-[12vh] backdrop-blur-md" onMouseDown={onClose} role="presentation">
-      <div role="dialog" aria-modal="true" aria-label="Search the three volumes" onMouseDown={(e) => e.stopPropagation()}
+    <div className="fixed inset-0 z-[80] flex items-start justify-center bg-void/80 px-4 pt-[12vh] backdrop-blur-md" onMouseDown={() => close()} role="presentation">
+      <div ref={dialogRef} role="dialog" aria-modal="true" aria-label="Search the three volumes" onMouseDown={(e) => e.stopPropagation()} onKeyDown={onKey}
            className="animate-rise w-full max-w-2xl border border-gold/40 bg-void shadow-[0_0_80px_-20px_oklch(0.78_0.13_75_/_0.5)]">
         <div className="flex items-center gap-4 border-b border-border px-6 py-4">
           <span className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">Search</span>
-          <input ref={inputRef} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={onKey}
+          <input ref={inputRef} value={q} onChange={(e) => setQ(e.target.value)}
                  placeholder="a title, a word from a summary, a tradition, a station, a term of the lexicon…"
-                 aria-label="Search" aria-controls="aoh-hits" aria-activedescendant={hits[i] ? `aoh-hit-${i}` : undefined}
+                 role="combobox" aria-label="Search" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded={hits.length > 0}
+                 aria-controls="aoh-hits" aria-activedescendant={hits[i] ? `aoh-hit-${i}` : undefined} aria-describedby="aoh-search-help"
                  className="min-w-0 flex-1 bg-transparent font-serif text-xl italic text-bone placeholder:text-muted-foreground/70 focus:outline-none" />
-          <button onClick={onClose} className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">esc</button>
+          <button onClick={() => close()} className="font-label text-[10px] uppercase tracking-[0.2em] text-gold-dim hover:text-gold">esc</button>
         </div>
 
-        <ul id="aoh-hits" role="listbox" className="max-h-[56vh] overflow-y-auto">
-          {q.trim().length < 2 ? (
-            <li className="px-6 py-8 text-sm leading-relaxed text-muted-foreground">
-              Six hundred and fifty-three entries, twenty-two divisions and the instruments of Phōs; the stations, provinces and lexicon of the Hidden Ecology; the sections of the Architecture. Type two letters. A division's numeral goes straight to it; a facet value exactly typed offers its browse page.
-            </li>
-          ) : hits.length === 0 ? (
-            <li className="px-6 py-8 text-sm text-muted-foreground">Nothing carries that yet.</li>
-          ) : hits.map((h, n) => {
+        {/* the guidance lives outside the list, so the list holds options and
+            nothing else, and the input can point to the guidance by id */}
+        <p id="aoh-search-help" className={guidance ? "px-6 py-8 text-sm leading-relaxed text-muted-foreground" : "sr-only"}>
+          {guidance ?? "Arrow keys move through the hits; Enter opens one; Escape closes."}
+        </p>
+        <ul id="aoh-hits" role="listbox" aria-label="Hits" className="max-h-[56vh] overflow-y-auto">
+          {hits.map((h, n) => {
             const on = n === i;
             const row = `grid cursor-pointer gap-4 border-b border-border/60 px-6 py-3.5 transition-colors ${on ? "bg-gold/10" : "hover:bg-gold/5"}`;
             if (h.kind === "entry") return (

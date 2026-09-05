@@ -27,7 +27,7 @@ export const ARCH = {
   subtattva: "§ XIV · The Compound Qualities",
   celestial: "§ XIX · Celestial Correspondence",
   channels: "§ XX · Nadis, Meridians, and Channels",
-  centers: "§ XXI · Chakras and Centers",
+  centers: "§ XXI · Chakras and Centres",
   axis: "§ XXIII · Head, Heart, and Hara",
   image: "§ XXV · Image and Imagination",
   symbol: "§ XXVI · Symbol",

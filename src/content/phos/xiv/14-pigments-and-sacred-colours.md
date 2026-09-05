@@ -1,5 +1,5 @@
 ---
-title: Pigments and Sacred Colors
+title: Pigments and Sacred Colours
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Egyptian]

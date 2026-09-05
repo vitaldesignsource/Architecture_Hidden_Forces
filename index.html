@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- The fonts arrive without holding the page: a stylesheet in the head blocks
+         the module behind it, so the route was fetched only after Google answered.
+         Loaded for print and switched to all once it lands, it swaps in instead. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gentium+Plus:ital@0;1&family=Inter:wght@300..700&family=Cinzel:wght@400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Gentium+Plus:ital@0;1&family=Inter:wght@400&family=Cinzel:wght@400&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Gentium+Plus:ital@0;1&family=Inter:wght@400&family=Cinzel:wght@400&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <title>The Architecture of Hidden Forces</title>
     <meta name="description" content="A treatise on metaphysics: the architecture by which hidden forces become visible forms, with Phōs, an encyclopaedia of light, and the Hidden Ecology of Formation." />
     <meta name="theme-color" content="#0b0a09" />

@@ -41,7 +41,7 @@ const S = AQUIFER;
 const TERMS: [string, string][] = [
   ["Katadynamis", "The settling of force beneath the threshold of active expression. Not destruction: latency."],
   ["Pneumic Percolation", "Below the threshold, force seeping through the subtle strata according to affinity, pressure, permeability and prior pathways."],
-  ["Aitheric Scar", "A channel carved by repeated descents, through which similar forces afterwards travel more easily."],
+  ["Aitheric Scar", "The deformation repeated descents leave in the strata: a channel, through which similar forces afterwards travel more easily."],
   ["Aitheric Confluence", "Where many descending currents meet and a reservoir begins."],
   ["Pneumotension", "The pressure of subtle force seeking release."],
   ["Morphorelics", "Surviving formative remnants: no longer complete forms, not yet formless energy."],
@@ -82,7 +82,7 @@ const FORESHADOWINGS: { who: string; term: string; gives: string; differs: strin
     link: <><Arch id="celestial">Celestial Correspondence</Arch> · <Entry id="xv-86">Paracelsus in the Portal</Entry></>,
   },
   {
-    who: "Jakob Böhme",
+    who: "Jacob Böhme",
     term: "Ungrund · the unground",
     gives: "The abyss beyond determinate foundation, joining darkness with the possibility of manifestation — and guarding the mystery of darkness from simple identification with evil.",
     differs: "The Ungrund is primordial and theological; the Aquifer is intracosmic and sedimentary. One precedes formed nature; the other is deepened by everything formed nature has undergone. One is no-ground. The other has banks, strata, channels, contaminants and pressure.",
@@ -198,7 +198,7 @@ function Aquifer() {
               items={[
                 ["Katadynamis", "The settling of force beneath the threshold of active expression. Not destruction: latency."],
                 ["Pneumic Percolation", "Below the threshold, force seeps through the subtle strata according to affinity, pressure, permeability and the pathways cut before it."],
-                ["Aitheric Scar", "A channel carved by repeated descents, through which similar forces afterwards travel more easily. The law of the channel, read downward."],
+                ["Aitheric Scar", "The deformation repeated descents leave in the strata: a channel, through which similar forces afterwards travel more easily. The law of the channel, read downward."],
                 ["Aitheric Confluence", "Where many such currents meet: a reservoir whose contents may be far older than any person presently touched by them."],
               ]}
             />
@@ -639,7 +639,7 @@ function Aquifer() {
 
       {/* ---- flood, drought and ontic weather ---- */}
       <Band id="eco-a-weather" backdrop="glowing-plume-rising-from-seabed-vent" opacity={0.24} position="center 60%" portrait>
-        <Eyebrow>Flood, drought and ontic weather</Eyebrow>
+        <Eyebrow>Flood, drought and Ontic Weather</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           The depth contributes <span className="italic text-gold">to the weather above it</span>
         </h2>

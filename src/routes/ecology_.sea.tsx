@@ -68,15 +68,12 @@ function Sea() {
               The between is not an empty distance through which causation travels. It is a
               productive medium that participates in what the cause will become.
             </p>
-            <Deeper label="Go deeper · what the name refuses">
+            <Deeper label="Go deeper · the Sea and the Hydrology">
               <p>
-                Not another plane set mechanically between the planes the treatise already gives,
-                and not another substance added to the cosmology. The Sea is the total condition of
-                mediation: every station and every province of this layer lies in it, and Etheric
-                Hydrology is the study of one great water within it, the formative water, not of the
-                whole. Nor is it a name for vagueness. The whole province is an argument for greater
-                causal precision than either a single hidden explanation or a world in which only the
-                nearest measurable antecedent is real.
+                Every station and every province of this layer lies in the Sea, and Etheric
+                Hydrology is the study of one great water within it — the formative water — not of
+                the whole. Read the Hydrology, then, as the chart of one current, and the Sea as the
+                water every chart of this layer is drawn on.
               </p>
             </Deeper>
           </div>
@@ -342,7 +339,7 @@ function Sea() {
 
       {/* ---- causal memory and the aitheric scar ---- */}
       <Band id="eco-sea-memory" backdrop="sea-cave-glowing-orange-at-dusk" opacity={0.2} position="center 50%">
-        <Eyebrow>Causal memory and the aitheric scar</Eyebrow>
+        <Eyebrow>Causal memory and the Aitheric Scar</Eyebrow>
         <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
           No force crosses the sea <span className="italic text-gold">without leaving a trace</span>
         </h2>

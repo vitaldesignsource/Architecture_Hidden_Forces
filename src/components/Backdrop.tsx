@@ -82,7 +82,8 @@ export function Backdrop({
         <img
           src={src}
           alt=""
-          loading="lazy"
+          loading={fill ? "eager" : "lazy"}
+          fetchPriority={fill ? "high" : undefined}
           decoding="async"
           className="aoh-bd-img h-full w-full object-cover"
           style={{ objectPosition: position }}

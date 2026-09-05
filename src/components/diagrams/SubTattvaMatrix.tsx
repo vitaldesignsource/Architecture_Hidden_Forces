@@ -81,7 +81,7 @@ export function SubTattvaMatrix() {
                       }`}
                     >
                       <TattvaGlyph dominant={K[i]} modifier={diag ? null : K[j]} size="100%" decorative />
-                      <span className={`absolute bottom-0.5 right-1 font-label text-[9px] uppercase tracking-[0.06em] ${on ? "text-gold" : "text-muted-foreground/70"}`}>
+                      <span className={`absolute bottom-0.5 right-1 font-label text-[9px] uppercase tracking-[0.06em] ${on ? "text-gold" : "text-muted-foreground"}`}>
                         {ABBR[i]}·{ABBR[j]}
                       </span>
                     </button>

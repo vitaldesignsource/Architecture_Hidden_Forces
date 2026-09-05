@@ -143,7 +143,7 @@ function Crypt() {
               gave it, and the next thing to grow here will grow in that shape. This is the
               Crypt's first principle, and it is the one the Ossuary cannot state: something does
               not need to be physically present, or to have left any usable pattern behind, for its
-              having existed to continue to matter. The treatise puts it as a law of forms —
+              having existed to continue to matter. The treatise puts it as a law of forms —{" "}
               <Arch id="laws">irreversibility</Arch>: possibility becomes actuality, actuality leaves
               consequences, consequences modify what is possible next — and as one sentence in the
               Retentive Depth, which this station adopts as its own:

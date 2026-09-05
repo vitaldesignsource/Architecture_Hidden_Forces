@@ -38,7 +38,7 @@ export function AquiferSection() {
   const dim = (k: string) => (sel && sel !== k ? 0.18 : 1);
   const cur = F.find((f) => f.k === sel);
   const G = "var(--gold, #c9a227)";
-  const lbl = (k: string) => ({ ...fs(6.6), letterSpacing: "0.14em" });
+  const lbl = (k: string) => ({ ...fs(7.4), letterSpacing: "0.14em" });
 
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-center">
@@ -112,7 +112,7 @@ export function AquiferSection() {
           {/* labels */}
           {F.map((f) => (
             <text key={f.k} x={f.at[0]} y={f.at[1]} textAnchor={f.k === "Strata" || f.k === "Well" || f.k === "Pneumotension" ? "start" : f.k === "Hierosmosis" || f.k === "Artesian spring" || f.k === "Anodos" ? "end" : "middle"}
-                  className="aoh-aq-h font-label uppercase" style={lbl(f.k)} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
+                  className="aoh-aq-h font-label uppercase" style={lbl(f.k)} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : Math.max(0.45, 0.55 * dim(f.k))}
                   onClick={() => setSel(on(f.k) ? null : f.k)}>
               {f.k}
             </text>

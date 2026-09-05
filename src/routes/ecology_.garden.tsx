@@ -63,7 +63,7 @@ function Garden() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               The Garden is therefore not simply a realm of lies, fantasies or hallucinations. Its
               flowers can possess fragrance, vitality, agency and consequence. Some produce visions,
-              sensations, coincidences, changes of conduct, or genuine aetheric effects. Their
+              sensations, coincidences, changes of conduct, or genuine etheric effects. Their
               counterfeitness does not consist in their nonexistence. It consists in the false
               relationship between what they are and what they claim to be. A glamour may be entirely
               real as a glamour. An egregore may be real as an egregore while remaining counterfeit as
@@ -115,7 +115,7 @@ function Garden() {
             <p className="text-base leading-relaxed text-muted-foreground">
               These forms do not always speak deliberate falsehoods. Many simply repeat the name given
               to them by those who first encountered them. Others have forgotten their own origin
-              through centuries of transmission, imitation and morphal inheritance. The counterfeit is
+              through centuries of transmission, imitation and Morphal Inheritance. The counterfeit is
               not a permanent species of being. It is a condition into which any form can fall. A true
               flower becomes counterfeit when it is endlessly reproduced without its root. A fabricated
               image ceases to be counterfeit when it is honestly recognised as an artistic,
@@ -141,14 +141,14 @@ function Garden() {
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Most counterfeit flowers begin with something real: a vestigium, a morphorelic, a
+              Most counterfeit flowers begin with something real: a vestigium, a Morphorelic, a
               surviving correspondence, the broken syntax of an older sacred form. The{" "}
               <Link to="/ecology/crypt" className={L}>Crypt</Link> preserves deep tendency and
               consequence; the <Link to="/ecology/ossuary" className={L}>Ossuary</Link> the structural
               bones of what has lived. These remains descend into the{" "}
               <Link to="/ecology/aquifer" className={L}>Black Aquifer</Link>, where they mingle with
               abandoned desires, ancestral pressures, forgotten devotions and unrealised possibilities.
-              Through pneumic percolation the submerged pressures rise again.{" "}
+              Through Pneumic Percolation the submerged pressures rise again.{" "}
               <Link to="/ecology/morphaither" className={L}>Morphaithēr</Link> gathers them toward
               pattern. The Astral Light clothes the emerging pattern in image, emotion, atmosphere and
               symbolic appearance. Human attention supplies warmth; repetition supplies water; desire
@@ -156,7 +156,7 @@ function Garden() {
               saturation until a fragile image becomes stable enough to exert pressure of its own.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              When aitherostasis occurs the flower is no longer only an idea entertained by a mind. It
+              When Aitherostasis occurs the flower is no longer only an idea entertained by a mind. It
               has a foothold in the formative environment. It begins to influence dreams,
               expectations, relationships, ritual spaces and the reading of coincidence — and its
               apparent independence is then taken as proof of its claimed identity. Yet a form's ability
@@ -164,15 +164,15 @@ function Garden() {
               genealogy, and manifestation does not confer authority.
             </p>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              An aitheric scar is especially fertile soil. Repeated fear, grief, longing or injury may
+              An Aitheric Scar is especially fertile soil. Repeated fear, grief, longing or injury may
               alter the flow of the subtle organism, cutting a channel through which similar images
               repeatedly emerge; because the image returns with force and consistency, the person
               assumes it comes from an external being or a cosmic decree. The Architecture does not
               reduce the experience to psychology, and it does not treat repetition as proof. It asks
               what underlying pressure, channel, memory or presence gives the recurrence its form. In
-              collective environments an egregore makes its own ontic weather: interpretations
+              collective environments an egregore makes its own Ontic Weather: interpretations
               favourable to the group's identity are watered, contradictory perceptions are deprived of
-              light, and the garden alters the cryptaxis of everyone within it, so that attention turns
+              light, and the garden alters the Cryptaxis of everyone within it, so that attention turns
               unconsciously toward whatever nourishes the dominant form. The stated doctrine may be the
               trellis. The concealed desire of the group is the root.
             </p>
@@ -236,7 +236,7 @@ function Garden() {
         <Items
           items={[
             ["The Mirror Flower", "Grows around the expectations of the beholder. It discovers what the visionary longs to meet and returns that longing in perfected symbolic form — the ideal lover, teacher, ancestor, angel, secret chief, heroic former incarnation. The overwhelming sense of recognition may mean the image has conformed itself to the perceiver rather than descended from beyond them."],
-            ["The Relic Bloom", "Grows from morphal inheritance. Its outer form once belonged to a living current whose vertical connection has weakened or gone; devotion, repetition and cultural memory keep it flowering after its root has died. It may retain dignity, use and fragments of real power. What makes it counterfeit is its continuing claim to an undiminished transmission."],
+            ["The Relic Bloom", "Grows from Morphal Inheritance. Its outer form once belonged to a living current whose vertical connection has weakened or gone; devotion, repetition and cultural memory keep it flowering after its root has died. It may retain dignity, use and fragments of real power. What makes it counterfeit is its continuing claim to an undiminished transmission."],
             ["The Grafted Flower", "Joins a genuine symbol to an alien root: a solar image on personal ambition, a healing symbol on the need to control, an initiatory ordeal on unresolved cruelty. Because the upper part is authentic the whole appears legitimate, and the fruit reveals the graft — illumination becomes inflation, protection domination, sacrifice self-destruction, tradition a mechanism for feeding identity."],
             ["The Orphan Flower", "A real encounter whose proper name has been lost: the experiencer touches an authentic current and interprets it through the nearest available mythology. Not fraud and not delusion but an error of attribution, produced by the distance between force and image. It becomes counterfeit only when uncertainty is suppressed and the borrowed identity treated as unquestionable revelation."],
             ["The Hungry Flower", "A form whose beauty functions as an organ of consumption. It converts attention, fear, praise, imitation and conflict into sustaining force, rewards devotees with genuine experiences because experience encourages feeding, and spreads its signs like pollen through groups and institutions. It returns little transformed vitality to those who nourish it. Its central fruit is dependency."],
@@ -289,11 +289,11 @@ function Garden() {
               images, will and visionary appearance become operative, presenting a fluidic panorama to
               consciousness; Dion Fortune's thought-forms and group minds give practical insight into
               how such structures are built and dissolved. The Architecture differentiates what Lévi
-              gathers under one luminous concept — the Astral Light gives a form its face; aetheric
+              gathers under one luminous concept — the Astral Light gives a form its face; etheric
               manifestation gives it a foothold; the Aquifer supplies inherited pressure; Morphaithēr
               organises the tendency toward form; Etheric Hydrology describes how vitality circulates
               through the result — and carries Fortune's insight further by asking how thought-forms
-              acquire anatomy, inherit earlier structures, occupy niches, alter ontic weather, and
+              acquire anatomy, inherit earlier structures, occupy niches, alter Ontic Weather, and
               sometimes outlast the intention of their makers. The relation is reciprocal: they give
               the philosophical distinctions, the vertical safeguards and the practical warnings; the
               Architecture gives their insights a morphology, a hydrology, an ecology and a theory of
@@ -312,7 +312,7 @@ function Garden() {
         <div className="mt-10 grid gap-12 lg:grid-cols-2">
           <p className="text-base leading-relaxed text-muted-foreground">
             The Crypt preserves deep consequence. The Ossuary retains structural remains. The Aquifer
-            holds submerged pressures, vestigia and morphorelics in a dense memory-bearing medium. The
+            holds submerged pressures, vestigia and Morphorelics in a dense memory-bearing medium. The
             Nursery shelters possibilities that have not entered stable manifestation. The system also
             names a Menagerie of Impossible Forms, the unprecedented organisms produced when
             incompatible or previously unrelated lineages recombine. The Garden is where these
@@ -408,14 +408,14 @@ function Garden() {
               Attention may then be reduced, to discover whether the flower has an independent root
               or survives only through continuous fascination. Emotional perfume can be separated from
               structural coherence. Correspondences can be examined across the layers — psychic,
-              astral, aetheric, ethical, relational, material — since a true vertical current shows
+              astral, etheric, ethical, relational, material — since a true vertical current shows
               more than a convincing surface resemblance: it establishes coherent relations through the
               whole chain of manifestation.
             </p>
           </div>
           <div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Some forms must undergo a cryptopyrosis of their concealed root-system, a heating until
+              Some forms must undergo a Cryptopyrosis of their concealed root-system, a heating until
               borrowed images, inherited assumptions and hidden appetites separate from whatever living
               virtue they contain. The purpose is not always destruction. A mirror figure may become a
               useful psychological symbol once it no longer pretends to be an external master. An

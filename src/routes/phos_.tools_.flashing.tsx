@@ -248,14 +248,14 @@ function Flashing() {
                   Colour
                 </Link>{" "}
                 and{" "}
-                <Link to="/phos/$division/$entry" params={{ division: "xiv", entry: "pigments-and-sacred-colors" }}
+                <Link to="/phos/$division/$entry" params={{ division: "xiv", entry: "pigments-and-sacred-colours" }}
                       className="text-gold-dim underline-offset-4 hover:text-gold hover:underline">
                   Pigments and Sacred Colours
                 </Link>{" "}
                 in the Portal.
               </p>
               <p>
-                <Link to="/phos/$division/$entry" params={{ division: "xv", entry: "goethes-theory-of-colors" }}
+                <Link to="/phos/$division/$entry" params={{ division: "xv", entry: "goethes-theory-of-colours" }}
                       className="text-gold-dim underline-offset-4 hover:text-gold hover:underline">
                   Goethe&rsquo;s Theory of Colours
                 </Link>{" "}

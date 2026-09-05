@@ -1,5 +1,5 @@
 ---
-title: Human Color Vision
+title: Human Colour Vision
 labels: [Scientific Evidence, Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Scientific, Architecture of Hidden Forces]

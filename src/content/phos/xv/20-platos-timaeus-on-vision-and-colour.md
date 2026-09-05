@@ -1,5 +1,5 @@
 ---
-title: Plato’s Timaeus on Vision and Color
+title: Plato’s Timaeus on Vision and Colour
 labels: [Primary Text, Historical Doctrine, Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Platonic, Greek, Architecture of Hidden Forces]

@@ -186,8 +186,15 @@ export function ZodiacWheel() {
                     e.preventDefault();
                     setSel(on ? null : i);
                   }
-                  if (e.key === "ArrowRight" || e.key === "ArrowUp") setSel((i + 1) % 12);
-                  if (e.key === "ArrowLeft" || e.key === "ArrowDown") setSel((i + 11) % 12);
+                  // the arrows move the selection and the focus together, so the
+                  // sign a reader hears is the sign Enter will act on
+                  const step = e.key === "ArrowRight" || e.key === "ArrowUp" ? 1 : e.key === "ArrowLeft" || e.key === "ArrowDown" ? 11 : 0;
+                  if (step) {
+                    e.preventDefault();
+                    const next = (i + step) % 12;
+                    setSel(next);
+                    (e.currentTarget.parentNode?.querySelectorAll<SVGGElement>('[role="button"]')[next])?.focus();
+                  }
                 }}
                 style={{ opacity: lit(i) ? 1 : 0.28, transition: "opacity 260ms ease" }}
               >

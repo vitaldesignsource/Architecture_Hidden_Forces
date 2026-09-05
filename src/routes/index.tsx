@@ -1004,7 +1004,7 @@ function Index() {
                       </p>
                       <div className="mt-6 h-px w-12 bg-gold/40 transition-all duration-700 group-hover:w-24" />
                       <p className="mt-6 font-label text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                        § III · {e.corr}
+                        § III · {e.corr.split(" · ")[0]} · <span lang="el" className="scr-greek">{e.corr.split(" · ")[1]}</span>
                       </p>
                     </div>
                     <div className="min-w-0">
@@ -1066,7 +1066,7 @@ function Index() {
                     <span className="h-7 w-px bg-gradient-to-b from-transparent to-gold/50" />
                     <p className="mt-4 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim">
                       <span lang="el" className="scr-greek">Διάστημα</span> {["I", "II", "III"][i]} · <span lang="el" className="scr-greek">{e.greek}</span>{" "}
-                      <span className="text-gold">→</span> {e.into.to}
+                      <ArrowMark className="text-gold" /> <span lang="el" className="scr-greek">{e.into.to}</span>
                     </p>
                     <p className="mt-3 max-w-xl font-serif text-base italic leading-relaxed text-bone/85 sm:text-lg">
                       {e.into.passage}
@@ -1146,7 +1146,7 @@ function Index() {
                       </svg>
                       <div className="min-w-0">
                         <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-                          <span lang="el" className="scr-greek">Διάστημα</span> IV · The Return to {e.into.to}
+                          <span lang="el" className="scr-greek">Διάστημα</span> IV · The Return to <span lang="el" className="scr-greek">{e.into.to}</span>
                         </p>
                         <p className="mt-6 font-serif text-2xl italic leading-tight text-bone/90 sm:text-3xl">
                           “Life completes the cycle by preserving the power to{" "}
@@ -1165,7 +1165,7 @@ function Index() {
                           className="mt-8 inline-flex items-center gap-3 font-label text-[10px] uppercase tracking-[0.3em] text-gold-dim transition-colors hover:text-gold"
                         >
                           <span className="text-base leading-none">↺</span>
-                          Begin again at I · Θερμότης
+                          Begin again at I · <span lang="el" className="scr-greek">Θερμότης</span>
                         </a>
                       </div>
                     </div>
@@ -3588,7 +3588,7 @@ function Index() {
         <SectionGlyph delay={-190} />
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="font-label text-[10px] uppercase tracking-[0.3em] text-gold">
-            § XXI · Chakras and Centers
+            § XXI · Chakras and Centres
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-4xl leading-tight">
             Where currents <span className="italic text-gold">gather</span>
@@ -6982,7 +6982,7 @@ function Index() {
                   <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
                     {m.office}
                   </span>
-                  <span className="mt-1.5 block font-label text-[9px] uppercase tracking-[0.16em] text-bone/40">
+                  <span className="mt-1.5 block font-label text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
                     {m.tradition}
                   </span>
                 </Link>

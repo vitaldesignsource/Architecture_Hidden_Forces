@@ -67,6 +67,9 @@
 }
 
 @layer base {
+  /* A table heading is a label like any other; the browser bold that Cinzel
+     would answer with its 700 is not asked for anywhere else. */
+  th { font-weight: inherit; }
   * { border-color: var(--color-border); }
   /* Instant jump: the treatise is >31,000px tall, so smooth-scrolling a nav
      click across ~20,000px reads as an unresponsive link. */
@@ -192,7 +195,11 @@
 /* Off screen the glint stops; the arrival, which fills both ways, never does. */
 .aoh-still .reveal-title.title-shimmer .rt-char { animation-play-state: running, paused; }
 @media (prefers-reduced-motion: reduce) {
-  .reveal-title.title-shimmer .rt-char { animation: none; opacity: 1; color: var(--gold); }
+  .reveal-title .rt-char { animation: none; opacity: 1; filter: none; transform: none; color: inherit; }
+  .reveal-title.title-shimmer .rt-char { color: var(--gold); }
+  .animate-rise, .title-underline { animation: none; opacity: 1; transform: none; }
+  /* the ambient ornaments: a slow spin or drift is still motion */
+  .animate-slow-spin, .animate-slow-spin-reverse, .animate-drift, .animate-breathe, .animate-glyph-fade { animation: none; }
 }
 
 .title-underline {

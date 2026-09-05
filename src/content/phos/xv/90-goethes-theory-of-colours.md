@@ -1,5 +1,5 @@
 ---
-title: Goethe’s Theory of Colors
+title: Goethe’s Theory of Colours
 labels: [Primary Text, Historical Doctrine, Architecture of Hidden Forces Doctrine]
 confidence: [Established]
 tradition: [Scientific, Modern Esoteric, Architecture of Hidden Forces]

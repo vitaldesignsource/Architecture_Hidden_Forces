@@ -95,7 +95,7 @@ export function EthericWatershed() {
           {/* labels */}
           {F.map((f) => (
             <text key={f.k} x={f.at[0]} y={f.at[1]} textAnchor="middle" className="aoh-ws-h font-label uppercase"
-                  style={{ ...fs(6.6), letterSpacing: "0.14em" }} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : 0.55 * dim(f.k)}
+                  style={{ ...fs(7.4), letterSpacing: "0.14em" }} fill={on(f.k) ? G : "currentColor"} fillOpacity={on(f.k) ? 1 : Math.max(0.45, 0.55 * dim(f.k))}
                   onClick={() => setSel(on(f.k) ? null : f.k)}>
               {f.k}
             </text>

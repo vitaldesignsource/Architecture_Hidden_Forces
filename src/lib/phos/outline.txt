@@ -124,7 +124,7 @@
 12. Density
 13. Subtlety
 14. Temperature
-15. Color
+15. Colour
 16. Texture
 17. Rhythm
 18. Pulsation
@@ -444,10 +444,10 @@
 11. Gold and Solar Incorruptibility
 12. Silver and Lunar Reception
 13. Incense, Smoke, and Visible Mediation
-14. Pigments and Sacred Colors
+14. Pigments and Sacred Colours
 15. Statues and Ensoulment
 16. Icons, Halos, and Mandorlas
-17. Stained Glass and Colored Transmission
+17. Stained Glass and Coloured Transmission
 18. Divine Names as Luminous Forms
 19. Mantra, Logos, and Vibratory Illumination
 20. Egyptian Heka and the Activation of Light through Speech
@@ -478,9 +478,9 @@
 16. The Bundahišn and the Architecture of the Luminaries
 ## Greece and Rome
 17. Empedocles and the Fire of the Eye
-18. Democritus on Color and Emanation
+18. Democritus on Colour and Emanation
 19. Plato’s Sun, Divided Line, and Cave
-20. Plato’s Timaeus on Vision and Color
+20. Plato’s Timaeus on Vision and Colour
 21. Aristotle on the Transparent
 22. On Colours and the Mixture of Light and Darkness
 23. Euclid’s Optics
@@ -557,7 +557,7 @@
 87. Jacob Böhme and the Birth of Light from Darkness
 88. Robert Fludd’s Luminous Cosmology
 89. Newton: Optics, Alchemy, and Divine Order
-90. Goethe’s Theory of Colors
+90. Goethe’s Theory of Colours
 91. Éliphas Lévi and Astral Light
 92. The Golden Dawn and the Limitless Light
 93. Theosophical Planes and Rays
@@ -577,9 +577,9 @@
 11. Polarization
 12. Interference and Diffraction
 13. Coherence and Lasers
-14. Color Temperature
+14. Colour Temperature
 15. Photometry and the Measurement of Light
-16. Human Color Vision
+16. Human Colour Vision
 17. Ultraviolet and Infrared Radiation
 18. Light in Astronomy
 19. Light, Space, and Relativity
@@ -674,7 +674,7 @@
 1. Keeping a Luminous Phenomenology Journal
 2. Observing Dawn, Noon, Sunset, and Midnight
 3. Candle and Flame Contemplation
-4. Color Contemplation
+4. Colour Contemplation
 5. Light and Breath
 6. Light and Stillness
 7. Dream-Light Recording
@@ -715,6 +715,6 @@
 22. Index of Qualities
 23. Index of Operations
 24. Index of Beings
-25. Index of Colors
+25. Index of Colours
 26. Index of Ritual Implements
 27. General Concordance

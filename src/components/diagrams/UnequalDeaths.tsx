@@ -4,7 +4,7 @@ import { fs } from "./fig";
  * UnequalDeaths — the death of a god-form is a sequence of unequal deaths.
  *
  * Five bars, one for each death the doctrine names — liturgical, social,
- * imaginal, aetheric, daimonic — running from the living cult at the left
+ * imaginal, etheric, daimonic — running from the living cult at the left
  * toward the present at the right. Each breaks at a different point and
  * some do not break at all: a deity may be socially forgotten and imaginally
  * potent, a place may keep its scar after its name is lost, a power may be
@@ -16,7 +16,7 @@ const DEATHS: { k: string; note: string | [string, string]; ends: number | null;
   { k: "liturgical", note: "the rite is no longer enacted", ends: 0.28 },
   { k: "social", note: "no community organises around the name", ends: 0.42 },
   { k: "imaginal", note: "the symbols still awaken awe", ends: null, fade: true },
-  { k: "aetheric", note: "the place keeps its scar", ends: 0.86 },
+  { k: "etheric", note: "the place keeps its scar", ends: 0.86 },
   { k: "daimonic", note: ["the current withdrew —", "or never depended on the house"], ends: 0.6 },
 ];
 
@@ -27,7 +27,7 @@ export function UnequalDeaths() {
     <div className="aoh-fig aoh-fig-wide mx-auto w-full max-w-[660px]">
       <svg viewBox="0 0 500 214" className="h-auto w-full" role="img" aria-labelledby="aoh-ud-t">
         <title id="aoh-ud-t">
-          Five horizontal bars labelled liturgical, social, imaginal, aetheric and daimonic, running from the
+          Five horizontal bars labelled liturgical, social, imaginal, etheric and daimonic, running from the
           living cult on the left toward the present on the right, each ending at a different point and one
           continuing faintly to the end.
         </title>

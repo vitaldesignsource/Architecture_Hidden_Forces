@@ -1,5 +1,5 @@
 ---
-title: Stained Glass and Colored Transmission
+title: Stained Glass and Coloured Transmission
 labels: [Architecture of Hidden Forces Doctrine, Historical Doctrine]
 confidence: [Established]
 tradition: [Architecture of Hidden Forces, Christian, Medieval Latin]
