@@ -58,21 +58,22 @@ function Browse() {
                 {f.name} · {f.controlled ? `${values.length} values` : "open vocabulary"}
               </p>
               {values.length ? (
-                <div className="mt-6 flex flex-wrap gap-2">
+                <ul className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
                   {values.map((v) => (
-                    <Link
-                      key={v.slug}
-                      to="/phos/browse/$facet/$value"
-                      params={{ facet: f.key, value: v.slug }}
-                      className={`border px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors hover:border-gold/60 hover:text-gold ${
-                        v.count ? "border-gold/40 text-bone/85" : "border-border text-muted-foreground opacity-70"
-                      }`}
-                    >
-                      {v.value}
-                      <span className={`ml-2 ${v.count ? "text-gold-dim" : "text-muted-foreground"}`}>{v.count}</span>
-                    </Link>
+                    <li key={v.slug}>
+                      <Link
+                        to="/phos/browse/$facet/$value"
+                        params={{ facet: f.key, value: v.slug }}
+                        className={`flex h-full items-baseline justify-between gap-3 border px-3 py-2.5 font-label text-[10px] uppercase leading-[1.6] tracking-[0.15em] transition-colors hover:border-gold/60 hover:bg-bone/[0.03] hover:text-gold ${
+                          v.count ? "border-gold/40 bg-bone/[0.015] text-bone/85" : "border-border text-muted-foreground opacity-70"
+                        }`}
+                      >
+                        <span className="min-w-0">{v.value}</span>
+                        <span className={`shrink-0 tabular-nums ${v.count ? "text-gold-dim" : "text-muted-foreground"}`}>{v.count}</span>
+                      </Link>
+                    </li>
                   ))}
-                </div>
+                </ul>
               ) : (
                 <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
                   No entry names a {f.name.toLowerCase()} yet. Values appear here as entries are written.
